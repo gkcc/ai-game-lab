@@ -1,0 +1,16 @@
+{
+  "public_checkout_execution_passed": true,
+  "runtime": "Existing isolated official CPU runtime reused; not a fresh dependency installation",
+  "same_as_registered_land_trajectory": true,
+  "audit": {
+    "passed": true,
+    "official_transitions_reexecuted": 719,
+    "both_public_and_private_states_match_each_step": true,
+    "semantic_sha256": "086fc85b6aea0359d89b8c054f844557fd43c737ef6e00a237dc97b30a671b22",
+    "final_rewards": [
+      55816.0,
+      44614.0
+    ],
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+  }
+}

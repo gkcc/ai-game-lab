@@ -1,0 +1,71 @@
+{
+  "passed": true,
+  "games": [
+    {
+      "seed": 6774936,
+      "side": 1,
+      "banks": [
+        44614.0,
+        55816.0
+      ],
+      "bank": 55816.0,
+      "opponent_bank": 44614.0,
+      "net_profit": 52816.0,
+      "margin": 11202.0,
+      "states": 720,
+      "action_turns": 719,
+      "bot_sha256": "8f6423ecd0f6f3e21d6798a097208c0df3a954a40a50698cc09df7a9e5080a94",
+      "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "package": "1.33.0",
+      "passed": true,
+      "semantic_replay_sha256": "52744406d8571cdadad01c4d6e08d61d6fa602bea32884b816053dcc68e071f1",
+      "policy": "land",
+      "opponent": "market",
+      "final_status": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        44614.0,
+        55816.0
+      ],
+      "replay_gzip_sha256": "753d3ac3c342c2cd0c8844ce1fd30a12f0b279fcabd453348f1611d3d4467b4d",
+      "agent_errors": 0,
+      "both_player_farming_and_seed_audits_passed": true
+    },
+    {
+      "seed": 6774936,
+      "side": 0,
+      "banks": [
+        55816.0,
+        44614.0
+      ],
+      "bank": 55816.0,
+      "opponent_bank": 44614.0,
+      "net_profit": 52816.0,
+      "margin": 11202.0,
+      "states": 720,
+      "action_turns": 719,
+      "bot_sha256": "8f6423ecd0f6f3e21d6798a097208c0df3a954a40a50698cc09df7a9e5080a94",
+      "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "package": "1.33.0",
+      "passed": true,
+      "semantic_replay_sha256": "086fc85b6aea0359d89b8c054f844557fd43c737ef6e00a237dc97b30a671b22",
+      "policy": "land",
+      "opponent": "market",
+      "final_status": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        55816.0,
+        44614.0
+      ],
+      "replay_gzip_sha256": "36c591eb5896f51fd4ae8854065f74dd6eb832d76e5a43cda3d651ca60023333",
+      "agent_errors": 0,
+      "both_player_farming_and_seed_audits_passed": true
+    }
+  ]
+}

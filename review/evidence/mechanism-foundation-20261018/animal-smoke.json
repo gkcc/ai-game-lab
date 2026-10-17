@@ -1,0 +1,29 @@
+{
+  "audit": {
+    "passed": true,
+    "official_transitions_reexecuted": 719,
+    "both_public_and_private_states_match_each_step": true,
+    "semantic_sha256": "c3407b6a475e9f82f58148a0fc00510c49dbfd62581bd81cb09d4bb48197fac2",
+    "final_rewards": [
+      7150.0,
+      3000.0
+    ],
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+  },
+  "unit_action_counts": {
+    "BUILD_COOP": 1,
+    "PICKUP": 61,
+    "PLACE": 1,
+    "FEED": 30,
+    "CARE": 30,
+    "PASS": 512,
+    "COLLECT_FERTILIZER": 29,
+    "DROP": 29,
+    "HARVEST": 26
+  },
+  "sold_products": {
+    "FERTILIZER": 29,
+    "EGG": 54
+  },
+  "scope": "Execution fixture versus PASS, not competitive value evidence"
+}

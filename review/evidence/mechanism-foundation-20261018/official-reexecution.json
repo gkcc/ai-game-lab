@@ -1,0 +1,788 @@
+{
+  "passed": true,
+  "games": 52,
+  "official_transitions": 37388,
+  "both_public_and_private_checked_each_step": true,
+  "rows": [
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6495223,
+      "side": 0,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "f961ce26a0a65219076e14c76ce9b4b10a06e2aedcf713a2adf6b300e5ef3349",
+      "final_rewards": [
+        28934.0,
+        38605.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6495223,
+      "side": 0,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "171660fb3a1f1211009063cd443fe0cfb2f17664331aaf51e8d4c0c79fbba033",
+      "final_rewards": [
+        56531.0,
+        46097.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6495223,
+      "side": 1,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "4f23b50ac7a9a08938c2b9f82be43753d02fa7009bd4fab9e4e1d2d1d79fceee",
+      "final_rewards": [
+        38605.0,
+        28934.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6495223,
+      "side": 1,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "3e933804f3d1380e4769e7b719e7758a51be5f00da7f7383bc0a5be7b65d14f6",
+      "final_rewards": [
+        46097.0,
+        56531.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6495223,
+      "side": 0,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "a5890f1b885fb67f5ac7b4ca023288a84f49222b5dd8ae51fcb0a603103fc29c",
+      "final_rewards": [
+        31152.0,
+        30451.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6495223,
+      "side": 0,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "41916d89618ca572ebe3f4f036291ebc74311de4f7466912926b4032393a61ff",
+      "final_rewards": [
+        33269.0,
+        54640.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6495223,
+      "side": 1,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "90c8b5399f58999acfe62c31dd616a30b7c18d15dddcb1afd193b54827b1d410",
+      "final_rewards": [
+        30451.0,
+        31152.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6495223,
+      "side": 1,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "f356c304e366dfdbff4496b20ca87d7a65c72e11b25b8e2658b67d05f3b8d19f",
+      "final_rewards": [
+        54640.0,
+        33269.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6682214,
+      "side": 0,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "74d0bef629dcef143d6691e2d1d5404dbdc43ec76ffc36bde1a2c19cc44e0eb3",
+      "final_rewards": [
+        37833.0,
+        38710.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6682214,
+      "side": 0,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "1a5dd2f17de584b3d2218d6f4ed8576335c168aff375ba373a56565482e46874",
+      "final_rewards": [
+        58917.0,
+        45675.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6682214,
+      "side": 1,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "6f8e022c1d2dd65b980c169206951dc184a4cebd470975797dcd5900318f5004",
+      "final_rewards": [
+        38710.0,
+        37833.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6682214,
+      "side": 1,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "96f3a566cf0ab515fa9fcef1e77ae6ba659558251f86923a1ab06729fe5933e3",
+      "final_rewards": [
+        45675.0,
+        58917.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6682214,
+      "side": 0,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "36a3aa25d738c358617fd1b6517ae6d95474a776393c92c12fe1e3a84aff3b45",
+      "final_rewards": [
+        33566.0,
+        33123.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6682214,
+      "side": 0,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "d0d462badc6e033a0dcf63d481e67c576086dc87f0dc21135326d23704e220e1",
+      "final_rewards": [
+        32837.0,
+        54144.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6682214,
+      "side": 1,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "737bdd0ea60b3d55a7245473b6dde83017188bd61200b8438c26e5ca41e49669",
+      "final_rewards": [
+        33123.0,
+        33566.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6682214,
+      "side": 1,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "32f150b67e047964707afa32f79dac4a13acd7f47bbf590924690e25dcade06b",
+      "final_rewards": [
+        54144.0,
+        32837.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6726194,
+      "side": 0,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "f6d42f3d2f330958bcfb57805c0b253597aca211301b06d4089474108396973e",
+      "final_rewards": [
+        43387.0,
+        42952.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6726194,
+      "side": 0,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "af8dad081fb9b5cd13eb2d6498c32b7a556d1d2ca4d16c5f16690489253a88b2",
+      "final_rewards": [
+        43393.0,
+        37338.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6726194,
+      "side": 1,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "7fc8b7e64fa78bade0aa386a0a51747d8aa40876fb502679cfc82c1d8d653f71",
+      "final_rewards": [
+        42952.0,
+        43387.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6726194,
+      "side": 1,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "19d7454a315c3870c3b3fcd3623e9c5005327ce8dda6622d104d651f1fee3c36",
+      "final_rewards": [
+        37338.0,
+        43393.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6726194,
+      "side": 0,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "0c4d98db6d7361b4243a38af700e18ab74642bc7e142638eaa58d52afb8baf6b",
+      "final_rewards": [
+        42003.0,
+        40904.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6726194,
+      "side": 0,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "efa9526b7541e9aad7ddb9ad47bf2a6bf6518e69fe483192b2dbc31679d9e61d",
+      "final_rewards": [
+        26808.0,
+        39851.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6726194,
+      "side": 1,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "516b5cbb177adc8217bb2e4955f2469a1e087672dc7b4e22b242765fae5cbde1",
+      "final_rewards": [
+        40904.0,
+        42003.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6726194,
+      "side": 1,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "a64356cdfb01094ba85cd471fc115550dcbaec313287fbafac896e2f4f0a85ea",
+      "final_rewards": [
+        39851.0,
+        26808.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6774936,
+      "side": 0,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "ab1530a6ea70504554089f4f31d7bbe45a1c4e622a5b32d30346d6bc9a2913da",
+      "final_rewards": [
+        33689.0,
+        36424.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6774936,
+      "side": 0,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "086fc85b6aea0359d89b8c054f844557fd43c737ef6e00a237dc97b30a671b22",
+      "final_rewards": [
+        55816.0,
+        44614.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6774936,
+      "side": 1,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "0a4f37638688b65d09d7cb2273b90f425c947d6d22452c7468a29fc1414a7df7",
+      "final_rewards": [
+        36424.0,
+        33689.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6774936,
+      "side": 1,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "52744406d8571cdadad01c4d6e08d61d6fa602bea32884b816053dcc68e071f1",
+      "final_rewards": [
+        44614.0,
+        55816.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6774936,
+      "side": 0,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "0d407d3a0f82dec6669acda6fcf4710eea69fedd37a282c9b49e21dd3cc41b4b",
+      "final_rewards": [
+        32990.0,
+        31959.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6774936,
+      "side": 0,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "bc0f428a71e92bd479319b4363a7314872dae8f02b8918b83c8c6aef7dafad96",
+      "final_rewards": [
+        29598.0,
+        50845.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6774936,
+      "side": 1,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "c1645fb18332daae9ff69700b2eefa2cdc06f0c22b9087043b26c6992522a91c",
+      "final_rewards": [
+        31959.0,
+        32990.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6774936,
+      "side": 1,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "82c05d364e3ccfd3359a619fe0716882ae791fe533f895818e41a61150a435bf",
+      "final_rewards": [
+        50845.0,
+        29598.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6949248,
+      "side": 0,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "8c22aac80b06b857e4a433880a508a6a67281fc9ba6d6ed9deb32f183c58ef64",
+      "final_rewards": [
+        38083.0,
+        40662.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6949248,
+      "side": 0,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "27109d0e3c4297aa296373c6cdbb516711bccfb5e5624a11554ff1490ef4f4b5",
+      "final_rewards": [
+        55177.0,
+        45058.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6949248,
+      "side": 1,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "519430da8503fb106b35e987b6608c04527f03247941adb4135261ab8145879b",
+      "final_rewards": [
+        40662.0,
+        38083.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6949248,
+      "side": 1,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "f7007f6cbccba2a8764caab7154209797f24bfe1fb1580d4469b1cb3ef831047",
+      "final_rewards": [
+        45058.0,
+        55177.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6949248,
+      "side": 0,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "cc96e2ab3561264b92d23e0be06f22eaa062cb138df265057d9e7e61786579b3",
+      "final_rewards": [
+        37601.0,
+        35882.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6949248,
+      "side": 0,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "c8a94836d7d72234a31ca00907c9ea688bb72bc5a1f20f3498900e662c7641e9",
+      "final_rewards": [
+        34668.0,
+        54081.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6949248,
+      "side": 1,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "865684a561486148c1e3d823fe053ee7e05059b966968314a49bf29ec5eb3e7e",
+      "final_rewards": [
+        35882.0,
+        37601.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6949248,
+      "side": 1,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "b07d3d61d9db5bdef93f6df2118616bfa3f60c2f565339873d167ca408b0df6b",
+      "final_rewards": [
+        54081.0,
+        34668.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6992429,
+      "side": 0,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "2d6dc8b73697664777cb604dc43c07d414dc74d02aa210829c24df5c7d6b93e5",
+      "final_rewards": [
+        36060.0,
+        38178.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6992429,
+      "side": 0,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "3a4c0e5d9928e49028496d5548857119408174fe9d3f4a80300ffd797165d66e",
+      "final_rewards": [
+        51183.0,
+        42606.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6992429,
+      "side": 1,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "f69f8dec8534800f76efc0eecde1dc69b371d431b5d5c49de96d7edfd57fa697",
+      "final_rewards": [
+        38178.0,
+        36060.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6992429,
+      "side": 1,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "876e986e78e7fcbbdbc5af5c5a0fffbbbecb7a2d7717c26c10de3b4407b91f6c",
+      "final_rewards": [
+        42606.0,
+        51183.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6992429,
+      "side": 0,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "7182dca7d298805131f9c5c7dae9cd07cc1f14f8dab12288a58c756d2d877046",
+      "final_rewards": [
+        34764.0,
+        34387.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6992429,
+      "side": 0,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "296cad804d584baccabf96bb113212ff545918d32cb296e7b1309a062c51ec80",
+      "final_rewards": [
+        35238.0,
+        43581.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6992429,
+      "side": 1,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "ee3240b67c952170f571a4bdba462d050df7388bb91e849d3ffa785e49ecaa18",
+      "final_rewards": [
+        34387.0,
+        34764.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6992429,
+      "side": 1,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "594d140d697f97009c0b32abc8811b94ef536068ec57dd2f8fa542274754c01d",
+      "final_rewards": [
+        43581.0,
+        35238.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "baseline",
+      "opponent": "market",
+      "seed": 6774936,
+      "side": 0,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "ab1530a6ea70504554089f4f31d7bbe45a1c4e622a5b32d30346d6bc9a2913da",
+      "final_rewards": [
+        33689.0,
+        36424.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6774936,
+      "side": 0,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "ab1530a6ea70504554089f4f31d7bbe45a1c4e622a5b32d30346d6bc9a2913da",
+      "final_rewards": [
+        33689.0,
+        36424.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6774936,
+      "side": 1,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "52744406d8571cdadad01c4d6e08d61d6fa602bea32884b816053dcc68e071f1",
+      "final_rewards": [
+        44614.0,
+        55816.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6774936,
+      "side": 0,
+      "passed": true,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "semantic_sha256": "086fc85b6aea0359d89b8c054f844557fd43c737ef6e00a237dc97b30a671b22",
+      "final_rewards": [
+        55816.0,
+        44614.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+    }
+  ]
+}

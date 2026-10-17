@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "ledger_games": 48,
+  "local_replays_verified": 52,
+  "statistics_recomputed": {
+    "overall": {
+      "profit_delta": 6947.75,
+      "profit_95_ci": [
+        625.0,
+        11589.25
+      ],
+      "score_delta": -0.08333333333333333
+    },
+    "v1": {
+      "profit_delta": -3276.3333333333335,
+      "profit_95_ci": [
+        -8375.333333333334,
+        357.1666666666667
+      ],
+      "score_delta": -1.0
+    },
+    "market": {
+      "profit_delta": 17171.833333333332,
+      "profit_95_ci": [
+        9643.5,
+        23111.5
+      ],
+      "score_delta": 0.8333333333333334
+    }
+  },
+  "exploratory_gate": false,
+  "paired_town_trajectories_differ": 24,
+  "expanded_plant_events_verified": 1274,
+  "boundary": "Shared-RNG and opponent-response effects belong to the treatment; not a pure extra-land-yield estimate or external replay re-execution"
+}

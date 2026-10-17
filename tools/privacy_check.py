@@ -28,6 +28,7 @@ patterns={
     'aws_access_key':r'\b(?:AKIA|ASIA)[A-Z0-9]{16}\b',
     'url_embedded_credential':r'https?://[^\s/:@]+:[^\s/@]+@',
     'email_address':r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b',
+    'hardware_inventory':r'(?i)\b(?:NVIDIA\s+)?(?:GeForce\s+)?RTX\s*\d{4}\b|\b(?:Driver Version|CUDA Version):',
 }
 failures=[]
 total=0

@@ -1,0 +1,22 @@
+{
+  "python": "3.12.2",
+  "engine_package": "1.33.0",
+  "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "gpu_training": false,
+  "default_changed": false,
+  "actor_sources": {
+    "baseline.py": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "control.py": "38c9c340ccff1586137c4b668b328199531f9070c0d8e73702128aedb1e13300",
+    "land.py": "8f6423ecd0f6f3e21d6798a097208c0df3a954a40a50698cc09df7a9e5080a94",
+    "v1.py": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "market.py": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "worker.py": "980bcff08148ac4a3968d9bb56a628413453febb5e78ce930f48b5534c50a715",
+    "mechanism_experiment.py": "9ae05b0f795867a6382b1f669c16d55f294a93a1caf1142123be6fd95616bfb1",
+    "optimize_round2.py": "10a381f2819a8371d6be47a9fd171c591482a864b8aff2cb2c91b4c87b7e2479",
+    "evaluate_holdout.py": "df599e139893081f0a5307b0aa9cf299e2d14d4d4a221672b7aa9ac1d3747d82",
+    "api.py": "aececd9f93e3e48ebbbd0c3f0e9b994a9504e5c884ba1f53bcd9b14446414272",
+    "verify_mechanisms.py": "f385628864fe70e339e3a628ffef63575b4d7126eba69ae51f431def208da5ad"
+  },
+  "catalog_sha256": "b81249fbdf6e9004c546cfddd2edfd4f059d7c6a67c4d923a0f8be669c7a1eb3"
+}

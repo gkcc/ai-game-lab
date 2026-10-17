@@ -1,0 +1,13 @@
+{
+  "baseline.py": "kaggriculture/models/land_probe/baseline.py",
+  "control.py": "kaggriculture/models/land_probe/control.py",
+  "land.py": "kaggriculture/models/land_probe/land.py",
+  "v1.py": "kaggriculture/bots/heuristic_v1.py",
+  "market.py": "kaggriculture/bots/heuristic_v1_market.py",
+  "worker.py": "kaggriculture/learning/round2_worker.py",
+  "mechanism_experiment.py": "kaggriculture/learning/mechanism_experiment.py",
+  "optimize_round2.py": "kaggriculture/learning/optimize_round2.py",
+  "evaluate_holdout.py": "kaggriculture/learning/evaluate_holdout.py",
+  "api.py": "kaggriculture/decision/api.py",
+  "verify_mechanisms.py": "kaggriculture/decision/verify_mechanisms.py"
+}
