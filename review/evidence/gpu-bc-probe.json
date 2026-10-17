@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "jax": "0.4.38",
+  "records": {
+    "cpu": {
+      "compile_and_warm_seconds": 0.321234891,
+      "timed_seconds": 0.06869748499999995,
+      "gradient_updates": 512,
+      "batch_size": 256,
+      "updates_per_second": 7452.965709006675,
+      "initial_minibatch_loss": 1.6561205387115479,
+      "final_minibatch_loss": 0.15740251541137695,
+      "train_accuracy": 0.9393203883495146,
+      "validation_accuracy": 0.8878504672897196,
+      "weights_changed": true
+    },
+    "gpu": {
+      "compile_and_warm_seconds": 1.713333702,
+      "timed_seconds": 0.018665597000000034,
+      "gradient_updates": 512,
+      "batch_size": 256,
+      "updates_per_second": 27430.14327374576,
+      "initial_minibatch_loss": 1.6560851335525513,
+      "final_minibatch_loss": 0.15747132897377014,
+      "train_accuracy": 0.9393203883495146,
+      "validation_accuracy": 0.8878504672897196,
+      "weights_changed": true
+    }
+  },
+  "gpu_speedup_excluding_compile": 3.680433312687498,
+  "synchronization": "blocking host copies of all updated weights and all losses, transfer time included",
+  "scope": "Actual gradient training on official v1 match PLANT labels. Crop classifier only, not integrated as an agent; no claim of improved play or accelerated environment",
+  "hardware_details": "withheld; timings cannot be treated as a portable hardware benchmark"
+}

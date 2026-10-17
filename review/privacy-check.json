@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-18",
+  "approach": "Explicit source-file allowlist plus exact Git-index byte scan and private identity comparison",
+  "staged_sensitive_findings": 0,
+  "personal_commit_identity_used": false,
+  "raw_runtime_artifacts_included": false,
+  "machine_and_account_configuration_included": false,
+  "images": "Generated scientific plots; metadata checked separately",
+  "scope": "Focused publication checks, not a claim that arbitrary future commits are safe",
+  "future_gate": "Run tools/privacy_check.py --staged and manually inspect the file list before every push"
+}

@@ -1,0 +1,8 @@
+# The official engine uses jax.tree_map, removed in JAX 0.6.
+# Keep its compatible runtime without modifying Server code.
+jax==0.4.38
+jaxlib==0.4.38
+flax==0.10.4
+optax==0.2.4
+orbax-checkpoint==0.11.5
+chex==0.1.89

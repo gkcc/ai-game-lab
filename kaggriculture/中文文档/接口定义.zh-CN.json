@@ -1,0 +1,152 @@
+{
+  "name": "kaggriculture",
+  "title": "Kaggriculture",
+  "description": "高级农场模拟：两名玩家各管理一座 10×10 农场（四个 5×5 区域），一个季度内种植、养殖、雇工、动态交易，以季末现金决定胜负。",
+  "version": "0.1.0",
+  "agents": [
+    2
+  ],
+  "configuration": {
+    "episodeSteps": 720,
+    "actTimeout": 1,
+    "boardSize": {
+      "description": "每座正方形农场的宽高，单位为格。默认 10，即四个 5×5 区域。",
+      "type": "integer",
+      "default": 10,
+      "minimum": 4
+    },
+    "startingMoney": {
+      "description": "每位玩家的初始金币。",
+      "type": "integer",
+      "default": 3000,
+      "minimum": 0
+    },
+    "maxMarketOrdersPerTurn": {
+      "description": "每位玩家每回合最多处理的市场订单数，超出部分直接忽略。",
+      "type": "integer",
+      "default": 10,
+      "minimum": 1
+    },
+    "turnsPerDay": {
+      "description": "构成游戏一天的回合数。",
+      "type": "integer",
+      "default": 24,
+      "minimum": 1
+    },
+    "shedCapacity": {
+      "description": "仓库能存放的非种子物品数量上限，日终卸货超出容量的部分丢失。",
+      "type": "integer",
+      "default": 100,
+      "minimum": 1
+    },
+    "weedSpawnChance": {
+      "description": "每天结束时，每块空的已解锁地块长出杂草的概率。",
+      "type": "number",
+      "default": 0.005,
+      "minimum": 0
+    },
+    "townShopUnlockInterval": {
+      "description": "新商店解锁间隔天数，第一次在这个间隔后解锁。有放回抽取，允许重复，最多 8 家。",
+      "type": "integer",
+      "default": 3,
+      "minimum": 1
+    },
+    "townShopSellInterval": {
+      "description": "每家已解锁商店两次消耗产品之间的回合数。",
+      "type": "integer",
+      "default": 4,
+      "minimum": 1
+    },
+    "townCenterSellInterval": {
+      "description": "城镇中心两次消耗产品之间的回合数。默认 24，每天消耗一次，整个季度保持固定速度。",
+      "type": "integer",
+      "default": 24,
+      "minimum": 1
+    },
+    "seed": {
+      "description": "可选的整数对局种子，保证环境生成可复现。引擎读取后从配置清除，解析后的种子存到 env.info[\"seed\"]，回放可见，策略观察不可见。",
+      "type": [
+        "integer",
+        "null"
+      ],
+      "default": null
+    },
+    "farmHandCostMult": {
+      "description": "雇工费用的斐波那契序列倍率。今天已经雇用 n 人后，再雇一人的费用为倍率乘以 fib(n)，序列为 1、1、2、3、5、8、13……。",
+      "type": "integer",
+      "default": 1,
+      "minimum": 0
+    },
+    "marketParams": {
+      "description": "按产品覆盖价格曲线参数，可只提供部分字段：base 基准价、I0 平衡库存、T 校准量、below_func 短缺侧函数、below_target 短缺侧目标、above_func 过剩侧函数、above_target 过剩侧目标。未提供字段沿用 MARKET_PARAMS。函数可选 linear、sq、sqrt、log、log10、hinge；幅度由 target×base/f(T) 推导。hinge 在 T 前线性、T 后陡增。",
+      "type": "object",
+      "default": {}
+    }
+  },
+  "reward": {
+    "description": "游戏结束时的玩家现金，即最终得分。",
+    "type": "number",
+    "default": 0
+  },
+  "observation": {
+    "player": {
+      "description": "玩家编号，0 或 1。",
+      "type": "integer",
+      "default": 0
+    },
+    "farms": {
+      "description": "双方公开农场状态：地块、现金、农夫及工人位置、已解锁象限、雇工次数。按玩家编号索引，不含对方仓库和私人背包。",
+      "type": "array",
+      "shared": true,
+      "default": []
+    },
+    "private": {
+      "description": "仅本玩家的私人信息：仓库、各单位背包、种子数量，不共享。",
+      "type": "object",
+      "shared": false,
+      "default": {}
+    },
+    "market": {
+      "description": "共享市场状态：每种产品的当前库存与售价。",
+      "type": "object",
+      "shared": true,
+      "default": {}
+    },
+    "town": {
+      "description": "共享城镇状态：已解锁商店名称列表，每家店独立产生每次消耗需求。",
+      "type": "object",
+      "shared": true,
+      "default": {}
+    },
+    "day": {
+      "description": "当前游戏天数，从零开始。",
+      "type": "integer",
+      "shared": true,
+      "default": 0
+    },
+    "hour": {
+      "description": "当天回合编号，从零开始。",
+      "type": "integer",
+      "shared": true,
+      "default": 0
+    },
+    "remainingOverageTime": 60
+  },
+  "action": {
+    "description": "每回合返回 {\"farmer\":[op,...args],\"hands\":[[op,...args],...],\"market\":[[op,...args],...]}。农夫和工人指令：NORTH 上、SOUTH 下、EAST 右、WEST 左、PASS 等待、PICKUP 取货、PLANT 播种、WATER 浇水、HARVEST 收获、FERTILIZE 施肥、BUILD_COOP 建鹅舍、BUILD_PASTURE 建牧场、DIG 清地、PLACE 放置、FEED 喂食、COLLECT_FERTILIZER 收肥、CARE 照料。市场指令：BUY_SEED 买种子、BUY_PRODUCT 买小麦或肥料、BUY_ANIMAL 买动物、SELL 出售、HIRE 雇工、BUY_LAND 买地。具体参数见接口与通信说明。",
+    "type": "object",
+    "default": {
+      "farmer": [
+        "PASS"
+      ],
+      "hands": [],
+      "market": []
+    }
+  },
+  "status": {
+    "defaults": [
+      "ACTIVE",
+      "ACTIVE"
+    ]
+  }
+}

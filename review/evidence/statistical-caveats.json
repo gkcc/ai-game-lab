@@ -1,0 +1,21 @@
+{
+  "seed_profit_deltas": [
+    1702.6666666666667,
+    921.0,
+    859.0,
+    651.3333333333334,
+    760.0,
+    485.8333333333333,
+    896.3333333333334,
+    824.3333333333334,
+    333.0,
+    541.6666666666666,
+    577.3333333333334,
+    472.0
+  ],
+  "positive_seed_clusters": 12,
+  "nonzero_clusters": 12,
+  "two_sided_exact_sign_test_p": 0.00048828125,
+  "match_score_bootstrap_degenerate": true,
+  "reason": "All 12 observed seed clusters convert the baseline mirror draw to a win, with unchanged wins over other two rivals. A point bootstrap interval does not establish zero uncertainty outside this panel."
+}

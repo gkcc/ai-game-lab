@@ -1,0 +1,24 @@
+{
+  "kaggriculture": {
+    "passed": true,
+    "recorded_states": 720,
+    "action_turns": 719,
+    "rewards": [
+      30938,
+      30389
+    ],
+    "official_engine_matches_commit": true,
+    "matches_previous_full_state_action_hash": true
+  },
+  "lux_cpu": {
+    "passed": true,
+    "recorded_states": 506,
+    "action_turns": 505,
+    "team_wins": [
+      2,
+      3
+    ],
+    "official_source_matches_commit": true
+  },
+  "scope": "Public snapshot source, existing isolated runtimes. This is not a fresh installation or GPU reacceptance."
+}

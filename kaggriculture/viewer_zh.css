@@ -1,0 +1,39 @@
+/* A readable annotation layer over the unmodified official renderer. */
+body, .kaggriculture-container, .kaggriculture-container * {
+  font-family: "Microsoft YaHei", "PingFang SC", system-ui, sans-serif;
+}
+.kaggriculture-container { justify-content: flex-start; padding-top: 12px; }
+.farm-grid .cell { overflow: visible; }
+.zh-connectors {position:absolute; inset:0; width:100%; height:100%; z-index:11; pointer-events:none;}
+.zh-connectors line {stroke:#fff; stroke-width:1.5; paint-order:stroke; filter:drop-shadow(0 0 1px #173326);}
+.zh-bubbles { position:absolute; inset:0; z-index:12; pointer-events:none; display:flex;
+  flex-direction:column; align-items:center; justify-content:flex-start; gap:1px; }
+.zh-bubble { color:white !important; background:#244d39f5; border:1px solid #fff9;
+  border-radius:4px; padding:1px 3px; font-size:11px; line-height:15px; white-space:nowrap;
+  max-width:125px; box-shadow:0 1px 3px #0005; }
+.zh-bubble[data-op="WATER"] {background:#175782f5;}
+.zh-bubble[data-op="PLANT"] {background:#366927f5;}
+.zh-bubble[data-op="HARVEST"] {background:#87510af5;}
+.zh-bubble[data-op="PASS"] {background:#555d66e8;}
+.zh-bubble[data-op="RESET"] {background:#604b81f5;}
+.zh-bubble[data-op="FAILED"] {background:#9c3333f5;}
+.zh-summary {width:100%; max-width:2200px; margin:0 auto 12px; background:#fff9eaf5;
+  border:1px solid #516840; border-radius:9px; padding:12px 16px; box-sizing:border-box;
+  font-size:13px; line-height:1.65; flex-shrink:0;}
+.zh-summary h2 {margin:0 0 4px; font-size:17px;}
+.zh-help {margin:2px 0 8px; color:#48513f !important;}
+.zh-columns {display:grid; grid-template-columns:1fr 1fr; gap:14px;}
+.zh-team {background:#fff9; padding:9px 12px; border-radius:6px; min-width:0;}
+.zh-team h3 {margin:0 0 4px; font-size:14px;}
+.zh-roster {display:flex; flex-wrap:wrap; gap:4px 8px;}
+.zh-roster span {border:1px solid #c9d6bd; padding:2px 6px; border-radius:4px;}
+.zh-market {margin-top:7px; border-top:1px dashed #b6c5a9; padding-top:5px;}
+.zh-status {font-weight:600; margin:4px 0;}
+.zh-item-name {font-size:11px; display:block; text-align:center;}
+.town-slot {position:relative;}
+.zh-shop-name {position:absolute; bottom:0; left:0; right:0; text-align:center; background:#fff9eada;
+  font-size:11px; line-height:16px; border-radius:3px; pointer-events:none;}
+.zh-buttons {display:flex; gap:5px; flex-wrap:wrap; margin-top:8px;}
+.zh-buttons button {background:#edf3e5; color:#203621; border:1px solid #71865d;
+  border-radius:5px; padding:4px 10px; cursor:pointer; font:inherit;}
+@media(max-width:750px){.zh-columns{grid-template-columns:1fr}.zh-summary{padding:8px}.zh-bubble{font-size:9px;padding:0 2px}}

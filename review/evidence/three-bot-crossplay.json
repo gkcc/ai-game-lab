@@ -1,0 +1,4777 @@
+{
+  "seeds": [
+    0,
+    1,
+    7,
+    42,
+    2026,
+    314159
+  ],
+  "games": 36,
+  "scores": {
+    "v1": {
+      "games": 24,
+      "wins": 22,
+      "draws": 0,
+      "losses": 2,
+      "win_rate": 0.9166666666666666,
+      "mean_bank": 43508.833333333336,
+      "mean_net_profit": 40508.833333333336,
+      "mean_opponent_bank": 35922.791666666664,
+      "mean_margin": 7586.041666666667,
+      "mean_unused_seed_cost": 106.66666666666667,
+      "mean_seed_cost": 4618.333333333333,
+      "min_bank": 30061.0,
+      "max_bank": 55097.0,
+      "unspent_seed_games": 20,
+      "unsold_product_games": 0
+    },
+    "v2": {
+      "games": 24,
+      "wins": 4,
+      "draws": 0,
+      "losses": 20,
+      "win_rate": 0.16666666666666666,
+      "mean_bank": 34438.0,
+      "mean_net_profit": 31438.0,
+      "mean_opponent_bank": 47977.958333333336,
+      "mean_margin": -13539.958333333334,
+      "mean_unused_seed_cost": 3.3333333333333335,
+      "mean_seed_cost": 4367.5,
+      "min_bank": 21300.0,
+      "max_bank": 57567.0,
+      "unspent_seed_games": 6,
+      "unsold_product_games": 0
+    },
+    "v1_jit": {
+      "games": 24,
+      "wins": 10,
+      "draws": 0,
+      "losses": 14,
+      "win_rate": 0.4166666666666667,
+      "mean_bank": 43130.958333333336,
+      "mean_net_profit": 40130.958333333336,
+      "mean_opponent_bank": 37177.041666666664,
+      "mean_margin": 5953.916666666667,
+      "mean_unused_seed_cost": 44.166666666666664,
+      "mean_seed_cost": 4540,
+      "min_bank": 29609.0,
+      "max_bank": 52946.0,
+      "unspent_seed_games": 8,
+      "unsold_product_games": 0
+    }
+  },
+  "by_seat": {
+    "v1": {
+      "0": {
+        "games": 12,
+        "wins": 11,
+        "draws": 0,
+        "losses": 1,
+        "win_rate": 0.9166666666666666,
+        "mean_bank": 43508.916666666664,
+        "mean_net_profit": 40508.916666666664,
+        "mean_opponent_bank": 35923.083333333336,
+        "mean_margin": 7585.833333333333,
+        "mean_unused_seed_cost": 106.66666666666667,
+        "mean_seed_cost": 4618.333333333333,
+        "min_bank": 30061.0,
+        "max_bank": 55097.0,
+        "unspent_seed_games": 10,
+        "unsold_product_games": 0
+      },
+      "1": {
+        "games": 12,
+        "wins": 11,
+        "draws": 0,
+        "losses": 1,
+        "win_rate": 0.9166666666666666,
+        "mean_bank": 43508.75,
+        "mean_net_profit": 40508.75,
+        "mean_opponent_bank": 35922.5,
+        "mean_margin": 7586.25,
+        "mean_unused_seed_cost": 106.66666666666667,
+        "mean_seed_cost": 4618.333333333333,
+        "min_bank": 30061.0,
+        "max_bank": 55097.0,
+        "unspent_seed_games": 10,
+        "unsold_product_games": 0
+      }
+    },
+    "v2": {
+      "0": {
+        "games": 12,
+        "wins": 2,
+        "draws": 0,
+        "losses": 10,
+        "win_rate": 0.16666666666666666,
+        "mean_bank": 34438.0,
+        "mean_net_profit": 31438.0,
+        "mean_opponent_bank": 47978.75,
+        "mean_margin": -13540.75,
+        "mean_unused_seed_cost": 3.3333333333333335,
+        "mean_seed_cost": 4367.5,
+        "min_bank": 21300.0,
+        "max_bank": 57567.0,
+        "unspent_seed_games": 3,
+        "unsold_product_games": 0
+      },
+      "1": {
+        "games": 12,
+        "wins": 2,
+        "draws": 0,
+        "losses": 10,
+        "win_rate": 0.16666666666666666,
+        "mean_bank": 34438.0,
+        "mean_net_profit": 31438.0,
+        "mean_opponent_bank": 47977.166666666664,
+        "mean_margin": -13539.166666666666,
+        "mean_unused_seed_cost": 3.3333333333333335,
+        "mean_seed_cost": 4367.5,
+        "min_bank": 21300.0,
+        "max_bank": 57567.0,
+        "unspent_seed_games": 3,
+        "unsold_product_games": 0
+      }
+    },
+    "v1_jit": {
+      "0": {
+        "games": 12,
+        "wins": 5,
+        "draws": 0,
+        "losses": 7,
+        "win_rate": 0.4166666666666667,
+        "mean_bank": 43129.333333333336,
+        "mean_net_profit": 40129.333333333336,
+        "mean_opponent_bank": 37177.5,
+        "mean_margin": 5951.833333333333,
+        "mean_unused_seed_cost": 44.166666666666664,
+        "mean_seed_cost": 4540,
+        "min_bank": 29609.0,
+        "max_bank": 52946.0,
+        "unspent_seed_games": 4,
+        "unsold_product_games": 0
+      },
+      "1": {
+        "games": 12,
+        "wins": 5,
+        "draws": 0,
+        "losses": 7,
+        "win_rate": 0.4166666666666667,
+        "mean_bank": 43132.583333333336,
+        "mean_net_profit": 40132.583333333336,
+        "mean_opponent_bank": 37176.583333333336,
+        "mean_margin": 5956.0,
+        "mean_unused_seed_cost": 44.166666666666664,
+        "mean_seed_cost": 4540,
+        "min_bank": 29609.0,
+        "max_bank": 52946.0,
+        "unspent_seed_games": 4,
+        "unsold_product_games": 0
+      }
+    }
+  },
+  "pairs": {
+    "v1-vs-v2": {
+      "games": 12,
+      "scores": {
+        "v1": {
+          "games": 12,
+          "wins": 10,
+          "draws": 0,
+          "losses": 2,
+          "win_rate": 0.8333333333333334,
+          "mean_bank": 47932.583333333336,
+          "mean_net_profit": 44932.583333333336,
+          "mean_opponent_bank": 33607.0,
+          "mean_margin": 14325.583333333334,
+          "mean_unused_seed_cost": 93.33333333333333,
+          "mean_seed_cost": 4615,
+          "min_bank": 41631.0,
+          "max_bank": 55097.0,
+          "unspent_seed_games": 8,
+          "unsold_product_games": 0
+        },
+        "v2": {
+          "games": 12,
+          "wins": 2,
+          "draws": 0,
+          "losses": 10,
+          "win_rate": 0.16666666666666666,
+          "mean_bank": 33607.0,
+          "mean_net_profit": 30607.0,
+          "mean_opponent_bank": 47932.583333333336,
+          "mean_margin": -14325.583333333334,
+          "mean_unused_seed_cost": 5,
+          "mean_seed_cost": 4348.333333333333,
+          "min_bank": 21300.0,
+          "max_bank": 57567.0,
+          "unspent_seed_games": 4,
+          "unsold_product_games": 0
+        }
+      },
+      "prices": {
+        "WHEAT": {
+          "games_at_floor": 0,
+          "mean_initial": 25,
+          "mean_final": 44.666666666666664,
+          "mean_quote": 35.40555555555555,
+          "min_quote": 25,
+          "mean_floor_fraction": 0.0
+        },
+        "CARROT": {
+          "games_at_floor": 0,
+          "mean_initial": 35,
+          "mean_final": 56.666666666666664,
+          "mean_quote": 44.327777777777776,
+          "min_quote": 35,
+          "mean_floor_fraction": 0.0
+        },
+        "TOMATO": {
+          "games_at_floor": 0,
+          "mean_initial": 60,
+          "mean_final": 178.33333333333334,
+          "mean_quote": 86.03310185185185,
+          "min_quote": 60,
+          "mean_floor_fraction": 0.0
+        },
+        "STRAWBERRY": {
+          "games_at_floor": 0,
+          "mean_initial": 120,
+          "mean_final": 227,
+          "mean_quote": 181.86805555555554,
+          "min_quote": 78,
+          "mean_floor_fraction": 0.0
+        },
+        "MELON": {
+          "games_at_floor": 6,
+          "mean_initial": 250,
+          "mean_final": 19.5,
+          "mean_quote": 105.96180555555556,
+          "min_quote": 1,
+          "mean_floor_fraction": 0.016666666666666666
+        },
+        "EGG": {
+          "games_at_floor": 0,
+          "mean_initial": 50,
+          "mean_final": 64,
+          "mean_quote": 54.96851851851852,
+          "min_quote": 50,
+          "mean_floor_fraction": 0.0
+        },
+        "MILK": {
+          "games_at_floor": 0,
+          "mean_initial": 160,
+          "mean_final": 280.8333333333333,
+          "mean_quote": 220.73402777777778,
+          "min_quote": 160,
+          "mean_floor_fraction": 0.0
+        },
+        "WOOL": {
+          "games_at_floor": 0,
+          "mean_initial": 200,
+          "mean_final": 245.33333333333334,
+          "mean_quote": 231.13611111111112,
+          "min_quote": 200,
+          "mean_floor_fraction": 0.0
+        },
+        "FERTILIZER": {
+          "games_at_floor": 0,
+          "mean_initial": 100,
+          "mean_final": 100,
+          "mean_quote": 100,
+          "min_quote": 100,
+          "mean_floor_fraction": 0.0
+        }
+      },
+      "mean_combined_bank": 81539.58333333333
+    },
+    "v1-vs-v1_jit": {
+      "games": 12,
+      "scores": {
+        "v1": {
+          "games": 12,
+          "wins": 12,
+          "draws": 0,
+          "losses": 0,
+          "win_rate": 1.0,
+          "mean_bank": 39085.083333333336,
+          "mean_net_profit": 36085.083333333336,
+          "mean_opponent_bank": 38238.583333333336,
+          "mean_margin": 846.5,
+          "mean_unused_seed_cost": 120,
+          "mean_seed_cost": 4621.666666666667,
+          "min_bank": 30061.0,
+          "max_bank": 44485.0,
+          "unspent_seed_games": 12,
+          "unsold_product_games": 0
+        },
+        "v1_jit": {
+          "games": 12,
+          "wins": 0,
+          "draws": 0,
+          "losses": 12,
+          "win_rate": 0.0,
+          "mean_bank": 38238.583333333336,
+          "mean_net_profit": 35238.583333333336,
+          "mean_opponent_bank": 39085.083333333336,
+          "mean_margin": -846.5,
+          "mean_unused_seed_cost": 36.666666666666664,
+          "mean_seed_cost": 4518.333333333333,
+          "min_bank": 29609.0,
+          "max_bank": 42601.0,
+          "unspent_seed_games": 4,
+          "unsold_product_games": 0
+        }
+      },
+      "prices": {
+        "WHEAT": {
+          "games_at_floor": 0,
+          "mean_initial": 25,
+          "mean_final": 45.166666666666664,
+          "mean_quote": 35.5525462962963,
+          "min_quote": 25,
+          "mean_floor_fraction": 0.0
+        },
+        "CARROT": {
+          "games_at_floor": 0,
+          "mean_initial": 35,
+          "mean_final": 62,
+          "mean_quote": 43.350462962962965,
+          "min_quote": 32,
+          "mean_floor_fraction": 0.0
+        },
+        "TOMATO": {
+          "games_at_floor": 0,
+          "mean_initial": 60,
+          "mean_final": 227,
+          "mean_quote": 88.06342592592593,
+          "min_quote": 60,
+          "mean_floor_fraction": 0.0
+        },
+        "STRAWBERRY": {
+          "games_at_floor": 0,
+          "mean_initial": 120,
+          "mean_final": 243.33333333333334,
+          "mean_quote": 192.2097222222222,
+          "min_quote": 120,
+          "mean_floor_fraction": 0.0
+        },
+        "MELON": {
+          "games_at_floor": 12,
+          "mean_initial": 250,
+          "mean_final": 38,
+          "mean_quote": 110.94166666666666,
+          "min_quote": 1,
+          "mean_floor_fraction": 0.04722222222222222
+        },
+        "EGG": {
+          "games_at_floor": 0,
+          "mean_initial": 50,
+          "mean_final": 67.66666666666667,
+          "mean_quote": 55.2625,
+          "min_quote": 50,
+          "mean_floor_fraction": 0.0
+        },
+        "MILK": {
+          "games_at_floor": 0,
+          "mean_initial": 160,
+          "mean_final": 283,
+          "mean_quote": 221.43240740740742,
+          "min_quote": 160,
+          "mean_floor_fraction": 0.0
+        },
+        "WOOL": {
+          "games_at_floor": 0,
+          "mean_initial": 200,
+          "mean_final": 246.16666666666666,
+          "mean_quote": 232.2377314814815,
+          "min_quote": 200,
+          "mean_floor_fraction": 0.0
+        },
+        "FERTILIZER": {
+          "games_at_floor": 0,
+          "mean_initial": 100,
+          "mean_final": 100,
+          "mean_quote": 100,
+          "min_quote": 100,
+          "mean_floor_fraction": 0.0
+        }
+      },
+      "mean_combined_bank": 77323.66666666667
+    },
+    "v2-vs-v1_jit": {
+      "games": 12,
+      "scores": {
+        "v2": {
+          "games": 12,
+          "wins": 2,
+          "draws": 0,
+          "losses": 10,
+          "win_rate": 0.16666666666666666,
+          "mean_bank": 35269.0,
+          "mean_net_profit": 32269.0,
+          "mean_opponent_bank": 48023.333333333336,
+          "mean_margin": -12754.333333333334,
+          "mean_unused_seed_cost": 1.6666666666666667,
+          "mean_seed_cost": 4386.666666666667,
+          "min_bank": 25672.0,
+          "max_bank": 56615.0,
+          "unspent_seed_games": 2,
+          "unsold_product_games": 0
+        },
+        "v1_jit": {
+          "games": 12,
+          "wins": 10,
+          "draws": 0,
+          "losses": 2,
+          "win_rate": 0.8333333333333334,
+          "mean_bank": 48023.333333333336,
+          "mean_net_profit": 45023.333333333336,
+          "mean_opponent_bank": 35269.0,
+          "mean_margin": 12754.333333333334,
+          "mean_unused_seed_cost": 51.666666666666664,
+          "mean_seed_cost": 4561.666666666667,
+          "min_bank": 41986.0,
+          "max_bank": 52946.0,
+          "unspent_seed_games": 4,
+          "unsold_product_games": 0
+        }
+      },
+      "prices": {
+        "WHEAT": {
+          "games_at_floor": 0,
+          "mean_initial": 25,
+          "mean_final": 45.833333333333336,
+          "mean_quote": 35.657407407407405,
+          "min_quote": 25,
+          "mean_floor_fraction": 0.0
+        },
+        "CARROT": {
+          "games_at_floor": 0,
+          "mean_initial": 35,
+          "mean_final": 54,
+          "mean_quote": 43.19259259259259,
+          "min_quote": 35,
+          "mean_floor_fraction": 0.0
+        },
+        "TOMATO": {
+          "games_at_floor": 0,
+          "mean_initial": 60,
+          "mean_final": 180.83333333333334,
+          "mean_quote": 86.11273148148149,
+          "min_quote": 60,
+          "mean_floor_fraction": 0.0
+        },
+        "STRAWBERRY": {
+          "games_at_floor": 0,
+          "mean_initial": 120,
+          "mean_final": 238.16666666666666,
+          "mean_quote": 187.79097222222222,
+          "min_quote": 120,
+          "mean_floor_fraction": 0.0
+        },
+        "MELON": {
+          "games_at_floor": 2,
+          "mean_initial": 250,
+          "mean_final": 19,
+          "mean_quote": 106.39444444444445,
+          "min_quote": 1,
+          "mean_floor_fraction": 0.0020833333333333333
+        },
+        "EGG": {
+          "games_at_floor": 0,
+          "mean_initial": 50,
+          "mean_final": 65.5,
+          "mean_quote": 55.01365740740741,
+          "min_quote": 50,
+          "mean_floor_fraction": 0.0
+        },
+        "MILK": {
+          "games_at_floor": 0,
+          "mean_initial": 160,
+          "mean_final": 286,
+          "mean_quote": 222.6453703703704,
+          "min_quote": 160,
+          "mean_floor_fraction": 0.0
+        },
+        "WOOL": {
+          "games_at_floor": 0,
+          "mean_initial": 200,
+          "mean_final": 246.83333333333334,
+          "mean_quote": 232.32939814814813,
+          "min_quote": 200,
+          "mean_floor_fraction": 0.0
+        },
+        "FERTILIZER": {
+          "games_at_floor": 0,
+          "mean_initial": 100,
+          "mean_final": 100,
+          "mean_quote": 100,
+          "min_quote": 100,
+          "mean_floor_fraction": 0.0
+        }
+      },
+      "mean_combined_bank": 83292.33333333333
+    }
+  },
+  "matches": [
+    {
+      "name": "v1-vs-v2-seed0-a0",
+      "pair": "v1-vs-v2",
+      "seed": 0,
+      "agents": [
+        "v1",
+        "v2"
+      ],
+      "banks": [
+        47955.0,
+        29923.0
+      ],
+      "passed": true,
+      "semantic_replay_sha256": "77d7c4d42b7c0f82ee245351bab5de8e264c5fcc1358466211aaa5f579efc8a0",
+      "market": {
+        "WHEAT": {
+          "initial": 25,
+          "final": 46,
+          "min": 25,
+          "max": 46,
+          "mean": 36.02777777777778,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "CARROT": {
+          "initial": 35,
+          "final": 54,
+          "min": 35,
+          "max": 55,
+          "mean": 44.145833333333336,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "TOMATO": {
+          "initial": 60,
+          "final": 70,
+          "min": 60,
+          "max": 70,
+          "mean": 62.81388888888889,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "STRAWBERRY": {
+          "initial": 120,
+          "final": 246,
+          "min": 120,
+          "max": 258,
+          "mean": 182.55833333333334,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MELON": {
+          "initial": 250,
+          "final": 19,
+          "min": 1,
+          "max": 272,
+          "mean": 105.55416666666666,
+          "floor_frames": 24,
+          "frames": 720,
+          "floor_fraction": 0.03333333333333333,
+          "first_floor": {
+            "step": 505,
+            "day": 21,
+            "hour": 1
+          }
+        },
+        "EGG": {
+          "initial": 50,
+          "final": 69,
+          "min": 50,
+          "max": 69,
+          "mean": 56.90694444444444,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MILK": {
+          "initial": 160,
+          "final": 291,
+          "min": 160,
+          "max": 291,
+          "mean": 224.00694444444446,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "WOOL": {
+          "initial": 200,
+          "final": 247,
+          "min": 200,
+          "max": 247,
+          "mean": 230.54583333333332,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "FERTILIZER": {
+          "initial": 100,
+          "final": 100,
+          "min": 100,
+          "max": 100,
+          "mean": 100,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        }
+      }
+    },
+    {
+      "name": "v1-vs-v2-seed0-a1",
+      "pair": "v1-vs-v2",
+      "seed": 0,
+      "agents": [
+        "v2",
+        "v1"
+      ],
+      "banks": [
+        29923.0,
+        47955.0
+      ],
+      "passed": true,
+      "semantic_replay_sha256": "8a4333d346f64d80de1bdda3517e0128b5726df387fe348b921f7b811100303c",
+      "market": {
+        "WHEAT": {
+          "initial": 25,
+          "final": 46,
+          "min": 25,
+          "max": 46,
+          "mean": 36.02777777777778,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "CARROT": {
+          "initial": 35,
+          "final": 54,
+          "min": 35,
+          "max": 55,
+          "mean": 44.145833333333336,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "TOMATO": {
+          "initial": 60,
+          "final": 70,
+          "min": 60,
+          "max": 70,
+          "mean": 62.81388888888889,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "STRAWBERRY": {
+          "initial": 120,
+          "final": 246,
+          "min": 120,
+          "max": 258,
+          "mean": 182.55833333333334,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MELON": {
+          "initial": 250,
+          "final": 19,
+          "min": 1,
+          "max": 272,
+          "mean": 105.55416666666666,
+          "floor_frames": 24,
+          "frames": 720,
+          "floor_fraction": 0.03333333333333333,
+          "first_floor": {
+            "step": 505,
+            "day": 21,
+            "hour": 1
+          }
+        },
+        "EGG": {
+          "initial": 50,
+          "final": 69,
+          "min": 50,
+          "max": 69,
+          "mean": 56.90694444444444,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MILK": {
+          "initial": 160,
+          "final": 291,
+          "min": 160,
+          "max": 291,
+          "mean": 224.00694444444446,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "WOOL": {
+          "initial": 200,
+          "final": 247,
+          "min": 200,
+          "max": 247,
+          "mean": 230.54583333333332,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "FERTILIZER": {
+          "initial": 100,
+          "final": 100,
+          "min": 100,
+          "max": 100,
+          "mean": 100,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        }
+      }
+    },
+    {
+      "name": "v1-vs-v2-seed1-a0",
+      "pair": "v1-vs-v2",
+      "seed": 1,
+      "agents": [
+        "v1",
+        "v2"
+      ],
+      "banks": [
+        55097.0,
+        57567.0
+      ],
+      "passed": true,
+      "semantic_replay_sha256": "ed2446b2c01699ab7114feffcea81234216669638a315716cbc1602da7c95f80",
+      "market": {
+        "WHEAT": {
+          "initial": 25,
+          "final": 50,
+          "min": 25,
+          "max": 50,
+          "mean": 38.13194444444444,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "CARROT": {
+          "initial": 35,
+          "final": 67,
+          "min": 35,
+          "max": 69,
+          "mean": 48.21111111111111,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "TOMATO": {
+          "initial": 60,
+          "final": 595,
+          "min": 60,
+          "max": 595,
+          "mean": 179.93055555555554,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "STRAWBERRY": {
+          "initial": 120,
+          "final": 238,
+          "min": 120,
+          "max": 245,
+          "mean": 193.69166666666666,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MELON": {
+          "initial": 250,
+          "final": 22,
+          "min": 4,
+          "max": 272,
+          "mean": 106.45,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "EGG": {
+          "initial": 50,
+          "final": 52,
+          "min": 50,
+          "max": 52,
+          "mean": 50.93055555555556,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MILK": {
+          "initial": 160,
+          "final": 339,
+          "min": 160,
+          "max": 339,
+          "mean": 247.80694444444444,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "WOOL": {
+          "initial": 200,
+          "final": 240,
+          "min": 200,
+          "max": 240,
+          "mean": 223.64444444444445,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "FERTILIZER": {
+          "initial": 100,
+          "final": 100,
+          "min": 100,
+          "max": 100,
+          "mean": 100,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        }
+      }
+    },
+    {
+      "name": "v1-vs-v2-seed1-a1",
+      "pair": "v1-vs-v2",
+      "seed": 1,
+      "agents": [
+        "v2",
+        "v1"
+      ],
+      "banks": [
+        57567.0,
+        55097.0
+      ],
+      "passed": true,
+      "semantic_replay_sha256": "40535c9d98043ebbe474971ad79b60cd5af1c2a30f76d435ac603b93bb97655b",
+      "market": {
+        "WHEAT": {
+          "initial": 25,
+          "final": 50,
+          "min": 25,
+          "max": 50,
+          "mean": 38.13194444444444,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "CARROT": {
+          "initial": 35,
+          "final": 67,
+          "min": 35,
+          "max": 69,
+          "mean": 48.21111111111111,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "TOMATO": {
+          "initial": 60,
+          "final": 595,
+          "min": 60,
+          "max": 595,
+          "mean": 179.93055555555554,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "STRAWBERRY": {
+          "initial": 120,
+          "final": 238,
+          "min": 120,
+          "max": 245,
+          "mean": 193.69166666666666,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MELON": {
+          "initial": 250,
+          "final": 22,
+          "min": 4,
+          "max": 272,
+          "mean": 106.45,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "EGG": {
+          "initial": 50,
+          "final": 52,
+          "min": 50,
+          "max": 52,
+          "mean": 50.93055555555556,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MILK": {
+          "initial": 160,
+          "final": 339,
+          "min": 160,
+          "max": 339,
+          "mean": 247.80694444444444,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "WOOL": {
+          "initial": 200,
+          "final": 240,
+          "min": 200,
+          "max": 240,
+          "mean": 223.64444444444445,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "FERTILIZER": {
+          "initial": 100,
+          "final": 100,
+          "min": 100,
+          "max": 100,
+          "mean": 100,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        }
+      }
+    },
+    {
+      "name": "v1-vs-v2-seed7-a0",
+      "pair": "v1-vs-v2",
+      "seed": 7,
+      "agents": [
+        "v1",
+        "v2"
+      ],
+      "banks": [
+        47442.0,
+        29331.0
+      ],
+      "passed": true,
+      "semantic_replay_sha256": "ea817674b466f75432a7a54cce8f80d05e5ff8df1e4e37d874d411c6a0eafe53",
+      "market": {
+        "WHEAT": {
+          "initial": 25,
+          "final": 40,
+          "min": 25,
+          "max": 40,
+          "mean": 33.30833333333333,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "CARROT": {
+          "initial": 35,
+          "final": 52,
+          "min": 35,
+          "max": 52,
+          "mean": 40.61944444444445,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "TOMATO": {
+          "initial": 60,
+          "final": 64,
+          "min": 60,
+          "max": 64,
+          "mean": 61.827777777777776,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "STRAWBERRY": {
+          "initial": 120,
+          "final": 228,
+          "min": 120,
+          "max": 250,
+          "mean": 193.81666666666666,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MELON": {
+          "initial": 250,
+          "final": 22,
+          "min": 4,
+          "max": 272,
+          "mean": 106.45,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "EGG": {
+          "initial": 50,
+          "final": 69,
+          "min": 50,
+          "max": 69,
+          "mean": 56.229166666666664,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MILK": {
+          "initial": 160,
+          "final": 301,
+          "min": 160,
+          "max": 301,
+          "mean": 239.45416666666668,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "WOOL": {
+          "initial": 200,
+          "final": 248,
+          "min": 200,
+          "max": 248,
+          "mean": 232.98888888888888,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "FERTILIZER": {
+          "initial": 100,
+          "final": 100,
+          "min": 100,
+          "max": 100,
+          "mean": 100,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        }
+      }
+    },
+    {
+      "name": "v1-vs-v2-seed7-a1",
+      "pair": "v1-vs-v2",
+      "seed": 7,
+      "agents": [
+        "v2",
+        "v1"
+      ],
+      "banks": [
+        29331.0,
+        47442.0
+      ],
+      "passed": true,
+      "semantic_replay_sha256": "a3cefe45c4e9cfb6d92dfd5893b3e7356cd065d97b8a0e0cac49c8563c636ad3",
+      "market": {
+        "WHEAT": {
+          "initial": 25,
+          "final": 40,
+          "min": 25,
+          "max": 40,
+          "mean": 33.30833333333333,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "CARROT": {
+          "initial": 35,
+          "final": 52,
+          "min": 35,
+          "max": 52,
+          "mean": 40.61944444444445,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "TOMATO": {
+          "initial": 60,
+          "final": 64,
+          "min": 60,
+          "max": 64,
+          "mean": 61.827777777777776,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "STRAWBERRY": {
+          "initial": 120,
+          "final": 228,
+          "min": 120,
+          "max": 250,
+          "mean": 193.81666666666666,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MELON": {
+          "initial": 250,
+          "final": 22,
+          "min": 4,
+          "max": 272,
+          "mean": 106.45,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "EGG": {
+          "initial": 50,
+          "final": 69,
+          "min": 50,
+          "max": 69,
+          "mean": 56.229166666666664,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MILK": {
+          "initial": 160,
+          "final": 301,
+          "min": 160,
+          "max": 301,
+          "mean": 239.45416666666668,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "WOOL": {
+          "initial": 200,
+          "final": 248,
+          "min": 200,
+          "max": 248,
+          "mean": 232.98888888888888,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "FERTILIZER": {
+          "initial": 100,
+          "final": 100,
+          "min": 100,
+          "max": 100,
+          "mean": 100,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        }
+      }
+    },
+    {
+      "name": "v1-vs-v2-seed42-a0",
+      "pair": "v1-vs-v2",
+      "seed": 42,
+      "agents": [
+        "v1",
+        "v2"
+      ],
+      "banks": [
+        46351.0,
+        30471.0
+      ],
+      "passed": true,
+      "semantic_replay_sha256": "065fbd1e42b597d07f92c3f290270ced2d896f9fd186e5fe26ce1bc82dee2763",
+      "market": {
+        "WHEAT": {
+          "initial": 25,
+          "final": 46,
+          "min": 25,
+          "max": 46,
+          "mean": 35.50416666666667,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "CARROT": {
+          "initial": 35,
+          "final": 61,
+          "min": 35,
+          "max": 62,
+          "mean": 45.31666666666667,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "TOMATO": {
+          "initial": 60,
+          "final": 165,
+          "min": 60,
+          "max": 165,
+          "mean": 76.37083333333334,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "STRAWBERRY": {
+          "initial": 120,
+          "final": 217,
+          "min": 120,
+          "max": 240,
+          "mean": 178.74305555555554,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MELON": {
+          "initial": 250,
+          "final": 19,
+          "min": 1,
+          "max": 272,
+          "mean": 105.55416666666666,
+          "floor_frames": 24,
+          "frames": 720,
+          "floor_fraction": 0.03333333333333333,
+          "first_floor": {
+            "step": 505,
+            "day": 21,
+            "hour": 1
+          }
+        },
+        "EGG": {
+          "initial": 50,
+          "final": 60,
+          "min": 50,
+          "max": 60,
+          "mean": 54.36944444444445,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MILK": {
+          "initial": 160,
+          "final": 208,
+          "min": 160,
+          "max": 208,
+          "mean": 192.43333333333334,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "WOOL": {
+          "initial": 200,
+          "final": 254,
+          "min": 200,
+          "max": 254,
+          "mean": 239.54722222222222,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "FERTILIZER": {
+          "initial": 100,
+          "final": 100,
+          "min": 100,
+          "max": 100,
+          "mean": 100,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        }
+      }
+    },
+    {
+      "name": "v1-vs-v2-seed42-a1",
+      "pair": "v1-vs-v2",
+      "seed": 42,
+      "agents": [
+        "v2",
+        "v1"
+      ],
+      "banks": [
+        30471.0,
+        46338.0
+      ],
+      "passed": true,
+      "semantic_replay_sha256": "d4787d4aa31edc6d88b0944107847bfdf946d46532e50484f5d1ace94975e7e8",
+      "market": {
+        "WHEAT": {
+          "initial": 25,
+          "final": 46,
+          "min": 25,
+          "max": 46,
+          "mean": 35.50416666666667,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "CARROT": {
+          "initial": 35,
+          "final": 61,
+          "min": 35,
+          "max": 62,
+          "mean": 45.31666666666667,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "TOMATO": {
+          "initial": 60,
+          "final": 165,
+          "min": 60,
+          "max": 165,
+          "mean": 76.37083333333334,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "STRAWBERRY": {
+          "initial": 120,
+          "final": 217,
+          "min": 120,
+          "max": 240,
+          "mean": 178.74305555555554,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MELON": {
+          "initial": 250,
+          "final": 19,
+          "min": 1,
+          "max": 272,
+          "mean": 105.55416666666666,
+          "floor_frames": 24,
+          "frames": 720,
+          "floor_fraction": 0.03333333333333333,
+          "first_floor": {
+            "step": 505,
+            "day": 21,
+            "hour": 1
+          }
+        },
+        "EGG": {
+          "initial": 50,
+          "final": 60,
+          "min": 50,
+          "max": 60,
+          "mean": 54.36944444444445,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MILK": {
+          "initial": 160,
+          "final": 208,
+          "min": 160,
+          "max": 208,
+          "mean": 192.43333333333334,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "WOOL": {
+          "initial": 200,
+          "final": 254,
+          "min": 200,
+          "max": 254,
+          "mean": 239.54722222222222,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "FERTILIZER": {
+          "initial": 100,
+          "final": 100,
+          "min": 100,
+          "max": 100,
+          "mean": 100,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        }
+      }
+    },
+    {
+      "name": "v1-vs-v2-seed2026-a0",
+      "pair": "v1-vs-v2",
+      "seed": 2026,
+      "agents": [
+        "v1",
+        "v2"
+      ],
+      "banks": [
+        49126.0,
+        33050.0
+      ],
+      "passed": true,
+      "semantic_replay_sha256": "086427ba000851f5307888c81e203b9619bed686e9bc98ad3e79e89da4c0e973",
+      "market": {
+        "WHEAT": {
+          "initial": 25,
+          "final": 49,
+          "min": 25,
+          "max": 49,
+          "mean": 38.266666666666666,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "CARROT": {
+          "initial": 35,
+          "final": 63,
+          "min": 35,
+          "max": 63,
+          "mean": 43.84444444444444,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "TOMATO": {
+          "initial": 60,
+          "final": 106,
+          "min": 60,
+          "max": 106,
+          "mean": 72.44166666666666,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "STRAWBERRY": {
+          "initial": 120,
+          "final": 243,
+          "min": 120,
+          "max": 264,
+          "mean": 200.0625,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MELON": {
+          "initial": 250,
+          "final": 16,
+          "min": 4,
+          "max": 272,
+          "mean": 106.20833333333333,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "EGG": {
+          "initial": 50,
+          "final": 72,
+          "min": 50,
+          "max": 72,
+          "mean": 58.21388888888889,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MILK": {
+          "initial": 160,
+          "final": 291,
+          "min": 160,
+          "max": 291,
+          "mean": 221.07916666666668,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "WOOL": {
+          "initial": 200,
+          "final": 229,
+          "min": 200,
+          "max": 229,
+          "mean": 222.32638888888889,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "FERTILIZER": {
+          "initial": 100,
+          "final": 100,
+          "min": 100,
+          "max": 100,
+          "mean": 100,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        }
+      }
+    },
+    {
+      "name": "v1-vs-v2-seed2026-a1",
+      "pair": "v1-vs-v2",
+      "seed": 2026,
+      "agents": [
+        "v2",
+        "v1"
+      ],
+      "banks": [
+        33050.0,
+        49126.0
+      ],
+      "passed": true,
+      "semantic_replay_sha256": "10686363100971b82d364586306e45b8d3d706b35372ceb0f306d7c0aab1eba2",
+      "market": {
+        "WHEAT": {
+          "initial": 25,
+          "final": 49,
+          "min": 25,
+          "max": 49,
+          "mean": 38.266666666666666,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "CARROT": {
+          "initial": 35,
+          "final": 63,
+          "min": 35,
+          "max": 63,
+          "mean": 43.84444444444444,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "TOMATO": {
+          "initial": 60,
+          "final": 106,
+          "min": 60,
+          "max": 106,
+          "mean": 72.44166666666666,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "STRAWBERRY": {
+          "initial": 120,
+          "final": 243,
+          "min": 120,
+          "max": 264,
+          "mean": 200.0625,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MELON": {
+          "initial": 250,
+          "final": 16,
+          "min": 4,
+          "max": 272,
+          "mean": 106.20833333333333,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "EGG": {
+          "initial": 50,
+          "final": 72,
+          "min": 50,
+          "max": 72,
+          "mean": 58.21388888888889,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MILK": {
+          "initial": 160,
+          "final": 291,
+          "min": 160,
+          "max": 291,
+          "mean": 221.07916666666668,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "WOOL": {
+          "initial": 200,
+          "final": 229,
+          "min": 200,
+          "max": 229,
+          "mean": 222.32638888888889,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "FERTILIZER": {
+          "initial": 100,
+          "final": 100,
+          "min": 100,
+          "max": 100,
+          "mean": 100,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        }
+      }
+    },
+    {
+      "name": "v1-vs-v2-seed314159-a0",
+      "pair": "v1-vs-v2",
+      "seed": 314159,
+      "agents": [
+        "v1",
+        "v2"
+      ],
+      "banks": [
+        41631.0,
+        21300.0
+      ],
+      "passed": true,
+      "semantic_replay_sha256": "b4f896d85cd8ba96ce9ae47ffa8529d349810c42f87c777809ccc57a5cac28a2",
+      "market": {
+        "WHEAT": {
+          "initial": 25,
+          "final": 37,
+          "min": 25,
+          "max": 39,
+          "mean": 31.194444444444443,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "CARROT": {
+          "initial": 35,
+          "final": 43,
+          "min": 35,
+          "max": 53,
+          "mean": 43.829166666666666,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "TOMATO": {
+          "initial": 60,
+          "final": 70,
+          "min": 60,
+          "max": 70,
+          "mean": 62.81388888888889,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "STRAWBERRY": {
+          "initial": 120,
+          "final": 190,
+          "min": 78,
+          "max": 190,
+          "mean": 142.3361111111111,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MELON": {
+          "initial": 250,
+          "final": 19,
+          "min": 1,
+          "max": 272,
+          "mean": 105.55416666666666,
+          "floor_frames": 24,
+          "frames": 720,
+          "floor_fraction": 0.03333333333333333,
+          "first_floor": {
+            "step": 505,
+            "day": 21,
+            "hour": 1
+          }
+        },
+        "EGG": {
+          "initial": 50,
+          "final": 62,
+          "min": 50,
+          "max": 62,
+          "mean": 53.16111111111111,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MILK": {
+          "initial": 160,
+          "final": 255,
+          "min": 160,
+          "max": 255,
+          "mean": 199.6236111111111,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "WOOL": {
+          "initial": 200,
+          "final": 254,
+          "min": 200,
+          "max": 254,
+          "mean": 237.76388888888889,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "FERTILIZER": {
+          "initial": 100,
+          "final": 100,
+          "min": 100,
+          "max": 100,
+          "mean": 100,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        }
+      }
+    },
+    {
+      "name": "v1-vs-v2-seed314159-a1",
+      "pair": "v1-vs-v2",
+      "seed": 314159,
+      "agents": [
+        "v2",
+        "v1"
+      ],
+      "banks": [
+        21300.0,
+        41631.0
+      ],
+      "passed": true,
+      "semantic_replay_sha256": "4f9cf0a5dec37a0d7cc538eea56fc16e417778b63934ca8ff717b2ba8d01e3b5",
+      "market": {
+        "WHEAT": {
+          "initial": 25,
+          "final": 37,
+          "min": 25,
+          "max": 39,
+          "mean": 31.194444444444443,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "CARROT": {
+          "initial": 35,
+          "final": 43,
+          "min": 35,
+          "max": 53,
+          "mean": 43.829166666666666,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "TOMATO": {
+          "initial": 60,
+          "final": 70,
+          "min": 60,
+          "max": 70,
+          "mean": 62.81388888888889,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "STRAWBERRY": {
+          "initial": 120,
+          "final": 190,
+          "min": 78,
+          "max": 190,
+          "mean": 142.3361111111111,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MELON": {
+          "initial": 250,
+          "final": 19,
+          "min": 1,
+          "max": 272,
+          "mean": 105.55416666666666,
+          "floor_frames": 24,
+          "frames": 720,
+          "floor_fraction": 0.03333333333333333,
+          "first_floor": {
+            "step": 505,
+            "day": 21,
+            "hour": 1
+          }
+        },
+        "EGG": {
+          "initial": 50,
+          "final": 62,
+          "min": 50,
+          "max": 62,
+          "mean": 53.16111111111111,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MILK": {
+          "initial": 160,
+          "final": 255,
+          "min": 160,
+          "max": 255,
+          "mean": 199.6236111111111,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "WOOL": {
+          "initial": 200,
+          "final": 254,
+          "min": 200,
+          "max": 254,
+          "mean": 237.76388888888889,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "FERTILIZER": {
+          "initial": 100,
+          "final": 100,
+          "min": 100,
+          "max": 100,
+          "mean": 100,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        }
+      }
+    },
+    {
+      "name": "v1-vs-v1_jit-seed0-a0",
+      "pair": "v1-vs-v1_jit",
+      "seed": 0,
+      "agents": [
+        "v1",
+        "v1_jit"
+      ],
+      "banks": [
+        38682.0,
+        37921.0
+      ],
+      "passed": true,
+      "semantic_replay_sha256": "cc812e1a7bea33f415c8bb7a4dd966c99e38231a79b758440649f4558d500733",
+      "market": {
+        "WHEAT": {
+          "initial": 25,
+          "final": 46,
+          "min": 25,
+          "max": 46,
+          "mean": 36.17638888888889,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "CARROT": {
+          "initial": 35,
+          "final": 66,
+          "min": 35,
+          "max": 66,
+          "mean": 45.78472222222222,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "TOMATO": {
+          "initial": 60,
+          "final": 70,
+          "min": 60,
+          "max": 70,
+          "mean": 62.81388888888889,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "STRAWBERRY": {
+          "initial": 120,
+          "final": 230,
+          "min": 120,
+          "max": 263,
+          "mean": 185.95277777777778,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MELON": {
+          "initial": 250,
+          "final": 43,
+          "min": 1,
+          "max": 272,
+          "mean": 112.42916666666666,
+          "floor_frames": 30,
+          "frames": 720,
+          "floor_fraction": 0.041666666666666664,
+          "first_floor": {
+            "step": 259,
+            "day": 10,
+            "hour": 19
+          }
+        },
+        "EGG": {
+          "initial": 50,
+          "final": 67,
+          "min": 50,
+          "max": 67,
+          "mean": 56.6875,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MILK": {
+          "initial": 160,
+          "final": 291,
+          "min": 160,
+          "max": 291,
+          "mean": 224.00694444444446,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "WOOL": {
+          "initial": 200,
+          "final": 247,
+          "min": 200,
+          "max": 247,
+          "mean": 230.54583333333332,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "FERTILIZER": {
+          "initial": 100,
+          "final": 100,
+          "min": 100,
+          "max": 100,
+          "mean": 100,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        }
+      }
+    },
+    {
+      "name": "v1-vs-v1_jit-seed0-a1",
+      "pair": "v1-vs-v1_jit",
+      "seed": 0,
+      "agents": [
+        "v1_jit",
+        "v1"
+      ],
+      "banks": [
+        37957.0,
+        38682.0
+      ],
+      "passed": true,
+      "semantic_replay_sha256": "595f358ce0daaa15ebd0cc70ae3e77af4baa75c58c737d55c8bcce3982fda998",
+      "market": {
+        "WHEAT": {
+          "initial": 25,
+          "final": 46,
+          "min": 25,
+          "max": 46,
+          "mean": 36.17638888888889,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "CARROT": {
+          "initial": 35,
+          "final": 66,
+          "min": 35,
+          "max": 66,
+          "mean": 45.78472222222222,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "TOMATO": {
+          "initial": 60,
+          "final": 70,
+          "min": 60,
+          "max": 70,
+          "mean": 62.81388888888889,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "STRAWBERRY": {
+          "initial": 120,
+          "final": 230,
+          "min": 120,
+          "max": 263,
+          "mean": 185.99722222222223,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MELON": {
+          "initial": 250,
+          "final": 43,
+          "min": 1,
+          "max": 272,
+          "mean": 112.42916666666666,
+          "floor_frames": 30,
+          "frames": 720,
+          "floor_fraction": 0.041666666666666664,
+          "first_floor": {
+            "step": 259,
+            "day": 10,
+            "hour": 19
+          }
+        },
+        "EGG": {
+          "initial": 50,
+          "final": 67,
+          "min": 50,
+          "max": 67,
+          "mean": 56.6875,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MILK": {
+          "initial": 160,
+          "final": 291,
+          "min": 160,
+          "max": 291,
+          "mean": 224.00694444444446,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "WOOL": {
+          "initial": 200,
+          "final": 247,
+          "min": 200,
+          "max": 247,
+          "mean": 230.54583333333332,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "FERTILIZER": {
+          "initial": 100,
+          "final": 100,
+          "min": 100,
+          "max": 100,
+          "mean": 100,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        }
+      }
+    },
+    {
+      "name": "v1-vs-v1_jit-seed1-a0",
+      "pair": "v1-vs-v1_jit",
+      "seed": 1,
+      "agents": [
+        "v1",
+        "v1_jit"
+      ],
+      "banks": [
+        44485.0,
+        42601.0
+      ],
+      "passed": true,
+      "semantic_replay_sha256": "3366da22065c13d8c46ae9185a3e40bfe6c3b079be4f85893a642cbb99669fc4",
+      "market": {
+        "WHEAT": {
+          "initial": 25,
+          "final": 49,
+          "min": 25,
+          "max": 49,
+          "mean": 38.01111111111111,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "CARROT": {
+          "initial": 35,
+          "final": 54,
+          "min": 35,
+          "max": 56,
+          "mean": 43.55694444444445,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "TOMATO": {
+          "initial": 60,
+          "final": 721,
+          "min": 60,
+          "max": 721,
+          "mean": 177.6652777777778,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "STRAWBERRY": {
+          "initial": 120,
+          "final": 238,
+          "min": 120,
+          "max": 257,
+          "mean": 197.48611111111111,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MELON": {
+          "initial": 250,
+          "final": 43,
+          "min": 1,
+          "max": 272,
+          "mean": 112.42916666666666,
+          "floor_frames": 30,
+          "frames": 720,
+          "floor_fraction": 0.041666666666666664,
+          "first_floor": {
+            "step": 259,
+            "day": 10,
+            "hour": 19
+          }
+        },
+        "EGG": {
+          "initial": 50,
+          "final": 52,
+          "min": 50,
+          "max": 52,
+          "mean": 50.93055555555556,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MILK": {
+          "initial": 160,
+          "final": 339,
+          "min": 160,
+          "max": 339,
+          "mean": 247.80694444444444,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "WOOL": {
+          "initial": 200,
+          "final": 249,
+          "min": 200,
+          "max": 249,
+          "mean": 230.80416666666667,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "FERTILIZER": {
+          "initial": 100,
+          "final": 100,
+          "min": 100,
+          "max": 100,
+          "mean": 100,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        }
+      }
+    },
+    {
+      "name": "v1-vs-v1_jit-seed1-a1",
+      "pair": "v1-vs-v1_jit",
+      "seed": 1,
+      "agents": [
+        "v1_jit",
+        "v1"
+      ],
+      "banks": [
+        42601.0,
+        44485.0
+      ],
+      "passed": true,
+      "semantic_replay_sha256": "a1225202d67857165ee902c5277e3abcd77fc85ea687fdd5f1d38a1a40662718",
+      "market": {
+        "WHEAT": {
+          "initial": 25,
+          "final": 49,
+          "min": 25,
+          "max": 49,
+          "mean": 38.01111111111111,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "CARROT": {
+          "initial": 35,
+          "final": 54,
+          "min": 35,
+          "max": 56,
+          "mean": 43.55694444444445,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "TOMATO": {
+          "initial": 60,
+          "final": 721,
+          "min": 60,
+          "max": 721,
+          "mean": 177.6652777777778,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "STRAWBERRY": {
+          "initial": 120,
+          "final": 238,
+          "min": 120,
+          "max": 257,
+          "mean": 197.48611111111111,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MELON": {
+          "initial": 250,
+          "final": 43,
+          "min": 1,
+          "max": 272,
+          "mean": 112.42916666666666,
+          "floor_frames": 30,
+          "frames": 720,
+          "floor_fraction": 0.041666666666666664,
+          "first_floor": {
+            "step": 259,
+            "day": 10,
+            "hour": 19
+          }
+        },
+        "EGG": {
+          "initial": 50,
+          "final": 52,
+          "min": 50,
+          "max": 52,
+          "mean": 50.93055555555556,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MILK": {
+          "initial": 160,
+          "final": 339,
+          "min": 160,
+          "max": 339,
+          "mean": 247.80694444444444,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "WOOL": {
+          "initial": 200,
+          "final": 249,
+          "min": 200,
+          "max": 249,
+          "mean": 230.80416666666667,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "FERTILIZER": {
+          "initial": 100,
+          "final": 100,
+          "min": 100,
+          "max": 100,
+          "mean": 100,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        }
+      }
+    },
+    {
+      "name": "v1-vs-v1_jit-seed7-a0",
+      "pair": "v1-vs-v1_jit",
+      "seed": 7,
+      "agents": [
+        "v1",
+        "v1_jit"
+      ],
+      "banks": [
+        41543.0,
+        41097.0
+      ],
+      "passed": true,
+      "semantic_replay_sha256": "cd1d05d4125edeb38812862ad9af02813a69b7b922660a9409b9d963d9a7a175",
+      "market": {
+        "WHEAT": {
+          "initial": 25,
+          "final": 45,
+          "min": 25,
+          "max": 45,
+          "mean": 34.84444444444444,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "CARROT": {
+          "initial": 35,
+          "final": 43,
+          "min": 35,
+          "max": 43,
+          "mean": 36.75555555555555,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "TOMATO": {
+          "initial": 60,
+          "final": 64,
+          "min": 60,
+          "max": 64,
+          "mean": 61.827777777777776,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "STRAWBERRY": {
+          "initial": 120,
+          "final": 268,
+          "min": 120,
+          "max": 293,
+          "mean": 209.54444444444445,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MELON": {
+          "initial": 250,
+          "final": 43,
+          "min": 1,
+          "max": 272,
+          "mean": 112.42916666666666,
+          "floor_frames": 30,
+          "frames": 720,
+          "floor_fraction": 0.041666666666666664,
+          "first_floor": {
+            "step": 259,
+            "day": 10,
+            "hour": 19
+          }
+        },
+        "EGG": {
+          "initial": 50,
+          "final": 88,
+          "min": 50,
+          "max": 88,
+          "mean": 58.730555555555554,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MILK": {
+          "initial": 160,
+          "final": 301,
+          "min": 160,
+          "max": 301,
+          "mean": 239.45416666666668,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "WOOL": {
+          "initial": 200,
+          "final": 248,
+          "min": 200,
+          "max": 248,
+          "mean": 232.98888888888888,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "FERTILIZER": {
+          "initial": 100,
+          "final": 100,
+          "min": 100,
+          "max": 100,
+          "mean": 100,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        }
+      }
+    },
+    {
+      "name": "v1-vs-v1_jit-seed7-a1",
+      "pair": "v1-vs-v1_jit",
+      "seed": 7,
+      "agents": [
+        "v1_jit",
+        "v1"
+      ],
+      "banks": [
+        41097.0,
+        41543.0
+      ],
+      "passed": true,
+      "semantic_replay_sha256": "f5ce093631a573284ef48a358ebf3887ba94901284e1a6c56e1686a686ad0dc2",
+      "market": {
+        "WHEAT": {
+          "initial": 25,
+          "final": 45,
+          "min": 25,
+          "max": 45,
+          "mean": 34.84444444444444,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "CARROT": {
+          "initial": 35,
+          "final": 43,
+          "min": 35,
+          "max": 43,
+          "mean": 36.75555555555555,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "TOMATO": {
+          "initial": 60,
+          "final": 64,
+          "min": 60,
+          "max": 64,
+          "mean": 61.827777777777776,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "STRAWBERRY": {
+          "initial": 120,
+          "final": 268,
+          "min": 120,
+          "max": 293,
+          "mean": 209.54444444444445,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MELON": {
+          "initial": 250,
+          "final": 43,
+          "min": 1,
+          "max": 272,
+          "mean": 112.42916666666666,
+          "floor_frames": 30,
+          "frames": 720,
+          "floor_fraction": 0.041666666666666664,
+          "first_floor": {
+            "step": 259,
+            "day": 10,
+            "hour": 19
+          }
+        },
+        "EGG": {
+          "initial": 50,
+          "final": 88,
+          "min": 50,
+          "max": 88,
+          "mean": 58.730555555555554,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MILK": {
+          "initial": 160,
+          "final": 301,
+          "min": 160,
+          "max": 301,
+          "mean": 239.45416666666668,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "WOOL": {
+          "initial": 200,
+          "final": 248,
+          "min": 200,
+          "max": 248,
+          "mean": 232.98888888888888,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "FERTILIZER": {
+          "initial": 100,
+          "final": 100,
+          "min": 100,
+          "max": 100,
+          "mean": 100,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        }
+      }
+    },
+    {
+      "name": "v1-vs-v1_jit-seed42-a0",
+      "pair": "v1-vs-v1_jit",
+      "seed": 42,
+      "agents": [
+        "v1",
+        "v1_jit"
+      ],
+      "banks": [
+        39709.0,
+        38861.0
+      ],
+      "passed": true,
+      "semantic_replay_sha256": "ea72876ee5884b92eaf954613d366869f886107e31abb0b27895311fd3925266",
+      "market": {
+        "WHEAT": {
+          "initial": 25,
+          "final": 48,
+          "min": 25,
+          "max": 48,
+          "mean": 35.795833333333334,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "CARROT": {
+          "initial": 35,
+          "final": 103,
+          "min": 35,
+          "max": 103,
+          "mean": 48.96111111111111,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "TOMATO": {
+          "initial": 60,
+          "final": 317,
+          "min": 60,
+          "max": 317,
+          "mean": 88.90972222222223,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "STRAWBERRY": {
+          "initial": 120,
+          "final": 241,
+          "min": 120,
+          "max": 269,
+          "mean": 187.06527777777777,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MELON": {
+          "initial": 250,
+          "final": 43,
+          "min": 1,
+          "max": 272,
+          "mean": 112.42916666666666,
+          "floor_frames": 30,
+          "frames": 720,
+          "floor_fraction": 0.041666666666666664,
+          "first_floor": {
+            "step": 259,
+            "day": 10,
+            "hour": 19
+          }
+        },
+        "EGG": {
+          "initial": 50,
+          "final": 60,
+          "min": 50,
+          "max": 60,
+          "mean": 54.36944444444445,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MILK": {
+          "initial": 160,
+          "final": 208,
+          "min": 160,
+          "max": 208,
+          "mean": 192.43333333333334,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "WOOL": {
+          "initial": 200,
+          "final": 250,
+          "min": 200,
+          "max": 250,
+          "mean": 238.99722222222223,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "FERTILIZER": {
+          "initial": 100,
+          "final": 100,
+          "min": 100,
+          "max": 100,
+          "mean": 100,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        }
+      }
+    },
+    {
+      "name": "v1-vs-v1_jit-seed42-a1",
+      "pair": "v1-vs-v1_jit",
+      "seed": 42,
+      "agents": [
+        "v1_jit",
+        "v1"
+      ],
+      "banks": [
+        38861.0,
+        39722.0
+      ],
+      "passed": true,
+      "semantic_replay_sha256": "cc9d7a917aac901ea72da45fc3201574304e34e4f45ab886beb74e38d32f59a7",
+      "market": {
+        "WHEAT": {
+          "initial": 25,
+          "final": 48,
+          "min": 25,
+          "max": 48,
+          "mean": 35.795833333333334,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "CARROT": {
+          "initial": 35,
+          "final": 103,
+          "min": 35,
+          "max": 103,
+          "mean": 48.96111111111111,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "TOMATO": {
+          "initial": 60,
+          "final": 317,
+          "min": 60,
+          "max": 317,
+          "mean": 88.90972222222223,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "STRAWBERRY": {
+          "initial": 120,
+          "final": 241,
+          "min": 120,
+          "max": 269,
+          "mean": 187.06527777777777,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MELON": {
+          "initial": 250,
+          "final": 43,
+          "min": 1,
+          "max": 272,
+          "mean": 112.42916666666666,
+          "floor_frames": 30,
+          "frames": 720,
+          "floor_fraction": 0.041666666666666664,
+          "first_floor": {
+            "step": 259,
+            "day": 10,
+            "hour": 19
+          }
+        },
+        "EGG": {
+          "initial": 50,
+          "final": 60,
+          "min": 50,
+          "max": 60,
+          "mean": 54.36944444444445,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MILK": {
+          "initial": 160,
+          "final": 208,
+          "min": 160,
+          "max": 208,
+          "mean": 192.43333333333334,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "WOOL": {
+          "initial": 200,
+          "final": 250,
+          "min": 200,
+          "max": 250,
+          "mean": 238.99722222222223,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "FERTILIZER": {
+          "initial": 100,
+          "final": 100,
+          "min": 100,
+          "max": 100,
+          "mean": 100,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        }
+      }
+    },
+    {
+      "name": "v1-vs-v1_jit-seed2026-a0",
+      "pair": "v1-vs-v1_jit",
+      "seed": 2026,
+      "agents": [
+        "v1",
+        "v1_jit"
+      ],
+      "banks": [
+        40025.0,
+        39346.0
+      ],
+      "passed": true,
+      "semantic_replay_sha256": "292cf0673e2a0bdc606a757ff0ae21f1951ef7a33d9ab9a7f4bf7b4c99a14bba",
+      "market": {
+        "WHEAT": {
+          "initial": 25,
+          "final": 51,
+          "min": 25,
+          "max": 51,
+          "mean": 38.55833333333333,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "CARROT": {
+          "initial": 35,
+          "final": 67,
+          "min": 35,
+          "max": 67,
+          "mean": 44.09444444444444,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "TOMATO": {
+          "initial": 60,
+          "final": 111,
+          "min": 60,
+          "max": 111,
+          "mean": 72.60138888888889,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "STRAWBERRY": {
+          "initial": 120,
+          "final": 241,
+          "min": 120,
+          "max": 275,
+          "mean": 203.67638888888888,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MELON": {
+          "initial": 250,
+          "final": 43,
+          "min": 1,
+          "max": 272,
+          "mean": 112.42916666666666,
+          "floor_frames": 30,
+          "frames": 720,
+          "floor_fraction": 0.041666666666666664,
+          "first_floor": {
+            "step": 259,
+            "day": 10,
+            "hour": 19
+          }
+        },
+        "EGG": {
+          "initial": 50,
+          "final": 102,
+          "min": 50,
+          "max": 102,
+          "mean": 61.638888888888886,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MILK": {
+          "initial": 160,
+          "final": 255,
+          "min": 160,
+          "max": 255,
+          "mean": 206.5236111111111,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "WOOL": {
+          "initial": 200,
+          "final": 229,
+          "min": 200,
+          "max": 229,
+          "mean": 222.32638888888889,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "FERTILIZER": {
+          "initial": 100,
+          "final": 100,
+          "min": 100,
+          "max": 100,
+          "mean": 100,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        }
+      }
+    },
+    {
+      "name": "v1-vs-v1_jit-seed2026-a1",
+      "pair": "v1-vs-v1_jit",
+      "seed": 2026,
+      "agents": [
+        "v1_jit",
+        "v1"
+      ],
+      "banks": [
+        39303.0,
+        40023.0
+      ],
+      "passed": true,
+      "semantic_replay_sha256": "a9c28aa13d6290358184131a8ef58ba4fc351f14c9cab7474fdc5f98308fc09a",
+      "market": {
+        "WHEAT": {
+          "initial": 25,
+          "final": 51,
+          "min": 25,
+          "max": 51,
+          "mean": 38.55833333333333,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "CARROT": {
+          "initial": 35,
+          "final": 67,
+          "min": 35,
+          "max": 67,
+          "mean": 44.09444444444444,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "TOMATO": {
+          "initial": 60,
+          "final": 111,
+          "min": 60,
+          "max": 111,
+          "mean": 72.60138888888889,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "STRAWBERRY": {
+          "initial": 120,
+          "final": 241,
+          "min": 120,
+          "max": 275,
+          "mean": 203.60416666666666,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MELON": {
+          "initial": 250,
+          "final": 43,
+          "min": 1,
+          "max": 272,
+          "mean": 112.42916666666666,
+          "floor_frames": 30,
+          "frames": 720,
+          "floor_fraction": 0.041666666666666664,
+          "first_floor": {
+            "step": 259,
+            "day": 10,
+            "hour": 19
+          }
+        },
+        "EGG": {
+          "initial": 50,
+          "final": 72,
+          "min": 50,
+          "max": 72,
+          "mean": 58.21388888888889,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MILK": {
+          "initial": 160,
+          "final": 291,
+          "min": 160,
+          "max": 291,
+          "mean": 221.07916666666668,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "WOOL": {
+          "initial": 200,
+          "final": 229,
+          "min": 200,
+          "max": 229,
+          "mean": 222.32638888888889,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "FERTILIZER": {
+          "initial": 100,
+          "final": 100,
+          "min": 100,
+          "max": 100,
+          "mean": 100,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        }
+      }
+    },
+    {
+      "name": "v1-vs-v1_jit-seed314159-a0",
+      "pair": "v1-vs-v1_jit",
+      "seed": 314159,
+      "agents": [
+        "v1",
+        "v1_jit"
+      ],
+      "banks": [
+        30061.0,
+        29609.0
+      ],
+      "passed": true,
+      "semantic_replay_sha256": "5b326bf560aeb7f79f984816507157eb68303a99f64102595d2fed16ff8cb5cc",
+      "market": {
+        "WHEAT": {
+          "initial": 25,
+          "final": 32,
+          "min": 25,
+          "max": 36,
+          "mean": 29.929166666666667,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "CARROT": {
+          "initial": 35,
+          "final": 39,
+          "min": 32,
+          "max": 52,
+          "mean": 40.95,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "TOMATO": {
+          "initial": 60,
+          "final": 79,
+          "min": 60,
+          "max": 79,
+          "mean": 64.5625,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "STRAWBERRY": {
+          "initial": 120,
+          "final": 242,
+          "min": 120,
+          "max": 242,
+          "mean": 169.54722222222222,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MELON": {
+          "initial": 250,
+          "final": 13,
+          "min": 1,
+          "max": 272,
+          "mean": 103.50416666666666,
+          "floor_frames": 54,
+          "frames": 720,
+          "floor_fraction": 0.075,
+          "first_floor": {
+            "step": 259,
+            "day": 10,
+            "hour": 19
+          }
+        },
+        "EGG": {
+          "initial": 50,
+          "final": 52,
+          "min": 50,
+          "max": 52,
+          "mean": 50.93055555555556,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MILK": {
+          "initial": 160,
+          "final": 286,
+          "min": 160,
+          "max": 286,
+          "mean": 211.09166666666667,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "WOOL": {
+          "initial": 200,
+          "final": 254,
+          "min": 200,
+          "max": 254,
+          "mean": 237.76388888888889,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "FERTILIZER": {
+          "initial": 100,
+          "final": 100,
+          "min": 100,
+          "max": 100,
+          "mean": 100,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        }
+      }
+    },
+    {
+      "name": "v1-vs-v1_jit-seed314159-a1",
+      "pair": "v1-vs-v1_jit",
+      "seed": 314159,
+      "agents": [
+        "v1_jit",
+        "v1"
+      ],
+      "banks": [
+        29609.0,
+        30061.0
+      ],
+      "passed": true,
+      "semantic_replay_sha256": "cb2d4a0d6911fd9321db9ca8274f1442cafa68af6cfde3734946c3e57ecf18a4",
+      "market": {
+        "WHEAT": {
+          "initial": 25,
+          "final": 32,
+          "min": 25,
+          "max": 36,
+          "mean": 29.929166666666667,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "CARROT": {
+          "initial": 35,
+          "final": 39,
+          "min": 32,
+          "max": 52,
+          "mean": 40.95,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "TOMATO": {
+          "initial": 60,
+          "final": 79,
+          "min": 60,
+          "max": 79,
+          "mean": 64.5625,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "STRAWBERRY": {
+          "initial": 120,
+          "final": 242,
+          "min": 120,
+          "max": 242,
+          "mean": 169.54722222222222,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MELON": {
+          "initial": 250,
+          "final": 13,
+          "min": 1,
+          "max": 272,
+          "mean": 103.50416666666666,
+          "floor_frames": 54,
+          "frames": 720,
+          "floor_fraction": 0.075,
+          "first_floor": {
+            "step": 259,
+            "day": 10,
+            "hour": 19
+          }
+        },
+        "EGG": {
+          "initial": 50,
+          "final": 52,
+          "min": 50,
+          "max": 52,
+          "mean": 50.93055555555556,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MILK": {
+          "initial": 160,
+          "final": 286,
+          "min": 160,
+          "max": 286,
+          "mean": 211.09166666666667,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "WOOL": {
+          "initial": 200,
+          "final": 254,
+          "min": 200,
+          "max": 254,
+          "mean": 237.76388888888889,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "FERTILIZER": {
+          "initial": 100,
+          "final": 100,
+          "min": 100,
+          "max": 100,
+          "mean": 100,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        }
+      }
+    },
+    {
+      "name": "v2-vs-v1_jit-seed0-a0",
+      "pair": "v2-vs-v1_jit",
+      "seed": 0,
+      "agents": [
+        "v2",
+        "v1_jit"
+      ],
+      "banks": [
+        30824.0,
+        47882.0
+      ],
+      "passed": true,
+      "semantic_replay_sha256": "81433bc008514947335316c8e87245e8a659f6bb77a0089a26f1658076d92d54",
+      "market": {
+        "WHEAT": {
+          "initial": 25,
+          "final": 46,
+          "min": 25,
+          "max": 46,
+          "mean": 36.1,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "CARROT": {
+          "initial": 35,
+          "final": 55,
+          "min": 35,
+          "max": 55,
+          "mean": 44.3625,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "TOMATO": {
+          "initial": 60,
+          "final": 70,
+          "min": 60,
+          "max": 70,
+          "mean": 62.81388888888889,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "STRAWBERRY": {
+          "initial": 120,
+          "final": 243,
+          "min": 120,
+          "max": 258,
+          "mean": 182.78333333333333,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MELON": {
+          "initial": 250,
+          "final": 19,
+          "min": 4,
+          "max": 272,
+          "mean": 106.55416666666666,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "EGG": {
+          "initial": 50,
+          "final": 69,
+          "min": 50,
+          "max": 69,
+          "mean": 56.90694444444444,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MILK": {
+          "initial": 160,
+          "final": 291,
+          "min": 160,
+          "max": 291,
+          "mean": 224.00694444444446,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "WOOL": {
+          "initial": 200,
+          "final": 247,
+          "min": 200,
+          "max": 247,
+          "mean": 230.54583333333332,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "FERTILIZER": {
+          "initial": 100,
+          "final": 100,
+          "min": 100,
+          "max": 100,
+          "mean": 100,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        }
+      }
+    },
+    {
+      "name": "v2-vs-v1_jit-seed0-a1",
+      "pair": "v2-vs-v1_jit",
+      "seed": 0,
+      "agents": [
+        "v1_jit",
+        "v2"
+      ],
+      "banks": [
+        47882.0,
+        30824.0
+      ],
+      "passed": true,
+      "semantic_replay_sha256": "a25e7bb0efef2ead4621d92aa309aabf14bcaa93dcf2a9d95990583e0e337dd7",
+      "market": {
+        "WHEAT": {
+          "initial": 25,
+          "final": 46,
+          "min": 25,
+          "max": 46,
+          "mean": 36.1,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "CARROT": {
+          "initial": 35,
+          "final": 55,
+          "min": 35,
+          "max": 55,
+          "mean": 44.3625,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "TOMATO": {
+          "initial": 60,
+          "final": 70,
+          "min": 60,
+          "max": 70,
+          "mean": 62.81388888888889,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "STRAWBERRY": {
+          "initial": 120,
+          "final": 243,
+          "min": 120,
+          "max": 258,
+          "mean": 182.78333333333333,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MELON": {
+          "initial": 250,
+          "final": 19,
+          "min": 4,
+          "max": 272,
+          "mean": 106.55416666666666,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "EGG": {
+          "initial": 50,
+          "final": 69,
+          "min": 50,
+          "max": 69,
+          "mean": 56.90694444444444,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MILK": {
+          "initial": 160,
+          "final": 291,
+          "min": 160,
+          "max": 291,
+          "mean": 224.00694444444446,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "WOOL": {
+          "initial": 200,
+          "final": 247,
+          "min": 200,
+          "max": 247,
+          "mean": 230.54583333333332,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "FERTILIZER": {
+          "initial": 100,
+          "final": 100,
+          "min": 100,
+          "max": 100,
+          "mean": 100,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        }
+      }
+    },
+    {
+      "name": "v2-vs-v1_jit-seed1-a0",
+      "pair": "v2-vs-v1_jit",
+      "seed": 1,
+      "agents": [
+        "v2",
+        "v1_jit"
+      ],
+      "banks": [
+        56615.0,
+        52946.0
+      ],
+      "passed": true,
+      "semantic_replay_sha256": "37cbe2aaeedfd4d4aa1ac9a064e67433e93e1267d3ebb1006a3c70562f13905b",
+      "market": {
+        "WHEAT": {
+          "initial": 25,
+          "final": 49,
+          "min": 25,
+          "max": 49,
+          "mean": 38.03333333333333,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "CARROT": {
+          "initial": 35,
+          "final": 54,
+          "min": 35,
+          "max": 56,
+          "mean": 43.540277777777774,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "TOMATO": {
+          "initial": 60,
+          "final": 601,
+          "min": 60,
+          "max": 601,
+          "mean": 178.65972222222223,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "STRAWBERRY": {
+          "initial": 120,
+          "final": 238,
+          "min": 120,
+          "max": 247,
+          "mean": 193.94583333333333,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MELON": {
+          "initial": 250,
+          "final": 19,
+          "min": 4,
+          "max": 272,
+          "mean": 106.55416666666666,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "EGG": {
+          "initial": 50,
+          "final": 52,
+          "min": 50,
+          "max": 52,
+          "mean": 50.93055555555556,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MILK": {
+          "initial": 160,
+          "final": 339,
+          "min": 160,
+          "max": 339,
+          "mean": 247.80694444444444,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "WOOL": {
+          "initial": 200,
+          "final": 249,
+          "min": 200,
+          "max": 249,
+          "mean": 230.80416666666667,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "FERTILIZER": {
+          "initial": 100,
+          "final": 100,
+          "min": 100,
+          "max": 100,
+          "mean": 100,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        }
+      }
+    },
+    {
+      "name": "v2-vs-v1_jit-seed1-a1",
+      "pair": "v2-vs-v1_jit",
+      "seed": 1,
+      "agents": [
+        "v1_jit",
+        "v2"
+      ],
+      "banks": [
+        52946.0,
+        56615.0
+      ],
+      "passed": true,
+      "semantic_replay_sha256": "4ad210b8887b018ec09482690dff880f80fdf1388e4206932104597779c62ea9",
+      "market": {
+        "WHEAT": {
+          "initial": 25,
+          "final": 49,
+          "min": 25,
+          "max": 49,
+          "mean": 38.03333333333333,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "CARROT": {
+          "initial": 35,
+          "final": 54,
+          "min": 35,
+          "max": 56,
+          "mean": 43.540277777777774,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "TOMATO": {
+          "initial": 60,
+          "final": 601,
+          "min": 60,
+          "max": 601,
+          "mean": 178.65972222222223,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "STRAWBERRY": {
+          "initial": 120,
+          "final": 238,
+          "min": 120,
+          "max": 247,
+          "mean": 193.94583333333333,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MELON": {
+          "initial": 250,
+          "final": 19,
+          "min": 4,
+          "max": 272,
+          "mean": 106.55416666666666,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "EGG": {
+          "initial": 50,
+          "final": 52,
+          "min": 50,
+          "max": 52,
+          "mean": 50.93055555555556,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MILK": {
+          "initial": 160,
+          "final": 339,
+          "min": 160,
+          "max": 339,
+          "mean": 247.80694444444444,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "WOOL": {
+          "initial": 200,
+          "final": 249,
+          "min": 200,
+          "max": 249,
+          "mean": 230.80416666666667,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "FERTILIZER": {
+          "initial": 100,
+          "final": 100,
+          "min": 100,
+          "max": 100,
+          "mean": 100,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        }
+      }
+    },
+    {
+      "name": "v2-vs-v1_jit-seed7-a0",
+      "pair": "v2-vs-v1_jit",
+      "seed": 7,
+      "agents": [
+        "v2",
+        "v1_jit"
+      ],
+      "banks": [
+        33830.0,
+        50575.0
+      ],
+      "passed": true,
+      "semantic_replay_sha256": "a84ffac4651665dd9b2187be2efe61b516923138dfaf9a705cbc15de1281945c",
+      "market": {
+        "WHEAT": {
+          "initial": 25,
+          "final": 44,
+          "min": 25,
+          "max": 44,
+          "mean": 34.59027777777778,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "CARROT": {
+          "initial": 35,
+          "final": 43,
+          "min": 35,
+          "max": 43,
+          "mean": 36.75555555555555,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "TOMATO": {
+          "initial": 60,
+          "final": 64,
+          "min": 60,
+          "max": 64,
+          "mean": 61.827777777777776,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "STRAWBERRY": {
+          "initial": 120,
+          "final": 267,
+          "min": 120,
+          "max": 283,
+          "mean": 207.51944444444445,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MELON": {
+          "initial": 250,
+          "final": 19,
+          "min": 1,
+          "max": 272,
+          "mean": 106.04583333333333,
+          "floor_frames": 9,
+          "frames": 720,
+          "floor_fraction": 0.0125,
+          "first_floor": {
+            "step": 520,
+            "day": 21,
+            "hour": 16
+          }
+        },
+        "EGG": {
+          "initial": 50,
+          "final": 88,
+          "min": 50,
+          "max": 88,
+          "mean": 58.730555555555554,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MILK": {
+          "initial": 160,
+          "final": 301,
+          "min": 160,
+          "max": 301,
+          "mean": 239.45416666666668,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "WOOL": {
+          "initial": 200,
+          "final": 248,
+          "min": 200,
+          "max": 248,
+          "mean": 232.98888888888888,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "FERTILIZER": {
+          "initial": 100,
+          "final": 100,
+          "min": 100,
+          "max": 100,
+          "mean": 100,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        }
+      }
+    },
+    {
+      "name": "v2-vs-v1_jit-seed7-a1",
+      "pair": "v2-vs-v1_jit",
+      "seed": 7,
+      "agents": [
+        "v1_jit",
+        "v2"
+      ],
+      "banks": [
+        50575.0,
+        33830.0
+      ],
+      "passed": true,
+      "semantic_replay_sha256": "68eccb576504f1095c8a73fb55ef3511ddf1f1c9fbc7396c545bfad8149b8360",
+      "market": {
+        "WHEAT": {
+          "initial": 25,
+          "final": 44,
+          "min": 25,
+          "max": 44,
+          "mean": 34.59027777777778,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "CARROT": {
+          "initial": 35,
+          "final": 43,
+          "min": 35,
+          "max": 43,
+          "mean": 36.75555555555555,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "TOMATO": {
+          "initial": 60,
+          "final": 64,
+          "min": 60,
+          "max": 64,
+          "mean": 61.827777777777776,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "STRAWBERRY": {
+          "initial": 120,
+          "final": 267,
+          "min": 120,
+          "max": 283,
+          "mean": 207.51944444444445,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MELON": {
+          "initial": 250,
+          "final": 19,
+          "min": 1,
+          "max": 272,
+          "mean": 106.04583333333333,
+          "floor_frames": 9,
+          "frames": 720,
+          "floor_fraction": 0.0125,
+          "first_floor": {
+            "step": 520,
+            "day": 21,
+            "hour": 16
+          }
+        },
+        "EGG": {
+          "initial": 50,
+          "final": 88,
+          "min": 50,
+          "max": 88,
+          "mean": 58.730555555555554,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MILK": {
+          "initial": 160,
+          "final": 301,
+          "min": 160,
+          "max": 301,
+          "mean": 239.45416666666668,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "WOOL": {
+          "initial": 200,
+          "final": 248,
+          "min": 200,
+          "max": 248,
+          "mean": 232.98888888888888,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "FERTILIZER": {
+          "initial": 100,
+          "final": 100,
+          "min": 100,
+          "max": 100,
+          "mean": 100,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        }
+      }
+    },
+    {
+      "name": "v2-vs-v1_jit-seed42-a0",
+      "pair": "v2-vs-v1_jit",
+      "seed": 42,
+      "agents": [
+        "v2",
+        "v1_jit"
+      ],
+      "banks": [
+        31462.0,
+        46100.0
+      ],
+      "passed": true,
+      "semantic_replay_sha256": "19324f058ddf9f0bf404d019dd8ff9f4b818f819b7120d0a1e54bb5e96377b91",
+      "market": {
+        "WHEAT": {
+          "initial": 25,
+          "final": 46,
+          "min": 25,
+          "max": 46,
+          "mean": 35.50416666666667,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "CARROT": {
+          "initial": 35,
+          "final": 63,
+          "min": 35,
+          "max": 64,
+          "mean": 45.71388888888889,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "TOMATO": {
+          "initial": 60,
+          "final": 165,
+          "min": 60,
+          "max": 165,
+          "mean": 76.37083333333334,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "STRAWBERRY": {
+          "initial": 120,
+          "final": 214,
+          "min": 120,
+          "max": 241,
+          "mean": 179.05833333333334,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MELON": {
+          "initial": 250,
+          "final": 19,
+          "min": 4,
+          "max": 272,
+          "mean": 106.55416666666666,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "EGG": {
+          "initial": 50,
+          "final": 60,
+          "min": 50,
+          "max": 60,
+          "mean": 54.36944444444445,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MILK": {
+          "initial": 160,
+          "final": 208,
+          "min": 160,
+          "max": 208,
+          "mean": 192.43333333333334,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "WOOL": {
+          "initial": 200,
+          "final": 254,
+          "min": 200,
+          "max": 254,
+          "mean": 239.54722222222222,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "FERTILIZER": {
+          "initial": 100,
+          "final": 100,
+          "min": 100,
+          "max": 100,
+          "mean": 100,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        }
+      }
+    },
+    {
+      "name": "v2-vs-v1_jit-seed42-a1",
+      "pair": "v2-vs-v1_jit",
+      "seed": 42,
+      "agents": [
+        "v1_jit",
+        "v2"
+      ],
+      "banks": [
+        46068.0,
+        31462.0
+      ],
+      "passed": true,
+      "semantic_replay_sha256": "3de9943c8a28b02281e0a3814d5aab69b1fa8286e2d6f974617cc2b74db036d1",
+      "market": {
+        "WHEAT": {
+          "initial": 25,
+          "final": 46,
+          "min": 25,
+          "max": 46,
+          "mean": 35.50416666666667,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "CARROT": {
+          "initial": 35,
+          "final": 63,
+          "min": 35,
+          "max": 64,
+          "mean": 45.71388888888889,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "TOMATO": {
+          "initial": 60,
+          "final": 165,
+          "min": 60,
+          "max": 165,
+          "mean": 76.37083333333334,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "STRAWBERRY": {
+          "initial": 120,
+          "final": 214,
+          "min": 120,
+          "max": 241,
+          "mean": 179.00277777777777,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MELON": {
+          "initial": 250,
+          "final": 19,
+          "min": 4,
+          "max": 272,
+          "mean": 106.55416666666666,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "EGG": {
+          "initial": 50,
+          "final": 60,
+          "min": 50,
+          "max": 60,
+          "mean": 54.36944444444445,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MILK": {
+          "initial": 160,
+          "final": 208,
+          "min": 160,
+          "max": 208,
+          "mean": 192.43333333333334,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "WOOL": {
+          "initial": 200,
+          "final": 254,
+          "min": 200,
+          "max": 254,
+          "mean": 239.54722222222222,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "FERTILIZER": {
+          "initial": 100,
+          "final": 100,
+          "min": 100,
+          "max": 100,
+          "mean": 100,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        }
+      }
+    },
+    {
+      "name": "v2-vs-v1_jit-seed2026-a0",
+      "pair": "v2-vs-v1_jit",
+      "seed": 2026,
+      "agents": [
+        "v2",
+        "v1_jit"
+      ],
+      "banks": [
+        33211.0,
+        48667.0
+      ],
+      "passed": true,
+      "semantic_replay_sha256": "f99f45c6ccac3a2fab6efd6ed876dcc23f2d1f124ebb7ff3f079a5fdcde0fdca",
+      "market": {
+        "WHEAT": {
+          "initial": 25,
+          "final": 50,
+          "min": 25,
+          "max": 50,
+          "mean": 38.30972222222222,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "CARROT": {
+          "initial": 35,
+          "final": 64,
+          "min": 35,
+          "max": 64,
+          "mean": 43.87083333333333,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "TOMATO": {
+          "initial": 60,
+          "final": 106,
+          "min": 60,
+          "max": 106,
+          "mean": 72.44166666666666,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "STRAWBERRY": {
+          "initial": 120,
+          "final": 243,
+          "min": 120,
+          "max": 265,
+          "mean": 200.54722222222222,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MELON": {
+          "initial": 250,
+          "final": 16,
+          "min": 4,
+          "max": 272,
+          "mean": 106.20833333333333,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "EGG": {
+          "initial": 50,
+          "final": 72,
+          "min": 50,
+          "max": 72,
+          "mean": 58.21388888888889,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MILK": {
+          "initial": 160,
+          "final": 291,
+          "min": 160,
+          "max": 291,
+          "mean": 221.07916666666668,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "WOOL": {
+          "initial": 200,
+          "final": 229,
+          "min": 200,
+          "max": 229,
+          "mean": 222.32638888888889,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "FERTILIZER": {
+          "initial": 100,
+          "final": 100,
+          "min": 100,
+          "max": 100,
+          "mean": 100,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        }
+      }
+    },
+    {
+      "name": "v2-vs-v1_jit-seed2026-a1",
+      "pair": "v2-vs-v1_jit",
+      "seed": 2026,
+      "agents": [
+        "v1_jit",
+        "v2"
+      ],
+      "banks": [
+        48667.0,
+        33211.0
+      ],
+      "passed": true,
+      "semantic_replay_sha256": "2a1641727a16fd66f75c5f79cf39305dba6152706d0061fa954e508fd0259b01",
+      "market": {
+        "WHEAT": {
+          "initial": 25,
+          "final": 50,
+          "min": 25,
+          "max": 50,
+          "mean": 38.30972222222222,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "CARROT": {
+          "initial": 35,
+          "final": 64,
+          "min": 35,
+          "max": 64,
+          "mean": 43.87083333333333,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "TOMATO": {
+          "initial": 60,
+          "final": 106,
+          "min": 60,
+          "max": 106,
+          "mean": 72.44166666666666,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "STRAWBERRY": {
+          "initial": 120,
+          "final": 243,
+          "min": 120,
+          "max": 265,
+          "mean": 200.54722222222222,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MELON": {
+          "initial": 250,
+          "final": 16,
+          "min": 4,
+          "max": 272,
+          "mean": 106.20833333333333,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "EGG": {
+          "initial": 50,
+          "final": 72,
+          "min": 50,
+          "max": 72,
+          "mean": 58.21388888888889,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MILK": {
+          "initial": 160,
+          "final": 291,
+          "min": 160,
+          "max": 291,
+          "mean": 221.07916666666668,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "WOOL": {
+          "initial": 200,
+          "final": 229,
+          "min": 200,
+          "max": 229,
+          "mean": 222.32638888888889,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "FERTILIZER": {
+          "initial": 100,
+          "final": 100,
+          "min": 100,
+          "max": 100,
+          "mean": 100,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        }
+      }
+    },
+    {
+      "name": "v2-vs-v1_jit-seed314159-a0",
+      "pair": "v2-vs-v1_jit",
+      "seed": 314159,
+      "agents": [
+        "v2",
+        "v1_jit"
+      ],
+      "banks": [
+        25672.0,
+        41986.0
+      ],
+      "passed": true,
+      "semantic_replay_sha256": "ca857ac7a328fd15ee1bf2a1658a976bf5b73879fadab318847a7f620bd47651",
+      "market": {
+        "WHEAT": {
+          "initial": 25,
+          "final": 40,
+          "min": 25,
+          "max": 41,
+          "mean": 31.406944444444445,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "CARROT": {
+          "initial": 35,
+          "final": 45,
+          "min": 35,
+          "max": 53,
+          "mean": 44.9125,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "TOMATO": {
+          "initial": 60,
+          "final": 79,
+          "min": 60,
+          "max": 79,
+          "mean": 64.5625,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "STRAWBERRY": {
+          "initial": 120,
+          "final": 224,
+          "min": 120,
+          "max": 224,
+          "mean": 162.91944444444445,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MELON": {
+          "initial": 250,
+          "final": 22,
+          "min": 4,
+          "max": 272,
+          "mean": 106.45,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "EGG": {
+          "initial": 50,
+          "final": 52,
+          "min": 50,
+          "max": 52,
+          "mean": 50.93055555555556,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MILK": {
+          "initial": 160,
+          "final": 286,
+          "min": 160,
+          "max": 286,
+          "mean": 211.09166666666667,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "WOOL": {
+          "initial": 200,
+          "final": 254,
+          "min": 200,
+          "max": 254,
+          "mean": 237.76388888888889,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "FERTILIZER": {
+          "initial": 100,
+          "final": 100,
+          "min": 100,
+          "max": 100,
+          "mean": 100,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        }
+      }
+    },
+    {
+      "name": "v2-vs-v1_jit-seed314159-a1",
+      "pair": "v2-vs-v1_jit",
+      "seed": 314159,
+      "agents": [
+        "v1_jit",
+        "v2"
+      ],
+      "banks": [
+        41986.0,
+        25672.0
+      ],
+      "passed": true,
+      "semantic_replay_sha256": "a407a944c69dff7a8bd072c77794ebfe5d788cf14568449d6b80f203f53fea05",
+      "market": {
+        "WHEAT": {
+          "initial": 25,
+          "final": 40,
+          "min": 25,
+          "max": 41,
+          "mean": 31.406944444444445,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "CARROT": {
+          "initial": 35,
+          "final": 45,
+          "min": 35,
+          "max": 53,
+          "mean": 44.9125,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "TOMATO": {
+          "initial": 60,
+          "final": 79,
+          "min": 60,
+          "max": 79,
+          "mean": 64.5625,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "STRAWBERRY": {
+          "initial": 120,
+          "final": 224,
+          "min": 120,
+          "max": 224,
+          "mean": 162.91944444444445,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MELON": {
+          "initial": 250,
+          "final": 22,
+          "min": 4,
+          "max": 272,
+          "mean": 106.45,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "EGG": {
+          "initial": 50,
+          "final": 52,
+          "min": 50,
+          "max": 52,
+          "mean": 50.93055555555556,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "MILK": {
+          "initial": 160,
+          "final": 286,
+          "min": 160,
+          "max": 286,
+          "mean": 211.09166666666667,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "WOOL": {
+          "initial": 200,
+          "final": 254,
+          "min": 200,
+          "max": 254,
+          "mean": 237.76388888888889,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        },
+        "FERTILIZER": {
+          "initial": 100,
+          "final": 100,
+          "min": 100,
+          "max": 100,
+          "mean": 100,
+          "floor_frames": 0,
+          "frames": 720,
+          "floor_fraction": 0.0,
+          "first_floor": null
+        }
+      }
+    }
+  ],
+  "all_matches_passed": true
+}

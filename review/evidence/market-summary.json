@@ -1,0 +1,214 @@
+{
+  "games": 36,
+  "seeds": [
+    0,
+    1,
+    7,
+    42,
+    2026,
+    314159
+  ],
+  "market_score": {
+    "games": 36,
+    "wins": 18,
+    "draws": 0,
+    "losses": 18,
+    "win_rate": 0.5,
+    "mean_bank": 43403.305555555555,
+    "mean_net_profit": 40403.305555555555,
+    "mean_opponent_bank": 41767.97222222222,
+    "mean_margin": 1635.3333333333333,
+    "mean_unused_seed_cost": 94.44444444444444,
+    "mean_seed_cost": 4410,
+    "min_bank": 30600.0,
+    "max_bank": 62115.0,
+    "unspent_seed_games": 36,
+    "unsold_product_games": 0
+  },
+  "by_opponent": {
+    "v1": {
+      "market": {
+        "games": 12,
+        "wins": 8,
+        "draws": 0,
+        "losses": 4,
+        "win_rate": 0.6666666666666666,
+        "mean_bank": 43419.166666666664,
+        "mean_net_profit": 40419.166666666664,
+        "mean_opponent_bank": 39972.166666666664,
+        "mean_margin": 3447.0,
+        "mean_unused_seed_cost": 105,
+        "mean_seed_cost": 4411.666666666667,
+        "min_bank": 30600.0,
+        "max_bank": 62115.0,
+        "unspent_seed_games": 12,
+        "unsold_product_games": 0
+      },
+      "rival": {
+        "games": 12,
+        "wins": 4,
+        "draws": 0,
+        "losses": 8,
+        "win_rate": 0.3333333333333333,
+        "mean_bank": 39972.166666666664,
+        "mean_net_profit": 36972.166666666664,
+        "mean_opponent_bank": 43419.166666666664,
+        "mean_margin": -3447.0,
+        "mean_unused_seed_cost": 118.33333333333333,
+        "mean_seed_cost": 4641.666666666667,
+        "min_bank": 31069.0,
+        "max_bank": 46203.0,
+        "unspent_seed_games": 12,
+        "unsold_product_games": 0
+      },
+      "melon_prices": {
+        "floor_games": 0,
+        "mean_floor_frames": 0,
+        "mean_final": 48,
+        "mean_quote": 113.36666666666666
+      }
+    },
+    "v2": {
+      "market": {
+        "games": 12,
+        "wins": 0,
+        "draws": 0,
+        "losses": 12,
+        "win_rate": 0.0,
+        "mean_bank": 42768.166666666664,
+        "mean_net_profit": 39768.166666666664,
+        "mean_opponent_bank": 45471.333333333336,
+        "mean_margin": -2703.1666666666665,
+        "mean_unused_seed_cost": 76.66666666666667,
+        "mean_seed_cost": 4431.666666666667,
+        "min_bank": 31202.0,
+        "max_bank": 61016.0,
+        "unspent_seed_games": 12,
+        "unsold_product_games": 0
+      },
+      "rival": {
+        "games": 12,
+        "wins": 12,
+        "draws": 0,
+        "losses": 0,
+        "win_rate": 1.0,
+        "mean_bank": 45471.333333333336,
+        "mean_net_profit": 42471.333333333336,
+        "mean_opponent_bank": 42768.166666666664,
+        "mean_margin": 2703.1666666666665,
+        "mean_unused_seed_cost": 0,
+        "mean_seed_cost": 4425,
+        "min_bank": 34800.0,
+        "max_bank": 63011.0,
+        "unspent_seed_games": 0,
+        "unsold_product_games": 0
+      },
+      "melon_prices": {
+        "floor_games": 0,
+        "mean_floor_frames": 0,
+        "mean_final": 54.333333333333336,
+        "mean_quote": 136.20856481481482
+      }
+    },
+    "v1_jit": {
+      "market": {
+        "games": 12,
+        "wins": 10,
+        "draws": 0,
+        "losses": 2,
+        "win_rate": 0.8333333333333334,
+        "mean_bank": 44022.583333333336,
+        "mean_net_profit": 41022.583333333336,
+        "mean_opponent_bank": 39860.416666666664,
+        "mean_margin": 4162.166666666667,
+        "mean_unused_seed_cost": 101.66666666666667,
+        "mean_seed_cost": 4386.666666666667,
+        "min_bank": 31787.0,
+        "max_bank": 61612.0,
+        "unspent_seed_games": 12,
+        "unsold_product_games": 0
+      },
+      "rival": {
+        "games": 12,
+        "wins": 2,
+        "draws": 0,
+        "losses": 10,
+        "win_rate": 0.16666666666666666,
+        "mean_bank": 39860.416666666664,
+        "mean_net_profit": 36860.416666666664,
+        "mean_opponent_bank": 44022.583333333336,
+        "mean_margin": -4162.166666666667,
+        "mean_unused_seed_cost": 33.333333333333336,
+        "mean_seed_cost": 4501.666666666667,
+        "min_bank": 31409.0,
+        "max_bank": 44062.0,
+        "unspent_seed_games": 4,
+        "unsold_product_games": 0
+      },
+      "melon_prices": {
+        "floor_games": 0,
+        "mean_floor_frames": 0,
+        "mean_final": 48,
+        "mean_quote": 113.36666666666666
+      }
+    }
+  },
+  "by_seat": {
+    "0": {
+      "games": 18,
+      "wins": 9,
+      "draws": 0,
+      "losses": 9,
+      "win_rate": 0.5,
+      "mean_bank": 43403.22222222222,
+      "mean_net_profit": 40403.22222222222,
+      "mean_opponent_bank": 41766.944444444445,
+      "mean_margin": 1636.2777777777778,
+      "mean_unused_seed_cost": 94.44444444444444,
+      "mean_seed_cost": 4410,
+      "min_bank": 30600.0,
+      "max_bank": 62115.0,
+      "unspent_seed_games": 18,
+      "unsold_product_games": 0
+    },
+    "1": {
+      "games": 18,
+      "wins": 9,
+      "draws": 0,
+      "losses": 9,
+      "win_rate": 0.5,
+      "mean_bank": 43403.38888888889,
+      "mean_net_profit": 40403.38888888889,
+      "mean_opponent_bank": 41769.0,
+      "mean_margin": 1634.388888888889,
+      "mean_unused_seed_cost": 94.44444444444444,
+      "mean_seed_cost": 4410,
+      "min_bank": 30600.0,
+      "max_bank": 62115.0,
+      "unspent_seed_games": 18,
+      "unsold_product_games": 0
+    }
+  },
+  "matched_v1_comparison": {
+    "v2": {
+      "games": 12,
+      "mean_v1_net_profit": 44932.583333333336,
+      "mean_market_net_profit": 39768.166666666664,
+      "mean_profit_delta": -5164.416666666667,
+      "improved_games": 2,
+      "old_melon_floor_games": 6,
+      "old_mean_floor_frames": 12.0
+    },
+    "v1_jit": {
+      "games": 12,
+      "mean_v1_net_profit": 36085.083333333336,
+      "mean_market_net_profit": 41022.583333333336,
+      "mean_profit_delta": 4937.5,
+      "improved_games": 12,
+      "old_melon_floor_games": 12,
+      "old_mean_floor_frames": 34.0
+    }
+  },
+  "market_melon_peak_daily_planting": 8,
+  "all_player_harvested_equals_sold": true
+}

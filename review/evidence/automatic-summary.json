@@ -1,0 +1,101 @@
+{
+  "seed_clusters": 12,
+  "test_physical_games": 144,
+  "training_games": 64,
+  "mean_profit_delta": 752.0416666666669,
+  "profit_delta_95_ci": [
+    585.5409722222222,
+    964.2788194444444
+  ],
+  "mean_match_score_delta": 0.16666666666666666,
+  "match_score_delta_95_ci": [
+    0.16666666666666666,
+    0.16666666666666666
+  ],
+  "statistically_credible_improvement_in_this_panel": true,
+  "bootstrap": "20000 resamples of entire seed clusters (all opponents and both seats together)",
+  "gpu_used_for_search": false,
+  "default_bot_changed": false,
+  "overall": {
+    "baseline": {
+      "games": 72,
+      "wins": 48,
+      "draws": 24,
+      "win_rate": 0.6666666666666666,
+      "mean_match_score": 0.8333333333333334,
+      "mean_net_profit": 38867.055555555555,
+      "mean_margin": 5375.333333333333
+    },
+    "optimized": {
+      "games": 72,
+      "wins": 72,
+      "draws": 0,
+      "win_rate": 1,
+      "mean_match_score": 1.0,
+      "mean_net_profit": 39619.09722222222,
+      "mean_margin": 6448.361111111111
+    }
+  },
+  "by_opponent": {
+    "v1": {
+      "baseline": {
+        "games": 24,
+        "wins": 0,
+        "draws": 24,
+        "win_rate": 0,
+        "mean_match_score": 0.5,
+        "mean_net_profit": 35730.75,
+        "mean_margin": 0.0
+      },
+      "optimized": {
+        "games": 24,
+        "wins": 24,
+        "draws": 0,
+        "win_rate": 1,
+        "mean_match_score": 1.0,
+        "mean_net_profit": 36587.583333333336,
+        "mean_margin": 1029.9166666666667
+      }
+    },
+    "v2": {
+      "baseline": {
+        "games": 24,
+        "wins": 24,
+        "draws": 0,
+        "win_rate": 1,
+        "mean_match_score": 1.0,
+        "mean_net_profit": 45000.625,
+        "mean_margin": 15456.458333333334
+      },
+      "optimized": {
+        "games": 24,
+        "wins": 24,
+        "draws": 0,
+        "win_rate": 1,
+        "mean_match_score": 1.0,
+        "mean_net_profit": 45972.083333333336,
+        "mean_margin": 17121.0
+      }
+    },
+    "jit": {
+      "baseline": {
+        "games": 24,
+        "wins": 24,
+        "draws": 0,
+        "win_rate": 1,
+        "mean_match_score": 1.0,
+        "mean_net_profit": 35869.791666666664,
+        "mean_margin": 669.5416666666666
+      },
+      "optimized": {
+        "games": 24,
+        "wins": 24,
+        "draws": 0,
+        "win_rate": 1,
+        "mean_match_score": 1.0,
+        "mean_net_profit": 36297.625,
+        "mean_margin": 1194.1666666666667
+      }
+    }
+  }
+}
