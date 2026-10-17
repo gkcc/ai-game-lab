@@ -1,0 +1,61 @@
+{
+  "experiment": "mechanism-foundation-one-land-purchase",
+  "registered_utc": "2026-10-17T22:05:18.081134+00:00",
+  "workers": 4,
+  "seeds": [
+    6774936,
+    6726194,
+    6992429,
+    6495223,
+    6949248,
+    6682214
+  ],
+  "opponents": [
+    "v1",
+    "market"
+  ],
+  "policies": [
+    "control",
+    "land"
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "evaluation_games": 48,
+  "parity_games": 2,
+  "repeat_games": 2,
+  "no_selection_or_retuning": true,
+  "intervention": "Frozen round2 controller; append no rules except insert BUY_LAND as first market order at step0; buy exactly NE once; identical controller subsequently",
+  "hypothesis": "Land may relieve capacity limits; no claim about optimal expansion timing or all animal/fertilizer strategies",
+  "gate": "Exploratory support only if seed-cluster overall profit 95% lower >0 and mean match-score delta nonnegative for each opponent; always report both opponents and both players incomes",
+  "bootstrap": {
+    "resamples": 20000,
+    "rng_seed": 2026101811
+  },
+  "parity": "Before evaluation compare control-adapter vs bare baseline on first seed vs market side0; same semantic replay and banks required",
+  "repeat": "After panel repeat land vs market first seed both seats sequentially; same semantic hashes and banks",
+  "frozen_existing": {
+    "main.py": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "bots/heuristic_v1.py": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "bots/heuristic_v2.py": "96fda05b1d0fa3cef4f5a3d67d3cfbdba9aae62411b720aaa6d6d06ebc5fd773",
+    "bots/heuristic_v1_jit_seeds.py": "138c48d717e8e9993e47b7f047753a2cfd7a62171c40f2dc05c1845dfc19908a",
+    "bots/heuristic_v1_market.py": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b"
+  },
+  "source_sha256": {
+    "api.py": "844fd510daa3caaae2acdbc192d2afd3d80567c6b413926be5875d78ec94a6fe",
+    "baseline.py": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "control.py": "38c9c340ccff1586137c4b668b328199531f9070c0d8e73702128aedb1e13300",
+    "evaluate_holdout.py": "df599e139893081f0a5307b0aa9cf299e2d14d4d4a221672b7aa9ac1d3747d82",
+    "land.py": "8f6423ecd0f6f3e21d6798a097208c0df3a954a40a50698cc09df7a9e5080a94",
+    "market.py": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "mechanism_experiment.py": "99fe71603dd4e7ec57ae18b77c47ad902f2a2165b71531670204e9943b828024",
+    "optimize_round2.py": "10a381f2819a8371d6be47a9fd171c591482a864b8aff2cb2c91b4c87b7e2479",
+    "v1.py": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "verify_mechanisms.py": "df6ec25ec2b12549e7529ddaf700eb72f8385d09d0493791354c43ed432f4502",
+    "worker.py": "980bcff08148ac4a3968d9bb56a628413453febb5e78ce930f48b5534c50a715"
+  },
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+  "scope": "Six seed clusters, fixed local opponents, single non-optimized intervention; no PPO, GPU training, default promotion or raw replay publication"
+}
