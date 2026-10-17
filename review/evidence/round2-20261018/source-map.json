@@ -1,0 +1,15 @@
+{
+  "incumbent.py": "kaggriculture/models/tuned_v1.py",
+  "baseline.py": "kaggriculture/bots/heuristic_v1.py",
+  "default.py": "kaggriculture/main.py",
+  "v1.py": "kaggriculture/bots/heuristic_v1.py",
+  "v2.py": "kaggriculture/bots/heuristic_v2.py",
+  "jit.py": "kaggriculture/bots/heuristic_v1_jit_seeds.py",
+  "market.py": "kaggriculture/bots/heuristic_v1_market.py",
+  "policy_template.py": "review/evidence/round2-20261018/frozen-inputs/policy_template.py",
+  "worker.py": "kaggriculture/learning/round2_worker.py",
+  "evaluate_holdout.py": "kaggriculture/learning/evaluate_holdout.py",
+  "optimize_round2.py": "kaggriculture/learning/optimize_round2.py",
+  "requirements-lock.txt": "review/evidence/round2-20261018/frozen-inputs/requirements-lock.txt",
+  "learning-lock.txt": "review/evidence/round2-20261018/frozen-inputs/learning-lock.txt"
+}
