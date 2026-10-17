@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "development_games": 192,
+  "test_games": 288,
+  "reproducibility_games": 2,
+  "local_replays_verified": 482,
+  "selection_recomputed": true,
+  "statistical_gate_passed": false,
+  "independently_recomputed_statistics": {
+    "baseline": {
+      "overall": {
+        "mean_profit_delta": 571.8854166666666,
+        "profit_95_ci": [
+          339.8203125,
+          870.2322916666664
+        ],
+        "mean_score_delta": 0.16666666666666666
+      },
+      "market": {
+        "mean_profit_delta": 486.75,
+        "profit_95_ci": [
+          137.58125,
+          876.0854166666666
+        ],
+        "mean_score_delta": 0.08333333333333333
+      }
+    },
+    "incumbent": {
+      "overall": {
+        "mean_profit_delta": 209.5,
+        "profit_95_ci": [
+          -443.86640624999995,
+          1013.7333333333329
+        ],
+        "mean_score_delta": 0.09375
+      },
+      "market": {
+        "mean_profit_delta": 134.0,
+        "profit_95_ci": [
+          -488.0083333333333,
+          827.856249999998
+        ],
+        "mean_score_delta": -0.08333333333333333
+      }
+    }
+  },
+  "boundary": "Anonymous ledger consistency and optional local replay integrity, not external re-execution or proof of all historical non-retuning"
+}

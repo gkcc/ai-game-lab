@@ -57,6 +57,15 @@ def verify(folder, replays=None):
     assert selection["selection_used_development_only"] and selection["test_not_started"]
     lookup = {(r["policy"], r["opponent"], r["seed"], r["side"]): r for r in test}
     score = lambda r: float(r["margin"] > 0) + .5 * (r["margin"] == 0)
+    paired = read("paired-results.json")
+    for comparator in ("baseline", "incumbent"):
+        records = paired[comparator]
+        expected = {(op, s, side) for op in cfg["opponents"] for s in cfg["test_seeds"] for side in (0, 1)}
+        assert len(records) == len(expected) and {(r["opponent"], r["seed"], r["side"]) for r in records} == expected
+        for r in records:
+            a, b = (lookup[p, r["opponent"], r["seed"], r["side"]] for p in ("candidate", comparator))
+            assert r["profit_delta"] == a["net_profit"] - b["net_profit"]
+            assert r["score_delta"] == score(a) - score(b)
     statistics, gate = {}, True
     for comparator in ("baseline", "incumbent"):
         statistics[comparator] = {}
@@ -95,6 +104,11 @@ def verify(folder, replays=None):
         assert r["semantic_replay_sha256"] == orig["semantic_replay_sha256"] and r["banks"] == orig["banks"]
     verified = 0
     if replays:
+        for name, digest in cfg["source_sha256"].items():
+            assert sha((replays / "sources" / name).read_bytes()) == digest
+        for t in trials:
+            assert sha((replays / "training" / f"trial{t['trial']}" / "agent.py").read_bytes()) == t["bot_sha256"]
+        assert sha((replays / "champion.py").read_bytes()) == selection["champion_sha256"]
         tagged = [(r, "development") for r in development] + [(r, "test") for r in test] + [(r, "repeat") for r in repeats["rows"]]
         for r, stage in tagged:
             if stage == "development":
