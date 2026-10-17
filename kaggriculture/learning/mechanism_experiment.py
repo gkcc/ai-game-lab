@@ -23,7 +23,7 @@ def agent(observation, configuration):
 '''
 
 
-def prepare(out, baseline):
+def prepare(out, baseline, reuse=None):
     out.mkdir(parents=True, exist_ok=False)
     src = out / "sources"
     src.mkdir()
@@ -50,6 +50,13 @@ def prepare(out, baseline):
               "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
               "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
               "scope": "Six seed clusters, fixed local opponents, single non-optimized intervention; no PPO, GPU training, default promotion or raw replay publication"}
+    if reuse:
+        prior = json.loads((reuse / "registration.json").read_text(encoding="utf-8"))
+        assert prior["seeds"] == config["seeds"] and prior["source_sha256"]["baseline.py"] == config["source_sha256"]["baseline.py"]
+        config["recovery"] = {"prior_registration_sha256": sha(reuse / "registration.json"),
+                              "reason": "Initial codec rejected official-valid float order quantities. Compatibility fix only, no strategy/seed/gate changes",
+                              "reuse": "24 completed control games and 2 parity games unchanged; initial failed land attempts retained, never replaced as completed results",
+                              "fresh_holdout_claim": False}
     save(out / "registration.json", config)
     (out / "registration.sha256").write_text(sha(out / "registration.json") + "\n")
     print(json.dumps({"prepared": True, "seeds": config["seeds"], "games": 52}))
@@ -79,7 +86,7 @@ def telemetry(folder, row):
             "simulation_seconds": result["run_seconds"], "both_bot_seconds": sum(result["bot_seconds"])}
 
 
-def run(out):
+def run(out, reuse=None):
     cfg = json.loads((out / "registration.json").read_text(encoding="utf-8"))
     assert sha(out / "registration.json") == (out / "registration.sha256").read_text().strip()
     assert not (out / "games").exists(), "No silent resume or replacement of completed games"
@@ -89,8 +96,13 @@ def run(out):
     rows, repeats = [], []
     with Games(out, cfg, "experiment") as games, ThreadPoolExecutor(max_workers=4) as pool:
         seed = cfg["seeds"][0]
-        parity = [games.play(out / "sources" / (name + ".py"), name, "market", seed, 0, out / "parity" / name)
-                  for name in ("baseline", "control")]
+        if reuse:
+            assert sha(reuse / "registration.json") == cfg["recovery"]["prior_registration_sha256"]
+            shutil.copytree(reuse / "parity", out / "parity")
+            parity = json.loads((reuse / "parity.json").read_text(encoding="utf-8"))["games"]
+        else:
+            parity = [games.play(out / "sources" / (name + ".py"), name, "market", seed, 0, out / "parity" / name)
+                      for name in ("baseline", "control")]
         assert parity[0]["banks"] == parity[1]["banks"] and parity[0]["semantic_replay_sha256"] == parity[1]["semantic_replay_sha256"]
         save(out / "parity.json", {"passed": True, "games": parity})
         jobs = []
@@ -99,6 +111,19 @@ def run(out):
                 for side in (0, 1):
                     for policy in cfg["policies"]:
                         folder = out / "games" / f"{seed}-{op}-{side}-{policy}"
+                        if reuse and policy == "control":
+                            original = reuse / "games" / folder.name
+                            result = json.loads((original / "result.json").read_text(encoding="utf-8"))
+                            assert result["passed"] and result["bot_sha256"] == cfg["source_sha256"]["control.py"]
+                            shutil.copytree(original, folder)
+                            fields = ("seed", "side", "banks", "bank", "opponent_bank", "net_profit", "margin", "states", "action_turns", "bot_sha256", "rival_sha256", "engine_sha256", "package", "passed", "semantic_replay_sha256")
+                            row = {k: result[k] for k in fields}
+                            row.update(policy=policy, opponent=op, final_status=["DONE", "DONE"], rewards=result["banks"],
+                                       replay_gzip_sha256=sha(folder / "replay.json.gz"), agent_errors=0, both_player_farming_and_seed_audits_passed=True)
+                            row["mechanism"] = telemetry(folder, row)
+                            row["reused_completed_control"] = True
+                            rows.append(row)
+                            continue
                         jobs.append((pool.submit(games.play, out / "sources" / (policy + ".py"), policy, op, seed, side, folder,
                                                  seed == cfg["seeds"][0] and op == "market"), folder))
         folders = {future: folder for future, folder in jobs}
@@ -141,10 +166,11 @@ if __name__ == "__main__":
     parser.add_argument("mode", choices=["prepare", "run"])
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--baseline", type=Path)
+    parser.add_argument("--reuse-from", type=Path)
     args = parser.parse_args()
     if args.mode == "prepare":
         if args.baseline is None:
             parser.error("prepare requires --baseline")
-        prepare(args.output.resolve(), args.baseline.resolve())
+        prepare(args.output.resolve(), args.baseline.resolve(), args.reuse_from.resolve() if args.reuse_from else None)
     else:
-        run(args.output.resolve())
+        run(args.output.resolve(), args.reuse_from.resolve() if args.reuse_from else None)

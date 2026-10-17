@@ -412,6 +412,24 @@ class Mechanisms(unittest.TestCase):
         self.assertEqual(self.p["shed"]["MILK"], 1)
         self.assertEqual(self.p["shed"]["WHEAT"], 99)
 
+    def test_28_official_quantity_coercion_is_preserved(self):
+        for quantity in (2.0, 2.8, "2", True):
+            e = env()
+            raw = action(market=[["BUY_SEED", "WHEAT", quantity]])
+            self.assertEqual(Joint.parse(raw).wire(), raw)
+            step(e, raw)
+            self.assertEqual(e.state[0].observation.private["seeds"]["WHEAT"], int(quantity))
+        for quantity in (None, "bad", 0, -1):
+            with self.assertRaises(ValueError):
+                Atom.parse(["BUY_SEED", "WHEAT", quantity], market=True)
+
+    def test_29_negative_market_inventory_is_not_a_stock_gate(self):
+        self.f["money"] = 1000000
+        self.e.state[0].observation.market["inventory"]["WHEAT"] = -1
+        step(self.e, action(market=[["BUY_PRODUCT", "WHEAT", 1]]), at=1)
+        self.assertEqual(self.p["shed"]["WHEAT"], 1)
+        self.assertEqual(self.e.state[0].observation.market["inventory"]["WHEAT"], -2)
+
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)

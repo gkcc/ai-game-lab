@@ -99,7 +99,7 @@ def observe(observation, configuration, previous=None):
 class Atom:
     op: str
     item: str | None = None
-    quantity: int | None = None
+    quantity: int | float | str | None = None
 
     def wire(self):
         return [self.op] + ([] if self.item is None else [self.item]) + ([] if self.quantity is None else [self.quantity])
@@ -118,8 +118,15 @@ class Atom:
         quantity = raw[2] if len(raw) > 2 else None
         if item is not None and not isinstance(item, str):
             raise ValueError("Item must be a string")
-        if quantity is not None and (type(quantity) is not int or quantity <= 0):
-            raise ValueError("Quantity must be a positive integer")
+        if len(raw) > 2:
+            try:
+                valid_quantity = int(quantity) > 0
+            except (TypeError, ValueError, OverflowError):
+                valid_quantity = False
+            if not valid_quantity:
+                raise ValueError("Quantity must coerce to a positive official integer")
+        # Keep the original JSON value. Official int() also accepts integral
+        # floats, truncating floats, strings and booleans. No hidden repair.
         return cls(op, item, quantity)
 
 
