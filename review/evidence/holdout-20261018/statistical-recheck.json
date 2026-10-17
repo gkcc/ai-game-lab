@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "method": "Independent recomputation from ledger banks, seed-cluster bootstrap; not optimizer summary inputs",
+  "clusters": 12,
+  "resamples": 20000,
+  "results": {
+    "overall": {
+      "mean_profit_delta": 131.33333333333334,
+      "profit_95_ci": [
+        -341.2104166666667,
+        574.6270833333332
+      ],
+      "mean_score_delta": 0.0
+    },
+    "market": {
+      "mean_profit_delta": -18.458333333333332,
+      "profit_95_ci": [
+        -648.4177083333333,
+        498.0447916666664
+      ],
+      "mean_score_delta": 0.08333333333333333
+    }
+  }
+}

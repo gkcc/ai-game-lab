@@ -1,0 +1,17 @@
+{
+  "python": "3.12.2",
+  "numpy": "2.5.4",
+  "environment": "Existing isolated learning environment; two official-engine CPU workers",
+  "gpu_training": false,
+  "requirements_sha256": {
+    "requirements-lock.txt": "33ae49f7045ba2f9f6fba292ed7af2597f40610763ccd996615db9905278dd64",
+    "learning/requirements-lock.txt": "0de2d492ffc7e73720e3d5b384cc79d4db2930f426672d7b964f058e364f5fb3"
+  },
+  "candidate_sha256": "2c61c29c146f128f00d3d10dbf6a848e9e3024c5d06d41a984c33960bb2a7cec",
+  "preregistration_commit": "c1d63f31f4b51bc9b94831aed6b4b5d925f26273",
+  "worker_isolation_check": {
+    "fresh_namespace_each_load": true,
+    "compiled_code_cache_size": 1,
+    "scope": "Synthetic stateful counter; separate from competitive panel"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "candidate.py": "kaggriculture/models/tuned_v1.py",
+  "baseline.py": "kaggriculture/bots/heuristic_v1.py",
+  "v1.py": "kaggriculture/bots/heuristic_v1.py",
+  "v2.py": "kaggriculture/bots/heuristic_v2.py",
+  "jit.py": "kaggriculture/bots/heuristic_v1_jit_seeds.py",
+  "market.py": "kaggriculture/bots/heuristic_v1_market.py",
+  "default.py": "kaggriculture/main.py",
+  "worker-original.py": "kaggriculture/learning/official_worker.py",
+  "worker.py": "kaggriculture/learning/holdout_worker.py",
+  "evaluate_holdout.py": "kaggriculture/learning/evaluate_holdout.py"
+}

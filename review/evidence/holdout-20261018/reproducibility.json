@@ -1,0 +1,72 @@
+{
+  "passed": true,
+  "extra_games": 2,
+  "rows": [
+    {
+      "seed": 2903989,
+      "side": 1,
+      "banks": [
+        45283.0,
+        46986.0
+      ],
+      "bank": 46986.0,
+      "opponent_bank": 45283.0,
+      "net_profit": 43986.0,
+      "margin": 1703.0,
+      "states": 720,
+      "action_turns": 719,
+      "bot_sha256": "2c61c29c146f128f00d3d10dbf6a848e9e3024c5d06d41a984c33960bb2a7cec",
+      "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "package": "1.33.0",
+      "passed": true,
+      "semantic_replay_sha256": "8a691caac9215ea60976a21362a5d14e1e14fe3140de54631c3e0ba7e185e1f4",
+      "policy": "candidate",
+      "opponent": "market",
+      "replay_gzip_sha256": "dedd2b0c0e5594af1ca93ae0a16e55c42edec8556808a7ae5a5d154acad7ebe0",
+      "final_status": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        45283.0,
+        46986.0
+      ],
+      "both_player_farming_and_seed_audits_passed": true,
+      "agent_errors": 0
+    },
+    {
+      "seed": 2903989,
+      "side": 0,
+      "banks": [
+        46986.0,
+        45283.0
+      ],
+      "bank": 46986.0,
+      "opponent_bank": 45283.0,
+      "net_profit": 43986.0,
+      "margin": 1703.0,
+      "states": 720,
+      "action_turns": 719,
+      "bot_sha256": "2c61c29c146f128f00d3d10dbf6a848e9e3024c5d06d41a984c33960bb2a7cec",
+      "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "package": "1.33.0",
+      "passed": true,
+      "semantic_replay_sha256": "5dadde5da3496cd154608d8c4c5508cf1832362dbba1d21b81bcc23bda2e4d95",
+      "policy": "candidate",
+      "opponent": "market",
+      "replay_gzip_sha256": "82c6e909142021226f76052582f4459edbe0ab2094ffdbb3addc6e7864c30dd2",
+      "final_status": [
+        "DONE",
+        "DONE"
+      ],
+      "rewards": [
+        46986.0,
+        45283.0
+      ],
+      "both_player_farming_and_seed_audits_passed": true,
+      "agent_errors": 0
+    }
+  ]
+}
