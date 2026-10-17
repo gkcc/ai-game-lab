@@ -1,0 +1,66 @@
+{
+  "experiment": "frozen-candidate-expanded-holdout-v1",
+  "registered_utc": "2026-10-17T21:14:19.264950+00:00",
+  "no_training_no_retuning": true,
+  "candidate_selection": "Prior experiment champion; no new selection",
+  "seed_generator": "Python random.Random(2026101802).sample(range(2000000,3000000),12)",
+  "seeds": [
+    2903989,
+    2560070,
+    2012651,
+    2657147,
+    2762846,
+    2745684,
+    2525461,
+    2951097,
+    2412057,
+    2557431,
+    2281338,
+    2560408
+  ],
+  "opponents": [
+    "v1",
+    "v2",
+    "jit",
+    "market"
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "policies": [
+    "baseline",
+    "candidate"
+  ],
+  "physical_games": 192,
+  "independence": "New numeric seed range disjoint from prior train/test/development panels; no results observed before registration",
+  "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "source_sha256": {
+    "baseline.py": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "candidate.py": "2c61c29c146f128f00d3d10dbf6a848e9e3024c5d06d41a984c33960bb2a7cec",
+    "default.py": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "evaluate_holdout.py": "df599e139893081f0a5307b0aa9cf299e2d14d4d4a221672b7aa9ac1d3747d82",
+    "jit.py": "138c48d717e8e9993e47b7f047753a2cfd7a62171c40f2dc05c1845dfc19908a",
+    "market.py": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "v1.py": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "v2.py": "96fda05b1d0fa3cef4f5a3d67d3cfbdba9aae62411b720aaa6d6d06ebc5fd773",
+    "worker-original.py": "6cc3b2896ad4adfbaa13a947cad23ed9a7b8daa8d85bbd057df2ece2770afeaf",
+    "worker.py": "980bcff08148ac4a3968d9bb56a628413453febb5e78ce930f48b5534c50a715"
+  },
+  "official_gate": "All 192 games: 720 states, 719 actions, DONE/DONE, rewards equal banks, no errors/stderr, both player farming and seed-balance audits pass",
+  "primary": "Equal-weight mean paired net-profit difference over seeds, opponents and both seats",
+  "bootstrap": {
+    "unit": "entire seed, retaining all opponents and seats",
+    "resamples": 20000,
+    "rng_seed": 2026101803,
+    "ci": 0.95
+  },
+  "improvement_gate": "Primary 95% lower bound > 0 AND market-only paired profit 95% lower bound > 0 AND mean match-score difference >= 0 overall AND >= 0 against market; all official and reproducibility gates pass",
+  "secondary": "W/D/L, both banks, market-only profit/score differences, exact two-sided sign test; score CI descriptive only",
+  "multiplicity": "Overall and market-only tests form a conjunctive gate, not alternative chances to pass; other opponent statistics descriptive",
+  "reproducibility": "Repeat seed[0] candidate vs market in both seats sequentially reversed after parallel panel, compare semantic replay hashes and banks",
+  "failure_policy": "Report failure or inconclusive without changing candidate, panel, seeds or gate; infrastructure retries separately recorded and never replace completed valid games",
+  "scope": "Fixed local opponents only; no claim about unseen opponents or leaderboard; no default change, PPO or GPU training",
+  "trusted_code_only": "Local reviewed bots, not a sandbox for untrusted submissions"
+}
