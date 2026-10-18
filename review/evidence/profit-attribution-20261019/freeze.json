@@ -1,0 +1,21 @@
+{
+  "registration_sha256": "af87f14cbcf725a7b83ba64f371fbcba095b5a859764e6e4afb1d806ab34137d",
+  "runner_sha256": "a5dc524180bcf02fc974fa96ea5bacdf16c2539e483fab36c91c56d9982cedac",
+  "instrumentation_sha256": {
+    "profit_attribution.py": "726b92831a4e14b71c2fcd6ee1431dbebce288fe86d5153d1b3b41c31d8cfe1c",
+    "audit_profit_attribution.py": "a8a6ce62f8699d9b781afef5bf49d3bc5f0689b932e2bccd2cfc8326c35cc1b8",
+    "verify_profit_attribution.py": "cd314d2f2741d7bbc9c5ca47e4f89733db93de7f178b2ceb21d314b40d30773f"
+  },
+  "source_sha256": {
+    "baseline.py": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "both.py": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+    "evaluate_holdout.py": "df599e139893081f0a5307b0aa9cf299e2d14d4d4a221672b7aa9ac1d3747d82",
+    "fertilizer.py": "bae8fd19015dd8a3050184d93dfcfe1fe27959301d507f56c607d77732c76a73",
+    "market.py": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "optimize_round2.py": "9f4fcf09fecd42c6135a1a2a72b95948c52474636719863eb2d468b01dc102fe",
+    "teacher.py": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+    "v1.py": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "worker.py": "a80158b26d1f4ae3d366c1d1276a1ca63e652bcd350f5ca25545b0f5f33759f1"
+  },
+  "test_results_seen": false
+}
