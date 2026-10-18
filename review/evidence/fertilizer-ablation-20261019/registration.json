@@ -1,0 +1,76 @@
+{
+  "experiment": "fertilizer-timely-harvest-surgical-ablation",
+  "base_commit": "438a806a313d0a7c33d952d98a25641998071806",
+  "seeds": [
+    10583023,
+    10757511,
+    10571788,
+    10867568,
+    10440650,
+    10200084
+  ],
+  "opponents": [
+    "v1",
+    "market",
+    "teacher"
+  ],
+  "policies": [
+    "baseline",
+    "fertilizer",
+    "harvest",
+    "both"
+  ],
+  "workers": 4,
+  "games": 144,
+  "repeat_games": 4,
+  "repeat_policies": [
+    "fertilizer",
+    "both"
+  ],
+  "arms": {
+    "baseline": "Exact frozen tuned_round2; no fertilizer logistics or timely harvest",
+    "fertilizer": "Exact terminal_v2 except remove fertilized yield>=2 early-maturity override",
+    "harvest": "Exact tuned_round2 plus the original fertilized yield>=2 early-maturity override; expected inactive without fertilizer, intentional negative control",
+    "both": "Exact frozen terminal_v2"
+  },
+  "budget": "One design, no tuning/development selection; all six new seed clusters retained",
+  "primary_metric": "Own final net profit, paired same seed/opponent/seat; seed is resampling unit",
+  "contrasts": [
+    "fertilizer-baseline",
+    "both-fertilizer",
+    "both-baseline",
+    "both-fertilizer-harvest+baseline",
+    "2*fertilizer-both-baseline"
+  ],
+  "contrast_names": [
+    "fertilizer_without_timely_harvest",
+    "timely_harvest_given_fertilizer",
+    "combined",
+    "interaction",
+    "fertilizer_contribution_minus_conditional_harvest"
+  ],
+  "bootstrap": {
+    "resamples": 20000,
+    "rng_seed": 2026101902,
+    "family_contrasts": 5,
+    "individual_ci": 0.99,
+    "scope": "Bonferroni nominal family 95%; six clusters only, exploratory bootstrap, exact sign tests also reported"
+  },
+  "acceptance": "All 144+4 games complete official 720 states/719 actions, no errors, every replay reexecuted and matched; repeats match banks and ordered semantic hashes; all frozen sources/history preserved. Mechanism successful use and negative control reported. No profit gate required to finish an ablation, no automatic teacher/default promotion.",
+  "interpretation": "Contributions conditional on this fixed controller and opponents; shared market and opponent response are part of total effect. Harvest-only inactivity is not evidence all unfertilized harvest strategies are useless. No per-action marginal profit claims.",
+  "failure_policy": "Do not retune after results, change seeds, exclude valid matches or silently replace failures. Report negative/inconclusive results.",
+  "source_sha256": {
+    "baseline.py": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "both.py": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+    "v1.py": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "market.py": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "teacher.py": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+    "worker.py": "a80158b26d1f4ae3d366c1d1276a1ca63e652bcd350f5ca25545b0f5f33759f1",
+    "optimize_round2.py": "9f4fcf09fecd42c6135a1a2a72b95948c52474636719863eb2d468b01dc102fe",
+    "evaluate_holdout.py": "df599e139893081f0a5307b0aa9cf299e2d14d4d4a221672b7aa9ac1d3747d82"
+  },
+  "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "bc": false,
+  "default_changed": false
+}
