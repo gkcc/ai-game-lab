@@ -1,0 +1,22 @@
+{
+  "registration_sha256": "44ddb722013d09a954119941d329b1db861d33927d128f74ec42f9a1e69300b3",
+  "runner_sha256": "4d1980321e216e78127d550570dc2e1e12e4c76ff6f804d36b9303dd0049e6f4",
+  "audit_sha256": "cd5ec5884738703b7c8305c9d0faaa949252c3ad25cd46dd0b4e1e37f38c8e36",
+  "source_sha256": {
+    "audit_fertilizer_ablation.py": "cd5ec5884738703b7c8305c9d0faaa949252c3ad25cd46dd0b4e1e37f38c8e36",
+    "baseline.py": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "both.py": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+    "evaluate_holdout.py": "df599e139893081f0a5307b0aa9cf299e2d14d4d4a221672b7aa9ac1d3747d82",
+    "fertilizer.py": "bae8fd19015dd8a3050184d93dfcfe1fe27959301d507f56c607d77732c76a73",
+    "fertilizer_ablation.py": "4d1980321e216e78127d550570dc2e1e12e4c76ff6f804d36b9303dd0049e6f4",
+    "harvest.py": "ba6ae448abfcf5703c7107ab6fddda0d3daa95f0e5505626ce9116eba612980c",
+    "market.py": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "optimize_round2.py": "9f4fcf09fecd42c6135a1a2a72b95948c52474636719863eb2d468b01dc102fe",
+    "teacher.py": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+    "v1.py": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "verify_ablation.py": "35659fa57879c8f3eade86aa2c6cd6eabe1545f6d5cfe0d04a3ed3cffab4fe6e",
+    "worker.py": "a80158b26d1f4ae3d366c1d1276a1ca63e652bcd350f5ca25545b0f5f33759f1"
+  },
+  "test_results_seen": false,
+  "selection": "Surgical preregistered toggles; no tuning, no development selection"
+}

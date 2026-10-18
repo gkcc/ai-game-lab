@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "scope": "Two constructed official states, not full-game equivalence proof or profit test",
+  "rows": [
+    {
+      "fertilized_fixture": false,
+      "farmer_actions": {
+        "baseline": [
+          "WATER"
+        ],
+        "fertilizer": [
+          "WATER"
+        ],
+        "harvest": [
+          "WATER"
+        ],
+        "both": [
+          "WATER"
+        ]
+      }
+    },
+    {
+      "fertilized_fixture": true,
+      "farmer_actions": {
+        "baseline": [
+          "WATER"
+        ],
+        "fertilizer": [
+          "WATER"
+        ],
+        "harvest": [
+          "HARVEST"
+        ],
+        "both": [
+          "HARVEST"
+        ]
+      }
+    }
+  ]
+}
