@@ -30,7 +30,7 @@ def main():
     source_names = ("decision/semantics.py", "decision/execution.py", "decision/full_audit.py", "decision/telemetry_worker.py", "decision/api.py",
                     "decision/reexecute_experiment.py", "decision/verify_audit.py", "decision/verify_mechanisms.py",
                     "decision/verify_experiment.py", "learning/round2_worker.py", "learning/mechanism_experiment.py",
-                    "run_match.py", "learning/official_worker.py", "learning/optimize_round2.py", "learning/verify_telemetry.py")
+                    "run_match.py", "learning/official_worker.py", "learning/optimize_round2.py", "learning/verify_telemetry.py", "decision/telemetry_fixtures.py", "learning/verify_telemetry_boundaries.py", "learning/verify_telemetry_panel.py")
     sources = {n: hashlib.sha256((source_root / n).read_bytes()).hexdigest() for n in source_names}
     historical = {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in root.glob("*.json")}
     try:

@@ -1,0 +1,541 @@
+{
+  "passed": true,
+  "games": 52,
+  "source_sha256": {
+    "decision/telemetry_worker.py": "65ec5613f2698bb3db0c66d7a0828b02e00e4ee1d4c6d2d4d64a140aa14814fb",
+    "decision/full_audit.py": "84f7c7b4316fb98791c51b933f5329a271b8bc9aec60eebe133f6d433ec4510d",
+    "decision/execution.py": "cbf38b17ca9c4c1c4f82ddb583ff59e4f605a0e8d8e971ef5bfc3664b2c76378",
+    "decision/semantics.py": "9ac62d0df7adca84c0feff805b2979bb45f9f9f4c2064d1e2b5c48efd3e779a5",
+    "decision/verify_mechanisms.py": "cc82fd118abd94e92a8833587aa2bfb9117214a8a5b00e8054225732af47fbbf",
+    "learning/mechanism_experiment.py": "95bf5399019c7e662d9d32f62898c3f8e3922d4beb0152b91b2ad4bb374da8b7",
+    "learning/verify_telemetry_panel.py": "e555790ecb011237db2edc8fa1e453169be0076d20a1c09a3290e71aa30fb2fa"
+  },
+  "reference_certificate_sha256": "fd76e46bee4442ede9d00bb34c4e32ad113675b74775ec1a9362a8b03a3dee45",
+  "action_count_version": 1,
+  "optimizer_engine_imported": false,
+  "raw_replays_unchanged": true,
+  "all_48_historical_panel_metrics_unchanged": true,
+  "rows": [
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6495223,
+      "side": 0,
+      "passed": true,
+      "replay_gzip_sha256": "1b3b5a8168ff1af2db879b3d6ca4e96ca469d0257988b4e73f36ec2a3d826d57",
+      "non_pass_unit_requests": 2021,
+      "execution_effect_sha256": "1f184f65c2c983f4c84b50164bd7fb0558f3bb1a22d018de98434742ef67c397"
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6495223,
+      "side": 0,
+      "passed": true,
+      "replay_gzip_sha256": "4d026ac8b2c293aecd568ff0f5fd7d65835b5791e232e0872b311872f3f82b49",
+      "non_pass_unit_requests": 2596,
+      "execution_effect_sha256": "7fe91a41f4281f2e82a83485369616b985974c06c01a89744bba555c1ae3be49"
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6495223,
+      "side": 1,
+      "passed": true,
+      "replay_gzip_sha256": "845ad440764f078849f6536a0a7933450528c5e72efff25375e4912ef479a8bb",
+      "non_pass_unit_requests": 2021,
+      "execution_effect_sha256": "dd4c93767fd0736fdf688306657a566ee0f5131e2d643ddd58efcafd3bd19bb7"
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6495223,
+      "side": 1,
+      "passed": true,
+      "replay_gzip_sha256": "a105e07f777df8e4e439f0f9cf23a1c4eebc48f112690921e313a7e01c38bcdd",
+      "non_pass_unit_requests": 2596,
+      "execution_effect_sha256": "e5ee2991a5b6f42e2bb9d4702a7760a7a33a181d02b94312cb30fb287ce5e694"
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6495223,
+      "side": 0,
+      "passed": true,
+      "replay_gzip_sha256": "33b776f736051329bbf0a16069aa16c5526a66f5200caf88086d902b5490194b",
+      "non_pass_unit_requests": 2021,
+      "execution_effect_sha256": "5b3530797ffc3e93ea2a1c21ea82b4b721c6af5d13d208dacf2b71d0336988e5"
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6495223,
+      "side": 0,
+      "passed": true,
+      "replay_gzip_sha256": "4ef81fa313689edb7a40d8e37faab9627b541cdf6de17b44ce9228d142d63ae2",
+      "non_pass_unit_requests": 2682,
+      "execution_effect_sha256": "448df65539485a3b18d3475f1db51e728bb37aa1ccf954b083ef7cb88eaf59d0"
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6495223,
+      "side": 1,
+      "passed": true,
+      "replay_gzip_sha256": "1c90a55fe2ad09245967cd18ca5f04f06e88582348b4859782533256b94219ef",
+      "non_pass_unit_requests": 2021,
+      "execution_effect_sha256": "27410bea3a163dd58107ea5b889760041abb08c0462ded8946fbb67aa4cbe1a3"
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6495223,
+      "side": 1,
+      "passed": true,
+      "replay_gzip_sha256": "930c8e2eae45d24dd9922c459e62103a0edf2a28e3a68f5c8a519bba3a6cfe2f",
+      "non_pass_unit_requests": 2682,
+      "execution_effect_sha256": "effa43edcd466fcad846cb15d08dcfbe0967bb6ee0b25381d5a9f31a5a962067"
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6682214,
+      "side": 0,
+      "passed": true,
+      "replay_gzip_sha256": "ccf47ae842577d65c5da1f17862e999606f5f0b32a985778f96f0358317f82b0",
+      "non_pass_unit_requests": 2282,
+      "execution_effect_sha256": "4c7bda05288c21d50b1de5bf2a5ff19dcc45d7a182bba489b4f049e089c4c1aa"
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6682214,
+      "side": 0,
+      "passed": true,
+      "replay_gzip_sha256": "0be79850354203a98e2e714ab8b1bd69bc2dfe49c4c5ff3019840f29b59ce780",
+      "non_pass_unit_requests": 2550,
+      "execution_effect_sha256": "4a85ba25abc17252ddfd7867a4797bf098725eab37f7365c85abca32886426ec"
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6682214,
+      "side": 1,
+      "passed": true,
+      "replay_gzip_sha256": "43f1ae15d76deef1e9f3195afcec976dabb9b0b9161bf591301f15480431a20e",
+      "non_pass_unit_requests": 2282,
+      "execution_effect_sha256": "521def64616519af0e79ca6316ac8b1e826d18da87af90c6fab51bf5dc268ad5"
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6682214,
+      "side": 1,
+      "passed": true,
+      "replay_gzip_sha256": "3958ae61ceb522d78426efbbf160f4510794e749e55792b23e269ac45f74e334",
+      "non_pass_unit_requests": 2550,
+      "execution_effect_sha256": "9e613aa681f556fc527ce7a3982a52cdeb518b651753cbbaacac350c2b221f8d"
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6682214,
+      "side": 0,
+      "passed": true,
+      "replay_gzip_sha256": "1d2acfab65e3bd1568a1a5b725a757099b66cb508141ef07be96551d975dbf70",
+      "non_pass_unit_requests": 2518,
+      "execution_effect_sha256": "390f0b8232a2f7804914dd917d4c948dbc4dde699eb57e17663703704d1a8f01"
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6682214,
+      "side": 0,
+      "passed": true,
+      "replay_gzip_sha256": "c5ade91fe16c039f7dbad0c2a2ada2103146489f6c833610b7bd4dcf5d44b43f",
+      "non_pass_unit_requests": 2644,
+      "execution_effect_sha256": "1a31b6aef45c44bccc0e4c90f30ffcafe244e3b8ce84ff2f133c68fa67d02f38"
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6682214,
+      "side": 1,
+      "passed": true,
+      "replay_gzip_sha256": "b506d81cd7ea664c74325ddbe17eae0c818c3bef46b03902706c97be29f312fa",
+      "non_pass_unit_requests": 2518,
+      "execution_effect_sha256": "c8f1781821292a77797c229d7efedbe5bd506429d01d72d4ae16918a10b699c4"
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6682214,
+      "side": 1,
+      "passed": true,
+      "replay_gzip_sha256": "10ac78b6740d7d580b1322e234bd0801c203069ec0feb251409b8d2dba978798",
+      "non_pass_unit_requests": 2644,
+      "execution_effect_sha256": "323e6700764b1fb35f2c65127ea45ee1cee2eefd2d9bad7d561cf9fda9e9b6cb"
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6726194,
+      "side": 0,
+      "passed": true,
+      "replay_gzip_sha256": "33fda3296850d93c3876ac0bf1a899f4b7dc9cdd255666958dc69411e761c8a1",
+      "non_pass_unit_requests": 1991,
+      "execution_effect_sha256": "6ef57440b1211948900a3dc918dd78dc092b7d7527ffe7f84c0085914b960c18"
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6726194,
+      "side": 0,
+      "passed": true,
+      "replay_gzip_sha256": "00791d90db988714e232dbb8414281994c4659d551f24a431fb49dd8211aa3cd",
+      "non_pass_unit_requests": 2803,
+      "execution_effect_sha256": "d4f72853140994800453b6ea031791490bef751ccf025d81b743687de0400258"
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6726194,
+      "side": 1,
+      "passed": true,
+      "replay_gzip_sha256": "bd85bf6351f97ba549a0252a5e9594f3b060b13e9ae08527df3f2454b14672ae",
+      "non_pass_unit_requests": 1991,
+      "execution_effect_sha256": "e347c247a185b9de2923fd5da5b1667c2542f44123f011e62c85bbf96f31664c"
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6726194,
+      "side": 1,
+      "passed": true,
+      "replay_gzip_sha256": "9ace60371ead467390e95a8513903ddfa0513a2341cc809a89265bbcff8a216b",
+      "non_pass_unit_requests": 2803,
+      "execution_effect_sha256": "7d76d7c11a894fad8b7d377e62c59321ec81cc871a995c889361fd9651d3aed9"
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6726194,
+      "side": 0,
+      "passed": true,
+      "replay_gzip_sha256": "b9397e512178b2dcdb7940c769d08b94bd05c5296a185ee67386c26632f51296",
+      "non_pass_unit_requests": 1991,
+      "execution_effect_sha256": "8420ec47b11653d61b25e4735d900b2be535240b046404f0c316a6ecc54456e6"
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6726194,
+      "side": 0,
+      "passed": true,
+      "replay_gzip_sha256": "c3d817f7e9c0281d3d8ffeef4abbc40340f158090715d41a4f1eee6b138cca02",
+      "non_pass_unit_requests": 2737,
+      "execution_effect_sha256": "2df9df57a3a1377b79b430a5d12ab0d20078fd1d14b6ee08b3cac53749fa1cae"
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6726194,
+      "side": 1,
+      "passed": true,
+      "replay_gzip_sha256": "71f143a7700cde739111b755805db10af74b64278d62c5a32d1b02b5768a714a",
+      "non_pass_unit_requests": 1991,
+      "execution_effect_sha256": "eb4cfc9f28d23ab026cae2b26187a493f34ac3b13b7be0eacc84b6ea56ee585c"
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6726194,
+      "side": 1,
+      "passed": true,
+      "replay_gzip_sha256": "b6adc63627eb5fe185cf1a54cc7f8d98a8197ff348eb73bd3ffb644f88e22e84",
+      "non_pass_unit_requests": 2737,
+      "execution_effect_sha256": "19617de0aee7b6b9e8f7baf6af586dab765454cc6c21a6ee1cb85904011824ab"
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6774936,
+      "side": 0,
+      "passed": true,
+      "replay_gzip_sha256": "cfd632ed28891dd3cb937f56b0a7efef0bc39e7ab4d4945581a1b2202be51578",
+      "non_pass_unit_requests": 2265,
+      "execution_effect_sha256": "beef11bec4fc4e5183671a304356deb04f2981f4809dcc853ec419422e48eb78"
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6774936,
+      "side": 0,
+      "passed": true,
+      "replay_gzip_sha256": "84fa92a60144c8e15f9fcc8b6e8534fa51f4d19f49a282887e5ff81c4e2e0063",
+      "non_pass_unit_requests": 2535,
+      "execution_effect_sha256": "a5d4aa8afee64aecebfc25894b9ac7c14909bf7759dd1a512b32404257314b10"
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6774936,
+      "side": 1,
+      "passed": true,
+      "replay_gzip_sha256": "16497f4f161552298667cbee983d03a1c1be57dec138f75073b69789ae4596b3",
+      "non_pass_unit_requests": 2265,
+      "execution_effect_sha256": "73eaf6d883dfa8ae0aed311e72e0f161c18a31db1af88d13058094fb80289a91"
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6774936,
+      "side": 1,
+      "passed": true,
+      "replay_gzip_sha256": "8cfcd7476455dd9a24993dca5f28a570ed2a3c6b9f769828b903e0bcc1df709b",
+      "non_pass_unit_requests": 2535,
+      "execution_effect_sha256": "b61053b77606ad58cb8fcb1988f8e907168ffff94a06e70391d2bd0fabeaf6b4"
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6774936,
+      "side": 0,
+      "passed": true,
+      "replay_gzip_sha256": "e2da6409b1c30b80fb0249ac4093cd7309c49b48d97cd45303fa916e128a341c",
+      "non_pass_unit_requests": 2271,
+      "execution_effect_sha256": "9276aa8726da1b17122a6cf470b192375781cf2f634aeaab34e5b7b52e52ec53"
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6774936,
+      "side": 0,
+      "passed": true,
+      "replay_gzip_sha256": "a351cbafff72a7592ad68721c9dc4040f16225a5431f36bf74682e5084e0f8f2",
+      "non_pass_unit_requests": 2598,
+      "execution_effect_sha256": "eb7c82c459583d2638546cc98e303fa46033cd2297e9a229cc04123434df64a1"
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6774936,
+      "side": 1,
+      "passed": true,
+      "replay_gzip_sha256": "9eb6145e53545bd9d4b8d2ad3e0b4460fe41c27d4cfb1f50fddab2dce5fd447e",
+      "non_pass_unit_requests": 2271,
+      "execution_effect_sha256": "96a0cb58520426bdfb6bb6f350090652d5a885cede53ba0e99bdae7e96a9fcb5"
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6774936,
+      "side": 1,
+      "passed": true,
+      "replay_gzip_sha256": "4fdfea831c837a0f2a3e1791a433de0c175f8432e7b612e8942fe04799b34376",
+      "non_pass_unit_requests": 2598,
+      "execution_effect_sha256": "21bda215936abc6504136c84589a4411e2543040443aa263519f4b3ab13fa57f"
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6949248,
+      "side": 0,
+      "passed": true,
+      "replay_gzip_sha256": "ccc0aa7abd51b12905c7582c678ae280a2305352fee43552ae601b3baf0d4ce8",
+      "non_pass_unit_requests": 1991,
+      "execution_effect_sha256": "8bfccc55aa214576a56dde8bf37ee39afc846b06799e3582c1061ea5207468c0"
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6949248,
+      "side": 0,
+      "passed": true,
+      "replay_gzip_sha256": "bbef38c52eca3d15b2c58c8b604d38bbdaa46f9b7ab1e5190b94b2294c60013c",
+      "non_pass_unit_requests": 2569,
+      "execution_effect_sha256": "f54ee9fdb57c4d71f329ec5867e89d3d908d3ccec5d378f9b15bb65df3be0b8e"
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6949248,
+      "side": 1,
+      "passed": true,
+      "replay_gzip_sha256": "a113e1795bdcef175d4a4b23809dd36a76fe46d40c873a965d9d1b468014f1fc",
+      "non_pass_unit_requests": 1991,
+      "execution_effect_sha256": "836101f4831f5580c4cc4fc1e95b668ed79746659bc95a1dec8cb8bcaa12b057"
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6949248,
+      "side": 1,
+      "passed": true,
+      "replay_gzip_sha256": "7fe13145fc7d0266c47d1cdab5ff2b33a0497d76cf42a2bcb718bf59abf666dd",
+      "non_pass_unit_requests": 2569,
+      "execution_effect_sha256": "8c7a88ee9198fccb8a1762ebbe3d7b0d0165b494de211cd9c6ed407bf26895d5"
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6949248,
+      "side": 0,
+      "passed": true,
+      "replay_gzip_sha256": "590591a5fdafae67db5e5091cf7ee9196e66fbe560edbb138eda96215fbcf861",
+      "non_pass_unit_requests": 1991,
+      "execution_effect_sha256": "e2b774f07836bbf85f2554156f0c0950bf06f2e2ca6502d78a04c89d4d7d5dde"
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6949248,
+      "side": 0,
+      "passed": true,
+      "replay_gzip_sha256": "62bc3ca9806671431bb1f2f26e4d0a7a46b69c26e40188e44118aacfd42aface",
+      "non_pass_unit_requests": 2659,
+      "execution_effect_sha256": "16a79a1853cf2ed7f2cc444d4126122050c930a1dc60d257c437749f0292dcf1"
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6949248,
+      "side": 1,
+      "passed": true,
+      "replay_gzip_sha256": "2107c93c9cbbe9a8a84fdf8cb1a9666f358fd0c8ee3c8d1fc5bba41c20bedaab",
+      "non_pass_unit_requests": 1991,
+      "execution_effect_sha256": "ff1e92e5b5f3d735281e5a1ff89678fe03b4a26c543ecee0fc6246c2a7a569ed"
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6949248,
+      "side": 1,
+      "passed": true,
+      "replay_gzip_sha256": "72f2fc7068cd87b77a97bf56e00db1ceb232e63d612d7b55d799e758046d593b",
+      "non_pass_unit_requests": 2659,
+      "execution_effect_sha256": "26e9484e00e4a39dfb1c3adc9935c5be200a66014f095b154deab14588a9100e"
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6992429,
+      "side": 0,
+      "passed": true,
+      "replay_gzip_sha256": "aac444c7029f77cec1d5c044d3b70c82c0f192ea7271517d2e5535ad41b37c30",
+      "non_pass_unit_requests": 2008,
+      "execution_effect_sha256": "457f3867371dc13a0d5eeea052fa26462c854f360a259c9e095b55ed12c9312d"
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6992429,
+      "side": 0,
+      "passed": true,
+      "replay_gzip_sha256": "a8ad704c6af5c94924153a632e845864f029c997ca07f41c30a9a947f9cbfb12",
+      "non_pass_unit_requests": 2660,
+      "execution_effect_sha256": "c8ba34e26cfaa485bb5b4545ac3664357aee0fe95e6ef333a3f2d25a73fae75c"
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6992429,
+      "side": 1,
+      "passed": true,
+      "replay_gzip_sha256": "ea776a11574b392b590f7a7b01f59acd6e63585291260b6a2cd83bf0d9687e73",
+      "non_pass_unit_requests": 2008,
+      "execution_effect_sha256": "33c3310ef7e31009b93f3cb9be71aaa07732fde9cf2ea0204349102316048dea"
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6992429,
+      "side": 1,
+      "passed": true,
+      "replay_gzip_sha256": "95136558102302213e68ce067eccbdb9612c3209e457e748dc41a8b734735b6c",
+      "non_pass_unit_requests": 2660,
+      "execution_effect_sha256": "3a4e1dd5ff81996891525e66e51382f15954088adb19e57c473a883c4e18fec6"
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6992429,
+      "side": 0,
+      "passed": true,
+      "replay_gzip_sha256": "786cc7751d3295c74352a22baccb4c93499e99ce5aabcf8e9d3ab92d78230044",
+      "non_pass_unit_requests": 2008,
+      "execution_effect_sha256": "719c0762a8c481e34451f1de9bbcaeadb2c286ea687e2c09bb132d7d6f8740da"
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6992429,
+      "side": 0,
+      "passed": true,
+      "replay_gzip_sha256": "2e94bc144f38f81d97f9cadc416cc7512a84a836e66ee0d4995501768f00b02a",
+      "non_pass_unit_requests": 2807,
+      "execution_effect_sha256": "5d8ad0837f6e7607f6fc34ebb73eec082657e5d07fe93b11f1ed8ff14d3a78c7"
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6992429,
+      "side": 1,
+      "passed": true,
+      "replay_gzip_sha256": "d9421442ed86803e6fd301dc9da96e68802609f038c896493e9340a601c071bc",
+      "non_pass_unit_requests": 2008,
+      "execution_effect_sha256": "30335c1293804eb90d0c026b459c6a2322bbf6bf79310d9fbe9668b2e4178ce4"
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6992429,
+      "side": 1,
+      "passed": true,
+      "replay_gzip_sha256": "d9ce048e19804cd6f325f522404d719e4cfa180f12afecf7e779b0056e0b3765",
+      "non_pass_unit_requests": 2807,
+      "execution_effect_sha256": "6894d3884c4c20097ffc582f1e8702d042392020b479f8abbcf05d54cc309dde"
+    },
+    {
+      "policy": "baseline",
+      "opponent": "market",
+      "seed": 6774936,
+      "side": 0,
+      "passed": true,
+      "replay_gzip_sha256": "43df587ed1bb2f6aaa65149356be82ffb8d77da16f4f18fc121d3f38b60e1295",
+      "non_pass_unit_requests": 2265,
+      "execution_effect_sha256": "beef11bec4fc4e5183671a304356deb04f2981f4809dcc853ec419422e48eb78"
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6774936,
+      "side": 0,
+      "passed": true,
+      "replay_gzip_sha256": "8fd7ae363cdd524c0b4c2eadb1f394b0a54fd9d339e10798a6bd9bd7a37c817a",
+      "non_pass_unit_requests": 2265,
+      "execution_effect_sha256": "beef11bec4fc4e5183671a304356deb04f2981f4809dcc853ec419422e48eb78"
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6774936,
+      "side": 1,
+      "passed": true,
+      "replay_gzip_sha256": "753d3ac3c342c2cd0c8844ce1fd30a12f0b279fcabd453348f1611d3d4467b4d",
+      "non_pass_unit_requests": 2535,
+      "execution_effect_sha256": "b61053b77606ad58cb8fcb1988f8e907168ffff94a06e70391d2bd0fabeaf6b4"
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6774936,
+      "side": 0,
+      "passed": true,
+      "replay_gzip_sha256": "36c591eb5896f51fd4ae8854065f74dd6eb832d76e5a43cda3d651ca60023333",
+      "non_pass_unit_requests": 2535,
+      "execution_effect_sha256": "a5d4aa8afee64aecebfc25894b9ac7c14909bf7759dd1a512b32404257314b10"
+    }
+  ],
+  "boundary": "Each production telemetry call independently reexecutes the complete official replay; retained games, not new statistical samples"
+}

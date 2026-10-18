@@ -7,18 +7,30 @@ from pathlib import Path
 from statistics import mean
 import sys
 
+ACTION_COUNT_DEFINITION = "Pre-step existing unit slots; nonempty list with string opcode other than PASS; includes unknown, rejected and no-effect requests; excludes market, ghost slots and malformed atoms; not successful executions"
+
+
+def count_unit_requests(farm, raw):
+    """Request metric only: envelope handling mirrors the official interpreter.
+
+    Parameter validity/economics are deliberately not filters. The official
+    engine alone decides whether a well-shaped request has any effect.
+    """
+    action = raw if isinstance(raw, dict) else {}
+    hands = action.get("hands", [])
+    hands = hands if isinstance(hands, list) else []
+    atoms = [action.get("farmer", ["PASS"]), *hands[:len(farm["hands"])]]
+    return sum(isinstance(a, list) and bool(a) and isinstance(a[0], str) and a[0] != "PASS"
+               for a in atoms)
+
+
 def collect(folder, side):
     from decision.full_audit import reexecute
     replay = json.loads(gzip.decompress((folder / "replay.json.gz").read_bytes()))
     execution = reexecute(replay, trace=True)
     p = side
-    expanded_plants = actions = 0
-    for before, after in zip(replay["steps"], replay["steps"][1:]):
-        farm = before[0]["observation"]["farms"][p]
-        positions = [farm["farmer"], *farm["hands"]]
-        a = after[p]["action"]
-        for pos, atom in zip(positions, [a["farmer"], *a["hands"]]):
-            actions += atom[0] != "PASS"
+    actions = sum(count_unit_requests(before[0]["observation"]["farms"][p], after[p]["action"])
+                  for before, after in zip(replay["steps"], replay["steps"][1:]))
     expanded_plants = execution["execution"]["successful_plants_new_land"][p]
     first = replay["steps"][1][0]["observation"]["farms"][p]
     last = replay["steps"][-1][0]["observation"]["farms"][p]
@@ -26,6 +38,8 @@ def collect(folder, side):
     result = json.loads((folder / "result.json").read_text(encoding="utf-8"))
     return {"first_post_action_quadrants": first["unlocked_quadrants"], "final_quadrants": last["unlocked_quadrants"],
             "successful_plant_events_in_new_land": expanded_plants, "non_pass_unit_actions": actions,
+            "non_pass_unit_requests": actions, "action_count_version": 1,
+            "action_count_definition": ACTION_COUNT_DEFINITION,
             "execution_label_version": execution["execution"]["label_version"], "execution_effect_sha256": execution["execution"]["ordered_effect_sha256"],
             "melon_quote_min": min(prices), "melon_quote_mean": mean(prices),
             "simulation_seconds": result["run_seconds"], "both_bot_seconds": sum(result["bot_seconds"])}

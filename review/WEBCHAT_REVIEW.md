@@ -24,3 +24,7 @@
 ## 最新复审重点
 
 对照 a938ef8，重点读取 decision/execution.py 的请求信封处理及动物 PLACE 前后状态判据，learning/mechanism_experiment.py 与 decision/telemetry_worker.py 的进程隔离，以及 verify_audit.py、learning/verify_telemetry.py 的实际回归。核对 review/evidence/audit-followup-20261018 下的新证书、comparison.json、历史证书哈希、源码映射与保护清单；旧证据不覆盖。区分执行标签版本 2、语义审计版本 2 与历史哈希版本 1。核查 52 场是否真正执行官方转移，而非仅重算 Replay 哈希。不要据此声称新独立测试、全动作合法性或 BC 已完成。
+
+## 遥测消费层最新复审
+
+对照 abfd740，检查 decision/telemetry_worker.py 的本地动作读取和请求计数口径，以及 decision/telemetry_fixtures.py、learning/verify_telemetry_boundaries.py 的完整官方回放到隔离生产入口回归。核对未知/无效果请求、空或非列表原子动作、幽灵槽位及零计数场景；不能只看是否不再抛错。核对 learning/verify_telemetry_panel.py 和 review/evidence/telemetry-repair-20261018，确认全部 52 场消费者指标与旧面板保持一致，原始哈希和历史统计未改。两轮重放相同 52 场不能算新的独立样本；本轮不做 BC。

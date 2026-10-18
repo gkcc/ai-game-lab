@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "optimizer_engine_available": false,
+  "optimizer_engine_imported": false,
+  "official_worker_completed": true,
+  "mechanism": {
+    "first_post_action_quadrants": [
+      "NW"
+    ],
+    "final_quadrants": [
+      "NW"
+    ],
+    "successful_plant_events_in_new_land": 0,
+    "non_pass_unit_actions": 0,
+    "non_pass_unit_requests": 0,
+    "action_count_version": 1,
+    "action_count_definition": "Pre-step existing unit slots; nonempty list with string opcode other than PASS; includes unknown, rejected and no-effect requests; excludes market, ghost slots and malformed atoms; not successful executions",
+    "execution_label_version": 2,
+    "execution_effect_sha256": "a72b0b171bc9ff0220a81bc91d462442b516f73494eeb59b6301e0317f28e697",
+    "melon_quote_min": 250,
+    "melon_quote_mean": 272.7583333333333,
+    "simulation_seconds": 0.7052028000034625,
+    "both_bot_seconds": 0
+  },
+  "boundary": "Actual isolated telemetry entry over a complete retained replay; not a new optimization experiment"
+}

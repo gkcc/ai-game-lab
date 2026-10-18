@@ -1,0 +1,107 @@
+{
+  "passed": true,
+  "complete_fixture_games": 4,
+  "isolated_calls": 8,
+  "optimizer_engine_available": false,
+  "optimizer_engine_imported": false,
+  "raw_replays_unchanged": true,
+  "cases": [
+    {
+      "folder": "side0-hired0",
+      "side": 0,
+      "hired": false,
+      "states": 720,
+      "replay_gzip_sha256": "b4ed180b4d7366df55331071737d00a4ab5d2f4b86e905494c62884cd9544eac",
+      "expected_requests": 3,
+      "expected_other_side_requests": 0,
+      "evaluated_side": 0,
+      "actual_requests": 3,
+      "passed": true
+    },
+    {
+      "folder": "side0-hired0",
+      "side": 0,
+      "hired": false,
+      "states": 720,
+      "replay_gzip_sha256": "b4ed180b4d7366df55331071737d00a4ab5d2f4b86e905494c62884cd9544eac",
+      "expected_requests": 0,
+      "expected_other_side_requests": 0,
+      "evaluated_side": 1,
+      "actual_requests": 0,
+      "passed": true
+    },
+    {
+      "folder": "side0-hired1",
+      "side": 0,
+      "hired": true,
+      "states": 720,
+      "replay_gzip_sha256": "9b270cd5e748afc6b772d919eaf08210c25adda5cb5347e0cc3166d02235fb2c",
+      "expected_requests": 5,
+      "expected_other_side_requests": 0,
+      "evaluated_side": 0,
+      "actual_requests": 5,
+      "passed": true
+    },
+    {
+      "folder": "side0-hired1",
+      "side": 0,
+      "hired": true,
+      "states": 720,
+      "replay_gzip_sha256": "9b270cd5e748afc6b772d919eaf08210c25adda5cb5347e0cc3166d02235fb2c",
+      "expected_requests": 0,
+      "expected_other_side_requests": 0,
+      "evaluated_side": 1,
+      "actual_requests": 0,
+      "passed": true
+    },
+    {
+      "folder": "side1-hired0",
+      "side": 1,
+      "hired": false,
+      "states": 720,
+      "replay_gzip_sha256": "0362d8272e5162694d8a647426befa1f69a8fa8eb3b1cf1c64f9c60fafbb2e29",
+      "expected_requests": 3,
+      "expected_other_side_requests": 0,
+      "evaluated_side": 1,
+      "actual_requests": 3,
+      "passed": true
+    },
+    {
+      "folder": "side1-hired0",
+      "side": 1,
+      "hired": false,
+      "states": 720,
+      "replay_gzip_sha256": "0362d8272e5162694d8a647426befa1f69a8fa8eb3b1cf1c64f9c60fafbb2e29",
+      "expected_requests": 0,
+      "expected_other_side_requests": 0,
+      "evaluated_side": 0,
+      "actual_requests": 0,
+      "passed": true
+    },
+    {
+      "folder": "side1-hired1",
+      "side": 1,
+      "hired": true,
+      "states": 720,
+      "replay_gzip_sha256": "5f2a0869b20cec4afb9eacec2a234acfc9b21a3de85638e9a23bb8fc9566f6ec",
+      "expected_requests": 5,
+      "expected_other_side_requests": 0,
+      "evaluated_side": 1,
+      "actual_requests": 5,
+      "passed": true
+    },
+    {
+      "folder": "side1-hired1",
+      "side": 1,
+      "hired": true,
+      "states": 720,
+      "replay_gzip_sha256": "5f2a0869b20cec4afb9eacec2a234acfc9b21a3de85638e9a23bb8fc9566f6ec",
+      "expected_requests": 0,
+      "expected_other_side_requests": 0,
+      "evaluated_side": 0,
+      "actual_requests": 0,
+      "passed": true
+    }
+  ],
+  "boundary": "Real official step trajectories and full reexecution in production telemetry; no mocks; request counts include no-effect and unknown commands"
+}
