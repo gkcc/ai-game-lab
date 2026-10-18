@@ -51,3 +51,5 @@ Lux：运行 `.\lux-s3\Setup.ps1`，再运行 `.\lux-s3\Play.ps1`。GPU需要独
 本轮完成保序审计 v2、官方执行归因与局内历史隔离修复；保留旧哈希和实验，未启动 BC。见 [修复说明](kaggriculture/decision/AUDIT_REPAIR.zh-CN.md) 与 [新版验收证据](review/evidence/audit-repair-20261018/acceptance.json)。
 
 终局施肥估值修正：见 [终局教师 v2](kaggriculture/TEACHER_TERMINAL_V2.zh-CN.md)。单独保留旧教师和默认 Bot；新种子固定对手面板为小幅探索性改善，未启动 BC。
+
+施肥与及时收获消融：[实验结果](kaggriculture/FERTILIZER_ABLATION.zh-CN.md)。仅施肥退化，配合原条件及时收获后实现组合增益；默认和冻结教师不变。

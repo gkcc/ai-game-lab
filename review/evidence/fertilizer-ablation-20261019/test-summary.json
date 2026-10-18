@@ -1,0 +1,268 @@
+{
+  "games": 144,
+  "seed_clusters": 6,
+  "contrasts": {
+    "fertilizer_without_timely_harvest": {
+      "mean": -3079.138888888889,
+      "ci_99": [
+        -4735.861111111112,
+        -1435.0
+      ],
+      "seed_deltas": [
+        -4604.0,
+        -4788.5,
+        -1873.6666666666667,
+        -1895.3333333333333,
+        -4755.666666666667,
+        -557.6666666666666
+      ],
+      "sign_test_p_unadjusted": 0.03125,
+      "nominal_positive": false,
+      "nominal_negative": true
+    },
+    "timely_harvest_given_fertilizer": {
+      "mean": 6382.333333333332,
+      "ci_99": [
+        3504.388888888889,
+        9585.833333333334
+      ],
+      "seed_deltas": [
+        10454.333333333334,
+        6520.666666666667,
+        3542.3333333333335,
+        4884.0,
+        10135.0,
+        2757.6666666666665
+      ],
+      "sign_test_p_unadjusted": 0.03125,
+      "nominal_positive": true,
+      "nominal_negative": false
+    },
+    "combined": {
+      "mean": 3303.194444444444,
+      "ci_99": [
+        1788.9193055555554,
+        5137.888888888888
+      ],
+      "seed_deltas": [
+        5850.333333333333,
+        1732.1666666666667,
+        1668.6666666666667,
+        2988.6666666666665,
+        5379.333333333333,
+        2200.0
+      ],
+      "sign_test_p_unadjusted": 0.03125,
+      "nominal_positive": true,
+      "nominal_negative": false
+    },
+    "interaction": {
+      "mean": 6382.333333333332,
+      "ci_99": [
+        3504.388888888889,
+        9585.833333333334
+      ],
+      "seed_deltas": [
+        10454.333333333334,
+        6520.666666666667,
+        3542.3333333333335,
+        4884.0,
+        10135.0,
+        2757.6666666666665
+      ],
+      "sign_test_p_unadjusted": 0.03125,
+      "nominal_positive": true,
+      "nominal_negative": false
+    },
+    "fertilizer_contribution_minus_conditional_harvest": {
+      "mean": -9461.472222222223,
+      "ci_99": [
+        -14321.694444444445,
+        -4943.0
+      ],
+      "seed_deltas": [
+        -15058.333333333334,
+        -11309.166666666666,
+        -5416.0,
+        -6779.333333333333,
+        -14890.666666666666,
+        -3315.3333333333335
+      ],
+      "sign_test_p_unadjusted": 0.03125,
+      "nominal_positive": false,
+      "nominal_negative": true
+    }
+  },
+  "aggregate": {
+    "baseline": {
+      "games": 36,
+      "wins": 12,
+      "draws": 0,
+      "losses": 24,
+      "mean_net_profit": 34840.47222222222,
+      "mean_opponent_profit": 36668.13888888889,
+      "mean_margin": -1827.6666666666667,
+      "mean_score": 0.3333333333333333
+    },
+    "fertilizer": {
+      "games": 36,
+      "wins": 2,
+      "draws": 0,
+      "losses": 34,
+      "mean_net_profit": 31761.333333333332,
+      "mean_opponent_profit": 37776.805555555555,
+      "mean_margin": -6015.472222222223,
+      "mean_score": 0.05555555555555555
+    },
+    "harvest": {
+      "games": 36,
+      "wins": 12,
+      "draws": 0,
+      "losses": 24,
+      "mean_net_profit": 34840.47222222222,
+      "mean_opponent_profit": 36668.13888888889,
+      "mean_margin": -1827.6666666666667,
+      "mean_score": 0.3333333333333333
+    },
+    "both": {
+      "games": 36,
+      "wins": 21,
+      "draws": 10,
+      "losses": 5,
+      "mean_net_profit": 38143.666666666664,
+      "mean_opponent_profit": 35652.055555555555,
+      "mean_margin": 2491.6111111111113,
+      "mean_score": 0.7222222222222222
+    }
+  },
+  "by_opponent": {
+    "v1": {
+      "baseline": {
+        "games": 12,
+        "wins": 10,
+        "draws": 0,
+        "losses": 2,
+        "mean_net_profit": 34805.833333333336,
+        "mean_opponent_profit": 34139.5,
+        "mean_margin": 666.3333333333334,
+        "mean_score": 0.8333333333333334
+      },
+      "fertilizer": {
+        "games": 12,
+        "wins": 2,
+        "draws": 0,
+        "losses": 10,
+        "mean_net_profit": 30591.75,
+        "mean_opponent_profit": 36158.916666666664,
+        "mean_margin": -5567.166666666667,
+        "mean_score": 0.16666666666666666
+      },
+      "harvest": {
+        "games": 12,
+        "wins": 10,
+        "draws": 0,
+        "losses": 2,
+        "mean_net_profit": 34805.833333333336,
+        "mean_opponent_profit": 34139.5,
+        "mean_margin": 666.3333333333334,
+        "mean_score": 0.8333333333333334
+      },
+      "both": {
+        "games": 12,
+        "wins": 12,
+        "draws": 0,
+        "losses": 0,
+        "mean_net_profit": 38299.416666666664,
+        "mean_opponent_profit": 32909.416666666664,
+        "mean_margin": 5390.0,
+        "mean_score": 1
+      }
+    },
+    "market": {
+      "baseline": {
+        "games": 12,
+        "wins": 1,
+        "draws": 0,
+        "losses": 11,
+        "mean_net_profit": 36240.833333333336,
+        "mean_opponent_profit": 37669.5,
+        "mean_margin": -1428.6666666666667,
+        "mean_score": 0.08333333333333333
+      },
+      "fertilizer": {
+        "games": 12,
+        "wins": 0,
+        "draws": 0,
+        "losses": 12,
+        "mean_net_profit": 34230.666666666664,
+        "mean_opponent_profit": 38033.833333333336,
+        "mean_margin": -3803.1666666666665,
+        "mean_score": 0
+      },
+      "harvest": {
+        "games": 12,
+        "wins": 1,
+        "draws": 0,
+        "losses": 11,
+        "mean_net_profit": 36240.833333333336,
+        "mean_opponent_profit": 37669.5,
+        "mean_margin": -1428.6666666666667,
+        "mean_score": 0.08333333333333333
+      },
+      "both": {
+        "games": 12,
+        "wins": 8,
+        "draws": 0,
+        "losses": 4,
+        "mean_net_profit": 39341.833333333336,
+        "mean_opponent_profit": 37257.0,
+        "mean_margin": 2084.8333333333335,
+        "mean_score": 0.6666666666666666
+      }
+    },
+    "teacher": {
+      "baseline": {
+        "games": 12,
+        "wins": 1,
+        "draws": 0,
+        "losses": 11,
+        "mean_net_profit": 33474.75,
+        "mean_opponent_profit": 38195.416666666664,
+        "mean_margin": -4720.666666666667,
+        "mean_score": 0.08333333333333333
+      },
+      "fertilizer": {
+        "games": 12,
+        "wins": 0,
+        "draws": 0,
+        "losses": 12,
+        "mean_net_profit": 30461.583333333332,
+        "mean_opponent_profit": 39137.666666666664,
+        "mean_margin": -8676.083333333334,
+        "mean_score": 0
+      },
+      "harvest": {
+        "games": 12,
+        "wins": 1,
+        "draws": 0,
+        "losses": 11,
+        "mean_net_profit": 33474.75,
+        "mean_opponent_profit": 38195.416666666664,
+        "mean_margin": -4720.666666666667,
+        "mean_score": 0.08333333333333333
+      },
+      "both": {
+        "games": 12,
+        "wins": 1,
+        "draws": 10,
+        "losses": 1,
+        "mean_net_profit": 36789.75,
+        "mean_opponent_profit": 36789.75,
+        "mean_margin": 0.0,
+        "mean_score": 0.5
+      }
+    }
+  },
+  "harvest_only_same_semantic_trajectory": true,
+  "scope": "Exploratory six seed clusters; five nominal Bonferroni bootstrap contrasts, not universal or per-action causality"
+}

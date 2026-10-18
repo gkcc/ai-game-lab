@@ -36,3 +36,7 @@
 ## 终局估值 v2 复审焦点
 
 阅读 `kaggriculture/TEACHER_TERMINAL_V2.zh-CN.md` 及 `review/evidence/teacher-terminal-v2-20261018/`。重点核对最后日结、农夫日结复位、往返收获和 DROP 同回合 SELL 的预算；购肥与施肥共用窗口。区分经济可行路径与联合任务/资源保证。检查 96 场统计及另 2 场复现的口径，六个种子有两平且符号检验 p=0.125，不将 bootstrap 正区间夸大为普遍优势。窗口遥测复用策略 helper，须结合官方边界回归阅读；原始 Replay 保存在本地，不能把公开证书视作审查者独立重演。确认旧证书和默认 Bot 的保护哈希。先不做 BC。
+
+## 最新复审：施肥与原条件及时收获消融
+
+请检查 `kaggriculture/FERTILIZER_ABLATION.zh-CN.md`、`learning/fertilizer_ablation.py`（位于kaggriculture内）、两个实验模型、`decision/audit_fertilizer_ablation.py`及本轮证据目录。重点核对四组是否只有登记的切换差异；H单独组因无肥而不触发，不能当成广义收获策略无效的证据。核对144场完整配对与4场复现排除、六种子聚类、五项99% bootstrap区间及未调整符号p值边界；交互与条件收获增量相等不是两份独立证据。检查148场复演、隔离进程追踪、收获份数和成本的计数，避免将整局差值当逐动作利润；确认历史146项哈希与隐私保护。先不做BC。
