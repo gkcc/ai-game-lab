@@ -1,0 +1,230 @@
+{
+  "physical_games": 96,
+  "overall": {
+    "mean_profit_delta": 86.875,
+    "profit_95_ci": [
+      18.958333333333332,
+      183.16666666666666
+    ],
+    "mean_score_delta": 0.10416666666666667,
+    "score_95_ci_descriptive": [
+      0.020833333333333332,
+      0.22916666666666666
+    ],
+    "score_ci_degenerate": false,
+    "positive_profit_seeds": 4,
+    "negative_profit_seeds": 0,
+    "sign_test_p": 0.125,
+    "seed_profit_deltas": [
+      110.0,
+      0.0,
+      116.75,
+      3.75,
+      0.0,
+      290.75
+    ]
+  },
+  "by_opponent": {
+    "v1": {
+      "paired": {
+        "mean_profit_delta": 94.66666666666667,
+        "profit_95_ci": [
+          17.666666666666668,
+          212.66666666666666
+        ],
+        "mean_score_delta": 0.0,
+        "score_95_ci_descriptive": [
+          0.0,
+          0.0
+        ],
+        "score_ci_degenerate": true,
+        "positive_profit_seeds": 3,
+        "negative_profit_seeds": 0,
+        "sign_test_p": 0.25,
+        "seed_profit_deltas": [
+          106.0,
+          0.0,
+          108.0,
+          0.0,
+          0.0,
+          354.0
+        ]
+      },
+      "baseline": {
+        "games": 12,
+        "wins": 12,
+        "draws": 0,
+        "losses": 0,
+        "mean_net_profit": 39151.833333333336,
+        "mean_opponent_profit": 35465.5,
+        "mean_score": 1.0
+      },
+      "candidate": {
+        "games": 12,
+        "wins": 12,
+        "draws": 0,
+        "losses": 0,
+        "mean_net_profit": 39246.5,
+        "mean_opponent_profit": 35465.166666666664,
+        "mean_score": 1.0
+      }
+    },
+    "market": {
+      "paired": {
+        "mean_profit_delta": 82.16666666666667,
+        "profit_95_ci": [
+          20.166666666666668,
+          160.33333333333334
+        ],
+        "mean_score_delta": 0.0,
+        "score_95_ci_descriptive": [
+          0.0,
+          0.0
+        ],
+        "score_ci_degenerate": true,
+        "positive_profit_seeds": 4,
+        "negative_profit_seeds": 0,
+        "sign_test_p": 0.125,
+        "seed_profit_deltas": [
+          106.0,
+          0.0,
+          130.0,
+          15.0,
+          0.0,
+          242.0
+        ]
+      },
+      "baseline": {
+        "games": 12,
+        "wins": 12,
+        "draws": 0,
+        "losses": 0,
+        "mean_net_profit": 41216.333333333336,
+        "mean_opponent_profit": 37400.166666666664,
+        "mean_score": 1.0
+      },
+      "candidate": {
+        "games": 12,
+        "wins": 12,
+        "draws": 0,
+        "losses": 0,
+        "mean_net_profit": 41298.5,
+        "mean_opponent_profit": 37394.166666666664,
+        "mean_score": 1.0
+      }
+    },
+    "round2": {
+      "paired": {
+        "mean_profit_delta": 72.16666666666667,
+        "profit_95_ci": [
+          18.333333333333332,
+          142.5
+        ],
+        "mean_score_delta": 0.16666666666666666,
+        "score_95_ci_descriptive": [
+          0.0,
+          0.5
+        ],
+        "score_ci_degenerate": false,
+        "positive_profit_seeds": 3,
+        "negative_profit_seeds": 0,
+        "sign_test_p": 0.25,
+        "seed_profit_deltas": [
+          110.0,
+          0.0,
+          112.0,
+          0.0,
+          0.0,
+          211.0
+        ]
+      },
+      "baseline": {
+        "games": 12,
+        "wins": 10,
+        "draws": 0,
+        "losses": 2,
+        "mean_net_profit": 38717.833333333336,
+        "mean_opponent_profit": 35620.5,
+        "mean_score": 0.8333333333333334
+      },
+      "candidate": {
+        "games": 12,
+        "wins": 12,
+        "draws": 0,
+        "losses": 0,
+        "mean_net_profit": 38790.0,
+        "mean_opponent_profit": 35619.0,
+        "mean_score": 1.0
+      }
+    },
+    "teacher": {
+      "paired": {
+        "mean_profit_delta": 98.5,
+        "profit_95_ci": [
+          19.5,
+          217.16666666666666
+        ],
+        "mean_score_delta": 0.25,
+        "score_95_ci_descriptive": [
+          0.08333333333333333,
+          0.4166666666666667
+        ],
+        "score_ci_degenerate": false,
+        "positive_profit_seeds": 3,
+        "negative_profit_seeds": 0,
+        "sign_test_p": 0.25,
+        "seed_profit_deltas": [
+          118.0,
+          0.0,
+          117.0,
+          0.0,
+          0.0,
+          356.0
+        ]
+      },
+      "baseline": {
+        "games": 12,
+        "wins": 0,
+        "draws": 12,
+        "losses": 0,
+        "mean_net_profit": 38291.166666666664,
+        "mean_opponent_profit": 38291.166666666664,
+        "mean_score": 0.5
+      },
+      "candidate": {
+        "games": 12,
+        "wins": 6,
+        "draws": 6,
+        "losses": 0,
+        "mean_net_profit": 38389.666666666664,
+        "mean_opponent_profit": 38288.333333333336,
+        "mean_score": 0.75
+      }
+    }
+  },
+  "aggregate": {
+    "baseline": {
+      "games": 48,
+      "wins": 34,
+      "draws": 12,
+      "losses": 2,
+      "mean_net_profit": 39344.291666666664,
+      "mean_opponent_profit": 36694.333333333336,
+      "mean_score": 0.8333333333333334
+    },
+    "candidate": {
+      "games": 48,
+      "wins": 42,
+      "draws": 6,
+      "losses": 0,
+      "mean_net_profit": 39431.166666666664,
+      "mean_opponent_profit": 36691.666666666664,
+      "mean_score": 0.9375
+    }
+  },
+  "score_intervals_descriptive_only": true,
+  "helper_gate_not_used": true,
+  "mean_margin_delta": 89.54166666666652,
+  "competitive_gate": true,
+  "scope": "Six unseen seed clusters; exploratory fixed-opponent panel, no test-driven changes"
+}

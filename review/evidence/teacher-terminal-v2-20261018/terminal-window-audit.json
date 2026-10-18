@@ -1,0 +1,1044 @@
+{
+  "passed": true,
+  "scope": "Shared economic helper, validated separately with official boundary regressions; not profitability attribution",
+  "rows": [
+    {
+      "seed": 9278409,
+      "side": 0,
+      "opponent": "market",
+      "policy": "baseline",
+      "replay_gzip_sha256": "5044e182015d830295f97a8e8a98616971e3a3373ed234b93f291ca26bd6147b",
+      "successful_fertilizations": 25,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9278409,
+      "side": 0,
+      "opponent": "market",
+      "policy": "candidate",
+      "replay_gzip_sha256": "f31dfed9a92a6a019d0c2a24b855bfa6e14e41f132892831562f83131814a467",
+      "successful_fertilizations": 25,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9278409,
+      "side": 1,
+      "opponent": "market",
+      "policy": "baseline",
+      "replay_gzip_sha256": "6f0dcd1f5414bcd82cd8912c818bed01eb38fa434a1641b91593df9e7b4e5d7f",
+      "successful_fertilizations": 25,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9278409,
+      "side": 1,
+      "opponent": "market",
+      "policy": "candidate",
+      "replay_gzip_sha256": "8926a90d0f6a493f4a5bfe484818aa2eb911e8f0c1cd1cd7d64909ed3d767d04",
+      "successful_fertilizations": 25,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9278409,
+      "side": 0,
+      "opponent": "round2",
+      "policy": "baseline",
+      "replay_gzip_sha256": "dda818eb656a7e38ec25ba181f2c14b584c3a63aff75e8e3bc1fb7eeced996cd",
+      "successful_fertilizations": 25,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9278409,
+      "side": 0,
+      "opponent": "round2",
+      "policy": "candidate",
+      "replay_gzip_sha256": "df6e572c5c9dadc971d8330015108d0f74e0e93f83177a51f941e49035403189",
+      "successful_fertilizations": 25,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9278409,
+      "side": 1,
+      "opponent": "round2",
+      "policy": "baseline",
+      "replay_gzip_sha256": "1809afdf92120d5c5756d17ab77124a3a3c135611d3ed8ef7d18c5d2f9c31a57",
+      "successful_fertilizations": 25,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9278409,
+      "side": 1,
+      "opponent": "round2",
+      "policy": "candidate",
+      "replay_gzip_sha256": "2465e744fcba721dcf4d487091a3c6637dea11dab5b89b343a60ea3695cfe33d",
+      "successful_fertilizations": 25,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9278409,
+      "side": 0,
+      "opponent": "teacher",
+      "policy": "baseline",
+      "replay_gzip_sha256": "a0333bc75e28a5f97a78fab5d4972904ec35c1190a8fd922336747a3afe47e57",
+      "successful_fertilizations": 23,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9278409,
+      "side": 0,
+      "opponent": "teacher",
+      "policy": "candidate",
+      "replay_gzip_sha256": "745938d6f9660c8a7f01a8457b787d63a3293e3a6fa078e11f527ab9be99a6a0",
+      "successful_fertilizations": 23,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9278409,
+      "side": 1,
+      "opponent": "teacher",
+      "policy": "baseline",
+      "replay_gzip_sha256": "dc7d0ad0b4f2516bad5de6aa3db8895057db824adfc08a4f19972f6a8c35445f",
+      "successful_fertilizations": 23,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9278409,
+      "side": 1,
+      "opponent": "teacher",
+      "policy": "candidate",
+      "replay_gzip_sha256": "bca7abdf05468df0e863c336786b7e85cc17b5420f6e9e24ac20c575e0723d16",
+      "successful_fertilizations": 23,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9278409,
+      "side": 0,
+      "opponent": "v1",
+      "policy": "baseline",
+      "replay_gzip_sha256": "866176995d3479d13c2830cb3d1d9fa214e378c2ebf90635afaaca398154dd96",
+      "successful_fertilizations": 25,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9278409,
+      "side": 0,
+      "opponent": "v1",
+      "policy": "candidate",
+      "replay_gzip_sha256": "a1d0f9c9e500471fe591d79922270eb5263901b97b17074086a50a028ecde18a",
+      "successful_fertilizations": 25,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9278409,
+      "side": 1,
+      "opponent": "v1",
+      "policy": "baseline",
+      "replay_gzip_sha256": "b4f5707d4a8e397e8071050f20347fe6d7953678a2aee2effd778276c77dde24",
+      "successful_fertilizations": 25,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9278409,
+      "side": 1,
+      "opponent": "v1",
+      "policy": "candidate",
+      "replay_gzip_sha256": "c045319174a0d65c977d8940bc4cb193f41433b11a8927e6cabd33ac7ac10200",
+      "successful_fertilizations": 25,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9317052,
+      "side": 0,
+      "opponent": "market",
+      "policy": "baseline",
+      "replay_gzip_sha256": "094c16f0da6100d36aadb8b6c3a59f3e7f1ed4d61fa58d7c5b3e7107dad4b8f7",
+      "successful_fertilizations": 30,
+      "zero_saleable_window": [
+        {
+          "step": 687,
+          "unit": 0,
+          "crop": "STRAWBERRY"
+        }
+      ]
+    },
+    {
+      "seed": 9317052,
+      "side": 0,
+      "opponent": "market",
+      "policy": "candidate",
+      "replay_gzip_sha256": "77fdcdebc0779301cd8015f8867d6fded19b645788c966ad9462177cf0e7ee28",
+      "successful_fertilizations": 29,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9317052,
+      "side": 1,
+      "opponent": "market",
+      "policy": "baseline",
+      "replay_gzip_sha256": "c3f2ab9c2139b2690a94faa59611aafbb0b826f02b8c308617cdb1efd4635909",
+      "successful_fertilizations": 30,
+      "zero_saleable_window": [
+        {
+          "step": 687,
+          "unit": 0,
+          "crop": "STRAWBERRY"
+        }
+      ]
+    },
+    {
+      "seed": 9317052,
+      "side": 1,
+      "opponent": "market",
+      "policy": "candidate",
+      "replay_gzip_sha256": "ff965478346ea5e9d72572418a5f43142612fa0196f7581f15d9e99cf8b452c1",
+      "successful_fertilizations": 29,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9317052,
+      "side": 0,
+      "opponent": "round2",
+      "policy": "baseline",
+      "replay_gzip_sha256": "8e3d20e34e392e0b67fc326171d3bf5983c5208308d849736e7857e4ee5a9d98",
+      "successful_fertilizations": 30,
+      "zero_saleable_window": [
+        {
+          "step": 687,
+          "unit": 0,
+          "crop": "STRAWBERRY"
+        }
+      ]
+    },
+    {
+      "seed": 9317052,
+      "side": 0,
+      "opponent": "round2",
+      "policy": "candidate",
+      "replay_gzip_sha256": "61387d3fd6247f030cfd841d4e9c815cee8f0d5ee6f3c5bc1605eaeab71af437",
+      "successful_fertilizations": 29,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9317052,
+      "side": 1,
+      "opponent": "round2",
+      "policy": "baseline",
+      "replay_gzip_sha256": "44917a74f75bbb41d88c294f2fef0792f92e46203b8d0a01dd73382d5290a94f",
+      "successful_fertilizations": 30,
+      "zero_saleable_window": [
+        {
+          "step": 687,
+          "unit": 0,
+          "crop": "STRAWBERRY"
+        }
+      ]
+    },
+    {
+      "seed": 9317052,
+      "side": 1,
+      "opponent": "round2",
+      "policy": "candidate",
+      "replay_gzip_sha256": "5399b4ab723b61976966eb2c96d532bdaece1ce4c10d5dd629d4698e1eeecd6d",
+      "successful_fertilizations": 29,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9317052,
+      "side": 0,
+      "opponent": "teacher",
+      "policy": "baseline",
+      "replay_gzip_sha256": "c8d29c1bcb39e92072114d2eee1401b496c12135b7d47d443f542f1e35a91ecd",
+      "successful_fertilizations": 30,
+      "zero_saleable_window": [
+        {
+          "step": 687,
+          "unit": 0,
+          "crop": "STRAWBERRY"
+        }
+      ]
+    },
+    {
+      "seed": 9317052,
+      "side": 0,
+      "opponent": "teacher",
+      "policy": "candidate",
+      "replay_gzip_sha256": "e53c965408841851c7875bcf9e1b788f5219092db2506807286606671cf77b7b",
+      "successful_fertilizations": 29,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9317052,
+      "side": 1,
+      "opponent": "teacher",
+      "policy": "baseline",
+      "replay_gzip_sha256": "9c176ecff99d92cc39a871574d8fc3099246c51c23532fe487dc49eeaefc6fd7",
+      "successful_fertilizations": 30,
+      "zero_saleable_window": [
+        {
+          "step": 687,
+          "unit": 0,
+          "crop": "STRAWBERRY"
+        }
+      ]
+    },
+    {
+      "seed": 9317052,
+      "side": 1,
+      "opponent": "teacher",
+      "policy": "candidate",
+      "replay_gzip_sha256": "7b1661c448c5da92e41ebdfb31a4e6de7e9fbf7a82e64333ffa9e11db335c1f6",
+      "successful_fertilizations": 29,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9317052,
+      "side": 0,
+      "opponent": "v1",
+      "policy": "baseline",
+      "replay_gzip_sha256": "cf208b3ff475007db8c594276acb80136630ae9f00f9a72c56f268b144fd2735",
+      "successful_fertilizations": 30,
+      "zero_saleable_window": [
+        {
+          "step": 687,
+          "unit": 0,
+          "crop": "STRAWBERRY"
+        }
+      ]
+    },
+    {
+      "seed": 9317052,
+      "side": 0,
+      "opponent": "v1",
+      "policy": "candidate",
+      "replay_gzip_sha256": "74834388a552976e1aa68f191cc688e53132995f46da644d8ae9f0aae6472e2c",
+      "successful_fertilizations": 29,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9317052,
+      "side": 1,
+      "opponent": "v1",
+      "policy": "baseline",
+      "replay_gzip_sha256": "1a4af3fb2cd774026f281b4f299293bdbe31be4e3f2fc71863469b18238abaff",
+      "successful_fertilizations": 30,
+      "zero_saleable_window": [
+        {
+          "step": 687,
+          "unit": 0,
+          "crop": "STRAWBERRY"
+        }
+      ]
+    },
+    {
+      "seed": 9317052,
+      "side": 1,
+      "opponent": "v1",
+      "policy": "candidate",
+      "replay_gzip_sha256": "9f624eff16bb04cd20ca926913ffc75a000aab0c1a5efd39b8d274f79abbb8b0",
+      "successful_fertilizations": 29,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9407819,
+      "side": 0,
+      "opponent": "market",
+      "policy": "baseline",
+      "replay_gzip_sha256": "52383dd7ed2a155ee1fbfd1d600d601b13b883f4d8b54e84077f348856260a39",
+      "successful_fertilizations": 22,
+      "zero_saleable_window": [
+        {
+          "step": 678,
+          "unit": 1,
+          "crop": "STRAWBERRY"
+        }
+      ]
+    },
+    {
+      "seed": 9407819,
+      "side": 0,
+      "opponent": "market",
+      "policy": "candidate",
+      "replay_gzip_sha256": "cd4b5876c35d6dc62709c31b65f38ed9208181ff2120883436c2f458c3f2d0dc",
+      "successful_fertilizations": 22,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9407819,
+      "side": 1,
+      "opponent": "market",
+      "policy": "baseline",
+      "replay_gzip_sha256": "d624597f62bb70d84101eb157afcfe74b9a65239ffe2154d18cf60aed94ac6f0",
+      "successful_fertilizations": 22,
+      "zero_saleable_window": [
+        {
+          "step": 678,
+          "unit": 1,
+          "crop": "STRAWBERRY"
+        }
+      ]
+    },
+    {
+      "seed": 9407819,
+      "side": 1,
+      "opponent": "market",
+      "policy": "candidate",
+      "replay_gzip_sha256": "6eec07ef91fe37194699dff3ca3f79369b0f460710918a48d6fdc493cabb002e",
+      "successful_fertilizations": 22,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9407819,
+      "side": 0,
+      "opponent": "round2",
+      "policy": "baseline",
+      "replay_gzip_sha256": "6f974c8d529e98817187147b7ee1bad42cc55a52874f9ed1744631bc91a536ee",
+      "successful_fertilizations": 22,
+      "zero_saleable_window": [
+        {
+          "step": 683,
+          "unit": 1,
+          "crop": "STRAWBERRY"
+        },
+        {
+          "step": 687,
+          "unit": 0,
+          "crop": "STRAWBERRY"
+        }
+      ]
+    },
+    {
+      "seed": 9407819,
+      "side": 0,
+      "opponent": "round2",
+      "policy": "candidate",
+      "replay_gzip_sha256": "17972269361cfb57c5a8f37a18b0260c789d22f67db73eafe2a3f49bc751ccb4",
+      "successful_fertilizations": 20,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9407819,
+      "side": 1,
+      "opponent": "round2",
+      "policy": "baseline",
+      "replay_gzip_sha256": "5759770e2492a26d169904d22692bb842703e740f518975af82ba845eb843c9a",
+      "successful_fertilizations": 22,
+      "zero_saleable_window": [
+        {
+          "step": 683,
+          "unit": 1,
+          "crop": "STRAWBERRY"
+        },
+        {
+          "step": 687,
+          "unit": 0,
+          "crop": "STRAWBERRY"
+        }
+      ]
+    },
+    {
+      "seed": 9407819,
+      "side": 1,
+      "opponent": "round2",
+      "policy": "candidate",
+      "replay_gzip_sha256": "0cbba037b862d60293d9aabd95e4b2a1ce76254eb6c98ec7e58a4b5eeee03665",
+      "successful_fertilizations": 20,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9407819,
+      "side": 0,
+      "opponent": "teacher",
+      "policy": "baseline",
+      "replay_gzip_sha256": "6368157274d6d770cdab40522338b71035602ed145d50b001c139e0a9905151c",
+      "successful_fertilizations": 22,
+      "zero_saleable_window": [
+        {
+          "step": 680,
+          "unit": 1,
+          "crop": "STRAWBERRY"
+        },
+        {
+          "step": 690,
+          "unit": 2,
+          "crop": "STRAWBERRY"
+        }
+      ]
+    },
+    {
+      "seed": 9407819,
+      "side": 0,
+      "opponent": "teacher",
+      "policy": "candidate",
+      "replay_gzip_sha256": "229b6dd7611c8aea63b12e4f61f51c0bd9841940c6f1b738f8c75760c9831abf",
+      "successful_fertilizations": 21,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9407819,
+      "side": 1,
+      "opponent": "teacher",
+      "policy": "baseline",
+      "replay_gzip_sha256": "8de15e794dd3824f84fe332dd52a4cf32304ab3951803de31e2c97c3e9726944",
+      "successful_fertilizations": 22,
+      "zero_saleable_window": [
+        {
+          "step": 680,
+          "unit": 1,
+          "crop": "STRAWBERRY"
+        },
+        {
+          "step": 690,
+          "unit": 2,
+          "crop": "STRAWBERRY"
+        }
+      ]
+    },
+    {
+      "seed": 9407819,
+      "side": 1,
+      "opponent": "teacher",
+      "policy": "candidate",
+      "replay_gzip_sha256": "b2b5328bf9bc285103bc224151d4aa91cca6560f3baa5ba50015d16e288aea9c",
+      "successful_fertilizations": 21,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9407819,
+      "side": 0,
+      "opponent": "v1",
+      "policy": "baseline",
+      "replay_gzip_sha256": "810a4f25a0a770a56948b03a216fe75039f48989e8b58a6816ed5afb579a33ae",
+      "successful_fertilizations": 22,
+      "zero_saleable_window": [
+        {
+          "step": 682,
+          "unit": 2,
+          "crop": "STRAWBERRY"
+        },
+        {
+          "step": 687,
+          "unit": 1,
+          "crop": "STRAWBERRY"
+        }
+      ]
+    },
+    {
+      "seed": 9407819,
+      "side": 0,
+      "opponent": "v1",
+      "policy": "candidate",
+      "replay_gzip_sha256": "dd24e4b63ec1723aeceebe39fe83e509bddf270ea18db76f53c1918fbcffc518",
+      "successful_fertilizations": 21,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9407819,
+      "side": 1,
+      "opponent": "v1",
+      "policy": "baseline",
+      "replay_gzip_sha256": "7ad9c89043261c3f1532a2bdedb4384a799fbbedd0902e07e024b07a0e68bb47",
+      "successful_fertilizations": 22,
+      "zero_saleable_window": [
+        {
+          "step": 682,
+          "unit": 2,
+          "crop": "STRAWBERRY"
+        },
+        {
+          "step": 687,
+          "unit": 1,
+          "crop": "STRAWBERRY"
+        }
+      ]
+    },
+    {
+      "seed": 9407819,
+      "side": 1,
+      "opponent": "v1",
+      "policy": "candidate",
+      "replay_gzip_sha256": "dcac06c296fb1799f9caef5a21f4e66a06cbce19a5cc0a18c120ab8480a8f8df",
+      "successful_fertilizations": 21,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9489180,
+      "side": 0,
+      "opponent": "market",
+      "policy": "baseline",
+      "replay_gzip_sha256": "9144bfc7a3f4c29bbaba52a493aca2b1e01f06dfc189dceff23f218c8f83de8c",
+      "successful_fertilizations": 29,
+      "zero_saleable_window": [
+        {
+          "step": 687,
+          "unit": 0,
+          "crop": "STRAWBERRY"
+        }
+      ]
+    },
+    {
+      "seed": 9489180,
+      "side": 0,
+      "opponent": "market",
+      "policy": "candidate",
+      "replay_gzip_sha256": "81114a1d0c9e94b1604876299d7f4c18a003db344712a27f8798ba6546ac5ee7",
+      "successful_fertilizations": 28,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9489180,
+      "side": 1,
+      "opponent": "market",
+      "policy": "baseline",
+      "replay_gzip_sha256": "8b46ab559a37b9b1d1fbb1f351d7bd99180d0485b4358bffa331b707b677fffa",
+      "successful_fertilizations": 29,
+      "zero_saleable_window": [
+        {
+          "step": 687,
+          "unit": 0,
+          "crop": "STRAWBERRY"
+        }
+      ]
+    },
+    {
+      "seed": 9489180,
+      "side": 1,
+      "opponent": "market",
+      "policy": "candidate",
+      "replay_gzip_sha256": "ada8e8f6bf8a86f40a0243a9762740b0a2230c25862233aca911d88669b3152e",
+      "successful_fertilizations": 28,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9489180,
+      "side": 0,
+      "opponent": "round2",
+      "policy": "baseline",
+      "replay_gzip_sha256": "46770db9d32bfd3b777617f23fbd1c4d5ec48f0532a1d89bb12a464a096f36d0",
+      "successful_fertilizations": 30,
+      "zero_saleable_window": [
+        {
+          "step": 687,
+          "unit": 0,
+          "crop": "STRAWBERRY"
+        }
+      ]
+    },
+    {
+      "seed": 9489180,
+      "side": 0,
+      "opponent": "round2",
+      "policy": "candidate",
+      "replay_gzip_sha256": "c5f1c66af8ad7e817a0abc99e2452ecf800286d0c09d70446be3d6943cbf4a34",
+      "successful_fertilizations": 29,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9489180,
+      "side": 1,
+      "opponent": "round2",
+      "policy": "baseline",
+      "replay_gzip_sha256": "54e010c79449ff12239bc20ffd70343f0db2df0f4f283d94c116c9a53253c52f",
+      "successful_fertilizations": 30,
+      "zero_saleable_window": [
+        {
+          "step": 687,
+          "unit": 0,
+          "crop": "STRAWBERRY"
+        }
+      ]
+    },
+    {
+      "seed": 9489180,
+      "side": 1,
+      "opponent": "round2",
+      "policy": "candidate",
+      "replay_gzip_sha256": "c63ca3a1c285ef56846301494540f57d03b4eb6a5888647f73ef65e719de67da",
+      "successful_fertilizations": 29,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9489180,
+      "side": 0,
+      "opponent": "teacher",
+      "policy": "baseline",
+      "replay_gzip_sha256": "7031caab06d6bc4fa305e8d19caf5538d697d49f21456167fe1d1e8913c61758",
+      "successful_fertilizations": 28,
+      "zero_saleable_window": [
+        {
+          "step": 687,
+          "unit": 0,
+          "crop": "STRAWBERRY"
+        }
+      ]
+    },
+    {
+      "seed": 9489180,
+      "side": 0,
+      "opponent": "teacher",
+      "policy": "candidate",
+      "replay_gzip_sha256": "764062aa4d1083d7835d4ce448dce439184aa0dbf0f394f854c8d08755cc1084",
+      "successful_fertilizations": 27,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9489180,
+      "side": 1,
+      "opponent": "teacher",
+      "policy": "baseline",
+      "replay_gzip_sha256": "65cb2b503299593cd1dd022351cedcc683cc5326a0fddcd775a9facbeea797aa",
+      "successful_fertilizations": 28,
+      "zero_saleable_window": [
+        {
+          "step": 687,
+          "unit": 0,
+          "crop": "STRAWBERRY"
+        }
+      ]
+    },
+    {
+      "seed": 9489180,
+      "side": 1,
+      "opponent": "teacher",
+      "policy": "candidate",
+      "replay_gzip_sha256": "b1d761c2029b7ead8a3bea532913bf37da6d4ec5a60b39e9f5dcd2b32b3e65a0",
+      "successful_fertilizations": 27,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9489180,
+      "side": 0,
+      "opponent": "v1",
+      "policy": "baseline",
+      "replay_gzip_sha256": "b2644b360bcf0905a1b793b1f6ddf3b2a6a7c179ea492ae0fbdda25137123cd3",
+      "successful_fertilizations": 30,
+      "zero_saleable_window": [
+        {
+          "step": 687,
+          "unit": 0,
+          "crop": "STRAWBERRY"
+        }
+      ]
+    },
+    {
+      "seed": 9489180,
+      "side": 0,
+      "opponent": "v1",
+      "policy": "candidate",
+      "replay_gzip_sha256": "62b75ab73731bb17ba0e438d748bfed36cc687d4677a5852347bc78f06c53ea2",
+      "successful_fertilizations": 29,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9489180,
+      "side": 1,
+      "opponent": "v1",
+      "policy": "baseline",
+      "replay_gzip_sha256": "d82aeaffd9c79a87d69de85144a9b141d4a097f0b466dde87f77be927beb9bf2",
+      "successful_fertilizations": 30,
+      "zero_saleable_window": [
+        {
+          "step": 687,
+          "unit": 0,
+          "crop": "STRAWBERRY"
+        }
+      ]
+    },
+    {
+      "seed": 9489180,
+      "side": 1,
+      "opponent": "v1",
+      "policy": "candidate",
+      "replay_gzip_sha256": "1bf3622c52b7a0916d83361877d7ec37e102bbbfee1aea4cd510713ce9e63e5d",
+      "successful_fertilizations": 29,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9489518,
+      "side": 0,
+      "opponent": "market",
+      "policy": "baseline",
+      "replay_gzip_sha256": "810cd8c07562cbddfc8000bb16cf08f50f0d65e505a39b55054aafadb9d748a5",
+      "successful_fertilizations": 15,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9489518,
+      "side": 0,
+      "opponent": "market",
+      "policy": "candidate",
+      "replay_gzip_sha256": "6868b152b6f15a2efae11675c55d59e648f980c5c0985ce88659d61f65c564f8",
+      "successful_fertilizations": 15,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9489518,
+      "side": 1,
+      "opponent": "market",
+      "policy": "baseline",
+      "replay_gzip_sha256": "b4c813f052269cc9e33e70b96c8f945c8a3f921780e61ed90b2edd33c08fc58c",
+      "successful_fertilizations": 15,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9489518,
+      "side": 1,
+      "opponent": "market",
+      "policy": "candidate",
+      "replay_gzip_sha256": "b12e06d29492ae8bfa734ce8b3b73751a76addb6af5f6eab2f0e19f56171d778",
+      "successful_fertilizations": 15,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9489518,
+      "side": 0,
+      "opponent": "round2",
+      "policy": "baseline",
+      "replay_gzip_sha256": "eb7d9d6ec41fbc3d128d8383e8fb93c887cf7f47a2fce1ec2e2107113c15291a",
+      "successful_fertilizations": 16,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9489518,
+      "side": 0,
+      "opponent": "round2",
+      "policy": "candidate",
+      "replay_gzip_sha256": "01a521e9eb17b740d18e625111e0adcea3a3ce191cf2ba8c4087e928ce78554c",
+      "successful_fertilizations": 16,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9489518,
+      "side": 1,
+      "opponent": "round2",
+      "policy": "baseline",
+      "replay_gzip_sha256": "91a1ca734e9f4842f0c621598b3a9a64e35fd3836ec43310692c7000e733a981",
+      "successful_fertilizations": 16,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9489518,
+      "side": 1,
+      "opponent": "round2",
+      "policy": "candidate",
+      "replay_gzip_sha256": "fa0d9705ba7450a2e2409fd56ee7a193cc71655e83869a45f2db73de98d31086",
+      "successful_fertilizations": 16,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9489518,
+      "side": 0,
+      "opponent": "teacher",
+      "policy": "baseline",
+      "replay_gzip_sha256": "315e9027a49a157e1923915b8333ba05538131ea4912be3342ee7544cd7454da",
+      "successful_fertilizations": 16,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9489518,
+      "side": 0,
+      "opponent": "teacher",
+      "policy": "candidate",
+      "replay_gzip_sha256": "a41e67b86701f15210f114ed063fab8e1ca91b27eed196233523b9c1aab92d9c",
+      "successful_fertilizations": 16,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9489518,
+      "side": 1,
+      "opponent": "teacher",
+      "policy": "baseline",
+      "replay_gzip_sha256": "e4302dcb16010d1ffcc32d6b9e97d44fc69c0d8b247a0fe7dd50bd20aa0de400",
+      "successful_fertilizations": 16,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9489518,
+      "side": 1,
+      "opponent": "teacher",
+      "policy": "candidate",
+      "replay_gzip_sha256": "5ca20a6c3133ab7932ca9cabef2b6e676996d22af361d66c0612b2102b716174",
+      "successful_fertilizations": 16,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9489518,
+      "side": 0,
+      "opponent": "v1",
+      "policy": "baseline",
+      "replay_gzip_sha256": "29d276c69d3cb6020e03289e7519478e85137720f25eb40a7ca6daf48e49b236",
+      "successful_fertilizations": 17,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9489518,
+      "side": 0,
+      "opponent": "v1",
+      "policy": "candidate",
+      "replay_gzip_sha256": "f36880ceb4768a18f30169fb681b603fda86e8b219234b40faa8d1d7b10ca722",
+      "successful_fertilizations": 17,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9489518,
+      "side": 1,
+      "opponent": "v1",
+      "policy": "baseline",
+      "replay_gzip_sha256": "6bb61aef84313c20269f4ce1484d26d4f7b24529dd6225c6a015d1b42c50d1dd",
+      "successful_fertilizations": 17,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9489518,
+      "side": 1,
+      "opponent": "v1",
+      "policy": "candidate",
+      "replay_gzip_sha256": "2ec6c40a198784d47533fc24b25ba163a25943d68a75f9fa37b15a5eaebc4717",
+      "successful_fertilizations": 17,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9802136,
+      "side": 0,
+      "opponent": "market",
+      "policy": "baseline",
+      "replay_gzip_sha256": "807e1a1d501db4de9a408315ad266de2398d910baa2b9d12d33de2805bad4606",
+      "successful_fertilizations": 15,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9802136,
+      "side": 0,
+      "opponent": "market",
+      "policy": "candidate",
+      "replay_gzip_sha256": "f88bd5e0a606c2352128ad620aba983d3878bebe1187b0c9cb0fb402dff77b41",
+      "successful_fertilizations": 15,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9802136,
+      "side": 1,
+      "opponent": "market",
+      "policy": "baseline",
+      "replay_gzip_sha256": "762ad0c0108c3518d620abf8f1c2d9685fc49a4b9b15cec7fb0a32ba9315816b",
+      "successful_fertilizations": 15,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9802136,
+      "side": 1,
+      "opponent": "market",
+      "policy": "candidate",
+      "replay_gzip_sha256": "a9328c82dc3cfa11c1c4deb62bd8e155ccb79680c41e95e6db00c3a49aa7dd6c",
+      "successful_fertilizations": 15,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9802136,
+      "side": 0,
+      "opponent": "round2",
+      "policy": "baseline",
+      "replay_gzip_sha256": "b2adba83191bf06ac6e0366ca1f93613bbd4e4f0efb765727ec545a298a15dac",
+      "successful_fertilizations": 16,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9802136,
+      "side": 0,
+      "opponent": "round2",
+      "policy": "candidate",
+      "replay_gzip_sha256": "1e5a4965e153566b885304e6c391a87ed9b072f5bcba9ba3c0a3f1561ef0afbb",
+      "successful_fertilizations": 16,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9802136,
+      "side": 1,
+      "opponent": "round2",
+      "policy": "baseline",
+      "replay_gzip_sha256": "4470618975f72d89f738998007ccd460fc54aabac8535dd0d74c58c3eddca22a",
+      "successful_fertilizations": 16,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9802136,
+      "side": 1,
+      "opponent": "round2",
+      "policy": "candidate",
+      "replay_gzip_sha256": "61af7311c9d2b7ebcfe6028572ead82876c1a43af28b27ba4d29cb4a2e182c23",
+      "successful_fertilizations": 16,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9802136,
+      "side": 0,
+      "opponent": "teacher",
+      "policy": "baseline",
+      "replay_gzip_sha256": "db2282ea2c6c2f6a8e3a3377f747eab7a095dfe9b97e540a92d4f62570150c1d",
+      "successful_fertilizations": 16,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9802136,
+      "side": 0,
+      "opponent": "teacher",
+      "policy": "candidate",
+      "replay_gzip_sha256": "2e3f3e3389dc35da4cda773daf08933c579fdf4c96eb076449f1a81cc7f4fa8f",
+      "successful_fertilizations": 16,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9802136,
+      "side": 1,
+      "opponent": "teacher",
+      "policy": "baseline",
+      "replay_gzip_sha256": "74cd36a341e0f9d264deeca50ee044d141d972804fc00597fef8c2342e26585a",
+      "successful_fertilizations": 16,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9802136,
+      "side": 1,
+      "opponent": "teacher",
+      "policy": "candidate",
+      "replay_gzip_sha256": "ed40ed2362255567ea6a8ca2adc067012ab4d88fb9730244c41f448f526d9c90",
+      "successful_fertilizations": 16,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9802136,
+      "side": 0,
+      "opponent": "v1",
+      "policy": "baseline",
+      "replay_gzip_sha256": "ee5758796c78e489484ab28ff634ef5f38e4ebddf434d800d0f7649148aa7d2c",
+      "successful_fertilizations": 17,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9802136,
+      "side": 0,
+      "opponent": "v1",
+      "policy": "candidate",
+      "replay_gzip_sha256": "e1ffaf9dc04988bd5465a1c9bd56b28bff20fdac98cac8a249e8ae91b01490cb",
+      "successful_fertilizations": 17,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9802136,
+      "side": 1,
+      "opponent": "v1",
+      "policy": "baseline",
+      "replay_gzip_sha256": "fd36f56c02bf37f89e511f47f14c39c43d21e9ba37d3b015630249b81609ab9f",
+      "successful_fertilizations": 17,
+      "zero_saleable_window": []
+    },
+    {
+      "seed": 9802136,
+      "side": 1,
+      "opponent": "v1",
+      "policy": "candidate",
+      "replay_gzip_sha256": "629074ce135f2f5dd39b54b0d2674959a2591e1f3abd54d8fd8a8c111b886f81",
+      "successful_fertilizations": 17,
+      "zero_saleable_window": []
+    }
+  ]
+}
