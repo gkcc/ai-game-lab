@@ -32,7 +32,7 @@ def reexecute(replay, *, trace=False, label_sink=None):
     assert result["semantic_sha256_v2"] == digest(replay["steps"])
     if execution:
         n = len(replay["steps"][0][0]["observation"]["farms"][0]["tiles"])
-        result["execution"] = {"label_version": 1, "counts": dict(sorted(execution.counts.items())),
+        result["execution"] = {"label_version": 2, "counts": dict(sorted(execution.counts.items())),
                                "ordered_effect_sha256": execution.effect_hash.hexdigest(),
                                "successful_plants": [sum(v for k, v in execution.plants.items() if k[0] == p) for p in (0, 1)],
                                "successful_plants_new_land": [sum(v for k, v in execution.plants.items() if k[0] == p and k[1] >= n // 2) for p in (0, 1)],

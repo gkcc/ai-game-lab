@@ -1,0 +1,2019 @@
+{
+  "passed": true,
+  "audit_version": 2,
+  "games": 52,
+  "official_transitions": 37388,
+  "both_public_and_private_checked_each_step": true,
+  "inventory_order_checked_each_step": true,
+  "source_sha256": {
+    "decision/semantics.py": "9ac62d0df7adca84c0feff805b2979bb45f9f9f4c2064d1e2b5c48efd3e779a5",
+    "decision/execution.py": "cbf38b17ca9c4c1c4f82ddb583ff59e4f605a0e8d8e971ef5bfc3664b2c76378",
+    "decision/full_audit.py": "84f7c7b4316fb98791c51b933f5329a271b8bc9aec60eebe133f6d433ec4510d",
+    "decision/telemetry_worker.py": "f5f68a2f99ac34f3b0752ef3be3c20e76c333662466675104dc53e81fb5a61e1",
+    "decision/api.py": "3ef4025bde61d240b298cbe4d31291f25021baaf5b396f5540bbfcdda4231917",
+    "decision/reexecute_experiment.py": "54ab90ba0430e51f281a90c65a8364d2957cf081350dd5a092d371e1a477b7ea",
+    "decision/verify_audit.py": "fd6bfc1c6c066c5ec8ff3daa1a97a52caced41991be631084bfdd90763b4be4e",
+    "decision/verify_mechanisms.py": "cc82fd118abd94e92a8833587aa2bfb9117214a8a5b00e8054225732af47fbbf",
+    "decision/verify_experiment.py": "7d6031cf759b985111c77da3d2f77f784ca41e33692ef3ea0b0f44194e97f95b",
+    "learning/round2_worker.py": "a80158b26d1f4ae3d366c1d1276a1ca63e652bcd350f5ca25545b0f5f33759f1",
+    "learning/mechanism_experiment.py": "95bf5399019c7e662d9d32f62898c3f8e3922d4beb0152b91b2ad4bb374da8b7",
+    "run_match.py": "1b521899ecd0594459dab0770c3f6bd41c094c57067099ffbeed48a26da46e21",
+    "learning/official_worker.py": "b8b017db60aaa3f655722274b4b8c5c777643587f56b458ed07628c0658a36f7",
+    "learning/optimize_round2.py": "9f4fcf09fecd42c6135a1a2a72b95948c52474636719863eb2d468b01dc102fe",
+    "learning/verify_telemetry.py": "a0b8ec5efe7d449e59404a268485a503a22bea806a738c3111a305ec81903381"
+  },
+  "historical_json_sha256": {
+    "acceptance.json": "6ee1aedba10681c6d45e78c7055c4d9f58693b257fd417d02701be792253baa2",
+    "experiment-workers.json": "c3d58e285af3badc34b38d7e5870933a10bb3d73cc01f7442398db3aa2ad71d7",
+    "launcher-private.json": "c668698ab6f6aa95bd50dcc5cc0bf34e00b35d194e1a4081dde55caf9e5d16e7",
+    "ledger.json": "d22fa5e267c7daa5384c1aad414fa8c577ebee30d921c06a92b4dd8a9d924aa6",
+    "official-reexecution.json": "c6ddde7222f317ea391de49ad578143d3433f864df48c85aeab7dc100ebaaed0",
+    "paired-results.json": "cfef668ff3e9ee89914688caa5be2da94775dd34de7dc7a8f5e47ef882ed5cf8",
+    "parity.json": "8c8d62398c74412f17ac1b840ddd7883b381b67755df81985813f232a1cd8adf",
+    "recovery.json": "c0cb52daa33b4b0fc84ec1e84e13c2bb9d777f1d7fadddbd4431d157f26b103c",
+    "registration.json": "06bc34798e4677d2bf4c134cec3d99d7d31bc6af5e22db5baa19e41c9c4f05bc",
+    "reproducibility.json": "850f4b2c7f4f182646f9dc031417c5d6369ae2f3224b3967809e5801444e8709",
+    "source-map.json": "5ca7d7efbfa4e44ad8c23c12757fbfe3c7620c2e6776f9cb633e3a9fb6e7a569",
+    "summary.json": "e47499de3febe719797abb5730ccf43fc03f94427f561c4ad8c58d24c3726795",
+    "verification.json": "4572bf694015860836adf6ca2a8415c60111c19fee624635149735feca1b67d7"
+  },
+  "historical_results_unchanged": true,
+  "rows": [
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6495223,
+      "side": 0,
+      "replay_gzip_sha256": "1b3b5a8168ff1af2db879b3d6ca4e96ca469d0257988b4e73f36ec2a3d826d57",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "f961ce26a0a65219076e14c76ce9b4b10a06e2aedcf713a2adf6b300e5ef3349",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "d3d6dd6dc6de8fe135d9b33ab2b62b8fab97cc48937808d757bf4cb7631e1b57",
+      "final_rewards": [
+        28934.0,
+        38605.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 392,
+          "unit:executed": 4364,
+          "unit:pass": 2880
+        },
+        "ordered_effect_sha256": "1f184f65c2c983f4c84b50164bd7fb0558f3bb1a22d018de98434742ef67c397",
+        "successful_plants": [
+          61,
+          106
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6495223,
+      "side": 0,
+      "replay_gzip_sha256": "4d026ac8b2c293aecd568ff0f5fd7d65835b5791e232e0872b311872f3f82b49",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "171660fb3a1f1211009063cd443fe0cfb2f17664331aaf51e8d4c0c79fbba033",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "b856c6b54a3cd2c5e00c0972a387c6b4e2de64e3d5f2fb2b4c3d04316fadd5a9",
+      "final_rewards": [
+        56531.0,
+        46097.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 396,
+          "unit:executed": 4884,
+          "unit:pass": 2652
+        },
+        "ordered_effect_sha256": "7fe91a41f4281f2e82a83485369616b985974c06c01a89744bba555c1ae3be49",
+        "successful_plants": [
+          77,
+          87
+        ],
+        "successful_plants_new_land": [
+          35,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6495223,
+      "side": 1,
+      "replay_gzip_sha256": "845ad440764f078849f6536a0a7933450528c5e72efff25375e4912ef479a8bb",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "4f23b50ac7a9a08938c2b9f82be43753d02fa7009bd4fab9e4e1d2d1d79fceee",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "77a57214ed92321554cd1b2a95c7d3875e1f8243361a13bed9fd8143558d2858",
+      "final_rewards": [
+        38605.0,
+        28934.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 392,
+          "unit:executed": 4364,
+          "unit:pass": 2880
+        },
+        "ordered_effect_sha256": "dd4c93767fd0736fdf688306657a566ee0f5131e2d643ddd58efcafd3bd19bb7",
+        "successful_plants": [
+          106,
+          61
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6495223,
+      "side": 1,
+      "replay_gzip_sha256": "a105e07f777df8e4e439f0f9cf23a1c4eebc48f112690921e313a7e01c38bcdd",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "3e933804f3d1380e4769e7b719e7758a51be5f00da7f7383bc0a5be7b65d14f6",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "eb541a41f25d4f9fce774274ee3d2e9c62102bb8a2b72427c993f7ca1c7f94d9",
+      "final_rewards": [
+        46097.0,
+        56531.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 396,
+          "unit:executed": 4884,
+          "unit:pass": 2652
+        },
+        "ordered_effect_sha256": "e5ee2991a5b6f42e2bb9d4702a7760a7a33a181d02b94312cb30fb287ce5e694",
+        "successful_plants": [
+          87,
+          77
+        ],
+        "successful_plants_new_land": [
+          0,
+          35
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6495223,
+      "side": 0,
+      "replay_gzip_sha256": "33b776f736051329bbf0a16069aa16c5526a66f5200caf88086d902b5490194b",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "a5890f1b885fb67f5ac7b4ca023288a84f49222b5dd8ae51fcb0a603103fc29c",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "e03eff86b8d79ed526ddd5d6257aea7872b8fe314e8b04be88ace761d9a68656",
+      "final_rewards": [
+        31152.0,
+        30451.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 335,
+          "unit:executed": 4035,
+          "unit:pass": 2929
+        },
+        "ordered_effect_sha256": "5b3530797ffc3e93ea2a1c21ea82b4b721c6af5d13d208dacf2b71d0336988e5",
+        "successful_plants": [
+          61,
+          59
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6495223,
+      "side": 0,
+      "replay_gzip_sha256": "4ef81fa313689edb7a40d8e37faab9627b541cdf6de17b44ce9228d142d63ae2",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "41916d89618ca572ebe3f4f036291ebc74311de4f7466912926b4032393a61ff",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "3c40be8a07b4b6317411506e940f8164c62055fa18ae4e72237c43388c2d0764",
+      "final_rewards": [
+        33269.0,
+        54640.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 371,
+          "unit:executed": 4675,
+          "unit:pass": 2162
+        },
+        "ordered_effect_sha256": "448df65539485a3b18d3475f1db51e728bb37aa1ccf954b083ef7cb88eaf59d0",
+        "successful_plants": [
+          152,
+          53
+        ],
+        "successful_plants_new_land": [
+          82,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6495223,
+      "side": 1,
+      "replay_gzip_sha256": "1c90a55fe2ad09245967cd18ca5f04f06e88582348b4859782533256b94219ef",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "90c8b5399f58999acfe62c31dd616a30b7c18d15dddcb1afd193b54827b1d410",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "896c29d9489d26b0b7d3cb3b31ed5ca0ccd7c2ad3383e5f1f9f647d41d8ead01",
+      "final_rewards": [
+        30451.0,
+        31152.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 335,
+          "unit:executed": 4035,
+          "unit:pass": 2929
+        },
+        "ordered_effect_sha256": "27410bea3a163dd58107ea5b889760041abb08c0462ded8946fbb67aa4cbe1a3",
+        "successful_plants": [
+          59,
+          61
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6495223,
+      "side": 1,
+      "replay_gzip_sha256": "930c8e2eae45d24dd9922c459e62103a0edf2a28e3a68f5c8a519bba3a6cfe2f",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "f356c304e366dfdbff4496b20ca87d7a65c72e11b25b8e2658b67d05f3b8d19f",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "a0f83d2bd999a0119eb89b89c1ed66b7040637b8af3890457245e1ce8883de06",
+      "final_rewards": [
+        54640.0,
+        33269.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 371,
+          "unit:executed": 4675,
+          "unit:pass": 2162
+        },
+        "ordered_effect_sha256": "effa43edcd466fcad846cb15d08dcfbe0967bb6ee0b25381d5a9f31a5a962067",
+        "successful_plants": [
+          53,
+          152
+        ],
+        "successful_plants_new_land": [
+          0,
+          82
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6682214,
+      "side": 0,
+      "replay_gzip_sha256": "ccf47ae842577d65c5da1f17862e999606f5f0b32a985778f96f0358317f82b0",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "74d0bef629dcef143d6691e2d1d5404dbdc43ec76ffc36bde1a2c19cc44e0eb3",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "58ced830d6d5d4d3fbfc18fe47ff7b362529a668ae5a46a82e3d0db7cda01e45",
+      "final_rewards": [
+        37833.0,
+        38710.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 488,
+          "unit:executed": 4806,
+          "unit:pass": 2809
+        },
+        "ordered_effect_sha256": "4c7bda05288c21d50b1de5bf2a5ff19dcc45d7a182bba489b4f049e089c4c1aa",
+        "successful_plants": [
+          96,
+          133
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6682214,
+      "side": 0,
+      "replay_gzip_sha256": "0be79850354203a98e2e714ab8b1bd69bc2dfe49c4c5ff3019840f29b59ce780",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "1a5dd2f17de584b3d2218d6f4ed8576335c168aff375ba373a56565482e46874",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "7d1281005d3289c34e20095b45f371b355e2de8c6a681d08088134c0b0f9b8a9",
+      "final_rewards": [
+        58917.0,
+        45675.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 387,
+          "unit:executed": 4768,
+          "unit:pass": 2695
+        },
+        "ordered_effect_sha256": "4a85ba25abc17252ddfd7867a4797bf098725eab37f7365c85abca32886426ec",
+        "successful_plants": [
+          77,
+          77
+        ],
+        "successful_plants_new_land": [
+          33,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6682214,
+      "side": 1,
+      "replay_gzip_sha256": "43f1ae15d76deef1e9f3195afcec976dabb9b0b9161bf591301f15480431a20e",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "6f8e022c1d2dd65b980c169206951dc184a4cebd470975797dcd5900318f5004",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "f6aba07e96301847a0cca162ecb301bcbc6614fb41cc330f341c8999c4952ff9",
+      "final_rewards": [
+        38710.0,
+        37833.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 488,
+          "unit:executed": 4806,
+          "unit:pass": 2809
+        },
+        "ordered_effect_sha256": "521def64616519af0e79ca6316ac8b1e826d18da87af90c6fab51bf5dc268ad5",
+        "successful_plants": [
+          133,
+          96
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6682214,
+      "side": 1,
+      "replay_gzip_sha256": "3958ae61ceb522d78426efbbf160f4510794e749e55792b23e269ac45f74e334",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "96f3a566cf0ab515fa9fcef1e77ae6ba659558251f86923a1ab06729fe5933e3",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "cc1d19e57811227734c4f1b0ef738907f69a624ad234a2cab8809ac6575f37bc",
+      "final_rewards": [
+        45675.0,
+        58917.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 387,
+          "unit:executed": 4768,
+          "unit:pass": 2695
+        },
+        "ordered_effect_sha256": "9e613aa681f556fc527ce7a3982a52cdeb518b651753cbbaacac350c2b221f8d",
+        "successful_plants": [
+          77,
+          77
+        ],
+        "successful_plants_new_land": [
+          0,
+          33
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6682214,
+      "side": 0,
+      "replay_gzip_sha256": "1d2acfab65e3bd1568a1a5b725a757099b66cb508141ef07be96551d975dbf70",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "36a3aa25d738c358617fd1b6517ae6d95474a776393c92c12fe1e3a84aff3b45",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "2889ee1fdde0f2d3041e8de9a4a0340029c8ee483f62c4d4969d195f1e4508a2",
+      "final_rewards": [
+        33566.0,
+        33123.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 493,
+          "unit:executed": 4994,
+          "unit:pass": 2789
+        },
+        "ordered_effect_sha256": "390f0b8232a2f7804914dd917d4c948dbc4dde699eb57e17663703704d1a8f01",
+        "successful_plants": [
+          135,
+          126
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6682214,
+      "side": 0,
+      "replay_gzip_sha256": "c5ade91fe16c039f7dbad0c2a2ada2103146489f6c833610b7bd4dcf5d44b43f",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "d0d462badc6e033a0dcf63d481e67c576086dc87f0dc21135326d23704e220e1",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "7b1f63fe69ef8b90edb0af3153832ca66db3d3ef3766f46f11387a0fe2bafa52",
+      "final_rewards": [
+        32837.0,
+        54144.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 380,
+          "unit:executed": 4637,
+          "unit:pass": 2246
+        },
+        "ordered_effect_sha256": "1a31b6aef45c44bccc0e4c90f30ffcafe244e3b8ce84ff2f133c68fa67d02f38",
+        "successful_plants": [
+          139,
+          53
+        ],
+        "successful_plants_new_land": [
+          80,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6682214,
+      "side": 1,
+      "replay_gzip_sha256": "b506d81cd7ea664c74325ddbe17eae0c818c3bef46b03902706c97be29f312fa",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "737bdd0ea60b3d55a7245473b6dde83017188bd61200b8438c26e5ca41e49669",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "a149ecd1067a3cae2dd6f83062e3c70e92f7bc797def3e983eaf6c012da0a86b",
+      "final_rewards": [
+        33123.0,
+        33566.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 493,
+          "unit:executed": 4994,
+          "unit:pass": 2789
+        },
+        "ordered_effect_sha256": "c8f1781821292a77797c229d7efedbe5bd506429d01d72d4ae16918a10b699c4",
+        "successful_plants": [
+          126,
+          135
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6682214,
+      "side": 1,
+      "replay_gzip_sha256": "10ac78b6740d7d580b1322e234bd0801c203069ec0feb251409b8d2dba978798",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "32f150b67e047964707afa32f79dac4a13acd7f47bbf590924690e25dcade06b",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "b1039297356602c772ff881506d49568a6cc13b3d35d95d4cb86d0c2482bb7d4",
+      "final_rewards": [
+        54144.0,
+        32837.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 380,
+          "unit:executed": 4637,
+          "unit:pass": 2246
+        },
+        "ordered_effect_sha256": "323e6700764b1fb35f2c65127ea45ee1cee2eefd2d9bad7d561cf9fda9e9b6cb",
+        "successful_plants": [
+          53,
+          139
+        ],
+        "successful_plants_new_land": [
+          0,
+          80
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6726194,
+      "side": 0,
+      "replay_gzip_sha256": "33fda3296850d93c3876ac0bf1a899f4b7dc9cdd255666958dc69411e761c8a1",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "f6d42f3d2f330958bcfb57805c0b253597aca211301b06d4089474108396973e",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "fc9cec74df208399697f578b323704535b51253d29db4edaea4c3e81bd3d71c7",
+      "final_rewards": [
+        43387.0,
+        42952.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 363,
+          "unit:executed": 4217,
+          "unit:pass": 2915
+        },
+        "ordered_effect_sha256": "6ef57440b1211948900a3dc918dd78dc092b7d7527ffe7f84c0085914b960c18",
+        "successful_plants": [
+          52,
+          81
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6726194,
+      "side": 0,
+      "replay_gzip_sha256": "00791d90db988714e232dbb8414281994c4659d551f24a431fb49dd8211aa3cd",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "af8dad081fb9b5cd13eb2d6498c32b7a556d1d2ca4d16c5f16690489253a88b2",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "fdbb82cbe89409b99c73348009c3235d938dea6365313b203ed2cafcd5ea1eea",
+      "final_rewards": [
+        43393.0,
+        37338.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 443,
+          "unit:executed": 5078,
+          "unit:pass": 2432
+        },
+        "ordered_effect_sha256": "d4f72853140994800453b6ea031791490bef751ccf025d81b743687de0400258",
+        "successful_plants": [
+          108,
+          89
+        ],
+        "successful_plants_new_land": [
+          44,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6726194,
+      "side": 1,
+      "replay_gzip_sha256": "bd85bf6351f97ba549a0252a5e9594f3b060b13e9ae08527df3f2454b14672ae",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "7fc8b7e64fa78bade0aa386a0a51747d8aa40876fb502679cfc82c1d8d653f71",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "e57f106443798002b11915b2bf46516d598b0c679f0c108763b0f4a1f920bef3",
+      "final_rewards": [
+        42952.0,
+        43387.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 363,
+          "unit:executed": 4217,
+          "unit:pass": 2915
+        },
+        "ordered_effect_sha256": "e347c247a185b9de2923fd5da5b1667c2542f44123f011e62c85bbf96f31664c",
+        "successful_plants": [
+          81,
+          52
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6726194,
+      "side": 1,
+      "replay_gzip_sha256": "9ace60371ead467390e95a8513903ddfa0513a2341cc809a89265bbcff8a216b",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "19d7454a315c3870c3b3fcd3623e9c5005327ce8dda6622d104d651f1fee3c36",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "0074b4201c907a4dc1d4582933c82fd530eff0ffd6d0d8c6d10af565a14731cf",
+      "final_rewards": [
+        37338.0,
+        43393.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 443,
+          "unit:executed": 5078,
+          "unit:pass": 2432
+        },
+        "ordered_effect_sha256": "7d76d7c11a894fad8b7d377e62c59321ec81cc871a995c889361fd9651d3aed9",
+        "successful_plants": [
+          89,
+          108
+        ],
+        "successful_plants_new_land": [
+          0,
+          44
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6726194,
+      "side": 0,
+      "replay_gzip_sha256": "b9397e512178b2dcdb7940c769d08b94bd05c5296a185ee67386c26632f51296",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "0c4d98db6d7361b4243a38af700e18ab74642bc7e142638eaa58d52afb8baf6b",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "5398c4e7b1d1637892a4d860f6dfa64f28ad2061d2bfe935ace7202f6a7c21fc",
+      "final_rewards": [
+        42003.0,
+        40904.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 319,
+          "unit:executed": 3967,
+          "unit:pass": 2995
+        },
+        "ordered_effect_sha256": "8420ec47b11653d61b25e4735d900b2be535240b046404f0c316a6ecc54456e6",
+        "successful_plants": [
+          52,
+          53
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6726194,
+      "side": 0,
+      "replay_gzip_sha256": "c3d817f7e9c0281d3d8ffeef4abbc40340f158090715d41a4f1eee6b138cca02",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "efa9526b7541e9aad7ddb9ad47bf2a6bf6518e69fe483192b2dbc31679d9e61d",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "9c06976281899d2d6c77f339745edc3610f4e3deafe8c96395fd10a791e5139a",
+      "final_rewards": [
+        26808.0,
+        39851.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 414,
+          "unit:executed": 4925,
+          "unit:pass": 2525
+        },
+        "ordered_effect_sha256": "2df9df57a3a1377b79b430a5d12ab0d20078fd1d14b6ee08b3cac53749fa1cae",
+        "successful_plants": [
+          122,
+          83
+        ],
+        "successful_plants_new_land": [
+          57,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6726194,
+      "side": 1,
+      "replay_gzip_sha256": "71f143a7700cde739111b755805db10af74b64278d62c5a32d1b02b5768a714a",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "516b5cbb177adc8217bb2e4955f2469a1e087672dc7b4e22b242765fae5cbde1",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "75abcb009999b7db48f8a24c01422b028f96d76456d28c574c058f686235b231",
+      "final_rewards": [
+        40904.0,
+        42003.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 319,
+          "unit:executed": 3967,
+          "unit:pass": 2995
+        },
+        "ordered_effect_sha256": "eb4cfc9f28d23ab026cae2b26187a493f34ac3b13b7be0eacc84b6ea56ee585c",
+        "successful_plants": [
+          53,
+          52
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6726194,
+      "side": 1,
+      "replay_gzip_sha256": "b6adc63627eb5fe185cf1a54cc7f8d98a8197ff348eb73bd3ffb644f88e22e84",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "a64356cdfb01094ba85cd471fc115550dcbaec313287fbafac896e2f4f0a85ea",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "e1008cd2193e4da106ed0626ef8ff0f28101e0ea53a2f0949f0597e9b1b3cf16",
+      "final_rewards": [
+        39851.0,
+        26808.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 414,
+          "unit:executed": 4925,
+          "unit:pass": 2525
+        },
+        "ordered_effect_sha256": "19617de0aee7b6b9e8f7baf6af586dab765454cc6c21a6ee1cb85904011824ab",
+        "successful_plants": [
+          83,
+          122
+        ],
+        "successful_plants_new_land": [
+          0,
+          57
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6774936,
+      "side": 0,
+      "replay_gzip_sha256": "cfd632ed28891dd3cb937f56b0a7efef0bc39e7ab4d4945581a1b2202be51578",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "ab1530a6ea70504554089f4f31d7bbe45a1c4e622a5b32d30346d6bc9a2913da",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "296ec87c8a6794a4995f856bd5d4adadab7f791364cc46e856c83a4b77a76c22",
+      "final_rewards": [
+        33689.0,
+        36424.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 438,
+          "unit:executed": 4637,
+          "unit:pass": 2795
+        },
+        "ordered_effect_sha256": "beef11bec4fc4e5183671a304356deb04f2981f4809dcc853ec419422e48eb78",
+        "successful_plants": [
+          96,
+          102
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6774936,
+      "side": 0,
+      "replay_gzip_sha256": "84fa92a60144c8e15f9fcc8b6e8534fa51f4d19f49a282887e5ff81c4e2e0063",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "086fc85b6aea0359d89b8c054f844557fd43c737ef6e00a237dc97b30a671b22",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "22adc4aec1673a2b6eaaec60b9469a656c4d260ae2f7c5b8a3568b67cb18bcbc",
+      "final_rewards": [
+        55816.0,
+        44614.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 387,
+          "unit:executed": 4754,
+          "unit:pass": 2708
+        },
+        "ordered_effect_sha256": "a5d4aa8afee64aecebfc25894b9ac7c14909bf7759dd1a512b32404257314b10",
+        "successful_plants": [
+          77,
+          77
+        ],
+        "successful_plants_new_land": [
+          33,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6774936,
+      "side": 1,
+      "replay_gzip_sha256": "16497f4f161552298667cbee983d03a1c1be57dec138f75073b69789ae4596b3",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "0a4f37638688b65d09d7cb2273b90f425c947d6d22452c7468a29fc1414a7df7",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "8d69ca93fa8888c5923413ea55633e768d64099186be611084e74845abda4c44",
+      "final_rewards": [
+        36424.0,
+        33689.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 438,
+          "unit:executed": 4637,
+          "unit:pass": 2795
+        },
+        "ordered_effect_sha256": "73eaf6d883dfa8ae0aed311e72e0f161c18a31db1af88d13058094fb80289a91",
+        "successful_plants": [
+          102,
+          96
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6774936,
+      "side": 1,
+      "replay_gzip_sha256": "8cfcd7476455dd9a24993dca5f28a570ed2a3c6b9f769828b903e0bcc1df709b",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "52744406d8571cdadad01c4d6e08d61d6fa602bea32884b816053dcc68e071f1",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "d838c335690afdf2e047c0fa2525c1cbf29a95afb81c1e781c20912867077455",
+      "final_rewards": [
+        44614.0,
+        55816.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 387,
+          "unit:executed": 4754,
+          "unit:pass": 2708
+        },
+        "ordered_effect_sha256": "b61053b77606ad58cb8fcb1988f8e907168ffff94a06e70391d2bd0fabeaf6b4",
+        "successful_plants": [
+          77,
+          77
+        ],
+        "successful_plants_new_land": [
+          0,
+          33
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6774936,
+      "side": 0,
+      "replay_gzip_sha256": "e2da6409b1c30b80fb0249ac4093cd7309c49b48d97cd45303fa916e128a341c",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "0d407d3a0f82dec6669acda6fcf4710eea69fedd37a282c9b49e21dd3cc41b4b",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "14ad8de04eedf07e7c9ceee6dfb92cd9aa08babbb86329678da522efb8cca21b",
+      "final_rewards": [
+        32990.0,
+        31959.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 434,
+          "unit:executed": 4489,
+          "unit:pass": 2915
+        },
+        "ordered_effect_sha256": "9276aa8726da1b17122a6cf470b192375781cf2f634aeaab34e5b7b52e52ec53",
+        "successful_plants": [
+          100,
+          88
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6774936,
+      "side": 0,
+      "replay_gzip_sha256": "a351cbafff72a7592ad68721c9dc4040f16225a5431f36bf74682e5084e0f8f2",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "bc0f428a71e92bd479319b4363a7314872dae8f02b8918b83c8c6aef7dafad96",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "bc5694fd31293eb09a8f0214417195ab9345e4b2fb55798ddd849567e93e522c",
+      "final_rewards": [
+        29598.0,
+        50845.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 369,
+          "unit:executed": 4591,
+          "unit:pass": 2246
+        },
+        "ordered_effect_sha256": "eb7c82c459583d2638546cc98e303fa46033cd2297e9a229cc04123434df64a1",
+        "successful_plants": [
+          137,
+          53
+        ],
+        "successful_plants_new_land": [
+          75,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6774936,
+      "side": 1,
+      "replay_gzip_sha256": "9eb6145e53545bd9d4b8d2ad3e0b4460fe41c27d4cfb1f50fddab2dce5fd447e",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "c1645fb18332daae9ff69700b2eefa2cdc06f0c22b9087043b26c6992522a91c",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "abbd735d3c89ae33afb1a293fc59b6d73a275163725b165f794d76a6a85055bc",
+      "final_rewards": [
+        31959.0,
+        32990.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 434,
+          "unit:executed": 4489,
+          "unit:pass": 2915
+        },
+        "ordered_effect_sha256": "96a0cb58520426bdfb6bb6f350090652d5a885cede53ba0e99bdae7e96a9fcb5",
+        "successful_plants": [
+          88,
+          100
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6774936,
+      "side": 1,
+      "replay_gzip_sha256": "4fdfea831c837a0f2a3e1791a433de0c175f8432e7b612e8942fe04799b34376",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "82c05d364e3ccfd3359a619fe0716882ae791fe533f895818e41a61150a435bf",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "8d362b2694f7ea3f1ba7282ea3ec81c3c9d4e7868213c63ff38cba9a89a178f6",
+      "final_rewards": [
+        50845.0,
+        29598.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 369,
+          "unit:executed": 4591,
+          "unit:pass": 2246
+        },
+        "ordered_effect_sha256": "21bda215936abc6504136c84589a4411e2543040443aa263519f4b3ab13fa57f",
+        "successful_plants": [
+          53,
+          137
+        ],
+        "successful_plants_new_land": [
+          0,
+          75
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6949248,
+      "side": 0,
+      "replay_gzip_sha256": "ccc0aa7abd51b12905c7582c678ae280a2305352fee43552ae601b3baf0d4ce8",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "8c22aac80b06b857e4a433880a508a6a67281fc9ba6d6ed9deb32f183c58ef64",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "d8686cb77f46ca968324c7ea214de4e6d5e2622e58541e130115407cdd32deed",
+      "final_rewards": [
+        38083.0,
+        40662.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 357,
+          "unit:executed": 4166,
+          "unit:pass": 2932
+        },
+        "ordered_effect_sha256": "8bfccc55aa214576a56dde8bf37ee39afc846b06799e3582c1061ea5207468c0",
+        "successful_plants": [
+          52,
+          77
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6949248,
+      "side": 0,
+      "replay_gzip_sha256": "bbef38c52eca3d15b2c58c8b604d38bbdaa46f9b7ab1e5190b94b2294c60013c",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "27109d0e3c4297aa296373c6cdbb516711bccfb5e5624a11554ff1490ef4f4b5",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "8f7b3dc5718858e283c4c3efe41f84b60a71511cd14d983359a046359571ba00",
+      "final_rewards": [
+        55177.0,
+        45058.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 407,
+          "unit:executed": 4896,
+          "unit:pass": 2624
+        },
+        "ordered_effect_sha256": "f54ee9fdb57c4d71f329ec5867e89d3d908d3ccec5d378f9b15bb65df3be0b8e",
+        "successful_plants": [
+          78,
+          99
+        ],
+        "successful_plants_new_land": [
+          35,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6949248,
+      "side": 1,
+      "replay_gzip_sha256": "a113e1795bdcef175d4a4b23809dd36a76fe46d40c873a965d9d1b468014f1fc",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "519430da8503fb106b35e987b6608c04527f03247941adb4135261ab8145879b",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "cac3193500bdc4e19b3511e3aeb46ad63fbf5b7e5b6135eb5024bc48047b160d",
+      "final_rewards": [
+        40662.0,
+        38083.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 357,
+          "unit:executed": 4166,
+          "unit:pass": 2932
+        },
+        "ordered_effect_sha256": "836101f4831f5580c4cc4fc1e95b668ed79746659bc95a1dec8cb8bcaa12b057",
+        "successful_plants": [
+          77,
+          52
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6949248,
+      "side": 1,
+      "replay_gzip_sha256": "7fe13145fc7d0266c47d1cdab5ff2b33a0497d76cf42a2bcb718bf59abf666dd",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "f7007f6cbccba2a8764caab7154209797f24bfe1fb1580d4469b1cb3ef831047",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "658ae6889f365b0d25b3d7b5b9f1740c9e386065100664094c2f157dd487e79a",
+      "final_rewards": [
+        45058.0,
+        55177.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 407,
+          "unit:executed": 4896,
+          "unit:pass": 2624
+        },
+        "ordered_effect_sha256": "8c7a88ee9198fccb8a1762ebbe3d7b0d0165b494de211cd9c6ed407bf26895d5",
+        "successful_plants": [
+          99,
+          78
+        ],
+        "successful_plants_new_land": [
+          0,
+          35
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6949248,
+      "side": 0,
+      "replay_gzip_sha256": "590591a5fdafae67db5e5091cf7ee9196e66fbe560edbb138eda96215fbcf861",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "cc96e2ab3561264b92d23e0be06f22eaa062cb138df265057d9e7e61786579b3",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "5a29726f952b020e978e9df7277f4f34e1cfc18a865c38295331f5bbc31a8447",
+      "final_rewards": [
+        37601.0,
+        35882.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 318,
+          "unit:executed": 3967,
+          "unit:pass": 2995
+        },
+        "ordered_effect_sha256": "e2b774f07836bbf85f2554156f0c0950bf06f2e2ca6502d78a04c89d4d7d5dde",
+        "successful_plants": [
+          52,
+          53
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6949248,
+      "side": 0,
+      "replay_gzip_sha256": "62bc3ca9806671431bb1f2f26e4d0a7a46b69c26e40188e44118aacfd42aface",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "c8a94836d7d72234a31ca00907c9ea688bb72bc5a1f20f3498900e662c7641e9",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "6cfa091345d7b1a1b3dd3bcaf307dd4b6f5bf0a4fbc91b90eff32283519cdab0",
+      "final_rewards": [
+        34668.0,
+        54081.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 384,
+          "unit:executed": 4673,
+          "unit:pass": 2187
+        },
+        "ordered_effect_sha256": "16a79a1853cf2ed7f2cc444d4126122050c930a1dc60d257c437749f0292dcf1",
+        "successful_plants": [
+          147,
+          59
+        ],
+        "successful_plants_new_land": [
+          79,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6949248,
+      "side": 1,
+      "replay_gzip_sha256": "2107c93c9cbbe9a8a84fdf8cb1a9666f358fd0c8ee3c8d1fc5bba41c20bedaab",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "865684a561486148c1e3d823fe053ee7e05059b966968314a49bf29ec5eb3e7e",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "3f695a8db04bf6277d16e65c8cf5c183d5f611c991e09ae44b470606bd573c84",
+      "final_rewards": [
+        35882.0,
+        37601.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 318,
+          "unit:executed": 3967,
+          "unit:pass": 2995
+        },
+        "ordered_effect_sha256": "ff1e92e5b5f3d735281e5a1ff89678fe03b4a26c543ecee0fc6246c2a7a569ed",
+        "successful_plants": [
+          53,
+          52
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6949248,
+      "side": 1,
+      "replay_gzip_sha256": "72f2fc7068cd87b77a97bf56e00db1ceb232e63d612d7b55d799e758046d593b",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "b07d3d61d9db5bdef93f6df2118616bfa3f60c2f565339873d167ca408b0df6b",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "d0b876f13231cd9e94961797a71ec1968b2a1dc8e472daeac5c7548326906f4a",
+      "final_rewards": [
+        54081.0,
+        34668.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 384,
+          "unit:executed": 4673,
+          "unit:pass": 2187
+        },
+        "ordered_effect_sha256": "26e9484e00e4a39dfb1c3adc9935c5be200a66014f095b154deab14588a9100e",
+        "successful_plants": [
+          59,
+          147
+        ],
+        "successful_plants_new_land": [
+          0,
+          79
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6992429,
+      "side": 0,
+      "replay_gzip_sha256": "aac444c7029f77cec1d5c044d3b70c82c0f192ea7271517d2e5535ad41b37c30",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "2d6dc8b73697664777cb604dc43c07d414dc74d02aa210829c24df5c7d6b93e5",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "603d9c9afdf1657624747644f8fcf455999767ce5c61799374e797625037f2c4",
+      "final_rewards": [
+        36060.0,
+        38178.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 382,
+          "unit:executed": 4269,
+          "unit:pass": 2908
+        },
+        "ordered_effect_sha256": "457f3867371dc13a0d5eeea052fa26462c854f360a259c9e095b55ed12c9312d",
+        "successful_plants": [
+          58,
+          90
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6992429,
+      "side": 0,
+      "replay_gzip_sha256": "a8ad704c6af5c94924153a632e845864f029c997ca07f41c30a9a947f9cbfb12",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "3a4c0e5d9928e49028496d5548857119408174fe9d3f4a80300ffd797165d66e",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "4b254e5e4028726008d0adcb48577423288c95bbe0e0c1ac3bd20d56c4358ade",
+      "final_rewards": [
+        51183.0,
+        42606.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 428,
+          "unit:executed": 4952,
+          "unit:pass": 2564
+        },
+        "ordered_effect_sha256": "c8ba34e26cfaa485bb5b4545ac3664357aee0fe95e6ef333a3f2d25a73fae75c",
+        "successful_plants": [
+          87,
+          91
+        ],
+        "successful_plants_new_land": [
+          39,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6992429,
+      "side": 1,
+      "replay_gzip_sha256": "ea776a11574b392b590f7a7b01f59acd6e63585291260b6a2cd83bf0d9687e73",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "f69f8dec8534800f76efc0eecde1dc69b371d431b5d5c49de96d7edfd57fa697",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "755f7a89431b9dd1432f3beab6b00434f79440a58beee0fed2059688aff948b8",
+      "final_rewards": [
+        38178.0,
+        36060.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 382,
+          "unit:executed": 4269,
+          "unit:pass": 2908
+        },
+        "ordered_effect_sha256": "33c3310ef7e31009b93f3cb9be71aaa07732fde9cf2ea0204349102316048dea",
+        "successful_plants": [
+          90,
+          58
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6992429,
+      "side": 1,
+      "replay_gzip_sha256": "95136558102302213e68ce067eccbdb9612c3209e457e748dc41a8b734735b6c",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "876e986e78e7fcbbdbc5af5c5a0fffbbbecb7a2d7717c26c10de3b4407b91f6c",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "1bd0486cff84d2ad39f25e73870748511166a9e6d611e029e08ac22af58c959f",
+      "final_rewards": [
+        42606.0,
+        51183.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 428,
+          "unit:executed": 4952,
+          "unit:pass": 2564
+        },
+        "ordered_effect_sha256": "3a4e1dd5ff81996891525e66e51382f15954088adb19e57c473a883c4e18fec6",
+        "successful_plants": [
+          91,
+          87
+        ],
+        "successful_plants_new_land": [
+          0,
+          39
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6992429,
+      "side": 0,
+      "replay_gzip_sha256": "786cc7751d3295c74352a22baccb4c93499e99ce5aabcf8e9d3ab92d78230044",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "7182dca7d298805131f9c5c7dae9cd07cc1f14f8dab12288a58c756d2d877046",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "18cc566a4ae6eed6330e14f739c4d2e2f7eef47e71e2b2e0d9b078fa4ab6fd77",
+      "final_rewards": [
+        34764.0,
+        34387.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 330,
+          "unit:executed": 4015,
+          "unit:pass": 2949
+        },
+        "ordered_effect_sha256": "719c0762a8c481e34451f1de9bbcaeadb2c286ea687e2c09bb132d7d6f8740da",
+        "successful_plants": [
+          58,
+          57
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6992429,
+      "side": 0,
+      "replay_gzip_sha256": "2e94bc144f38f81d97f9cadc416cc7512a84a836e66ee0d4995501768f00b02a",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "296cad804d584baccabf96bb113212ff545918d32cb296e7b1309a062c51ec80",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "b031f587ffeff850eb2d102ffe0fb3fba63a5f57a8ec46de0f86a8a284906972",
+      "final_rewards": [
+        35238.0,
+        43581.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 402,
+          "unit:executed": 4814,
+          "unit:pass": 2490
+        },
+        "ordered_effect_sha256": "5d8ad0837f6e7607f6fc34ebb73eec082657e5d07fe93b11f1ed8ff14d3a78c7",
+        "successful_plants": [
+          119,
+          57
+        ],
+        "successful_plants_new_land": [
+          45,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6992429,
+      "side": 1,
+      "replay_gzip_sha256": "d9421442ed86803e6fd301dc9da96e68802609f038c896493e9340a601c071bc",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "ee3240b67c952170f571a4bdba462d050df7388bb91e849d3ffa785e49ecaa18",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "fb85617cac108b07c603f0ee66ba68c901786be0f8ddf88609705cd8db9c3cce",
+      "final_rewards": [
+        34387.0,
+        34764.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 330,
+          "unit:executed": 4015,
+          "unit:pass": 2949
+        },
+        "ordered_effect_sha256": "30335c1293804eb90d0c026b459c6a2322bbf6bf79310d9fbe9668b2e4178ce4",
+        "successful_plants": [
+          57,
+          58
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6992429,
+      "side": 1,
+      "replay_gzip_sha256": "d9ce048e19804cd6f325f522404d719e4cfa180f12afecf7e779b0056e0b3765",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "594d140d697f97009c0b32abc8811b94ef536068ec57dd2f8fa542274754c01d",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "2cd3b71b4864432e8478fd56d962ba7b447ef62306ba1b5a1dc7b5bf7c5c7887",
+      "final_rewards": [
+        43581.0,
+        35238.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 402,
+          "unit:executed": 4814,
+          "unit:pass": 2490
+        },
+        "ordered_effect_sha256": "6894d3884c4c20097ffc582f1e8702d042392020b479f8abbcf05d54cc309dde",
+        "successful_plants": [
+          57,
+          119
+        ],
+        "successful_plants_new_land": [
+          0,
+          45
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "baseline",
+      "opponent": "market",
+      "seed": 6774936,
+      "side": 0,
+      "replay_gzip_sha256": "43df587ed1bb2f6aaa65149356be82ffb8d77da16f4f18fc121d3f38b60e1295",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "ab1530a6ea70504554089f4f31d7bbe45a1c4e622a5b32d30346d6bc9a2913da",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "296ec87c8a6794a4995f856bd5d4adadab7f791364cc46e856c83a4b77a76c22",
+      "final_rewards": [
+        33689.0,
+        36424.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 438,
+          "unit:executed": 4637,
+          "unit:pass": 2795
+        },
+        "ordered_effect_sha256": "beef11bec4fc4e5183671a304356deb04f2981f4809dcc853ec419422e48eb78",
+        "successful_plants": [
+          96,
+          102
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6774936,
+      "side": 0,
+      "replay_gzip_sha256": "8fd7ae363cdd524c0b4c2eadb1f394b0a54fd9d339e10798a6bd9bd7a37c817a",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "ab1530a6ea70504554089f4f31d7bbe45a1c4e622a5b32d30346d6bc9a2913da",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "296ec87c8a6794a4995f856bd5d4adadab7f791364cc46e856c83a4b77a76c22",
+      "final_rewards": [
+        33689.0,
+        36424.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 438,
+          "unit:executed": 4637,
+          "unit:pass": 2795
+        },
+        "ordered_effect_sha256": "beef11bec4fc4e5183671a304356deb04f2981f4809dcc853ec419422e48eb78",
+        "successful_plants": [
+          96,
+          102
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6774936,
+      "side": 1,
+      "replay_gzip_sha256": "753d3ac3c342c2cd0c8844ce1fd30a12f0b279fcabd453348f1611d3d4467b4d",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "52744406d8571cdadad01c4d6e08d61d6fa602bea32884b816053dcc68e071f1",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "d838c335690afdf2e047c0fa2525c1cbf29a95afb81c1e781c20912867077455",
+      "final_rewards": [
+        44614.0,
+        55816.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 387,
+          "unit:executed": 4754,
+          "unit:pass": 2708
+        },
+        "ordered_effect_sha256": "b61053b77606ad58cb8fcb1988f8e907168ffff94a06e70391d2bd0fabeaf6b4",
+        "successful_plants": [
+          77,
+          77
+        ],
+        "successful_plants_new_land": [
+          0,
+          33
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6774936,
+      "side": 0,
+      "replay_gzip_sha256": "36c591eb5896f51fd4ae8854065f74dd6eb832d76e5a43cda3d651ca60023333",
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "086fc85b6aea0359d89b8c054f844557fd43c737ef6e00a237dc97b30a671b22",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "22adc4aec1673a2b6eaaec60b9469a656c4d260ae2f7c5b8a3568b67cb18bcbc",
+      "final_rewards": [
+        55816.0,
+        44614.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 387,
+          "unit:executed": 4754,
+          "unit:pass": 2708
+        },
+        "ordered_effect_sha256": "a5d4aa8afee64aecebfc25894b9ac7c14909bf7759dd1a512b32404257314b10",
+        "successful_plants": [
+          77,
+          77
+        ],
+        "successful_plants_new_land": [
+          33,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    }
+  ]
+}

@@ -47,8 +47,12 @@ class ExecutionTrace:
 
     def unit(self, original, farm, private, idx, effective, *args, **kwargs):
         p = self.player(farm)
-        a = self.state[p].action
-        actions = [a.get("farmer", ["PASS"]), *a.get("hands", [])]
+        raw = self.state[p].action
+        a = raw if isinstance(raw, dict) else {}
+        hands = a.get("hands", [])
+        # Match the official interpreter envelope, without changing its input.
+        hands = hands if isinstance(hands, list) else []
+        actions = [a.get("farmer", ["PASS"]), *hands]
         requested = deepcopy(actions[idx])
         before = resources(farm, private)
         pos = self.rules._farmer_position(farm, idx)
@@ -85,7 +89,10 @@ class ExecutionTrace:
             inv_after = dict(after["inventories"][idx]).get(item, 0)
             moved = abs(inv_after - inv_before)
             record["transferred_units"] = moved
-            if effective[0] == "PLACE" and item in self.rules.ANIMALS and isinstance(tile_after, dict) and tile_after.get("animal") == item:
+            if (effective[0] == "PLACE" and item in self.rules.ANIMALS
+                    and isinstance(tile, dict) and "animal" not in tile
+                    and tile.get("kind") == self.rules.ANIMALS[item]["structure"]
+                    and isinstance(tile_after, dict) and tile_after.get("animal") == item):
                 wanted = 1  # Official animal placement ignores quantity.
             else:
                 wanted = int(effective[2]) if len(effective) >= 3 else 1

@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 import runpy
 import unittest
+from unittest.mock import patch
 
 from decision.api import observe, HistorySession, FrozenAdapter, act
 from decision.semantics import canonical, digest
@@ -151,6 +152,52 @@ class AuditRegressions(unittest.TestCase):
             b.step([raw, action()])
         self.assertEqual(canonical(a.state), canonical(b.state))
         self.assertEqual(next(r for r in t.records if r["player"] == 0)["status"], "executed")
+
+    def test_nonlist_hands_preserves_official_step_and_call_count(self):
+        for hands in (None, 1, "ignored", {}):
+            with self.subTest(hands=hands):
+                a, b = env(), env()
+                raw = {"farmer": ["PASS"], "hands": hands, "market": []}
+                original_raw = deepcopy(raw)
+                original = rules._apply_unit_action
+                with patch.object(rules, "_apply_unit_action", wraps=original) as calls:
+                    expected = deepcopy(a.step([raw, action()]))
+                    plain_calls = calls.call_count
+                trace = ExecutionTrace(rules)
+                with patch.object(rules, "_apply_unit_action", wraps=original) as calls:
+                    with trace.installed(b):
+                        actual = b.step([raw, action()])
+                    self.assertEqual(calls.call_count, plain_calls)
+                    self.assertEqual(calls.call_count, 2)
+                self.assertEqual(canonical(expected), canonical(actual))
+                self.assertEqual(canonical(a.state), canonical(b.state))
+                self.assertEqual(raw, original_raw)
+                self.assertIs(rules._apply_unit_action, original)
+
+    def test_animal_place_distinguishes_new_animal_and_shed_transfer(self):
+        for occupied, stored, moved, status in (
+                (False, 99, 1, "executed"), (True, 97, 3, "executed"),
+                (True, 99, 1, "partial"), (True, 100, 0, "no_effect")):
+            with self.subTest(occupied=occupied, stored=stored):
+                a, b = env(), env()
+                for e in (a, b):
+                    f, p = e.state[0].observation.farms[0], e.state[0].observation.private
+                    f["tiles"][4][4] = rules._new_animal("GOOSE", 0) if occupied else {"kind": "COOP"}
+                    p["inventories"][0] = {"GOOSE": 3}
+                    p["shed"] = {"WHEAT": stored}
+                raw = action(["PLACE", "GOOSE", 3])
+                a.step([raw, action()])
+                trace = ExecutionTrace(rules)
+                with trace.installed(b):
+                    b.step([raw, action()])
+                self.assertEqual(canonical(a.state), canonical(b.state))
+                rec = next(r for r in trace.records if r["phase"] == "unit" and r["player"] == 0)
+                self.assertEqual(rec["status"], status)
+                p = b.state[0].observation.private
+                self.assertEqual(p["inventories"][0].get("GOOSE", 0), 3-moved)
+                self.assertEqual(p["shed"].get("GOOSE", 0), moved if occupied else 0)
+                if moved:
+                    self.assertEqual(rec["transferred_units"], moved)
 
     def test_market_lockstep_quotes_and_repeatable_effect_digest(self):
         traces = []

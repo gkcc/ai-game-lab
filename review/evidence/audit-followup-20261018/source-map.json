@@ -1,0 +1,107 @@
+[
+  {
+    "source": "kaggriculture/decision/semantics.py",
+    "runtime_sha256": "9ac62d0df7adca84c0feff805b2979bb45f9f9f4c2064d1e2b5c48efd3e779a5",
+    "public_sha256": "9ac62d0df7adca84c0feff805b2979bb45f9f9f4c2064d1e2b5c48efd3e779a5",
+    "byte_identical": true,
+    "boundary": "Exact source"
+  },
+  {
+    "source": "kaggriculture/decision/execution.py",
+    "runtime_sha256": "cbf38b17ca9c4c1c4f82ddb583ff59e4f605a0e8d8e971ef5bfc3664b2c76378",
+    "public_sha256": "e1b8acb32ef0b31c0de3048d481d84babf3b07510d18a9d3b2fd3da471d8f239",
+    "byte_identical": false,
+    "boundary": "Line endings only"
+  },
+  {
+    "source": "kaggriculture/decision/full_audit.py",
+    "runtime_sha256": "84f7c7b4316fb98791c51b933f5329a271b8bc9aec60eebe133f6d433ec4510d",
+    "public_sha256": "0ae434974ac8fced76033c26b9c27f6ffce24e1f598f6fba6c7dc11306d903a8",
+    "byte_identical": false,
+    "boundary": "Line endings only"
+  },
+  {
+    "source": "kaggriculture/decision/telemetry_worker.py",
+    "runtime_sha256": "f5f68a2f99ac34f3b0752ef3be3c20e76c333662466675104dc53e81fb5a61e1",
+    "public_sha256": "1a25a02b98499bd78771e54320e8d53dc0c57bf3aaca66cf6d9a46379ec3bc33",
+    "byte_identical": false,
+    "boundary": "Line endings only"
+  },
+  {
+    "source": "kaggriculture/decision/api.py",
+    "runtime_sha256": "3ef4025bde61d240b298cbe4d31291f25021baaf5b396f5540bbfcdda4231917",
+    "public_sha256": "3ef4025bde61d240b298cbe4d31291f25021baaf5b396f5540bbfcdda4231917",
+    "byte_identical": true,
+    "boundary": "Exact source"
+  },
+  {
+    "source": "kaggriculture/decision/reexecute_experiment.py",
+    "runtime_sha256": "54ab90ba0430e51f281a90c65a8364d2957cf081350dd5a092d371e1a477b7ea",
+    "public_sha256": "ac8f3b2c173218b1d00876e265293ea376173c180e7f2978f577c7f5d13ba4fe",
+    "byte_identical": false,
+    "boundary": "Line endings only"
+  },
+  {
+    "source": "kaggriculture/decision/verify_audit.py",
+    "runtime_sha256": "fd6bfc1c6c066c5ec8ff3daa1a97a52caced41991be631084bfdd90763b4be4e",
+    "public_sha256": "3afc9b0a2bb04114d8bed42d6568809b87677dc39c0bd783a1b1898e3a693c3e",
+    "byte_identical": false,
+    "boundary": "Line endings only"
+  },
+  {
+    "source": "kaggriculture/decision/verify_mechanisms.py",
+    "runtime_sha256": "cc82fd118abd94e92a8833587aa2bfb9117214a8a5b00e8054225732af47fbbf",
+    "public_sha256": "cc82fd118abd94e92a8833587aa2bfb9117214a8a5b00e8054225732af47fbbf",
+    "byte_identical": true,
+    "boundary": "Exact source"
+  },
+  {
+    "source": "kaggriculture/decision/verify_experiment.py",
+    "runtime_sha256": "7d6031cf759b985111c77da3d2f77f784ca41e33692ef3ea0b0f44194e97f95b",
+    "public_sha256": "7d6031cf759b985111c77da3d2f77f784ca41e33692ef3ea0b0f44194e97f95b",
+    "byte_identical": true,
+    "boundary": "Exact source"
+  },
+  {
+    "source": "kaggriculture/learning/round2_worker.py",
+    "runtime_sha256": "a80158b26d1f4ae3d366c1d1276a1ca63e652bcd350f5ca25545b0f5f33759f1",
+    "public_sha256": "ff823541f43ec2a0671aefbb2a3803daf6d3b882cebed4534eb2bdbb5efb35a1",
+    "byte_identical": false,
+    "boundary": "Line endings only"
+  },
+  {
+    "source": "kaggriculture/learning/mechanism_experiment.py",
+    "runtime_sha256": "95bf5399019c7e662d9d32f62898c3f8e3922d4beb0152b91b2ad4bb374da8b7",
+    "public_sha256": "ed97b57f5fbf8f2f5bedbc07a1b2511faa79f4db90c53cb7c7dc8fbb133cc42f",
+    "byte_identical": false,
+    "boundary": "Line endings only"
+  },
+  {
+    "source": "kaggriculture/run_match.py",
+    "runtime_sha256": "1b521899ecd0594459dab0770c3f6bd41c094c57067099ffbeed48a26da46e21",
+    "public_sha256": "1b521899ecd0594459dab0770c3f6bd41c094c57067099ffbeed48a26da46e21",
+    "byte_identical": true,
+    "boundary": "Exact source"
+  },
+  {
+    "source": "kaggriculture/learning/official_worker.py",
+    "runtime_sha256": "b8b017db60aaa3f655722274b4b8c5c777643587f56b458ed07628c0658a36f7",
+    "public_sha256": "b8b017db60aaa3f655722274b4b8c5c777643587f56b458ed07628c0658a36f7",
+    "byte_identical": true,
+    "boundary": "Exact source"
+  },
+  {
+    "source": "kaggriculture/learning/optimize_round2.py",
+    "runtime_sha256": "9f4fcf09fecd42c6135a1a2a72b95948c52474636719863eb2d468b01dc102fe",
+    "public_sha256": "9f4fcf09fecd42c6135a1a2a72b95948c52474636719863eb2d468b01dc102fe",
+    "byte_identical": true,
+    "boundary": "Exact source"
+  },
+  {
+    "source": "kaggriculture/learning/verify_telemetry.py",
+    "runtime_sha256": "a0b8ec5efe7d449e59404a268485a503a22bea806a738c3111a305ec81903381",
+    "public_sha256": "a0b8ec5efe7d449e59404a268485a503a22bea806a738c3111a305ec81903381",
+    "byte_identical": true,
+    "boundary": "Exact source"
+  }
+]

@@ -83,3 +83,7 @@
 基于 428448a 的 WebChat 审查，新增带版本的背包保序比较/哈希、官方逐原语效果归因和运行器管理的 HistorySession。保留 v1 字段和所有历史产物。15 项针对性回归、29 项原机制测试；52 场最终代码逐步复演的版本绑定与结果见 [验收](evidence/audit-repair-20261018/acceptance.json) 和 [逐场证书](evidence/audit-repair-20261018/official-reexecution-v2.json)。
 
 市场标签目前为订单聚合和成交交错摘要，不是完整联合 mask；HistorySession 每局必须 reset。原生动物 PLACE 忽略数量的兼容边界已加入回归。第一次补充场景构造被本地 codec 拒绝、后续观察器数量解析反例的失败均留本地，公开只输出通过的最终结果。策略、默认 Bot、候选、旧账本及旧哈希保留；扩地仍不晋级，本轮不做 BC/PPO/GPU 训练。详见 [实现与边界](../kaggriculture/decision/AUDIT_REPAIR.zh-CN.md)。
+
+## 执行审计复审后续修复
+
+针对 a938ef8 的三项已复现缺陷，修复非列表 hands 的追踪透明性、已有动物设施的部分入库归因、优化器遥测错误导入官方引擎。标签版本为 2，语义审计版本仍为 2。29 项机制测试、17 项审计回归和隔离遥测入口验收，另生成新一轮 52 场官方逐步复核证书；历史收益、策略与默认 Bot 保留，不做 BC。详见 [修复、命令与边界](../kaggriculture/decision/AUDIT_FOLLOWUP.zh-CN.md) 和 [本轮证据](evidence/audit-followup-20261018)。验收结果以 acceptance.json 为准；不是新独立比赛或策略提升证据。

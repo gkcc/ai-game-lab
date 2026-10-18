@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "optimizer_engine_available": false,
+  "optimizer_engine_imported": false,
+  "official_worker_completed": true,
+  "mechanism": {
+    "first_post_action_quadrants": [
+      "NW",
+      "NE"
+    ],
+    "final_quadrants": [
+      "NW",
+      "NE"
+    ],
+    "successful_plant_events_in_new_land": 35,
+    "non_pass_unit_actions": 2596,
+    "execution_label_version": 2,
+    "execution_effect_sha256": "e5ee2991a5b6f42e2bb9d4702a7760a7a33a181d02b94312cb30fb287ce5e694",
+    "melon_quote_min": 125,
+    "melon_quote_mean": 192.4125,
+    "simulation_seconds": 3.0678037000034237,
+    "both_bot_seconds": 0.924006599932909
+  },
+  "boundary": "Actual isolated telemetry entry over a complete retained replay; not a new optimization experiment"
+}

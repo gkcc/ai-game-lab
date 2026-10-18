@@ -20,3 +20,7 @@
 给出本次已审查Commit SHA。下次审查请与该SHA比较变化，避免把旧问题反复算作新进展。不要修改代码或创建线上提交，除非另有要求。
 
 新增复审重点：以 audit-repair-20261018 为新增证据，检查 v2 是否仅保留影响规则的背包顺序且不抹除映射类型；旧哈希是否明确标成 v1；官方调用观察器是否透明、异常恢复且只用于离线；同格、DIG/PLANT、原子种子取消、部分成交及忽略数量分支的归因是否可靠；HistorySession 的 reset 和身份边界是否如实说明。核对 52 场新版证书与旧 ledger 的现金和旧哈希，并区分逐场官方复演与回放文件自行散列。不要把本次修复当成 BC、联合完整合法性或新策略提升的证据。
+
+## 最新复审重点
+
+对照 a938ef8，重点读取 decision/execution.py 的请求信封处理及动物 PLACE 前后状态判据，learning/mechanism_experiment.py 与 decision/telemetry_worker.py 的进程隔离，以及 verify_audit.py、learning/verify_telemetry.py 的实际回归。核对 review/evidence/audit-followup-20261018 下的新证书、comparison.json、历史证书哈希、源码映射与保护清单；旧证据不覆盖。区分执行标签版本 2、语义审计版本 2 与历史哈希版本 1。核查 52 场是否真正执行官方转移，而非仅重算 Replay 哈希。不要据此声称新独立测试、全动作合法性或 BC 已完成。
