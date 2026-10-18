@@ -1,0 +1,23 @@
+{
+  "candidate_sha256": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+  "baseline_sha256": "a41985c68068ee234ee1fd73bdc71bda2debb6d6f252218b49f61f47be82d1fa",
+  "experiment_runner_sha256": "9956a18bc9ae61de2402733d6710644b4a0198ea953a3913bb56435c3c7c8813",
+  "official_audit_runner_sha256": "ea44f11288cdd2ea20a75c2b3ecbfe648ab8e3acab50d13c9c4cefb009282fe6",
+  "registration_sha256": "deaee4b6f180e8e5d3049c7c1b77b95ce44156d1498d7206aaad13c87281e3a7",
+  "pilot_ledger_sha256": "00618629ffc595a56bded770c27ec43a49f25fa1a88fda78e0857a348f25dd11",
+  "test_results_seen": false,
+  "selection": "One design, no policy changes after pilot; before test",
+  "source_sha256": {
+    "audit_teacher_fertilizer.py": "ea44f11288cdd2ea20a75c2b3ecbfe648ab8e3acab50d13c9c4cefb009282fe6",
+    "baseline.py": "a41985c68068ee234ee1fd73bdc71bda2debb6d6f252218b49f61f47be82d1fa",
+    "candidate.py": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+    "evaluate_holdout.py": "df599e139893081f0a5307b0aa9cf299e2d14d4d4a221672b7aa9ac1d3747d82",
+    "market.py": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "optimize_round2.py": "9f4fcf09fecd42c6135a1a2a72b95948c52474636719863eb2d468b01dc102fe",
+    "round2.py": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "teacher.py": "a41985c68068ee234ee1fd73bdc71bda2debb6d6f252218b49f61f47be82d1fa",
+    "teacher_fertilizer_experiment.py": "9956a18bc9ae61de2402733d6710644b4a0198ea953a3913bb56435c3c7c8813",
+    "v1.py": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "worker.py": "a80158b26d1f4ae3d366c1d1276a1ca63e652bcd350f5ca25545b0f5f33759f1"
+  }
+}
