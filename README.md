@@ -6,6 +6,8 @@ Kaggriculture / Lux AI S3 的本地竞赛与自动学习研究。此仓库是经
 
 最新阶段：[完整机制覆盖](kaggriculture/decision/MECHANISMS.zh-CN.md)、[决策接口](kaggriculture/decision/README.md)、[机制实证与复现](kaggriculture/decision/EXPERIMENT.zh-CN.md)、[后续学习路线](kaggriculture/decision/LEARNING_ROADMAP.zh-CN.md)。先补齐可感知、可选择、可评估的机制基础，不继续无限四参数调优。
 
+新增教师：[持续作物施肥实验](kaggriculture/TEACHER_FERTILIZER.zh-CN.md)、[冻结教师池](kaggriculture/TEACHERS.zh-CN.md)。通过本轮小规模独立面板门槛，默认 Bot 保持原版，未开始 BC。
+
 ## 当前进度
 
 - Kaggriculture：官方完整对局链路、中文回放、三版启发式交叉赛完成。默认 `main.py` 保留原第一版。

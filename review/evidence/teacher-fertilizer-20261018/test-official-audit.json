@@ -1,0 +1,3349 @@
+{
+  "passed": true,
+  "games": 74,
+  "official_transitions": 53206,
+  "frozen_strategy_sha256": {
+    "baseline.py": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "candidate.py": "a41985c68068ee234ee1fd73bdc71bda2debb6d6f252218b49f61f47be82d1fa",
+    "v1.py": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "market.py": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "round2.py": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "worker.py": "a80158b26d1f4ae3d366c1d1276a1ca63e652bcd350f5ca25545b0f5f33759f1"
+  },
+  "rows": [
+    {
+      "seed": 8142522,
+      "side": 0,
+      "policy": "baseline",
+      "opponent": "market",
+      "replay_gzip_sha256": "1eea639717ef49e7d4010074dc39de48fc66c5b8bce28c49292c3b4bf6891047",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "dbb69676fad79330f6b49d9684e8f8b639ceabda0dcc6f6c68474009572c2a41",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "22d110125b777a4d1fbd0189b65f5c830b318493b989ebfa6d25bc790808513f",
+        "final_rewards": [
+          38332.0,
+          40818.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 392,
+            "unit:executed": 4386,
+            "unit:pass": 2854
+          },
+          "ordered_effect_sha256": "ed1d13ff5facfb6001e4660e5aa2429488029738e4fa3cf40000869e332be03b",
+          "successful_plants": [
+            61,
+            106
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8142522,
+      "side": 0,
+      "policy": "candidate",
+      "opponent": "market",
+      "replay_gzip_sha256": "8a2d3f3b79eb7f57f343b18c786cf8886aa23fc303318303fce4d7c3b7f05bd7",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "dd4d35303a71787b11662f97d0cdd3427c1049b14f56261b76235622aac68447",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "f194625af3087363d05ca0b4d82cb45c3b0a36bc3b4acae7738aa7554de683b5",
+        "final_rewards": [
+          40984.0,
+          39705.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 427,
+            "unit:executed": 4552,
+            "unit:pass": 3140
+          },
+          "ordered_effect_sha256": "f77ae9fbfc2c8e7a93bcc44d1bf59f6218e402a3f7793d8ad534c035ca29b332",
+          "successful_plants": [
+            62,
+            106
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "fertilizer_bought_units": 17,
+        "fertilizer_purchase_cost": 1730.0,
+        "PICKUP:executed": 19,
+        "FERTILIZE:executed": 17,
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8142522,
+      "side": 1,
+      "policy": "baseline",
+      "opponent": "market",
+      "replay_gzip_sha256": "6e088f2d26f95e424c539316b60fe0df7a9166c47727348f7394f72e9713f0f4",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "39099a01e203a34be684eb43f296d767521cb00cd4c13581d3e8e03b887ae8ce",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "1e143dacb88bfc2edce00147d279475f9e2daaa71da1463dc63271cf8aa7012f",
+        "final_rewards": [
+          40818.0,
+          38332.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 392,
+            "unit:executed": 4386,
+            "unit:pass": 2854
+          },
+          "ordered_effect_sha256": "82f38a1913b2ac5aa719a590c8a36a7785dc1521f29a07475419ad5e61619ce8",
+          "successful_plants": [
+            106,
+            61
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8142522,
+      "side": 1,
+      "policy": "candidate",
+      "opponent": "market",
+      "replay_gzip_sha256": "440a3043419705925ca01640c725f7c8f5e0e981edd759defd08ad5fd077fb14",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "e3ebcd61c00e7d65be5aabdf8af5f49e7f24baeb0a61f35b33ca573deaaac3ec",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "ecef727895eead26167dddabbe9397b68ee610ad78288aba49bacb08c368899d",
+        "final_rewards": [
+          39705.0,
+          40984.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 427,
+            "unit:executed": 4552,
+            "unit:pass": 3140
+          },
+          "ordered_effect_sha256": "7c313caf61e938df3b4563b3dedc9e45181d371bd7b3f7513dcd7f78f1b11445",
+          "successful_plants": [
+            106,
+            62
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "fertilizer_bought_units": 17,
+        "fertilizer_purchase_cost": 1730.0,
+        "PICKUP:executed": 19,
+        "FERTILIZE:executed": 17,
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8142522,
+      "side": 0,
+      "policy": "baseline",
+      "opponent": "round2",
+      "replay_gzip_sha256": "597671596738a323d05849a0fa17c0b229bdfb23656501146d2cecb78339d1cb",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "ac9142bef28a95649f24b691de9acdd199c421be3db19d239d6b04ef363a2e03",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "aebce850d058031b326a323d2569feb9a12294446bcec83ef3d62ac869946caf",
+        "final_rewards": [
+          37201.0,
+          37201.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 332,
+            "unit:executed": 4042,
+            "unit:pass": 2910
+          },
+          "ordered_effect_sha256": "02fe4c015ff632075bcaff4e61ed1b3c188171c60984df5bf5e81cd1fc7c8098",
+          "successful_plants": [
+            61,
+            61
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8142522,
+      "side": 0,
+      "policy": "candidate",
+      "opponent": "round2",
+      "replay_gzip_sha256": "f60b6679c19dcfd8363f46a8012f8516790a230625a22a605cf042a1dd8bba2b",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "66cf05c78fa28995a06107cc50ee087b52a43589238cda1f160f7fdc2cb69afc",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "192e08f6a276b1f1db8ecf789d32924a64c27ca6dccc407954f222d882112893",
+        "final_rewards": [
+          41972.0,
+          33725.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 369,
+            "unit:executed": 4216,
+            "unit:pass": 3202
+          },
+          "ordered_effect_sha256": "e2500a4b364e2daca1550157201e84012db1d8a9f7b024ceda074ad01d953ea3",
+          "successful_plants": [
+            62,
+            61
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "fertilizer_bought_units": 18,
+        "fertilizer_purchase_cost": 1834.0,
+        "PICKUP:executed": 20,
+        "FERTILIZE:executed": 18,
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8142522,
+      "side": 1,
+      "policy": "baseline",
+      "opponent": "round2",
+      "replay_gzip_sha256": "8e28b6b71e184eb509542e5f387215241cdeebed99e9be10e165520585567c05",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "ac9142bef28a95649f24b691de9acdd199c421be3db19d239d6b04ef363a2e03",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "aebce850d058031b326a323d2569feb9a12294446bcec83ef3d62ac869946caf",
+        "final_rewards": [
+          37201.0,
+          37201.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 332,
+            "unit:executed": 4042,
+            "unit:pass": 2910
+          },
+          "ordered_effect_sha256": "02fe4c015ff632075bcaff4e61ed1b3c188171c60984df5bf5e81cd1fc7c8098",
+          "successful_plants": [
+            61,
+            61
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8142522,
+      "side": 1,
+      "policy": "candidate",
+      "opponent": "round2",
+      "replay_gzip_sha256": "334a272169efa2c4d4fbf03f5e32daea454df24d3c6d778849ceee427be8979f",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "d73112ede6a1232fe874873c34b39ed88c4c929066c6396183a9da2ae8500ac3",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "b9631be5a94db0db648f2e806d8805fe13b00ff094eef952606335e301d81b99",
+        "final_rewards": [
+          33725.0,
+          41972.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 369,
+            "unit:executed": 4216,
+            "unit:pass": 3202
+          },
+          "ordered_effect_sha256": "04cb489e8f40ff38200fec7b720f7a93393502ef685a3709c21ef025b2e739b1",
+          "successful_plants": [
+            61,
+            62
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "fertilizer_bought_units": 18,
+        "fertilizer_purchase_cost": 1834.0,
+        "PICKUP:executed": 20,
+        "FERTILIZE:executed": 18,
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8142522,
+      "side": 0,
+      "policy": "baseline",
+      "opponent": "v1",
+      "replay_gzip_sha256": "b30707ba414eaab88bd4672dc8dc9450b79de6c9d70636c34c947f7fd0a29643",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "e7267aabcb6dab05d7e48daf9949eda8d9790fa12e8f617da0932779a3533a3d",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "fd0438cf198e1de0d6edc5a89793e6b27e2e8f2b808a29d6981a7e19cc2652fd",
+        "final_rewards": [
+          37229.0,
+          36772.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 335,
+            "unit:executed": 4035,
+            "unit:pass": 2929
+          },
+          "ordered_effect_sha256": "87a9777b695b5e7420e18d849739bbb81b15cdc596d639ac3d86979929cf7d20",
+          "successful_plants": [
+            61,
+            59
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8142522,
+      "side": 0,
+      "policy": "candidate",
+      "opponent": "v1",
+      "replay_gzip_sha256": "d622d0845d39db0a4a92c565686122269a93a23df9b0a25ab5bbf86725e90c75",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "101c740e5f2f4d18aa3f83fb823e23ff737a722ebd2699d6c8f7e83cb95ef34b",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "8a8ee64910a15af5508d077f6518a1da1d37ad42155c8419a1c373db8981bccc",
+        "final_rewards": [
+          42031.0,
+          33310.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 375,
+            "unit:executed": 4225,
+            "unit:pass": 3257
+          },
+          "ordered_effect_sha256": "e4907ec6b5e2efcced20959c8212d7a3eb6f8103c0c481efeaae765f82ce4377",
+          "successful_plants": [
+            62,
+            59
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "fertilizer_bought_units": 19,
+        "fertilizer_purchase_cost": 1938.0,
+        "PICKUP:executed": 21,
+        "FERTILIZE:executed": 19,
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8142522,
+      "side": 1,
+      "policy": "baseline",
+      "opponent": "v1",
+      "replay_gzip_sha256": "eedb87eb17b36735f5d0808d14a7eb708f12f285061c8be1fe588af2a8b71925",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "25457387ad45ecf8886350189cb51f8911175f217c86d93f0dd86e6099bc7f7a",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "38fb9ae1d191eb2065ab6ca8d44d09d8b8a6786754d4ff3bf025501235e8ae96",
+        "final_rewards": [
+          36772.0,
+          37229.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 335,
+            "unit:executed": 4035,
+            "unit:pass": 2929
+          },
+          "ordered_effect_sha256": "4ffe4a004ff5b7b302668b5fdcbfbf8c0ee11ca65c554c597a5177e87d00cd7f",
+          "successful_plants": [
+            59,
+            61
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8142522,
+      "side": 1,
+      "policy": "candidate",
+      "opponent": "v1",
+      "replay_gzip_sha256": "d7631dace0b283d3826cdfe82ecd589177eff998602ee447bab545effaa237af",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "83e946d0f578dcbe7d3106cb3aac759d37329bcb2be839b8238b45604d63597a",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "220feda3ccca5a92d7fb97be9e9a9d12b7d2ea46f9eab44b5da7bad87e3448b1",
+        "final_rewards": [
+          33310.0,
+          42031.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 375,
+            "unit:executed": 4225,
+            "unit:pass": 3257
+          },
+          "ordered_effect_sha256": "bf84f49182439ccceaeeb8f473867e03236fbed98adf4e1c42dfe7341bb6ebe9",
+          "successful_plants": [
+            59,
+            62
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "fertilizer_bought_units": 19,
+        "fertilizer_purchase_cost": 1938.0,
+        "PICKUP:executed": 21,
+        "FERTILIZE:executed": 19,
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8156327,
+      "side": 0,
+      "policy": "baseline",
+      "opponent": "market",
+      "replay_gzip_sha256": "9f602a7431b0580f9c8e37d0068747efafa28a2d8dbbd97b7601085d06c606a9",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "c20d725d31342f0fa30a6db95ad680736378c9f69f0d8efa3d4d5b3732018870",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "05d83e7d6547f273dee943369264e909ae1b4a9277716a8d3b891d8ef4764eed",
+        "final_rewards": [
+          41962.0,
+          42365.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 363,
+            "unit:executed": 4248,
+            "unit:pass": 2931
+          },
+          "ordered_effect_sha256": "7b83a32b3f217857daff7ea2777b8f1081734a4a44aac11f19b290137595d38d",
+          "successful_plants": [
+            52,
+            91
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8156327,
+      "side": 0,
+      "policy": "candidate",
+      "opponent": "market",
+      "replay_gzip_sha256": "62ec134c1c090628fad1a2b1f8c1d42bba41c962b9579a9311502d5a84cef589",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "fd1dcf3bf14d7972c392b7605998abe88d5fb88b473a3fe0e6cdfc581c7cc309",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "017b87e0347f7680b3642ae2c62f8d210210360ad512185f4a958b59351439b9",
+        "final_rewards": [
+          45169.0,
+          41681.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 419,
+            "unit:executed": 4509,
+            "unit:pass": 3284
+          },
+          "ordered_effect_sha256": "fb032e5ad6ad27750096fc3aa2b620889fc46bd10914bd55846f20810444eec1",
+          "successful_plants": [
+            56,
+            91
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "fertilizer_bought_units": 25,
+        "fertilizer_purchase_cost": 2565.0,
+        "PICKUP:executed": 26,
+        "FERTILIZE:executed": 24,
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8156327,
+      "side": 1,
+      "policy": "baseline",
+      "opponent": "market",
+      "replay_gzip_sha256": "55bbfe5c843cfab2af5e7a452276441e41a502caa7aef2138d8dd44e0908aec7",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "822963e337fcf5b780f664ab1b5c1a386c1d8fb200dcc744ff1c52a8dc5edde3",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "ff74d5ddde44ab552b11db51c19d68d32c18dd81a0df1e767d9e7c615faeb185",
+        "final_rewards": [
+          42365.0,
+          41962.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 363,
+            "unit:executed": 4248,
+            "unit:pass": 2931
+          },
+          "ordered_effect_sha256": "4802b1b03361d9beea6eb0f829f12a3c218efb47c9cdf86b5adf07594af51674",
+          "successful_plants": [
+            91,
+            52
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8156327,
+      "side": 1,
+      "policy": "candidate",
+      "opponent": "market",
+      "replay_gzip_sha256": "c0d6f7844691266d6d9a4f54989fa3ed22df9f41d220b79308be087d9fc360ff",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "1af36cbb02aa5909fbdeed6e430ea0c851c641cdf6381fc64b820f42e58cc696",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "1d6ce8a7bf88e52db6e1afdafed530b8756166bafa9521b9570284463e6b3733",
+        "final_rewards": [
+          41681.0,
+          45169.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 419,
+            "unit:executed": 4509,
+            "unit:pass": 3284
+          },
+          "ordered_effect_sha256": "a511f5fcc923a34c11d5ab5a37cf6d22a6dc327bbfcc097f8f44338147eecf38",
+          "successful_plants": [
+            91,
+            56
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "fertilizer_bought_units": 25,
+        "fertilizer_purchase_cost": 2565.0,
+        "PICKUP:executed": 26,
+        "FERTILIZE:executed": 24,
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8156327,
+      "side": 0,
+      "policy": "baseline",
+      "opponent": "round2",
+      "replay_gzip_sha256": "40ecd3b73a91bc4f491322b75cab57cd1460333d7b9b40a3fb24a345dc7e1504",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "1c7746870ee67a8f3c3fa9a1e3a97057341ba880ab82426d60d976f790128a7f",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "e0c74155af299c573e67a6aab9cf827471b9dd390fc06864ec7642d5ccae2b81",
+        "final_rewards": [
+          40292.0,
+          40292.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 310,
+            "unit:executed": 3968,
+            "unit:pass": 2980
+          },
+          "ordered_effect_sha256": "ca9a1e4f6dfb1a54dd8ea833bced29b943e7080b93a711fd7063ea03f94723e5",
+          "successful_plants": [
+            52,
+            52
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8156327,
+      "side": 0,
+      "policy": "candidate",
+      "opponent": "round2",
+      "replay_gzip_sha256": "db876cb049b564361e9ef54fe0385b70b8586e97a11484997e6448d50f287e0b",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "175b75e23ec622c04a52832bbed23626d6d5102fed634e195b62e580d73a08ff",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "f59ea2fb508885b7fa6e883f940aa65b0bf34f56aa85f776214b0e7eb5e12039",
+        "final_rewards": [
+          40936.0,
+          42017.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 370,
+            "unit:executed": 4261,
+            "unit:pass": 3368
+          },
+          "ordered_effect_sha256": "eac9f0a832e641d30f3f2199202f47111c9eb61d0458842733d7df8ee0725d04",
+          "successful_plants": [
+            56,
+            52
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "fertilizer_bought_units": 27,
+        "fertilizer_purchase_cost": 2775.0,
+        "PICKUP:executed": 28,
+        "FERTILIZE:executed": 26,
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8156327,
+      "side": 1,
+      "policy": "baseline",
+      "opponent": "round2",
+      "replay_gzip_sha256": "d7283e6af3566846a4526e90fb754026fc9154c33fec7b84f725e1aae08f231b",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "1c7746870ee67a8f3c3fa9a1e3a97057341ba880ab82426d60d976f790128a7f",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "e0c74155af299c573e67a6aab9cf827471b9dd390fc06864ec7642d5ccae2b81",
+        "final_rewards": [
+          40292.0,
+          40292.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 310,
+            "unit:executed": 3968,
+            "unit:pass": 2980
+          },
+          "ordered_effect_sha256": "ca9a1e4f6dfb1a54dd8ea833bced29b943e7080b93a711fd7063ea03f94723e5",
+          "successful_plants": [
+            52,
+            52
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8156327,
+      "side": 1,
+      "policy": "candidate",
+      "opponent": "round2",
+      "replay_gzip_sha256": "1cb3dcf23ee5d938a2ccfa66e496e4f08b87bc6d63764751efa2bf741aea66dc",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "7c18df19301365e17b8227a4bf81b3a976c447c7f12e4694be3dee021ccf7a6f",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "5a97976f1517a022b55cc7bedc7bf975d545cb6cf6e18edeb39ed5f18096ba8d",
+        "final_rewards": [
+          42017.0,
+          40936.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 370,
+            "unit:executed": 4261,
+            "unit:pass": 3368
+          },
+          "ordered_effect_sha256": "f676ab2b72ace3424ae31e2176c2bb315b159d488722dfebfa4d62cd003980a6",
+          "successful_plants": [
+            52,
+            56
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "fertilizer_bought_units": 27,
+        "fertilizer_purchase_cost": 2775.0,
+        "PICKUP:executed": 28,
+        "FERTILIZE:executed": 26,
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8156327,
+      "side": 0,
+      "policy": "baseline",
+      "opponent": "v1",
+      "replay_gzip_sha256": "03bffc789a769284d3deadb1fbe50c0a192a96154b1ef26151f9325c5eb5c26a",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "c0308f5643719774f43ae718135d733cf72b82b19485bef298598369cb4524ec",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "a1b8a95f48040c71ce5b6a272c05ce7838360ead83376d1d17b40aacadaaf9ad",
+        "final_rewards": [
+          40306.0,
+          40365.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 321,
+            "unit:executed": 3991,
+            "unit:pass": 2971
+          },
+          "ordered_effect_sha256": "88f7c08d72a21b40f034bb2f793c87926369f59f490c907d6a23c74d7527552f",
+          "successful_plants": [
+            52,
+            57
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8156327,
+      "side": 0,
+      "policy": "candidate",
+      "opponent": "v1",
+      "replay_gzip_sha256": "87bac80051320c283339b1a09affc317f02eb76c1b7f32ce97ccd38a3f94d81b",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "fc8770d1fcb35bef91003c9676ed0916851ae3f074e96ce6ae22a5a7f2d23116",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "08bc7993f999ee9d9c800aad3cc8c50821c211a827457282573c5c9f1eb6a231",
+        "final_rewards": [
+          41162.0,
+          42138.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 381,
+            "unit:executed": 4284,
+            "unit:pass": 3363
+          },
+          "ordered_effect_sha256": "6d51f49a8fd0d4927696690629520692ba704c17a4b480b48374e6a4a4055c9f",
+          "successful_plants": [
+            56,
+            57
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "fertilizer_bought_units": 27,
+        "fertilizer_purchase_cost": 2775.0,
+        "PICKUP:executed": 28,
+        "FERTILIZE:executed": 26,
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8156327,
+      "side": 1,
+      "policy": "baseline",
+      "opponent": "v1",
+      "replay_gzip_sha256": "7aa1593057553050d7fa17330039887060c7a9a72a4d550f3a611967d841b7f3",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "74c5c0a3868b8ff14e39b28b34f713b0b7dda8efb8889d413f9aff0d28df3e53",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "e9dc042c4abb045e4ef666b623c1b4d5519a056453ab7958966a1d148fc7a625",
+        "final_rewards": [
+          40365.0,
+          40306.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 321,
+            "unit:executed": 3991,
+            "unit:pass": 2971
+          },
+          "ordered_effect_sha256": "6f7d26f8f2cb1ef45e709a1b218d4a1cfb8d8262f155f07e4e28b61d084a34ce",
+          "successful_plants": [
+            57,
+            52
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8156327,
+      "side": 1,
+      "policy": "candidate",
+      "opponent": "v1",
+      "replay_gzip_sha256": "9c0bb707f45b48d1084867b640f52a4659ec1bc08d94b1c3dfe2f9b3b8e9b784",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "d8394dac94262389dfe9df8a1ef1169bf78c81f577467e4303238b06e1345e95",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "a81d1f6b715a6e85f2f18d7b11cbd7d3b786d8f34c3f4a59005563c6e131b93d",
+        "final_rewards": [
+          42138.0,
+          41162.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 381,
+            "unit:executed": 4284,
+            "unit:pass": 3363
+          },
+          "ordered_effect_sha256": "67db3d48e5f319f6d6a48bfa097dd5eba35d05cde979326a672adff159c16b5b",
+          "successful_plants": [
+            57,
+            56
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "fertilizer_bought_units": 27,
+        "fertilizer_purchase_cost": 2775.0,
+        "PICKUP:executed": 28,
+        "FERTILIZE:executed": 26,
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8219190,
+      "side": 0,
+      "policy": "baseline",
+      "opponent": "market",
+      "replay_gzip_sha256": "8c3b84accbcdabe2b12ab1fab77420ffb4ae56499336d9595a1550aa9435d035",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "d1d82b970d6f28beb4cc20f65fb2d478f46f08937ec990838fc407380df50984",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "2e377ff4ef729f60f903903d653f8950ea89ddcac8a393130600df596a560021",
+        "final_rewards": [
+          45618.0,
+          45668.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 355,
+            "unit:executed": 4189,
+            "unit:pass": 2932
+          },
+          "ordered_effect_sha256": "bc817e2806f0f2b57592eded141d15dd8b9e1ffd7093270eb1b12d4bf7f250be",
+          "successful_plants": [
+            52,
+            77
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8219190,
+      "side": 0,
+      "policy": "candidate",
+      "opponent": "market",
+      "replay_gzip_sha256": "22dde184b4d4dc3c0c3d28729bd2158447c800db636d454d3e5a88a259c5d0e4",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "8205ec4b390978d34e05f34197ff6ac34b6da24cdee50e403298293169653148",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "8ad71e7af1cafbe297f818258ba25af17127cd86466740c51005fbaf3c7086ee",
+        "final_rewards": [
+          50639.0,
+          44948.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 418,
+            "unit:executed": 4512,
+            "unit:pass": 3363
+          },
+          "ordered_effect_sha256": "ec40d70e608d9a0a5fe061a084de377cd0ff9cee2be1002b527596aeb2d001d7",
+          "successful_plants": [
+            56,
+            77
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "fertilizer_bought_units": 31,
+        "fertilizer_purchase_cost": 3199.0,
+        "PICKUP:executed": 33,
+        "FERTILIZE:executed": 30,
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8219190,
+      "side": 1,
+      "policy": "baseline",
+      "opponent": "market",
+      "replay_gzip_sha256": "81380ccbf11bf0052ee7da814cd1b8bc84bffafb06a31cd8dbeb6a1d45855a5a",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "0bcbb10571251389606ce9f4494424fc34bacb9ed58870aa11076b9ae02b9975",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "fa732352f867bd7beee0930c55b4b985be9b1d9652d7f3d26c3d748e82ccc836",
+        "final_rewards": [
+          45668.0,
+          45618.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 355,
+            "unit:executed": 4189,
+            "unit:pass": 2932
+          },
+          "ordered_effect_sha256": "cf903d5cb94faac6352d21d1598cb64600c00379da6fbe4ec5333ebcc4566a67",
+          "successful_plants": [
+            77,
+            52
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8219190,
+      "side": 1,
+      "policy": "candidate",
+      "opponent": "market",
+      "replay_gzip_sha256": "3a3d8325585c7c9efec72102e705d464aad857e7dd2721652b091edeaea62ab4",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "f2b03999455f0eff22cca31e866ac72678fab581263fc275f3052106f03da471",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "363fa7374f786f56c184453920a0ec9858ea35ae4fa0b0e56a613a920e36c80f",
+        "final_rewards": [
+          44948.0,
+          50639.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 418,
+            "unit:executed": 4512,
+            "unit:pass": 3363
+          },
+          "ordered_effect_sha256": "60270d0cdb5a05b8a9d508fcb69b8d81812390ee5ca5f7f6c860056d9f39f11e",
+          "successful_plants": [
+            77,
+            56
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "fertilizer_bought_units": 31,
+        "fertilizer_purchase_cost": 3199.0,
+        "PICKUP:executed": 33,
+        "FERTILIZE:executed": 30,
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8219190,
+      "side": 0,
+      "policy": "baseline",
+      "opponent": "round2",
+      "replay_gzip_sha256": "c0e7b217190db9afb928b1f2fe57f5853b80c5cc622977bb76a47be834d49375",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "492add65992bc63896d0f322dbfde670db16d3130191bce61546cd1825efa77e",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "3c2e5527ea5c99195e483910be0c2449420aa17ff4eed0d6c54485af49b2e5a4",
+        "final_rewards": [
+          43800.0,
+          43813.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 310,
+            "unit:executed": 3973,
+            "unit:pass": 2974
+          },
+          "ordered_effect_sha256": "f57ebace9afea0553f33fe5dd5b2e43d8ccc76d818daf9c41bf7dbceedd3a0d6",
+          "successful_plants": [
+            52,
+            52
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8219190,
+      "side": 0,
+      "policy": "candidate",
+      "opponent": "round2",
+      "replay_gzip_sha256": "f59612611301868c113a22c0c2d120d5433a63edb4cf4ded735754303d3a1f93",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "bf372e4a3c3bf98a902246e244c02e3421062c11b5003962f0d4d6f0c0fb6f9c",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "1bbe81ffd1720abca1be147b250709a2ce7ac50c6210a24d7f87255475dc1e30",
+        "final_rewards": [
+          46337.0,
+          45676.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 374,
+            "unit:executed": 4303,
+            "unit:pass": 3408
+          },
+          "ordered_effect_sha256": "2232dde81c4625ec1c843f6ba51ab28183efda3941a0988f4e3ae574064a7b8e",
+          "successful_plants": [
+            56,
+            52
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "fertilizer_bought_units": 31,
+        "fertilizer_purchase_cost": 3199.0,
+        "PICKUP:executed": 33,
+        "FERTILIZE:executed": 30,
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8219190,
+      "side": 1,
+      "policy": "baseline",
+      "opponent": "round2",
+      "replay_gzip_sha256": "688993acfb802aad3eaa44f1a7566ae3136c16ecadb12985fbddf073677a1f55",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "492add65992bc63896d0f322dbfde670db16d3130191bce61546cd1825efa77e",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "3c2e5527ea5c99195e483910be0c2449420aa17ff4eed0d6c54485af49b2e5a4",
+        "final_rewards": [
+          43800.0,
+          43813.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 310,
+            "unit:executed": 3973,
+            "unit:pass": 2974
+          },
+          "ordered_effect_sha256": "f57ebace9afea0553f33fe5dd5b2e43d8ccc76d818daf9c41bf7dbceedd3a0d6",
+          "successful_plants": [
+            52,
+            52
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8219190,
+      "side": 1,
+      "policy": "candidate",
+      "opponent": "round2",
+      "replay_gzip_sha256": "8e62e2b2954ac3254e333da240e6acf606f3ce26d168f470e6171d7529cdb14a",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "567746356d3e9904e4a41e0bcaddf222ba9305434c108cbfbc140783f44f49a7",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "18af43f765218b7809af741fa16486481232814c41af7fee89ce5b34ac05ade8",
+        "final_rewards": [
+          45689.0,
+          46350.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 374,
+            "unit:executed": 4291,
+            "unit:pass": 3400
+          },
+          "ordered_effect_sha256": "0d1bcc3c5025e56ae166811643796567f42a4aa3ff43c2898c1d60bbd0ce292e",
+          "successful_plants": [
+            52,
+            56
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "fertilizer_bought_units": 31,
+        "fertilizer_purchase_cost": 3199.0,
+        "PICKUP:executed": 33,
+        "FERTILIZE:executed": 30,
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8219190,
+      "side": 0,
+      "policy": "baseline",
+      "opponent": "v1",
+      "replay_gzip_sha256": "46235d891a8597e482c5b078f2788961d00f70beefe5fff00b3d0bf3d20f2b77",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "dd4f5b50d7ac6cff36e2519a3f52ba3e90694fa9d51a716203bab2cc54f72076",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "8c40bbdf5b5d5810023f5f48dc212afce647e681c5c7f7f1193b6969ef36b81d",
+        "final_rewards": [
+          43802.0,
+          43498.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 316,
+            "unit:executed": 3974,
+            "unit:pass": 2975
+          },
+          "ordered_effect_sha256": "a5a7f0d2419eb33e6af630231e0743b6cdcad98f80cde393d41af24594070425",
+          "successful_plants": [
+            52,
+            53
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8219190,
+      "side": 0,
+      "policy": "candidate",
+      "opponent": "v1",
+      "replay_gzip_sha256": "68097b2f3af2108addd86b905e350d915a9ae2b2f9cfbf45f88e7f5c4ca830af",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "d4d5528124fa22653929fbfe695cda119a714ca6e06e841775a6368a8f85e45c",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "7fdc5e2fef0ada20a608dd9f39213b6f2826b613214472f8e75d40db0ff60a33",
+        "final_rewards": [
+          46388.0,
+          45369.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 379,
+            "unit:executed": 4301,
+            "unit:pass": 3414
+          },
+          "ordered_effect_sha256": "daa8486c127cf8daa4d31d31d6d997b489f6ee0057274820507c0a2c309c3984",
+          "successful_plants": [
+            56,
+            53
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "fertilizer_bought_units": 31,
+        "fertilizer_purchase_cost": 3199.0,
+        "PICKUP:executed": 33,
+        "FERTILIZE:executed": 30,
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8219190,
+      "side": 1,
+      "policy": "baseline",
+      "opponent": "v1",
+      "replay_gzip_sha256": "f49a6f43679d817b9168f35cc1f110620e60b2a32da46ebcab8ec25cc61a8a99",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "c5521cbb3f3a51fea8854611490a21267f0720441872ac1a764ed7d46785887d",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "c8f2e94d6e1a0c61bd4c9c6dd339be84262d1ea093fff0c3276e11f5b9347f52",
+        "final_rewards": [
+          43485.0,
+          43802.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 315,
+            "unit:executed": 3980,
+            "unit:pass": 2981
+          },
+          "ordered_effect_sha256": "c592cbeb4ff62c17abb53a918055151a8722da14cc867cb413ec6b092a734dd8",
+          "successful_plants": [
+            53,
+            52
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8219190,
+      "side": 1,
+      "policy": "candidate",
+      "opponent": "v1",
+      "replay_gzip_sha256": "9b3d8ed34af49ffe0f1ff2791d088d9125394fbef72cf3144d92f550032e3777",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "39b4086a6b7da217f5692b2c9042133dbc5bbb3d4915c76a3536ea29af096222",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "4d9a6e6b36e9dfa96c4e34034c2d06803a0a2a9e8e36a8274487fc0104129479",
+        "final_rewards": [
+          45369.0,
+          46401.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 381,
+            "unit:executed": 4301,
+            "unit:pass": 3404
+          },
+          "ordered_effect_sha256": "0dc09050a4258a2da4a582e1316492d6d344f7f1b1c39000296061f4692b17ae",
+          "successful_plants": [
+            53,
+            56
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "fertilizer_bought_units": 31,
+        "fertilizer_purchase_cost": 3199.0,
+        "PICKUP:executed": 33,
+        "FERTILIZE:executed": 30,
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8243932,
+      "side": 0,
+      "policy": "baseline",
+      "opponent": "market",
+      "replay_gzip_sha256": "aabf101bcf946ce04b3ff1222c196e1f6221b49ed8649fe78adbc5b891cfb875",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "1fe36ad8427e3a8e159b66945279c06aff50951aa63663773e787f21b8ddc1c2",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "e474d917ff394bf069bb42b5dd3d6e600ed83cec5af3e1aa9c85bfed75c82304",
+        "final_rewards": [
+          50839.0,
+          57731.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 351,
+            "unit:executed": 4184,
+            "unit:pass": 2898
+          },
+          "ordered_effect_sha256": "d79fa5d2172b437324eca0315eab3d067974b5fc4d2f014140fbc5c0596e6825",
+          "successful_plants": [
+            52,
+            71
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8243932,
+      "side": 0,
+      "policy": "candidate",
+      "opponent": "market",
+      "replay_gzip_sha256": "affac76ca420e6f97f1d13516c80202ebc7535611a873811d11792084c5e667a",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "604b27c37b6639238ec933902a5f4fd32e3fc083c6d026469b22886fe4b48f3c",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "25bdc928aca499594f6d429f06554beb850062901aa7297ea261f789e0f5b385",
+        "final_rewards": [
+          56160.0,
+          57435.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 407,
+            "unit:executed": 4466,
+            "unit:pass": 3324
+          },
+          "ordered_effect_sha256": "e64079a0c427f3c9deeafa8155320f9bc91a71cab932bdcd07072fdbeb7dfb1b",
+          "successful_plants": [
+            56,
+            71
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "fertilizer_bought_units": 28,
+        "fertilizer_purchase_cost": 2881.0,
+        "PICKUP:executed": 29,
+        "FERTILIZE:executed": 28,
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8243932,
+      "side": 1,
+      "policy": "baseline",
+      "opponent": "market",
+      "replay_gzip_sha256": "84ff127e6772e663d3144f5760071d8fea20416de6334193aac7dffdd8e080fd",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "9e9e1bd280c66d42dfb105fee90c31238ca58e62ecca3ecbf49eca5945108585",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "eb16ce2252440fe8e469e97f8045a49dafa21682466263c40a0dc6c0478f8d58",
+        "final_rewards": [
+          57731.0,
+          50839.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 351,
+            "unit:executed": 4184,
+            "unit:pass": 2898
+          },
+          "ordered_effect_sha256": "a02c19100aa047f22d74e38efb923056bdcc3b8849df681fbd3fd0409e141a52",
+          "successful_plants": [
+            71,
+            52
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8243932,
+      "side": 1,
+      "policy": "candidate",
+      "opponent": "market",
+      "replay_gzip_sha256": "b6687e789e5974cc77f678d4ca06dcd780da1498fdf0b7423700c8c5aa520974",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "7a1313b4f0cdd70dce73f2ea57b23a960ad1e56122065e2eef8bf6616f6ea7a2",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "dffdd230874a44ab16b0caec09552ea7075f2ef85d66f6a3caf38194a39edcfe",
+        "final_rewards": [
+          57435.0,
+          56160.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 407,
+            "unit:executed": 4466,
+            "unit:pass": 3324
+          },
+          "ordered_effect_sha256": "f61818c560eab65ab15e3e41dc702461162da581400e059a0d1bd051cc36ddb0",
+          "successful_plants": [
+            71,
+            56
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "fertilizer_bought_units": 28,
+        "fertilizer_purchase_cost": 2881.0,
+        "PICKUP:executed": 29,
+        "FERTILIZE:executed": 28,
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8243932,
+      "side": 0,
+      "policy": "baseline",
+      "opponent": "round2",
+      "replay_gzip_sha256": "23bb0330df7a08c71621007a98e7dfa314a1f42d3741df6f2a4e282f2394cb71",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "f01ae922950ea0b0f7bedf3bc0541034b2144c47e8d3542e8a3ff9e8ccb700b6",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "7a5e6d04946ae91d3c67db762bef656f1d2fb41f3dbc4a67ef0f3fe06f906aa5",
+        "final_rewards": [
+          49238.0,
+          49238.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 314,
+            "unit:executed": 3982,
+            "unit:pass": 2966
+          },
+          "ordered_effect_sha256": "700b2c4db8b1eeaa55c6c84d6659767eff126ac30a4a9f851fb5b718f4bbf1c7",
+          "successful_plants": [
+            52,
+            52
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8243932,
+      "side": 0,
+      "policy": "candidate",
+      "opponent": "round2",
+      "replay_gzip_sha256": "a5f16fc43d89b69a2a9d410a485b472e383407a955bac52e15115108730572bf",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "9639d8fe21ddb12cfb3e5e4db2b61868206283a68c9f963daf9f3b8e628d643b",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "73c8b4fcd2675804f4793b3eff3e9e09068fcda7e082d87fe0ebcfea88368f08",
+        "final_rewards": [
+          51920.0,
+          51659.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 370,
+            "unit:executed": 4264,
+            "unit:pass": 3392
+          },
+          "ordered_effect_sha256": "29dcf9040a08e333d8d736609b8ade6267dd4a62870a7a8b131f17e9e260bc0a",
+          "successful_plants": [
+            56,
+            52
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "fertilizer_bought_units": 28,
+        "fertilizer_purchase_cost": 2881.0,
+        "PICKUP:executed": 29,
+        "FERTILIZE:executed": 28,
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8243932,
+      "side": 1,
+      "policy": "baseline",
+      "opponent": "round2",
+      "replay_gzip_sha256": "39940a05658df6d7126fcda3ee21334e39367009c8c2af6f28fe598280113f9b",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "f01ae922950ea0b0f7bedf3bc0541034b2144c47e8d3542e8a3ff9e8ccb700b6",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "7a5e6d04946ae91d3c67db762bef656f1d2fb41f3dbc4a67ef0f3fe06f906aa5",
+        "final_rewards": [
+          49238.0,
+          49238.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 314,
+            "unit:executed": 3982,
+            "unit:pass": 2966
+          },
+          "ordered_effect_sha256": "700b2c4db8b1eeaa55c6c84d6659767eff126ac30a4a9f851fb5b718f4bbf1c7",
+          "successful_plants": [
+            52,
+            52
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8243932,
+      "side": 1,
+      "policy": "candidate",
+      "opponent": "round2",
+      "replay_gzip_sha256": "bd8c3df67ee17041bab9b892070683fd88a26824a51a5b796452f727a0387232",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "faff3af54289e9dfc77015821194bc6cedcd0d8cea0bb81437cb796221c45b40",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "e19e5f9c7060addabdd9153b544ea709ec22ab43017eeddae4866a2fd0fc008a",
+        "final_rewards": [
+          51659.0,
+          51920.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 370,
+            "unit:executed": 4264,
+            "unit:pass": 3392
+          },
+          "ordered_effect_sha256": "e92cc87b5155ec02ad18c607540b73bf977d806b3c316d46e8adf2748a461243",
+          "successful_plants": [
+            52,
+            56
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "fertilizer_bought_units": 28,
+        "fertilizer_purchase_cost": 2881.0,
+        "PICKUP:executed": 29,
+        "FERTILIZE:executed": 28,
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8243932,
+      "side": 0,
+      "policy": "baseline",
+      "opponent": "v1",
+      "replay_gzip_sha256": "faaf1e1f119f89bc3409d69c1db6affb8c2bbde48ee5d775f8175053f090927b",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "4c6a6de359c501071eff9ccfa048e3353b4d1125f2a77b7694f5ec9807c70962",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "b2a520203efd8b8803f2c010d6425020322d70f69e17ede8167503adb7f83401",
+        "final_rewards": [
+          49624.0,
+          47725.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 318,
+            "unit:executed": 3967,
+            "unit:pass": 2995
+          },
+          "ordered_effect_sha256": "9727e2aaf3c17bab270db682ce87fbf1b4f477c949c15f35923ef805bc3248c1",
+          "successful_plants": [
+            52,
+            53
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8243932,
+      "side": 0,
+      "policy": "candidate",
+      "opponent": "v1",
+      "replay_gzip_sha256": "40061d61322a95fc20b0bb963b87c8c23521bfe472e46f04a663670fde1f5e8e",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "5424349871c489a0fb7dc42a833815afba3a70051b7be51a73203f54708a0996",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "5a18cbaf552406ac01f128f161cd427b63140465b2a661c0442a9e65e9f657c5",
+        "final_rewards": [
+          52320.0,
+          50156.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 374,
+            "unit:executed": 4249,
+            "unit:pass": 3421
+          },
+          "ordered_effect_sha256": "749eab120046d5aaa31b99286e616f9e905d2cde3c7913b0c9d4d76143b78c49",
+          "successful_plants": [
+            56,
+            53
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "fertilizer_bought_units": 28,
+        "fertilizer_purchase_cost": 2881.0,
+        "PICKUP:executed": 29,
+        "FERTILIZE:executed": 28,
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8243932,
+      "side": 1,
+      "policy": "baseline",
+      "opponent": "v1",
+      "replay_gzip_sha256": "9053696df76d0f71e1cd08e1ca6e63b102f48bfc3fd6a9d224a1eecab9aa37ec",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "d046b1840a29f0a92727ab5a0584317ff34341ac994cbd2727f68e7062f409e2",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "7ae62ea2c621777a02b3dbab2d4a31b11505ed224d4f3ba3ff16e5d59eeb59ea",
+        "final_rewards": [
+          47725.0,
+          49624.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 318,
+            "unit:executed": 3967,
+            "unit:pass": 2995
+          },
+          "ordered_effect_sha256": "f469a6320544ef32cbc18db58b1bd98c5e187415a25c99f8623a2183eb166045",
+          "successful_plants": [
+            53,
+            52
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8243932,
+      "side": 1,
+      "policy": "candidate",
+      "opponent": "v1",
+      "replay_gzip_sha256": "8277497d5e0296cdd378832b42a5b270c773307f8ceb76ad535e7a49fef388ea",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "361b1ede880698c15f7bbd1a12976a8a2ffe1db145dd207470901ccf7d6cac19",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "33ba4d5084aaf4ae55cb970d0e2229ebb19be99f23f1209bd3bcb1d35e360ba2",
+        "final_rewards": [
+          50156.0,
+          52320.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 374,
+            "unit:executed": 4249,
+            "unit:pass": 3421
+          },
+          "ordered_effect_sha256": "c73957d8c79f24143c6368dc907cdffa1c9d02cdd6f266546ffaf312da85106b",
+          "successful_plants": [
+            53,
+            56
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "fertilizer_bought_units": 28,
+        "fertilizer_purchase_cost": 2881.0,
+        "PICKUP:executed": 29,
+        "FERTILIZE:executed": 28,
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8505156,
+      "side": 0,
+      "policy": "baseline",
+      "opponent": "market",
+      "replay_gzip_sha256": "7b60b7f10c43a447d54b0926b3172b837756c3a4d280f3d95ea35bdfdb909d93",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "288d4fdb3bc8e99f45524fc4d974de35448c055cc67d3132596d82436f44e095",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "16ed81dae3e04c2c0e003cd79d986d63a594d8b14b73ff5f99225c3e8cbe1292",
+        "final_rewards": [
+          48084.0,
+          48805.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 365,
+            "unit:executed": 4220,
+            "unit:pass": 2920
+          },
+          "ordered_effect_sha256": "a61cc0e203b7b0cd8ee989b4d7648f45a9504bf3c8ab8ee3dd3aa00759cf1adb",
+          "successful_plants": [
+            52,
+            78
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8505156,
+      "side": 0,
+      "policy": "candidate",
+      "opponent": "market",
+      "replay_gzip_sha256": "8f23ba5386bd1cf3e5c838491111f5771735fd8e45ce1c2046a87f7d8ce30f15",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "abc559357f88eef3edf3ad53990cb57b4c616012422e4c93bfac895a58a9a0a0",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "7e8ff94cee77f4e0fb3eff6f76d27969e2cacbdf20964b98ead387e0e0a0aedd",
+        "final_rewards": [
+          53080.0,
+          48486.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 419,
+            "unit:executed": 4516,
+            "unit:pass": 3336
+          },
+          "ordered_effect_sha256": "d3dd89ec249de411775603ab6395d8bb8a9ee5c99867decde4bcff27e8c7e7a1",
+          "successful_plants": [
+            56,
+            80
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "fertilizer_bought_units": 28,
+        "fertilizer_purchase_cost": 2881.0,
+        "PICKUP:executed": 29,
+        "FERTILIZE:executed": 28,
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8505156,
+      "side": 1,
+      "policy": "baseline",
+      "opponent": "market",
+      "replay_gzip_sha256": "00bbe8504dddc7bd32636879904394402b832445756bac6fdcfeaa90eb1adf3b",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "e7f68ce8373bb1171bf0512febb6140e3103289fd0a7da3470021254b1b3d6fa",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "2332bd1444b77ef46d0a5117475137c800612bd50b0c5afe3dbdb75e882968b4",
+        "final_rewards": [
+          48805.0,
+          48084.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 365,
+            "unit:executed": 4220,
+            "unit:pass": 2920
+          },
+          "ordered_effect_sha256": "e91b101641a5cccd00c82b2ea19ad4341b14763a02795ad0687d466e91c8d7f4",
+          "successful_plants": [
+            78,
+            52
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8505156,
+      "side": 1,
+      "policy": "candidate",
+      "opponent": "market",
+      "replay_gzip_sha256": "fa30968c8e9e5269381e5a6ee08a22d37fa1b38a7ee94bb8796ac94712cec54b",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "b079ced2efe60e803b1c5133d044c8b16cd574b961a9fd5d8073f7518b9c385e",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "66f05dfc7c5c0e0c04de8f8fc72484a02a349661cc35ce020f0350a705a5eff6",
+        "final_rewards": [
+          48486.0,
+          53080.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 419,
+            "unit:executed": 4516,
+            "unit:pass": 3336
+          },
+          "ordered_effect_sha256": "64cadd6864e945568dc7b93d1f1b9a9ec72999f817b8e93b8405f6d4c1224133",
+          "successful_plants": [
+            80,
+            56
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "fertilizer_bought_units": 28,
+        "fertilizer_purchase_cost": 2881.0,
+        "PICKUP:executed": 29,
+        "FERTILIZE:executed": 28,
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8505156,
+      "side": 0,
+      "policy": "baseline",
+      "opponent": "round2",
+      "replay_gzip_sha256": "99f54e4ee2d2cad42b4f5b657473a6564171532bff4b48d61fbcd54ebf32a213",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "b1b3d34e6c0a52d430f0a201f45df40a1aad031f349b21e68df38d6d439b5401",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "52ecacb955a61876163879d586ac054b57437dd4ad76ea7e2e9459137d6b1682",
+        "final_rewards": [
+          46182.0,
+          46182.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 314,
+            "unit:executed": 3982,
+            "unit:pass": 2966
+          },
+          "ordered_effect_sha256": "cf7777934082ccaa64f6c0e0b0984bbcfdc230e095eea41d92877d2cb766d018",
+          "successful_plants": [
+            52,
+            52
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8505156,
+      "side": 0,
+      "policy": "candidate",
+      "opponent": "round2",
+      "replay_gzip_sha256": "aed7fb51fc61684b7cd96941638546bad5aec5051e8fd593b57c9087818f7adf",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "2a7b162da92db86f7cfb42cb910fd472f16cb405e37dabd37e3d48bb307ca76f",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "ceeedf7041e6439fe81923c1dab5d5d55a86e8a11be923f9f664f39e012d4326",
+        "final_rewards": [
+          48487.0,
+          48518.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 370,
+            "unit:executed": 4264,
+            "unit:pass": 3392
+          },
+          "ordered_effect_sha256": "faa85b599351ac6e748a33b484a0b8d621e316e6158549d188b87207a1657aca",
+          "successful_plants": [
+            56,
+            52
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "fertilizer_bought_units": 28,
+        "fertilizer_purchase_cost": 2881.0,
+        "PICKUP:executed": 29,
+        "FERTILIZE:executed": 28,
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8505156,
+      "side": 1,
+      "policy": "baseline",
+      "opponent": "round2",
+      "replay_gzip_sha256": "f121d4c351d107f532fba35cf8b8aee092f9a4a5f4d157c5c9307fe6806733e3",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "b1b3d34e6c0a52d430f0a201f45df40a1aad031f349b21e68df38d6d439b5401",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "52ecacb955a61876163879d586ac054b57437dd4ad76ea7e2e9459137d6b1682",
+        "final_rewards": [
+          46182.0,
+          46182.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 314,
+            "unit:executed": 3982,
+            "unit:pass": 2966
+          },
+          "ordered_effect_sha256": "cf7777934082ccaa64f6c0e0b0984bbcfdc230e095eea41d92877d2cb766d018",
+          "successful_plants": [
+            52,
+            52
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8505156,
+      "side": 1,
+      "policy": "candidate",
+      "opponent": "round2",
+      "replay_gzip_sha256": "28b2e7584af5d1c8eb4c370f4c4da60166d5acfe362deb825ee17924a6e9df02",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "36a5291f7d0410048869220e99ede866249fa95f0f7f5dacef055c894e0964b3",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "acd4cda7950b350a5da957ca19d14ded7ea38f6dd9ff479aae618116bba50609",
+        "final_rewards": [
+          48518.0,
+          48487.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 370,
+            "unit:executed": 4264,
+            "unit:pass": 3392
+          },
+          "ordered_effect_sha256": "bccdf06e6725c734431f4866ec44a45f2f5df69193c99f385966c01bea9b5d48",
+          "successful_plants": [
+            52,
+            56
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "fertilizer_bought_units": 28,
+        "fertilizer_purchase_cost": 2881.0,
+        "PICKUP:executed": 29,
+        "FERTILIZE:executed": 28,
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8505156,
+      "side": 0,
+      "policy": "baseline",
+      "opponent": "v1",
+      "replay_gzip_sha256": "e2a44710285690aaa392388524f3a8117aa24d3dbbcb8a52296395cca185f41a",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "fa182c3fac21aadccf779c5608196eefa51b48552533c29ed72d53ed931bbabb",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "7ae0c3bb3adf56c2261a57c069fef3157033060b061747dfe37f270629546bdb",
+        "final_rewards": [
+          46577.0,
+          44964.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 319,
+            "unit:executed": 3967,
+            "unit:pass": 2995
+          },
+          "ordered_effect_sha256": "a2651d0bbf2ce8df6d9ad3fb2817c0baa614c5207f680bbfa71ee01a7c957a1a",
+          "successful_plants": [
+            52,
+            53
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8505156,
+      "side": 0,
+      "policy": "candidate",
+      "opponent": "v1",
+      "replay_gzip_sha256": "baa67562302e133a7eb0a22d472d9cd8f14203badd50c65736d022e199334c19",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "ce723cd4a76d22232dcc92fcc4177fed322dd5c0c9fecf63a0b6d7fa458cd2cd",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "11326664fc15a545acdd219d9fd902c8cc623bcc1fa22a6fe0306a12438ab50d",
+        "final_rewards": [
+          48896.0,
+          47409.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 374,
+            "unit:executed": 4249,
+            "unit:pass": 3421
+          },
+          "ordered_effect_sha256": "9db07361b5d4a2011495ec2724a1f495c2ef70366ce74107df75736884f55207",
+          "successful_plants": [
+            56,
+            53
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "fertilizer_bought_units": 28,
+        "fertilizer_purchase_cost": 2881.0,
+        "PICKUP:executed": 29,
+        "FERTILIZE:executed": 28,
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8505156,
+      "side": 1,
+      "policy": "baseline",
+      "opponent": "v1",
+      "replay_gzip_sha256": "e31dd66b3b7e73c0e74f4eb6e4ec42486dc9b17eb62fd931bb4e36e085daeb88",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "84f34ca96062507cfa5f91ee45e6b8fc31fc1173aa2b1a9b10843355963d57eb",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "2ad0dd90c02ca7f3c0a662169a19141e888b7a09bc4e4c773af4bd7297594e10",
+        "final_rewards": [
+          44964.0,
+          46577.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 319,
+            "unit:executed": 3967,
+            "unit:pass": 2995
+          },
+          "ordered_effect_sha256": "ca9d13b432827283e12559162065f6bb3a096a29488030e18eee73deb7f07958",
+          "successful_plants": [
+            53,
+            52
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8505156,
+      "side": 1,
+      "policy": "candidate",
+      "opponent": "v1",
+      "replay_gzip_sha256": "b4e6ab233768ab48f3a29e942ae7a991ab18bcd12f7d7417ff18c48dfcfd36ee",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "124787c7e62533b699b74fbc1469c1c0e7987dc3ebb82bc26b2823558f794bc5",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "a1c5f00f5c66bfb6a62124bcd3c41e9ce7407b1ed25c26f5a85021c9e1cdfeec",
+        "final_rewards": [
+          47409.0,
+          48896.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 374,
+            "unit:executed": 4249,
+            "unit:pass": 3421
+          },
+          "ordered_effect_sha256": "dfc0809c65133d2ebdb5c632d83e286fb59ef72f9ed1299a35a09317aae129f2",
+          "successful_plants": [
+            53,
+            56
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "fertilizer_bought_units": 28,
+        "fertilizer_purchase_cost": 2881.0,
+        "PICKUP:executed": 29,
+        "FERTILIZE:executed": 28,
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8647476,
+      "side": 0,
+      "policy": "baseline",
+      "opponent": "market",
+      "replay_gzip_sha256": "635aae1c82f422b0c71b020e32c6f24721aa3c3bdf74256f45735add8034db35",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "3c6b1b0c71a8df8626b0204d0b7820250d1b8300f2f298c8d8f660d8384587fa",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "a06444aaba7f55d5eaeea412fe6a910930599fcf9520c809bc8e3c48e5bb4518",
+        "final_rewards": [
+          39701.0,
+          40603.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 380,
+            "unit:executed": 4277,
+            "unit:pass": 2872
+          },
+          "ordered_effect_sha256": "df2e38377390b1d271d48f693150ab9c3836c8a742d28ab605f5aec5c5750768",
+          "successful_plants": [
+            52,
+            95
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8647476,
+      "side": 0,
+      "policy": "candidate",
+      "opponent": "market",
+      "replay_gzip_sha256": "8309a3d02d66c5b9fc8a0c4d84610b6f228f5c71a4f8f0602912b524e54d0f95",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "48e369225652f76c74f9b34ee7ac8c69e7e2f3eead777bf880c98b2adb150967",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "a468cb29f0ccb238ee25c85b372eee540161afb4a947f6537d32cd6bfb26a177",
+        "final_rewards": [
+          42390.0,
+          39793.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 428,
+            "unit:executed": 4491,
+            "unit:pass": 3222
+          },
+          "ordered_effect_sha256": "aa4f4de14d65577bd8364a457f2756e7d7dc001527cde4c55f9513bddc549905",
+          "successful_plants": [
+            53,
+            95
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "fertilizer_bought_units": 22,
+        "fertilizer_purchase_cost": 2250.0,
+        "PICKUP:executed": 24,
+        "FERTILIZE:executed": 21,
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8647476,
+      "side": 1,
+      "policy": "baseline",
+      "opponent": "market",
+      "replay_gzip_sha256": "2d14876c3a8aad6b28567b5751594a516baf675def7329d81a1faa01318737ef",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "3575b7a1fe3c6aec749551b1b0dee3ab5822e0ab0eee0d9e07915410f0ef0726",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "4f069110ae6a0399e90466e36182c1e74914ac5ac16992d6eeb0e878639263be",
+        "final_rewards": [
+          40603.0,
+          39701.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 380,
+            "unit:executed": 4277,
+            "unit:pass": 2872
+          },
+          "ordered_effect_sha256": "bd24a88cbc422b74eae9b08af1759dc37216ca75b91d30ef5d5336a94399c84d",
+          "successful_plants": [
+            95,
+            52
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8647476,
+      "side": 1,
+      "policy": "candidate",
+      "opponent": "market",
+      "replay_gzip_sha256": "ce02257191fa6cf47d853f9d40d55f33609ac3a12306449fcb9223c5b2abfc75",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "5825d784d1c0c5812092a630fd71ef08f46d82e7ee078af84dfe41bb2996e536",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "16ffb166e67103848000679e5bce0edf662f544160db98c742d855b8a0605359",
+        "final_rewards": [
+          39793.0,
+          42390.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 428,
+            "unit:executed": 4491,
+            "unit:pass": 3222
+          },
+          "ordered_effect_sha256": "90c2d6e406a347190315207c46023b741bf64a84403051fce5960b88a3a26429",
+          "successful_plants": [
+            95,
+            53
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "fertilizer_bought_units": 22,
+        "fertilizer_purchase_cost": 2250.0,
+        "PICKUP:executed": 24,
+        "FERTILIZE:executed": 21,
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8647476,
+      "side": 0,
+      "policy": "baseline",
+      "opponent": "round2",
+      "replay_gzip_sha256": "cab041b65b732ff8a01370eb3328715653004991dbba77fd5f6059af19e0de36",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "a9e41f9799e9906b9e87f31d52c234691df72280e55c904ccf2dec6969f6529f",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "e83a71f140469ea5933b2aa5bdc18676a8d7ab13f6b457a6e2b23d01a4681e5e",
+        "final_rewards": [
+          38084.0,
+          38084.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 314,
+            "unit:executed": 3970,
+            "unit:pass": 2982
+          },
+          "ordered_effect_sha256": "df04faaf53c45e947bd84fca5311b461ba36e7ea4dec95aa36807d414302b55a",
+          "successful_plants": [
+            52,
+            52
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8647476,
+      "side": 0,
+      "policy": "candidate",
+      "opponent": "round2",
+      "replay_gzip_sha256": "705952d24ba1e1897ed3607c3506381e0b3618a879ddad19f46e3dcc0cb4962a",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "035be68a1c9cfc1b23e45d35ae9ddc56dafc568bcaa3525b6be4256978ca2e25",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "137056cbd131648db945ab643e8e57c358711c684e7c26888bab1c5bb64329a1",
+        "final_rewards": [
+          43078.0,
+          34897.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 360,
+            "unit:executed": 4184,
+            "unit:pass": 3335
+          },
+          "ordered_effect_sha256": "207a5fcce2aecfc32c3e7138169694047b2b513473a979b9211fbd7f2d32d6ef",
+          "successful_plants": [
+            53,
+            52
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "fertilizer_bought_units": 22,
+        "fertilizer_purchase_cost": 2250.0,
+        "PICKUP:executed": 24,
+        "FERTILIZE:executed": 21,
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8647476,
+      "side": 1,
+      "policy": "baseline",
+      "opponent": "round2",
+      "replay_gzip_sha256": "03ca1a697b7e00c857bc698904e373a68a1782a6742b5286c060aa26fb241f82",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "a9e41f9799e9906b9e87f31d52c234691df72280e55c904ccf2dec6969f6529f",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "e83a71f140469ea5933b2aa5bdc18676a8d7ab13f6b457a6e2b23d01a4681e5e",
+        "final_rewards": [
+          38084.0,
+          38084.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 314,
+            "unit:executed": 3970,
+            "unit:pass": 2982
+          },
+          "ordered_effect_sha256": "df04faaf53c45e947bd84fca5311b461ba36e7ea4dec95aa36807d414302b55a",
+          "successful_plants": [
+            52,
+            52
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8647476,
+      "side": 1,
+      "policy": "candidate",
+      "opponent": "round2",
+      "replay_gzip_sha256": "89046b4493ead5774f910d9b041bd39c9abc69590d06629228af95c09c733c88",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "cd3691ab446907f4e61ecf552811fc0d1a51107c356c5d2663e949b15ca8be07",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "535704d0b03f246ef519a24f03e3df4bf05eb4e99442c4d6b7a18edc91b3f128",
+        "final_rewards": [
+          34897.0,
+          43078.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 360,
+            "unit:executed": 4184,
+            "unit:pass": 3335
+          },
+          "ordered_effect_sha256": "60f22b2aa8d314e134215a499b51f4a247c4ea17a64a9ca9a72fb9b13f7b8615",
+          "successful_plants": [
+            52,
+            53
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "fertilizer_bought_units": 22,
+        "fertilizer_purchase_cost": 2250.0,
+        "PICKUP:executed": 24,
+        "FERTILIZE:executed": 21,
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8647476,
+      "side": 0,
+      "policy": "baseline",
+      "opponent": "v1",
+      "replay_gzip_sha256": "db7579971c76fcb2fc7edd9214803e71db212aa278f89b62a92dbe74c17b0809",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "1de7dfbc2760f0ce77a108d9d3d4e17c6e3b0ff86a55b6eed29ad9b8312337a2",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "f40a4337fd0b77d57808e0923ba97f5c52800132c2e95d2bd0b7e55278a61229",
+        "final_rewards": [
+          38095.0,
+          38277.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 323,
+            "unit:executed": 3992,
+            "unit:pass": 2972
+          },
+          "ordered_effect_sha256": "acbccf99064a161231a945112b35ebdc4487f6da5aea2448ebc20462817b6261",
+          "successful_plants": [
+            52,
+            57
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8647476,
+      "side": 0,
+      "policy": "candidate",
+      "opponent": "v1",
+      "replay_gzip_sha256": "7429bd5efdee1bd4d2b5ce2eb6cd928499d618fc522593304c14372618796aa8",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "3245110e49ca58f8504292c6529ae1250e07dceea0dff3ef09abb5e3bed2b6f2",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "d3cdeecd9e9c9a50d9b4e08fbbc6471d3139b5a7d0389a364d4ea88928cde485",
+        "final_rewards": [
+          43141.0,
+          35118.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 369,
+            "unit:executed": 4206,
+            "unit:pass": 3325
+          },
+          "ordered_effect_sha256": "0636ae9fe1352cbda20ed5af5f861224a954a76cc817a95525c957e6373ce75d",
+          "successful_plants": [
+            53,
+            57
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "fertilizer_bought_units": 22,
+        "fertilizer_purchase_cost": 2250.0,
+        "PICKUP:executed": 24,
+        "FERTILIZE:executed": 21,
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8647476,
+      "side": 1,
+      "policy": "baseline",
+      "opponent": "v1",
+      "replay_gzip_sha256": "3758a7aa2add47a37dbfd716db1a360e3cde5671f79a3ddadf9f721e43477f6f",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "88b5f37558d39f879f45e304c91f18d314a75fe9d194c458b655eb7344bee651",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "6851c2d9022d5fdc5ce363dfa5ecfea689b2b6a00700b473fb2b8a0d26c9ba21",
+        "final_rewards": [
+          38277.0,
+          38095.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 323,
+            "unit:executed": 3992,
+            "unit:pass": 2972
+          },
+          "ordered_effect_sha256": "a3ee394c727fc06c0320cb8b8614828dcbf54bd4917843ba91efe58a4d194f76",
+          "successful_plants": [
+            57,
+            52
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8647476,
+      "side": 1,
+      "policy": "candidate",
+      "opponent": "v1",
+      "replay_gzip_sha256": "b5111c732d2e3e5ecf2387339cf78e2ff5e82c2a8395426326db97980fb58b1d",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "7b32a988df0a649220ed885e8b5547969865f246b44baa7b12966b59204cf04d",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "06e3842e5736237fad80ff4135145c0f58e09a1d60e5a5ab7580936d78efacea",
+        "final_rewards": [
+          35118.0,
+          43141.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 369,
+            "unit:executed": 4206,
+            "unit:pass": 3325
+          },
+          "ordered_effect_sha256": "e6566b5af00d20db76829bd553cd51a038a16457ff77909d525931b724706a18",
+          "successful_plants": [
+            57,
+            53
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "fertilizer_bought_units": 22,
+        "fertilizer_purchase_cost": 2250.0,
+        "PICKUP:executed": 24,
+        "FERTILIZE:executed": 21,
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8142522,
+      "side": 1,
+      "policy": "candidate",
+      "opponent": "market",
+      "replay_gzip_sha256": "b7147ac909ab40622d703bdcb4797881918d65964d7b53b487d71c7738ce89dc",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "e3ebcd61c00e7d65be5aabdf8af5f49e7f24baeb0a61f35b33ca573deaaac3ec",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "ecef727895eead26167dddabbe9397b68ee610ad78288aba49bacb08c368899d",
+        "final_rewards": [
+          39705.0,
+          40984.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 427,
+            "unit:executed": 4552,
+            "unit:pass": 3140
+          },
+          "ordered_effect_sha256": "7c313caf61e938df3b4563b3dedc9e45181d371bd7b3f7513dcd7f78f1b11445",
+          "successful_plants": [
+            106,
+            62
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "fertilizer_bought_units": 17,
+        "fertilizer_purchase_cost": 1730.0,
+        "PICKUP:executed": 19,
+        "FERTILIZE:executed": 17,
+        "unsold_fertilizer_units": 0
+      }
+    },
+    {
+      "seed": 8142522,
+      "side": 0,
+      "policy": "candidate",
+      "opponent": "market",
+      "replay_gzip_sha256": "d189633573c03f9bd0bf7b79f34015ed8a9110841be6d3b08ad7e3f267470405",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "dd4d35303a71787b11662f97d0cdd3427c1049b14f56261b76235622aac68447",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "f194625af3087363d05ca0b4d82cb45c3b0a36bc3b4acae7738aa7554de683b5",
+        "final_rewards": [
+          40984.0,
+          39705.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 427,
+            "unit:executed": 4552,
+            "unit:pass": 3140
+          },
+          "ordered_effect_sha256": "f77ae9fbfc2c8e7a93bcc44d1bf59f6218e402a3f7793d8ad534c035ca29b332",
+          "successful_plants": [
+            62,
+            106
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "fertilizer_effects": {
+        "fertilizer_bought_units": 17,
+        "fertilizer_purchase_cost": 1730.0,
+        "PICKUP:executed": 19,
+        "FERTILIZE:executed": 17,
+        "unsold_fertilizer_units": 0
+      }
+    }
+  ]
+}

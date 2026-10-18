@@ -1,0 +1,16 @@
+{
+  "python": "3.12.2",
+  "numpy": "2.5.4",
+  "optuna": "4.5.0",
+  "game_package": "kaggle-environments 1.33.0 (verified per-game result)",
+  "workers": 2,
+  "gpu_training": false,
+  "commands": [
+    "game-python -B -m learning.fertilizer_probe --output RUN/micro",
+    "learning-python -B learning/teacher_fertilizer_experiment.py pilot --output RUN",
+    "game-python -B -m decision.audit_teacher_fertilizer RUN pilot",
+    "learning-python -B learning/teacher_fertilizer_experiment.py test --output RUN",
+    "game-python -B -m decision.audit_teacher_fertilizer RUN test"
+  ],
+  "boundary": "RUN is the registered artifact directory; logs/replays stay local"
+}

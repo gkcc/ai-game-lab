@@ -1,0 +1,130 @@
+{
+  "physical_games": 16,
+  "overall": {
+    "mean_profit_delta": 4145.25,
+    "profit_95_ci": [
+      3554.5,
+      4736.0
+    ],
+    "mean_score_delta": 0.5,
+    "score_95_ci_descriptive": [
+      0.5,
+      0.5
+    ],
+    "score_ci_degenerate": true,
+    "positive_profit_seeds": 2,
+    "negative_profit_seeds": 0,
+    "sign_test_p": 0.5,
+    "seed_profit_deltas": [
+      3554.5,
+      4736.0
+    ]
+  },
+  "by_opponent": {
+    "v1": {
+      "paired": {
+        "mean_profit_delta": 5296.0,
+        "profit_95_ci": [
+          4778.0,
+          5814.0
+        ],
+        "mean_score_delta": 0.0,
+        "score_95_ci_descriptive": [
+          0.0,
+          0.0
+        ],
+        "score_ci_degenerate": true,
+        "positive_profit_seeds": 2,
+        "negative_profit_seeds": 0,
+        "sign_test_p": 0.5,
+        "seed_profit_deltas": [
+          4778.0,
+          5814.0
+        ]
+      },
+      "baseline": {
+        "games": 4,
+        "wins": 4,
+        "draws": 0,
+        "losses": 0,
+        "mean_net_profit": 35637.5,
+        "mean_opponent_profit": 35071.0,
+        "mean_score": 1.0
+      },
+      "candidate": {
+        "games": 4,
+        "wins": 4,
+        "draws": 0,
+        "losses": 0,
+        "mean_net_profit": 40933.5,
+        "mean_opponent_profit": 31930.5,
+        "mean_score": 1.0
+      }
+    },
+    "market": {
+      "paired": {
+        "mean_profit_delta": 2994.5,
+        "profit_95_ci": [
+          2331.0,
+          3658.0
+        ],
+        "mean_score_delta": 1.0,
+        "score_95_ci_descriptive": [
+          1.0,
+          1.0
+        ],
+        "score_ci_degenerate": true,
+        "positive_profit_seeds": 2,
+        "negative_profit_seeds": 0,
+        "sign_test_p": 0.5,
+        "seed_profit_deltas": [
+          2331.0,
+          3658.0
+        ]
+      },
+      "baseline": {
+        "games": 4,
+        "wins": 0,
+        "draws": 0,
+        "losses": 4,
+        "mean_net_profit": 36846.5,
+        "mean_opponent_profit": 38723.0,
+        "mean_score": 0.0
+      },
+      "candidate": {
+        "games": 4,
+        "wins": 4,
+        "draws": 0,
+        "losses": 0,
+        "mean_net_profit": 39841.0,
+        "mean_opponent_profit": 37731.0,
+        "mean_score": 1.0
+      }
+    }
+  },
+  "aggregate": {
+    "baseline": {
+      "games": 8,
+      "wins": 4,
+      "draws": 0,
+      "losses": 4,
+      "mean_net_profit": 36242.0,
+      "mean_opponent_profit": 36897.0,
+      "mean_score": 0.5
+    },
+    "candidate": {
+      "games": 8,
+      "wins": 8,
+      "draws": 0,
+      "losses": 0,
+      "mean_net_profit": 40387.25,
+      "mean_opponent_profit": 34830.75,
+      "mean_score": 1.0
+    }
+  },
+  "score_intervals_descriptive_only": true,
+  "helper_gate_not_used": true,
+  "mean_margin_delta": 6211.5,
+  "competitive_gate": true,
+  "scope": "Development only"
+}

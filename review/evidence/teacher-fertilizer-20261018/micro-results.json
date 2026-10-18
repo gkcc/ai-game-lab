@@ -1,0 +1,161 @@
+{
+  "rows": [
+    {
+      "crop": "TOMATO",
+      "fertilizer_enabled": false,
+      "sold_units": 4,
+      "net_profit": 194.0,
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "fa1c8285d3a199d22161a3795ab7c9dc26be17ff94e078da42b1b04ea6a3bb2d",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "67f17c5fd129a1b86e5e0c6d8ddf9762271defb9b2efa3ab2341cc1b28c4616d",
+        "final_rewards": [
+          3194.0,
+          3000.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 5,
+            "unit:executed": 18,
+            "unit:pass": 1420
+          },
+          "ordered_effect_sha256": "b1fb478fc0584f5db7333fb61fb0cdfc08260d4c22942e8969516881b80fa929",
+          "successful_plants": [
+            1,
+            0
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      }
+    },
+    {
+      "crop": "TOMATO",
+      "fertilizer_enabled": true,
+      "sold_units": 8,
+      "net_profit": 238.0,
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "aa728d2e811b63342f8b75971b66bd0abf76cac675015e5593d2d0db2d541b08",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "b659be853ed35dff0f6695f2c748654c42f87a0479659ad8a7404a42d07d5d52",
+        "final_rewards": [
+          3238.0,
+          3000.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 6,
+            "unit:executed": 31,
+            "unit:pass": 1407
+          },
+          "ordered_effect_sha256": "62e05594160443bff4a8f2cfd7971782b56f28698c0c6942e0e69ac55e98bf6b",
+          "successful_plants": [
+            1,
+            0
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      }
+    },
+    {
+      "crop": "STRAWBERRY",
+      "fertilizer_enabled": false,
+      "sold_units": 4,
+      "net_profit": 624.0,
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "74cb2f831e95e2b8bf57bb758d10f18c29f1ab6e25e70aec671c4e02cde5b1dc",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "5bdc943594e04128f1ca786b78c92e980be6a51f27065a493b47ba4c407370aa",
+        "final_rewards": [
+          3624.0,
+          3000.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 5,
+            "unit:executed": 23,
+            "unit:pass": 1415
+          },
+          "ordered_effect_sha256": "803dd78859289be090a2b5fca19327b8e37fc48fdd323e4f75a6cc337a699deb",
+          "successful_plants": [
+            1,
+            0
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      }
+    },
+    {
+      "crop": "STRAWBERRY",
+      "fertilizer_enabled": true,
+      "sold_units": 8,
+      "net_profit": 1139.0,
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "b076d71167ceef32e43bcf04df95ec3846471d38f3785cbcd22dd3376b2fb85b",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "c0256ecdc27af4b33df560a91b8e8cbfb9c5c9c44e3a67879df95aac305de407",
+        "final_rewards": [
+          4139.0,
+          3000.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 6,
+            "unit:executed": 39,
+            "unit:pass": 1399
+          },
+          "ordered_effect_sha256": "1e0e6f33f7852faaa91163f0adec0a86e068779f2ef8c45a9087ac900290976a",
+          "successful_plants": [
+            1,
+            0
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      }
+    }
+  ],
+  "boundary": "One plot versus PASS; real cash including purchase costs, not competitive evidence"
+}

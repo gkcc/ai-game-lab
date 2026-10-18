@@ -1,0 +1,578 @@
+[
+  {
+    "seed": 8445705,
+    "side": 0,
+    "banks": [
+      38958.0,
+      40910.0
+    ],
+    "bank": 38958.0,
+    "opponent_bank": 40910.0,
+    "net_profit": 35958.0,
+    "margin": -1952.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "3f3db56347604212f749ea8990a1849f0019166072ed3ae0017c2c34cc63358d",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "0ef1e6e962c516164aa916a7b9ce7346b7da761412070ff2fdfc255592b93b0a",
+    "audit_version": 2,
+    "policy": "baseline",
+    "opponent": "market",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      38958.0,
+      40910.0
+    ],
+    "replay_gzip_sha256": "a92d5b43cf7cfd69c9f37507b81045e360e69741dae7dd1c121cbdb8e023168e",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true
+  },
+  {
+    "seed": 8445705,
+    "side": 0,
+    "banks": [
+      41289.0,
+      39904.0
+    ],
+    "bank": 41289.0,
+    "opponent_bank": 39904.0,
+    "net_profit": 38289.0,
+    "margin": 1385.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "a41985c68068ee234ee1fd73bdc71bda2debb6d6f252218b49f61f47be82d1fa",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "54689a292ac4006bdd356dab0a196f96f52cbd917b6d91fcd48708de9f68cbe1",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "728c8f34e8c41b9eb8f828f8e96dd2e2d3327f79fdd4914ff1985b7a60ca4767",
+    "audit_version": 2,
+    "policy": "candidate",
+    "opponent": "market",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      41289.0,
+      39904.0
+    ],
+    "replay_gzip_sha256": "71dd3bc076974578cd2f09ca233a403561ba2e2a4360bd60c88623f83ddba750",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true
+  },
+  {
+    "seed": 8445705,
+    "side": 1,
+    "banks": [
+      40910.0,
+      38958.0
+    ],
+    "bank": 38958.0,
+    "opponent_bank": 40910.0,
+    "net_profit": 35958.0,
+    "margin": -1952.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "782719b9d889d5a4fcb81f62e09e61d1a74a887ba8c94c31f971a724291aa0ac",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "f1527416832fa555a537ddcbe37c8b2653a87f52a4d0587591d8248289afcb9e",
+    "audit_version": 2,
+    "policy": "baseline",
+    "opponent": "market",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      40910.0,
+      38958.0
+    ],
+    "replay_gzip_sha256": "94b317b7edcac7a24b7f8759a3c0a3d49dfdbb90aec55b44ba9436e389268534",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true
+  },
+  {
+    "seed": 8445705,
+    "side": 1,
+    "banks": [
+      39904.0,
+      41289.0
+    ],
+    "bank": 41289.0,
+    "opponent_bank": 39904.0,
+    "net_profit": 38289.0,
+    "margin": 1385.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "a41985c68068ee234ee1fd73bdc71bda2debb6d6f252218b49f61f47be82d1fa",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "f9ba86866f07af94c849a11741a1998a7baf9d6bbae4b13171a19257ee2f28fe",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "c1020b565b83e1cb24fc8c4eed8a700d669cf4a2df0731a19a06d96c2f40c588",
+    "audit_version": 2,
+    "policy": "candidate",
+    "opponent": "market",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      39904.0,
+      41289.0
+    ],
+    "replay_gzip_sha256": "5f667926c96faf665237f21464a1ca53184bb25e377368adc9c0aeeb72c0fa70",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true
+  },
+  {
+    "seed": 8445705,
+    "side": 0,
+    "banks": [
+      37694.0,
+      37201.0
+    ],
+    "bank": 37694.0,
+    "opponent_bank": 37201.0,
+    "net_profit": 34694.0,
+    "margin": 493.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "c7f3576182cd6bea692297ed5e391b61904ce3eaa0344a3dceb913163377131c",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "7e2e227f23b39088e8c36a38afe8b40113bd6557a4de57eb4f7606a89106d43e",
+    "audit_version": 2,
+    "policy": "baseline",
+    "opponent": "v1",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      37694.0,
+      37201.0
+    ],
+    "replay_gzip_sha256": "8951e477b3233c946b70272e20d63f330d1570b589d74eafacf9bb25b899f85d",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true
+  },
+  {
+    "seed": 8445705,
+    "side": 0,
+    "banks": [
+      42472.0,
+      33884.0
+    ],
+    "bank": 42472.0,
+    "opponent_bank": 33884.0,
+    "net_profit": 39472.0,
+    "margin": 8588.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "a41985c68068ee234ee1fd73bdc71bda2debb6d6f252218b49f61f47be82d1fa",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "b5f58a0ff73374d7c9fd8c33fdc373d689f460a9affc7626c5eff10283df1075",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "2faf1eae90e78e6a8093f9e84769cc502bea64c1fc4dee81ae35bf40fbd047df",
+    "audit_version": 2,
+    "policy": "candidate",
+    "opponent": "v1",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      42472.0,
+      33884.0
+    ],
+    "replay_gzip_sha256": "3ef5103e9a3dca80b1976c159d70e69620ee38ced481456a7c2267eaa9163a5c",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true
+  },
+  {
+    "seed": 8445705,
+    "side": 1,
+    "banks": [
+      37201.0,
+      37694.0
+    ],
+    "bank": 37694.0,
+    "opponent_bank": 37201.0,
+    "net_profit": 34694.0,
+    "margin": 493.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "40a82286ab52c6bde50e01a9147002614ed498af798f194142681bad39a52a38",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "d4ef5cf3ac369ed40a9ae03c095672e84aa31f81f2192d9a5d577af9f9271c2e",
+    "audit_version": 2,
+    "policy": "baseline",
+    "opponent": "v1",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      37201.0,
+      37694.0
+    ],
+    "replay_gzip_sha256": "b9473156ff2c4246b946435e28db6e96be7282d45fab03afdcc8310e4dbb55fa",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true
+  },
+  {
+    "seed": 8445705,
+    "side": 1,
+    "banks": [
+      33884.0,
+      42472.0
+    ],
+    "bank": 42472.0,
+    "opponent_bank": 33884.0,
+    "net_profit": 39472.0,
+    "margin": 8588.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "a41985c68068ee234ee1fd73bdc71bda2debb6d6f252218b49f61f47be82d1fa",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "fdfc6566cbeac1061449e75756695a2e7e9b0f40daae6165f02dff64ab60d8f6",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "902fdc4399163ffd88c06a26334518d2380fe46e6be716e4dc8782196320240f",
+    "audit_version": 2,
+    "policy": "candidate",
+    "opponent": "v1",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      33884.0,
+      42472.0
+    ],
+    "replay_gzip_sha256": "a24fdf3a32579971759d954228561c0e758ab92eea3616d7769da28a5f45d8b9",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true
+  },
+  {
+    "seed": 8533724,
+    "side": 0,
+    "banks": [
+      40735.0,
+      42536.0
+    ],
+    "bank": 40735.0,
+    "opponent_bank": 42536.0,
+    "net_profit": 37735.0,
+    "margin": -1801.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "76a6a358f4e3ea24a95932ad6561935deedf846c6e17d98e4515b80aee00ec91",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "12fea2622970058f83c7f6a3a3f1ac4c9c2b3d109cfed640d96ed620a1018148",
+    "audit_version": 2,
+    "policy": "baseline",
+    "opponent": "market",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      40735.0,
+      42536.0
+    ],
+    "replay_gzip_sha256": "56dd998bac6a7fb007e91b3fa5df18dab35724b6fe59cbe9560cef9fe1d46041",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true
+  },
+  {
+    "seed": 8533724,
+    "side": 0,
+    "banks": [
+      44393.0,
+      41558.0
+    ],
+    "bank": 44393.0,
+    "opponent_bank": 41558.0,
+    "net_profit": 41393.0,
+    "margin": 2835.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "a41985c68068ee234ee1fd73bdc71bda2debb6d6f252218b49f61f47be82d1fa",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "ecf59ba8f4acd9a1bd79bb4a79104b300d7df7ed6b1d11361a0771a15293ac39",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "5c6bbadcfd48f8a30db388efa7488a2615ac29b0bc7281b951971cc856ab4d6f",
+    "audit_version": 2,
+    "policy": "candidate",
+    "opponent": "market",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      44393.0,
+      41558.0
+    ],
+    "replay_gzip_sha256": "4e77c21315c7f4337704bf3a0a954729ee854e2db72b9be1ca6d39bede2382c4",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true
+  },
+  {
+    "seed": 8533724,
+    "side": 1,
+    "banks": [
+      42536.0,
+      40735.0
+    ],
+    "bank": 40735.0,
+    "opponent_bank": 42536.0,
+    "net_profit": 37735.0,
+    "margin": -1801.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "5d209d22803a1606b182b89934cc2cdd518ccfd025453dd5ee01c9d17402e9f8",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "fff95ed73e62ae2e1cb0104413938a77cc7af527faf1032a0593bc757a264ce1",
+    "audit_version": 2,
+    "policy": "baseline",
+    "opponent": "market",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      42536.0,
+      40735.0
+    ],
+    "replay_gzip_sha256": "2517bf4ce1672fe17ee8ceab35ec97bb5d03441b4284654547b1cb34e2e01bcd",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true
+  },
+  {
+    "seed": 8533724,
+    "side": 1,
+    "banks": [
+      41558.0,
+      44393.0
+    ],
+    "bank": 44393.0,
+    "opponent_bank": 41558.0,
+    "net_profit": 41393.0,
+    "margin": 2835.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "a41985c68068ee234ee1fd73bdc71bda2debb6d6f252218b49f61f47be82d1fa",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "72159cd5db626281177d328aec8e4bf7e8cd0f8cf521894b248f8e6f4ada1286",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "96cf52e92379472a3ba94f1641e89b843377624db359da3c1e9f458a39139b6f",
+    "audit_version": 2,
+    "policy": "candidate",
+    "opponent": "market",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      41558.0,
+      44393.0
+    ],
+    "replay_gzip_sha256": "a41e437f39978764a8b5991a1308e2690b56d1df1e56878659f642992b8e135a",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true
+  },
+  {
+    "seed": 8533724,
+    "side": 0,
+    "banks": [
+      39581.0,
+      38941.0
+    ],
+    "bank": 39581.0,
+    "opponent_bank": 38941.0,
+    "net_profit": 36581.0,
+    "margin": 640.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "eb223a18260abf68aaaa358202cfed8a04be09b21ad3ba80b01aa724a54ee33a",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "c7fab86c0d7a80ddaa37eb8ff6468c3c66fd736b8cbdfc58fd8eed07c530dec6",
+    "audit_version": 2,
+    "policy": "baseline",
+    "opponent": "v1",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      39581.0,
+      38941.0
+    ],
+    "replay_gzip_sha256": "58b1c91efb0f00baff0b5215c364c00bc699d593a328590a877be72f6600bdb7",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true
+  },
+  {
+    "seed": 8533724,
+    "side": 0,
+    "banks": [
+      45395.0,
+      35977.0
+    ],
+    "bank": 45395.0,
+    "opponent_bank": 35977.0,
+    "net_profit": 42395.0,
+    "margin": 9418.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "a41985c68068ee234ee1fd73bdc71bda2debb6d6f252218b49f61f47be82d1fa",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "1183eafa5f4bb50bf8fe99bccd7a2e4ed349cdb48cfdac986faf7202c20f6306",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "9225a729fed00962e658eea4eba93f7a54f5e26c39510425fc54886a78cdb405",
+    "audit_version": 2,
+    "policy": "candidate",
+    "opponent": "v1",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      45395.0,
+      35977.0
+    ],
+    "replay_gzip_sha256": "56060bab76a2dd9fa3f88cd45bf644501784c8092e44499d77c2ed43c851e305",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true
+  },
+  {
+    "seed": 8533724,
+    "side": 1,
+    "banks": [
+      38941.0,
+      39581.0
+    ],
+    "bank": 39581.0,
+    "opponent_bank": 38941.0,
+    "net_profit": 36581.0,
+    "margin": 640.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "558cec53b2c7905a6abd34457915f7c01c60b702dd3c003cc98267c92ef33fa8",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "bbe94f2401029853d3e34e06be9bd16fac1695a8742f4501a68e63e565529ae3",
+    "audit_version": 2,
+    "policy": "baseline",
+    "opponent": "v1",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      38941.0,
+      39581.0
+    ],
+    "replay_gzip_sha256": "e495ab75f0adc4957dd601125cfdaa4664ab64a579cb23ee978b32657801f3ef",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true
+  },
+  {
+    "seed": 8533724,
+    "side": 1,
+    "banks": [
+      35977.0,
+      45395.0
+    ],
+    "bank": 45395.0,
+    "opponent_bank": 35977.0,
+    "net_profit": 42395.0,
+    "margin": 9418.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "a41985c68068ee234ee1fd73bdc71bda2debb6d6f252218b49f61f47be82d1fa",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "f20ff8853c227fe8bef70b77b414c029f75390425a8af37f701ecbc77851a193",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "ba767516cf06a12d8be98f0628bec0ff26eac69d25aa358424c415cc5d07c813",
+    "audit_version": 2,
+    "policy": "candidate",
+    "opponent": "v1",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      35977.0,
+      45395.0
+    ],
+    "replay_gzip_sha256": "55e1b81326cafa644349d7f7821beb24332f39c5c86eda5cd3b9d5eb3766c788",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true
+  }
+]
