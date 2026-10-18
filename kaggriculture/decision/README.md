@@ -71,3 +71,7 @@ flowchart LR
 ```
 
 输出目录须不存在，生成Replay gzip、日志及审计JSON。这里只执行可信本地代码。旧Play.ps1保持原状；官方裸文件加载器不提供__file__，而本地多文件模型依赖旁边的baseline.py，所以该模型使用decision.play或已登记Worker。没有改官方加载器，也没有声称多文件包已经通过Kaggle提交验收。
+
+## 审计 v2 与历史生命周期
+
+保序状态比较、新旧哈希兼容、官方执行归因及 HistorySession/reset 约定见 [修复说明](AUDIT_REPAIR.zh-CN.md)。当前联合约束仍为 advisory；本轮未接入 BC。

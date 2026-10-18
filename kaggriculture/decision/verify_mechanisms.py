@@ -344,9 +344,10 @@ class Mechanisms(unittest.TestCase):
         self.e.run([probe, probe])
         self.assertEqual(len(seen), 1438)
         a = env()
-        before = observe(obs(a), a.configuration)
+        episode = object()
+        before = observe(obs(a), a.configuration, episode=episode)
         step(a)
-        after = observe(obs(a), a.configuration, before)
+        after = observe(obs(a), a.configuration, before, episode=episode)
         self.assertIn("net_public_inventory_delta", after.encode()["history"])
         fake = obs(a)
         fake["farms"][1]["private"] = {"OPPONENT_ONLY_SECRET": "hidden"}

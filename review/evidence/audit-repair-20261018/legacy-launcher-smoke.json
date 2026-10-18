@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "default_agent_unchanged": true,
+  "opponent": "starter",
+  "seed": 42,
+  "audit": {
+    "passed": true,
+    "audit_version": 2,
+    "official_transitions_reexecuted": 719,
+    "both_public_and_private_states_match_each_step": true,
+    "inventory_order_checked_each_step": true,
+    "semantic_sha256": "5cb52a78c0aa510ad91a17f11bf03271b083ecfbbf3d5947c3e43fd2223671a7",
+    "semantic_sha256_version": 1,
+    "semantic_sha256_v2": "129ed1d4282811bd6a86cc224b5f86bfabb021ac40dae0a5ee18e03104fc10aa",
+    "final_rewards": [
+      52659.0,
+      3651.0
+    ],
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+  }
+}

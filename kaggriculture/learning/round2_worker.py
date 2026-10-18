@@ -86,8 +86,11 @@ def play(request):
               "make_seconds": setup, "import_seconds": IMPORT_SECONDS,
               "all_harvested_sold": all(m["harvested_units"] == m["sold_units"] for m in metrics)}
     if request.get("semantic"):
-        from run_match import clean_timing
-        result["semantic_replay_sha256"] = hashlib.sha256(json.dumps(clean_timing(states["steps"]), sort_keys=True, separators=(",", ":")).encode()).hexdigest()
+        from decision.semantics import digest, AUDIT_VERSION
+        result["semantic_replay_sha256"] = digest(states["steps"], 1)
+        result["semantic_replay_sha256_version"] = 1
+        result["semantic_replay_sha256_v2"] = digest(states["steps"])
+        result["audit_version"] = AUDIT_VERSION
     folder = Path(request["folder"])
     folder.mkdir(parents=True, exist_ok=False)
     if profile:

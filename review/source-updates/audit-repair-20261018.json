@@ -1,0 +1,18 @@
+{
+  "reason": "Authorized versioned ordered-audit maintenance; original source-provenance retained",
+  "base_commit": "428448af454b7cc4043d06091268cb988c660b0f",
+  "updates": [
+    {
+      "path": "kaggriculture/run_match.py",
+      "source_before_sha256": "01f40af43e95faa91d90ff2b3182dc7d6e0eabcdcd37e7443eb092f4f83af016",
+      "source_after_sha256": "1b521899ecd0594459dab0770c3f6bd41c094c57067099ffbeed48a26da46e21",
+      "public_after_sha256": "1b521899ecd0594459dab0770c3f6bd41c094c57067099ffbeed48a26da46e21"
+    },
+    {
+      "path": "kaggriculture/learning/official_worker.py",
+      "source_before_sha256": "6cc3b2896ad4adfbaa13a947cad23ed9a7b8daa8d85bbd057df2ece2770afeaf",
+      "source_after_sha256": "b8b017db60aaa3f655722274b4b8c5c777643587f56b458ed07628c0658a36f7",
+      "public_after_sha256": "b8b017db60aaa3f655722274b4b8c5c777643587f56b458ed07628c0658a36f7"
+    }
+  ]
+}

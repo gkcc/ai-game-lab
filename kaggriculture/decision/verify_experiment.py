@@ -8,6 +8,7 @@ from statistics import mean
 import sys
 
 import numpy as np
+from decision.semantics import digest as semantic_digest
 
 
 def clean(x):
@@ -67,6 +68,7 @@ def verify(folder, replays=None):
     assert gate == summary["exploratory_land_support_gate"]
     checked, shop_divergence, expanded_plants = 0, 0, 0
     trajectories = {}
+    ordered_hashes = []
     if replays:
         for name, h in cfg["source_sha256"].items():
             assert digest((replays / "sources" / name).read_bytes()) == h
@@ -83,6 +85,10 @@ def verify(folder, replays=None):
             d = json.loads(gzip.decompress(raw))
             assert len(d["steps"]) == 720 and d["info"]["seed"] == r["seed"]
             assert digest(json.dumps(clean(d["steps"]), sort_keys=True, separators=(",", ":")).encode()) == r["semantic_replay_sha256"]
+            v2 = semantic_digest(d["steps"])
+            if "semantic_replay_sha256_v2" in r:
+                assert v2 == r["semantic_replay_sha256_v2"]
+            ordered_hashes.append({k: r[k] for k in ("policy", "opponent", "seed", "side")} | {"stage": stage, "semantic_sha256_v2": v2})
             assert [s["reward"] for s in d["steps"][-1]] == r["banks"]
             assert [s["status"] for s in d["steps"][-1]] == ["DONE", "DONE"]
             assert not any(s["status"] in ("ERROR", "INVALID", "TIMEOUT") for frame in d["steps"] for s in frame)
@@ -99,10 +105,12 @@ def verify(folder, replays=None):
                 for prev, following in zip(d["steps"], d["steps"][1:]):
                     old = prev[0]["observation"]["farms"][p]
                     act = following[p]["action"]
+                    seen = set()
                     for (x, y), atom in zip([old["farmer"], *old["hands"]], [act["farmer"], *act["hands"]]):
                         t = following[0]["observation"]["farms"][p]["tiles"][y][x]
                         if atom[0] == "PLANT" and x >= len(old["tiles"]) // 2 and old["tiles"][y][x] is None and isinstance(t, dict) and t.get("crop") == atom[1]:
-                            plants += 1
+                            seen.add((x, y))
+                    plants += len(seen)
                 assert plants == r["mechanism"]["successful_plant_events_in_new_land"]
                 expanded_plants += plants
                 trajectories[key(r)] = {"first_money": f["money"], "first_action": first[p]["action"],
@@ -121,6 +129,8 @@ def verify(folder, replays=None):
     return {"passed": True, "ledger_games": 48, "local_replays_verified": checked, "statistics_recomputed": stats,
             "exploratory_gate": bool(gate), "paired_town_trajectories_differ": shop_divergence if checked else None,
             "expanded_plant_events_verified": expanded_plants if checked else None,
+            "audit_version": 2, "ordered_replay_hashes": ordered_hashes,
+            "plant_count_boundary": "Unique per-turn tile transitions only; generic execution labels require official per-primitive tracing",
             "boundary": "Shared-RNG and opponent-response effects belong to the treatment; not a pure extra-land-yield estimate or external replay re-execution"}
 
 

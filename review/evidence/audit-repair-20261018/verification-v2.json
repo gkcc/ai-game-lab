@@ -1,0 +1,455 @@
+{
+  "passed": true,
+  "ledger_games": 48,
+  "local_replays_verified": 52,
+  "statistics_recomputed": {
+    "overall": {
+      "profit_delta": 6947.75,
+      "profit_95_ci": [
+        625.0,
+        11589.25
+      ],
+      "score_delta": -0.08333333333333333
+    },
+    "v1": {
+      "profit_delta": -3276.3333333333335,
+      "profit_95_ci": [
+        -8375.333333333334,
+        357.1666666666667
+      ],
+      "score_delta": -1.0
+    },
+    "market": {
+      "profit_delta": 17171.833333333332,
+      "profit_95_ci": [
+        9643.5,
+        23111.5
+      ],
+      "score_delta": 0.8333333333333334
+    }
+  },
+  "exploratory_gate": false,
+  "paired_town_trajectories_differ": 24,
+  "expanded_plant_events_verified": 1274,
+  "audit_version": 2,
+  "ordered_replay_hashes": [
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6495223,
+      "side": 0,
+      "stage": "panel",
+      "semantic_sha256_v2": "d3d6dd6dc6de8fe135d9b33ab2b62b8fab97cc48937808d757bf4cb7631e1b57"
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6495223,
+      "side": 0,
+      "stage": "panel",
+      "semantic_sha256_v2": "b856c6b54a3cd2c5e00c0972a387c6b4e2de64e3d5f2fb2b4c3d04316fadd5a9"
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6495223,
+      "side": 1,
+      "stage": "panel",
+      "semantic_sha256_v2": "77a57214ed92321554cd1b2a95c7d3875e1f8243361a13bed9fd8143558d2858"
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6495223,
+      "side": 1,
+      "stage": "panel",
+      "semantic_sha256_v2": "eb541a41f25d4f9fce774274ee3d2e9c62102bb8a2b72427c993f7ca1c7f94d9"
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6495223,
+      "side": 0,
+      "stage": "panel",
+      "semantic_sha256_v2": "e03eff86b8d79ed526ddd5d6257aea7872b8fe314e8b04be88ace761d9a68656"
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6495223,
+      "side": 0,
+      "stage": "panel",
+      "semantic_sha256_v2": "3c40be8a07b4b6317411506e940f8164c62055fa18ae4e72237c43388c2d0764"
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6495223,
+      "side": 1,
+      "stage": "panel",
+      "semantic_sha256_v2": "896c29d9489d26b0b7d3cb3b31ed5ca0ccd7c2ad3383e5f1f9f647d41d8ead01"
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6495223,
+      "side": 1,
+      "stage": "panel",
+      "semantic_sha256_v2": "a0f83d2bd999a0119eb89b89c1ed66b7040637b8af3890457245e1ce8883de06"
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6682214,
+      "side": 0,
+      "stage": "panel",
+      "semantic_sha256_v2": "58ced830d6d5d4d3fbfc18fe47ff7b362529a668ae5a46a82e3d0db7cda01e45"
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6682214,
+      "side": 0,
+      "stage": "panel",
+      "semantic_sha256_v2": "7d1281005d3289c34e20095b45f371b355e2de8c6a681d08088134c0b0f9b8a9"
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6682214,
+      "side": 1,
+      "stage": "panel",
+      "semantic_sha256_v2": "f6aba07e96301847a0cca162ecb301bcbc6614fb41cc330f341c8999c4952ff9"
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6682214,
+      "side": 1,
+      "stage": "panel",
+      "semantic_sha256_v2": "cc1d19e57811227734c4f1b0ef738907f69a624ad234a2cab8809ac6575f37bc"
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6682214,
+      "side": 0,
+      "stage": "panel",
+      "semantic_sha256_v2": "2889ee1fdde0f2d3041e8de9a4a0340029c8ee483f62c4d4969d195f1e4508a2"
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6682214,
+      "side": 0,
+      "stage": "panel",
+      "semantic_sha256_v2": "7b1f63fe69ef8b90edb0af3153832ca66db3d3ef3766f46f11387a0fe2bafa52"
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6682214,
+      "side": 1,
+      "stage": "panel",
+      "semantic_sha256_v2": "a149ecd1067a3cae2dd6f83062e3c70e92f7bc797def3e983eaf6c012da0a86b"
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6682214,
+      "side": 1,
+      "stage": "panel",
+      "semantic_sha256_v2": "b1039297356602c772ff881506d49568a6cc13b3d35d95d4cb86d0c2482bb7d4"
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6726194,
+      "side": 0,
+      "stage": "panel",
+      "semantic_sha256_v2": "fc9cec74df208399697f578b323704535b51253d29db4edaea4c3e81bd3d71c7"
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6726194,
+      "side": 0,
+      "stage": "panel",
+      "semantic_sha256_v2": "fdbb82cbe89409b99c73348009c3235d938dea6365313b203ed2cafcd5ea1eea"
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6726194,
+      "side": 1,
+      "stage": "panel",
+      "semantic_sha256_v2": "e57f106443798002b11915b2bf46516d598b0c679f0c108763b0f4a1f920bef3"
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6726194,
+      "side": 1,
+      "stage": "panel",
+      "semantic_sha256_v2": "0074b4201c907a4dc1d4582933c82fd530eff0ffd6d0d8c6d10af565a14731cf"
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6726194,
+      "side": 0,
+      "stage": "panel",
+      "semantic_sha256_v2": "5398c4e7b1d1637892a4d860f6dfa64f28ad2061d2bfe935ace7202f6a7c21fc"
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6726194,
+      "side": 0,
+      "stage": "panel",
+      "semantic_sha256_v2": "9c06976281899d2d6c77f339745edc3610f4e3deafe8c96395fd10a791e5139a"
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6726194,
+      "side": 1,
+      "stage": "panel",
+      "semantic_sha256_v2": "75abcb009999b7db48f8a24c01422b028f96d76456d28c574c058f686235b231"
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6726194,
+      "side": 1,
+      "stage": "panel",
+      "semantic_sha256_v2": "e1008cd2193e4da106ed0626ef8ff0f28101e0ea53a2f0949f0597e9b1b3cf16"
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6774936,
+      "side": 0,
+      "stage": "panel",
+      "semantic_sha256_v2": "296ec87c8a6794a4995f856bd5d4adadab7f791364cc46e856c83a4b77a76c22"
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6774936,
+      "side": 0,
+      "stage": "panel",
+      "semantic_sha256_v2": "22adc4aec1673a2b6eaaec60b9469a656c4d260ae2f7c5b8a3568b67cb18bcbc"
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6774936,
+      "side": 1,
+      "stage": "panel",
+      "semantic_sha256_v2": "8d69ca93fa8888c5923413ea55633e768d64099186be611084e74845abda4c44"
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6774936,
+      "side": 1,
+      "stage": "panel",
+      "semantic_sha256_v2": "d838c335690afdf2e047c0fa2525c1cbf29a95afb81c1e781c20912867077455"
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6774936,
+      "side": 0,
+      "stage": "panel",
+      "semantic_sha256_v2": "14ad8de04eedf07e7c9ceee6dfb92cd9aa08babbb86329678da522efb8cca21b"
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6774936,
+      "side": 0,
+      "stage": "panel",
+      "semantic_sha256_v2": "bc5694fd31293eb09a8f0214417195ab9345e4b2fb55798ddd849567e93e522c"
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6774936,
+      "side": 1,
+      "stage": "panel",
+      "semantic_sha256_v2": "abbd735d3c89ae33afb1a293fc59b6d73a275163725b165f794d76a6a85055bc"
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6774936,
+      "side": 1,
+      "stage": "panel",
+      "semantic_sha256_v2": "8d362b2694f7ea3f1ba7282ea3ec81c3c9d4e7868213c63ff38cba9a89a178f6"
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6949248,
+      "side": 0,
+      "stage": "panel",
+      "semantic_sha256_v2": "d8686cb77f46ca968324c7ea214de4e6d5e2622e58541e130115407cdd32deed"
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6949248,
+      "side": 0,
+      "stage": "panel",
+      "semantic_sha256_v2": "8f7b3dc5718858e283c4c3efe41f84b60a71511cd14d983359a046359571ba00"
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6949248,
+      "side": 1,
+      "stage": "panel",
+      "semantic_sha256_v2": "cac3193500bdc4e19b3511e3aeb46ad63fbf5b7e5b6135eb5024bc48047b160d"
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6949248,
+      "side": 1,
+      "stage": "panel",
+      "semantic_sha256_v2": "658ae6889f365b0d25b3d7b5b9f1740c9e386065100664094c2f157dd487e79a"
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6949248,
+      "side": 0,
+      "stage": "panel",
+      "semantic_sha256_v2": "5a29726f952b020e978e9df7277f4f34e1cfc18a865c38295331f5bbc31a8447"
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6949248,
+      "side": 0,
+      "stage": "panel",
+      "semantic_sha256_v2": "6cfa091345d7b1a1b3dd3bcaf307dd4b6f5bf0a4fbc91b90eff32283519cdab0"
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6949248,
+      "side": 1,
+      "stage": "panel",
+      "semantic_sha256_v2": "3f695a8db04bf6277d16e65c8cf5c183d5f611c991e09ae44b470606bd573c84"
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6949248,
+      "side": 1,
+      "stage": "panel",
+      "semantic_sha256_v2": "d0b876f13231cd9e94961797a71ec1968b2a1dc8e472daeac5c7548326906f4a"
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6992429,
+      "side": 0,
+      "stage": "panel",
+      "semantic_sha256_v2": "603d9c9afdf1657624747644f8fcf455999767ce5c61799374e797625037f2c4"
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6992429,
+      "side": 0,
+      "stage": "panel",
+      "semantic_sha256_v2": "4b254e5e4028726008d0adcb48577423288c95bbe0e0c1ac3bd20d56c4358ade"
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6992429,
+      "side": 1,
+      "stage": "panel",
+      "semantic_sha256_v2": "755f7a89431b9dd1432f3beab6b00434f79440a58beee0fed2059688aff948b8"
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6992429,
+      "side": 1,
+      "stage": "panel",
+      "semantic_sha256_v2": "1bd0486cff84d2ad39f25e73870748511166a9e6d611e029e08ac22af58c959f"
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6992429,
+      "side": 0,
+      "stage": "panel",
+      "semantic_sha256_v2": "18cc566a4ae6eed6330e14f739c4d2e2f7eef47e71e2b2e0d9b078fa4ab6fd77"
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6992429,
+      "side": 0,
+      "stage": "panel",
+      "semantic_sha256_v2": "b031f587ffeff850eb2d102ffe0fb3fba63a5f57a8ec46de0f86a8a284906972"
+    },
+    {
+      "policy": "control",
+      "opponent": "v1",
+      "seed": 6992429,
+      "side": 1,
+      "stage": "panel",
+      "semantic_sha256_v2": "fb85617cac108b07c603f0ee66ba68c901786be0f8ddf88609705cd8db9c3cce"
+    },
+    {
+      "policy": "land",
+      "opponent": "v1",
+      "seed": 6992429,
+      "side": 1,
+      "stage": "panel",
+      "semantic_sha256_v2": "2cd3b71b4864432e8478fd56d962ba7b447ef62306ba1b5a1dc7b5bf7c5c7887"
+    },
+    {
+      "policy": "baseline",
+      "opponent": "market",
+      "seed": 6774936,
+      "side": 0,
+      "stage": "parity",
+      "semantic_sha256_v2": "296ec87c8a6794a4995f856bd5d4adadab7f791364cc46e856c83a4b77a76c22"
+    },
+    {
+      "policy": "control",
+      "opponent": "market",
+      "seed": 6774936,
+      "side": 0,
+      "stage": "parity",
+      "semantic_sha256_v2": "296ec87c8a6794a4995f856bd5d4adadab7f791364cc46e856c83a4b77a76c22"
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6774936,
+      "side": 1,
+      "stage": "repeat",
+      "semantic_sha256_v2": "d838c335690afdf2e047c0fa2525c1cbf29a95afb81c1e781c20912867077455"
+    },
+    {
+      "policy": "land",
+      "opponent": "market",
+      "seed": 6774936,
+      "side": 0,
+      "stage": "repeat",
+      "semantic_sha256_v2": "22adc4aec1673a2b6eaaec60b9469a656c4d260ae2f7c5b8a3568b67cb18bcbc"
+    }
+  ],
+  "plant_count_boundary": "Unique per-turn tile transitions only; generic execution labels require official per-primitive tracing",
+  "boundary": "Shared-RNG and opponent-response effects belong to the treatment; not a pure extra-land-yield estimate or external replay re-execution"
+}

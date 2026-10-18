@@ -31,6 +31,7 @@ def prepare(out, baseline, reuse=None):
              "worker.py": ROOT / "learning/round2_worker.py", "mechanism_experiment.py": Path(__file__),
              "optimize_round2.py": ROOT / "learning/optimize_round2.py", "evaluate_holdout.py": ROOT / "learning/evaluate_holdout.py",
              "api.py": ROOT / "decision/api.py", "verify_mechanisms.py": ROOT / "decision/verify_mechanisms.py"}
+    paths.update({name: ROOT / "decision" / name for name in ("semantics.py", "execution.py", "full_audit.py")})
     for name, path in paths.items():
         shutil.copyfile(path, src / name)
     for name, flag in (("control", False), ("land", True)):
@@ -63,7 +64,9 @@ def prepare(out, baseline, reuse=None):
 
 
 def telemetry(folder, row):
+    from decision.full_audit import reexecute
     replay = json.loads(gzip.decompress((folder / "replay.json.gz").read_bytes()))
+    execution = reexecute(replay, trace=True)
     p = row["side"]
     expanded_plants = actions = 0
     for before, after in zip(replay["steps"], replay["steps"][1:]):
@@ -72,16 +75,14 @@ def telemetry(folder, row):
         a = after[p]["action"]
         for pos, atom in zip(positions, [a["farmer"], *a["hands"]]):
             actions += atom[0] != "PASS"
-            x, y = pos
-            tile = after[0]["observation"]["farms"][p]["tiles"][y][x]
-            if atom[0] == "PLANT" and x >= len(farm["tiles"]) // 2 and isinstance(tile, dict) and tile.get("crop") == atom[1] and farm["tiles"][y][x] is None:
-                expanded_plants += 1
+    expanded_plants = execution["execution"]["successful_plants_new_land"][p]
     first = replay["steps"][1][0]["observation"]["farms"][p]
     last = replay["steps"][-1][0]["observation"]["farms"][p]
     prices = [s[0]["observation"]["market"]["prices"]["MELON"] for s in replay["steps"]]
     result = json.loads((folder / "result.json").read_text(encoding="utf-8"))
     return {"first_post_action_quadrants": first["unlocked_quadrants"], "final_quadrants": last["unlocked_quadrants"],
             "successful_plant_events_in_new_land": expanded_plants, "non_pass_unit_actions": actions,
+            "execution_label_version": 1, "execution_effect_sha256": execution["execution"]["ordered_effect_sha256"],
             "melon_quote_min": min(prices), "melon_quote_mean": mean(prices),
             "simulation_seconds": result["run_seconds"], "both_bot_seconds": sum(result["bot_seconds"])}
 
@@ -93,6 +94,8 @@ def run(out, reuse=None):
     for name, h in cfg["source_sha256"].items():
         assert sha(out / "sources" / name) == h
     assert sha(ROOT / "decision/api.py") == cfg["source_sha256"]["api.py"]
+    for name in ("semantics.py", "execution.py", "full_audit.py"):
+        assert sha(ROOT / "decision" / name) == cfg["source_sha256"][name]
     rows, repeats = [], []
     with Games(out, cfg, "experiment") as games, ThreadPoolExecutor(max_workers=4) as pool:
         seed = cfg["seeds"][0]

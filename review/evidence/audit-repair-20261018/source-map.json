@@ -1,0 +1,93 @@
+[
+  {
+    "source": "kaggriculture/decision/semantics.py",
+    "runtime_sha256": "9ac62d0df7adca84c0feff805b2979bb45f9f9f4c2064d1e2b5c48efd3e779a5",
+    "public_sha256": "9ac62d0df7adca84c0feff805b2979bb45f9f9f4c2064d1e2b5c48efd3e779a5",
+    "byte_identical": true,
+    "boundary": "Exact audited source"
+  },
+  {
+    "source": "kaggriculture/decision/execution.py",
+    "runtime_sha256": "a9e1050b5df35d8d0b9be361bb14f34b0e5c3381012572fca9030d5c3c9084e1",
+    "public_sha256": "a9e1050b5df35d8d0b9be361bb14f34b0e5c3381012572fca9030d5c3c9084e1",
+    "byte_identical": true,
+    "boundary": "Exact audited source"
+  },
+  {
+    "source": "kaggriculture/decision/full_audit.py",
+    "runtime_sha256": "43d4e810fdebeff567456e5831550bac0c48e297fa57d6363b3c3d8034e7b29b",
+    "public_sha256": "43d4e810fdebeff567456e5831550bac0c48e297fa57d6363b3c3d8034e7b29b",
+    "byte_identical": true,
+    "boundary": "Exact audited source"
+  },
+  {
+    "source": "kaggriculture/decision/api.py",
+    "runtime_sha256": "3ef4025bde61d240b298cbe4d31291f25021baaf5b396f5540bbfcdda4231917",
+    "public_sha256": "3ef4025bde61d240b298cbe4d31291f25021baaf5b396f5540bbfcdda4231917",
+    "byte_identical": true,
+    "boundary": "Exact audited source"
+  },
+  {
+    "source": "kaggriculture/decision/reexecute_experiment.py",
+    "runtime_sha256": "b632d54e40aee89ba659a7c9acf56fed792643aad0bbc92e4c4f1d1ef07420c7",
+    "public_sha256": "b632d54e40aee89ba659a7c9acf56fed792643aad0bbc92e4c4f1d1ef07420c7",
+    "byte_identical": true,
+    "boundary": "Exact audited source"
+  },
+  {
+    "source": "kaggriculture/decision/verify_audit.py",
+    "runtime_sha256": "386fed458feaabbf840e6e13476f795bd8afd018e413f1c07f3f646d9381c870",
+    "public_sha256": "386fed458feaabbf840e6e13476f795bd8afd018e413f1c07f3f646d9381c870",
+    "byte_identical": true,
+    "boundary": "Exact audited source"
+  },
+  {
+    "source": "kaggriculture/decision/verify_mechanisms.py",
+    "runtime_sha256": "cc82fd118abd94e92a8833587aa2bfb9117214a8a5b00e8054225732af47fbbf",
+    "public_sha256": "cc82fd118abd94e92a8833587aa2bfb9117214a8a5b00e8054225732af47fbbf",
+    "byte_identical": true,
+    "boundary": "Exact audited source"
+  },
+  {
+    "source": "kaggriculture/decision/verify_experiment.py",
+    "runtime_sha256": "7d6031cf759b985111c77da3d2f77f784ca41e33692ef3ea0b0f44194e97f95b",
+    "public_sha256": "7d6031cf759b985111c77da3d2f77f784ca41e33692ef3ea0b0f44194e97f95b",
+    "byte_identical": true,
+    "boundary": "Exact audited source"
+  },
+  {
+    "source": "kaggriculture/learning/round2_worker.py",
+    "runtime_sha256": "a80158b26d1f4ae3d366c1d1276a1ca63e652bcd350f5ca25545b0f5f33759f1",
+    "public_sha256": "ff823541f43ec2a0671aefbb2a3803daf6d3b882cebed4534eb2bdbb5efb35a1",
+    "byte_identical": false,
+    "boundary": "Line endings only"
+  },
+  {
+    "source": "kaggriculture/learning/mechanism_experiment.py",
+    "runtime_sha256": "be098678b647d25a799f65b62b4bd084977c4c6682418672be05f2659591c1d0",
+    "public_sha256": "be098678b647d25a799f65b62b4bd084977c4c6682418672be05f2659591c1d0",
+    "byte_identical": true,
+    "boundary": "Exact audited source"
+  },
+  {
+    "source": "kaggriculture/run_match.py",
+    "runtime_sha256": "1b521899ecd0594459dab0770c3f6bd41c094c57067099ffbeed48a26da46e21",
+    "public_sha256": "1b521899ecd0594459dab0770c3f6bd41c094c57067099ffbeed48a26da46e21",
+    "byte_identical": true,
+    "boundary": "Exact audited source"
+  },
+  {
+    "source": "kaggriculture/learning/official_worker.py",
+    "runtime_sha256": "b8b017db60aaa3f655722274b4b8c5c777643587f56b458ed07628c0658a36f7",
+    "public_sha256": "b8b017db60aaa3f655722274b4b8c5c777643587f56b458ed07628c0658a36f7",
+    "byte_identical": true,
+    "boundary": "Exact audited source"
+  },
+  {
+    "source": "kaggriculture/learning/optimize_round2.py",
+    "runtime_sha256": "9f4fcf09fecd42c6135a1a2a72b95948c52474636719863eb2d468b01dc102fe",
+    "public_sha256": "9f4fcf09fecd42c6135a1a2a72b95948c52474636719863eb2d468b01dc102fe",
+    "byte_identical": true,
+    "boundary": "Exact audited source"
+  }
+]

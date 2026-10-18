@@ -77,3 +77,9 @@
 52份回放37388次转移已用官方引擎逐步复演，两边公开/私有状态及结果一致；确认1274次新地实际播种、每对首回合成本1000。24/24对城镇序列分叉，效果包含官方共享RNG和对手响应，不是纯面积收益。旧作物审计器不泛化动物，新full_audit直接复演官方动作；一只鹅的独立Policy通过全局经营链及719次转移复演，售54蛋/29肥料，现金7150，对PASS仅为执行样例。新多文件启动入口decision.play实测完整对局并与实验轨迹一致；不改旧Play.ps1、默认或冻结候选。
 
 [机制表](../kaggriculture/decision/MECHANISMS.zh-CN.md)、[架构](../kaggriculture/decision/README.md)、[实证](../kaggriculture/decision/EXPERIMENT.zh-CN.md)、[学习路线](../kaggriculture/decision/LEARNING_ROADMAP.zh-CN.md)、[脱敏证据](evidence/mechanism-foundation-20261018)。当前没有BC部署、DAgger或PPO训练；GPU用途仍是此前独立小型探针。
+
+## 2026-10-18：审计与执行基础修复
+
+基于 428448a 的 WebChat 审查，新增带版本的背包保序比较/哈希、官方逐原语效果归因和运行器管理的 HistorySession。保留 v1 字段和所有历史产物。15 项针对性回归、29 项原机制测试；52 场最终代码逐步复演的版本绑定与结果见 [验收](evidence/audit-repair-20261018/acceptance.json) 和 [逐场证书](evidence/audit-repair-20261018/official-reexecution-v2.json)。
+
+市场标签目前为订单聚合和成交交错摘要，不是完整联合 mask；HistorySession 每局必须 reset。原生动物 PLACE 忽略数量的兼容边界已加入回归。第一次补充场景构造被本地 codec 拒绝、后续观察器数量解析反例的失败均留本地，公开只输出通过的最终结果。策略、默认 Bot、候选、旧账本及旧哈希保留；扩地仍不晋级，本轮不做 BC/PPO/GPU 训练。详见 [实现与边界](../kaggriculture/decision/AUDIT_REPAIR.zh-CN.md)。

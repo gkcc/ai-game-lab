@@ -4,7 +4,7 @@ No engine imports, future-state simulation, profitability masks or forced teache
 actions. Assessments are advisory. Joint outcomes remain the server's decision.
 """
 from copy import deepcopy
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from typing import Protocol
 
 SCHEMA_VERSION = 1
@@ -38,6 +38,7 @@ class View:
     observation: dict
     configuration: dict
     history: dict
+    _episode: object = field(default=None, repr=False, compare=False)
 
     @property
     def own(self):
@@ -60,7 +61,7 @@ class View:
                 "opponent_belief": {"private_inventory": "unknown", "seed_inventory": "unknown"}}
 
 
-def observe(observation, configuration, previous=None):
+def observe(observation, configuration, previous=None, *, episode=None):
     """Accept ONE runtime player's observation, never an environment/replay."""
     if "steps" in observation or "info" in observation or "observation" in observation:
         raise ValueError("Expected a single legal runtime observation, not replay or engine state")
@@ -85,14 +86,37 @@ def observe(observation, configuration, previous=None):
         obs["market"]["params"] = {k: _items(v, PRICE_KEYS) for k, v in obs["market"]["params"].items()}
     history = {}
     if previous is not None:
-        if not isinstance(previous, View) or previous.observation["player"] != p or previous.observation["step"] >= obs["step"]:
-            raise ValueError("History must be an earlier sanitized view of the same player")
+        if (episode is None or not isinstance(previous, View) or previous._episode is not episode
+                or previous.observation["player"] != p or previous.observation["step"] >= obs["step"]):
+            raise ValueError("History requires the same explicit episode, same player and an earlier frame")
         history = {"previous_step": previous.observation["step"], "previous_market": deepcopy(previous.observation["market"]),
                    "net_public_inventory_delta": {k: obs["market"]["inventory"][k] - previous.observation["market"]["inventory"][k] for k in PRODUCTS},
                    "interpretation": "Net shared change includes both players and town; not opponent private stock"}
     cfg = _items(configuration, CONFIG_KEYS)
     cfg["marketParams"] = {k: _items(v, PRICE_KEYS) for k, v in cfg.get("marketParams", {}).items() if k in PRODUCTS}
-    return View(obs, cfg, history)
+    return View(obs, cfg, history, episode)
+
+
+class HistorySession:
+    """Runner-owned history lifecycle; reset explicitly before every new game.
+
+    The opaque episode object is never a feature or derived from a replay seed.
+    Stateless act() is unchanged. A runner must not reuse a session across games.
+    """
+    def __init__(self, player):
+        self.reset(player)
+
+    def reset(self, player):
+        if player not in (0, 1):
+            raise ValueError("Expected player 0 or 1")
+        self.player, self.episode, self.previous = player, object(), None
+
+    def observe(self, observation, configuration):
+        if observation["player"] != self.player:
+            raise ValueError("History seat mismatch")
+        view = observe(observation, configuration, self.previous, episode=self.episode)
+        self.previous = view
+        return view
 
 
 @dataclass(frozen=True)

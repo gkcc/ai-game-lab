@@ -45,3 +45,5 @@ Lux：运行 `.\lux-s3\Setup.ps1`，再运行 `.\lux-s3\Play.ps1`。GPU需要独
 - [公开边界与脱敏说明](PUBLICATION.md)、[来源与公开版适配](review/source-provenance.json)、[第三方许可说明](THIRD_PARTY_NOTICES.md)。
 
 原始Replay保留在私有工作区，新运行也会生成本地Replay；Git忽略全部运行产物。公开汇总不包含完整状态轨迹，不能单凭它独立验证每个状态转移。
+
+本轮完成保序审计 v2、官方执行归因与局内历史隔离修复；保留旧哈希和实验，未启动 BC。见 [修复说明](kaggriculture/decision/AUDIT_REPAIR.zh-CN.md) 与 [新版验收证据](review/evidence/audit-repair-20261018/acceptance.json)。

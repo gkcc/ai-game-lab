@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "fixture": "Constructed boundary: duplicate same-tile planting plus partial market purchase in same turn",
+  "records_roundtripped": 4,
+  "unit_statuses": [
+    "executed",
+    "no_effect"
+  ],
+  "market_status": "partial",
+  "market_fills": 2,
+  "successful_plants": 1,
+  "raw_labels_private_only": true
+}

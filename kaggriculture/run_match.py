@@ -90,6 +90,8 @@ def main():
             render_status = "official HTML with Chinese UI and action annotations; browser verification is separate"
         semantic = clean_timing(replay["steps"])
         digest = hashlib.sha256(json.dumps(semantic, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
+        from decision.semantics import digest as semantic_digest
+        digest_v2 = semantic_digest(replay["steps"])
         final = env.steps[-1]
         rewards = [s.reward for s in final]
         statuses = [s.status for s in final]
@@ -124,7 +126,8 @@ def main():
                   "done": env.done, "recorded_states": len(env.steps), "action_turns": len(env.steps) - 1,
                   "final_step": final[0].observation.step, "statuses": statuses, "rewards": rewards,
                   "final_money": final_money, "action_counts": counts, "agent_errors": errors,
-                  "semantic_replay_sha256": digest, "render_status": render_status,
+                  "semantic_replay_sha256": digest, "semantic_replay_sha256_version": 1,
+                  "semantic_replay_sha256_v2": digest_v2, "audit_version": 2, "render_status": render_status,
                   "elapsed_seconds": round(time.perf_counter() - started, 3),
                   "command": subprocess.list2cmdline([sys.executable, str(Path(__file__).resolve()), *sys.argv[1:]])}
         result["passed"] = (env.done and statuses == ["DONE", "DONE"] and len(env.steps) == env.configuration.episodeSteps

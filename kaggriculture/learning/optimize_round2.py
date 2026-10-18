@@ -139,6 +139,9 @@ class Games:
             keys = ["seed", "side", "banks", "bank", "opponent_bank", "net_profit", "margin", "states", "action_turns",
                     "bot_sha256", "rival_sha256", "engine_sha256", "package", "passed", "semantic_replay_sha256"]
             safe = {k: r[k] for k in keys}
+            for k in ("semantic_replay_sha256_version", "semantic_replay_sha256_v2", "audit_version"):
+                if k in r:
+                    safe[k] = r[k]
             safe.update(policy=policy, opponent=opponent, final_status=["DONE", "DONE"], rewards=r["banks"],
                         replay_gzip_sha256=sha(folder / "replay.json.gz"), agent_errors=0,
                         both_player_farming_and_seed_audits_passed=True)
