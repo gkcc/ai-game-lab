@@ -1,0 +1,48 @@
+{
+  "experiment": "teacher-fertilizer-ongoing-crops",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+  "development_seeds": [
+    8445705,
+    8533724
+  ],
+  "test_seeds": [
+    8142522,
+    8219190,
+    8243932,
+    8505156,
+    8647476,
+    8156327
+  ],
+  "opponents": [
+    "v1",
+    "market",
+    "round2"
+  ],
+  "workers": 2,
+  "policies": [
+    "baseline",
+    "candidate"
+  ],
+  "pilot_budget_games": 16,
+  "test_games": 72,
+  "repeat_games": 2,
+  "max_candidate_designs": 1,
+  "bootstrap": {
+    "resamples": 20000,
+    "rng_seed": 20261018092
+  },
+  "gate": "All execution and reproduction checks pass; candidate must use fertilizer successfully; overall seed-cluster profit 95% lower >0 AND overall mean margin delta >0 AND each opponent mean score delta >=0. Six seed clusters: exploratory only, not universal superiority. No default promotion.",
+  "failure_policy": "Report failed competitive gate honestly; no test-driven strategy revisions or seed changes. Candidate freeze before test; no BC.",
+  "scope": "One fertilizer/harvest teacher extension; micro fixture is mechanism evidence not competition evidence; pilot is development only",
+  "source_sha256": {
+    "baseline.py": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "round2.py": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "market.py": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "v1.py": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "worker.py": "a80158b26d1f4ae3d366c1d1276a1ca63e652bcd350f5ca25545b0f5f33759f1",
+    "evaluate_holdout.py": "df599e139893081f0a5307b0aa9cf299e2d14d4d4a221672b7aa9ac1d3747d82",
+    "optimize_round2.py": "9f4fcf09fecd42c6135a1a2a72b95948c52474636719863eb2d468b01dc102fe"
+  },
+  "new_seeds_absent_from_prior_public_evidence": true
+}
