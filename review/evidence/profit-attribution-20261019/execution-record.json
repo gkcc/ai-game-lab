@@ -1,0 +1,18 @@
+{
+  "pre_registration_commit": "a544faf6a7478529fa46d3ef8c51c3deb1cc5a03",
+  "commands": [
+    "learning/.venv/Scripts/python.exe -B -X utf8 learning/profit_attribution.py artifacts/profit-attribution-20261019",
+    ".venv/Scripts/python.exe -B -X utf8 -m decision.audit_profit_attribution artifacts/profit-attribution-20261019",
+    "learning/.venv/Scripts/python.exe -B -X utf8 learning/analyze_profit_attribution.py artifacts/profit-attribution-20261019"
+  ],
+  "python": "3.12.2",
+  "kaggle_environments": "1.33.0",
+  "analysis_sha256": "c5f329a5529031a32dc6e94cfe476cd1f98aae5ee3aa8e1e202198af1fab8fcf",
+  "notes": [
+    "Measurement runner frozen before new games; analyzer implements preregistered identities, added before reading game results.",
+    "Before freeze: initial boundary fixture used new-plant default drought state; explicitly reset consecutive_unwatered to zero for intended surviving-unwatered case.",
+    "Initial boundary command had wrong working directory; rerun in game root. No games excluded or replaced.",
+    "Publication rejects .sha256 extension: digest retained in freeze.json; standalone digest stays local.",
+    "All source/state hooks are offline-only; no deployment imports changed."
+  ]
+}

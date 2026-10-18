@@ -1,0 +1,4889 @@
+{
+  "passed": true,
+  "averages": {
+    "baseline": {
+      "games": 36,
+      "counts": {
+        "unit:PASS:pass": 1472.4166666666667,
+        "cash:BUY_SEED:MELON": -1768.888888888889,
+        "market_units:BUY_SEED:MELON": 22.11111111111111,
+        "cash:HIRE:": -267.27777777777777,
+        "market_units:HIRE:": 122.91666666666667,
+        "unit:PLANT:executed": 60.361111111111114,
+        "unit:WEST:executed": 597.7222222222222,
+        "unit:NORTH:executed": 540.1111111111111,
+        "unit:WATER:executed": 691.6388888888889,
+        "cash:BUY_SEED:STRAWBERRY": -2244.4444444444443,
+        "market_units:BUY_SEED:STRAWBERRY": 22.444444444444443,
+        "cash:BUY_SEED:CARROT": -216.11111111111111,
+        "market_units:BUY_SEED:CARROT": 10.805555555555555,
+        "automatic_drop_calls": 29.0,
+        "automatic_drop_discard_units": 0.0,
+        "unit:HARVEST:executed": 60.361111111111114,
+        "harvest_units:MELON": 132.0,
+        "unit:EAST:executed": 45.05555555555556,
+        "unit:SOUTH:executed": 26.555555555555557,
+        "unit:DROP:executed": 5.5,
+        "manual_drop_discard_units": 0.0,
+        "cash:SELL:MELON": 15544.444444444445,
+        "market_units:SELL:MELON": 132.0,
+        "harvest_units:STRAWBERRY": 88.11111111111111,
+        "unit:DIG:executed": 8.25,
+        "cash:BUY_SEED:TOMATO": -256.94444444444446,
+        "market_units:BUY_SEED:TOMATO": 5.138888888888889,
+        "cash:SELL:STRAWBERRY": 18412.777777777777,
+        "market_units:SELL:STRAWBERRY": 88.11111111111111,
+        "cash:BUY_SEED:WHEAT": -8.88888888888889,
+        "market_units:BUY_SEED:WHEAT": 0.8888888888888888,
+        "harvest_units:TOMATO": 20.333333333333332,
+        "cash:SELL:TOMATO": 2717.8055555555557,
+        "market_units:SELL:TOMATO": 20.333333333333332,
+        "harvest_units:WHEAT": 1.7777777777777777,
+        "cash:SELL:WHEAT": 89.77777777777777,
+        "market_units:SELL:WHEAT": 1.7777777777777777,
+        "harvest_units:CARROT": 28.0,
+        "cash:SELL:CARROT": 1563.611111111111,
+        "market_units:SELL:CARROT": 28.0
+      },
+      "production": {
+        "STRAWBERRY:opportunities": 88.11111111111111,
+        "STRAWBERRY:potential_units": 88.11111111111111,
+        "STRAWBERRY:admitted_units": 88.11111111111111,
+        "STRAWBERRY:clipped_units": 0.0,
+        "TOMATO:opportunities": 20.333333333333332,
+        "TOMATO:potential_units": 20.333333333333332,
+        "TOMATO:admitted_units": 20.333333333333332,
+        "TOMATO:clipped_units": 0.0
+      },
+      "terminal_stock": {
+        "WHEAT": 0.0,
+        "CARROT": 0.0,
+        "TOMATO": 0.0,
+        "STRAWBERRY": 0.0,
+        "MELON": 0.0,
+        "EGG": 0.0,
+        "MILK": 0.0,
+        "WOOL": 0.0,
+        "FERTILIZER": 0.0,
+        "GOOSE": 0.0,
+        "COW": 0.0,
+        "SHEEP": 0.0
+      },
+      "sales": {
+        "MELON": {
+          "mean_units": 132.0,
+          "mean_revenue": 15544.444444444445,
+          "pooled_realized_price": 117.76094276094275
+        },
+        "STRAWBERRY": {
+          "mean_units": 88.11111111111111,
+          "mean_revenue": 18412.777777777777,
+          "pooled_realized_price": 208.97225725094577
+        },
+        "TOMATO": {
+          "mean_units": 20.333333333333332,
+          "mean_revenue": 2717.8055555555557,
+          "pooled_realized_price": 133.66256830601094
+        },
+        "WHEAT": {
+          "mean_units": 1.7777777777777777,
+          "mean_revenue": 89.77777777777777,
+          "pooled_realized_price": 50.5
+        },
+        "CARROT": {
+          "mean_units": 28.0,
+          "mean_revenue": 1563.611111111111,
+          "pooled_realized_price": 55.84325396825397
+        }
+      }
+    },
+    "fertilizer": {
+      "games": 36,
+      "counts": {
+        "unit:PASS:pass": 1749.2222222222222,
+        "cash:BUY_SEED:MELON": -1777.7777777777778,
+        "market_units:BUY_SEED:MELON": 22.22222222222222,
+        "cash:HIRE:": -425.52777777777777,
+        "market_units:HIRE:": 142.30555555555554,
+        "unit:PLANT:executed": 60.638888888888886,
+        "unit:WEST:executed": 670.1666666666666,
+        "unit:NORTH:executed": 591.3055555555555,
+        "unit:WATER:executed": 692.2222222222222,
+        "cash:BUY_SEED:STRAWBERRY": -2238.8888888888887,
+        "market_units:BUY_SEED:STRAWBERRY": 22.38888888888889,
+        "cash:BUY_SEED:CARROT": -223.88888888888889,
+        "market_units:BUY_SEED:CARROT": 11.194444444444445,
+        "automatic_drop_calls": 29.0,
+        "automatic_drop_discard_units": 0.0,
+        "cash:BUY_PRODUCT:FERTILIZER": -1812.2777777777778,
+        "market_units:BUY_PRODUCT:FERTILIZER": 17.666666666666668,
+        "unit:PICKUP:executed": 19.22222222222222,
+        "unit:FERTILIZE:executed": 17.555555555555557,
+        "unit:SOUTH:executed": 32.583333333333336,
+        "unit:HARVEST:executed": 60.638888888888886,
+        "harvest_units:MELON": 132.66666666666666,
+        "unit:EAST:executed": 46.416666666666664,
+        "unit:DROP:executed": 5.833333333333333,
+        "manual_drop_discard_units": 0.0,
+        "cash:SELL:MELON": 14796.972222222223,
+        "market_units:SELL:MELON": 132.66666666666666,
+        "harvest_units:STRAWBERRY": 88.22222222222223,
+        "unit:DIG:executed": 8.11111111111111,
+        "cash:BUY_SEED:TOMATO": -251.38888888888889,
+        "market_units:BUY_SEED:TOMATO": 5.027777777777778,
+        "cash:SELL:STRAWBERRY": 18443.11111111111,
+        "market_units:SELL:STRAWBERRY": 88.22222222222223,
+        "cash:BUY_SEED:WHEAT": -8.333333333333334,
+        "market_units:BUY_SEED:WHEAT": 0.8333333333333334,
+        "harvest_units:TOMATO": 19.88888888888889,
+        "cash:SELL:TOMATO": 2696.472222222222,
+        "market_units:SELL:TOMATO": 19.88888888888889,
+        "harvest_units:WHEAT": 1.6666666666666667,
+        "cash:SELL:WHEAT": 84.33333333333333,
+        "market_units:SELL:WHEAT": 1.6666666666666667,
+        "harvest_units:CARROT": 29.25,
+        "cash:SELL:CARROT": 1629.25,
+        "market_units:SELL:CARROT": 29.25,
+        "cash:SELL:FERTILIZER": 11.5,
+        "market_units:SELL:FERTILIZER": 0.1111111111111111
+      },
+      "production": {
+        "STRAWBERRY:opportunities": 87.88888888888889,
+        "STRAWBERRY:potential_units": 112.02777777777777,
+        "STRAWBERRY:admitted_units": 88.22222222222223,
+        "STRAWBERRY:clipped_units": 23.805555555555557,
+        "TOMATO:opportunities": 19.88888888888889,
+        "TOMATO:potential_units": 24.666666666666668,
+        "TOMATO:admitted_units": 19.88888888888889,
+        "TOMATO:clipped_units": 4.777777777777778
+      },
+      "terminal_stock": {
+        "WHEAT": 0.0,
+        "CARROT": 0.0,
+        "TOMATO": 0.0,
+        "STRAWBERRY": 0.0,
+        "MELON": 0.0,
+        "EGG": 0.0,
+        "MILK": 0.0,
+        "WOOL": 0.0,
+        "FERTILIZER": 0.0,
+        "GOOSE": 0.0,
+        "COW": 0.0,
+        "SHEEP": 0.0
+      },
+      "sales": {
+        "MELON": {
+          "mean_units": 132.66666666666666,
+          "mean_revenue": 14796.972222222223,
+          "pooled_realized_price": 111.53496649916248
+        },
+        "STRAWBERRY": {
+          "mean_units": 88.22222222222223,
+          "mean_revenue": 18443.11111111111,
+          "pooled_realized_price": 209.0528967254408
+        },
+        "TOMATO": {
+          "mean_units": 19.88888888888889,
+          "mean_revenue": 2696.472222222222,
+          "pooled_realized_price": 135.5768156424581
+        },
+        "WHEAT": {
+          "mean_units": 1.6666666666666667,
+          "mean_revenue": 84.33333333333333,
+          "pooled_realized_price": 50.6
+        },
+        "CARROT": {
+          "mean_units": 29.25,
+          "mean_revenue": 1629.25,
+          "pooled_realized_price": 55.7008547008547
+        },
+        "FERTILIZER": {
+          "mean_units": 0.1111111111111111,
+          "mean_revenue": 11.5,
+          "pooled_realized_price": 103.5
+        }
+      }
+    },
+    "both": {
+      "games": 36,
+      "counts": {
+        "unit:PASS:pass": 1758.0,
+        "cash:BUY_SEED:MELON": -1768.888888888889,
+        "market_units:BUY_SEED:MELON": 22.11111111111111,
+        "cash:HIRE:": -435.44444444444446,
+        "market_units:HIRE:": 143.13888888888889,
+        "unit:PLANT:executed": 61.75,
+        "unit:WEST:executed": 671.0277777777778,
+        "unit:NORTH:executed": 589.4444444444445,
+        "unit:WATER:executed": 693.3333333333334,
+        "cash:BUY_SEED:STRAWBERRY": -2238.8888888888887,
+        "market_units:BUY_SEED:STRAWBERRY": 22.38888888888889,
+        "cash:BUY_SEED:CARROT": -252.22222222222223,
+        "market_units:BUY_SEED:CARROT": 12.61111111111111,
+        "automatic_drop_calls": 29.0,
+        "automatic_drop_discard_units": 0.0,
+        "cash:BUY_PRODUCT:FERTILIZER": -1809.4444444444443,
+        "market_units:BUY_PRODUCT:FERTILIZER": 17.63888888888889,
+        "unit:PICKUP:executed": 19.25,
+        "unit:FERTILIZE:executed": 17.63888888888889,
+        "unit:SOUTH:executed": 30.0,
+        "unit:HARVEST:executed": 81.58333333333333,
+        "harvest_units:MELON": 132.66666666666666,
+        "harvest_units:STRAWBERRY": 112.22222222222223,
+        "unit:EAST:executed": 37.166666666666664,
+        "unit:DROP:executed": 5.0,
+        "manual_drop_discard_units": 0.0,
+        "cash:SELL:MELON": 16008.027777777777,
+        "market_units:SELL:MELON": 132.66666666666666,
+        "cash:SELL:STRAWBERRY": 22377.416666666668,
+        "market_units:SELL:STRAWBERRY": 112.22222222222223,
+        "unit:DIG:executed": 8.222222222222221,
+        "cash:BUY_SEED:TOMATO": -238.88888888888889,
+        "market_units:BUY_SEED:TOMATO": 4.777777777777778,
+        "cash:BUY_SEED:WHEAT": -8.333333333333334,
+        "market_units:BUY_SEED:WHEAT": 0.8333333333333334,
+        "harvest_units:TOMATO": 22.416666666666668,
+        "cash:SELL:TOMATO": 2752.8333333333335,
+        "market_units:SELL:TOMATO": 22.416666666666668,
+        "harvest_units:WHEAT": 1.6666666666666667,
+        "cash:SELL:WHEAT": 85.55555555555556,
+        "market_units:SELL:WHEAT": 1.6666666666666667,
+        "harvest_units:CARROT": 33.30555555555556,
+        "cash:SELL:CARROT": 1822.638888888889,
+        "market_units:SELL:CARROT": 33.30555555555556
+      },
+      "production": {
+        "STRAWBERRY:opportunities": 87.88888888888889,
+        "STRAWBERRY:potential_units": 112.27777777777777,
+        "STRAWBERRY:admitted_units": 112.22222222222223,
+        "STRAWBERRY:clipped_units": 0.05555555555555555,
+        "TOMATO:opportunities": 18.555555555555557,
+        "TOMATO:potential_units": 22.416666666666668,
+        "TOMATO:admitted_units": 22.416666666666668,
+        "TOMATO:clipped_units": 0.0
+      },
+      "terminal_stock": {
+        "WHEAT": 0.0,
+        "CARROT": 0.0,
+        "TOMATO": 0.0,
+        "STRAWBERRY": 0.0,
+        "MELON": 0.0,
+        "EGG": 0.0,
+        "MILK": 0.0,
+        "WOOL": 0.0,
+        "FERTILIZER": 0.0,
+        "GOOSE": 0.0,
+        "COW": 0.0,
+        "SHEEP": 0.0
+      },
+      "sales": {
+        "MELON": {
+          "mean_units": 132.66666666666666,
+          "mean_revenue": 16008.027777777777,
+          "pooled_realized_price": 120.66352596314908
+        },
+        "STRAWBERRY": {
+          "mean_units": 112.22222222222223,
+          "mean_revenue": 22377.416666666668,
+          "pooled_realized_price": 199.40272277227723
+        },
+        "TOMATO": {
+          "mean_units": 22.416666666666668,
+          "mean_revenue": 2752.8333333333335,
+          "pooled_realized_price": 122.80297397769517
+        },
+        "WHEAT": {
+          "mean_units": 1.6666666666666667,
+          "mean_revenue": 85.55555555555556,
+          "pooled_realized_price": 51.333333333333336
+        },
+        "CARROT": {
+          "mean_units": 33.30555555555556,
+          "mean_revenue": 1822.638888888889,
+          "pooled_realized_price": 54.72477064220183
+        }
+      }
+    }
+  },
+  "contrasts": {
+    "fertilizer-baseline": {
+      "net_profit_delta": -2642.3055555555557,
+      "sale_revenue_delta": -666.7777777777778,
+      "other_cash_delta": -1975.5277777777778,
+      "volume_term": 126.01835086190225,
+      "price_term": -804.2961286396802,
+      "entry_exit_term": 11.5
+    },
+    "both-fertilizer": {
+      "net_profit_delta": 5370.805555555556,
+      "sale_revenue_delta": 5384.833333333333,
+      "other_cash_delta": -14.027777777777779,
+      "volume_term": 5466.82664384283,
+      "price_term": -54.159977176163,
+      "entry_exit_term": -27.833333333333332
+    },
+    "both-baseline": {
+      "net_profit_delta": 2728.5,
+      "sale_revenue_delta": 4718.055555555556,
+      "other_cash_delta": -1989.5555555555557,
+      "volume_term": 5591.442407774922,
+      "price_term": -851.6090744415886,
+      "entry_exit_term": -21.77777777777778
+    }
+  },
+  "paired": [
+    {
+      "seed": 12363062,
+      "opponent": "v1",
+      "side": 0,
+      "contrast": "fertilizer-baseline",
+      "net_profit_delta": -7164.0,
+      "sale_revenue_delta": -4373.0,
+      "other_cash_delta": -2791.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": -4873.0,
+          "volume_term": 0.0,
+          "price_term": -4873.000000000001,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 2,
+          "revenue_delta": 500.0,
+          "volume_term": 519.1979385045422,
+          "price_term": -19.197938504545334,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12363062,
+      "opponent": "v1",
+      "side": 0,
+      "contrast": "both-fertilizer",
+      "net_profit_delta": 13867.0,
+      "sale_revenue_delta": 14133.0,
+      "other_cash_delta": -266.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 2,
+          "revenue_delta": 118.0,
+          "volume_term": 118.83333333333334,
+          "price_term": -0.8333333333333215,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 6895.0,
+          "volume_term": 0.0,
+          "price_term": 6895.000000000002,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 35,
+          "revenue_delta": 7120.0,
+          "volume_term": 8842.61833074333,
+          "price_term": -1722.6183307433294,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12363062,
+      "opponent": "v1",
+      "side": 0,
+      "contrast": "both-baseline",
+      "net_profit_delta": 6703.0,
+      "sale_revenue_delta": 9760.0,
+      "other_cash_delta": -3057.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 2,
+          "revenue_delta": 118.0,
+          "volume_term": 118.83333333333334,
+          "price_term": -0.8333333333333215,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 2022.0,
+          "volume_term": 0.0,
+          "price_term": 2022.0000000000011,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 37,
+          "revenue_delta": 7620.0,
+          "volume_term": 9351.230076527247,
+          "price_term": -1731.2300765272487,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12363062,
+      "opponent": "v1",
+      "side": 1,
+      "contrast": "fertilizer-baseline",
+      "net_profit_delta": -7164.0,
+      "sale_revenue_delta": -4373.0,
+      "other_cash_delta": -2791.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": -4873.0,
+          "volume_term": 0.0,
+          "price_term": -4873.000000000001,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 2,
+          "revenue_delta": 500.0,
+          "volume_term": 519.1979385045422,
+          "price_term": -19.197938504545334,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12363062,
+      "opponent": "v1",
+      "side": 1,
+      "contrast": "both-fertilizer",
+      "net_profit_delta": 13867.0,
+      "sale_revenue_delta": 14133.0,
+      "other_cash_delta": -266.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 2,
+          "revenue_delta": 118.0,
+          "volume_term": 118.83333333333334,
+          "price_term": -0.8333333333333215,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 6895.0,
+          "volume_term": 0.0,
+          "price_term": 6895.000000000002,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 35,
+          "revenue_delta": 7120.0,
+          "volume_term": 8842.61833074333,
+          "price_term": -1722.6183307433294,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12363062,
+      "opponent": "v1",
+      "side": 1,
+      "contrast": "both-baseline",
+      "net_profit_delta": 6703.0,
+      "sale_revenue_delta": 9760.0,
+      "other_cash_delta": -3057.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 2,
+          "revenue_delta": 118.0,
+          "volume_term": 118.83333333333334,
+          "price_term": -0.8333333333333215,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 2022.0,
+          "volume_term": 0.0,
+          "price_term": 2022.0000000000011,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 37,
+          "revenue_delta": 7620.0,
+          "volume_term": 9351.230076527247,
+          "price_term": -1731.2300765272487,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12363062,
+      "opponent": "market",
+      "side": 0,
+      "contrast": "fertilizer-baseline",
+      "net_profit_delta": -2168.0,
+      "sale_revenue_delta": 518.0,
+      "other_cash_delta": -2686.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 18.0,
+          "volume_term": 0.0,
+          "price_term": 17.999999999998636,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 2,
+          "revenue_delta": 500.0,
+          "volume_term": 504.28074772886094,
+          "price_term": -4.2807477288595805,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12363062,
+      "opponent": "market",
+      "side": 0,
+      "contrast": "both-fertilizer",
+      "net_profit_delta": 6128.0,
+      "sale_revenue_delta": 6289.0,
+      "other_cash_delta": -161.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 2,
+          "revenue_delta": 108.0,
+          "volume_term": 108.41666666666666,
+          "price_term": -0.4166666666666785,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 33,
+          "revenue_delta": 6181.0,
+          "volume_term": 8069.666962174942,
+          "price_term": -1888.6669621749438,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12363062,
+      "opponent": "market",
+      "side": 0,
+      "contrast": "both-baseline",
+      "net_profit_delta": 3960.0,
+      "sale_revenue_delta": 6807.0,
+      "other_cash_delta": -2847.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 2,
+          "revenue_delta": 108.0,
+          "volume_term": 108.41666666666666,
+          "price_term": -0.4166666666666785,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 18.0,
+          "volume_term": 0.0,
+          "price_term": 17.999999999998636,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 35,
+          "revenue_delta": 6681.0,
+          "volume_term": 8559.437809447343,
+          "price_term": -1878.4378094473452,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12363062,
+      "opponent": "market",
+      "side": 1,
+      "contrast": "fertilizer-baseline",
+      "net_profit_delta": -2168.0,
+      "sale_revenue_delta": 518.0,
+      "other_cash_delta": -2686.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 18.0,
+          "volume_term": 0.0,
+          "price_term": 17.999999999998636,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 2,
+          "revenue_delta": 500.0,
+          "volume_term": 504.28074772886094,
+          "price_term": -4.2807477288595805,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12363062,
+      "opponent": "market",
+      "side": 1,
+      "contrast": "both-fertilizer",
+      "net_profit_delta": 6128.0,
+      "sale_revenue_delta": 6289.0,
+      "other_cash_delta": -161.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 2,
+          "revenue_delta": 108.0,
+          "volume_term": 108.41666666666666,
+          "price_term": -0.4166666666666785,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 33,
+          "revenue_delta": 6181.0,
+          "volume_term": 8069.666962174942,
+          "price_term": -1888.6669621749438,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12363062,
+      "opponent": "market",
+      "side": 1,
+      "contrast": "both-baseline",
+      "net_profit_delta": 3960.0,
+      "sale_revenue_delta": 6807.0,
+      "other_cash_delta": -2847.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 2,
+          "revenue_delta": 108.0,
+          "volume_term": 108.41666666666666,
+          "price_term": -0.4166666666666785,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 18.0,
+          "volume_term": 0.0,
+          "price_term": 17.999999999998636,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 35,
+          "revenue_delta": 6681.0,
+          "volume_term": 8559.437809447343,
+          "price_term": -1878.4378094473452,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12363062,
+      "opponent": "teacher",
+      "side": 0,
+      "contrast": "fertilizer-baseline",
+      "net_profit_delta": -4162.0,
+      "sale_revenue_delta": -1311.0,
+      "other_cash_delta": -2851.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": -1937.0,
+          "volume_term": 0.0,
+          "price_term": -1936.9999999999998,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 2,
+          "revenue_delta": 626.0,
+          "volume_term": 497.65234102026557,
+          "price_term": 128.3476589797351,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12363062,
+      "opponent": "teacher",
+      "side": 0,
+      "contrast": "both-fertilizer",
+      "net_profit_delta": 10398.0,
+      "sale_revenue_delta": 10339.0,
+      "other_cash_delta": 59.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 2,
+          "revenue_delta": 118.0,
+          "volume_term": 118.83333333333334,
+          "price_term": -0.8333333333333215,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 4006.0,
+          "volume_term": 0.0,
+          "price_term": 4005.9999999999995,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 31,
+          "revenue_delta": 6215.0,
+          "volume_term": 7563.019118038903,
+          "price_term": -1348.0191180389002,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12363062,
+      "opponent": "teacher",
+      "side": 0,
+      "contrast": "both-baseline",
+      "net_profit_delta": 6236.0,
+      "sale_revenue_delta": 9028.0,
+      "other_cash_delta": -2792.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 2,
+          "revenue_delta": 118.0,
+          "volume_term": 118.83333333333334,
+          "price_term": -0.8333333333333215,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 2069.0,
+          "volume_term": 0.0,
+          "price_term": 2068.9999999999995,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 33,
+          "revenue_delta": 6841.0,
+          "volume_term": 8031.163906610561,
+          "price_term": -1190.163906610558,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12363062,
+      "opponent": "teacher",
+      "side": 1,
+      "contrast": "fertilizer-baseline",
+      "net_profit_delta": -4162.0,
+      "sale_revenue_delta": -1311.0,
+      "other_cash_delta": -2851.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": -1937.0,
+          "volume_term": 0.0,
+          "price_term": -1936.9999999999998,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 2,
+          "revenue_delta": 626.0,
+          "volume_term": 497.65234102026557,
+          "price_term": 128.3476589797351,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12363062,
+      "opponent": "teacher",
+      "side": 1,
+      "contrast": "both-fertilizer",
+      "net_profit_delta": 10398.0,
+      "sale_revenue_delta": 10339.0,
+      "other_cash_delta": 59.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 2,
+          "revenue_delta": 118.0,
+          "volume_term": 118.83333333333334,
+          "price_term": -0.8333333333333215,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 4006.0,
+          "volume_term": 0.0,
+          "price_term": 4005.9999999999995,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 31,
+          "revenue_delta": 6215.0,
+          "volume_term": 7563.019118038903,
+          "price_term": -1348.0191180389002,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12363062,
+      "opponent": "teacher",
+      "side": 1,
+      "contrast": "both-baseline",
+      "net_profit_delta": 6236.0,
+      "sale_revenue_delta": 9028.0,
+      "other_cash_delta": -2792.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 2,
+          "revenue_delta": 118.0,
+          "volume_term": 118.83333333333334,
+          "price_term": -0.8333333333333215,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 2069.0,
+          "volume_term": 0.0,
+          "price_term": 2068.9999999999995,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 33,
+          "revenue_delta": 6841.0,
+          "volume_term": 8031.163906610561,
+          "price_term": -1190.163906610558,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12174423,
+      "opponent": "v1",
+      "side": 0,
+      "contrast": "fertilizer-baseline",
+      "net_profit_delta": -7240.0,
+      "sale_revenue_delta": -4873.0,
+      "other_cash_delta": -2367.0,
+      "sales": [
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": -4873.0,
+          "volume_term": 0.0,
+          "price_term": -4873.000000000001,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "WHEAT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12174423,
+      "opponent": "v1",
+      "side": 0,
+      "contrast": "both-fertilizer",
+      "net_profit_delta": 11574.0,
+      "sale_revenue_delta": 11610.0,
+      "other_cash_delta": -36.0,
+      "sales": [
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 6895.0,
+          "volume_term": 0.0,
+          "price_term": 6895.000000000002,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 27,
+          "revenue_delta": 4675.0,
+          "volume_term": 6172.065,
+          "price_term": -1497.0649999999998,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": -66.0,
+          "volume_term": 0.0,
+          "price_term": -66.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "WHEAT",
+          "quantity_delta": 2,
+          "revenue_delta": 106.0,
+          "volume_term": 106.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12174423,
+      "opponent": "v1",
+      "side": 0,
+      "contrast": "both-baseline",
+      "net_profit_delta": 4334.0,
+      "sale_revenue_delta": 6737.0,
+      "other_cash_delta": -2403.0,
+      "sales": [
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 2022.0,
+          "volume_term": 0.0,
+          "price_term": 2022.0000000000011,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 27,
+          "revenue_delta": 4675.0,
+          "volume_term": 6172.065,
+          "price_term": -1497.0649999999998,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": -66.0,
+          "volume_term": 0.0,
+          "price_term": -66.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "WHEAT",
+          "quantity_delta": 2,
+          "revenue_delta": 106.0,
+          "volume_term": 106.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12174423,
+      "opponent": "v1",
+      "side": 1,
+      "contrast": "fertilizer-baseline",
+      "net_profit_delta": -7240.0,
+      "sale_revenue_delta": -4873.0,
+      "other_cash_delta": -2367.0,
+      "sales": [
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": -4873.0,
+          "volume_term": 0.0,
+          "price_term": -4873.000000000001,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "WHEAT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12174423,
+      "opponent": "v1",
+      "side": 1,
+      "contrast": "both-fertilizer",
+      "net_profit_delta": 11574.0,
+      "sale_revenue_delta": 11610.0,
+      "other_cash_delta": -36.0,
+      "sales": [
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 6895.0,
+          "volume_term": 0.0,
+          "price_term": 6895.000000000002,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 27,
+          "revenue_delta": 4675.0,
+          "volume_term": 6172.065,
+          "price_term": -1497.0649999999998,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": -66.0,
+          "volume_term": 0.0,
+          "price_term": -66.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "WHEAT",
+          "quantity_delta": 2,
+          "revenue_delta": 106.0,
+          "volume_term": 106.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12174423,
+      "opponent": "v1",
+      "side": 1,
+      "contrast": "both-baseline",
+      "net_profit_delta": 4334.0,
+      "sale_revenue_delta": 6737.0,
+      "other_cash_delta": -2403.0,
+      "sales": [
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 2022.0,
+          "volume_term": 0.0,
+          "price_term": 2022.0000000000011,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 27,
+          "revenue_delta": 4675.0,
+          "volume_term": 6172.065,
+          "price_term": -1497.0649999999998,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": -66.0,
+          "volume_term": 0.0,
+          "price_term": -66.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "WHEAT",
+          "quantity_delta": 2,
+          "revenue_delta": 106.0,
+          "volume_term": 106.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12174423,
+      "opponent": "market",
+      "side": 0,
+      "contrast": "fertilizer-baseline",
+      "net_profit_delta": -2128.0,
+      "sale_revenue_delta": 18.0,
+      "other_cash_delta": -2146.0,
+      "sales": [
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 18.0,
+          "volume_term": 0.0,
+          "price_term": 17.999999999998636,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "WHEAT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12174423,
+      "opponent": "market",
+      "side": 0,
+      "contrast": "both-fertilizer",
+      "net_profit_delta": 4399.0,
+      "sale_revenue_delta": 4401.0,
+      "other_cash_delta": -2.0,
+      "sales": [
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 26,
+          "revenue_delta": 4509.0,
+          "volume_term": 5647.519841269841,
+          "price_term": -1138.5198412698426,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": -212.0,
+          "volume_term": 0.0,
+          "price_term": -211.9999999999999,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "WHEAT",
+          "quantity_delta": 2,
+          "revenue_delta": 104.0,
+          "volume_term": 104.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12174423,
+      "opponent": "market",
+      "side": 0,
+      "contrast": "both-baseline",
+      "net_profit_delta": 2271.0,
+      "sale_revenue_delta": 4419.0,
+      "other_cash_delta": -2148.0,
+      "sales": [
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 18.0,
+          "volume_term": 0.0,
+          "price_term": 17.999999999998636,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 26,
+          "revenue_delta": 4509.0,
+          "volume_term": 5647.519841269841,
+          "price_term": -1138.5198412698426,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": -212.0,
+          "volume_term": 0.0,
+          "price_term": -211.9999999999999,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "WHEAT",
+          "quantity_delta": 2,
+          "revenue_delta": 104.0,
+          "volume_term": 104.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12174423,
+      "opponent": "market",
+      "side": 1,
+      "contrast": "fertilizer-baseline",
+      "net_profit_delta": -2128.0,
+      "sale_revenue_delta": 18.0,
+      "other_cash_delta": -2146.0,
+      "sales": [
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 18.0,
+          "volume_term": 0.0,
+          "price_term": 17.999999999998636,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "WHEAT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12174423,
+      "opponent": "market",
+      "side": 1,
+      "contrast": "both-fertilizer",
+      "net_profit_delta": 4399.0,
+      "sale_revenue_delta": 4401.0,
+      "other_cash_delta": -2.0,
+      "sales": [
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 26,
+          "revenue_delta": 4509.0,
+          "volume_term": 5647.519841269841,
+          "price_term": -1138.5198412698426,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": -212.0,
+          "volume_term": 0.0,
+          "price_term": -211.9999999999999,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "WHEAT",
+          "quantity_delta": 2,
+          "revenue_delta": 104.0,
+          "volume_term": 104.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12174423,
+      "opponent": "market",
+      "side": 1,
+      "contrast": "both-baseline",
+      "net_profit_delta": 2271.0,
+      "sale_revenue_delta": 4419.0,
+      "other_cash_delta": -2148.0,
+      "sales": [
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 18.0,
+          "volume_term": 0.0,
+          "price_term": 17.999999999998636,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 26,
+          "revenue_delta": 4509.0,
+          "volume_term": 5647.519841269841,
+          "price_term": -1138.5198412698426,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": -212.0,
+          "volume_term": 0.0,
+          "price_term": -211.9999999999999,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "WHEAT",
+          "quantity_delta": 2,
+          "revenue_delta": 104.0,
+          "volume_term": 104.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12174423,
+      "opponent": "teacher",
+      "side": 0,
+      "contrast": "fertilizer-baseline",
+      "net_profit_delta": -4116.0,
+      "sale_revenue_delta": -1937.0,
+      "other_cash_delta": -2179.0,
+      "sales": [
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": -1937.0,
+          "volume_term": 0.0,
+          "price_term": -1936.9999999999998,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "WHEAT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12174423,
+      "opponent": "teacher",
+      "side": 0,
+      "contrast": "both-fertilizer",
+      "net_profit_delta": 8167.0,
+      "sale_revenue_delta": 8191.0,
+      "other_cash_delta": -24.0,
+      "sales": [
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 4006.0,
+          "volume_term": 0.0,
+          "price_term": 4005.9999999999995,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 26,
+          "revenue_delta": 4157.0,
+          "volume_term": 5654.806031746032,
+          "price_term": -1497.806031746032,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": -78.0,
+          "volume_term": 0.0,
+          "price_term": -78.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "WHEAT",
+          "quantity_delta": 2,
+          "revenue_delta": 106.0,
+          "volume_term": 106.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12174423,
+      "opponent": "teacher",
+      "side": 0,
+      "contrast": "both-baseline",
+      "net_profit_delta": 4051.0,
+      "sale_revenue_delta": 6254.0,
+      "other_cash_delta": -2203.0,
+      "sales": [
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 2069.0,
+          "volume_term": 0.0,
+          "price_term": 2068.9999999999995,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 26,
+          "revenue_delta": 4157.0,
+          "volume_term": 5654.806031746032,
+          "price_term": -1497.806031746032,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": -78.0,
+          "volume_term": 0.0,
+          "price_term": -78.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "WHEAT",
+          "quantity_delta": 2,
+          "revenue_delta": 106.0,
+          "volume_term": 106.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12174423,
+      "opponent": "teacher",
+      "side": 1,
+      "contrast": "fertilizer-baseline",
+      "net_profit_delta": -4116.0,
+      "sale_revenue_delta": -1937.0,
+      "other_cash_delta": -2179.0,
+      "sales": [
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": -1937.0,
+          "volume_term": 0.0,
+          "price_term": -1936.9999999999998,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "WHEAT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12174423,
+      "opponent": "teacher",
+      "side": 1,
+      "contrast": "both-fertilizer",
+      "net_profit_delta": 8167.0,
+      "sale_revenue_delta": 8191.0,
+      "other_cash_delta": -24.0,
+      "sales": [
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 4006.0,
+          "volume_term": 0.0,
+          "price_term": 4005.9999999999995,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 26,
+          "revenue_delta": 4157.0,
+          "volume_term": 5654.806031746032,
+          "price_term": -1497.806031746032,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": -78.0,
+          "volume_term": 0.0,
+          "price_term": -78.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "WHEAT",
+          "quantity_delta": 2,
+          "revenue_delta": 106.0,
+          "volume_term": 106.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12174423,
+      "opponent": "teacher",
+      "side": 1,
+      "contrast": "both-baseline",
+      "net_profit_delta": 4051.0,
+      "sale_revenue_delta": 6254.0,
+      "other_cash_delta": -2203.0,
+      "sales": [
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 2069.0,
+          "volume_term": 0.0,
+          "price_term": 2068.9999999999995,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 26,
+          "revenue_delta": 4157.0,
+          "volume_term": 5654.806031746032,
+          "price_term": -1497.806031746032,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": -78.0,
+          "volume_term": 0.0,
+          "price_term": -78.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "WHEAT",
+          "quantity_delta": 2,
+          "revenue_delta": 106.0,
+          "volume_term": 106.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12705573,
+      "opponent": "v1",
+      "side": 0,
+      "contrast": "fertilizer-baseline",
+      "net_profit_delta": -2410.0,
+      "sale_revenue_delta": -581.0,
+      "other_cash_delta": -1829.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 30,
+          "revenue_delta": 1313.0,
+          "volume_term": 1314.1834387579067,
+          "price_term": -1.1834387579068988,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "FERTILIZER",
+          "quantity_delta": 1,
+          "revenue_delta": 103.0,
+          "volume_term": 0,
+          "price_term": 0,
+          "entry_exit_term": 103.0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 6,
+          "revenue_delta": 66.0,
+          "volume_term": 662.6501976284585,
+          "price_term": -596.650197628459,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": -4,
+          "revenue_delta": -1328.0,
+          "volume_term": -697.15,
+          "price_term": -630.8500000000003,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": -8,
+          "revenue_delta": -735.0,
+          "volume_term": -733.95,
+          "price_term": -1.0500000000002387,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12705573,
+      "opponent": "v1",
+      "side": 0,
+      "contrast": "both-fertilizer",
+      "net_profit_delta": 3970.0,
+      "sale_revenue_delta": 4107.0,
+      "other_cash_delta": -137.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": -1,
+          "revenue_delta": -68.0,
+          "volume_term": -43.714994934143874,
+          "price_term": -24.28500506585684,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "FERTILIZER",
+          "quantity_delta": -1,
+          "revenue_delta": -103.0,
+          "volume_term": 0,
+          "price_term": 0,
+          "entry_exit_term": -103.0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": -9.0,
+          "volume_term": 0.0,
+          "price_term": -8.999999999999488,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 16,
+          "revenue_delta": 2877.0,
+          "volume_term": 2629.822222222222,
+          "price_term": 247.17777777777792,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 23,
+          "revenue_delta": 1410.0,
+          "volume_term": 2031.8113470873786,
+          "price_term": -621.8113470873787,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12705573,
+      "opponent": "v1",
+      "side": 0,
+      "contrast": "both-baseline",
+      "net_profit_delta": 1560.0,
+      "sale_revenue_delta": 3526.0,
+      "other_cash_delta": -1966.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 29,
+          "revenue_delta": 1245.0,
+          "volume_term": 1267.8710424710425,
+          "price_term": -22.87104247104316,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 6,
+          "revenue_delta": 57.0,
+          "volume_term": 662.4545454545455,
+          "price_term": -605.4545454545454,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 12,
+          "revenue_delta": 1549.0,
+          "volume_term": 2144.4166666666665,
+          "price_term": -595.4166666666669,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 15,
+          "revenue_delta": 675.0,
+          "volume_term": 1325.1881067961165,
+          "price_term": -650.1881067961169,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12705573,
+      "opponent": "v1",
+      "side": 1,
+      "contrast": "fertilizer-baseline",
+      "net_profit_delta": -5760.0,
+      "sale_revenue_delta": -4047.0,
+      "other_cash_delta": -1713.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 27,
+          "revenue_delta": 805.0,
+          "volume_term": 1232.245353982301,
+          "price_term": -427.24535398230097,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "FERTILIZER",
+          "quantity_delta": 1,
+          "revenue_delta": 103.0,
+          "volume_term": 0,
+          "price_term": 0,
+          "entry_exit_term": 103.0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 6,
+          "revenue_delta": 48.0,
+          "volume_term": 662.6590909090909,
+          "price_term": -614.6590909090902,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": -4,
+          "revenue_delta": -876.0,
+          "volume_term": -743.8166666666666,
+          "price_term": -132.1833333333338,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": -8,
+          "revenue_delta": -4127.0,
+          "volume_term": -887.1772727272728,
+          "price_term": -3239.822727272728,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12705573,
+      "opponent": "v1",
+      "side": 1,
+      "contrast": "both-fertilizer",
+      "net_profit_delta": 3559.0,
+      "sale_revenue_delta": 3717.0,
+      "other_cash_delta": -158.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 50,
+          "revenue_delta": 2374.0,
+          "volume_term": 2220.7236842105262,
+          "price_term": 153.27631578947313,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "FERTILIZER",
+          "quantity_delta": -1,
+          "revenue_delta": -103.0,
+          "volume_term": 0,
+          "price_term": 0,
+          "entry_exit_term": -103.0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 9.0,
+          "volume_term": 0.0,
+          "price_term": 8.999999999999488,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 16,
+          "revenue_delta": 1729.0,
+          "volume_term": 2660.9333333333334,
+          "price_term": -931.9333333333333,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 3,
+          "revenue_delta": -292.0,
+          "volume_term": 264.59344879518073,
+          "price_term": -556.5934487951804,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12705573,
+      "opponent": "v1",
+      "side": 1,
+      "contrast": "both-baseline",
+      "net_profit_delta": -2201.0,
+      "sale_revenue_delta": -330.0,
+      "other_cash_delta": -1871.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 77,
+          "revenue_delta": 3179.0,
+          "volume_term": 3549.945668374476,
+          "price_term": -370.9456683744766,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 6,
+          "revenue_delta": 57.0,
+          "volume_term": 662.854743083004,
+          "price_term": -605.8547430830037,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 12,
+          "revenue_delta": 853.0,
+          "volume_term": 2031.75,
+          "price_term": -1178.7500000000005,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": -5,
+          "revenue_delta": -4419.0,
+          "volume_term": -537.4123767798467,
+          "price_term": -3881.5876232201535,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12705573,
+      "opponent": "market",
+      "side": 0,
+      "contrast": "fertilizer-baseline",
+      "net_profit_delta": 613.0,
+      "sale_revenue_delta": 2522.0,
+      "other_cash_delta": -1909.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": -8,
+          "revenue_delta": 59.0,
+          "volume_term": -354.475122231809,
+          "price_term": 413.4751222318096,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "FERTILIZER",
+          "quantity_delta": 1,
+          "revenue_delta": 104.0,
+          "volume_term": 0,
+          "price_term": 0,
+          "entry_exit_term": 104.0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 11.0,
+          "volume_term": 0.0,
+          "price_term": 11.00000000000125,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 4,
+          "revenue_delta": 2348.0,
+          "volume_term": 383.3095238095238,
+          "price_term": 1964.6904761904768,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12705573,
+      "opponent": "market",
+      "side": 0,
+      "contrast": "both-fertilizer",
+      "net_profit_delta": 3409.0,
+      "sale_revenue_delta": 3643.0,
+      "other_cash_delta": -234.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": -1,
+          "revenue_delta": -47.0,
+          "volume_term": -46.057250426952336,
+          "price_term": -0.9427495730481041,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "FERTILIZER",
+          "quantity_delta": -1,
+          "revenue_delta": -104.0,
+          "volume_term": 0,
+          "price_term": 0,
+          "entry_exit_term": -104.0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 19,
+          "revenue_delta": 2663.0,
+          "volume_term": 3336.635658914728,
+          "price_term": -673.6356589147288,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 27,
+          "revenue_delta": 1131.0,
+          "volume_term": 2688.583695652174,
+          "price_term": -1557.5836956521734,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12705573,
+      "opponent": "market",
+      "side": 0,
+      "contrast": "both-baseline",
+      "net_profit_delta": 4022.0,
+      "sale_revenue_delta": 6165.0,
+      "other_cash_delta": -2143.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": -9,
+          "revenue_delta": 12.0,
+          "volume_term": -398.7471347744088,
+          "price_term": 410.74713477440895,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 11.0,
+          "volume_term": 0.0,
+          "price_term": 11.00000000000125,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 19,
+          "revenue_delta": 2663.0,
+          "volume_term": 3336.635658914728,
+          "price_term": -673.6356589147288,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 31,
+          "revenue_delta": 3479.0,
+          "volume_term": 2732.7912008281573,
+          "price_term": 746.2087991718439,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12705573,
+      "opponent": "market",
+      "side": 1,
+      "contrast": "fertilizer-baseline",
+      "net_profit_delta": 613.0,
+      "sale_revenue_delta": 2522.0,
+      "other_cash_delta": -1909.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": -8,
+          "revenue_delta": 59.0,
+          "volume_term": -354.475122231809,
+          "price_term": 413.4751222318096,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "FERTILIZER",
+          "quantity_delta": 1,
+          "revenue_delta": 104.0,
+          "volume_term": 0,
+          "price_term": 0,
+          "entry_exit_term": 104.0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 11.0,
+          "volume_term": 0.0,
+          "price_term": 11.00000000000125,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 4,
+          "revenue_delta": 2348.0,
+          "volume_term": 383.3095238095238,
+          "price_term": 1964.6904761904768,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12705573,
+      "opponent": "market",
+      "side": 1,
+      "contrast": "both-fertilizer",
+      "net_profit_delta": 3409.0,
+      "sale_revenue_delta": 3643.0,
+      "other_cash_delta": -234.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": -1,
+          "revenue_delta": -47.0,
+          "volume_term": -46.057250426952336,
+          "price_term": -0.9427495730481041,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "FERTILIZER",
+          "quantity_delta": -1,
+          "revenue_delta": -104.0,
+          "volume_term": 0,
+          "price_term": 0,
+          "entry_exit_term": -104.0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 19,
+          "revenue_delta": 2663.0,
+          "volume_term": 3336.635658914728,
+          "price_term": -673.6356589147288,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 27,
+          "revenue_delta": 1131.0,
+          "volume_term": 2688.583695652174,
+          "price_term": -1557.5836956521734,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12705573,
+      "opponent": "market",
+      "side": 1,
+      "contrast": "both-baseline",
+      "net_profit_delta": 4022.0,
+      "sale_revenue_delta": 6165.0,
+      "other_cash_delta": -2143.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": -9,
+          "revenue_delta": 12.0,
+          "volume_term": -398.7471347744088,
+          "price_term": 410.74713477440895,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 11.0,
+          "volume_term": 0.0,
+          "price_term": 11.00000000000125,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 19,
+          "revenue_delta": 2663.0,
+          "volume_term": 3336.635658914728,
+          "price_term": -673.6356589147288,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 31,
+          "revenue_delta": 3479.0,
+          "volume_term": 2732.7912008281573,
+          "price_term": 746.2087991718439,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12705573,
+      "opponent": "teacher",
+      "side": 0,
+      "contrast": "fertilizer-baseline",
+      "net_profit_delta": -1904.0,
+      "sale_revenue_delta": -153.0,
+      "other_cash_delta": -1751.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 6,
+          "revenue_delta": 260.0,
+          "volume_term": 246.67483660130716,
+          "price_term": 13.325163398692794,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 6,
+          "revenue_delta": 66.0,
+          "volume_term": 662.6501976284585,
+          "price_term": -596.650197628459,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 0,
+          "revenue_delta": 22.0,
+          "volume_term": 0.0,
+          "price_term": 21.999999999999886,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": -4,
+          "revenue_delta": -305.0,
+          "volume_term": -326.52173913043475,
+          "price_term": 21.521739130434838,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "WHEAT",
+          "quantity_delta": -4,
+          "revenue_delta": -196.0,
+          "volume_term": -196.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12705573,
+      "opponent": "teacher",
+      "side": 0,
+      "contrast": "both-fertilizer",
+      "net_profit_delta": 3587.0,
+      "sale_revenue_delta": 3497.0,
+      "other_cash_delta": 90.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 63,
+          "revenue_delta": 3180.0,
+          "volume_term": 2702.015350877193,
+          "price_term": 477.9846491228077,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": -9.0,
+          "volume_term": 0.0,
+          "price_term": -8.999999999999488,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 14,
+          "revenue_delta": 1151.0,
+          "volume_term": 2114.7411764705885,
+          "price_term": -963.741176470588,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 1,
+          "revenue_delta": -237.0,
+          "volume_term": 79.95926966292134,
+          "price_term": -316.9592696629209,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "WHEAT",
+          "quantity_delta": -12,
+          "revenue_delta": -588.0,
+          "volume_term": 0,
+          "price_term": 0,
+          "entry_exit_term": -588.0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12705573,
+      "opponent": "teacher",
+      "side": 0,
+      "contrast": "both-baseline",
+      "net_profit_delta": 1683.0,
+      "sale_revenue_delta": 3344.0,
+      "other_cash_delta": -1661.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 69,
+          "revenue_delta": 3440.0,
+          "volume_term": 2954.9718782249743,
+          "price_term": 485.0281217750265,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 6,
+          "revenue_delta": 57.0,
+          "volume_term": 662.4545454545455,
+          "price_term": -605.4545454545454,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 14,
+          "revenue_delta": 1173.0,
+          "volume_term": 2107.041176470588,
+          "price_term": -934.0411764705882,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": -3,
+          "revenue_delta": -542.0,
+          "volume_term": -239.51911333659012,
+          "price_term": -302.48088666340936,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "WHEAT",
+          "quantity_delta": -16,
+          "revenue_delta": -784.0,
+          "volume_term": 0,
+          "price_term": 0,
+          "entry_exit_term": -784.0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12705573,
+      "opponent": "teacher",
+      "side": 1,
+      "contrast": "fertilizer-baseline",
+      "net_profit_delta": -1755.0,
+      "sale_revenue_delta": -351.0,
+      "other_cash_delta": -1404.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": -2,
+          "revenue_delta": -133.0,
+          "volume_term": -91.99144144144144,
+          "price_term": -41.00855855855892,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 6,
+          "revenue_delta": 57.0,
+          "volume_term": 662.3211462450593,
+          "price_term": -605.321146245058,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 0,
+          "revenue_delta": 22.0,
+          "volume_term": 0.0,
+          "price_term": 21.999999999999886,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": -4,
+          "revenue_delta": -297.0,
+          "volume_term": -330.0473684210526,
+          "price_term": 33.047368421052795,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12705573,
+      "opponent": "teacher",
+      "side": 1,
+      "contrast": "both-fertilizer",
+      "net_profit_delta": 3289.0,
+      "sale_revenue_delta": 3275.0,
+      "other_cash_delta": 14.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 24,
+          "revenue_delta": 882.0,
+          "volume_term": 1085.3438089252043,
+          "price_term": -203.34380892520358,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 3.0,
+          "volume_term": 0.0,
+          "price_term": 2.9999999999998295,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 14,
+          "revenue_delta": 1728.0,
+          "volume_term": 1913.3470588235296,
+          "price_term": -185.3470588235289,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 10,
+          "revenue_delta": 662.0,
+          "volume_term": 817.6300489596083,
+          "price_term": -155.63004895960808,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12705573,
+      "opponent": "teacher",
+      "side": 1,
+      "contrast": "both-baseline",
+      "net_profit_delta": 1534.0,
+      "sale_revenue_delta": 2924.0,
+      "other_cash_delta": -1390.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 22,
+          "revenue_delta": 749.0,
+          "volume_term": 997.925968992248,
+          "price_term": -248.92596899224776,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 6,
+          "revenue_delta": 60.0,
+          "volume_term": 662.3863636363637,
+          "price_term": -602.3863636363625,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 14,
+          "revenue_delta": 1750.0,
+          "volume_term": 1905.6470588235295,
+          "price_term": -155.64705882352905,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 6,
+          "revenue_delta": 365.0,
+          "volume_term": 489.30697674418604,
+          "price_term": -124.30697674418562,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12663293,
+      "opponent": "v1",
+      "side": 0,
+      "contrast": "fertilizer-baseline",
+      "net_profit_delta": -1217.0,
+      "sale_revenue_delta": 0.0,
+      "other_cash_delta": -1217.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12663293,
+      "opponent": "v1",
+      "side": 0,
+      "contrast": "both-fertilizer",
+      "net_profit_delta": 2303.0,
+      "sale_revenue_delta": 2065.0,
+      "other_cash_delta": 238.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 18,
+          "revenue_delta": 2065.0,
+          "volume_term": 2619.1449152542373,
+          "price_term": -554.1449152542372,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12663293,
+      "opponent": "v1",
+      "side": 0,
+      "contrast": "both-baseline",
+      "net_profit_delta": 1086.0,
+      "sale_revenue_delta": 2065.0,
+      "other_cash_delta": -979.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 18,
+          "revenue_delta": 2065.0,
+          "volume_term": 2619.1449152542373,
+          "price_term": -554.1449152542372,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12663293,
+      "opponent": "v1",
+      "side": 1,
+      "contrast": "fertilizer-baseline",
+      "net_profit_delta": -1217.0,
+      "sale_revenue_delta": 0.0,
+      "other_cash_delta": -1217.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12663293,
+      "opponent": "v1",
+      "side": 1,
+      "contrast": "both-fertilizer",
+      "net_profit_delta": 2303.0,
+      "sale_revenue_delta": 2065.0,
+      "other_cash_delta": 238.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 18,
+          "revenue_delta": 2065.0,
+          "volume_term": 2619.1449152542373,
+          "price_term": -554.1449152542372,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12663293,
+      "opponent": "v1",
+      "side": 1,
+      "contrast": "both-baseline",
+      "net_profit_delta": 1086.0,
+      "sale_revenue_delta": 2065.0,
+      "other_cash_delta": -979.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 18,
+          "revenue_delta": 2065.0,
+          "volume_term": 2619.1449152542373,
+          "price_term": -554.1449152542372,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12663293,
+      "opponent": "market",
+      "side": 0,
+      "contrast": "fertilizer-baseline",
+      "net_profit_delta": -544.0,
+      "sale_revenue_delta": 0.0,
+      "other_cash_delta": -544.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12663293,
+      "opponent": "market",
+      "side": 0,
+      "contrast": "both-fertilizer",
+      "net_profit_delta": 385.0,
+      "sale_revenue_delta": 380.0,
+      "other_cash_delta": 5.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 10,
+          "revenue_delta": 380.0,
+          "volume_term": 1038.8272727272727,
+          "price_term": -658.8272727272719,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12663293,
+      "opponent": "market",
+      "side": 0,
+      "contrast": "both-baseline",
+      "net_profit_delta": -159.0,
+      "sale_revenue_delta": 380.0,
+      "other_cash_delta": -539.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 10,
+          "revenue_delta": 380.0,
+          "volume_term": 1038.8272727272727,
+          "price_term": -658.8272727272719,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12663293,
+      "opponent": "market",
+      "side": 1,
+      "contrast": "fertilizer-baseline",
+      "net_profit_delta": -544.0,
+      "sale_revenue_delta": 0.0,
+      "other_cash_delta": -544.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12663293,
+      "opponent": "market",
+      "side": 1,
+      "contrast": "both-fertilizer",
+      "net_profit_delta": 385.0,
+      "sale_revenue_delta": 380.0,
+      "other_cash_delta": 5.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 10,
+          "revenue_delta": 380.0,
+          "volume_term": 1038.8272727272727,
+          "price_term": -658.8272727272719,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12663293,
+      "opponent": "market",
+      "side": 1,
+      "contrast": "both-baseline",
+      "net_profit_delta": -159.0,
+      "sale_revenue_delta": 380.0,
+      "other_cash_delta": -539.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 10,
+          "revenue_delta": 380.0,
+          "volume_term": 1038.8272727272727,
+          "price_term": -658.8272727272719,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12663293,
+      "opponent": "teacher",
+      "side": 0,
+      "contrast": "fertilizer-baseline",
+      "net_profit_delta": -875.0,
+      "sale_revenue_delta": 0.0,
+      "other_cash_delta": -875.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12663293,
+      "opponent": "teacher",
+      "side": 0,
+      "contrast": "both-fertilizer",
+      "net_profit_delta": 1986.0,
+      "sale_revenue_delta": 1883.0,
+      "other_cash_delta": 103.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 14,
+          "revenue_delta": 1883.0,
+          "volume_term": 1756.8526315789475,
+          "price_term": 126.14736842105226,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12663293,
+      "opponent": "teacher",
+      "side": 0,
+      "contrast": "both-baseline",
+      "net_profit_delta": 1111.0,
+      "sale_revenue_delta": 1883.0,
+      "other_cash_delta": -772.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 14,
+          "revenue_delta": 1883.0,
+          "volume_term": 1756.8526315789475,
+          "price_term": 126.14736842105226,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12663293,
+      "opponent": "teacher",
+      "side": 1,
+      "contrast": "fertilizer-baseline",
+      "net_profit_delta": -875.0,
+      "sale_revenue_delta": 0.0,
+      "other_cash_delta": -875.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12663293,
+      "opponent": "teacher",
+      "side": 1,
+      "contrast": "both-fertilizer",
+      "net_profit_delta": 1986.0,
+      "sale_revenue_delta": 1883.0,
+      "other_cash_delta": 103.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 14,
+          "revenue_delta": 1883.0,
+          "volume_term": 1756.8526315789475,
+          "price_term": 126.14736842105226,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12663293,
+      "opponent": "teacher",
+      "side": 1,
+      "contrast": "both-baseline",
+      "net_profit_delta": 1111.0,
+      "sale_revenue_delta": 1883.0,
+      "other_cash_delta": -772.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 14,
+          "revenue_delta": 1883.0,
+          "volume_term": 1756.8526315789475,
+          "price_term": 126.14736842105226,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12108429,
+      "opponent": "v1",
+      "side": 0,
+      "contrast": "fertilizer-baseline",
+      "net_profit_delta": -2146.0,
+      "sale_revenue_delta": 0.0,
+      "other_cash_delta": -2146.0,
+      "sales": [
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "WHEAT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12108429,
+      "opponent": "v1",
+      "side": 0,
+      "contrast": "both-fertilizer",
+      "net_profit_delta": 4454.0,
+      "sale_revenue_delta": 4329.0,
+      "other_cash_delta": 125.0,
+      "sales": [
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 27,
+          "revenue_delta": 4381.0,
+          "volume_term": 5702.854960629921,
+          "price_term": -1321.854960629921,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": -52.0,
+          "volume_term": 0.0,
+          "price_term": -52.000000000000114,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "WHEAT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12108429,
+      "opponent": "v1",
+      "side": 0,
+      "contrast": "both-baseline",
+      "net_profit_delta": 2308.0,
+      "sale_revenue_delta": 4329.0,
+      "other_cash_delta": -2021.0,
+      "sales": [
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 27,
+          "revenue_delta": 4381.0,
+          "volume_term": 5702.854960629921,
+          "price_term": -1321.854960629921,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": -52.0,
+          "volume_term": 0.0,
+          "price_term": -52.000000000000114,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "WHEAT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12108429,
+      "opponent": "v1",
+      "side": 1,
+      "contrast": "fertilizer-baseline",
+      "net_profit_delta": -2146.0,
+      "sale_revenue_delta": 0.0,
+      "other_cash_delta": -2146.0,
+      "sales": [
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "WHEAT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12108429,
+      "opponent": "v1",
+      "side": 1,
+      "contrast": "both-fertilizer",
+      "net_profit_delta": 4454.0,
+      "sale_revenue_delta": 4329.0,
+      "other_cash_delta": 125.0,
+      "sales": [
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 27,
+          "revenue_delta": 4381.0,
+          "volume_term": 5702.854960629921,
+          "price_term": -1321.854960629921,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": -52.0,
+          "volume_term": 0.0,
+          "price_term": -52.000000000000114,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "WHEAT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12108429,
+      "opponent": "v1",
+      "side": 1,
+      "contrast": "both-baseline",
+      "net_profit_delta": 2308.0,
+      "sale_revenue_delta": 4329.0,
+      "other_cash_delta": -2021.0,
+      "sales": [
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 27,
+          "revenue_delta": 4381.0,
+          "volume_term": 5702.854960629921,
+          "price_term": -1321.854960629921,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": -52.0,
+          "volume_term": 0.0,
+          "price_term": -52.000000000000114,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "WHEAT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12108429,
+      "opponent": "market",
+      "side": 0,
+      "contrast": "fertilizer-baseline",
+      "net_profit_delta": -1904.0,
+      "sale_revenue_delta": 0.0,
+      "other_cash_delta": -1904.0,
+      "sales": [
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "WHEAT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12108429,
+      "opponent": "market",
+      "side": 0,
+      "contrast": "both-fertilizer",
+      "net_profit_delta": 3955.0,
+      "sale_revenue_delta": 3968.0,
+      "other_cash_delta": -13.0,
+      "sales": [
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 26,
+          "revenue_delta": 4135.0,
+          "volume_term": 5241.449365079366,
+          "price_term": -1106.4493650793647,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": -167.0,
+          "volume_term": 0.0,
+          "price_term": -167.00000000000023,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "WHEAT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12108429,
+      "opponent": "market",
+      "side": 0,
+      "contrast": "both-baseline",
+      "net_profit_delta": 2051.0,
+      "sale_revenue_delta": 3968.0,
+      "other_cash_delta": -1917.0,
+      "sales": [
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 26,
+          "revenue_delta": 4135.0,
+          "volume_term": 5241.449365079366,
+          "price_term": -1106.4493650793647,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": -167.0,
+          "volume_term": 0.0,
+          "price_term": -167.00000000000023,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "WHEAT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12108429,
+      "opponent": "market",
+      "side": 1,
+      "contrast": "fertilizer-baseline",
+      "net_profit_delta": -1904.0,
+      "sale_revenue_delta": 0.0,
+      "other_cash_delta": -1904.0,
+      "sales": [
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "WHEAT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12108429,
+      "opponent": "market",
+      "side": 1,
+      "contrast": "both-fertilizer",
+      "net_profit_delta": 3955.0,
+      "sale_revenue_delta": 3968.0,
+      "other_cash_delta": -13.0,
+      "sales": [
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 26,
+          "revenue_delta": 4135.0,
+          "volume_term": 5241.449365079366,
+          "price_term": -1106.4493650793647,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": -167.0,
+          "volume_term": 0.0,
+          "price_term": -167.00000000000023,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "WHEAT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12108429,
+      "opponent": "market",
+      "side": 1,
+      "contrast": "both-baseline",
+      "net_profit_delta": 2051.0,
+      "sale_revenue_delta": 3968.0,
+      "other_cash_delta": -1917.0,
+      "sales": [
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 26,
+          "revenue_delta": 4135.0,
+          "volume_term": 5241.449365079366,
+          "price_term": -1106.4493650793647,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": -167.0,
+          "volume_term": 0.0,
+          "price_term": -167.00000000000023,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "WHEAT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12108429,
+      "opponent": "teacher",
+      "side": 0,
+      "contrast": "fertilizer-baseline",
+      "net_profit_delta": -1943.0,
+      "sale_revenue_delta": 0.0,
+      "other_cash_delta": -1943.0,
+      "sales": [
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "WHEAT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12108429,
+      "opponent": "teacher",
+      "side": 0,
+      "contrast": "both-fertilizer",
+      "net_profit_delta": 3423.0,
+      "sale_revenue_delta": 3425.0,
+      "other_cash_delta": -2.0,
+      "sales": [
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 26,
+          "revenue_delta": 3487.0,
+          "volume_term": 5102.308095238095,
+          "price_term": -1615.3080952380928,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": -62.0,
+          "volume_term": 0.0,
+          "price_term": -62.00000000000023,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "WHEAT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12108429,
+      "opponent": "teacher",
+      "side": 0,
+      "contrast": "both-baseline",
+      "net_profit_delta": 1480.0,
+      "sale_revenue_delta": 3425.0,
+      "other_cash_delta": -1945.0,
+      "sales": [
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 26,
+          "revenue_delta": 3487.0,
+          "volume_term": 5102.308095238095,
+          "price_term": -1615.3080952380928,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": -62.0,
+          "volume_term": 0.0,
+          "price_term": -62.00000000000023,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "WHEAT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12108429,
+      "opponent": "teacher",
+      "side": 1,
+      "contrast": "fertilizer-baseline",
+      "net_profit_delta": -1943.0,
+      "sale_revenue_delta": 0.0,
+      "other_cash_delta": -1943.0,
+      "sales": [
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "WHEAT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12108429,
+      "opponent": "teacher",
+      "side": 1,
+      "contrast": "both-fertilizer",
+      "net_profit_delta": 3423.0,
+      "sale_revenue_delta": 3425.0,
+      "other_cash_delta": -2.0,
+      "sales": [
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 26,
+          "revenue_delta": 3487.0,
+          "volume_term": 5102.308095238095,
+          "price_term": -1615.3080952380928,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": -62.0,
+          "volume_term": 0.0,
+          "price_term": -62.00000000000023,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "WHEAT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12108429,
+      "opponent": "teacher",
+      "side": 1,
+      "contrast": "both-baseline",
+      "net_profit_delta": 1480.0,
+      "sale_revenue_delta": 3425.0,
+      "other_cash_delta": -1945.0,
+      "sales": [
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 26,
+          "revenue_delta": 3487.0,
+          "volume_term": 5102.308095238095,
+          "price_term": -1615.3080952380928,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": -62.0,
+          "volume_term": 0.0,
+          "price_term": -62.00000000000023,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "WHEAT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12413920,
+      "opponent": "v1",
+      "side": 0,
+      "contrast": "fertilizer-baseline",
+      "net_profit_delta": -2354.0,
+      "sale_revenue_delta": 0.0,
+      "other_cash_delta": -2354.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12413920,
+      "opponent": "v1",
+      "side": 0,
+      "contrast": "both-fertilizer",
+      "net_profit_delta": 5149.0,
+      "sale_revenue_delta": 5071.0,
+      "other_cash_delta": 78.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 28,
+          "revenue_delta": 5118.0,
+          "volume_term": 6533.060625,
+          "price_term": -1415.060625,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": -47.0,
+          "volume_term": 0.0,
+          "price_term": -46.999999999999886,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12413920,
+      "opponent": "v1",
+      "side": 0,
+      "contrast": "both-baseline",
+      "net_profit_delta": 2795.0,
+      "sale_revenue_delta": 5071.0,
+      "other_cash_delta": -2276.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 28,
+          "revenue_delta": 5118.0,
+          "volume_term": 6533.060625,
+          "price_term": -1415.060625,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": -47.0,
+          "volume_term": 0.0,
+          "price_term": -46.999999999999886,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12413920,
+      "opponent": "v1",
+      "side": 1,
+      "contrast": "fertilizer-baseline",
+      "net_profit_delta": -2354.0,
+      "sale_revenue_delta": 0.0,
+      "other_cash_delta": -2354.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12413920,
+      "opponent": "v1",
+      "side": 1,
+      "contrast": "both-fertilizer",
+      "net_profit_delta": 5149.0,
+      "sale_revenue_delta": 5071.0,
+      "other_cash_delta": 78.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 28,
+          "revenue_delta": 5118.0,
+          "volume_term": 6533.060625,
+          "price_term": -1415.060625,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": -47.0,
+          "volume_term": 0.0,
+          "price_term": -46.999999999999886,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12413920,
+      "opponent": "v1",
+      "side": 1,
+      "contrast": "both-baseline",
+      "net_profit_delta": 2795.0,
+      "sale_revenue_delta": 5071.0,
+      "other_cash_delta": -2276.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 28,
+          "revenue_delta": 5118.0,
+          "volume_term": 6533.060625,
+          "price_term": -1415.060625,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": -47.0,
+          "volume_term": 0.0,
+          "price_term": -46.999999999999886,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12413920,
+      "opponent": "market",
+      "side": 0,
+      "contrast": "fertilizer-baseline",
+      "net_profit_delta": -2133.0,
+      "sale_revenue_delta": 0.0,
+      "other_cash_delta": -2133.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12413920,
+      "opponent": "market",
+      "side": 0,
+      "contrast": "both-fertilizer",
+      "net_profit_delta": 5041.0,
+      "sale_revenue_delta": 5054.0,
+      "other_cash_delta": -13.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 28,
+          "revenue_delta": 5202.0,
+          "volume_term": 6335.0175,
+          "price_term": -1133.0175,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": -148.0,
+          "volume_term": 0.0,
+          "price_term": -148.0000000000001,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12413920,
+      "opponent": "market",
+      "side": 0,
+      "contrast": "both-baseline",
+      "net_profit_delta": 2908.0,
+      "sale_revenue_delta": 5054.0,
+      "other_cash_delta": -2146.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 28,
+          "revenue_delta": 5202.0,
+          "volume_term": 6335.0175,
+          "price_term": -1133.0175,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": -148.0,
+          "volume_term": 0.0,
+          "price_term": -148.0000000000001,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12413920,
+      "opponent": "market",
+      "side": 1,
+      "contrast": "fertilizer-baseline",
+      "net_profit_delta": -2133.0,
+      "sale_revenue_delta": 0.0,
+      "other_cash_delta": -2133.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12413920,
+      "opponent": "market",
+      "side": 1,
+      "contrast": "both-fertilizer",
+      "net_profit_delta": 5041.0,
+      "sale_revenue_delta": 5054.0,
+      "other_cash_delta": -13.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 28,
+          "revenue_delta": 5202.0,
+          "volume_term": 6335.0175,
+          "price_term": -1133.0175,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": -148.0,
+          "volume_term": 0.0,
+          "price_term": -148.0000000000001,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12413920,
+      "opponent": "market",
+      "side": 1,
+      "contrast": "both-baseline",
+      "net_profit_delta": 2908.0,
+      "sale_revenue_delta": 5054.0,
+      "other_cash_delta": -2146.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 28,
+          "revenue_delta": 5202.0,
+          "volume_term": 6335.0175,
+          "price_term": -1133.0175,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": -148.0,
+          "volume_term": 0.0,
+          "price_term": -148.0000000000001,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12413920,
+      "opponent": "teacher",
+      "side": 0,
+      "contrast": "fertilizer-baseline",
+      "net_profit_delta": -2166.0,
+      "sale_revenue_delta": 0.0,
+      "other_cash_delta": -2166.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12413920,
+      "opponent": "teacher",
+      "side": 0,
+      "contrast": "both-fertilizer",
+      "net_profit_delta": 4834.0,
+      "sale_revenue_delta": 4848.0,
+      "other_cash_delta": -14.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 28,
+          "revenue_delta": 4904.0,
+          "volume_term": 6243.820625,
+          "price_term": -1339.8206250000005,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": -56.0,
+          "volume_term": 0.0,
+          "price_term": -55.999999999999886,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12413920,
+      "opponent": "teacher",
+      "side": 0,
+      "contrast": "both-baseline",
+      "net_profit_delta": 2668.0,
+      "sale_revenue_delta": 4848.0,
+      "other_cash_delta": -2180.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 28,
+          "revenue_delta": 4904.0,
+          "volume_term": 6243.820625,
+          "price_term": -1339.8206250000005,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": -56.0,
+          "volume_term": 0.0,
+          "price_term": -55.999999999999886,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12413920,
+      "opponent": "teacher",
+      "side": 1,
+      "contrast": "fertilizer-baseline",
+      "net_profit_delta": -2166.0,
+      "sale_revenue_delta": 0.0,
+      "other_cash_delta": -2166.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12413920,
+      "opponent": "teacher",
+      "side": 1,
+      "contrast": "both-fertilizer",
+      "net_profit_delta": 4834.0,
+      "sale_revenue_delta": 4848.0,
+      "other_cash_delta": -14.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 28,
+          "revenue_delta": 4904.0,
+          "volume_term": 6243.820625,
+          "price_term": -1339.8206250000005,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": -56.0,
+          "volume_term": 0.0,
+          "price_term": -55.999999999999886,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    },
+    {
+      "seed": 12413920,
+      "opponent": "teacher",
+      "side": 1,
+      "contrast": "both-baseline",
+      "net_profit_delta": 2668.0,
+      "sale_revenue_delta": 4848.0,
+      "other_cash_delta": -2180.0,
+      "sales": [
+        {
+          "item": "CARROT",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "MELON",
+          "quantity_delta": 0,
+          "revenue_delta": 0.0,
+          "volume_term": 0.0,
+          "price_term": 0.0,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "STRAWBERRY",
+          "quantity_delta": 28,
+          "revenue_delta": 4904.0,
+          "volume_term": 6243.820625,
+          "price_term": -1339.8206250000005,
+          "entry_exit_term": 0
+        },
+        {
+          "item": "TOMATO",
+          "quantity_delta": 0,
+          "revenue_delta": -56.0,
+          "volume_term": 0.0,
+          "price_term": -55.999999999999886,
+          "entry_exit_term": 0
+        }
+      ],
+      "cash_residual": 0
+    }
+  ],
+  "scope": "Descriptive mediators and accounting identities, not independent causal shares. Volume and price terms are symmetric algebra, affected by timing and endogenous shared-market response."
+}

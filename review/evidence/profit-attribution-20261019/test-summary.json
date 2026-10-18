@@ -1,0 +1,157 @@
+{
+  "games": 108,
+  "seed_clusters": 6,
+  "contrasts": {
+    "fertilizer-baseline": {
+      "mean": -2642.305555555555,
+      "ci_99": [
+        -4116.277777777778,
+        -1398.0
+      ],
+      "seed_deltas": [
+        -4498.0,
+        -4494.666666666667,
+        -1767.1666666666667,
+        -878.6666666666666,
+        -1997.6666666666667,
+        -2217.6666666666665
+      ]
+    },
+    "both-fertilizer": {
+      "mean": 5370.805555555556,
+      "ci_99": [
+        2683.1944444444443,
+        8582.900138888992
+      ],
+      "seed_deltas": [
+        10131.0,
+        8046.666666666667,
+        3537.1666666666665,
+        1558.0,
+        3944.0,
+        5008.0
+      ]
+    },
+    "both-baseline": {
+      "mean": 2728.5000000000005,
+      "ci_99": [
+        1283.4444444444446,
+        4592.5
+      ],
+      "seed_deltas": [
+        5633.0,
+        3552.0,
+        1770.0,
+        679.3333333333334,
+        1946.3333333333333,
+        2790.3333333333335
+      ]
+    }
+  },
+  "aggregate": {
+    "baseline": {
+      "games": 36,
+      "wins": 11,
+      "draws": 0,
+      "losses": 25,
+      "mean_net_profit": 33565.86111111111,
+      "mean_margin": -2073.3611111111113
+    },
+    "fertilizer": {
+      "games": 36,
+      "wins": 0,
+      "draws": 0,
+      "losses": 36,
+      "mean_net_profit": 30923.555555555555,
+      "mean_margin": -5421.277777777777
+    },
+    "both": {
+      "games": 36,
+      "wins": 21,
+      "draws": 10,
+      "losses": 5,
+      "mean_net_profit": 36294.36111111111,
+      "mean_margin": 2137.3611111111113
+    }
+  },
+  "by_opponent": {
+    "v1": {
+      "baseline": {
+        "games": 12,
+        "wins": 11,
+        "draws": 0,
+        "losses": 1,
+        "mean_net_profit": 34269.416666666664,
+        "mean_margin": 1224.9166666666667
+      },
+      "fertilizer": {
+        "games": 12,
+        "wins": 0,
+        "draws": 0,
+        "losses": 12,
+        "mean_net_profit": 30235.083333333332,
+        "mean_margin": -4243.583333333333
+      },
+      "both": {
+        "games": 12,
+        "wins": 12,
+        "draws": 0,
+        "losses": 0,
+        "mean_net_profit": 37087.0,
+        "mean_margin": 5932.583333333333
+      }
+    },
+    "market": {
+      "baseline": {
+        "games": 12,
+        "wins": 0,
+        "draws": 0,
+        "losses": 12,
+        "mean_net_profit": 34604.5,
+        "mean_margin": -2763.8333333333335
+      },
+      "fertilizer": {
+        "games": 12,
+        "wins": 0,
+        "draws": 0,
+        "losses": 12,
+        "mean_net_profit": 33227.166666666664,
+        "mean_margin": -4311.666666666667
+      },
+      "both": {
+        "games": 12,
+        "wins": 8,
+        "draws": 0,
+        "losses": 4,
+        "mean_net_profit": 37113.333333333336,
+        "mean_margin": 479.5
+      }
+    },
+    "teacher": {
+      "baseline": {
+        "games": 12,
+        "wins": 0,
+        "draws": 0,
+        "losses": 12,
+        "mean_net_profit": 31823.666666666668,
+        "mean_margin": -4681.166666666667
+      },
+      "fertilizer": {
+        "games": 12,
+        "wins": 0,
+        "draws": 0,
+        "losses": 12,
+        "mean_net_profit": 29308.416666666668,
+        "mean_margin": -7708.583333333333
+      },
+      "both": {
+        "games": 12,
+        "wins": 1,
+        "draws": 10,
+        "losses": 1,
+        "mean_net_profit": 34682.75,
+        "mean_margin": 0.0
+      }
+    }
+  }
+}
