@@ -1,0 +1,50 @@
+{
+  "experiment": "teacher-terminal-v2",
+  "base_commit": "f576e7564adb457bdc60dcfc94aea89b65be625c",
+  "development_seeds": [
+    9280350,
+    9752725
+  ],
+  "test_seeds": [
+    9317052,
+    9802136,
+    9489180,
+    9278409,
+    9489518,
+    9407819
+  ],
+  "opponents": [
+    "v1",
+    "market",
+    "round2",
+    "teacher"
+  ],
+  "workers": 2,
+  "policies": [
+    "baseline",
+    "candidate"
+  ],
+  "bootstrap": {
+    "resamples": 20000,
+    "rng_seed": 20261018122
+  },
+  "pilot_budget_games": 16,
+  "test_games": 96,
+  "repeat_games": 2,
+  "max_candidate_designs": 1,
+  "gate": "Execution: all official full replays, source preservation, targeted horizon regressions and deterministic repeats pass. Competitive improvement separately requires overall paired seed-cluster profit 95% lower >0, overall margin delta >0, each opponent mean score delta >=0. A failure or inconclusive result does not invalidate the boundary fix; no default promotion.",
+  "failure_policy": "No test-driven changes, seed replacement or retuning. Preserve all outcomes.",
+  "scope": "Old fertilizer teacher is baseline; four frozen opponents, six seed clusters. No BC or GPU training. Window feasibility is economic planning, not legality.",
+  "source_sha256": {
+    "baseline.py": "a41985c68068ee234ee1fd73bdc71bda2debb6d6f252218b49f61f47be82d1fa",
+    "teacher.py": "a41985c68068ee234ee1fd73bdc71bda2debb6d6f252218b49f61f47be82d1fa",
+    "v1.py": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "market.py": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "round2.py": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "worker.py": "a80158b26d1f4ae3d366c1d1276a1ca63e652bcd350f5ca25545b0f5f33759f1",
+    "evaluate_holdout.py": "df599e139893081f0a5307b0aa9cf299e2d14d4d4a221672b7aa9ac1d3747d82",
+    "optimize_round2.py": "9f4fcf09fecd42c6135a1a2a72b95948c52474636719863eb2d468b01dc102fe"
+  },
+  "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+}
