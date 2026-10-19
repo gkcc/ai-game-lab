@@ -11,6 +11,12 @@ from decision.full_audit import reexecute, rules
 
 _LOCK=Lock()
 
+def _opcode_view(action):
+    """Label a payload without rewriting it or judging its official legality."""
+    if isinstance(action,list) and action and isinstance(action[0],str) and action[0]:
+        return action[0]
+    return 'invalid'
+
 class Attribution:
     def __init__(self, side):
         self.side=side;self.counts=Counter();self.sales={};self.production={};self.market_cash=0
@@ -18,7 +24,7 @@ class Attribution:
     def sink(self,r):
         if r['player']!=self.side:return
         if r['phase']=='unit':
-            op=r['effective'][0];self.counts['unit:'+op+':'+r['status']]+=1
+            op=_opcode_view(r['effective']);self.counts['unit:'+op+':'+r['status']]+=1
             tile=r.get('tile_before')
             if op=='HARVEST' and r['status']=='executed' and isinstance(tile,dict):
                 crop=tile.get('crop','unknown');self.counts['harvest_units:'+crop]+=tile.get('yield_units',0)
@@ -26,7 +32,7 @@ class Attribution:
         elif r['phase']=='market':
             a=r['requested'];cash=r.get('cash_delta',0);n=r.get('executed_units',0)
             self.market_cash+=cash
-            op=a[0] if isinstance(a,list) and a else 'invalid'
+            op=_opcode_view(a)
             item=str(a[1]) if isinstance(a,list) and len(a)>1 else ''
             self.counts['cash:'+op+':'+item]+=cash
             self.counts['market_units:'+op+':'+item]+=n

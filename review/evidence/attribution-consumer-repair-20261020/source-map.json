@@ -1,0 +1,78 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "path": "kaggriculture/decision/profit_attribution.py",
+      "runtime_sha256": "7e878885de1abd0ce5fb6e423df66403ad1925a15c710db5e54efc80156ef600",
+      "public_git_blob_sha256": "7e878885de1abd0ce5fb6e423df66403ad1925a15c710db5e54efc80156ef600",
+      "lf_normalized_sha256": "7e878885de1abd0ce5fb6e423df66403ad1925a15c710db5e54efc80156ef600",
+      "same_bytes": true,
+      "public_to_runtime": "identity"
+    },
+    {
+      "path": "kaggriculture/decision/verify_attribution_consumer.py",
+      "runtime_sha256": "5536c36472eda93eed2879b0d9b807dbca3aa4d5ea658d1e7e2e980b79c921eb",
+      "public_git_blob_sha256": "5536c36472eda93eed2879b0d9b807dbca3aa4d5ea658d1e7e2e980b79c921eb",
+      "lf_normalized_sha256": "5536c36472eda93eed2879b0d9b807dbca3aa4d5ea658d1e7e2e980b79c921eb",
+      "same_bytes": true,
+      "public_to_runtime": "identity"
+    },
+    {
+      "path": "kaggriculture/decision/recheck_attribution_consumer.py",
+      "runtime_sha256": "bf54e3d86c3cd2ea25b1115f11253a8582837730a6695ff4bc6f0a9e4ff87e81",
+      "public_git_blob_sha256": "bf54e3d86c3cd2ea25b1115f11253a8582837730a6695ff4bc6f0a9e4ff87e81",
+      "lf_normalized_sha256": "bf54e3d86c3cd2ea25b1115f11253a8582837730a6695ff4bc6f0a9e4ff87e81",
+      "same_bytes": true,
+      "public_to_runtime": "identity"
+    },
+    {
+      "path": "kaggriculture/decision/audit_profit_attribution.py",
+      "runtime_sha256": "a8a6ce62f8699d9b781afef5bf49d3bc5f0689b932e2bccd2cfc8326c35cc1b8",
+      "public_git_blob_sha256": "a8a6ce62f8699d9b781afef5bf49d3bc5f0689b932e2bccd2cfc8326c35cc1b8",
+      "lf_normalized_sha256": "a8a6ce62f8699d9b781afef5bf49d3bc5f0689b932e2bccd2cfc8326c35cc1b8",
+      "same_bytes": true,
+      "public_to_runtime": "identity"
+    },
+    {
+      "path": "kaggriculture/decision/execution.py",
+      "runtime_sha256": "cbf38b17ca9c4c1c4f82ddb583ff59e4f605a0e8d8e971ef5bfc3664b2c76378",
+      "public_git_blob_sha256": "e1b8acb32ef0b31c0de3048d481d84babf3b07510d18a9d3b2fd3da471d8f239",
+      "lf_normalized_sha256": "e1b8acb32ef0b31c0de3048d481d84babf3b07510d18a9d3b2fd3da471d8f239",
+      "same_bytes": false,
+      "public_to_runtime": "normalize LF then replace LF with CRLF; verified exact runtime bytes"
+    },
+    {
+      "path": "kaggriculture/decision/full_audit.py",
+      "runtime_sha256": "84f7c7b4316fb98791c51b933f5329a271b8bc9aec60eebe133f6d433ec4510d",
+      "public_git_blob_sha256": "0ae434974ac8fced76033c26b9c27f6ffce24e1f598f6fba6c7dc11306d903a8",
+      "lf_normalized_sha256": "0ae434974ac8fced76033c26b9c27f6ffce24e1f598f6fba6c7dc11306d903a8",
+      "same_bytes": false,
+      "public_to_runtime": "normalize LF then replace LF with CRLF; verified exact runtime bytes"
+    },
+    {
+      "path": "kaggriculture/decision/semantics.py",
+      "runtime_sha256": "9ac62d0df7adca84c0feff805b2979bb45f9f9f4c2064d1e2b5c48efd3e779a5",
+      "public_git_blob_sha256": "9ac62d0df7adca84c0feff805b2979bb45f9f9f4c2064d1e2b5c48efd3e779a5",
+      "lf_normalized_sha256": "9ac62d0df7adca84c0feff805b2979bb45f9f9f4c2064d1e2b5c48efd3e779a5",
+      "same_bytes": true,
+      "public_to_runtime": "identity"
+    },
+    {
+      "path": "kaggriculture/decision/verify_mechanisms.py",
+      "runtime_sha256": "cc82fd118abd94e92a8833587aa2bfb9117214a8a5b00e8054225732af47fbbf",
+      "public_git_blob_sha256": "cc82fd118abd94e92a8833587aa2bfb9117214a8a5b00e8054225732af47fbbf",
+      "lf_normalized_sha256": "cc82fd118abd94e92a8833587aa2bfb9117214a8a5b00e8054225732af47fbbf",
+      "same_bytes": true,
+      "public_to_runtime": "identity"
+    },
+    {
+      "path": "kaggriculture/decision/verify_profit_attribution.py",
+      "runtime_sha256": "cd314d2f2741d7bbc9c5ca47e4f89733db93de7f178b2ceb21d314b40d30773f",
+      "public_git_blob_sha256": "cd314d2f2741d7bbc9c5ca47e4f89733db93de7f178b2ceb21d314b40d30773f",
+      "lf_normalized_sha256": "cd314d2f2741d7bbc9c5ca47e4f89733db93de7f178b2ceb21d314b40d30773f",
+      "same_bytes": true,
+      "public_to_runtime": "identity"
+    }
+  ],
+  "boundary": "Freeze/certificates bind actual runtime bytes. Two unchanged historical public dependencies use LF while runtime uses CRLF; exact reversible mapping recorded, not a code change or hash replacement."
+}

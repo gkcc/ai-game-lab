@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "aggregate": {
+    "baseline": {
+      "games": 36,
+      "wins": 11,
+      "draws": 0,
+      "losses": 25,
+      "mean_net_profit": 33565.86111111111,
+      "mean_margin": -2073.3611111111113
+    },
+    "fertilizer": {
+      "games": 36,
+      "wins": 0,
+      "draws": 0,
+      "losses": 36,
+      "mean_net_profit": 30923.555555555555,
+      "mean_margin": -5421.277777777777
+    },
+    "both": {
+      "games": 36,
+      "wins": 21,
+      "draws": 10,
+      "losses": 5,
+      "mean_net_profit": 36294.36111111111,
+      "mean_margin": 2137.3611111111113
+    }
+  },
+  "reference": "profit-attribution-20261019",
+  "scope": "Existing results confirmed from new certificates, not a new independent experiment"
+}

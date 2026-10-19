@@ -1,0 +1,12 @@
+{
+  "task": "attribution-consumer-compatibility-repair",
+  "base_commit": "c0122d9075e5e74fac3bf2fe3a1d15e755a96c84",
+  "historical_experiment": "profit-attribution-20261019",
+  "historical_games": 108,
+  "repeats_excluded_from_statistics": 4,
+  "reexecution_games": 112,
+  "changes": "Consumer read/count view only, both unit and market opcodes; preserve raw payload and official outcomes",
+  "acceptance": "Official-entry regressions pass including malformed actions, honest no-effect/error semantics, valid resource/cash effects and full replay consumption; 112 full ordered reexecutions match historical audit fields, cash and all mechanism metrics; historical hashes, all strategies/default unchanged",
+  "new_independent_matches": false,
+  "bc": false
+}

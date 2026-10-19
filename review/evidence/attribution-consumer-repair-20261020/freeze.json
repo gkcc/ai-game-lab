@@ -1,0 +1,26 @@
+{
+  "base_commit": "c0122d9075e5e74fac3bf2fe3a1d15e755a96c84",
+  "consumer_counting_version": 2,
+  "registration_sha256": "b37d98424398b2de51eef0373476484e0a82ae9686470f26b0b436a9db2241c7",
+  "preservation_sha256": "c416fe80424cb3230e3580b4b23a7cad52c1e402ad930e7e43dbe1df42fb1778",
+  "code_sha256": {
+    "decision/profit_attribution.py": "7e878885de1abd0ce5fb6e423df66403ad1925a15c710db5e54efc80156ef600",
+    "decision/verify_attribution_consumer.py": "5536c36472eda93eed2879b0d9b807dbca3aa4d5ea658d1e7e2e980b79c921eb",
+    "decision/recheck_attribution_consumer.py": "bf54e3d86c3cd2ea25b1115f11253a8582837730a6695ff4bc6f0a9e4ff87e81",
+    "decision/audit_profit_attribution.py": "a8a6ce62f8699d9b781afef5bf49d3bc5f0689b932e2bccd2cfc8326c35cc1b8",
+    "decision/execution.py": "cbf38b17ca9c4c1c4f82ddb583ff59e4f605a0e8d8e971ef5bfc3664b2c76378",
+    "decision/full_audit.py": "84f7c7b4316fb98791c51b933f5329a271b8bc9aec60eebe133f6d433ec4510d",
+    "decision/semantics.py": "9ac62d0df7adca84c0feff805b2979bb45f9f9f4c2064d1e2b5c48efd3e779a5",
+    "decision/verify_mechanisms.py": "cc82fd118abd94e92a8833587aa2bfb9117214a8a5b00e8054225732af47fbbf",
+    "decision/verify_profit_attribution.py": "cd314d2f2741d7bbc9c5ca47e4f89733db93de7f178b2ceb21d314b40d30773f"
+  },
+  "regression_sha256": {
+    "consumer-regression.json": "41c164162c40459d569b8069642ebebc3bad04c805ee6db903f4d575d061a3e5",
+    "production-regression.json": "4b0bd241751254a3200ef1f9dfc3e9fff5c0ad985124591d5a09633c0920e37c",
+    "audit-regression.json": "f206d750bae0355982f9f8dfba291a1ecadfa0c99d094b5432096841b19fc251"
+  },
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "python": "3.12.2",
+  "package": "kaggle-environments==1.33.0",
+  "reexecution_results_seen": false
+}

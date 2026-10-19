@@ -1,0 +1,16 @@
+{
+  "base_commit": "c0122d9075e5e74fac3bf2fe3a1d15e755a96c84",
+  "commands": [
+    ".venv/Scripts/python.exe -B -X utf8 -m decision.verify_attribution_consumer --output artifacts/attribution-consumer-repair-20261020/consumer-regression.json",
+    ".venv/Scripts/python.exe -B -X utf8 -m decision.verify_audit --output artifacts/attribution-consumer-repair-20261020/audit-regression.json",
+    ".venv/Scripts/python.exe -B -X utf8 -m decision.verify_profit_attribution artifacts/attribution-consumer-repair-20261020/production-regression.json",
+    ".venv/Scripts/python.exe -B -X utf8 -m decision.recheck_attribution_consumer --historical artifacts/profit-attribution-20261019 --output artifacts/attribution-consumer-repair-20261020"
+  ],
+  "notes": [
+    "Initial preservation enumeration encountered Git quoted non-ASCII filenames; switched to NUL-delimited UTF-8 enumeration. Old consumer bytes captured from clean base public checkout, not from repaired runtime.",
+    "Initial regression control was accidentally stepped inside a globally installed trace scope; corrected harness sequencing before code freeze.",
+    "Initial module launch used workspace rather than game working directory; no replay jobs ran before corrected command.",
+    "All 112 reexecution jobs completed with no exclusions or replacements.",
+    "New boundary replays and all raw logs remain local. No strategy/default changes, BC or GPU training."
+  ]
+}

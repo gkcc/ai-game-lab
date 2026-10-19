@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "historical_games_reexecuted": 112,
+  "official_transitions": 80528,
+  "test_games": 108,
+  "repeats_excluded_from_statistics": 4,
+  "complete_new_boundary_games": 2,
+  "malformed_official_entry_cases": 50,
+  "existing_audit_regressions": 17,
+  "production_boundary_cases": 6,
+  "all_historical_audit_and_metric_fields_equal": true,
+  "all_attribution_fields_equal": true,
+  "public_before_files": 299,
+  "protected_public_files_unchanged": 296,
+  "historical_files_unchanged": 488,
+  "runtime_strategies_unchanged": 13,
+  "old_hashes_preserved": true,
+  "default_changed": false,
+  "bc_started": false,
+  "new_independent_matches": false,
+  "scope": "Compatibility repair and retained-game reexecution; no strategy selection or profitability claim"
+}

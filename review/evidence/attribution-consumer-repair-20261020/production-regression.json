@@ -1,0 +1,108 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "crop": "TOMATO",
+      "day": 7,
+      "initial_yield": 3,
+      "watered": true,
+      "expected": [
+        2,
+        1,
+        1
+      ],
+      "actual": [
+        2,
+        1,
+        1
+      ],
+      "states_equal": true
+    },
+    {
+      "crop": "TOMATO",
+      "day": 7,
+      "initial_yield": 4,
+      "watered": true,
+      "expected": [
+        2,
+        0,
+        2
+      ],
+      "actual": [
+        2,
+        0,
+        2
+      ],
+      "states_equal": true
+    },
+    {
+      "crop": "TOMATO",
+      "day": 7,
+      "initial_yield": 0,
+      "watered": false,
+      "expected": [
+        1,
+        1,
+        0
+      ],
+      "actual": [
+        1,
+        1,
+        0
+      ],
+      "states_equal": true
+    },
+    {
+      "crop": "TOMATO",
+      "day": 6,
+      "initial_yield": 0,
+      "watered": true,
+      "expected": [
+        0,
+        0,
+        0
+      ],
+      "actual": [
+        0,
+        0,
+        0
+      ],
+      "states_equal": true
+    },
+    {
+      "crop": "STRAWBERRY",
+      "day": 9,
+      "initial_yield": 3,
+      "watered": true,
+      "expected": [
+        2,
+        1,
+        1
+      ],
+      "actual": [
+        2,
+        1,
+        1
+      ],
+      "states_equal": true
+    },
+    {
+      "crop": "TOMATO",
+      "day": 11,
+      "initial_yield": 0,
+      "watered": true,
+      "expected": [
+        0,
+        0,
+        0
+      ],
+      "actual": [
+        0,
+        0,
+        0
+      ],
+      "states_equal": true
+    }
+  ],
+  "exception_restored": true
+}
