@@ -1,0 +1,153 @@
+{
+  "pairs": 16,
+  "rows": [
+    {
+      "seed": 21277116,
+      "opponent": "market",
+      "side": 0,
+      "unit_action_turns_different": 0,
+      "non_sell_slot_turns_different": 1,
+      "non_sell_sequence_turns_different": 0,
+      "turns": 719
+    },
+    {
+      "seed": 21277116,
+      "opponent": "market",
+      "side": 1,
+      "unit_action_turns_different": 0,
+      "non_sell_slot_turns_different": 1,
+      "non_sell_sequence_turns_different": 0,
+      "turns": 719
+    },
+    {
+      "seed": 21277116,
+      "opponent": "teacher",
+      "side": 0,
+      "unit_action_turns_different": 0,
+      "non_sell_slot_turns_different": 3,
+      "non_sell_sequence_turns_different": 0,
+      "turns": 719
+    },
+    {
+      "seed": 21277116,
+      "opponent": "teacher",
+      "side": 1,
+      "unit_action_turns_different": 0,
+      "non_sell_slot_turns_different": 3,
+      "non_sell_sequence_turns_different": 0,
+      "turns": 719
+    },
+    {
+      "seed": 21277116,
+      "opponent": "tuned",
+      "side": 0,
+      "unit_action_turns_different": 0,
+      "non_sell_slot_turns_different": 5,
+      "non_sell_sequence_turns_different": 0,
+      "turns": 719
+    },
+    {
+      "seed": 21277116,
+      "opponent": "tuned",
+      "side": 1,
+      "unit_action_turns_different": 0,
+      "non_sell_slot_turns_different": 5,
+      "non_sell_sequence_turns_different": 0,
+      "turns": 719
+    },
+    {
+      "seed": 21277116,
+      "opponent": "v1",
+      "side": 0,
+      "unit_action_turns_different": 0,
+      "non_sell_slot_turns_different": 5,
+      "non_sell_sequence_turns_different": 0,
+      "turns": 719
+    },
+    {
+      "seed": 21277116,
+      "opponent": "v1",
+      "side": 1,
+      "unit_action_turns_different": 0,
+      "non_sell_slot_turns_different": 5,
+      "non_sell_sequence_turns_different": 0,
+      "turns": 719
+    },
+    {
+      "seed": 21473311,
+      "opponent": "market",
+      "side": 0,
+      "unit_action_turns_different": 0,
+      "non_sell_slot_turns_different": 3,
+      "non_sell_sequence_turns_different": 0,
+      "turns": 719
+    },
+    {
+      "seed": 21473311,
+      "opponent": "market",
+      "side": 1,
+      "unit_action_turns_different": 0,
+      "non_sell_slot_turns_different": 3,
+      "non_sell_sequence_turns_different": 0,
+      "turns": 719
+    },
+    {
+      "seed": 21473311,
+      "opponent": "teacher",
+      "side": 0,
+      "unit_action_turns_different": 0,
+      "non_sell_slot_turns_different": 3,
+      "non_sell_sequence_turns_different": 0,
+      "turns": 719
+    },
+    {
+      "seed": 21473311,
+      "opponent": "teacher",
+      "side": 1,
+      "unit_action_turns_different": 0,
+      "non_sell_slot_turns_different": 3,
+      "non_sell_sequence_turns_different": 0,
+      "turns": 719
+    },
+    {
+      "seed": 21473311,
+      "opponent": "tuned",
+      "side": 0,
+      "unit_action_turns_different": 0,
+      "non_sell_slot_turns_different": 3,
+      "non_sell_sequence_turns_different": 0,
+      "turns": 719
+    },
+    {
+      "seed": 21473311,
+      "opponent": "tuned",
+      "side": 1,
+      "unit_action_turns_different": 0,
+      "non_sell_slot_turns_different": 3,
+      "non_sell_sequence_turns_different": 0,
+      "turns": 719
+    },
+    {
+      "seed": 21473311,
+      "opponent": "v1",
+      "side": 0,
+      "unit_action_turns_different": 0,
+      "non_sell_slot_turns_different": 4,
+      "non_sell_sequence_turns_different": 0,
+      "turns": 719
+    },
+    {
+      "seed": 21473311,
+      "opponent": "v1",
+      "side": 1,
+      "unit_action_turns_different": 0,
+      "non_sell_slot_turns_different": 4,
+      "non_sell_sequence_turns_different": 0,
+      "turns": 719
+    }
+  ],
+  "total_unit_action_turns_different": 0,
+  "total_non_sell_slot_turns_different": 54,
+  "total_non_sell_sequence_turns_different": 0,
+  "scope": "Actual paired trajectories with different inputs: slot changes distinguished from order content/relative order. Zero is observed on this panel, not guaranteed under future economic feedback."
+}

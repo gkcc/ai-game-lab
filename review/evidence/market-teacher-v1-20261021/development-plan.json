@@ -1,0 +1,67 @@
+{
+  "experiment": "market-teacher-v1",
+  "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "workers": 4,
+  "development_seeds": [
+    21277116,
+    21473311
+  ],
+  "seeds": [
+    22665478,
+    22907699,
+    22201817,
+    22842878,
+    22418736,
+    22806087,
+    22021283,
+    22058934,
+    22009412,
+    22918148,
+    22515381,
+    22279227
+  ],
+  "opponents": [
+    "v1",
+    "market",
+    "tuned",
+    "teacher"
+  ],
+  "primary_opponents": [
+    "v1",
+    "market",
+    "tuned"
+  ],
+  "policies": [
+    "baseline",
+    "candidate"
+  ],
+  "development_games": 32,
+  "games": 192,
+  "repeats": 4,
+  "bootstrap": {
+    "resamples": 20000,
+    "rng_seed": 2026102103,
+    "confidence": 0.95,
+    "unit": "whole seed, all opponents and both seats together; mirror excluded from primary"
+  },
+  "development_gate": "One candidate only. Positive paired profit in BOTH development seed clusters and primary mean margin/score nonnegative, no storage loss/non-SELL opportunity regression. Otherwise stop with negative result; no test reading.",
+  "promotion_gate": "Primary paired profit 95% lower bound > 0 AND mean gain >= 1% baseline net profit AND mean margin/score deltas >= 0 AND market subgroup mean profit/margin/score deltas >= 0 AND all execution, replay, preservation/privacy checks pass. Point subgroup checks are not noninferiority evidence.",
+  "failure_policy": "No test seed replacement, candidate retuning or reuse. Repeats excluded. Preserve infrastructure failures separately.",
+  "scope": "Only SELL choices; same-observation units and non-SELL order slots/quantities unchanged. Economic feedback may change later inputs. No BC or GPU training.",
+  "seed_screen": {
+    "previous_json_files": 1862,
+    "overlap": [],
+    "generator_development": "Random(2026102101).sample(range(21000000,22000000),2)",
+    "generator_holdout": "Random(2026102102).sample(range(22000000,23000000),12)"
+  },
+  "source_sha256": {
+    "baseline.py": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+    "candidate.py": "80df717fc9c3638b6115ca1b9bd7afab6c2003af74e9a7e1ca91a336485581ea",
+    "market.py": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "teacher.py": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+    "tuned.py": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "v1.py": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "worker.py": "a80158b26d1f4ae3d366c1d1276a1ca63e652bcd350f5ca25545b0f5f33759f1"
+  }
+}

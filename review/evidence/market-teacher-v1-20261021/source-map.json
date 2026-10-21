@@ -1,0 +1,117 @@
+{
+  "development_dependencies": [
+    {
+      "runtime_path": "bots/teacher_fertilizer_terminal_v2.py",
+      "frozen_runtime_sha256": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+      "public_path": "kaggriculture/bots/teacher_fertilizer_terminal_v2.py",
+      "public_sha256": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+      "relation": "byte_identical"
+    },
+    {
+      "runtime_path": "bots/teacher_market_v1.py",
+      "frozen_runtime_sha256": "80df717fc9c3638b6115ca1b9bd7afab6c2003af74e9a7e1ca91a336485581ea",
+      "public_path": "review/evidence/market-teacher-v1-20261021/sources/teacher_market_v1.development.py",
+      "public_sha256": "80df717fc9c3638b6115ca1b9bd7afab6c2003af74e9a7e1ca91a336485581ea",
+      "relation": "byte_identical"
+    },
+    {
+      "runtime_path": "learning/market_sell_overlay.py",
+      "frozen_runtime_sha256": "e35f5ec729bc7238d3e000ca9f53566358040fd0a39225754a9b1909e24dc685",
+      "public_path": "kaggriculture/learning/market_sell_overlay.py",
+      "public_sha256": "e35f5ec729bc7238d3e000ca9f53566358040fd0a39225754a9b1909e24dc685",
+      "relation": "byte_identical"
+    },
+    {
+      "runtime_path": "learning/market_timing.py",
+      "frozen_runtime_sha256": "e0dbb7bd01639adf145aae511142dcad8492dce763b80e7496a48997dae3b78e",
+      "public_path": "kaggriculture/learning/market_timing.py",
+      "public_sha256": "e0dbb7bd01639adf145aae511142dcad8492dce763b80e7496a48997dae3b78e",
+      "relation": "byte_identical"
+    },
+    {
+      "runtime_path": "learning/round2_worker.py",
+      "frozen_runtime_sha256": "a80158b26d1f4ae3d366c1d1276a1ca63e652bcd350f5ca25545b0f5f33759f1",
+      "public_path": "kaggriculture/learning/round2_worker.py",
+      "public_sha256": "ff823541f43ec2a0671aefbb2a3803daf6d3b882cebed4534eb2bdbb5efb35a1",
+      "relation": "CRLF_public_to_LF_runtime"
+    },
+    {
+      "runtime_path": "learning/optimize_round2.py",
+      "frozen_runtime_sha256": "9f4fcf09fecd42c6135a1a2a72b95948c52474636719863eb2d468b01dc102fe",
+      "public_path": "kaggriculture/learning/optimize_round2.py",
+      "public_sha256": "9f4fcf09fecd42c6135a1a2a72b95948c52474636719863eb2d468b01dc102fe",
+      "relation": "byte_identical"
+    },
+    {
+      "runtime_path": "learning/evaluate_holdout.py",
+      "frozen_runtime_sha256": "df599e139893081f0a5307b0aa9cf299e2d14d4d4a221672b7aa9ac1d3747d82",
+      "public_path": "kaggriculture/learning/evaluate_holdout.py",
+      "public_sha256": "df599e139893081f0a5307b0aa9cf299e2d14d4d4a221672b7aa9ac1d3747d82",
+      "relation": "byte_identical"
+    },
+    {
+      "runtime_path": "replay_metrics.py",
+      "frozen_runtime_sha256": "dc2005ab79d682c57480e8d865655ddd4785655e59a761774ae5883babe435b4",
+      "public_path": "kaggriculture/replay_metrics.py",
+      "public_sha256": "dc2005ab79d682c57480e8d865655ddd4785655e59a761774ae5883babe435b4",
+      "relation": "byte_identical"
+    },
+    {
+      "runtime_path": "decision/verify_market_teacher.py",
+      "frozen_runtime_sha256": "b5fa1fbc0d80b911f14de28b02fcc01500bdc8d0e0250105d3fea8805b89c0a2",
+      "public_path": "kaggriculture/decision/verify_market_teacher.py",
+      "public_sha256": "b5fa1fbc0d80b911f14de28b02fcc01500bdc8d0e0250105d3fea8805b89c0a2",
+      "relation": "byte_identical"
+    },
+    {
+      "runtime_path": "decision/profit_attribution.py",
+      "frozen_runtime_sha256": "7e878885de1abd0ce5fb6e423df66403ad1925a15c710db5e54efc80156ef600",
+      "public_path": "kaggriculture/decision/profit_attribution.py",
+      "public_sha256": "7e878885de1abd0ce5fb6e423df66403ad1925a15c710db5e54efc80156ef600",
+      "relation": "byte_identical"
+    },
+    {
+      "runtime_path": "decision/full_audit.py",
+      "frozen_runtime_sha256": "84f7c7b4316fb98791c51b933f5329a271b8bc9aec60eebe133f6d433ec4510d",
+      "public_path": "kaggriculture/decision/full_audit.py",
+      "public_sha256": "0ae434974ac8fced76033c26b9c27f6ffce24e1f598f6fba6c7dc11306d903a8",
+      "relation": "LF_public_to_CRLF_runtime"
+    },
+    {
+      "runtime_path": "decision/execution.py",
+      "frozen_runtime_sha256": "cbf38b17ca9c4c1c4f82ddb583ff59e4f605a0e8d8e971ef5bfc3664b2c76378",
+      "public_path": "kaggriculture/decision/execution.py",
+      "public_sha256": "e1b8acb32ef0b31c0de3048d481d84babf3b07510d18a9d3b2fd3da471d8f239",
+      "relation": "LF_public_to_CRLF_runtime"
+    },
+    {
+      "runtime_path": "decision/semantics.py",
+      "frozen_runtime_sha256": "9ac62d0df7adca84c0feff805b2979bb45f9f9f4c2064d1e2b5c48efd3e779a5",
+      "public_path": "kaggriculture/decision/semantics.py",
+      "public_sha256": "9ac62d0df7adca84c0feff805b2979bb45f9f9f4c2064d1e2b5c48efd3e779a5",
+      "relation": "byte_identical"
+    },
+    {
+      "runtime_path": "decision/verify_mechanisms.py",
+      "frozen_runtime_sha256": "cc82fd118abd94e92a8833587aa2bfb9117214a8a5b00e8054225732af47fbbf",
+      "public_path": "kaggriculture/decision/verify_mechanisms.py",
+      "public_sha256": "cc82fd118abd94e92a8833587aa2bfb9117214a8a5b00e8054225732af47fbbf",
+      "relation": "byte_identical"
+    },
+    {
+      "runtime_path": "decision/api.py",
+      "frozen_runtime_sha256": "3ef4025bde61d240b298cbe4d31291f25021baaf5b396f5540bbfcdda4231917",
+      "public_path": "kaggriculture/decision/api.py",
+      "public_sha256": "3ef4025bde61d240b298cbe4d31291f25021baaf5b396f5540bbfcdda4231917",
+      "relation": "byte_identical"
+    }
+  ],
+  "entry_fix": {
+    "old_source": "review/evidence/market-teacher-v1-20261021/sources/teacher_market_v1.development.py",
+    "old_sha256": "80df717fc9c3638b6115ca1b9bd7afab6c2003af74e9a7e1ca91a336485581ea",
+    "delivered_source": "kaggriculture/bots/teacher_market_v1.py",
+    "delivered_sha256": "61fbb4d27f7706d6bb00073892b1890d6f564d20d6440282fb41e40409e1bc15",
+    "relation": "Only appended submission_agent alias; full observation/file-game equivalence in file-entry-check.json"
+  },
+  "notes": "Original hashes are retained. Development measurement code was added while games ran; delivery manifest is not a retrospective pre-run freeze."
+}

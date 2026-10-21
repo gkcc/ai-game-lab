@@ -1,0 +1,31 @@
+{
+  "registration_sha256": "dfced36168033c3cbc9970a679d43b1c09876a2c69b7277013e5433776b156cf",
+  "source_sha256": {
+    "baseline.py": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+    "candidate.py": "80df717fc9c3638b6115ca1b9bd7afab6c2003af74e9a7e1ca91a336485581ea",
+    "market.py": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "teacher.py": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+    "tuned.py": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "v1.py": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "worker.py": "a80158b26d1f4ae3d366c1d1276a1ca63e652bcd350f5ca25545b0f5f33759f1"
+  },
+  "runtime_sha256": {
+    "bots/teacher_fertilizer_terminal_v2.py": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+    "bots/teacher_market_v1.py": "80df717fc9c3638b6115ca1b9bd7afab6c2003af74e9a7e1ca91a336485581ea",
+    "learning/market_sell_overlay.py": "e35f5ec729bc7238d3e000ca9f53566358040fd0a39225754a9b1909e24dc685",
+    "learning/market_timing.py": "e0dbb7bd01639adf145aae511142dcad8492dce763b80e7496a48997dae3b78e",
+    "learning/round2_worker.py": "a80158b26d1f4ae3d366c1d1276a1ca63e652bcd350f5ca25545b0f5f33759f1",
+    "learning/optimize_round2.py": "9f4fcf09fecd42c6135a1a2a72b95948c52474636719863eb2d468b01dc102fe",
+    "learning/evaluate_holdout.py": "df599e139893081f0a5307b0aa9cf299e2d14d4d4a221672b7aa9ac1d3747d82",
+    "replay_metrics.py": "dc2005ab79d682c57480e8d865655ddd4785655e59a761774ae5883babe435b4",
+    "decision/verify_market_teacher.py": "b5fa1fbc0d80b911f14de28b02fcc01500bdc8d0e0250105d3fea8805b89c0a2",
+    "decision/profit_attribution.py": "7e878885de1abd0ce5fb6e423df66403ad1925a15c710db5e54efc80156ef600",
+    "decision/full_audit.py": "84f7c7b4316fb98791c51b933f5329a271b8bc9aec60eebe133f6d433ec4510d",
+    "decision/execution.py": "cbf38b17ca9c4c1c4f82ddb583ff59e4f605a0e8d8e971ef5bfc3664b2c76378",
+    "decision/semantics.py": "9ac62d0df7adca84c0feff805b2979bb45f9f9f4c2064d1e2b5c48efd3e779a5",
+    "decision/verify_mechanisms.py": "cc82fd118abd94e92a8833587aa2bfb9117214a8a5b00e8054225732af47fbbf",
+    "decision/api.py": "3ef4025bde61d240b298cbe4d31291f25021baaf5b396f5540bbfcdda4231917"
+  },
+  "test_results_seen": false,
+  "registration_is_local_not_third_party_timestamp": true
+}

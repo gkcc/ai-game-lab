@@ -1,0 +1,5691 @@
+{
+  "passed": true,
+  "games": 32,
+  "official_transitions": 23008,
+  "process_isolated": true,
+  "source_freeze_sha256": "bc772e740ccd0607a3f21c2cc08e0d77627f862b1f225512af6da3625912e48d",
+  "auditor_sha256": "be3fbb08066a4bd2332b647eeda47e16b2bce055facac9462ff6f4f04fa50c77",
+  "rows": [
+    {
+      "seed": 21277116,
+      "opponent": "market",
+      "side": 0,
+      "policy": "baseline",
+      "replay_gzip_sha256": "493242fffcd2e3e7f630b0f1b9fc7ca7fa44c823905cf9076300d53d43f2a053",
+      "bot_sha256": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+      "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+      "kind": "development",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "0049c213e41e82cd26bee7568e17d239951ea9dda067ac14e3a4e2b98d279ca7",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "449d0229452a626e6dc08c537bd2475a78801e03198874f47ff0fa146494d2bc",
+        "final_rewards": [
+          46474.0,
+          42838.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 431,
+            "unit:executed": 4601,
+            "unit:pass": 3325
+          },
+          "ordered_effect_sha256": "32e04e4d1423c927076fc1d5bf2011b02ac0a5cd933c629dd3095ffad43697f4",
+          "successful_plants": [
+            53,
+            97
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "metrics": {
+        "counts": {
+          "unit:PASS:pass": 1906,
+          "cash:BUY_SEED:MELON": -1760.0,
+          "market_units:BUY_SEED:MELON": 22,
+          "cash:HIRE:": -516.0,
+          "market_units:HIRE:": 152,
+          "unit:PLANT:executed": 53,
+          "unit:WEST:executed": 704,
+          "unit:NORTH:executed": 619,
+          "unit:WATER:executed": 688,
+          "cash:BUY_SEED:STRAWBERRY": -2800.0,
+          "market_units:BUY_SEED:STRAWBERRY": 28,
+          "cash:BUY_SEED:CARROT": -60.0,
+          "market_units:BUY_SEED:CARROT": 3,
+          "automatic_drop_calls": 29,
+          "automatic_drop_discard_units": 0,
+          "cash:BUY_PRODUCT:FERTILIZER": -2565.0,
+          "market_units:BUY_PRODUCT:FERTILIZER": 25,
+          "unit:PICKUP:executed": 27,
+          "unit:FERTILIZE:executed": 25,
+          "unit:SOUTH:executed": 31,
+          "unit:HARVEST:executed": 78,
+          "harvest_units:MELON": 132,
+          "harvest_units:STRAWBERRY": 141,
+          "unit:EAST:executed": 34,
+          "unit:DROP:executed": 5,
+          "manual_drop_discard_units": 0,
+          "cash:SELL:MELON": 17529.0,
+          "market_units:SELL:MELON": 132,
+          "cash:SELL:STRAWBERRY": 33292.0,
+          "market_units:SELL:STRAWBERRY": 141,
+          "unit:DIG:executed": 6,
+          "harvest_units:CARROT": 6,
+          "cash:SELL:CARROT": 354.0,
+          "market_units:SELL:CARROT": 6
+        },
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 17529.0
+          },
+          "STRAWBERRY": {
+            "units": 141,
+            "revenue": 33292.0
+          },
+          "CARROT": {
+            "units": 6,
+            "revenue": 354.0
+          }
+        },
+        "production": {
+          "STRAWBERRY": {
+            "opportunities": 106,
+            "potential_units": 141,
+            "admitted_units": 141,
+            "clipped_units": 0
+          }
+        },
+        "market_cash": 43474.0,
+        "cash_residual": 0.0,
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "opponent_cash_and_sales": {
+        "market_cash": 39838.0,
+        "cash_residual": 0.0,
+        "sales": {
+          "CARROT": {
+            "units": 150,
+            "revenue": 7329.0
+          },
+          "WHEAT": {
+            "units": 28,
+            "revenue": 1046.0
+          },
+          "MELON": {
+            "units": 48,
+            "revenue": 12014.0
+          },
+          "STRAWBERRY": {
+            "units": 106,
+            "revenue": 24669.0
+          }
+        },
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "same_input_contract": {
+        "passed": true,
+        "non_sell_slot_or_quantity_mismatches": 0,
+        "unit_mismatches": 0,
+        "observations": 719,
+        "sell_decision_differences": 409
+      },
+      "request_outcomes": {
+        "unit:pass": 1906,
+        "market:BUY_SEED:executed": 25,
+        "market_invalid": 0,
+        "non_sell_requested_orders": 190,
+        "non_sell_incomplete_orders": 0,
+        "market:HIRE:executed": 152,
+        "unit:executed": 2270,
+        "market:BUY_PRODUCT:executed": 13,
+        "market:SELL:executed": 20,
+        "sell_requested_units": 279
+      },
+      "storage": {
+        "max_observed_shed_units": 70,
+        "mean_observed_shed_units": 1.5104311543810849
+      },
+      "policy_actions_reproduced": true,
+      "opponent_actions_reproduced": true
+    },
+    {
+      "seed": 21277116,
+      "opponent": "market",
+      "side": 0,
+      "policy": "candidate",
+      "replay_gzip_sha256": "c5a3e0746bbb8027abc49c9ad4e1bd1dc40ef414b0b067596fe828ca27ccacb4",
+      "bot_sha256": "80df717fc9c3638b6115ca1b9bd7afab6c2003af74e9a7e1ca91a336485581ea",
+      "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+      "kind": "development",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "e8b6878c257352f055c8fc5e0065337cfc0a908fd243e1935ae21a96a13d4a8e",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "7b5ab33ce3960c8abbcf1ef51c7236b33cf2b12d3f8b448375df95b63b558b38",
+        "final_rewards": [
+          46399.0,
+          42947.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 452,
+            "unit:executed": 4601,
+            "unit:pass": 3325
+          },
+          "ordered_effect_sha256": "d9780055f0ab4f532c3037dffbd803ba52b455deaf62201f96e61207b58ff8ff",
+          "successful_plants": [
+            53,
+            97
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "metrics": {
+        "counts": {
+          "unit:PASS:pass": 1906,
+          "cash:BUY_SEED:MELON": -1760.0,
+          "market_units:BUY_SEED:MELON": 22,
+          "cash:HIRE:": -516.0,
+          "market_units:HIRE:": 152,
+          "unit:PLANT:executed": 53,
+          "unit:WEST:executed": 704,
+          "unit:NORTH:executed": 619,
+          "unit:WATER:executed": 688,
+          "cash:BUY_SEED:STRAWBERRY": -2800.0,
+          "market_units:BUY_SEED:STRAWBERRY": 28,
+          "cash:BUY_SEED:CARROT": -60.0,
+          "market_units:BUY_SEED:CARROT": 3,
+          "automatic_drop_calls": 29,
+          "automatic_drop_discard_units": 0,
+          "cash:BUY_PRODUCT:FERTILIZER": -2565.0,
+          "market_units:BUY_PRODUCT:FERTILIZER": 25,
+          "unit:PICKUP:executed": 27,
+          "unit:FERTILIZE:executed": 25,
+          "unit:SOUTH:executed": 31,
+          "unit:HARVEST:executed": 78,
+          "harvest_units:MELON": 132,
+          "harvest_units:STRAWBERRY": 141,
+          "unit:EAST:executed": 34,
+          "unit:DROP:executed": 5,
+          "manual_drop_discard_units": 0,
+          "cash:SELL:MELON": 17434.0,
+          "market_units:SELL:MELON": 132,
+          "cash:SELL:STRAWBERRY": 33312.0,
+          "market_units:SELL:STRAWBERRY": 141,
+          "unit:DIG:executed": 6,
+          "harvest_units:CARROT": 6,
+          "cash:SELL:CARROT": 354.0,
+          "market_units:SELL:CARROT": 6
+        },
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 17434.0
+          },
+          "STRAWBERRY": {
+            "units": 141,
+            "revenue": 33312.0
+          },
+          "CARROT": {
+            "units": 6,
+            "revenue": 354.0
+          }
+        },
+        "production": {
+          "STRAWBERRY": {
+            "opportunities": 106,
+            "potential_units": 141,
+            "admitted_units": 141,
+            "clipped_units": 0
+          }
+        },
+        "market_cash": 43399.0,
+        "cash_residual": 0.0,
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "opponent_cash_and_sales": {
+        "market_cash": 39947.0,
+        "cash_residual": 0.0,
+        "sales": {
+          "CARROT": {
+            "units": 150,
+            "revenue": 7329.0
+          },
+          "WHEAT": {
+            "units": 28,
+            "revenue": 1046.0
+          },
+          "MELON": {
+            "units": 48,
+            "revenue": 12014.0
+          },
+          "STRAWBERRY": {
+            "units": 106,
+            "revenue": 24778.0
+          }
+        },
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "same_input_contract": {
+        "passed": true,
+        "non_sell_slot_or_quantity_mismatches": 0,
+        "unit_mismatches": 0,
+        "observations": 719,
+        "sell_decision_differences": 23
+      },
+      "request_outcomes": {
+        "unit:pass": 1906,
+        "market:BUY_SEED:executed": 25,
+        "market_invalid": 0,
+        "non_sell_requested_orders": 190,
+        "non_sell_incomplete_orders": 0,
+        "market:HIRE:executed": 152,
+        "unit:executed": 2270,
+        "market:BUY_PRODUCT:executed": 13,
+        "market:SELL:executed": 41,
+        "sell_requested_units": 279
+      },
+      "storage": {
+        "max_observed_shed_units": 68,
+        "mean_observed_shed_units": 0.6689847009735744
+      },
+      "policy_actions_reproduced": true,
+      "opponent_actions_reproduced": true
+    },
+    {
+      "seed": 21277116,
+      "opponent": "market",
+      "side": 1,
+      "policy": "baseline",
+      "replay_gzip_sha256": "7249b9508e874d43660f0e829c99984b2014f94a3ba916e491302dbc97cf69b5",
+      "bot_sha256": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+      "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+      "kind": "development",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "1aef16d4936e81e7ed2b23e58662c402f36f3c025078006ae2c0a475da968fb7",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "1fd9066697327d8d77db98e1b19daed67d32eb1cac0814ab24dba0f7342b0445",
+        "final_rewards": [
+          42838.0,
+          46474.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 431,
+            "unit:executed": 4601,
+            "unit:pass": 3325
+          },
+          "ordered_effect_sha256": "c154d53023c0dcfe9050ac84902940cc0483e557993a9d7eea082be95e192eb6",
+          "successful_plants": [
+            97,
+            53
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "metrics": {
+        "counts": {
+          "unit:PASS:pass": 1906,
+          "cash:BUY_SEED:MELON": -1760.0,
+          "market_units:BUY_SEED:MELON": 22,
+          "cash:HIRE:": -516.0,
+          "market_units:HIRE:": 152,
+          "unit:PLANT:executed": 53,
+          "unit:WEST:executed": 704,
+          "unit:NORTH:executed": 619,
+          "unit:WATER:executed": 688,
+          "cash:BUY_SEED:STRAWBERRY": -2800.0,
+          "market_units:BUY_SEED:STRAWBERRY": 28,
+          "cash:BUY_SEED:CARROT": -60.0,
+          "market_units:BUY_SEED:CARROT": 3,
+          "automatic_drop_calls": 29,
+          "automatic_drop_discard_units": 0,
+          "cash:BUY_PRODUCT:FERTILIZER": -2565.0,
+          "market_units:BUY_PRODUCT:FERTILIZER": 25,
+          "unit:PICKUP:executed": 27,
+          "unit:FERTILIZE:executed": 25,
+          "unit:SOUTH:executed": 31,
+          "unit:HARVEST:executed": 78,
+          "harvest_units:MELON": 132,
+          "harvest_units:STRAWBERRY": 141,
+          "unit:EAST:executed": 34,
+          "unit:DROP:executed": 5,
+          "manual_drop_discard_units": 0,
+          "cash:SELL:MELON": 17529.0,
+          "market_units:SELL:MELON": 132,
+          "cash:SELL:STRAWBERRY": 33292.0,
+          "market_units:SELL:STRAWBERRY": 141,
+          "unit:DIG:executed": 6,
+          "harvest_units:CARROT": 6,
+          "cash:SELL:CARROT": 354.0,
+          "market_units:SELL:CARROT": 6
+        },
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 17529.0
+          },
+          "STRAWBERRY": {
+            "units": 141,
+            "revenue": 33292.0
+          },
+          "CARROT": {
+            "units": 6,
+            "revenue": 354.0
+          }
+        },
+        "production": {
+          "STRAWBERRY": {
+            "opportunities": 106,
+            "potential_units": 141,
+            "admitted_units": 141,
+            "clipped_units": 0
+          }
+        },
+        "market_cash": 43474.0,
+        "cash_residual": 0.0,
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "opponent_cash_and_sales": {
+        "market_cash": 39838.0,
+        "cash_residual": 0.0,
+        "sales": {
+          "CARROT": {
+            "units": 150,
+            "revenue": 7329.0
+          },
+          "WHEAT": {
+            "units": 28,
+            "revenue": 1046.0
+          },
+          "MELON": {
+            "units": 48,
+            "revenue": 12014.0
+          },
+          "STRAWBERRY": {
+            "units": 106,
+            "revenue": 24669.0
+          }
+        },
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "same_input_contract": {
+        "passed": true,
+        "non_sell_slot_or_quantity_mismatches": 0,
+        "unit_mismatches": 0,
+        "observations": 719,
+        "sell_decision_differences": 409
+      },
+      "request_outcomes": {
+        "unit:pass": 1906,
+        "market:BUY_SEED:executed": 25,
+        "market_invalid": 0,
+        "non_sell_requested_orders": 190,
+        "non_sell_incomplete_orders": 0,
+        "market:HIRE:executed": 152,
+        "unit:executed": 2270,
+        "market:BUY_PRODUCT:executed": 13,
+        "market:SELL:executed": 20,
+        "sell_requested_units": 279
+      },
+      "storage": {
+        "max_observed_shed_units": 70,
+        "mean_observed_shed_units": 1.5104311543810849
+      },
+      "policy_actions_reproduced": true,
+      "opponent_actions_reproduced": true
+    },
+    {
+      "seed": 21277116,
+      "opponent": "market",
+      "side": 1,
+      "policy": "candidate",
+      "replay_gzip_sha256": "05068a2c4c46e0622fd9dd6e614d8b7bb9a82d8c10fb73407fa73d4fe65f3459",
+      "bot_sha256": "80df717fc9c3638b6115ca1b9bd7afab6c2003af74e9a7e1ca91a336485581ea",
+      "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+      "kind": "development",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "bd76ca4dc6d8ea427f4ce0cb6d67b27bd20b249b7a8169c13aa8613f6735b36d",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "2103c18196ebc092703d0b83dc99b926e351148f0889ec7dfcaa066b1c488580",
+        "final_rewards": [
+          42947.0,
+          46399.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 452,
+            "unit:executed": 4601,
+            "unit:pass": 3325
+          },
+          "ordered_effect_sha256": "2c0182f0a824251e947bbcedb812d51f4c69b328fb04bd498e5b3b30e9f059c6",
+          "successful_plants": [
+            97,
+            53
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "metrics": {
+        "counts": {
+          "unit:PASS:pass": 1906,
+          "cash:BUY_SEED:MELON": -1760.0,
+          "market_units:BUY_SEED:MELON": 22,
+          "cash:HIRE:": -516.0,
+          "market_units:HIRE:": 152,
+          "unit:PLANT:executed": 53,
+          "unit:WEST:executed": 704,
+          "unit:NORTH:executed": 619,
+          "unit:WATER:executed": 688,
+          "cash:BUY_SEED:STRAWBERRY": -2800.0,
+          "market_units:BUY_SEED:STRAWBERRY": 28,
+          "cash:BUY_SEED:CARROT": -60.0,
+          "market_units:BUY_SEED:CARROT": 3,
+          "automatic_drop_calls": 29,
+          "automatic_drop_discard_units": 0,
+          "cash:BUY_PRODUCT:FERTILIZER": -2565.0,
+          "market_units:BUY_PRODUCT:FERTILIZER": 25,
+          "unit:PICKUP:executed": 27,
+          "unit:FERTILIZE:executed": 25,
+          "unit:SOUTH:executed": 31,
+          "unit:HARVEST:executed": 78,
+          "harvest_units:MELON": 132,
+          "harvest_units:STRAWBERRY": 141,
+          "unit:EAST:executed": 34,
+          "unit:DROP:executed": 5,
+          "manual_drop_discard_units": 0,
+          "cash:SELL:MELON": 17434.0,
+          "market_units:SELL:MELON": 132,
+          "cash:SELL:STRAWBERRY": 33312.0,
+          "market_units:SELL:STRAWBERRY": 141,
+          "unit:DIG:executed": 6,
+          "harvest_units:CARROT": 6,
+          "cash:SELL:CARROT": 354.0,
+          "market_units:SELL:CARROT": 6
+        },
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 17434.0
+          },
+          "STRAWBERRY": {
+            "units": 141,
+            "revenue": 33312.0
+          },
+          "CARROT": {
+            "units": 6,
+            "revenue": 354.0
+          }
+        },
+        "production": {
+          "STRAWBERRY": {
+            "opportunities": 106,
+            "potential_units": 141,
+            "admitted_units": 141,
+            "clipped_units": 0
+          }
+        },
+        "market_cash": 43399.0,
+        "cash_residual": 0.0,
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "opponent_cash_and_sales": {
+        "market_cash": 39947.0,
+        "cash_residual": 0.0,
+        "sales": {
+          "CARROT": {
+            "units": 150,
+            "revenue": 7329.0
+          },
+          "WHEAT": {
+            "units": 28,
+            "revenue": 1046.0
+          },
+          "MELON": {
+            "units": 48,
+            "revenue": 12014.0
+          },
+          "STRAWBERRY": {
+            "units": 106,
+            "revenue": 24778.0
+          }
+        },
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "same_input_contract": {
+        "passed": true,
+        "non_sell_slot_or_quantity_mismatches": 0,
+        "unit_mismatches": 0,
+        "observations": 719,
+        "sell_decision_differences": 23
+      },
+      "request_outcomes": {
+        "unit:pass": 1906,
+        "market:BUY_SEED:executed": 25,
+        "market_invalid": 0,
+        "non_sell_requested_orders": 190,
+        "non_sell_incomplete_orders": 0,
+        "market:HIRE:executed": 152,
+        "unit:executed": 2270,
+        "market:BUY_PRODUCT:executed": 13,
+        "market:SELL:executed": 41,
+        "sell_requested_units": 279
+      },
+      "storage": {
+        "max_observed_shed_units": 68,
+        "mean_observed_shed_units": 0.6689847009735744
+      },
+      "policy_actions_reproduced": true,
+      "opponent_actions_reproduced": true
+    },
+    {
+      "seed": 21277116,
+      "opponent": "teacher",
+      "side": 0,
+      "policy": "baseline",
+      "replay_gzip_sha256": "c47ccef5084eaefe9c70687b314e4967e03e126ce02d0390d34204e524949a2d",
+      "bot_sha256": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+      "rival_sha256": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+      "kind": "development",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "8f1702bf33134149d22a3fc4cd400ad6ad6b17f04d95f79b7502b8a12e9b2536",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "fb760ec855432d54bc765b93ebd4dd415fcd35ce736b425b9c03fc37be6cd314",
+        "final_rewards": [
+          44188.0,
+          44188.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 430,
+            "unit:executed": 4524,
+            "unit:pass": 3746
+          },
+          "ordered_effect_sha256": "0f36a855711f293c7ea4ccc7cf7803cda2f309885de541614667b3414d32120e",
+          "successful_plants": [
+            62,
+            62
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "metrics": {
+        "counts": {
+          "unit:PASS:pass": 1873,
+          "cash:BUY_SEED:MELON": -1760.0,
+          "market_units:BUY_SEED:MELON": 22,
+          "cash:HIRE:": -506.0,
+          "market_units:HIRE:": 150,
+          "unit:PLANT:executed": 62,
+          "unit:WEST:executed": 691,
+          "unit:NORTH:executed": 613,
+          "unit:WATER:executed": 697,
+          "cash:BUY_SEED:STRAWBERRY": -2500.0,
+          "market_units:BUY_SEED:STRAWBERRY": 25,
+          "cash:BUY_SEED:CARROT": -300.0,
+          "market_units:BUY_SEED:CARROT": 15,
+          "automatic_drop_calls": 29,
+          "automatic_drop_discard_units": 0,
+          "cash:BUY_PRODUCT:FERTILIZER": -2406.0,
+          "market_units:BUY_PRODUCT:FERTILIZER": 23,
+          "unit:PICKUP:executed": 25,
+          "unit:FERTILIZE:executed": 23,
+          "unit:SOUTH:executed": 26,
+          "unit:HARVEST:executed": 86,
+          "harvest_units:MELON": 132,
+          "harvest_units:STRAWBERRY": 131,
+          "unit:EAST:executed": 28,
+          "unit:DROP:executed": 5,
+          "manual_drop_discard_units": 0,
+          "cash:SELL:MELON": 14914.0,
+          "market_units:SELL:MELON": 132,
+          "cash:SELL:STRAWBERRY": 31332.0,
+          "market_units:SELL:STRAWBERRY": 131,
+          "unit:DIG:executed": 6,
+          "harvest_units:CARROT": 42,
+          "cash:SELL:CARROT": 2414.0,
+          "market_units:SELL:CARROT": 42
+        },
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 14914.0
+          },
+          "STRAWBERRY": {
+            "units": 131,
+            "revenue": 31332.0
+          },
+          "CARROT": {
+            "units": 42,
+            "revenue": 2414.0
+          }
+        },
+        "production": {
+          "STRAWBERRY": {
+            "opportunities": 100,
+            "potential_units": 131,
+            "admitted_units": 131,
+            "clipped_units": 0
+          }
+        },
+        "market_cash": 41188.0,
+        "cash_residual": 0.0,
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "opponent_cash_and_sales": {
+        "market_cash": 41188.0,
+        "cash_residual": 0.0,
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 14914.0
+          },
+          "STRAWBERRY": {
+            "units": 131,
+            "revenue": 31332.0
+          },
+          "CARROT": {
+            "units": 42,
+            "revenue": 2414.0
+          }
+        },
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "same_input_contract": {
+        "passed": true,
+        "non_sell_slot_or_quantity_mismatches": 0,
+        "unit_mismatches": 0,
+        "observations": 719,
+        "sell_decision_differences": 409
+      },
+      "request_outcomes": {
+        "unit:pass": 1873,
+        "market:BUY_SEED:executed": 33,
+        "market_invalid": 0,
+        "non_sell_requested_orders": 195,
+        "non_sell_incomplete_orders": 0,
+        "market:HIRE:executed": 150,
+        "unit:executed": 2262,
+        "market:BUY_PRODUCT:executed": 12,
+        "market:SELL:executed": 20,
+        "sell_requested_units": 305
+      },
+      "storage": {
+        "max_observed_shed_units": 66,
+        "mean_observed_shed_units": 1.4770514603616134
+      },
+      "policy_actions_reproduced": true,
+      "opponent_actions_reproduced": true
+    },
+    {
+      "seed": 21277116,
+      "opponent": "teacher",
+      "side": 0,
+      "policy": "candidate",
+      "replay_gzip_sha256": "259b42aa39af3ff4ad4a1b0667fec372ac445d4eb9be4fa8cb0c8c8bc97c8ce9",
+      "bot_sha256": "80df717fc9c3638b6115ca1b9bd7afab6c2003af74e9a7e1ca91a336485581ea",
+      "rival_sha256": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+      "kind": "development",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "246a8912c85aa067f43f718d37480d3e657c6240f078e6d48e7efae8bc506800",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "b1c3ad63ee9da164366820577ad7bffc4466f1bf3cf81ca173350bd11f57be6b",
+        "final_rewards": [
+          44239.0,
+          44208.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 478,
+            "unit:executed": 4524,
+            "unit:pass": 3746
+          },
+          "ordered_effect_sha256": "0958e1cff45aecb0a4f97391abba1e2a923a90573149b93151a05218f5cf8086",
+          "successful_plants": [
+            62,
+            62
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "metrics": {
+        "counts": {
+          "unit:PASS:pass": 1873,
+          "cash:BUY_SEED:MELON": -1760.0,
+          "market_units:BUY_SEED:MELON": 22,
+          "cash:HIRE:": -506.0,
+          "market_units:HIRE:": 150,
+          "unit:PLANT:executed": 62,
+          "unit:WEST:executed": 691,
+          "unit:NORTH:executed": 613,
+          "unit:WATER:executed": 697,
+          "cash:BUY_SEED:STRAWBERRY": -2500.0,
+          "market_units:BUY_SEED:STRAWBERRY": 25,
+          "cash:BUY_SEED:CARROT": -300.0,
+          "market_units:BUY_SEED:CARROT": 15,
+          "automatic_drop_calls": 29,
+          "automatic_drop_discard_units": 0,
+          "cash:BUY_PRODUCT:FERTILIZER": -2406.0,
+          "market_units:BUY_PRODUCT:FERTILIZER": 23,
+          "unit:PICKUP:executed": 25,
+          "unit:FERTILIZE:executed": 23,
+          "unit:SOUTH:executed": 26,
+          "unit:HARVEST:executed": 86,
+          "harvest_units:MELON": 132,
+          "harvest_units:STRAWBERRY": 131,
+          "unit:EAST:executed": 28,
+          "unit:DROP:executed": 5,
+          "manual_drop_discard_units": 0,
+          "cash:SELL:MELON": 14825.0,
+          "market_units:SELL:MELON": 132,
+          "cash:SELL:STRAWBERRY": 31474.0,
+          "market_units:SELL:STRAWBERRY": 131,
+          "unit:DIG:executed": 6,
+          "harvest_units:CARROT": 42,
+          "cash:SELL:CARROT": 2412.0,
+          "market_units:SELL:CARROT": 42
+        },
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 14825.0
+          },
+          "STRAWBERRY": {
+            "units": 131,
+            "revenue": 31474.0
+          },
+          "CARROT": {
+            "units": 42,
+            "revenue": 2412.0
+          }
+        },
+        "production": {
+          "STRAWBERRY": {
+            "opportunities": 100,
+            "potential_units": 131,
+            "admitted_units": 131,
+            "clipped_units": 0
+          }
+        },
+        "market_cash": 41239.0,
+        "cash_residual": 0.0,
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "opponent_cash_and_sales": {
+        "market_cash": 41208.0,
+        "cash_residual": 0.0,
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 14917.0
+          },
+          "STRAWBERRY": {
+            "units": 131,
+            "revenue": 31342.0
+          },
+          "CARROT": {
+            "units": 42,
+            "revenue": 2421.0
+          }
+        },
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "same_input_contract": {
+        "passed": true,
+        "non_sell_slot_or_quantity_mismatches": 0,
+        "unit_mismatches": 0,
+        "observations": 719,
+        "sell_decision_differences": 50
+      },
+      "request_outcomes": {
+        "unit:pass": 1873,
+        "market:BUY_SEED:executed": 33,
+        "market_invalid": 0,
+        "non_sell_requested_orders": 195,
+        "non_sell_incomplete_orders": 0,
+        "market:HIRE:executed": 150,
+        "unit:executed": 2262,
+        "market:BUY_PRODUCT:executed": 12,
+        "market:SELL:executed": 68,
+        "sell_requested_units": 305
+      },
+      "storage": {
+        "max_observed_shed_units": 64,
+        "mean_observed_shed_units": 0.9415855354659249
+      },
+      "policy_actions_reproduced": true,
+      "opponent_actions_reproduced": true
+    },
+    {
+      "seed": 21277116,
+      "opponent": "teacher",
+      "side": 1,
+      "policy": "baseline",
+      "replay_gzip_sha256": "fec6c04182a5e1e3a88176d7802a2a3f272051073df4daf44c124e2881c9fcf1",
+      "bot_sha256": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+      "rival_sha256": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+      "kind": "development",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "8f1702bf33134149d22a3fc4cd400ad6ad6b17f04d95f79b7502b8a12e9b2536",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "fb760ec855432d54bc765b93ebd4dd415fcd35ce736b425b9c03fc37be6cd314",
+        "final_rewards": [
+          44188.0,
+          44188.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 430,
+            "unit:executed": 4524,
+            "unit:pass": 3746
+          },
+          "ordered_effect_sha256": "0f36a855711f293c7ea4ccc7cf7803cda2f309885de541614667b3414d32120e",
+          "successful_plants": [
+            62,
+            62
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "metrics": {
+        "counts": {
+          "unit:PASS:pass": 1873,
+          "cash:BUY_SEED:MELON": -1760.0,
+          "market_units:BUY_SEED:MELON": 22,
+          "cash:HIRE:": -506.0,
+          "market_units:HIRE:": 150,
+          "unit:PLANT:executed": 62,
+          "unit:WEST:executed": 691,
+          "unit:NORTH:executed": 613,
+          "unit:WATER:executed": 697,
+          "cash:BUY_SEED:STRAWBERRY": -2500.0,
+          "market_units:BUY_SEED:STRAWBERRY": 25,
+          "cash:BUY_SEED:CARROT": -300.0,
+          "market_units:BUY_SEED:CARROT": 15,
+          "automatic_drop_calls": 29,
+          "automatic_drop_discard_units": 0,
+          "cash:BUY_PRODUCT:FERTILIZER": -2406.0,
+          "market_units:BUY_PRODUCT:FERTILIZER": 23,
+          "unit:PICKUP:executed": 25,
+          "unit:FERTILIZE:executed": 23,
+          "unit:SOUTH:executed": 26,
+          "unit:HARVEST:executed": 86,
+          "harvest_units:MELON": 132,
+          "harvest_units:STRAWBERRY": 131,
+          "unit:EAST:executed": 28,
+          "unit:DROP:executed": 5,
+          "manual_drop_discard_units": 0,
+          "cash:SELL:MELON": 14914.0,
+          "market_units:SELL:MELON": 132,
+          "cash:SELL:STRAWBERRY": 31332.0,
+          "market_units:SELL:STRAWBERRY": 131,
+          "unit:DIG:executed": 6,
+          "harvest_units:CARROT": 42,
+          "cash:SELL:CARROT": 2414.0,
+          "market_units:SELL:CARROT": 42
+        },
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 14914.0
+          },
+          "STRAWBERRY": {
+            "units": 131,
+            "revenue": 31332.0
+          },
+          "CARROT": {
+            "units": 42,
+            "revenue": 2414.0
+          }
+        },
+        "production": {
+          "STRAWBERRY": {
+            "opportunities": 100,
+            "potential_units": 131,
+            "admitted_units": 131,
+            "clipped_units": 0
+          }
+        },
+        "market_cash": 41188.0,
+        "cash_residual": 0.0,
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "opponent_cash_and_sales": {
+        "market_cash": 41188.0,
+        "cash_residual": 0.0,
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 14914.0
+          },
+          "STRAWBERRY": {
+            "units": 131,
+            "revenue": 31332.0
+          },
+          "CARROT": {
+            "units": 42,
+            "revenue": 2414.0
+          }
+        },
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "same_input_contract": {
+        "passed": true,
+        "non_sell_slot_or_quantity_mismatches": 0,
+        "unit_mismatches": 0,
+        "observations": 719,
+        "sell_decision_differences": 409
+      },
+      "request_outcomes": {
+        "unit:pass": 1873,
+        "market:BUY_SEED:executed": 33,
+        "market_invalid": 0,
+        "non_sell_requested_orders": 195,
+        "non_sell_incomplete_orders": 0,
+        "market:HIRE:executed": 150,
+        "unit:executed": 2262,
+        "market:BUY_PRODUCT:executed": 12,
+        "market:SELL:executed": 20,
+        "sell_requested_units": 305
+      },
+      "storage": {
+        "max_observed_shed_units": 66,
+        "mean_observed_shed_units": 1.4770514603616134
+      },
+      "policy_actions_reproduced": true,
+      "opponent_actions_reproduced": true
+    },
+    {
+      "seed": 21277116,
+      "opponent": "teacher",
+      "side": 1,
+      "policy": "candidate",
+      "replay_gzip_sha256": "b8b50d648fd5aac187a8eeb7d37805a105320d33c40c3e07459b88c2c9c2aaa7",
+      "bot_sha256": "80df717fc9c3638b6115ca1b9bd7afab6c2003af74e9a7e1ca91a336485581ea",
+      "rival_sha256": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+      "kind": "development",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "995334fa63da4bb9d5409ed9d27f04f0529e611f48718f75dd7e67bef7ee5d66",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "d3cef6a782209ce98328b21c23ac30d1219ac7ce210a765cf886c7f10d4de930",
+        "final_rewards": [
+          44208.0,
+          44239.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 478,
+            "unit:executed": 4524,
+            "unit:pass": 3746
+          },
+          "ordered_effect_sha256": "1d8a404c2058e9bf7d703ed8a72ea8d3685e8f1ac297547dbe85b277eec5f9ec",
+          "successful_plants": [
+            62,
+            62
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "metrics": {
+        "counts": {
+          "unit:PASS:pass": 1873,
+          "cash:BUY_SEED:MELON": -1760.0,
+          "market_units:BUY_SEED:MELON": 22,
+          "cash:HIRE:": -506.0,
+          "market_units:HIRE:": 150,
+          "unit:PLANT:executed": 62,
+          "unit:WEST:executed": 691,
+          "unit:NORTH:executed": 613,
+          "unit:WATER:executed": 697,
+          "cash:BUY_SEED:STRAWBERRY": -2500.0,
+          "market_units:BUY_SEED:STRAWBERRY": 25,
+          "cash:BUY_SEED:CARROT": -300.0,
+          "market_units:BUY_SEED:CARROT": 15,
+          "automatic_drop_calls": 29,
+          "automatic_drop_discard_units": 0,
+          "cash:BUY_PRODUCT:FERTILIZER": -2406.0,
+          "market_units:BUY_PRODUCT:FERTILIZER": 23,
+          "unit:PICKUP:executed": 25,
+          "unit:FERTILIZE:executed": 23,
+          "unit:SOUTH:executed": 26,
+          "unit:HARVEST:executed": 86,
+          "harvest_units:MELON": 132,
+          "harvest_units:STRAWBERRY": 131,
+          "unit:EAST:executed": 28,
+          "unit:DROP:executed": 5,
+          "manual_drop_discard_units": 0,
+          "cash:SELL:MELON": 14825.0,
+          "market_units:SELL:MELON": 132,
+          "cash:SELL:STRAWBERRY": 31474.0,
+          "market_units:SELL:STRAWBERRY": 131,
+          "unit:DIG:executed": 6,
+          "harvest_units:CARROT": 42,
+          "cash:SELL:CARROT": 2412.0,
+          "market_units:SELL:CARROT": 42
+        },
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 14825.0
+          },
+          "STRAWBERRY": {
+            "units": 131,
+            "revenue": 31474.0
+          },
+          "CARROT": {
+            "units": 42,
+            "revenue": 2412.0
+          }
+        },
+        "production": {
+          "STRAWBERRY": {
+            "opportunities": 100,
+            "potential_units": 131,
+            "admitted_units": 131,
+            "clipped_units": 0
+          }
+        },
+        "market_cash": 41239.0,
+        "cash_residual": 0.0,
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "opponent_cash_and_sales": {
+        "market_cash": 41208.0,
+        "cash_residual": 0.0,
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 14917.0
+          },
+          "STRAWBERRY": {
+            "units": 131,
+            "revenue": 31342.0
+          },
+          "CARROT": {
+            "units": 42,
+            "revenue": 2421.0
+          }
+        },
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "same_input_contract": {
+        "passed": true,
+        "non_sell_slot_or_quantity_mismatches": 0,
+        "unit_mismatches": 0,
+        "observations": 719,
+        "sell_decision_differences": 50
+      },
+      "request_outcomes": {
+        "unit:pass": 1873,
+        "market:BUY_SEED:executed": 33,
+        "market_invalid": 0,
+        "non_sell_requested_orders": 195,
+        "non_sell_incomplete_orders": 0,
+        "market:HIRE:executed": 150,
+        "unit:executed": 2262,
+        "market:BUY_PRODUCT:executed": 12,
+        "market:SELL:executed": 68,
+        "sell_requested_units": 305
+      },
+      "storage": {
+        "max_observed_shed_units": 64,
+        "mean_observed_shed_units": 0.9415855354659249
+      },
+      "policy_actions_reproduced": true,
+      "opponent_actions_reproduced": true
+    },
+    {
+      "seed": 21277116,
+      "opponent": "tuned",
+      "side": 0,
+      "policy": "baseline",
+      "replay_gzip_sha256": "8d33d3aefd128eb03ca0c0e1d8e99b6713aa2a5b91432b0bc16732cebebcf0bf",
+      "bot_sha256": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+      "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+      "kind": "development",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "58bfd3d0a15bedac9dcbb7cfe9cc3d280370236f11730281fccc3c98ec1b3b99",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "1f8fed2e8424a8d563a7521955751f927746eee36fcb9ef6d09b75c19679f336",
+        "final_rewards": [
+          47879.0,
+          38188.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 385,
+            "unit:executed": 4307,
+            "unit:pass": 3325
+          },
+          "ordered_effect_sha256": "a263cb795368b1e650993745f50f3155f0e99ecefeddc186359a450e6ce060e6",
+          "successful_plants": [
+            62,
+            61
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "metrics": {
+        "counts": {
+          "unit:PASS:pass": 1870,
+          "cash:BUY_SEED:MELON": -1760.0,
+          "market_units:BUY_SEED:MELON": 22,
+          "cash:HIRE:": -511.0,
+          "market_units:HIRE:": 151,
+          "unit:PLANT:executed": 62,
+          "unit:WEST:executed": 694,
+          "unit:NORTH:executed": 618,
+          "unit:WATER:executed": 697,
+          "cash:BUY_SEED:STRAWBERRY": -2500.0,
+          "market_units:BUY_SEED:STRAWBERRY": 25,
+          "cash:BUY_SEED:CARROT": -300.0,
+          "market_units:BUY_SEED:CARROT": 15,
+          "automatic_drop_calls": 29,
+          "automatic_drop_discard_units": 0,
+          "cash:BUY_PRODUCT:FERTILIZER": -2565.0,
+          "market_units:BUY_PRODUCT:FERTILIZER": 25,
+          "unit:PICKUP:executed": 27,
+          "unit:FERTILIZE:executed": 25,
+          "unit:SOUTH:executed": 33,
+          "unit:HARVEST:executed": 90,
+          "harvest_units:MELON": 132,
+          "harvest_units:STRAWBERRY": 135,
+          "unit:EAST:executed": 29,
+          "unit:DROP:executed": 5,
+          "manual_drop_discard_units": 0,
+          "cash:SELL:MELON": 16936.0,
+          "market_units:SELL:MELON": 132,
+          "cash:SELL:STRAWBERRY": 33165.0,
+          "market_units:SELL:STRAWBERRY": 135,
+          "unit:DIG:executed": 6,
+          "harvest_units:CARROT": 42,
+          "cash:SELL:CARROT": 2414.0,
+          "market_units:SELL:CARROT": 42
+        },
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 16936.0
+          },
+          "STRAWBERRY": {
+            "units": 135,
+            "revenue": 33165.0
+          },
+          "CARROT": {
+            "units": 42,
+            "revenue": 2414.0
+          }
+        },
+        "production": {
+          "STRAWBERRY": {
+            "opportunities": 100,
+            "potential_units": 135,
+            "admitted_units": 135,
+            "clipped_units": 0
+          }
+        },
+        "market_cash": 44879.0,
+        "cash_residual": 0.0,
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "opponent_cash_and_sales": {
+        "market_cash": 35188.0,
+        "cash_residual": 0.0,
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 12845.0
+          },
+          "STRAWBERRY": {
+            "units": 100,
+            "revenue": 24845.0
+          },
+          "CARROT": {
+            "units": 40,
+            "revenue": 2292.0
+          }
+        },
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "same_input_contract": {
+        "passed": true,
+        "non_sell_slot_or_quantity_mismatches": 0,
+        "unit_mismatches": 0,
+        "observations": 719,
+        "sell_decision_differences": 409
+      },
+      "request_outcomes": {
+        "unit:pass": 1870,
+        "market:BUY_SEED:executed": 33,
+        "market_invalid": 0,
+        "non_sell_requested_orders": 197,
+        "non_sell_incomplete_orders": 0,
+        "market:HIRE:executed": 151,
+        "unit:executed": 2286,
+        "market:BUY_PRODUCT:executed": 13,
+        "market:SELL:executed": 22,
+        "sell_requested_units": 309
+      },
+      "storage": {
+        "max_observed_shed_units": 66,
+        "mean_observed_shed_units": 1.4853963838664812
+      },
+      "policy_actions_reproduced": true,
+      "opponent_actions_reproduced": true
+    },
+    {
+      "seed": 21277116,
+      "opponent": "tuned",
+      "side": 0,
+      "policy": "candidate",
+      "replay_gzip_sha256": "3ffca9e5c35e9f5e923f2d2bcb8dec1ed9239ff48d3a26660d157e6a810e44cf",
+      "bot_sha256": "80df717fc9c3638b6115ca1b9bd7afab6c2003af74e9a7e1ca91a336485581ea",
+      "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+      "kind": "development",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "2c173ed62f4b01bedb6f4165f8a559dd47511842fecf42d168afe457aeac6848",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "3fb445f109ae0d404b8e11a34ebf81fb09436e1ff6a83ae384cc0f5533903ffa",
+        "final_rewards": [
+          47783.0,
+          38354.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 431,
+            "unit:executed": 4307,
+            "unit:pass": 3325
+          },
+          "ordered_effect_sha256": "7ad8f9e4e9531cb110142e0c4394925818986f55d32cfb1983558145f1a2bb94",
+          "successful_plants": [
+            62,
+            61
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "metrics": {
+        "counts": {
+          "unit:PASS:pass": 1870,
+          "cash:BUY_SEED:MELON": -1760.0,
+          "market_units:BUY_SEED:MELON": 22,
+          "cash:HIRE:": -511.0,
+          "market_units:HIRE:": 151,
+          "unit:PLANT:executed": 62,
+          "unit:WEST:executed": 694,
+          "unit:NORTH:executed": 618,
+          "unit:WATER:executed": 697,
+          "cash:BUY_SEED:STRAWBERRY": -2500.0,
+          "market_units:BUY_SEED:STRAWBERRY": 25,
+          "cash:BUY_SEED:CARROT": -300.0,
+          "market_units:BUY_SEED:CARROT": 15,
+          "automatic_drop_calls": 29,
+          "automatic_drop_discard_units": 0,
+          "cash:BUY_PRODUCT:FERTILIZER": -2565.0,
+          "market_units:BUY_PRODUCT:FERTILIZER": 25,
+          "unit:PICKUP:executed": 27,
+          "unit:FERTILIZE:executed": 25,
+          "unit:SOUTH:executed": 33,
+          "unit:HARVEST:executed": 90,
+          "harvest_units:MELON": 132,
+          "harvest_units:STRAWBERRY": 135,
+          "unit:EAST:executed": 29,
+          "unit:DROP:executed": 5,
+          "manual_drop_discard_units": 0,
+          "cash:SELL:MELON": 16852.0,
+          "market_units:SELL:MELON": 132,
+          "cash:SELL:STRAWBERRY": 33155.0,
+          "market_units:SELL:STRAWBERRY": 135,
+          "unit:DIG:executed": 6,
+          "harvest_units:CARROT": 42,
+          "cash:SELL:CARROT": 2412.0,
+          "market_units:SELL:CARROT": 42
+        },
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 16852.0
+          },
+          "STRAWBERRY": {
+            "units": 135,
+            "revenue": 33155.0
+          },
+          "CARROT": {
+            "units": 42,
+            "revenue": 2412.0
+          }
+        },
+        "production": {
+          "STRAWBERRY": {
+            "opportunities": 100,
+            "potential_units": 135,
+            "admitted_units": 135,
+            "clipped_units": 0
+          }
+        },
+        "market_cash": 44783.0,
+        "cash_residual": 0.0,
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "opponent_cash_and_sales": {
+        "market_cash": 35354.0,
+        "cash_residual": 0.0,
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 12848.0
+          },
+          "STRAWBERRY": {
+            "units": 100,
+            "revenue": 25001.0
+          },
+          "CARROT": {
+            "units": 40,
+            "revenue": 2299.0
+          }
+        },
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "same_input_contract": {
+        "passed": true,
+        "non_sell_slot_or_quantity_mismatches": 0,
+        "unit_mismatches": 0,
+        "observations": 719,
+        "sell_decision_differences": 48
+      },
+      "request_outcomes": {
+        "unit:pass": 1870,
+        "market:BUY_SEED:executed": 33,
+        "market_invalid": 0,
+        "non_sell_requested_orders": 197,
+        "non_sell_incomplete_orders": 0,
+        "market:HIRE:executed": 151,
+        "unit:executed": 2286,
+        "market:BUY_PRODUCT:executed": 13,
+        "market:SELL:executed": 68,
+        "sell_requested_units": 309
+      },
+      "storage": {
+        "max_observed_shed_units": 64,
+        "mean_observed_shed_units": 0.9095966620305981
+      },
+      "policy_actions_reproduced": true,
+      "opponent_actions_reproduced": true
+    },
+    {
+      "seed": 21277116,
+      "opponent": "tuned",
+      "side": 1,
+      "policy": "baseline",
+      "replay_gzip_sha256": "9b84523efbe44300dcba6f663070db2c0a8f82585cc781ea507d4aeb78185ef1",
+      "bot_sha256": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+      "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+      "kind": "development",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "dd771cf98d7b11a43425ffc3fb6fe533c0e8269973a9b3f494826bc6a5be3df9",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "38351017cf6d574aafd3aa6c4b34f6633131495baf572898886cd6c02b62823f",
+        "final_rewards": [
+          38188.0,
+          47879.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 385,
+            "unit:executed": 4307,
+            "unit:pass": 3325
+          },
+          "ordered_effect_sha256": "f5f427d15cb7241bd7fb1e2236d54b581a21ecfa8b1d23912dae1efa92678fe3",
+          "successful_plants": [
+            61,
+            62
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "metrics": {
+        "counts": {
+          "unit:PASS:pass": 1870,
+          "cash:BUY_SEED:MELON": -1760.0,
+          "market_units:BUY_SEED:MELON": 22,
+          "cash:HIRE:": -511.0,
+          "market_units:HIRE:": 151,
+          "unit:PLANT:executed": 62,
+          "unit:WEST:executed": 694,
+          "unit:NORTH:executed": 618,
+          "unit:WATER:executed": 697,
+          "cash:BUY_SEED:STRAWBERRY": -2500.0,
+          "market_units:BUY_SEED:STRAWBERRY": 25,
+          "cash:BUY_SEED:CARROT": -300.0,
+          "market_units:BUY_SEED:CARROT": 15,
+          "automatic_drop_calls": 29,
+          "automatic_drop_discard_units": 0,
+          "cash:BUY_PRODUCT:FERTILIZER": -2565.0,
+          "market_units:BUY_PRODUCT:FERTILIZER": 25,
+          "unit:PICKUP:executed": 27,
+          "unit:FERTILIZE:executed": 25,
+          "unit:SOUTH:executed": 33,
+          "unit:HARVEST:executed": 90,
+          "harvest_units:MELON": 132,
+          "harvest_units:STRAWBERRY": 135,
+          "unit:EAST:executed": 29,
+          "unit:DROP:executed": 5,
+          "manual_drop_discard_units": 0,
+          "cash:SELL:MELON": 16936.0,
+          "market_units:SELL:MELON": 132,
+          "cash:SELL:STRAWBERRY": 33165.0,
+          "market_units:SELL:STRAWBERRY": 135,
+          "unit:DIG:executed": 6,
+          "harvest_units:CARROT": 42,
+          "cash:SELL:CARROT": 2414.0,
+          "market_units:SELL:CARROT": 42
+        },
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 16936.0
+          },
+          "STRAWBERRY": {
+            "units": 135,
+            "revenue": 33165.0
+          },
+          "CARROT": {
+            "units": 42,
+            "revenue": 2414.0
+          }
+        },
+        "production": {
+          "STRAWBERRY": {
+            "opportunities": 100,
+            "potential_units": 135,
+            "admitted_units": 135,
+            "clipped_units": 0
+          }
+        },
+        "market_cash": 44879.0,
+        "cash_residual": 0.0,
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "opponent_cash_and_sales": {
+        "market_cash": 35188.0,
+        "cash_residual": 0.0,
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 12845.0
+          },
+          "STRAWBERRY": {
+            "units": 100,
+            "revenue": 24845.0
+          },
+          "CARROT": {
+            "units": 40,
+            "revenue": 2292.0
+          }
+        },
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "same_input_contract": {
+        "passed": true,
+        "non_sell_slot_or_quantity_mismatches": 0,
+        "unit_mismatches": 0,
+        "observations": 719,
+        "sell_decision_differences": 409
+      },
+      "request_outcomes": {
+        "unit:pass": 1870,
+        "market:BUY_SEED:executed": 33,
+        "market_invalid": 0,
+        "non_sell_requested_orders": 197,
+        "non_sell_incomplete_orders": 0,
+        "market:HIRE:executed": 151,
+        "unit:executed": 2286,
+        "market:BUY_PRODUCT:executed": 13,
+        "market:SELL:executed": 22,
+        "sell_requested_units": 309
+      },
+      "storage": {
+        "max_observed_shed_units": 66,
+        "mean_observed_shed_units": 1.4853963838664812
+      },
+      "policy_actions_reproduced": true,
+      "opponent_actions_reproduced": true
+    },
+    {
+      "seed": 21277116,
+      "opponent": "tuned",
+      "side": 1,
+      "policy": "candidate",
+      "replay_gzip_sha256": "a7c0dacddccb0d2b97c6786ccf9328f30b0d725d29074522dcaf563b2751ba7c",
+      "bot_sha256": "80df717fc9c3638b6115ca1b9bd7afab6c2003af74e9a7e1ca91a336485581ea",
+      "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+      "kind": "development",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "43d91dc3fa020a53abe99b37e856924d8ff4c960943ad2673bb0956f14b92555",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "143dcf9be5ab4ebb11296500232ab3e7570ff6582fed4964c54ce80aed43c7a8",
+        "final_rewards": [
+          38354.0,
+          47783.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 431,
+            "unit:executed": 4307,
+            "unit:pass": 3325
+          },
+          "ordered_effect_sha256": "4f19a189c7db2ff9c5228cb6e2316efe1e79d1ad728b4d2bb1f04b31f7fdaa8d",
+          "successful_plants": [
+            61,
+            62
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "metrics": {
+        "counts": {
+          "unit:PASS:pass": 1870,
+          "cash:BUY_SEED:MELON": -1760.0,
+          "market_units:BUY_SEED:MELON": 22,
+          "cash:HIRE:": -511.0,
+          "market_units:HIRE:": 151,
+          "unit:PLANT:executed": 62,
+          "unit:WEST:executed": 694,
+          "unit:NORTH:executed": 618,
+          "unit:WATER:executed": 697,
+          "cash:BUY_SEED:STRAWBERRY": -2500.0,
+          "market_units:BUY_SEED:STRAWBERRY": 25,
+          "cash:BUY_SEED:CARROT": -300.0,
+          "market_units:BUY_SEED:CARROT": 15,
+          "automatic_drop_calls": 29,
+          "automatic_drop_discard_units": 0,
+          "cash:BUY_PRODUCT:FERTILIZER": -2565.0,
+          "market_units:BUY_PRODUCT:FERTILIZER": 25,
+          "unit:PICKUP:executed": 27,
+          "unit:FERTILIZE:executed": 25,
+          "unit:SOUTH:executed": 33,
+          "unit:HARVEST:executed": 90,
+          "harvest_units:MELON": 132,
+          "harvest_units:STRAWBERRY": 135,
+          "unit:EAST:executed": 29,
+          "unit:DROP:executed": 5,
+          "manual_drop_discard_units": 0,
+          "cash:SELL:MELON": 16852.0,
+          "market_units:SELL:MELON": 132,
+          "cash:SELL:STRAWBERRY": 33155.0,
+          "market_units:SELL:STRAWBERRY": 135,
+          "unit:DIG:executed": 6,
+          "harvest_units:CARROT": 42,
+          "cash:SELL:CARROT": 2412.0,
+          "market_units:SELL:CARROT": 42
+        },
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 16852.0
+          },
+          "STRAWBERRY": {
+            "units": 135,
+            "revenue": 33155.0
+          },
+          "CARROT": {
+            "units": 42,
+            "revenue": 2412.0
+          }
+        },
+        "production": {
+          "STRAWBERRY": {
+            "opportunities": 100,
+            "potential_units": 135,
+            "admitted_units": 135,
+            "clipped_units": 0
+          }
+        },
+        "market_cash": 44783.0,
+        "cash_residual": 0.0,
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "opponent_cash_and_sales": {
+        "market_cash": 35354.0,
+        "cash_residual": 0.0,
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 12848.0
+          },
+          "STRAWBERRY": {
+            "units": 100,
+            "revenue": 25001.0
+          },
+          "CARROT": {
+            "units": 40,
+            "revenue": 2299.0
+          }
+        },
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "same_input_contract": {
+        "passed": true,
+        "non_sell_slot_or_quantity_mismatches": 0,
+        "unit_mismatches": 0,
+        "observations": 719,
+        "sell_decision_differences": 48
+      },
+      "request_outcomes": {
+        "unit:pass": 1870,
+        "market:BUY_SEED:executed": 33,
+        "market_invalid": 0,
+        "non_sell_requested_orders": 197,
+        "non_sell_incomplete_orders": 0,
+        "market:HIRE:executed": 151,
+        "unit:executed": 2286,
+        "market:BUY_PRODUCT:executed": 13,
+        "market:SELL:executed": 68,
+        "sell_requested_units": 309
+      },
+      "storage": {
+        "max_observed_shed_units": 64,
+        "mean_observed_shed_units": 0.9095966620305981
+      },
+      "policy_actions_reproduced": true,
+      "opponent_actions_reproduced": true
+    },
+    {
+      "seed": 21277116,
+      "opponent": "v1",
+      "side": 0,
+      "policy": "baseline",
+      "replay_gzip_sha256": "37592494a8185df01ab79944dc88a50d55f48cb66bfe2be6fd90d102b6bfb4fc",
+      "bot_sha256": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+      "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+      "kind": "development",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "59635fc3892293c1bb9d7ea43733ba88c184cecaabb9474f25a091c297865dba",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "33d922863fb6f92aaf63a7cfcc7abcc1645e387e7d0c1ee6a5843ab957bf50bc",
+        "final_rewards": [
+          47947.0,
+          37779.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 388,
+            "unit:executed": 4300,
+            "unit:pass": 3344
+          },
+          "ordered_effect_sha256": "22893664346b8c35cb3705fa6662c7326bcdaee885bba0130828b995a67bd272",
+          "successful_plants": [
+            62,
+            59
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "metrics": {
+        "counts": {
+          "unit:PASS:pass": 1870,
+          "cash:BUY_SEED:MELON": -1760.0,
+          "market_units:BUY_SEED:MELON": 22,
+          "cash:HIRE:": -511.0,
+          "market_units:HIRE:": 151,
+          "unit:PLANT:executed": 62,
+          "unit:WEST:executed": 694,
+          "unit:NORTH:executed": 618,
+          "unit:WATER:executed": 697,
+          "cash:BUY_SEED:STRAWBERRY": -2500.0,
+          "market_units:BUY_SEED:STRAWBERRY": 25,
+          "cash:BUY_SEED:CARROT": -300.0,
+          "market_units:BUY_SEED:CARROT": 15,
+          "automatic_drop_calls": 29,
+          "automatic_drop_discard_units": 0,
+          "cash:BUY_PRODUCT:FERTILIZER": -2565.0,
+          "market_units:BUY_PRODUCT:FERTILIZER": 25,
+          "unit:PICKUP:executed": 27,
+          "unit:FERTILIZE:executed": 25,
+          "unit:SOUTH:executed": 33,
+          "unit:HARVEST:executed": 90,
+          "harvest_units:MELON": 132,
+          "harvest_units:STRAWBERRY": 135,
+          "unit:EAST:executed": 29,
+          "unit:DROP:executed": 5,
+          "manual_drop_discard_units": 0,
+          "cash:SELL:MELON": 16936.0,
+          "market_units:SELL:MELON": 132,
+          "cash:SELL:STRAWBERRY": 33218.0,
+          "market_units:SELL:STRAWBERRY": 135,
+          "unit:DIG:executed": 6,
+          "harvest_units:CARROT": 42,
+          "cash:SELL:CARROT": 2429.0,
+          "market_units:SELL:CARROT": 42
+        },
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 16936.0
+          },
+          "STRAWBERRY": {
+            "units": 135,
+            "revenue": 33218.0
+          },
+          "CARROT": {
+            "units": 42,
+            "revenue": 2429.0
+          }
+        },
+        "production": {
+          "STRAWBERRY": {
+            "opportunities": 100,
+            "potential_units": 135,
+            "admitted_units": 135,
+            "clipped_units": 0
+          }
+        },
+        "market_cash": 44947.0,
+        "cash_residual": 0.0,
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "opponent_cash_and_sales": {
+        "market_cash": 34779.0,
+        "cash_residual": 0.0,
+        "sales": {
+          "MELON": {
+            "units": 138,
+            "revenue": 12851.0
+          },
+          "STRAWBERRY": {
+            "units": 100,
+            "revenue": 25081.0
+          },
+          "CARROT": {
+            "units": 30,
+            "revenue": 1754.0
+          }
+        },
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "same_input_contract": {
+        "passed": true,
+        "non_sell_slot_or_quantity_mismatches": 0,
+        "unit_mismatches": 0,
+        "observations": 719,
+        "sell_decision_differences": 409
+      },
+      "request_outcomes": {
+        "unit:pass": 1870,
+        "market:BUY_SEED:executed": 33,
+        "market_invalid": 0,
+        "non_sell_requested_orders": 197,
+        "non_sell_incomplete_orders": 0,
+        "market:HIRE:executed": 151,
+        "unit:executed": 2286,
+        "market:BUY_PRODUCT:executed": 13,
+        "market:SELL:executed": 22,
+        "sell_requested_units": 309
+      },
+      "storage": {
+        "max_observed_shed_units": 66,
+        "mean_observed_shed_units": 1.4853963838664812
+      },
+      "policy_actions_reproduced": true,
+      "opponent_actions_reproduced": true
+    },
+    {
+      "seed": 21277116,
+      "opponent": "v1",
+      "side": 0,
+      "policy": "candidate",
+      "replay_gzip_sha256": "00efc8ae76b19cc1cdb4e6386c4daa1d2996a942418444ff48d219bd7be00376",
+      "bot_sha256": "80df717fc9c3638b6115ca1b9bd7afab6c2003af74e9a7e1ca91a336485581ea",
+      "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+      "kind": "development",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "be48cccbd586a4ef4dddeb270f39d73bed6a0a54e7a677fc00451f4c80addca7",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "324d145a11664545459d032d0e928d797ad4b32484a7ddd3aef28c297a744b85",
+        "final_rewards": [
+          47875.0,
+          37929.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 438,
+            "unit:executed": 4300,
+            "unit:pass": 3344
+          },
+          "ordered_effect_sha256": "cebc8b56585bb7895dc457a9fa0af2474bf717c152028bde0f52bc5557307b90",
+          "successful_plants": [
+            62,
+            59
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "metrics": {
+        "counts": {
+          "unit:PASS:pass": 1870,
+          "cash:BUY_SEED:MELON": -1760.0,
+          "market_units:BUY_SEED:MELON": 22,
+          "cash:HIRE:": -511.0,
+          "market_units:HIRE:": 151,
+          "unit:PLANT:executed": 62,
+          "unit:WEST:executed": 694,
+          "unit:NORTH:executed": 618,
+          "unit:WATER:executed": 697,
+          "cash:BUY_SEED:STRAWBERRY": -2500.0,
+          "market_units:BUY_SEED:STRAWBERRY": 25,
+          "cash:BUY_SEED:CARROT": -300.0,
+          "market_units:BUY_SEED:CARROT": 15,
+          "automatic_drop_calls": 29,
+          "automatic_drop_discard_units": 0,
+          "cash:BUY_PRODUCT:FERTILIZER": -2565.0,
+          "market_units:BUY_PRODUCT:FERTILIZER": 25,
+          "unit:PICKUP:executed": 27,
+          "unit:FERTILIZE:executed": 25,
+          "unit:SOUTH:executed": 33,
+          "unit:HARVEST:executed": 90,
+          "harvest_units:MELON": 132,
+          "harvest_units:STRAWBERRY": 135,
+          "unit:EAST:executed": 29,
+          "unit:DROP:executed": 5,
+          "manual_drop_discard_units": 0,
+          "cash:SELL:MELON": 16852.0,
+          "market_units:SELL:MELON": 132,
+          "cash:SELL:STRAWBERRY": 33220.0,
+          "market_units:SELL:STRAWBERRY": 135,
+          "unit:DIG:executed": 6,
+          "harvest_units:CARROT": 42,
+          "cash:SELL:CARROT": 2439.0,
+          "market_units:SELL:CARROT": 42
+        },
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 16852.0
+          },
+          "STRAWBERRY": {
+            "units": 135,
+            "revenue": 33220.0
+          },
+          "CARROT": {
+            "units": 42,
+            "revenue": 2439.0
+          }
+        },
+        "production": {
+          "STRAWBERRY": {
+            "opportunities": 100,
+            "potential_units": 135,
+            "admitted_units": 135,
+            "clipped_units": 0
+          }
+        },
+        "market_cash": 44875.0,
+        "cash_residual": 0.0,
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "opponent_cash_and_sales": {
+        "market_cash": 34929.0,
+        "cash_residual": 0.0,
+        "sales": {
+          "MELON": {
+            "units": 138,
+            "revenue": 12854.0
+          },
+          "STRAWBERRY": {
+            "units": 100,
+            "revenue": 25227.0
+          },
+          "CARROT": {
+            "units": 30,
+            "revenue": 1755.0
+          }
+        },
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "same_input_contract": {
+        "passed": true,
+        "non_sell_slot_or_quantity_mismatches": 0,
+        "unit_mismatches": 0,
+        "observations": 719,
+        "sell_decision_differences": 52
+      },
+      "request_outcomes": {
+        "unit:pass": 1870,
+        "market:BUY_SEED:executed": 33,
+        "market_invalid": 0,
+        "non_sell_requested_orders": 197,
+        "non_sell_incomplete_orders": 0,
+        "market:HIRE:executed": 151,
+        "unit:executed": 2286,
+        "market:BUY_PRODUCT:executed": 13,
+        "market:SELL:executed": 72,
+        "sell_requested_units": 309
+      },
+      "storage": {
+        "max_observed_shed_units": 64,
+        "mean_observed_shed_units": 0.9193324061196105
+      },
+      "policy_actions_reproduced": true,
+      "opponent_actions_reproduced": true
+    },
+    {
+      "seed": 21277116,
+      "opponent": "v1",
+      "side": 1,
+      "policy": "baseline",
+      "replay_gzip_sha256": "c1935056ac6ceda58217e440e98979431b0870fe948eb98d4180f4946308fff5",
+      "bot_sha256": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+      "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+      "kind": "development",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "69349c73a0ed92a49d641d78c79bff0d2fff8ab58d5f637ea9daebf986c86f8f",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "6ee933e1745327e2273ac203824fd69ea3d475e3a4ef2920a4bfc6a873ce4a32",
+        "final_rewards": [
+          37779.0,
+          47947.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 388,
+            "unit:executed": 4300,
+            "unit:pass": 3344
+          },
+          "ordered_effect_sha256": "b0c12a67b4ffd33a928f52c2e586c86a00ac32f15d098a4100c0674430879cdf",
+          "successful_plants": [
+            59,
+            62
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "metrics": {
+        "counts": {
+          "unit:PASS:pass": 1870,
+          "cash:BUY_SEED:MELON": -1760.0,
+          "market_units:BUY_SEED:MELON": 22,
+          "cash:HIRE:": -511.0,
+          "market_units:HIRE:": 151,
+          "unit:PLANT:executed": 62,
+          "unit:WEST:executed": 694,
+          "unit:NORTH:executed": 618,
+          "unit:WATER:executed": 697,
+          "cash:BUY_SEED:STRAWBERRY": -2500.0,
+          "market_units:BUY_SEED:STRAWBERRY": 25,
+          "cash:BUY_SEED:CARROT": -300.0,
+          "market_units:BUY_SEED:CARROT": 15,
+          "automatic_drop_calls": 29,
+          "automatic_drop_discard_units": 0,
+          "cash:BUY_PRODUCT:FERTILIZER": -2565.0,
+          "market_units:BUY_PRODUCT:FERTILIZER": 25,
+          "unit:PICKUP:executed": 27,
+          "unit:FERTILIZE:executed": 25,
+          "unit:SOUTH:executed": 33,
+          "unit:HARVEST:executed": 90,
+          "harvest_units:MELON": 132,
+          "harvest_units:STRAWBERRY": 135,
+          "unit:EAST:executed": 29,
+          "unit:DROP:executed": 5,
+          "manual_drop_discard_units": 0,
+          "cash:SELL:MELON": 16936.0,
+          "market_units:SELL:MELON": 132,
+          "cash:SELL:STRAWBERRY": 33218.0,
+          "market_units:SELL:STRAWBERRY": 135,
+          "unit:DIG:executed": 6,
+          "harvest_units:CARROT": 42,
+          "cash:SELL:CARROT": 2429.0,
+          "market_units:SELL:CARROT": 42
+        },
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 16936.0
+          },
+          "STRAWBERRY": {
+            "units": 135,
+            "revenue": 33218.0
+          },
+          "CARROT": {
+            "units": 42,
+            "revenue": 2429.0
+          }
+        },
+        "production": {
+          "STRAWBERRY": {
+            "opportunities": 100,
+            "potential_units": 135,
+            "admitted_units": 135,
+            "clipped_units": 0
+          }
+        },
+        "market_cash": 44947.0,
+        "cash_residual": 0.0,
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "opponent_cash_and_sales": {
+        "market_cash": 34779.0,
+        "cash_residual": 0.0,
+        "sales": {
+          "MELON": {
+            "units": 138,
+            "revenue": 12851.0
+          },
+          "STRAWBERRY": {
+            "units": 100,
+            "revenue": 25081.0
+          },
+          "CARROT": {
+            "units": 30,
+            "revenue": 1754.0
+          }
+        },
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "same_input_contract": {
+        "passed": true,
+        "non_sell_slot_or_quantity_mismatches": 0,
+        "unit_mismatches": 0,
+        "observations": 719,
+        "sell_decision_differences": 409
+      },
+      "request_outcomes": {
+        "unit:pass": 1870,
+        "market:BUY_SEED:executed": 33,
+        "market_invalid": 0,
+        "non_sell_requested_orders": 197,
+        "non_sell_incomplete_orders": 0,
+        "market:HIRE:executed": 151,
+        "unit:executed": 2286,
+        "market:BUY_PRODUCT:executed": 13,
+        "market:SELL:executed": 22,
+        "sell_requested_units": 309
+      },
+      "storage": {
+        "max_observed_shed_units": 66,
+        "mean_observed_shed_units": 1.4853963838664812
+      },
+      "policy_actions_reproduced": true,
+      "opponent_actions_reproduced": true
+    },
+    {
+      "seed": 21277116,
+      "opponent": "v1",
+      "side": 1,
+      "policy": "candidate",
+      "replay_gzip_sha256": "b67f04a59d438a504ae2b4c0f087bb9ad8bdda3cba99c338780995ac3deb420e",
+      "bot_sha256": "80df717fc9c3638b6115ca1b9bd7afab6c2003af74e9a7e1ca91a336485581ea",
+      "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+      "kind": "development",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "ff0ad163211e82cf4502262b6d96f168f3b5f675ad0815c790e7a041dadb2db1",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "80a174b63e73d87225b47098222327df416bd86bfe67bfbc2068b325844f1925",
+        "final_rewards": [
+          37929.0,
+          47875.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 438,
+            "unit:executed": 4300,
+            "unit:pass": 3344
+          },
+          "ordered_effect_sha256": "89a48255cead9c247477cdfa1d47561ce4b5821ecf645681a8ffb6773bdbde8a",
+          "successful_plants": [
+            59,
+            62
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "metrics": {
+        "counts": {
+          "unit:PASS:pass": 1870,
+          "cash:BUY_SEED:MELON": -1760.0,
+          "market_units:BUY_SEED:MELON": 22,
+          "cash:HIRE:": -511.0,
+          "market_units:HIRE:": 151,
+          "unit:PLANT:executed": 62,
+          "unit:WEST:executed": 694,
+          "unit:NORTH:executed": 618,
+          "unit:WATER:executed": 697,
+          "cash:BUY_SEED:STRAWBERRY": -2500.0,
+          "market_units:BUY_SEED:STRAWBERRY": 25,
+          "cash:BUY_SEED:CARROT": -300.0,
+          "market_units:BUY_SEED:CARROT": 15,
+          "automatic_drop_calls": 29,
+          "automatic_drop_discard_units": 0,
+          "cash:BUY_PRODUCT:FERTILIZER": -2565.0,
+          "market_units:BUY_PRODUCT:FERTILIZER": 25,
+          "unit:PICKUP:executed": 27,
+          "unit:FERTILIZE:executed": 25,
+          "unit:SOUTH:executed": 33,
+          "unit:HARVEST:executed": 90,
+          "harvest_units:MELON": 132,
+          "harvest_units:STRAWBERRY": 135,
+          "unit:EAST:executed": 29,
+          "unit:DROP:executed": 5,
+          "manual_drop_discard_units": 0,
+          "cash:SELL:MELON": 16852.0,
+          "market_units:SELL:MELON": 132,
+          "cash:SELL:STRAWBERRY": 33220.0,
+          "market_units:SELL:STRAWBERRY": 135,
+          "unit:DIG:executed": 6,
+          "harvest_units:CARROT": 42,
+          "cash:SELL:CARROT": 2439.0,
+          "market_units:SELL:CARROT": 42
+        },
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 16852.0
+          },
+          "STRAWBERRY": {
+            "units": 135,
+            "revenue": 33220.0
+          },
+          "CARROT": {
+            "units": 42,
+            "revenue": 2439.0
+          }
+        },
+        "production": {
+          "STRAWBERRY": {
+            "opportunities": 100,
+            "potential_units": 135,
+            "admitted_units": 135,
+            "clipped_units": 0
+          }
+        },
+        "market_cash": 44875.0,
+        "cash_residual": 0.0,
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "opponent_cash_and_sales": {
+        "market_cash": 34929.0,
+        "cash_residual": 0.0,
+        "sales": {
+          "MELON": {
+            "units": 138,
+            "revenue": 12854.0
+          },
+          "STRAWBERRY": {
+            "units": 100,
+            "revenue": 25227.0
+          },
+          "CARROT": {
+            "units": 30,
+            "revenue": 1755.0
+          }
+        },
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "same_input_contract": {
+        "passed": true,
+        "non_sell_slot_or_quantity_mismatches": 0,
+        "unit_mismatches": 0,
+        "observations": 719,
+        "sell_decision_differences": 52
+      },
+      "request_outcomes": {
+        "unit:pass": 1870,
+        "market:BUY_SEED:executed": 33,
+        "market_invalid": 0,
+        "non_sell_requested_orders": 197,
+        "non_sell_incomplete_orders": 0,
+        "market:HIRE:executed": 151,
+        "unit:executed": 2286,
+        "market:BUY_PRODUCT:executed": 13,
+        "market:SELL:executed": 72,
+        "sell_requested_units": 309
+      },
+      "storage": {
+        "max_observed_shed_units": 64,
+        "mean_observed_shed_units": 0.9193324061196105
+      },
+      "policy_actions_reproduced": true,
+      "opponent_actions_reproduced": true
+    },
+    {
+      "seed": 21473311,
+      "opponent": "market",
+      "side": 0,
+      "policy": "baseline",
+      "replay_gzip_sha256": "d848a19b82850ef79e7e5892d515850dc5db6ca99aaf7a43fc68645186c09d7c",
+      "bot_sha256": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+      "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+      "kind": "development",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "745c0d99d1abb85b7e44e76c3045ea9ccd8e486b8c2633c69fc862903df31866",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "52b5485e36857c92e89145d89e16cdae88e6d059c3fb362fe405d0e9f2491028",
+        "final_rewards": [
+          37679.0,
+          37908.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 437,
+            "unit:executed": 4509,
+            "unit:pass": 2936
+          },
+          "ordered_effect_sha256": "0177b8619e14c8aaf61e0b6d2f5325bc0c5f18e9a3658cec0ff53f72ea19a2c5",
+          "successful_plants": [
+            61,
+            112
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "metrics": {
+        "counts": {
+          "unit:PASS:pass": 1596,
+          "cash:BUY_SEED:MELON": -1760.0,
+          "market_units:BUY_SEED:MELON": 22,
+          "cash:HIRE:": -342.0,
+          "market_units:HIRE:": 132,
+          "unit:PLANT:executed": 61,
+          "unit:WEST:executed": 631,
+          "unit:NORTH:executed": 568,
+          "unit:WATER:executed": 693,
+          "cash:BUY_SEED:STRAWBERRY": -2500.0,
+          "market_units:BUY_SEED:STRAWBERRY": 25,
+          "cash:BUY_SEED:CARROT": -280.0,
+          "market_units:BUY_SEED:CARROT": 14,
+          "automatic_drop_calls": 29,
+          "automatic_drop_discard_units": 0,
+          "cash:BUY_PRODUCT:FERTILIZER": -705.0,
+          "market_units:BUY_PRODUCT:FERTILIZER": 7,
+          "unit:PICKUP:executed": 10,
+          "unit:FERTILIZE:executed": 7,
+          "unit:SOUTH:executed": 26,
+          "unit:HARVEST:executed": 71,
+          "harvest_units:MELON": 132,
+          "harvest_units:STRAWBERRY": 112,
+          "unit:EAST:executed": 33,
+          "unit:DROP:executed": 5,
+          "manual_drop_discard_units": 0,
+          "cash:SELL:MELON": 17511.0,
+          "market_units:SELL:MELON": 132,
+          "cash:SELL:STRAWBERRY": 20529.0,
+          "market_units:SELL:STRAWBERRY": 112,
+          "unit:DIG:executed": 5,
+          "harvest_units:CARROT": 40,
+          "cash:SELL:CARROT": 2226.0,
+          "market_units:SELL:CARROT": 40
+        },
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 17511.0
+          },
+          "STRAWBERRY": {
+            "units": 112,
+            "revenue": 20529.0
+          },
+          "CARROT": {
+            "units": 40,
+            "revenue": 2226.0
+          }
+        },
+        "production": {
+          "STRAWBERRY": {
+            "opportunities": 100,
+            "potential_units": 112,
+            "admitted_units": 112,
+            "clipped_units": 0
+          }
+        },
+        "market_cash": 34679.0,
+        "cash_residual": 0.0,
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "opponent_cash_and_sales": {
+        "market_cash": 34908.0,
+        "cash_residual": 0.0,
+        "sales": {
+          "CARROT": {
+            "units": 205,
+            "revenue": 10194.0
+          },
+          "WHEAT": {
+            "units": 28,
+            "revenue": 677.0
+          },
+          "MELON": {
+            "units": 48,
+            "revenue": 12014.0
+          },
+          "TOMATO": {
+            "units": 16,
+            "revenue": 1082.0
+          },
+          "STRAWBERRY": {
+            "units": 84,
+            "revenue": 15904.0
+          }
+        },
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "same_input_contract": {
+        "passed": true,
+        "non_sell_slot_or_quantity_mismatches": 0,
+        "unit_mismatches": 0,
+        "observations": 719,
+        "sell_decision_differences": 409
+      },
+      "request_outcomes": {
+        "unit:pass": 1596,
+        "market:BUY_SEED:executed": 32,
+        "market_invalid": 0,
+        "non_sell_requested_orders": 169,
+        "non_sell_incomplete_orders": 0,
+        "market:HIRE:executed": 132,
+        "unit:executed": 2110,
+        "market:BUY_PRODUCT:executed": 5,
+        "market:SELL:executed": 16,
+        "sell_requested_units": 284
+      },
+      "storage": {
+        "max_observed_shed_units": 74,
+        "mean_observed_shed_units": 1.7705146036161334
+      },
+      "policy_actions_reproduced": true,
+      "opponent_actions_reproduced": true
+    },
+    {
+      "seed": 21473311,
+      "opponent": "market",
+      "side": 0,
+      "policy": "candidate",
+      "replay_gzip_sha256": "294a64fc65e24315347e1a887eecd051e189f4a0e463fc6fc15d2be7bcd2f75c",
+      "bot_sha256": "80df717fc9c3638b6115ca1b9bd7afab6c2003af74e9a7e1ca91a336485581ea",
+      "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+      "kind": "development",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "2decda911481ff0e0560c60008f138e9a99ab9e88fa9a07a77b9ea90d7d96da3",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "def280a8fb0b72f60757c0d1022fa1ff212f27c82cedcb8abcd6fa68e1d7617e",
+        "final_rewards": [
+          37917.0,
+          37723.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 478,
+            "unit:executed": 4509,
+            "unit:pass": 2936
+          },
+          "ordered_effect_sha256": "3eddfd9da04c6b52db0d78ef2cd1efdbaea39e9e7aaa599df546368bfadaaa94",
+          "successful_plants": [
+            61,
+            112
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "metrics": {
+        "counts": {
+          "unit:PASS:pass": 1596,
+          "cash:BUY_SEED:MELON": -1760.0,
+          "market_units:BUY_SEED:MELON": 22,
+          "cash:HIRE:": -342.0,
+          "market_units:HIRE:": 132,
+          "unit:PLANT:executed": 61,
+          "unit:WEST:executed": 631,
+          "unit:NORTH:executed": 568,
+          "unit:WATER:executed": 693,
+          "cash:BUY_SEED:STRAWBERRY": -2500.0,
+          "market_units:BUY_SEED:STRAWBERRY": 25,
+          "cash:BUY_SEED:CARROT": -280.0,
+          "market_units:BUY_SEED:CARROT": 14,
+          "automatic_drop_calls": 29,
+          "automatic_drop_discard_units": 0,
+          "cash:BUY_PRODUCT:FERTILIZER": -705.0,
+          "market_units:BUY_PRODUCT:FERTILIZER": 7,
+          "unit:PICKUP:executed": 10,
+          "unit:FERTILIZE:executed": 7,
+          "unit:SOUTH:executed": 26,
+          "unit:HARVEST:executed": 71,
+          "harvest_units:MELON": 132,
+          "harvest_units:STRAWBERRY": 112,
+          "unit:EAST:executed": 33,
+          "unit:DROP:executed": 5,
+          "manual_drop_discard_units": 0,
+          "cash:SELL:MELON": 17416.0,
+          "market_units:SELL:MELON": 132,
+          "cash:SELL:STRAWBERRY": 20882.0,
+          "market_units:SELL:STRAWBERRY": 112,
+          "unit:DIG:executed": 5,
+          "harvest_units:CARROT": 40,
+          "cash:SELL:CARROT": 2206.0,
+          "market_units:SELL:CARROT": 40
+        },
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 17416.0
+          },
+          "STRAWBERRY": {
+            "units": 112,
+            "revenue": 20882.0
+          },
+          "CARROT": {
+            "units": 40,
+            "revenue": 2206.0
+          }
+        },
+        "production": {
+          "STRAWBERRY": {
+            "opportunities": 100,
+            "potential_units": 112,
+            "admitted_units": 112,
+            "clipped_units": 0
+          }
+        },
+        "market_cash": 34917.0,
+        "cash_residual": 0.0,
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "opponent_cash_and_sales": {
+        "market_cash": 34723.0,
+        "cash_residual": 0.0,
+        "sales": {
+          "CARROT": {
+            "units": 205,
+            "revenue": 10227.0
+          },
+          "WHEAT": {
+            "units": 28,
+            "revenue": 677.0
+          },
+          "MELON": {
+            "units": 48,
+            "revenue": 12014.0
+          },
+          "TOMATO": {
+            "units": 16,
+            "revenue": 1082.0
+          },
+          "STRAWBERRY": {
+            "units": 84,
+            "revenue": 15686.0
+          }
+        },
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "same_input_contract": {
+        "passed": true,
+        "non_sell_slot_or_quantity_mismatches": 0,
+        "unit_mismatches": 0,
+        "observations": 719,
+        "sell_decision_differences": 44
+      },
+      "request_outcomes": {
+        "unit:pass": 1596,
+        "market:BUY_SEED:executed": 32,
+        "market_invalid": 0,
+        "non_sell_requested_orders": 169,
+        "non_sell_incomplete_orders": 0,
+        "market:HIRE:executed": 132,
+        "unit:executed": 2110,
+        "market:BUY_PRODUCT:executed": 5,
+        "market:SELL:executed": 57,
+        "sell_requested_units": 284
+      },
+      "storage": {
+        "max_observed_shed_units": 72,
+        "mean_observed_shed_units": 0.9902642559109874
+      },
+      "policy_actions_reproduced": true,
+      "opponent_actions_reproduced": true
+    },
+    {
+      "seed": 21473311,
+      "opponent": "market",
+      "side": 1,
+      "policy": "baseline",
+      "replay_gzip_sha256": "7131e80ef0254f99015916a9164b0ee4568f4e8b1c8ef2ed0d67c4e33ed5975a",
+      "bot_sha256": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+      "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+      "kind": "development",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "9ba462fbe757d8d29c6aa353144a870ac7e7969cb0396957ce0bb6d4c280aeb1",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "221daa33f13e018b1ed47c7d914d6085c5d94bf14914710bb98854a442541645",
+        "final_rewards": [
+          37908.0,
+          37679.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 437,
+            "unit:executed": 4509,
+            "unit:pass": 2936
+          },
+          "ordered_effect_sha256": "8677c1b6af10bc75ab365fb5ef46be215cbe71bf8ffc71c4845c913a07c72ed3",
+          "successful_plants": [
+            112,
+            61
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "metrics": {
+        "counts": {
+          "unit:PASS:pass": 1596,
+          "cash:BUY_SEED:MELON": -1760.0,
+          "market_units:BUY_SEED:MELON": 22,
+          "cash:HIRE:": -342.0,
+          "market_units:HIRE:": 132,
+          "unit:PLANT:executed": 61,
+          "unit:WEST:executed": 631,
+          "unit:NORTH:executed": 568,
+          "unit:WATER:executed": 693,
+          "cash:BUY_SEED:STRAWBERRY": -2500.0,
+          "market_units:BUY_SEED:STRAWBERRY": 25,
+          "cash:BUY_SEED:CARROT": -280.0,
+          "market_units:BUY_SEED:CARROT": 14,
+          "automatic_drop_calls": 29,
+          "automatic_drop_discard_units": 0,
+          "cash:BUY_PRODUCT:FERTILIZER": -705.0,
+          "market_units:BUY_PRODUCT:FERTILIZER": 7,
+          "unit:PICKUP:executed": 10,
+          "unit:FERTILIZE:executed": 7,
+          "unit:SOUTH:executed": 26,
+          "unit:HARVEST:executed": 71,
+          "harvest_units:MELON": 132,
+          "harvest_units:STRAWBERRY": 112,
+          "unit:EAST:executed": 33,
+          "unit:DROP:executed": 5,
+          "manual_drop_discard_units": 0,
+          "cash:SELL:MELON": 17511.0,
+          "market_units:SELL:MELON": 132,
+          "cash:SELL:STRAWBERRY": 20529.0,
+          "market_units:SELL:STRAWBERRY": 112,
+          "unit:DIG:executed": 5,
+          "harvest_units:CARROT": 40,
+          "cash:SELL:CARROT": 2226.0,
+          "market_units:SELL:CARROT": 40
+        },
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 17511.0
+          },
+          "STRAWBERRY": {
+            "units": 112,
+            "revenue": 20529.0
+          },
+          "CARROT": {
+            "units": 40,
+            "revenue": 2226.0
+          }
+        },
+        "production": {
+          "STRAWBERRY": {
+            "opportunities": 100,
+            "potential_units": 112,
+            "admitted_units": 112,
+            "clipped_units": 0
+          }
+        },
+        "market_cash": 34679.0,
+        "cash_residual": 0.0,
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "opponent_cash_and_sales": {
+        "market_cash": 34908.0,
+        "cash_residual": 0.0,
+        "sales": {
+          "CARROT": {
+            "units": 205,
+            "revenue": 10194.0
+          },
+          "WHEAT": {
+            "units": 28,
+            "revenue": 677.0
+          },
+          "MELON": {
+            "units": 48,
+            "revenue": 12014.0
+          },
+          "TOMATO": {
+            "units": 16,
+            "revenue": 1082.0
+          },
+          "STRAWBERRY": {
+            "units": 84,
+            "revenue": 15904.0
+          }
+        },
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "same_input_contract": {
+        "passed": true,
+        "non_sell_slot_or_quantity_mismatches": 0,
+        "unit_mismatches": 0,
+        "observations": 719,
+        "sell_decision_differences": 409
+      },
+      "request_outcomes": {
+        "unit:pass": 1596,
+        "market:BUY_SEED:executed": 32,
+        "market_invalid": 0,
+        "non_sell_requested_orders": 169,
+        "non_sell_incomplete_orders": 0,
+        "market:HIRE:executed": 132,
+        "unit:executed": 2110,
+        "market:BUY_PRODUCT:executed": 5,
+        "market:SELL:executed": 16,
+        "sell_requested_units": 284
+      },
+      "storage": {
+        "max_observed_shed_units": 74,
+        "mean_observed_shed_units": 1.7705146036161334
+      },
+      "policy_actions_reproduced": true,
+      "opponent_actions_reproduced": true
+    },
+    {
+      "seed": 21473311,
+      "opponent": "market",
+      "side": 1,
+      "policy": "candidate",
+      "replay_gzip_sha256": "070809fa143af8f76b52aecd6f9bb508f9ce938a2481068e48d0bb169f2ab5c4",
+      "bot_sha256": "80df717fc9c3638b6115ca1b9bd7afab6c2003af74e9a7e1ca91a336485581ea",
+      "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+      "kind": "development",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "007323501b78184b4a2ff6002502737b20f2c14bf1de2dca5da6a0f53bb05f50",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "253cf7d628f46b9a785e8e75b8b534f38a3a22a5e747fcf31a7b67c327b86a5f",
+        "final_rewards": [
+          37723.0,
+          37917.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 478,
+            "unit:executed": 4509,
+            "unit:pass": 2936
+          },
+          "ordered_effect_sha256": "30d4afe1268172d08aa762f04faba67aa7263fb0a90052c98ac6994bf482fc1a",
+          "successful_plants": [
+            112,
+            61
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "metrics": {
+        "counts": {
+          "unit:PASS:pass": 1596,
+          "cash:BUY_SEED:MELON": -1760.0,
+          "market_units:BUY_SEED:MELON": 22,
+          "cash:HIRE:": -342.0,
+          "market_units:HIRE:": 132,
+          "unit:PLANT:executed": 61,
+          "unit:WEST:executed": 631,
+          "unit:NORTH:executed": 568,
+          "unit:WATER:executed": 693,
+          "cash:BUY_SEED:STRAWBERRY": -2500.0,
+          "market_units:BUY_SEED:STRAWBERRY": 25,
+          "cash:BUY_SEED:CARROT": -280.0,
+          "market_units:BUY_SEED:CARROT": 14,
+          "automatic_drop_calls": 29,
+          "automatic_drop_discard_units": 0,
+          "cash:BUY_PRODUCT:FERTILIZER": -705.0,
+          "market_units:BUY_PRODUCT:FERTILIZER": 7,
+          "unit:PICKUP:executed": 10,
+          "unit:FERTILIZE:executed": 7,
+          "unit:SOUTH:executed": 26,
+          "unit:HARVEST:executed": 71,
+          "harvest_units:MELON": 132,
+          "harvest_units:STRAWBERRY": 112,
+          "unit:EAST:executed": 33,
+          "unit:DROP:executed": 5,
+          "manual_drop_discard_units": 0,
+          "cash:SELL:MELON": 17416.0,
+          "market_units:SELL:MELON": 132,
+          "cash:SELL:STRAWBERRY": 20882.0,
+          "market_units:SELL:STRAWBERRY": 112,
+          "unit:DIG:executed": 5,
+          "harvest_units:CARROT": 40,
+          "cash:SELL:CARROT": 2206.0,
+          "market_units:SELL:CARROT": 40
+        },
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 17416.0
+          },
+          "STRAWBERRY": {
+            "units": 112,
+            "revenue": 20882.0
+          },
+          "CARROT": {
+            "units": 40,
+            "revenue": 2206.0
+          }
+        },
+        "production": {
+          "STRAWBERRY": {
+            "opportunities": 100,
+            "potential_units": 112,
+            "admitted_units": 112,
+            "clipped_units": 0
+          }
+        },
+        "market_cash": 34917.0,
+        "cash_residual": 0.0,
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "opponent_cash_and_sales": {
+        "market_cash": 34723.0,
+        "cash_residual": 0.0,
+        "sales": {
+          "CARROT": {
+            "units": 205,
+            "revenue": 10227.0
+          },
+          "WHEAT": {
+            "units": 28,
+            "revenue": 677.0
+          },
+          "MELON": {
+            "units": 48,
+            "revenue": 12014.0
+          },
+          "TOMATO": {
+            "units": 16,
+            "revenue": 1082.0
+          },
+          "STRAWBERRY": {
+            "units": 84,
+            "revenue": 15686.0
+          }
+        },
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "same_input_contract": {
+        "passed": true,
+        "non_sell_slot_or_quantity_mismatches": 0,
+        "unit_mismatches": 0,
+        "observations": 719,
+        "sell_decision_differences": 44
+      },
+      "request_outcomes": {
+        "unit:pass": 1596,
+        "market:BUY_SEED:executed": 32,
+        "market_invalid": 0,
+        "non_sell_requested_orders": 169,
+        "non_sell_incomplete_orders": 0,
+        "market:HIRE:executed": 132,
+        "unit:executed": 2110,
+        "market:BUY_PRODUCT:executed": 5,
+        "market:SELL:executed": 57,
+        "sell_requested_units": 284
+      },
+      "storage": {
+        "max_observed_shed_units": 72,
+        "mean_observed_shed_units": 0.9902642559109874
+      },
+      "policy_actions_reproduced": true,
+      "opponent_actions_reproduced": true
+    },
+    {
+      "seed": 21473311,
+      "opponent": "teacher",
+      "side": 0,
+      "policy": "baseline",
+      "replay_gzip_sha256": "b98781636ba67f601f1100fa12ba301215f0b4189915003baf9c04e0f7986c54",
+      "bot_sha256": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+      "rival_sha256": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+      "kind": "development",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "2cc3efd356ed97e5035f3c2b4f3bd0e503fb34d8ac8ed0d656a56d35abbabea9",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "0b19188d50ee2b95941da6940d6625774231f7a5f37a90b9f75e400b2f1a5241",
+        "final_rewards": [
+          35220.0,
+          35220.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 376,
+            "unit:executed": 4266,
+            "unit:pass": 3292
+          },
+          "ordered_effect_sha256": "2a0741dbafeb853c1a8bb3f029c1de8570851d8572de6e821c521fdfb2252ae7",
+          "successful_plants": [
+            61,
+            61
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "metrics": {
+        "counts": {
+          "unit:PASS:pass": 1646,
+          "cash:BUY_SEED:MELON": -1760.0,
+          "market_units:BUY_SEED:MELON": 22,
+          "cash:HIRE:": -363.0,
+          "market_units:HIRE:": 134,
+          "unit:PLANT:executed": 61,
+          "unit:WEST:executed": 647,
+          "unit:NORTH:executed": 571,
+          "unit:WATER:executed": 693,
+          "cash:BUY_SEED:STRAWBERRY": -2500.0,
+          "market_units:BUY_SEED:STRAWBERRY": 25,
+          "cash:BUY_SEED:CARROT": -280.0,
+          "market_units:BUY_SEED:CARROT": 14,
+          "automatic_drop_calls": 29,
+          "automatic_drop_discard_units": 0,
+          "cash:BUY_PRODUCT:FERTILIZER": -916.0,
+          "market_units:BUY_PRODUCT:FERTILIZER": 9,
+          "unit:PICKUP:executed": 11,
+          "unit:FERTILIZE:executed": 9,
+          "unit:SOUTH:executed": 26,
+          "unit:HARVEST:executed": 73,
+          "harvest_units:MELON": 132,
+          "harvest_units:STRAWBERRY": 116,
+          "unit:EAST:executed": 32,
+          "unit:DROP:executed": 5,
+          "manual_drop_discard_units": 0,
+          "cash:SELL:MELON": 14914.0,
+          "market_units:SELL:MELON": 132,
+          "cash:SELL:STRAWBERRY": 20614.0,
+          "market_units:SELL:STRAWBERRY": 116,
+          "unit:DIG:executed": 5,
+          "harvest_units:CARROT": 40,
+          "cash:SELL:CARROT": 2511.0,
+          "market_units:SELL:CARROT": 40
+        },
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 14914.0
+          },
+          "STRAWBERRY": {
+            "units": 116,
+            "revenue": 20614.0
+          },
+          "CARROT": {
+            "units": 40,
+            "revenue": 2511.0
+          }
+        },
+        "production": {
+          "STRAWBERRY": {
+            "opportunities": 100,
+            "potential_units": 116,
+            "admitted_units": 116,
+            "clipped_units": 0
+          }
+        },
+        "market_cash": 32220.0,
+        "cash_residual": 0.0,
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "opponent_cash_and_sales": {
+        "market_cash": 32220.0,
+        "cash_residual": 0.0,
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 14914.0
+          },
+          "STRAWBERRY": {
+            "units": 116,
+            "revenue": 20614.0
+          },
+          "CARROT": {
+            "units": 40,
+            "revenue": 2511.0
+          }
+        },
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "same_input_contract": {
+        "passed": true,
+        "non_sell_slot_or_quantity_mismatches": 0,
+        "unit_mismatches": 0,
+        "observations": 719,
+        "sell_decision_differences": 409
+      },
+      "request_outcomes": {
+        "unit:pass": 1646,
+        "market:BUY_SEED:executed": 32,
+        "market_invalid": 0,
+        "non_sell_requested_orders": 172,
+        "non_sell_incomplete_orders": 0,
+        "market:HIRE:executed": 134,
+        "unit:executed": 2133,
+        "market:BUY_PRODUCT:executed": 6,
+        "market:SELL:executed": 16,
+        "sell_requested_units": 288
+      },
+      "storage": {
+        "max_observed_shed_units": 74,
+        "mean_observed_shed_units": 1.8247566063977747
+      },
+      "policy_actions_reproduced": true,
+      "opponent_actions_reproduced": true
+    },
+    {
+      "seed": 21473311,
+      "opponent": "teacher",
+      "side": 0,
+      "policy": "candidate",
+      "replay_gzip_sha256": "d5787180b6670ed3aab8f7d063964483ed3ad0cdbc23828ef549b0eef2e0795d",
+      "bot_sha256": "80df717fc9c3638b6115ca1b9bd7afab6c2003af74e9a7e1ca91a336485581ea",
+      "rival_sha256": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+      "kind": "development",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "98607915a7c3e203e7b76f3c357a7e6e45ae926232e64f4eb4d3e51eafdbeb4f",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "fa5b763853d7949e5ef1facaac6cceeca986179cb11d4adcf52630f8479b46cf",
+        "final_rewards": [
+          35733.0,
+          34858.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 422,
+            "unit:executed": 4266,
+            "unit:pass": 3292
+          },
+          "ordered_effect_sha256": "e07a519eba8f024ee749219b0a096386c450470cba5706dc34b4a64108ece3a4",
+          "successful_plants": [
+            61,
+            61
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "metrics": {
+        "counts": {
+          "unit:PASS:pass": 1646,
+          "cash:BUY_SEED:MELON": -1760.0,
+          "market_units:BUY_SEED:MELON": 22,
+          "cash:HIRE:": -363.0,
+          "market_units:HIRE:": 134,
+          "unit:PLANT:executed": 61,
+          "unit:WEST:executed": 647,
+          "unit:NORTH:executed": 571,
+          "unit:WATER:executed": 693,
+          "cash:BUY_SEED:STRAWBERRY": -2500.0,
+          "market_units:BUY_SEED:STRAWBERRY": 25,
+          "cash:BUY_SEED:CARROT": -280.0,
+          "market_units:BUY_SEED:CARROT": 14,
+          "automatic_drop_calls": 29,
+          "automatic_drop_discard_units": 0,
+          "cash:BUY_PRODUCT:FERTILIZER": -916.0,
+          "market_units:BUY_PRODUCT:FERTILIZER": 9,
+          "unit:PICKUP:executed": 11,
+          "unit:FERTILIZE:executed": 9,
+          "unit:SOUTH:executed": 26,
+          "unit:HARVEST:executed": 73,
+          "harvest_units:MELON": 132,
+          "harvest_units:STRAWBERRY": 116,
+          "unit:EAST:executed": 32,
+          "unit:DROP:executed": 5,
+          "manual_drop_discard_units": 0,
+          "cash:SELL:MELON": 14825.0,
+          "market_units:SELL:MELON": 132,
+          "cash:SELL:STRAWBERRY": 21213.0,
+          "market_units:SELL:STRAWBERRY": 116,
+          "unit:DIG:executed": 5,
+          "harvest_units:CARROT": 40,
+          "cash:SELL:CARROT": 2514.0,
+          "market_units:SELL:CARROT": 40
+        },
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 14825.0
+          },
+          "STRAWBERRY": {
+            "units": 116,
+            "revenue": 21213.0
+          },
+          "CARROT": {
+            "units": 40,
+            "revenue": 2514.0
+          }
+        },
+        "production": {
+          "STRAWBERRY": {
+            "opportunities": 100,
+            "potential_units": 116,
+            "admitted_units": 116,
+            "clipped_units": 0
+          }
+        },
+        "market_cash": 32733.0,
+        "cash_residual": 0.0,
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "opponent_cash_and_sales": {
+        "market_cash": 31858.0,
+        "cash_residual": 0.0,
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 14917.0
+          },
+          "STRAWBERRY": {
+            "units": 116,
+            "revenue": 20245.0
+          },
+          "CARROT": {
+            "units": 40,
+            "revenue": 2515.0
+          }
+        },
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "same_input_contract": {
+        "passed": true,
+        "non_sell_slot_or_quantity_mismatches": 0,
+        "unit_mismatches": 0,
+        "observations": 719,
+        "sell_decision_differences": 48
+      },
+      "request_outcomes": {
+        "unit:pass": 1646,
+        "market:BUY_SEED:executed": 32,
+        "market_invalid": 0,
+        "non_sell_requested_orders": 172,
+        "non_sell_incomplete_orders": 0,
+        "market:HIRE:executed": 134,
+        "unit:executed": 2133,
+        "market:BUY_PRODUCT:executed": 6,
+        "market:SELL:executed": 62,
+        "sell_requested_units": 288
+      },
+      "storage": {
+        "max_observed_shed_units": 72,
+        "mean_observed_shed_units": 1.0653685674547984
+      },
+      "policy_actions_reproduced": true,
+      "opponent_actions_reproduced": true
+    },
+    {
+      "seed": 21473311,
+      "opponent": "teacher",
+      "side": 1,
+      "policy": "baseline",
+      "replay_gzip_sha256": "4362bc7858324313e81c91ef35be85016d8b105e47ad369a61827275ab4a3509",
+      "bot_sha256": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+      "rival_sha256": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+      "kind": "development",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "2cc3efd356ed97e5035f3c2b4f3bd0e503fb34d8ac8ed0d656a56d35abbabea9",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "0b19188d50ee2b95941da6940d6625774231f7a5f37a90b9f75e400b2f1a5241",
+        "final_rewards": [
+          35220.0,
+          35220.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 376,
+            "unit:executed": 4266,
+            "unit:pass": 3292
+          },
+          "ordered_effect_sha256": "2a0741dbafeb853c1a8bb3f029c1de8570851d8572de6e821c521fdfb2252ae7",
+          "successful_plants": [
+            61,
+            61
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "metrics": {
+        "counts": {
+          "unit:PASS:pass": 1646,
+          "cash:BUY_SEED:MELON": -1760.0,
+          "market_units:BUY_SEED:MELON": 22,
+          "cash:HIRE:": -363.0,
+          "market_units:HIRE:": 134,
+          "unit:PLANT:executed": 61,
+          "unit:WEST:executed": 647,
+          "unit:NORTH:executed": 571,
+          "unit:WATER:executed": 693,
+          "cash:BUY_SEED:STRAWBERRY": -2500.0,
+          "market_units:BUY_SEED:STRAWBERRY": 25,
+          "cash:BUY_SEED:CARROT": -280.0,
+          "market_units:BUY_SEED:CARROT": 14,
+          "automatic_drop_calls": 29,
+          "automatic_drop_discard_units": 0,
+          "cash:BUY_PRODUCT:FERTILIZER": -916.0,
+          "market_units:BUY_PRODUCT:FERTILIZER": 9,
+          "unit:PICKUP:executed": 11,
+          "unit:FERTILIZE:executed": 9,
+          "unit:SOUTH:executed": 26,
+          "unit:HARVEST:executed": 73,
+          "harvest_units:MELON": 132,
+          "harvest_units:STRAWBERRY": 116,
+          "unit:EAST:executed": 32,
+          "unit:DROP:executed": 5,
+          "manual_drop_discard_units": 0,
+          "cash:SELL:MELON": 14914.0,
+          "market_units:SELL:MELON": 132,
+          "cash:SELL:STRAWBERRY": 20614.0,
+          "market_units:SELL:STRAWBERRY": 116,
+          "unit:DIG:executed": 5,
+          "harvest_units:CARROT": 40,
+          "cash:SELL:CARROT": 2511.0,
+          "market_units:SELL:CARROT": 40
+        },
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 14914.0
+          },
+          "STRAWBERRY": {
+            "units": 116,
+            "revenue": 20614.0
+          },
+          "CARROT": {
+            "units": 40,
+            "revenue": 2511.0
+          }
+        },
+        "production": {
+          "STRAWBERRY": {
+            "opportunities": 100,
+            "potential_units": 116,
+            "admitted_units": 116,
+            "clipped_units": 0
+          }
+        },
+        "market_cash": 32220.0,
+        "cash_residual": 0.0,
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "opponent_cash_and_sales": {
+        "market_cash": 32220.0,
+        "cash_residual": 0.0,
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 14914.0
+          },
+          "STRAWBERRY": {
+            "units": 116,
+            "revenue": 20614.0
+          },
+          "CARROT": {
+            "units": 40,
+            "revenue": 2511.0
+          }
+        },
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "same_input_contract": {
+        "passed": true,
+        "non_sell_slot_or_quantity_mismatches": 0,
+        "unit_mismatches": 0,
+        "observations": 719,
+        "sell_decision_differences": 409
+      },
+      "request_outcomes": {
+        "unit:pass": 1646,
+        "market:BUY_SEED:executed": 32,
+        "market_invalid": 0,
+        "non_sell_requested_orders": 172,
+        "non_sell_incomplete_orders": 0,
+        "market:HIRE:executed": 134,
+        "unit:executed": 2133,
+        "market:BUY_PRODUCT:executed": 6,
+        "market:SELL:executed": 16,
+        "sell_requested_units": 288
+      },
+      "storage": {
+        "max_observed_shed_units": 74,
+        "mean_observed_shed_units": 1.8247566063977747
+      },
+      "policy_actions_reproduced": true,
+      "opponent_actions_reproduced": true
+    },
+    {
+      "seed": 21473311,
+      "opponent": "teacher",
+      "side": 1,
+      "policy": "candidate",
+      "replay_gzip_sha256": "7178692121519d3f8c916ee31b48d9ead0a03e498a0e44e60e83611a1afe1f36",
+      "bot_sha256": "80df717fc9c3638b6115ca1b9bd7afab6c2003af74e9a7e1ca91a336485581ea",
+      "rival_sha256": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+      "kind": "development",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "dc6cee0419a7a5cf5e06b4991071f5bdf535db3619cc07207e6b0e98f505b285",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "a748de13e8b2d323c365d50c38c1e2a2328e39c7798ba4c97d98f9f3a7cb5df3",
+        "final_rewards": [
+          34858.0,
+          35733.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 422,
+            "unit:executed": 4266,
+            "unit:pass": 3292
+          },
+          "ordered_effect_sha256": "c2324ee18c4b7dece0cd83866744dcd8f90bc07890a9c21ac02e9b38016217a7",
+          "successful_plants": [
+            61,
+            61
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "metrics": {
+        "counts": {
+          "unit:PASS:pass": 1646,
+          "cash:BUY_SEED:MELON": -1760.0,
+          "market_units:BUY_SEED:MELON": 22,
+          "cash:HIRE:": -363.0,
+          "market_units:HIRE:": 134,
+          "unit:PLANT:executed": 61,
+          "unit:WEST:executed": 647,
+          "unit:NORTH:executed": 571,
+          "unit:WATER:executed": 693,
+          "cash:BUY_SEED:STRAWBERRY": -2500.0,
+          "market_units:BUY_SEED:STRAWBERRY": 25,
+          "cash:BUY_SEED:CARROT": -280.0,
+          "market_units:BUY_SEED:CARROT": 14,
+          "automatic_drop_calls": 29,
+          "automatic_drop_discard_units": 0,
+          "cash:BUY_PRODUCT:FERTILIZER": -916.0,
+          "market_units:BUY_PRODUCT:FERTILIZER": 9,
+          "unit:PICKUP:executed": 11,
+          "unit:FERTILIZE:executed": 9,
+          "unit:SOUTH:executed": 26,
+          "unit:HARVEST:executed": 73,
+          "harvest_units:MELON": 132,
+          "harvest_units:STRAWBERRY": 116,
+          "unit:EAST:executed": 32,
+          "unit:DROP:executed": 5,
+          "manual_drop_discard_units": 0,
+          "cash:SELL:MELON": 14825.0,
+          "market_units:SELL:MELON": 132,
+          "cash:SELL:STRAWBERRY": 21213.0,
+          "market_units:SELL:STRAWBERRY": 116,
+          "unit:DIG:executed": 5,
+          "harvest_units:CARROT": 40,
+          "cash:SELL:CARROT": 2514.0,
+          "market_units:SELL:CARROT": 40
+        },
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 14825.0
+          },
+          "STRAWBERRY": {
+            "units": 116,
+            "revenue": 21213.0
+          },
+          "CARROT": {
+            "units": 40,
+            "revenue": 2514.0
+          }
+        },
+        "production": {
+          "STRAWBERRY": {
+            "opportunities": 100,
+            "potential_units": 116,
+            "admitted_units": 116,
+            "clipped_units": 0
+          }
+        },
+        "market_cash": 32733.0,
+        "cash_residual": 0.0,
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "opponent_cash_and_sales": {
+        "market_cash": 31858.0,
+        "cash_residual": 0.0,
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 14917.0
+          },
+          "STRAWBERRY": {
+            "units": 116,
+            "revenue": 20245.0
+          },
+          "CARROT": {
+            "units": 40,
+            "revenue": 2515.0
+          }
+        },
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "same_input_contract": {
+        "passed": true,
+        "non_sell_slot_or_quantity_mismatches": 0,
+        "unit_mismatches": 0,
+        "observations": 719,
+        "sell_decision_differences": 48
+      },
+      "request_outcomes": {
+        "unit:pass": 1646,
+        "market:BUY_SEED:executed": 32,
+        "market_invalid": 0,
+        "non_sell_requested_orders": 172,
+        "non_sell_incomplete_orders": 0,
+        "market:HIRE:executed": 134,
+        "unit:executed": 2133,
+        "market:BUY_PRODUCT:executed": 6,
+        "market:SELL:executed": 62,
+        "sell_requested_units": 288
+      },
+      "storage": {
+        "max_observed_shed_units": 72,
+        "mean_observed_shed_units": 1.0653685674547984
+      },
+      "policy_actions_reproduced": true,
+      "opponent_actions_reproduced": true
+    },
+    {
+      "seed": 21473311,
+      "opponent": "tuned",
+      "side": 0,
+      "policy": "baseline",
+      "replay_gzip_sha256": "bc2a5bb616079f87f56ddf34d0f2eef1cf98cf544f4b68e1c92f1db5843c18a7",
+      "bot_sha256": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+      "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+      "kind": "development",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "b7eeae617701a551ec2bd403e8e8ce9082c3ba781e900e079f336f1264c51cb0",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "733e3e27d0e67f2241205f5f88f50fe0645c1d93737d24713756c79559c9b253",
+        "final_rewards": [
+          37276.0,
+          33466.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 358,
+            "unit:executed": 4169,
+            "unit:pass": 3104
+          },
+          "ordered_effect_sha256": "193da5ebcc75de997e2a1f9be4b4c6d3bb6822784bd5ff6fbd27285ff5d38c08",
+          "successful_plants": [
+            61,
+            61
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "metrics": {
+        "counts": {
+          "unit:PASS:pass": 1649,
+          "cash:BUY_SEED:MELON": -1760.0,
+          "market_units:BUY_SEED:MELON": 22,
+          "cash:HIRE:": -368.0,
+          "market_units:HIRE:": 135,
+          "unit:PLANT:executed": 61,
+          "unit:WEST:executed": 647,
+          "unit:NORTH:executed": 576,
+          "unit:WATER:executed": 693,
+          "cash:BUY_SEED:STRAWBERRY": -2500.0,
+          "market_units:BUY_SEED:STRAWBERRY": 25,
+          "cash:BUY_SEED:CARROT": -280.0,
+          "market_units:BUY_SEED:CARROT": 14,
+          "automatic_drop_calls": 29,
+          "automatic_drop_discard_units": 0,
+          "cash:BUY_PRODUCT:FERTILIZER": -1215.0,
+          "market_units:BUY_PRODUCT:FERTILIZER": 12,
+          "unit:PICKUP:executed": 14,
+          "unit:FERTILIZE:executed": 12,
+          "unit:SOUTH:executed": 26,
+          "unit:HARVEST:executed": 76,
+          "harvest_units:MELON": 132,
+          "harvest_units:STRAWBERRY": 120,
+          "unit:EAST:executed": 33,
+          "unit:DROP:executed": 5,
+          "manual_drop_discard_units": 0,
+          "cash:SELL:MELON": 14914.0,
+          "market_units:SELL:MELON": 132,
+          "cash:SELL:STRAWBERRY": 22974.0,
+          "market_units:SELL:STRAWBERRY": 120,
+          "unit:DIG:executed": 5,
+          "harvest_units:CARROT": 40,
+          "cash:SELL:CARROT": 2511.0,
+          "market_units:SELL:CARROT": 40
+        },
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 14914.0
+          },
+          "STRAWBERRY": {
+            "units": 120,
+            "revenue": 22974.0
+          },
+          "CARROT": {
+            "units": 40,
+            "revenue": 2511.0
+          }
+        },
+        "production": {
+          "STRAWBERRY": {
+            "opportunities": 100,
+            "potential_units": 120,
+            "admitted_units": 120,
+            "clipped_units": 0
+          }
+        },
+        "market_cash": 34276.0,
+        "cash_residual": 0.0,
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "opponent_cash_and_sales": {
+        "market_cash": 30466.0,
+        "cash_residual": 0.0,
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 14914.0
+          },
+          "STRAWBERRY": {
+            "units": 100,
+            "revenue": 17835.0
+          },
+          "CARROT": {
+            "units": 40,
+            "revenue": 2511.0
+          }
+        },
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "same_input_contract": {
+        "passed": true,
+        "non_sell_slot_or_quantity_mismatches": 0,
+        "unit_mismatches": 0,
+        "observations": 719,
+        "sell_decision_differences": 409
+      },
+      "request_outcomes": {
+        "unit:pass": 1649,
+        "market:BUY_SEED:executed": 32,
+        "market_invalid": 0,
+        "non_sell_requested_orders": 175,
+        "non_sell_incomplete_orders": 0,
+        "market:HIRE:executed": 135,
+        "unit:executed": 2148,
+        "market:BUY_PRODUCT:executed": 8,
+        "market:SELL:executed": 17,
+        "sell_requested_units": 292
+      },
+      "storage": {
+        "max_observed_shed_units": 70,
+        "mean_observed_shed_units": 1.7357440890125173
+      },
+      "policy_actions_reproduced": true,
+      "opponent_actions_reproduced": true
+    },
+    {
+      "seed": 21473311,
+      "opponent": "tuned",
+      "side": 0,
+      "policy": "candidate",
+      "replay_gzip_sha256": "814fbb30d5b4cb331a1ac3ecff512c3aceb04f570977fceb4c833b3a06029a16",
+      "bot_sha256": "80df717fc9c3638b6115ca1b9bd7afab6c2003af74e9a7e1ca91a336485581ea",
+      "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+      "kind": "development",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "e59adcdfd6ae835d1704afd408f0f9ad14432b8d2bad69c9b754bbd1be474753",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "5e5d0c8dde5459484cb516a973251165b25558adcc060c38caaea5d9a53b55f9",
+        "final_rewards": [
+          37424.0,
+          33596.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 404,
+            "unit:executed": 4169,
+            "unit:pass": 3104
+          },
+          "ordered_effect_sha256": "ec29edd582fe56f5c9c156024a19217b20f393bc910d7e1669bee21d2447dcbd",
+          "successful_plants": [
+            61,
+            61
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "metrics": {
+        "counts": {
+          "unit:PASS:pass": 1649,
+          "cash:BUY_SEED:MELON": -1760.0,
+          "market_units:BUY_SEED:MELON": 22,
+          "cash:HIRE:": -368.0,
+          "market_units:HIRE:": 135,
+          "unit:PLANT:executed": 61,
+          "unit:WEST:executed": 647,
+          "unit:NORTH:executed": 576,
+          "unit:WATER:executed": 693,
+          "cash:BUY_SEED:STRAWBERRY": -2500.0,
+          "market_units:BUY_SEED:STRAWBERRY": 25,
+          "cash:BUY_SEED:CARROT": -280.0,
+          "market_units:BUY_SEED:CARROT": 14,
+          "automatic_drop_calls": 29,
+          "automatic_drop_discard_units": 0,
+          "cash:BUY_PRODUCT:FERTILIZER": -1215.0,
+          "market_units:BUY_PRODUCT:FERTILIZER": 12,
+          "unit:PICKUP:executed": 14,
+          "unit:FERTILIZE:executed": 12,
+          "unit:SOUTH:executed": 26,
+          "unit:HARVEST:executed": 76,
+          "harvest_units:MELON": 132,
+          "harvest_units:STRAWBERRY": 120,
+          "unit:EAST:executed": 33,
+          "unit:DROP:executed": 5,
+          "manual_drop_discard_units": 0,
+          "cash:SELL:MELON": 14825.0,
+          "market_units:SELL:MELON": 132,
+          "cash:SELL:STRAWBERRY": 23208.0,
+          "market_units:SELL:STRAWBERRY": 120,
+          "unit:DIG:executed": 5,
+          "harvest_units:CARROT": 40,
+          "cash:SELL:CARROT": 2514.0,
+          "market_units:SELL:CARROT": 40
+        },
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 14825.0
+          },
+          "STRAWBERRY": {
+            "units": 120,
+            "revenue": 23208.0
+          },
+          "CARROT": {
+            "units": 40,
+            "revenue": 2514.0
+          }
+        },
+        "production": {
+          "STRAWBERRY": {
+            "opportunities": 100,
+            "potential_units": 120,
+            "admitted_units": 120,
+            "clipped_units": 0
+          }
+        },
+        "market_cash": 34424.0,
+        "cash_residual": 0.0,
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "opponent_cash_and_sales": {
+        "market_cash": 30596.0,
+        "cash_residual": 0.0,
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 14917.0
+          },
+          "STRAWBERRY": {
+            "units": 100,
+            "revenue": 17958.0
+          },
+          "CARROT": {
+            "units": 40,
+            "revenue": 2515.0
+          }
+        },
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "same_input_contract": {
+        "passed": true,
+        "non_sell_slot_or_quantity_mismatches": 0,
+        "unit_mismatches": 0,
+        "observations": 719,
+        "sell_decision_differences": 48
+      },
+      "request_outcomes": {
+        "unit:pass": 1649,
+        "market:BUY_SEED:executed": 32,
+        "market_invalid": 0,
+        "non_sell_requested_orders": 175,
+        "non_sell_incomplete_orders": 0,
+        "market:HIRE:executed": 135,
+        "unit:executed": 2148,
+        "market:BUY_PRODUCT:executed": 8,
+        "market:SELL:executed": 63,
+        "sell_requested_units": 292
+      },
+      "storage": {
+        "max_observed_shed_units": 68,
+        "mean_observed_shed_units": 0.9763560500695411
+      },
+      "policy_actions_reproduced": true,
+      "opponent_actions_reproduced": true
+    },
+    {
+      "seed": 21473311,
+      "opponent": "tuned",
+      "side": 1,
+      "policy": "baseline",
+      "replay_gzip_sha256": "e47f1cb8ee8c58151ebc8ba82771ed6bff1f4964c75e8a88879759192d48dc47",
+      "bot_sha256": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+      "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+      "kind": "development",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "428daad94defb777a103481d25095ca9d744ce88140d5acae5347dd28b6b2f9e",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "9df7a39689702b6ab003bd3c32b749c40ce485a12e1adbcbea03b17854ec6ba6",
+        "final_rewards": [
+          33466.0,
+          37276.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 358,
+            "unit:executed": 4169,
+            "unit:pass": 3104
+          },
+          "ordered_effect_sha256": "77165f4378d5bb62d3533c54acb2a7970767b3968a9514a75417aebd655e9a6a",
+          "successful_plants": [
+            61,
+            61
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "metrics": {
+        "counts": {
+          "unit:PASS:pass": 1649,
+          "cash:BUY_SEED:MELON": -1760.0,
+          "market_units:BUY_SEED:MELON": 22,
+          "cash:HIRE:": -368.0,
+          "market_units:HIRE:": 135,
+          "unit:PLANT:executed": 61,
+          "unit:WEST:executed": 647,
+          "unit:NORTH:executed": 576,
+          "unit:WATER:executed": 693,
+          "cash:BUY_SEED:STRAWBERRY": -2500.0,
+          "market_units:BUY_SEED:STRAWBERRY": 25,
+          "cash:BUY_SEED:CARROT": -280.0,
+          "market_units:BUY_SEED:CARROT": 14,
+          "automatic_drop_calls": 29,
+          "automatic_drop_discard_units": 0,
+          "cash:BUY_PRODUCT:FERTILIZER": -1215.0,
+          "market_units:BUY_PRODUCT:FERTILIZER": 12,
+          "unit:PICKUP:executed": 14,
+          "unit:FERTILIZE:executed": 12,
+          "unit:SOUTH:executed": 26,
+          "unit:HARVEST:executed": 76,
+          "harvest_units:MELON": 132,
+          "harvest_units:STRAWBERRY": 120,
+          "unit:EAST:executed": 33,
+          "unit:DROP:executed": 5,
+          "manual_drop_discard_units": 0,
+          "cash:SELL:MELON": 14914.0,
+          "market_units:SELL:MELON": 132,
+          "cash:SELL:STRAWBERRY": 22974.0,
+          "market_units:SELL:STRAWBERRY": 120,
+          "unit:DIG:executed": 5,
+          "harvest_units:CARROT": 40,
+          "cash:SELL:CARROT": 2511.0,
+          "market_units:SELL:CARROT": 40
+        },
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 14914.0
+          },
+          "STRAWBERRY": {
+            "units": 120,
+            "revenue": 22974.0
+          },
+          "CARROT": {
+            "units": 40,
+            "revenue": 2511.0
+          }
+        },
+        "production": {
+          "STRAWBERRY": {
+            "opportunities": 100,
+            "potential_units": 120,
+            "admitted_units": 120,
+            "clipped_units": 0
+          }
+        },
+        "market_cash": 34276.0,
+        "cash_residual": 0.0,
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "opponent_cash_and_sales": {
+        "market_cash": 30466.0,
+        "cash_residual": 0.0,
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 14914.0
+          },
+          "STRAWBERRY": {
+            "units": 100,
+            "revenue": 17835.0
+          },
+          "CARROT": {
+            "units": 40,
+            "revenue": 2511.0
+          }
+        },
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "same_input_contract": {
+        "passed": true,
+        "non_sell_slot_or_quantity_mismatches": 0,
+        "unit_mismatches": 0,
+        "observations": 719,
+        "sell_decision_differences": 409
+      },
+      "request_outcomes": {
+        "unit:pass": 1649,
+        "market:BUY_SEED:executed": 32,
+        "market_invalid": 0,
+        "non_sell_requested_orders": 175,
+        "non_sell_incomplete_orders": 0,
+        "market:HIRE:executed": 135,
+        "unit:executed": 2148,
+        "market:BUY_PRODUCT:executed": 8,
+        "market:SELL:executed": 17,
+        "sell_requested_units": 292
+      },
+      "storage": {
+        "max_observed_shed_units": 70,
+        "mean_observed_shed_units": 1.7357440890125173
+      },
+      "policy_actions_reproduced": true,
+      "opponent_actions_reproduced": true
+    },
+    {
+      "seed": 21473311,
+      "opponent": "tuned",
+      "side": 1,
+      "policy": "candidate",
+      "replay_gzip_sha256": "9bf9ffb4541f952093c7a276f832aef8e7ac7bde59c286ee5c348c6f9dc8a4b1",
+      "bot_sha256": "80df717fc9c3638b6115ca1b9bd7afab6c2003af74e9a7e1ca91a336485581ea",
+      "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+      "kind": "development",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "de2bde354dfc095f316083a9c41fdf49428acb0469775f25e55839f763078d9c",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "a51f76f9550c30c3974d0c6626669531f38428ae13ff89c4d69b94fb47780024",
+        "final_rewards": [
+          33596.0,
+          37424.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 404,
+            "unit:executed": 4169,
+            "unit:pass": 3104
+          },
+          "ordered_effect_sha256": "aa1dab0ddcbf70af6916b8c410f333c45297f2f9e97c2a05058b08c65b77d431",
+          "successful_plants": [
+            61,
+            61
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "metrics": {
+        "counts": {
+          "unit:PASS:pass": 1649,
+          "cash:BUY_SEED:MELON": -1760.0,
+          "market_units:BUY_SEED:MELON": 22,
+          "cash:HIRE:": -368.0,
+          "market_units:HIRE:": 135,
+          "unit:PLANT:executed": 61,
+          "unit:WEST:executed": 647,
+          "unit:NORTH:executed": 576,
+          "unit:WATER:executed": 693,
+          "cash:BUY_SEED:STRAWBERRY": -2500.0,
+          "market_units:BUY_SEED:STRAWBERRY": 25,
+          "cash:BUY_SEED:CARROT": -280.0,
+          "market_units:BUY_SEED:CARROT": 14,
+          "automatic_drop_calls": 29,
+          "automatic_drop_discard_units": 0,
+          "cash:BUY_PRODUCT:FERTILIZER": -1215.0,
+          "market_units:BUY_PRODUCT:FERTILIZER": 12,
+          "unit:PICKUP:executed": 14,
+          "unit:FERTILIZE:executed": 12,
+          "unit:SOUTH:executed": 26,
+          "unit:HARVEST:executed": 76,
+          "harvest_units:MELON": 132,
+          "harvest_units:STRAWBERRY": 120,
+          "unit:EAST:executed": 33,
+          "unit:DROP:executed": 5,
+          "manual_drop_discard_units": 0,
+          "cash:SELL:MELON": 14825.0,
+          "market_units:SELL:MELON": 132,
+          "cash:SELL:STRAWBERRY": 23208.0,
+          "market_units:SELL:STRAWBERRY": 120,
+          "unit:DIG:executed": 5,
+          "harvest_units:CARROT": 40,
+          "cash:SELL:CARROT": 2514.0,
+          "market_units:SELL:CARROT": 40
+        },
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 14825.0
+          },
+          "STRAWBERRY": {
+            "units": 120,
+            "revenue": 23208.0
+          },
+          "CARROT": {
+            "units": 40,
+            "revenue": 2514.0
+          }
+        },
+        "production": {
+          "STRAWBERRY": {
+            "opportunities": 100,
+            "potential_units": 120,
+            "admitted_units": 120,
+            "clipped_units": 0
+          }
+        },
+        "market_cash": 34424.0,
+        "cash_residual": 0.0,
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "opponent_cash_and_sales": {
+        "market_cash": 30596.0,
+        "cash_residual": 0.0,
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 14917.0
+          },
+          "STRAWBERRY": {
+            "units": 100,
+            "revenue": 17958.0
+          },
+          "CARROT": {
+            "units": 40,
+            "revenue": 2515.0
+          }
+        },
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "same_input_contract": {
+        "passed": true,
+        "non_sell_slot_or_quantity_mismatches": 0,
+        "unit_mismatches": 0,
+        "observations": 719,
+        "sell_decision_differences": 48
+      },
+      "request_outcomes": {
+        "unit:pass": 1649,
+        "market:BUY_SEED:executed": 32,
+        "market_invalid": 0,
+        "non_sell_requested_orders": 175,
+        "non_sell_incomplete_orders": 0,
+        "market:HIRE:executed": 135,
+        "unit:executed": 2148,
+        "market:BUY_PRODUCT:executed": 8,
+        "market:SELL:executed": 63,
+        "sell_requested_units": 292
+      },
+      "storage": {
+        "max_observed_shed_units": 68,
+        "mean_observed_shed_units": 0.9763560500695411
+      },
+      "policy_actions_reproduced": true,
+      "opponent_actions_reproduced": true
+    },
+    {
+      "seed": 21473311,
+      "opponent": "v1",
+      "side": 0,
+      "policy": "baseline",
+      "replay_gzip_sha256": "fe7b20da92eee40a6beb828dd1945b02de63dbe3934b035250109e737ee39d56",
+      "bot_sha256": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+      "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+      "kind": "development",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "03f43f6a1df97541708a648a5ba1bfde6d5862d2d4bfc48d8d34b8c4e506dda1",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "e07171aff38707109f1ab423db983e2173115461533b2e693d40a74d9ca782e8",
+        "final_rewards": [
+          37279.0,
+          32979.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 363,
+            "unit:executed": 4164,
+            "unit:pass": 3116
+          },
+          "ordered_effect_sha256": "ad84b44fd3bd59d0bc8c68b67d1a81faff20937e414efc5d1d1aeb2dc378b8ae",
+          "successful_plants": [
+            61,
+            59
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "metrics": {
+        "counts": {
+          "unit:PASS:pass": 1642,
+          "cash:BUY_SEED:MELON": -1760.0,
+          "market_units:BUY_SEED:MELON": 22,
+          "cash:HIRE:": -371.0,
+          "market_units:HIRE:": 135,
+          "unit:PLANT:executed": 61,
+          "unit:WEST:executed": 646,
+          "unit:NORTH:executed": 577,
+          "unit:WATER:executed": 693,
+          "cash:BUY_SEED:STRAWBERRY": -2500.0,
+          "market_units:BUY_SEED:STRAWBERRY": 25,
+          "cash:BUY_SEED:CARROT": -280.0,
+          "market_units:BUY_SEED:CARROT": 14,
+          "automatic_drop_calls": 29,
+          "automatic_drop_discard_units": 0,
+          "cash:BUY_PRODUCT:FERTILIZER": -1318.0,
+          "market_units:BUY_PRODUCT:FERTILIZER": 13,
+          "unit:PICKUP:executed": 15,
+          "unit:FERTILIZE:executed": 13,
+          "unit:SOUTH:executed": 27,
+          "unit:HARVEST:executed": 76,
+          "harvest_units:MELON": 132,
+          "harvest_units:STRAWBERRY": 121,
+          "unit:EAST:executed": 32,
+          "unit:DROP:executed": 5,
+          "manual_drop_discard_units": 0,
+          "cash:SELL:MELON": 14914.0,
+          "market_units:SELL:MELON": 132,
+          "cash:SELL:STRAWBERRY": 23063.0,
+          "market_units:SELL:STRAWBERRY": 121,
+          "unit:DIG:executed": 5,
+          "harvest_units:CARROT": 40,
+          "cash:SELL:CARROT": 2531.0,
+          "market_units:SELL:CARROT": 40
+        },
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 14914.0
+          },
+          "STRAWBERRY": {
+            "units": 121,
+            "revenue": 23063.0
+          },
+          "CARROT": {
+            "units": 40,
+            "revenue": 2531.0
+          }
+        },
+        "production": {
+          "STRAWBERRY": {
+            "opportunities": 100,
+            "potential_units": 121,
+            "admitted_units": 121,
+            "clipped_units": 0
+          }
+        },
+        "market_cash": 34279.0,
+        "cash_residual": 0.0,
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "opponent_cash_and_sales": {
+        "market_cash": 29979.0,
+        "cash_residual": 0.0,
+        "sales": {
+          "MELON": {
+            "units": 138,
+            "revenue": 14920.0
+          },
+          "STRAWBERRY": {
+            "units": 100,
+            "revenue": 18036.0
+          },
+          "CARROT": {
+            "units": 30,
+            "revenue": 1930.0
+          }
+        },
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "same_input_contract": {
+        "passed": true,
+        "non_sell_slot_or_quantity_mismatches": 0,
+        "unit_mismatches": 0,
+        "observations": 719,
+        "sell_decision_differences": 409
+      },
+      "request_outcomes": {
+        "unit:pass": 1642,
+        "market:BUY_SEED:executed": 33,
+        "market_invalid": 0,
+        "non_sell_requested_orders": 176,
+        "non_sell_incomplete_orders": 0,
+        "market:HIRE:executed": 135,
+        "unit:executed": 2150,
+        "market:BUY_PRODUCT:executed": 8,
+        "market:SELL:executed": 18,
+        "sell_requested_units": 293
+      },
+      "storage": {
+        "max_observed_shed_units": 72,
+        "mean_observed_shed_units": 1.7134909596662031
+      },
+      "policy_actions_reproduced": true,
+      "opponent_actions_reproduced": true
+    },
+    {
+      "seed": 21473311,
+      "opponent": "v1",
+      "side": 0,
+      "policy": "candidate",
+      "replay_gzip_sha256": "af9e45ec86f9b8b0cd53b1e0fcc555a285aebdae21d35bd9c2e62429b99697e6",
+      "bot_sha256": "80df717fc9c3638b6115ca1b9bd7afab6c2003af74e9a7e1ca91a336485581ea",
+      "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+      "kind": "development",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "2ac710cdd83a730790dfcc0e5b459f93dd17f1eb723301d3a58b4c394afba2fb",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "193bc89fe5363393e943de9e7398233c2225cbef53b3bc13d466fae61cb011c1",
+        "final_rewards": [
+          37542.0,
+          33006.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 410,
+            "unit:executed": 4164,
+            "unit:pass": 3116
+          },
+          "ordered_effect_sha256": "85dfc71d218bcb25a9482db08af6fb128b214eca5a5e47f68ac55065f59583c9",
+          "successful_plants": [
+            61,
+            59
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "metrics": {
+        "counts": {
+          "unit:PASS:pass": 1642,
+          "cash:BUY_SEED:MELON": -1760.0,
+          "market_units:BUY_SEED:MELON": 22,
+          "cash:HIRE:": -371.0,
+          "market_units:HIRE:": 135,
+          "unit:PLANT:executed": 61,
+          "unit:WEST:executed": 646,
+          "unit:NORTH:executed": 577,
+          "unit:WATER:executed": 693,
+          "cash:BUY_SEED:STRAWBERRY": -2500.0,
+          "market_units:BUY_SEED:STRAWBERRY": 25,
+          "cash:BUY_SEED:CARROT": -280.0,
+          "market_units:BUY_SEED:CARROT": 14,
+          "automatic_drop_calls": 29,
+          "automatic_drop_discard_units": 0,
+          "cash:BUY_PRODUCT:FERTILIZER": -1318.0,
+          "market_units:BUY_PRODUCT:FERTILIZER": 13,
+          "unit:PICKUP:executed": 15,
+          "unit:FERTILIZE:executed": 13,
+          "unit:SOUTH:executed": 27,
+          "unit:HARVEST:executed": 76,
+          "harvest_units:MELON": 132,
+          "harvest_units:STRAWBERRY": 121,
+          "unit:EAST:executed": 32,
+          "unit:DROP:executed": 5,
+          "manual_drop_discard_units": 0,
+          "cash:SELL:MELON": 14825.0,
+          "market_units:SELL:MELON": 132,
+          "cash:SELL:STRAWBERRY": 23397.0,
+          "market_units:SELL:STRAWBERRY": 121,
+          "unit:DIG:executed": 5,
+          "harvest_units:CARROT": 40,
+          "cash:SELL:CARROT": 2549.0,
+          "market_units:SELL:CARROT": 40
+        },
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 14825.0
+          },
+          "STRAWBERRY": {
+            "units": 121,
+            "revenue": 23397.0
+          },
+          "CARROT": {
+            "units": 40,
+            "revenue": 2549.0
+          }
+        },
+        "production": {
+          "STRAWBERRY": {
+            "opportunities": 100,
+            "potential_units": 121,
+            "admitted_units": 121,
+            "clipped_units": 0
+          }
+        },
+        "market_cash": 34542.0,
+        "cash_residual": 0.0,
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "opponent_cash_and_sales": {
+        "market_cash": 30006.0,
+        "cash_residual": 0.0,
+        "sales": {
+          "MELON": {
+            "units": 138,
+            "revenue": 14923.0
+          },
+          "STRAWBERRY": {
+            "units": 100,
+            "revenue": 18055.0
+          },
+          "CARROT": {
+            "units": 30,
+            "revenue": 1935.0
+          }
+        },
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "same_input_contract": {
+        "passed": true,
+        "non_sell_slot_or_quantity_mismatches": 0,
+        "unit_mismatches": 0,
+        "observations": 719,
+        "sell_decision_differences": 48
+      },
+      "request_outcomes": {
+        "unit:pass": 1642,
+        "market:BUY_SEED:executed": 33,
+        "market_invalid": 0,
+        "non_sell_requested_orders": 176,
+        "non_sell_incomplete_orders": 0,
+        "market:HIRE:executed": 135,
+        "unit:executed": 2150,
+        "market:BUY_PRODUCT:executed": 8,
+        "market:SELL:executed": 65,
+        "sell_requested_units": 293
+      },
+      "storage": {
+        "max_observed_shed_units": 70,
+        "mean_observed_shed_units": 0.9554937413073713
+      },
+      "policy_actions_reproduced": true,
+      "opponent_actions_reproduced": true
+    },
+    {
+      "seed": 21473311,
+      "opponent": "v1",
+      "side": 1,
+      "policy": "baseline",
+      "replay_gzip_sha256": "caf12dd019e218154af2784dbdf59933fa9df8bc71ddd210ad81260f31080e5f",
+      "bot_sha256": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+      "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+      "kind": "development",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "fae10f59db58455153150438f259179f0cec857a01462f69e3753c92be9be196",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "80f6d6610a05dd7d9d394eb254c4d36f2d25a8106e5f665ff34d52119f402057",
+        "final_rewards": [
+          32979.0,
+          37279.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 363,
+            "unit:executed": 4164,
+            "unit:pass": 3116
+          },
+          "ordered_effect_sha256": "07ef0a1113c0226e91e0ef5a1ca6725ed873b19917e8acf86956f4fa686ba848",
+          "successful_plants": [
+            59,
+            61
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "metrics": {
+        "counts": {
+          "unit:PASS:pass": 1642,
+          "cash:BUY_SEED:MELON": -1760.0,
+          "market_units:BUY_SEED:MELON": 22,
+          "cash:HIRE:": -371.0,
+          "market_units:HIRE:": 135,
+          "unit:PLANT:executed": 61,
+          "unit:WEST:executed": 646,
+          "unit:NORTH:executed": 577,
+          "unit:WATER:executed": 693,
+          "cash:BUY_SEED:STRAWBERRY": -2500.0,
+          "market_units:BUY_SEED:STRAWBERRY": 25,
+          "cash:BUY_SEED:CARROT": -280.0,
+          "market_units:BUY_SEED:CARROT": 14,
+          "automatic_drop_calls": 29,
+          "automatic_drop_discard_units": 0,
+          "cash:BUY_PRODUCT:FERTILIZER": -1318.0,
+          "market_units:BUY_PRODUCT:FERTILIZER": 13,
+          "unit:PICKUP:executed": 15,
+          "unit:FERTILIZE:executed": 13,
+          "unit:SOUTH:executed": 27,
+          "unit:HARVEST:executed": 76,
+          "harvest_units:MELON": 132,
+          "harvest_units:STRAWBERRY": 121,
+          "unit:EAST:executed": 32,
+          "unit:DROP:executed": 5,
+          "manual_drop_discard_units": 0,
+          "cash:SELL:MELON": 14914.0,
+          "market_units:SELL:MELON": 132,
+          "cash:SELL:STRAWBERRY": 23063.0,
+          "market_units:SELL:STRAWBERRY": 121,
+          "unit:DIG:executed": 5,
+          "harvest_units:CARROT": 40,
+          "cash:SELL:CARROT": 2531.0,
+          "market_units:SELL:CARROT": 40
+        },
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 14914.0
+          },
+          "STRAWBERRY": {
+            "units": 121,
+            "revenue": 23063.0
+          },
+          "CARROT": {
+            "units": 40,
+            "revenue": 2531.0
+          }
+        },
+        "production": {
+          "STRAWBERRY": {
+            "opportunities": 100,
+            "potential_units": 121,
+            "admitted_units": 121,
+            "clipped_units": 0
+          }
+        },
+        "market_cash": 34279.0,
+        "cash_residual": 0.0,
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "opponent_cash_and_sales": {
+        "market_cash": 29979.0,
+        "cash_residual": 0.0,
+        "sales": {
+          "MELON": {
+            "units": 138,
+            "revenue": 14920.0
+          },
+          "STRAWBERRY": {
+            "units": 100,
+            "revenue": 18036.0
+          },
+          "CARROT": {
+            "units": 30,
+            "revenue": 1930.0
+          }
+        },
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "same_input_contract": {
+        "passed": true,
+        "non_sell_slot_or_quantity_mismatches": 0,
+        "unit_mismatches": 0,
+        "observations": 719,
+        "sell_decision_differences": 409
+      },
+      "request_outcomes": {
+        "unit:pass": 1642,
+        "market:BUY_SEED:executed": 33,
+        "market_invalid": 0,
+        "non_sell_requested_orders": 176,
+        "non_sell_incomplete_orders": 0,
+        "market:HIRE:executed": 135,
+        "unit:executed": 2150,
+        "market:BUY_PRODUCT:executed": 8,
+        "market:SELL:executed": 18,
+        "sell_requested_units": 293
+      },
+      "storage": {
+        "max_observed_shed_units": 72,
+        "mean_observed_shed_units": 1.7134909596662031
+      },
+      "policy_actions_reproduced": true,
+      "opponent_actions_reproduced": true
+    },
+    {
+      "seed": 21473311,
+      "opponent": "v1",
+      "side": 1,
+      "policy": "candidate",
+      "replay_gzip_sha256": "ff0d0608572e76300f54922af4d13464ed9421390f08c3ea247e512b097bbcf7",
+      "bot_sha256": "80df717fc9c3638b6115ca1b9bd7afab6c2003af74e9a7e1ca91a336485581ea",
+      "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+      "kind": "development",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "54197400e86b823aac850b742fd60a72de75d7050790d2cd460f71ead127dcd6",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "394af77c3ade7837606afa416c96d6b1848475f610c6d4898c88d1ed035e3875",
+        "final_rewards": [
+          33006.0,
+          37542.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 410,
+            "unit:executed": 4164,
+            "unit:pass": 3116
+          },
+          "ordered_effect_sha256": "0e846e82fba846a8fbf988cce2041ec69e0eb724b29880778c88818c74d2c954",
+          "successful_plants": [
+            59,
+            61
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "metrics": {
+        "counts": {
+          "unit:PASS:pass": 1642,
+          "cash:BUY_SEED:MELON": -1760.0,
+          "market_units:BUY_SEED:MELON": 22,
+          "cash:HIRE:": -371.0,
+          "market_units:HIRE:": 135,
+          "unit:PLANT:executed": 61,
+          "unit:WEST:executed": 646,
+          "unit:NORTH:executed": 577,
+          "unit:WATER:executed": 693,
+          "cash:BUY_SEED:STRAWBERRY": -2500.0,
+          "market_units:BUY_SEED:STRAWBERRY": 25,
+          "cash:BUY_SEED:CARROT": -280.0,
+          "market_units:BUY_SEED:CARROT": 14,
+          "automatic_drop_calls": 29,
+          "automatic_drop_discard_units": 0,
+          "cash:BUY_PRODUCT:FERTILIZER": -1318.0,
+          "market_units:BUY_PRODUCT:FERTILIZER": 13,
+          "unit:PICKUP:executed": 15,
+          "unit:FERTILIZE:executed": 13,
+          "unit:SOUTH:executed": 27,
+          "unit:HARVEST:executed": 76,
+          "harvest_units:MELON": 132,
+          "harvest_units:STRAWBERRY": 121,
+          "unit:EAST:executed": 32,
+          "unit:DROP:executed": 5,
+          "manual_drop_discard_units": 0,
+          "cash:SELL:MELON": 14825.0,
+          "market_units:SELL:MELON": 132,
+          "cash:SELL:STRAWBERRY": 23397.0,
+          "market_units:SELL:STRAWBERRY": 121,
+          "unit:DIG:executed": 5,
+          "harvest_units:CARROT": 40,
+          "cash:SELL:CARROT": 2549.0,
+          "market_units:SELL:CARROT": 40
+        },
+        "sales": {
+          "MELON": {
+            "units": 132,
+            "revenue": 14825.0
+          },
+          "STRAWBERRY": {
+            "units": 121,
+            "revenue": 23397.0
+          },
+          "CARROT": {
+            "units": 40,
+            "revenue": 2549.0
+          }
+        },
+        "production": {
+          "STRAWBERRY": {
+            "opportunities": 100,
+            "potential_units": 121,
+            "admitted_units": 121,
+            "clipped_units": 0
+          }
+        },
+        "market_cash": 34542.0,
+        "cash_residual": 0.0,
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "opponent_cash_and_sales": {
+        "market_cash": 30006.0,
+        "cash_residual": 0.0,
+        "sales": {
+          "MELON": {
+            "units": 138,
+            "revenue": 14923.0
+          },
+          "STRAWBERRY": {
+            "units": 100,
+            "revenue": 18055.0
+          },
+          "CARROT": {
+            "units": 30,
+            "revenue": 1935.0
+          }
+        },
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "same_input_contract": {
+        "passed": true,
+        "non_sell_slot_or_quantity_mismatches": 0,
+        "unit_mismatches": 0,
+        "observations": 719,
+        "sell_decision_differences": 48
+      },
+      "request_outcomes": {
+        "unit:pass": 1642,
+        "market:BUY_SEED:executed": 33,
+        "market_invalid": 0,
+        "non_sell_requested_orders": 176,
+        "non_sell_incomplete_orders": 0,
+        "market:HIRE:executed": 135,
+        "unit:executed": 2150,
+        "market:BUY_PRODUCT:executed": 8,
+        "market:SELL:executed": 65,
+        "sell_requested_units": 293
+      },
+      "storage": {
+        "max_observed_shed_units": 70,
+        "mean_observed_shed_units": 0.9554937413073713
+      },
+      "policy_actions_reproduced": true,
+      "opponent_actions_reproduced": true
+    }
+  ],
+  "scope": "Full official public/private ordered states and v1/v2 digests. Raw replay stays local; published aggregate evidence is not independent access to raw states. Same-input contract is distinct from trajectory feedback."
+}
