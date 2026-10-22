@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "engineering_A_passed": true,
+  "imitation_B_passed": true,
+  "completed_official_games": 218,
+  "independent_test_games": 144,
+  "independent_seed_clusters": 8,
+  "demonstration_games": 60,
+  "other_parity_smoke_entry_games": 14,
+  "official_reexecuted_transitions": 156742,
+  "source_freeze_sha256": "186512027ed150ec0f16a0c1688606ce974bf1a2d0127ea34fa40f2af0ab2465",
+  "preregistration_commit": "5778dda14720ef86bd17ed7cfd7a01874d6fdc15",
+  "all_frozen_runtime_files_unchanged": true,
+  "default_and_original_policies_unchanged": true,
+  "all_worker_groups_closed": true,
+  "raw_replays_and_weights_local_only": true,
+  "certificates": {
+    "audit-parity-collect-smoke.json": "5cc21a977289651bc3534d3aa7a8695d1398af55c7378fa043778936fa59084e",
+    "audit-collect.json": "12234de96cc99778f2abbaab99f793c0c88da0a1bc09af8c25cd0fac2593bb34",
+    "audit-smoke.json": "b6e9088a8c1c8054bc6c15f6821ce04c1847f94bbe94dfdb6434309e4f7f7e8a",
+    "audit-trained-smoke-entry-trained-smoke.json": "2659d362df47717e862372bdedafe170fe79de671c724d93680218aa74d95f54",
+    "audit-test.json": "98f06c7ad772fa03d78c75d1940a33e339cb5641cb4b258e7379cf0342f0accd",
+    "audit-entry-test.json": "98b40d907b09bff45ca007fd13032d1b699c50bdc168cdd29fe0cdbbf1a586dc"
+  },
+  "checkpoint_sha256": {
+    "initial": "e476dc7a8f5ec8c09f94a9ebf07e0b22d4d1216acc4ad0119ae07b6a7611f431",
+    "trained": "9806383a2d335fdfe21639f911946b29b36708aba89f7b3961a4f9999b0388fd"
+  },
+  "statistical_boundary": "Eight whole-seed clusters, not 144 independent samples; worse than teacher; no broad generalization claim",
+  "post_freeze_additions": "Two verification/report CLI modules only, neither imported by deployment, Worker or frozen mathematical analysis"
+}

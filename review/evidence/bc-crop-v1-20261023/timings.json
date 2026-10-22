@@ -1,0 +1,91 @@
+{
+  "test_end_to_end": {
+    "wall_seconds": 223.06497380000656,
+    "games": 144
+  },
+  "by_policy": {
+    "teacher": {
+      "env_run_seconds": {
+        "sum": 178.72755219999817,
+        "mean": 3.723490670833295,
+        "p95": 4.0319623899988075
+      },
+      "own_agent_seconds": {
+        "sum": 33.02282589949027,
+        "mean": 0.687975539572714,
+        "p95": 0.747544670051866
+      },
+      "both_agents_seconds": {
+        "sum": 39.568780599860474,
+        "mean": 0.8243495958304266,
+        "p95": 0.8812127849705575
+      },
+      "engine_and_framework_residual_seconds": {
+        "sum": 139.1587716001377,
+        "mean": 2.8991410750028686,
+        "p95": 3.141507234925666
+      },
+      "replay_save_seconds": {
+        "sum": 7.395184399982099,
+        "mean": 0.15406634166629374,
+        "p95": 0.17152100500679807
+      }
+    },
+    "initial": {
+      "env_run_seconds": {
+        "sum": 196.70419600006426,
+        "mean": 4.098004083334672,
+        "p95": 4.444682960008504
+      },
+      "own_agent_seconds": {
+        "sum": 51.22271570042358,
+        "mean": 1.0671399104254913,
+        "p95": 1.2543364499455492
+      },
+      "both_agents_seconds": {
+        "sum": 58.11457570080529,
+        "mean": 1.2107203271001101,
+        "p95": 1.379819705011323
+      },
+      "engine_and_framework_residual_seconds": {
+        "sum": 138.58962029925897,
+        "mean": 2.8872837562345617,
+        "p95": 3.1211719051629188
+      },
+      "replay_save_seconds": {
+        "sum": 7.538373100018362,
+        "mean": 0.15704943958371587,
+        "p95": 0.17562866500156815
+      }
+    },
+    "trained": {
+      "env_run_seconds": {
+        "sum": 179.4585297000449,
+        "mean": 3.7387193687509352,
+        "p95": 4.046855099998356
+      },
+      "own_agent_seconds": {
+        "sum": 33.45936029864242,
+        "mean": 0.6970700062217171,
+        "p95": 0.7508184047321265
+      },
+      "both_agents_seconds": {
+        "sum": 40.214480798866134,
+        "mean": 0.8378016833097112,
+        "p95": 0.9146456045942614
+      },
+      "engine_and_framework_residual_seconds": {
+        "sum": 139.24404890117876,
+        "mean": 2.900917685441224,
+        "p95": 3.1404028346536506
+      },
+      "replay_save_seconds": {
+        "sum": 7.530455499974778,
+        "mean": 0.15688448958280787,
+        "p95": 0.1708461599977454
+      }
+    }
+  },
+  "interpretation": "env.run includes policy calls, framework and official CPU engine; residual subtracts measured agent call time but is not a pure isolated-engine benchmark",
+  "gpu_cpu_speedup_measured": false
+}

@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "source_sha256": "f958590215e40c7388fd3bd8c8a5d7aec18d5661ca16bf30edb8f3691572dba1",
+  "cases": [
+    {
+      "model": "initial",
+      "checkpoint_sha256": "e476dc7a8f5ec8c09f94a9ebf07e0b22d4d1216acc4ad0119ae07b6a7611f431",
+      "actor_observations": 24,
+      "actual_features_logits_choices_and_actions_equal": true
+    },
+    {
+      "model": "trained",
+      "checkpoint_sha256": "9806383a2d335fdfe21639f911946b29b36708aba89f7b3961a4f9999b0388fd",
+      "actor_observations": 24,
+      "actual_features_logits_choices_and_actions_equal": true
+    }
+  ],
+  "verification_only": true,
+  "freeze_unchanged": true,
+  "test_results_not_used": true
+}

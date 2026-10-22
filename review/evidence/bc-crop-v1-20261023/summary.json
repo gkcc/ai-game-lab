@@ -1,0 +1,842 @@
+{
+  "engineering_A_passed": true,
+  "imitation_B_passed": true,
+  "validation_imitation_gate": true,
+  "test_games": 144,
+  "independent_seed_clusters": 8,
+  "file_entry_repeats_excluded": 2,
+  "bootstrap": {
+    "unit": "whole seed, all opponents and seats kept together",
+    "draws": 20000,
+    "seed": 2026102309
+  },
+  "by_opponent": {
+    "all": {
+      "teacher": {
+        "games": 48,
+        "mean_profit": 41033.479166666664,
+        "mean_opponent_profit": 35850.291666666664,
+        "mean_bank": 44033.479166666664,
+        "mean_margin": 5183.1875,
+        "mean_score": 0.9166666666666666,
+        "win": 44,
+        "draw": 0,
+        "loss": 4
+      },
+      "initial": {
+        "games": 48,
+        "mean_profit": 27937.5,
+        "mean_opponent_profit": 47070.625,
+        "mean_bank": 30937.5,
+        "mean_margin": -19133.125,
+        "mean_score": 0.0,
+        "win": 0,
+        "draw": 0,
+        "loss": 48
+      },
+      "trained": {
+        "games": 48,
+        "mean_profit": 38753.041666666664,
+        "mean_opponent_profit": 37376.645833333336,
+        "mean_bank": 41753.041666666664,
+        "mean_margin": 1376.3958333333333,
+        "mean_score": 0.75,
+        "win": 36,
+        "draw": 0,
+        "loss": 12
+      }
+    },
+    "v1": {
+      "teacher": {
+        "games": 16,
+        "mean_profit": 41089.3125,
+        "mean_opponent_profit": 33987.375,
+        "mean_bank": 44089.3125,
+        "mean_margin": 7101.9375,
+        "mean_score": 1.0,
+        "win": 16,
+        "draw": 0,
+        "loss": 0
+      },
+      "initial": {
+        "games": 16,
+        "mean_profit": 27079.0,
+        "mean_opponent_profit": 48044.625,
+        "mean_bank": 30079.0,
+        "mean_margin": -20965.625,
+        "mean_score": 0.0,
+        "win": 0,
+        "draw": 0,
+        "loss": 16
+      },
+      "trained": {
+        "games": 16,
+        "mean_profit": 38034.875,
+        "mean_opponent_profit": 36036.9375,
+        "mean_bank": 41034.875,
+        "mean_margin": 1997.9375,
+        "mean_score": 0.75,
+        "win": 12,
+        "draw": 0,
+        "loss": 4
+      }
+    },
+    "market": {
+      "teacher": {
+        "games": 16,
+        "mean_profit": 41391.5,
+        "mean_opponent_profit": 38786.625,
+        "mean_bank": 44391.5,
+        "mean_margin": 2604.875,
+        "mean_score": 0.875,
+        "win": 14,
+        "draw": 0,
+        "loss": 2
+      },
+      "initial": {
+        "games": 16,
+        "mean_profit": 29855.5,
+        "mean_opponent_profit": 45450.75,
+        "mean_bank": 32855.5,
+        "mean_margin": -15595.25,
+        "mean_score": 0.0,
+        "win": 0,
+        "draw": 0,
+        "loss": 16
+      },
+      "trained": {
+        "games": 16,
+        "mean_profit": 40841.875,
+        "mean_opponent_profit": 39092.75,
+        "mean_bank": 43841.875,
+        "mean_margin": 1749.125,
+        "mean_score": 0.875,
+        "win": 14,
+        "draw": 0,
+        "loss": 2
+      }
+    },
+    "round2": {
+      "teacher": {
+        "games": 16,
+        "mean_profit": 40619.625,
+        "mean_opponent_profit": 34776.875,
+        "mean_bank": 43619.625,
+        "mean_margin": 5842.75,
+        "mean_score": 0.875,
+        "win": 14,
+        "draw": 0,
+        "loss": 2
+      },
+      "initial": {
+        "games": 16,
+        "mean_profit": 26878.0,
+        "mean_opponent_profit": 47716.5,
+        "mean_bank": 29878.0,
+        "mean_margin": -20838.5,
+        "mean_score": 0.0,
+        "win": 0,
+        "draw": 0,
+        "loss": 16
+      },
+      "trained": {
+        "games": 16,
+        "mean_profit": 37382.375,
+        "mean_opponent_profit": 37000.25,
+        "mean_bank": 40382.375,
+        "mean_margin": 382.125,
+        "mean_score": 0.625,
+        "win": 10,
+        "draw": 0,
+        "loss": 6
+      }
+    }
+  },
+  "trained_minus": {
+    "initial": {
+      "all": {
+        "profit": {
+          "mean": 10815.541666666666,
+          "ci95": [
+            8837.041666666668,
+            12852.916666666666
+          ],
+          "seed_values": [
+            8588.333333333334,
+            11851.666666666666,
+            6422.666666666667,
+            13080.333333333334,
+            11558.0,
+            10897.666666666666,
+            7993.666666666667,
+            16132.0
+          ]
+        },
+        "opponent_profit": {
+          "mean": -9693.979166666668,
+          "ci95": [
+            -11490.145833333334,
+            -7982.541666666667
+          ],
+          "seed_values": [
+            -5570.666666666667,
+            -9119.666666666666,
+            -14787.0,
+            -7387.666666666667,
+            -10560.666666666666,
+            -9147.333333333334,
+            -10746.833333333334,
+            -10232.0
+          ]
+        },
+        "margin": {
+          "mean": 20509.520833333336,
+          "ci95": [
+            18214.916666666664,
+            22689.07291666666
+          ],
+          "seed_values": [
+            14159.0,
+            20971.333333333332,
+            21209.666666666668,
+            20468.0,
+            22118.666666666668,
+            20045.0,
+            18740.5,
+            26364.0
+          ]
+        },
+        "score": {
+          "mean": 0.75,
+          "ci95": [
+            0.5,
+            0.9166666666666666
+          ],
+          "seed_values": [
+            0.3333333333333333,
+            1.0,
+            0.3333333333333333,
+            0.3333333333333333,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "v1": {
+        "profit": {
+          "mean": 10955.875,
+          "ci95": [
+            8824.75,
+            12976.25
+          ],
+          "seed_values": [
+            7462.0,
+            12090.0,
+            5797.0,
+            11697.0,
+            12264.0,
+            13383.0,
+            9308.0,
+            15646.0
+          ]
+        },
+        "opponent_profit": {
+          "mean": -12007.6875,
+          "ci95": [
+            -14273.125,
+            -9545.375
+          ],
+          "seed_values": [
+            -5657.0,
+            -11856.0,
+            -17239.0,
+            -8407.0,
+            -14991.0,
+            -12041.0,
+            -13701.5,
+            -12169.0
+          ]
+        },
+        "margin": {
+          "mean": 22963.5625,
+          "ci95": [
+            19591.75,
+            25626.8265625
+          ],
+          "seed_values": [
+            13119.0,
+            23946.0,
+            23036.0,
+            20104.0,
+            27255.0,
+            25424.0,
+            23009.5,
+            27815.0
+          ]
+        },
+        "score": {
+          "mean": 0.75,
+          "ci95": [
+            0.375,
+            1.0
+          ],
+          "seed_values": [
+            0.0,
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "market": {
+        "profit": {
+          "mean": 10986.375,
+          "ci95": [
+            8764.5,
+            13409.593749999993
+          ],
+          "seed_values": [
+            9417.0,
+            12882.0,
+            9240.0,
+            15561.0,
+            9854.0,
+            7865.0,
+            6518.0,
+            16554.0
+          ]
+        },
+        "opponent_profit": {
+          "mean": -6358.0,
+          "ci95": [
+            -9013.375,
+            -4609.625
+          ],
+          "seed_values": [
+            -4678.0,
+            -4275.0,
+            -14948.0,
+            -5426.0,
+            -4592.0,
+            -3861.0,
+            -6692.0,
+            -6392.0
+          ]
+        },
+        "margin": {
+          "mean": 17344.375,
+          "ci95": [
+            14384.125,
+            20562.0
+          ],
+          "seed_values": [
+            14095.0,
+            17157.0,
+            24188.0,
+            20987.0,
+            14446.0,
+            11726.0,
+            13210.0,
+            22946.0
+          ]
+        },
+        "score": {
+          "mean": 0.875,
+          "ci95": [
+            0.625,
+            1.0
+          ],
+          "seed_values": [
+            1.0,
+            1.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "round2": {
+        "profit": {
+          "mean": 10504.375,
+          "ci95": [
+            8155.125,
+            12725.125
+          ],
+          "seed_values": [
+            8886.0,
+            10583.0,
+            4231.0,
+            11983.0,
+            12556.0,
+            11445.0,
+            8155.0,
+            16196.0
+          ]
+        },
+        "opponent_profit": {
+          "mean": -10716.25,
+          "ci95": [
+            -11921.0,
+            -9172.51250000001
+          ],
+          "seed_values": [
+            -6377.0,
+            -11228.0,
+            -12174.0,
+            -8330.0,
+            -12099.0,
+            -11540.0,
+            -11847.0,
+            -12135.0
+          ]
+        },
+        "margin": {
+          "mean": 21220.625,
+          "ci95": [
+            18499.603125,
+            24010.63125
+          ],
+          "seed_values": [
+            15263.0,
+            21811.0,
+            16405.0,
+            20313.0,
+            24655.0,
+            22985.0,
+            20002.0,
+            28331.0
+          ]
+        },
+        "score": {
+          "mean": 0.625,
+          "ci95": [
+            0.25,
+            0.875
+          ],
+          "seed_values": [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      }
+    },
+    "teacher": {
+      "all": {
+        "profit": {
+          "mean": -2280.4375,
+          "ci95": [
+            -2998.291666666667,
+            -1676.8958333333335
+          ],
+          "seed_values": [
+            -2365.3333333333335,
+            -1628.0,
+            -4381.0,
+            -2464.3333333333335,
+            -2242.3333333333335,
+            -2022.6666666666667,
+            -776.8333333333334,
+            -2363.0
+          ]
+        },
+        "opponent_profit": {
+          "mean": 1526.3541666666667,
+          "ci95": [
+            990.8541666666665,
+            1925.1333333333325
+          ],
+          "seed_values": [
+            1550.3333333333333,
+            1624.6666666666667,
+            2402.3333333333335,
+            1595.0,
+            1702.3333333333333,
+            1713.3333333333333,
+            -128.5,
+            1751.3333333333333
+          ]
+        },
+        "margin": {
+          "mean": -3806.7916666666665,
+          "ci95": [
+            -4921.625,
+            -2675.1666666666665
+          ],
+          "seed_values": [
+            -3915.6666666666665,
+            -3252.6666666666665,
+            -6783.333333333333,
+            -4059.3333333333335,
+            -3944.6666666666665,
+            -3736.0,
+            -648.3333333333334,
+            -4114.333333333333
+          ]
+        },
+        "score": {
+          "mean": -0.16666666666666666,
+          "ci95": [
+            -0.3333333333333333,
+            -0.041666666666666664
+          ],
+          "seed_values": [
+            -0.3333333333333333,
+            0.0,
+            -0.3333333333333333,
+            -0.6666666666666666,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "v1": {
+        "profit": {
+          "mean": -3054.4375,
+          "ci95": [
+            -4073.625,
+            -2008.75
+          ],
+          "seed_values": [
+            -3291.0,
+            -2413.0,
+            -5780.0,
+            -3438.0,
+            -3203.0,
+            -2889.0,
+            -107.5,
+            -3314.0
+          ]
+        },
+        "opponent_profit": {
+          "mean": 2049.5625,
+          "ci95": [
+            1127.0625,
+            2667.25
+          ],
+          "seed_values": [
+            2251.0,
+            2288.0,
+            3234.0,
+            2274.0,
+            2366.0,
+            2426.0,
+            -913.5,
+            2471.0
+          ]
+        },
+        "margin": {
+          "mean": -5104.0,
+          "ci95": [
+            -6735.125,
+            -3135.103125000002
+          ],
+          "seed_values": [
+            -5542.0,
+            -4701.0,
+            -9014.0,
+            -5712.0,
+            -5569.0,
+            -5315.0,
+            806.0,
+            -5785.0
+          ]
+        },
+        "score": {
+          "mean": -0.25,
+          "ci95": [
+            -0.625,
+            0.0
+          ],
+          "seed_values": [
+            -1.0,
+            0.0,
+            0.0,
+            -1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "market": {
+        "profit": {
+          "mean": -549.625,
+          "ci95": [
+            -928.375,
+            -256.6031250000019
+          ],
+          "seed_values": [
+            -592.0,
+            -7.0,
+            -1698.0,
+            -521.0,
+            -280.0,
+            -100.0,
+            -731.0,
+            -468.0
+          ]
+        },
+        "opponent_profit": {
+          "mean": 306.125,
+          "ci95": [
+            204.75,
+            451.75
+          ],
+          "seed_values": [
+            263.0,
+            298.0,
+            760.0,
+            228.0,
+            227.0,
+            280.0,
+            93.0,
+            300.0
+          ]
+        },
+        "margin": {
+          "mean": -855.75,
+          "ci95": [
+            -1359.375,
+            -517.875
+          ],
+          "seed_values": [
+            -855.0,
+            -305.0,
+            -2458.0,
+            -749.0,
+            -507.0,
+            -380.0,
+            -824.0,
+            -768.0
+          ]
+        },
+        "score": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "seed_values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "round2": {
+        "profit": {
+          "mean": -3237.25,
+          "ci95": [
+            -4073.25,
+            -2541.2437500000005
+          ],
+          "seed_values": [
+            -3213.0,
+            -2464.0,
+            -5665.0,
+            -3434.0,
+            -3244.0,
+            -3079.0,
+            -1492.0,
+            -3307.0
+          ]
+        },
+        "opponent_profit": {
+          "mean": 2223.375,
+          "ci95": [
+            1645.125,
+            2661.875
+          ],
+          "seed_values": [
+            2137.0,
+            2288.0,
+            3213.0,
+            2283.0,
+            2514.0,
+            2434.0,
+            435.0,
+            2483.0
+          ]
+        },
+        "margin": {
+          "mean": -5460.625,
+          "ci95": [
+            -6728.015625,
+            -4198.5
+          ],
+          "seed_values": [
+            -5350.0,
+            -4752.0,
+            -8878.0,
+            -5717.0,
+            -5758.0,
+            -5513.0,
+            -1927.0,
+            -5790.0
+          ]
+        },
+        "score": {
+          "mean": -0.25,
+          "ci95": [
+            -0.625,
+            0.0
+          ],
+          "seed_values": [
+            0.0,
+            0.0,
+            -1.0,
+            -1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  },
+  "control": {
+    "teacher": {
+      "counts": {
+        "actor_turns": 34512,
+        "same_observation_teacher_action_differences": 0,
+        "selector_calls": 7568,
+        "request_seed": 3189,
+        "model_calls": 0,
+        "different_from_conditional_teacher": 0,
+        "buy_seed_orders_changed_vs_teacher": 0,
+        "plant_request": 2655,
+        "plant_requests_linked": 2655,
+        "move_with_seed": 1724,
+        "unit_pass": 88911,
+        "market_executed": 9940,
+        "seed_units_actually_bought": 2673,
+        "unit_executed": 107070,
+        "official_successful_plants": 2655
+      },
+      "selected_crops": {
+        "MELON": 3600,
+        "STRAWBERRY": 3201,
+        "CARROT": 607,
+        "TOMATO": 114,
+        "WHEAT": 46
+      },
+      "official_planted_crops": {
+        "MELON": 1056,
+        "STRAWBERRY": 1260,
+        "CARROT": 262,
+        "TOMATO": 57,
+        "WHEAT": 20
+      },
+      "selector_model_control_rate": 0.0,
+      "inference_seconds": 0.0021537003631237894,
+      "fallbacks": 0,
+      "load_errors": 0,
+      "inference_errors": 0
+    },
+    "initial": {
+      "counts": {
+        "actor_turns": 34512,
+        "same_observation_teacher_action_differences": 7140,
+        "selector_calls": 21646,
+        "request_seed": 6430,
+        "model_calls": 21646,
+        "different_from_conditional_teacher": 19168,
+        "buy_seed_orders_changed_vs_teacher": 3200,
+        "plant_request": 5820,
+        "plant_requests_linked": 5820,
+        "move_with_seed": 4200,
+        "economic_reject": 5196,
+        "unit_pass": 74738,
+        "market_executed": 13120,
+        "seed_units_actually_bought": 5900,
+        "unit_executed": 118864,
+        "official_successful_plants": 5820
+      },
+      "selected_crops": {
+        "MELON": 5178,
+        "STRAWBERRY": 3802,
+        "WHEAT": 10968,
+        "CARROT": 1694,
+        "TOMATO": 4
+      },
+      "official_planted_crops": {
+        "MELON": 456,
+        "STRAWBERRY": 608,
+        "WHEAT": 4126,
+        "CARROT": 630
+      },
+      "selector_model_control_rate": 1.0,
+      "inference_seconds": 1.567080399763654,
+      "fallbacks": 0,
+      "load_errors": 0,
+      "inference_errors": 0
+    },
+    "trained": {
+      "counts": {
+        "actor_turns": 34512,
+        "same_observation_teacher_action_differences": 310,
+        "selector_calls": 7361,
+        "request_seed": 3152,
+        "model_calls": 7361,
+        "different_from_conditional_teacher": 634,
+        "buy_seed_orders_changed_vs_teacher": 210,
+        "plant_request": 2524,
+        "plant_requests_linked": 2524,
+        "move_with_seed": 1685,
+        "unit_pass": 88898,
+        "market_executed": 9625,
+        "seed_units_actually_bought": 2560,
+        "unit_executed": 105546,
+        "official_successful_plants": 2524
+      },
+      "selected_crops": {
+        "MELON": 3792,
+        "STRAWBERRY": 3175,
+        "CARROT": 302,
+        "WHEAT": 40,
+        "TOMATO": 52
+      },
+      "official_planted_crops": {
+        "MELON": 1136,
+        "STRAWBERRY": 1242,
+        "CARROT": 104,
+        "WHEAT": 20,
+        "TOMATO": 22
+      },
+      "selector_model_control_rate": 1.0,
+      "inference_seconds": 0.5016799004079076,
+      "fallbacks": 0,
+      "load_errors": 0,
+      "inference_errors": 0
+    }
+  },
+  "limitations": [
+    "Only inner crop choice learned; opportunity/economic gates and all management remain teacher code",
+    "Eight seed clusters and three fixed opponents; no broad long-term generalization claim",
+    "No DAgger/PPO/self-play or new strategy search; no promotion of market V1"
+  ]
+}

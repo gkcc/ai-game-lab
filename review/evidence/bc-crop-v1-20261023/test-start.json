@@ -1,0 +1,9 @@
+{
+  "started_utc": "2026-10-22T20:05:38.123721+00:00",
+  "preregistration_commit": "5778dda14720ef86bd17ed7cfd7a01874d6fdc15",
+  "freeze_sha256": "186512027ed150ec0f16a0c1688606ce974bf1a2d0127ea34fa40f2af0ab2465",
+  "public_worktree_clean_before_test": true,
+  "test_ledger_absent_before_start": true,
+  "note": "Local preregistration; not an independent third-party timestamp",
+  "command": "learning/.venv/Scripts/python.exe -B -X utf8 -m learning.bc_crop.experiment test --out artifacts/bc-crop-v1-20261023-run1"
+}

@@ -1,0 +1,30 @@
+{
+  "before_test_repairs": [
+    {
+      "issue": "Official file loader executes with empty globals; __file__ unavailable",
+      "fix": "Use compiled filename when __file__ absent; explicit final callable alias retained",
+      "result": "Both seats reproduce Worker actions, trajectory and checkpoint from unrelated cwd",
+      "failed_local_run_retained": true
+    },
+    {
+      "issue": "Default GPU matmul precision changed two near-tied initial predictions and exceeded trained logit tolerance",
+      "fix": "Only export comparison uses highest FP32 precision; training configuration unchanged",
+      "result": "Repeat produced identical six weight tensors and normalization; fresh-process double reference also matches",
+      "failed_checkpoints_retained": true
+    },
+    {
+      "issue": "First local freeze omitted file-entry runner and unused imported audit dependencies",
+      "fix": "Complete dependency list before local preregistration commit and before test",
+      "prior_freeze_sha256": "7635e28070a82be32582ef83146ef2e01d4c3a032c461838e02cef330675f060",
+      "test_freeze_sha256": "186512027ed150ec0f16a0c1688606ce974bf1a2d0127ea34fa40f2af0ab2465"
+    }
+  ],
+  "after_freeze_verification_only": {
+    "added_file": "learning/bc_crop/verify_model_privacy.py",
+    "reason": "Supplement original encoder privacy regressions with actual initial/trained checkpoint outputs",
+    "training_or_test_policy_changed": false,
+    "test_result_selection": false
+  },
+  "failed_or_partial_attempts_excluded_from_independent_samples": true,
+  "no_historical_certificate_rewritten": true
+}

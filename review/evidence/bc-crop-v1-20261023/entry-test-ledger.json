@@ -1,0 +1,82 @@
+[
+  {
+    "seed": 31782299,
+    "side": 0,
+    "banks": [
+      47846.0,
+      43644.0
+    ],
+    "bank": 47846.0,
+    "opponent_bank": 43644.0,
+    "net_profit": 44846.0,
+    "margin": 4202.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "795541efe03d72aa8bf8985ae324f23c6b6c34d6fb38dbb52f96f0ad42e33379",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "ee213a6e994030bc618d3e8703ba481ccf7bc0baa4ee0b02eab09c0bae6d746b",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "4cc94d7aee75d993bcfc47efe1c7fdbcf560c038ef041f956ea574a0cf03a41b",
+    "audit_version": 2,
+    "policy": "trained",
+    "opponent": "market",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      47846.0,
+      43644.0
+    ],
+    "replay_gzip_sha256": "9636dab50aaa6574d00f1a38ca0ea52731a4af4850dbcf861cb235d2d87fd82c",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "entry-test-0",
+    "trace_sha256": "cd3f7eca9c2ec08c7c2ff2cd214720d014020cb5831e6d4a972a362b8e0ac4ed",
+    "entry": "official file loader",
+    "same_checkpoint_sha256": "9806383a2d335fdfe21639f911946b29b36708aba89f7b3961a4f9999b0388fd"
+  },
+  {
+    "seed": 31782299,
+    "side": 1,
+    "banks": [
+      43644.0,
+      47846.0
+    ],
+    "bank": 47846.0,
+    "opponent_bank": 43644.0,
+    "net_profit": 44846.0,
+    "margin": 4202.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "795541efe03d72aa8bf8985ae324f23c6b6c34d6fb38dbb52f96f0ad42e33379",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "61d7e1d6840a54ca1b0f799e687368c712606b58c482627fce8a2cbd7215abff",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "573b83ccc68fd00228ed13030db478fe7458a30025e6f631d64ab639240a9d67",
+    "audit_version": 2,
+    "policy": "trained",
+    "opponent": "market",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      43644.0,
+      47846.0
+    ],
+    "replay_gzip_sha256": "e1975901aa38bf013833fe961c059ea179bdb0f950ac6c144bb7c101256ebdda",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "entry-test-1",
+    "trace_sha256": "dc7cda0fff06ce1f37a5079f278c658b154b5279f37be3c51667aa7255d2b8b6",
+    "entry": "official file loader",
+    "same_checkpoint_sha256": "9806383a2d335fdfe21639f911946b29b36708aba89f7b3961a4f9999b0388fd"
+  }
+]

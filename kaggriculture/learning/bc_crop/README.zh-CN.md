@@ -33,7 +33,7 @@
 3. 独立 GPU 环境运行 `python -B -m learning.bc_crop.train --out RUN`。`requirements-gpu.txt` 记录实际 JAX/Optax 主依赖版本。本轮因官方 PyTorch 大包传输受阻，在拟合前登记切换 JAX；独立 WSL 环境使用已有可用依赖的物理副本，没有修改 Lux 环境或驱动。
 4. 新进程运行 `reload --out RUN --scratch <已拥有的临时测试目录>`，核验保存权重、框架/部署输出及失败契约。`experiment deploy` 仅创建新学生的本地模型卡，不更改默认 Bot。
 5. `experiment trained-smoke` 后用游戏环境运行 `entries --source-stage trained-smoke`，验证实际文件入口。将代码、初始/训练权重、分区和统计冻结并本地提交后，才运行 `experiment test` 的 144 场。
-6. 游戏环境运行 `audit --stages test`，`entries`，`audit --stages entry-test`；最后运行 `analyze`。所有命令均附 `--out RUN`。其他示范及冒烟账本也可分别传给 `audit --stages`。
+6. 游戏环境运行 `audit --stages test`，`entries`，`audit --stages entry-test`；最后运行 `python -B -m learning.bc_crop.report --out RUN`。其他命令均附 `--out RUN`。其他示范及冒烟账本也可分别传给 `audit --stages`。`report` 为冻结统计器补充最后打印需要的标准库 `json` 名称；冻结计算和校验代码保持原字节，补充前后的两份统计文件逐字节相同。
 
 采集沿用现有 `round2_worker.py` 和 `Games`；复核沿用 `full_audit.reexecute` 与官方执行追踪器，不提供替代仿真器。日志和 Replay 留本地。审计将真实采样、重新加载模型后的选择、完整动作、官方成功种植及购种成交逐一关联。
 
