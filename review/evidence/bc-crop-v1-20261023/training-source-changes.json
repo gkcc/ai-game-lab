@@ -1,0 +1,14 @@
+[
+  {
+    "file": "experiment.py",
+    "at_training_sha256": "2f83e17961004974cb8ef2b0163f57b1fa729d4cd8688e4a76fd530435c264d7",
+    "at_test_freeze_sha256": "bb891ee3e888ac88d21b4553a9c1bd2a6360aeffd51553728cbcf1c23396b4c7",
+    "reason": "freeze dependency list completed before test"
+  },
+  {
+    "file": "verify.py",
+    "at_training_sha256": "3426a99e4e443b2351db5e6bbbda71b507d3e9202616ae4226a127dd890b2380",
+    "at_test_freeze_sha256": "caa71fff2b4027bd6533ef7dc3dc1936f31ce0d57a4f786b5b6a69edc49f1801",
+    "reason": "official file-loader regression added"
+  }
+]

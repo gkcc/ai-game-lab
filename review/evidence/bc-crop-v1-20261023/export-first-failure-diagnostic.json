@@ -1,0 +1,31 @@
+{
+  "initial": {
+    "best_epoch": null,
+    "default": {
+      "max_error": 0.00026279618957363027,
+      "argmax_differences": 2,
+      "min_margins": [
+        2.6353023048087537e-05,
+        2.6353023048087537e-05
+      ]
+    },
+    "highest": {
+      "max_error": 1.4297293737808303e-07,
+      "argmax_differences": 0,
+      "min_margins": []
+    }
+  },
+  "trained": {
+    "best_epoch": 9,
+    "default": {
+      "max_error": 0.007163222026946414,
+      "argmax_differences": 0,
+      "min_margins": []
+    },
+    "highest": {
+      "max_error": 6.485665135613772e-06,
+      "argmax_differences": 0,
+      "min_margins": []
+    }
+  }
+}

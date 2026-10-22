@@ -1,0 +1,50 @@
+{
+  "samples": 11483,
+  "games": 60,
+  "class_counts": {
+    "train": [
+      960,
+      1374,
+      326,
+      2851,
+      3616
+    ],
+    "validation": [
+      218,
+      382,
+      84,
+      764,
+      908
+    ]
+  },
+  "crops": [
+    "WHEAT",
+    "CARROT",
+    "TOMATO",
+    "STRAWBERRY",
+    "MELON"
+  ],
+  "outcomes": {
+    "request_seed": 4685,
+    "plant_request": 4007,
+    "move_with_seed": 2791
+  },
+  "all_results_retained": true,
+  "whole_seed_split": true,
+  "training_seeds": [
+    31273729,
+    31317742,
+    31360134,
+    31637216,
+    31659052,
+    31834104,
+    31921285,
+    31932889
+  ],
+  "validation_seeds": [
+    31205138,
+    31504409
+  ],
+  "missing_train_classes": [],
+  "elapsed_seconds": 2.7315443999978015
+}

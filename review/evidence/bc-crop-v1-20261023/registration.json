@@ -1,0 +1,88 @@
+{
+  "experiment": "limited-crop-bc-v1",
+  "created_utc": "2026-10-22T19:38:13.877931+00:00",
+  "baseline_head": "4aa88cbd1e8d2de9fed98db470bf52106bba164c",
+  "initial_worktree_clean": true,
+  "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "teacher_sha256": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+  "train_seeds": [
+    31317742,
+    31921285,
+    31834104,
+    31637216,
+    31360134,
+    31273729,
+    31659052,
+    31932889
+  ],
+  "validation_seeds": [
+    31205138,
+    31504409
+  ],
+  "test_seeds": [
+    31782299,
+    31200372,
+    31421954,
+    31147122,
+    31763082,
+    31219454,
+    31797877,
+    31805643
+  ],
+  "parity_seed": 31373861,
+  "seed_novelty": "No decimal occurrence in tracked public source/evidence at baseline; all splits disjoint",
+  "opponents": [
+    "v1",
+    "market",
+    "round2"
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "workers": 4,
+  "training": {
+    "seed": 2026102308,
+    "architecture": [
+      289,
+      128,
+      64,
+      5
+    ],
+    "activation": "ReLU",
+    "epochs": 80,
+    "batch_size": 256,
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "class_weight": "inverse square root train counts, normalized over present classes; absent=0",
+    "normalization": "train-only mean/std, std floor 1",
+    "checkpoint_selection": "lowest unweighted validation cross entropy; earliest tie",
+    "augmentation": "none",
+    "extra_demonstration_budget": 0
+  },
+  "smoke": {
+    "demonstrations": "train seed[0] and validation seed[0], market opponent, both seats; included in 60",
+    "epochs": 5,
+    "games": 2,
+    "policy": "smoke-only trained checkpoint, train seed[0], both seats"
+  },
+  "formal_games": 144,
+  "demonstration_games": 60,
+  "bootstrap": {
+    "unit": "whole seed, all opponents and seats kept together",
+    "draws": 20000,
+    "seed": 2026102309
+  },
+  "acceptance_A": "All 144 games and both file-entry repeats complete 720/719 DONE with no errors; ordered official reexecution; model identity/action reproduction; zero fallbacks; demonstrated actual PLANT and purchase influence",
+  "acceptance_B": "Validation accuracy better than initial and majority baseline; independent trained-minus-initial mean profit 95% whole-seed bootstrap lower bound > 0 and match score mean not lower; teacher gap reported, beating teacher not required",
+  "scope": "Only inner PLANT-task crop selection; teacher opportunity gates, post-choice economic rejection, and all other management retained",
+  "stop": "No final-test-driven changes or additional data; no DAgger/PPO/self-play or market 192 panel",
+  "source_sha256": {
+    "teacher.py": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+    "worker.py": "a80158b26d1f4ae3d366c1d1276a1ca63e652bcd350f5ca25545b0f5f33759f1",
+    "v1.py": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "market.py": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "round2.py": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848"
+  }
+}

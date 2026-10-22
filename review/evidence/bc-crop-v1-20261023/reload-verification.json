@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "fresh_process": true,
+  "models": {
+    "initial": {
+      "weight_identity_matches": true,
+      "export_identity_matches": true,
+      "checkpoint_sha256": "e476dc7a8f5ec8c09f94a9ebf07e0b22d4d1216acc4ad0119ae07b6a7611f431",
+      "export_sha256": "e476dc7a8f5ec8c09f94a9ebf07e0b22d4d1216acc4ad0119ae07b6a7611f431",
+      "samples": 11483,
+      "max_abs_error": 3.0531133177191805e-16,
+      "batch_inference_seconds": 0.02556898400001728
+    },
+    "trained": {
+      "weight_identity_matches": true,
+      "export_identity_matches": true,
+      "checkpoint_sha256": "9806383a2d335fdfe21639f911946b29b36708aba89f7b3961a4f9999b0388fd",
+      "export_sha256": "9806383a2d335fdfe21639f911946b29b36708aba89f7b3961a4f9999b0388fd",
+      "samples": 11483,
+      "max_abs_error": 1.4210854715202004e-14,
+      "batch_inference_seconds": 0.021798203999992438
+    }
+  },
+  "changed_argmax_on_same_examples": 9124,
+  "total_examples": 11483,
+  "failure_contracts": [
+    "missing_weights",
+    "identity_mismatch",
+    "schema_mismatch",
+    "nonfinite_weights",
+    "nonfinite_output",
+    "runtime_feature_mismatch"
+  ],
+  "fallback_behavior": "raise; no teacher substitution"
+}

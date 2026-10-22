@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "changed_training_settings": false,
+  "test_not_started": true,
+  "rows": [
+    {
+      "name": "initial",
+      "original_file_sha256": "3632bc09aa98a90cf0bf3cb300320c39533ba2fe9a7cf24a9be7bffb4b9921d0",
+      "current_file_sha256": "e476dc7a8f5ec8c09f94a9ebf07e0b22d4d1216acc4ad0119ae07b6a7611f431",
+      "all_six_weight_tensors_and_normalization_identical": true,
+      "file_difference": "metadata records corrected verification precision and source hashes"
+    },
+    {
+      "name": "trained",
+      "original_file_sha256": "98f2ab1d866c7e5b716aa4e52854e193ba1d377a0939f4dc4f682249c42b830d",
+      "current_file_sha256": "9806383a2d335fdfe21639f911946b29b36708aba89f7b3961a4f9999b0388fd",
+      "all_six_weight_tensors_and_normalization_identical": true,
+      "file_difference": "metadata records corrected verification precision and source hashes"
+    }
+  ]
+}

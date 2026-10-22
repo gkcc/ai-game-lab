@@ -1,0 +1,201 @@
+[
+  {
+    "runtime_relative": "learning/bc_crop/__init__.py",
+    "runtime_sha256": "62631c0302958d70277a9fb7f1886e53e3cad4d1bb516331699ed1da787dc0b7",
+    "public_path": "kaggriculture/learning/bc_crop/__init__.py",
+    "public_sha256": "62631c0302958d70277a9fb7f1886e53e3cad4d1bb516331699ed1da787dc0b7",
+    "relationship": "identical bytes"
+  },
+  {
+    "runtime_relative": "learning/bc_crop/agent.py",
+    "runtime_sha256": "6923bf2d088ec0aefad45b27121d55c1c4338e72b39e5a8c874aa3223c3350a4",
+    "public_path": "kaggriculture/learning/bc_crop/agent.py",
+    "public_sha256": "6923bf2d088ec0aefad45b27121d55c1c4338e72b39e5a8c874aa3223c3350a4",
+    "relationship": "identical bytes"
+  },
+  {
+    "runtime_relative": "learning/bc_crop/analyze.py",
+    "runtime_sha256": "b7f447619094e95a775a30f77dd3061982c65ebf51905efcba38318d3c740dfb",
+    "public_path": "kaggriculture/learning/bc_crop/analyze.py",
+    "public_sha256": "b7f447619094e95a775a30f77dd3061982c65ebf51905efcba38318d3c740dfb",
+    "relationship": "identical bytes"
+  },
+  {
+    "runtime_relative": "learning/bc_crop/audit.py",
+    "runtime_sha256": "1df48cfb357689237f045b19110b9eebe7551669e5ab20e238b179cc07aa7a44",
+    "public_path": "kaggriculture/learning/bc_crop/audit.py",
+    "public_sha256": "1df48cfb357689237f045b19110b9eebe7551669e5ab20e238b179cc07aa7a44",
+    "relationship": "identical bytes"
+  },
+  {
+    "runtime_relative": "learning/bc_crop/entries.py",
+    "runtime_sha256": "b5c0c0c2cd130edfb6d7c298a40602199e5d715b5d8b14aa42ea94add979bca8",
+    "public_path": "kaggriculture/learning/bc_crop/entries.py",
+    "public_sha256": "b5c0c0c2cd130edfb6d7c298a40602199e5d715b5d8b14aa42ea94add979bca8",
+    "relationship": "identical bytes"
+  },
+  {
+    "runtime_relative": "learning/bc_crop/experiment.py",
+    "runtime_sha256": "bb891ee3e888ac88d21b4553a9c1bd2a6360aeffd51553728cbcf1c23396b4c7",
+    "public_path": "kaggriculture/learning/bc_crop/experiment.py",
+    "public_sha256": "bb891ee3e888ac88d21b4553a9c1bd2a6360aeffd51553728cbcf1c23396b4c7",
+    "relationship": "identical bytes"
+  },
+  {
+    "runtime_relative": "learning/bc_crop/features.py",
+    "runtime_sha256": "6612580dcf1c3b1db22769aca459765a84fdf527f98fdf185f4a99e618d5d397",
+    "public_path": "kaggriculture/learning/bc_crop/features.py",
+    "public_sha256": "6612580dcf1c3b1db22769aca459765a84fdf527f98fdf185f4a99e618d5d397",
+    "relationship": "identical bytes"
+  },
+  {
+    "runtime_relative": "learning/bc_crop/reload.py",
+    "runtime_sha256": "f658cc36323b0937b838818521b24ff392998e0b6d0fca51f9ab1ab7f622161f",
+    "public_path": "kaggriculture/learning/bc_crop/reload.py",
+    "public_sha256": "f658cc36323b0937b838818521b24ff392998e0b6d0fca51f9ab1ab7f622161f",
+    "relationship": "identical bytes"
+  },
+  {
+    "runtime_relative": "learning/bc_crop/train.py",
+    "runtime_sha256": "cfe3ab87a18270a09129fa818222319128fcb1f44628a11c7a0fe78f638bff56",
+    "public_path": "kaggriculture/learning/bc_crop/train.py",
+    "public_sha256": "cfe3ab87a18270a09129fa818222319128fcb1f44628a11c7a0fe78f638bff56",
+    "relationship": "identical bytes"
+  },
+  {
+    "runtime_relative": "learning/bc_crop/verify.py",
+    "runtime_sha256": "caa71fff2b4027bd6533ef7dc3dc1936f31ce0d57a4f786b5b6a69edc49f1801",
+    "public_path": "kaggriculture/learning/bc_crop/verify.py",
+    "public_sha256": "caa71fff2b4027bd6533ef7dc3dc1936f31ce0d57a4f786b5b6a69edc49f1801",
+    "relationship": "identical bytes"
+  },
+  {
+    "runtime_relative": "bots/bc_crop_student.py",
+    "runtime_sha256": "795541efe03d72aa8bf8985ae324f23c6b6c34d6fb38dbb52f96f0ad42e33379",
+    "public_path": "kaggriculture/bots/bc_crop_student.py",
+    "public_sha256": "795541efe03d72aa8bf8985ae324f23c6b6c34d6fb38dbb52f96f0ad42e33379",
+    "relationship": "identical bytes"
+  },
+  {
+    "runtime_relative": "models/bc_crop_v1/checkpoint.json",
+    "runtime_sha256": "b0c8cd20c54db4e4f3cc7aa4fafa2481a4d47e39902d452982107b62151181ae",
+    "relationship": "local-only checkpoint or model card"
+  },
+  {
+    "runtime_relative": "models/bc_crop_v1/trained.npz",
+    "runtime_sha256": "9806383a2d335fdfe21639f911946b29b36708aba89f7b3961a4f9999b0388fd",
+    "relationship": "local-only checkpoint or model card"
+  },
+  {
+    "runtime_relative": "decision/api.py",
+    "runtime_sha256": "3ef4025bde61d240b298cbe4d31291f25021baaf5b396f5540bbfcdda4231917",
+    "public_path": "kaggriculture/decision/api.py",
+    "public_sha256": "3ef4025bde61d240b298cbe4d31291f25021baaf5b396f5540bbfcdda4231917",
+    "relationship": "identical bytes"
+  },
+  {
+    "runtime_relative": "learning/round2_worker.py",
+    "runtime_sha256": "a80158b26d1f4ae3d366c1d1276a1ca63e652bcd350f5ca25545b0f5f33759f1",
+    "public_path": "kaggriculture/learning/round2_worker.py",
+    "public_sha256": "ff823541f43ec2a0671aefbb2a3803daf6d3b882cebed4534eb2bdbb5efb35a1",
+    "relationship": "line endings only"
+  },
+  {
+    "runtime_relative": "run_match.py",
+    "runtime_sha256": "1b521899ecd0594459dab0770c3f6bd41c094c57067099ffbeed48a26da46e21",
+    "public_path": "kaggriculture/run_match.py",
+    "public_sha256": "1b521899ecd0594459dab0770c3f6bd41c094c57067099ffbeed48a26da46e21",
+    "relationship": "identical bytes"
+  },
+  {
+    "runtime_relative": "localize_replay.py",
+    "runtime_sha256": "237588e8fcb977a55d68b4a42d4efe7afbb8003032917f4314c40c340f211786",
+    "public_path": "kaggriculture/localize_replay.py",
+    "public_sha256": "237588e8fcb977a55d68b4a42d4efe7afbb8003032917f4314c40c340f211786",
+    "relationship": "identical bytes"
+  },
+  {
+    "runtime_relative": "learning/optimize_round2.py",
+    "runtime_sha256": "9f4fcf09fecd42c6135a1a2a72b95948c52474636719863eb2d468b01dc102fe",
+    "public_path": "kaggriculture/learning/optimize_round2.py",
+    "public_sha256": "9f4fcf09fecd42c6135a1a2a72b95948c52474636719863eb2d468b01dc102fe",
+    "relationship": "identical bytes"
+  },
+  {
+    "runtime_relative": "learning/evaluate_holdout.py",
+    "runtime_sha256": "df599e139893081f0a5307b0aa9cf299e2d14d4d4a221672b7aa9ac1d3747d82",
+    "public_path": "kaggriculture/learning/evaluate_holdout.py",
+    "public_sha256": "df599e139893081f0a5307b0aa9cf299e2d14d4d4a221672b7aa9ac1d3747d82",
+    "relationship": "identical bytes"
+  },
+  {
+    "runtime_relative": "replay_metrics.py",
+    "runtime_sha256": "dc2005ab79d682c57480e8d865655ddd4785655e59a761774ae5883babe435b4",
+    "public_path": "kaggriculture/replay_metrics.py",
+    "public_sha256": "dc2005ab79d682c57480e8d865655ddd4785655e59a761774ae5883babe435b4",
+    "relationship": "identical bytes"
+  },
+  {
+    "runtime_relative": "decision/full_audit.py",
+    "runtime_sha256": "84f7c7b4316fb98791c51b933f5329a271b8bc9aec60eebe133f6d433ec4510d",
+    "public_path": "kaggriculture/decision/full_audit.py",
+    "public_sha256": "0ae434974ac8fced76033c26b9c27f6ffce24e1f598f6fba6c7dc11306d903a8",
+    "relationship": "line endings only"
+  },
+  {
+    "runtime_relative": "decision/execution.py",
+    "runtime_sha256": "cbf38b17ca9c4c1c4f82ddb583ff59e4f605a0e8d8e971ef5bfc3664b2c76378",
+    "public_path": "kaggriculture/decision/execution.py",
+    "public_sha256": "e1b8acb32ef0b31c0de3048d481d84babf3b07510d18a9d3b2fd3da471d8f239",
+    "relationship": "line endings only"
+  },
+  {
+    "runtime_relative": "decision/semantics.py",
+    "runtime_sha256": "9ac62d0df7adca84c0feff805b2979bb45f9f9f4c2064d1e2b5c48efd3e779a5",
+    "public_path": "kaggriculture/decision/semantics.py",
+    "public_sha256": "9ac62d0df7adca84c0feff805b2979bb45f9f9f4c2064d1e2b5c48efd3e779a5",
+    "relationship": "identical bytes"
+  },
+  {
+    "runtime_relative": "decision/verify_mechanisms.py",
+    "runtime_sha256": "cc82fd118abd94e92a8833587aa2bfb9117214a8a5b00e8054225732af47fbbf",
+    "public_path": "kaggriculture/decision/verify_mechanisms.py",
+    "public_sha256": "cc82fd118abd94e92a8833587aa2bfb9117214a8a5b00e8054225732af47fbbf",
+    "relationship": "identical bytes"
+  },
+  {
+    "runtime_relative": "decision/audit_market_teacher.py",
+    "runtime_sha256": "f0f35dcbf8edeff90db5762da81b09ee2208e7af2c9921c0176bcb32c6381dc0",
+    "public_path": "kaggriculture/decision/audit_market_teacher.py",
+    "public_sha256": "f0f35dcbf8edeff90db5762da81b09ee2208e7af2c9921c0176bcb32c6381dc0",
+    "relationship": "identical bytes"
+  },
+  {
+    "runtime_relative": "decision/verify_market_teacher.py",
+    "runtime_sha256": "0a59718731aecfa6fb499f67bc7f92daa76053830f4ca582143e46cdc2422ea8",
+    "public_path": "kaggriculture/decision/verify_market_teacher.py",
+    "public_sha256": "0a59718731aecfa6fb499f67bc7f92daa76053830f4ca582143e46cdc2422ea8",
+    "relationship": "identical bytes"
+  },
+  {
+    "runtime_relative": "decision/profit_attribution.py",
+    "runtime_sha256": "bea6118d126115ef2899e8e08fddf4ded7987f4ef91df6c206239ef096f77d61",
+    "public_path": "kaggriculture/decision/profit_attribution.py",
+    "public_sha256": "bea6118d126115ef2899e8e08fddf4ded7987f4ef91df6c206239ef096f77d61",
+    "relationship": "identical bytes"
+  },
+  {
+    "runtime_relative": "decision/action_views.py",
+    "runtime_sha256": "48dac3a44a42cf149ad94965a44c72405a9cdff80c885ec522fcc4f212ffc4a6",
+    "public_path": "kaggriculture/decision/action_views.py",
+    "public_sha256": "48dac3a44a42cf149ad94965a44c72405a9cdff80c885ec522fcc4f212ffc4a6",
+    "relationship": "identical bytes"
+  },
+  {
+    "runtime_relative": "learning/bc_crop/requirements-gpu.txt",
+    "runtime_sha256": "6bbd85609b7eeb93014bf1ab95f751f0c9cbaa07d886babe7953c0feaa9e6e56",
+    "public_path": "kaggriculture/learning/bc_crop/requirements-gpu.txt",
+    "public_sha256": "6bbd85609b7eeb93014bf1ab95f751f0c9cbaa07d886babe7953c0feaa9e6e56",
+    "relationship": "identical bytes"
+  }
+]

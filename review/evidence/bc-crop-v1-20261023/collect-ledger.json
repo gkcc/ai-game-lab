@@ -1,0 +1,2130 @@
+[
+  {
+    "seed": 31205138,
+    "side": 0,
+    "banks": [
+      41989.0,
+      37756.0
+    ],
+    "bank": 41989.0,
+    "opponent_bank": 37756.0,
+    "net_profit": 38989.0,
+    "margin": 4233.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "9999a181e5f47b3df922cf28d1abefd9f876b16e52126deb5fd2e449434b3657",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "bb4ece805388e4d7a075605381e271d2b15012c27eb7b0f1817f81cd870cdfd2",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "c61ef8f16c1c200680f2d697341a1263cfedd4aae8b693f0f804df4596b25dec",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "round2",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      41989.0,
+      37756.0
+    ],
+    "replay_gzip_sha256": "1d984819ec41e583163340484512eedf506b2d45642c7f530e2f9d619786cf28",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31205138-round2-0-teacher",
+    "trace_sha256": "6480ff2072ed1a9a92d0bdf39cd82bce940a8d6ded37738945837b06c1012020"
+  },
+  {
+    "seed": 31205138,
+    "side": 1,
+    "banks": [
+      37756.0,
+      41989.0
+    ],
+    "bank": 41989.0,
+    "opponent_bank": 37756.0,
+    "net_profit": 38989.0,
+    "margin": 4233.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "b5f44f9852f13f87cf9b01b3370885309ee1559d9edb106dece4a796c80b0ccf",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "6a2448a3b0e96ba09916ae37c4b3e0dc3eefa322daebcd14f8ebb134cd64f31d",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "3cd769d40958a008e8cc006bd5fc163d4c52dcd37828323d2ca38be0f8cad92d",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "round2",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      37756.0,
+      41989.0
+    ],
+    "replay_gzip_sha256": "2810b199abdf2f08cafd39e736ad6e13e40d6bfac23e910be83026da9fff967c",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31205138-round2-1-teacher",
+    "trace_sha256": "ad3afd7df268cf7b451598699a1b9af7f622e825f59af4335062c8386a209280"
+  },
+  {
+    "seed": 31205138,
+    "side": 0,
+    "banks": [
+      42055.0,
+      37379.0
+    ],
+    "bank": 42055.0,
+    "opponent_bank": 37379.0,
+    "net_profit": 39055.0,
+    "margin": 4676.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "9c70ef95633492670b6a0a22d2b69f04b7664e14a26ec14b577ab6871b462de6",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "3424cc1abb51205386f382cd76577d342bc8db55bda070793343e57aa0e0a253",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "611881c6fba58f88c59262f4a5700cb2eb1b4cc0ac7419ccefffcd1cf6de531a",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "v1",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      42055.0,
+      37379.0
+    ],
+    "replay_gzip_sha256": "005939d4aab0b6cd7f5dbabc2b8773014e804fa84adbd2f18a87c448b8a9d02d",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31205138-v1-0-teacher",
+    "trace_sha256": "02c5ef2addf838dc009bcb1a185557da6a4ee7097270c019732fa1818460d43c"
+  },
+  {
+    "seed": 31205138,
+    "side": 1,
+    "banks": [
+      37379.0,
+      42055.0
+    ],
+    "bank": 42055.0,
+    "opponent_bank": 37379.0,
+    "net_profit": 39055.0,
+    "margin": 4676.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "335324e5d66b95b20fe8d2083b66f1551ab5a0d38ab2fbc2cfca1aff9a79797d",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "4781ed57bd2a87acb951c13e7146a79fbaa6f3df8a980fee56402479965ac7f0",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "cd0f52f6a9954b4b2b837f42bf54c5c80aee0abf593b4c8a2d5cb3c478b13d6e",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "v1",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      37379.0,
+      42055.0
+    ],
+    "replay_gzip_sha256": "77e04795b22ee4ff7733f99ede7496ce86d91852b4beec10ac7f0d41392141b8",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31205138-v1-1-teacher",
+    "trace_sha256": "a206fdd8ce3fb4437d8a81d6e4d6716ccd6e174cb2b32a8079514ced039ed6e1"
+  },
+  {
+    "seed": 31273729,
+    "side": 0,
+    "banks": [
+      40175.0,
+      39001.0
+    ],
+    "bank": 40175.0,
+    "opponent_bank": 39001.0,
+    "net_profit": 37175.0,
+    "margin": 1174.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "f5c24deb934c374e0eb0481924a9fb129658e565627cdebbc144734133f3cdab",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "0154bcbb667b38d1425def90e0378e0f1835f0affe8569fcb222c868fc9ab84e",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "883e8f43dca2724e931724a36806d03d71e773d6b02abed5c26c34d72752f386",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "market",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      40175.0,
+      39001.0
+    ],
+    "replay_gzip_sha256": "152e017d55a577a692d147085be797fafe9eaa72f19b71678dd56e0c6dcde10d",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31273729-market-0-teacher",
+    "trace_sha256": "5a44654cc6bfc7b012a1d3f5b0b6718892b8adcca3ea1152091cc4db38f89827"
+  },
+  {
+    "seed": 31273729,
+    "side": 1,
+    "banks": [
+      39381.0,
+      40614.0
+    ],
+    "bank": 40614.0,
+    "opponent_bank": 39381.0,
+    "net_profit": 37614.0,
+    "margin": 1233.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "c6ff1f06356ffcb8a540fae8adada98f68f2623c917ca6f009bbf62da3b26c74",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "0a5d7ed26d3771f6838064066cdf5d1d0e57abe1bbf45151924118e4fba82ea2",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "e1827d34cb8149cea32daf001c43b43d7b518d4d7c9226b1a775b2ab34498631",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "market",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      39381.0,
+      40614.0
+    ],
+    "replay_gzip_sha256": "3a437ecdc78a9c6ca4656fff185b7ec4e9d60d8007f6990eae9f3ec091131dd9",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31273729-market-1-teacher",
+    "trace_sha256": "e9c957564eed36b20d0d729a52804dfc8b744c8c12e3157b91c4ca67453842ba"
+  },
+  {
+    "seed": 31273729,
+    "side": 0,
+    "banks": [
+      41479.0,
+      33260.0
+    ],
+    "bank": 41479.0,
+    "opponent_bank": 33260.0,
+    "net_profit": 38479.0,
+    "margin": 8219.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "5e997342309b93ab495e9abec9376b82d335a928d93b367d74ff903728d368d1",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "e4dcc83a3ec71843196a4284daa1d0eeb648960f795c995d28bb06ec14d437d1",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "5652b0994dac299486b2b5a3cb54eaf317e61dd557a8a21cf5ff7a67dd7dc2e3",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "round2",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      41479.0,
+      33260.0
+    ],
+    "replay_gzip_sha256": "ab14307df28375ea01c8a60daf607e00a33ff07e7815af5840f23813374156ff",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31273729-round2-0-teacher",
+    "trace_sha256": "f3f253d99aca683ef95097a7978378f1e0e8c2e07dbdb7c20c17671f80bb30e6"
+  },
+  {
+    "seed": 31273729,
+    "side": 1,
+    "banks": [
+      33260.0,
+      41479.0
+    ],
+    "bank": 41479.0,
+    "opponent_bank": 33260.0,
+    "net_profit": 38479.0,
+    "margin": 8219.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "94982678b4519610d555a63be2e54269fbf345b16f41915e8a6fc8ee0af70d0a",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "8213c210ff496682c3d64c7e6ffd89ad8380185a83d6fe38d1753654334572f6",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "36abfe484d7d151749887d82ef07e6e07d4881e00c06a2826a30e766e631fa5d",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "round2",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      33260.0,
+      41479.0
+    ],
+    "replay_gzip_sha256": "f794c6bc84628feac837b3995f50ab1981420f17c1ddcd0b237d4f99f51ee808",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31273729-round2-1-teacher",
+    "trace_sha256": "79348682d8d2e221a3804b6ecc3596dce7755c538dc7ea90ef8d48a12f945ff8"
+  },
+  {
+    "seed": 31273729,
+    "side": 0,
+    "banks": [
+      41588.0,
+      33054.0
+    ],
+    "bank": 41588.0,
+    "opponent_bank": 33054.0,
+    "net_profit": 38588.0,
+    "margin": 8534.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "1bf0e287401eade12f3d699570e7db6164fe2dac81df5caec510a514d022f380",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "8e5b559a996a766e5607b0c63cf63e16ccb8c2aba7c6a0e449b6eaf537c69f14",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "61d4ab9694c3989c76db7a86a90f448a0a25be762f3d7af818b30dc1112f8c3d",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "v1",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      41588.0,
+      33054.0
+    ],
+    "replay_gzip_sha256": "d4a1c470c78b142efbccc7202d24f07420090ce2c1ea520febbf926dca22d36c",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31273729-v1-0-teacher",
+    "trace_sha256": "18121b14ac867a33fb71c8a599d04cd2eb1f6279cd956c88c53b99ac684ef127"
+  },
+  {
+    "seed": 31273729,
+    "side": 1,
+    "banks": [
+      33067.0,
+      41588.0
+    ],
+    "bank": 41588.0,
+    "opponent_bank": 33067.0,
+    "net_profit": 38588.0,
+    "margin": 8521.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "a4191b56a0e8a75454db3f6c9703fe9bf9c78a499d5b32aef345ecef72166aa9",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "8a179a7996e2f404b43698c1423e6e3c1987a442a613e996a69e63caccaecd87",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "a2faf12fc96b1af146c29dabd24080c452b6741d4718714c7f0698e27c35bca9",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "v1",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      33067.0,
+      41588.0
+    ],
+    "replay_gzip_sha256": "3c4dab01cf30403548fbd8cabc73edc404cb2530d6fdf52f6f68f27d1f4e3573",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31273729-v1-1-teacher",
+    "trace_sha256": "a7dda6c97985bdc4dae4b6299f19263d4683fc5efc0e7b4360957fa377adb573"
+  },
+  {
+    "seed": 31317742,
+    "side": 0,
+    "banks": [
+      45483.0,
+      45208.0
+    ],
+    "bank": 45483.0,
+    "opponent_bank": 45208.0,
+    "net_profit": 42483.0,
+    "margin": 275.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "8f0dcc21465cbfdbfa9943f3df964d86bbc79571c6e82314a910fe4bd1ff51ba",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "61bc61026af03b3d3c09893b8e79d8ea5d289868258b283a184dacb193ecbd52",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "f4f79cf59a8d2287b73edff2c1b25bd94518b30a267b758670e8e32610ffbfe7",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "round2",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      45483.0,
+      45208.0
+    ],
+    "replay_gzip_sha256": "54c42f5b5bf1a0739aeec5e013948a30ed8117fdf4d1f133c6bbdaea8169257f",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31317742-round2-0-teacher",
+    "trace_sha256": "4a046cb82f9230714a62578cfb7cf45cd36bff2b6546ab4fa1dac958ae3c01b8"
+  },
+  {
+    "seed": 31317742,
+    "side": 1,
+    "banks": [
+      45208.0,
+      45483.0
+    ],
+    "bank": 45483.0,
+    "opponent_bank": 45208.0,
+    "net_profit": 42483.0,
+    "margin": 275.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "66c79e7dd1576050f4c76a4a65bff95697b12c3a43bee3fda04721c18e67bab5",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "1c2613ae0ce6a1746d9b8d8198ba294a7bf405a1d525d687e0c571307ce1e19b",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "b1b0691070b607e589ae519a2883d20479f1eef44c9a33cd6ce80cd1bb4e67f6",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "round2",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      45208.0,
+      45483.0
+    ],
+    "replay_gzip_sha256": "3d07a305823fb32764273eb168f3c89cb0a1939df15b005069e2b508d9d1661e",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31317742-round2-1-teacher",
+    "trace_sha256": "0fa72dfd7816e0fba22394ccecd7f080327c0224869d5d0ae241b74edd327b66"
+  },
+  {
+    "seed": 31317742,
+    "side": 0,
+    "banks": [
+      45528.0,
+      44982.0
+    ],
+    "bank": 45528.0,
+    "opponent_bank": 44982.0,
+    "net_profit": 42528.0,
+    "margin": 546.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "e28a3c1bb55083adffcf3f4db6c70353baba1302138d4238f51e22b0209f62c4",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "d3440f495225ed353912417c014cf4c782ce2aaa9fc77553446f6104b88665f1",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "798ef3e876e4c4283666ae6f985fb80279a2124f36ef9e83141d3ecddc357ca0",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "v1",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      45528.0,
+      44982.0
+    ],
+    "replay_gzip_sha256": "6ebe2a567af569bb425b7acec640da84ee727adb5666223fcf062ea30c395aac",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31317742-v1-0-teacher",
+    "trace_sha256": "6055472ab86e1cd110a3d6b3fe53f414c3ad3a21eaa82d3138512738c9a5df9e"
+  },
+  {
+    "seed": 31317742,
+    "side": 1,
+    "banks": [
+      44982.0,
+      45528.0
+    ],
+    "bank": 45528.0,
+    "opponent_bank": 44982.0,
+    "net_profit": 42528.0,
+    "margin": 546.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "3fafe019b8e9512cc9587fe2e4baf94ac02edfa17acca671c8d0a33f79d7a2f2",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "1547ba7e3abca5e15e3192964c80b69241eb5fd2fbe3fef2fa3b538f2c007c68",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "0fba0e08afeb6400f1d1cdef3e6254052c4b20721085223b31ff1538f0f08228",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "v1",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      44982.0,
+      45528.0
+    ],
+    "replay_gzip_sha256": "14a14b08a07e25e793d51a8841ac0bf3e904f476b3ed840c784760b7dfd2e6ae",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31317742-v1-1-teacher",
+    "trace_sha256": "81da204dbaeb6c20d86d095a2ca858428c59536fa22a88deea62d147be13fb02"
+  },
+  {
+    "seed": 31360134,
+    "side": 0,
+    "banks": [
+      46173.0,
+      40639.0
+    ],
+    "bank": 46173.0,
+    "opponent_bank": 40639.0,
+    "net_profit": 43173.0,
+    "margin": 5534.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "b1bc4ebd37800b8836a47a6d1c93f1c740cfde6d2cd73d0f34a75729693f724a",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "6f26be92efbe9f37b3ebd2802ebe27a9953d009522659c06f7790e9fbfea252e",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "c9405bc957437677221633128018f6236a5e545a0753861b738428419ab4a922",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "market",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      46173.0,
+      40639.0
+    ],
+    "replay_gzip_sha256": "3569cbef049fe9d359926057c8161a83019a8a02cb31eaff0b8efbd64d668e5d",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31360134-market-0-teacher",
+    "trace_sha256": "5a02c14ffc5108e525ef48a9d0090cb75ae46455095708adfe1774225ac7bf14"
+  },
+  {
+    "seed": 31360134,
+    "side": 1,
+    "banks": [
+      40639.0,
+      46173.0
+    ],
+    "bank": 46173.0,
+    "opponent_bank": 40639.0,
+    "net_profit": 43173.0,
+    "margin": 5534.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "6b5c054c564bd7de49ae58f3b69d815d0fca339c3228ade71a94f7c093313e39",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "03e14023ea79d2ee8d3be70c5a5c4df56553abe7b793a2167179947b8719deb8",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "f6f7e1c59e4dbad9ac17de5d526dfa737bf84b2884813b6a27320a1f4a204d5f",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "market",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      40639.0,
+      46173.0
+    ],
+    "replay_gzip_sha256": "b533d76188f689306f04160747c6fd06ba07bc75c4b685a1d048c8c00683c75d",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31360134-market-1-teacher",
+    "trace_sha256": "48eec35f97fa9c34bca9a147052baddb5b65eebdd8d732bddceb0b403f453a07"
+  },
+  {
+    "seed": 31360134,
+    "side": 0,
+    "banks": [
+      46871.0,
+      36848.0
+    ],
+    "bank": 46871.0,
+    "opponent_bank": 36848.0,
+    "net_profit": 43871.0,
+    "margin": 10023.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "905cbf9f8df7796c6f5f8a85d1ce71fc55b1030e9be3a00a017e5fe2610d9ef2",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "76b0b9a5c271213780fe7a9167e1f5ae143b09db4263fd8f4805de56e455ffc4",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "f94d4bf26e6aa5dabd787cf4afb6bc68867d44a739af3b1887eaa07beb9a840b",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "round2",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      46871.0,
+      36848.0
+    ],
+    "replay_gzip_sha256": "039b878322a13adc1b1cf07f67d76edfbb1f9888cccc3e39660fff428bfc87ef",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31360134-round2-0-teacher",
+    "trace_sha256": "ac014bf8d948508490ebe8c824627f163e9c1bbe1eaad4c21bd4942abe2efa74"
+  },
+  {
+    "seed": 31360134,
+    "side": 1,
+    "banks": [
+      36855.0,
+      46871.0
+    ],
+    "bank": 46871.0,
+    "opponent_bank": 36855.0,
+    "net_profit": 43871.0,
+    "margin": 10016.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "8aa69fb83317589d465e663f12347c958fdb6aaacf06ac856b95f54213f46145",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "3f1c4648088bb3399da0d70c679907be4babc4d470c698648d2343b828d03e61",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "0c8969b2e7b70053e0a8518e3deb906c7e859cf32547fa21783c96d8a6aabc95",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "round2",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      36855.0,
+      46871.0
+    ],
+    "replay_gzip_sha256": "316aff1250281f1d8d9ede0d7184974c953ea17efd02d64b166ee5086d2271b9",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31360134-round2-1-teacher",
+    "trace_sha256": "e69f68a02a01c8eb2d836262c6d4119ccbda3eae72a6e3b027f8cf8ba1cc8363"
+  },
+  {
+    "seed": 31360134,
+    "side": 0,
+    "banks": [
+      46870.0,
+      36639.0
+    ],
+    "bank": 46870.0,
+    "opponent_bank": 36639.0,
+    "net_profit": 43870.0,
+    "margin": 10231.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "8d06264479ef00bdb005eb799ff15c056c3e70482dd68dd7667aa8bff0607e49",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "5473b8e9657a6a74ac2cbf72429fc73caf66eea415a483266d1af0cd4229cd8e",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "d24a068782bed3ad5881493fa5c6e80c795060496630152fcad73ea96bdf05b6",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "v1",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      46870.0,
+      36639.0
+    ],
+    "replay_gzip_sha256": "cc0a0d02a6c03d6972c4f6272076e09ead1c4731f8c06b352524b3b3fb2d02ab",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31360134-v1-0-teacher",
+    "trace_sha256": "9ff5659c68fc56067a470eca4f52df7c4c749a21e02724eb80e224e46e2c9f8a"
+  },
+  {
+    "seed": 31360134,
+    "side": 1,
+    "banks": [
+      36639.0,
+      46870.0
+    ],
+    "bank": 46870.0,
+    "opponent_bank": 36639.0,
+    "net_profit": 43870.0,
+    "margin": 10231.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "e723f116076a4cf7ec250e6da61e195567de8e01f8b148e71adb705723ce0217",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "1f34c345bf7058fd86bead20ed5b28002ff5a80d8bbffdf6bb6a7b86fcb221b2",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "826b2cebd34e2bc84a3fa8860ea3dd3731e813bf5c578dd20b1943d31ddff73c",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "v1",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      36639.0,
+      46870.0
+    ],
+    "replay_gzip_sha256": "4cb29c49054d25e182515f7e0f21014c0973a199bfdcf18eff39477fc8227c03",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31360134-v1-1-teacher",
+    "trace_sha256": "346970a5962fd3810611a0a15040df24f9bdac999f3934b0d06faed8cbf97b50"
+  },
+  {
+    "seed": 31504409,
+    "side": 0,
+    "banks": [
+      37098.0,
+      33446.0
+    ],
+    "bank": 37098.0,
+    "opponent_bank": 33446.0,
+    "net_profit": 34098.0,
+    "margin": 3652.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "941d94adb3022f499622660700151c61fe872c70cb2e09bbe0f980cd1496a478",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "d92602d82dee03a7f254ad1e185e9bb499da34238165dccecb8b5ab5cbb025fc",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "194a9a32f343d6aaf3d151984838df103b29b139394315038c4c8fe0bbb772df",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "market",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      37098.0,
+      33446.0
+    ],
+    "replay_gzip_sha256": "aabd034be8a092fd2a08e9f222ac0841374abebade47050f197f59477663014f",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31504409-market-0-teacher",
+    "trace_sha256": "775d17b89d628785143e9ab06fed36cdc31003519858849a5d7410fa08b5a642"
+  },
+  {
+    "seed": 31504409,
+    "side": 1,
+    "banks": [
+      33446.0,
+      37098.0
+    ],
+    "bank": 37098.0,
+    "opponent_bank": 33446.0,
+    "net_profit": 34098.0,
+    "margin": 3652.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "9c3f1b9213c46c63480c2596bfd378153bbb092a5a0c30ac56ca218a7eae1170",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "a84e782f760eced39c40b170f1e55c3e85cd71d785c2871a0d9b06f84a5790ad",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "1fa6bd922e15600c27fb047fb92b2f721e3bcf35d1f79cdebb1bf09bd8972eba",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "market",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      33446.0,
+      37098.0
+    ],
+    "replay_gzip_sha256": "62ceaedd5516f78778ac9b5b62e1456b773b925f42f03893ce3f4ac245d0f5a8",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31504409-market-1-teacher",
+    "trace_sha256": "a22ddccbf9199addbb4fbf4e7976ce0786c11302508fe5c25330a4c685b4c8fc"
+  },
+  {
+    "seed": 31504409,
+    "side": 0,
+    "banks": [
+      35174.0,
+      31883.0
+    ],
+    "bank": 35174.0,
+    "opponent_bank": 31883.0,
+    "net_profit": 32174.0,
+    "margin": 3291.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "0656655f53ea1fa4dc9b5e1eeb2003c997910537deb0d04e77eef4a552638e82",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "bdc65419e2c16a239905a778eea84f03284f1030390d8cd97c42596fda90a2a0",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "480c6b219ecf2336024ee7e9dc7a7e0995abc6dc3e59b6beaa0dc715fdcc4d5b",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "round2",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      35174.0,
+      31883.0
+    ],
+    "replay_gzip_sha256": "81d44691b9b01c3d4ab6e6ff9d64d04ec4aa9c50673fb4ca0fa1bb17d7d842c2",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31504409-round2-0-teacher",
+    "trace_sha256": "b024265e2220f401fe784a83044675230bbd8fd391406a2bbb67458b619a1920"
+  },
+  {
+    "seed": 31504409,
+    "side": 1,
+    "banks": [
+      31883.0,
+      35174.0
+    ],
+    "bank": 35174.0,
+    "opponent_bank": 31883.0,
+    "net_profit": 32174.0,
+    "margin": 3291.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "aa18f96f523fcc3d02b713aa9aaab73106b5e5514690dee4732df48e6440ac8b",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "3009c0171b842dc3e4b5a610a47a62759fd12ce3abe3024a2ce412114209f03c",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "8d6a8f14cf0670295ed9bc0585397056e33b37e9bc90e9d0ec869d1bd496a916",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "round2",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      31883.0,
+      35174.0
+    ],
+    "replay_gzip_sha256": "85ec9b233b0b89e9b84b47c81c38a729d4c79958bd61588a580c308d4868fe1b",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31504409-round2-1-teacher",
+    "trace_sha256": "7883009f2d991027937d6fde9a0f2e185c45b6e95d498c8d8192262a19b3c514"
+  },
+  {
+    "seed": 31504409,
+    "side": 0,
+    "banks": [
+      34978.0,
+      31470.0
+    ],
+    "bank": 34978.0,
+    "opponent_bank": 31470.0,
+    "net_profit": 31978.0,
+    "margin": 3508.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "db55f37c4e16ac1177a8aeb936101cdc799b01569dc486eebc2cb75a4916f7bf",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "6282635e880174934963287df51f4427ad92f66f6e66c913d028c40b926f8e38",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "61ccb92e2fb27b10b442848024913096e77a227c01a089eb3e6c99cadcbe974e",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "v1",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      34978.0,
+      31470.0
+    ],
+    "replay_gzip_sha256": "91911b80fc0415925e15acb11f873dbe6621efe0457389d5e382b5d99b5aacd5",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31504409-v1-0-teacher",
+    "trace_sha256": "c608178c79e55da58961a0fc3943228d99f329c068c2a70a53359ed337ebdaf5"
+  },
+  {
+    "seed": 31504409,
+    "side": 1,
+    "banks": [
+      31470.0,
+      34978.0
+    ],
+    "bank": 34978.0,
+    "opponent_bank": 31470.0,
+    "net_profit": 31978.0,
+    "margin": 3508.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "42f8caa71fc80f12e3df8e8548aa1d00012c845b0138bc6bc276af03d324048c",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "8f6be323581dd4e6ee7c36a63cd61eacc8743f94c05424ce329625cb3062c463",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "df8b649281424a1dfd3de38fdc0e1f06b6c8a8581e20846f841b0976528027bd",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "v1",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      31470.0,
+      34978.0
+    ],
+    "replay_gzip_sha256": "31422dd8409ae6e557020cbb12b82e8921492b8ef77d25c03eb339f39488c7ab",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31504409-v1-1-teacher",
+    "trace_sha256": "7859bef9ff2832583e0166b781072ad4e28788bcf0c1446c32cc8cdb057f59b1"
+  },
+  {
+    "seed": 31637216,
+    "side": 0,
+    "banks": [
+      33379.0,
+      29530.0
+    ],
+    "bank": 33379.0,
+    "opponent_bank": 29530.0,
+    "net_profit": 30379.0,
+    "margin": 3849.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "f5d6e6ecbf6d6b6c1ec39df6f45b13047c1f3c3146c7818d77219e7f54738b17",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "51ef86e1e0275ee543e70ee137fcd8e6f2d504ffdda02a88a7f67998e5dcb7d2",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "895462d3f327a4626ebae9fd8bc447f22a20a8d1b75b1199daa14e5910635ff1",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "market",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      33379.0,
+      29530.0
+    ],
+    "replay_gzip_sha256": "34b92182960a7bb86b56be22b634e1e75393af3a30f3860fdd8c57a635cee180",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31637216-market-0-teacher",
+    "trace_sha256": "3f9bf25a8f1125fd053e609c063c91f876d4356819074466b97a95b46ae88922"
+  },
+  {
+    "seed": 31637216,
+    "side": 1,
+    "banks": [
+      29530.0,
+      33379.0
+    ],
+    "bank": 33379.0,
+    "opponent_bank": 29530.0,
+    "net_profit": 30379.0,
+    "margin": 3849.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "f3ec1d53601dc25e995359f04e7f1a93cd147f8cd4ad22c2ce65f09c81ea5648",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "5b89bedd2730d635b6c01d9399a9637ee5a91f105b047b59e4ec037f34278f9d",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "85512b6a550517e6be8adcfee6b99be5c309ae89d0023528f02c1fb34f3910f4",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "market",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      29530.0,
+      33379.0
+    ],
+    "replay_gzip_sha256": "fd4be7c593ab5304d1cb691db711136cd516a9ab36ee0c3c86431134623f5983",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31637216-market-1-teacher",
+    "trace_sha256": "5240db7616f74dc891d14ee893df857a71090eced7c64f28e1c74f69275fdc95"
+  },
+  {
+    "seed": 31637216,
+    "side": 0,
+    "banks": [
+      31745.0,
+      29112.0
+    ],
+    "bank": 31745.0,
+    "opponent_bank": 29112.0,
+    "net_profit": 28745.0,
+    "margin": 2633.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "14a8e2214a5abd79f11859c569d26aaa3b9c1d7eed9ba593e791801859534cba",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "fa9dfd8bf86c76fd0c201b58f65e5177df3c0d6ec45e90f1a2659236fd0ff498",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "faa71d5c0d47589ff92173e297b312fbe64ef18b0d0def936d46f0b730a13d53",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "round2",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      31745.0,
+      29112.0
+    ],
+    "replay_gzip_sha256": "149ccca7491e22cf922620d5094a8c8902edd15bac6a73ab574fd4957660b2d8",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31637216-round2-0-teacher",
+    "trace_sha256": "4cb81254ef929ced44472001c4baac7964f7288bde3fcebac9d032a860291942"
+  },
+  {
+    "seed": 31637216,
+    "side": 1,
+    "banks": [
+      29112.0,
+      31745.0
+    ],
+    "bank": 31745.0,
+    "opponent_bank": 29112.0,
+    "net_profit": 28745.0,
+    "margin": 2633.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "91a6d202b361cd8a5c73b98e01e0a22848dd93364c97d3d8250daadb49928671",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "c319ab9900ec2d289d0d5fb8ee9a2679449f34c449c3327c8850165415639a80",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "87855dcdc2a9436ed917cabd1fe870d247817cdbb177f5373ce34a4ec7e8b23a",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "round2",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      29112.0,
+      31745.0
+    ],
+    "replay_gzip_sha256": "2a7a0e9f40fb26db538d43ffaf5cd348be1c942abcec11170b20576a65a6f4f8",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31637216-round2-1-teacher",
+    "trace_sha256": "dde769efb69101ceba2b527d1729dff96d6518e47336f201d35e0019057b09a7"
+  },
+  {
+    "seed": 31637216,
+    "side": 0,
+    "banks": [
+      31688.0,
+      28152.0
+    ],
+    "bank": 31688.0,
+    "opponent_bank": 28152.0,
+    "net_profit": 28688.0,
+    "margin": 3536.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "2d50d410ab5533f87396e5686059b64aa0fac4bbf85fa5723455815d06b755fa",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "4e2b7fcd91b221992bc2f4b9957d7a17b138d926462603e74effc51a7b1d6e23",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "395e68fab8ec5449b226ff054231601a8a2db27955a615f2655747739e97a177",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "v1",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      31688.0,
+      28152.0
+    ],
+    "replay_gzip_sha256": "3597c5208d022a75538ae664ed06ed53fac048a7d5d1dd0a9b4f999e1a7a2564",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31637216-v1-0-teacher",
+    "trace_sha256": "78922f36bb8be40b5fb7c954292095d63c64d3373654ed70b0624a68bfb48365"
+  },
+  {
+    "seed": 31637216,
+    "side": 1,
+    "banks": [
+      28152.0,
+      31688.0
+    ],
+    "bank": 31688.0,
+    "opponent_bank": 28152.0,
+    "net_profit": 28688.0,
+    "margin": 3536.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "d8ae712f7ec3de8fb7d9f719ff16a564f5cc5c200f1e3a15aeae5f3323c1944f",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "564f287db1e7dd2ff8ba25e992c423f55362b32604264b91cb845c101a130f92",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "a970b98fff3804bd5adbadb74144a6ed8d99185f3fec69ffa56f3633ab61cba6",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "v1",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      28152.0,
+      31688.0
+    ],
+    "replay_gzip_sha256": "c019d3281ab6ef0fdc3786c5e3c66045b9952febad32e79da03f1a1f5f2d3cc8",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31637216-v1-1-teacher",
+    "trace_sha256": "f2d0a6c367f1abe88fd18747ee3d185db8bba6af91c300fa608f5f1deddf8e28"
+  },
+  {
+    "seed": 31659052,
+    "side": 0,
+    "banks": [
+      47798.0,
+      50358.0
+    ],
+    "bank": 47798.0,
+    "opponent_bank": 50358.0,
+    "net_profit": 44798.0,
+    "margin": -2560.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "ba4525b1b8229a7e04841aec884d8e3631a5522dedd929f1dea641d36cb49052",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "031b6b6250fc969dfa54f176fd4ee5192b1965ddbb33943a3ccedeb062bdf5f3",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "fbc8427f3986f1e062732024f20db12e439ca7dc90751bdbf55b3f50022dff75",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "market",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      47798.0,
+      50358.0
+    ],
+    "replay_gzip_sha256": "cdb45c55ed0788e8569248027a3818cce6c32153b1317567d5f4b2b31fc4da3f",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31659052-market-0-teacher",
+    "trace_sha256": "0ec0d5dff3c2aa93eac646794be5df7e0df5c5cbd6ebe9e5b14b91c76d6b320c"
+  },
+  {
+    "seed": 31659052,
+    "side": 1,
+    "banks": [
+      50358.0,
+      47798.0
+    ],
+    "bank": 47798.0,
+    "opponent_bank": 50358.0,
+    "net_profit": 44798.0,
+    "margin": -2560.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "9fb032dacac5a15114557ddc115a2ccfa070076180a433ff9e1159f191d8ed87",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "f91add8e8cc48183f16bc0f504fd9a6f89a8a7d500032a9dcf335482e7c8f2d7",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "273d036ae4527e25534fba6542c0f4572dd53ef617cee2a48bcbc8fcc59422fe",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "market",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      50358.0,
+      47798.0
+    ],
+    "replay_gzip_sha256": "235a70a3a78c97eeb5b0c3515fbcb83024226b587ca622c6bdf5dd873ccb631c",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31659052-market-1-teacher",
+    "trace_sha256": "47339737562985ac57cf706d0e32a4fe8c4a49bef5239ede526224be75d65130"
+  },
+  {
+    "seed": 31659052,
+    "side": 0,
+    "banks": [
+      44043.0,
+      44876.0
+    ],
+    "bank": 44043.0,
+    "opponent_bank": 44876.0,
+    "net_profit": 41043.0,
+    "margin": -833.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "2a082430a160b203c96613c626037233e352546efb8fcad0fffe2dabd7eea0bd",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "116f1a37e0a86f42ad0ac18d578bf2f1f0a01ce81e2f1faf30a18a389200f1f4",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "b341ae67048e7fef6bab6f52437473d58b3745d9c299ef58ca37cc1d2ced616d",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "round2",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      44043.0,
+      44876.0
+    ],
+    "replay_gzip_sha256": "480a38249e781aa383b43c76dd4f2eb513f7f294a15a71ee88b15043a68feca0",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31659052-round2-0-teacher",
+    "trace_sha256": "40cae27b9c945487a45ec60eaa98e21091e1d280d884a88d30fcc35ddc227690"
+  },
+  {
+    "seed": 31659052,
+    "side": 1,
+    "banks": [
+      44876.0,
+      44043.0
+    ],
+    "bank": 44043.0,
+    "opponent_bank": 44876.0,
+    "net_profit": 41043.0,
+    "margin": -833.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "4f448d2ee1942d742cdc416d581622a82bdcd10ad61484a6a897f37588cdece2",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "ade0a0ebeeefaba35cdf4908c24d113c6287a77f2e3e5d831cb4b6292abfd40f",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "e2fd8949b913bd6a6743df2883e200b2a35f0b2de5b28c3d9edeb5364b1ad33c",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "round2",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      44876.0,
+      44043.0
+    ],
+    "replay_gzip_sha256": "17f1c1fad828fc93054ff6f6c28000673f9b120cb5e17d5eaf991fa8b32f84f4",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31659052-round2-1-teacher",
+    "trace_sha256": "cd41189d2f6ddf03c70ba997f6477757588174bce8bcec180d8b312bf45c6c85"
+  },
+  {
+    "seed": 31659052,
+    "side": 0,
+    "banks": [
+      44595.0,
+      43282.0
+    ],
+    "bank": 44595.0,
+    "opponent_bank": 43282.0,
+    "net_profit": 41595.0,
+    "margin": 1313.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "4ab13aa4eda21f3da3b22f34438e7658bd6b900ec83bf64c9412cb83e6a1cefd",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "6136eed2002c8a26d6277145f4aef4c2c017b1ad0701d85e09c735765eaa1443",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "1e433c293989ad77ebd2f6c2289f3320668ef1350488b5047daf07a6be7ace96",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "v1",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      44595.0,
+      43282.0
+    ],
+    "replay_gzip_sha256": "19cfeed2e329c2b0a3465102ee04540353af79027d5ce05b36f5c685b9d9959a",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31659052-v1-0-teacher",
+    "trace_sha256": "4a94476916b584906c4cc0cff9b0f1a6588a0751574f3741f3dd9acb8ac464d8"
+  },
+  {
+    "seed": 31659052,
+    "side": 1,
+    "banks": [
+      43282.0,
+      44595.0
+    ],
+    "bank": 44595.0,
+    "opponent_bank": 43282.0,
+    "net_profit": 41595.0,
+    "margin": 1313.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "34d3411c2755bf4ff53c4ce78c6c77790911d4ba3d8a34a9b20ce1d8a1b460f4",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "9975b59f76743b61ed56adf81767c032a8a4201b86c9042059f59e32a63cce8b",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "5e8148af468101d21264da2c9eca569bd40e2dd99daa2eaec0b666f365136ef9",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "v1",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      43282.0,
+      44595.0
+    ],
+    "replay_gzip_sha256": "0a2b666ac9191fb9d4595aadfa451a3569afa9f58dc7314a150cfa1cc98567c3",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31659052-v1-1-teacher",
+    "trace_sha256": "8e6b8829a36e7927b9a051f27a1893e87276d6d5adb95cbc71f88fe4f1cba94f"
+  },
+  {
+    "seed": 31834104,
+    "side": 0,
+    "banks": [
+      34330.0,
+      33866.0
+    ],
+    "bank": 34330.0,
+    "opponent_bank": 33866.0,
+    "net_profit": 31330.0,
+    "margin": 464.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "b64c3660a2fae0aec592d5b21e198d494e4d692257129a67f83e3cba2fcd737f",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "6ab8d142758fd2914d1547c1cd3f59469a016e9abf5106a58aa6bd5684231f9d",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "97302e7c5f505c473127ba22de76867ddfa0d125feab630d7f817ebc48bb20e9",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "market",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      34330.0,
+      33866.0
+    ],
+    "replay_gzip_sha256": "19ee0bdcded49d0741edccdbf3db746aee48a675c28ce3ce739b907ec6c8cdac",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31834104-market-0-teacher",
+    "trace_sha256": "0cc7425de7d20f53aa405957852d3343f0330c439d908177e4924fd8f1cbde60"
+  },
+  {
+    "seed": 31834104,
+    "side": 1,
+    "banks": [
+      33866.0,
+      34330.0
+    ],
+    "bank": 34330.0,
+    "opponent_bank": 33866.0,
+    "net_profit": 31330.0,
+    "margin": 464.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "58c9b5dfc9504e938d65770f3784452a5f40ad332be4bcaf161c52ad7b64fc5b",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "0d548d3f1207a456d8a8cf955827c69e258995ef6bbeb7d2bd47edaff9dffae8",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "92608e46b91fd6b5275dd36a92904256827a6ffb3a01051ab1ad0550a090a4ec",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "market",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      33866.0,
+      34330.0
+    ],
+    "replay_gzip_sha256": "cdc0168ef59a583987bc2c29c9494f92e8bb8262aa2b927b5eed85a500339669",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31834104-market-1-teacher",
+    "trace_sha256": "477a35ec133780208c11c853b21d642b2bb83f100389f24a4f7f264be55c7f23"
+  },
+  {
+    "seed": 31834104,
+    "side": 0,
+    "banks": [
+      33363.0,
+      30360.0
+    ],
+    "bank": 33363.0,
+    "opponent_bank": 30360.0,
+    "net_profit": 30363.0,
+    "margin": 3003.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "e4fc681c547fa275060c5b3a08f9e6399f73c3ed531bd7f4097299057e0d47e1",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "a788dede1ee06919f0f20053e88dc7b57a789d9296bbe758fae2381ccd721089",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "11e78bc0dcbbd176fdd2b131655a0f283404fe7e975f1e6fffe9ed792e9cce43",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "round2",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      33363.0,
+      30360.0
+    ],
+    "replay_gzip_sha256": "eac5122484bd4542c01a36ee587e5a5c575b327ec01361b806992ee41d0bf717",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31834104-round2-0-teacher",
+    "trace_sha256": "665e92e7fd2960089bea72369383a2d8f061b818a0757151bf5903b3bba9606e"
+  },
+  {
+    "seed": 31834104,
+    "side": 1,
+    "banks": [
+      30360.0,
+      33363.0
+    ],
+    "bank": 33363.0,
+    "opponent_bank": 30360.0,
+    "net_profit": 30363.0,
+    "margin": 3003.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "6aba931d88dbc072450c54bea359332b616e8a92165b66287a34a215dc3258c5",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "e08ebabdff8951940d0cc43dffe601e405eb261869a4e2884daebc5babdaa30a",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "d174ee4835e929e1338100a3eb815fca90b20cb5b8cc6012144e5a8863d6ded4",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "round2",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      30360.0,
+      33363.0
+    ],
+    "replay_gzip_sha256": "f8433410300b1fef7d3b07d760ccc327d9ad745c42c9f48802109727284fefe6",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31834104-round2-1-teacher",
+    "trace_sha256": "f2d93db3e6a5f8f6df291c10a51ff7c22a6dddd6916060fcf3676c33c8b0ffd8"
+  },
+  {
+    "seed": 31834104,
+    "side": 0,
+    "banks": [
+      33584.0,
+      31162.0
+    ],
+    "bank": 33584.0,
+    "opponent_bank": 31162.0,
+    "net_profit": 30584.0,
+    "margin": 2422.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "deac5843092e7bab64bd5ce4718c169b2032c20e431e7139498a402f1b38e287",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "93adfc611e6d863e9709aceb811a2f473d8575ad6864a21f76f611965f006a8a",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "9a488375474db13df135f9f1579a62cd6720ece4f241fca438eee70c1246426e",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "v1",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      33584.0,
+      31162.0
+    ],
+    "replay_gzip_sha256": "adce4c743fb421359d081c9a4726eb97e0c3b05fb7073f8e0bf6ee9796756cca",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31834104-v1-0-teacher",
+    "trace_sha256": "767c678eab9e8484179fb0ebd05d5f0de9b7fb1e96bcbf2d1bc72c084439b15b"
+  },
+  {
+    "seed": 31834104,
+    "side": 1,
+    "banks": [
+      31162.0,
+      33584.0
+    ],
+    "bank": 33584.0,
+    "opponent_bank": 31162.0,
+    "net_profit": 30584.0,
+    "margin": 2422.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "c30ee07e911a40f76f44a4e91387b2d92254f935d520b5593f043f5261bbfb56",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "50b1deef6f12455d05de203fa7a4fd77c2c81489515f3509b8b658c4a7e79e7d",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "94cae89cfc09dcc7e19fac155f7a78ec11daa4bb974d479a386a2c5a8df47b25",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "v1",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      31162.0,
+      33584.0
+    ],
+    "replay_gzip_sha256": "15527f596b04d501fef09188870dde2fab5ac0cb4e063b7e2fda71db68cdd22f",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31834104-v1-1-teacher",
+    "trace_sha256": "77c779d364802eaba06dbacfcaec12589b4cdd4b9a05e324ab7287b356ff3cd6"
+  },
+  {
+    "seed": 31921285,
+    "side": 0,
+    "banks": [
+      53574.0,
+      47155.0
+    ],
+    "bank": 53574.0,
+    "opponent_bank": 47155.0,
+    "net_profit": 50574.0,
+    "margin": 6419.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "49a04b1f625600c49d96c154b599d064624cc5a8aafccd0c1d08eeeaf36e1c98",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "f7fc5ad8cc340d1169e75792da6ed1c82ad061b410d1a59c0a2c78ae293f7b60",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "dde5aa2dbc81f993fbc120ccfba85d1fa4da1fccd45b2fd8bef8597619d13d44",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "market",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      53574.0,
+      47155.0
+    ],
+    "replay_gzip_sha256": "9041724418d027469a5980bf33018c05d57c37fac73c5983b53fc9a8dae8384e",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31921285-market-0-teacher",
+    "trace_sha256": "48256e13c89431ee42cd5a47bbc4e66d84f423537a20acf56274e26cf1bfb2e0"
+  },
+  {
+    "seed": 31921285,
+    "side": 1,
+    "banks": [
+      47155.0,
+      53574.0
+    ],
+    "bank": 53574.0,
+    "opponent_bank": 47155.0,
+    "net_profit": 50574.0,
+    "margin": 6419.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "eaf8e2d35640d783d9a751d0ae586f21f73e8d7aab19f6c4df125f2c901c3738",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "7b5537dfd55eb5fe2b1e29734fc9051a57dee44066d91fd106549f5343fc54d4",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "b4cce41220b4114d15036a031e999a5db848fd40a67034b89d97beff2c7d5bc3",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "market",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      47155.0,
+      53574.0
+    ],
+    "replay_gzip_sha256": "df53b7c545fd939b3d98de2cb67b9ec1941d984b02dffcffee6a3e79c0222b51",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31921285-market-1-teacher",
+    "trace_sha256": "7ae1ba9f9550d5f884b29b27bd52e4cf2e803f5a0c0f11e0bba9248009d7c2f1"
+  },
+  {
+    "seed": 31921285,
+    "side": 0,
+    "banks": [
+      49109.0,
+      47963.0
+    ],
+    "bank": 49109.0,
+    "opponent_bank": 47963.0,
+    "net_profit": 46109.0,
+    "margin": 1146.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "e0f03b4f15d8ddf14028316222be03fff0c5170f38e726197438ca51be03b4a1",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "7bb0cfb227ed2d0ff6c2a6a4867d1c9a33b74cace1dd4e1e7d8b5fa6f56dd09f",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "d8b2e29276cd6aa87d58343df0946adfb97a0994327ab122a1554ce9026ed8e5",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "round2",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      49109.0,
+      47963.0
+    ],
+    "replay_gzip_sha256": "e82f70bbce72ef5838f8b5c02221ff6f04aea5aa698c348a22e5fe389c744695",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31921285-round2-0-teacher",
+    "trace_sha256": "a8d51113b038c068643849b8f00aca63e7fb71f68e106d1e3589d65f91e2bfba"
+  },
+  {
+    "seed": 31921285,
+    "side": 1,
+    "banks": [
+      47963.0,
+      49109.0
+    ],
+    "bank": 49109.0,
+    "opponent_bank": 47963.0,
+    "net_profit": 46109.0,
+    "margin": 1146.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "c2936df5b445aab1f26f722d3db9ac24e35bb54d3418f89ee8ac9c6fcbeb4fa2",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "cb594b4cfc078b069b0788ff5c0db641a447b28fa0a09148f646607d84d1c516",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "f20e08dc1d341bdad375559140feeed38ef52e629d9e775298e6cea0a7ccaa5c",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "round2",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      47963.0,
+      49109.0
+    ],
+    "replay_gzip_sha256": "05c8a55abbe0af9f270eb43b8336c84c242536a73387aef08cdd159533ff917a",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31921285-round2-1-teacher",
+    "trace_sha256": "4fdd29d9beb0a464eb169e359f31ea84440a1d7b0543b0955d112b5db0e09d52"
+  },
+  {
+    "seed": 31921285,
+    "side": 0,
+    "banks": [
+      49146.0,
+      47680.0
+    ],
+    "bank": 49146.0,
+    "opponent_bank": 47680.0,
+    "net_profit": 46146.0,
+    "margin": 1466.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "8a8d4ae9f520f0fe812436d4056349490072051d432af831b85545b73cbdf794",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "297ae802510fbe1294c80631c2929e94e0b2357f70b6328f99cf87f72e32f630",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "d10047b435c488e61b27acda50e53963621d30577211576ffc8b87c3485ec6b7",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "v1",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      49146.0,
+      47680.0
+    ],
+    "replay_gzip_sha256": "d5b1a4117454d56ba5dc2c3e00136e30b000287d3acbd0690d97f8e1a53ce012",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31921285-v1-0-teacher",
+    "trace_sha256": "e2d38f233b8565f8eb561ebfabf4e789651f5ce3d78eea437302c630f526318e"
+  },
+  {
+    "seed": 31921285,
+    "side": 1,
+    "banks": [
+      47680.0,
+      49146.0
+    ],
+    "bank": 49146.0,
+    "opponent_bank": 47680.0,
+    "net_profit": 46146.0,
+    "margin": 1466.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "d9144dc3e442eefa8d97d1716308a6a84f5f52ec131cf69d3e1f4a649e7841f2",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "0054b5ea3b6ee96942905f5d01a0c3d36ca68ff6c9c3700b5ce783eb04bcb7a9",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "85a92cbde25410bd1eee5d024bbf59d5b794399267391ca89a88a42dcefc86ee",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "v1",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      47680.0,
+      49146.0
+    ],
+    "replay_gzip_sha256": "efc699943e38b533e9e73787c0b13cef71921a4de3fa09490243a4137ddfff0a",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31921285-v1-1-teacher",
+    "trace_sha256": "08484a637e8a36e8239b812f09b41c24908ce21cbbefd10a19ff1ed126c67216"
+  },
+  {
+    "seed": 31932889,
+    "side": 0,
+    "banks": [
+      40615.0,
+      39602.0
+    ],
+    "bank": 40615.0,
+    "opponent_bank": 39602.0,
+    "net_profit": 37615.0,
+    "margin": 1013.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "61c02e0de57587c1dc260d1c97417d26b2a314ea3061bd9b08dac25341b37540",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "f914d5e947af5a6990c3e0801d9bbf26813bcf738a4bfda569e1824b2edb426c",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "f5cdf6a5e967301b84ef01d635eb95560824a88b42b2966ca893b5fed8c47e40",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "market",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      40615.0,
+      39602.0
+    ],
+    "replay_gzip_sha256": "a3dc3281c02ce5f853f1054f05eca7fb0bfb1854c1a00628db02e0443e7fc20b",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31932889-market-0-teacher",
+    "trace_sha256": "1e4cf222fef47cd87a7f423315653d1095d3639fcef00ea8df851d1cb398553a"
+  },
+  {
+    "seed": 31932889,
+    "side": 1,
+    "banks": [
+      39602.0,
+      40615.0
+    ],
+    "bank": 40615.0,
+    "opponent_bank": 39602.0,
+    "net_profit": 37615.0,
+    "margin": 1013.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "9f9f1ec68009e54738e50ed1d13f28478c51eede0e57a543886469725812a53d",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "cd510a83371383951a098a06849814e28da085f30b6b5e34e0e429bfeef171bc",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "b1cb55a1d809d7e825a4c53fc58d72630b200efe2c1de5cdfda15572fb1353b7",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "market",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      39602.0,
+      40615.0
+    ],
+    "replay_gzip_sha256": "90e77df5f1afb3c4b73e1a4208920e1371b632b14b391c357a903f1ea02c9e1d",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31932889-market-1-teacher",
+    "trace_sha256": "77c99e55283800b0e6f21767fb2bc9dedcfbea0e91097f4f281248e491545944"
+  },
+  {
+    "seed": 31932889,
+    "side": 0,
+    "banks": [
+      39967.0,
+      36039.0
+    ],
+    "bank": 39967.0,
+    "opponent_bank": 36039.0,
+    "net_profit": 36967.0,
+    "margin": 3928.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "dcac998e6fed293e7b282e5b7875c639456d8e653851c5a8f67a0e508835c935",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "5299584a7b900e5247d5bfc2fb38b3d3d0467af4afa2efe866c55c0cf247fe4a",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "4f8398a9484ed3af1decd169e781d837fb49dd09b4f78390b213cf2a6f8baa9b",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "round2",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      39967.0,
+      36039.0
+    ],
+    "replay_gzip_sha256": "3dc8a47a52a2e858a8c59498ea960cbb52d621cddee5160afb7bf914795c6c98",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31932889-round2-0-teacher",
+    "trace_sha256": "0a5cd936a84d10485277390a15fc408ac4d467cae3b112b672982db8b068f950"
+  },
+  {
+    "seed": 31932889,
+    "side": 1,
+    "banks": [
+      36039.0,
+      39967.0
+    ],
+    "bank": 39967.0,
+    "opponent_bank": 36039.0,
+    "net_profit": 36967.0,
+    "margin": 3928.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "0afd0a92fda47610deb525a6970a471b084970b6d94730f0151e613db764da13",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "0bcfc3fae1d4b0ab0862be606714c02cbd230ddc86c23770a90df06577e75238",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "9ea06826e869ba4cfb309b1c5301d890d61a67b4fd577cbf074788abb7dbc99c",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "round2",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      36039.0,
+      39967.0
+    ],
+    "replay_gzip_sha256": "7819a8ef1950feb02c06e1ed2359aeee2dd98cc38a63d473a6c1f0031e1063ff",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31932889-round2-1-teacher",
+    "trace_sha256": "dcd7201b31ad9380d4388991c10f676a366367c79a0db3d14a96d2aca55e685f"
+  },
+  {
+    "seed": 31932889,
+    "side": 0,
+    "banks": [
+      40109.0,
+      35539.0
+    ],
+    "bank": 40109.0,
+    "opponent_bank": 35539.0,
+    "net_profit": 37109.0,
+    "margin": 4570.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "643e78c7ddec786141d2ebda3d232a5f219a9f79cac41368252232cf3ee6e43a",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "9aed4de0185fe172b9f73a05b796e0531ad457f276024369f84dbf4cf0cad9ad",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "48393e19359237234a635dfd64d1b8dfd426851094514f81e7a865166b1c5be5",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "v1",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      40109.0,
+      35539.0
+    ],
+    "replay_gzip_sha256": "211d2335d7b67f49adc5ecd933aa4a803a3afe7c2b2ad58c6e19904c20eef01d",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31932889-v1-0-teacher",
+    "trace_sha256": "f85cef49d4ae0230b9e882c9972288e194ad351ae1213970c477fe1f80b601ec"
+  },
+  {
+    "seed": 31932889,
+    "side": 1,
+    "banks": [
+      35539.0,
+      40109.0
+    ],
+    "bank": 40109.0,
+    "opponent_bank": 35539.0,
+    "net_profit": 37109.0,
+    "margin": 4570.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "d5ff9114f77054b8324110c1028768d535ffe9ce774df75d88dd6216f953ae02",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "492a066d6509185781b0a7f697162ae6abe9f2674abf38cfa332c0a76d96546c",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "05a03ea0b7a2e64f48b4576eeb69dc8e2cd8b846414bf9e8cfa9bfba64bcc858",
+    "audit_version": 2,
+    "policy": "teacher",
+    "opponent": "v1",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      35539.0,
+      40109.0
+    ],
+    "replay_gzip_sha256": "251124b97fb744eeb34296432afdae8c7b8e9b13d8b232c2af3be7ba05c102e3",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "collect-31932889-v1-1-teacher",
+    "trace_sha256": "e976a87a6c1d95899068c81c3f373d5197467f2478f91244940a0cf4ae3b0388"
+  }
+]

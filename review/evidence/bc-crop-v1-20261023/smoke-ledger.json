@@ -1,0 +1,78 @@
+[
+  {
+    "seed": 31317742,
+    "side": 0,
+    "banks": [
+      47816.0,
+      44489.0
+    ],
+    "bank": 47816.0,
+    "opponent_bank": 44489.0,
+    "net_profit": 44816.0,
+    "margin": 3327.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "d9f3d112fd616587becd19a35d2291374e047c74f100efc9ad7f5a80d2912a20",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "fda4b1c96d4181d7da76031c90cdbbb2e3de89b54592c224610e0ea49974dcb6",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "3094b0778af06bde7bee514ea3d5b19700c19d269dc34a1dcd638ee16f70ef14",
+    "audit_version": 2,
+    "policy": "smoke",
+    "opponent": "market",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      47816.0,
+      44489.0
+    ],
+    "replay_gzip_sha256": "3fc1f31dd8bb008aec6cb2b05d1561528d4633f8d13bee62b05cd81ebc2fc6ae",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "smoke-31317742-market-0-smoke",
+    "trace_sha256": "67eb044f282830e8e4a50618525de116cbaa3cf0b65d2ab3b8a83b57cb42ea22"
+  },
+  {
+    "seed": 31317742,
+    "side": 1,
+    "banks": [
+      44489.0,
+      47816.0
+    ],
+    "bank": 47816.0,
+    "opponent_bank": 44489.0,
+    "net_profit": 44816.0,
+    "margin": 3327.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "d4405665ca3c4b4c7f0e73dae7f3d100292baf216b7ca4288b87d5eae9b17c91",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "b67232a8eeed8bd48b4e3f6bdcd9a6b5ffc599829e15c968edabe52b0bc23091",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "8deb8b01b071d911104a88bf08c44b49630c33a1afd2c7ec795f37b4bfa2294e",
+    "audit_version": 2,
+    "policy": "smoke",
+    "opponent": "market",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      44489.0,
+      47816.0
+    ],
+    "replay_gzip_sha256": "a24eb0e92c17bb96ad74a483a7987d3e1565123ad40aa94a182d0f3af20c29f8",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "smoke-31317742-market-1-smoke",
+    "trace_sha256": "3a01fd0c01e71956bf6214b6777c96c2bafa223e6d7e1d7019b052ac29cc7be0"
+  }
+]

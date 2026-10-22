@@ -1,0 +1,486 @@
+{
+  "passed": true,
+  "games": 6,
+  "official_transitions": 4314,
+  "rows": [
+    {
+      "game": "entry-trained-smoke-0",
+      "seed": 31317742,
+      "side": 0,
+      "opponent": "market",
+      "policy": "trained",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "e2958d5afbfb0ffc630a4b8a07752de21e25b65e12d024ce873bfab1eb770427",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "60d6073c8e4a6a8fe17b1e13bede893994ce1d4d3fee83204045b7d2958ca392",
+        "final_rewards": [
+          49357.0,
+          43994.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 413,
+            "unit:executed": 4502,
+            "unit:pass": 3353
+          },
+          "ordered_effect_sha256": "25e74e09cd85fb59d5099918d9c6d9b673d40532f1a28ee6866e5bc6573e450b",
+          "successful_plants": [
+            55,
+            77
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "trace_sha256": "c8add4887cb6c90d2e4915e4eb6da65bcfcfeab282994925f9df62886d095571",
+      "replay_sha256": "835d5e38b514e54a168bbceb1489856791d8f523eb60be25cb1e75978baadf67",
+      "checkpoint_sha256": "9806383a2d335fdfe21639f911946b29b36708aba89f7b3961a4f9999b0388fd",
+      "bot_sha256": "795541efe03d72aa8bf8985ae324f23c6b6c34d6fb38dbb52f96f0ad42e33379",
+      "reproduced_actor_actions": 719,
+      "reproduced_rival_actions": 719,
+      "raw_decision_traces_reproduced": true,
+      "counts": {
+        "actor_turns": 719,
+        "same_observation_teacher_action_differences": 4,
+        "selector_calls": 156,
+        "request_seed": 70,
+        "model_calls": 156,
+        "different_from_conditional_teacher": 8,
+        "buy_seed_orders_changed_vs_teacher": 1,
+        "plant_request": 55,
+        "plant_requests_linked": 55,
+        "move_with_seed": 31,
+        "unit_pass": 1911,
+        "market_executed": 213,
+        "seed_units_actually_bought": 57,
+        "unit_executed": 2297,
+        "official_successful_plants": 55
+      },
+      "selected_crops": {
+        "MELON": 78,
+        "STRAWBERRY": 66,
+        "CARROT": 2,
+        "WHEAT": 10
+      },
+      "official_planted_crops": {
+        "MELON": 23,
+        "STRAWBERRY": 27,
+        "WHEAT": 5
+      },
+      "original_inference_seconds": 0.009716699889395386,
+      "fallbacks": 0,
+      "load_errors": 0,
+      "inference_errors": 0
+    },
+    {
+      "game": "entry-trained-smoke-1",
+      "seed": 31317742,
+      "side": 1,
+      "opponent": "market",
+      "policy": "trained",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "842e3eb9d964f2ef1df1a3e9fcfb576e5c34e29d8c14d85e116f07a1c37a3bee",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "d1e2e7a664e0d054620538e0043528586aae7eeb23057858dc97529a7ff20cde",
+        "final_rewards": [
+          43994.0,
+          49357.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 413,
+            "unit:executed": 4502,
+            "unit:pass": 3353
+          },
+          "ordered_effect_sha256": "2cc0237747f3e18ad6a904e120e31b66421e4d35a8c6e5b9c844dd2599ec12a3",
+          "successful_plants": [
+            77,
+            55
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "trace_sha256": "e1585cca84569f3c674e696cf22d7144c8506288737660bc25eabb3fc9f74b72",
+      "replay_sha256": "90c15192a7e77a61527a9c651bb6f29b4ebd19c95fde7576c4f48fa5e4c30c7f",
+      "checkpoint_sha256": "9806383a2d335fdfe21639f911946b29b36708aba89f7b3961a4f9999b0388fd",
+      "bot_sha256": "795541efe03d72aa8bf8985ae324f23c6b6c34d6fb38dbb52f96f0ad42e33379",
+      "reproduced_actor_actions": 719,
+      "reproduced_rival_actions": 719,
+      "raw_decision_traces_reproduced": true,
+      "counts": {
+        "actor_turns": 719,
+        "same_observation_teacher_action_differences": 4,
+        "selector_calls": 156,
+        "request_seed": 70,
+        "model_calls": 156,
+        "different_from_conditional_teacher": 8,
+        "buy_seed_orders_changed_vs_teacher": 1,
+        "plant_request": 55,
+        "plant_requests_linked": 55,
+        "move_with_seed": 31,
+        "unit_pass": 1911,
+        "market_executed": 213,
+        "seed_units_actually_bought": 57,
+        "unit_executed": 2297,
+        "official_successful_plants": 55
+      },
+      "selected_crops": {
+        "MELON": 78,
+        "STRAWBERRY": 66,
+        "CARROT": 2,
+        "WHEAT": 10
+      },
+      "official_planted_crops": {
+        "MELON": 23,
+        "STRAWBERRY": 27,
+        "WHEAT": 5
+      },
+      "original_inference_seconds": 0.009473400146816857,
+      "fallbacks": 0,
+      "load_errors": 0,
+      "inference_errors": 0
+    },
+    {
+      "game": "trained-smoke-31317742-market-0-initial",
+      "seed": 31317742,
+      "side": 0,
+      "opponent": "market",
+      "policy": "initial",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "9018761222abc5d0cac978039fd4e2224d3e8bbd53f3b62e3262326bef3f395e",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "ab22b8796222e762076c94a1acd3df81a4a6895fe6e0cb24e01095e5d47c0154",
+        "final_rewards": [
+          32958.0,
+          49212.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 461,
+            "unit:executed": 4681,
+            "unit:pass": 2937
+          },
+          "ordered_effect_sha256": "6840ad41945cebbc5b17ece8d75197e8d113a09c5cd7e502156a683ccd8190b0",
+          "successful_plants": [
+            122,
+            68
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "trace_sha256": "33bf69ff88969a913984fbf0c48f45bb45d0d056df4ae61f2e8465ee20ae00ce",
+      "replay_sha256": "2a41f6dad49cd22a482958b250ef6fc8639c3ad06a2f44a7a2d1a6cd772ddbad",
+      "checkpoint_sha256": "e476dc7a8f5ec8c09f94a9ebf07e0b22d4d1216acc4ad0119ae07b6a7611f431",
+      "bot_sha256": "c8991bc3ecde470fed612f994d7ea13afd8785b648b85a41dfebf2de4c4fb474",
+      "reproduced_actor_actions": 719,
+      "reproduced_rival_actions": 719,
+      "raw_decision_traces_reproduced": true,
+      "counts": {
+        "actor_turns": 719,
+        "same_observation_teacher_action_differences": 112,
+        "selector_calls": 352,
+        "request_seed": 138,
+        "model_calls": 352,
+        "different_from_conditional_teacher": 281,
+        "buy_seed_orders_changed_vs_teacher": 61,
+        "plant_request": 122,
+        "plant_requests_linked": 122,
+        "move_with_seed": 89,
+        "economic_reject": 3,
+        "unit_pass": 1446,
+        "market_executed": 272,
+        "seed_units_actually_bought": 125,
+        "unit_executed": 2520,
+        "official_successful_plants": 122
+      },
+      "selected_crops": {
+        "MELON": 38,
+        "STRAWBERRY": 50,
+        "WHEAT": 250,
+        "CARROT": 14
+      },
+      "official_planted_crops": {
+        "MELON": 13,
+        "STRAWBERRY": 11,
+        "WHEAT": 95,
+        "CARROT": 3
+      },
+      "original_inference_seconds": 0.02901859986013733,
+      "fallbacks": 0,
+      "load_errors": 0,
+      "inference_errors": 0
+    },
+    {
+      "game": "trained-smoke-31317742-market-0-trained",
+      "seed": 31317742,
+      "side": 0,
+      "opponent": "market",
+      "policy": "trained",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "e2958d5afbfb0ffc630a4b8a07752de21e25b65e12d024ce873bfab1eb770427",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "60d6073c8e4a6a8fe17b1e13bede893994ce1d4d3fee83204045b7d2958ca392",
+        "final_rewards": [
+          49357.0,
+          43994.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 413,
+            "unit:executed": 4502,
+            "unit:pass": 3353
+          },
+          "ordered_effect_sha256": "25e74e09cd85fb59d5099918d9c6d9b673d40532f1a28ee6866e5bc6573e450b",
+          "successful_plants": [
+            55,
+            77
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "trace_sha256": "148913ef3ab0d9f82533a8d81dc30611e8e47834d8c814124a8496b4e535826e",
+      "replay_sha256": "0702053d4ca2e141cc19aa24ee37591097ba797b98ad9bf2fd7aabde3389c8ef",
+      "checkpoint_sha256": "9806383a2d335fdfe21639f911946b29b36708aba89f7b3961a4f9999b0388fd",
+      "bot_sha256": "b2dacb65c9d67b0f0b2efc180ab6edbf11b7b31e008e4dfd15471311522c0c06",
+      "reproduced_actor_actions": 719,
+      "reproduced_rival_actions": 719,
+      "raw_decision_traces_reproduced": true,
+      "counts": {
+        "actor_turns": 719,
+        "same_observation_teacher_action_differences": 4,
+        "selector_calls": 156,
+        "request_seed": 70,
+        "model_calls": 156,
+        "different_from_conditional_teacher": 8,
+        "buy_seed_orders_changed_vs_teacher": 1,
+        "plant_request": 55,
+        "plant_requests_linked": 55,
+        "move_with_seed": 31,
+        "unit_pass": 1911,
+        "market_executed": 213,
+        "seed_units_actually_bought": 57,
+        "unit_executed": 2297,
+        "official_successful_plants": 55
+      },
+      "selected_crops": {
+        "MELON": 78,
+        "STRAWBERRY": 66,
+        "CARROT": 2,
+        "WHEAT": 10
+      },
+      "official_planted_crops": {
+        "MELON": 23,
+        "STRAWBERRY": 27,
+        "WHEAT": 5
+      },
+      "original_inference_seconds": 0.011575500058825128,
+      "fallbacks": 0,
+      "load_errors": 0,
+      "inference_errors": 0
+    },
+    {
+      "game": "trained-smoke-31317742-market-1-initial",
+      "seed": 31317742,
+      "side": 1,
+      "opponent": "market",
+      "policy": "initial",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "1bc8df492737b83a0a114614d3eff01b4d0559ad5f7253fa93f8f5549b10d70c",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "9c2ec7a4804e8c6035a28a2683def83a0638272c9b529fcf2637f529015d0f0a",
+        "final_rewards": [
+          49212.0,
+          32958.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 461,
+            "unit:executed": 4681,
+            "unit:pass": 2937
+          },
+          "ordered_effect_sha256": "253701c4168534b21ce0ae5b8fe72488972699a09fe8e199c07e09b03a4c71e1",
+          "successful_plants": [
+            68,
+            122
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "trace_sha256": "ad763f87a7d013b42a6076d0199d101bf8998466115606f26ae32336b41fc811",
+      "replay_sha256": "a70a2407b5e88737c536452715530a33b0260e2f3263d8e91340938c0b4f8ea2",
+      "checkpoint_sha256": "e476dc7a8f5ec8c09f94a9ebf07e0b22d4d1216acc4ad0119ae07b6a7611f431",
+      "bot_sha256": "e6ff26a7483120457bdca64d27b4405f617273b616fe5bc62e741eb34710be8b",
+      "reproduced_actor_actions": 719,
+      "reproduced_rival_actions": 719,
+      "raw_decision_traces_reproduced": true,
+      "counts": {
+        "actor_turns": 719,
+        "same_observation_teacher_action_differences": 112,
+        "selector_calls": 352,
+        "request_seed": 138,
+        "model_calls": 352,
+        "different_from_conditional_teacher": 281,
+        "buy_seed_orders_changed_vs_teacher": 61,
+        "plant_request": 122,
+        "plant_requests_linked": 122,
+        "move_with_seed": 89,
+        "economic_reject": 3,
+        "unit_pass": 1446,
+        "market_executed": 272,
+        "seed_units_actually_bought": 125,
+        "unit_executed": 2520,
+        "official_successful_plants": 122
+      },
+      "selected_crops": {
+        "MELON": 38,
+        "STRAWBERRY": 50,
+        "WHEAT": 250,
+        "CARROT": 14
+      },
+      "official_planted_crops": {
+        "MELON": 13,
+        "STRAWBERRY": 11,
+        "WHEAT": 95,
+        "CARROT": 3
+      },
+      "original_inference_seconds": 0.027876100299181417,
+      "fallbacks": 0,
+      "load_errors": 0,
+      "inference_errors": 0
+    },
+    {
+      "game": "trained-smoke-31317742-market-1-trained",
+      "seed": 31317742,
+      "side": 1,
+      "opponent": "market",
+      "policy": "trained",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "842e3eb9d964f2ef1df1a3e9fcfb576e5c34e29d8c14d85e116f07a1c37a3bee",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "d1e2e7a664e0d054620538e0043528586aae7eeb23057858dc97529a7ff20cde",
+        "final_rewards": [
+          43994.0,
+          49357.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 413,
+            "unit:executed": 4502,
+            "unit:pass": 3353
+          },
+          "ordered_effect_sha256": "2cc0237747f3e18ad6a904e120e31b66421e4d35a8c6e5b9c844dd2599ec12a3",
+          "successful_plants": [
+            77,
+            55
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "trace_sha256": "292e860e85505b29fe58486036146dd332cab15fea7ce41f76303276d6b09308",
+      "replay_sha256": "22aa46fdf944d24b9b938f5fdc499ce6c22bc62d2ae7c2786081946de1671e92",
+      "checkpoint_sha256": "9806383a2d335fdfe21639f911946b29b36708aba89f7b3961a4f9999b0388fd",
+      "bot_sha256": "65959c89606b16f19d54513df6d70fecd6e79fd9fb933cc7f775e24d454f9a7a",
+      "reproduced_actor_actions": 719,
+      "reproduced_rival_actions": 719,
+      "raw_decision_traces_reproduced": true,
+      "counts": {
+        "actor_turns": 719,
+        "same_observation_teacher_action_differences": 4,
+        "selector_calls": 156,
+        "request_seed": 70,
+        "model_calls": 156,
+        "different_from_conditional_teacher": 8,
+        "buy_seed_orders_changed_vs_teacher": 1,
+        "plant_request": 55,
+        "plant_requests_linked": 55,
+        "move_with_seed": 31,
+        "unit_pass": 1911,
+        "market_executed": 213,
+        "seed_units_actually_bought": 57,
+        "unit_executed": 2297,
+        "official_successful_plants": 55
+      },
+      "selected_crops": {
+        "MELON": 78,
+        "STRAWBERRY": 66,
+        "CARROT": 2,
+        "WHEAT": 10
+      },
+      "official_planted_crops": {
+        "MELON": 23,
+        "STRAWBERRY": 27,
+        "WHEAT": 5
+      },
+      "original_inference_seconds": 0.011243700064369477,
+      "fallbacks": 0,
+      "load_errors": 0,
+      "inference_errors": 0
+    }
+  ],
+  "elapsed_seconds": 11.260309499994037
+}

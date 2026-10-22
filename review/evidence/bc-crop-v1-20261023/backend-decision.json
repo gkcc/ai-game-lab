@@ -1,0 +1,11 @@
+{
+  "recorded_utc": "2026-10-22T19:52:43.448597+00:00",
+  "training_not_started": true,
+  "selected_backend": "JAX 0.4.38 / Optax 0.2.4",
+  "reason": "Native PyTorch 2.6.0 CUDA wheel transfer too slow; >10 minutes with zero-byte pip destination, 8 MiB ranged probe took 98.52 seconds",
+  "isolation": "Independent WSL Python venv with a physical copy of existing validated GPU dependencies; source Lux environment and drivers unchanged",
+  "training_settings_unchanged": true,
+  "initialization": "NumPy default_rng(training.seed), uniform +/- 1/sqrt(fan_in), weights and bias; frozen before any gradient",
+  "cuda_memory": "XLA preallocation disabled",
+  "temporary_cleanup": "Stopped owned installer; guarded cleanup rejected 2496082434-byte preallocated wheel due bounded tree size; original marker retained and no bypass attempted"
+}
