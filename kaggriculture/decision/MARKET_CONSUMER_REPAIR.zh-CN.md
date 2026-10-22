@@ -39,7 +39,9 @@
 
 新证书为 `review/evidence/market-consumer-repair-20261023/official-reexecution-v3.json`，明确绑定新代码清单并引用旧开发证书、旧入口证书、旧冻结、旧账本SHA。这里的证书版本3不表示更改语义哈希算法；语义v1/v2及执行标签版本2保持不变。
 
-32场仍使用原开发候选SHA `80df717fc9c3638b6115ca1b9bd7afab6c2003af74e9a7e1ca91a336485581ea`；入口复现场使用交付候选SHA `61fbb4d27f7706d6bb00073892b1890d6f564d20d6440282fb41e40409e1bc15`。两份策略、原回放与旧证书均保留，没有把旧身份改成新身份。
+32场开发赛中，16条基线记录绑定冻结教师SHA `0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff`，16条候选记录绑定原开发候选SHA `80df717fc9c3638b6115ca1b9bd7afab6c2003af74e9a7e1ca91a336485581ea`；另1条入口复现记录绑定交付候选SHA `61fbb4d27f7706d6bb00073892b1890d6f564d20d6440282fb41e40409e1bc15`。策略源码、原回放与旧证书均保留，没有把旧身份改成新身份。
+
+原 `source-map.json` 的 `historical_policy_identity` 曾将32条开发记录笼统归为开发候选，表述不精确。该历史文件保持原字节；上述三组数量与SHA以逐场证书及[追加勘误](../../review/evidence/market-consumer-identity-clarification-20261023/clarification.json)为准。
 
 用新证书的开发场指标重跑未修改的账目分析程序，重算原配对与完整种子bootstrap，并用修复后的轨迹比较器读取全部32份Replay：全部结果相同。仍有54个非SELL绝对槽位不同的回合，非SELL内容/相对顺序及单位动作差异均为0。
 

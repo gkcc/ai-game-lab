@@ -1,0 +1,37 @@
+{
+  "base_commit": "8bff479f6684e3ec72ab6674048cf2f982250c06",
+  "scope": "Text-only clarification; historical source-map, certificates, code, policies and results are unchanged.",
+  "corrected_field": "historical_policy_identity",
+  "historical_source_map": "review/evidence/market-consumer-repair-20261023/source-map.json",
+  "historical_source_map_sha256": "25189a5ffba6bc9e5966113991719ff677c02def836243ab98898286ee402cf8",
+  "certificate": "review/evidence/market-consumer-repair-20261023/official-reexecution-v3.json",
+  "certificate_sha256": "397046c393bc5c0505a6f131420711910cd14e5875e985974ce59709cda4faa3",
+  "corrected_text": "32 development rows comprise 16 baseline rows bound to the frozen terminal teacher and 16 candidate rows bound to the preserved development candidate; 1 separate file-entry repeat binds the delivered candidate.",
+  "verified_rows": [
+    {
+      "kind": "development",
+      "policy": "baseline",
+      "bot_sha256": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+      "games": 16
+    },
+    {
+      "kind": "development",
+      "policy": "candidate",
+      "bot_sha256": "80df717fc9c3638b6115ca1b9bd7afab6c2003af74e9a7e1ca91a336485581ea",
+      "games": 16
+    },
+    {
+      "kind": "file_entry_repeat",
+      "policy": "candidate",
+      "bot_sha256": "61fbb4d27f7706d6bb00073892b1890d6f564d20d6440282fb41e40409e1bc15",
+      "games": 1
+    }
+  ],
+  "total_games": 33,
+  "development_games": 32,
+  "file_entry_repeats": 1,
+  "historical_certificates_modified": false,
+  "strategies_changed": false,
+  "new_games": 0,
+  "bc_started": false
+}
