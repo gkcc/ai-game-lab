@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "baseline_commit": "58adacb72af40be52779b322f371039d00afabdb",
+  "regressions": {
+    "tests": 9,
+    "failures": 0,
+    "errors": 0,
+    "real_cli": true,
+    "existing_144_game_ledger_recomputed_only_in_temporary_copies": true,
+    "legacy_statistics_equal": true,
+    "historical_new_independent_clusters": 0,
+    "historical_imitation_B_passed": null
+  },
+  "preservation": {
+    "runtime_files_checked": 1452,
+    "runtime_files_changed": 0,
+    "original_public_files": 412,
+    "public_byte_identical": 408,
+    "append_only_review_documents": 2,
+    "updated_unfrozen_entry_and_usage_files": 2,
+    "frozen_files_checked": 39,
+    "all_frozen_sha256_equal": true,
+    "old_freeze_sha256": "186512027ed150ec0f16a0c1688606ce974bf1a2d0127ea34fa40f2af0ab2465",
+    "old_summary_sha256": "93cecf49f25cafd722c1f9a921ca38841aca8762292edd403dedd3d24d84ca70",
+    "old_model_initial_sha256": "e476dc7a8f5ec8c09f94a9ebf07e0b22d4d1216acc4ad0119ae07b6a7611f431",
+    "old_model_trained_sha256": "9806383a2d335fdfe21639f911946b29b36708aba89f7b3961a4f9999b0388fd"
+  },
+  "scope": {
+    "training_runs": 0,
+    "new_games": 0,
+    "old_games_reexecuted": 0,
+    "current_model_and_default_unchanged": true,
+    "all_owned_test_scratch_removed": true
+  },
+  "source_sha256": {
+    "prepare.py": "d51a01555f4710932e80c8e3aa328cb0bb4179f08531473df12149126074ea8c",
+    "report.py": "c2de319c31cf798b2e78bdf7810905ccd39f1a2c49d285980bd62c6aaa4c9bb4",
+    "verify_prepare.py": "ff0d594da720ac517c0b47068afaab63c8f83bafa59dfedc5750dcbd6cc323c2",
+    "README.zh-CN.md": "4dfd331e30314363ac1420b401c80715ec64973a3bad74e1dd35beb6c9ee5195",
+    "PREPARATION_REPAIR.zh-CN.md": "d6d09b091b9b9e4535269a9f3f543810847bc7d8a08eccd2e472a65df1780579"
+  },
+  "limitations": [
+    "Novelty check covers current tracked public text and named local JSON evidence, not global use",
+    "Historical reproduction keeps reference settings and source identities but does not reconstruct an old machine or promise identical training weights",
+    "Frozen legacy prepare/analyze retained; new workflow uses prepare and report entry modules",
+    "This certificate verifies preparation and reporting, not a new model or strategy experiment"
+  ],
+  "resolved_during_validation": [
+    "Windows official checkout CRLF identity mapping explicitly checked against pinned Git blob and installed engine",
+    "Git path output decoded explicitly as UTF-8",
+    "Historical reference cannot supply new independent acceptance criteria",
+    "Empty explicit seed file rejected rather than defaulted"
+  ]
+}

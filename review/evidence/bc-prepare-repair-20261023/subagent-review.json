@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "independent_regressions": 9,
+  "frozen_files_checked": 39,
+  "all_frozen_hashes_match": true,
+  "reviewed_source_sha256": {
+    "prepare.py": "d51a01555f4710932e80c8e3aa328cb0bb4179f08531473df12149126074ea8c",
+    "report.py": "c2de319c31cf798b2e78bdf7810905ccd39f1a2c49d285980bd62c6aaa4c9bb4",
+    "verify_prepare.py": "ff0d594da720ac517c0b47068afaab63c8f83bafa59dfedc5750dcbd6cc323c2",
+    "README.zh-CN.md": "4dfd331e30314363ac1420b401c80715ec64973a3bad74e1dd35beb6c9ee5195"
+  },
+  "remaining_required_fixes": [],
+  "training_runs": 0,
+  "new_games": 0,
+  "temporary_directory_removed": true,
+  "scope": "Independent sub-agent review and targeted CLI/report regressions; no new game execution"
+}
