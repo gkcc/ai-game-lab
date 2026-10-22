@@ -26,6 +26,7 @@ def main():
     old=json.loads((a.evidence/'development-freeze.json').read_text(encoding='utf-8'))
     freeze=dict(registration_sha256=sha(out/'development-plan.json'),source_sha256=cfg['source_sha256'],runtime_sha256={n:sha(ROOT/n) for n in old['runtime_sha256']},
         original_freeze_sha256=sha(a.evidence/'development-freeze.json'),source_line_endings='Bind actual checkout bytes; original runtime/public mapping remains in source-map.json.',test_results_seen=True,reproduction_only=True)
+    freeze['runtime_sha256']['decision/action_views.py']=sha(ROOT/'decision/action_views.py')
     (out/'development-freeze.json').write_bytes((json.dumps(freeze,indent=2)+'\n').encode())
     print(json.dumps(dict(prepared=True,games=cfg['development_games'],candidate_sha256=cfg['source_sha256']['candidate.py'],reproduction_only=True)))
 

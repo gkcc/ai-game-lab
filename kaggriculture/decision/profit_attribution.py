@@ -8,14 +8,9 @@ from contextlib import contextmanager
 from copy import deepcopy
 from threading import Lock
 from decision.full_audit import reexecute, rules
+from decision.action_views import opcode_view as _opcode_view
 
 _LOCK=Lock()
-
-def _opcode_view(action):
-    """Label a payload without rewriting it or judging its official legality."""
-    if isinstance(action,list) and action and isinstance(action[0],str) and action[0]:
-        return action[0]
-    return 'invalid'
 
 class Attribution:
     def __init__(self, side):

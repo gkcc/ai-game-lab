@@ -1,0 +1,161 @@
+{
+  "passed": true,
+  "new_certificate_sha256": "397046c393bc5c0505a6f131420711910cd14e5875e985974ce59709cda4faa3",
+  "old_accounting_sha256": "f3e9d678b04964eeda581d04f1c1bdfc3f3d8ba4c68b48c97e4a53a24beda722",
+  "new_accounting_sha256": "f3e9d678b04964eeda581d04f1c1bdfc3f3d8ba4c68b48c97e4a53a24beda722",
+  "accounting_all_fields_equal": true,
+  "statistics_all_fields_equal": true,
+  "paired_results_all_fields_equal": true,
+  "paired_trajectory_records_all_fields_equal": true,
+  "pairs": 16,
+  "actual_trajectory_rows": [
+    {
+      "seed": 21277116,
+      "opponent": "market",
+      "side": 0,
+      "unit_action_turns_different": 0,
+      "non_sell_slot_turns_different": 1,
+      "non_sell_sequence_turns_different": 0,
+      "turns": 719
+    },
+    {
+      "seed": 21277116,
+      "opponent": "market",
+      "side": 1,
+      "unit_action_turns_different": 0,
+      "non_sell_slot_turns_different": 1,
+      "non_sell_sequence_turns_different": 0,
+      "turns": 719
+    },
+    {
+      "seed": 21277116,
+      "opponent": "teacher",
+      "side": 0,
+      "unit_action_turns_different": 0,
+      "non_sell_slot_turns_different": 3,
+      "non_sell_sequence_turns_different": 0,
+      "turns": 719
+    },
+    {
+      "seed": 21277116,
+      "opponent": "teacher",
+      "side": 1,
+      "unit_action_turns_different": 0,
+      "non_sell_slot_turns_different": 3,
+      "non_sell_sequence_turns_different": 0,
+      "turns": 719
+    },
+    {
+      "seed": 21277116,
+      "opponent": "tuned",
+      "side": 0,
+      "unit_action_turns_different": 0,
+      "non_sell_slot_turns_different": 5,
+      "non_sell_sequence_turns_different": 0,
+      "turns": 719
+    },
+    {
+      "seed": 21277116,
+      "opponent": "tuned",
+      "side": 1,
+      "unit_action_turns_different": 0,
+      "non_sell_slot_turns_different": 5,
+      "non_sell_sequence_turns_different": 0,
+      "turns": 719
+    },
+    {
+      "seed": 21277116,
+      "opponent": "v1",
+      "side": 0,
+      "unit_action_turns_different": 0,
+      "non_sell_slot_turns_different": 5,
+      "non_sell_sequence_turns_different": 0,
+      "turns": 719
+    },
+    {
+      "seed": 21277116,
+      "opponent": "v1",
+      "side": 1,
+      "unit_action_turns_different": 0,
+      "non_sell_slot_turns_different": 5,
+      "non_sell_sequence_turns_different": 0,
+      "turns": 719
+    },
+    {
+      "seed": 21473311,
+      "opponent": "market",
+      "side": 0,
+      "unit_action_turns_different": 0,
+      "non_sell_slot_turns_different": 3,
+      "non_sell_sequence_turns_different": 0,
+      "turns": 719
+    },
+    {
+      "seed": 21473311,
+      "opponent": "market",
+      "side": 1,
+      "unit_action_turns_different": 0,
+      "non_sell_slot_turns_different": 3,
+      "non_sell_sequence_turns_different": 0,
+      "turns": 719
+    },
+    {
+      "seed": 21473311,
+      "opponent": "teacher",
+      "side": 0,
+      "unit_action_turns_different": 0,
+      "non_sell_slot_turns_different": 3,
+      "non_sell_sequence_turns_different": 0,
+      "turns": 719
+    },
+    {
+      "seed": 21473311,
+      "opponent": "teacher",
+      "side": 1,
+      "unit_action_turns_different": 0,
+      "non_sell_slot_turns_different": 3,
+      "non_sell_sequence_turns_different": 0,
+      "turns": 719
+    },
+    {
+      "seed": 21473311,
+      "opponent": "tuned",
+      "side": 0,
+      "unit_action_turns_different": 0,
+      "non_sell_slot_turns_different": 3,
+      "non_sell_sequence_turns_different": 0,
+      "turns": 719
+    },
+    {
+      "seed": 21473311,
+      "opponent": "tuned",
+      "side": 1,
+      "unit_action_turns_different": 0,
+      "non_sell_slot_turns_different": 3,
+      "non_sell_sequence_turns_different": 0,
+      "turns": 719
+    },
+    {
+      "seed": 21473311,
+      "opponent": "v1",
+      "side": 0,
+      "unit_action_turns_different": 0,
+      "non_sell_slot_turns_different": 4,
+      "non_sell_sequence_turns_different": 0,
+      "turns": 719
+    },
+    {
+      "seed": 21473311,
+      "opponent": "v1",
+      "side": 1,
+      "unit_action_turns_different": 0,
+      "non_sell_slot_turns_different": 4,
+      "non_sell_sequence_turns_different": 0,
+      "turns": 719
+    }
+  ],
+  "primary_profit_delta": 67.66666666666667,
+  "development_economic_gate_passed": false,
+  "formal_test_games": 0,
+  "scope": "Same historical inputs, no new strategy result or independent sample. Complete seed bootstrap remains descriptive with two development seeds."
+}

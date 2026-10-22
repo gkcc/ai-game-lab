@@ -6,6 +6,7 @@ from decision.verify_mechanisms import env, obs, step, PASS, rules
 from decision.execution import ExecutionTrace
 from decision.profit_attribution import Attribution
 from decision.semantics import canonical
+from decision.action_views import non_sell_slots
 
 ROOT=Path(__file__).resolve().parents[1]
 def load(path):
@@ -18,8 +19,7 @@ def compare(base,candidate,o,cfg):
     a,b=base(o,cfg),candidate(o,cfg)
     assert o==before,'observation mutated'
     assert a['farmer']==b['farmer'] and a['hands']==b['hands']
-    non=lambda x:[(i,v) for i,v in enumerate(x['market']) if v[0]!='SELL']
-    assert non(a)==non(b),'non-SELL slot/quantity mismatch'
+    assert non_sell_slots(a['market'])==non_sell_slots(b['market']),'non-SELL slot/quantity mismatch'
     assert len(b['market'])<=cfg['maxMarketOrdersPerTurn']
     return a,b
 

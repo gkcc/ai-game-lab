@@ -1,0 +1,606 @@
+{
+  "passed": true,
+  "malformed_cases": [
+    {
+      "side": 0,
+      "payload": [],
+      "label": "invalid",
+      "status": "no_effect",
+      "executed_units": 0,
+      "cash_delta": 0,
+      "raw_unchanged": true,
+      "official_states_equal": true,
+      "same_input_comparison_passed": true
+    },
+    {
+      "side": 0,
+      "payload": null,
+      "label": "invalid",
+      "status": "no_effect",
+      "executed_units": 0,
+      "cash_delta": 0,
+      "raw_unchanged": true,
+      "official_states_equal": true,
+      "same_input_comparison_passed": true
+    },
+    {
+      "side": 0,
+      "payload": {},
+      "label": "invalid",
+      "status": "no_effect",
+      "executed_units": 0,
+      "cash_delta": 0,
+      "raw_unchanged": true,
+      "official_states_equal": true,
+      "same_input_comparison_passed": true
+    },
+    {
+      "side": 0,
+      "payload": 7,
+      "label": "invalid",
+      "status": "no_effect",
+      "executed_units": 0,
+      "cash_delta": 0,
+      "raw_unchanged": true,
+      "official_states_equal": true,
+      "same_input_comparison_passed": true
+    },
+    {
+      "side": 0,
+      "payload": "SELL",
+      "label": "invalid",
+      "status": "no_effect",
+      "executed_units": 0,
+      "cash_delta": 0,
+      "raw_unchanged": true,
+      "official_states_equal": true,
+      "same_input_comparison_passed": true
+    },
+    {
+      "side": 0,
+      "payload": [
+        null
+      ],
+      "label": "invalid",
+      "status": "no_effect",
+      "executed_units": 0,
+      "cash_delta": 0,
+      "raw_unchanged": true,
+      "official_states_equal": true,
+      "same_input_comparison_passed": true
+    },
+    {
+      "side": 0,
+      "payload": [
+        7
+      ],
+      "label": "invalid",
+      "status": "no_effect",
+      "executed_units": 0,
+      "cash_delta": 0,
+      "raw_unchanged": true,
+      "official_states_equal": true,
+      "same_input_comparison_passed": true
+    },
+    {
+      "side": 0,
+      "payload": [
+        ""
+      ],
+      "label": "invalid",
+      "status": "no_effect",
+      "executed_units": 0,
+      "cash_delta": 0,
+      "raw_unchanged": true,
+      "official_states_equal": true,
+      "same_input_comparison_passed": true
+    },
+    {
+      "side": 0,
+      "payload": [
+        {}
+      ],
+      "label": "invalid",
+      "status": "no_effect",
+      "executed_units": 0,
+      "cash_delta": 0,
+      "raw_unchanged": true,
+      "official_states_equal": true,
+      "same_input_comparison_passed": true
+    },
+    {
+      "side": 0,
+      "payload": [
+        "UNRECOGNIZED"
+      ],
+      "label": "UNRECOGNIZED",
+      "status": "no_effect",
+      "executed_units": 0,
+      "cash_delta": 0,
+      "raw_unchanged": true,
+      "official_states_equal": true,
+      "same_input_comparison_passed": true
+    },
+    {
+      "side": 0,
+      "payload": [
+        "SELL"
+      ],
+      "label": "SELL",
+      "status": "no_effect",
+      "executed_units": 0,
+      "cash_delta": 0,
+      "raw_unchanged": true,
+      "official_states_equal": true,
+      "same_input_comparison_passed": true
+    },
+    {
+      "side": 1,
+      "payload": [],
+      "label": "invalid",
+      "status": "no_effect",
+      "executed_units": 0,
+      "cash_delta": 0,
+      "raw_unchanged": true,
+      "official_states_equal": true,
+      "same_input_comparison_passed": true
+    },
+    {
+      "side": 1,
+      "payload": null,
+      "label": "invalid",
+      "status": "no_effect",
+      "executed_units": 0,
+      "cash_delta": 0,
+      "raw_unchanged": true,
+      "official_states_equal": true,
+      "same_input_comparison_passed": true
+    },
+    {
+      "side": 1,
+      "payload": {},
+      "label": "invalid",
+      "status": "no_effect",
+      "executed_units": 0,
+      "cash_delta": 0,
+      "raw_unchanged": true,
+      "official_states_equal": true,
+      "same_input_comparison_passed": true
+    },
+    {
+      "side": 1,
+      "payload": 7,
+      "label": "invalid",
+      "status": "no_effect",
+      "executed_units": 0,
+      "cash_delta": 0,
+      "raw_unchanged": true,
+      "official_states_equal": true,
+      "same_input_comparison_passed": true
+    },
+    {
+      "side": 1,
+      "payload": "SELL",
+      "label": "invalid",
+      "status": "no_effect",
+      "executed_units": 0,
+      "cash_delta": 0,
+      "raw_unchanged": true,
+      "official_states_equal": true,
+      "same_input_comparison_passed": true
+    },
+    {
+      "side": 1,
+      "payload": [
+        null
+      ],
+      "label": "invalid",
+      "status": "no_effect",
+      "executed_units": 0,
+      "cash_delta": 0,
+      "raw_unchanged": true,
+      "official_states_equal": true,
+      "same_input_comparison_passed": true
+    },
+    {
+      "side": 1,
+      "payload": [
+        7
+      ],
+      "label": "invalid",
+      "status": "no_effect",
+      "executed_units": 0,
+      "cash_delta": 0,
+      "raw_unchanged": true,
+      "official_states_equal": true,
+      "same_input_comparison_passed": true
+    },
+    {
+      "side": 1,
+      "payload": [
+        ""
+      ],
+      "label": "invalid",
+      "status": "no_effect",
+      "executed_units": 0,
+      "cash_delta": 0,
+      "raw_unchanged": true,
+      "official_states_equal": true,
+      "same_input_comparison_passed": true
+    },
+    {
+      "side": 1,
+      "payload": [
+        {}
+      ],
+      "label": "invalid",
+      "status": "no_effect",
+      "executed_units": 0,
+      "cash_delta": 0,
+      "raw_unchanged": true,
+      "official_states_equal": true,
+      "same_input_comparison_passed": true
+    },
+    {
+      "side": 1,
+      "payload": [
+        "UNRECOGNIZED"
+      ],
+      "label": "UNRECOGNIZED",
+      "status": "no_effect",
+      "executed_units": 0,
+      "cash_delta": 0,
+      "raw_unchanged": true,
+      "official_states_equal": true,
+      "same_input_comparison_passed": true
+    },
+    {
+      "side": 1,
+      "payload": [
+        "SELL"
+      ],
+      "label": "SELL",
+      "status": "no_effect",
+      "executed_units": 0,
+      "cash_delta": 0,
+      "raw_unchanged": true,
+      "official_states_equal": true,
+      "same_input_comparison_passed": true
+    }
+  ],
+  "valid_and_error_cases": [
+    {
+      "side": 0,
+      "partial_requested_units": 5,
+      "partial_filled_units": 2,
+      "partial_sale_cash": 69.0,
+      "purchase_cost": 20,
+      "invalid_non_sell_order_count": 1,
+      "ignored_order_count": 1,
+      "parser_rejected_orders_at_cap": 10,
+      "official_error_preserved": [
+        "OverflowError",
+        "cannot convert float infinity to integer"
+      ]
+    },
+    {
+      "side": 1,
+      "partial_requested_units": 5,
+      "partial_filled_units": 2,
+      "partial_sale_cash": 69.0,
+      "purchase_cost": 20,
+      "invalid_non_sell_order_count": 1,
+      "ignored_order_count": 1,
+      "parser_rejected_orders_at_cap": 10,
+      "official_error_preserved": [
+        "OverflowError",
+        "cannot convert float infinity to integer"
+      ]
+    }
+  ],
+  "comparator_cases": [
+    {
+      "left": [
+        []
+      ],
+      "right": [
+        [
+          null
+        ]
+      ],
+      "unit_action_turns_different": 0,
+      "non_sell_slot_turns_different": 1,
+      "non_sell_sequence_turns_different": 1,
+      "turns": 1
+    },
+    {
+      "left": [
+        [],
+        [
+          "SELL",
+          "WHEAT",
+          1
+        ]
+      ],
+      "right": [
+        [
+          "SELL",
+          "WHEAT",
+          1
+        ],
+        []
+      ],
+      "unit_action_turns_different": 0,
+      "non_sell_slot_turns_different": 1,
+      "non_sell_sequence_turns_different": 0,
+      "turns": 1
+    },
+    {
+      "left": [
+        [],
+        [
+          "SELL",
+          "WHEAT",
+          1
+        ]
+      ],
+      "right": [
+        [],
+        [
+          "SELL",
+          "WHEAT",
+          2
+        ]
+      ],
+      "unit_action_turns_different": 0,
+      "non_sell_slot_turns_different": 0,
+      "non_sell_sequence_turns_different": 0,
+      "turns": 1
+    }
+  ],
+  "complete_boundary_games": [
+    {
+      "seed": 6137181,
+      "opponent": "opponent",
+      "side": 0,
+      "policy": "candidate",
+      "replay_gzip_sha256": "84d97c202cf90a54fda7ee0ec19ebcd3a5d88f8d9a754db614b291af8f751958",
+      "bot_sha256": "47c5d9da600847802eccc6ef179aaba6d09e6ffbce9152ed89197ef1c55789f4",
+      "rival_sha256": "1aa89b3eaa556a27b86d9522b1ce983ff7713be252b366bcbeed4bcfffd1569d",
+      "kind": "boundary_regression",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "ed60b5fd62f58590f1ff3ecc3393a7e96150bceaa98ef68e792c4487f3c85eee",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "87413490e3c7fbf476397603651170f14b4ddfad810b5c4657534da8da7a359c",
+        "final_rewards": [
+          3000.0,
+          3000.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:no_effect": 719,
+            "unit:pass": 1438
+          },
+          "ordered_effect_sha256": "4545c676fce1cc747e69b860c646a2af5fbe42d87eb124c27adf3e7e56f9ddff",
+          "successful_plants": [
+            0,
+            0
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "metrics": {
+        "counts": {
+          "unit:PASS:pass": 719,
+          "cash:invalid:": 0,
+          "market_units:invalid:": 0,
+          "cash:UNRECOGNIZED:": 0,
+          "market_units:UNRECOGNIZED:": 0,
+          "cash:SELL:": 0,
+          "market_units:SELL:": 0,
+          "automatic_drop_calls": 29,
+          "automatic_drop_discard_units": 0
+        },
+        "sales": {
+          "": {
+            "units": 0,
+            "revenue": 0
+          }
+        },
+        "production": {},
+        "market_cash": 0,
+        "cash_residual": 0.0,
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "opponent_cash_and_sales": {
+        "market_cash": 0,
+        "cash_residual": 0.0,
+        "sales": {},
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "same_input_contract": {
+        "passed": true,
+        "non_sell_slot_or_quantity_mismatches": 0,
+        "unit_mismatches": 0,
+        "observations": 719,
+        "sell_decision_differences": 0
+      },
+      "request_outcomes": {
+        "unit:pass": 719,
+        "market:invalid:no_effect": 589,
+        "market_invalid": 719,
+        "non_sell_requested_orders": 654,
+        "non_sell_incomplete_orders": 654,
+        "market:UNRECOGNIZED:no_effect": 65,
+        "market:SELL:no_effect": 65,
+        "sell_requested_units": 0
+      },
+      "storage": {
+        "max_observed_shed_units": 0,
+        "mean_observed_shed_units": 0.0
+      },
+      "policy_actions_reproduced": true,
+      "opponent_actions_reproduced": true
+    },
+    {
+      "seed": 6137181,
+      "opponent": "opponent",
+      "side": 1,
+      "policy": "candidate",
+      "replay_gzip_sha256": "5b4a06cb1524ffa66211d685d993d82152b59141a62e3beac878f8c4bc8c672b",
+      "bot_sha256": "47c5d9da600847802eccc6ef179aaba6d09e6ffbce9152ed89197ef1c55789f4",
+      "rival_sha256": "1aa89b3eaa556a27b86d9522b1ce983ff7713be252b366bcbeed4bcfffd1569d",
+      "kind": "boundary_regression",
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "59a65930e20c9b65989e86be416abb00167f96f2d5b50a3f20af29b49b7b0d56",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "2c7fbe66a2108fcd377f39e9724a70f2a99632e4db01388e5ea343118736bc36",
+        "final_rewards": [
+          3000.0,
+          3000.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:no_effect": 719,
+            "unit:pass": 1438
+          },
+          "ordered_effect_sha256": "4545c676fce1cc747e69b860c646a2af5fbe42d87eb124c27adf3e7e56f9ddff",
+          "successful_plants": [
+            0,
+            0
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "metrics": {
+        "counts": {
+          "unit:PASS:pass": 719,
+          "cash:invalid:": 0,
+          "market_units:invalid:": 0,
+          "cash:UNRECOGNIZED:": 0,
+          "market_units:UNRECOGNIZED:": 0,
+          "cash:SELL:": 0,
+          "market_units:SELL:": 0,
+          "automatic_drop_calls": 29,
+          "automatic_drop_discard_units": 0
+        },
+        "sales": {
+          "": {
+            "units": 0,
+            "revenue": 0
+          }
+        },
+        "production": {},
+        "market_cash": 0,
+        "cash_residual": 0.0,
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "opponent_cash_and_sales": {
+        "market_cash": 0,
+        "cash_residual": 0.0,
+        "sales": {},
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      },
+      "same_input_contract": {
+        "passed": true,
+        "non_sell_slot_or_quantity_mismatches": 0,
+        "unit_mismatches": 0,
+        "observations": 719,
+        "sell_decision_differences": 0
+      },
+      "request_outcomes": {
+        "unit:pass": 719,
+        "market:invalid:no_effect": 589,
+        "market_invalid": 719,
+        "non_sell_requested_orders": 654,
+        "non_sell_incomplete_orders": 654,
+        "market:UNRECOGNIZED:no_effect": 65,
+        "market:SELL:no_effect": 65,
+        "sell_requested_units": 0
+      },
+      "storage": {
+        "max_observed_shed_units": 0,
+        "mean_observed_shed_units": 0.0
+      },
+      "policy_actions_reproduced": true,
+      "opponent_actions_reproduced": true
+    }
+  ],
+  "full_official_entry_to_auditor_games": 2,
+  "official_reexecution_transitions": 1438,
+  "scope": "Actual official transitions and full replay check(); raw requests preserved. Comparator expects a market list; this is not arbitrary-policy legality certification. Boundary games excluded from historical economics."
+}

@@ -1,0 +1,624 @@
+{
+  "passed": true,
+  "malformed_official_entry_cases": [
+    {
+      "side": 0,
+      "branch": "farmer",
+      "payload": [],
+      "status": "no_effect",
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 0,
+      "branch": "farmer",
+      "payload": null,
+      "status": "no_effect",
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 0,
+      "branch": "farmer",
+      "payload": {},
+      "status": "no_effect",
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 0,
+      "branch": "farmer",
+      "payload": 7,
+      "status": "no_effect",
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 0,
+      "branch": "farmer",
+      "payload": "PASS",
+      "status": "no_effect",
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 0,
+      "branch": "farmer",
+      "payload": [
+        null
+      ],
+      "status": "no_effect",
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 0,
+      "branch": "farmer",
+      "payload": [
+        7
+      ],
+      "status": "no_effect",
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 0,
+      "branch": "farmer",
+      "payload": [
+        ""
+      ],
+      "status": "no_effect",
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 0,
+      "branch": "hand",
+      "payload": [],
+      "status": "no_effect",
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 0,
+      "branch": "hand",
+      "payload": null,
+      "status": "no_effect",
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 0,
+      "branch": "hand",
+      "payload": {},
+      "status": "no_effect",
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 0,
+      "branch": "hand",
+      "payload": 7,
+      "status": "no_effect",
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 0,
+      "branch": "hand",
+      "payload": "PASS",
+      "status": "no_effect",
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 0,
+      "branch": "hand",
+      "payload": [
+        null
+      ],
+      "status": "no_effect",
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 0,
+      "branch": "hand",
+      "payload": [
+        7
+      ],
+      "status": "no_effect",
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 0,
+      "branch": "hand",
+      "payload": [
+        ""
+      ],
+      "status": "no_effect",
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 0,
+      "branch": "market",
+      "payload": [],
+      "status": "no_effect",
+      "executed_units": 0,
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 0,
+      "branch": "market",
+      "payload": null,
+      "status": "no_effect",
+      "executed_units": 0,
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 0,
+      "branch": "market",
+      "payload": {},
+      "status": "no_effect",
+      "executed_units": 0,
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 0,
+      "branch": "market",
+      "payload": 7,
+      "status": "no_effect",
+      "executed_units": 0,
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 0,
+      "branch": "market",
+      "payload": "SELL",
+      "status": "no_effect",
+      "executed_units": 0,
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 0,
+      "branch": "market",
+      "payload": [
+        null
+      ],
+      "status": "no_effect",
+      "executed_units": 0,
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 0,
+      "branch": "market",
+      "payload": [
+        7
+      ],
+      "status": "no_effect",
+      "executed_units": 0,
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 0,
+      "branch": "market",
+      "payload": [
+        ""
+      ],
+      "status": "no_effect",
+      "executed_units": 0,
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 0,
+      "branch": "market",
+      "payload": [
+        {}
+      ],
+      "status": "no_effect",
+      "executed_units": 0,
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 1,
+      "branch": "farmer",
+      "payload": [],
+      "status": "no_effect",
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 1,
+      "branch": "farmer",
+      "payload": null,
+      "status": "no_effect",
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 1,
+      "branch": "farmer",
+      "payload": {},
+      "status": "no_effect",
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 1,
+      "branch": "farmer",
+      "payload": 7,
+      "status": "no_effect",
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 1,
+      "branch": "farmer",
+      "payload": "PASS",
+      "status": "no_effect",
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 1,
+      "branch": "farmer",
+      "payload": [
+        null
+      ],
+      "status": "no_effect",
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 1,
+      "branch": "farmer",
+      "payload": [
+        7
+      ],
+      "status": "no_effect",
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 1,
+      "branch": "farmer",
+      "payload": [
+        ""
+      ],
+      "status": "no_effect",
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 1,
+      "branch": "hand",
+      "payload": [],
+      "status": "no_effect",
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 1,
+      "branch": "hand",
+      "payload": null,
+      "status": "no_effect",
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 1,
+      "branch": "hand",
+      "payload": {},
+      "status": "no_effect",
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 1,
+      "branch": "hand",
+      "payload": 7,
+      "status": "no_effect",
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 1,
+      "branch": "hand",
+      "payload": "PASS",
+      "status": "no_effect",
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 1,
+      "branch": "hand",
+      "payload": [
+        null
+      ],
+      "status": "no_effect",
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 1,
+      "branch": "hand",
+      "payload": [
+        7
+      ],
+      "status": "no_effect",
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 1,
+      "branch": "hand",
+      "payload": [
+        ""
+      ],
+      "status": "no_effect",
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 1,
+      "branch": "market",
+      "payload": [],
+      "status": "no_effect",
+      "executed_units": 0,
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 1,
+      "branch": "market",
+      "payload": null,
+      "status": "no_effect",
+      "executed_units": 0,
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 1,
+      "branch": "market",
+      "payload": {},
+      "status": "no_effect",
+      "executed_units": 0,
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 1,
+      "branch": "market",
+      "payload": 7,
+      "status": "no_effect",
+      "executed_units": 0,
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 1,
+      "branch": "market",
+      "payload": "SELL",
+      "status": "no_effect",
+      "executed_units": 0,
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 1,
+      "branch": "market",
+      "payload": [
+        null
+      ],
+      "status": "no_effect",
+      "executed_units": 0,
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 1,
+      "branch": "market",
+      "payload": [
+        7
+      ],
+      "status": "no_effect",
+      "executed_units": 0,
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 1,
+      "branch": "market",
+      "payload": [
+        ""
+      ],
+      "status": "no_effect",
+      "executed_units": 0,
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    },
+    {
+      "side": 1,
+      "branch": "market",
+      "payload": [
+        {}
+      ],
+      "status": "no_effect",
+      "executed_units": 0,
+      "raw_event_unchanged": true,
+      "official_state_equal": true
+    }
+  ],
+  "valid_and_error_cases": [
+    {
+      "side": 0,
+      "pass_preserved": true,
+      "unknown_string_preserved": true,
+      "atomic_block_preserved": true,
+      "partial_sale_units": 2,
+      "partial_sale_cash": 69.0,
+      "buy_seed_cost": 20,
+      "harvest_drop_sale_units": 3,
+      "cash_residual": 0,
+      "original_error_preserved": [
+        "TypeError",
+        "unhashable type: 'Struct'"
+      ]
+    },
+    {
+      "side": 1,
+      "pass_preserved": true,
+      "unknown_string_preserved": true,
+      "atomic_block_preserved": true,
+      "partial_sale_units": 2,
+      "partial_sale_cash": 69.0,
+      "buy_seed_cost": 20,
+      "harvest_drop_sale_units": 3,
+      "cash_residual": 0,
+      "original_error_preserved": [
+        "TypeError",
+        "unhashable type: 'Struct'"
+      ]
+    }
+  ],
+  "complete_boundary_replays": [
+    {
+      "side": 0,
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "c4b005f9c9031fddf0f391e5a7a1c18f9e7225f250f1f5b177159625a3f65b77",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "48688523a0b1a9b7425a25cb1eeb2c6b44c68b79c9a67aad87f4d46a73d4f59c",
+        "final_rewards": [
+          3000.0,
+          3000.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:no_effect": 719,
+            "unit:no_effect": 719,
+            "unit:pass": 719
+          },
+          "ordered_effect_sha256": "ef017136e9918e8d394713fc9f8d97cb2d45008b4ae9a0c0710df8ad7b8ba7c8",
+          "successful_plants": [
+            0,
+            0
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "metrics": {
+        "counts": {
+          "unit:invalid:no_effect": 719,
+          "cash:invalid:": 0,
+          "market_units:invalid:": 0,
+          "automatic_drop_calls": 29,
+          "automatic_drop_discard_units": 0
+        },
+        "sales": {},
+        "production": {},
+        "market_cash": 0,
+        "cash_residual": 0.0,
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      }
+    },
+    {
+      "side": 1,
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "c4fd85c930f62b88ee41609f5cb8765362c76e7fd91bc89b0ceb5427d5b110e6",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "752559c1a810140f9e209acb15facd40f8c113d0a81bff72d3f512bdbea1cf6e",
+        "final_rewards": [
+          3000.0,
+          3000.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:no_effect": 719,
+            "unit:no_effect": 719,
+            "unit:pass": 719
+          },
+          "ordered_effect_sha256": "c16ee64c814d16dfd978425ba81a2410f8e4e42b61e9db12bfcd3f10214f42a9",
+          "successful_plants": [
+            0,
+            0
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "metrics": {
+        "counts": {
+          "unit:invalid:no_effect": 719,
+          "cash:invalid:": 0,
+          "market_units:invalid:": 0,
+          "automatic_drop_calls": 29,
+          "automatic_drop_discard_units": 0
+        },
+        "sales": {},
+        "production": {},
+        "market_cash": 0,
+        "cash_residual": 0.0,
+        "terminal_stock": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        }
+      }
+    }
+  ],
+  "scope": "Installed official engine -> actual tracer -> repaired consumer; raw events unmodified, malformed no-effects distinct from PASS; privileged telemetry remains offline"
+}

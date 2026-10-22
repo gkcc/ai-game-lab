@@ -1,0 +1,176 @@
+{
+  "code": [
+    {
+      "runtime_path": "bots/teacher_fertilizer_terminal_v2.py",
+      "runtime_sha256": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+      "public_path": "kaggriculture/bots/teacher_fertilizer_terminal_v2.py",
+      "public_sha256": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+      "relation": "byte_identical"
+    },
+    {
+      "runtime_path": "bots/teacher_market_v1.py",
+      "runtime_sha256": "61fbb4d27f7706d6bb00073892b1890d6f564d20d6440282fb41e40409e1bc15",
+      "public_path": "kaggriculture/bots/teacher_market_v1.py",
+      "public_sha256": "61fbb4d27f7706d6bb00073892b1890d6f564d20d6440282fb41e40409e1bc15",
+      "relation": "byte_identical"
+    },
+    {
+      "runtime_path": "decision/action_views.py",
+      "runtime_sha256": "48dac3a44a42cf149ad94965a44c72405a9cdff80c885ec522fcc4f212ffc4a6",
+      "public_path": "kaggriculture/decision/action_views.py",
+      "public_sha256": "48dac3a44a42cf149ad94965a44c72405a9cdff80c885ec522fcc4f212ffc4a6",
+      "relation": "byte_identical"
+    },
+    {
+      "runtime_path": "decision/api.py",
+      "runtime_sha256": "3ef4025bde61d240b298cbe4d31291f25021baaf5b396f5540bbfcdda4231917",
+      "public_path": "kaggriculture/decision/api.py",
+      "public_sha256": "3ef4025bde61d240b298cbe4d31291f25021baaf5b396f5540bbfcdda4231917",
+      "relation": "byte_identical"
+    },
+    {
+      "runtime_path": "decision/audit_market_teacher.py",
+      "runtime_sha256": "f0f35dcbf8edeff90db5762da81b09ee2208e7af2c9921c0176bcb32c6381dc0",
+      "public_path": "kaggriculture/decision/audit_market_teacher.py",
+      "public_sha256": "f0f35dcbf8edeff90db5762da81b09ee2208e7af2c9921c0176bcb32c6381dc0",
+      "relation": "byte_identical"
+    },
+    {
+      "runtime_path": "decision/compare_market_trajectories.py",
+      "runtime_sha256": "b279ba0484e1c97b0fbe5b72e37f9172b75d3eb534f00b25b3d3eb78da286bf3",
+      "public_path": "kaggriculture/decision/compare_market_trajectories.py",
+      "public_sha256": "b279ba0484e1c97b0fbe5b72e37f9172b75d3eb534f00b25b3d3eb78da286bf3",
+      "relation": "byte_identical"
+    },
+    {
+      "runtime_path": "decision/execution.py",
+      "runtime_sha256": "cbf38b17ca9c4c1c4f82ddb583ff59e4f605a0e8d8e971ef5bfc3664b2c76378",
+      "public_path": "kaggriculture/decision/execution.py",
+      "public_sha256": "e1b8acb32ef0b31c0de3048d481d84babf3b07510d18a9d3b2fd3da471d8f239",
+      "relation": "LF_public_to_CRLF_runtime"
+    },
+    {
+      "runtime_path": "decision/full_audit.py",
+      "runtime_sha256": "84f7c7b4316fb98791c51b933f5329a271b8bc9aec60eebe133f6d433ec4510d",
+      "public_path": "kaggriculture/decision/full_audit.py",
+      "public_sha256": "0ae434974ac8fced76033c26b9c27f6ffce24e1f598f6fba6c7dc11306d903a8",
+      "relation": "LF_public_to_CRLF_runtime"
+    },
+    {
+      "runtime_path": "decision/profit_attribution.py",
+      "runtime_sha256": "bea6118d126115ef2899e8e08fddf4ded7987f4ef91df6c206239ef096f77d61",
+      "public_path": "kaggriculture/decision/profit_attribution.py",
+      "public_sha256": "bea6118d126115ef2899e8e08fddf4ded7987f4ef91df6c206239ef096f77d61",
+      "relation": "byte_identical"
+    },
+    {
+      "runtime_path": "decision/recheck_market_consumer.py",
+      "runtime_sha256": "15563c7e42ec84d1d5986bb58b0af0ae6e5abcdd335609f7326dd8f0548b2730",
+      "public_path": "kaggriculture/decision/recheck_market_consumer.py",
+      "public_sha256": "15563c7e42ec84d1d5986bb58b0af0ae6e5abcdd335609f7326dd8f0548b2730",
+      "relation": "byte_identical"
+    },
+    {
+      "runtime_path": "decision/semantics.py",
+      "runtime_sha256": "9ac62d0df7adca84c0feff805b2979bb45f9f9f4c2064d1e2b5c48efd3e779a5",
+      "public_path": "kaggriculture/decision/semantics.py",
+      "public_sha256": "9ac62d0df7adca84c0feff805b2979bb45f9f9f4c2064d1e2b5c48efd3e779a5",
+      "relation": "byte_identical"
+    },
+    {
+      "runtime_path": "decision/verify_attribution_consumer.py",
+      "runtime_sha256": "5536c36472eda93eed2879b0d9b807dbca3aa4d5ea658d1e7e2e980b79c921eb",
+      "public_path": "kaggriculture/decision/verify_attribution_consumer.py",
+      "public_sha256": "5536c36472eda93eed2879b0d9b807dbca3aa4d5ea658d1e7e2e980b79c921eb",
+      "relation": "byte_identical"
+    },
+    {
+      "runtime_path": "decision/verify_market_consumer.py",
+      "runtime_sha256": "b832bae031b57be9079d174153ed5bf63710382a6cbb9f3db372cf1664d89ee5",
+      "public_path": "kaggriculture/decision/verify_market_consumer.py",
+      "public_sha256": "b832bae031b57be9079d174153ed5bf63710382a6cbb9f3db372cf1664d89ee5",
+      "relation": "byte_identical"
+    },
+    {
+      "runtime_path": "decision/verify_market_entry.py",
+      "runtime_sha256": "392daccc0db6fb4b8e3c5d7ed2b0bc1f312a6b0d74a7ee4c0d3cdc972114f058",
+      "public_path": "kaggriculture/decision/verify_market_entry.py",
+      "public_sha256": "392daccc0db6fb4b8e3c5d7ed2b0bc1f312a6b0d74a7ee4c0d3cdc972114f058",
+      "relation": "byte_identical"
+    },
+    {
+      "runtime_path": "decision/verify_market_teacher.py",
+      "runtime_sha256": "0a59718731aecfa6fb499f67bc7f92daa76053830f4ca582143e46cdc2422ea8",
+      "public_path": "kaggriculture/decision/verify_market_teacher.py",
+      "public_sha256": "0a59718731aecfa6fb499f67bc7f92daa76053830f4ca582143e46cdc2422ea8",
+      "relation": "byte_identical"
+    },
+    {
+      "runtime_path": "decision/verify_mechanisms.py",
+      "runtime_sha256": "cc82fd118abd94e92a8833587aa2bfb9117214a8a5b00e8054225732af47fbbf",
+      "public_path": "kaggriculture/decision/verify_mechanisms.py",
+      "public_sha256": "cc82fd118abd94e92a8833587aa2bfb9117214a8a5b00e8054225732af47fbbf",
+      "relation": "byte_identical"
+    },
+    {
+      "runtime_path": "learning/analyze_market_timing.py",
+      "runtime_sha256": "4f9810a3105859c140fad24c1ee4ff04657b16329e2dbf22f057a93270f369fc",
+      "public_path": "kaggriculture/learning/analyze_market_timing.py",
+      "public_sha256": "4f9810a3105859c140fad24c1ee4ff04657b16329e2dbf22f057a93270f369fc",
+      "relation": "byte_identical"
+    },
+    {
+      "runtime_path": "learning/evaluate_holdout.py",
+      "runtime_sha256": "df599e139893081f0a5307b0aa9cf299e2d14d4d4a221672b7aa9ac1d3747d82",
+      "public_path": "kaggriculture/learning/evaluate_holdout.py",
+      "public_sha256": "df599e139893081f0a5307b0aa9cf299e2d14d4d4a221672b7aa9ac1d3747d82",
+      "relation": "byte_identical"
+    },
+    {
+      "runtime_path": "learning/market_sell_overlay.py",
+      "runtime_sha256": "e35f5ec729bc7238d3e000ca9f53566358040fd0a39225754a9b1909e24dc685",
+      "public_path": "kaggriculture/learning/market_sell_overlay.py",
+      "public_sha256": "e35f5ec729bc7238d3e000ca9f53566358040fd0a39225754a9b1909e24dc685",
+      "relation": "byte_identical"
+    },
+    {
+      "runtime_path": "learning/market_timing.py",
+      "runtime_sha256": "e0dbb7bd01639adf145aae511142dcad8492dce763b80e7496a48997dae3b78e",
+      "public_path": "kaggriculture/learning/market_timing.py",
+      "public_sha256": "e0dbb7bd01639adf145aae511142dcad8492dce763b80e7496a48997dae3b78e",
+      "relation": "byte_identical"
+    },
+    {
+      "runtime_path": "learning/optimize_round2.py",
+      "runtime_sha256": "9f4fcf09fecd42c6135a1a2a72b95948c52474636719863eb2d468b01dc102fe",
+      "public_path": "kaggriculture/learning/optimize_round2.py",
+      "public_sha256": "9f4fcf09fecd42c6135a1a2a72b95948c52474636719863eb2d468b01dc102fe",
+      "relation": "byte_identical"
+    },
+    {
+      "runtime_path": "learning/prepare_market_reproduction.py",
+      "runtime_sha256": "681d7a5925ebacc41f1eee75a06bf1acbc47297ec0ec6c4fc5d6efa78753b9e1",
+      "public_path": "kaggriculture/learning/prepare_market_reproduction.py",
+      "public_sha256": "681d7a5925ebacc41f1eee75a06bf1acbc47297ec0ec6c4fc5d6efa78753b9e1",
+      "relation": "byte_identical"
+    },
+    {
+      "runtime_path": "learning/round2_worker.py",
+      "runtime_sha256": "a80158b26d1f4ae3d366c1d1276a1ca63e652bcd350f5ca25545b0f5f33759f1",
+      "public_path": "kaggriculture/learning/round2_worker.py",
+      "public_sha256": "ff823541f43ec2a0671aefbb2a3803daf6d3b882cebed4534eb2bdbb5efb35a1",
+      "relation": "CRLF_public_to_LF_runtime"
+    },
+    {
+      "runtime_path": "replay_metrics.py",
+      "runtime_sha256": "dc2005ab79d682c57480e8d865655ddd4785655e59a761774ae5883babe435b4",
+      "public_path": "kaggriculture/replay_metrics.py",
+      "public_sha256": "dc2005ab79d682c57480e8d865655ddd4785655e59a761774ae5883babe435b4",
+      "relation": "byte_identical"
+    }
+  ],
+  "base_commit": "f908dc6f97459fdb00f812ee00371bcf7cd6c10e",
+  "historical_policy_identity": "32 development rows bind the preserved 80df development source; 1 entry repeat binds the unchanged 61fb delivered source. See old source-map and per-row policy hashes.",
+  "old_source_map_sha256": "ab977f487de8bd104a35dd4d2e21d556cfb7f25563568d40200e06e6acec5c83",
+  "old_source_map_public_path": "review/evidence/market-teacher-v1-20261021/source-map.json"
+}

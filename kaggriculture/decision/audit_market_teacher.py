@@ -7,6 +7,7 @@ from pathlib import Path
 from decision.full_audit import reexecute
 from decision.profit_attribution import Attribution
 from decision.verify_market_teacher import compare,load
+from decision.action_views import opcode_view
 
 ROOT=Path(__file__).resolve().parents[1]
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
@@ -17,6 +18,26 @@ def observation(frame,side):
     for name in ('step','farms','market','town','day','hour'):
         o[name]=deepcopy(frame[0]['observation'][name])
     return o
+
+def count_request(events,side,r):
+    """Count raw order events, not fills; preserve no_effect/partial/ignored.
+
+    Non-SELL includes malformed non-SELL orders, also beyond the order cap.
+    market_invalid counts only the tracer's explicit parser-rejection flag;
+    an ignored order is not silently reclassified as parser-rejected.
+    Executed quantities and cash remain in Attribution, not these order counts.
+    """
+    if r['player']!=side:return
+    if r['phase']=='market':
+        op=opcode_view(r['requested'])
+        events['market:'+op+':'+r['status']]+=1
+        events['market_invalid']+=bool(r.get('invalid'))
+        if op=='SELL':events['sell_requested_units']+=r.get('requested_units',0)
+        else:
+            events['non_sell_requested_orders']+=1
+            events['non_sell_incomplete_orders']+=r['status']!='executed'
+    elif r['phase']=='unit':
+        events['unit:'+r['status']]+=1
 
 def check(job):
     row,folder,sources,kind=job;folder=Path(folder);sources=Path(sources)
@@ -37,17 +58,7 @@ def check(job):
     measure=Attribution(side);rival=Attribution(1-side);events=Counter()
     def sink(r):
         measure.sink(r);rival.sink(r)
-        if r['player']!=side:return
-        if r['phase']=='market':
-            op=r['requested'][0]
-            events['market:'+op+':'+r['status']]+=1
-            events['market_invalid']+=bool(r.get('invalid'))
-            if op=='SELL':events['sell_requested_units']+=r.get('requested_units',0)
-            else:
-                events['non_sell_requested_orders']+=1
-                events['non_sell_incomplete_orders']+=r['status']!='executed'
-        elif r['phase']=='unit':
-            events['unit:'+r['status']]+=1
+        count_request(events,side,r)
     with measure.installed():audit=reexecute(replay,trace=True,label_sink=sink)
     assert audit['final_rewards']==row['banks']
     assert audit['semantic_sha256']==row['semantic_replay_sha256']

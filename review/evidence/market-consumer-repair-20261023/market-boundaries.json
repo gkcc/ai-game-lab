@@ -1,0 +1,144 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "case": "current_price_curve",
+      "passed": true,
+      "quotes": 445
+    },
+    {
+      "case": "same_slot_lockstep",
+      "passed": true,
+      "side": 0,
+      "cash_each": 348
+    },
+    {
+      "case": "multiple_orders_partial_and_slot_order",
+      "passed": true,
+      "side": 0,
+      "executed": [
+        2,
+        1
+      ],
+      "cash": 354.0
+    },
+    {
+      "case": "cash_order",
+      "passed": true,
+      "side": 0,
+      "sell_first": false
+    },
+    {
+      "case": "cash_order",
+      "passed": true,
+      "side": 0,
+      "sell_first": true
+    },
+    {
+      "case": "drop_before_sell_capacity_and_insertion_order",
+      "passed": true,
+      "side": 0,
+      "discarded": 3,
+      "sold": 1
+    },
+    {
+      "case": "order_limit",
+      "passed": true,
+      "side": 0
+    },
+    {
+      "case": "floor_sale_supply",
+      "passed": true,
+      "side": 0
+    },
+    {
+      "case": "same_slot_lockstep",
+      "passed": true,
+      "side": 1,
+      "cash_each": 348
+    },
+    {
+      "case": "multiple_orders_partial_and_slot_order",
+      "passed": true,
+      "side": 1,
+      "executed": [
+        2,
+        1
+      ],
+      "cash": 354.0
+    },
+    {
+      "case": "cash_order",
+      "passed": true,
+      "side": 1,
+      "sell_first": false
+    },
+    {
+      "case": "cash_order",
+      "passed": true,
+      "side": 1,
+      "sell_first": true
+    },
+    {
+      "case": "drop_before_sell_capacity_and_insertion_order",
+      "passed": true,
+      "side": 1,
+      "discarded": 3,
+      "sold": 1
+    },
+    {
+      "case": "order_limit",
+      "passed": true,
+      "side": 1
+    },
+    {
+      "case": "floor_sale_supply",
+      "passed": true,
+      "side": 1
+    },
+    {
+      "case": "night_storage",
+      "passed": true,
+      "sell_first": false,
+      "discarded": 2
+    },
+    {
+      "case": "night_storage",
+      "passed": true,
+      "sell_first": true,
+      "discarded": 0
+    },
+    {
+      "case": "last_action_drop_sell_no_auto_settlement",
+      "passed": true,
+      "drop": false,
+      "reward": 3000.0
+    },
+    {
+      "case": "last_action_drop_sell_no_auto_settlement",
+      "passed": true,
+      "drop": true,
+      "reward": 3069.0
+    },
+    {
+      "case": "same_input_contract_boundary_states",
+      "passed": true,
+      "observations": 30
+    },
+    {
+      "case": "bounded_hold_flush_and_visible_rival",
+      "passed": true,
+      "held_units": 19
+    },
+    {
+      "case": "opponent_private_and_seed_isolation",
+      "passed": true
+    },
+    {
+      "case": "cross_game_statelessness",
+      "passed": true
+    }
+  ],
+  "candidate_sha256": "61fbb4d27f7706d6bb00073892b1890d6f564d20d6440282fb41e40409e1bc15",
+  "scope": "Official full Environment entry except explicitly labelled terminal interpreter boundary. Constructed states; economic forecast is not certified future truth."
+}

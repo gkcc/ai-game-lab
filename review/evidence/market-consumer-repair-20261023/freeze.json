@@ -1,0 +1,33 @@
+{
+  "base_commit": "f908dc6f97459fdb00f812ee00371bcf7cd6c10e",
+  "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "code_sha256": {
+    "bots/teacher_fertilizer_terminal_v2.py": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+    "bots/teacher_market_v1.py": "61fbb4d27f7706d6bb00073892b1890d6f564d20d6440282fb41e40409e1bc15",
+    "decision/action_views.py": "48dac3a44a42cf149ad94965a44c72405a9cdff80c885ec522fcc4f212ffc4a6",
+    "decision/api.py": "3ef4025bde61d240b298cbe4d31291f25021baaf5b396f5540bbfcdda4231917",
+    "decision/audit_market_teacher.py": "f0f35dcbf8edeff90db5762da81b09ee2208e7af2c9921c0176bcb32c6381dc0",
+    "decision/compare_market_trajectories.py": "b279ba0484e1c97b0fbe5b72e37f9172b75d3eb534f00b25b3d3eb78da286bf3",
+    "decision/execution.py": "cbf38b17ca9c4c1c4f82ddb583ff59e4f605a0e8d8e971ef5bfc3664b2c76378",
+    "decision/full_audit.py": "84f7c7b4316fb98791c51b933f5329a271b8bc9aec60eebe133f6d433ec4510d",
+    "decision/profit_attribution.py": "bea6118d126115ef2899e8e08fddf4ded7987f4ef91df6c206239ef096f77d61",
+    "decision/recheck_market_consumer.py": "15563c7e42ec84d1d5986bb58b0af0ae6e5abcdd335609f7326dd8f0548b2730",
+    "decision/semantics.py": "9ac62d0df7adca84c0feff805b2979bb45f9f9f4c2064d1e2b5c48efd3e779a5",
+    "decision/verify_attribution_consumer.py": "5536c36472eda93eed2879b0d9b807dbca3aa4d5ea658d1e7e2e980b79c921eb",
+    "decision/verify_market_consumer.py": "b832bae031b57be9079d174153ed5bf63710382a6cbb9f3db372cf1664d89ee5",
+    "decision/verify_market_entry.py": "392daccc0db6fb4b8e3c5d7ed2b0bc1f312a6b0d74a7ee4c0d3cdc972114f058",
+    "decision/verify_market_teacher.py": "0a59718731aecfa6fb499f67bc7f92daa76053830f4ca582143e46cdc2422ea8",
+    "decision/verify_mechanisms.py": "cc82fd118abd94e92a8833587aa2bfb9117214a8a5b00e8054225732af47fbbf",
+    "learning/analyze_market_timing.py": "4f9810a3105859c140fad24c1ee4ff04657b16329e2dbf22f057a93270f369fc",
+    "learning/evaluate_holdout.py": "df599e139893081f0a5307b0aa9cf299e2d14d4d4a221672b7aa9ac1d3747d82",
+    "learning/market_sell_overlay.py": "e35f5ec729bc7238d3e000ca9f53566358040fd0a39225754a9b1909e24dc685",
+    "learning/market_timing.py": "e0dbb7bd01639adf145aae511142dcad8492dce763b80e7496a48997dae3b78e",
+    "learning/optimize_round2.py": "9f4fcf09fecd42c6135a1a2a72b95948c52474636719863eb2d468b01dc102fe",
+    "learning/prepare_market_reproduction.py": "681d7a5925ebacc41f1eee75a06bf1acbc47297ec0ec6c4fc5d6efa78753b9e1",
+    "learning/round2_worker.py": "a80158b26d1f4ae3d366c1d1276a1ca63e652bcd350f5ca25545b0f5f33759f1",
+    "replay_metrics.py": "dc2005ab79d682c57480e8d865655ddd4785655e59a761774ae5883babe435b4"
+  },
+  "changes": "Safe opcode view shared with existing consumer; preserve raw malformed non-SELL values/indices. No policy or server changes.",
+  "scope": "Local repair freeze before reexecuting already disclosed historical games; not new independent evaluation or a third-party timestamp."
+}
