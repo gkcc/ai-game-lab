@@ -1,0 +1,69 @@
+{
+  "schema": "task-error-numeric-preparation-regressions-v1",
+  "passed": true,
+  "evidence_basis": "Persisted results from two previously completed terminal executions; this write only hashes current files and does not rerun scoring.",
+  "script_sha256": {
+    "learning/task_bc_error_diagnostics_v1/numeric.py": "b906eb97221e1d99d067a1fc8c1e58bca2ddb148c14e17ef6d0d63fc0c6484a2",
+    "learning/task_bc_error_diagnostics_v1/verify_numeric.py": "2e44be62a1a424a45e2229aad73f6cee3aaadde874235430c0bbf5c224f151ae"
+  },
+  "script_identity_timing": "Hashes captured after successful checks; original execution-time script hashes were not captured (unknown). No script changes made by this receipt writer.",
+  "frozen_model_expected_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+  "frozen_model_current_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+  "source_manifest_current_sha256": "6482ed09e8fd7348c08046810232146ec463472ee5babf187fe6822aa420bc00",
+  "source_files_current_sha256": {
+    "data/train/collect-31273729-market-0-teacher.inputs.jsonl.gz": "54fa29ae04f49e9c89477fd213549fe59d90c518442b408890aa3539e56fd59c",
+    "data/train/collect-31273729-market-0-teacher.labels.jsonl.gz": "6f5960f133909ac389bfa8de31691a5684f61a0ef0b2c10d215491cc5d360aca",
+    "data/train/collect-31273729-market-0-teacher.index.jsonl.gz": "e775f9009adfcdd3bb8a61996869bd6daac04e4097fb23a0df55d9f365f8705a"
+  },
+  "source_file_hash_verified_at_original_sample_execution": "unknown; original sample validated row alignment through cache.decode, but did not hash complete compressed source files",
+  "regressions": [
+    {
+      "name": "synthetic_numeric_contract",
+      "passed": true,
+      "invocation": "python -B -m learning.task_bc_error_diagnostics_v1.verify_numeric",
+      "original_data_rows": 0,
+      "checks": [
+        "float32/float64 separation",
+        "float64-only scoring cache",
+        "order and count identity",
+        "signed zero",
+        "nonfinite rejection",
+        "factual parity",
+        "semantic aliases and first argmax ties",
+        "labels separate from inputs",
+        "training-only support",
+        "range/discrete novelty",
+        "raw and unique multiplicity",
+        "conflicts and undefined denominators"
+      ]
+    },
+    {
+      "name": "old_train_frozen_model_and_pickle",
+      "passed": true,
+      "invocation": "runtime .venv Python -B with inline bounded sample script",
+      "inline_script_sha256": "unknown; inline script was not persisted or hashed at execution",
+      "source_game": "collect-31273729-market-0-teacher",
+      "source_split": "train",
+      "selection": "First 16 line-aligned records in first train file listed by original manifest",
+      "original_train_rows": 16,
+      "candidates": 1481,
+      "unique_float64_groups": 16,
+      "raw_candidate_mismatches": 0,
+      "pickle_roundtrip": true,
+      "checks": [
+        "cache.decode original row alignment",
+        "frozen TaskNetwork original-input selection equals analyzer prediction",
+        "train_seen64 true",
+        "no training-range exceedance",
+        "pickle serialization roundtrip"
+      ],
+      "frozen_model_sha256_verified_at_execution": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143"
+    }
+  ],
+  "training_runs": 0,
+  "new_games": 0,
+  "official_transitions": 0,
+  "formal_diagnostic_runs": 0,
+  "full_historical_passes": 0,
+  "private_holdout_replays_or_traces_read": false
+}

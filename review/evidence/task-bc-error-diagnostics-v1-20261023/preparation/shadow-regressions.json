@@ -1,0 +1,146 @@
+{
+  "schema": "task-shadow-pre-freeze-verification-v1",
+  "passed": true,
+  "synthetic": {
+    "passed": true,
+    "context_precision": "ordered typed f64 and semantic identity",
+    "post_divergence_ordinal_matching": false,
+    "path_length_is_execution": false
+  },
+  "policy_calls": 24,
+  "official_transitions": 0,
+  "matches": 0,
+  "old_observation_only": true,
+  "new_holdout_private_reads": 0,
+  "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+  "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+  "input_files": {
+    "artifacts/task-bc-v1-20261023-run1/games/dev-31205138-round2-0-trained/replay.json.gz": "6d26c0696705995e0a9624eeb447f8b5e9539ee1ae9dfb67e3b60197886744bc",
+    "artifacts/task-bc-v1-20261023-run1/games/dev-31205138-round2-1-trained/replay.json.gz": "43011d533c589625bef786285a654d2fdab36e7fefeab1296f1ecb40fe2a3736",
+    "artifacts/task-bc-v1-20261023-run1/games/dev-31504409-round2-0-trained/replay.json.gz": "106f38383d95d7655e6caeef9f006564cbbc754c06ba5da107b5c501d0af1ff2",
+    "artifacts/task-bc-v1-20261023-run1/games/dev-31504409-round2-1-trained/replay.json.gz": "01e593d922d6a9af48696baf96623983189729feb855751a974cc9873c122e6e"
+  },
+  "checks": [
+    {
+      "head": "teacher_task",
+      "game": "dev-31205138-round2-0-trained",
+      "side": 0,
+      "step": 100,
+      "sanitized_input_sha256": "2a0a59b426a2e9a41500d8821ad2f1a40a69138c9b8fb610f77a17511fe5e65b",
+      "action_trace_sha256": "473f2fa67cdb69a7bfe8c0bef5a0711b13e67193f993d0beeda0f2cd2755a657",
+      "task_calls": 5,
+      "fresh_reuse_equal": true
+    },
+    {
+      "head": "teacher_task",
+      "game": "dev-31205138-round2-0-trained",
+      "side": 0,
+      "step": 101,
+      "sanitized_input_sha256": "07e7aac5f5e74f7351af7bd377e346bbfa6ccb8c1a8f63774c74968a6f8e05d9",
+      "action_trace_sha256": "419a636b64d966f96ad8bdf9619f97c521e60642247bd536f85c56783bd9947b",
+      "task_calls": 5,
+      "fresh_reuse_equal": true
+    },
+    {
+      "head": "teacher_task",
+      "game": "dev-31205138-round2-1-trained",
+      "side": 1,
+      "step": 100,
+      "sanitized_input_sha256": "97c664fb76f3b09cc47c70c98a6bb303b9aa0ffb316200cc87dea2d66d0b2a70",
+      "action_trace_sha256": "179556458485d6ea759ac217716fdb8d92cbd683c0e7aa3f6e289818b3c29ad9",
+      "task_calls": 5,
+      "fresh_reuse_equal": true
+    },
+    {
+      "head": "teacher_task",
+      "game": "dev-31504409-round2-0-trained",
+      "side": 0,
+      "step": 100,
+      "sanitized_input_sha256": "c06e4931ef46eea8daf09355554199baea00302d08cc5d8d0db4bd052e4df247",
+      "action_trace_sha256": "3ec2314038fb0f10e3b51de0ee813a6152500e9dcef2db7efd69ef8a5400aaba",
+      "task_calls": 5,
+      "fresh_reuse_equal": true
+    },
+    {
+      "head": "teacher_task",
+      "game": "dev-31504409-round2-1-trained",
+      "side": 1,
+      "step": 100,
+      "sanitized_input_sha256": "ff961caa8520222a770c1eb13066cd8e6d509e668b5d709b958fd4cdbd26333a",
+      "action_trace_sha256": "15339623c4e5f031c4be71562ed196302d704a6880997574ed4ff762169f1f6c",
+      "task_calls": 5,
+      "fresh_reuse_equal": true
+    },
+    {
+      "head": "teacher_task",
+      "game": "dev-31205138-round2-0-trained",
+      "side": 0,
+      "step": 100,
+      "sanitized_input_sha256": "2a0a59b426a2e9a41500d8821ad2f1a40a69138c9b8fb610f77a17511fe5e65b",
+      "action_trace_sha256": "473f2fa67cdb69a7bfe8c0bef5a0711b13e67193f993d0beeda0f2cd2755a657",
+      "task_calls": 5,
+      "fresh_reuse_equal": true
+    },
+    {
+      "head": "trained",
+      "game": "dev-31205138-round2-0-trained",
+      "side": 0,
+      "step": 100,
+      "sanitized_input_sha256": "2a0a59b426a2e9a41500d8821ad2f1a40a69138c9b8fb610f77a17511fe5e65b",
+      "action_trace_sha256": "9a4477e219cd79c3399f52e45932a8f50494d7ddc9f00fd5867fe407fea26146",
+      "task_calls": 5,
+      "fresh_reuse_equal": true
+    },
+    {
+      "head": "trained",
+      "game": "dev-31205138-round2-0-trained",
+      "side": 0,
+      "step": 101,
+      "sanitized_input_sha256": "07e7aac5f5e74f7351af7bd377e346bbfa6ccb8c1a8f63774c74968a6f8e05d9",
+      "action_trace_sha256": "40d2173cf78d0545d151bdaa4eefb40023abe8ac0e481dd50b559c9a20cc05e0",
+      "task_calls": 5,
+      "fresh_reuse_equal": true
+    },
+    {
+      "head": "trained",
+      "game": "dev-31205138-round2-1-trained",
+      "side": 1,
+      "step": 100,
+      "sanitized_input_sha256": "97c664fb76f3b09cc47c70c98a6bb303b9aa0ffb316200cc87dea2d66d0b2a70",
+      "action_trace_sha256": "d5b9653c8efbd02e2f4bc74e575fa87db548db76ff261c1f35e55d1bb8647734",
+      "task_calls": 5,
+      "fresh_reuse_equal": true
+    },
+    {
+      "head": "trained",
+      "game": "dev-31504409-round2-0-trained",
+      "side": 0,
+      "step": 100,
+      "sanitized_input_sha256": "c06e4931ef46eea8daf09355554199baea00302d08cc5d8d0db4bd052e4df247",
+      "action_trace_sha256": "8c938337dc1ab12be06f5590cbc8c05b716060239a5d524e7e7850419d7106a5",
+      "task_calls": 5,
+      "fresh_reuse_equal": true
+    },
+    {
+      "head": "trained",
+      "game": "dev-31504409-round2-1-trained",
+      "side": 1,
+      "step": 100,
+      "sanitized_input_sha256": "ff961caa8520222a770c1eb13066cd8e6d509e668b5d709b958fd4cdbd26333a",
+      "action_trace_sha256": "fb501dd7543da4f3678872311e4acbe48759a8e3aa5fbca93e635ff1379b9a9d",
+      "task_calls": 5,
+      "fresh_reuse_equal": true
+    },
+    {
+      "head": "trained",
+      "game": "dev-31205138-round2-0-trained",
+      "side": 0,
+      "step": 100,
+      "sanitized_input_sha256": "2a0a59b426a2e9a41500d8821ad2f1a40a69138c9b8fb610f77a17511fe5e65b",
+      "action_trace_sha256": "9a4477e219cd79c3399f52e45932a8f50494d7ddc9f00fd5867fe407fea26146",
+      "task_calls": 5,
+      "fresh_reuse_equal": true
+    }
+  ],
+  "scope": "Existing stateless TaskAgent only; no general stateful-policy equivalence claim"
+}

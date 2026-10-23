@@ -1,0 +1,91 @@
+{
+  "schema": "task-error-diagnostics-independent-pre-review-v1",
+  "created_utc": "2026-10-23T11:12:24.171685+00:00",
+  "author_role": "Independent Codex source-review subagent; not external WebChat",
+  "passed": true,
+  "scope": "Approval of the exact frozen one-shot exploratory offline diagnostic implementation, conditional on existing ready() exact-byte local pre-execution commit gate. This is not a completed-diagnostics or policy-admission result.",
+  "registration_sha256": "3f9ebf50341e4deb76391c5575a98fa910ac098dbc96403b6acddac89d6c760c",
+  "freeze_sha256": "885346190ed1c73b9adedd86cbc3b6c66a1857fb565ab4e1aa9931148caa6e08",
+  "protection_sha256": "b1e4dfab060ae0cd58546f6785f36cc17a1cfa7cbf46232fe77a0042c139cdaa",
+  "baseline_head": "8f32efa2ed868aae04aa7d44be0eeb24dc18aa2f",
+  "reviewed_sources_sha256": {
+    "learning/task_bc_error_diagnostics_v1/analysis.py": "e037d5ad4b6eb3fb80faf35165ec328c7028e2864792ec9ada6d93f157f82888",
+    "learning/task_bc_error_diagnostics_v1/experiment.py": "241ba0a25c6e6fae7ba78451582e3699add6f51991d564c0c7b55715f8eddf69",
+    "learning/task_bc_error_diagnostics_v1/numeric.py": "5d7ffe44616e029079fafbdee47d3af4391e6c394d349ef46df5997275082a3a",
+    "learning/task_bc_error_diagnostics_v1/README.zh-CN.md": "5892b91f868456cfabba0a27cbb3512481c1695d9ba90ed502f31998d26cf8e5",
+    "learning/task_bc_error_diagnostics_v1/runner.py": "43ce8b99598fdbe4b71a320abc7ee771c0815130b16742367ab7ec03466034c7",
+    "learning/task_bc_error_diagnostics_v1/shadow.py": "095f6a896c259f840af4c59adc922cc9782fe69aafd3b0df7ea04df9160c3251",
+    "learning/task_bc_error_diagnostics_v1/verify_analysis.py": "24e13f33c2e0eb6cb53e2857dda6ea98f24e26f6b3ab34011948e87a8daaa97e",
+    "learning/task_bc_error_diagnostics_v1/verify_numeric.py": "346548427ea49987219885a290a4793dce3d8c67e16b7f7d1e93926d41848175",
+    "learning/task_bc_error_diagnostics_v1/verify_runner.py": "fac3eacac8835eb9b3749e0fd3875948d5c7b30fe64c1c98b532dcc2032c534f",
+    "learning/task_bc_error_diagnostics_v1/verify_shadow.py": "5456c5634d4dfd247e6fe23e22c91715d6425cc3a2e5479f2af0c2347bc130f1",
+    "learning/task_bc_error_diagnostics_v1/__init__.py": "7fe73d92a6f435034e2de4fc239e202b38b383508f2c426bd389dd7565f4a381"
+  },
+  "frozen_runtime_files_independently_live_hashed": 96,
+  "preparation_receipts_independently_live_hashed": 8,
+  "frozen_input_manifest_entries": 386,
+  "replay_trace_historical_data_entries_matched_to_existing_manifests": 372,
+  "protected_snapshot_counts": {
+    "runtime": 4822,
+    "public": 739
+  },
+  "history_verification_basis": "Root reported prepare completed with exit 0 and verify(history=True) passed. This subagent independently rehashed all 96 frozen runtime files, the freeze/registration/protection artifacts and eight preparation receipts, matched 372 raw-data declarations to the prior manifests, and did not duplicate the complete protected historical-file hash scan.",
+  "initial_negative_review": {
+    "path": "preparation/pre-review-first-negative.json",
+    "sha256": "f872b447ed702f0925103a1064cf48e806dfe5e60224d4b00ce8685b8bfbdcc5",
+    "preserved_passed": false,
+    "resolved": "Aggregation now checks ledger-receipt-output hashes and each game compact and turn population before success."
+  },
+  "independent_regression": {
+    "path": "independent-coverage-regression.json",
+    "sha256": "cf16c77219aeec2d0888fb5b0cf94f241dfe05ef2037b6274dbe4ca05302c0e9",
+    "passed": true,
+    "executions": 4,
+    "checks": [
+      "Complete synthetic 96-game/69024-turn population accepted",
+      "Empty compact population rejected",
+      "Duplicated turn sequence rejected",
+      "Output hash mismatch rejected"
+    ]
+  },
+  "checks": [
+    "Complete train-only support is built before scoring all historical train and validation rows; train read twice and validation once. Validation does not update support.",
+    "Original float64 JSON numeric inputs drive deployed model scoring and cache identity. Ordered float32 training-cache support remains separate, and candidate count/order/semantic identity are retained.",
+    "Every factual student selection must equal the fixed model; reference selected ID must equal its conditional teacher label. Nonfinite, schema, identity and choice failures propagate.",
+    "Opposite fixed policy receives the same legal observation and its own within-turn reservations. Comparison stops callback matching at the first complete-context divergence.",
+    "Policy and callback budgets are checked before execution/scoring. One hidden owned subprocess runs at a time; explicit finally kill/wait covers timeout, exception and KeyboardInterrupt, and a cleanup failure cannot claim closed=true. No retry/resume path exists.",
+    "Aggregation verifies jobs-ledger to per-game receipts to all 288 output hashes; compact counts/candidate totals and ordered per-game 0..718 turns must match inventory before reporting success.",
+    "Call, turn, numeric-unique and seed units remain distinct; empty rates are null; witnesses are deterministically ranked by registered seed, seat, step, decision with at most two per origin/opponent stratum.",
+    "Original statistical admission remains false. Diagnostics contain no fitting, model updates, new games, official steps, new inferential tests or causal profit attribution.",
+    "Public working tree was observed clean at the baseline commit before this pre-review was written. Detailed observations, traces, models and witnesses remain private."
+  ],
+  "limits": {
+    "wall_seconds": 14400,
+    "per_job_seconds": 900,
+    "max_workers": 1,
+    "max_source_games": 96,
+    "max_source_turns": 69024,
+    "max_shadow_policy_calls": 69024,
+    "max_factual_groups": 600000,
+    "max_factual_candidates": 40000000,
+    "max_shadow_groups": 600000,
+    "max_shadow_candidates": 40000000,
+    "max_witnesses": 12,
+    "independent_witness_calls": 24,
+    "full_raw_processing_passes": 2
+  },
+  "real_work_by_this_reviewer": {
+    "new_private_holdout_trace_or_replay_reads": 0,
+    "frozen_model_scoring_calls": 0,
+    "policy_calls": 0,
+    "official_transitions": 0,
+    "training_runs": 0,
+    "new_games": 0
+  },
+  "limitations": [
+    "Full real diagnostics have not started and are not certified complete by this pre-review.",
+    "Original old-observation 24-policy-call and 16-model-row checks were not repeated; their preserved receipts remain evidence with their recorded source-identity limits.",
+    "Independent final reproduction remains bounded to at most 12 selected witnesses and 24 policy calls, with zero official transitions; no repeated full 69024-shadow pass.",
+    "This consumed panel supports exploratory diagnosis only. An inconclusive outcome is acceptable and never changes the failed policy admission."
+  ]
+}

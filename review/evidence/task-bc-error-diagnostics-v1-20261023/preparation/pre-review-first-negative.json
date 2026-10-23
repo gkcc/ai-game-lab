@@ -1,0 +1,39 @@
+{
+  "schema": "task-error-diagnostics-independent-pre-review-first-negative-v1",
+  "recorded_utc": "2026-10-23T11:08:13.587254+00:00",
+  "author_role": "Independent source pre-review subagent",
+  "passed": false,
+  "stage_execution_authorized_by_this_review": false,
+  "finding": {
+    "severity": "blocking",
+    "component": "learning/task_bc_error_diagnostics_v1/analysis.py:finish",
+    "problem": "Aggregate acceptance did not verify worker output hash chains or per-game compact/turn coverage. Empty compact records and duplicated turns could produce passed diagnostic results.",
+    "minimum_counterexample": "Pure in-memory mocked reader returns 96 source game identities, no compact records, and 69024 copies of one zero-task turn. Output filesystem operations are mocked. Original finish returns passed.",
+    "observed_result": {
+      "receipt_passed": true,
+      "results_passed": true,
+      "compact_denominator": 0,
+      "turn_denominator": 69024,
+      "witnesses": 0
+    },
+    "required_correction": "Verify jobs-ledger to receipts to all output hashes, per-game compact row/candidate counts, per-game unique sequential 0..718 turns and identity, and global inventory coverage before reporting success."
+  },
+  "source_identity": {
+    "execution_time_sha256": null,
+    "execution_time_hash_was_captured": false,
+    "prior_receipt": "preparation/analysis-regressions.json",
+    "prior_receipt_sha256": "86b04a557752e47e9598b54b9ba5a20bd82c7e68dc371de30b1b55a6af0d1c02",
+    "prior_receipt_declared_analysis_sha256": "502cd27736100e3af031b5b61b3e833a8231babf11985f09611a59e792e5793e",
+    "limitation": "The old receipt is a declaration source only. Its declared source hash was not independently captured around this negative synthetic execution and is not asserted as its exact execution identity."
+  },
+  "verification_scope": {
+    "pure_synthetic": true,
+    "policy_calls": 0,
+    "frozen_model_calls": 0,
+    "official_transitions": 0,
+    "private_holdout_reads": 0,
+    "source_edits": 0,
+    "temporary_files_created": 0
+  },
+  "history": "Preserves the initial rejected review. Later correction and approval must be recorded separately; do not rewrite this negative result."
+}

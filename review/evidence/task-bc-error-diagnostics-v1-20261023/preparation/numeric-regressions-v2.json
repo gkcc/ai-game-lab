@@ -1,0 +1,72 @@
+{
+  "schema": "task-error-numeric-preparation-regressions-v2",
+  "passed": true,
+  "evidence_basis": "One current pure-synthetic regression execution; no historical data or frozen model scoring.",
+  "invocation": ".venv/Scripts/python.exe -B inline wrapper calling verify_numeric.run once",
+  "source_sha256": {
+    "learning/task_bc_error_diagnostics_v1/numeric.py": "5d7ffe44616e029079fafbdee47d3af4391e6c394d349ef46df5997275082a3a",
+    "learning/task_bc_error_diagnostics_v1/verify_numeric.py": "346548427ea49987219885a290a4793dce3d8c67e16b7f7d1e93926d41848175"
+  },
+  "source_identity_timing": "SHA256 captured before execution and verified unchanged after execution",
+  "previous_receipt_sha256": "b3c7199771dd4ccafa17e76e316e0d36065b2b98c0d5662274990351001a0ea9",
+  "previous_receipt_path": "artifacts\\task-bc-error-diagnostics-v1-20261023\\preparation\\numeric-regressions.json",
+  "previous_receipt_unchanged": true,
+  "previous_real_data_checks_rerun": false,
+  "previous_uncaptured_evidence": "Unknown execution-time source hashes and inline script from the old receipt remain unknown; no new claim about them.",
+  "regressions": {
+    "passed": true,
+    "fixture": "synthetic fixed scorer",
+    "original_data_rows": 0,
+    "late_training_conflict": {
+      "passed": true,
+      "synthetic_train_rows": 3,
+      "synthetic_validation_rows": 1,
+      "source_passes": {
+        "train": 2,
+        "validation": 1
+      },
+      "rows_processed": 7,
+      "scored_rows": 4,
+      "synthetic_scorer_calls": 2,
+      "first_row_final_training_label_indices64": [
+        0,
+        1
+      ],
+      "first_row_conflicts": {
+        "training_label_conflict64": true,
+        "training_same_context_label_conflict64": true,
+        "training_different_context_label_conflict64": true
+      },
+      "validation_excluded_from_support": true
+    },
+    "synthetic_scorer_calls": 6,
+    "training_runs": 0,
+    "new_games": 0,
+    "official_transitions": 0,
+    "checks": [
+      "float32/float64 separation",
+      "float64-only scoring cache",
+      "order and count identity",
+      "signed zero",
+      "nonfinite rejection",
+      "factual parity",
+      "semantic aliases and first argmax ties",
+      "labels separate from inputs",
+      "training-only support",
+      "range/discrete novelty",
+      "raw and unique multiplicity",
+      "conflicts and undefined denominators",
+      "late training conflict uses complete train-only support",
+      "train two passes and validation one pass"
+    ]
+  },
+  "original_data_rows": 0,
+  "training_runs": 0,
+  "new_games": 0,
+  "official_transitions": 0,
+  "frozen_model_scoring_calls": 0,
+  "formal_diagnostic_runs": 0,
+  "full_historical_passes": 0,
+  "private_holdout_replays_or_traces_read": false,
+  "public_api_changed": false
+}

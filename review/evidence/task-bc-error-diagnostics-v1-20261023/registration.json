@@ -1,0 +1,77 @@
+{
+  "stage": "task-bc-error-diagnostics-v1",
+  "created_utc": "2026-10-23T11:10:47.536644+00:00",
+  "baseline_head": "8f32efa2ed868aae04aa7d44be0eeb24dc18aa2f",
+  "post_outcome_exploratory": true,
+  "local_registration_not_external_timestamp": true,
+  "panel_root": "artifacts/task-bc-holdout-v1-20261023",
+  "dataset_root": "artifacts/task-choice-v1-20261023",
+  "task_checkpoint": "artifacts/task-bc-holdout-v1-20261023/model/trained.npz",
+  "crop_checkpoint": "artifacts/bc-epoch6-holdout-v1-20261023/panels/fixed_epoch6/model/trained.npz",
+  "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+  "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+  "old_statistical_admission_passed": false,
+  "default_changed": false,
+  "training_runs": 0,
+  "new_games": 0,
+  "official_transitions": 0,
+  "seeds": [
+    1714414373,
+    2117918555,
+    2087726158,
+    3767282565,
+    2941093011,
+    78378034,
+    1616203861,
+    870190021
+  ],
+  "opponents": [
+    "v1",
+    "market",
+    "round2"
+  ],
+  "origins": [
+    "trained",
+    "teacher_task"
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "limits": {
+    "wall_seconds": 14400,
+    "per_job_seconds": 900,
+    "max_workers": 1,
+    "max_source_games": 96,
+    "max_source_turns": 69024,
+    "max_shadow_policy_calls": 69024,
+    "max_factual_groups": 600000,
+    "max_factual_candidates": 40000000,
+    "max_shadow_groups": 600000,
+    "max_shadow_candidates": 40000000,
+    "max_witnesses": 12,
+    "independent_witness_calls": 24,
+    "full_raw_processing_passes": 2
+  },
+  "concurrency": "One owned subprocess at a time (within the approved maximum of two), so remaining global budgets are exact without shared simulation state.",
+  "passes": "Historical train is read twice: complete train-only index first, then score all train and validation with that final index; validation once. Panel raw traces twice: inventory then factual scoring and opposite-policy shadows. Compact summaries and at-most12 targeted witness reads are not extra full raw passes.",
+  "precision": "Original JSON numeric values to float64 for actual deployed scores and identity; separate float32 training-cache keys; preserve ordered candidate count and semantic IDs; normalize signed zero only in numeric identity. Never infer deployment alias from float32 equality alone.",
+  "comparison": "Conditional teacher label versus fixed model on each factual callback; opposite fixed policy on identical legal observation, own within-turn reservations. Stop matching callback ordinals after first full-context divergence. Requests are not observed execution or causal reward effects.",
+  "summaries": "Overall; origin/opponent; each seed; seat; fixed step thirds 0-239,240-479,480-718; teacher task class; singleton versus multiple candidates; cross-operation competition; train-seen64 versus unseen. No full Cartesian product. Counts and explicit denominators; null for empty. No new inferential tests.",
+  "witnesses": "At most2 per opponent/origin stratum. First prefer earliest deployment64 alias/label-conflict witness, otherwise earliest conditional mismatch with changed full action. Second earliest distinct context/reservation divergence. Order registered seed, seat, step, decision. Missing categories remain empty; no largest-loss selection.",
+  "stop": "Any input/schema/hash/nonfinite/factual-choice mismatch or budget/time failure stops all further dispatch; preserve failure and owned process exit; no retries, new seeds or budget expansion.",
+  "success": "Account for all96 source games/69024 turns; both origins conditional and shadow analyses; original135406 source groups and6900116 candidates preserved; bounded reproducible witnesses; correct descriptive denominators and history/privacy. Complete inconclusive is valid; no strategy or model admission.",
+  "next_decision": "At most one evidence-supported later correction, representation or weighting research question. Novelty, label gaps or first divergence alone do not identify profit causation or justify retraining.",
+  "inherited_advice_sha256": "b22db78296cc799c7ffede4cfcb760266a6d97066bd448677fce1f0428dc8fdc",
+  "root_refinement_sha256": "f86a8434a237d5a05220f41fb0530c361c5245715c4a77c7413761778bdd9842",
+  "preparation_regressions_sha256": {
+    "analysis-regressions-v2.json": "041b604a99e88d7e4ee904dc97e15bd595f6e302da67f63eaaf5da1839f7919f",
+    "analysis-regressions.json": "86b04a557752e47e9598b54b9ba5a20bd82c7e68dc371de30b1b55a6af0d1c02",
+    "numeric-regressions-v2.json": "3fd4383088a337de313044859e90bfdc429d22c40d707e1fc0444c8e8bbbe436",
+    "numeric-regressions.json": "b3c7199771dd4ccafa17e76e316e0d36065b2b98c0d5662274990351001a0ea9",
+    "pre-review-first-negative.json": "f872b447ed702f0925103a1064cf48e806dfe5e60224d4b00ce8685b8bfbdcc5",
+    "runner-regressions-v2.json": "79c9c1ef30dc4dfe3c45811bea278ef485d61302ceaaad8ef062e72a5c1803fd",
+    "runner-regressions.json": "1c8b958240d7c39d483f5c72c9ff5fc0a5b3f4d50c9a12527da0c756ef799708",
+    "shadow-regressions.json": "fbef8b5f69df2c2f48f19fcc6fd35e1fce1c7f4e7e094349a4dad068b07409c8"
+  }
+}

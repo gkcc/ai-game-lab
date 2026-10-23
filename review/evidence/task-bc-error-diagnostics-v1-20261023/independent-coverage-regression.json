@@ -1,0 +1,41 @@
+{
+  "schema": "task-error-independent-coverage-regression-v1",
+  "recorded_utc": "2026-10-23T11:09:30.471557+00:00",
+  "author_role": "Independent pre-review subagent",
+  "passed": true,
+  "source_sha256": {
+    "learning/task_bc_error_diagnostics_v1/analysis.py": "e037d5ad4b6eb3fb80faf35165ec328c7028e2864792ec9ada6d93f157f82888"
+  },
+  "source_identity_timing": "Captured immediately before independent synthetic execution and verified unchanged immediately after; rechecked before writing this receipt.",
+  "scope": "Pure in-memory test of full validate_outputs chain using mocked read/stream/sha, without source edits or actual diagnostic inputs.",
+  "checks": {
+    "valid_population_passes": true,
+    "empty_compact_rejected": true,
+    "duplicated_turn_rejected": true,
+    "receipt_output_hash_mismatch_rejected": true
+  },
+  "executions": 4,
+  "positive_fixture": {
+    "source_games": 96,
+    "completed_jobs": 98,
+    "turns_per_game": 719,
+    "turn_rows": 69024,
+    "compact_rows": 96,
+    "compact_candidates": 192,
+    "declared_outputs": 288
+  },
+  "negative_fixtures": 3,
+  "real_work": {
+    "private_holdout_reads": 0,
+    "historical_data_reads": 0,
+    "policy_calls": 0,
+    "frozen_model_calls": 0,
+    "engine_calls": 0,
+    "official_transitions": 0,
+    "new_games": 0,
+    "training_runs": 0,
+    "temporary_files_created": 0
+  },
+  "prior_negative_review": "preparation/pre-review-first-negative.json",
+  "limitation": "Synthetic coverage acceptance and rejection only; not evidence that full real diagnostics have completed."
+}
