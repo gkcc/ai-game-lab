@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "reviewer": "independent audit sub-agent",
+  "registration_sha256": "50ac6db637057852fdee5f6da251249f569e29771d2b5c8b65b2e650227bab61",
+  "freeze_sha256": "5c32d7756791bb215abfe9b280937c11eca2c364d6a97f05bd5219ea001487bc",
+  "reviewed_source_sha256": {
+    "learning/bc_epoch6_holdout_v1/audit.py": "8a0a705f0a28f7dc225b43d8b578d445d11c99e530aa85cfbb96ecf29526c7d5",
+    "learning/bc_epoch6_holdout_v1/experiment.py": "93afa1dfcabadcb748f8e525a19ec2f5b7e3de1a999554697961fb7229e7ecd5",
+    "learning/bc_epoch6_holdout_v1/statistics.py": "ebcaa1d6f7f424c34dc4274e13e670d05aa685136bda73b3be4cd286f2c596b2",
+    "learning/bc_epoch6_holdout_v1/verify_admission.py": "5455f208cd27456704fe0ba4d9c880639ca423978f2418b9924f607ec3d6f2d7",
+    "learning/bc_epoch6_holdout_v1/verify_statistics.py": "626c745b0672854628c4af29cbddba204d82bc924bbe0c093966c685286b50e6",
+    "learning/bc_epoch6_holdout_v1/__init__.py": "5c4cc72da63e086ac3592a784d7668d7d5e87105f7c4b26b667564b355ffeeaa"
+  },
+  "checks": {
+    "admission_regression_passed": true,
+    "admission_negative_cases": 13,
+    "statistics_regressions_passed": 8,
+    "nonpositive_baseline_retains_failed_report": true,
+    "complete96_coordinates_to48pairs_to8clusters": true,
+    "whole_seed_bootstrap_and_descriptive_loso": true,
+    "explicit_holdout_and_entry_role": true,
+    "parent_freeze_binds_both_child_models_and_configurations": true,
+    "global96_plus2_budget_and_failstop_reviewed": true,
+    "precommit_blob_checks_reviewed": true,
+    "new_game_outputs_absent": true
+  },
+  "independent_heterogeneous_fixture": {
+    "seed_means": [
+      -70,
+      -11,
+      3,
+      7,
+      21,
+      34,
+      80,
+      140
+    ],
+    "mean": 25.5,
+    "ci95": [
+      -13.25,
+      68.25
+    ],
+    "draws": 20000,
+    "cluster_count": 8,
+    "method": "Independently counted draw multiplicities; sorted linear quantiles and all8 leave-one-out means",
+    "opponent_and_seat_offsets_cancel_inside_clusters": true
+  },
+  "seed_novelty_recheck": {
+    "passed": true,
+    "current_phase_excluded": true,
+    "public_text_files": 536,
+    "local_prior_evidence_files": 2219,
+    "scope": "Original protected public text and matching prior local JSON evidence filenames; no deleted-history or replay-only novelty claim"
+  },
+  "model_sha256": {
+    "original_student": "9806383a2d335fdfe21639f911946b29b36708aba89f7b3961a4f9999b0388fd",
+    "fixed_epoch6": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd"
+  },
+  "budgets_used": {
+    "training_runs": 0,
+    "new_games": 0,
+    "new_replays": 0
+  },
+  "limitations": [
+    "Pre-execution source/statistical review, not holdout outcome evidence.",
+    "Only8 seed clusters;20k resamples add no independent observations.",
+    "Competition guards are point estimates, not population noninferiority.",
+    "Conditional on fixed development-selected model, fixed opponents and registered seed generator; no default replacement or teacher-superiority claim."
+  ]
+}

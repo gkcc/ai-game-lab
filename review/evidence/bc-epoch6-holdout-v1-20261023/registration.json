@@ -1,0 +1,95 @@
+{
+  "experiment": "bc-fixed-epoch6-independent-holdout-v1",
+  "created_utc": "2026-10-23T07:32:43.411933+00:00",
+  "baseline_head": "a8fad010cb12197cb3ff0feb43019e83a5fd5521",
+  "previous_experiment": "artifacts/bc-economic-epoch6-v1-20261023",
+  "evaluation_role": "independent-holdout-fixed-model",
+  "new_independent_evidence": true,
+  "old_offline_failure_preserved": true,
+  "prior_diagnostic_exception_acknowledged": true,
+  "all21_heads_previously_inspected": true,
+  "default_change_allowed": false,
+  "admission_basis": "Fixed development-selected epoch6 passed separately registered economic diagnostic. Original offline50percent screen still failed; this new study does not retroactively pass or calibrate it.",
+  "selection": "Same exact epoch6 checkpoint, chosen before all current holdout seeds and games; no alternative heads, models, hyperparameters or strategy changes.",
+  "model_families": [
+    "original_student",
+    "fixed_epoch6"
+  ],
+  "model_sha256": {
+    "original_student": "9806383a2d335fdfe21639f911946b29b36708aba89f7b3961a4f9999b0388fd",
+    "fixed_epoch6": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd"
+  },
+  "test_seeds": [
+    37348046,
+    37942598,
+    37571542,
+    37789066,
+    37656608,
+    37420606,
+    37041160,
+    37994363
+  ],
+  "seed_generator": "Random(2026102325).sample(range(37000000,38000000),8)",
+  "seed_novelty": {
+    "passed": true,
+    "public_text_files": 536,
+    "local_evidence_files": 2219,
+    "scanned_manifest_sha256": "508935b5242ca72b3a268d2b80113293377457a0cc3d0fc4b0c07ceb48dbfb2d",
+    "scope": "Current tracked public text plus local JSON filenames containing registration/manifest/ledger/config/result/summary/seed",
+    "limitation": "Conservative decimal occurrences; no claim about deleted Git history, raw replay-only seeds, other machines or external experiments"
+  },
+  "opponents": [
+    "v1",
+    "market",
+    "round2"
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "workers": 4,
+  "game_budget": 96,
+  "entry_budget": 2,
+  "training_runs": 0,
+  "parameter_updates": 0,
+  "entry_tuples": [
+    {
+      "seed": 37348046,
+      "opponent": "market",
+      "side": 0,
+      "model_family": "fixed_epoch6"
+    },
+    {
+      "seed": 37348046,
+      "opponent": "market",
+      "side": 1,
+      "model_family": "fixed_epoch6"
+    }
+  ],
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+  "teacher_sha256": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+  "source_sha256": {
+    "teacher.py": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+    "worker.py": "a80158b26d1f4ae3d366c1d1276a1ca63e652bcd350f5ca25545b0f5f33759f1",
+    "v1.py": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "market.py": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "round2.py": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848"
+  },
+  "bootstrap": {
+    "draws": 20000,
+    "seed": 2026102326,
+    "unit": "whole seed",
+    "method": "percentile",
+    "confidence": 0.95,
+    "quantile_method": "linear"
+  },
+  "primary_outcome": "Own final cash minus initial cash3000; pair epoch6-original student at identical seed/opponent/seat.",
+  "primary_inference": "Eight equally weighted complete seed clusters. Within each seed retain all3 opponents and both seats.20k bootstrap samples of8whole seeds with replacement; two-sided95percent percentile CI on mean profit delta only.",
+  "learned_student_gate": "Primary profit CI lower>0 AND average profit delta>=1percent of this holdout original-student mean net profit (baseline must be positive); pooled mean margin/score>=0; market mean profit/margin/score>=0; all execution/privacy/preservation checks pass.",
+  "scope": "If accepted, only a new research improved-student baseline; do not replace default or deployed model, claim teacher superiority, full mechanism learning or large-scale RL readiness.",
+  "robustness": "Disclose all8seed/3opponent/two-model results and48pairs; leave-one-seed-out7seed means descriptive only, never selection or extra pass/fail gate.",
+  "interpretation": "Conditional on fixed development-selected candidate, registered seed generator and3 frozen opponents.8independent clusters, not96independent samples;20k draws add no information. Margin/score/market guards are observed point-estimate nondeclines, not proven population noninferiority.",
+  "stop": "One fixed candidate and one96+2panel; do not peek and adapt. No seed extension, model reselection, retraining or valid losing-game replacement. Infrastructure failure stops dispatch, drains in-flight jobs and preserves evidence; no automatic retry.",
+  "execution_acceptance": "All98games720states/719actions,DONEboth,0Agent errors or model fallbacks; both actors and stable traces reproduced; two official replay passes per game include ordered public/private state, inventory order,v1/v2 and actual economics.2 predetermined filename entries excluded from statistics."
+}
