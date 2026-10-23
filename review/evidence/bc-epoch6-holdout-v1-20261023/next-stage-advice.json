@@ -1,0 +1,35 @@
+{
+  "source": "authorized independent subagents",
+  "external_webchat": false,
+  "planner": "next_capability_advisor",
+  "independent_scope_reviewer": "audit_bc_diagnostics",
+  "root_decision": "adopt with joint assignment and actual-path reservation clarifications",
+  "implemented": false,
+  "stage": "joint worker-target-task demonstration reconstruction and replaceable selector V1",
+  "training_runs": 0,
+  "new_complete_games": 0,
+  "max_official_step_pairs": 12,
+  "max_new_official_transitions": 24,
+  "existing_trajectory_reexecution_counted_separately": true,
+  "demonstrations": "original60 frozen teacher matches; preserve8 train /2 development validation seeds",
+  "heldout_private_states_for_training_or_selection": false,
+  "requirements": [
+    "reproduce every complete teacher action across original60 games",
+    "candidate and target are worker + tile + operation; PLANT has separate crop selector",
+    "canonical ordering without teacher score; labels separate from model features",
+    "no score/priority/rank/selectedflag/offline seed/opponent private/future inputs",
+    "actual alternative choices update available units, tile conflicts, seed and supply and projected warehouse reservations",
+    "predeclare <=12 paired official steps, five task direct effects and second-unit after alternative first choice",
+    "five selected task types in both splits, cross-type competition, disclose candidate/selected/seed/unique encoding counts",
+    "candidate economic/time filters explicitly remain teacher restrictions, not official legality",
+    "DROP/PICKUP and other outside-selector behavior remain rules; no full-mechanism claim",
+    "fail coverage -> record gap and stop; no extra sampling, weaker thresholds or training",
+    "optional composed crop selector parity only on previous development diagnostic entry trajectories"
+  ],
+  "not_started": [
+    "task BC training",
+    "DAgger",
+    "PPO",
+    "new panel"
+  ]
+}

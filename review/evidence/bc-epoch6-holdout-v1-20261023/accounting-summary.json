@@ -1,0 +1,92 @@
+{
+  "post_result_descriptive_only": true,
+  "statistics_not_reselected": true,
+  "source_sha256": {
+    "economic-ledger.json": "9b8cf3ca45350adc504ec83c2bd2e84f60dc02b0a2b16c0f968b6354fc22ec15",
+    "panel-ledger.json": "0f9b0b8c9df5193cd3f834697a80aaa28cf5028d315ff612f420c462e0e0ca87",
+    "results.json": "ae73e6fef3207b262087245b18d3fb0996d27676dd349aa1ea0a363afb2e3c28"
+  },
+  "by_opponent_and_model": {
+    "v1": {
+      "original_student": {
+        "games": 16,
+        "net_profit": 37911.25,
+        "opponent_net_profit": 39207.375,
+        "margin": -1296.125,
+        "wins": 6,
+        "draws": 0,
+        "losses": 10
+      },
+      "fixed_epoch6": {
+        "games": 16,
+        "net_profit": 40145.0,
+        "opponent_net_profit": 38007.625,
+        "margin": 2137.375,
+        "wins": 12,
+        "draws": 0,
+        "losses": 4
+      }
+    },
+    "market": {
+      "original_student": {
+        "games": 16,
+        "net_profit": 41842.125,
+        "opponent_net_profit": 42784.125,
+        "margin": -942.0,
+        "wins": 10,
+        "draws": 0,
+        "losses": 6
+      },
+      "fixed_epoch6": {
+        "games": 16,
+        "net_profit": 41842.125,
+        "opponent_net_profit": 42784.125,
+        "margin": -942.0,
+        "wins": 10,
+        "draws": 0,
+        "losses": 6
+      }
+    },
+    "round2": {
+      "original_student": {
+        "games": 16,
+        "net_profit": 37515.0,
+        "opponent_net_profit": 40010.1875,
+        "margin": -2495.1875,
+        "wins": 6,
+        "draws": 0,
+        "losses": 10
+      },
+      "fixed_epoch6": {
+        "games": 16,
+        "net_profit": 39581.4375,
+        "opponent_net_profit": 38607.25,
+        "margin": 974.1875,
+        "wins": 8,
+        "draws": 0,
+        "losses": 8
+      }
+    }
+  },
+  "paired_trajectory_identity": {
+    "v1": {
+      "pairs": 16,
+      "same_v1": 0,
+      "same_v2": 0
+    },
+    "market": {
+      "pairs": 16,
+      "same_v1": 16,
+      "same_v2": 16
+    },
+    "round2": {
+      "pairs": 16,
+      "same_v1": 0,
+      "same_v2": 0
+    }
+  },
+  "mean_extra_sales_revenue": 1591.3125,
+  "mean_other_net_cash_delta": -157.91666666666652,
+  "mean_extra_net_profit": 1433.3958333333335,
+  "causal_percentages_claimed": false
+}

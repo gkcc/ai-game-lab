@@ -1,0 +1,52 @@
+{
+  "created_utc": "2026-10-23T07:36:54.165264+00:00",
+  "reviewer": "independent audit sub-agent",
+  "preregistration_commit": "2fe5b0845eee5c91a328fa9c9e3319544c2ce007",
+  "registration_sha256": "50ac6db637057852fdee5f6da251249f569e29771d2b5c8b65b2e650227bab61",
+  "freeze_sha256": "5c32d7756791bb215abfe9b280937c11eca2c364d6a97f05bd5219ea001487bc",
+  "selection_rule": "Deterministic registration-order coverage: second seed/original student/round2/seat1; third seed/epoch6/v1/seat0; both predefined market filename entries.",
+  "selected_before_analysis_results": true,
+  "match_profits_or_ledgers_read_for_selection": false,
+  "results_absent_at_selection": true,
+  "samples": [
+    {
+      "game": "holdout-37942598-round2-1-original_student",
+      "model_family": "original_student",
+      "seed": 37942598,
+      "opponent": "round2",
+      "side": 1,
+      "stage": "holdout"
+    },
+    {
+      "game": "holdout-37571542-v1-0-fixed_epoch6",
+      "model_family": "fixed_epoch6",
+      "seed": 37571542,
+      "opponent": "v1",
+      "side": 0,
+      "stage": "holdout"
+    },
+    {
+      "game": "entry-test-0",
+      "stage": "entry",
+      "seed": 37348046,
+      "opponent": "market",
+      "side": 0,
+      "model_family": "fixed_epoch6"
+    },
+    {
+      "game": "entry-test-1",
+      "stage": "entry",
+      "seed": 37348046,
+      "opponent": "market",
+      "side": 1,
+      "model_family": "fixed_epoch6"
+    }
+  ],
+  "planned_replay_games": 4,
+  "planned_official_replay_passes": 8,
+  "planned_official_transitions": 5752,
+  "new_games": 0,
+  "training_runs": 0,
+  "replays_executed_now": 0,
+  "limitation": "Only these4 games independently replayed later; root full98-game certificate and independent statistical/raw-state checks will be distinguished."
+}
