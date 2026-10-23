@@ -1,0 +1,11 @@
+{
+  "schema": "task-diagnostics-root-process-closure-v1",
+  "passed": true,
+  "observed_process_identities": 4,
+  "remaining_matching_identities": 0,
+  "extra_kills": 0,
+  "observed_support_actual_interpreter": true,
+  "mechanism": "Independent live Windows process identity check after parent terminal exit; both launcher and actual interpreter identities absent",
+  "scope": "Single observed run only, not a tested general descendant-kill guarantee",
+  "raw_identity_record_local_only": true
+}

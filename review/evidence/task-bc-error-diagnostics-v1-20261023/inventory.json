@@ -1,0 +1,1358 @@
+{
+  "passed": true,
+  "games": [
+    {
+      "game": "holdout-1714414373-v1-0-trained",
+      "seed": 1714414373,
+      "opponent": "v1",
+      "side": 0,
+      "policy": "trained",
+      "trace_sha256": "a07ac7ccecd84d492bc1b25adfde238bc423692e4c574ff31782e2be174269a5",
+      "replay_gzip_sha256": "ee441df8f7f4aeda12b231b0ff962b9d72d2904765406ad00477e893adc74df9",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2053,
+        "factual_candidates": 98614
+      }
+    },
+    {
+      "game": "holdout-1714414373-v1-1-trained",
+      "seed": 1714414373,
+      "opponent": "v1",
+      "side": 1,
+      "policy": "trained",
+      "trace_sha256": "02785d557095caecfe7647c93239e7419c744837e95a7520c1bc48f808e126cc",
+      "replay_gzip_sha256": "92652a3164816e672205d77f767cfc640cc1fc2eb5a384b12e0355df4c015c02",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2053,
+        "factual_candidates": 98614
+      }
+    },
+    {
+      "game": "holdout-1714414373-v1-0-teacher_task",
+      "seed": 1714414373,
+      "opponent": "v1",
+      "side": 0,
+      "policy": "teacher_task",
+      "trace_sha256": "93758ed4b98f3bf1555b964fcc6689a698875fbfebae0f76e2fb030a8f02996a",
+      "replay_gzip_sha256": "dc07f2de33f8f4c9f3b62f62c7b40b86f459aa77d332b0956da23b1259d4af35",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2064,
+        "factual_candidates": 98988
+      }
+    },
+    {
+      "game": "holdout-1714414373-v1-1-teacher_task",
+      "seed": 1714414373,
+      "opponent": "v1",
+      "side": 1,
+      "policy": "teacher_task",
+      "trace_sha256": "3a832765ca81c19a7f1050aa03113c8b6419185560070f25e5ce2e68a75ae7e6",
+      "replay_gzip_sha256": "38afd020d485077c886f80f188289ad9580d3c30ea5bc6551138d7f31785ee89",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2064,
+        "factual_candidates": 98988
+      }
+    },
+    {
+      "game": "holdout-1714414373-market-0-trained",
+      "seed": 1714414373,
+      "opponent": "market",
+      "side": 0,
+      "policy": "trained",
+      "trace_sha256": "9490f1a8ef308d9a820f99f97d50e03f7f420f05b4bb5acdef6568315486cc26",
+      "replay_gzip_sha256": "71a3b2cb2219bc96a05305e2a78fdcfaabbf07433f6332c5892f99a14b62cb4e",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2013,
+        "factual_candidates": 91815
+      }
+    },
+    {
+      "game": "holdout-1714414373-market-1-trained",
+      "seed": 1714414373,
+      "opponent": "market",
+      "side": 1,
+      "policy": "trained",
+      "trace_sha256": "82fcc219f4c2804516395804601979382d8f9beba150bc7e9f0a34d2dccbb8cb",
+      "replay_gzip_sha256": "8479b4dd3fd1156794c0171613c45798d5c47656d6696628c82cb73116b7ff5e",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2013,
+        "factual_candidates": 91815
+      }
+    },
+    {
+      "game": "holdout-1714414373-market-0-teacher_task",
+      "seed": 1714414373,
+      "opponent": "market",
+      "side": 0,
+      "policy": "teacher_task",
+      "trace_sha256": "f3bae82894ae43a066a0fc05823d8c9825ac32e66e7efcc77f6aff94374369c7",
+      "replay_gzip_sha256": "3ceba86d0075ae2d8dcbcbdd4083dee059771a06075c8190d39cb8af840ba92f",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2011,
+        "factual_candidates": 92052
+      }
+    },
+    {
+      "game": "holdout-1714414373-market-1-teacher_task",
+      "seed": 1714414373,
+      "opponent": "market",
+      "side": 1,
+      "policy": "teacher_task",
+      "trace_sha256": "3eb058733a5303aee9f563d2cfa03bffc17e6d0ee8a087cdf40502d2eab14037",
+      "replay_gzip_sha256": "c64858513e6bdd0d966d8f3185a4d5f5a48de84c4cb7a13a4fb0eeecc3f33b54",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2011,
+        "factual_candidates": 92052
+      }
+    },
+    {
+      "game": "holdout-1714414373-round2-0-trained",
+      "seed": 1714414373,
+      "opponent": "round2",
+      "side": 0,
+      "policy": "trained",
+      "trace_sha256": "11e6192e08f4977378bede71232139a1a59635306b923f0934fe9596902e68c1",
+      "replay_gzip_sha256": "e30b9dcef9fb25e5e2b1b5bdab33aff32b53d5d6a6ac61622a16b13d056edcc4",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2050,
+        "factual_candidates": 97408
+      }
+    },
+    {
+      "game": "holdout-1714414373-round2-1-trained",
+      "seed": 1714414373,
+      "opponent": "round2",
+      "side": 1,
+      "policy": "trained",
+      "trace_sha256": "721d8b85e68e8c60f69a420a6505b4305b63f95988b35fc8bb634860f44f7843",
+      "replay_gzip_sha256": "26d187eeaa9a2ed30dd7e668576996e64779e9742a7a9ec698ba334c712ab0f7",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2050,
+        "factual_candidates": 97408
+      }
+    },
+    {
+      "game": "holdout-1714414373-round2-0-teacher_task",
+      "seed": 1714414373,
+      "opponent": "round2",
+      "side": 0,
+      "policy": "teacher_task",
+      "trace_sha256": "afb72c57cbac228bf4eb81cbd489bdbe5b52ded50afe05beebebb0d00e090c5e",
+      "replay_gzip_sha256": "840a2a752327e963be890a5496a413aaa4ec0315b27b5fe8d32daf11b2182615",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2074,
+        "factual_candidates": 96541
+      }
+    },
+    {
+      "game": "holdout-1714414373-round2-1-teacher_task",
+      "seed": 1714414373,
+      "opponent": "round2",
+      "side": 1,
+      "policy": "teacher_task",
+      "trace_sha256": "218b7f9edac8b646960249e008c52736501c2299c121afdc734234f8633452f8",
+      "replay_gzip_sha256": "f7f37d7dd5d6f2bbdece850ff323ce39a10c158bf8873c528606d7fdf54e34ec",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2074,
+        "factual_candidates": 96541
+      }
+    },
+    {
+      "game": "holdout-2117918555-v1-0-trained",
+      "seed": 2117918555,
+      "opponent": "v1",
+      "side": 0,
+      "policy": "trained",
+      "trace_sha256": "8ee4f6262b11db446fd48e9602551e21443fb22a9950a872cf3cde1ad5c8d353",
+      "replay_gzip_sha256": "cd5deefbf045773cab06486938e82583b2dccc86199c6a92ee0b03a42a49fa11",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2571,
+        "factual_candidates": 122646
+      }
+    },
+    {
+      "game": "holdout-2117918555-v1-1-trained",
+      "seed": 2117918555,
+      "opponent": "v1",
+      "side": 1,
+      "policy": "trained",
+      "trace_sha256": "e090bb614ddc690fbc29afb850d5802f9384cc0f71bc66a86bebef1b8bbc0195",
+      "replay_gzip_sha256": "65cdbcb044abd940d3db37d0c9760b6a5613678f6f05a7e077ff8cb20aae59fa",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2555,
+        "factual_candidates": 122972
+      }
+    },
+    {
+      "game": "holdout-2117918555-v1-0-teacher_task",
+      "seed": 2117918555,
+      "opponent": "v1",
+      "side": 0,
+      "policy": "teacher_task",
+      "trace_sha256": "dd779bfd2f5f16b4eb6f74dc43e46c1ef26b883e21998cb15a8603a8f47923f9",
+      "replay_gzip_sha256": "d974c6a87dd8e0d5ba5e775a6193c85bd54a1a29b178c41514ccf40b75476b04",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2517,
+        "factual_candidates": 121232
+      }
+    },
+    {
+      "game": "holdout-2117918555-v1-1-teacher_task",
+      "seed": 2117918555,
+      "opponent": "v1",
+      "side": 1,
+      "policy": "teacher_task",
+      "trace_sha256": "2f1e9716d788fe0cfc7d62d1dd9203d60223e9369d7536237035d0216616d816",
+      "replay_gzip_sha256": "3fce1eb0aa9293d6033c418f9f9d9ed81197359c4df8a2d48d0e38d1b5d8338c",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2579,
+        "factual_candidates": 125751
+      }
+    },
+    {
+      "game": "holdout-2117918555-market-0-trained",
+      "seed": 2117918555,
+      "opponent": "market",
+      "side": 0,
+      "policy": "trained",
+      "trace_sha256": "1d3c51c8f33744d5487b6dbe0e2c7c5e98cf370129f4f700b30d201288a91d5b",
+      "replay_gzip_sha256": "b84150056414fcaf95c6310aa100aaa86c2fdad17469d058293e31c67ba37d13",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2515,
+        "factual_candidates": 133761
+      }
+    },
+    {
+      "game": "holdout-2117918555-market-1-trained",
+      "seed": 2117918555,
+      "opponent": "market",
+      "side": 1,
+      "policy": "trained",
+      "trace_sha256": "22c982fbffb0cbcc5f6dd102bada6fb7b55415e7a09f6e66a162c46e97a6b2fb",
+      "replay_gzip_sha256": "47adf58eb19af378601d773fae6d37a3c217d8d744c2b7121a325a03f856ce14",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2515,
+        "factual_candidates": 133761
+      }
+    },
+    {
+      "game": "holdout-2117918555-market-0-teacher_task",
+      "seed": 2117918555,
+      "opponent": "market",
+      "side": 0,
+      "policy": "teacher_task",
+      "trace_sha256": "7e4ce977183333dc4691e020562b6d383917939094e567b77f153ede29b41846",
+      "replay_gzip_sha256": "8ccc196c848bbde08e76ab12d784880b88713d3ce5b0ddb354c9cedf8dd64032",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2559,
+        "factual_candidates": 127351
+      }
+    },
+    {
+      "game": "holdout-2117918555-market-1-teacher_task",
+      "seed": 2117918555,
+      "opponent": "market",
+      "side": 1,
+      "policy": "teacher_task",
+      "trace_sha256": "89aa95b64fc40cd57daf1fccf303e31be4ce72c552cb691ab03207b35480d630",
+      "replay_gzip_sha256": "15df948758a0b74ac31b4830d4f12fd1a551954c50cf6e620ba6c13c62b1f23c",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2559,
+        "factual_candidates": 127351
+      }
+    },
+    {
+      "game": "holdout-2117918555-round2-0-trained",
+      "seed": 2117918555,
+      "opponent": "round2",
+      "side": 0,
+      "policy": "trained",
+      "trace_sha256": "361674b59f37d0ec7c7edca99c68ed54ee5011be52beacdec22ac3dd5427b10b",
+      "replay_gzip_sha256": "70b75464fda76bb169a40b2fdd1b4c8c1608b0fdb240211fb94e286adef26967",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2546,
+        "factual_candidates": 123639
+      }
+    },
+    {
+      "game": "holdout-2117918555-round2-1-trained",
+      "seed": 2117918555,
+      "opponent": "round2",
+      "side": 1,
+      "policy": "trained",
+      "trace_sha256": "59fae82af3c9b6ce64c7de1949ce64bf85dc32c75499de6f996abe686df318f0",
+      "replay_gzip_sha256": "d25f9ab18c026a5f5e902493fac453b1b7482ac35742fa8b508efe29bc5f9ec4",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2569,
+        "factual_candidates": 123216
+      }
+    },
+    {
+      "game": "holdout-2117918555-round2-0-teacher_task",
+      "seed": 2117918555,
+      "opponent": "round2",
+      "side": 0,
+      "policy": "teacher_task",
+      "trace_sha256": "f602cff7d98f6957027c270ef43a29374f04a98a356140f5858829fa627802bc",
+      "replay_gzip_sha256": "9abf3231db381497ad1122bcbecb9b49cff21155e138fc6f8f2092db6a736bea",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2533,
+        "factual_candidates": 122418
+      }
+    },
+    {
+      "game": "holdout-2117918555-round2-1-teacher_task",
+      "seed": 2117918555,
+      "opponent": "round2",
+      "side": 1,
+      "policy": "teacher_task",
+      "trace_sha256": "a98f3d08179f196953fc9de2fd7381d5e16ff1a2e9f4ec247e2fa70d6190ce4d",
+      "replay_gzip_sha256": "9aeba60bbae6ed1089d6aac6037fbb248509784d3b59fc7c29b008f169fca2b4",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2594,
+        "factual_candidates": 125512
+      }
+    },
+    {
+      "game": "holdout-2087726158-v1-0-trained",
+      "seed": 2087726158,
+      "opponent": "v1",
+      "side": 0,
+      "policy": "trained",
+      "trace_sha256": "221137ace64d1bddf1d9e1c5ef3d13d3418e17e9fa69e17ee1abe5893e8575be",
+      "replay_gzip_sha256": "3b5dae7f7a96b7fb41b9097623facf295e1be8a39b00a836beda2c639e2d9201",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2259,
+        "factual_candidates": 120354
+      }
+    },
+    {
+      "game": "holdout-2087726158-v1-1-trained",
+      "seed": 2087726158,
+      "opponent": "v1",
+      "side": 1,
+      "policy": "trained",
+      "trace_sha256": "9dc9dfdd5a1ae72d9110c07974679b9336bdca7be9327a035298ad2ec7fc2fa7",
+      "replay_gzip_sha256": "5e4c409f717d195bcad69ed003519290a714de5d0a39e92d03aae5fa14de68de",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2259,
+        "factual_candidates": 120354
+      }
+    },
+    {
+      "game": "holdout-2087726158-v1-0-teacher_task",
+      "seed": 2087726158,
+      "opponent": "v1",
+      "side": 0,
+      "policy": "teacher_task",
+      "trace_sha256": "c9c5c51ed1fc391df445966bfe8ec58f0346bbf5eaa1f4e5f0af1a35d50ca562",
+      "replay_gzip_sha256": "199bd8cfde7e7018f0e97dda65b03bcdf9687aea711a8c9181caf7aec4dbbf16",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2247,
+        "factual_candidates": 120222
+      }
+    },
+    {
+      "game": "holdout-2087726158-v1-1-teacher_task",
+      "seed": 2087726158,
+      "opponent": "v1",
+      "side": 1,
+      "policy": "teacher_task",
+      "trace_sha256": "9e5f6497169b9bcc603f57e1f1b5220381bfe12d2d81f379a87c923825adf764",
+      "replay_gzip_sha256": "78da20008fbc78535b57c844ba6ebfe2230309b494bc6a44473ed1e79d88731b",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2247,
+        "factual_candidates": 120222
+      }
+    },
+    {
+      "game": "holdout-2087726158-market-0-trained",
+      "seed": 2087726158,
+      "opponent": "market",
+      "side": 0,
+      "policy": "trained",
+      "trace_sha256": "a8c4d3bbc6565477b580c91da5aa5948ad3b6168af01642b2dbcb581f719deeb",
+      "replay_gzip_sha256": "66b747290b564dec13c730b788352b9d74627e9eb79367d8b5939955c4ad697d",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2246,
+        "factual_candidates": 120317
+      }
+    },
+    {
+      "game": "holdout-2087726158-market-1-trained",
+      "seed": 2087726158,
+      "opponent": "market",
+      "side": 1,
+      "policy": "trained",
+      "trace_sha256": "1a841a9b4e684c7be58cc066e46d7e0793aace600242f7493264a303fb5cb34f",
+      "replay_gzip_sha256": "23c8ffc3cfa96f349e524bb0412563c3c94377e7c3e05bd32b2bf9564d52d028",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2246,
+        "factual_candidates": 120317
+      }
+    },
+    {
+      "game": "holdout-2087726158-market-0-teacher_task",
+      "seed": 2087726158,
+      "opponent": "market",
+      "side": 0,
+      "policy": "teacher_task",
+      "trace_sha256": "81ea48cbf5cb91c5f3489c4044729ea149d928274c4cceba9125361a24421d7e",
+      "replay_gzip_sha256": "14c6dca9e1f40947b07a602262414093951ceea66495ddaa02c4cc21027a3416",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2248,
+        "factual_candidates": 120496
+      }
+    },
+    {
+      "game": "holdout-2087726158-market-1-teacher_task",
+      "seed": 2087726158,
+      "opponent": "market",
+      "side": 1,
+      "policy": "teacher_task",
+      "trace_sha256": "2189b74c08493ba623ba1f0b15f2a4f00cd383ca9a788b23ad1875b7aa263e5d",
+      "replay_gzip_sha256": "8a1e5320da6155a4aa7beec1d98ff0f2d339b005a70c25c4bd8073cdb398d022",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2248,
+        "factual_candidates": 120496
+      }
+    },
+    {
+      "game": "holdout-2087726158-round2-0-trained",
+      "seed": 2087726158,
+      "opponent": "round2",
+      "side": 0,
+      "policy": "trained",
+      "trace_sha256": "3b2af36a6ba5d4f99386dc9997ff1dab008d659b01382cea6f30eb7a6726c129",
+      "replay_gzip_sha256": "43fb4304736130029d9a613d0543ece745731ccf45fceef7aa0f1fcbf4770976",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2208,
+        "factual_candidates": 118563
+      }
+    },
+    {
+      "game": "holdout-2087726158-round2-1-trained",
+      "seed": 2087726158,
+      "opponent": "round2",
+      "side": 1,
+      "policy": "trained",
+      "trace_sha256": "e20cb64a83ff7ab9ebf0b6af6f1c14691ecdac561ba136f1f52a4df1d286e7c4",
+      "replay_gzip_sha256": "9a01217561d3beb3d81e8ce690e4e0b7c0e9f3a0a25071f2c5819ff5563ad15e",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2208,
+        "factual_candidates": 118563
+      }
+    },
+    {
+      "game": "holdout-2087726158-round2-0-teacher_task",
+      "seed": 2087726158,
+      "opponent": "round2",
+      "side": 0,
+      "policy": "teacher_task",
+      "trace_sha256": "5720be085666faa35d480d47e22d94740b3d091ff04bdf49461fcaca477f1b25",
+      "replay_gzip_sha256": "5387a738825374640fd30348fd647eb71f677b2160a6251467f9702fc65330b0",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2253,
+        "factual_candidates": 120546
+      }
+    },
+    {
+      "game": "holdout-2087726158-round2-1-teacher_task",
+      "seed": 2087726158,
+      "opponent": "round2",
+      "side": 1,
+      "policy": "teacher_task",
+      "trace_sha256": "2d7ee51deced2b1898ae30ac7826e4bee07d95175bb2b7287bba4d1b42161aa1",
+      "replay_gzip_sha256": "dc0ca99b9c2f43d776f4b9ac68d12d07a94507c876ef0405f7d6366e5fc03a7b",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2253,
+        "factual_candidates": 120546
+      }
+    },
+    {
+      "game": "holdout-3767282565-v1-0-trained",
+      "seed": 3767282565,
+      "opponent": "v1",
+      "side": 0,
+      "policy": "trained",
+      "trace_sha256": "84f1553d70f489eb39b9ee2a23715fd968aafd98cf26d28fd5d1c62412f561ec",
+      "replay_gzip_sha256": "83ba04dfe8fb8779d88999892ccd9095fc1deeea56295a50f72d0efbad696ae5",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2262,
+        "factual_candidates": 120443
+      }
+    },
+    {
+      "game": "holdout-3767282565-v1-1-trained",
+      "seed": 3767282565,
+      "opponent": "v1",
+      "side": 1,
+      "policy": "trained",
+      "trace_sha256": "2be7e20bc95f4cbae0537bd5de72fe470c5c639dbf7178f9a13e098d9625b2fb",
+      "replay_gzip_sha256": "87a5f274b46d78e6e139f77c98bc6a717b813e8e73a3707741001fe30f29dd51",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2262,
+        "factual_candidates": 120443
+      }
+    },
+    {
+      "game": "holdout-3767282565-v1-0-teacher_task",
+      "seed": 3767282565,
+      "opponent": "v1",
+      "side": 0,
+      "policy": "teacher_task",
+      "trace_sha256": "3591d065df6be37a218f738d1b18882f2701fe3d547d9c63715b0761f8b8dbbc",
+      "replay_gzip_sha256": "2f6937db27b08dadbcfb4cd406cae966ecb04594e629692e21418f7734cd1637",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2245,
+        "factual_candidates": 120167
+      }
+    },
+    {
+      "game": "holdout-3767282565-v1-1-teacher_task",
+      "seed": 3767282565,
+      "opponent": "v1",
+      "side": 1,
+      "policy": "teacher_task",
+      "trace_sha256": "76730cef5e35b65407933c8a3cde2d1b41cae15a536babba33e192fc79ce90ef",
+      "replay_gzip_sha256": "0537bc561b31f217a0fc80fcfb32b1a21b42b46d1e59315b7be62a374a872f83",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2245,
+        "factual_candidates": 120167
+      }
+    },
+    {
+      "game": "holdout-3767282565-market-0-trained",
+      "seed": 3767282565,
+      "opponent": "market",
+      "side": 0,
+      "policy": "trained",
+      "trace_sha256": "4936313afff594931559f917e917789bacf4a3e74dcafbf707760d1b7fda3051",
+      "replay_gzip_sha256": "4a7815a378a0866e879061e0af8136444b05884fa66653ae6b3f21eec140dd49",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2261,
+        "factual_candidates": 120175
+      }
+    },
+    {
+      "game": "holdout-3767282565-market-1-trained",
+      "seed": 3767282565,
+      "opponent": "market",
+      "side": 1,
+      "policy": "trained",
+      "trace_sha256": "57cf2d2133c7d7a6cae61ada4b47e9c1606f868c5b9f7ed7743a408f32937b21",
+      "replay_gzip_sha256": "a1ce46dc1fc6fa4b6c577ea095bfbbf3c2aacc551e07aa8c105e1a6ce3f91286",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2261,
+        "factual_candidates": 120175
+      }
+    },
+    {
+      "game": "holdout-3767282565-market-0-teacher_task",
+      "seed": 3767282565,
+      "opponent": "market",
+      "side": 0,
+      "policy": "teacher_task",
+      "trace_sha256": "93428d0987e0e6e59b0ae4fb05f6a1e416b468ab8aaa188f911084a2c66ae005",
+      "replay_gzip_sha256": "70508527169fe16469635febb6519e373f0c9120df95b64c60b2e093e39ebd82",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2248,
+        "factual_candidates": 120496
+      }
+    },
+    {
+      "game": "holdout-3767282565-market-1-teacher_task",
+      "seed": 3767282565,
+      "opponent": "market",
+      "side": 1,
+      "policy": "teacher_task",
+      "trace_sha256": "a17f83a0228622be48fa58db51e5128ec7a7063ee24b6b75d641878ba4ffd0a0",
+      "replay_gzip_sha256": "0db41f1ebd9fe17e60e4a01b94b001d0fd7b96c0183984fb2f1cf0f4f18bbc4b",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2248,
+        "factual_candidates": 120496
+      }
+    },
+    {
+      "game": "holdout-3767282565-round2-0-trained",
+      "seed": 3767282565,
+      "opponent": "round2",
+      "side": 0,
+      "policy": "trained",
+      "trace_sha256": "e9065361d2d85c260340188435b6c07518cc7862df5e03af5fcd02df56df1401",
+      "replay_gzip_sha256": "451e185a3132fb91cf2ebf9dc67a68d7ad67b57278039b2fe67c327c6907516d",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2231,
+        "factual_candidates": 120589
+      }
+    },
+    {
+      "game": "holdout-3767282565-round2-1-trained",
+      "seed": 3767282565,
+      "opponent": "round2",
+      "side": 1,
+      "policy": "trained",
+      "trace_sha256": "5485e25b8d1e9e443cfb1bf08f368e689f3419b7c3f60fd2b207b33e6c51d362",
+      "replay_gzip_sha256": "8aa9175da311b5e40dba9320353c2380149ec7a3576bdc97aec0efab87366ad8",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2231,
+        "factual_candidates": 120589
+      }
+    },
+    {
+      "game": "holdout-3767282565-round2-0-teacher_task",
+      "seed": 3767282565,
+      "opponent": "round2",
+      "side": 0,
+      "policy": "teacher_task",
+      "trace_sha256": "30e7d514b9ba065936079864c575401fee33fbaa78e9987013c803a55a56a038",
+      "replay_gzip_sha256": "0d9ad7ea1b0805d859eedfea029d29183a1f35c6437e45b81c264f3151034e06",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2253,
+        "factual_candidates": 120546
+      }
+    },
+    {
+      "game": "holdout-3767282565-round2-1-teacher_task",
+      "seed": 3767282565,
+      "opponent": "round2",
+      "side": 1,
+      "policy": "teacher_task",
+      "trace_sha256": "02ba2e00e08f00a8f25f57f2187f7b200a41a3ffcdf1f04232f180fbbdf8980a",
+      "replay_gzip_sha256": "3b7794170fcb24a23e906d2b4af11579b17ad955889bc2cbc5dc976d0067d8d9",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2253,
+        "factual_candidates": 120546
+      }
+    },
+    {
+      "game": "holdout-2941093011-v1-0-trained",
+      "seed": 2941093011,
+      "opponent": "v1",
+      "side": 0,
+      "policy": "trained",
+      "trace_sha256": "dbc8b8b52733369c3c077f513872287e9b8d8fdc390997ea9daf462b4e9b12bd",
+      "replay_gzip_sha256": "527dd5933daebb039eb17085e616b3a03bdc7378403b6e99aa9c862c794b53b8",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2181,
+        "factual_candidates": 112302
+      }
+    },
+    {
+      "game": "holdout-2941093011-v1-1-trained",
+      "seed": 2941093011,
+      "opponent": "v1",
+      "side": 1,
+      "policy": "trained",
+      "trace_sha256": "66556ab2423ea43274ae2066873fa81c507d186247fba73e0dd0060984d97938",
+      "replay_gzip_sha256": "2d6caaf336bd96bb58f2f422d4df8b79b5ae3c6a8cc591d1f99ef4fd6e4bb135",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2181,
+        "factual_candidates": 112302
+      }
+    },
+    {
+      "game": "holdout-2941093011-v1-0-teacher_task",
+      "seed": 2941093011,
+      "opponent": "v1",
+      "side": 0,
+      "policy": "teacher_task",
+      "trace_sha256": "770109a0bf92883a2d9baa456720ccdfb44d74b5c031465444c31ed5f5913f60",
+      "replay_gzip_sha256": "b1313e3454b9a6b9f4f1de9277149b617a12e8ccffabdcdaf6ca56c313efc0c2",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2180,
+        "factual_candidates": 112598
+      }
+    },
+    {
+      "game": "holdout-2941093011-v1-1-teacher_task",
+      "seed": 2941093011,
+      "opponent": "v1",
+      "side": 1,
+      "policy": "teacher_task",
+      "trace_sha256": "c17fc849c7c1624ada35a315f742cac454e360e230e45139fdeaa43a005d3e2c",
+      "replay_gzip_sha256": "adf6a8d2325d02c7888249f0c09483c6ba40ac50c4c53de37e998933fb6dda78",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2180,
+        "factual_candidates": 112598
+      }
+    },
+    {
+      "game": "holdout-2941093011-market-0-trained",
+      "seed": 2941093011,
+      "opponent": "market",
+      "side": 0,
+      "policy": "trained",
+      "trace_sha256": "e253798fec1a5c5d1edc33c05a251b076c5bea266bcd4cfac8dbf15737a55ebd",
+      "replay_gzip_sha256": "e24895c54b1eb16a24f5109477695428890b0661ed47713304539438d725ef3d",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2165,
+        "factual_candidates": 109882
+      }
+    },
+    {
+      "game": "holdout-2941093011-market-1-trained",
+      "seed": 2941093011,
+      "opponent": "market",
+      "side": 1,
+      "policy": "trained",
+      "trace_sha256": "6e0f889d8e156622aafad1524fcd261a46242b1abc8ea8b3d011840eaf0209c6",
+      "replay_gzip_sha256": "7b200d55499bc2ce71d943d48723a912b17f6cf1bc28eb117a2df310856f6955",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2165,
+        "factual_candidates": 109882
+      }
+    },
+    {
+      "game": "holdout-2941093011-market-0-teacher_task",
+      "seed": 2941093011,
+      "opponent": "market",
+      "side": 0,
+      "policy": "teacher_task",
+      "trace_sha256": "88e7599b5bc71523377cc1c09d8a944095e9965650ab06266329403b65bb6c57",
+      "replay_gzip_sha256": "12cf0968708cdc316eb7e8afbdabd9c57743e1c56356910449ac19dfa14adcb4",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2164,
+        "factual_candidates": 109979
+      }
+    },
+    {
+      "game": "holdout-2941093011-market-1-teacher_task",
+      "seed": 2941093011,
+      "opponent": "market",
+      "side": 1,
+      "policy": "teacher_task",
+      "trace_sha256": "7a6a4799811646533a6446d613be5f829b418f7ec02cbd415836233a5abb061e",
+      "replay_gzip_sha256": "96f0c098deef8ae919769cdd55c8449196b12773c654f05d35081e8c9a2154f8",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2164,
+        "factual_candidates": 109979
+      }
+    },
+    {
+      "game": "holdout-2941093011-round2-0-trained",
+      "seed": 2941093011,
+      "opponent": "round2",
+      "side": 0,
+      "policy": "trained",
+      "trace_sha256": "a0a611e4348de89b659317b30ac11fcdf42d539a185cdbaccad50431f5262d2b",
+      "replay_gzip_sha256": "0896081e3e3e9b8dfe1129b52fe039b5eebb3c199a48fb1274b2fed268a50b4f",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2188,
+        "factual_candidates": 112667
+      }
+    },
+    {
+      "game": "holdout-2941093011-round2-1-trained",
+      "seed": 2941093011,
+      "opponent": "round2",
+      "side": 1,
+      "policy": "trained",
+      "trace_sha256": "0eebf89798cb0667859ff3f3b1fb2e769dc1e91ad3d6bcfe45a539ba77b1917f",
+      "replay_gzip_sha256": "cd2658d10107cef108ba17df1951da8b396a37596e0b4a5d7f15ba343b72e9eb",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2188,
+        "factual_candidates": 112667
+      }
+    },
+    {
+      "game": "holdout-2941093011-round2-0-teacher_task",
+      "seed": 2941093011,
+      "opponent": "round2",
+      "side": 0,
+      "policy": "teacher_task",
+      "trace_sha256": "415ffda3545fa3b1597101caebe0c1166fe0b65c5513d9ee61f2b49be753010b",
+      "replay_gzip_sha256": "6c72455bd0ec79a0c1f1fe4019e633ae19513aedaf537266bde92a262335850a",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2198,
+        "factual_candidates": 116288
+      }
+    },
+    {
+      "game": "holdout-2941093011-round2-1-teacher_task",
+      "seed": 2941093011,
+      "opponent": "round2",
+      "side": 1,
+      "policy": "teacher_task",
+      "trace_sha256": "0759ee10db8ae00ba2998c907d5357c4f856e05d1f3ec62ccfd2654f99f739c1",
+      "replay_gzip_sha256": "4ba6bbddeb1ac8eb2a810efac43e3f1d9869ba7e1442c5c31958eef6c2186493",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2198,
+        "factual_candidates": 116288
+      }
+    },
+    {
+      "game": "holdout-78378034-v1-0-trained",
+      "seed": 78378034,
+      "opponent": "v1",
+      "side": 0,
+      "policy": "trained",
+      "trace_sha256": "fd299545dc73099453ba3b7bf1a488bddc0e5a2f5ed41affb4b367d7e2974cda",
+      "replay_gzip_sha256": "5cedfc9a7ab84b84efdbbd526b5d9d2e870bc03a407e3100ae7b75cf9c4abfea",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2208,
+        "factual_candidates": 117209
+      }
+    },
+    {
+      "game": "holdout-78378034-v1-1-trained",
+      "seed": 78378034,
+      "opponent": "v1",
+      "side": 1,
+      "policy": "trained",
+      "trace_sha256": "d12b649e09119a888796f305ee2be2556213c26f656cbf4b7490a68d3db8943c",
+      "replay_gzip_sha256": "f773ded6287de43e18fd9ca2824ad3b4abec99eaa921f5e2ef2d9d305fd6cac1",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2208,
+        "factual_candidates": 117209
+      }
+    },
+    {
+      "game": "holdout-78378034-v1-0-teacher_task",
+      "seed": 78378034,
+      "opponent": "v1",
+      "side": 0,
+      "policy": "teacher_task",
+      "trace_sha256": "a3c15bf9834c3ac1dfd32b97d7d60764bb8e49457e33664f16ebc4db88c7b3f8",
+      "replay_gzip_sha256": "b8fe86489650a19da888d541e35ca36796762874ebac0ebbe77f645738ad4c58",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2205,
+        "factual_candidates": 117393
+      }
+    },
+    {
+      "game": "holdout-78378034-v1-1-teacher_task",
+      "seed": 78378034,
+      "opponent": "v1",
+      "side": 1,
+      "policy": "teacher_task",
+      "trace_sha256": "7d07d00897fd26c850dfb6a1d48f269fa96727010747532b281f6b77c8d80d38",
+      "replay_gzip_sha256": "c9c6eff983134d536bce10b78f64b96c75064437596ebe3be0d4e0e8afb6e0e2",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2205,
+        "factual_candidates": 117393
+      }
+    },
+    {
+      "game": "holdout-78378034-market-0-trained",
+      "seed": 78378034,
+      "opponent": "market",
+      "side": 0,
+      "policy": "trained",
+      "trace_sha256": "d423a7d84db857b920e7b7ecf82a1f37f7b1cd693b82ac15a7551fc02a2a4d7b",
+      "replay_gzip_sha256": "8e3571cb73196ef37787c92dc35f39ba864549989daf247034d40132edee2ed4",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2215,
+        "factual_candidates": 117005
+      }
+    },
+    {
+      "game": "holdout-78378034-market-1-trained",
+      "seed": 78378034,
+      "opponent": "market",
+      "side": 1,
+      "policy": "trained",
+      "trace_sha256": "e7e89021887f9b1382a8e31294e724dba8f3c1c3c201e99ea9b223bdeef771e0",
+      "replay_gzip_sha256": "efa7291897fa7b45c6d071293afdeddc56f74c0e0ba6b1a34ea4b52fd43f3d27",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2215,
+        "factual_candidates": 117005
+      }
+    },
+    {
+      "game": "holdout-78378034-market-0-teacher_task",
+      "seed": 78378034,
+      "opponent": "market",
+      "side": 0,
+      "policy": "teacher_task",
+      "trace_sha256": "df9d4b12dd4f2851682103f2f43c748ce2f4c892990eb91d9d7064b4086f86ce",
+      "replay_gzip_sha256": "4db02d679927e8d5c7929ccbd72f4f55a9047ba2dc407f06ed16f5b869cf9621",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2205,
+        "factual_candidates": 117393
+      }
+    },
+    {
+      "game": "holdout-78378034-market-1-teacher_task",
+      "seed": 78378034,
+      "opponent": "market",
+      "side": 1,
+      "policy": "teacher_task",
+      "trace_sha256": "678e6f2339dbc64705aed42166b831c4a4d9fc7e70db20e6cf5265f1a08453eb",
+      "replay_gzip_sha256": "cc17e4bff8a740eef1cda6453c95c7bf72489a5aa8caf214c1f4a6bf79064b44",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2205,
+        "factual_candidates": 117393
+      }
+    },
+    {
+      "game": "holdout-78378034-round2-0-trained",
+      "seed": 78378034,
+      "opponent": "round2",
+      "side": 0,
+      "policy": "trained",
+      "trace_sha256": "f11234cc29e1a47cc439ff137ba708d047884c3315d94794ae5522916a8a31f5",
+      "replay_gzip_sha256": "b1acbb87972a4266cf8335f9179807a792166880f37911f0e28b5db70f164c3b",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2229,
+        "factual_candidates": 119628
+      }
+    },
+    {
+      "game": "holdout-78378034-round2-1-trained",
+      "seed": 78378034,
+      "opponent": "round2",
+      "side": 1,
+      "policy": "trained",
+      "trace_sha256": "af4520c91cc4141fa1a65b8648b30bb29c325a339d1ce396747765775d4d34ba",
+      "replay_gzip_sha256": "b1b14e9eef50deef27fae4bd7a0bdfa68c961e58034300f6a04f9bf0ae76c28a",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2229,
+        "factual_candidates": 119628
+      }
+    },
+    {
+      "game": "holdout-78378034-round2-0-teacher_task",
+      "seed": 78378034,
+      "opponent": "round2",
+      "side": 0,
+      "policy": "teacher_task",
+      "trace_sha256": "6ea01f29abdc4ba0c1c21c01bfba97e11e69f32fd4e1354a6bcc86e4d6cf5ebd",
+      "replay_gzip_sha256": "2efee98f7037bc681f3d9bacbf4b406e3dc9b40eeb4ced991b064543bb6d06cf",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2219,
+        "factual_candidates": 117875
+      }
+    },
+    {
+      "game": "holdout-78378034-round2-1-teacher_task",
+      "seed": 78378034,
+      "opponent": "round2",
+      "side": 1,
+      "policy": "teacher_task",
+      "trace_sha256": "fc4086a59566a5794e4db71defd2572935eba96a80d282dcdbe5fbbade230c9c",
+      "replay_gzip_sha256": "c6edc4ceecd4adf1734922ebc6237cbe9c878cfc2cbddea2c42b349789d15235",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2219,
+        "factual_candidates": 117875
+      }
+    },
+    {
+      "game": "holdout-1616203861-v1-0-trained",
+      "seed": 1616203861,
+      "opponent": "v1",
+      "side": 0,
+      "policy": "trained",
+      "trace_sha256": "4eba8d6d85c12b27b1de4e179845bfc6ea5eba917cd7707fdffba70b1bd9b2a8",
+      "replay_gzip_sha256": "ba3e799ffd8b8a1538b3eab8ed6457c7c8546ae437cd0ba9fc1be459cbc449b4",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2256,
+        "factual_candidates": 120292
+      }
+    },
+    {
+      "game": "holdout-1616203861-v1-1-trained",
+      "seed": 1616203861,
+      "opponent": "v1",
+      "side": 1,
+      "policy": "trained",
+      "trace_sha256": "8b77a342a52416978eaa7033670f4169be8f62effc658d96f5d6955036910eeb",
+      "replay_gzip_sha256": "58a521b5431d5017ece6cc085db585bc38e4baa8af1b8c4adff2d4dfeafa5cc1",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2256,
+        "factual_candidates": 120292
+      }
+    },
+    {
+      "game": "holdout-1616203861-v1-0-teacher_task",
+      "seed": 1616203861,
+      "opponent": "v1",
+      "side": 0,
+      "policy": "teacher_task",
+      "trace_sha256": "da19526cf81fe6e87fe425f35b86359373c253e4dd73a11a23d96fc64389efa9",
+      "replay_gzip_sha256": "b54cee331f14287399e37b45ad3e6a472d8161745e67b1dcc1ee3d7128c4a669",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2245,
+        "factual_candidates": 120196
+      }
+    },
+    {
+      "game": "holdout-1616203861-v1-1-teacher_task",
+      "seed": 1616203861,
+      "opponent": "v1",
+      "side": 1,
+      "policy": "teacher_task",
+      "trace_sha256": "e0388ebda414e8ad64a3e5fb8426f2cd06b6be2447188357393d4e73b22c91c7",
+      "replay_gzip_sha256": "dfa0ab5c45a8c1055cd4efbc083c7f3887d8ebb58750d33e6c741c8ea1e82b16",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2245,
+        "factual_candidates": 120196
+      }
+    },
+    {
+      "game": "holdout-1616203861-market-0-trained",
+      "seed": 1616203861,
+      "opponent": "market",
+      "side": 0,
+      "policy": "trained",
+      "trace_sha256": "1fb3619f55f366c44923b4782f389629656b7e94b559c2fb0e81162e039a3893",
+      "replay_gzip_sha256": "f671b8d76d970051e4aea406d22a468a0c81081b4ffa3c507cf9cb77485b760b",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2234,
+        "factual_candidates": 119708
+      }
+    },
+    {
+      "game": "holdout-1616203861-market-1-trained",
+      "seed": 1616203861,
+      "opponent": "market",
+      "side": 1,
+      "policy": "trained",
+      "trace_sha256": "7a7ef1f7eaa83d6391c6436f6b77bd14fd05051a859f25104792da01fa05a1df",
+      "replay_gzip_sha256": "069ddab66a9911be36bda231cc41aaf961a9389cca2da6c2db20b7e40685b3e0",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2234,
+        "factual_candidates": 119708
+      }
+    },
+    {
+      "game": "holdout-1616203861-market-0-teacher_task",
+      "seed": 1616203861,
+      "opponent": "market",
+      "side": 0,
+      "policy": "teacher_task",
+      "trace_sha256": "8b3ce2bcc4a742f8acf1e72927f4ed31a7446a7ea1bd380c69c6269ba59fd549",
+      "replay_gzip_sha256": "5f731241fe506b5de859aa672fd3a95c46f2eceb0070fa8d272ef71895123760",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2224,
+        "factual_candidates": 119446
+      }
+    },
+    {
+      "game": "holdout-1616203861-market-1-teacher_task",
+      "seed": 1616203861,
+      "opponent": "market",
+      "side": 1,
+      "policy": "teacher_task",
+      "trace_sha256": "d4af4beac95c4bcea06e1b797100b91e3beffd1ce9ff9b781f121d25532a6593",
+      "replay_gzip_sha256": "221587a3ad9b01b7731aa10d8e509c35945041b4eb2fb4191f6bd55b3b5b79d9",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2224,
+        "factual_candidates": 119446
+      }
+    },
+    {
+      "game": "holdout-1616203861-round2-0-trained",
+      "seed": 1616203861,
+      "opponent": "round2",
+      "side": 0,
+      "policy": "trained",
+      "trace_sha256": "bfd6e2868d4ec2529ab97978673caab35b1dc68d0d298245ecf2c3a024c59328",
+      "replay_gzip_sha256": "0052756e02580999f0f245bc9e495ba7f7b2c603006b5d864ffdc5e54554ef10",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2200,
+        "factual_candidates": 118631
+      }
+    },
+    {
+      "game": "holdout-1616203861-round2-1-trained",
+      "seed": 1616203861,
+      "opponent": "round2",
+      "side": 1,
+      "policy": "trained",
+      "trace_sha256": "c43fe46adbc9499a05cab10f7898771d8a69f7c4ce1e9685709629bcacca5161",
+      "replay_gzip_sha256": "ce7a93a99fe198da5a6a843111945493e98256e19e7af45e27bcb805c07e3516",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2200,
+        "factual_candidates": 118631
+      }
+    },
+    {
+      "game": "holdout-1616203861-round2-0-teacher_task",
+      "seed": 1616203861,
+      "opponent": "round2",
+      "side": 0,
+      "policy": "teacher_task",
+      "trace_sha256": "cb4ace6472223ec34c08f19c1e1a555c1d81c7baeb82afe7c0de7f2a4c3e7513",
+      "replay_gzip_sha256": "c0b6b17c6368492f27970bbb1badae9c69e68e2770068431df62cfdfcff55950",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2253,
+        "factual_candidates": 120546
+      }
+    },
+    {
+      "game": "holdout-1616203861-round2-1-teacher_task",
+      "seed": 1616203861,
+      "opponent": "round2",
+      "side": 1,
+      "policy": "teacher_task",
+      "trace_sha256": "fbc06d047a1ed5aa3f7787ed5c8b49552202e00a8d87ccd784bcb555397fa35e",
+      "replay_gzip_sha256": "c64ebb6d502346152350015ddd2fe8e7ba71e46119b87e70af4cdf7c0b4114b3",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2253,
+        "factual_candidates": 120546
+      }
+    },
+    {
+      "game": "holdout-870190021-v1-0-trained",
+      "seed": 870190021,
+      "opponent": "v1",
+      "side": 0,
+      "policy": "trained",
+      "trace_sha256": "b0f7804e38c0f872f39ab1641f12f611bfcfb1c59b0897d83d5d9f70143e128f",
+      "replay_gzip_sha256": "1dc7a4ff333e83b485b08df9e2c250c246d0d5dce1a198cd773a79973e4e49bb",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2263,
+        "factual_candidates": 120562
+      }
+    },
+    {
+      "game": "holdout-870190021-v1-1-trained",
+      "seed": 870190021,
+      "opponent": "v1",
+      "side": 1,
+      "policy": "trained",
+      "trace_sha256": "e11590cc523d052ab40e38d75af2cb1b80029b8219ee50e3083d24ff55cc3fb1",
+      "replay_gzip_sha256": "d0dc526153d6998715595fa5db67a34fecfe54688f02ccc62043734c58d7bfb8",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2263,
+        "factual_candidates": 120562
+      }
+    },
+    {
+      "game": "holdout-870190021-v1-0-teacher_task",
+      "seed": 870190021,
+      "opponent": "v1",
+      "side": 0,
+      "policy": "teacher_task",
+      "trace_sha256": "3a641d009435b4c68fb6967a63f6255be1610c955cc79155503f73bcac0d8701",
+      "replay_gzip_sha256": "53a37f56672ce6f2ed27ee183028cb8fdf14ff5a42bdc40a3b7faffc53a1eedc",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2242,
+        "factual_candidates": 120238
+      }
+    },
+    {
+      "game": "holdout-870190021-v1-1-teacher_task",
+      "seed": 870190021,
+      "opponent": "v1",
+      "side": 1,
+      "policy": "teacher_task",
+      "trace_sha256": "5d2cbc7734f5283c2313f786b7579bdbec5755c4b8d85b661db6d67f96e0bea9",
+      "replay_gzip_sha256": "27aa1788053336d7ac38e3f36ef575f6b9aa755184b649470262c78d2ea70b75",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2242,
+        "factual_candidates": 120238
+      }
+    },
+    {
+      "game": "holdout-870190021-market-0-trained",
+      "seed": 870190021,
+      "opponent": "market",
+      "side": 0,
+      "policy": "trained",
+      "trace_sha256": "e0dff815603bda7847ec45df9df424571462101aef45103c0f0ab7a390d63ab4",
+      "replay_gzip_sha256": "1e947395e7f9ee1c78d5461b695be6f8f2a1b6fe214f105963cedd6b2e87db58",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2257,
+        "factual_candidates": 120034
+      }
+    },
+    {
+      "game": "holdout-870190021-market-1-trained",
+      "seed": 870190021,
+      "opponent": "market",
+      "side": 1,
+      "policy": "trained",
+      "trace_sha256": "b2ac752c8268b4c80e4329519ab58cd687dafd29a2b743ab9618853f0473ce8e",
+      "replay_gzip_sha256": "844fcf47a4a770a5651a82fe544f8e7e50ab88da9f2481bcf2da000b6df55214",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2257,
+        "factual_candidates": 120034
+      }
+    },
+    {
+      "game": "holdout-870190021-market-0-teacher_task",
+      "seed": 870190021,
+      "opponent": "market",
+      "side": 0,
+      "policy": "teacher_task",
+      "trace_sha256": "6948f7f792fd897c834ec49bce2c7b308959993c4ab56ac9e06eed6f316bb654",
+      "replay_gzip_sha256": "709468cfb85eac0c08a1e9ed252d7c6f78e1ae759bffb00e4f22e31fac91aa12",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2249,
+        "factual_candidates": 120632
+      }
+    },
+    {
+      "game": "holdout-870190021-market-1-teacher_task",
+      "seed": 870190021,
+      "opponent": "market",
+      "side": 1,
+      "policy": "teacher_task",
+      "trace_sha256": "70b6cc935fd377ba1f573c5dc294dcbf81286eef2c1ddcaf7e864cfa47b7ea31",
+      "replay_gzip_sha256": "72e43a9586f761988ceb9eaff0f07b08e298ff104bbd7e1af8660500cf8eab22",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2249,
+        "factual_candidates": 120632
+      }
+    },
+    {
+      "game": "holdout-870190021-round2-0-trained",
+      "seed": 870190021,
+      "opponent": "round2",
+      "side": 0,
+      "policy": "trained",
+      "trace_sha256": "818fefb268bda58326c868863b60d144e53faf3a800114191160c0ce81be8941",
+      "replay_gzip_sha256": "36aceeccb1ce6fd8e55c2ffd241c99671f4844b272a83aaf75962f9763df6894",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2208,
+        "factual_candidates": 119314
+      }
+    },
+    {
+      "game": "holdout-870190021-round2-1-trained",
+      "seed": 870190021,
+      "opponent": "round2",
+      "side": 1,
+      "policy": "trained",
+      "trace_sha256": "7431d4b89975bd20177c47c4a262f14d4fd0bf8552d7a08f2ce3221aba4b6f46",
+      "replay_gzip_sha256": "a6cebd831e0848fa85bb435be4119336c11ae8b93578b1869352ea57ef74c785",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2208,
+        "factual_candidates": 119314
+      }
+    },
+    {
+      "game": "holdout-870190021-round2-0-teacher_task",
+      "seed": 870190021,
+      "opponent": "round2",
+      "side": 0,
+      "policy": "teacher_task",
+      "trace_sha256": "ec363af110c0e5118f80a47fc3b098a2e0b5d52a06b0b8ebb8b2501dddecd37f",
+      "replay_gzip_sha256": "d15b56708a1369f1f6f88a5fcf8254480b8c894357ccb5d508cdd9eb20900e27",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2253,
+        "factual_candidates": 120704
+      }
+    },
+    {
+      "game": "holdout-870190021-round2-1-teacher_task",
+      "seed": 870190021,
+      "opponent": "round2",
+      "side": 1,
+      "policy": "teacher_task",
+      "trace_sha256": "cf6fd788bd7d78364818a80f34b8c2ad8a51f78659577493197680b48e87fa42",
+      "replay_gzip_sha256": "fe865d5f64a723e67fb2f1e0b223a5087a06934be307308bf3037081396dcae4",
+      "counts": {
+        "turns": 719,
+        "factual_groups": 2253,
+        "factual_candidates": 120704
+      }
+    }
+  ],
+  "counts": {
+    "turns": 69024,
+    "factual_groups": 215546,
+    "factual_candidates": 11187318
+  },
+  "game_count": 96,
+  "trace_processing_pass": 1,
+  "replay_parses": 0,
+  "official_transitions": 0
+}

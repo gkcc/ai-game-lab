@@ -1,0 +1,40 @@
+{
+  "schema": "task-diagnostics-root-next-stage-decision-v1",
+  "accepted_stage": "task-bc-diagnostics-capacity-v1",
+  "advice_sha256": "f6f29a85915fd40fb83e8d723ea5d86e2b098db6263975e6f8238717ac80145c",
+  "basis": "Actual support timeout and an observed Windows launcher/child distinction justify execution-capacity work. There is no completed diagnostic evidence to justify changing the policy, representation or training objective.",
+  "scope": "Separate module and new output; small deterministic historical sample only; split support construction, scoring and global aggregation; real owned Windows tree lifecycle regression. No full diagnostic run in this capacity stage.",
+  "budgets": {
+    "selection": "按原registration seed顺序，在每个train/validation seed的v1对手、seat0文件组只取最前128个完整且对齐的原始行；共10个源文件组。前缀以外不解码、不为寻找特殊行扫描全文件；压缩文件散列核验与解码行量分别记账。",
+    "unique_train_groups_max": 1024,
+    "unique_validation_groups_max": 256,
+    "unique_total_groups_max": 1280,
+    "unique_candidates_max": 80000,
+    "cap_behavior": "预定完整样本若超过候选上限即停止该基准并报告容量不足，不能截断单行候选或临时改样本以获得通过。",
+    "real_fixed_model_evaluated_groups_total_max": 5120,
+    "real_fixed_model_evaluated_candidates_total_max": 320000,
+    "evaluation_accounting": "上限跨开发与正式容量验收累计；包括旧纯函数参考、新分片路径及验收复核。只调用冻结TaskNetwork.score，不调用JointAgent影子策略，不隐匿缓存命中与未命中的实际调用数。",
+    "support_boundary": "只形成明确标为sample_only的样本train索引，不得冒称完整训练支持；validation污染用合成的独有极值/类别检验。"
+  },
+  "wall_budgets": {
+    "preparation": 1800,
+    "formal_capacity_acceptance": 1800,
+    "total": 3600,
+    "per_job": 900,
+    "max_workers": 1
+  },
+  "refinements": [
+    "Synthetic limits are ceilings, not targets; use the smallest fixtures proving cross-shard conflicts, complete train support and exact numeric/aggregation equivalence. Do not build a generic scheduler.",
+    "Register deterministic sample selection and resource limits before actual source decoding; share all real scoring budgets across development, reference comparison and final acceptance, including independent reproduction. Do not multiply them per reviewer.",
+    "Capacity success proves measured sample semantics and lifecycle only. Full 108310-row support, full 135406-row scoring and panel-wide costs remain unproved; record unknowns honestly and choose a separately bounded next step after review.",
+    "Machine measurements and actual PID/creation records remain local; publish only task timing, bounded aggregate resource measurements and privacy-safe closure evidence.",
+    "Preserve original failed V1 sources, incomplete result and negative policy admission permanently. Do not restart its runner or interpret a future new phase as an old success."
+  ],
+  "no_training": true,
+  "no_new_games": true,
+  "no_policy_calls": true,
+  "no_official_transitions": true,
+  "default_and_models_unchanged": true,
+  "execution_started": false,
+  "user_reconfirmation_required": false
+}

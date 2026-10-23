@@ -1,0 +1,174 @@
+{
+  "schema": "task-diagnostics-next-stage-advice-v1",
+  "language": "zh-CN",
+  "role": "独立规划子代理；仅建议，未实施、未处理数据、未调用模型",
+  "public_safe": true,
+  "recommended_next_stage": "task-bc-diagnostics-capacity-v1",
+  "decision": "先完成有界容量与资源生命周期修复验收，再由自主循环另立一次全量诊断预登记；本容量阶段不启动全量诊断。无需再向用户请求授权。",
+  "evidence": {
+    "frozen_commit": "5f5f17d4704ac874d70a9fd99192647b79cd334f",
+    "source_receipt_sha256": {
+      "registration.json": "3f9ebf50341e4deb76391c5575a98fa910ac098dbc96403b6acddac89d6c760c",
+      "run-summary.json": "1b2f5388e4cfb7175483384d1cfbdc7cc9a21126aeb50408ca108cd65ce81b79",
+      "failure-analysis.json": "0874a059d25644f97133378c0c3e84f29c5ccadbc116ee1e559e8103d3ccdf95",
+      "attempts.json": "97b1b4672ca23a53e9937038e64eeeedb1e398879fdb8a8420cf4c6269a58560",
+      "freeze.json": "885346190ed1c73b9adedd86cbc3b6c66a1857fb565ab4e1aa9931148caa6e08"
+    },
+    "observed": "库存96场、69024回合、215546事实回调、11187318候选通过；support单任务在900秒上限超时，栈已进入完整train-only索引构建后的历史评分循环；未持久化完整索引或汇总。",
+    "known_limits": "无法恢复已评分行数、所在split或精确构建耗时；不可把1120秒总耗时或900秒超时直接解释为完整索引/完整评分的吞吐。",
+    "windows_boundary": "四个已观察launcher/interpreter身份均已退出是本次事实；当前Popen.kill/wait只等待直接子进程，不能据此推定任意Windows超时都会关闭后代。",
+    "unchanged_failed_admission": {
+      "passed": false,
+      "mean_profit_delta": -420.1875,
+      "mean_profit_relative_percent": -1.05694,
+      "round2_score_delta": -0.25,
+      "independent_new_economic_samples": 0
+    }
+  },
+  "scope": {
+    "new_module_and_output_required": true,
+    "never_modify_v1_frozen_sources_or_receipts": true,
+    "allowed": [
+      "在新模块分离原始数据验证、完整train-only索引构建与提交、按原文件评分、紧凑证据全局汇总。尽量复用纯函数，不重写任务策略。",
+      "完整支持索引独立写入临时输出并在校验后原子提交，持久化来源、精度、计数、索引散列与完成收据；失败的临时索引不可供评分读取。",
+      "评分任务逐一处理原60个历史游戏文件组，使用同一个已完成且只读的支持索引；索引加载开销纳入每个任务预算。不能用每个分片自己的支持集评分。",
+      "每片保留原始顺序的紧凑逐行诊断与来源行身份，最终按原manifest顺序流式重放到全局SummaryAccumulator；避免简单平均分片结果或丢弃重复行。",
+      "加入按完整源文件/完整行边界的阶段进度收据，记录已提交与处理中计数；进度只用于解释失败，不构成失败后自动续跑权限。",
+      "修复Windows受控进程树生命周期并进行真实venv启动路径回归；保持单worker。"
+    ],
+    "excluded": [
+      "改网络结构、特征、损失权重、教师优先级、任何策略或模型参数",
+      "训练、新seed、新比赛、官方状态转移、全量面板影子调用",
+      "重启、恢复或覆盖失败的V1正式运行",
+      "本阶段构建完整108310行支持索引、评分全部135406历史行或重新扫描全部96场面板",
+      "引入通用调度平台、数据库、GPU改造或并发扩容"
+    ]
+  },
+  "semantic_invariants": [
+    "原8个训练seed与2个验证seed完全保留；validation只评分，绝不更新支持索引、范围、类别集合或候选频数。",
+    "原始JSON数值用于float64部署评分，独立float32缓存键仅用于缓存支持描述；有符号零按原规则规范化；候选数量、候选完整顺序、语义ID均保留，不截断候选、不量化加速。",
+    "数值键相同而语义ID、上下文或教师标签不同的所有原始调用都保留；跨片冲突、同上下文冲突和不同上下文冲突必须全局计算。",
+    "raw分母是原回调数；unique32/64分母是整个目标split或登记切片内的唯一数值组数，每组先平均全部调用再等组加权；分片数、文件数、席位数均不能当独立样本。",
+    "累加顺序沿用原manifest与行顺序，避免分片局部浮点求和改变logit-gap统计；离散计数与键需完全相等，评分/汇总浮点结果按原路径核对，不能用放宽误差隐藏行为变化。",
+    "空类与空切片保留null；train和validation汇总各自按原定义计数，支持索引则只由完整train生成。",
+    "后续面板仍只在完整输入、候选和预留相同的前缀对齐，第一次完整上下文分叉后停止按ordinal配对；本容量阶段不改该行为。"
+  ],
+  "preparation_benchmark": {
+    "purpose": "小样本等价性、逐阶段计时、索引序列化/加载成本与资源估算，绝不生成全量诊断结论。",
+    "registration_before_source_reads": "先登记确定性抽样规则、上限、样本来源文件散列、测量项、一次候选实现编号及停止规则；不按误差、收益或运行结果选择样本。",
+    "historical_sample": {
+      "selection": "按原registration seed顺序，在每个train/validation seed的v1对手、seat0文件组只取最前128个完整且对齐的原始行；共10个源文件组。前缀以外不解码、不为寻找特殊行扫描全文件；压缩文件散列核验与解码行量分别记账。",
+      "unique_train_groups_max": 1024,
+      "unique_validation_groups_max": 256,
+      "unique_total_groups_max": 1280,
+      "unique_candidates_max": 80000,
+      "cap_behavior": "预定完整样本若超过候选上限即停止该基准并报告容量不足，不能截断单行候选或临时改样本以获得通过。",
+      "real_fixed_model_evaluated_groups_total_max": 5120,
+      "real_fixed_model_evaluated_candidates_total_max": 320000,
+      "evaluation_accounting": "上限跨开发与正式容量验收累计；包括旧纯函数参考、新分片路径及验收复核。只调用冻结TaskNetwork.score，不调用JointAgent影子策略，不隐匿缓存命中与未命中的实际调用数。",
+      "support_boundary": "只形成明确标为sample_only的样本train索引，不得冒称完整训练支持；validation污染用合成的独有极值/类别检验。"
+    },
+    "synthetic_limits": {
+      "unique_groups_max": 4096,
+      "unique_candidates_max": 262144,
+      "record_evaluations_including_repeats_max": 16384,
+      "candidate_evaluations_including_repeats_max": 1048576,
+      "generation": "固定合成种子和规模，不循环扩容寻找通过；构造高唯一键、跨片重复键、冲突标签、float32碰撞而float64不同、不同候选长度、单候选、并列max与空切片。"
+    },
+    "measurement_fields": [
+      "解压/JSON/schema验证、索引插入、索引提交、索引加载、每组评分、紧凑写入、全局汇总各自wall_seconds",
+      "完整进程树peak_working_set与private_commit、索引和紧凑文件字节数、加载次数",
+      "唯一32/64键数、上下文数、候选总数、缓存命中/未命中、处理完整行数",
+      "测量机器/解释器/依赖版本和线程限制；不能把合成或前缀吞吐当已证明全量吞吐"
+    ]
+  },
+  "capacity_acceptance": {
+    "formal_processing_kind": "单次冻结的容量验收，不是全量诊断正式处理",
+    "prepare_wall_seconds_max": 1800,
+    "formal_acceptance_wall_seconds_max": 1800,
+    "total_benchmark_and_acceptance_wall_seconds_max": 3600,
+    "per_job_seconds_max": 900,
+    "max_workers": 1,
+    "blas_threads": 1,
+    "process_tree_private_commit_limit_gib": 4,
+    "minimum_host_available_memory_gib_before_dispatch": 4,
+    "new_artifact_bytes_limit_gib": 2,
+    "minimum_free_disk_gib_before_dispatch": 4,
+    "resource_notes": "资源上限是保守建议，实施时先只读确认机器余量并在任何基准前固定；超限停止，不临场放大。准备与正式验收的样本/评分总上限共享，不能各用一份。",
+    "freeze_requirements": [
+      "新阶段登记、实现与受影响依赖哈希、小样本清单、资源参数及回归矩阵冻结；独立预审并本地提交后执行单次正式容量验收。",
+      "每个输出绑定新freeze、源manifest/原split、样本清单、模型sha、支持索引sha、分片范围与上一完成收据sha。",
+      "历史政策准入passed=false与V1诊断passed=false保持原样；容量passed单独命名，不能替代它们。"
+    ],
+    "required_checks": [
+      "旧纯函数参考与新分片路径在同一完整小样本上比较逐行选择、标签/别名标记、32/64键、所有分母与最终汇总；不得执行旧V1完整runner。",
+      "将相同数值键及冲突标签故意放在不同分片，验证全局去重与冲突；改变分片边界但保持原顺序，输出语义保持一致。",
+      "晚出现train样本影响早期评分的支持状态必须得到反映；validation独有极值不得进入索引。",
+      "缺片、重复片、乱序片、截断最后一行、来源/模型/索引哈希不符、索引未提交、非有限值均在发布结果前失败关闭。",
+      "真实Windows venv路径测试正常退出、合作deadline、忽略合作deadline的子进程及孙进程、父控制器受控中断四种情况；每类固定一次，不用mock替代。",
+      "进程归属应在工作代码执行前纳入受控树，如不可逃逸的Windows Job Object；覆盖launcher与actual interpreter，避免先运行后纳入的竞态。",
+      "每个超时/中断fixture运行最多5秒，强制树关闭与等待最多10秒；采集PID与creation identity或进程句柄，确认整个受控树为0再记workers_closed=true，不能仅凭直接子进程returncode。",
+      "准备故意存在的非本任务哨兵进程，验证没有宽泛按python名称或PID复用误杀；该哨兵也由fixture拥有并在finally关闭。",
+      "若受控树无法建立、关闭证明缺失或关闭失败，禁止继续dispatch和汇总，保留false回执与身份，不把active写0。"
+    ],
+    "stop_conditions": [
+      "任意语义/精度/分母不等价、资源上限、超时、哈希或输入不一致立即停止后续派发。",
+      "正式容量验收失败不得修后原目录补跑；保留失败并交独立复核，自主循环下一阶段另立登记。",
+      "准备阶段发现失败可以修代码，但所有已经消费的样本与计算计入共享上限；不增样本、不加次数、不扩大时间。",
+      "不因容量阶段缺乏政策证据而建议网络改造或训练。"
+    ],
+    "success_output": "容量验收收据、真实进程树关闭证据、逐阶段测量与保守预算表、下一次全量诊断可行或证据不足的明确结论。只发布公共安全汇总；原始观测、行记录、索引、完整本机路径与PID细节留本地。"
+  },
+  "later_full_diagnostic_contract": {
+    "run_in_this_capacity_stage": false,
+    "eventually_needed": true,
+    "why": "若仍要回答固定学生与教师在已消费面板上的误差、支持覆盖和影子分叉问题，完整支持索引及全体登记人口的诊断不可由前缀样本替代。现在缺证据的直接原因是吞吐/资源管理失败，先完成容量门槛，不能直接把更长deadline当修复。",
+    "authorization": "用户已授权自主研发审查发布规划循环；通过技术门槛后可自主另立全量阶段，不额外请求确认。",
+    "provisional_budgets": {
+      "wall_seconds_max": 14400,
+      "per_job_seconds_max": 900,
+      "max_workers": 1,
+      "training_runs": 0,
+      "new_games": 0,
+      "official_transitions": 0,
+      "source_games": 96,
+      "source_turns": 69024,
+      "historical_train_groups": 108310,
+      "historical_validation_groups": 27096,
+      "historical_candidates": 6900116,
+      "max_shadow_policy_calls": 69024,
+      "max_factual_groups": 600000,
+      "max_factual_candidates": 40000000,
+      "max_shadow_groups": 600000,
+      "max_shadow_candidates": 40000000,
+      "max_witnesses": 12,
+      "independent_witness_calls_max": 24
+    },
+    "processing": [
+      "完整train-only构建只一次，完整索引提交后方可分片评分；若构建本身仍无法在900秒完成，容量门槛不通过，不自动分布式化或放宽超时。",
+      "60个原历史文件组分别评分，train原始记录共两遍、validation一遍；所有评分复用同一完整索引；哈希读取与紧凑汇总另行记账。",
+      "最终必须完整覆盖135406历史回调与6900116候选，原60文件组/180源文件无缺失、无重复，才能发布支持汇总。",
+      "96场面板维持原登记库存核验与诊断两遍上限；若复用V1已完成库存，只能显式导入其收据并重新核实来源散列，不冒称本阶段新库存运行。",
+      "全量影子处理仍有独立风险，不能凭历史评分基准声称通过；新登记需注明目前未测得面板最慢任务和全局汇总成本，完整失败关闭仍有效。"
+    ],
+    "feasibility_gate": "登记前列出包含hash读取、完整支持构建、每片索引加载、评分、面板处理、全局合并、见证与关闭成本的总预算；已测部分按最慢小样本每候选/每唯一键成本取保守上界并预留至少2倍余量。预算不能仅按平均每行外推。单job预测应不高于450秒，总预测应不高于7200秒；未测部分明确未知，若无法给出有依据的余量则不启动全量正式运行，返回有界容量结论。",
+    "interpretation": "无论后续是否完成，原96场和8个panel seed均已消费，所有诊断为结果已知后的探索；新的登记、代码提交或分片不恢复独立性。无新经济准入、无新显著性检验、无收益因果归因。"
+  },
+  "risks": [
+    "小样本前缀未覆盖晚期长候选与高唯一键；容量预测可能偏乐观，必须显式保留未知并停止过度外推。",
+    "60次完整索引加载可能消耗大量wall time和内存；分片解决单任务打包过大，但不自动提升总吞吐。",
+    "全局唯一组/上下文状态仍可能成为新的内存峰值；不得以丢弃重复调用或只汇总局部比例降低内存。",
+    "Windows虚拟环境launcher、后代与父中断存在真实退出竞态；缺少树级关闭证据时禁止宣称资源已经回收。",
+    "未来面板影子与汇总尚未执行，其耗时未知；历史support修复通过不是全量诊断完成。",
+    "新阶段必须保持与原失败运行清晰分离，避免把技术重新设计包装成旧正式运行的重试或旧经济准入翻案。"
+  ],
+  "work_performed_for_this_advice": {
+    "read_only_source_and_receipt_inspection": true,
+    "new_advice_file_only": true,
+    "data_processing_runs": 0,
+    "model_calls": 0,
+    "training_runs": 0,
+    "new_games": 0,
+    "official_transitions": 0
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "schema": "task-error-diagnostics-final-publication-review-v1",
+  "reviewed_utc": "2026-10-23T11:44:28.561725+00:00",
+  "author_role": "Independent Codex review subagent; not external WebChat",
+  "passed": true,
+  "evidence_review_passed": true,
+  "diagnostics_completed": false,
+  "stage_acceptance": false,
+  "original_policy_admission_passed": false,
+  "scope": "Final wording and actual public export bytes reviewed before publication. passed applies only to this review, not to diagnostics or policy admission.",
+  "report": {
+    "runtime_relative_path": "TASK_BC_ERROR_DIAGNOSTICS_V1.zh-CN.md",
+    "public_relative_path": "kaggriculture/TASK_BC_ERROR_DIAGNOSTICS_V1.zh-CN.md",
+    "sha256": "18d2d1d798a7365e75e8ec26d0afd5c29e252aa36199f47aa019c57c203ae592",
+    "runtime_public_exact_bytes_equal": true
+  },
+  "bound_evidence_sha256": {
+    "acceptance.json": "759af320c25bcd5a11a6a92d0792a9cf1d46a65fd0ddc388f40e878c379ca544",
+    "independent-review.json": "003877afda88fa001810615d5ce5d3688251768c85f82ec7afe248412e70f810",
+    "next-stage-advice.json": "f6f29a85915fd40fb83e8d723ea5d86e2b098db6263975e6f8238717ac80145c",
+    "root-next-stage-decision.json": "9c72bd51ebc4b7134661f562b5ec01a537a011bd4fdca7e247508c0869777be0",
+    "publication-protection.json": "6e186636062f9b5928e2888604318c031dc8781b839ad09f0fae68e6d405ccf7",
+    "failure-analysis.json": "0874a059d25644f97133378c0c3e84f29c5ccadbc116ee1e559e8103d3ccdf95"
+  },
+  "wording_checks": [
+    "Report, acceptance and review appendices consistently retain support timeout, incomplete diagnostics, failed stage acceptance and original failed policy admission.",
+    "Inventory coverage is distinguished from zero completed game diagnostics. Historical computation is not falsely reported as zero. Partial scoring row count, active split and precise scoring-call count remain unknown.",
+    "Windows direct-child kill/wait is explicitly distinguished from the observed launcher/interpreter closure in this run. No general process-tree guarantee is asserted.",
+    "No causal loss diagnosis, representation defect, weighting defect, model promotion or new economic evidence is inferred from the timeout.",
+    "The future capacity stage is explicitly planning only, with no full diagnostic run, JointAgent shadow calls, training, new games or official transitions."
+  ],
+  "next_stage_plan_review": {
+    "execution_started": false,
+    "sample_unique_groups_max": 1280,
+    "sample_candidates_max": 80000,
+    "real_evaluated_groups_shared_total_max": 5120,
+    "real_evaluated_candidates_shared_total_max": 320000,
+    "budgets_shared_across_development_reference_acceptance_and_independent_review": true,
+    "train_validation_support_boundary_preserved": true,
+    "deterministic_prefix_sample_and_no_truncation_rule": true,
+    "sample_support_marked_sample_only": true,
+    "synthetic_scope": "Root narrows the independent advice to the smallest counterexamples needed; no generic scheduler/framework is authorized.",
+    "full_population_capacity_unproved": true,
+    "old_failed_run_must_not_restart": true
+  },
+  "public_export_review": {
+    "terminal_json_count": 16,
+    "report_count": 1,
+    "new_bytes_before_this_final_review": 83032,
+    "actual_terminal_exports": {
+      "acceptance.json": {
+        "sha256": "759af320c25bcd5a11a6a92d0792a9cf1d46a65fd0ddc388f40e878c379ca544",
+        "bytes": 2006
+      },
+      "attempts.json": {
+        "sha256": "97b1b4672ca23a53e9937038e64eeeedb1e398879fdb8a8420cf4c6269a58560",
+        "bytes": 620
+      },
+      "failure-analysis.json": {
+        "sha256": "0874a059d25644f97133378c0c3e84f29c5ccadbc116ee1e559e8103d3ccdf95",
+        "bytes": 2124
+      },
+      "failure.json": {
+        "sha256": "43ddb66ef4e58a3801057d02695840a8ea740782b6a4b3c4b9bac2c2aff3d893",
+        "bytes": 140
+      },
+      "independent-review.json": {
+        "sha256": "003877afda88fa001810615d5ce5d3688251768c85f82ec7afe248412e70f810",
+        "bytes": 6811
+      },
+      "inventory.json": {
+        "sha256": "23755048e7d0f29f114b8ab0ed4d9642f554b109caac53c1c5426fe6755adf78",
+        "bytes": 45215
+      },
+      "jobs-ledger.json": {
+        "sha256": "a74793dbb2be5170722589aa1616bad1b43d43e2cba4c5c99666ee26fba4897b",
+        "bytes": 152
+      },
+      "next-stage-advice.json": {
+        "sha256": "f6f29a85915fd40fb83e8d723ea5d86e2b098db6263975e6f8238717ac80145c",
+        "bytes": 15187
+      },
+      "pre-execution-commit.json": {
+        "sha256": "95395a3613e9087660bf4c9781daec8330aa36e9662bf08411cdc04475cf5a62",
+        "bytes": 62
+      },
+      "process-closure-check.json": {
+        "sha256": "b6be2b50402b899338968488001a937a121fa6deb89e3efa24874e7a52f2087e",
+        "bytes": 507
+      },
+      "publication-protection.json": {
+        "sha256": "6e186636062f9b5928e2888604318c031dc8781b839ad09f0fae68e6d405ccf7",
+        "bytes": 450
+      },
+      "root-next-stage-decision.json": {
+        "sha256": "9c72bd51ebc4b7134661f562b5ec01a537a011bd4fdca7e247508c0869777be0",
+        "bytes": 3374
+      },
+      "root-protection-verification.json": {
+        "sha256": "a306304f491165c8541316d534af1e27f42b41a3ea02ef8458f0d917ed12b4bd",
+        "bytes": 506
+      },
+      "run-started-public.json": {
+        "sha256": "aa0047b752698e4bc9f6b56b71e54bf690d7cff44e8706656ba1800963ba063d",
+        "bytes": 384
+      },
+      "run-summary.json": {
+        "sha256": "1b2f5388e4cfb7175483384d1cfbdc7cc9a21126aeb50408ca108cd65ce81b79",
+        "bytes": 590
+      },
+      "workers-closed.json": {
+        "sha256": "cbd78eecc5911d2bb00792cb4864703d8607d56c161cdfe2e6c429dcea0a99a6",
+        "bytes": 130
+      }
+    },
+    "all_terminal_exports_exact_local_bytes": true,
+    "working_tree_changes_match_exact_declared_export_list": true,
+    "preregistration_commit": "5f5f17d4704ac874d70a9fd99192647b79cd334f",
+    "preregistration_files_exact_commit_bytes_verified": 24,
+    "previously_protected_public_files": 739,
+    "previously_protected_public_files_same_bytes": 737,
+    "append_only_prefix_checks": {
+      "review/PROGRESS.md": {
+        "original_bytes": 23611,
+        "current_bytes": 24497,
+        "appended_bytes": 886,
+        "original_sha256": "eb00306483ebd9df2d1bdf41fa99562955b090afd22bdb9e14935a24c75bfcb7",
+        "current_sha256": "82d9d18b4a0beb42411e31a297c11e644f59c1117623bb859e84b19c371a7c51"
+      },
+      "review/WEBCHAT_REVIEW.md": {
+        "original_bytes": 18517,
+        "current_bytes": 19414,
+        "appended_bytes": 897,
+        "original_sha256": "2b9c5eb9dc47e748c90cc488d3c9c7edc1c68883af90f2074df8f18b11b47d2b",
+        "current_sha256": "80387f5a763450b50bc659df375f87cbd32092e9fe1cca5bde373bcc17783a22"
+      }
+    },
+    "run_started_public_redaction_verified": true,
+    "raw_artifacts_absent": [
+      "original monotonic run-started marker",
+      "process identity record",
+      "logs",
+      "job inputs and markers",
+      "raw replays and traces",
+      "models",
+      "support pickle",
+      "compact/shadow records",
+      "witness inputs"
+    ],
+    "narrow_privacy_check_passed": true,
+    "privacy_scope": "Reviewed exported text and checked for absolute machine paths, host/user identifiers and raw observation/numeric/PID fields. Root final privacy gates remain separately required.",
+    "final_review_export_status": "This review is not included in the 16-file snapshot; root may add this exact receipt to the whitelist. Commit/push had not occurred when this review was written."
+  },
+  "work_performed": {
+    "source_and_json_evidence_read_only": true,
+    "public_export_bytes_hashed": true,
+    "raw_dataset_or_trace_processing": 0,
+    "model_calls": 0,
+    "policy_calls": 0,
+    "official_transitions": 0,
+    "new_games": 0,
+    "training_runs": 0,
+    "files_created": [
+      "final-review.json"
+    ]
+  },
+  "conclusion": "No blocker found in failure wording, bounded next-stage planning or the inspected public whitelist. Publish the failed-stage evidence without changing its outcome; no subsequent experiment is started or certified by this review."
+}

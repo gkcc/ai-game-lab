@@ -1,0 +1,22 @@
+[
+  {
+    "key": "inventory",
+    "timeout_seconds": 900,
+    "attempt": 1,
+    "status": "passed",
+    "request_sha256": "31f3babb96ceb6437f318ff08073d5280c7552cae1c737c07d7278884d8aa8bf",
+    "owned_child_closed": true,
+    "returncode": 0,
+    "elapsed_seconds": 202.3279999999795
+  },
+  {
+    "key": "support",
+    "timeout_seconds": 900,
+    "attempt": 1,
+    "status": "timeout",
+    "request_sha256": "4ed7402abb5ad4c649f32403b1caf7666911351ed62fdeef6c3e543d29636cfd",
+    "owned_child_closed": true,
+    "owned_child_killed_and_reaped": true,
+    "elapsed_seconds": 900.0160000000033
+  }
+]

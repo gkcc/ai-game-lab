@@ -1,0 +1,122 @@
+{
+  "schema": "task-error-diagnostics-independent-failure-review-v1",
+  "reviewed_utc": "2026-10-23T11:39:07.201924+00:00",
+  "author_role": "Independent Codex source and evidence review subagent; not external WebChat",
+  "evidence_review_passed": true,
+  "diagnostics_completed": false,
+  "stage_acceptance": false,
+  "original_statistical_admission_passed": false,
+  "scope": "Review of a stopped failed diagnostic run. Evidence is internally consistent and appropriately reports failure; no successful diagnosis or strategy admission is established.",
+  "pre_execution_commit": "5f5f17d4704ac874d70a9fd99192647b79cd334f",
+  "pre_execution_commit_utc": "2026-10-23T11:17:02+00:00",
+  "run_started_utc": "2026-10-23T11:17:13.768527+00:00",
+  "freeze_sha256": "885346190ed1c73b9adedd86cbc3b6c66a1857fb565ab4e1aa9931148caa6e08",
+  "evidence_sha256": {
+    "registration.json": "3f9ebf50341e4deb76391c5575a98fa910ac098dbc96403b6acddac89d6c760c",
+    "freeze.json": "885346190ed1c73b9adedd86cbc3b6c66a1857fb565ab4e1aa9931148caa6e08",
+    "pre-review.json": "cf0fca5d41ff31f30ce58516b37a27996e93b6f8aec4cbe22fe5484e7756009b",
+    "pre-execution-commit.json": "95395a3613e9087660bf4c9781daec8330aa36e9662bf08411cdc04475cf5a62",
+    "run-started.json": "13baf138b93140591fecf6defcccefdcff99eefe04df9c2bc551c36ad77db79c",
+    "run-summary.json": "1b2f5388e4cfb7175483384d1cfbdc7cc9a21126aeb50408ca108cd65ce81b79",
+    "attempts.json": "97b1b4672ca23a53e9937038e64eeeedb1e398879fdb8a8420cf4c6269a58560",
+    "jobs-ledger.json": "a74793dbb2be5170722589aa1616bad1b43d43e2cba4c5c99666ee26fba4897b",
+    "inventory.json": "23755048e7d0f29f114b8ab0ed4d9642f554b109caac53c1c5426fe6755adf78",
+    "failure.json": "43ddb66ef4e58a3801057d02695840a8ea740782b6a4b3c4b9bac2c2aff3d893",
+    "failure-analysis.json": "0874a059d25644f97133378c0c3e84f29c5ccadbc116ee1e559e8103d3ccdf95",
+    "workers-closed.json": "cbd78eecc5911d2bb00792cb4864703d8607d56c161cdfe2e6c429dcea0a99a6",
+    "process-closure-check.json": "b6be2b50402b899338968488001a937a121fa6deb89e3efa24874e7a52f2087e",
+    "root-protection-verification.json": "a306304f491165c8541316d534af1e27f42b41a3ea02ef8458f0d917ed12b4bd"
+  },
+  "local_log_sha256": {
+    "support.log": "e377426c261f2803423fe1ddf538e2047729f47d4ca3c3738119e43a94e25e51",
+    "failure.log": "5148284a3b8c06cfbfc68c11228b59e2a6b6c7775bc934e0d40e28d464e9a5e7"
+  },
+  "terminal": {
+    "run_passed": false,
+    "completed_jobs": 1,
+    "completed_game_jobs": 0,
+    "attempts": 2,
+    "inventory_passed": true,
+    "support_status": "timeout",
+    "parent_exception": "TimeoutExpired",
+    "child_exception": "TimeoutError",
+    "run_elapsed_seconds": 1120.078999999998,
+    "inventory_elapsed_seconds": 202.3279999999795,
+    "support_elapsed_seconds": 900.0160000000033,
+    "registered_per_job_seconds": 900,
+    "retries": 0,
+    "further_jobs_dispatched": 0
+  },
+  "completed_inventory": {
+    "games": 96,
+    "turns": 69024,
+    "factual_groups": 215546,
+    "factual_candidates": 11187318,
+    "trace_processing_pass": 1,
+    "replay_parses": 0
+  },
+  "failure_interpretation": {
+    "confirmed": "The child traceback reached numeric._build_and_summarize line 317, after the complete train-only index construction loop at lines 311-312. Its records_for_split iterator raised the cooperative deadline error. The parent independently hit its registered 900-second wait timeout.",
+    "not_persisted": [
+      "support-index.pkl",
+      "support-summary.json",
+      "support-receipt.json"
+    ],
+    "partial_historical_scoring_rows": null,
+    "active_historical_split": null,
+    "frozen_model_scoring_calls_in_failed_support_job": null,
+    "unknowns": "The trace establishes the control-flow phase, not the number of scored rows, cache misses or whether the active scoring split was train or validation.",
+    "zero_counter_scope": "run-summary counters summarize completed game jobs only. Their zeros do not mean the support worker performed no historical computation.",
+    "not_inferred": [
+      "representation error mechanism",
+      "training-frequency distortion",
+      "causal reason for prior policy losses",
+      "successful complete diagnosis"
+    ]
+  },
+  "stop_and_closure": {
+    "inventory_then_support_only": true,
+    "game_job_inputs_absent": true,
+    "support_completion_marker_absent": true,
+    "diagnostic_tables_shadows_and_witnesses_absent": true,
+    "direct_process_receipt_closed": true,
+    "independent_live_windows_check": {
+      "observed_identities": 4,
+      "existing_pids": 0,
+      "matching_identities": 0,
+      "extra_kills": 0
+    },
+    "scope": "All four previously observed launcher/interpreter process identities were independently checked absent after terminal exit. This proves closure for these observed processes in this run only.",
+    "limitation": "Windows virtual-environment launchers created actual child interpreters. The frozen Popen.kill/wait routine tracks the direct process and is not a general descendant-tree termination guarantee. The direct-child closed receipt alone is insufficient for that stronger claim. No source changes or remedial kills were made during this review."
+  },
+  "protection": {
+    "independently_live_hashed_runtime_files": 96,
+    "independently_live_hashed_preparation_receipts": 8,
+    "independently_live_hashed_frozen_model_files": 2,
+    "independently_live_hashed_prior_terminal_artifacts": 4,
+    "exact_precommit_bytes_checked": [
+      "registration.json",
+      "freeze.json",
+      "pre-review.json"
+    ],
+    "commit_parent_matches_registered_baseline": true,
+    "commit_timestamp_precedes_run_marker": true,
+    "complete_history_verification_basis": "Root protection-verification receipt, explicitly attributed rather than claimed as a duplicate independent full scan. Its freeze/protection hashes and counts were independently checked.",
+    "root_verified_protected_runtime_files": 4822,
+    "root_verified_protected_public_files": 739,
+    "root_verified_frozen_inputs": 386,
+    "old_results_default_and_models_preserved": true
+  },
+  "review_work": {
+    "private_replay_or_trace_decompressions": 0,
+    "historical_dataset_processing": 0,
+    "model_scoring_calls": 0,
+    "policy_calls": 0,
+    "official_transitions": 0,
+    "new_games": 0,
+    "training_runs": 0,
+    "witnesses_consumed": 0,
+    "retries": 0
+  },
+  "conclusion": "Failure reporting and stopping evidence pass review. The diagnostic stage remains incomplete and not accepted. Preserve this run and its failure; do not restart, resume, enlarge its budget or reinterpret the original failed policy admission. Any future implementation or execution needs a separately registered stage."
+}

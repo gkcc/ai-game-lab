@@ -1,0 +1,39 @@
+{
+  "schema": "task-error-diagnostics-failed-stage-acceptance-v1",
+  "stage_acceptance": false,
+  "diagnostics_completed": false,
+  "evidence_review_passed": true,
+  "original_policy_admission_passed": false,
+  "completed_inventory": {
+    "turns": 69024,
+    "factual_groups": 215546,
+    "factual_candidates": 11187318
+  },
+  "completed_game_diagnostics": 0,
+  "shadow_policy_calls": 0,
+  "training_runs": 0,
+  "new_games": 0,
+  "official_transitions": 0,
+  "retries": 0,
+  "actual_owned_processes_remaining": 0,
+  "process_tree_general_guarantee_established": false,
+  "default_and_models_unchanged": true,
+  "protected_runtime_files": 4822,
+  "protected_public_same_bytes": 737,
+  "protected_public_append_only_files": 2,
+  "report_sha256": "18d2d1d798a7365e75e8ec26d0afd5c29e252aa36199f47aa019c57c203ae592",
+  "evidence_sha256": {
+    "registration.json": "3f9ebf50341e4deb76391c5575a98fa910ac098dbc96403b6acddac89d6c760c",
+    "freeze.json": "885346190ed1c73b9adedd86cbc3b6c66a1857fb565ab4e1aa9931148caa6e08",
+    "pre-execution-commit.json": "95395a3613e9087660bf4c9781daec8330aa36e9662bf08411cdc04475cf5a62",
+    "run-summary.json": "1b2f5388e4cfb7175483384d1cfbdc7cc9a21126aeb50408ca108cd65ce81b79",
+    "failure-analysis.json": "0874a059d25644f97133378c0c3e84f29c5ccadbc116ee1e559e8103d3ccdf95",
+    "independent-review.json": "003877afda88fa001810615d5ce5d3688251768c85f82ec7afe248412e70f810",
+    "root-protection-verification.json": "a306304f491165c8541316d534af1e27f42b41a3ea02ef8458f0d917ed12b4bd",
+    "publication-protection.json": "6e186636062f9b5928e2888604318c031dc8781b839ad09f0fae68e6d405ccf7",
+    "process-closure-check.json": "b6be2b50402b899338968488001a937a121fa6deb89e3efa24874e7a52f2087e",
+    "next-stage-advice.json": "f6f29a85915fd40fb83e8d723ea5d86e2b098db6263975e6f8238717ac80145c",
+    "root-next-stage-decision.json": "9c72bd51ebc4b7134661f562b5ec01a537a011bd4fdca7e247508c0869777be0"
+  },
+  "next_capacity_phase_started": false
+}
