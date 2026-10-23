@@ -1,0 +1,103 @@
+{
+  "schema": "task-capacity-exit-independent-pre-review-v1",
+  "passed": true,
+  "stage": "task-bc-diagnostics-capacity-exit-v1",
+  "authorship": "independent subagent static review",
+  "reviewer": "audit_capacity_exit_v1",
+  "real_webchat": false,
+  "created_utc": "2026-10-23T12:42:12.084274+00:00",
+  "scope": "Pre-execution source and registration review only; no runtime acceptance claimed.",
+  "freeze_sha256": "b265fccc0f5300404e92ff17c11b7ed6e544e407da712c2059455362d01dadb8",
+  "registration_sha256": "9f4f0730448723c47a747f582d002222a8679d1af3fdd3d80c38137647cbd9a6",
+  "protection_sha256": "2b986b39acdeb80633298dc7abab63b61f473e842634473ec59bc449ba1c16bb",
+  "baseline_head": "754d8ffcd50954c3a6862a7b1c001077cab78ce6",
+  "new_source_sha256": {
+    "learning/task_bc_diagnostics_capacity_exit_v1/__init__.py": "b771ee616687b270fc83caffa90fd9aeb892c178de3eea4cfce3723d734e14e9",
+    "learning/task_bc_diagnostics_capacity_exit_v1/experiment.py": "1a8ed68484b5cb735783f5a8b8c2235398648720a7025be6602b7fb1c9b43988",
+    "learning/task_bc_diagnostics_capacity_exit_v1/README.zh-CN.md": "c8a2dee524d8a76a3301b34ee1817d89176216223c672d548383ce9435bd80f7",
+    "learning/task_bc_diagnostics_capacity_exit_v1/runner.py": "7e66215fd16e6ecbe58459065be7360288d3b127985e651696cd852cc5b42834",
+    "learning/task_bc_diagnostics_capacity_exit_v1/tree_fixture.py": "12a7810371327835ef610743de371dd084ab8491c9959a24609a72e22fd76f4f",
+    "learning/task_bc_diagnostics_capacity_exit_v1/verify_tree.py": "8ed91afba2e4d1b65d69460f51961048295ca1a45e2657ee92a7bca3356f9a9e",
+    "learning/task_bc_diagnostics_capacity_exit_v1/windows_tree.py": "04c7b51e8a97483f3650f50427c9e6e7bf74e31e790d93d5579d79726b292f38"
+  },
+  "frozen_sources_checked": 112,
+  "old_frozen_sources_checked": 105,
+  "runtime_protection_files_checked": 5259,
+  "public_protection_files_checked": 811,
+  "old_artifacts_checked": 12,
+  "source_and_protection_hash_mismatches": 0,
+  "old_ledger_sha256": "72440475c1ac0f85c5c6ac03c15080f24f5cf70c7047d2438f04c889c64ac51e",
+  "old_ledger_lines": 7,
+  "carried_reserved_groups": 1536,
+  "carried_reserved_candidates": 88500,
+  "new_groups_cap": 1280,
+  "new_candidates_cap": 73750,
+  "planned_cumulative_groups": 2816,
+  "planned_cumulative_candidates": 162250,
+  "registered_cases": [
+    "normal_exit",
+    "cooperative_deadline",
+    "noncooperative_descendants",
+    "controller_hard_interrupt",
+    "root_zero_natural_descendants",
+    "root_zero_stubborn_descendants",
+    "root_zero_original_deadline"
+  ],
+  "registered_job_sequence": [
+    "tree",
+    "build",
+    "score-collect-31205138-v1-0-teacher",
+    "score-collect-31273729-v1-0-teacher",
+    "score-collect-31317742-v1-0-teacher",
+    "score-collect-31360134-v1-0-teacher",
+    "score-collect-31504409-v1-0-teacher",
+    "score-collect-31637216-v1-0-teacher",
+    "score-collect-31659052-v1-0-teacher",
+    "score-collect-31834104-v1-0-teacher",
+    "score-collect-31921285-v1-0-teacher",
+    "score-collect-31932889-v1-0-teacher",
+    "aggregate",
+    "compare"
+  ],
+  "accepted_design": [
+    "Exact seven case identities and order bind registration and worker acceptance; root-before-child cases use actual launcher handles and retained interpreter identities.",
+    "Zero root exit waits at most two seconds within original work/phase deadlines and the same total ten-second close allowance. Forced cleanup cannot count as successful capacity work.",
+    "Existing containment, private commit limit, no-breakaway and kill-on-close primitives remain frozen; only root/whole-job completion is revised.",
+    "New append-only reservation chain binds the complete immutable prior ledger, carries its failed-dispatch counts, reserves before each dispatch and never refunds.",
+    "One full historical sample pass only: complete all train support first, ten fresh shards in original manifest order, aggregate once and compare unchanged pure-function reference without rescoring.",
+    "Comparison separately verifies old reference freeze and new aggregate freeze, source/model/sample provenance, each ordered compact record and exact whole-split summary bytes.",
+    "Per-job work and final cleanup are clipped within the registered 900-second stage; source/model/default/historical outcomes remain protected.",
+    "Private lifecycle details are stored locally. Public lifecycle summaries whitelist aggregates, with no PID, command lines or host paths."
+  ],
+  "findings_resolved": [
+    {
+      "finding": "Timing fixture could pass a negative duration after a second clock observation.",
+      "resolution": "The root-before-deadline sleep is clamped to zero before freeze."
+    },
+    {
+      "finding": "Three targeted case names initially differed between registration and implementation.",
+      "resolution": "Both use the exact registered root_zero names; worker requires exact ordered case IDs."
+    }
+  ],
+  "blocking_findings": [],
+  "limitations": [
+    "No fixture, source observation decoding, model scoring, training, game or official transition was executed by this reviewer.",
+    "Pre-review does not establish Windows lifecycle success, full sample completion, numeric equivalence or policy improvement.",
+    "The local exact commit must be created and ready() must bind committed bytes before the first execution; this is not a third-party timestamp.",
+    "Final independent acceptance must inspect actual terminal elapsed time including reported final persistence and require no more than 900 seconds.",
+    "Any failure stops this registration; unused reserved capacity does not authorize retry or grace tuning.",
+    "Historical sample reuse cannot establish new holdout performance or full historical diagnostic capacity."
+  ],
+  "reviewer_execution": {
+    "fixtures": 0,
+    "source_rows_decoded": 0,
+    "model_scores": 0,
+    "policy_calls": 0,
+    "training_runs": 0,
+    "games": 0,
+    "official_transitions": 0
+  },
+  "old_capacity_stage_acceptance": false,
+  "original_diagnostic_stage_acceptance": false,
+  "original_policy_admission": false
+}
