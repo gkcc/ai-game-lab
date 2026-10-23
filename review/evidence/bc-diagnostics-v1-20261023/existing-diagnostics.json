@@ -1,0 +1,5565 @@
+{
+  "passed": true,
+  "source_games": 62,
+  "new_games": 0,
+  "training_runs": 0,
+  "engine_reexecutions": 0,
+  "decision_reconstruction_turns": 44578,
+  "model_sha256": "9806383a2d335fdfe21639f911946b29b36708aba89f7b3961a4f9999b0388fd",
+  "crops": [
+    "WHEAT",
+    "CARROT",
+    "TOMATO",
+    "STRAWBERRY",
+    "MELON"
+  ],
+  "groups": {
+    "train": {
+      "calls": 9127,
+      "errors": 508,
+      "accuracy": 0.9443409663635367,
+      "teacher_counts": {
+        "WHEAT": 960,
+        "CARROT": 1374,
+        "TOMATO": 326,
+        "STRAWBERRY": 2851,
+        "MELON": 3616
+      },
+      "confusion": [
+        [
+          888,
+          18,
+          34,
+          20,
+          0
+        ],
+        [
+          106,
+          1220,
+          40,
+          8,
+          0
+        ],
+        [
+          6,
+          0,
+          314,
+          6,
+          0
+        ],
+        [
+          18,
+          4,
+          40,
+          2597,
+          192
+        ],
+        [
+          0,
+          16,
+          0,
+          0,
+          3600
+        ]
+      ],
+      "recall": {
+        "WHEAT": 0.925,
+        "CARROT": 0.8879184861717613,
+        "TOMATO": 0.9631901840490797,
+        "STRAWBERRY": 0.9109084531743248,
+        "MELON": 0.995575221238938
+      },
+      "exact_feature_vectors": 2896,
+      "contiguous_decision_chains": 4633,
+      "disagreement_by_outcome": {
+        "move_with_seed": 170,
+        "plant_request": 183,
+        "request_seed": 155
+      },
+      "mean_teacher_score_gap": 0.02951785958353223
+    },
+    "validation": {
+      "calls": 2356,
+      "errors": 298,
+      "accuracy": 0.8735144312393888,
+      "teacher_counts": {
+        "WHEAT": 218,
+        "CARROT": 382,
+        "TOMATO": 84,
+        "STRAWBERRY": 764,
+        "MELON": 908
+      },
+      "confusion": [
+        [
+          172,
+          28,
+          18,
+          0,
+          0
+        ],
+        [
+          62,
+          302,
+          8,
+          10,
+          0
+        ],
+        [
+          44,
+          8,
+          32,
+          0,
+          0
+        ],
+        [
+          14,
+          12,
+          42,
+          648,
+          48
+        ],
+        [
+          0,
+          4,
+          0,
+          0,
+          904
+        ]
+      ],
+      "recall": {
+        "WHEAT": 0.7889908256880734,
+        "CARROT": 0.7905759162303665,
+        "TOMATO": 0.38095238095238093,
+        "STRAWBERRY": 0.8481675392670157,
+        "MELON": 0.9955947136563876
+      },
+      "exact_feature_vectors": 814,
+      "contiguous_decision_chains": 1208,
+      "disagreement_by_outcome": {
+        "move_with_seed": 60,
+        "plant_request": 120,
+        "request_seed": 118
+      },
+      "mean_teacher_score_gap": 0.17878437580621967
+    },
+    "student_development": {
+      "calls": 312,
+      "errors": 16,
+      "accuracy": 0.9487179487179487,
+      "teacher_counts": {
+        "WHEAT": 20,
+        "CARROT": 4,
+        "TOMATO": 0,
+        "STRAWBERRY": 148,
+        "MELON": 140
+      },
+      "confusion": [
+        [
+          20,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          4,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          132,
+          16
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          140
+        ]
+      ],
+      "recall": {
+        "WHEAT": 1.0,
+        "CARROT": 1.0,
+        "TOMATO": null,
+        "STRAWBERRY": 0.8918918918918919,
+        "MELON": 1.0
+      },
+      "exact_feature_vectors": 156,
+      "contiguous_decision_chains": 162,
+      "disagreement_by_outcome": {
+        "request_seed": 6,
+        "plant_request": 8,
+        "move_with_seed": 2
+      },
+      "mean_teacher_score_gap": 0.182467537193394
+    }
+  },
+  "by_seed": [
+    {
+      "split": "train",
+      "seed": 31273729,
+      "calls": 991,
+      "errors": 28,
+      "accuracy": 0.9717457114026236,
+      "teacher_counts": {
+        "WHEAT": 6,
+        "CARROT": 156,
+        "TOMATO": 6,
+        "STRAWBERRY": 373,
+        "MELON": 450
+      },
+      "confusion": [
+        [
+          4,
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          156,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          6,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          349,
+          24
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          448
+        ]
+      ],
+      "recall": {
+        "WHEAT": 0.6666666666666666,
+        "CARROT": 1.0,
+        "TOMATO": 1.0,
+        "STRAWBERRY": 0.935656836461126,
+        "MELON": 0.9955555555555555
+      },
+      "exact_feature_vectors": 532,
+      "contiguous_decision_chains": 532,
+      "disagreement_by_outcome": {
+        "move_with_seed": 10,
+        "plant_request": 13,
+        "request_seed": 5
+      },
+      "mean_teacher_score_gap": 0.022672375848679458
+    },
+    {
+      "split": "train",
+      "seed": 31317742,
+      "calls": 960,
+      "errors": 26,
+      "accuracy": 0.9729166666666667,
+      "teacher_counts": {
+        "WHEAT": 78,
+        "CARROT": 12,
+        "TOMATO": 0,
+        "STRAWBERRY": 420,
+        "MELON": 450
+      },
+      "confusion": [
+        [
+          78,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          12,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          396,
+          24
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          448
+        ]
+      ],
+      "recall": {
+        "WHEAT": 1.0,
+        "CARROT": 1.0,
+        "TOMATO": null,
+        "STRAWBERRY": 0.9428571428571428,
+        "MELON": 0.9955555555555555
+      },
+      "exact_feature_vectors": 374,
+      "contiguous_decision_chains": 492,
+      "disagreement_by_outcome": {
+        "move_with_seed": 10,
+        "plant_request": 12,
+        "request_seed": 4
+      },
+      "mean_teacher_score_gap": 0.022275019062982106
+    },
+    {
+      "split": "train",
+      "seed": 31360134,
+      "calls": 930,
+      "errors": 26,
+      "accuracy": 0.9720430107526882,
+      "teacher_counts": {
+        "WHEAT": 42,
+        "CARROT": 12,
+        "TOMATO": 0,
+        "STRAWBERRY": 426,
+        "MELON": 450
+      },
+      "confusion": [
+        [
+          42,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          12,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          402,
+          24
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          448
+        ]
+      ],
+      "recall": {
+        "WHEAT": 1.0,
+        "CARROT": 1.0,
+        "TOMATO": null,
+        "STRAWBERRY": 0.9436619718309859,
+        "MELON": 0.9955555555555555
+      },
+      "exact_feature_vectors": 461,
+      "contiguous_decision_chains": 483,
+      "disagreement_by_outcome": {
+        "move_with_seed": 10,
+        "plant_request": 12,
+        "request_seed": 4
+      },
+      "mean_teacher_score_gap": 0.022993568065013785
+    },
+    {
+      "split": "train",
+      "seed": 31637216,
+      "calls": 1832,
+      "errors": 154,
+      "accuracy": 0.915938864628821,
+      "teacher_counts": {
+        "WHEAT": 576,
+        "CARROT": 548,
+        "TOMATO": 24,
+        "STRAWBERRY": 226,
+        "MELON": 458
+      },
+      "confusion": [
+        [
+          532,
+          8,
+          16,
+          20,
+          0
+        ],
+        [
+          46,
+          494,
+          0,
+          8,
+          0
+        ],
+        [
+          6,
+          0,
+          18,
+          0,
+          0
+        ],
+        [
+          18,
+          4,
+          2,
+          178,
+          24
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          456
+        ]
+      ],
+      "recall": {
+        "WHEAT": 0.9236111111111112,
+        "CARROT": 0.9014598540145985,
+        "TOMATO": 0.75,
+        "STRAWBERRY": 0.7876106194690266,
+        "MELON": 0.9956331877729258
+      },
+      "exact_feature_vectors": 810,
+      "contiguous_decision_chains": 884,
+      "disagreement_by_outcome": {
+        "move_with_seed": 38,
+        "plant_request": 56,
+        "request_seed": 60
+      },
+      "mean_teacher_score_gap": 0.03785190144638227
+    },
+    {
+      "split": "train",
+      "seed": 31659052,
+      "calls": 954,
+      "errors": 26,
+      "accuracy": 0.9727463312368972,
+      "teacher_counts": {
+        "WHEAT": 0,
+        "CARROT": 84,
+        "TOMATO": 36,
+        "STRAWBERRY": 384,
+        "MELON": 450
+      },
+      "confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          84,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          36,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          360,
+          24
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          448
+        ]
+      ],
+      "recall": {
+        "WHEAT": null,
+        "CARROT": 1.0,
+        "TOMATO": 1.0,
+        "STRAWBERRY": 0.9375,
+        "MELON": 0.9955555555555555
+      },
+      "exact_feature_vectors": 371,
+      "contiguous_decision_chains": 492,
+      "disagreement_by_outcome": {
+        "move_with_seed": 10,
+        "plant_request": 12,
+        "request_seed": 4
+      },
+      "mean_teacher_score_gap": 0.022415113522497716
+    },
+    {
+      "split": "train",
+      "seed": 31834104,
+      "calls": 1468,
+      "errors": 196,
+      "accuracy": 0.8664850136239782,
+      "teacher_counts": {
+        "WHEAT": 258,
+        "CARROT": 304,
+        "TOMATO": 260,
+        "STRAWBERRY": 188,
+        "MELON": 458
+      },
+      "confusion": [
+        [
+          232,
+          10,
+          16,
+          0,
+          0
+        ],
+        [
+          60,
+          204,
+          40,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          254,
+          6,
+          0
+        ],
+        [
+          0,
+          0,
+          38,
+          126,
+          24
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          456
+        ]
+      ],
+      "recall": {
+        "WHEAT": 0.8992248062015504,
+        "CARROT": 0.6710526315789473,
+        "TOMATO": 0.9769230769230769,
+        "STRAWBERRY": 0.6702127659574468,
+        "MELON": 0.9956331877729258
+      },
+      "exact_feature_vectors": 628,
+      "contiguous_decision_chains": 700,
+      "disagreement_by_outcome": {
+        "move_with_seed": 72,
+        "plant_request": 54,
+        "request_seed": 70
+      },
+      "mean_teacher_score_gap": 0.04814469005502107
+    },
+    {
+      "split": "train",
+      "seed": 31921285,
+      "calls": 954,
+      "errors": 26,
+      "accuracy": 0.9727463312368972,
+      "teacher_counts": {
+        "WHEAT": 0,
+        "CARROT": 84,
+        "TOMATO": 0,
+        "STRAWBERRY": 420,
+        "MELON": 450
+      },
+      "confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          84,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          396,
+          24
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          448
+        ]
+      ],
+      "recall": {
+        "WHEAT": null,
+        "CARROT": 1.0,
+        "TOMATO": null,
+        "STRAWBERRY": 0.9428571428571428,
+        "MELON": 0.9955555555555555
+      },
+      "exact_feature_vectors": 371,
+      "contiguous_decision_chains": 492,
+      "disagreement_by_outcome": {
+        "move_with_seed": 10,
+        "plant_request": 12,
+        "request_seed": 4
+      },
+      "mean_teacher_score_gap": 0.022415113522497716
+    },
+    {
+      "split": "train",
+      "seed": 31932889,
+      "calls": 1038,
+      "errors": 26,
+      "accuracy": 0.9749518304431599,
+      "teacher_counts": {
+        "WHEAT": 0,
+        "CARROT": 174,
+        "TOMATO": 0,
+        "STRAWBERRY": 414,
+        "MELON": 450
+      },
+      "confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          174,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          390,
+          24
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          448
+        ]
+      ],
+      "recall": {
+        "WHEAT": null,
+        "CARROT": 1.0,
+        "TOMATO": null,
+        "STRAWBERRY": 0.9420289855072463,
+        "MELON": 0.9955555555555555
+      },
+      "exact_feature_vectors": 413,
+      "contiguous_decision_chains": 558,
+      "disagreement_by_outcome": {
+        "move_with_seed": 10,
+        "plant_request": 12,
+        "request_seed": 4
+      },
+      "mean_teacher_score_gap": 0.02060117369986784
+    },
+    {
+      "split": "validation",
+      "seed": 31205138,
+      "calls": 1038,
+      "errors": 26,
+      "accuracy": 0.9749518304431599,
+      "teacher_counts": {
+        "WHEAT": 0,
+        "CARROT": 174,
+        "TOMATO": 0,
+        "STRAWBERRY": 414,
+        "MELON": 450
+      },
+      "confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          174,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          390,
+          24
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          448
+        ]
+      ],
+      "recall": {
+        "WHEAT": null,
+        "CARROT": 1.0,
+        "TOMATO": null,
+        "STRAWBERRY": 0.9420289855072463,
+        "MELON": 0.9955555555555555
+      },
+      "exact_feature_vectors": 413,
+      "contiguous_decision_chains": 554,
+      "disagreement_by_outcome": {
+        "move_with_seed": 10,
+        "plant_request": 12,
+        "request_seed": 4
+      },
+      "mean_teacher_score_gap": 0.02060117369986784
+    },
+    {
+      "split": "validation",
+      "seed": 31504409,
+      "calls": 1318,
+      "errors": 272,
+      "accuracy": 0.7936267071320182,
+      "teacher_counts": {
+        "WHEAT": 218,
+        "CARROT": 208,
+        "TOMATO": 84,
+        "STRAWBERRY": 350,
+        "MELON": 458
+      },
+      "confusion": [
+        [
+          172,
+          28,
+          18,
+          0,
+          0
+        ],
+        [
+          62,
+          128,
+          8,
+          10,
+          0
+        ],
+        [
+          44,
+          8,
+          32,
+          0,
+          0
+        ],
+        [
+          14,
+          12,
+          42,
+          258,
+          24
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          456
+        ]
+      ],
+      "recall": {
+        "WHEAT": 0.7889908256880734,
+        "CARROT": 0.6153846153846154,
+        "TOMATO": 0.38095238095238093,
+        "STRAWBERRY": 0.7371428571428571,
+        "MELON": 0.9956331877729258
+      },
+      "exact_feature_vectors": 553,
+      "contiguous_decision_chains": 654,
+      "disagreement_by_outcome": {
+        "move_with_seed": 50,
+        "plant_request": 108,
+        "request_seed": 114
+      },
+      "mean_teacher_score_gap": 0.30336264878527364
+    },
+    {
+      "split": "student_development",
+      "seed": 31317742,
+      "calls": 312,
+      "errors": 16,
+      "accuracy": 0.9487179487179487,
+      "teacher_counts": {
+        "WHEAT": 20,
+        "CARROT": 4,
+        "TOMATO": 0,
+        "STRAWBERRY": 148,
+        "MELON": 140
+      },
+      "confusion": [
+        [
+          20,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          4,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          132,
+          16
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          140
+        ]
+      ],
+      "recall": {
+        "WHEAT": 1.0,
+        "CARROT": 1.0,
+        "TOMATO": null,
+        "STRAWBERRY": 0.8918918918918919,
+        "MELON": 1.0
+      },
+      "exact_feature_vectors": 156,
+      "contiguous_decision_chains": 162,
+      "disagreement_by_outcome": {
+        "request_seed": 6,
+        "plant_request": 8,
+        "move_with_seed": 2
+      },
+      "mean_teacher_score_gap": 0.182467537193394
+    }
+  ],
+  "by_game": [
+    {
+      "game": "collect-smoke-31205138-market-0-teacher",
+      "seed": 31205138,
+      "opponent": "market",
+      "side": 0,
+      "split": "validation",
+      "calls": 173,
+      "errors": 4,
+      "accuracy": 0.976878612716763,
+      "teacher_counts": {
+        "WHEAT": 0,
+        "CARROT": 29,
+        "TOMATO": 0,
+        "STRAWBERRY": 69,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          29,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          65,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          75
+        ]
+      ],
+      "recall": {
+        "WHEAT": null,
+        "CARROT": 1.0,
+        "TOMATO": null,
+        "STRAWBERRY": 0.9420289855072463,
+        "MELON": 1.0
+      },
+      "exact_feature_vectors": 173,
+      "contiguous_decision_chains": 93,
+      "disagreement_by_outcome": {
+        "move_with_seed": 2,
+        "plant_request": 2
+      },
+      "mean_teacher_score_gap": 0.022674671163682016
+    },
+    {
+      "game": "collect-smoke-31205138-market-1-teacher",
+      "seed": 31205138,
+      "opponent": "market",
+      "side": 1,
+      "split": "validation",
+      "calls": 173,
+      "errors": 4,
+      "accuracy": 0.976878612716763,
+      "teacher_counts": {
+        "WHEAT": 0,
+        "CARROT": 29,
+        "TOMATO": 0,
+        "STRAWBERRY": 69,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          29,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          65,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          75
+        ]
+      ],
+      "recall": {
+        "WHEAT": null,
+        "CARROT": 1.0,
+        "TOMATO": null,
+        "STRAWBERRY": 0.9420289855072463,
+        "MELON": 1.0
+      },
+      "exact_feature_vectors": 173,
+      "contiguous_decision_chains": 93,
+      "disagreement_by_outcome": {
+        "move_with_seed": 2,
+        "plant_request": 2
+      },
+      "mean_teacher_score_gap": 0.022674671163682016
+    },
+    {
+      "game": "collect-smoke-31317742-market-0-teacher",
+      "seed": 31317742,
+      "opponent": "market",
+      "side": 0,
+      "split": "train",
+      "calls": 160,
+      "errors": 4,
+      "accuracy": 0.975,
+      "teacher_counts": {
+        "WHEAT": 13,
+        "CARROT": 2,
+        "TOMATO": 0,
+        "STRAWBERRY": 70,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          13,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          66,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          75
+        ]
+      ],
+      "recall": {
+        "WHEAT": 1.0,
+        "CARROT": 1.0,
+        "TOMATO": null,
+        "STRAWBERRY": 0.9428571428571428,
+        "MELON": 1.0
+      },
+      "exact_feature_vectors": 160,
+      "contiguous_decision_chains": 82,
+      "disagreement_by_outcome": {
+        "move_with_seed": 2,
+        "plant_request": 2
+      },
+      "mean_teacher_score_gap": 0.02451698819573118
+    },
+    {
+      "game": "collect-smoke-31317742-market-1-teacher",
+      "seed": 31317742,
+      "opponent": "market",
+      "side": 1,
+      "split": "train",
+      "calls": 160,
+      "errors": 4,
+      "accuracy": 0.975,
+      "teacher_counts": {
+        "WHEAT": 13,
+        "CARROT": 2,
+        "TOMATO": 0,
+        "STRAWBERRY": 70,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          13,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          66,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          75
+        ]
+      ],
+      "recall": {
+        "WHEAT": 1.0,
+        "CARROT": 1.0,
+        "TOMATO": null,
+        "STRAWBERRY": 0.9428571428571428,
+        "MELON": 1.0
+      },
+      "exact_feature_vectors": 160,
+      "contiguous_decision_chains": 82,
+      "disagreement_by_outcome": {
+        "move_with_seed": 2,
+        "plant_request": 2
+      },
+      "mean_teacher_score_gap": 0.02451698819573118
+    },
+    {
+      "game": "collect-31205138-round2-0-teacher",
+      "seed": 31205138,
+      "opponent": "round2",
+      "side": 0,
+      "split": "validation",
+      "calls": 173,
+      "errors": 5,
+      "accuracy": 0.9710982658959537,
+      "teacher_counts": {
+        "WHEAT": 0,
+        "CARROT": 29,
+        "TOMATO": 0,
+        "STRAWBERRY": 69,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          29,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          65,
+          4
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          74
+        ]
+      ],
+      "recall": {
+        "WHEAT": null,
+        "CARROT": 1.0,
+        "TOMATO": null,
+        "STRAWBERRY": 0.9420289855072463,
+        "MELON": 0.9866666666666667
+      },
+      "exact_feature_vectors": 173,
+      "contiguous_decision_chains": 92,
+      "disagreement_by_outcome": {
+        "request_seed": 1,
+        "move_with_seed": 2,
+        "plant_request": 2
+      },
+      "mean_teacher_score_gap": 0.023771506885608393
+    },
+    {
+      "game": "collect-31205138-round2-1-teacher",
+      "seed": 31205138,
+      "opponent": "round2",
+      "side": 1,
+      "split": "validation",
+      "calls": 173,
+      "errors": 5,
+      "accuracy": 0.9710982658959537,
+      "teacher_counts": {
+        "WHEAT": 0,
+        "CARROT": 29,
+        "TOMATO": 0,
+        "STRAWBERRY": 69,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          29,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          65,
+          4
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          74
+        ]
+      ],
+      "recall": {
+        "WHEAT": null,
+        "CARROT": 1.0,
+        "TOMATO": null,
+        "STRAWBERRY": 0.9420289855072463,
+        "MELON": 0.9866666666666667
+      },
+      "exact_feature_vectors": 173,
+      "contiguous_decision_chains": 92,
+      "disagreement_by_outcome": {
+        "request_seed": 1,
+        "move_with_seed": 2,
+        "plant_request": 2
+      },
+      "mean_teacher_score_gap": 0.023771506885608393
+    },
+    {
+      "game": "collect-31205138-v1-0-teacher",
+      "seed": 31205138,
+      "opponent": "v1",
+      "side": 0,
+      "split": "validation",
+      "calls": 173,
+      "errors": 4,
+      "accuracy": 0.976878612716763,
+      "teacher_counts": {
+        "WHEAT": 0,
+        "CARROT": 29,
+        "TOMATO": 0,
+        "STRAWBERRY": 69,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          29,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          65,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          75
+        ]
+      ],
+      "recall": {
+        "WHEAT": null,
+        "CARROT": 1.0,
+        "TOMATO": null,
+        "STRAWBERRY": 0.9420289855072463,
+        "MELON": 1.0
+      },
+      "exact_feature_vectors": 173,
+      "contiguous_decision_chains": 92,
+      "disagreement_by_outcome": {
+        "request_seed": 1,
+        "move_with_seed": 1,
+        "plant_request": 2
+      },
+      "mean_teacher_score_gap": 0.015357343050313117
+    },
+    {
+      "game": "collect-31205138-v1-1-teacher",
+      "seed": 31205138,
+      "opponent": "v1",
+      "side": 1,
+      "split": "validation",
+      "calls": 173,
+      "errors": 4,
+      "accuracy": 0.976878612716763,
+      "teacher_counts": {
+        "WHEAT": 0,
+        "CARROT": 29,
+        "TOMATO": 0,
+        "STRAWBERRY": 69,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          29,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          65,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          75
+        ]
+      ],
+      "recall": {
+        "WHEAT": null,
+        "CARROT": 1.0,
+        "TOMATO": null,
+        "STRAWBERRY": 0.9420289855072463,
+        "MELON": 1.0
+      },
+      "exact_feature_vectors": 173,
+      "contiguous_decision_chains": 92,
+      "disagreement_by_outcome": {
+        "request_seed": 1,
+        "move_with_seed": 1,
+        "plant_request": 2
+      },
+      "mean_teacher_score_gap": 0.015357343050313117
+    },
+    {
+      "game": "collect-31273729-market-0-teacher",
+      "seed": 31273729,
+      "opponent": "market",
+      "side": 0,
+      "split": "train",
+      "calls": 150,
+      "errors": 4,
+      "accuracy": 0.9733333333333334,
+      "teacher_counts": {
+        "WHEAT": 0,
+        "CARROT": 8,
+        "TOMATO": 6,
+        "STRAWBERRY": 61,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          8,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          6,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          57,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          75
+        ]
+      ],
+      "recall": {
+        "WHEAT": null,
+        "CARROT": 1.0,
+        "TOMATO": 1.0,
+        "STRAWBERRY": 0.9344262295081968,
+        "MELON": 1.0
+      },
+      "exact_feature_vectors": 150,
+      "contiguous_decision_chains": 79,
+      "disagreement_by_outcome": {
+        "move_with_seed": 2,
+        "plant_request": 2
+      },
+      "mean_teacher_score_gap": 0.026151454075446594
+    },
+    {
+      "game": "collect-31273729-market-1-teacher",
+      "seed": 31273729,
+      "opponent": "market",
+      "side": 1,
+      "split": "train",
+      "calls": 169,
+      "errors": 6,
+      "accuracy": 0.9644970414201184,
+      "teacher_counts": {
+        "WHEAT": 6,
+        "CARROT": 24,
+        "TOMATO": 0,
+        "STRAWBERRY": 64,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          4,
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          24,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          60,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          75
+        ]
+      ],
+      "recall": {
+        "WHEAT": 0.6666666666666666,
+        "CARROT": 1.0,
+        "TOMATO": null,
+        "STRAWBERRY": 0.9375,
+        "MELON": 1.0
+      },
+      "exact_feature_vectors": 169,
+      "contiguous_decision_chains": 91,
+      "disagreement_by_outcome": {
+        "move_with_seed": 2,
+        "plant_request": 3,
+        "request_seed": 1
+      },
+      "mean_teacher_score_gap": 0.029627362585180537
+    },
+    {
+      "game": "collect-31273729-round2-0-teacher",
+      "seed": 31273729,
+      "opponent": "round2",
+      "side": 0,
+      "split": "train",
+      "calls": 167,
+      "errors": 5,
+      "accuracy": 0.9700598802395209,
+      "teacher_counts": {
+        "WHEAT": 0,
+        "CARROT": 31,
+        "TOMATO": 0,
+        "STRAWBERRY": 61,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          31,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          57,
+          4
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          74
+        ]
+      ],
+      "recall": {
+        "WHEAT": null,
+        "CARROT": 1.0,
+        "TOMATO": null,
+        "STRAWBERRY": 0.9344262295081968,
+        "MELON": 0.9866666666666667
+      },
+      "exact_feature_vectors": 167,
+      "contiguous_decision_chains": 90,
+      "disagreement_by_outcome": {
+        "request_seed": 1,
+        "move_with_seed": 2,
+        "plant_request": 2
+      },
+      "mean_teacher_score_gap": 0.024625573001258994
+    },
+    {
+      "game": "collect-31273729-round2-1-teacher",
+      "seed": 31273729,
+      "opponent": "round2",
+      "side": 1,
+      "split": "train",
+      "calls": 169,
+      "errors": 5,
+      "accuracy": 0.9704142011834319,
+      "teacher_counts": {
+        "WHEAT": 0,
+        "CARROT": 31,
+        "TOMATO": 0,
+        "STRAWBERRY": 63,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          31,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          59,
+          4
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          74
+        ]
+      ],
+      "recall": {
+        "WHEAT": null,
+        "CARROT": 1.0,
+        "TOMATO": null,
+        "STRAWBERRY": 0.9365079365079365,
+        "MELON": 0.9866666666666667
+      },
+      "exact_feature_vectors": 169,
+      "contiguous_decision_chains": 91,
+      "disagreement_by_outcome": {
+        "request_seed": 1,
+        "move_with_seed": 2,
+        "plant_request": 2
+      },
+      "mean_teacher_score_gap": 0.024334146101835808
+    },
+    {
+      "game": "collect-31273729-v1-0-teacher",
+      "seed": 31273729,
+      "opponent": "v1",
+      "side": 0,
+      "split": "train",
+      "calls": 167,
+      "errors": 4,
+      "accuracy": 0.9760479041916168,
+      "teacher_counts": {
+        "WHEAT": 0,
+        "CARROT": 31,
+        "TOMATO": 0,
+        "STRAWBERRY": 61,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          31,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          57,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          75
+        ]
+      ],
+      "recall": {
+        "WHEAT": null,
+        "CARROT": 1.0,
+        "TOMATO": null,
+        "STRAWBERRY": 0.9344262295081968,
+        "MELON": 1.0
+      },
+      "exact_feature_vectors": 167,
+      "contiguous_decision_chains": 90,
+      "disagreement_by_outcome": {
+        "request_seed": 1,
+        "move_with_seed": 1,
+        "plant_request": 2
+      },
+      "mean_teacher_score_gap": 0.01590910387846808
+    },
+    {
+      "game": "collect-31273729-v1-1-teacher",
+      "seed": 31273729,
+      "opponent": "v1",
+      "side": 1,
+      "split": "train",
+      "calls": 169,
+      "errors": 4,
+      "accuracy": 0.9763313609467456,
+      "teacher_counts": {
+        "WHEAT": 0,
+        "CARROT": 31,
+        "TOMATO": 0,
+        "STRAWBERRY": 63,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          31,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          59,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          75
+        ]
+      ],
+      "recall": {
+        "WHEAT": null,
+        "CARROT": 1.0,
+        "TOMATO": null,
+        "STRAWBERRY": 0.9365079365079365,
+        "MELON": 1.0
+      },
+      "exact_feature_vectors": 169,
+      "contiguous_decision_chains": 91,
+      "disagreement_by_outcome": {
+        "request_seed": 1,
+        "move_with_seed": 1,
+        "plant_request": 2
+      },
+      "mean_teacher_score_gap": 0.015720830459787984
+    },
+    {
+      "game": "collect-31317742-round2-0-teacher",
+      "seed": 31317742,
+      "opponent": "round2",
+      "side": 0,
+      "split": "train",
+      "calls": 160,
+      "errors": 5,
+      "accuracy": 0.96875,
+      "teacher_counts": {
+        "WHEAT": 13,
+        "CARROT": 2,
+        "TOMATO": 0,
+        "STRAWBERRY": 70,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          13,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          66,
+          4
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          74
+        ]
+      ],
+      "recall": {
+        "WHEAT": 1.0,
+        "CARROT": 1.0,
+        "TOMATO": null,
+        "STRAWBERRY": 0.9428571428571428,
+        "MELON": 0.9866666666666667
+      },
+      "exact_feature_vectors": 160,
+      "contiguous_decision_chains": 82,
+      "disagreement_by_outcome": {
+        "request_seed": 1,
+        "move_with_seed": 2,
+        "plant_request": 2
+      },
+      "mean_teacher_score_gap": 0.025702941820064072
+    },
+    {
+      "game": "collect-31317742-round2-1-teacher",
+      "seed": 31317742,
+      "opponent": "round2",
+      "side": 1,
+      "split": "train",
+      "calls": 160,
+      "errors": 5,
+      "accuracy": 0.96875,
+      "teacher_counts": {
+        "WHEAT": 13,
+        "CARROT": 2,
+        "TOMATO": 0,
+        "STRAWBERRY": 70,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          13,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          66,
+          4
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          74
+        ]
+      ],
+      "recall": {
+        "WHEAT": 1.0,
+        "CARROT": 1.0,
+        "TOMATO": null,
+        "STRAWBERRY": 0.9428571428571428,
+        "MELON": 0.9866666666666667
+      },
+      "exact_feature_vectors": 160,
+      "contiguous_decision_chains": 82,
+      "disagreement_by_outcome": {
+        "request_seed": 1,
+        "move_with_seed": 2,
+        "plant_request": 2
+      },
+      "mean_teacher_score_gap": 0.025702941820064072
+    },
+    {
+      "game": "collect-31317742-v1-0-teacher",
+      "seed": 31317742,
+      "opponent": "v1",
+      "side": 0,
+      "split": "train",
+      "calls": 160,
+      "errors": 4,
+      "accuracy": 0.975,
+      "teacher_counts": {
+        "WHEAT": 13,
+        "CARROT": 2,
+        "TOMATO": 0,
+        "STRAWBERRY": 70,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          13,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          66,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          75
+        ]
+      ],
+      "recall": {
+        "WHEAT": 1.0,
+        "CARROT": 1.0,
+        "TOMATO": null,
+        "STRAWBERRY": 0.9428571428571428,
+        "MELON": 1.0
+      },
+      "exact_feature_vectors": 160,
+      "contiguous_decision_chains": 82,
+      "disagreement_by_outcome": {
+        "request_seed": 1,
+        "move_with_seed": 1,
+        "plant_request": 2
+      },
+      "mean_teacher_score_gap": 0.016605127173151057
+    },
+    {
+      "game": "collect-31317742-v1-1-teacher",
+      "seed": 31317742,
+      "opponent": "v1",
+      "side": 1,
+      "split": "train",
+      "calls": 160,
+      "errors": 4,
+      "accuracy": 0.975,
+      "teacher_counts": {
+        "WHEAT": 13,
+        "CARROT": 2,
+        "TOMATO": 0,
+        "STRAWBERRY": 70,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          13,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          66,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          75
+        ]
+      ],
+      "recall": {
+        "WHEAT": 1.0,
+        "CARROT": 1.0,
+        "TOMATO": null,
+        "STRAWBERRY": 0.9428571428571428,
+        "MELON": 1.0
+      },
+      "exact_feature_vectors": 160,
+      "contiguous_decision_chains": 82,
+      "disagreement_by_outcome": {
+        "request_seed": 1,
+        "move_with_seed": 1,
+        "plant_request": 2
+      },
+      "mean_teacher_score_gap": 0.016605127173151057
+    },
+    {
+      "game": "collect-31360134-market-0-teacher",
+      "seed": 31360134,
+      "opponent": "market",
+      "side": 0,
+      "split": "train",
+      "calls": 155,
+      "errors": 4,
+      "accuracy": 0.9741935483870968,
+      "teacher_counts": {
+        "WHEAT": 9,
+        "CARROT": 2,
+        "TOMATO": 0,
+        "STRAWBERRY": 69,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          9,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          65,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          75
+        ]
+      ],
+      "recall": {
+        "WHEAT": 1.0,
+        "CARROT": 1.0,
+        "TOMATO": null,
+        "STRAWBERRY": 0.9420289855072463,
+        "MELON": 1.0
+      },
+      "exact_feature_vectors": 155,
+      "contiguous_decision_chains": 81,
+      "disagreement_by_outcome": {
+        "move_with_seed": 2,
+        "plant_request": 2
+      },
+      "mean_teacher_score_gap": 0.025307858782690252
+    },
+    {
+      "game": "collect-31360134-market-1-teacher",
+      "seed": 31360134,
+      "opponent": "market",
+      "side": 1,
+      "split": "train",
+      "calls": 155,
+      "errors": 4,
+      "accuracy": 0.9741935483870968,
+      "teacher_counts": {
+        "WHEAT": 9,
+        "CARROT": 2,
+        "TOMATO": 0,
+        "STRAWBERRY": 69,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          9,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          65,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          75
+        ]
+      ],
+      "recall": {
+        "WHEAT": 1.0,
+        "CARROT": 1.0,
+        "TOMATO": null,
+        "STRAWBERRY": 0.9420289855072463,
+        "MELON": 1.0
+      },
+      "exact_feature_vectors": 155,
+      "contiguous_decision_chains": 81,
+      "disagreement_by_outcome": {
+        "move_with_seed": 2,
+        "plant_request": 2
+      },
+      "mean_teacher_score_gap": 0.025307858782690252
+    },
+    {
+      "game": "collect-31360134-round2-0-teacher",
+      "seed": 31360134,
+      "opponent": "round2",
+      "side": 0,
+      "split": "train",
+      "calls": 152,
+      "errors": 5,
+      "accuracy": 0.9671052631578947,
+      "teacher_counts": {
+        "WHEAT": 6,
+        "CARROT": 2,
+        "TOMATO": 0,
+        "STRAWBERRY": 69,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          6,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          65,
+          4
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          74
+        ]
+      ],
+      "recall": {
+        "WHEAT": 1.0,
+        "CARROT": 1.0,
+        "TOMATO": null,
+        "STRAWBERRY": 0.9420289855072463,
+        "MELON": 0.9866666666666667
+      },
+      "exact_feature_vectors": 152,
+      "contiguous_decision_chains": 81,
+      "disagreement_by_outcome": {
+        "request_seed": 1,
+        "move_with_seed": 2,
+        "plant_request": 2
+      },
+      "mean_teacher_score_gap": 0.027055728231646394
+    },
+    {
+      "game": "collect-31360134-round2-1-teacher",
+      "seed": 31360134,
+      "opponent": "round2",
+      "side": 1,
+      "split": "train",
+      "calls": 158,
+      "errors": 5,
+      "accuracy": 0.9683544303797469,
+      "teacher_counts": {
+        "WHEAT": 6,
+        "CARROT": 2,
+        "TOMATO": 0,
+        "STRAWBERRY": 75,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          6,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          71,
+          4
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          74
+        ]
+      ],
+      "recall": {
+        "WHEAT": 1.0,
+        "CARROT": 1.0,
+        "TOMATO": null,
+        "STRAWBERRY": 0.9466666666666667,
+        "MELON": 0.9866666666666667
+      },
+      "exact_feature_vectors": 158,
+      "contiguous_decision_chains": 81,
+      "disagreement_by_outcome": {
+        "request_seed": 1,
+        "move_with_seed": 2,
+        "plant_request": 2
+      },
+      "mean_teacher_score_gap": 0.026028295513988935
+    },
+    {
+      "game": "collect-31360134-v1-0-teacher",
+      "seed": 31360134,
+      "opponent": "v1",
+      "side": 0,
+      "split": "train",
+      "calls": 152,
+      "errors": 4,
+      "accuracy": 0.9736842105263158,
+      "teacher_counts": {
+        "WHEAT": 6,
+        "CARROT": 2,
+        "TOMATO": 0,
+        "STRAWBERRY": 69,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          6,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          65,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          75
+        ]
+      ],
+      "recall": {
+        "WHEAT": 1.0,
+        "CARROT": 1.0,
+        "TOMATO": null,
+        "STRAWBERRY": 0.9420289855072463,
+        "MELON": 1.0
+      },
+      "exact_feature_vectors": 152,
+      "contiguous_decision_chains": 80,
+      "disagreement_by_outcome": {
+        "request_seed": 1,
+        "move_with_seed": 1,
+        "plant_request": 2
+      },
+      "mean_teacher_score_gap": 0.01747908123489585
+    },
+    {
+      "game": "collect-31360134-v1-1-teacher",
+      "seed": 31360134,
+      "opponent": "v1",
+      "side": 1,
+      "split": "train",
+      "calls": 158,
+      "errors": 4,
+      "accuracy": 0.9746835443037974,
+      "teacher_counts": {
+        "WHEAT": 6,
+        "CARROT": 2,
+        "TOMATO": 0,
+        "STRAWBERRY": 75,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          6,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          71,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          75
+        ]
+      ],
+      "recall": {
+        "WHEAT": 1.0,
+        "CARROT": 1.0,
+        "TOMATO": null,
+        "STRAWBERRY": 0.9466666666666667,
+        "MELON": 1.0
+      },
+      "exact_feature_vectors": 158,
+      "contiguous_decision_chains": 79,
+      "disagreement_by_outcome": {
+        "request_seed": 1,
+        "move_with_seed": 1,
+        "plant_request": 2
+      },
+      "mean_teacher_score_gap": 0.0168153186563555
+    },
+    {
+      "game": "collect-31504409-market-0-teacher",
+      "seed": 31504409,
+      "opponent": "market",
+      "side": 0,
+      "split": "validation",
+      "calls": 217,
+      "errors": 64,
+      "accuracy": 0.7050691244239631,
+      "teacher_counts": {
+        "WHEAT": 37,
+        "CARROT": 30,
+        "TOMATO": 18,
+        "STRAWBERRY": 57,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          21,
+          7,
+          9,
+          0,
+          0
+        ],
+        [
+          20,
+          6,
+          4,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          16,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          13,
+          35,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          75
+        ]
+      ],
+      "recall": {
+        "WHEAT": 0.5675675675675675,
+        "CARROT": 0.2,
+        "TOMATO": 0.8888888888888888,
+        "STRAWBERRY": 0.6140350877192983,
+        "MELON": 1.0
+      },
+      "exact_feature_vectors": 217,
+      "contiguous_decision_chains": 112,
+      "disagreement_by_outcome": {
+        "move_with_seed": 13,
+        "plant_request": 24,
+        "request_seed": 27
+      },
+      "mean_teacher_score_gap": 0.6269890360154059
+    },
+    {
+      "game": "collect-31504409-market-1-teacher",
+      "seed": 31504409,
+      "opponent": "market",
+      "side": 1,
+      "split": "validation",
+      "calls": 217,
+      "errors": 64,
+      "accuracy": 0.7050691244239631,
+      "teacher_counts": {
+        "WHEAT": 37,
+        "CARROT": 30,
+        "TOMATO": 18,
+        "STRAWBERRY": 57,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          21,
+          7,
+          9,
+          0,
+          0
+        ],
+        [
+          20,
+          6,
+          4,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          16,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          13,
+          35,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          75
+        ]
+      ],
+      "recall": {
+        "WHEAT": 0.5675675675675675,
+        "CARROT": 0.2,
+        "TOMATO": 0.8888888888888888,
+        "STRAWBERRY": 0.6140350877192983,
+        "MELON": 1.0
+      },
+      "exact_feature_vectors": 217,
+      "contiguous_decision_chains": 112,
+      "disagreement_by_outcome": {
+        "move_with_seed": 13,
+        "plant_request": 24,
+        "request_seed": 27
+      },
+      "mean_teacher_score_gap": 0.6269890360154059
+    },
+    {
+      "game": "collect-31504409-round2-0-teacher",
+      "seed": 31504409,
+      "opponent": "round2",
+      "side": 0,
+      "split": "validation",
+      "calls": 222,
+      "errors": 33,
+      "accuracy": 0.8513513513513513,
+      "teacher_counts": {
+        "WHEAT": 50,
+        "CARROT": 24,
+        "TOMATO": 12,
+        "STRAWBERRY": 59,
+        "MELON": 77
+      },
+      "confusion": [
+        [
+          48,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          18,
+          0,
+          3,
+          0
+        ],
+        [
+          10,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          3,
+          4,
+          47,
+          4
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          76
+        ]
+      ],
+      "recall": {
+        "WHEAT": 0.96,
+        "CARROT": 0.75,
+        "TOMATO": 0.0,
+        "STRAWBERRY": 0.7966101694915254,
+        "MELON": 0.987012987012987
+      },
+      "exact_feature_vectors": 222,
+      "contiguous_decision_chains": 108,
+      "disagreement_by_outcome": {
+        "request_seed": 13,
+        "move_with_seed": 7,
+        "plant_request": 13
+      },
+      "mean_teacher_score_gap": 0.14393155413845599
+    },
+    {
+      "game": "collect-31504409-round2-1-teacher",
+      "seed": 31504409,
+      "opponent": "round2",
+      "side": 1,
+      "split": "validation",
+      "calls": 222,
+      "errors": 33,
+      "accuracy": 0.8513513513513513,
+      "teacher_counts": {
+        "WHEAT": 50,
+        "CARROT": 24,
+        "TOMATO": 12,
+        "STRAWBERRY": 59,
+        "MELON": 77
+      },
+      "confusion": [
+        [
+          48,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          18,
+          0,
+          3,
+          0
+        ],
+        [
+          10,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          3,
+          4,
+          47,
+          4
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          76
+        ]
+      ],
+      "recall": {
+        "WHEAT": 0.96,
+        "CARROT": 0.75,
+        "TOMATO": 0.0,
+        "STRAWBERRY": 0.7966101694915254,
+        "MELON": 0.987012987012987
+      },
+      "exact_feature_vectors": 222,
+      "contiguous_decision_chains": 108,
+      "disagreement_by_outcome": {
+        "request_seed": 13,
+        "move_with_seed": 7,
+        "plant_request": 13
+      },
+      "mean_teacher_score_gap": 0.14393155413845599
+    },
+    {
+      "game": "collect-31504409-v1-0-teacher",
+      "seed": 31504409,
+      "opponent": "v1",
+      "side": 0,
+      "split": "validation",
+      "calls": 220,
+      "errors": 39,
+      "accuracy": 0.8227272727272728,
+      "teacher_counts": {
+        "WHEAT": 22,
+        "CARROT": 50,
+        "TOMATO": 12,
+        "STRAWBERRY": 59,
+        "MELON": 77
+      },
+      "confusion": [
+        [
+          17,
+          5,
+          0,
+          0,
+          0
+        ],
+        [
+          8,
+          40,
+          0,
+          2,
+          0
+        ],
+        [
+          10,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          3,
+          4,
+          47,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          77
+        ]
+      ],
+      "recall": {
+        "WHEAT": 0.7727272727272727,
+        "CARROT": 0.8,
+        "TOMATO": 0.0,
+        "STRAWBERRY": 0.7966101694915254,
+        "MELON": 1.0
+      },
+      "exact_feature_vectors": 220,
+      "contiguous_decision_chains": 107,
+      "disagreement_by_outcome": {
+        "request_seed": 17,
+        "move_with_seed": 5,
+        "plant_request": 17
+      },
+      "mean_teacher_score_gap": 0.14502981688825017
+    },
+    {
+      "game": "collect-31504409-v1-1-teacher",
+      "seed": 31504409,
+      "opponent": "v1",
+      "side": 1,
+      "split": "validation",
+      "calls": 220,
+      "errors": 39,
+      "accuracy": 0.8227272727272728,
+      "teacher_counts": {
+        "WHEAT": 22,
+        "CARROT": 50,
+        "TOMATO": 12,
+        "STRAWBERRY": 59,
+        "MELON": 77
+      },
+      "confusion": [
+        [
+          17,
+          5,
+          0,
+          0,
+          0
+        ],
+        [
+          8,
+          40,
+          0,
+          2,
+          0
+        ],
+        [
+          10,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          3,
+          4,
+          47,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          77
+        ]
+      ],
+      "recall": {
+        "WHEAT": 0.7727272727272727,
+        "CARROT": 0.8,
+        "TOMATO": 0.0,
+        "STRAWBERRY": 0.7966101694915254,
+        "MELON": 1.0
+      },
+      "exact_feature_vectors": 220,
+      "contiguous_decision_chains": 107,
+      "disagreement_by_outcome": {
+        "request_seed": 17,
+        "move_with_seed": 5,
+        "plant_request": 17
+      },
+      "mean_teacher_score_gap": 0.14502981688825017
+    },
+    {
+      "game": "collect-31637216-market-0-teacher",
+      "seed": 31637216,
+      "opponent": "market",
+      "side": 0,
+      "split": "train",
+      "calls": 262,
+      "errors": 32,
+      "accuracy": 0.8778625954198473,
+      "teacher_counts": {
+        "WHEAT": 54,
+        "CARROT": 78,
+        "TOMATO": 12,
+        "STRAWBERRY": 43,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          37,
+          0,
+          8,
+          9,
+          0
+        ],
+        [
+          0,
+          78,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          9,
+          0,
+          0
+        ],
+        [
+          7,
+          0,
+          1,
+          31,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          75
+        ]
+      ],
+      "recall": {
+        "WHEAT": 0.6851851851851852,
+        "CARROT": 1.0,
+        "TOMATO": 0.75,
+        "STRAWBERRY": 0.7209302325581395,
+        "MELON": 1.0
+      },
+      "exact_feature_vectors": 262,
+      "contiguous_decision_chains": 129,
+      "disagreement_by_outcome": {
+        "move_with_seed": 6,
+        "plant_request": 14,
+        "request_seed": 12
+      },
+      "mean_teacher_score_gap": 0.05987916588167562
+    },
+    {
+      "game": "collect-31637216-market-1-teacher",
+      "seed": 31637216,
+      "opponent": "market",
+      "side": 1,
+      "split": "train",
+      "calls": 262,
+      "errors": 32,
+      "accuracy": 0.8778625954198473,
+      "teacher_counts": {
+        "WHEAT": 54,
+        "CARROT": 78,
+        "TOMATO": 12,
+        "STRAWBERRY": 43,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          37,
+          0,
+          8,
+          9,
+          0
+        ],
+        [
+          0,
+          78,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          9,
+          0,
+          0
+        ],
+        [
+          7,
+          0,
+          1,
+          31,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          75
+        ]
+      ],
+      "recall": {
+        "WHEAT": 0.6851851851851852,
+        "CARROT": 1.0,
+        "TOMATO": 0.75,
+        "STRAWBERRY": 0.7209302325581395,
+        "MELON": 1.0
+      },
+      "exact_feature_vectors": 262,
+      "contiguous_decision_chains": 129,
+      "disagreement_by_outcome": {
+        "move_with_seed": 6,
+        "plant_request": 14,
+        "request_seed": 12
+      },
+      "mean_teacher_score_gap": 0.05987916588167562
+    },
+    {
+      "game": "collect-31637216-round2-0-teacher",
+      "seed": 31637216,
+      "opponent": "round2",
+      "side": 0,
+      "split": "train",
+      "calls": 324,
+      "errors": 26,
+      "accuracy": 0.9197530864197531,
+      "teacher_counts": {
+        "WHEAT": 122,
+        "CARROT": 90,
+        "TOMATO": 0,
+        "STRAWBERRY": 35,
+        "MELON": 77
+      },
+      "confusion": [
+        [
+          118,
+          3,
+          0,
+          1,
+          0
+        ],
+        [
+          13,
+          75,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          29,
+          4
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          76
+        ]
+      ],
+      "recall": {
+        "WHEAT": 0.9672131147540983,
+        "CARROT": 0.8333333333333334,
+        "TOMATO": null,
+        "STRAWBERRY": 0.8285714285714286,
+        "MELON": 0.987012987012987
+      },
+      "exact_feature_vectors": 324,
+      "contiguous_decision_chains": 155,
+      "disagreement_by_outcome": {
+        "request_seed": 11,
+        "move_with_seed": 8,
+        "plant_request": 7
+      },
+      "mean_teacher_score_gap": 0.03389316012173304
+    },
+    {
+      "game": "collect-31637216-round2-1-teacher",
+      "seed": 31637216,
+      "opponent": "round2",
+      "side": 1,
+      "split": "train",
+      "calls": 324,
+      "errors": 26,
+      "accuracy": 0.9197530864197531,
+      "teacher_counts": {
+        "WHEAT": 122,
+        "CARROT": 90,
+        "TOMATO": 0,
+        "STRAWBERRY": 35,
+        "MELON": 77
+      },
+      "confusion": [
+        [
+          118,
+          3,
+          0,
+          1,
+          0
+        ],
+        [
+          13,
+          75,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          29,
+          4
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          76
+        ]
+      ],
+      "recall": {
+        "WHEAT": 0.9672131147540983,
+        "CARROT": 0.8333333333333334,
+        "TOMATO": null,
+        "STRAWBERRY": 0.8285714285714286,
+        "MELON": 0.987012987012987
+      },
+      "exact_feature_vectors": 324,
+      "contiguous_decision_chains": 155,
+      "disagreement_by_outcome": {
+        "request_seed": 11,
+        "move_with_seed": 8,
+        "plant_request": 7
+      },
+      "mean_teacher_score_gap": 0.03389316012173304
+    },
+    {
+      "game": "collect-31637216-v1-0-teacher",
+      "seed": 31637216,
+      "opponent": "v1",
+      "side": 0,
+      "split": "train",
+      "calls": 330,
+      "errors": 19,
+      "accuracy": 0.9424242424242424,
+      "teacher_counts": {
+        "WHEAT": 112,
+        "CARROT": 106,
+        "TOMATO": 0,
+        "STRAWBERRY": 35,
+        "MELON": 77
+      },
+      "confusion": [
+        [
+          111,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          10,
+          94,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          29,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          77
+        ]
+      ],
+      "recall": {
+        "WHEAT": 0.9910714285714286,
+        "CARROT": 0.8867924528301887,
+        "TOMATO": null,
+        "STRAWBERRY": 0.8285714285714286,
+        "MELON": 1.0
+      },
+      "exact_feature_vectors": 330,
+      "contiguous_decision_chains": 158,
+      "disagreement_by_outcome": {
+        "request_seed": 7,
+        "move_with_seed": 5,
+        "plant_request": 7
+      },
+      "mean_teacher_score_gap": 0.024250352680138296
+    },
+    {
+      "game": "collect-31637216-v1-1-teacher",
+      "seed": 31637216,
+      "opponent": "v1",
+      "side": 1,
+      "split": "train",
+      "calls": 330,
+      "errors": 19,
+      "accuracy": 0.9424242424242424,
+      "teacher_counts": {
+        "WHEAT": 112,
+        "CARROT": 106,
+        "TOMATO": 0,
+        "STRAWBERRY": 35,
+        "MELON": 77
+      },
+      "confusion": [
+        [
+          111,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          10,
+          94,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          29,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          77
+        ]
+      ],
+      "recall": {
+        "WHEAT": 0.9910714285714286,
+        "CARROT": 0.8867924528301887,
+        "TOMATO": null,
+        "STRAWBERRY": 0.8285714285714286,
+        "MELON": 1.0
+      },
+      "exact_feature_vectors": 330,
+      "contiguous_decision_chains": 158,
+      "disagreement_by_outcome": {
+        "request_seed": 7,
+        "move_with_seed": 5,
+        "plant_request": 7
+      },
+      "mean_teacher_score_gap": 0.024250352680138296
+    },
+    {
+      "game": "collect-31659052-market-0-teacher",
+      "seed": 31659052,
+      "opponent": "market",
+      "side": 0,
+      "split": "train",
+      "calls": 159,
+      "errors": 4,
+      "accuracy": 0.9748427672955975,
+      "teacher_counts": {
+        "WHEAT": 0,
+        "CARROT": 14,
+        "TOMATO": 6,
+        "STRAWBERRY": 64,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          14,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          6,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          60,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          75
+        ]
+      ],
+      "recall": {
+        "WHEAT": null,
+        "CARROT": 1.0,
+        "TOMATO": 1.0,
+        "STRAWBERRY": 0.9375,
+        "MELON": 1.0
+      },
+      "exact_feature_vectors": 159,
+      "contiguous_decision_chains": 82,
+      "disagreement_by_outcome": {
+        "move_with_seed": 2,
+        "plant_request": 2
+      },
+      "mean_teacher_score_gap": 0.024671183090043958
+    },
+    {
+      "game": "collect-31659052-market-1-teacher",
+      "seed": 31659052,
+      "opponent": "market",
+      "side": 1,
+      "split": "train",
+      "calls": 159,
+      "errors": 4,
+      "accuracy": 0.9748427672955975,
+      "teacher_counts": {
+        "WHEAT": 0,
+        "CARROT": 14,
+        "TOMATO": 6,
+        "STRAWBERRY": 64,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          14,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          6,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          60,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          75
+        ]
+      ],
+      "recall": {
+        "WHEAT": null,
+        "CARROT": 1.0,
+        "TOMATO": 1.0,
+        "STRAWBERRY": 0.9375,
+        "MELON": 1.0
+      },
+      "exact_feature_vectors": 159,
+      "contiguous_decision_chains": 82,
+      "disagreement_by_outcome": {
+        "move_with_seed": 2,
+        "plant_request": 2
+      },
+      "mean_teacher_score_gap": 0.024671183090043958
+    },
+    {
+      "game": "collect-31659052-round2-0-teacher",
+      "seed": 31659052,
+      "opponent": "round2",
+      "side": 0,
+      "split": "train",
+      "calls": 159,
+      "errors": 5,
+      "accuracy": 0.9685534591194969,
+      "teacher_counts": {
+        "WHEAT": 0,
+        "CARROT": 14,
+        "TOMATO": 6,
+        "STRAWBERRY": 64,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          14,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          6,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          60,
+          4
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          74
+        ]
+      ],
+      "recall": {
+        "WHEAT": null,
+        "CARROT": 1.0,
+        "TOMATO": 1.0,
+        "STRAWBERRY": 0.9375,
+        "MELON": 0.9866666666666667
+      },
+      "exact_feature_vectors": 159,
+      "contiguous_decision_chains": 82,
+      "disagreement_by_outcome": {
+        "request_seed": 1,
+        "move_with_seed": 2,
+        "plant_request": 2
+      },
+      "mean_teacher_score_gap": 0.025864595542202842
+    },
+    {
+      "game": "collect-31659052-round2-1-teacher",
+      "seed": 31659052,
+      "opponent": "round2",
+      "side": 1,
+      "split": "train",
+      "calls": 159,
+      "errors": 5,
+      "accuracy": 0.9685534591194969,
+      "teacher_counts": {
+        "WHEAT": 0,
+        "CARROT": 14,
+        "TOMATO": 6,
+        "STRAWBERRY": 64,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          14,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          6,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          60,
+          4
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          74
+        ]
+      ],
+      "recall": {
+        "WHEAT": null,
+        "CARROT": 1.0,
+        "TOMATO": 1.0,
+        "STRAWBERRY": 0.9375,
+        "MELON": 0.9866666666666667
+      },
+      "exact_feature_vectors": 159,
+      "contiguous_decision_chains": 82,
+      "disagreement_by_outcome": {
+        "request_seed": 1,
+        "move_with_seed": 2,
+        "plant_request": 2
+      },
+      "mean_teacher_score_gap": 0.025864595542202842
+    },
+    {
+      "game": "collect-31659052-v1-0-teacher",
+      "seed": 31659052,
+      "opponent": "v1",
+      "side": 0,
+      "split": "train",
+      "calls": 159,
+      "errors": 4,
+      "accuracy": 0.9748427672955975,
+      "teacher_counts": {
+        "WHEAT": 0,
+        "CARROT": 14,
+        "TOMATO": 6,
+        "STRAWBERRY": 64,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          14,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          6,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          60,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          75
+        ]
+      ],
+      "recall": {
+        "WHEAT": null,
+        "CARROT": 1.0,
+        "TOMATO": 1.0,
+        "STRAWBERRY": 0.9375,
+        "MELON": 1.0
+      },
+      "exact_feature_vectors": 159,
+      "contiguous_decision_chains": 82,
+      "disagreement_by_outcome": {
+        "request_seed": 1,
+        "move_with_seed": 1,
+        "plant_request": 2
+      },
+      "mean_teacher_score_gap": 0.016709561935246347
+    },
+    {
+      "game": "collect-31659052-v1-1-teacher",
+      "seed": 31659052,
+      "opponent": "v1",
+      "side": 1,
+      "split": "train",
+      "calls": 159,
+      "errors": 4,
+      "accuracy": 0.9748427672955975,
+      "teacher_counts": {
+        "WHEAT": 0,
+        "CARROT": 14,
+        "TOMATO": 6,
+        "STRAWBERRY": 64,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          14,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          6,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          60,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          75
+        ]
+      ],
+      "recall": {
+        "WHEAT": null,
+        "CARROT": 1.0,
+        "TOMATO": 1.0,
+        "STRAWBERRY": 0.9375,
+        "MELON": 1.0
+      },
+      "exact_feature_vectors": 159,
+      "contiguous_decision_chains": 82,
+      "disagreement_by_outcome": {
+        "request_seed": 1,
+        "move_with_seed": 1,
+        "plant_request": 2
+      },
+      "mean_teacher_score_gap": 0.016709561935246347
+    },
+    {
+      "game": "collect-31834104-market-0-teacher",
+      "seed": 31834104,
+      "opponent": "market",
+      "side": 0,
+      "split": "train",
+      "calls": 242,
+      "errors": 32,
+      "accuracy": 0.8677685950413223,
+      "teacher_counts": {
+        "WHEAT": 49,
+        "CARROT": 48,
+        "TOMATO": 48,
+        "STRAWBERRY": 22,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          46,
+          1,
+          2,
+          0,
+          0
+        ],
+        [
+          19,
+          29,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          47,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          5,
+          13,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          75
+        ]
+      ],
+      "recall": {
+        "WHEAT": 0.9387755102040817,
+        "CARROT": 0.6041666666666666,
+        "TOMATO": 0.9791666666666666,
+        "STRAWBERRY": 0.5909090909090909,
+        "MELON": 1.0
+      },
+      "exact_feature_vectors": 242,
+      "contiguous_decision_chains": 116,
+      "disagreement_by_outcome": {
+        "move_with_seed": 14,
+        "plant_request": 8,
+        "request_seed": 10
+      },
+      "mean_teacher_score_gap": 0.05579363563321655
+    },
+    {
+      "game": "collect-31834104-market-1-teacher",
+      "seed": 31834104,
+      "opponent": "market",
+      "side": 1,
+      "split": "train",
+      "calls": 242,
+      "errors": 32,
+      "accuracy": 0.8677685950413223,
+      "teacher_counts": {
+        "WHEAT": 49,
+        "CARROT": 48,
+        "TOMATO": 48,
+        "STRAWBERRY": 22,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          46,
+          1,
+          2,
+          0,
+          0
+        ],
+        [
+          19,
+          29,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          47,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          5,
+          13,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          75
+        ]
+      ],
+      "recall": {
+        "WHEAT": 0.9387755102040817,
+        "CARROT": 0.6041666666666666,
+        "TOMATO": 0.9791666666666666,
+        "STRAWBERRY": 0.5909090909090909,
+        "MELON": 1.0
+      },
+      "exact_feature_vectors": 242,
+      "contiguous_decision_chains": 116,
+      "disagreement_by_outcome": {
+        "move_with_seed": 14,
+        "plant_request": 8,
+        "request_seed": 10
+      },
+      "mean_teacher_score_gap": 0.05579363563321655
+    },
+    {
+      "game": "collect-31834104-round2-0-teacher",
+      "seed": 31834104,
+      "opponent": "round2",
+      "side": 0,
+      "split": "train",
+      "calls": 240,
+      "errors": 38,
+      "accuracy": 0.8416666666666667,
+      "teacher_counts": {
+        "WHEAT": 57,
+        "CARROT": 29,
+        "TOMATO": 41,
+        "STRAWBERRY": 36,
+        "MELON": 77
+      },
+      "confusion": [
+        [
+          51,
+          3,
+          3,
+          0,
+          0
+        ],
+        [
+          9,
+          10,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          40,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          7,
+          25,
+          4
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          76
+        ]
+      ],
+      "recall": {
+        "WHEAT": 0.8947368421052632,
+        "CARROT": 0.3448275862068966,
+        "TOMATO": 0.975609756097561,
+        "STRAWBERRY": 0.6944444444444444,
+        "MELON": 0.987012987012987
+      },
+      "exact_feature_vectors": 240,
+      "contiguous_decision_chains": 116,
+      "disagreement_by_outcome": {
+        "request_seed": 15,
+        "move_with_seed": 11,
+        "plant_request": 12
+      },
+      "mean_teacher_score_gap": 0.049000076548732646
+    },
+    {
+      "game": "collect-31834104-round2-1-teacher",
+      "seed": 31834104,
+      "opponent": "round2",
+      "side": 1,
+      "split": "train",
+      "calls": 240,
+      "errors": 38,
+      "accuracy": 0.8416666666666667,
+      "teacher_counts": {
+        "WHEAT": 57,
+        "CARROT": 29,
+        "TOMATO": 41,
+        "STRAWBERRY": 36,
+        "MELON": 77
+      },
+      "confusion": [
+        [
+          51,
+          3,
+          3,
+          0,
+          0
+        ],
+        [
+          9,
+          10,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          40,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          7,
+          25,
+          4
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          76
+        ]
+      ],
+      "recall": {
+        "WHEAT": 0.8947368421052632,
+        "CARROT": 0.3448275862068966,
+        "TOMATO": 0.975609756097561,
+        "STRAWBERRY": 0.6944444444444444,
+        "MELON": 0.987012987012987
+      },
+      "exact_feature_vectors": 240,
+      "contiguous_decision_chains": 116,
+      "disagreement_by_outcome": {
+        "request_seed": 15,
+        "move_with_seed": 11,
+        "plant_request": 12
+      },
+      "mean_teacher_score_gap": 0.049000076548732646
+    },
+    {
+      "game": "collect-31834104-v1-0-teacher",
+      "seed": 31834104,
+      "opponent": "v1",
+      "side": 0,
+      "split": "train",
+      "calls": 252,
+      "errors": 28,
+      "accuracy": 0.8888888888888888,
+      "teacher_counts": {
+        "WHEAT": 23,
+        "CARROT": 75,
+        "TOMATO": 41,
+        "STRAWBERRY": 36,
+        "MELON": 77
+      },
+      "confusion": [
+        [
+          19,
+          1,
+          3,
+          0,
+          0
+        ],
+        [
+          2,
+          63,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          40,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          7,
+          25,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          77
+        ]
+      ],
+      "recall": {
+        "WHEAT": 0.8260869565217391,
+        "CARROT": 0.84,
+        "TOMATO": 0.975609756097561,
+        "STRAWBERRY": 0.6944444444444444,
+        "MELON": 1.0
+      },
+      "exact_feature_vectors": 252,
+      "contiguous_decision_chains": 118,
+      "disagreement_by_outcome": {
+        "request_seed": 10,
+        "move_with_seed": 11,
+        "plant_request": 7
+      },
+      "mean_teacher_score_gap": 0.03998462025972708
+    },
+    {
+      "game": "collect-31834104-v1-1-teacher",
+      "seed": 31834104,
+      "opponent": "v1",
+      "side": 1,
+      "split": "train",
+      "calls": 252,
+      "errors": 28,
+      "accuracy": 0.8888888888888888,
+      "teacher_counts": {
+        "WHEAT": 23,
+        "CARROT": 75,
+        "TOMATO": 41,
+        "STRAWBERRY": 36,
+        "MELON": 77
+      },
+      "confusion": [
+        [
+          19,
+          1,
+          3,
+          0,
+          0
+        ],
+        [
+          2,
+          63,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          40,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          7,
+          25,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          77
+        ]
+      ],
+      "recall": {
+        "WHEAT": 0.8260869565217391,
+        "CARROT": 0.84,
+        "TOMATO": 0.975609756097561,
+        "STRAWBERRY": 0.6944444444444444,
+        "MELON": 1.0
+      },
+      "exact_feature_vectors": 252,
+      "contiguous_decision_chains": 118,
+      "disagreement_by_outcome": {
+        "request_seed": 10,
+        "move_with_seed": 11,
+        "plant_request": 7
+      },
+      "mean_teacher_score_gap": 0.03998462025972708
+    },
+    {
+      "game": "collect-31921285-market-0-teacher",
+      "seed": 31921285,
+      "opponent": "market",
+      "side": 0,
+      "split": "train",
+      "calls": 159,
+      "errors": 4,
+      "accuracy": 0.9748427672955975,
+      "teacher_counts": {
+        "WHEAT": 0,
+        "CARROT": 14,
+        "TOMATO": 0,
+        "STRAWBERRY": 70,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          14,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          66,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          75
+        ]
+      ],
+      "recall": {
+        "WHEAT": null,
+        "CARROT": 1.0,
+        "TOMATO": null,
+        "STRAWBERRY": 0.9428571428571428,
+        "MELON": 1.0
+      },
+      "exact_feature_vectors": 159,
+      "contiguous_decision_chains": 82,
+      "disagreement_by_outcome": {
+        "move_with_seed": 2,
+        "plant_request": 2
+      },
+      "mean_teacher_score_gap": 0.024671183090043958
+    },
+    {
+      "game": "collect-31921285-market-1-teacher",
+      "seed": 31921285,
+      "opponent": "market",
+      "side": 1,
+      "split": "train",
+      "calls": 159,
+      "errors": 4,
+      "accuracy": 0.9748427672955975,
+      "teacher_counts": {
+        "WHEAT": 0,
+        "CARROT": 14,
+        "TOMATO": 0,
+        "STRAWBERRY": 70,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          14,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          66,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          75
+        ]
+      ],
+      "recall": {
+        "WHEAT": null,
+        "CARROT": 1.0,
+        "TOMATO": null,
+        "STRAWBERRY": 0.9428571428571428,
+        "MELON": 1.0
+      },
+      "exact_feature_vectors": 159,
+      "contiguous_decision_chains": 82,
+      "disagreement_by_outcome": {
+        "move_with_seed": 2,
+        "plant_request": 2
+      },
+      "mean_teacher_score_gap": 0.024671183090043958
+    },
+    {
+      "game": "collect-31921285-round2-0-teacher",
+      "seed": 31921285,
+      "opponent": "round2",
+      "side": 0,
+      "split": "train",
+      "calls": 159,
+      "errors": 5,
+      "accuracy": 0.9685534591194969,
+      "teacher_counts": {
+        "WHEAT": 0,
+        "CARROT": 14,
+        "TOMATO": 0,
+        "STRAWBERRY": 70,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          14,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          66,
+          4
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          74
+        ]
+      ],
+      "recall": {
+        "WHEAT": null,
+        "CARROT": 1.0,
+        "TOMATO": null,
+        "STRAWBERRY": 0.9428571428571428,
+        "MELON": 0.9866666666666667
+      },
+      "exact_feature_vectors": 159,
+      "contiguous_decision_chains": 82,
+      "disagreement_by_outcome": {
+        "request_seed": 1,
+        "move_with_seed": 2,
+        "plant_request": 2
+      },
+      "mean_teacher_score_gap": 0.025864595542202842
+    },
+    {
+      "game": "collect-31921285-round2-1-teacher",
+      "seed": 31921285,
+      "opponent": "round2",
+      "side": 1,
+      "split": "train",
+      "calls": 159,
+      "errors": 5,
+      "accuracy": 0.9685534591194969,
+      "teacher_counts": {
+        "WHEAT": 0,
+        "CARROT": 14,
+        "TOMATO": 0,
+        "STRAWBERRY": 70,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          14,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          66,
+          4
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          74
+        ]
+      ],
+      "recall": {
+        "WHEAT": null,
+        "CARROT": 1.0,
+        "TOMATO": null,
+        "STRAWBERRY": 0.9428571428571428,
+        "MELON": 0.9866666666666667
+      },
+      "exact_feature_vectors": 159,
+      "contiguous_decision_chains": 82,
+      "disagreement_by_outcome": {
+        "request_seed": 1,
+        "move_with_seed": 2,
+        "plant_request": 2
+      },
+      "mean_teacher_score_gap": 0.025864595542202842
+    },
+    {
+      "game": "collect-31921285-v1-0-teacher",
+      "seed": 31921285,
+      "opponent": "v1",
+      "side": 0,
+      "split": "train",
+      "calls": 159,
+      "errors": 4,
+      "accuracy": 0.9748427672955975,
+      "teacher_counts": {
+        "WHEAT": 0,
+        "CARROT": 14,
+        "TOMATO": 0,
+        "STRAWBERRY": 70,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          14,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          66,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          75
+        ]
+      ],
+      "recall": {
+        "WHEAT": null,
+        "CARROT": 1.0,
+        "TOMATO": null,
+        "STRAWBERRY": 0.9428571428571428,
+        "MELON": 1.0
+      },
+      "exact_feature_vectors": 159,
+      "contiguous_decision_chains": 82,
+      "disagreement_by_outcome": {
+        "request_seed": 1,
+        "move_with_seed": 1,
+        "plant_request": 2
+      },
+      "mean_teacher_score_gap": 0.016709561935246347
+    },
+    {
+      "game": "collect-31921285-v1-1-teacher",
+      "seed": 31921285,
+      "opponent": "v1",
+      "side": 1,
+      "split": "train",
+      "calls": 159,
+      "errors": 4,
+      "accuracy": 0.9748427672955975,
+      "teacher_counts": {
+        "WHEAT": 0,
+        "CARROT": 14,
+        "TOMATO": 0,
+        "STRAWBERRY": 70,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          14,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          66,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          75
+        ]
+      ],
+      "recall": {
+        "WHEAT": null,
+        "CARROT": 1.0,
+        "TOMATO": null,
+        "STRAWBERRY": 0.9428571428571428,
+        "MELON": 1.0
+      },
+      "exact_feature_vectors": 159,
+      "contiguous_decision_chains": 82,
+      "disagreement_by_outcome": {
+        "request_seed": 1,
+        "move_with_seed": 1,
+        "plant_request": 2
+      },
+      "mean_teacher_score_gap": 0.016709561935246347
+    },
+    {
+      "game": "collect-31932889-market-0-teacher",
+      "seed": 31932889,
+      "opponent": "market",
+      "side": 0,
+      "split": "train",
+      "calls": 173,
+      "errors": 4,
+      "accuracy": 0.976878612716763,
+      "teacher_counts": {
+        "WHEAT": 0,
+        "CARROT": 29,
+        "TOMATO": 0,
+        "STRAWBERRY": 69,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          29,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          65,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          75
+        ]
+      ],
+      "recall": {
+        "WHEAT": null,
+        "CARROT": 1.0,
+        "TOMATO": null,
+        "STRAWBERRY": 0.9420289855072463,
+        "MELON": 1.0
+      },
+      "exact_feature_vectors": 173,
+      "contiguous_decision_chains": 93,
+      "disagreement_by_outcome": {
+        "move_with_seed": 2,
+        "plant_request": 2
+      },
+      "mean_teacher_score_gap": 0.022674671163682016
+    },
+    {
+      "game": "collect-31932889-market-1-teacher",
+      "seed": 31932889,
+      "opponent": "market",
+      "side": 1,
+      "split": "train",
+      "calls": 173,
+      "errors": 4,
+      "accuracy": 0.976878612716763,
+      "teacher_counts": {
+        "WHEAT": 0,
+        "CARROT": 29,
+        "TOMATO": 0,
+        "STRAWBERRY": 69,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          29,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          65,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          75
+        ]
+      ],
+      "recall": {
+        "WHEAT": null,
+        "CARROT": 1.0,
+        "TOMATO": null,
+        "STRAWBERRY": 0.9420289855072463,
+        "MELON": 1.0
+      },
+      "exact_feature_vectors": 173,
+      "contiguous_decision_chains": 93,
+      "disagreement_by_outcome": {
+        "move_with_seed": 2,
+        "plant_request": 2
+      },
+      "mean_teacher_score_gap": 0.022674671163682016
+    },
+    {
+      "game": "collect-31932889-round2-0-teacher",
+      "seed": 31932889,
+      "opponent": "round2",
+      "side": 0,
+      "split": "train",
+      "calls": 173,
+      "errors": 5,
+      "accuracy": 0.9710982658959537,
+      "teacher_counts": {
+        "WHEAT": 0,
+        "CARROT": 29,
+        "TOMATO": 0,
+        "STRAWBERRY": 69,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          29,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          65,
+          4
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          74
+        ]
+      ],
+      "recall": {
+        "WHEAT": null,
+        "CARROT": 1.0,
+        "TOMATO": null,
+        "STRAWBERRY": 0.9420289855072463,
+        "MELON": 0.9866666666666667
+      },
+      "exact_feature_vectors": 173,
+      "contiguous_decision_chains": 93,
+      "disagreement_by_outcome": {
+        "request_seed": 1,
+        "move_with_seed": 2,
+        "plant_request": 2
+      },
+      "mean_teacher_score_gap": 0.023771506885608393
+    },
+    {
+      "game": "collect-31932889-round2-1-teacher",
+      "seed": 31932889,
+      "opponent": "round2",
+      "side": 1,
+      "split": "train",
+      "calls": 173,
+      "errors": 5,
+      "accuracy": 0.9710982658959537,
+      "teacher_counts": {
+        "WHEAT": 0,
+        "CARROT": 29,
+        "TOMATO": 0,
+        "STRAWBERRY": 69,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          29,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          65,
+          4
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          74
+        ]
+      ],
+      "recall": {
+        "WHEAT": null,
+        "CARROT": 1.0,
+        "TOMATO": null,
+        "STRAWBERRY": 0.9420289855072463,
+        "MELON": 0.9866666666666667
+      },
+      "exact_feature_vectors": 173,
+      "contiguous_decision_chains": 93,
+      "disagreement_by_outcome": {
+        "request_seed": 1,
+        "move_with_seed": 2,
+        "plant_request": 2
+      },
+      "mean_teacher_score_gap": 0.023771506885608393
+    },
+    {
+      "game": "collect-31932889-v1-0-teacher",
+      "seed": 31932889,
+      "opponent": "v1",
+      "side": 0,
+      "split": "train",
+      "calls": 173,
+      "errors": 4,
+      "accuracy": 0.976878612716763,
+      "teacher_counts": {
+        "WHEAT": 0,
+        "CARROT": 29,
+        "TOMATO": 0,
+        "STRAWBERRY": 69,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          29,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          65,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          75
+        ]
+      ],
+      "recall": {
+        "WHEAT": null,
+        "CARROT": 1.0,
+        "TOMATO": null,
+        "STRAWBERRY": 0.9420289855072463,
+        "MELON": 1.0
+      },
+      "exact_feature_vectors": 173,
+      "contiguous_decision_chains": 93,
+      "disagreement_by_outcome": {
+        "request_seed": 1,
+        "move_with_seed": 1,
+        "plant_request": 2
+      },
+      "mean_teacher_score_gap": 0.015357343050313117
+    },
+    {
+      "game": "collect-31932889-v1-1-teacher",
+      "seed": 31932889,
+      "opponent": "v1",
+      "side": 1,
+      "split": "train",
+      "calls": 173,
+      "errors": 4,
+      "accuracy": 0.976878612716763,
+      "teacher_counts": {
+        "WHEAT": 0,
+        "CARROT": 29,
+        "TOMATO": 0,
+        "STRAWBERRY": 69,
+        "MELON": 75
+      },
+      "confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          29,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          65,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          75
+        ]
+      ],
+      "recall": {
+        "WHEAT": null,
+        "CARROT": 1.0,
+        "TOMATO": null,
+        "STRAWBERRY": 0.9420289855072463,
+        "MELON": 1.0
+      },
+      "exact_feature_vectors": 173,
+      "contiguous_decision_chains": 93,
+      "disagreement_by_outcome": {
+        "request_seed": 1,
+        "move_with_seed": 1,
+        "plant_request": 2
+      },
+      "mean_teacher_score_gap": 0.015357343050313117
+    },
+    {
+      "game": "trained-smoke-31317742-market-0-trained",
+      "seed": 31317742,
+      "opponent": "market",
+      "side": 0,
+      "split": "student_development",
+      "calls": 156,
+      "errors": 8,
+      "accuracy": 0.9487179487179487,
+      "teacher_counts": {
+        "WHEAT": 10,
+        "CARROT": 2,
+        "TOMATO": 0,
+        "STRAWBERRY": 74,
+        "MELON": 70
+      },
+      "confusion": [
+        [
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          66,
+          8
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          70
+        ]
+      ],
+      "recall": {
+        "WHEAT": 1.0,
+        "CARROT": 1.0,
+        "TOMATO": null,
+        "STRAWBERRY": 0.8918918918918919,
+        "MELON": 1.0
+      },
+      "exact_feature_vectors": 156,
+      "contiguous_decision_chains": 81,
+      "disagreement_by_outcome": {
+        "request_seed": 3,
+        "plant_request": 4,
+        "move_with_seed": 1
+      },
+      "mean_teacher_score_gap": 0.182467537193394
+    },
+    {
+      "game": "trained-smoke-31317742-market-1-trained",
+      "seed": 31317742,
+      "opponent": "market",
+      "side": 1,
+      "split": "student_development",
+      "calls": 156,
+      "errors": 8,
+      "accuracy": 0.9487179487179487,
+      "teacher_counts": {
+        "WHEAT": 10,
+        "CARROT": 2,
+        "TOMATO": 0,
+        "STRAWBERRY": 74,
+        "MELON": 70
+      },
+      "confusion": [
+        [
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          66,
+          8
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          70
+        ]
+      ],
+      "recall": {
+        "WHEAT": 1.0,
+        "CARROT": 1.0,
+        "TOMATO": null,
+        "STRAWBERRY": 0.8918918918918919,
+        "MELON": 1.0
+      },
+      "exact_feature_vectors": 156,
+      "contiguous_decision_chains": 81,
+      "disagreement_by_outcome": {
+        "request_seed": 3,
+        "plant_request": 4,
+        "move_with_seed": 1
+      },
+      "mean_teacher_score_gap": 0.182467537193394
+    }
+  ],
+  "source_hashes": [
+    {
+      "game": "collect-smoke-31205138-market-0-teacher",
+      "replay_sha256": "88d142bc78abfba3c8a8268821f43329eb6619a76a2f2869d88c0ee2d1d3413d",
+      "trace_sha256": "12dd46447dc9d40ae0c59578bb4e5c692febf9152c0b3c575d9ccd4403619b26"
+    },
+    {
+      "game": "collect-smoke-31205138-market-1-teacher",
+      "replay_sha256": "0c3a1fa1b83cb8713cb4ade1d86c0681caf1b8cd76ecd220450a5f6ec244ce52",
+      "trace_sha256": "8b06e88c5987e382d2fab088088d88ec355c61ae5dcd8016e9b7ae43f32087b8"
+    },
+    {
+      "game": "collect-smoke-31317742-market-0-teacher",
+      "replay_sha256": "a75651cc642bbcd60e2f570ca254c214069039f56e63e6d440db78339da98921",
+      "trace_sha256": "8d89faaff8016bba1c34f2b31056c1032e1d144b7e95451513eee02384f5a997"
+    },
+    {
+      "game": "collect-smoke-31317742-market-1-teacher",
+      "replay_sha256": "cac52a8683dfd6e802853972860f660e975027ba66230b64adc1a6175610f187",
+      "trace_sha256": "c7c0a3637a100ded19b4c44d26268b5bddd4aed78b42c0aa59f49618ce01d666"
+    },
+    {
+      "game": "collect-31205138-round2-0-teacher",
+      "replay_sha256": "1d984819ec41e583163340484512eedf506b2d45642c7f530e2f9d619786cf28",
+      "trace_sha256": "6480ff2072ed1a9a92d0bdf39cd82bce940a8d6ded37738945837b06c1012020"
+    },
+    {
+      "game": "collect-31205138-round2-1-teacher",
+      "replay_sha256": "2810b199abdf2f08cafd39e736ad6e13e40d6bfac23e910be83026da9fff967c",
+      "trace_sha256": "ad3afd7df268cf7b451598699a1b9af7f622e825f59af4335062c8386a209280"
+    },
+    {
+      "game": "collect-31205138-v1-0-teacher",
+      "replay_sha256": "005939d4aab0b6cd7f5dbabc2b8773014e804fa84adbd2f18a87c448b8a9d02d",
+      "trace_sha256": "02c5ef2addf838dc009bcb1a185557da6a4ee7097270c019732fa1818460d43c"
+    },
+    {
+      "game": "collect-31205138-v1-1-teacher",
+      "replay_sha256": "77e04795b22ee4ff7733f99ede7496ce86d91852b4beec10ac7f0d41392141b8",
+      "trace_sha256": "a206fdd8ce3fb4437d8a81d6e4d6716ccd6e174cb2b32a8079514ced039ed6e1"
+    },
+    {
+      "game": "collect-31273729-market-0-teacher",
+      "replay_sha256": "152e017d55a577a692d147085be797fafe9eaa72f19b71678dd56e0c6dcde10d",
+      "trace_sha256": "5a44654cc6bfc7b012a1d3f5b0b6718892b8adcca3ea1152091cc4db38f89827"
+    },
+    {
+      "game": "collect-31273729-market-1-teacher",
+      "replay_sha256": "3a437ecdc78a9c6ca4656fff185b7ec4e9d60d8007f6990eae9f3ec091131dd9",
+      "trace_sha256": "e9c957564eed36b20d0d729a52804dfc8b744c8c12e3157b91c4ca67453842ba"
+    },
+    {
+      "game": "collect-31273729-round2-0-teacher",
+      "replay_sha256": "ab14307df28375ea01c8a60daf607e00a33ff07e7815af5840f23813374156ff",
+      "trace_sha256": "f3f253d99aca683ef95097a7978378f1e0e8c2e07dbdb7c20c17671f80bb30e6"
+    },
+    {
+      "game": "collect-31273729-round2-1-teacher",
+      "replay_sha256": "f794c6bc84628feac837b3995f50ab1981420f17c1ddcd0b237d4f99f51ee808",
+      "trace_sha256": "79348682d8d2e221a3804b6ecc3596dce7755c538dc7ea90ef8d48a12f945ff8"
+    },
+    {
+      "game": "collect-31273729-v1-0-teacher",
+      "replay_sha256": "d4a1c470c78b142efbccc7202d24f07420090ce2c1ea520febbf926dca22d36c",
+      "trace_sha256": "18121b14ac867a33fb71c8a599d04cd2eb1f6279cd956c88c53b99ac684ef127"
+    },
+    {
+      "game": "collect-31273729-v1-1-teacher",
+      "replay_sha256": "3c4dab01cf30403548fbd8cabc73edc404cb2530d6fdf52f6f68f27d1f4e3573",
+      "trace_sha256": "a7dda6c97985bdc4dae4b6299f19263d4683fc5efc0e7b4360957fa377adb573"
+    },
+    {
+      "game": "collect-31317742-round2-0-teacher",
+      "replay_sha256": "54c42f5b5bf1a0739aeec5e013948a30ed8117fdf4d1f133c6bbdaea8169257f",
+      "trace_sha256": "4a046cb82f9230714a62578cfb7cf45cd36bff2b6546ab4fa1dac958ae3c01b8"
+    },
+    {
+      "game": "collect-31317742-round2-1-teacher",
+      "replay_sha256": "3d07a305823fb32764273eb168f3c89cb0a1939df15b005069e2b508d9d1661e",
+      "trace_sha256": "0fa72dfd7816e0fba22394ccecd7f080327c0224869d5d0ae241b74edd327b66"
+    },
+    {
+      "game": "collect-31317742-v1-0-teacher",
+      "replay_sha256": "6ebe2a567af569bb425b7acec640da84ee727adb5666223fcf062ea30c395aac",
+      "trace_sha256": "6055472ab86e1cd110a3d6b3fe53f414c3ad3a21eaa82d3138512738c9a5df9e"
+    },
+    {
+      "game": "collect-31317742-v1-1-teacher",
+      "replay_sha256": "14a14b08a07e25e793d51a8841ac0bf3e904f476b3ed840c784760b7dfd2e6ae",
+      "trace_sha256": "81da204dbaeb6c20d86d095a2ca858428c59536fa22a88deea62d147be13fb02"
+    },
+    {
+      "game": "collect-31360134-market-0-teacher",
+      "replay_sha256": "3569cbef049fe9d359926057c8161a83019a8a02cb31eaff0b8efbd64d668e5d",
+      "trace_sha256": "5a02c14ffc5108e525ef48a9d0090cb75ae46455095708adfe1774225ac7bf14"
+    },
+    {
+      "game": "collect-31360134-market-1-teacher",
+      "replay_sha256": "b533d76188f689306f04160747c6fd06ba07bc75c4b685a1d048c8c00683c75d",
+      "trace_sha256": "48eec35f97fa9c34bca9a147052baddb5b65eebdd8d732bddceb0b403f453a07"
+    },
+    {
+      "game": "collect-31360134-round2-0-teacher",
+      "replay_sha256": "039b878322a13adc1b1cf07f67d76edfbb1f9888cccc3e39660fff428bfc87ef",
+      "trace_sha256": "ac014bf8d948508490ebe8c824627f163e9c1bbe1eaad4c21bd4942abe2efa74"
+    },
+    {
+      "game": "collect-31360134-round2-1-teacher",
+      "replay_sha256": "316aff1250281f1d8d9ede0d7184974c953ea17efd02d64b166ee5086d2271b9",
+      "trace_sha256": "e69f68a02a01c8eb2d836262c6d4119ccbda3eae72a6e3b027f8cf8ba1cc8363"
+    },
+    {
+      "game": "collect-31360134-v1-0-teacher",
+      "replay_sha256": "cc0a0d02a6c03d6972c4f6272076e09ead1c4731f8c06b352524b3b3fb2d02ab",
+      "trace_sha256": "9ff5659c68fc56067a470eca4f52df7c4c749a21e02724eb80e224e46e2c9f8a"
+    },
+    {
+      "game": "collect-31360134-v1-1-teacher",
+      "replay_sha256": "4cb29c49054d25e182515f7e0f21014c0973a199bfdcf18eff39477fc8227c03",
+      "trace_sha256": "346970a5962fd3810611a0a15040df24f9bdac999f3934b0d06faed8cbf97b50"
+    },
+    {
+      "game": "collect-31504409-market-0-teacher",
+      "replay_sha256": "aabd034be8a092fd2a08e9f222ac0841374abebade47050f197f59477663014f",
+      "trace_sha256": "775d17b89d628785143e9ab06fed36cdc31003519858849a5d7410fa08b5a642"
+    },
+    {
+      "game": "collect-31504409-market-1-teacher",
+      "replay_sha256": "62ceaedd5516f78778ac9b5b62e1456b773b925f42f03893ce3f4ac245d0f5a8",
+      "trace_sha256": "a22ddccbf9199addbb4fbf4e7976ce0786c11302508fe5c25330a4c685b4c8fc"
+    },
+    {
+      "game": "collect-31504409-round2-0-teacher",
+      "replay_sha256": "81d44691b9b01c3d4ab6e6ff9d64d04ec4aa9c50673fb4ca0fa1bb17d7d842c2",
+      "trace_sha256": "b024265e2220f401fe784a83044675230bbd8fd391406a2bbb67458b619a1920"
+    },
+    {
+      "game": "collect-31504409-round2-1-teacher",
+      "replay_sha256": "85ec9b233b0b89e9b84b47c81c38a729d4c79958bd61588a580c308d4868fe1b",
+      "trace_sha256": "7883009f2d991027937d6fde9a0f2e185c45b6e95d498c8d8192262a19b3c514"
+    },
+    {
+      "game": "collect-31504409-v1-0-teacher",
+      "replay_sha256": "91911b80fc0415925e15acb11f873dbe6621efe0457389d5e382b5d99b5aacd5",
+      "trace_sha256": "c608178c79e55da58961a0fc3943228d99f329c068c2a70a53359ed337ebdaf5"
+    },
+    {
+      "game": "collect-31504409-v1-1-teacher",
+      "replay_sha256": "31422dd8409ae6e557020cbb12b82e8921492b8ef77d25c03eb339f39488c7ab",
+      "trace_sha256": "7859bef9ff2832583e0166b781072ad4e28788bcf0c1446c32cc8cdb057f59b1"
+    },
+    {
+      "game": "collect-31637216-market-0-teacher",
+      "replay_sha256": "34b92182960a7bb86b56be22b634e1e75393af3a30f3860fdd8c57a635cee180",
+      "trace_sha256": "3f9bf25a8f1125fd053e609c063c91f876d4356819074466b97a95b46ae88922"
+    },
+    {
+      "game": "collect-31637216-market-1-teacher",
+      "replay_sha256": "fd4be7c593ab5304d1cb691db711136cd516a9ab36ee0c3c86431134623f5983",
+      "trace_sha256": "5240db7616f74dc891d14ee893df857a71090eced7c64f28e1c74f69275fdc95"
+    },
+    {
+      "game": "collect-31637216-round2-0-teacher",
+      "replay_sha256": "149ccca7491e22cf922620d5094a8c8902edd15bac6a73ab574fd4957660b2d8",
+      "trace_sha256": "4cb81254ef929ced44472001c4baac7964f7288bde3fcebac9d032a860291942"
+    },
+    {
+      "game": "collect-31637216-round2-1-teacher",
+      "replay_sha256": "2a7a0e9f40fb26db538d43ffaf5cd348be1c942abcec11170b20576a65a6f4f8",
+      "trace_sha256": "dde769efb69101ceba2b527d1729dff96d6518e47336f201d35e0019057b09a7"
+    },
+    {
+      "game": "collect-31637216-v1-0-teacher",
+      "replay_sha256": "3597c5208d022a75538ae664ed06ed53fac048a7d5d1dd0a9b4f999e1a7a2564",
+      "trace_sha256": "78922f36bb8be40b5fb7c954292095d63c64d3373654ed70b0624a68bfb48365"
+    },
+    {
+      "game": "collect-31637216-v1-1-teacher",
+      "replay_sha256": "c019d3281ab6ef0fdc3786c5e3c66045b9952febad32e79da03f1a1f5f2d3cc8",
+      "trace_sha256": "f2d0a6c367f1abe88fd18747ee3d185db8bba6af91c300fa608f5f1deddf8e28"
+    },
+    {
+      "game": "collect-31659052-market-0-teacher",
+      "replay_sha256": "cdb45c55ed0788e8569248027a3818cce6c32153b1317567d5f4b2b31fc4da3f",
+      "trace_sha256": "0ec0d5dff3c2aa93eac646794be5df7e0df5c5cbd6ebe9e5b14b91c76d6b320c"
+    },
+    {
+      "game": "collect-31659052-market-1-teacher",
+      "replay_sha256": "235a70a3a78c97eeb5b0c3515fbcb83024226b587ca622c6bdf5dd873ccb631c",
+      "trace_sha256": "47339737562985ac57cf706d0e32a4fe8c4a49bef5239ede526224be75d65130"
+    },
+    {
+      "game": "collect-31659052-round2-0-teacher",
+      "replay_sha256": "480a38249e781aa383b43c76dd4f2eb513f7f294a15a71ee88b15043a68feca0",
+      "trace_sha256": "40cae27b9c945487a45ec60eaa98e21091e1d280d884a88d30fcc35ddc227690"
+    },
+    {
+      "game": "collect-31659052-round2-1-teacher",
+      "replay_sha256": "17f1c1fad828fc93054ff6f6c28000673f9b120cb5e17d5eaf991fa8b32f84f4",
+      "trace_sha256": "cd41189d2f6ddf03c70ba997f6477757588174bce8bcec180d8b312bf45c6c85"
+    },
+    {
+      "game": "collect-31659052-v1-0-teacher",
+      "replay_sha256": "19cfeed2e329c2b0a3465102ee04540353af79027d5ce05b36f5c685b9d9959a",
+      "trace_sha256": "4a94476916b584906c4cc0cff9b0f1a6588a0751574f3741f3dd9acb8ac464d8"
+    },
+    {
+      "game": "collect-31659052-v1-1-teacher",
+      "replay_sha256": "0a2b666ac9191fb9d4595aadfa451a3569afa9f58dc7314a150cfa1cc98567c3",
+      "trace_sha256": "8e6b8829a36e7927b9a051f27a1893e87276d6d5adb95cbc71f88fe4f1cba94f"
+    },
+    {
+      "game": "collect-31834104-market-0-teacher",
+      "replay_sha256": "19ee0bdcded49d0741edccdbf3db746aee48a675c28ce3ce739b907ec6c8cdac",
+      "trace_sha256": "0cc7425de7d20f53aa405957852d3343f0330c439d908177e4924fd8f1cbde60"
+    },
+    {
+      "game": "collect-31834104-market-1-teacher",
+      "replay_sha256": "cdc0168ef59a583987bc2c29c9494f92e8bb8262aa2b927b5eed85a500339669",
+      "trace_sha256": "477a35ec133780208c11c853b21d642b2bb83f100389f24a4f7f264be55c7f23"
+    },
+    {
+      "game": "collect-31834104-round2-0-teacher",
+      "replay_sha256": "eac5122484bd4542c01a36ee587e5a5c575b327ec01361b806992ee41d0bf717",
+      "trace_sha256": "665e92e7fd2960089bea72369383a2d8f061b818a0757151bf5903b3bba9606e"
+    },
+    {
+      "game": "collect-31834104-round2-1-teacher",
+      "replay_sha256": "f8433410300b1fef7d3b07d760ccc327d9ad745c42c9f48802109727284fefe6",
+      "trace_sha256": "f2d93db3e6a5f8f6df291c10a51ff7c22a6dddd6916060fcf3676c33c8b0ffd8"
+    },
+    {
+      "game": "collect-31834104-v1-0-teacher",
+      "replay_sha256": "adce4c743fb421359d081c9a4726eb97e0c3b05fb7073f8e0bf6ee9796756cca",
+      "trace_sha256": "767c678eab9e8484179fb0ebd05d5f0de9b7fb1e96bcbf2d1bc72c084439b15b"
+    },
+    {
+      "game": "collect-31834104-v1-1-teacher",
+      "replay_sha256": "15527f596b04d501fef09188870dde2fab5ac0cb4e063b7e2fda71db68cdd22f",
+      "trace_sha256": "77c779d364802eaba06dbacfcaec12589b4cdd4b9a05e324ab7287b356ff3cd6"
+    },
+    {
+      "game": "collect-31921285-market-0-teacher",
+      "replay_sha256": "9041724418d027469a5980bf33018c05d57c37fac73c5983b53fc9a8dae8384e",
+      "trace_sha256": "48256e13c89431ee42cd5a47bbc4e66d84f423537a20acf56274e26cf1bfb2e0"
+    },
+    {
+      "game": "collect-31921285-market-1-teacher",
+      "replay_sha256": "df53b7c545fd939b3d98de2cb67b9ec1941d984b02dffcffee6a3e79c0222b51",
+      "trace_sha256": "7ae1ba9f9550d5f884b29b27bd52e4cf2e803f5a0c0f11e0bba9248009d7c2f1"
+    },
+    {
+      "game": "collect-31921285-round2-0-teacher",
+      "replay_sha256": "e82f70bbce72ef5838f8b5c02221ff6f04aea5aa698c348a22e5fe389c744695",
+      "trace_sha256": "a8d51113b038c068643849b8f00aca63e7fb71f68e106d1e3589d65f91e2bfba"
+    },
+    {
+      "game": "collect-31921285-round2-1-teacher",
+      "replay_sha256": "05c8a55abbe0af9f270eb43b8336c84c242536a73387aef08cdd159533ff917a",
+      "trace_sha256": "4fdd29d9beb0a464eb169e359f31ea84440a1d7b0543b0955d112b5db0e09d52"
+    },
+    {
+      "game": "collect-31921285-v1-0-teacher",
+      "replay_sha256": "d5b1a4117454d56ba5dc2c3e00136e30b000287d3acbd0690d97f8e1a53ce012",
+      "trace_sha256": "e2d38f233b8565f8eb561ebfabf4e789651f5ce3d78eea437302c630f526318e"
+    },
+    {
+      "game": "collect-31921285-v1-1-teacher",
+      "replay_sha256": "efc699943e38b533e9e73787c0b13cef71921a4de3fa09490243a4137ddfff0a",
+      "trace_sha256": "08484a637e8a36e8239b812f09b41c24908ce21cbbefd10a19ff1ed126c67216"
+    },
+    {
+      "game": "collect-31932889-market-0-teacher",
+      "replay_sha256": "a3dc3281c02ce5f853f1054f05eca7fb0bfb1854c1a00628db02e0443e7fc20b",
+      "trace_sha256": "1e4cf222fef47cd87a7f423315653d1095d3639fcef00ea8df851d1cb398553a"
+    },
+    {
+      "game": "collect-31932889-market-1-teacher",
+      "replay_sha256": "90e77df5f1afb3c4b73e1a4208920e1371b632b14b391c357a903f1ea02c9e1d",
+      "trace_sha256": "77c99e55283800b0e6f21767fb2bc9dedcfbea0e91097f4f281248e491545944"
+    },
+    {
+      "game": "collect-31932889-round2-0-teacher",
+      "replay_sha256": "3dc8a47a52a2e858a8c59498ea960cbb52d621cddee5160afb7bf914795c6c98",
+      "trace_sha256": "0a5cd936a84d10485277390a15fc408ac4d467cae3b112b672982db8b068f950"
+    },
+    {
+      "game": "collect-31932889-round2-1-teacher",
+      "replay_sha256": "7819a8ef1950feb02c06e1ed2359aeee2dd98cc38a63d473a6c1f0031e1063ff",
+      "trace_sha256": "dcd7201b31ad9380d4388991c10f676a366367c79a0db3d14a96d2aca55e685f"
+    },
+    {
+      "game": "collect-31932889-v1-0-teacher",
+      "replay_sha256": "211d2335d7b67f49adc5ecd933aa4a803a3afe7c2b2ad58c6e19904c20eef01d",
+      "trace_sha256": "f85cef49d4ae0230b9e882c9972288e194ad351ae1213970c477fe1f80b601ec"
+    },
+    {
+      "game": "collect-31932889-v1-1-teacher",
+      "replay_sha256": "251124b97fb744eeb34296432afdae8c7b8e9b13d8b232c2af3be7ba05c102e3",
+      "trace_sha256": "e976a87a6c1d95899068c81c3f373d5197467f2478f91244940a0cf4ae3b0388"
+    },
+    {
+      "game": "trained-smoke-31317742-market-0-trained",
+      "replay_sha256": "0702053d4ca2e141cc19aa24ee37591097ba797b98ad9bf2fd7aabde3389c8ef",
+      "trace_sha256": "148913ef3ab0d9f82533a8d81dc30611e8e47834d8c814124a8496b4e535826e"
+    },
+    {
+      "game": "trained-smoke-31317742-market-1-trained",
+      "replay_sha256": "22aa46fdf944d24b9b938f5fdc499ce6c22bc62d2ae7c2786081946de1671e92",
+      "trace_sha256": "292e860e85505b29fe58486036146dd332cab15fea7ce41f76303276d6b09308"
+    }
+  ],
+  "exact_feature_label_conflicts": 0,
+  "score_reconstruction_label_mismatches": 0,
+  "score_reconstruction_max_error": 0.0,
+  "candidate_strata": [
+    {
+      "crop": "WHEAT",
+      "eligible_disagreements": 62,
+      "seeds_with_at_least_three": 2,
+      "mean_seed_preference_gap": 0.00246503590836733,
+      "eligible_for_single_probe": true
+    },
+    {
+      "crop": "CARROT",
+      "eligible_disagreements": 104,
+      "seeds_with_at_least_three": 2,
+      "mean_seed_preference_gap": 0.0028652712610305747,
+      "eligible_for_single_probe": true
+    },
+    {
+      "crop": "TOMATO",
+      "eligible_disagreements": 12,
+      "seeds_with_at_least_three": 2,
+      "mean_seed_preference_gap": 0.00025080331618893513,
+      "eligible_for_single_probe": true
+    },
+    {
+      "crop": "STRAWBERRY",
+      "eligible_disagreements": 160,
+      "seeds_with_at_least_three": 8,
+      "mean_seed_preference_gap": 0.014669083726848383,
+      "eligible_for_single_probe": true
+    },
+    {
+      "crop": "MELON",
+      "eligible_disagreements": 0,
+      "seeds_with_at_least_three": 0,
+      "mean_seed_preference_gap": 0.0,
+      "eligible_for_single_probe": false
+    }
+  ],
+  "selected_probe_teacher_crop": "STRAWBERRY",
+  "limitations": [
+    "Teacher scores are heuristic preferences, not official rewards or causal regret",
+    "Exact-vector and contiguous unit/target/day chains are descriptive counts, not independent samples",
+    "Student development contains only one old training seed and one opponent, not broad on-policy coverage",
+    "No original formal-test per-game input used; no training or new game executed"
+  ],
+  "wall_seconds": 41.46738440002082
+}

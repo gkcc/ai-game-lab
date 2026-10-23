@@ -1,0 +1,43 @@
+{
+  "phase": "bc-v1-gap-diagnostics",
+  "baseline_commit": "d30e832f55ed02f3cf666c19db810460aa28cc1c",
+  "input_experiment": "bc-crop-v1-20261023-run1",
+  "allowed_inputs": {
+    "collect-smoke-ledger.json": "7432e2b1eea0b804cf4b5295988fe3d3c61295b09ef32df91dced43b27bb71f9",
+    "collect-ledger.json": "b7e577b2879e53bfe8a728023b2b375db9baa40741847b3affa100660433e5eb",
+    "trained-smoke-ledger.json": "7ce5d08f3f5d6880f8a04ae7c80514477e2b9161b8f85a5908c38c25ab5ddd78",
+    "data/manifest.json": "7cc986a3d422257a1178206543cdc1e42ab38ceef570dd772b78c43fb276301f",
+    "data/dataset.npz": "5e8f15f513906f83ba03c705f0a64d0223429cac488bbbcc3bc6a897e0498e1d",
+    "model/trained.npz": "9806383a2d335fdfe21639f911946b29b36708aba89f7b3961a4f9999b0388fd",
+    "model/report.json": "628c981e2955631de27792e1f927680728568779f3934b93df49724b27f782c7",
+    "registration.json": "acb2e8ed41c28d39db615693f3ff697d28453418217a77592269611cc5148f22"
+  },
+  "excluded_selection_inputs": [
+    "test-ledger.json",
+    "audit-test.json",
+    "entry-test-ledger.json"
+  ],
+  "scope": "Offline diagnosis on original teacher train/validation and trained-student development smoke; no test-by-game selection",
+  "training_budget": 0,
+  "conditional_new_development_game_budget": 36,
+  "diagnostic_candidate_selection": "At most one teacher-label crop stratum: rank mean per-training-seed teacher-score-gap sum per eligible decision; eligible outcomes request_seed or plant_request; require at least three eligible disagreements in each of at least two training seeds; tie fixed crop order. Score gap is teacher preference, not official return. Validation and student smoke only diagnostic corroboration. Do not alter rule after reading new games.",
+  "game_plan_if_supported": {
+    "new_development_seeds": 2,
+    "opponents": [
+      "v1",
+      "market",
+      "round2"
+    ],
+    "seats": [
+      0,
+      1
+    ],
+    "policies": [
+      "teacher",
+      "trained",
+      "single_diagnostic_probe"
+    ],
+    "formal_independent_test": false
+  },
+  "stop": "No training, feature changes, new candidates or more than36 games in this phase; freeze exact probe, new seeds and source identity before any new game; no claim of significance from two seeds"
+}

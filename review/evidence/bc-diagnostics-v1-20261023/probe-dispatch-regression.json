@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "counts": {
+    "observations": 1438,
+    "unchanged_calls": 302,
+    "identical_nonintervention_turns": 1428,
+    "corrected_calls": 10,
+    "cross_game_reset_checks": 2
+  },
+  "dispatch": {
+    "failed_panel_started": 4,
+    "failed_panel_successes_retained": 3,
+    "unstarted_after_failure": 32,
+    "successful_panel_completed": 7,
+    "all_owned_threads_joined": true
+  },
+  "source_replay_sha256": {
+    "trained-smoke-31317742-market-0-trained": "0702053d4ca2e141cc19aa24ee37591097ba797b98ad9bf2fd7aabde3389c8ef",
+    "trained-smoke-31317742-market-1-trained": "22aa46fdf944d24b9b938f5fdc499ce6c22bc62d2ae7c2786081946de1671e92"
+  },
+  "checkpoint_sha256": "9806383a2d335fdfe21639f911946b29b36708aba89f7b3961a4f9999b0388fd",
+  "probe_sha256": "d695341e32388914850cd889dbe7f1f45c4ac7c16e3b8d73bfbb53d53ec06fe4",
+  "new_games": 0,
+  "training_runs": 0,
+  "scope": "Original student developer observations, both seats. Conditional teacher override only; no claim of official economic gain."
+}

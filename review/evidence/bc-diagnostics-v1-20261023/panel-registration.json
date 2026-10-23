@@ -1,0 +1,78 @@
+{
+  "experiment": "bc-crop-strawberry-diagnostic-v1",
+  "created_utc": "2026-10-23T05:32:17.293023+00:00",
+  "baseline_head": "d30e832f55ed02f3cf666c19db810460aa28cc1c",
+  "evaluation_role": "development-counterfactual",
+  "new_independent_evidence": false,
+  "original_experiment": "artifacts/bc-crop-v1-20261023-run1",
+  "model_relative": "artifacts/bc-crop-v1-20261023-run1/model/trained.npz",
+  "checkpoint_sha256": "9806383a2d335fdfe21639f911946b29b36708aba89f7b3961a4f9999b0388fd",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+  "teacher_sha256": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+  "source_sha256": {
+    "teacher.py": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+    "worker.py": "a80158b26d1f4ae3d366c1d1276a1ca63e652bcd350f5ca25545b0f5f33759f1",
+    "v1.py": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "market.py": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "round2.py": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848"
+  },
+  "development_seeds": [
+    33691168,
+    33223745
+  ],
+  "seed_generator": "Random(2026102319).sample(range(33000000,34000000),2)",
+  "seed_novelty": {
+    "passed": true,
+    "public_text_files": 401,
+    "local_evidence_files": 2107,
+    "scanned_manifest_sha256": "2fddc6b20e24b5da1283a1324e14fa76214b0ed626adb60d19dcb3a27fa1e395",
+    "scope": "Current tracked public text plus local JSON filenames containing registration/manifest/ledger/config/result/summary/seed",
+    "limitation": "Conservative decimal occurrences; no claim about deleted Git history, raw replay-only seeds, other machines or external experiments"
+  },
+  "opponents": [
+    "v1",
+    "market",
+    "round2"
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "policies": [
+    "teacher",
+    "student",
+    "probe"
+  ],
+  "workers": 4,
+  "game_budget": 36,
+  "training_runs": 0,
+  "intervention": "On the current student-reached decision context, override only when conditional frozen teacher selects STRAWBERRY and frozen model disagrees. Same controller, no model training. Diagnostic oracle, not a student or fallback.",
+  "selection": "Prewritten train-only mean per-seed teacher-score-gap ranking; selected STRAWBERRY. Teacher preference gap is not official cash regret.",
+  "qualification": "160 eligible train errors, 23 exact vectors; 128 calls from seven vectors recurring across all eight seeds. Repetition is not eight distinct states.",
+  "metrics": [
+    "net_profit",
+    "opponent_bank",
+    "margin",
+    "match_score",
+    "correction_calls",
+    "successful_plants",
+    "seed_units_bought",
+    "ending_seed_units",
+    "sales_units",
+    "sales_revenue"
+  ],
+  "comparison": "Paired probe minus student for each identical seed/opponent/seat; aggregate both seats, then opponents within each whole seed. Teacher gap descriptive.",
+  "exploration_gate": "All official/control/freeze gates pass AND probe-minus-student mean net profit > 0 separately in BOTH seeds AND pooled mean margin >= 0 AND pooled match score >= 0 AND market opponent mean profit/margin/score deltas >= 0. Only supports further investigation, never promotion or significance.",
+  "inference": "Two development seeds; no bootstrap/significance/generalization claim. Report every opponent and seed even if gate fails. Changes include downstream market/opponent responses; no causal allocation to individual calls.",
+  "stop": "Exactly one probe, maximum 36 games, no further tuning/seeds or model training. Failed valid games are not replaced; infrastructure failure stops for explicit diagnosis.",
+  "sources_used_for_selection": [
+    "old training",
+    "old validation corroboration",
+    "old student development corroboration"
+  ],
+  "excluded_for_selection": [
+    "old formal test per-game results"
+  ],
+  "acceptance": "36 full 720-state/719-action DONE games, no agent errors; official reexecute all ordered states and v1/v2 hashes; both actor actions and all stable traces reproduce; original model/default/teachers/evidence unchanged; zero hidden fallbacks."
+}

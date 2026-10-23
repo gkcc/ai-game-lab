@@ -1,0 +1,277 @@
+{
+  "passed": true,
+  "source_ledger_sha256": "9c886786485a375485588c8955aae9c8d3a97c6dec58bda2e3f00e1a1b85bd47",
+  "training_calls": 9127,
+  "training_unique_feature_vectors": 2896,
+  "training_calls_per_exact_vector_histogram": {
+    "1": 489,
+    "2": 2255,
+    "16": 83,
+    "32": 32,
+    "48": 37
+  },
+  "groups": {
+    "validation": {
+      "seen_exactly_in_training": {
+        "calls": 1032,
+        "errors": 52,
+        "accuracy": 0.9496124031007752,
+        "teacher_counts": {
+          "WHEAT": 0,
+          "CARROT": 24,
+          "TOMATO": 0,
+          "STRAWBERRY": 108,
+          "MELON": 900
+        },
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            24,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            60,
+            48
+          ],
+          [
+            0,
+            4,
+            0,
+            0,
+            896
+          ]
+        ],
+        "recall": {
+          "WHEAT": null,
+          "CARROT": 1.0,
+          "TOMATO": null,
+          "STRAWBERRY": 0.5555555555555556,
+          "MELON": 0.9955555555555555
+        },
+        "exact_feature_vectors": 152,
+        "contiguous_decision_chains": 528,
+        "disagreement_by_outcome": {
+          "move_with_seed": 20,
+          "plant_request": 24,
+          "request_seed": 8
+        },
+        "mean_teacher_score_gap": 0.0414418959311295
+      },
+      "not_seen_exactly_in_training": {
+        "calls": 1324,
+        "errors": 246,
+        "accuracy": 0.8141993957703928,
+        "teacher_counts": {
+          "WHEAT": 218,
+          "CARROT": 358,
+          "TOMATO": 84,
+          "STRAWBERRY": 656,
+          "MELON": 8
+        },
+        "confusion": [
+          [
+            172,
+            28,
+            18,
+            0,
+            0
+          ],
+          [
+            62,
+            278,
+            8,
+            10,
+            0
+          ],
+          [
+            44,
+            8,
+            32,
+            0,
+            0
+          ],
+          [
+            14,
+            12,
+            42,
+            588,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            8
+          ]
+        ],
+        "recall": {
+          "WHEAT": 0.7889908256880734,
+          "CARROT": 0.776536312849162,
+          "TOMATO": 0.38095238095238093,
+          "STRAWBERRY": 0.8963414634146342,
+          "MELON": 1.0
+        },
+        "exact_feature_vectors": 662,
+        "contiguous_decision_chains": 680,
+        "disagreement_by_outcome": {
+          "request_seed": 110,
+          "plant_request": 96,
+          "move_with_seed": 40
+        },
+        "mean_teacher_score_gap": 0.2858368223553836
+      }
+    },
+    "student_development": {
+      "seen_exactly_in_training": {
+        "calls": 158,
+        "errors": 6,
+        "accuracy": 0.9620253164556962,
+        "teacher_counts": {
+          "WHEAT": 0,
+          "CARROT": 4,
+          "TOMATO": 0,
+          "STRAWBERRY": 14,
+          "MELON": 140
+        },
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            4,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            8,
+            6
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            140
+          ]
+        ],
+        "recall": {
+          "WHEAT": null,
+          "CARROT": 1.0,
+          "TOMATO": null,
+          "STRAWBERRY": 0.5714285714285714,
+          "MELON": 1.0
+        },
+        "exact_feature_vectors": 79,
+        "contiguous_decision_chains": 82,
+        "disagreement_by_outcome": {
+          "request_seed": 2,
+          "plant_request": 4
+        },
+        "mean_teacher_score_gap": 0.02652534249771177
+      },
+      "not_seen_exactly_in_training": {
+        "calls": 154,
+        "errors": 10,
+        "accuracy": 0.935064935064935,
+        "teacher_counts": {
+          "WHEAT": 20,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 134,
+          "MELON": 0
+        },
+        "confusion": [
+          [
+            20,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            124,
+            10
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "recall": {
+          "WHEAT": 1.0,
+          "CARROT": null,
+          "TOMATO": null,
+          "STRAWBERRY": 0.9253731343283582,
+          "MELON": null
+        },
+        "exact_feature_vectors": 77,
+        "contiguous_decision_chains": 82,
+        "disagreement_by_outcome": {
+          "request_seed": 4,
+          "move_with_seed": 2,
+          "plant_request": 4
+        },
+        "mean_teacher_score_gap": 0.3424601785045485
+      }
+    }
+  },
+  "interpretation": "Exact observed vector recurrence across whole-seed splits; not metadata leakage or proof of causal economic harm. Novel vectors may still be close to training; seen vectors may have different unencoded world states.",
+  "new_games": 0,
+  "training_runs": 0
+}

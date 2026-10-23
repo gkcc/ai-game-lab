@@ -1,0 +1,34 @@
+{
+  "stage": "pre-game-independent-subagent-review",
+  "reviewer": "audit_bc_diagnostics",
+  "disposition": "passed after bounded-dispatch fix",
+  "verification": [
+    "62 original replay/trace identities and all 11795 diagnostic rows independently recomputed",
+    "1438 actor actions and stable trace reconstruction independently sampled",
+    "all exact-overlap groups independently recomputed",
+    "probe conditional intervention and 1438 old development observations independently verified",
+    "dispatch failure regression repeated ten times independently"
+  ],
+  "findings": [
+    {
+      "issue": "all 36 tasks queued despite failure-stop policy",
+      "resolution": "bounded in-flight dispatch; stop refilling and drain recorded in-flight jobs",
+      "status": "fixed"
+    }
+  ],
+  "caveats": [
+    "Teacher score gap is not economic regret",
+    "160 strawberry errors comprise23 exact vectors;128 calls from7 vectors recurring across eight seeds",
+    "two new development seeds cannot establish significance or teacher promotion",
+    "official new games not yet executed"
+  ],
+  "source_sha256": {
+    "analyze_existing.py": "0030db0eb70c64e6c0ff642c95e7f5f796abe441f35438612d34a7edeff3d0b5",
+    "overlap.py": "e52b7c33ca99396c9a0651c89a55cdbce55912bbd8773b0a34e7cb746cad2885",
+    "panel.py": "5c62fd3b9448807d3e556374d68a815a2285f8faa42306ae5c5a188e00a2852e",
+    "probe.py": "d695341e32388914850cd889dbe7f1f45c4ac7c16e3b8d73bfbb53d53ec06fe4",
+    "verify_probe.py": "04a50c33392b6f01077aa98bea3a024d2bd152d4e48bca7ea518af36ff361613",
+    "__init__.py": "ca8bbbe76938286361419883c75744c7d53946ec88290c0ef208b09a62f7b651"
+  },
+  "provenance": "Root transcription of independent subagent read-only review, not third-party signature or WebChat verdict"
+}
