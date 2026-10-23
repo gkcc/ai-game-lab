@@ -1,0 +1,39 @@
+{
+  "experiment": "task-entry-repair-v1",
+  "created_utc": "2026-10-23T09:48:56.865171+00:00",
+  "baseline_head": "390bf8782a841db01e0e0986d600248c69d99fb0",
+  "initial_worktree_clean": true,
+  "previous_root": "artifacts/task-bc-v1-20261023-run1",
+  "prior_stage_acceptance_passed": false,
+  "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "official_loader_sha256": "0ac7baf1212b4ce1eabae3cc1cbb55c98effef5e0d0485522a8be87097c39a4f",
+  "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+  "crop_checkpoint": "artifacts/bc-epoch6-holdout-v1-20261023/panels/fixed_epoch6/model/trained.npz",
+  "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+  "seed": 31205138,
+  "seats": [
+    0,
+    1
+  ],
+  "maximum_game_attempts": 2,
+  "per_game_timeout_seconds": 900,
+  "training_runs": 0,
+  "new_seeds": 0,
+  "new_evaluation_panels": 0,
+  "interpretation": "Historical official filename reproductions, not new economic samples or repaired old acceptance",
+  "stop": "Any regression, game, identity or audit failure stops dispatch; no retry or replacement",
+  "advice_sha256": "2cae6cf7fa9fa4ea9f91654a32a8cb41a94ac22e559f4a950e8180a6c5852ae7",
+  "acceptance": [
+    "Real old official loader failure, new official/Worker/direct two-observation action and trace agreement",
+    "Two full official filename games;720states/719actions/DONE both;zero errors/fallback",
+    "All actions, semantic v1/v2, final banks/rewards and stable traces equal old trained games",
+    "Official ordered replay of both games; independent two saved replay audits separately",
+    "Frozen strategies, models, default and every protected old file unchanged"
+  ],
+  "copied_files": {
+    "sources/round2.py": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "sources/worker.py": "a80158b26d1f4ae3d366c1d1276a1ca63e652bcd350f5ca25545b0f5f33759f1",
+    "model/trained.npz": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143"
+  }
+}

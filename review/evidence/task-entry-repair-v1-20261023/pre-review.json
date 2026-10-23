@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "registration_sha256": "32a9880133608d1206f8b6676ecc5ba26fecefdb54ff7ec265f84de52e00bea9",
+  "freeze_sha256": "6af69f7254a2b18a7dd1ca30e928d35c2325207e12a0fae5aad5aa0edb8d157c",
+  "independent_plan_sha256": "5d0608a9c8ce520e35a682744650de951ee9329cb4323ac6520a6f34fe62563c",
+  "reviewed_source_sha256": {
+    "learning/task_entry_repair_v1/entry.py": "d35bd58661ac6065fd9ae92ce806943df50481d0587be9434933c230234f08f2",
+    "learning/task_entry_repair_v1/experiment.py": "c18d8cc03d77b87dcb2af992a1c0986d19f43d4538e10d26631993a0c67ce7bd",
+    "learning/task_entry_repair_v1/README.zh-CN.md": "8f8627387c3743eb3fc0bd449fdd71264679f840e2b6b756f447386e06595aa3",
+    "learning/task_entry_repair_v1/verify_entry.py": "767adabf597e9acf7f4113e4dfcb7dda0711e1877f4432d478b9ce773f346194",
+    "learning/task_entry_repair_v1/__init__.py": "3d5bde4b71974a465bbba5a0d79a4fb7974ab234974573dffc52b52cc9e27a4b"
+  },
+  "inherited_frozen_source_files_verified": 71,
+  "protected_runtime_files_verified": 3274,
+  "protected_public_files_verified": 679,
+  "copied_fixed_inputs_verified": 3,
+  "checks": [
+    "Installed official engine and loader bytes match registration and retained old defect evidence.",
+    "New wrapper obtains original compiled filename when official loader omits __file__; decision code and fixed models are unchanged.",
+    "Targeted regression uses actual official loader and actual frozen Worker module; restores sys.path after old failure, confines KAGGRICULTURE_ROOT to Worker child, and compares two consecutive real observations to direct frozen actor and saved old actions/traces.",
+    "Single-use regression and game markers, exact precommit blobs, fixed two-seat budget, attempt-before-launch recording, and stop-on-first-failure verified statically.",
+    "Both historical target games and full old action/trace comparison occur before inherited ordered replay audit; no replacement or new economic samples.",
+    "New Python sources compile and verify(history=True) passes; public historical files and fixed model/opponent/Worker copies independently match protected identities."
+  ],
+  "executed_formal_regressions": 0,
+  "executed_complete_games": 0,
+  "executed_official_transitions": 0,
+  "training_runs": 0,
+  "limitations": [
+    "Source and freeze pre-review only; actual official loader compatibility is not accepted until registered real regression succeeds.",
+    "Full two-game official filename compatibility and historical trajectory identity remain unexecuted.",
+    "Old task_bc_v1 failed acceptance must remain failed; later repair has a separate outcome."
+  ]
+}

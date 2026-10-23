@@ -1,0 +1,53 @@
+{
+  "stage": "task_entry_repair_v1",
+  "role": "independent read-only reviewer",
+  "baseline_public_head": "390bf8782a841db01e0e0986d600248c69d99fb0",
+  "scope": "Separately registered official filename-loader compatibility repair; no strategy or economic evaluation change.",
+  "inputs_sha256": {
+    "parent_next_stage_advice": "2cae6cf7fa9fa4ea9f91654a32a8cb41a94ac22e559f4a950e8180a6c5852ae7",
+    "parent_stage_outcome": "7ea5b36590a7d053769d8e5f77cfe36b468dba756718b20764ce50fa73bed3c4",
+    "parent_development_ledger": "1420f6412706bd8976b6c74686d5757523b79c497b5962fb5249fb94542b8b9c",
+    "old_games_and_audit_source": "eb72eb7718d8140c57bd6c63e53587ed62ebf2fd6666d98dfbfc340c70259160",
+    "installed_official_loader": "0ac7baf1212b4ce1eabae3cc1cbb55c98effef5e0d0485522a8be87097c39a4f"
+  },
+  "pre_review_requirements": [
+    "New module only; old task_bc_v1, selected weights, default and parent failed outcome remain byte-identical.",
+    "Before any complete-game dispatch, freeze new source plus installed official loader/engine and all inherited decision/model dependencies; bind independent pre-review and exact registration/freeze Git blobs.",
+    "Real official filename-loader regression reproduces the old missing __file__ failure without injecting globals. New wrapper and frozen Worker loader on two consecutive saved observations must produce the same complete action and decision trace as direct frozen JointAgent.",
+    "Use absolute wrapper paths from a non-project working directory. Preserve source file identity via official compile filename; do not rely on launcher cwd, editing official loader, or broad fallback that changes policy.",
+    "Official loader exception can leave its appended sys.path behind; regression must isolate that failure or restore process search-path state before positive comparisons.",
+    "Regression trace outputs and full-game outputs are distinct; tests perform no official transitions or training.",
+    "Game runner permits only fixed seed 31205138, trained model, round2 and seats 0/1; at most two complete-game attempts. Record attempts before launch; failure stops remaining dispatch with no retry/replacement.",
+    "Required historical target hashes come from retained parent ledger; success cannot be inferred from an exit code or newly generated self-consistent receipt alone."
+  ],
+  "fixed_models": {
+    "task_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd"
+  },
+  "post_execution_review": {
+    "all_available_rows": "Check attempted versus completed counts, actual filename-loader execution, model/source identities, 720 states/719 actions/DONE, zero errors/fallback, action and complete trace equality to parent trained targets, v1/v2 semantic digest, final money and rewards.",
+    "independent_reexecution_samples": [
+      {
+        "seed": 31205138,
+        "seat": 0,
+        "parent_game": "dev-31205138-round2-0-trained"
+      },
+      {
+        "seed": 31205138,
+        "seat": 1,
+        "parent_game": "dev-31205138-round2-1-trained"
+      }
+    ],
+    "maximum_independent_saved_replay_transitions": 1438,
+    "missing_sample_rule": "No substitution and no reviewer-generated game if an entry fails or is unstarted.",
+    "audit_reuse": "Reuse frozen task_bc_v1.games.audit on independently identity-checked copied fixed model and opponent inputs; independently compare raw actions/traces and hashes against parent replay rather than relying solely on that audit.",
+    "preservation": "Check pre-stage protected history unchanged; only explicitly permitted old review-document complete-prefix appends at publication.",
+    "interpretation": "Two historical repetitions do not add economic samples or change parent -155 mean difference. Parent failed acceptance remains failed even if separate repair succeeds."
+  },
+  "reviewer_authorized_new_games": 0,
+  "reviewer_authorized_training_runs": 0,
+  "reviewer_authorized_frozen_source_edits": 0,
+  "limitations": [
+    "This preimplementation plan is not code approval or execution evidence. Future pre-review must bind actual new source/freeze hashes."
+  ]
+}
