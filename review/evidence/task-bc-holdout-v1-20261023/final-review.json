@@ -1,0 +1,85 @@
+{
+  "passed": true,
+  "scope": "Final publication evidence review; statistical candidate admission remains false.",
+  "execution_acceptance_passed": true,
+  "statistical_admission_passed": false,
+  "report_sha256": "98ca1f85ece4ffe508f2d8b3f8c8db979ba022193b3217f3bdd9f17fb10ea197",
+  "acceptance_sha256": "6d0de5bb3460d4d4b079279a21bdca6ca91a952f1d7a7934c24b3af4fda84965",
+  "publication_map_sha256": "cd2a699db392ac8e798ff18ce2562999c876b76592e4167e4fa7e3fabfd4399e",
+  "reviewed_public_evidence_sha256": {
+    "acceptance.json": "6d0de5bb3460d4d4b079279a21bdca6ca91a952f1d7a7934c24b3af4fda84965",
+    "attempts.json": "7a39895512701bcc4f1a8053d34a29af43fbeeb245f54c850159946d0f582b66",
+    "audit.json": "65cf7f99609a9be448f1f98d3234580d4db4321ab48778066b9b1dd4244bf5e0",
+    "failures.json": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+    "freeze.json": "3345932b4e85f48f6740664f3361ec69af7e964d13211cfcd3bad7372382ea6d",
+    "independent-plan.json": "87720f58d6a74d7552faff36e510f5f012cbae84a7cb4e2b7251be5df64f0554",
+    "independent-preflight-review.json": "51e2748be9f0cd522382c2c516e3e7788c37f591d040190a59a87e3c9efa7dc7",
+    "independent-preflight-review.py": "7366497b88f242032913447e77cd07b7a6dffd709d7aa365e784c9b83b2c1b7e",
+    "independent-review.json": "e8febab93e55a0f46f0a7ccbda5adf4e9e941c0d44cd529784d7bad59ebfb967",
+    "independent-review.py": "ad09357ebcdf4cfa84016b04b0de735d03150ef0cd7d18bdcff23245b7e61ed5",
+    "independent-sample-plan.json": "656d02ba441e12ca42089175ac3cf94c9fb04810d9acd18ebb61e6a4410940c5",
+    "independent-synthetic-statistics-review.json": "c8a69665b85f2428e507236da50f94a5c077b21b0b5fb80c023b187819831fc5",
+    "ledger.json": "87a37d211265abf528b31f3472fc26c0127b8b122bf3443618b2639c2d3b5009",
+    "next-stage-advice.json": "b22db78296cc799c7ffede4cfcb760266a6d97066bd448677fce1f0428dc8fdc",
+    "pre-execution-commit.json": "90508dc549819158aa2f089a9554a5ddf5248351f2c1c01e6ed2f7d5e7fb0418",
+    "pre-review.json": "98b3bba8d265d3c2af861a215ccc957fea6438cb692a89f676644a2ba75d998f",
+    "preflight.json": "d05c428a7f2258f53b14b205d19e744a8d53e9183b82e20d9fae92a71abcffcb",
+    "protection-before.json": "b3d817f1cdb29479d2b5f9acc3d3cab1e0ebbbb972ddd1f7fdc4d48ce39d0821",
+    "publication-map.json": "cd2a699db392ac8e798ff18ce2562999c876b76592e4167e4fa7e3fabfd4399e",
+    "registration.json": "b180982229484a3e0a02afa759dccd80f3a49c10c22cd23732abb9d6420e2517",
+    "root-next-stage-decision.json": "f86a8434a237d5a05220f41fb0530c361c5245715c4a77c7413761778bdd9842",
+    "run-summary.json": "9f48789461234d41b6a94b9b6b972651f188b066a669d6a430b061c31190d9bf",
+    "seeds.json": "088cb25bd10774b13dda5d523bd5e8172bb17c44301d3c44b40113d84beb0bab",
+    "statistics.json": "560fefa55f488355fd8c4be84c825512269ab4e2dc705b5ecd9641fbe060f639",
+    "workers.json": "ed93094c2551ba655af28842d2afcae394f4af5fb99275be642372977422be22"
+  },
+  "reviewed_source_copies_sha256": {
+    "audit.py": "af2ff8d75f2637c0a11c04736765e216b7003c76a2f2e1288416b06300aa15f9",
+    "experiment.py": "752bacb8c943e40e5358206e06251ef7eaa908be190661a313438eac71a7bbf4",
+    "games.py": "209fb79b80c2ea4f466a118548c773cfa54432d96f0ce7710532d59434f9061c",
+    "preflight.py": "3f8ec8c5dca87119862cece966310d2d14358264208ae93482ae73147564093a",
+    "README.zh-CN.md": "02747dc6270e4ed6cc6e7c100a77bfac5ae74c1c700302c5a59a2687bccc7bc8",
+    "seeds.json": "088cb25bd10774b13dda5d523bd5e8172bb17c44301d3c44b40113d84beb0bab",
+    "statistics.py": "63784afe816cd575bc57747dbafa71d4c04049852e0e8ceee2cf059881d88fd4",
+    "verify_statistics.py": "942f02141ead894d6c6ae4bf56077eb3bf2df736c2f86ecc87c752ec4b0748df",
+    "__init__.py": "928cb0cf10b2bed3c1ceb88bb0052483963936d923824d5b2815abb5cce472ea"
+  },
+  "precommit_source_and_evidence_files_unchanged": 17,
+  "old_public_files_byte_identical": 701,
+  "old_public_append_only": {
+    "review/PROGRESS.md": {
+      "old_bytes": 22672,
+      "old_sha256": "768da2ae0e3ff6543996bd2241b58c361b3052523a1db6483b0e53487fc54331",
+      "new_sha256": "eb00306483ebd9df2d1bdf41fa99562955b090afd22bdb9e14935a24c75bfcb7"
+    },
+    "review/WEBCHAT_REVIEW.md": {
+      "old_bytes": 17578,
+      "old_sha256": "4e1c95e07d76e9474648b91855b040a08f4aa0755dfc2a18b19f2a9efa5a50f9",
+      "new_sha256": "2b9c5eb9dc47e748c90cc488d3c9c7edc1c68883af90f2074df8f18b11b47d2b"
+    }
+  },
+  "protected_runtime_prior_check": {
+    "files": 3335,
+    "independent_review_sha256": "e8febab93e55a0f46f0a7ccbda5adf4e9e941c0d44cd529784d7bad59ebfb967",
+    "not_rehashed_again_in_final_publication_pass": true
+  },
+  "checks": [
+    "Report means, intervals,6negative/2positive seed signs and round2score rejection agree with independent96row/48pair/8cluster review.",
+    "Execution passed, statistical admission failed, no research-baseline promotion, and original prior failed stage remain separate explicit facts.",
+    "All exported aggregates/scripts match local bytes, all17 preregistration files are unchanged, and old public history is preserved except two complete-prefix appends.",
+    "No raw model/replay/trace/log/generated wrapper or absolute private path/hardware identity appears in the inspected publication allowlist.",
+    "Next diagnosis remains unexecuted, zero-training/zero-game/zero-official-transition exploratory work on consumed seeds.",
+    "Root decision correctly refines planner float32 training-support grouping versus float64 deployment identity; synthetic collision illustration verified, not claimed a real harmful game case.",
+    "Current fixed TaskAgent resets buffers and uses observe without previous; future shadow implementation must verify fresh/reused equivalence, isolate games/seats and stop callback pairing after reservation/context divergence."
+  ],
+  "next_stage_advice_sha256": "b22db78296cc799c7ffede4cfcb760266a6d97066bd448677fce1f0428dc8fdc",
+  "root_next_stage_decision_sha256": "f86a8434a237d5a05220f41fb0530c361c5245715c4a77c7413761778bdd9842",
+  "reviewer_additional_official_transitions_in_final_pass": 0,
+  "reviewer_new_games": 0,
+  "reviewer_training_runs": 0,
+  "limitations": [
+    "This final review does not validate future diagnostic implementation or establish a cause of the observed profit decline.",
+    "Preserved planner text is qualified by the separate root precision/history decision; float32 equality alone is not deployment indistinguishability.",
+    "Only four prespecified saved games received independent full official replay; root audit coversall96."
+  ]
+}

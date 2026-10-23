@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "script_sha256": "7366497b88f242032913447e77cd07b7a6dffd709d7aa365e784c9b83b2c1b7e",
+  "preflight_sha256": "d05c428a7f2258f53b14b205d19e744a8d53e9183b82e20d9fae92a71abcffcb",
+  "registration_sha256": "b180982229484a3e0a02afa759dccd80f3a49c10c22cd23732abb9d6420e2517",
+  "freeze_sha256": "3345932b4e85f48f6740664f3361ec69af7e964d13211cfcd3bad7372382ea6d",
+  "pre_execution_commit": "221f9dcbd0194033ae1915773770d9ab6e6a4e50",
+  "precommit_receipt_blobs": 3,
+  "precommit_new_source_blobs": 9,
+  "old_observation_decisions_reconstructed": 4,
+  "direct_metadata_injection_comparisons": 2,
+  "direct_info_rejections": 2,
+  "official_loader_calls_by_reviewer": 0,
+  "official_transitions_by_reviewer": 0,
+  "new_games_by_reviewer": 0,
+  "training_runs_by_reviewer": 0,
+  "new_holdout_raw_inputs_read": 0,
+  "limitations": [
+    "Actual official loader calls are root preflight evidence; reviewer checks its raw traces and directly reconstructs decisions and isolation on old observations only."
+  ]
+}

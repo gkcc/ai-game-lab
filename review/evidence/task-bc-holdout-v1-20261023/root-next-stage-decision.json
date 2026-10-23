@@ -1,0 +1,38 @@
+{
+  "adopted": true,
+  "phase": "task_bc_error_diagnostics_v1",
+  "status": "Planning only; new diagnostic implementation and execution require separate preregistration and pre-review",
+  "advice_sha256": "b22db78296cc799c7ffede4cfcb760266a6d97066bd448677fce1f0428dc8fdc",
+  "current_independent_review_sha256": "e8febab93e55a0f46f0a7ccbda5adf4e9e941c0d44cd529784d7bad59ebfb967",
+  "current_execution_evidence_passed": true,
+  "current_statistical_admission_passed": false,
+  "review_source": "Independent subagents plus root source verification; not WebChat",
+  "required_refinements": [
+    "Keep separate ordered float32 training-cache keys and ordered float64 actual deployment-input keys, with semantic candidate identities separate. Candidate count and original candidate order are part of both numeric keys.",
+    "TaskNetwork.score converts original numeric inputs directly to float64; cache.decode converts to float32. Float32 equality describes cached training support only; it is not proof of indistinguishable deployed inputs.",
+    "Never cache actual model scoring or infer deployment aliasing using only float32 groups. Rescore original deployment-precision input, and only use complete float64 input equality for deployment-indistinguishability claims. If original precision is unavailable, report it unavailable rather than reconstructing float64 by upcasting float32.",
+    "Before full diagnostics, verify current fixed policy fresh-instance versus reused-instance equivalence on bounded old observations, with per-game/per-seat isolation. TaskAgent currently clears owned buffers and observe has no prior input; do not generalize this to future stateful policies.",
+    "Shadow policy is evaluated on the same sanitized observation but its own within-turn reservation path. Stop callback matching once input/candidate/planned-resource context differs; do not force ordinal alignment.",
+    "Current negative result is final. Diagnostic findings are exploratory, not reasons to change this panel, gates or model. An inconclusive completed diagnosis is acceptable."
+  ],
+  "source_evidence": {
+    "learning/task_bc_v1/model.py": "dbdbe126029a16f15178d18a5088defac83c5b6447d77f48aa7c77cae70886d8",
+    "learning/task_bc_v1/cache.py": "dc4f82ac379516175f73919c35381b40e98759871cab41b76cf3f28df1efac83",
+    "learning/task_choice_v1/agent.py": "b22e2a1a546abe39e76a412690d09926d0463d4c196e87614507cf16a0ab51ce",
+    "learning/task_bc_v1/deployment.py": "17ae478de5f44658fc0df848b0afe64ae2032bb1176dab888eeff5a48648d5f5"
+  },
+  "numeric_counterexample": {
+    "values": [
+      1.0,
+      1.0000000009313226
+    ],
+    "float32_equal": true,
+    "float64_equal": false,
+    "scope": "Synthetic precision illustration; no claim this is a real harmful game collision"
+  },
+  "budget_changes": null,
+  "training_runs": 0,
+  "new_games": 0,
+  "official_transitions": 0,
+  "models_changed": false
+}

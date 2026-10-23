@@ -1,0 +1,2227 @@
+{
+  "schema": "task-bc-holdout-statistics-v1",
+  "complete": true,
+  "games": 96,
+  "pairs": 48,
+  "cluster_unit": "complete_seed",
+  "clusters": 8,
+  "bootstrap": {
+    "replicates": 20000,
+    "seed": 2026102341,
+    "quantile_method": "linear"
+  },
+  "gates": {
+    "relative_ci_lower_gt": -0.02,
+    "opponent_relative_mean_min": -0.05,
+    "opponent_score_delta_min": -0.05
+  },
+  "arms": [
+    "trained",
+    "teacher_task"
+  ],
+  "reference": "rule tasks with fixed learned crop head",
+  "overall": {
+    "pairs": 48,
+    "arms": {
+      "trained": {
+        "games": 48,
+        "wins": 28,
+        "draws": 0,
+        "losses": 20,
+        "means": {
+          "net_profit": 39334.958333333336,
+          "opponent_net_profit": 38595.020833333336,
+          "margin": 739.9375,
+          "score": 0.5833333333333334
+        },
+        "opponent_wins": 20,
+        "opponent_draws": 0,
+        "opponent_losses": 28,
+        "opponent_score": 0.4166666666666667
+      },
+      "teacher_task": {
+        "games": 48,
+        "wins": 32,
+        "draws": 0,
+        "losses": 16,
+        "means": {
+          "net_profit": 39755.145833333336,
+          "opponent_net_profit": 38270.541666666664,
+          "margin": 1484.6041666666667,
+          "score": 0.6666666666666666
+        },
+        "opponent_wins": 16,
+        "opponent_draws": 0,
+        "opponent_losses": 32,
+        "opponent_score": 0.3333333333333333
+      }
+    },
+    "delta_means": {
+      "net_profit": -420.1875,
+      "opponent_net_profit": 324.4791666666667,
+      "margin": -744.6666666666666,
+      "score": -0.08333333333333333
+    },
+    "relative_net_profit_mean": -0.010569386457832765,
+    "reference_net_profit_mean": 39755.145833333336,
+    "delta_ci95": {
+      "net_profit": [
+        -613.9583333333333,
+        -188.10885416666807
+      ],
+      "opponent_net_profit": [
+        -132.02291666666665,
+        722.8125
+      ],
+      "margin": [
+        -1150.7927083333332,
+        -279.26979166666854
+      ],
+      "score": [
+        -0.20833333333333331,
+        0.0
+      ]
+    },
+    "relative_net_profit_defined": true,
+    "nonpositive_bootstrap_reference_count": 0,
+    "bootstrap_reference_min": 29689.020833333332,
+    "relative_net_profit_ci95": [
+      -0.015766790524436455,
+      -0.004813206761653003
+    ]
+  },
+  "by_opponent": {
+    "v1": {
+      "pairs": 16,
+      "arms": {
+        "trained": {
+          "games": 16,
+          "wins": 12,
+          "draws": 0,
+          "losses": 4,
+          "means": {
+            "net_profit": 39197.4375,
+            "opponent_net_profit": 37088.875,
+            "margin": 2108.5625,
+            "score": 0.75
+          },
+          "opponent_wins": 4,
+          "opponent_draws": 0,
+          "opponent_losses": 12,
+          "opponent_score": 0.25
+        },
+        "teacher_task": {
+          "games": 16,
+          "wins": 12,
+          "draws": 0,
+          "losses": 4,
+          "means": {
+            "net_profit": 39187.0,
+            "opponent_net_profit": 37155.9375,
+            "margin": 2031.0625,
+            "score": 0.75
+          },
+          "opponent_wins": 4,
+          "opponent_draws": 0,
+          "opponent_losses": 12,
+          "opponent_score": 0.25
+        }
+      },
+      "delta_means": {
+        "net_profit": 10.4375,
+        "opponent_net_profit": -67.0625,
+        "margin": 77.5,
+        "score": 0.0
+      },
+      "relative_net_profit_mean": 0.0002663510858192768,
+      "reference_net_profit_mean": 39187.0,
+      "delta_ci95": {
+        "net_profit": [
+          -84.8125,
+          102.5625
+        ],
+        "opponent_net_profit": [
+          -155.9375,
+          -10.125
+        ],
+        "margin": [
+          14.25,
+          156.75
+        ],
+        "score": [
+          0.0,
+          0.0
+        ]
+      },
+      "relative_net_profit_defined": true,
+      "nonpositive_bootstrap_reference_count": 0,
+      "bootstrap_reference_min": 30594.875,
+      "relative_net_profit_ci95": [
+        -0.0022814544818727765,
+        0.002574313516395628
+      ]
+    },
+    "market": {
+      "pairs": 16,
+      "arms": {
+        "trained": {
+          "games": 16,
+          "wins": 10,
+          "draws": 0,
+          "losses": 6,
+          "means": {
+            "net_profit": 40822.625,
+            "opponent_net_profit": 39687.875,
+            "margin": 1134.75,
+            "score": 0.625
+          },
+          "opponent_wins": 6,
+          "opponent_draws": 0,
+          "opponent_losses": 10,
+          "opponent_score": 0.375
+        },
+        "teacher_task": {
+          "games": 16,
+          "wins": 10,
+          "draws": 0,
+          "losses": 6,
+          "means": {
+            "net_profit": 41150.75,
+            "opponent_net_profit": 39636.625,
+            "margin": 1514.125,
+            "score": 0.625
+          },
+          "opponent_wins": 6,
+          "opponent_draws": 0,
+          "opponent_losses": 10,
+          "opponent_score": 0.375
+        }
+      },
+      "delta_means": {
+        "net_profit": -328.125,
+        "opponent_net_profit": 51.25,
+        "margin": -379.375,
+        "score": 0.0
+      },
+      "relative_net_profit_mean": -0.007973730733947741,
+      "reference_net_profit_mean": 41150.75,
+      "delta_ci95": {
+        "net_profit": [
+          -919.875,
+          16.0
+        ],
+        "opponent_net_profit": [
+          1.0,
+          141.375
+        ],
+        "margin": [
+          -1062.875,
+          14.0
+        ],
+        "score": [
+          0.0,
+          0.0
+        ]
+      },
+      "relative_net_profit_defined": true,
+      "nonpositive_bootstrap_reference_count": 0,
+      "bootstrap_reference_min": 29960.75,
+      "relative_net_profit_ci95": [
+        -0.024454377239496405,
+        0.0003730073723680486
+      ]
+    },
+    "round2": {
+      "pairs": 16,
+      "arms": {
+        "trained": {
+          "games": 16,
+          "wins": 6,
+          "draws": 0,
+          "losses": 10,
+          "means": {
+            "net_profit": 37984.8125,
+            "opponent_net_profit": 39008.3125,
+            "margin": -1023.5,
+            "score": 0.375
+          },
+          "opponent_wins": 10,
+          "opponent_draws": 0,
+          "opponent_losses": 6,
+          "opponent_score": 0.625
+        },
+        "teacher_task": {
+          "games": 16,
+          "wins": 10,
+          "draws": 0,
+          "losses": 6,
+          "means": {
+            "net_profit": 38927.6875,
+            "opponent_net_profit": 38019.0625,
+            "margin": 908.625,
+            "score": 0.625
+          },
+          "opponent_wins": 6,
+          "opponent_draws": 0,
+          "opponent_losses": 10,
+          "opponent_score": 0.375
+        }
+      },
+      "delta_means": {
+        "net_profit": -942.875,
+        "opponent_net_profit": 989.25,
+        "margin": -1932.125,
+        "score": -0.25
+      },
+      "relative_net_profit_mean": -0.024221192178446253,
+      "reference_net_profit_mean": 38927.6875,
+      "delta_ci95": {
+        "net_profit": [
+          -1669.753125,
+          -195.0
+        ],
+        "opponent_net_profit": [
+          -383.75,
+          2174.875
+        ],
+        "margin": [
+          -3328.875,
+          -481.465625000003
+        ],
+        "score": [
+          -0.625,
+          0.0
+        ]
+      },
+      "relative_net_profit_defined": true,
+      "nonpositive_bootstrap_reference_count": 0,
+      "bootstrap_reference_min": 28511.4375,
+      "relative_net_profit_ci95": [
+        -0.04112611835709825,
+        -0.005413068864867618
+      ]
+    }
+  },
+  "by_seed": [
+    {
+      "seed": 1714414373,
+      "pairs": 6,
+      "arms": {
+        "trained": {
+          "games": 6,
+          "wins": 2,
+          "draws": 0,
+          "losses": 4,
+          "means": {
+            "net_profit": 28663.0,
+            "opponent_net_profit": 28800.333333333332,
+            "margin": -137.33333333333334,
+            "score": 0.3333333333333333
+          },
+          "opponent_wins": 4,
+          "opponent_draws": 0,
+          "opponent_losses": 2,
+          "opponent_score": 0.6666666666666666
+        },
+        "teacher_task": {
+          "games": 6,
+          "wins": 2,
+          "draws": 0,
+          "losses": 4,
+          "means": {
+            "net_profit": 28546.333333333332,
+            "opponent_net_profit": 28882.333333333332,
+            "margin": -336.0,
+            "score": 0.3333333333333333
+          },
+          "opponent_wins": 4,
+          "opponent_draws": 0,
+          "opponent_losses": 2,
+          "opponent_score": 0.6666666666666666
+        }
+      },
+      "delta_means": {
+        "net_profit": 116.66666666666667,
+        "opponent_net_profit": -82.0,
+        "margin": 198.66666666666666,
+        "score": 0.0
+      },
+      "relative_net_profit_mean": 0.004086923014047339,
+      "reference_net_profit_mean": 28546.333333333332
+    },
+    {
+      "seed": 2117918555,
+      "pairs": 6,
+      "arms": {
+        "trained": {
+          "games": 6,
+          "wins": 4,
+          "draws": 0,
+          "losses": 2,
+          "means": {
+            "net_profit": 30935.0,
+            "opponent_net_profit": 31365.166666666668,
+            "margin": -430.1666666666667,
+            "score": 0.6666666666666666
+          },
+          "opponent_wins": 2,
+          "opponent_draws": 0,
+          "opponent_losses": 4,
+          "opponent_score": 0.3333333333333333
+        },
+        "teacher_task": {
+          "games": 6,
+          "wins": 4,
+          "draws": 0,
+          "losses": 2,
+          "means": {
+            "net_profit": 31593.5,
+            "opponent_net_profit": 31279.666666666668,
+            "margin": 313.8333333333333,
+            "score": 0.6666666666666666
+          },
+          "opponent_wins": 2,
+          "opponent_draws": 0,
+          "opponent_losses": 4,
+          "opponent_score": 0.3333333333333333
+        }
+      },
+      "delta_means": {
+        "net_profit": -658.5,
+        "opponent_net_profit": 85.5,
+        "margin": -744.0,
+        "score": 0.0
+      },
+      "relative_net_profit_mean": -0.020842894899267255,
+      "reference_net_profit_mean": 31593.5
+    },
+    {
+      "seed": 2087726158,
+      "pairs": 6,
+      "arms": {
+        "trained": {
+          "games": 6,
+          "wins": 2,
+          "draws": 0,
+          "losses": 4,
+          "means": {
+            "net_profit": 41400.0,
+            "opponent_net_profit": 41410.666666666664,
+            "margin": -10.666666666666666,
+            "score": 0.3333333333333333
+          },
+          "opponent_wins": 4,
+          "opponent_draws": 0,
+          "opponent_losses": 2,
+          "opponent_score": 0.6666666666666666
+        },
+        "teacher_task": {
+          "games": 6,
+          "wins": 2,
+          "draws": 0,
+          "losses": 4,
+          "means": {
+            "net_profit": 42063.666666666664,
+            "opponent_net_profit": 40778.333333333336,
+            "margin": 1285.3333333333333,
+            "score": 0.3333333333333333
+          },
+          "opponent_wins": 4,
+          "opponent_draws": 0,
+          "opponent_losses": 2,
+          "opponent_score": 0.6666666666666666
+        }
+      },
+      "delta_means": {
+        "net_profit": -663.6666666666666,
+        "opponent_net_profit": 632.3333333333334,
+        "margin": -1296.0,
+        "score": 0.0
+      },
+      "relative_net_profit_mean": -0.015777670356840027,
+      "reference_net_profit_mean": 42063.666666666664
+    },
+    {
+      "seed": 3767282565,
+      "pairs": 6,
+      "arms": {
+        "trained": {
+          "games": 6,
+          "wins": 4,
+          "draws": 0,
+          "losses": 2,
+          "means": {
+            "net_profit": 43491.333333333336,
+            "opponent_net_profit": 43159.0,
+            "margin": 332.3333333333333,
+            "score": 0.6666666666666666
+          },
+          "opponent_wins": 2,
+          "opponent_draws": 0,
+          "opponent_losses": 4,
+          "opponent_score": 0.3333333333333333
+        },
+        "teacher_task": {
+          "games": 6,
+          "wins": 6,
+          "draws": 0,
+          "losses": 0,
+          "means": {
+            "net_profit": 43472.666666666664,
+            "opponent_net_profit": 41866.0,
+            "margin": 1606.6666666666667,
+            "score": 1.0
+          },
+          "opponent_wins": 0,
+          "opponent_draws": 0,
+          "opponent_losses": 6,
+          "opponent_score": 0.0
+        }
+      },
+      "delta_means": {
+        "net_profit": 18.666666666666668,
+        "opponent_net_profit": 1293.0,
+        "margin": -1274.3333333333333,
+        "score": -0.3333333333333333
+      },
+      "relative_net_profit_mean": 0.00042938858133079796,
+      "reference_net_profit_mean": 43472.666666666664
+    },
+    {
+      "seed": 2941093011,
+      "pairs": 6,
+      "arms": {
+        "trained": {
+          "games": 6,
+          "wins": 4,
+          "draws": 0,
+          "losses": 2,
+          "means": {
+            "net_profit": 40077.666666666664,
+            "opponent_net_profit": 38407.333333333336,
+            "margin": 1670.3333333333333,
+            "score": 0.6666666666666666
+          },
+          "opponent_wins": 2,
+          "opponent_draws": 0,
+          "opponent_losses": 4,
+          "opponent_score": 0.3333333333333333
+        },
+        "teacher_task": {
+          "games": 6,
+          "wins": 4,
+          "draws": 0,
+          "losses": 2,
+          "means": {
+            "net_profit": 40723.666666666664,
+            "opponent_net_profit": 39369.0,
+            "margin": 1354.6666666666667,
+            "score": 0.6666666666666666
+          },
+          "opponent_wins": 2,
+          "opponent_draws": 0,
+          "opponent_losses": 4,
+          "opponent_score": 0.3333333333333333
+        }
+      },
+      "delta_means": {
+        "net_profit": -646.0,
+        "opponent_net_profit": -961.6666666666666,
+        "margin": 315.6666666666667,
+        "score": 0.0
+      },
+      "relative_net_profit_mean": -0.015863011680349676,
+      "reference_net_profit_mean": 40723.666666666664
+    },
+    {
+      "seed": 78378034,
+      "pairs": 6,
+      "arms": {
+        "trained": {
+          "games": 6,
+          "wins": 6,
+          "draws": 0,
+          "losses": 0,
+          "means": {
+            "net_profit": 44262.333333333336,
+            "opponent_net_profit": 39096.333333333336,
+            "margin": 5166.0,
+            "score": 1.0
+          },
+          "opponent_wins": 0,
+          "opponent_draws": 0,
+          "opponent_losses": 6,
+          "opponent_score": 0.0
+        },
+        "teacher_task": {
+          "games": 6,
+          "wins": 6,
+          "draws": 0,
+          "losses": 0,
+          "means": {
+            "net_profit": 44414.0,
+            "opponent_net_profit": 38691.333333333336,
+            "margin": 5722.666666666667,
+            "score": 1.0
+          },
+          "opponent_wins": 0,
+          "opponent_draws": 0,
+          "opponent_losses": 6,
+          "opponent_score": 0.0
+        }
+      },
+      "delta_means": {
+        "net_profit": -151.66666666666666,
+        "opponent_net_profit": 405.0,
+        "margin": -556.6666666666666,
+        "score": 0.0
+      },
+      "relative_net_profit_mean": -0.0034148391648279068,
+      "reference_net_profit_mean": 44414.0
+    },
+    {
+      "seed": 1616203861,
+      "pairs": 6,
+      "arms": {
+        "trained": {
+          "games": 6,
+          "wins": 2,
+          "draws": 0,
+          "losses": 4,
+          "means": {
+            "net_profit": 42716.666666666664,
+            "opponent_net_profit": 43739.666666666664,
+            "margin": -1023.0,
+            "score": 0.3333333333333333
+          },
+          "opponent_wins": 4,
+          "opponent_draws": 0,
+          "opponent_losses": 2,
+          "opponent_score": 0.6666666666666666
+        },
+        "teacher_task": {
+          "games": 6,
+          "wins": 2,
+          "draws": 0,
+          "losses": 4,
+          "means": {
+            "net_profit": 43413.0,
+            "opponent_net_profit": 43117.0,
+            "margin": 296.0,
+            "score": 0.3333333333333333
+          },
+          "opponent_wins": 4,
+          "opponent_draws": 0,
+          "opponent_losses": 2,
+          "opponent_score": 0.6666666666666666
+        }
+      },
+      "delta_means": {
+        "net_profit": -696.3333333333334,
+        "opponent_net_profit": 622.6666666666666,
+        "margin": -1319.0,
+        "score": 0.0
+      },
+      "relative_net_profit_mean": -0.01603974231988882,
+      "reference_net_profit_mean": 43413.0
+    },
+    {
+      "seed": 870190021,
+      "pairs": 6,
+      "arms": {
+        "trained": {
+          "games": 6,
+          "wins": 4,
+          "draws": 0,
+          "losses": 2,
+          "means": {
+            "net_profit": 43133.666666666664,
+            "opponent_net_profit": 42781.666666666664,
+            "margin": 352.0,
+            "score": 0.6666666666666666
+          },
+          "opponent_wins": 2,
+          "opponent_draws": 0,
+          "opponent_losses": 4,
+          "opponent_score": 0.3333333333333333
+        },
+        "teacher_task": {
+          "games": 6,
+          "wins": 6,
+          "draws": 0,
+          "losses": 0,
+          "means": {
+            "net_profit": 43814.333333333336,
+            "opponent_net_profit": 42180.666666666664,
+            "margin": 1633.6666666666667,
+            "score": 1.0
+          },
+          "opponent_wins": 0,
+          "opponent_draws": 0,
+          "opponent_losses": 6,
+          "opponent_score": 0.0
+        }
+      },
+      "delta_means": {
+        "net_profit": -680.6666666666666,
+        "opponent_net_profit": 601.0,
+        "margin": -1281.6666666666667,
+        "score": -0.3333333333333333
+      },
+      "relative_net_profit_mean": -0.015535251021355263,
+      "reference_net_profit_mean": 43814.333333333336
+    }
+  ],
+  "paired_detail": [
+    {
+      "seed": 1714414373,
+      "opponent": "v1",
+      "side": 0,
+      "trained": {
+        "bank": 32117.0,
+        "opponent_bank": 29502.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 29117.0,
+        "opponent_net_profit": 26502.0,
+        "margin": 2615.0,
+        "score": 1.0
+      },
+      "teacher_task": {
+        "bank": 32141.0,
+        "opponent_bank": 29583.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 29141.0,
+        "opponent_net_profit": 26583.0,
+        "margin": 2558.0,
+        "score": 1.0
+      },
+      "delta": {
+        "net_profit": -24.0,
+        "opponent_net_profit": -81.0,
+        "margin": 57.0,
+        "score": 0.0
+      },
+      "relative_net_profit": -0.0008235818949246766
+    },
+    {
+      "seed": 1714414373,
+      "opponent": "v1",
+      "side": 1,
+      "trained": {
+        "bank": 32117.0,
+        "opponent_bank": 29502.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 29117.0,
+        "opponent_net_profit": 26502.0,
+        "margin": 2615.0,
+        "score": 1.0
+      },
+      "teacher_task": {
+        "bank": 32141.0,
+        "opponent_bank": 29583.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 29141.0,
+        "opponent_net_profit": 26583.0,
+        "margin": 2558.0,
+        "score": 1.0
+      },
+      "delta": {
+        "net_profit": -24.0,
+        "opponent_net_profit": -81.0,
+        "margin": 57.0,
+        "score": 0.0
+      },
+      "relative_net_profit": -0.0008235818949246766
+    },
+    {
+      "seed": 1714414373,
+      "opponent": "market",
+      "side": 0,
+      "trained": {
+        "bank": 32807.0,
+        "opponent_bank": 34942.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 29807.0,
+        "opponent_net_profit": 31942.0,
+        "margin": -2135.0,
+        "score": 0.0
+      },
+      "teacher_task": {
+        "bank": 32807.0,
+        "opponent_bank": 34942.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 29807.0,
+        "opponent_net_profit": 31942.0,
+        "margin": -2135.0,
+        "score": 0.0
+      },
+      "delta": {
+        "net_profit": 0.0,
+        "opponent_net_profit": 0.0,
+        "margin": 0.0,
+        "score": 0.0
+      },
+      "relative_net_profit": 0.0
+    },
+    {
+      "seed": 1714414373,
+      "opponent": "market",
+      "side": 1,
+      "trained": {
+        "bank": 32807.0,
+        "opponent_bank": 34942.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 29807.0,
+        "opponent_net_profit": 31942.0,
+        "margin": -2135.0,
+        "score": 0.0
+      },
+      "teacher_task": {
+        "bank": 32807.0,
+        "opponent_bank": 34942.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 29807.0,
+        "opponent_net_profit": 31942.0,
+        "margin": -2135.0,
+        "score": 0.0
+      },
+      "delta": {
+        "net_profit": 0.0,
+        "opponent_net_profit": 0.0,
+        "margin": 0.0,
+        "score": 0.0
+      },
+      "relative_net_profit": 0.0
+    },
+    {
+      "seed": 1714414373,
+      "opponent": "round2",
+      "side": 0,
+      "trained": {
+        "bank": 30065.0,
+        "opponent_bank": 30957.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 27065.0,
+        "opponent_net_profit": 27957.0,
+        "margin": -892.0,
+        "score": 0.0
+      },
+      "teacher_task": {
+        "bank": 29691.0,
+        "opponent_bank": 31122.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 26691.0,
+        "opponent_net_profit": 28122.0,
+        "margin": -1431.0,
+        "score": 0.0
+      },
+      "delta": {
+        "net_profit": 374.0,
+        "opponent_net_profit": -165.0,
+        "margin": 539.0,
+        "score": 0.0
+      },
+      "relative_net_profit": 0.014012213854857443
+    },
+    {
+      "seed": 1714414373,
+      "opponent": "round2",
+      "side": 1,
+      "trained": {
+        "bank": 30065.0,
+        "opponent_bank": 30957.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 27065.0,
+        "opponent_net_profit": 27957.0,
+        "margin": -892.0,
+        "score": 0.0
+      },
+      "teacher_task": {
+        "bank": 29691.0,
+        "opponent_bank": 31122.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 26691.0,
+        "opponent_net_profit": 28122.0,
+        "margin": -1431.0,
+        "score": 0.0
+      },
+      "delta": {
+        "net_profit": 374.0,
+        "opponent_net_profit": -165.0,
+        "margin": 539.0,
+        "score": 0.0
+      },
+      "relative_net_profit": 0.014012213854857443
+    },
+    {
+      "seed": 2117918555,
+      "opponent": "v1",
+      "side": 0,
+      "trained": {
+        "bank": 35844.0,
+        "opponent_bank": 31955.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 32844.0,
+        "opponent_net_profit": 28955.0,
+        "margin": 3889.0,
+        "score": 1.0
+      },
+      "teacher_task": {
+        "bank": 36505.0,
+        "opponent_bank": 32058.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 33505.0,
+        "opponent_net_profit": 29058.0,
+        "margin": 4447.0,
+        "score": 1.0
+      },
+      "delta": {
+        "net_profit": -661.0,
+        "opponent_net_profit": -103.0,
+        "margin": -558.0,
+        "score": 0.0
+      },
+      "relative_net_profit": -0.019728398746455753
+    },
+    {
+      "seed": 2117918555,
+      "opponent": "v1",
+      "side": 1,
+      "trained": {
+        "bank": 35697.0,
+        "opponent_bank": 32071.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 32697.0,
+        "opponent_net_profit": 29071.0,
+        "margin": 3626.0,
+        "score": 1.0
+      },
+      "teacher_task": {
+        "bank": 35531.0,
+        "opponent_bank": 32679.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 32531.0,
+        "opponent_net_profit": 29679.0,
+        "margin": 2852.0,
+        "score": 1.0
+      },
+      "delta": {
+        "net_profit": 166.0,
+        "opponent_net_profit": -608.0,
+        "margin": 774.0,
+        "score": 0.0
+      },
+      "relative_net_profit": 0.005102824997694507
+    },
+    {
+      "seed": 2117918555,
+      "opponent": "market",
+      "side": 0,
+      "trained": {
+        "bank": 30880.0,
+        "opponent_bank": 38473.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 27880.0,
+        "opponent_net_profit": 35473.0,
+        "margin": -7593.0,
+        "score": 0.0
+      },
+      "teacher_task": {
+        "bank": 33217.0,
+        "opponent_bank": 38114.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 30217.0,
+        "opponent_net_profit": 35114.0,
+        "margin": -4897.0,
+        "score": 0.0
+      },
+      "delta": {
+        "net_profit": -2337.0,
+        "opponent_net_profit": 359.0,
+        "margin": -2696.0,
+        "score": 0.0
+      },
+      "relative_net_profit": -0.0773405698778833
+    },
+    {
+      "seed": 2117918555,
+      "opponent": "market",
+      "side": 1,
+      "trained": {
+        "bank": 30880.0,
+        "opponent_bank": 38473.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 27880.0,
+        "opponent_net_profit": 35473.0,
+        "margin": -7593.0,
+        "score": 0.0
+      },
+      "teacher_task": {
+        "bank": 33217.0,
+        "opponent_bank": 38114.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 30217.0,
+        "opponent_net_profit": 35114.0,
+        "margin": -4897.0,
+        "score": 0.0
+      },
+      "delta": {
+        "net_profit": -2337.0,
+        "opponent_net_profit": 359.0,
+        "margin": -2696.0,
+        "score": 0.0
+      },
+      "relative_net_profit": -0.0773405698778833
+    },
+    {
+      "seed": 2117918555,
+      "opponent": "round2",
+      "side": 0,
+      "trained": {
+        "bank": 35106.0,
+        "opponent_bank": 32667.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 32106.0,
+        "opponent_net_profit": 29667.0,
+        "margin": 2439.0,
+        "score": 1.0
+      },
+      "teacher_task": {
+        "bank": 34858.0,
+        "opponent_bank": 32573.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 31858.0,
+        "opponent_net_profit": 29573.0,
+        "margin": 2285.0,
+        "score": 1.0
+      },
+      "delta": {
+        "net_profit": 248.0,
+        "opponent_net_profit": 94.0,
+        "margin": 154.0,
+        "score": 0.0
+      },
+      "relative_net_profit": 0.007784543913616674
+    },
+    {
+      "seed": 2117918555,
+      "opponent": "round2",
+      "side": 1,
+      "trained": {
+        "bank": 35203.0,
+        "opponent_bank": 32552.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 32203.0,
+        "opponent_net_profit": 29552.0,
+        "margin": 2651.0,
+        "score": 1.0
+      },
+      "teacher_task": {
+        "bank": 34233.0,
+        "opponent_bank": 32140.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 31233.0,
+        "opponent_net_profit": 29140.0,
+        "margin": 2093.0,
+        "score": 1.0
+      },
+      "delta": {
+        "net_profit": 970.0,
+        "opponent_net_profit": 412.0,
+        "margin": 558.0,
+        "score": 0.0
+      },
+      "relative_net_profit": 0.031056894950853266
+    },
+    {
+      "seed": 2087726158,
+      "opponent": "v1",
+      "side": 0,
+      "trained": {
+        "bank": 43740.0,
+        "opponent_bank": 43793.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 40740.0,
+        "opponent_net_profit": 40793.0,
+        "margin": -53.0,
+        "score": 0.0
+      },
+      "teacher_task": {
+        "bank": 43740.0,
+        "opponent_bank": 43793.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 40740.0,
+        "opponent_net_profit": 40793.0,
+        "margin": -53.0,
+        "score": 0.0
+      },
+      "delta": {
+        "net_profit": 0.0,
+        "opponent_net_profit": 0.0,
+        "margin": 0.0,
+        "score": 0.0
+      },
+      "relative_net_profit": 0.0
+    },
+    {
+      "seed": 2087726158,
+      "opponent": "v1",
+      "side": 1,
+      "trained": {
+        "bank": 43740.0,
+        "opponent_bank": 43793.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 40740.0,
+        "opponent_net_profit": 40793.0,
+        "margin": -53.0,
+        "score": 0.0
+      },
+      "teacher_task": {
+        "bank": 43740.0,
+        "opponent_bank": 43793.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 40740.0,
+        "opponent_net_profit": 40793.0,
+        "margin": -53.0,
+        "score": 0.0
+      },
+      "delta": {
+        "net_profit": 0.0,
+        "opponent_net_profit": 0.0,
+        "margin": 0.0,
+        "score": 0.0
+      },
+      "relative_net_profit": 0.0
+    },
+    {
+      "seed": 2087726158,
+      "opponent": "market",
+      "side": 0,
+      "trained": {
+        "bank": 47685.0,
+        "opponent_bank": 43241.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 44685.0,
+        "opponent_net_profit": 40241.0,
+        "margin": 4444.0,
+        "score": 1.0
+      },
+      "teacher_task": {
+        "bank": 47795.0,
+        "opponent_bank": 43214.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 44795.0,
+        "opponent_net_profit": 40214.0,
+        "margin": 4581.0,
+        "score": 1.0
+      },
+      "delta": {
+        "net_profit": -110.0,
+        "opponent_net_profit": 27.0,
+        "margin": -137.0,
+        "score": 0.0
+      },
+      "relative_net_profit": -0.0024556312088402726
+    },
+    {
+      "seed": 2087726158,
+      "opponent": "market",
+      "side": 1,
+      "trained": {
+        "bank": 47685.0,
+        "opponent_bank": 43241.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 44685.0,
+        "opponent_net_profit": 40241.0,
+        "margin": 4444.0,
+        "score": 1.0
+      },
+      "teacher_task": {
+        "bank": 47795.0,
+        "opponent_bank": 43214.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 44795.0,
+        "opponent_net_profit": 40214.0,
+        "margin": 4581.0,
+        "score": 1.0
+      },
+      "delta": {
+        "net_profit": -110.0,
+        "opponent_net_profit": 27.0,
+        "margin": -137.0,
+        "score": 0.0
+      },
+      "relative_net_profit": -0.0024556312088402726
+    },
+    {
+      "seed": 2087726158,
+      "opponent": "round2",
+      "side": 0,
+      "trained": {
+        "bank": 41775.0,
+        "opponent_bank": 46198.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 38775.0,
+        "opponent_net_profit": 43198.0,
+        "margin": -4423.0,
+        "score": 0.0
+      },
+      "teacher_task": {
+        "bank": 43656.0,
+        "opponent_bank": 44328.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 40656.0,
+        "opponent_net_profit": 41328.0,
+        "margin": -672.0,
+        "score": 0.0
+      },
+      "delta": {
+        "net_profit": -1881.0,
+        "opponent_net_profit": 1870.0,
+        "margin": -3751.0,
+        "score": 0.0
+      },
+      "relative_net_profit": -0.04626623376623377
+    },
+    {
+      "seed": 2087726158,
+      "opponent": "round2",
+      "side": 1,
+      "trained": {
+        "bank": 41775.0,
+        "opponent_bank": 46198.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 38775.0,
+        "opponent_net_profit": 43198.0,
+        "margin": -4423.0,
+        "score": 0.0
+      },
+      "teacher_task": {
+        "bank": 43656.0,
+        "opponent_bank": 44328.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 40656.0,
+        "opponent_net_profit": 41328.0,
+        "margin": -672.0,
+        "score": 0.0
+      },
+      "delta": {
+        "net_profit": -1881.0,
+        "opponent_net_profit": 1870.0,
+        "margin": -3751.0,
+        "score": 0.0
+      },
+      "relative_net_profit": -0.04626623376623377
+    },
+    {
+      "seed": 3767282565,
+      "opponent": "v1",
+      "side": 0,
+      "trained": {
+        "bank": 45277.0,
+        "opponent_bank": 44603.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 42277.0,
+        "opponent_net_profit": 41603.0,
+        "margin": 674.0,
+        "score": 1.0
+      },
+      "teacher_task": {
+        "bank": 45010.0,
+        "opponent_bank": 44653.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 42010.0,
+        "opponent_net_profit": 41653.0,
+        "margin": 357.0,
+        "score": 1.0
+      },
+      "delta": {
+        "net_profit": 267.0,
+        "opponent_net_profit": -50.0,
+        "margin": 317.0,
+        "score": 0.0
+      },
+      "relative_net_profit": 0.006355629611997144
+    },
+    {
+      "seed": 3767282565,
+      "opponent": "v1",
+      "side": 1,
+      "trained": {
+        "bank": 45277.0,
+        "opponent_bank": 44603.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 42277.0,
+        "opponent_net_profit": 41603.0,
+        "margin": 674.0,
+        "score": 1.0
+      },
+      "teacher_task": {
+        "bank": 45010.0,
+        "opponent_bank": 44653.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 42010.0,
+        "opponent_net_profit": 41653.0,
+        "margin": 357.0,
+        "score": 1.0
+      },
+      "delta": {
+        "net_profit": 267.0,
+        "opponent_net_profit": -50.0,
+        "margin": 317.0,
+        "score": 0.0
+      },
+      "relative_net_profit": 0.006355629611997144
+    },
+    {
+      "seed": 3767282565,
+      "opponent": "market",
+      "side": 0,
+      "trained": {
+        "bank": 49145.0,
+        "opponent_bank": 45022.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 46145.0,
+        "opponent_net_profit": 42022.0,
+        "margin": 4123.0,
+        "score": 1.0
+      },
+      "teacher_task": {
+        "bank": 49315.0,
+        "opponent_bank": 44994.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 46315.0,
+        "opponent_net_profit": 41994.0,
+        "margin": 4321.0,
+        "score": 1.0
+      },
+      "delta": {
+        "net_profit": -170.0,
+        "opponent_net_profit": 28.0,
+        "margin": -198.0,
+        "score": 0.0
+      },
+      "relative_net_profit": -0.0036705171110871207
+    },
+    {
+      "seed": 3767282565,
+      "opponent": "market",
+      "side": 1,
+      "trained": {
+        "bank": 49145.0,
+        "opponent_bank": 45022.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 46145.0,
+        "opponent_net_profit": 42022.0,
+        "margin": 4123.0,
+        "score": 1.0
+      },
+      "teacher_task": {
+        "bank": 49315.0,
+        "opponent_bank": 44994.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 46315.0,
+        "opponent_net_profit": 41994.0,
+        "margin": 4321.0,
+        "score": 1.0
+      },
+      "delta": {
+        "net_profit": -170.0,
+        "opponent_net_profit": 28.0,
+        "margin": -198.0,
+        "score": 0.0
+      },
+      "relative_net_profit": -0.0036705171110871207
+    },
+    {
+      "seed": 3767282565,
+      "opponent": "round2",
+      "side": 0,
+      "trained": {
+        "bank": 45052.0,
+        "opponent_bank": 48852.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 42052.0,
+        "opponent_net_profit": 45852.0,
+        "margin": -3800.0,
+        "score": 0.0
+      },
+      "teacher_task": {
+        "bank": 45093.0,
+        "opponent_bank": 44951.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 42093.0,
+        "opponent_net_profit": 41951.0,
+        "margin": 142.0,
+        "score": 1.0
+      },
+      "delta": {
+        "net_profit": -41.0,
+        "opponent_net_profit": 3901.0,
+        "margin": -3942.0,
+        "score": -1.0
+      },
+      "relative_net_profit": -0.0009740336873114295
+    },
+    {
+      "seed": 3767282565,
+      "opponent": "round2",
+      "side": 1,
+      "trained": {
+        "bank": 45052.0,
+        "opponent_bank": 48852.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 42052.0,
+        "opponent_net_profit": 45852.0,
+        "margin": -3800.0,
+        "score": 0.0
+      },
+      "teacher_task": {
+        "bank": 45093.0,
+        "opponent_bank": 44951.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 42093.0,
+        "opponent_net_profit": 41951.0,
+        "margin": 142.0,
+        "score": 1.0
+      },
+      "delta": {
+        "net_profit": -41.0,
+        "opponent_net_profit": 3901.0,
+        "margin": -3942.0,
+        "score": -1.0
+      },
+      "relative_net_profit": -0.0009740336873114295
+    },
+    {
+      "seed": 2941093011,
+      "opponent": "v1",
+      "side": 0,
+      "trained": {
+        "bank": 43151.0,
+        "opponent_bank": 39272.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 40151.0,
+        "opponent_net_profit": 36272.0,
+        "margin": 3879.0,
+        "score": 1.0
+      },
+      "teacher_task": {
+        "bank": 43151.0,
+        "opponent_bank": 39272.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 40151.0,
+        "opponent_net_profit": 36272.0,
+        "margin": 3879.0,
+        "score": 1.0
+      },
+      "delta": {
+        "net_profit": 0.0,
+        "opponent_net_profit": 0.0,
+        "margin": 0.0,
+        "score": 0.0
+      },
+      "relative_net_profit": 0.0
+    },
+    {
+      "seed": 2941093011,
+      "opponent": "v1",
+      "side": 1,
+      "trained": {
+        "bank": 43151.0,
+        "opponent_bank": 39272.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 40151.0,
+        "opponent_net_profit": 36272.0,
+        "margin": 3879.0,
+        "score": 1.0
+      },
+      "teacher_task": {
+        "bank": 43151.0,
+        "opponent_bank": 39272.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 40151.0,
+        "opponent_net_profit": 36272.0,
+        "margin": 3879.0,
+        "score": 1.0
+      },
+      "delta": {
+        "net_profit": 0.0,
+        "opponent_net_profit": 0.0,
+        "margin": 0.0,
+        "score": 0.0
+      },
+      "relative_net_profit": 0.0
+    },
+    {
+      "seed": 2941093011,
+      "opponent": "market",
+      "side": 0,
+      "trained": {
+        "bank": 43079.0,
+        "opponent_bank": 45022.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 40079.0,
+        "opponent_net_profit": 42022.0,
+        "margin": -1943.0,
+        "score": 0.0
+      },
+      "teacher_task": {
+        "bank": 43079.0,
+        "opponent_bank": 45022.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 40079.0,
+        "opponent_net_profit": 42022.0,
+        "margin": -1943.0,
+        "score": 0.0
+      },
+      "delta": {
+        "net_profit": 0.0,
+        "opponent_net_profit": 0.0,
+        "margin": 0.0,
+        "score": 0.0
+      },
+      "relative_net_profit": 0.0
+    },
+    {
+      "seed": 2941093011,
+      "opponent": "market",
+      "side": 1,
+      "trained": {
+        "bank": 43079.0,
+        "opponent_bank": 45022.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 40079.0,
+        "opponent_net_profit": 42022.0,
+        "margin": -1943.0,
+        "score": 0.0
+      },
+      "teacher_task": {
+        "bank": 43079.0,
+        "opponent_bank": 45022.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 40079.0,
+        "opponent_net_profit": 42022.0,
+        "margin": -1943.0,
+        "score": 0.0
+      },
+      "delta": {
+        "net_profit": 0.0,
+        "opponent_net_profit": 0.0,
+        "margin": 0.0,
+        "score": 0.0
+      },
+      "relative_net_profit": 0.0
+    },
+    {
+      "seed": 2941093011,
+      "opponent": "round2",
+      "side": 0,
+      "trained": {
+        "bank": 43003.0,
+        "opponent_bank": 39928.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 40003.0,
+        "opponent_net_profit": 36928.0,
+        "margin": 3075.0,
+        "score": 1.0
+      },
+      "teacher_task": {
+        "bank": 44941.0,
+        "opponent_bank": 42813.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 41941.0,
+        "opponent_net_profit": 39813.0,
+        "margin": 2128.0,
+        "score": 1.0
+      },
+      "delta": {
+        "net_profit": -1938.0,
+        "opponent_net_profit": -2885.0,
+        "margin": 947.0,
+        "score": 0.0
+      },
+      "relative_net_profit": -0.046207768055125054
+    },
+    {
+      "seed": 2941093011,
+      "opponent": "round2",
+      "side": 1,
+      "trained": {
+        "bank": 43003.0,
+        "opponent_bank": 39928.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 40003.0,
+        "opponent_net_profit": 36928.0,
+        "margin": 3075.0,
+        "score": 1.0
+      },
+      "teacher_task": {
+        "bank": 44941.0,
+        "opponent_bank": 42813.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 41941.0,
+        "opponent_net_profit": 39813.0,
+        "margin": 2128.0,
+        "score": 1.0
+      },
+      "delta": {
+        "net_profit": -1938.0,
+        "opponent_net_profit": -2885.0,
+        "margin": 947.0,
+        "score": 0.0
+      },
+      "relative_net_profit": -0.046207768055125054
+    },
+    {
+      "seed": 78378034,
+      "opponent": "v1",
+      "side": 0,
+      "trained": {
+        "bank": 46811.0,
+        "opponent_bank": 40942.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 43811.0,
+        "opponent_net_profit": 37942.0,
+        "margin": 5869.0,
+        "score": 1.0
+      },
+      "teacher_task": {
+        "bank": 46811.0,
+        "opponent_bank": 40942.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 43811.0,
+        "opponent_net_profit": 37942.0,
+        "margin": 5869.0,
+        "score": 1.0
+      },
+      "delta": {
+        "net_profit": 0.0,
+        "opponent_net_profit": 0.0,
+        "margin": 0.0,
+        "score": 0.0
+      },
+      "relative_net_profit": 0.0
+    },
+    {
+      "seed": 78378034,
+      "opponent": "v1",
+      "side": 1,
+      "trained": {
+        "bank": 46811.0,
+        "opponent_bank": 40942.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 43811.0,
+        "opponent_net_profit": 37942.0,
+        "margin": 5869.0,
+        "score": 1.0
+      },
+      "teacher_task": {
+        "bank": 46811.0,
+        "opponent_bank": 40942.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 43811.0,
+        "opponent_net_profit": 37942.0,
+        "margin": 5869.0,
+        "score": 1.0
+      },
+      "delta": {
+        "net_profit": 0.0,
+        "opponent_net_profit": 0.0,
+        "margin": 0.0,
+        "score": 0.0
+      },
+      "relative_net_profit": 0.0
+    },
+    {
+      "seed": 78378034,
+      "opponent": "market",
+      "side": 0,
+      "trained": {
+        "bank": 48699.0,
+        "opponent_bank": 42954.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 45699.0,
+        "opponent_net_profit": 39954.0,
+        "margin": 5745.0,
+        "score": 1.0
+      },
+      "teacher_task": {
+        "bank": 48546.0,
+        "opponent_bank": 42958.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 45546.0,
+        "opponent_net_profit": 39958.0,
+        "margin": 5588.0,
+        "score": 1.0
+      },
+      "delta": {
+        "net_profit": 153.0,
+        "opponent_net_profit": -4.0,
+        "margin": 157.0,
+        "score": 0.0
+      },
+      "relative_net_profit": 0.0033592412066921354
+    },
+    {
+      "seed": 78378034,
+      "opponent": "market",
+      "side": 1,
+      "trained": {
+        "bank": 48699.0,
+        "opponent_bank": 42954.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 45699.0,
+        "opponent_net_profit": 39954.0,
+        "margin": 5745.0,
+        "score": 1.0
+      },
+      "teacher_task": {
+        "bank": 48546.0,
+        "opponent_bank": 42958.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 45546.0,
+        "opponent_net_profit": 39958.0,
+        "margin": 5588.0,
+        "score": 1.0
+      },
+      "delta": {
+        "net_profit": 153.0,
+        "opponent_net_profit": -4.0,
+        "margin": 157.0,
+        "score": 0.0
+      },
+      "relative_net_profit": 0.0033592412066921354
+    },
+    {
+      "seed": 78378034,
+      "opponent": "round2",
+      "side": 0,
+      "trained": {
+        "bank": 46277.0,
+        "opponent_bank": 42393.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 43277.0,
+        "opponent_net_profit": 39393.0,
+        "margin": 3884.0,
+        "score": 1.0
+      },
+      "teacher_task": {
+        "bank": 46885.0,
+        "opponent_bank": 41174.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 43885.0,
+        "opponent_net_profit": 38174.0,
+        "margin": 5711.0,
+        "score": 1.0
+      },
+      "delta": {
+        "net_profit": -608.0,
+        "opponent_net_profit": 1219.0,
+        "margin": -1827.0,
+        "score": 0.0
+      },
+      "relative_net_profit": -0.013854392161330751
+    },
+    {
+      "seed": 78378034,
+      "opponent": "round2",
+      "side": 1,
+      "trained": {
+        "bank": 46277.0,
+        "opponent_bank": 42393.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 43277.0,
+        "opponent_net_profit": 39393.0,
+        "margin": 3884.0,
+        "score": 1.0
+      },
+      "teacher_task": {
+        "bank": 46885.0,
+        "opponent_bank": 41174.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 43885.0,
+        "opponent_net_profit": 38174.0,
+        "margin": 5711.0,
+        "score": 1.0
+      },
+      "delta": {
+        "net_profit": -608.0,
+        "opponent_net_profit": 1219.0,
+        "margin": -1827.0,
+        "score": 0.0
+      },
+      "relative_net_profit": -0.013854392161330751
+    },
+    {
+      "seed": 1616203861,
+      "opponent": "v1",
+      "side": 0,
+      "trained": {
+        "bank": 45289.0,
+        "opponent_bank": 45512.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 42289.0,
+        "opponent_net_profit": 42512.0,
+        "margin": -223.0,
+        "score": 0.0
+      },
+      "teacher_task": {
+        "bank": 45289.0,
+        "opponent_bank": 45512.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 42289.0,
+        "opponent_net_profit": 42512.0,
+        "margin": -223.0,
+        "score": 0.0
+      },
+      "delta": {
+        "net_profit": 0.0,
+        "opponent_net_profit": 0.0,
+        "margin": 0.0,
+        "score": 0.0
+      },
+      "relative_net_profit": 0.0
+    },
+    {
+      "seed": 1616203861,
+      "opponent": "v1",
+      "side": 1,
+      "trained": {
+        "bank": 45289.0,
+        "opponent_bank": 45512.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 42289.0,
+        "opponent_net_profit": 42512.0,
+        "margin": -223.0,
+        "score": 0.0
+      },
+      "teacher_task": {
+        "bank": 45289.0,
+        "opponent_bank": 45512.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 42289.0,
+        "opponent_net_profit": 42512.0,
+        "margin": -223.0,
+        "score": 0.0
+      },
+      "delta": {
+        "net_profit": 0.0,
+        "opponent_net_profit": 0.0,
+        "margin": 0.0,
+        "score": 0.0
+      },
+      "relative_net_profit": 0.0
+    },
+    {
+      "seed": 1616203861,
+      "opponent": "market",
+      "side": 0,
+      "trained": {
+        "bank": 48763.0,
+        "opponent_bank": 46844.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 45763.0,
+        "opponent_net_profit": 43844.0,
+        "margin": 1919.0,
+        "score": 1.0
+      },
+      "teacher_task": {
+        "bank": 48763.0,
+        "opponent_bank": 46844.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 45763.0,
+        "opponent_net_profit": 43844.0,
+        "margin": 1919.0,
+        "score": 1.0
+      },
+      "delta": {
+        "net_profit": 0.0,
+        "opponent_net_profit": 0.0,
+        "margin": 0.0,
+        "score": 0.0
+      },
+      "relative_net_profit": 0.0
+    },
+    {
+      "seed": 1616203861,
+      "opponent": "market",
+      "side": 1,
+      "trained": {
+        "bank": 48763.0,
+        "opponent_bank": 46844.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 45763.0,
+        "opponent_net_profit": 43844.0,
+        "margin": 1919.0,
+        "score": 1.0
+      },
+      "teacher_task": {
+        "bank": 48763.0,
+        "opponent_bank": 46844.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 45763.0,
+        "opponent_net_profit": 43844.0,
+        "margin": 1919.0,
+        "score": 1.0
+      },
+      "delta": {
+        "net_profit": 0.0,
+        "opponent_net_profit": 0.0,
+        "margin": 0.0,
+        "score": 0.0
+      },
+      "relative_net_profit": 0.0
+    },
+    {
+      "seed": 1616203861,
+      "opponent": "round2",
+      "side": 0,
+      "trained": {
+        "bank": 43098.0,
+        "opponent_bank": 47863.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 40098.0,
+        "opponent_net_profit": 44863.0,
+        "margin": -4765.0,
+        "score": 0.0
+      },
+      "teacher_task": {
+        "bank": 45187.0,
+        "opponent_bank": 45995.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 42187.0,
+        "opponent_net_profit": 42995.0,
+        "margin": -808.0,
+        "score": 0.0
+      },
+      "delta": {
+        "net_profit": -2089.0,
+        "opponent_net_profit": 1868.0,
+        "margin": -3957.0,
+        "score": 0.0
+      },
+      "relative_net_profit": -0.0495176239125797
+    },
+    {
+      "seed": 1616203861,
+      "opponent": "round2",
+      "side": 1,
+      "trained": {
+        "bank": 43098.0,
+        "opponent_bank": 47863.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 40098.0,
+        "opponent_net_profit": 44863.0,
+        "margin": -4765.0,
+        "score": 0.0
+      },
+      "teacher_task": {
+        "bank": 45187.0,
+        "opponent_bank": 45995.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 42187.0,
+        "opponent_net_profit": 42995.0,
+        "margin": -808.0,
+        "score": 0.0
+      },
+      "delta": {
+        "net_profit": -2089.0,
+        "opponent_net_profit": 1868.0,
+        "margin": -3957.0,
+        "score": 0.0
+      },
+      "relative_net_profit": -0.0495176239125797
+    },
+    {
+      "seed": 870190021,
+      "opponent": "v1",
+      "side": 0,
+      "trained": {
+        "bank": 45424.0,
+        "opponent_bank": 45074.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 42424.0,
+        "opponent_net_profit": 42074.0,
+        "margin": 350.0,
+        "score": 1.0
+      },
+      "teacher_task": {
+        "bank": 45336.0,
+        "opponent_bank": 45124.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 42336.0,
+        "opponent_net_profit": 42124.0,
+        "margin": 212.0,
+        "score": 1.0
+      },
+      "delta": {
+        "net_profit": 88.0,
+        "opponent_net_profit": -50.0,
+        "margin": 138.0,
+        "score": 0.0
+      },
+      "relative_net_profit": 0.0020786092214663643
+    },
+    {
+      "seed": 870190021,
+      "opponent": "v1",
+      "side": 1,
+      "trained": {
+        "bank": 45424.0,
+        "opponent_bank": 45074.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 42424.0,
+        "opponent_net_profit": 42074.0,
+        "margin": 350.0,
+        "score": 1.0
+      },
+      "teacher_task": {
+        "bank": 45336.0,
+        "opponent_bank": 45124.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 42336.0,
+        "opponent_net_profit": 42124.0,
+        "margin": 212.0,
+        "score": 1.0
+      },
+      "delta": {
+        "net_profit": 88.0,
+        "opponent_net_profit": -50.0,
+        "margin": 138.0,
+        "score": 0.0
+      },
+      "relative_net_profit": 0.0020786092214663643
+    },
+    {
+      "seed": 870190021,
+      "opponent": "market",
+      "side": 0,
+      "trained": {
+        "bank": 49523.0,
+        "opponent_bank": 45005.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 46523.0,
+        "opponent_net_profit": 42005.0,
+        "margin": 4518.0,
+        "score": 1.0
+      },
+      "teacher_task": {
+        "bank": 49684.0,
+        "opponent_bank": 45005.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 46684.0,
+        "opponent_net_profit": 42005.0,
+        "margin": 4679.0,
+        "score": 1.0
+      },
+      "delta": {
+        "net_profit": -161.0,
+        "opponent_net_profit": 0.0,
+        "margin": -161.0,
+        "score": 0.0
+      },
+      "relative_net_profit": -0.0034487190472110357
+    },
+    {
+      "seed": 870190021,
+      "opponent": "market",
+      "side": 1,
+      "trained": {
+        "bank": 49523.0,
+        "opponent_bank": 45005.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 46523.0,
+        "opponent_net_profit": 42005.0,
+        "margin": 4518.0,
+        "score": 1.0
+      },
+      "teacher_task": {
+        "bank": 49684.0,
+        "opponent_bank": 45005.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 46684.0,
+        "opponent_net_profit": 42005.0,
+        "margin": 4679.0,
+        "score": 1.0
+      },
+      "delta": {
+        "net_profit": -161.0,
+        "opponent_net_profit": 0.0,
+        "margin": -161.0,
+        "score": 0.0
+      },
+      "relative_net_profit": -0.0034487190472110357
+    },
+    {
+      "seed": 870190021,
+      "opponent": "round2",
+      "side": 0,
+      "trained": {
+        "bank": 43454.0,
+        "opponent_bank": 47266.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 40454.0,
+        "opponent_net_profit": 44266.0,
+        "margin": -3812.0,
+        "score": 0.0
+      },
+      "teacher_task": {
+        "bank": 45423.0,
+        "opponent_bank": 45413.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 42423.0,
+        "opponent_net_profit": 42413.0,
+        "margin": 10.0,
+        "score": 1.0
+      },
+      "delta": {
+        "net_profit": -1969.0,
+        "opponent_net_profit": 1853.0,
+        "margin": -3822.0,
+        "score": -1.0
+      },
+      "relative_net_profit": -0.046413502109704644
+    },
+    {
+      "seed": 870190021,
+      "opponent": "round2",
+      "side": 1,
+      "trained": {
+        "bank": 43454.0,
+        "opponent_bank": 47266.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 40454.0,
+        "opponent_net_profit": 44266.0,
+        "margin": -3812.0,
+        "score": 0.0
+      },
+      "teacher_task": {
+        "bank": 45423.0,
+        "opponent_bank": 45413.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 42423.0,
+        "opponent_net_profit": 42413.0,
+        "margin": 10.0,
+        "score": 1.0
+      },
+      "delta": {
+        "net_profit": -1969.0,
+        "opponent_net_profit": 1853.0,
+        "margin": -3822.0,
+        "score": -1.0
+      },
+      "relative_net_profit": -0.046413502109704644
+    }
+  ],
+  "primary_gate_passed": true,
+  "opponent_point_guards": {
+    "v1": true,
+    "market": true,
+    "round2": false
+  },
+  "passed": false,
+  "panel_improvement": false,
+  "limitations": [
+    "Only eight independent seed clusters; bootstrap coverage is approximate.",
+    "Opponent guards use point estimates, not statistical non-inferiority.",
+    "Admission does not promote a default agent or prove superiority to the original rule teacher.",
+    "Execution, replay, source, privacy and independent-review acceptance are separate."
+  ]
+}

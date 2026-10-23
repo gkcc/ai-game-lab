@@ -1,0 +1,52 @@
+{
+  "passed": false,
+  "execution_acceptance_passed": true,
+  "evidence_review_passed": true,
+  "statistical_admission_passed": false,
+  "research_baseline_promoted": false,
+  "default_changed": false,
+  "scope": "Fixed task student versus hybrid rule-task reference with identical fixed crop model; new-seed known-opponent panel",
+  "prior_task_bc_stage_acceptance_passed": false,
+  "training_runs": 0,
+  "parameter_updates": 0,
+  "checkpoint_reselections": 0,
+  "game_attempts": 96,
+  "complete_games": 96,
+  "new_economic_games": 96,
+  "root_official_transitions": 69024,
+  "independent_sample_official_transitions": 2876,
+  "independent_sample_games": 4,
+  "protected_runtime_files": 3335,
+  "protected_public_files_before_publication": 703,
+  "relative_net_profit_delta": -0.010569386457832765,
+  "relative_net_profit_ci95": [
+    -0.015766790524436455,
+    -0.004813206761653003
+  ],
+  "primary_retention_gate_passed": true,
+  "opponent_guards": {
+    "v1": true,
+    "market": true,
+    "round2": false
+  },
+  "failure_reason": "round2 score delta -0.25 below frozen -0.05 floor",
+  "panel_improvement_proven": false,
+  "model_status": "Retained failed research candidate; no default replacement",
+  "test_seed_status": "Consumed; any future analysis is exploratory and cannot reuse as untouched holdout",
+  "evidence_sha256": {
+    "registration.json": "b180982229484a3e0a02afa759dccd80f3a49c10c22cd23732abb9d6420e2517",
+    "freeze.json": "3345932b4e85f48f6740664f3361ec69af7e964d13211cfcd3bad7372382ea6d",
+    "pre-review.json": "98b3bba8d265d3c2af861a215ccc957fea6438cb692a89f676644a2ba75d998f",
+    "pre-execution-commit.json": "90508dc549819158aa2f089a9554a5ddf5248351f2c1c01e6ed2f7d5e7fb0418",
+    "preflight.json": "d05c428a7f2258f53b14b205d19e744a8d53e9183b82e20d9fae92a71abcffcb",
+    "independent-preflight-review.json": "51e2748be9f0cd522382c2c516e3e7788c37f591d040190a59a87e3c9efa7dc7",
+    "ledger.json": "87a37d211265abf528b31f3472fc26c0127b8b122bf3443618b2639c2d3b5009",
+    "audit.json": "65cf7f99609a9be448f1f98d3234580d4db4321ab48778066b9b1dd4244bf5e0",
+    "attempts.json": "7a39895512701bcc4f1a8053d34a29af43fbeeb245f54c850159946d0f582b66",
+    "failures.json": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+    "workers.json": "ed93094c2551ba655af28842d2afcae394f4af5fb99275be642372977422be22",
+    "run-summary.json": "9f48789461234d41b6a94b9b6b972651f188b066a669d6a430b061c31190d9bf",
+    "statistics.json": "560fefa55f488355fd8c4be84c825512269ab4e2dc705b5ecd9641fbe060f639",
+    "independent-review.json": "e8febab93e55a0f46f0a7ccbda5adf4e9e941c0d44cd529784d7bad59ebfb967"
+  }
+}

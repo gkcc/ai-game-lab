@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "freeze_sha256": "3345932b4e85f48f6740664f3361ec69af7e964d13211cfcd3bad7372382ea6d",
+  "registration_sha256": "b180982229484a3e0a02afa759dccd80f3a49c10c22cd23732abb9d6420e2517",
+  "rows": [
+    {
+      "arm": "trained",
+      "source_game": "dev-31205138-round2-0-trained",
+      "source_replay_sha256": "6d26c0696705995e0a9624eeb447f8b5e9539ee1ae9dfb67e3b60197886744bc",
+      "source_trace_sha256": "7b103772e153f8e935b822f30f061958845d297004e8864434a7cda7afaebeb9",
+      "wrapper_relative": "artifacts/task-bc-holdout-v1-20261023/agents/preflight-trained.py",
+      "wrapper_sha256": "73a56e98a1992578ea54b61fe542cc251048146f4951a23aa12b5350c01822b1",
+      "trace_sha256": "ccf6daea33f546c0c60becd2b4b5a4d69a1ea8bbf20a99fd84243604ee4694cb",
+      "old_action_and_stable_trace_equalities": 2,
+      "private_seed_future_injection_unchanged": true,
+      "replay_info_rejected": true
+    },
+    {
+      "arm": "teacher_task",
+      "source_game": "dev-31205138-round2-0-teacher_task",
+      "source_replay_sha256": "0810da665abd58cd25c9fff6484b71f431164ad5705f81c13988daacc3dc17cc",
+      "source_trace_sha256": "104e0aafa74b5eeba9ff506b0a66799c46d6918598f6670bc935783acfc9be7f",
+      "wrapper_relative": "artifacts/task-bc-holdout-v1-20261023/agents/preflight-teacher_task.py",
+      "wrapper_sha256": "387b765d0083f0b9e287fbf73cf99a0a0af9780edad0a83f3957c14f1f6653b1",
+      "trace_sha256": "48f4a3a589397d6a7df5c9867bba89989708317be50b8e6f857352a890acbbfe",
+      "old_action_and_stable_trace_equalities": 2,
+      "private_seed_future_injection_unchanged": true,
+      "replay_info_rejected": true
+    }
+  ],
+  "official_loader_calls": 2,
+  "official_agent_calls": 4,
+  "direct_agent_valid_calls": 4,
+  "rejected_info_calls": 2,
+  "official_transitions": 0,
+  "new_games": 0,
+  "training_runs": 0,
+  "non_project_cwd": true,
+  "boundary": "Old consumed development observations only; no new holdout observations or outcomes inspected"
+}

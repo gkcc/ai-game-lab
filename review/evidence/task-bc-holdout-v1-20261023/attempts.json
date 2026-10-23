@@ -1,0 +1,866 @@
+[
+  {
+    "game": "holdout-1714414373-v1-0-trained",
+    "seed": 1714414373,
+    "opponent": "v1",
+    "side": 0,
+    "policy": "trained",
+    "bot_sha256": "1241dd9c61ea5307c5ab2ba06981956adac261ff4f4494c3109d287850a06260",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459"
+  },
+  {
+    "game": "holdout-1714414373-v1-1-trained",
+    "seed": 1714414373,
+    "opponent": "v1",
+    "side": 1,
+    "policy": "trained",
+    "bot_sha256": "a33e7743eb8db74f00bf5ab0597a67665e1a4831fd11ee6416ec787d6a85f3cf",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459"
+  },
+  {
+    "game": "holdout-1714414373-v1-0-teacher_task",
+    "seed": 1714414373,
+    "opponent": "v1",
+    "side": 0,
+    "policy": "teacher_task",
+    "bot_sha256": "8c7d2dc5ce9831e22adb1934a25703447bc2304b9e9d84b2eba03d938942bda9",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459"
+  },
+  {
+    "game": "holdout-1714414373-v1-1-teacher_task",
+    "seed": 1714414373,
+    "opponent": "v1",
+    "side": 1,
+    "policy": "teacher_task",
+    "bot_sha256": "1ee5138bf27456e5d3be5676e2ba8035359d3f0d576a8dc144dafeec403162fd",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459"
+  },
+  {
+    "game": "holdout-1714414373-market-0-trained",
+    "seed": 1714414373,
+    "opponent": "market",
+    "side": 0,
+    "policy": "trained",
+    "bot_sha256": "bda462e6941352b07248f3c383a81f64738ea222e184b14093fe79276e9d36b7",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b"
+  },
+  {
+    "game": "holdout-1714414373-market-1-trained",
+    "seed": 1714414373,
+    "opponent": "market",
+    "side": 1,
+    "policy": "trained",
+    "bot_sha256": "e3dc95e8a328ed97e0abcb59de2b7b224cdae736d6824857311bcbbff9c61330",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b"
+  },
+  {
+    "game": "holdout-1714414373-market-0-teacher_task",
+    "seed": 1714414373,
+    "opponent": "market",
+    "side": 0,
+    "policy": "teacher_task",
+    "bot_sha256": "b93ec7fb596219924f6113d3958c5ea38f7b7b412eee62873ff27ecd3c7397ed",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b"
+  },
+  {
+    "game": "holdout-1714414373-market-1-teacher_task",
+    "seed": 1714414373,
+    "opponent": "market",
+    "side": 1,
+    "policy": "teacher_task",
+    "bot_sha256": "5ddb600a04650de22286ceb3525439e4df116883016d490998755bf6cf3fc621",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b"
+  },
+  {
+    "game": "holdout-1714414373-round2-0-trained",
+    "seed": 1714414373,
+    "opponent": "round2",
+    "side": 0,
+    "policy": "trained",
+    "bot_sha256": "450b8722a691c2594f525bb520878d3ba66aff535696a03ea760de5e651df0cd",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848"
+  },
+  {
+    "game": "holdout-1714414373-round2-1-trained",
+    "seed": 1714414373,
+    "opponent": "round2",
+    "side": 1,
+    "policy": "trained",
+    "bot_sha256": "c366b698535314eda479aab1045a9fec76cc9a07c0e9de58a83eeed13a64e68d",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848"
+  },
+  {
+    "game": "holdout-1714414373-round2-0-teacher_task",
+    "seed": 1714414373,
+    "opponent": "round2",
+    "side": 0,
+    "policy": "teacher_task",
+    "bot_sha256": "46f10a10bfc3bf7e7ccca2794f9c29fc0a9f0f6ff579c3a7164a7a886f9a38c8",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848"
+  },
+  {
+    "game": "holdout-1714414373-round2-1-teacher_task",
+    "seed": 1714414373,
+    "opponent": "round2",
+    "side": 1,
+    "policy": "teacher_task",
+    "bot_sha256": "a425e722a76d041b906f42391a95c7e07b7279af64004b01f245bfe04fbb29ee",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848"
+  },
+  {
+    "game": "holdout-2117918555-v1-0-trained",
+    "seed": 2117918555,
+    "opponent": "v1",
+    "side": 0,
+    "policy": "trained",
+    "bot_sha256": "2e4b59074bbbd05bf4a44812131ba887e9957275ee73a3aef3eea456476242ad",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459"
+  },
+  {
+    "game": "holdout-2117918555-v1-1-trained",
+    "seed": 2117918555,
+    "opponent": "v1",
+    "side": 1,
+    "policy": "trained",
+    "bot_sha256": "c8218e766695ee2fb7c361dd60bea5784c0b29f431bbd8b165920d0fd52da04c",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459"
+  },
+  {
+    "game": "holdout-2117918555-v1-0-teacher_task",
+    "seed": 2117918555,
+    "opponent": "v1",
+    "side": 0,
+    "policy": "teacher_task",
+    "bot_sha256": "cc8bff3fed499fac6d26d809db085b888893df38ca218229d44da4312b3f284e",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459"
+  },
+  {
+    "game": "holdout-2117918555-v1-1-teacher_task",
+    "seed": 2117918555,
+    "opponent": "v1",
+    "side": 1,
+    "policy": "teacher_task",
+    "bot_sha256": "30161132d57d40c494106f1acc0e975f2ac8caaa3944119cda16d13722cacf48",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459"
+  },
+  {
+    "game": "holdout-2117918555-market-0-trained",
+    "seed": 2117918555,
+    "opponent": "market",
+    "side": 0,
+    "policy": "trained",
+    "bot_sha256": "7d022cf915adcc71f15884dfee993407c7d1fbcee296fa720bb3c35f5b7f45d3",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b"
+  },
+  {
+    "game": "holdout-2117918555-market-1-trained",
+    "seed": 2117918555,
+    "opponent": "market",
+    "side": 1,
+    "policy": "trained",
+    "bot_sha256": "018a62f837d0de33999cf7648d619c8a932d42b6a4ddb0f995cbb3b52c2b185d",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b"
+  },
+  {
+    "game": "holdout-2117918555-market-0-teacher_task",
+    "seed": 2117918555,
+    "opponent": "market",
+    "side": 0,
+    "policy": "teacher_task",
+    "bot_sha256": "5ed912f78c0e80f2e26a6f1c3e9795eb99fc857125049a130174c4647342b082",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b"
+  },
+  {
+    "game": "holdout-2117918555-market-1-teacher_task",
+    "seed": 2117918555,
+    "opponent": "market",
+    "side": 1,
+    "policy": "teacher_task",
+    "bot_sha256": "7292018669630022716fc62aad417092724c0fff0863e3e02414ab04c14c786b",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b"
+  },
+  {
+    "game": "holdout-2117918555-round2-0-trained",
+    "seed": 2117918555,
+    "opponent": "round2",
+    "side": 0,
+    "policy": "trained",
+    "bot_sha256": "626e341d69f6ecf175d8a3ccc5834f3e49f2b98596abf53dfc5d10dcb03dba86",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848"
+  },
+  {
+    "game": "holdout-2117918555-round2-1-trained",
+    "seed": 2117918555,
+    "opponent": "round2",
+    "side": 1,
+    "policy": "trained",
+    "bot_sha256": "c4637b74f068b5eaeeba3b8aff0e0e6ae2024ce3cc1e076892d168cb4344228c",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848"
+  },
+  {
+    "game": "holdout-2117918555-round2-0-teacher_task",
+    "seed": 2117918555,
+    "opponent": "round2",
+    "side": 0,
+    "policy": "teacher_task",
+    "bot_sha256": "33adbfa54d4b9aa4fd8c54e22f938f1f849d7abc51aebfae211a908f43036aa6",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848"
+  },
+  {
+    "game": "holdout-2117918555-round2-1-teacher_task",
+    "seed": 2117918555,
+    "opponent": "round2",
+    "side": 1,
+    "policy": "teacher_task",
+    "bot_sha256": "b8d3ac64fff79e1e015571afe794bd7f4907057e33a0d558aa1d4df604a39988",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848"
+  },
+  {
+    "game": "holdout-2087726158-v1-0-trained",
+    "seed": 2087726158,
+    "opponent": "v1",
+    "side": 0,
+    "policy": "trained",
+    "bot_sha256": "29753ff3124266f2652db3d315e35dcac1b244c23d233a6cc2b58f90bfd35eb6",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459"
+  },
+  {
+    "game": "holdout-2087726158-v1-1-trained",
+    "seed": 2087726158,
+    "opponent": "v1",
+    "side": 1,
+    "policy": "trained",
+    "bot_sha256": "89ea367c8028921dfae2183c7146d7f48984726cc9caa769d64542b0853e470c",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459"
+  },
+  {
+    "game": "holdout-2087726158-v1-0-teacher_task",
+    "seed": 2087726158,
+    "opponent": "v1",
+    "side": 0,
+    "policy": "teacher_task",
+    "bot_sha256": "6aeaac060001bf1ae565bf40e56696d58ec10c9a240211326a26fcd35b11bf31",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459"
+  },
+  {
+    "game": "holdout-2087726158-v1-1-teacher_task",
+    "seed": 2087726158,
+    "opponent": "v1",
+    "side": 1,
+    "policy": "teacher_task",
+    "bot_sha256": "455809374ffb745ed764bed666d9e4022e72d90d476e83896194d90ad8da29e7",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459"
+  },
+  {
+    "game": "holdout-2087726158-market-0-trained",
+    "seed": 2087726158,
+    "opponent": "market",
+    "side": 0,
+    "policy": "trained",
+    "bot_sha256": "37a97c293616c2a807fb9b6a9a795a87e52000232109ac39288b45b91b52902b",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b"
+  },
+  {
+    "game": "holdout-2087726158-market-1-trained",
+    "seed": 2087726158,
+    "opponent": "market",
+    "side": 1,
+    "policy": "trained",
+    "bot_sha256": "ff48a5b8f8dcc56c9940b64b0b9f7bfb3cb02521f94af78098a379596e682856",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b"
+  },
+  {
+    "game": "holdout-2087726158-market-0-teacher_task",
+    "seed": 2087726158,
+    "opponent": "market",
+    "side": 0,
+    "policy": "teacher_task",
+    "bot_sha256": "e54bb91a51e585b0df4a651276d24d1c47df167aca4a84c6683b559c5a4caf67",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b"
+  },
+  {
+    "game": "holdout-2087726158-market-1-teacher_task",
+    "seed": 2087726158,
+    "opponent": "market",
+    "side": 1,
+    "policy": "teacher_task",
+    "bot_sha256": "3e6c11a60b501993c3a2bdf47dd16ea628d412174f4c3e32c37428fd7d16682b",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b"
+  },
+  {
+    "game": "holdout-2087726158-round2-0-trained",
+    "seed": 2087726158,
+    "opponent": "round2",
+    "side": 0,
+    "policy": "trained",
+    "bot_sha256": "d4436f8a8720c6b4425c837f1bad53878a2c66a26cf21f5c227f09e06b4effd7",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848"
+  },
+  {
+    "game": "holdout-2087726158-round2-1-trained",
+    "seed": 2087726158,
+    "opponent": "round2",
+    "side": 1,
+    "policy": "trained",
+    "bot_sha256": "06373243210ec1587c9c9deb404c822db037bd9c33b3764b0079a7254d090a4a",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848"
+  },
+  {
+    "game": "holdout-2087726158-round2-0-teacher_task",
+    "seed": 2087726158,
+    "opponent": "round2",
+    "side": 0,
+    "policy": "teacher_task",
+    "bot_sha256": "1f829da1890153d83f938ae44fe3926bc35456d760201a6c5cdbe965cae03b03",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848"
+  },
+  {
+    "game": "holdout-2087726158-round2-1-teacher_task",
+    "seed": 2087726158,
+    "opponent": "round2",
+    "side": 1,
+    "policy": "teacher_task",
+    "bot_sha256": "baa5bccdca3db6830b09e04b5c45ddc91997586a12bca86281fcadf6c68ca6e6",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848"
+  },
+  {
+    "game": "holdout-3767282565-v1-0-trained",
+    "seed": 3767282565,
+    "opponent": "v1",
+    "side": 0,
+    "policy": "trained",
+    "bot_sha256": "356941635cffbe25a89278c6f1ce22b6944d4dcf2cc14bc17510825758d0d157",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459"
+  },
+  {
+    "game": "holdout-3767282565-v1-1-trained",
+    "seed": 3767282565,
+    "opponent": "v1",
+    "side": 1,
+    "policy": "trained",
+    "bot_sha256": "945dc5dff772c793a4e975c355ea038f74f0dfa85965d728627700fb98678de5",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459"
+  },
+  {
+    "game": "holdout-3767282565-v1-0-teacher_task",
+    "seed": 3767282565,
+    "opponent": "v1",
+    "side": 0,
+    "policy": "teacher_task",
+    "bot_sha256": "c28dfdb8e27c43af9bdf7f16efc1e12eea08713a3e5eb292024e83aff426283f",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459"
+  },
+  {
+    "game": "holdout-3767282565-v1-1-teacher_task",
+    "seed": 3767282565,
+    "opponent": "v1",
+    "side": 1,
+    "policy": "teacher_task",
+    "bot_sha256": "0951605c163fe87aa46b612ef86d04845638e72ac1038f1d2d93326e1d3c4950",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459"
+  },
+  {
+    "game": "holdout-3767282565-market-0-trained",
+    "seed": 3767282565,
+    "opponent": "market",
+    "side": 0,
+    "policy": "trained",
+    "bot_sha256": "7fceb4e0afb510f9121c303ea51b7801317935a902c4459d0dbc4a719085d4e0",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b"
+  },
+  {
+    "game": "holdout-3767282565-market-1-trained",
+    "seed": 3767282565,
+    "opponent": "market",
+    "side": 1,
+    "policy": "trained",
+    "bot_sha256": "c82a16a466139701771f988d62ca304c064a8cc6ac32595be32521d9026a6534",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b"
+  },
+  {
+    "game": "holdout-3767282565-market-0-teacher_task",
+    "seed": 3767282565,
+    "opponent": "market",
+    "side": 0,
+    "policy": "teacher_task",
+    "bot_sha256": "92c1e87ef9ffa95743ce8395411bc6e4403526ba3277728650b4680bc39fc880",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b"
+  },
+  {
+    "game": "holdout-3767282565-market-1-teacher_task",
+    "seed": 3767282565,
+    "opponent": "market",
+    "side": 1,
+    "policy": "teacher_task",
+    "bot_sha256": "a266d95b0b7e1225ee67a4d6298a3d61d80651d803a37830a2bb05c234cb46c2",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b"
+  },
+  {
+    "game": "holdout-3767282565-round2-0-trained",
+    "seed": 3767282565,
+    "opponent": "round2",
+    "side": 0,
+    "policy": "trained",
+    "bot_sha256": "094ff10bbf97a1dbcdab248837cf35db7c9ac86e2d9c0a7bf48737ca352240af",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848"
+  },
+  {
+    "game": "holdout-3767282565-round2-1-trained",
+    "seed": 3767282565,
+    "opponent": "round2",
+    "side": 1,
+    "policy": "trained",
+    "bot_sha256": "a33e4f7cc6c96340519b876102aebdb02d13a9c0c9b0f62c21d1f30c979617a2",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848"
+  },
+  {
+    "game": "holdout-3767282565-round2-0-teacher_task",
+    "seed": 3767282565,
+    "opponent": "round2",
+    "side": 0,
+    "policy": "teacher_task",
+    "bot_sha256": "cb78d1a93a8e4bced02c3496655a09a72451c739f41366f35fd06f3aec747313",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848"
+  },
+  {
+    "game": "holdout-3767282565-round2-1-teacher_task",
+    "seed": 3767282565,
+    "opponent": "round2",
+    "side": 1,
+    "policy": "teacher_task",
+    "bot_sha256": "17ab08ef2e1a28b154bfb2a5c6fc8383edca0df0b047aa8fee20585f671a4b9c",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848"
+  },
+  {
+    "game": "holdout-2941093011-v1-0-trained",
+    "seed": 2941093011,
+    "opponent": "v1",
+    "side": 0,
+    "policy": "trained",
+    "bot_sha256": "5164f11bc59f13a6ced6c2da2a0d8f688a8df6b3de158f91dc6ec251354cac10",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459"
+  },
+  {
+    "game": "holdout-2941093011-v1-1-trained",
+    "seed": 2941093011,
+    "opponent": "v1",
+    "side": 1,
+    "policy": "trained",
+    "bot_sha256": "abd4882e04ed5374f9545041efa8f5aed4771e1c1d2cd82cc40dbd9ab858b592",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459"
+  },
+  {
+    "game": "holdout-2941093011-v1-0-teacher_task",
+    "seed": 2941093011,
+    "opponent": "v1",
+    "side": 0,
+    "policy": "teacher_task",
+    "bot_sha256": "c07f7f4d3db890118bfb20936dd52df4eb53511d1899ae5675767a2ee8462776",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459"
+  },
+  {
+    "game": "holdout-2941093011-v1-1-teacher_task",
+    "seed": 2941093011,
+    "opponent": "v1",
+    "side": 1,
+    "policy": "teacher_task",
+    "bot_sha256": "57944300223a35ef8b97712f796046cdbbcee66a96f77c12b1f87ce0317255ed",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459"
+  },
+  {
+    "game": "holdout-2941093011-market-0-trained",
+    "seed": 2941093011,
+    "opponent": "market",
+    "side": 0,
+    "policy": "trained",
+    "bot_sha256": "53e51b789c95d221bc62c7044380868b8b021118c70432411d616b8ada6ad378",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b"
+  },
+  {
+    "game": "holdout-2941093011-market-1-trained",
+    "seed": 2941093011,
+    "opponent": "market",
+    "side": 1,
+    "policy": "trained",
+    "bot_sha256": "fdebcc91b303f2d4276ba67020f68611a74134dc2b2cdea9658cfeed3ce303dd",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b"
+  },
+  {
+    "game": "holdout-2941093011-market-0-teacher_task",
+    "seed": 2941093011,
+    "opponent": "market",
+    "side": 0,
+    "policy": "teacher_task",
+    "bot_sha256": "50143a94c81f6061b2410f11b9421ce1c0ca6daf311818b346d6153e3ca76f02",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b"
+  },
+  {
+    "game": "holdout-2941093011-market-1-teacher_task",
+    "seed": 2941093011,
+    "opponent": "market",
+    "side": 1,
+    "policy": "teacher_task",
+    "bot_sha256": "be68b5c427c5ae836c9d0ac1a554d2b6233f25f74b9f16065279b6f1ceaf1358",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b"
+  },
+  {
+    "game": "holdout-2941093011-round2-0-trained",
+    "seed": 2941093011,
+    "opponent": "round2",
+    "side": 0,
+    "policy": "trained",
+    "bot_sha256": "1416f2baf7ae022952a15031f12562b1317ed4503badd5dc698020133fdbdc43",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848"
+  },
+  {
+    "game": "holdout-2941093011-round2-1-trained",
+    "seed": 2941093011,
+    "opponent": "round2",
+    "side": 1,
+    "policy": "trained",
+    "bot_sha256": "e3de20664dce1cbf5e006e9545036b46c04e9ec5afac63ec6ad9ea852999f9e9",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848"
+  },
+  {
+    "game": "holdout-2941093011-round2-0-teacher_task",
+    "seed": 2941093011,
+    "opponent": "round2",
+    "side": 0,
+    "policy": "teacher_task",
+    "bot_sha256": "cd58a3e85596a3a2fcf322e8f703a271c60c465915bdba45111d6e0d0ae036d8",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848"
+  },
+  {
+    "game": "holdout-2941093011-round2-1-teacher_task",
+    "seed": 2941093011,
+    "opponent": "round2",
+    "side": 1,
+    "policy": "teacher_task",
+    "bot_sha256": "f1c1cdcad0222ebc10849da4e352b1e7367cf77a7bf4abf49db21e9c3f25cea9",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848"
+  },
+  {
+    "game": "holdout-78378034-v1-0-trained",
+    "seed": 78378034,
+    "opponent": "v1",
+    "side": 0,
+    "policy": "trained",
+    "bot_sha256": "59c4e71376c41216204293f266784ec4b0273abc36012dae63bc605ab22191fc",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459"
+  },
+  {
+    "game": "holdout-78378034-v1-1-trained",
+    "seed": 78378034,
+    "opponent": "v1",
+    "side": 1,
+    "policy": "trained",
+    "bot_sha256": "abb3b6f55b833f0784016b7677726e9fa5fd0ba13c49f17272914989279f2d07",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459"
+  },
+  {
+    "game": "holdout-78378034-v1-0-teacher_task",
+    "seed": 78378034,
+    "opponent": "v1",
+    "side": 0,
+    "policy": "teacher_task",
+    "bot_sha256": "05b8bd8b7b8f33a5020cf59dbe92a1e0d20698db9db97d7207bfea5bd93e66e6",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459"
+  },
+  {
+    "game": "holdout-78378034-v1-1-teacher_task",
+    "seed": 78378034,
+    "opponent": "v1",
+    "side": 1,
+    "policy": "teacher_task",
+    "bot_sha256": "cb75f40cc6ef258280c769439811d83828f586deb4af40c4807acba7ede71662",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459"
+  },
+  {
+    "game": "holdout-78378034-market-0-trained",
+    "seed": 78378034,
+    "opponent": "market",
+    "side": 0,
+    "policy": "trained",
+    "bot_sha256": "13d4da1de82863a6f0a0ea637ee16194eb727aca9ac902ccdc3258e8906ab010",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b"
+  },
+  {
+    "game": "holdout-78378034-market-1-trained",
+    "seed": 78378034,
+    "opponent": "market",
+    "side": 1,
+    "policy": "trained",
+    "bot_sha256": "e4e3454ec9960122520c27c3338b5b8890515a026cd58c18c7d420751e037be1",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b"
+  },
+  {
+    "game": "holdout-78378034-market-0-teacher_task",
+    "seed": 78378034,
+    "opponent": "market",
+    "side": 0,
+    "policy": "teacher_task",
+    "bot_sha256": "7880bfa73ae9c652f21314e66a0dc50d626c8a679cd659ebd520a26c86f185c0",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b"
+  },
+  {
+    "game": "holdout-78378034-market-1-teacher_task",
+    "seed": 78378034,
+    "opponent": "market",
+    "side": 1,
+    "policy": "teacher_task",
+    "bot_sha256": "83f120396ae46b25944229b7ca36be90973e7147b29a5ded3c3d27a8467ef921",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b"
+  },
+  {
+    "game": "holdout-78378034-round2-0-trained",
+    "seed": 78378034,
+    "opponent": "round2",
+    "side": 0,
+    "policy": "trained",
+    "bot_sha256": "7498c3483197bbdd477b92e11c54855ea22a4cf7504d3a090016e1665863f291",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848"
+  },
+  {
+    "game": "holdout-78378034-round2-1-trained",
+    "seed": 78378034,
+    "opponent": "round2",
+    "side": 1,
+    "policy": "trained",
+    "bot_sha256": "773f1a53042de8330bcf2b0646528212c8e7fd90a489d73ce57f61f25300f4ef",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848"
+  },
+  {
+    "game": "holdout-78378034-round2-0-teacher_task",
+    "seed": 78378034,
+    "opponent": "round2",
+    "side": 0,
+    "policy": "teacher_task",
+    "bot_sha256": "7e38f5ce7dadbd7339c6fac0fa490a7de5814db751d5a76f1f1c55d4494ca9ea",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848"
+  },
+  {
+    "game": "holdout-78378034-round2-1-teacher_task",
+    "seed": 78378034,
+    "opponent": "round2",
+    "side": 1,
+    "policy": "teacher_task",
+    "bot_sha256": "11cb00e2a779260cab3212f57ef235c2f51cb3039337232438b50f7988d65643",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848"
+  },
+  {
+    "game": "holdout-1616203861-v1-0-trained",
+    "seed": 1616203861,
+    "opponent": "v1",
+    "side": 0,
+    "policy": "trained",
+    "bot_sha256": "83f897fedbb4912ff0230d572b90c5d06896a63bb7464492ff4dd002b3bf0275",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459"
+  },
+  {
+    "game": "holdout-1616203861-v1-1-trained",
+    "seed": 1616203861,
+    "opponent": "v1",
+    "side": 1,
+    "policy": "trained",
+    "bot_sha256": "ed8732c634bc42518b72c82e5c88255b4c8a4cd6c350dc60e1a2d7ffc985dc2a",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459"
+  },
+  {
+    "game": "holdout-1616203861-v1-0-teacher_task",
+    "seed": 1616203861,
+    "opponent": "v1",
+    "side": 0,
+    "policy": "teacher_task",
+    "bot_sha256": "fd51e73276669c3f86773d23c343d826a0f04ecd33cb3ca5a65d6916e35edf38",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459"
+  },
+  {
+    "game": "holdout-1616203861-v1-1-teacher_task",
+    "seed": 1616203861,
+    "opponent": "v1",
+    "side": 1,
+    "policy": "teacher_task",
+    "bot_sha256": "fdd20a8dda328836927d1902989b993c2b899ca8447e07daa06a1bd10bdf7a73",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459"
+  },
+  {
+    "game": "holdout-1616203861-market-0-trained",
+    "seed": 1616203861,
+    "opponent": "market",
+    "side": 0,
+    "policy": "trained",
+    "bot_sha256": "99e098d5bf9e8ec69809724ae3e8d9b14b13cce2ca0da4db8437470b7e1d1636",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b"
+  },
+  {
+    "game": "holdout-1616203861-market-1-trained",
+    "seed": 1616203861,
+    "opponent": "market",
+    "side": 1,
+    "policy": "trained",
+    "bot_sha256": "bd6f754c88d9df4cab410298055a32dfbea22ee8bda1bf3f824562502d96c754",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b"
+  },
+  {
+    "game": "holdout-1616203861-market-0-teacher_task",
+    "seed": 1616203861,
+    "opponent": "market",
+    "side": 0,
+    "policy": "teacher_task",
+    "bot_sha256": "ae09048710eb0a1b54de12e6fa58db07754aa2a986322592173f17f9eded6b09",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b"
+  },
+  {
+    "game": "holdout-1616203861-market-1-teacher_task",
+    "seed": 1616203861,
+    "opponent": "market",
+    "side": 1,
+    "policy": "teacher_task",
+    "bot_sha256": "44ac605127d6f0ba62c9af0a3a7104effe205fb83a32041cecb758869078ff90",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b"
+  },
+  {
+    "game": "holdout-1616203861-round2-0-trained",
+    "seed": 1616203861,
+    "opponent": "round2",
+    "side": 0,
+    "policy": "trained",
+    "bot_sha256": "c9fa7cad8d046d90ac33fd29afc1bc7bc883dae2feaec0abedff3086cea399e0",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848"
+  },
+  {
+    "game": "holdout-1616203861-round2-1-trained",
+    "seed": 1616203861,
+    "opponent": "round2",
+    "side": 1,
+    "policy": "trained",
+    "bot_sha256": "42922eb657738b72e63cfd60ce4c644ad583e6309e5498bc62e90ed32748d7ac",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848"
+  },
+  {
+    "game": "holdout-1616203861-round2-0-teacher_task",
+    "seed": 1616203861,
+    "opponent": "round2",
+    "side": 0,
+    "policy": "teacher_task",
+    "bot_sha256": "982f0fce26193da404a4b53cf05c9c4de5e3bc1669a3712e04fe6672e64e5be0",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848"
+  },
+  {
+    "game": "holdout-1616203861-round2-1-teacher_task",
+    "seed": 1616203861,
+    "opponent": "round2",
+    "side": 1,
+    "policy": "teacher_task",
+    "bot_sha256": "e81ab22a0e03cb439a4f9b74280958be1795ce2f623a9fc85e09f9aefff7810c",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848"
+  },
+  {
+    "game": "holdout-870190021-v1-0-trained",
+    "seed": 870190021,
+    "opponent": "v1",
+    "side": 0,
+    "policy": "trained",
+    "bot_sha256": "4c9c6c50cee3556ab1092d86eb832d1835385e2f906df1cbb0179317e5d1b756",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459"
+  },
+  {
+    "game": "holdout-870190021-v1-1-trained",
+    "seed": 870190021,
+    "opponent": "v1",
+    "side": 1,
+    "policy": "trained",
+    "bot_sha256": "f9990018aff97f5f69e7e380d3880481b68f52cf099d731021c794bdcf57c36f",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459"
+  },
+  {
+    "game": "holdout-870190021-v1-0-teacher_task",
+    "seed": 870190021,
+    "opponent": "v1",
+    "side": 0,
+    "policy": "teacher_task",
+    "bot_sha256": "0f96519355c14d63eda98c7e07bc4962d8fdef9a06e68b550a0c527e7fbc1361",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459"
+  },
+  {
+    "game": "holdout-870190021-v1-1-teacher_task",
+    "seed": 870190021,
+    "opponent": "v1",
+    "side": 1,
+    "policy": "teacher_task",
+    "bot_sha256": "2aa3b3abfbd990f492fee851f1040de7e0299b9cbaa7e0f99deea9c547d4a3d3",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459"
+  },
+  {
+    "game": "holdout-870190021-market-0-trained",
+    "seed": 870190021,
+    "opponent": "market",
+    "side": 0,
+    "policy": "trained",
+    "bot_sha256": "b44ac8f9895cde78cf1cbab865ac71d1b5b0a31d2c49f77cae8f9704ac56feae",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b"
+  },
+  {
+    "game": "holdout-870190021-market-1-trained",
+    "seed": 870190021,
+    "opponent": "market",
+    "side": 1,
+    "policy": "trained",
+    "bot_sha256": "865c4009ef993c8156cbd4eefa457118d2351e92f5ccce87611c9bb7945b8ec9",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b"
+  },
+  {
+    "game": "holdout-870190021-market-0-teacher_task",
+    "seed": 870190021,
+    "opponent": "market",
+    "side": 0,
+    "policy": "teacher_task",
+    "bot_sha256": "556512f6235a46fbeec78eb84cb3867e5ec8656b1ef6cff79d62e1b15a4e40e5",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b"
+  },
+  {
+    "game": "holdout-870190021-market-1-teacher_task",
+    "seed": 870190021,
+    "opponent": "market",
+    "side": 1,
+    "policy": "teacher_task",
+    "bot_sha256": "8c8d8f6ecc82b2b7aa68057368c7d007df4c53f29532ecebda3a86c9aa6b1368",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b"
+  },
+  {
+    "game": "holdout-870190021-round2-0-trained",
+    "seed": 870190021,
+    "opponent": "round2",
+    "side": 0,
+    "policy": "trained",
+    "bot_sha256": "29a168c2193583bd6e27bcf30a4ade47d11f6807292c45c40033f36abe5ae4b9",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848"
+  },
+  {
+    "game": "holdout-870190021-round2-1-trained",
+    "seed": 870190021,
+    "opponent": "round2",
+    "side": 1,
+    "policy": "trained",
+    "bot_sha256": "157a2e88f0f16f2afc3f7e58324f0ed275a685a1a05b94fc6b30da698f4c3a78",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848"
+  },
+  {
+    "game": "holdout-870190021-round2-0-teacher_task",
+    "seed": 870190021,
+    "opponent": "round2",
+    "side": 0,
+    "policy": "teacher_task",
+    "bot_sha256": "523289901677478fc6727699763e4654dd427d14be85a5e91de992f1f1e841ab",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848"
+  },
+  {
+    "game": "holdout-870190021-round2-1-teacher_task",
+    "seed": 870190021,
+    "opponent": "round2",
+    "side": 1,
+    "policy": "teacher_task",
+    "bot_sha256": "8cc54419e0719af87f4c54fcb41befda475dffc87799c77f682e44be12f5195a",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848"
+  }
+]

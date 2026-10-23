@@ -1,0 +1,995 @@
+{
+  "passed": true,
+  "script_sha256": "ad09357ebcdf4cfa84016b04b0de735d03150ef0cd7d18bdcff23245b7e61ed5",
+  "freeze_sha256": "3345932b4e85f48f6740664f3361ec69af7e964d13211cfcd3bad7372382ea6d",
+  "ledger_sha256": "87a37d211265abf528b31f3472fc26c0127b8b122bf3443618b2639c2d3b5009",
+  "audit_sha256": "65cf7f99609a9be448f1f98d3234580d4db4321ab48778066b9b1dd4244bf5e0",
+  "statistics_sha256": "560fefa55f488355fd8c4be84c825512269ab4e2dc705b5ecd9641fbe060f639",
+  "run_summary_sha256": "9f48789461234d41b6a94b9b6b972651f188b066a669d6a430b061c31190d9bf",
+  "independent_sample_plan_sha256": "656d02ba441e12ca42089175ac3cf94c9fb04810d9acd18ebb61e6a4410940c5",
+  "games_checked": 96,
+  "raw_final_player_cash_checks": 192,
+  "paired_results": 48,
+  "seed_clusters": 8,
+  "bootstrap_draws": 20000,
+  "bootstrap_method": "PCG64 fixed draws converted to integer counts; weighted seed sums and explicit sorted linear interpolation, independent of production analyze.",
+  "statistics_gate_passed": false,
+  "primary_gate_passed": true,
+  "opponent_guards": {
+    "v1": true,
+    "market": true,
+    "round2": false
+  },
+  "overall": {
+    "pairs": 48,
+    "arms": {
+      "trained": {
+        "games": 48,
+        "wins": 28,
+        "draws": 0,
+        "losses": 20,
+        "means": {
+          "net_profit": 39334.958333333336,
+          "opponent_net_profit": 38595.020833333336,
+          "margin": 739.9375,
+          "score": 0.5833333333333334
+        },
+        "opponent_wins": 20,
+        "opponent_draws": 0,
+        "opponent_losses": 28,
+        "opponent_score": 0.4166666666666667
+      },
+      "teacher_task": {
+        "games": 48,
+        "wins": 32,
+        "draws": 0,
+        "losses": 16,
+        "means": {
+          "net_profit": 39755.145833333336,
+          "opponent_net_profit": 38270.541666666664,
+          "margin": 1484.6041666666667,
+          "score": 0.6666666666666666
+        },
+        "opponent_wins": 16,
+        "opponent_draws": 0,
+        "opponent_losses": 32,
+        "opponent_score": 0.3333333333333333
+      }
+    },
+    "delta_means": {
+      "net_profit": -420.1875,
+      "opponent_net_profit": 324.4791666666667,
+      "margin": -744.6666666666666,
+      "score": -0.08333333333333333
+    },
+    "relative_net_profit_mean": -0.010569386457832765,
+    "reference_net_profit_mean": 39755.145833333336,
+    "delta_ci95": {
+      "net_profit": [
+        -613.9583333333334,
+        -188.10885416666807
+      ],
+      "opponent_net_profit": [
+        -132.02291666666665,
+        722.8125
+      ],
+      "margin": [
+        -1150.7927083333332,
+        -279.2697916666686
+      ],
+      "score": [
+        -0.20833333333333331,
+        0.0
+      ]
+    },
+    "relative_net_profit_defined": true,
+    "nonpositive_bootstrap_reference_count": 0,
+    "bootstrap_reference_min": 29689.020833333332,
+    "relative_net_profit_ci95": [
+      -0.01576679052443646,
+      -0.004813206761653003
+    ]
+  },
+  "by_opponent": {
+    "v1": {
+      "pairs": 16,
+      "arms": {
+        "trained": {
+          "games": 16,
+          "wins": 12,
+          "draws": 0,
+          "losses": 4,
+          "means": {
+            "net_profit": 39197.4375,
+            "opponent_net_profit": 37088.875,
+            "margin": 2108.5625,
+            "score": 0.75
+          },
+          "opponent_wins": 4,
+          "opponent_draws": 0,
+          "opponent_losses": 12,
+          "opponent_score": 0.25
+        },
+        "teacher_task": {
+          "games": 16,
+          "wins": 12,
+          "draws": 0,
+          "losses": 4,
+          "means": {
+            "net_profit": 39187.0,
+            "opponent_net_profit": 37155.9375,
+            "margin": 2031.0625,
+            "score": 0.75
+          },
+          "opponent_wins": 4,
+          "opponent_draws": 0,
+          "opponent_losses": 12,
+          "opponent_score": 0.25
+        }
+      },
+      "delta_means": {
+        "net_profit": 10.4375,
+        "opponent_net_profit": -67.0625,
+        "margin": 77.5,
+        "score": 0.0
+      },
+      "relative_net_profit_mean": 0.0002663510858192768,
+      "reference_net_profit_mean": 39187.0,
+      "delta_ci95": {
+        "net_profit": [
+          -84.8125,
+          102.5625
+        ],
+        "opponent_net_profit": [
+          -155.9375,
+          -10.125
+        ],
+        "margin": [
+          14.25,
+          156.75
+        ],
+        "score": [
+          0.0,
+          0.0
+        ]
+      },
+      "relative_net_profit_defined": true,
+      "nonpositive_bootstrap_reference_count": 0,
+      "bootstrap_reference_min": 30594.875,
+      "relative_net_profit_ci95": [
+        -0.0022814544818727765,
+        0.002574313516395628
+      ]
+    },
+    "market": {
+      "pairs": 16,
+      "arms": {
+        "trained": {
+          "games": 16,
+          "wins": 10,
+          "draws": 0,
+          "losses": 6,
+          "means": {
+            "net_profit": 40822.625,
+            "opponent_net_profit": 39687.875,
+            "margin": 1134.75,
+            "score": 0.625
+          },
+          "opponent_wins": 6,
+          "opponent_draws": 0,
+          "opponent_losses": 10,
+          "opponent_score": 0.375
+        },
+        "teacher_task": {
+          "games": 16,
+          "wins": 10,
+          "draws": 0,
+          "losses": 6,
+          "means": {
+            "net_profit": 41150.75,
+            "opponent_net_profit": 39636.625,
+            "margin": 1514.125,
+            "score": 0.625
+          },
+          "opponent_wins": 6,
+          "opponent_draws": 0,
+          "opponent_losses": 10,
+          "opponent_score": 0.375
+        }
+      },
+      "delta_means": {
+        "net_profit": -328.125,
+        "opponent_net_profit": 51.25,
+        "margin": -379.375,
+        "score": 0.0
+      },
+      "relative_net_profit_mean": -0.007973730733947741,
+      "reference_net_profit_mean": 41150.75,
+      "delta_ci95": {
+        "net_profit": [
+          -919.875,
+          16.0
+        ],
+        "opponent_net_profit": [
+          1.0,
+          141.375
+        ],
+        "margin": [
+          -1062.875,
+          14.0
+        ],
+        "score": [
+          0.0,
+          0.0
+        ]
+      },
+      "relative_net_profit_defined": true,
+      "nonpositive_bootstrap_reference_count": 0,
+      "bootstrap_reference_min": 29960.75,
+      "relative_net_profit_ci95": [
+        -0.024454377239496405,
+        0.0003730073723680486
+      ]
+    },
+    "round2": {
+      "pairs": 16,
+      "arms": {
+        "trained": {
+          "games": 16,
+          "wins": 6,
+          "draws": 0,
+          "losses": 10,
+          "means": {
+            "net_profit": 37984.8125,
+            "opponent_net_profit": 39008.3125,
+            "margin": -1023.5,
+            "score": 0.375
+          },
+          "opponent_wins": 10,
+          "opponent_draws": 0,
+          "opponent_losses": 6,
+          "opponent_score": 0.625
+        },
+        "teacher_task": {
+          "games": 16,
+          "wins": 10,
+          "draws": 0,
+          "losses": 6,
+          "means": {
+            "net_profit": 38927.6875,
+            "opponent_net_profit": 38019.0625,
+            "margin": 908.625,
+            "score": 0.625
+          },
+          "opponent_wins": 6,
+          "opponent_draws": 0,
+          "opponent_losses": 10,
+          "opponent_score": 0.375
+        }
+      },
+      "delta_means": {
+        "net_profit": -942.875,
+        "opponent_net_profit": 989.25,
+        "margin": -1932.125,
+        "score": -0.25
+      },
+      "relative_net_profit_mean": -0.024221192178446253,
+      "reference_net_profit_mean": 38927.6875,
+      "delta_ci95": {
+        "net_profit": [
+          -1669.753125,
+          -195.0
+        ],
+        "opponent_net_profit": [
+          -383.75,
+          2174.875
+        ],
+        "margin": [
+          -3328.875,
+          -481.465625000003
+        ],
+        "score": [
+          -0.625,
+          0.0
+        ]
+      },
+      "relative_net_profit_defined": true,
+      "nonpositive_bootstrap_reference_count": 0,
+      "bootstrap_reference_min": 28511.4375,
+      "relative_net_profit_ci95": [
+        -0.04112611835709825,
+        -0.005413068864867618
+      ]
+    }
+  },
+  "by_seed": [
+    {
+      "seed": 1714414373,
+      "pairs": 6,
+      "arms": {
+        "trained": {
+          "games": 6,
+          "wins": 2,
+          "draws": 0,
+          "losses": 4,
+          "means": {
+            "net_profit": 28663.0,
+            "opponent_net_profit": 28800.333333333332,
+            "margin": -137.33333333333334,
+            "score": 0.3333333333333333
+          },
+          "opponent_wins": 4,
+          "opponent_draws": 0,
+          "opponent_losses": 2,
+          "opponent_score": 0.6666666666666666
+        },
+        "teacher_task": {
+          "games": 6,
+          "wins": 2,
+          "draws": 0,
+          "losses": 4,
+          "means": {
+            "net_profit": 28546.333333333332,
+            "opponent_net_profit": 28882.333333333332,
+            "margin": -336.0,
+            "score": 0.3333333333333333
+          },
+          "opponent_wins": 4,
+          "opponent_draws": 0,
+          "opponent_losses": 2,
+          "opponent_score": 0.6666666666666666
+        }
+      },
+      "delta_means": {
+        "net_profit": 116.66666666666667,
+        "opponent_net_profit": -82.0,
+        "margin": 198.66666666666666,
+        "score": 0.0
+      },
+      "relative_net_profit_mean": 0.004086923014047339,
+      "reference_net_profit_mean": 28546.333333333332
+    },
+    {
+      "seed": 2117918555,
+      "pairs": 6,
+      "arms": {
+        "trained": {
+          "games": 6,
+          "wins": 4,
+          "draws": 0,
+          "losses": 2,
+          "means": {
+            "net_profit": 30935.0,
+            "opponent_net_profit": 31365.166666666668,
+            "margin": -430.1666666666667,
+            "score": 0.6666666666666666
+          },
+          "opponent_wins": 2,
+          "opponent_draws": 0,
+          "opponent_losses": 4,
+          "opponent_score": 0.3333333333333333
+        },
+        "teacher_task": {
+          "games": 6,
+          "wins": 4,
+          "draws": 0,
+          "losses": 2,
+          "means": {
+            "net_profit": 31593.5,
+            "opponent_net_profit": 31279.666666666668,
+            "margin": 313.8333333333333,
+            "score": 0.6666666666666666
+          },
+          "opponent_wins": 2,
+          "opponent_draws": 0,
+          "opponent_losses": 4,
+          "opponent_score": 0.3333333333333333
+        }
+      },
+      "delta_means": {
+        "net_profit": -658.5,
+        "opponent_net_profit": 85.5,
+        "margin": -744.0,
+        "score": 0.0
+      },
+      "relative_net_profit_mean": -0.020842894899267255,
+      "reference_net_profit_mean": 31593.5
+    },
+    {
+      "seed": 2087726158,
+      "pairs": 6,
+      "arms": {
+        "trained": {
+          "games": 6,
+          "wins": 2,
+          "draws": 0,
+          "losses": 4,
+          "means": {
+            "net_profit": 41400.0,
+            "opponent_net_profit": 41410.666666666664,
+            "margin": -10.666666666666666,
+            "score": 0.3333333333333333
+          },
+          "opponent_wins": 4,
+          "opponent_draws": 0,
+          "opponent_losses": 2,
+          "opponent_score": 0.6666666666666666
+        },
+        "teacher_task": {
+          "games": 6,
+          "wins": 2,
+          "draws": 0,
+          "losses": 4,
+          "means": {
+            "net_profit": 42063.666666666664,
+            "opponent_net_profit": 40778.333333333336,
+            "margin": 1285.3333333333333,
+            "score": 0.3333333333333333
+          },
+          "opponent_wins": 4,
+          "opponent_draws": 0,
+          "opponent_losses": 2,
+          "opponent_score": 0.6666666666666666
+        }
+      },
+      "delta_means": {
+        "net_profit": -663.6666666666666,
+        "opponent_net_profit": 632.3333333333334,
+        "margin": -1296.0,
+        "score": 0.0
+      },
+      "relative_net_profit_mean": -0.015777670356840027,
+      "reference_net_profit_mean": 42063.666666666664
+    },
+    {
+      "seed": 3767282565,
+      "pairs": 6,
+      "arms": {
+        "trained": {
+          "games": 6,
+          "wins": 4,
+          "draws": 0,
+          "losses": 2,
+          "means": {
+            "net_profit": 43491.333333333336,
+            "opponent_net_profit": 43159.0,
+            "margin": 332.3333333333333,
+            "score": 0.6666666666666666
+          },
+          "opponent_wins": 2,
+          "opponent_draws": 0,
+          "opponent_losses": 4,
+          "opponent_score": 0.3333333333333333
+        },
+        "teacher_task": {
+          "games": 6,
+          "wins": 6,
+          "draws": 0,
+          "losses": 0,
+          "means": {
+            "net_profit": 43472.666666666664,
+            "opponent_net_profit": 41866.0,
+            "margin": 1606.6666666666667,
+            "score": 1.0
+          },
+          "opponent_wins": 0,
+          "opponent_draws": 0,
+          "opponent_losses": 6,
+          "opponent_score": 0.0
+        }
+      },
+      "delta_means": {
+        "net_profit": 18.666666666666668,
+        "opponent_net_profit": 1293.0,
+        "margin": -1274.3333333333333,
+        "score": -0.3333333333333333
+      },
+      "relative_net_profit_mean": 0.00042938858133079796,
+      "reference_net_profit_mean": 43472.666666666664
+    },
+    {
+      "seed": 2941093011,
+      "pairs": 6,
+      "arms": {
+        "trained": {
+          "games": 6,
+          "wins": 4,
+          "draws": 0,
+          "losses": 2,
+          "means": {
+            "net_profit": 40077.666666666664,
+            "opponent_net_profit": 38407.333333333336,
+            "margin": 1670.3333333333333,
+            "score": 0.6666666666666666
+          },
+          "opponent_wins": 2,
+          "opponent_draws": 0,
+          "opponent_losses": 4,
+          "opponent_score": 0.3333333333333333
+        },
+        "teacher_task": {
+          "games": 6,
+          "wins": 4,
+          "draws": 0,
+          "losses": 2,
+          "means": {
+            "net_profit": 40723.666666666664,
+            "opponent_net_profit": 39369.0,
+            "margin": 1354.6666666666667,
+            "score": 0.6666666666666666
+          },
+          "opponent_wins": 2,
+          "opponent_draws": 0,
+          "opponent_losses": 4,
+          "opponent_score": 0.3333333333333333
+        }
+      },
+      "delta_means": {
+        "net_profit": -646.0,
+        "opponent_net_profit": -961.6666666666666,
+        "margin": 315.6666666666667,
+        "score": 0.0
+      },
+      "relative_net_profit_mean": -0.015863011680349676,
+      "reference_net_profit_mean": 40723.666666666664
+    },
+    {
+      "seed": 78378034,
+      "pairs": 6,
+      "arms": {
+        "trained": {
+          "games": 6,
+          "wins": 6,
+          "draws": 0,
+          "losses": 0,
+          "means": {
+            "net_profit": 44262.333333333336,
+            "opponent_net_profit": 39096.333333333336,
+            "margin": 5166.0,
+            "score": 1.0
+          },
+          "opponent_wins": 0,
+          "opponent_draws": 0,
+          "opponent_losses": 6,
+          "opponent_score": 0.0
+        },
+        "teacher_task": {
+          "games": 6,
+          "wins": 6,
+          "draws": 0,
+          "losses": 0,
+          "means": {
+            "net_profit": 44414.0,
+            "opponent_net_profit": 38691.333333333336,
+            "margin": 5722.666666666667,
+            "score": 1.0
+          },
+          "opponent_wins": 0,
+          "opponent_draws": 0,
+          "opponent_losses": 6,
+          "opponent_score": 0.0
+        }
+      },
+      "delta_means": {
+        "net_profit": -151.66666666666666,
+        "opponent_net_profit": 405.0,
+        "margin": -556.6666666666666,
+        "score": 0.0
+      },
+      "relative_net_profit_mean": -0.0034148391648279068,
+      "reference_net_profit_mean": 44414.0
+    },
+    {
+      "seed": 1616203861,
+      "pairs": 6,
+      "arms": {
+        "trained": {
+          "games": 6,
+          "wins": 2,
+          "draws": 0,
+          "losses": 4,
+          "means": {
+            "net_profit": 42716.666666666664,
+            "opponent_net_profit": 43739.666666666664,
+            "margin": -1023.0,
+            "score": 0.3333333333333333
+          },
+          "opponent_wins": 4,
+          "opponent_draws": 0,
+          "opponent_losses": 2,
+          "opponent_score": 0.6666666666666666
+        },
+        "teacher_task": {
+          "games": 6,
+          "wins": 2,
+          "draws": 0,
+          "losses": 4,
+          "means": {
+            "net_profit": 43413.0,
+            "opponent_net_profit": 43117.0,
+            "margin": 296.0,
+            "score": 0.3333333333333333
+          },
+          "opponent_wins": 4,
+          "opponent_draws": 0,
+          "opponent_losses": 2,
+          "opponent_score": 0.6666666666666666
+        }
+      },
+      "delta_means": {
+        "net_profit": -696.3333333333334,
+        "opponent_net_profit": 622.6666666666666,
+        "margin": -1319.0,
+        "score": 0.0
+      },
+      "relative_net_profit_mean": -0.01603974231988882,
+      "reference_net_profit_mean": 43413.0
+    },
+    {
+      "seed": 870190021,
+      "pairs": 6,
+      "arms": {
+        "trained": {
+          "games": 6,
+          "wins": 4,
+          "draws": 0,
+          "losses": 2,
+          "means": {
+            "net_profit": 43133.666666666664,
+            "opponent_net_profit": 42781.666666666664,
+            "margin": 352.0,
+            "score": 0.6666666666666666
+          },
+          "opponent_wins": 2,
+          "opponent_draws": 0,
+          "opponent_losses": 4,
+          "opponent_score": 0.3333333333333333
+        },
+        "teacher_task": {
+          "games": 6,
+          "wins": 6,
+          "draws": 0,
+          "losses": 0,
+          "means": {
+            "net_profit": 43814.333333333336,
+            "opponent_net_profit": 42180.666666666664,
+            "margin": 1633.6666666666667,
+            "score": 1.0
+          },
+          "opponent_wins": 0,
+          "opponent_draws": 0,
+          "opponent_losses": 6,
+          "opponent_score": 0.0
+        }
+      },
+      "delta_means": {
+        "net_profit": -680.6666666666666,
+        "opponent_net_profit": 601.0,
+        "margin": -1281.6666666666667,
+        "score": -0.3333333333333333
+      },
+      "relative_net_profit_mean": -0.015535251021355263,
+      "reference_net_profit_mean": 43814.333333333336
+    }
+  ],
+  "safety_seed_cash": [
+    {
+      "seed": 1714414373,
+      "means": {
+        "trained": 31663.0,
+        "teacher_task": 31546.333333333332
+      }
+    },
+    {
+      "seed": 2117918555,
+      "means": {
+        "trained": 33935.0,
+        "teacher_task": 34593.5
+      }
+    },
+    {
+      "seed": 2087726158,
+      "means": {
+        "trained": 44400.0,
+        "teacher_task": 45063.666666666664
+      }
+    },
+    {
+      "seed": 3767282565,
+      "means": {
+        "trained": 46491.333333333336,
+        "teacher_task": 46472.666666666664
+      }
+    },
+    {
+      "seed": 2941093011,
+      "means": {
+        "trained": 43077.666666666664,
+        "teacher_task": 43723.666666666664
+      }
+    },
+    {
+      "seed": 78378034,
+      "means": {
+        "trained": 47262.333333333336,
+        "teacher_task": 47414.0
+      }
+    },
+    {
+      "seed": 1616203861,
+      "means": {
+        "trained": 45716.666666666664,
+        "teacher_task": 46413.0
+      }
+    },
+    {
+      "seed": 870190021,
+      "means": {
+        "trained": 46133.666666666664,
+        "teacher_task": 46814.333333333336
+      }
+    }
+  ],
+  "root_official_transitions": 69024,
+  "independent_sample_official_transitions": 2876,
+  "independent_samples": [
+    {
+      "game": "holdout-1714414373-market-0-trained",
+      "passed": true,
+      "official": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "6a82a9a8eb2c041c4c25a0afb728face131181c83f3cb264ee7a3ad2c48605b5",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "491bb024ddd264aa080c96203eecb9f9403d5f25d9624e2a645fb66076796aec",
+        "final_rewards": [
+          32807.0,
+          34942.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 415,
+            "unit:executed": 4388,
+            "unit:pass": 2918
+          },
+          "ordered_effect_sha256": "aa87e8abbd89589402caf63ae406762f67b748888b8f1b24e874d29023105c51",
+          "successful_plants": [
+            52,
+            103
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "counts": {
+        "task_calls": 2013,
+        "crop_calls": 152,
+        "selected_PLANT": 152,
+        "different_from_conditional_teacher": 41,
+        "selected_WATER": 1678,
+        "selected_FERTILIZE": 21,
+        "selected_HARVEST": 158,
+        "selected_DIG": 4,
+        "unit_pass": 1560,
+        "market_executed": 168,
+        "unit_executed": 2042
+      },
+      "actor_actions_reproduced": 719,
+      "rival_actions_reproduced": 719,
+      "decision_traces_reproduced": 719,
+      "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+      "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+      "replay_gzip_sha256": "71a3b2cb2219bc96a05305e2a78fdcfaabbf07433f6332c5892f99a14b62cb4e",
+      "trace_sha256": "9490f1a8ef308d9a820f99f97d50e03f7f420f05b4bb5acdef6568315486cc26",
+      "bot_sha256": "bda462e6941352b07248f3c383a81f64738ea222e184b14093fe79276e9d36b7",
+      "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+      "fallback": 0,
+      "load_errors": 0,
+      "inference_errors": 0
+    },
+    {
+      "game": "holdout-1714414373-market-1-trained",
+      "passed": true,
+      "official": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "eb03625d641100a16089c2041cb8c286470420f026615732dc6a12fa52d7a691",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "c42dc191204eb84284cffdb7d3d7b030c92caeffdd98fb23e1cf625ac6fb2d03",
+        "final_rewards": [
+          34942.0,
+          32807.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 415,
+            "unit:executed": 4388,
+            "unit:pass": 2918
+          },
+          "ordered_effect_sha256": "0e1a8ca6aac3dc224c6c102c43e2abf865fd2e8969b139750a0cf7921730cb27",
+          "successful_plants": [
+            103,
+            52
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "counts": {
+        "task_calls": 2013,
+        "crop_calls": 152,
+        "selected_PLANT": 152,
+        "different_from_conditional_teacher": 41,
+        "selected_WATER": 1678,
+        "selected_FERTILIZE": 21,
+        "selected_HARVEST": 158,
+        "selected_DIG": 4,
+        "unit_pass": 1560,
+        "market_executed": 168,
+        "unit_executed": 2042
+      },
+      "actor_actions_reproduced": 719,
+      "rival_actions_reproduced": 719,
+      "decision_traces_reproduced": 719,
+      "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+      "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+      "replay_gzip_sha256": "8479b4dd3fd1156794c0171613c45798d5c47656d6696628c82cb73116b7ff5e",
+      "trace_sha256": "82fcc219f4c2804516395804601979382d8f9beba150bc7e9f0a34d2dccbb8cb",
+      "bot_sha256": "e3dc95e8a328ed97e0abcb59de2b7b224cdae736d6824857311bcbbff9c61330",
+      "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+      "fallback": 0,
+      "load_errors": 0,
+      "inference_errors": 0
+    },
+    {
+      "game": "holdout-870190021-market-0-trained",
+      "passed": true,
+      "official": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "18a19f8cba81d19c8a811f7f9d3eca751ecbf34c9a327203f2b3f03328d04e71",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "602dbc6f68bfbc25ac6c75498ad86f56d98f9a6868ea47e0e2d36b542c1f2932",
+        "final_rewards": [
+          49523.0,
+          45005.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 414,
+            "unit:executed": 4508,
+            "unit:pass": 3343
+          },
+          "ordered_effect_sha256": "e41832154987f80d62da0edf11c971eca2b3536ac2e4677cf2bb3b81c8aa049f",
+          "successful_plants": [
+            55,
+            77
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "counts": {
+        "task_calls": 2257,
+        "crop_calls": 157,
+        "selected_PLANT": 157,
+        "different_from_conditional_teacher": 84,
+        "selected_WATER": 1805,
+        "selected_FERTILIZE": 97,
+        "selected_HARVEST": 191,
+        "selected_DIG": 7,
+        "unit_pass": 1901,
+        "market_executed": 214,
+        "unit_executed": 2303
+      },
+      "actor_actions_reproduced": 719,
+      "rival_actions_reproduced": 719,
+      "decision_traces_reproduced": 719,
+      "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+      "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+      "replay_gzip_sha256": "1e947395e7f9ee1c78d5461b695be6f8f2a1b6fe214f105963cedd6b2e87db58",
+      "trace_sha256": "e0dff815603bda7847ec45df9df424571462101aef45103c0f0ab7a390d63ab4",
+      "bot_sha256": "b44ac8f9895cde78cf1cbab865ac71d1b5b0a31d2c49f77cae8f9704ac56feae",
+      "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+      "fallback": 0,
+      "load_errors": 0,
+      "inference_errors": 0
+    },
+    {
+      "game": "holdout-870190021-market-1-trained",
+      "passed": true,
+      "official": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "c1e29937fb461c8ea98a8a23fc15800eca094fecaaf4e32c8a0e62e99820a43c",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "769a5bfd34137a1a4e2cde7b00e63f52b804914e445ad94e27ffc411a3f13ef1",
+        "final_rewards": [
+          45005.0,
+          49523.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 414,
+            "unit:executed": 4508,
+            "unit:pass": 3343
+          },
+          "ordered_effect_sha256": "f9ffd12f4da685345daf8d82165245769211197c0733d47c40b24c98331fec3f",
+          "successful_plants": [
+            77,
+            55
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "counts": {
+        "task_calls": 2257,
+        "crop_calls": 157,
+        "selected_PLANT": 157,
+        "different_from_conditional_teacher": 84,
+        "selected_WATER": 1805,
+        "selected_FERTILIZE": 97,
+        "selected_HARVEST": 191,
+        "selected_DIG": 7,
+        "unit_pass": 1901,
+        "market_executed": 214,
+        "unit_executed": 2303
+      },
+      "actor_actions_reproduced": 719,
+      "rival_actions_reproduced": 719,
+      "decision_traces_reproduced": 719,
+      "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+      "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+      "replay_gzip_sha256": "844fcf47a4a770a5651a82fe544f8e7e50ab88da9f2481bcf2da000b6df55214",
+      "trace_sha256": "b2ac752c8268b4c80e4329519ab58cd687dafd29a2b743ab9618853f0473ce8e",
+      "bot_sha256": "865c4009ef993c8156cbd4eefa457118d2351e92f5ccce87611c9bb7945b8ec9",
+      "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+      "fallback": 0,
+      "load_errors": 0,
+      "inference_errors": 0
+    }
+  ],
+  "protected_runtime_files": 3335,
+  "protected_public_files": 703,
+  "reviewer_new_games": 0,
+  "reviewer_training_runs": 0,
+  "limitations": [
+    "All96raw final cash and ledger/certificate/hash identities checked; independent full official/action/trace reexecution only four prespecified games.",
+    "Only eight sampled seed clusters and three known opponents;20kbootstrap draws do not add independent information.",
+    "Reference is rule tasks plus fixed crop model; point guards are not subgroup statistical noninferiority.",
+    "Original task training-stage failed entry outcome and default remain unchanged."
+  ]
+}

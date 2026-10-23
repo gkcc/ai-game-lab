@@ -1,0 +1,4802 @@
+[
+  {
+    "game": "holdout-1714414373-v1-0-trained",
+    "seed": 1714414373,
+    "opponent": "v1",
+    "side": 0,
+    "policy": "trained",
+    "banks": [
+      32117.0,
+      29502.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 32117.0,
+    "opponent_bank": 29502.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 29117.0,
+    "opponent_net_profit": 26502.0,
+    "margin": 2615.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "1241dd9c61ea5307c5ab2ba06981956adac261ff4f4494c3109d287850a06260",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "6c62c5ec98b6792d1d69b90e813217f1876def5103ef5f27a952536a8b9214e2",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "c6a8759ae330fe2eb936af880de9dbd85e1d967869ab5c01c2d2e4177d737a70",
+    "audit_version": 2,
+    "rewards": [
+      32117.0,
+      29502.0
+    ],
+    "replay_gzip_sha256": "ee441df8f7f4aeda12b231b0ff962b9d72d2904765406ad00477e893adc74df9",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-1714414373-v1-0-trained.py",
+    "trace_sha256": "a07ac7ccecd84d492bc1b25adfde238bc423692e4c574ff31782e2be174269a5",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-1714414373-v1-1-trained",
+    "seed": 1714414373,
+    "opponent": "v1",
+    "side": 1,
+    "policy": "trained",
+    "banks": [
+      29502.0,
+      32117.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 32117.0,
+    "opponent_bank": 29502.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 29117.0,
+    "opponent_net_profit": 26502.0,
+    "margin": 2615.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "a33e7743eb8db74f00bf5ab0597a67665e1a4831fd11ee6416ec787d6a85f3cf",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "137153214a0d7ca425f70fd29f22372eef743a34d38d158f4f7194c46949d4ba",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "c853343292bf1eef76ace1f5a315997c649634fb58505d2760df3297030d33ea",
+    "audit_version": 2,
+    "rewards": [
+      29502.0,
+      32117.0
+    ],
+    "replay_gzip_sha256": "92652a3164816e672205d77f767cfc640cc1fc2eb5a384b12e0355df4c015c02",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-1714414373-v1-1-trained.py",
+    "trace_sha256": "02785d557095caecfe7647c93239e7419c744837e95a7520c1bc48f808e126cc",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-1714414373-v1-0-teacher_task",
+    "seed": 1714414373,
+    "opponent": "v1",
+    "side": 0,
+    "policy": "teacher_task",
+    "banks": [
+      32141.0,
+      29583.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 32141.0,
+    "opponent_bank": 29583.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 29141.0,
+    "opponent_net_profit": 26583.0,
+    "margin": 2558.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "8c7d2dc5ce9831e22adb1934a25703447bc2304b9e9d84b2eba03d938942bda9",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "0f3391ffc127ad739717511e9d3da94d208d2d9aebe38d920a578254aea1508a",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "456182b5ae8fa40887686fcc58be5eb46f7bb0627f578966fd35d566630ad7f0",
+    "audit_version": 2,
+    "rewards": [
+      32141.0,
+      29583.0
+    ],
+    "replay_gzip_sha256": "dc07f2de33f8f4c9f3b62f62c7b40b86f459aa77d332b0956da23b1259d4af35",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-1714414373-v1-0-teacher_task.py",
+    "trace_sha256": "93758ed4b98f3bf1555b964fcc6689a698875fbfebae0f76e2fb030a8f02996a",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-1714414373-v1-1-teacher_task",
+    "seed": 1714414373,
+    "opponent": "v1",
+    "side": 1,
+    "policy": "teacher_task",
+    "banks": [
+      29583.0,
+      32141.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 32141.0,
+    "opponent_bank": 29583.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 29141.0,
+    "opponent_net_profit": 26583.0,
+    "margin": 2558.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "1ee5138bf27456e5d3be5676e2ba8035359d3f0d576a8dc144dafeec403162fd",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "4ebcfa6628d8884cc609324032f901a5ea9f17027b9c4ca1f25e4614cff2e729",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "2bb7ab16309faab454090066ccb16591a1625d33e708978b0b6607e288edee26",
+    "audit_version": 2,
+    "rewards": [
+      29583.0,
+      32141.0
+    ],
+    "replay_gzip_sha256": "38afd020d485077c886f80f188289ad9580d3c30ea5bc6551138d7f31785ee89",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-1714414373-v1-1-teacher_task.py",
+    "trace_sha256": "3a832765ca81c19a7f1050aa03113c8b6419185560070f25e5ce2e68a75ae7e6",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-1714414373-market-0-trained",
+    "seed": 1714414373,
+    "opponent": "market",
+    "side": 0,
+    "policy": "trained",
+    "banks": [
+      32807.0,
+      34942.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 32807.0,
+    "opponent_bank": 34942.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 29807.0,
+    "opponent_net_profit": 31942.0,
+    "margin": -2135.0,
+    "score": 0.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "bda462e6941352b07248f3c383a81f64738ea222e184b14093fe79276e9d36b7",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "6a82a9a8eb2c041c4c25a0afb728face131181c83f3cb264ee7a3ad2c48605b5",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "491bb024ddd264aa080c96203eecb9f9403d5f25d9624e2a645fb66076796aec",
+    "audit_version": 2,
+    "rewards": [
+      32807.0,
+      34942.0
+    ],
+    "replay_gzip_sha256": "71a3b2cb2219bc96a05305e2a78fdcfaabbf07433f6332c5892f99a14b62cb4e",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-1714414373-market-0-trained.py",
+    "trace_sha256": "9490f1a8ef308d9a820f99f97d50e03f7f420f05b4bb5acdef6568315486cc26",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-1714414373-market-1-trained",
+    "seed": 1714414373,
+    "opponent": "market",
+    "side": 1,
+    "policy": "trained",
+    "banks": [
+      34942.0,
+      32807.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 32807.0,
+    "opponent_bank": 34942.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 29807.0,
+    "opponent_net_profit": 31942.0,
+    "margin": -2135.0,
+    "score": 0.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "e3dc95e8a328ed97e0abcb59de2b7b224cdae736d6824857311bcbbff9c61330",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "eb03625d641100a16089c2041cb8c286470420f026615732dc6a12fa52d7a691",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "c42dc191204eb84284cffdb7d3d7b030c92caeffdd98fb23e1cf625ac6fb2d03",
+    "audit_version": 2,
+    "rewards": [
+      34942.0,
+      32807.0
+    ],
+    "replay_gzip_sha256": "8479b4dd3fd1156794c0171613c45798d5c47656d6696628c82cb73116b7ff5e",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-1714414373-market-1-trained.py",
+    "trace_sha256": "82fcc219f4c2804516395804601979382d8f9beba150bc7e9f0a34d2dccbb8cb",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-1714414373-market-0-teacher_task",
+    "seed": 1714414373,
+    "opponent": "market",
+    "side": 0,
+    "policy": "teacher_task",
+    "banks": [
+      32807.0,
+      34942.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 32807.0,
+    "opponent_bank": 34942.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 29807.0,
+    "opponent_net_profit": 31942.0,
+    "margin": -2135.0,
+    "score": 0.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "b93ec7fb596219924f6113d3958c5ea38f7b7b412eee62873ff27ecd3c7397ed",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "964e60faa242f8b9374ca1585bae0b78acc0b3756793df5514f1374290ff28da",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "223b3a46d8fe3427bf191f725b244e904f8be66830001c007b360ecacbbb6f34",
+    "audit_version": 2,
+    "rewards": [
+      32807.0,
+      34942.0
+    ],
+    "replay_gzip_sha256": "3ceba86d0075ae2d8dcbcbdd4083dee059771a06075c8190d39cb8af840ba92f",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-1714414373-market-0-teacher_task.py",
+    "trace_sha256": "f3bae82894ae43a066a0fc05823d8c9825ac32e66e7efcc77f6aff94374369c7",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-1714414373-market-1-teacher_task",
+    "seed": 1714414373,
+    "opponent": "market",
+    "side": 1,
+    "policy": "teacher_task",
+    "banks": [
+      34942.0,
+      32807.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 32807.0,
+    "opponent_bank": 34942.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 29807.0,
+    "opponent_net_profit": 31942.0,
+    "margin": -2135.0,
+    "score": 0.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "5ddb600a04650de22286ceb3525439e4df116883016d490998755bf6cf3fc621",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "553b1b899b820c9d354601f2a17a724a661a2ee4ac8a0127d29e3c04636f8d6c",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "fecf4f474f809ef6600c3674508a57b94b7845c8159988cd8fcb3b17be50a9b6",
+    "audit_version": 2,
+    "rewards": [
+      34942.0,
+      32807.0
+    ],
+    "replay_gzip_sha256": "c64858513e6bdd0d966d8f3185a4d5f5a48de84c4cb7a13a4fb0eeecc3f33b54",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-1714414373-market-1-teacher_task.py",
+    "trace_sha256": "3eb058733a5303aee9f563d2cfa03bffc17e6d0ee8a087cdf40502d2eab14037",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-1714414373-round2-0-trained",
+    "seed": 1714414373,
+    "opponent": "round2",
+    "side": 0,
+    "policy": "trained",
+    "banks": [
+      30065.0,
+      30957.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 30065.0,
+    "opponent_bank": 30957.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 27065.0,
+    "opponent_net_profit": 27957.0,
+    "margin": -892.0,
+    "score": 0.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "450b8722a691c2594f525bb520878d3ba66aff535696a03ea760de5e651df0cd",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "b85b234e5b784e4e80a56d00c453bbcf05fcaca2048fdc47fd3b1d2f9aad4fb2",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "54f7754cc813efcaf6dcefe4d2a94df0e970c8deeb33a080e082c079a651a3c1",
+    "audit_version": 2,
+    "rewards": [
+      30065.0,
+      30957.0
+    ],
+    "replay_gzip_sha256": "e30b9dcef9fb25e5e2b1b5bdab33aff32b53d5d6a6ac61622a16b13d056edcc4",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-1714414373-round2-0-trained.py",
+    "trace_sha256": "11e6192e08f4977378bede71232139a1a59635306b923f0934fe9596902e68c1",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-1714414373-round2-1-trained",
+    "seed": 1714414373,
+    "opponent": "round2",
+    "side": 1,
+    "policy": "trained",
+    "banks": [
+      30957.0,
+      30065.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 30065.0,
+    "opponent_bank": 30957.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 27065.0,
+    "opponent_net_profit": 27957.0,
+    "margin": -892.0,
+    "score": 0.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "c366b698535314eda479aab1045a9fec76cc9a07c0e9de58a83eeed13a64e68d",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "b606c531618c9c722bfce79d6f1a279b5f0fe773a0988217249516a28ef5a23f",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "ea814f47e944249a4168a4bd6d38219547c671b8223504e3ba80f6cf4a0b5969",
+    "audit_version": 2,
+    "rewards": [
+      30957.0,
+      30065.0
+    ],
+    "replay_gzip_sha256": "26d187eeaa9a2ed30dd7e668576996e64779e9742a7a9ec698ba334c712ab0f7",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-1714414373-round2-1-trained.py",
+    "trace_sha256": "721d8b85e68e8c60f69a420a6505b4305b63f95988b35fc8bb634860f44f7843",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-1714414373-round2-0-teacher_task",
+    "seed": 1714414373,
+    "opponent": "round2",
+    "side": 0,
+    "policy": "teacher_task",
+    "banks": [
+      29691.0,
+      31122.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 29691.0,
+    "opponent_bank": 31122.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 26691.0,
+    "opponent_net_profit": 28122.0,
+    "margin": -1431.0,
+    "score": 0.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "46f10a10bfc3bf7e7ccca2794f9c29fc0a9f0f6ff579c3a7164a7a886f9a38c8",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "f91eac50938798ee4561641a5a71934057f5f0c8c99511e4154e5fcba00b68bc",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "146b1053576623d06cdb53417cf2525575c97e619f0f48648865bd82336d125f",
+    "audit_version": 2,
+    "rewards": [
+      29691.0,
+      31122.0
+    ],
+    "replay_gzip_sha256": "840a2a752327e963be890a5496a413aaa4ec0315b27b5fe8d32daf11b2182615",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-1714414373-round2-0-teacher_task.py",
+    "trace_sha256": "afb72c57cbac228bf4eb81cbd489bdbe5b52ded50afe05beebebb0d00e090c5e",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-1714414373-round2-1-teacher_task",
+    "seed": 1714414373,
+    "opponent": "round2",
+    "side": 1,
+    "policy": "teacher_task",
+    "banks": [
+      31122.0,
+      29691.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 29691.0,
+    "opponent_bank": 31122.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 26691.0,
+    "opponent_net_profit": 28122.0,
+    "margin": -1431.0,
+    "score": 0.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "a425e722a76d041b906f42391a95c7e07b7279af64004b01f245bfe04fbb29ee",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "6b3cb1f140c7d0db02df0807ef7b5cbaf0ea5c791d1f9dde96f118649a0a0cd0",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "b9eedf70b627bf558a3957c1199b012372b025223e49c5def34896c71013342d",
+    "audit_version": 2,
+    "rewards": [
+      31122.0,
+      29691.0
+    ],
+    "replay_gzip_sha256": "f7f37d7dd5d6f2bbdece850ff323ce39a10c158bf8873c528606d7fdf54e34ec",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-1714414373-round2-1-teacher_task.py",
+    "trace_sha256": "218b7f9edac8b646960249e008c52736501c2299c121afdc734234f8633452f8",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-2117918555-v1-0-trained",
+    "seed": 2117918555,
+    "opponent": "v1",
+    "side": 0,
+    "policy": "trained",
+    "banks": [
+      35844.0,
+      31955.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 35844.0,
+    "opponent_bank": 31955.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 32844.0,
+    "opponent_net_profit": 28955.0,
+    "margin": 3889.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "2e4b59074bbbd05bf4a44812131ba887e9957275ee73a3aef3eea456476242ad",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "96925d0e4dab90dd1322d884d8782257f0b2a575f8fec1cbcbfef517b562e70d",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "4f0f1aa1d3bd4c64178ec44930e70c5f15240bc0e2f7520846a04c5c2a179f90",
+    "audit_version": 2,
+    "rewards": [
+      35844.0,
+      31955.0
+    ],
+    "replay_gzip_sha256": "cd5deefbf045773cab06486938e82583b2dccc86199c6a92ee0b03a42a49fa11",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-2117918555-v1-0-trained.py",
+    "trace_sha256": "8ee4f6262b11db446fd48e9602551e21443fb22a9950a872cf3cde1ad5c8d353",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-2117918555-v1-1-trained",
+    "seed": 2117918555,
+    "opponent": "v1",
+    "side": 1,
+    "policy": "trained",
+    "banks": [
+      32071.0,
+      35697.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 35697.0,
+    "opponent_bank": 32071.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 32697.0,
+    "opponent_net_profit": 29071.0,
+    "margin": 3626.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "c8218e766695ee2fb7c361dd60bea5784c0b29f431bbd8b165920d0fd52da04c",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "59dcb5c3467001d431201021b00fb4aa1419683090cd093c91ab0aa11e5436ef",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "f630a9dc40ea6b0f513dded169b85263fbe5f5f9c092e39698db0ba7b838b8e6",
+    "audit_version": 2,
+    "rewards": [
+      32071.0,
+      35697.0
+    ],
+    "replay_gzip_sha256": "65cdbcb044abd940d3db37d0c9760b6a5613678f6f05a7e077ff8cb20aae59fa",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-2117918555-v1-1-trained.py",
+    "trace_sha256": "e090bb614ddc690fbc29afb850d5802f9384cc0f71bc66a86bebef1b8bbc0195",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-2117918555-v1-0-teacher_task",
+    "seed": 2117918555,
+    "opponent": "v1",
+    "side": 0,
+    "policy": "teacher_task",
+    "banks": [
+      36505.0,
+      32058.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 36505.0,
+    "opponent_bank": 32058.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 33505.0,
+    "opponent_net_profit": 29058.0,
+    "margin": 4447.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "cc8bff3fed499fac6d26d809db085b888893df38ca218229d44da4312b3f284e",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "25d1c57bf2ae9c4c2ac8db4b54670a14a2992cab013cf6e1c5580fbce08555ad",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "2c84bf6133baa86158857a3d6c31dbe2793b43667afed45d9244ae6c7490b9e9",
+    "audit_version": 2,
+    "rewards": [
+      36505.0,
+      32058.0
+    ],
+    "replay_gzip_sha256": "d974c6a87dd8e0d5ba5e775a6193c85bd54a1a29b178c41514ccf40b75476b04",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-2117918555-v1-0-teacher_task.py",
+    "trace_sha256": "dd779bfd2f5f16b4eb6f74dc43e46c1ef26b883e21998cb15a8603a8f47923f9",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-2117918555-v1-1-teacher_task",
+    "seed": 2117918555,
+    "opponent": "v1",
+    "side": 1,
+    "policy": "teacher_task",
+    "banks": [
+      32679.0,
+      35531.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 35531.0,
+    "opponent_bank": 32679.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 32531.0,
+    "opponent_net_profit": 29679.0,
+    "margin": 2852.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "30161132d57d40c494106f1acc0e975f2ac8caaa3944119cda16d13722cacf48",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "61ec00620323a286743c662309f36083302247a30cf8852b8a104125ca868963",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "3552463761e30062101732e74e43380480f4c9f92da1393996a61c49debe50ad",
+    "audit_version": 2,
+    "rewards": [
+      32679.0,
+      35531.0
+    ],
+    "replay_gzip_sha256": "3fce1eb0aa9293d6033c418f9f9d9ed81197359c4df8a2d48d0e38d1b5d8338c",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-2117918555-v1-1-teacher_task.py",
+    "trace_sha256": "2f1e9716d788fe0cfc7d62d1dd9203d60223e9369d7536237035d0216616d816",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-2117918555-market-0-trained",
+    "seed": 2117918555,
+    "opponent": "market",
+    "side": 0,
+    "policy": "trained",
+    "banks": [
+      30880.0,
+      38473.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 30880.0,
+    "opponent_bank": 38473.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 27880.0,
+    "opponent_net_profit": 35473.0,
+    "margin": -7593.0,
+    "score": 0.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "7d022cf915adcc71f15884dfee993407c7d1fbcee296fa720bb3c35f5b7f45d3",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "044104083d79847892224a7e35a504f6c78e5160ff8befdb3834ea4528030f51",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "847ae060296b46105e110be9f49cb59fb71dc7788779eea582dc6c9a5f01887b",
+    "audit_version": 2,
+    "rewards": [
+      30880.0,
+      38473.0
+    ],
+    "replay_gzip_sha256": "b84150056414fcaf95c6310aa100aaa86c2fdad17469d058293e31c67ba37d13",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-2117918555-market-0-trained.py",
+    "trace_sha256": "1d3c51c8f33744d5487b6dbe0e2c7c5e98cf370129f4f700b30d201288a91d5b",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-2117918555-market-1-trained",
+    "seed": 2117918555,
+    "opponent": "market",
+    "side": 1,
+    "policy": "trained",
+    "banks": [
+      38473.0,
+      30880.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 30880.0,
+    "opponent_bank": 38473.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 27880.0,
+    "opponent_net_profit": 35473.0,
+    "margin": -7593.0,
+    "score": 0.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "018a62f837d0de33999cf7648d619c8a932d42b6a4ddb0f995cbb3b52c2b185d",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "9c4766daffc927bb33767f09d4ee760eae9e88be38a3f41194790989918b12d9",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "4eb39755a275dc9e8454a03a6deb802a9c3ec9b21ed4a6519fa00ef2dce721cc",
+    "audit_version": 2,
+    "rewards": [
+      38473.0,
+      30880.0
+    ],
+    "replay_gzip_sha256": "47adf58eb19af378601d773fae6d37a3c217d8d744c2b7121a325a03f856ce14",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-2117918555-market-1-trained.py",
+    "trace_sha256": "22c982fbffb0cbcc5f6dd102bada6fb7b55415e7a09f6e66a162c46e97a6b2fb",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-2117918555-market-0-teacher_task",
+    "seed": 2117918555,
+    "opponent": "market",
+    "side": 0,
+    "policy": "teacher_task",
+    "banks": [
+      33217.0,
+      38114.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 33217.0,
+    "opponent_bank": 38114.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 30217.0,
+    "opponent_net_profit": 35114.0,
+    "margin": -4897.0,
+    "score": 0.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "5ed912f78c0e80f2e26a6f1c3e9795eb99fc857125049a130174c4647342b082",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "c013071f03fbad01b211249c8094891512bca809be49063b81ad74c0e77aee14",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "e9a03c69d95592001e56bd1676f08f48aeb573a9d72957cc300fbfd6b13c1932",
+    "audit_version": 2,
+    "rewards": [
+      33217.0,
+      38114.0
+    ],
+    "replay_gzip_sha256": "8ccc196c848bbde08e76ab12d784880b88713d3ce5b0ddb354c9cedf8dd64032",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-2117918555-market-0-teacher_task.py",
+    "trace_sha256": "7e4ce977183333dc4691e020562b6d383917939094e567b77f153ede29b41846",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-2117918555-market-1-teacher_task",
+    "seed": 2117918555,
+    "opponent": "market",
+    "side": 1,
+    "policy": "teacher_task",
+    "banks": [
+      38114.0,
+      33217.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 33217.0,
+    "opponent_bank": 38114.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 30217.0,
+    "opponent_net_profit": 35114.0,
+    "margin": -4897.0,
+    "score": 0.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "7292018669630022716fc62aad417092724c0fff0863e3e02414ab04c14c786b",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "959026490ac80f88afb23ad15694ae3b6a23d9be19576ce15d797369f0a28294",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "735f9e7875014b70c881961a5175bb4f07a7b5ac393819b085cc026d9fac1dd0",
+    "audit_version": 2,
+    "rewards": [
+      38114.0,
+      33217.0
+    ],
+    "replay_gzip_sha256": "15df948758a0b74ac31b4830d4f12fd1a551954c50cf6e620ba6c13c62b1f23c",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-2117918555-market-1-teacher_task.py",
+    "trace_sha256": "89aa95b64fc40cd57daf1fccf303e31be4ce72c552cb691ab03207b35480d630",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-2117918555-round2-0-trained",
+    "seed": 2117918555,
+    "opponent": "round2",
+    "side": 0,
+    "policy": "trained",
+    "banks": [
+      35106.0,
+      32667.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 35106.0,
+    "opponent_bank": 32667.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 32106.0,
+    "opponent_net_profit": 29667.0,
+    "margin": 2439.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "626e341d69f6ecf175d8a3ccc5834f3e49f2b98596abf53dfc5d10dcb03dba86",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "cc44dde66cad16d0fd8c656f13e3a9a49c2e6f4027ffc2ad13b8f85e21951a79",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "6f5140f1048cccf545267f5402935ecc18ddebda8a9a8600eb2f066606c44bb8",
+    "audit_version": 2,
+    "rewards": [
+      35106.0,
+      32667.0
+    ],
+    "replay_gzip_sha256": "70b75464fda76bb169a40b2fdd1b4c8c1608b0fdb240211fb94e286adef26967",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-2117918555-round2-0-trained.py",
+    "trace_sha256": "361674b59f37d0ec7c7edca99c68ed54ee5011be52beacdec22ac3dd5427b10b",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-2117918555-round2-1-trained",
+    "seed": 2117918555,
+    "opponent": "round2",
+    "side": 1,
+    "policy": "trained",
+    "banks": [
+      32552.0,
+      35203.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 35203.0,
+    "opponent_bank": 32552.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 32203.0,
+    "opponent_net_profit": 29552.0,
+    "margin": 2651.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "c4637b74f068b5eaeeba3b8aff0e0e6ae2024ce3cc1e076892d168cb4344228c",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "18c84bbbaf60a7bded27c8c3f67fcdae9226a0db55b1dca60c408dfb6730372c",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "b1658e63df86b8c747406935e62837192bb5c0c3f87e256c1e8587ed0e36af56",
+    "audit_version": 2,
+    "rewards": [
+      32552.0,
+      35203.0
+    ],
+    "replay_gzip_sha256": "d25f9ab18c026a5f5e902493fac453b1b7482ac35742fa8b508efe29bc5f9ec4",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-2117918555-round2-1-trained.py",
+    "trace_sha256": "59fae82af3c9b6ce64c7de1949ce64bf85dc32c75499de6f996abe686df318f0",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-2117918555-round2-0-teacher_task",
+    "seed": 2117918555,
+    "opponent": "round2",
+    "side": 0,
+    "policy": "teacher_task",
+    "banks": [
+      34858.0,
+      32573.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 34858.0,
+    "opponent_bank": 32573.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 31858.0,
+    "opponent_net_profit": 29573.0,
+    "margin": 2285.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "33adbfa54d4b9aa4fd8c54e22f938f1f849d7abc51aebfae211a908f43036aa6",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "65a6143b436780591038e72fc148bfa52651016ea0c05b22a6f4fed3c9682893",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "9eafcd8ac31316f333c76d324e5c4367d0c3c098eb03f3a6882acc6ecb093dce",
+    "audit_version": 2,
+    "rewards": [
+      34858.0,
+      32573.0
+    ],
+    "replay_gzip_sha256": "9abf3231db381497ad1122bcbecb9b49cff21155e138fc6f8f2092db6a736bea",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-2117918555-round2-0-teacher_task.py",
+    "trace_sha256": "f602cff7d98f6957027c270ef43a29374f04a98a356140f5858829fa627802bc",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-2117918555-round2-1-teacher_task",
+    "seed": 2117918555,
+    "opponent": "round2",
+    "side": 1,
+    "policy": "teacher_task",
+    "banks": [
+      32140.0,
+      34233.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 34233.0,
+    "opponent_bank": 32140.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 31233.0,
+    "opponent_net_profit": 29140.0,
+    "margin": 2093.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "b8d3ac64fff79e1e015571afe794bd7f4907057e33a0d558aa1d4df604a39988",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "c123446620853ab739ef28461084fee4a3ff038aa35efcb3022de1f93ab07809",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "c5af12410fbdc5add37fb2365fc1a9b073b12c6d4aa2e9184971172e91b62829",
+    "audit_version": 2,
+    "rewards": [
+      32140.0,
+      34233.0
+    ],
+    "replay_gzip_sha256": "9aeba60bbae6ed1089d6aac6037fbb248509784d3b59fc7c29b008f169fca2b4",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-2117918555-round2-1-teacher_task.py",
+    "trace_sha256": "a98f3d08179f196953fc9de2fd7381d5e16ff1a2e9f4ec247e2fa70d6190ce4d",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-2087726158-v1-0-trained",
+    "seed": 2087726158,
+    "opponent": "v1",
+    "side": 0,
+    "policy": "trained",
+    "banks": [
+      43740.0,
+      43793.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 43740.0,
+    "opponent_bank": 43793.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 40740.0,
+    "opponent_net_profit": 40793.0,
+    "margin": -53.0,
+    "score": 0.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "29753ff3124266f2652db3d315e35dcac1b244c23d233a6cc2b58f90bfd35eb6",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "d4719aa3a09431bc95e44aecdedd8498fb9286d3cbc4bbfa1848d0e1422ecef4",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "0dd598b1ad16ce4ee7e27fbf2fc7107d5265bad61bc972bb3f91f8d49caf1a34",
+    "audit_version": 2,
+    "rewards": [
+      43740.0,
+      43793.0
+    ],
+    "replay_gzip_sha256": "3b5dae7f7a96b7fb41b9097623facf295e1be8a39b00a836beda2c639e2d9201",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-2087726158-v1-0-trained.py",
+    "trace_sha256": "221137ace64d1bddf1d9e1c5ef3d13d3418e17e9fa69e17ee1abe5893e8575be",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-2087726158-v1-1-trained",
+    "seed": 2087726158,
+    "opponent": "v1",
+    "side": 1,
+    "policy": "trained",
+    "banks": [
+      43793.0,
+      43740.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 43740.0,
+    "opponent_bank": 43793.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 40740.0,
+    "opponent_net_profit": 40793.0,
+    "margin": -53.0,
+    "score": 0.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "89ea367c8028921dfae2183c7146d7f48984726cc9caa769d64542b0853e470c",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "01b820ead998c50de493496e5230a2c46f955ecf496bcb37d316c141e70ca773",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "b13255b5dd2ba58bedd1e32ebc2cc426b1da13977430d8772766d26e7003b2c6",
+    "audit_version": 2,
+    "rewards": [
+      43793.0,
+      43740.0
+    ],
+    "replay_gzip_sha256": "5e4c409f717d195bcad69ed003519290a714de5d0a39e92d03aae5fa14de68de",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-2087726158-v1-1-trained.py",
+    "trace_sha256": "9dc9dfdd5a1ae72d9110c07974679b9336bdca7be9327a035298ad2ec7fc2fa7",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-2087726158-v1-0-teacher_task",
+    "seed": 2087726158,
+    "opponent": "v1",
+    "side": 0,
+    "policy": "teacher_task",
+    "banks": [
+      43740.0,
+      43793.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 43740.0,
+    "opponent_bank": 43793.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 40740.0,
+    "opponent_net_profit": 40793.0,
+    "margin": -53.0,
+    "score": 0.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "6aeaac060001bf1ae565bf40e56696d58ec10c9a240211326a26fcd35b11bf31",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "fc878bc181ee706ddf804f1809b386b6f5edcce033b361f12a7afaacf6fe7301",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "b7c91c11cd5e2b77b09889f27ed248ca501fa4f52ed1484bd8dd211e6c93c207",
+    "audit_version": 2,
+    "rewards": [
+      43740.0,
+      43793.0
+    ],
+    "replay_gzip_sha256": "199bd8cfde7e7018f0e97dda65b03bcdf9687aea711a8c9181caf7aec4dbbf16",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-2087726158-v1-0-teacher_task.py",
+    "trace_sha256": "c9c5c51ed1fc391df445966bfe8ec58f0346bbf5eaa1f4e5f0af1a35d50ca562",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-2087726158-v1-1-teacher_task",
+    "seed": 2087726158,
+    "opponent": "v1",
+    "side": 1,
+    "policy": "teacher_task",
+    "banks": [
+      43793.0,
+      43740.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 43740.0,
+    "opponent_bank": 43793.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 40740.0,
+    "opponent_net_profit": 40793.0,
+    "margin": -53.0,
+    "score": 0.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "455809374ffb745ed764bed666d9e4022e72d90d476e83896194d90ad8da29e7",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "ffef827314efe862bac42a814bf43980f1e375350fc7cd77ad78315b76d1de68",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "0d62d7cd85c9f65f001df2e8ff79a86de6e0d894f9d08ba8e172d5feafd32742",
+    "audit_version": 2,
+    "rewards": [
+      43793.0,
+      43740.0
+    ],
+    "replay_gzip_sha256": "78da20008fbc78535b57c844ba6ebfe2230309b494bc6a44473ed1e79d88731b",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-2087726158-v1-1-teacher_task.py",
+    "trace_sha256": "9e5f6497169b9bcc603f57e1f1b5220381bfe12d2d81f379a87c923825adf764",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-2087726158-market-0-trained",
+    "seed": 2087726158,
+    "opponent": "market",
+    "side": 0,
+    "policy": "trained",
+    "banks": [
+      47685.0,
+      43241.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 47685.0,
+    "opponent_bank": 43241.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 44685.0,
+    "opponent_net_profit": 40241.0,
+    "margin": 4444.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "37a97c293616c2a807fb9b6a9a795a87e52000232109ac39288b45b91b52902b",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "82be9b82a627519b3e178883bb91fb6cae87dd4c84aa7ac023b51f3faf974bc7",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "035cbd01315301b07c38bd09766a04c16e35bcbb62571349884ad2fee1f7d143",
+    "audit_version": 2,
+    "rewards": [
+      47685.0,
+      43241.0
+    ],
+    "replay_gzip_sha256": "66b747290b564dec13c730b788352b9d74627e9eb79367d8b5939955c4ad697d",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-2087726158-market-0-trained.py",
+    "trace_sha256": "a8c4d3bbc6565477b580c91da5aa5948ad3b6168af01642b2dbcb581f719deeb",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-2087726158-market-1-trained",
+    "seed": 2087726158,
+    "opponent": "market",
+    "side": 1,
+    "policy": "trained",
+    "banks": [
+      43241.0,
+      47685.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 47685.0,
+    "opponent_bank": 43241.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 44685.0,
+    "opponent_net_profit": 40241.0,
+    "margin": 4444.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "ff48a5b8f8dcc56c9940b64b0b9f7bfb3cb02521f94af78098a379596e682856",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "d6c850f24ed5742f0b1b41e58115791b519012339a4223f17d3135dc707fc23c",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "7b50029da04b52a7f4d616d25f7bf2932069bea329af0d8f8bb69030aed5a401",
+    "audit_version": 2,
+    "rewards": [
+      43241.0,
+      47685.0
+    ],
+    "replay_gzip_sha256": "23c8ffc3cfa96f349e524bb0412563c3c94377e7c3e05bd32b2bf9564d52d028",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-2087726158-market-1-trained.py",
+    "trace_sha256": "1a841a9b4e684c7be58cc066e46d7e0793aace600242f7493264a303fb5cb34f",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-2087726158-market-0-teacher_task",
+    "seed": 2087726158,
+    "opponent": "market",
+    "side": 0,
+    "policy": "teacher_task",
+    "banks": [
+      47795.0,
+      43214.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 47795.0,
+    "opponent_bank": 43214.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 44795.0,
+    "opponent_net_profit": 40214.0,
+    "margin": 4581.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "e54bb91a51e585b0df4a651276d24d1c47df167aca4a84c6683b559c5a4caf67",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "37ff28171667bb3ecf744fb1380ad2496465a93863bec2d2acb025d2365a5927",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "e5f46412d56bf72eab182fe7695c50c3b232b13d8de26d47f38a14fe199b7978",
+    "audit_version": 2,
+    "rewards": [
+      47795.0,
+      43214.0
+    ],
+    "replay_gzip_sha256": "14c6dca9e1f40947b07a602262414093951ceea66495ddaa02c4cc21027a3416",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-2087726158-market-0-teacher_task.py",
+    "trace_sha256": "81ea48cbf5cb91c5f3489c4044729ea149d928274c4cceba9125361a24421d7e",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-2087726158-market-1-teacher_task",
+    "seed": 2087726158,
+    "opponent": "market",
+    "side": 1,
+    "policy": "teacher_task",
+    "banks": [
+      43214.0,
+      47795.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 47795.0,
+    "opponent_bank": 43214.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 44795.0,
+    "opponent_net_profit": 40214.0,
+    "margin": 4581.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "3e6c11a60b501993c3a2bdf47dd16ea628d412174f4c3e32c37428fd7d16682b",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "09fd4858a9da66035e323f8a8eb9ede5be96d73aff6af5d555b60fe522a689c2",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "bfe193139027d91b3bad1084411d38cfbe107088b8eac598fc8b4d7639c32101",
+    "audit_version": 2,
+    "rewards": [
+      43214.0,
+      47795.0
+    ],
+    "replay_gzip_sha256": "8a1e5320da6155a4aa7beec1d98ff0f2d339b005a70c25c4bd8073cdb398d022",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-2087726158-market-1-teacher_task.py",
+    "trace_sha256": "2189b74c08493ba623ba1f0b15f2a4f00cd383ca9a788b23ad1875b7aa263e5d",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-2087726158-round2-0-trained",
+    "seed": 2087726158,
+    "opponent": "round2",
+    "side": 0,
+    "policy": "trained",
+    "banks": [
+      41775.0,
+      46198.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 41775.0,
+    "opponent_bank": 46198.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 38775.0,
+    "opponent_net_profit": 43198.0,
+    "margin": -4423.0,
+    "score": 0.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "d4436f8a8720c6b4425c837f1bad53878a2c66a26cf21f5c227f09e06b4effd7",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "2296bf20558eac074afc15a14884d7a5449d33fce6e058ee6571d82c6c65f2e9",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "5e135d93eda72101d1c5260b3d93f7ee2ae804445657011c0a7a40edfb0157d6",
+    "audit_version": 2,
+    "rewards": [
+      41775.0,
+      46198.0
+    ],
+    "replay_gzip_sha256": "43fb4304736130029d9a613d0543ece745731ccf45fceef7aa0f1fcbf4770976",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-2087726158-round2-0-trained.py",
+    "trace_sha256": "3b2af36a6ba5d4f99386dc9997ff1dab008d659b01382cea6f30eb7a6726c129",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-2087726158-round2-1-trained",
+    "seed": 2087726158,
+    "opponent": "round2",
+    "side": 1,
+    "policy": "trained",
+    "banks": [
+      46198.0,
+      41775.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 41775.0,
+    "opponent_bank": 46198.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 38775.0,
+    "opponent_net_profit": 43198.0,
+    "margin": -4423.0,
+    "score": 0.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "06373243210ec1587c9c9deb404c822db037bd9c33b3764b0079a7254d090a4a",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "ce0d968822b7eb00aeac1c3eb6f6ef8a394a15b8643f4a0031440fca5add0102",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "dbccc448159252a70ca48cdc79f93e49cd3b87a553053349ed782d2c912bdac6",
+    "audit_version": 2,
+    "rewards": [
+      46198.0,
+      41775.0
+    ],
+    "replay_gzip_sha256": "9a01217561d3beb3d81e8ce690e4e0b7c0e9f3a0a25071f2c5819ff5563ad15e",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-2087726158-round2-1-trained.py",
+    "trace_sha256": "e20cb64a83ff7ab9ebf0b6af6f1c14691ecdac561ba136f1f52a4df1d286e7c4",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-2087726158-round2-0-teacher_task",
+    "seed": 2087726158,
+    "opponent": "round2",
+    "side": 0,
+    "policy": "teacher_task",
+    "banks": [
+      43656.0,
+      44328.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 43656.0,
+    "opponent_bank": 44328.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 40656.0,
+    "opponent_net_profit": 41328.0,
+    "margin": -672.0,
+    "score": 0.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "1f829da1890153d83f938ae44fe3926bc35456d760201a6c5cdbe965cae03b03",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "7e9980858b246f07fb3eb1a86593dcdab4c520a25848157c6701695e4bfcc571",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "c1eb59ad15a9da7bae97f6b4b4eae37667484d0e39dca6326ff2c282f88b3134",
+    "audit_version": 2,
+    "rewards": [
+      43656.0,
+      44328.0
+    ],
+    "replay_gzip_sha256": "5387a738825374640fd30348fd647eb71f677b2160a6251467f9702fc65330b0",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-2087726158-round2-0-teacher_task.py",
+    "trace_sha256": "5720be085666faa35d480d47e22d94740b3d091ff04bdf49461fcaca477f1b25",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-2087726158-round2-1-teacher_task",
+    "seed": 2087726158,
+    "opponent": "round2",
+    "side": 1,
+    "policy": "teacher_task",
+    "banks": [
+      44328.0,
+      43656.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 43656.0,
+    "opponent_bank": 44328.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 40656.0,
+    "opponent_net_profit": 41328.0,
+    "margin": -672.0,
+    "score": 0.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "baa5bccdca3db6830b09e04b5c45ddc91997586a12bca86281fcadf6c68ca6e6",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "86feb03e42764c791f1b0c4ee3b11bb279de226ddafbb6deac472b8970b15e42",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "88722644831539dc931a9a81b215a20e49d12c86a12a36ca15bf191f13a9633c",
+    "audit_version": 2,
+    "rewards": [
+      44328.0,
+      43656.0
+    ],
+    "replay_gzip_sha256": "dc0ca99b9c2f43d776f4b9ac68d12d07a94507c876ef0405f7d6366e5fc03a7b",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-2087726158-round2-1-teacher_task.py",
+    "trace_sha256": "2d7ee51deced2b1898ae30ac7826e4bee07d95175bb2b7287bba4d1b42161aa1",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-3767282565-v1-0-trained",
+    "seed": 3767282565,
+    "opponent": "v1",
+    "side": 0,
+    "policy": "trained",
+    "banks": [
+      45277.0,
+      44603.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 45277.0,
+    "opponent_bank": 44603.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 42277.0,
+    "opponent_net_profit": 41603.0,
+    "margin": 674.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "356941635cffbe25a89278c6f1ce22b6944d4dcf2cc14bc17510825758d0d157",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "17c53107514e10a71f218493a6d6757109e1b791e563b0820d5fe509f8896695",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "d1b365d8a1e70b0506cced4fdbb7b518116eb338e67ad23753ef87a430635fdf",
+    "audit_version": 2,
+    "rewards": [
+      45277.0,
+      44603.0
+    ],
+    "replay_gzip_sha256": "83ba04dfe8fb8779d88999892ccd9095fc1deeea56295a50f72d0efbad696ae5",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-3767282565-v1-0-trained.py",
+    "trace_sha256": "84f1553d70f489eb39b9ee2a23715fd968aafd98cf26d28fd5d1c62412f561ec",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-3767282565-v1-1-trained",
+    "seed": 3767282565,
+    "opponent": "v1",
+    "side": 1,
+    "policy": "trained",
+    "banks": [
+      44603.0,
+      45277.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 45277.0,
+    "opponent_bank": 44603.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 42277.0,
+    "opponent_net_profit": 41603.0,
+    "margin": 674.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "945dc5dff772c793a4e975c355ea038f74f0dfa85965d728627700fb98678de5",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "97903d7d75cf299244d4a491e61a44e88d7d0921f21c5d565b6a16b7bb2bb44a",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "bd953ac4335ab03c6aa0a7e1fd5b6cc49c2ba9993b71b519edd3eca977006da2",
+    "audit_version": 2,
+    "rewards": [
+      44603.0,
+      45277.0
+    ],
+    "replay_gzip_sha256": "87a5f274b46d78e6e139f77c98bc6a717b813e8e73a3707741001fe30f29dd51",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-3767282565-v1-1-trained.py",
+    "trace_sha256": "2be7e20bc95f4cbae0537bd5de72fe470c5c639dbf7178f9a13e098d9625b2fb",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-3767282565-v1-0-teacher_task",
+    "seed": 3767282565,
+    "opponent": "v1",
+    "side": 0,
+    "policy": "teacher_task",
+    "banks": [
+      45010.0,
+      44653.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 45010.0,
+    "opponent_bank": 44653.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 42010.0,
+    "opponent_net_profit": 41653.0,
+    "margin": 357.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "c28dfdb8e27c43af9bdf7f16efc1e12eea08713a3e5eb292024e83aff426283f",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "2bb366311059b5f0258590201976ccfc1053e8e40aa661105624f7fc11a32130",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "bbb1c74715af62c63800129db2b3a75c423b8eea5140dd97d1ca33e21e05b3b5",
+    "audit_version": 2,
+    "rewards": [
+      45010.0,
+      44653.0
+    ],
+    "replay_gzip_sha256": "2f6937db27b08dadbcfb4cd406cae966ecb04594e629692e21418f7734cd1637",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-3767282565-v1-0-teacher_task.py",
+    "trace_sha256": "3591d065df6be37a218f738d1b18882f2701fe3d547d9c63715b0761f8b8dbbc",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-3767282565-v1-1-teacher_task",
+    "seed": 3767282565,
+    "opponent": "v1",
+    "side": 1,
+    "policy": "teacher_task",
+    "banks": [
+      44653.0,
+      45010.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 45010.0,
+    "opponent_bank": 44653.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 42010.0,
+    "opponent_net_profit": 41653.0,
+    "margin": 357.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "0951605c163fe87aa46b612ef86d04845638e72ac1038f1d2d93326e1d3c4950",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "e31f65b77c99f2480b73f7be0d264ffa500c887e22f7a9c735b97a6a40004140",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "96a6c1bab7ca7eb04d5338bc04c6facc3bb1fd2914462ea6f215cd24d42437b2",
+    "audit_version": 2,
+    "rewards": [
+      44653.0,
+      45010.0
+    ],
+    "replay_gzip_sha256": "0537bc561b31f217a0fc80fcfb32b1a21b42b46d1e59315b7be62a374a872f83",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-3767282565-v1-1-teacher_task.py",
+    "trace_sha256": "76730cef5e35b65407933c8a3cde2d1b41cae15a536babba33e192fc79ce90ef",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-3767282565-market-0-trained",
+    "seed": 3767282565,
+    "opponent": "market",
+    "side": 0,
+    "policy": "trained",
+    "banks": [
+      49145.0,
+      45022.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 49145.0,
+    "opponent_bank": 45022.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 46145.0,
+    "opponent_net_profit": 42022.0,
+    "margin": 4123.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "7fceb4e0afb510f9121c303ea51b7801317935a902c4459d0dbc4a719085d4e0",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "a3b9310a8df01af8b884bfcf899221afe84c0b36c1d8d65b76b89cbe07f1d506",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "92cc5dbc7d522fd94c1850e2dd85ee9c901f1be8670b3e1828b5db6252a6ff1d",
+    "audit_version": 2,
+    "rewards": [
+      49145.0,
+      45022.0
+    ],
+    "replay_gzip_sha256": "4a7815a378a0866e879061e0af8136444b05884fa66653ae6b3f21eec140dd49",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-3767282565-market-0-trained.py",
+    "trace_sha256": "4936313afff594931559f917e917789bacf4a3e74dcafbf707760d1b7fda3051",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-3767282565-market-1-trained",
+    "seed": 3767282565,
+    "opponent": "market",
+    "side": 1,
+    "policy": "trained",
+    "banks": [
+      45022.0,
+      49145.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 49145.0,
+    "opponent_bank": 45022.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 46145.0,
+    "opponent_net_profit": 42022.0,
+    "margin": 4123.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "c82a16a466139701771f988d62ca304c064a8cc6ac32595be32521d9026a6534",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "da9c2bff6f2530bbc8b7dd0ba28d949f69a5c96d238642d6d815ad653ce248f4",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "ac3ac8ded6df19a8a6e2b44dab49cab9dc8272a8af9f9745bb101be3d1c920d5",
+    "audit_version": 2,
+    "rewards": [
+      45022.0,
+      49145.0
+    ],
+    "replay_gzip_sha256": "a1ce46dc1fc6fa4b6c577ea095bfbbf3c2aacc551e07aa8c105e1a6ce3f91286",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-3767282565-market-1-trained.py",
+    "trace_sha256": "57cf2d2133c7d7a6cae61ada4b47e9c1606f868c5b9f7ed7743a408f32937b21",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-3767282565-market-0-teacher_task",
+    "seed": 3767282565,
+    "opponent": "market",
+    "side": 0,
+    "policy": "teacher_task",
+    "banks": [
+      49315.0,
+      44994.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 49315.0,
+    "opponent_bank": 44994.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 46315.0,
+    "opponent_net_profit": 41994.0,
+    "margin": 4321.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "92c1e87ef9ffa95743ce8395411bc6e4403526ba3277728650b4680bc39fc880",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "2b0fcac388f83257de022a2cd8929773603b849ccfb5423a54cd500297709da6",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "98c0e0a814e7fe27a3dcfca5645a1d43ca42911a39740e185018972109a5a34a",
+    "audit_version": 2,
+    "rewards": [
+      49315.0,
+      44994.0
+    ],
+    "replay_gzip_sha256": "70508527169fe16469635febb6519e373f0c9120df95b64c60b2e093e39ebd82",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-3767282565-market-0-teacher_task.py",
+    "trace_sha256": "93428d0987e0e6e59b0ae4fb05f6a1e416b468ab8aaa188f911084a2c66ae005",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-3767282565-market-1-teacher_task",
+    "seed": 3767282565,
+    "opponent": "market",
+    "side": 1,
+    "policy": "teacher_task",
+    "banks": [
+      44994.0,
+      49315.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 49315.0,
+    "opponent_bank": 44994.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 46315.0,
+    "opponent_net_profit": 41994.0,
+    "margin": 4321.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "a266d95b0b7e1225ee67a4d6298a3d61d80651d803a37830a2bb05c234cb46c2",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "880452090a1c8db2fe4fbea070b6541ab9ca91c800cc771575edc0d367d0da3c",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "535a81a7e0bf1a1ad113409592d3eaac7f767e28f71d629d0a1a90b0ee96c884",
+    "audit_version": 2,
+    "rewards": [
+      44994.0,
+      49315.0
+    ],
+    "replay_gzip_sha256": "0db41f1ebd9fe17e60e4a01b94b001d0fd7b96c0183984fb2f1cf0f4f18bbc4b",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-3767282565-market-1-teacher_task.py",
+    "trace_sha256": "a17f83a0228622be48fa58db51e5128ec7a7063ee24b6b75d641878ba4ffd0a0",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-3767282565-round2-0-trained",
+    "seed": 3767282565,
+    "opponent": "round2",
+    "side": 0,
+    "policy": "trained",
+    "banks": [
+      45052.0,
+      48852.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 45052.0,
+    "opponent_bank": 48852.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 42052.0,
+    "opponent_net_profit": 45852.0,
+    "margin": -3800.0,
+    "score": 0.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "094ff10bbf97a1dbcdab248837cf35db7c9ac86e2d9c0a7bf48737ca352240af",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "acba8c07ef0d8e907e114897eb006ac7014c2df4c5bc1a65397c0fade1d142ec",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "514c6f1ec490f71ac9ef79928cbb07ec6b527ccd0e2207882e6108b477cf6522",
+    "audit_version": 2,
+    "rewards": [
+      45052.0,
+      48852.0
+    ],
+    "replay_gzip_sha256": "451e185a3132fb91cf2ebf9dc67a68d7ad67b57278039b2fe67c327c6907516d",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-3767282565-round2-0-trained.py",
+    "trace_sha256": "e9065361d2d85c260340188435b6c07518cc7862df5e03af5fcd02df56df1401",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-3767282565-round2-1-trained",
+    "seed": 3767282565,
+    "opponent": "round2",
+    "side": 1,
+    "policy": "trained",
+    "banks": [
+      48852.0,
+      45052.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 45052.0,
+    "opponent_bank": 48852.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 42052.0,
+    "opponent_net_profit": 45852.0,
+    "margin": -3800.0,
+    "score": 0.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "a33e4f7cc6c96340519b876102aebdb02d13a9c0c9b0f62c21d1f30c979617a2",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "b49e79fb062e16f6b58213b29de0d2a97f0991a46682e558396d8b87f6dd11ec",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "15f4a8ff39365e5cbc9e660dd47d201b9eb7d523e7444ccaa6e78052bca98fe8",
+    "audit_version": 2,
+    "rewards": [
+      48852.0,
+      45052.0
+    ],
+    "replay_gzip_sha256": "8aa9175da311b5e40dba9320353c2380149ec7a3576bdc97aec0efab87366ad8",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-3767282565-round2-1-trained.py",
+    "trace_sha256": "5485e25b8d1e9e443cfb1bf08f368e689f3419b7c3f60fd2b207b33e6c51d362",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-3767282565-round2-0-teacher_task",
+    "seed": 3767282565,
+    "opponent": "round2",
+    "side": 0,
+    "policy": "teacher_task",
+    "banks": [
+      45093.0,
+      44951.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 45093.0,
+    "opponent_bank": 44951.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 42093.0,
+    "opponent_net_profit": 41951.0,
+    "margin": 142.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "cb78d1a93a8e4bced02c3496655a09a72451c739f41366f35fd06f3aec747313",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "c89d5151bc7334459c79a6ed888bfb28c4573045cfe0922141e2b82ba62a6d4c",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "7792dedfdf86258148f84e2f6b52aeed7a0556efd91330508090dc11ce3bdd45",
+    "audit_version": 2,
+    "rewards": [
+      45093.0,
+      44951.0
+    ],
+    "replay_gzip_sha256": "0d9ad7ea1b0805d859eedfea029d29183a1f35c6437e45b81c264f3151034e06",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-3767282565-round2-0-teacher_task.py",
+    "trace_sha256": "30e7d514b9ba065936079864c575401fee33fbaa78e9987013c803a55a56a038",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-3767282565-round2-1-teacher_task",
+    "seed": 3767282565,
+    "opponent": "round2",
+    "side": 1,
+    "policy": "teacher_task",
+    "banks": [
+      44951.0,
+      45093.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 45093.0,
+    "opponent_bank": 44951.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 42093.0,
+    "opponent_net_profit": 41951.0,
+    "margin": 142.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "17ab08ef2e1a28b154bfb2a5c6fc8383edca0df0b047aa8fee20585f671a4b9c",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "81e51692539d33081b39a3008e3135e92e9e6d6d19bc6220a329dfaada1c53f4",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "b3e30a52b422c0cfd7ad76a5019c87b2ea88ef708f9c35483741de606ae57de1",
+    "audit_version": 2,
+    "rewards": [
+      44951.0,
+      45093.0
+    ],
+    "replay_gzip_sha256": "3b7794170fcb24a23e906d2b4af11579b17ad955889bc2cbc5dc976d0067d8d9",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-3767282565-round2-1-teacher_task.py",
+    "trace_sha256": "02ba2e00e08f00a8f25f57f2187f7b200a41a3ffcdf1f04232f180fbbdf8980a",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-2941093011-v1-0-trained",
+    "seed": 2941093011,
+    "opponent": "v1",
+    "side": 0,
+    "policy": "trained",
+    "banks": [
+      43151.0,
+      39272.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 43151.0,
+    "opponent_bank": 39272.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 40151.0,
+    "opponent_net_profit": 36272.0,
+    "margin": 3879.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "5164f11bc59f13a6ced6c2da2a0d8f688a8df6b3de158f91dc6ec251354cac10",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "de8c2b411100e8753ea5e3c5fe7f8f4c47048065d6410444d8bb216a5165d9b2",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "276c8d95d5035096ceca21a7de6bd6e46465373faa0b89aa486749cc39641d06",
+    "audit_version": 2,
+    "rewards": [
+      43151.0,
+      39272.0
+    ],
+    "replay_gzip_sha256": "527dd5933daebb039eb17085e616b3a03bdc7378403b6e99aa9c862c794b53b8",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-2941093011-v1-0-trained.py",
+    "trace_sha256": "dbc8b8b52733369c3c077f513872287e9b8d8fdc390997ea9daf462b4e9b12bd",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-2941093011-v1-1-trained",
+    "seed": 2941093011,
+    "opponent": "v1",
+    "side": 1,
+    "policy": "trained",
+    "banks": [
+      39272.0,
+      43151.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 43151.0,
+    "opponent_bank": 39272.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 40151.0,
+    "opponent_net_profit": 36272.0,
+    "margin": 3879.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "abd4882e04ed5374f9545041efa8f5aed4771e1c1d2cd82cc40dbd9ab858b592",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "f6777adb661588234c1cda649beebbaafb69f90471c127a7eed9195b939638d5",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "f53134aa2d902cdd1f7a8b5d393160fae5837e82224386b4a4a4dd9180b7e776",
+    "audit_version": 2,
+    "rewards": [
+      39272.0,
+      43151.0
+    ],
+    "replay_gzip_sha256": "2d6caaf336bd96bb58f2f422d4df8b79b5ae3c6a8cc591d1f99ef4fd6e4bb135",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-2941093011-v1-1-trained.py",
+    "trace_sha256": "66556ab2423ea43274ae2066873fa81c507d186247fba73e0dd0060984d97938",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-2941093011-v1-0-teacher_task",
+    "seed": 2941093011,
+    "opponent": "v1",
+    "side": 0,
+    "policy": "teacher_task",
+    "banks": [
+      43151.0,
+      39272.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 43151.0,
+    "opponent_bank": 39272.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 40151.0,
+    "opponent_net_profit": 36272.0,
+    "margin": 3879.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "c07f7f4d3db890118bfb20936dd52df4eb53511d1899ae5675767a2ee8462776",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "2987ae4aff744644d560cf4f2ff908e08bef9606f5e34c8b8f5a7c3c64a6cca2",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "669ee712af036cd2567dee3e06bffa00105f90fb765e1fb0e7c3d837b7cc9202",
+    "audit_version": 2,
+    "rewards": [
+      43151.0,
+      39272.0
+    ],
+    "replay_gzip_sha256": "b1313e3454b9a6b9f4f1de9277149b617a12e8ccffabdcdaf6ca56c313efc0c2",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-2941093011-v1-0-teacher_task.py",
+    "trace_sha256": "770109a0bf92883a2d9baa456720ccdfb44d74b5c031465444c31ed5f5913f60",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-2941093011-v1-1-teacher_task",
+    "seed": 2941093011,
+    "opponent": "v1",
+    "side": 1,
+    "policy": "teacher_task",
+    "banks": [
+      39272.0,
+      43151.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 43151.0,
+    "opponent_bank": 39272.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 40151.0,
+    "opponent_net_profit": 36272.0,
+    "margin": 3879.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "57944300223a35ef8b97712f796046cdbbcee66a96f77c12b1f87ce0317255ed",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "b662683fa74144f5eb853e4d28dbce89c9e0f4371e023d61c687d19200626a0b",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "6a86ed907f7e0e14e192ccd7b7c9ec308f59c0fb199deff19b06e86c942239bc",
+    "audit_version": 2,
+    "rewards": [
+      39272.0,
+      43151.0
+    ],
+    "replay_gzip_sha256": "adf6a8d2325d02c7888249f0c09483c6ba40ac50c4c53de37e998933fb6dda78",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-2941093011-v1-1-teacher_task.py",
+    "trace_sha256": "c17fc849c7c1624ada35a315f742cac454e360e230e45139fdeaa43a005d3e2c",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-2941093011-market-0-trained",
+    "seed": 2941093011,
+    "opponent": "market",
+    "side": 0,
+    "policy": "trained",
+    "banks": [
+      43079.0,
+      45022.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 43079.0,
+    "opponent_bank": 45022.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 40079.0,
+    "opponent_net_profit": 42022.0,
+    "margin": -1943.0,
+    "score": 0.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "53e51b789c95d221bc62c7044380868b8b021118c70432411d616b8ada6ad378",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "12a026582710fe9a0b5f5a08242df089501e6de76e489e03055fff69abe36ac1",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "5794984e13548cc9d4422c1ac70423a6dd25cf9bd31cda003629d8f5f0f9b019",
+    "audit_version": 2,
+    "rewards": [
+      43079.0,
+      45022.0
+    ],
+    "replay_gzip_sha256": "e24895c54b1eb16a24f5109477695428890b0661ed47713304539438d725ef3d",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-2941093011-market-0-trained.py",
+    "trace_sha256": "e253798fec1a5c5d1edc33c05a251b076c5bea266bcd4cfac8dbf15737a55ebd",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-2941093011-market-1-trained",
+    "seed": 2941093011,
+    "opponent": "market",
+    "side": 1,
+    "policy": "trained",
+    "banks": [
+      45022.0,
+      43079.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 43079.0,
+    "opponent_bank": 45022.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 40079.0,
+    "opponent_net_profit": 42022.0,
+    "margin": -1943.0,
+    "score": 0.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "fdebcc91b303f2d4276ba67020f68611a74134dc2b2cdea9658cfeed3ce303dd",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "3c750b2cad23b4ff58b761c6d04e21bcca4e0b7711adb70168a8ef27a33001a2",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "bcced3b819ecccd38e73a320d0d24ec0ec8df7776485bd50c18dba75a1d2d170",
+    "audit_version": 2,
+    "rewards": [
+      45022.0,
+      43079.0
+    ],
+    "replay_gzip_sha256": "7b200d55499bc2ce71d943d48723a912b17f6cf1bc28eb117a2df310856f6955",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-2941093011-market-1-trained.py",
+    "trace_sha256": "6e0f889d8e156622aafad1524fcd261a46242b1abc8ea8b3d011840eaf0209c6",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-2941093011-market-0-teacher_task",
+    "seed": 2941093011,
+    "opponent": "market",
+    "side": 0,
+    "policy": "teacher_task",
+    "banks": [
+      43079.0,
+      45022.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 43079.0,
+    "opponent_bank": 45022.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 40079.0,
+    "opponent_net_profit": 42022.0,
+    "margin": -1943.0,
+    "score": 0.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "50143a94c81f6061b2410f11b9421ce1c0ca6daf311818b346d6153e3ca76f02",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "7574a8a72ab9e694821a0aa9369c111e4b34a3ea3650b201c0379e7fceda61b7",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "7a07083709cac8b7131665c62515042b564cda7eb869854c362bf9cffe3a3002",
+    "audit_version": 2,
+    "rewards": [
+      43079.0,
+      45022.0
+    ],
+    "replay_gzip_sha256": "12cf0968708cdc316eb7e8afbdabd9c57743e1c56356910449ac19dfa14adcb4",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-2941093011-market-0-teacher_task.py",
+    "trace_sha256": "88e7599b5bc71523377cc1c09d8a944095e9965650ab06266329403b65bb6c57",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-2941093011-market-1-teacher_task",
+    "seed": 2941093011,
+    "opponent": "market",
+    "side": 1,
+    "policy": "teacher_task",
+    "banks": [
+      45022.0,
+      43079.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 43079.0,
+    "opponent_bank": 45022.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 40079.0,
+    "opponent_net_profit": 42022.0,
+    "margin": -1943.0,
+    "score": 0.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "be68b5c427c5ae836c9d0ac1a554d2b6233f25f74b9f16065279b6f1ceaf1358",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "791fa1097665025883eb36d9f8aa3a6ad09de18f388e0e4467d79338fcd68b22",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "e7d8432980f224fb85813e76f9890c874cde58be95a6335ba8cfaf716736fcb1",
+    "audit_version": 2,
+    "rewards": [
+      45022.0,
+      43079.0
+    ],
+    "replay_gzip_sha256": "96f0c098deef8ae919769cdd55c8449196b12773c654f05d35081e8c9a2154f8",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-2941093011-market-1-teacher_task.py",
+    "trace_sha256": "7a6a4799811646533a6446d613be5f829b418f7ec02cbd415836233a5abb061e",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-2941093011-round2-0-trained",
+    "seed": 2941093011,
+    "opponent": "round2",
+    "side": 0,
+    "policy": "trained",
+    "banks": [
+      43003.0,
+      39928.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 43003.0,
+    "opponent_bank": 39928.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 40003.0,
+    "opponent_net_profit": 36928.0,
+    "margin": 3075.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "1416f2baf7ae022952a15031f12562b1317ed4503badd5dc698020133fdbdc43",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "58e989987d35fdb19131f5944164f9d5315120c73a655fd5cbebbd394c8205ae",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "61ca0bea701a562c9e5b00ecaf660911febd19cb5c279019f636e258f83693fe",
+    "audit_version": 2,
+    "rewards": [
+      43003.0,
+      39928.0
+    ],
+    "replay_gzip_sha256": "0896081e3e3e9b8dfe1129b52fe039b5eebb3c199a48fb1274b2fed268a50b4f",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-2941093011-round2-0-trained.py",
+    "trace_sha256": "a0a611e4348de89b659317b30ac11fcdf42d539a185cdbaccad50431f5262d2b",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-2941093011-round2-1-trained",
+    "seed": 2941093011,
+    "opponent": "round2",
+    "side": 1,
+    "policy": "trained",
+    "banks": [
+      39928.0,
+      43003.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 43003.0,
+    "opponent_bank": 39928.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 40003.0,
+    "opponent_net_profit": 36928.0,
+    "margin": 3075.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "e3de20664dce1cbf5e006e9545036b46c04e9ec5afac63ec6ad9ea852999f9e9",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "fdc39fb2c28c92fbe8d08063fe07ddd12807ac4e058f36f994916a4f8194db8c",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "ea12f587d4979e3e63117c732e9786003ea89313ad7b97d620f8ad18d5326f7f",
+    "audit_version": 2,
+    "rewards": [
+      39928.0,
+      43003.0
+    ],
+    "replay_gzip_sha256": "cd2658d10107cef108ba17df1951da8b396a37596e0b4a5d7f15ba343b72e9eb",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-2941093011-round2-1-trained.py",
+    "trace_sha256": "0eebf89798cb0667859ff3f3b1fb2e769dc1e91ad3d6bcfe45a539ba77b1917f",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-2941093011-round2-0-teacher_task",
+    "seed": 2941093011,
+    "opponent": "round2",
+    "side": 0,
+    "policy": "teacher_task",
+    "banks": [
+      44941.0,
+      42813.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 44941.0,
+    "opponent_bank": 42813.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 41941.0,
+    "opponent_net_profit": 39813.0,
+    "margin": 2128.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "cd58a3e85596a3a2fcf322e8f703a271c60c465915bdba45111d6e0d0ae036d8",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "635ed62283d5720ad7888d42d57942b746c11a485f8f71e1b0dd9ac35a025766",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "dc584bd7174c62872959c0435f80a00890a92d632edcfd907036eb010557847a",
+    "audit_version": 2,
+    "rewards": [
+      44941.0,
+      42813.0
+    ],
+    "replay_gzip_sha256": "6c72455bd0ec79a0c1f1fe4019e633ae19513aedaf537266bde92a262335850a",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-2941093011-round2-0-teacher_task.py",
+    "trace_sha256": "415ffda3545fa3b1597101caebe0c1166fe0b65c5513d9ee61f2b49be753010b",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-2941093011-round2-1-teacher_task",
+    "seed": 2941093011,
+    "opponent": "round2",
+    "side": 1,
+    "policy": "teacher_task",
+    "banks": [
+      42813.0,
+      44941.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 44941.0,
+    "opponent_bank": 42813.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 41941.0,
+    "opponent_net_profit": 39813.0,
+    "margin": 2128.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "f1c1cdcad0222ebc10849da4e352b1e7367cf77a7bf4abf49db21e9c3f25cea9",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "c9c8b4481bb7ffcc0ca91bbae54acff371ede507723c54fb7892651ec997726b",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "92b5a12374a6889d53566d6f2d90c4acdc0e549424719fd68f15d0ed0e47cdf8",
+    "audit_version": 2,
+    "rewards": [
+      42813.0,
+      44941.0
+    ],
+    "replay_gzip_sha256": "4ba6bbddeb1ac8eb2a810efac43e3f1d9869ba7e1442c5c31958eef6c2186493",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-2941093011-round2-1-teacher_task.py",
+    "trace_sha256": "0759ee10db8ae00ba2998c907d5357c4f856e05d1f3ec62ccfd2654f99f739c1",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-78378034-v1-0-trained",
+    "seed": 78378034,
+    "opponent": "v1",
+    "side": 0,
+    "policy": "trained",
+    "banks": [
+      46811.0,
+      40942.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 46811.0,
+    "opponent_bank": 40942.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 43811.0,
+    "opponent_net_profit": 37942.0,
+    "margin": 5869.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "59c4e71376c41216204293f266784ec4b0273abc36012dae63bc605ab22191fc",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "2f86a84a227add9f9627ba0dc3487dbf91c7edf9362d12621dfe3f3a08a80aaa",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "a9c28031f04232f02350143bda1ac86ee4d06b5007ef017eb2c7372dd45229ec",
+    "audit_version": 2,
+    "rewards": [
+      46811.0,
+      40942.0
+    ],
+    "replay_gzip_sha256": "5cedfc9a7ab84b84efdbbd526b5d9d2e870bc03a407e3100ae7b75cf9c4abfea",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-78378034-v1-0-trained.py",
+    "trace_sha256": "fd299545dc73099453ba3b7bf1a488bddc0e5a2f5ed41affb4b367d7e2974cda",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-78378034-v1-1-trained",
+    "seed": 78378034,
+    "opponent": "v1",
+    "side": 1,
+    "policy": "trained",
+    "banks": [
+      40942.0,
+      46811.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 46811.0,
+    "opponent_bank": 40942.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 43811.0,
+    "opponent_net_profit": 37942.0,
+    "margin": 5869.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "abb3b6f55b833f0784016b7677726e9fa5fd0ba13c49f17272914989279f2d07",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "e501df670c04ef7d19fff5828d39c00a2580d7100fd1b219dd27477add6577ed",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "0ee31edebe279ec262a3a6303b57b33c40843c8f605040bdb3fc14cec9b54016",
+    "audit_version": 2,
+    "rewards": [
+      40942.0,
+      46811.0
+    ],
+    "replay_gzip_sha256": "f773ded6287de43e18fd9ca2824ad3b4abec99eaa921f5e2ef2d9d305fd6cac1",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-78378034-v1-1-trained.py",
+    "trace_sha256": "d12b649e09119a888796f305ee2be2556213c26f656cbf4b7490a68d3db8943c",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-78378034-v1-0-teacher_task",
+    "seed": 78378034,
+    "opponent": "v1",
+    "side": 0,
+    "policy": "teacher_task",
+    "banks": [
+      46811.0,
+      40942.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 46811.0,
+    "opponent_bank": 40942.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 43811.0,
+    "opponent_net_profit": 37942.0,
+    "margin": 5869.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "05b8bd8b7b8f33a5020cf59dbe92a1e0d20698db9db97d7207bfea5bd93e66e6",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "498fb46ad84a8ae18bd02c44c615964d457462e939196d74f28eac927d65ccb2",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "ab9fa6c2edae3e44f0b21ee7453c48b51119edbf2e338514049900c81779d9cf",
+    "audit_version": 2,
+    "rewards": [
+      46811.0,
+      40942.0
+    ],
+    "replay_gzip_sha256": "b8fe86489650a19da888d541e35ca36796762874ebac0ebbe77f645738ad4c58",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-78378034-v1-0-teacher_task.py",
+    "trace_sha256": "a3c15bf9834c3ac1dfd32b97d7d60764bb8e49457e33664f16ebc4db88c7b3f8",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-78378034-v1-1-teacher_task",
+    "seed": 78378034,
+    "opponent": "v1",
+    "side": 1,
+    "policy": "teacher_task",
+    "banks": [
+      40942.0,
+      46811.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 46811.0,
+    "opponent_bank": 40942.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 43811.0,
+    "opponent_net_profit": 37942.0,
+    "margin": 5869.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "cb75f40cc6ef258280c769439811d83828f586deb4af40c4807acba7ede71662",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "b0bfa8266b42c898bcdbc972b052eaf3ea27e3a7e5dda831221e3430f80963d4",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "effd68036f9d43cfe2d3f954b9e579e1fb02c76264f2eb6fd81b83deaa651876",
+    "audit_version": 2,
+    "rewards": [
+      40942.0,
+      46811.0
+    ],
+    "replay_gzip_sha256": "c9c6eff983134d536bce10b78f64b96c75064437596ebe3be0d4e0e8afb6e0e2",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-78378034-v1-1-teacher_task.py",
+    "trace_sha256": "7d07d00897fd26c850dfb6a1d48f269fa96727010747532b281f6b77c8d80d38",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-78378034-market-0-trained",
+    "seed": 78378034,
+    "opponent": "market",
+    "side": 0,
+    "policy": "trained",
+    "banks": [
+      48699.0,
+      42954.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 48699.0,
+    "opponent_bank": 42954.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 45699.0,
+    "opponent_net_profit": 39954.0,
+    "margin": 5745.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "13d4da1de82863a6f0a0ea637ee16194eb727aca9ac902ccdc3258e8906ab010",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "32d28d73f6b06a2dd326ea158c3dc02c4eb98ff64e9ddce8fd514c03b96548ed",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "2259d12cffae314486ff670dbb21d1c419532cdeb4e3442659167b03ae4ca032",
+    "audit_version": 2,
+    "rewards": [
+      48699.0,
+      42954.0
+    ],
+    "replay_gzip_sha256": "8e3571cb73196ef37787c92dc35f39ba864549989daf247034d40132edee2ed4",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-78378034-market-0-trained.py",
+    "trace_sha256": "d423a7d84db857b920e7b7ecf82a1f37f7b1cd693b82ac15a7551fc02a2a4d7b",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-78378034-market-1-trained",
+    "seed": 78378034,
+    "opponent": "market",
+    "side": 1,
+    "policy": "trained",
+    "banks": [
+      42954.0,
+      48699.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 48699.0,
+    "opponent_bank": 42954.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 45699.0,
+    "opponent_net_profit": 39954.0,
+    "margin": 5745.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "e4e3454ec9960122520c27c3338b5b8890515a026cd58c18c7d420751e037be1",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "3cb34bc619b0c52540d0ad396f954560680f26abbdb4ed4da4ab36d3aa75b18f",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "e3bcdbb21ca524d9bd99990a90a6ff16e727d2f809eff7680bd68ed4452562ff",
+    "audit_version": 2,
+    "rewards": [
+      42954.0,
+      48699.0
+    ],
+    "replay_gzip_sha256": "efa7291897fa7b45c6d071293afdeddc56f74c0e0ba6b1a34ea4b52fd43f3d27",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-78378034-market-1-trained.py",
+    "trace_sha256": "e7e89021887f9b1382a8e31294e724dba8f3c1c3c201e99ea9b223bdeef771e0",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-78378034-market-0-teacher_task",
+    "seed": 78378034,
+    "opponent": "market",
+    "side": 0,
+    "policy": "teacher_task",
+    "banks": [
+      48546.0,
+      42958.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 48546.0,
+    "opponent_bank": 42958.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 45546.0,
+    "opponent_net_profit": 39958.0,
+    "margin": 5588.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "7880bfa73ae9c652f21314e66a0dc50d626c8a679cd659ebd520a26c86f185c0",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "78ab1345994d1c6006ee4ec0bb72454be9f46f2577b4b878578d6433965e1c72",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "d192c7460e8b82e7769105c3a3bcf5af328c5ca3f092e920f5e4609634039003",
+    "audit_version": 2,
+    "rewards": [
+      48546.0,
+      42958.0
+    ],
+    "replay_gzip_sha256": "4db02d679927e8d5c7929ccbd72f4f55a9047ba2dc407f06ed16f5b869cf9621",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-78378034-market-0-teacher_task.py",
+    "trace_sha256": "df9d4b12dd4f2851682103f2f43c748ce2f4c892990eb91d9d7064b4086f86ce",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-78378034-market-1-teacher_task",
+    "seed": 78378034,
+    "opponent": "market",
+    "side": 1,
+    "policy": "teacher_task",
+    "banks": [
+      42958.0,
+      48546.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 48546.0,
+    "opponent_bank": 42958.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 45546.0,
+    "opponent_net_profit": 39958.0,
+    "margin": 5588.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "83f120396ae46b25944229b7ca36be90973e7147b29a5ded3c3d27a8467ef921",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "eb8383af76a7b9f9cf6d0c5d3d7ab73c59c69f4b1dd0aa7db8efd44ed6ba5351",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "5d21daf34ab8075f3209aaa9f5d3cc7884afa4d9f8b45adb1c7129c684297299",
+    "audit_version": 2,
+    "rewards": [
+      42958.0,
+      48546.0
+    ],
+    "replay_gzip_sha256": "cc17e4bff8a740eef1cda6453c95c7bf72489a5aa8caf214c1f4a6bf79064b44",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-78378034-market-1-teacher_task.py",
+    "trace_sha256": "678e6f2339dbc64705aed42166b831c4a4d9fc7e70db20e6cf5265f1a08453eb",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-78378034-round2-0-trained",
+    "seed": 78378034,
+    "opponent": "round2",
+    "side": 0,
+    "policy": "trained",
+    "banks": [
+      46277.0,
+      42393.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 46277.0,
+    "opponent_bank": 42393.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 43277.0,
+    "opponent_net_profit": 39393.0,
+    "margin": 3884.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "7498c3483197bbdd477b92e11c54855ea22a4cf7504d3a090016e1665863f291",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "cbcad5c18fb0abe11e21a71da7893b278e6581024601dde0c66359d3bcb6a857",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "f897b72aa3515ac3ba80267657af5a507e05ffa714723361fae25e41e5a51415",
+    "audit_version": 2,
+    "rewards": [
+      46277.0,
+      42393.0
+    ],
+    "replay_gzip_sha256": "b1acbb87972a4266cf8335f9179807a792166880f37911f0e28b5db70f164c3b",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-78378034-round2-0-trained.py",
+    "trace_sha256": "f11234cc29e1a47cc439ff137ba708d047884c3315d94794ae5522916a8a31f5",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-78378034-round2-1-trained",
+    "seed": 78378034,
+    "opponent": "round2",
+    "side": 1,
+    "policy": "trained",
+    "banks": [
+      42393.0,
+      46277.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 46277.0,
+    "opponent_bank": 42393.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 43277.0,
+    "opponent_net_profit": 39393.0,
+    "margin": 3884.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "773f1a53042de8330bcf2b0646528212c8e7fd90a489d73ce57f61f25300f4ef",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "f49cc607398b3649acf0fc65acba602750129a6e8a6bd87f1dd371afafc8202a",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "bb490af55059fb45039958d2ba30455fcdf79b69b293b649c8df9808f5c96fca",
+    "audit_version": 2,
+    "rewards": [
+      42393.0,
+      46277.0
+    ],
+    "replay_gzip_sha256": "b1b14e9eef50deef27fae4bd7a0bdfa68c961e58034300f6a04f9bf0ae76c28a",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-78378034-round2-1-trained.py",
+    "trace_sha256": "af4520c91cc4141fa1a65b8648b30bb29c325a339d1ce396747765775d4d34ba",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-78378034-round2-0-teacher_task",
+    "seed": 78378034,
+    "opponent": "round2",
+    "side": 0,
+    "policy": "teacher_task",
+    "banks": [
+      46885.0,
+      41174.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 46885.0,
+    "opponent_bank": 41174.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 43885.0,
+    "opponent_net_profit": 38174.0,
+    "margin": 5711.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "7e38f5ce7dadbd7339c6fac0fa490a7de5814db751d5a76f1f1c55d4494ca9ea",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "d724cd03d2d036825d31d1532b5b05c228cdaa969709a14a84727e85116d5294",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "86b253e441aef61d26124ee6926e00fc701583d525244fb893be5e2ccc505896",
+    "audit_version": 2,
+    "rewards": [
+      46885.0,
+      41174.0
+    ],
+    "replay_gzip_sha256": "2efee98f7037bc681f3d9bacbf4b406e3dc9b40eeb4ced991b064543bb6d06cf",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-78378034-round2-0-teacher_task.py",
+    "trace_sha256": "6ea01f29abdc4ba0c1c21c01bfba97e11e69f32fd4e1354a6bcc86e4d6cf5ebd",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-78378034-round2-1-teacher_task",
+    "seed": 78378034,
+    "opponent": "round2",
+    "side": 1,
+    "policy": "teacher_task",
+    "banks": [
+      41174.0,
+      46885.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 46885.0,
+    "opponent_bank": 41174.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 43885.0,
+    "opponent_net_profit": 38174.0,
+    "margin": 5711.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "11cb00e2a779260cab3212f57ef235c2f51cb3039337232438b50f7988d65643",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "b28fb1ec2e13a5cb5de0c404ea4448c12688eba9054df3bc9a1d75dd6bd3cbe2",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "c6f7fb5e1510b97e464f03d62b3b0a75dafdc843d558ca9eda2c3e87648c931f",
+    "audit_version": 2,
+    "rewards": [
+      41174.0,
+      46885.0
+    ],
+    "replay_gzip_sha256": "c6edc4ceecd4adf1734922ebc6237cbe9c878cfc2cbddea2c42b349789d15235",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-78378034-round2-1-teacher_task.py",
+    "trace_sha256": "fc4086a59566a5794e4db71defd2572935eba96a80d282dcdbe5fbbade230c9c",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-1616203861-v1-0-trained",
+    "seed": 1616203861,
+    "opponent": "v1",
+    "side": 0,
+    "policy": "trained",
+    "banks": [
+      45289.0,
+      45512.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 45289.0,
+    "opponent_bank": 45512.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 42289.0,
+    "opponent_net_profit": 42512.0,
+    "margin": -223.0,
+    "score": 0.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "83f897fedbb4912ff0230d572b90c5d06896a63bb7464492ff4dd002b3bf0275",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "b60594f56d632e24cb38f9d515d0c041aab8e38f423116d63cdbb9166a960af1",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "6c82decbc1d633ab92e5e635be27301748032f71efd1031de4829fcce7041ff4",
+    "audit_version": 2,
+    "rewards": [
+      45289.0,
+      45512.0
+    ],
+    "replay_gzip_sha256": "ba3e799ffd8b8a1538b3eab8ed6457c7c8546ae437cd0ba9fc1be459cbc449b4",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-1616203861-v1-0-trained.py",
+    "trace_sha256": "4eba8d6d85c12b27b1de4e179845bfc6ea5eba917cd7707fdffba70b1bd9b2a8",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-1616203861-v1-1-trained",
+    "seed": 1616203861,
+    "opponent": "v1",
+    "side": 1,
+    "policy": "trained",
+    "banks": [
+      45512.0,
+      45289.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 45289.0,
+    "opponent_bank": 45512.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 42289.0,
+    "opponent_net_profit": 42512.0,
+    "margin": -223.0,
+    "score": 0.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "ed8732c634bc42518b72c82e5c88255b4c8a4cd6c350dc60e1a2d7ffc985dc2a",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "945f5eba8092959597f9268997ef6b7c879f5d0954531c5f38654253a9d6a9ee",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "6a83faeee4e88b00f6353eb1e6af194309440a5db66874d2e49b98637c934034",
+    "audit_version": 2,
+    "rewards": [
+      45512.0,
+      45289.0
+    ],
+    "replay_gzip_sha256": "58a521b5431d5017ece6cc085db585bc38e4baa8af1b8c4adff2d4dfeafa5cc1",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-1616203861-v1-1-trained.py",
+    "trace_sha256": "8b77a342a52416978eaa7033670f4169be8f62effc658d96f5d6955036910eeb",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-1616203861-v1-0-teacher_task",
+    "seed": 1616203861,
+    "opponent": "v1",
+    "side": 0,
+    "policy": "teacher_task",
+    "banks": [
+      45289.0,
+      45512.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 45289.0,
+    "opponent_bank": 45512.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 42289.0,
+    "opponent_net_profit": 42512.0,
+    "margin": -223.0,
+    "score": 0.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "fd51e73276669c3f86773d23c343d826a0f04ecd33cb3ca5a65d6916e35edf38",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "b0f02507fff7068ce43310d9d1bd9fe6cdb41843c79ba162e4b518ccf4616955",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "362d71dffdd05061724ae02fd21a621fba2abf73f10b5e5855a4a25ab381ae4b",
+    "audit_version": 2,
+    "rewards": [
+      45289.0,
+      45512.0
+    ],
+    "replay_gzip_sha256": "b54cee331f14287399e37b45ad3e6a472d8161745e67b1dcc1ee3d7128c4a669",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-1616203861-v1-0-teacher_task.py",
+    "trace_sha256": "da19526cf81fe6e87fe425f35b86359373c253e4dd73a11a23d96fc64389efa9",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-1616203861-v1-1-teacher_task",
+    "seed": 1616203861,
+    "opponent": "v1",
+    "side": 1,
+    "policy": "teacher_task",
+    "banks": [
+      45512.0,
+      45289.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 45289.0,
+    "opponent_bank": 45512.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 42289.0,
+    "opponent_net_profit": 42512.0,
+    "margin": -223.0,
+    "score": 0.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "fdd20a8dda328836927d1902989b993c2b899ca8447e07daa06a1bd10bdf7a73",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "794410abf915982b62ff37f852d306b646bbebadea95b2daf6d61d06ba25fd95",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "f9df3a06f99d47041b7bcd1c2bd0a8345a6712be63f28ece9031a42a544cf534",
+    "audit_version": 2,
+    "rewards": [
+      45512.0,
+      45289.0
+    ],
+    "replay_gzip_sha256": "dfa0ab5c45a8c1055cd4efbc083c7f3887d8ebb58750d33e6c741c8ea1e82b16",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-1616203861-v1-1-teacher_task.py",
+    "trace_sha256": "e0388ebda414e8ad64a3e5fb8426f2cd06b6be2447188357393d4e73b22c91c7",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-1616203861-market-0-trained",
+    "seed": 1616203861,
+    "opponent": "market",
+    "side": 0,
+    "policy": "trained",
+    "banks": [
+      48763.0,
+      46844.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 48763.0,
+    "opponent_bank": 46844.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 45763.0,
+    "opponent_net_profit": 43844.0,
+    "margin": 1919.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "99e098d5bf9e8ec69809724ae3e8d9b14b13cce2ca0da4db8437470b7e1d1636",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "706cb894c0297143918ea4bb0f3a311d5eb22d62b328fed7dbca1ea3c2129dd2",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "a0adeff7f2c3318f8a247ff4132eb6851e1dcaee8d3f2431388b384a6f3faee6",
+    "audit_version": 2,
+    "rewards": [
+      48763.0,
+      46844.0
+    ],
+    "replay_gzip_sha256": "f671b8d76d970051e4aea406d22a468a0c81081b4ffa3c507cf9cb77485b760b",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-1616203861-market-0-trained.py",
+    "trace_sha256": "1fb3619f55f366c44923b4782f389629656b7e94b559c2fb0e81162e039a3893",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-1616203861-market-1-trained",
+    "seed": 1616203861,
+    "opponent": "market",
+    "side": 1,
+    "policy": "trained",
+    "banks": [
+      46844.0,
+      48763.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 48763.0,
+    "opponent_bank": 46844.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 45763.0,
+    "opponent_net_profit": 43844.0,
+    "margin": 1919.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "bd6f754c88d9df4cab410298055a32dfbea22ee8bda1bf3f824562502d96c754",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "957a5895e1c3855a8eccfee6878a29dbb0c7507417c956242f62a4c49b1a204f",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "80a2da903d9d1ccc415aa947cb583cec10ff7f246416f6ef0b21362615d22a41",
+    "audit_version": 2,
+    "rewards": [
+      46844.0,
+      48763.0
+    ],
+    "replay_gzip_sha256": "069ddab66a9911be36bda231cc41aaf961a9389cca2da6c2db20b7e40685b3e0",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-1616203861-market-1-trained.py",
+    "trace_sha256": "7a7ef1f7eaa83d6391c6436f6b77bd14fd05051a859f25104792da01fa05a1df",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-1616203861-market-0-teacher_task",
+    "seed": 1616203861,
+    "opponent": "market",
+    "side": 0,
+    "policy": "teacher_task",
+    "banks": [
+      48763.0,
+      46844.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 48763.0,
+    "opponent_bank": 46844.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 45763.0,
+    "opponent_net_profit": 43844.0,
+    "margin": 1919.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "ae09048710eb0a1b54de12e6fa58db07754aa2a986322592173f17f9eded6b09",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "afe73f1c3302ccddfba69ed6344db79c1114ad02de957669e6727591f603f81a",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "63977cdd242cac240a1294a181d67a27b9eac29c2373283cc18700d5c74b1a37",
+    "audit_version": 2,
+    "rewards": [
+      48763.0,
+      46844.0
+    ],
+    "replay_gzip_sha256": "5f731241fe506b5de859aa672fd3a95c46f2eceb0070fa8d272ef71895123760",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-1616203861-market-0-teacher_task.py",
+    "trace_sha256": "8b3ce2bcc4a742f8acf1e72927f4ed31a7446a7ea1bd380c69c6269ba59fd549",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-1616203861-market-1-teacher_task",
+    "seed": 1616203861,
+    "opponent": "market",
+    "side": 1,
+    "policy": "teacher_task",
+    "banks": [
+      46844.0,
+      48763.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 48763.0,
+    "opponent_bank": 46844.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 45763.0,
+    "opponent_net_profit": 43844.0,
+    "margin": 1919.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "44ac605127d6f0ba62c9af0a3a7104effe205fb83a32041cecb758869078ff90",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "51a9bc0496e4f285dc58a56dc2989ca2f30a74f66c4ab90c4e3798de3c63d0fe",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "e61b7af98194f49e5d687d7b1a26ddd40fa2b9eb9d9b7f28c1692ff30bec6ad3",
+    "audit_version": 2,
+    "rewards": [
+      46844.0,
+      48763.0
+    ],
+    "replay_gzip_sha256": "221587a3ad9b01b7731aa10d8e509c35945041b4eb2fb4191f6bd55b3b5b79d9",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-1616203861-market-1-teacher_task.py",
+    "trace_sha256": "d4af4beac95c4bcea06e1b797100b91e3beffd1ce9ff9b781f121d25532a6593",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-1616203861-round2-0-trained",
+    "seed": 1616203861,
+    "opponent": "round2",
+    "side": 0,
+    "policy": "trained",
+    "banks": [
+      43098.0,
+      47863.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 43098.0,
+    "opponent_bank": 47863.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 40098.0,
+    "opponent_net_profit": 44863.0,
+    "margin": -4765.0,
+    "score": 0.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "c9fa7cad8d046d90ac33fd29afc1bc7bc883dae2feaec0abedff3086cea399e0",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "93115d0bbed5431b4a975f642499b8eea17ee3aad4c0e19431227b0833300e34",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "4f8edd369f1f1e75186c5ba7edf58ddea8e0597c6f447dfd48b7f37f579d87ac",
+    "audit_version": 2,
+    "rewards": [
+      43098.0,
+      47863.0
+    ],
+    "replay_gzip_sha256": "0052756e02580999f0f245bc9e495ba7f7b2c603006b5d864ffdc5e54554ef10",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-1616203861-round2-0-trained.py",
+    "trace_sha256": "bfd6e2868d4ec2529ab97978673caab35b1dc68d0d298245ecf2c3a024c59328",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-1616203861-round2-1-trained",
+    "seed": 1616203861,
+    "opponent": "round2",
+    "side": 1,
+    "policy": "trained",
+    "banks": [
+      47863.0,
+      43098.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 43098.0,
+    "opponent_bank": 47863.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 40098.0,
+    "opponent_net_profit": 44863.0,
+    "margin": -4765.0,
+    "score": 0.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "42922eb657738b72e63cfd60ce4c644ad583e6309e5498bc62e90ed32748d7ac",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "98ceb64146847b44a1ac1d12d99cd5b3c38e6d882bf343d058a7b190aa1aeeed",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "a754e19c8a710e6c2f6e323ddea15ee8cf8760a38a308d876d0b166eadb2f750",
+    "audit_version": 2,
+    "rewards": [
+      47863.0,
+      43098.0
+    ],
+    "replay_gzip_sha256": "ce7a93a99fe198da5a6a843111945493e98256e19e7af45e27bcb805c07e3516",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-1616203861-round2-1-trained.py",
+    "trace_sha256": "c43fe46adbc9499a05cab10f7898771d8a69f7c4ce1e9685709629bcacca5161",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-1616203861-round2-0-teacher_task",
+    "seed": 1616203861,
+    "opponent": "round2",
+    "side": 0,
+    "policy": "teacher_task",
+    "banks": [
+      45187.0,
+      45995.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 45187.0,
+    "opponent_bank": 45995.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 42187.0,
+    "opponent_net_profit": 42995.0,
+    "margin": -808.0,
+    "score": 0.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "982f0fce26193da404a4b53cf05c9c4de5e3bc1669a3712e04fe6672e64e5be0",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "2c33784a0b5640519e0d6b779c62469f1f59ea5e1e97a8e2e5738203f26aedd5",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "50f024369016dc4ac15283b737a6dc3161f4bb72b581bcd9d55e2c399332c0ae",
+    "audit_version": 2,
+    "rewards": [
+      45187.0,
+      45995.0
+    ],
+    "replay_gzip_sha256": "c0b6b17c6368492f27970bbb1badae9c69e68e2770068431df62cfdfcff55950",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-1616203861-round2-0-teacher_task.py",
+    "trace_sha256": "cb4ace6472223ec34c08f19c1e1a555c1d81c7baeb82afe7c0de7f2a4c3e7513",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-1616203861-round2-1-teacher_task",
+    "seed": 1616203861,
+    "opponent": "round2",
+    "side": 1,
+    "policy": "teacher_task",
+    "banks": [
+      45995.0,
+      45187.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 45187.0,
+    "opponent_bank": 45995.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 42187.0,
+    "opponent_net_profit": 42995.0,
+    "margin": -808.0,
+    "score": 0.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "e81ab22a0e03cb439a4f9b74280958be1795ce2f623a9fc85e09f9aefff7810c",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "ac32852f227683e6f41cb1ae32905d60a42d095e931be518f78042e5d709899d",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "6f2bffb7fb6ea050e26182a8033e3685413a9ae676a3a3d8460e22f916a36126",
+    "audit_version": 2,
+    "rewards": [
+      45995.0,
+      45187.0
+    ],
+    "replay_gzip_sha256": "c64ebb6d502346152350015ddd2fe8e7ba71e46119b87e70af4cdf7c0b4114b3",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-1616203861-round2-1-teacher_task.py",
+    "trace_sha256": "fbc06d047a1ed5aa3f7787ed5c8b49552202e00a8d87ccd784bcb555397fa35e",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-870190021-v1-0-trained",
+    "seed": 870190021,
+    "opponent": "v1",
+    "side": 0,
+    "policy": "trained",
+    "banks": [
+      45424.0,
+      45074.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 45424.0,
+    "opponent_bank": 45074.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 42424.0,
+    "opponent_net_profit": 42074.0,
+    "margin": 350.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "4c9c6c50cee3556ab1092d86eb832d1835385e2f906df1cbb0179317e5d1b756",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "2ead7e7af1059ff7a15e4a8cd653550296846adc2f7a1168978ce66024e1e9b2",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "26a8ab3a7c833aea03bee161cd67b9761993a107c59c35ca5364b22492e77533",
+    "audit_version": 2,
+    "rewards": [
+      45424.0,
+      45074.0
+    ],
+    "replay_gzip_sha256": "1dc7a4ff333e83b485b08df9e2c250c246d0d5dce1a198cd773a79973e4e49bb",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-870190021-v1-0-trained.py",
+    "trace_sha256": "b0f7804e38c0f872f39ab1641f12f611bfcfb1c59b0897d83d5d9f70143e128f",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-870190021-v1-1-trained",
+    "seed": 870190021,
+    "opponent": "v1",
+    "side": 1,
+    "policy": "trained",
+    "banks": [
+      45074.0,
+      45424.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 45424.0,
+    "opponent_bank": 45074.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 42424.0,
+    "opponent_net_profit": 42074.0,
+    "margin": 350.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "f9990018aff97f5f69e7e380d3880481b68f52cf099d731021c794bdcf57c36f",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "2b8eda176c67deca4318e4d865e49c7c6b9e1912be79671deaadd28c6306560b",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "08764061674223434fccd7ba29c0cbcdace4efe9220d4866d7458143b479e31d",
+    "audit_version": 2,
+    "rewards": [
+      45074.0,
+      45424.0
+    ],
+    "replay_gzip_sha256": "d0dc526153d6998715595fa5db67a34fecfe54688f02ccc62043734c58d7bfb8",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-870190021-v1-1-trained.py",
+    "trace_sha256": "e11590cc523d052ab40e38d75af2cb1b80029b8219ee50e3083d24ff55cc3fb1",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-870190021-v1-0-teacher_task",
+    "seed": 870190021,
+    "opponent": "v1",
+    "side": 0,
+    "policy": "teacher_task",
+    "banks": [
+      45336.0,
+      45124.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 45336.0,
+    "opponent_bank": 45124.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 42336.0,
+    "opponent_net_profit": 42124.0,
+    "margin": 212.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "0f96519355c14d63eda98c7e07bc4962d8fdef9a06e68b550a0c527e7fbc1361",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "58e48d045190d610ad26c0b84300ff74278d5ee5014682670969050b7006f74d",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "c0ae07204b696672f70c7c007556dfc59a5f4f65bba7704cfe1114b44e218661",
+    "audit_version": 2,
+    "rewards": [
+      45336.0,
+      45124.0
+    ],
+    "replay_gzip_sha256": "53a37f56672ce6f2ed27ee183028cb8fdf14ff5a42bdc40a3b7faffc53a1eedc",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-870190021-v1-0-teacher_task.py",
+    "trace_sha256": "3a641d009435b4c68fb6967a63f6255be1610c955cc79155503f73bcac0d8701",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-870190021-v1-1-teacher_task",
+    "seed": 870190021,
+    "opponent": "v1",
+    "side": 1,
+    "policy": "teacher_task",
+    "banks": [
+      45124.0,
+      45336.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 45336.0,
+    "opponent_bank": 45124.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 42336.0,
+    "opponent_net_profit": 42124.0,
+    "margin": 212.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "2aa3b3abfbd990f492fee851f1040de7e0299b9cbaa7e0f99deea9c547d4a3d3",
+    "rival_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "d295e1eac49d890c1e734ab7fa4d2717b2fab188ecbde1a44ce21fc3459304b0",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "7569ba2e968e96181184d38d852cd24bd40435cb4cdfcaa5a855cca0951dfabd",
+    "audit_version": 2,
+    "rewards": [
+      45124.0,
+      45336.0
+    ],
+    "replay_gzip_sha256": "27aa1788053336d7ac38e3f36ef575f6b9aa755184b649470262c78d2ea70b75",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-870190021-v1-1-teacher_task.py",
+    "trace_sha256": "5d2cbc7734f5283c2313f786b7579bdbec5755c4b8d85b661db6d67f96e0bea9",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-870190021-market-0-trained",
+    "seed": 870190021,
+    "opponent": "market",
+    "side": 0,
+    "policy": "trained",
+    "banks": [
+      49523.0,
+      45005.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 49523.0,
+    "opponent_bank": 45005.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 46523.0,
+    "opponent_net_profit": 42005.0,
+    "margin": 4518.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "b44ac8f9895cde78cf1cbab865ac71d1b5b0a31d2c49f77cae8f9704ac56feae",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "18a19f8cba81d19c8a811f7f9d3eca751ecbf34c9a327203f2b3f03328d04e71",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "602dbc6f68bfbc25ac6c75498ad86f56d98f9a6868ea47e0e2d36b542c1f2932",
+    "audit_version": 2,
+    "rewards": [
+      49523.0,
+      45005.0
+    ],
+    "replay_gzip_sha256": "1e947395e7f9ee1c78d5461b695be6f8f2a1b6fe214f105963cedd6b2e87db58",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-870190021-market-0-trained.py",
+    "trace_sha256": "e0dff815603bda7847ec45df9df424571462101aef45103c0f0ab7a390d63ab4",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-870190021-market-1-trained",
+    "seed": 870190021,
+    "opponent": "market",
+    "side": 1,
+    "policy": "trained",
+    "banks": [
+      45005.0,
+      49523.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 49523.0,
+    "opponent_bank": 45005.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 46523.0,
+    "opponent_net_profit": 42005.0,
+    "margin": 4518.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "865c4009ef993c8156cbd4eefa457118d2351e92f5ccce87611c9bb7945b8ec9",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "c1e29937fb461c8ea98a8a23fc15800eca094fecaaf4e32c8a0e62e99820a43c",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "769a5bfd34137a1a4e2cde7b00e63f52b804914e445ad94e27ffc411a3f13ef1",
+    "audit_version": 2,
+    "rewards": [
+      45005.0,
+      49523.0
+    ],
+    "replay_gzip_sha256": "844fcf47a4a770a5651a82fe544f8e7e50ab88da9f2481bcf2da000b6df55214",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-870190021-market-1-trained.py",
+    "trace_sha256": "b2ac752c8268b4c80e4329519ab58cd687dafd29a2b743ab9618853f0473ce8e",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-870190021-market-0-teacher_task",
+    "seed": 870190021,
+    "opponent": "market",
+    "side": 0,
+    "policy": "teacher_task",
+    "banks": [
+      49684.0,
+      45005.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 49684.0,
+    "opponent_bank": 45005.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 46684.0,
+    "opponent_net_profit": 42005.0,
+    "margin": 4679.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "556512f6235a46fbeec78eb84cb3867e5ec8656b1ef6cff79d62e1b15a4e40e5",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "353a3bd80fdf620dd8e20ff0f993bca4f19f4b1c88a50c3fc0ce9cb9febdcc0e",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "8ee4da37f482534b398a20f6cceb96d5b0437932a6d702df5454a51d65dd0c92",
+    "audit_version": 2,
+    "rewards": [
+      49684.0,
+      45005.0
+    ],
+    "replay_gzip_sha256": "709468cfb85eac0c08a1e9ed252d7c6f78e1ae759bffb00e4f22e31fac91aa12",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-870190021-market-0-teacher_task.py",
+    "trace_sha256": "6948f7f792fd897c834ec49bce2c7b308959993c4ab56ac9e06eed6f316bb654",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-870190021-market-1-teacher_task",
+    "seed": 870190021,
+    "opponent": "market",
+    "side": 1,
+    "policy": "teacher_task",
+    "banks": [
+      45005.0,
+      49684.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 49684.0,
+    "opponent_bank": 45005.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 46684.0,
+    "opponent_net_profit": 42005.0,
+    "margin": 4679.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "8c8d8f6ecc82b2b7aa68057368c7d007df4c53f29532ecebda3a86c9aa6b1368",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "bcd34d5266b7c9d0176cc5da35057a566a195e31fc8fc2cd20abfe0b6b89b49a",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "81b7927535aefe648c4d205e7809da92570a26a1eff40c5388e0894611669dca",
+    "audit_version": 2,
+    "rewards": [
+      45005.0,
+      49684.0
+    ],
+    "replay_gzip_sha256": "72e43a9586f761988ceb9eaff0f07b08e298ff104bbd7e1af8660500cf8eab22",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-870190021-market-1-teacher_task.py",
+    "trace_sha256": "70b6cc935fd377ba1f573c5dc294dcbf81286eef2c1ddcaf7e864cfa47b7ea31",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-870190021-round2-0-trained",
+    "seed": 870190021,
+    "opponent": "round2",
+    "side": 0,
+    "policy": "trained",
+    "banks": [
+      43454.0,
+      47266.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 43454.0,
+    "opponent_bank": 47266.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 40454.0,
+    "opponent_net_profit": 44266.0,
+    "margin": -3812.0,
+    "score": 0.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "29a168c2193583bd6e27bcf30a4ade47d11f6807292c45c40033f36abe5ae4b9",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "6d2297df33abf7e0904a91252434601492d4035e46fb12322551ee6e1328dc4a",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "a059f3304b985abc69156bf5d56d356849ee2242e7ddbdebd3f6705c9941f03c",
+    "audit_version": 2,
+    "rewards": [
+      43454.0,
+      47266.0
+    ],
+    "replay_gzip_sha256": "36aceeccb1ce6fd8e55c2ffd241c99671f4844b272a83aaf75962f9763df6894",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-870190021-round2-0-trained.py",
+    "trace_sha256": "818fefb268bda58326c868863b60d144e53faf3a800114191160c0ce81be8941",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-870190021-round2-1-trained",
+    "seed": 870190021,
+    "opponent": "round2",
+    "side": 1,
+    "policy": "trained",
+    "banks": [
+      47266.0,
+      43454.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 43454.0,
+    "opponent_bank": 47266.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 40454.0,
+    "opponent_net_profit": 44266.0,
+    "margin": -3812.0,
+    "score": 0.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "157a2e88f0f16f2afc3f7e58324f0ed275a685a1a05b94fc6b30da698f4c3a78",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "2e22b879cb3a5ba19b78a0b00a9f8b18dadf81d2f22be76f989b71854efdb95f",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "6a121f4521d23d3362801bdb5385abca369a9ecfee66fed710fa25ab83a65c64",
+    "audit_version": 2,
+    "rewards": [
+      47266.0,
+      43454.0
+    ],
+    "replay_gzip_sha256": "a6cebd831e0848fa85bb435be4119336c11ae8b93578b1869352ea57ef74c785",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-870190021-round2-1-trained.py",
+    "trace_sha256": "7431d4b89975bd20177c47c4a262f14d4fd0bf8552d7a08f2ce3221aba4b6f46",
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-870190021-round2-0-teacher_task",
+    "seed": 870190021,
+    "opponent": "round2",
+    "side": 0,
+    "policy": "teacher_task",
+    "banks": [
+      45423.0,
+      45413.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 45423.0,
+    "opponent_bank": 45413.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 42423.0,
+    "opponent_net_profit": 42413.0,
+    "margin": 10.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "523289901677478fc6727699763e4654dd427d14be85a5e91de992f1f1e841ab",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "90195b34e1e493f309d96654b20a49977ab7dc29bea440088d0889543389d881",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "2cb2a669c2fd18918bdeaef1c3431d18dd9c81df9523132a92c70d74381b0d7f",
+    "audit_version": 2,
+    "rewards": [
+      45423.0,
+      45413.0
+    ],
+    "replay_gzip_sha256": "d15b56708a1369f1f6f88a5fcf8254480b8c894357ccb5d508cdd9eb20900e27",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-870190021-round2-0-teacher_task.py",
+    "trace_sha256": "ec363af110c0e5118f80a47fc3b098a2e0b5d52a06b0b8ebb8b2501dddecd37f",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  },
+  {
+    "game": "holdout-870190021-round2-1-teacher_task",
+    "seed": 870190021,
+    "opponent": "round2",
+    "side": 1,
+    "policy": "teacher_task",
+    "banks": [
+      45413.0,
+      45423.0
+    ],
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "bank": 45423.0,
+    "opponent_bank": 45413.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 42423.0,
+    "opponent_net_profit": 42413.0,
+    "margin": 10.0,
+    "score": 1.0,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "passed": true,
+    "bot_sha256": "8cc54419e0719af87f4c54fcb41befda475dffc87799c77f682e44be12f5195a",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "package": "1.33.0",
+    "semantic_replay_sha256": "290cdb38d0deb9cc7a6b33a45d7ba952cee36c74e7d65966f4e223752c0381f3",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "8bc04e40f5bf9c2e16a2ceb1cebde48c69dd5d3e879b3ec0d5fb288e0a5988f6",
+    "audit_version": 2,
+    "rewards": [
+      45413.0,
+      45423.0
+    ],
+    "replay_gzip_sha256": "fe865d5f64a723e67fb2f1e0b223a5087a06934be307308bf3037081396dcae4",
+    "agent_errors": 0,
+    "agent_relative": "artifacts/task-bc-holdout-v1-20261023/agents/holdout-870190021-round2-1-teacher_task.py",
+    "trace_sha256": "cf6fd788bd7d78364818a80f34b8c2ad8a51f78659577493197680b48e87fa42",
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "official_filename_entry": true
+  }
+]

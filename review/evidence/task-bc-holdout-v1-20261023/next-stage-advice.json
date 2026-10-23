@@ -1,0 +1,166 @@
+{
+  "schema": "task-holdout-next-stage-advice-v1",
+  "author_role": "Independent planning subagent, not external WebChat",
+  "status": "Advice only; diagnostic implementation and execution have not started",
+  "independent_final_review": "Pending at planning time; do not infer approval from the completed main audit",
+  "proposed_stage": "task_bc_error_diagnostics_v1",
+  "purpose": "Use the consumed panel once to distinguish conditional imitation errors, numeric representation aliasing, support shift and reservation-mediated action differences. Produce reproducible evidence and at most one justified later intervention proposal, without changing any policy now.",
+  "current_result": {
+    "source_root": "artifacts/task-bc-holdout-v1-20261023",
+    "completed_games": 96,
+    "main_official_reexecution_transitions": 69024,
+    "run_failures": 0,
+    "paired_net_delta_mean": -420.1875,
+    "relative_net_delta": -0.010569386457832765,
+    "relative_ci95": [-0.015766790524436455, -0.004813206761653003],
+    "primary_engineering_retention_gate_passed": true,
+    "round2_score_delta": -0.25,
+    "round2_score_guard": -0.05,
+    "overall_statistical_gate_passed": false,
+    "interpretation": "The registered engineering tolerance passed, but the round2 guard failed. Neither admission nor profit improvement is established. Existing failures and gates remain unchanged."
+  },
+  "entry_conditions": [
+    "Complete the existing independent final review first. If it finds an unresolved integrity or execution defect, stop this proposal and resolve that specific defect in a separately registered stage.",
+    "Freeze the diagnostic definitions, output schemas, budgets and input hashes before processing private holdout traces. This registration is post-outcome exploratory registration, not a new confirmatory holdout.",
+    "Use a new output root artifacts/task-bc-error-diagnostics-v1-20261023; refuse an existing nonempty destination. Keep all previous roots immutable.",
+    "The eight holdout seeds are permanently consumed for development. Never later call this panel independent or use it as an intervention acceptance test."
+  ],
+  "inputs": {
+    "current_evidence": [
+      "artifacts/task-bc-holdout-v1-20261023/registration.json",
+      "artifacts/task-bc-holdout-v1-20261023/ledger.json",
+      "artifacts/task-bc-holdout-v1-20261023/statistics.json",
+      "artifacts/task-bc-holdout-v1-20261023/run-summary.json",
+      "artifacts/task-bc-holdout-v1-20261023/audit.json",
+      "artifacts/task-bc-holdout-v1-20261023/games",
+      "artifacts/task-bc-holdout-v1-20261023/traces"
+    ],
+    "historical_support": [
+      "artifacts/task-choice-v1-20261023/data",
+      "artifacts/task-bc-v1-20261023-run1/cache",
+      "artifacts/task-bc-v1-20261023-run1/cache-summary.json"
+    ],
+    "frozen_implementation": [
+      "learning/task_choice_v1/agent.py",
+      "learning/task_choice_v1/features.py",
+      "learning/task_bc_v1/model.py",
+      "learning/task_bc_v1/cache.py",
+      "learning/task_bc_v1/deployment.py",
+      "bots/teacher_fertilizer_terminal_v2.py"
+    ],
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "legal_observation_rule": "Extract only the acting seat's observation through the established observation/observe boundary. Preserve visible inventory order and configuration. Offline seed, opponent private state, future states, labels and teacher choice tuples never enter either model."
+  },
+  "hard_budget": {
+    "training_runs": 0,
+    "gradient_updates": 0,
+    "parameter_changes": 0,
+    "checkpoint_reselections": 0,
+    "new_matches": 0,
+    "new_seed_draws": 0,
+    "official_engine_transitions": 0,
+    "original_panel_games": 96,
+    "original_turns": 69024,
+    "historical_numeric_groups": 135406,
+    "historical_candidates": 6900116,
+    "max_panel_record_groups": 600000,
+    "max_panel_record_candidates": 40000000,
+    "max_shadow_full_policy_calls": 69024,
+    "max_shadow_record_groups": 600000,
+    "max_shadow_candidates": 40000000,
+    "max_witness_cases": 12,
+    "max_independent_witness_policy_calls": 24,
+    "max_workers": 2,
+    "wall_clock_limit_seconds": 14400,
+    "per_worker_timeout_seconds": 900,
+    "full_processing_passes": 2,
+    "rule": "Pass 1 inventories and hashes records and builds train-only support summaries; pass 2 performs frozen scoring and shadow-policy diagnostics. Cached numeric unique groups may avoid repeated scoring but retain original multiplicity. Caps are fail-closed, not truncation targets. No restart, retry, budget enlargement or alternative seed panel after a cap or failure."
+  },
+  "analysis": [
+    {
+      "id": "A_conditional_same_context",
+      "method": "For every stored task record in both trajectory arms, score the frozen task model on that exact shared_x and ordered candidate matrix. Compare its candidate ID with the record's conditional teacher_label, using first canonical argmax ties. On student records, also require equality with stored chosen. On reference records, require stored chosen equals teacher_label.",
+      "why": "TaskAgent.select already records the teacher decision under that invocation's actual reservations and candidate set. This comparison isolates a conditional imitation disagreement without replacing the prior assignment path.",
+      "outputs": "Exact candidate, operation, worker and target disagreement counts; singleton/multicandidate and cross-operation competition denominators; five-class confusion and per-class recalls; teacher-label logit gap and tie frequency. Logit gaps are classification diagnostics, not reward regret."
+    },
+    {
+      "id": "B_same_observation_full_path",
+      "method": "For each saved acting-seat observation, evaluate only the opposite frozen policy as a shadow: teacher_task on a student-origin observation, or trained on a reference-origin observation, always with the identical frozen crop head. Compare the shadow result with the already main-audited factual trace and complete action. Do not call env.step or regenerate an episode. Reuse a cached evaluation only for byte-identical sanitized observation, configuration and visible ordering.",
+      "alignment": "Within a turn, match task calls only while input, candidate identities and planned resources are equal. Record the first conditional choice difference and the first subsequent candidate/reservation divergence. After context divergence, compare paths descriptively rather than pretending callback ordinal is a matched decision.",
+      "outputs": "Separate candidate-ID differences, same submitted action despite different targets, first differing unit request/navigation, market request changes, and seeds/needed_seeds/supply/projected_shed/available-unit reservation differences. Classify zero-task-call turns explicitly.",
+      "effect_boundary": "A differing request is not an executed effect. For the factual arm only, link to already saved next-state fields or existing execution evidence when attribution is unambiguous; otherwise mark unknown. Shadow actions have no observed execution. First divergence locates a mechanism, not the cause or amount of terminal profit loss."
+    },
+    {
+      "id": "C_duplicate_and_support",
+      "method": "Build exact training numeric-group keys using candidate count, ordered float32 shared/candidate bytes and normalized signed zero, matching NumericEquivalence. Keep semantic candidate identities separately. Classify validation and each trajectory arm as train-exact-seen versus train-unseen; also report within-panel multiplicity, candidate-set identity overlap, candidate-count range and within-group numeric aliases. Do not merge permutations that the deployed ordering treats differently.",
+      "conflicts": "Find equal numeric inputs with different conditional teacher labels, distinguishing different full structured context from identical context, plus later identical candidates unreachable by first argmax. Report conflict class sizes and witnesses. Any optimistic agreement bound remains an upper bound, not model capacity or attainability proof.",
+      "distribution": "Using training-only reference summaries, count each feature outside training min/max, unseen discrete values and candidate counts. Report by arm, opponent and broad fixed game-time thirds. Exact-novelty alone is not evidence of harmful OOD; combine support novelty with conditional disagreement and effective-action differences. No fitted OOD model, nearest-neighbour sweep or outcome-selected bins.",
+      "weighting": "Report both original-call-weighted and numeric-unique-weighted rates, preserving separate train and validation roles. Repeated turns, candidates and mirrored seats are not independent observations."
+    },
+    {
+      "id": "D_bounded_mechanism_witnesses",
+      "method": "Choose at most two earliest witnesses in each of six opponent-by-trajectory-arm strata, using registration seed order then side, step and decision order. First preference is a reproducible alias/encoding discrepancy; otherwise the earliest conditional mismatch that changes the full submitted action. Second preference is the earliest distinct subsequent reservation/candidate divergence; absent cases remain absent. Never choose the largest terminal loss.",
+      "evidence": "Each local witness contains source file hash and exact game/step/callback keys, sanitized input and both choice/action outputs, numeric and structured hashes, affected reservations, and an explicit factual-versus-shadow marker. Independently reproduce at most 12 witnesses with at most 24 policy calls. No additional official transitions.",
+      "nonclaims": "Do not call teacher priorities, logit gaps or label differences regret. Do not attribute the paired final-money delta to a first mismatch. Opponent response and changed markets may mediate observed differences, but this stage does not identify their causal reward contribution."
+    }
+  ],
+  "statistical_reporting": {
+    "unit": "Eight original seed clusters; 48 original pairs are retained for indexing, with both seats reported but never counted as independent replications",
+    "primary_diagnostic_table": "Per origin arm and opponent: factual task opportunities, unique numeric groups, exact-ID mismatch rate, operation mismatch, full action mismatch, reservation divergence, train-seen/unseen rates and their denominators",
+    "aggregation": "Show call-weighted totals, unique-numeric totals and eight per-seed values; show equal-seed summaries separately. Include undefined denominators as null, not zero. Report exact duplicates across seats instead of quietly dropping or double-crediting them.",
+    "uncertainty": "No new hypothesis tests, admission gates, p-values, profit confidence claims or bootstrap search. These post-outcome diagnostics are exploratory. Existing frozen profit and score statistics may be linked for context, not recomputed with a more favorable estimator.",
+    "subgroups": "Only predeclared arm, opponent, seat, five task classes, three game-time thirds, singleton/multicandidate, cross-operation competition and train-seen/unseen slices. Do not enumerate their full Cartesian product or mine new outcome-selected slices."
+  },
+  "acceptance_and_stop": {
+    "complete": [
+      "All 96 source replays/traces and both frozen model identities match their existing manifests; no file was modified.",
+      "All 69024 saved turns are accounted for, including turns with no task callback; factual student selections equal fresh frozen-model selections for every original student record.",
+      "Both trajectory origins receive conditional comparisons and opposite-policy same-observation analysis; all counters have explicit denominators and coverage.",
+      "At most 12 deterministic witnesses reproduce independently; missing witness categories are reported honestly.",
+      "Write one compact current summary, source/output manifest, aggregate diagnostic table and one selected-or-inconclusive intervention decision. A complete inconclusive diagnostic is a valid completed stage."
+    ],
+    "stop_immediately": "Any schema/hash mismatch, nonfinite input, unknown candidate ID, factual model-choice mismatch, missing required original data, unexpected file mutation, cap breach or timeout. Preserve the failure receipt, stop dispatch, close/wait owned workers, and do not expand into a second audit program.",
+    "no_research_extension": "No extra seeds, alternative checkpoints, new opponents, fallback strategies, manually tuned priorities, PPO, DAgger, training or extra matches. Do not re-audit all official engine transitions already reviewed."
+  },
+  "one_later_intervention_decision": {
+    "selection_rule": "Choose at most one family in the following priority order, with a reproduced witness and aggregate scope. Multiple plausible causes without a uniquely supported choice yield inconclusive; do not bundle interventions.",
+    "ordered_families": [
+      {
+        "if": "A reproducible encoding, normalization, candidate ordering or reservation plumbing mismatch violates the frozen interface contract",
+        "then": "Propose one minimal interface/data-contract correction targeting that witness in a separately registered stage; do not reclassify the present model or panel as passing."
+      },
+      {
+        "if": "Numerically identical deployed inputs require conflicting labels while a specific legal observable field distinguishes the full contexts",
+        "then": "Propose one feature-representation revision exposing that justified field, with an independent offline contract check before any separately authorized fitting. Do not add teacher priorities, labels, private opponent data or future information."
+      },
+      {
+        "if": "No contract defect or alias witness exists, but exact-seen numeric groups show reproducible errors and duplicate-weighted versus unique-weighted analysis demonstrates a concrete training-frequency distortion affecting action differences",
+        "then": "Propose one duplicate-aware weighting change for a future bounded BC experiment on the existing original training partition. Freeze the weighting formula before that experiment; do not select epochs or tune weights on this consumed panel."
+      },
+      {
+        "if": "Mismatch is concentrated on train-unseen contexts with feature/range or candidate-support changes, without a supported contract or alias explanation",
+        "then": "Declare support-shift evidence and select a single future representation/coverage research question only if a legal observable mechanism is specifically demonstrated. Otherwise choose no intervention; this evidence alone does not justify new labels, rollout aggregation, retraining or hand-tuned strategy."
+      }
+    ],
+    "future_evaluation": "Any later implemented intervention needs its own fixed development procedure and genuinely new preregistered acceptance panel after model selection. This advice does not authorize or start that evaluation."
+  },
+  "protection_and_publication": {
+    "preserve": "All old strategies, default entrypoints, source, models, data partitions, failed stages, registrations, outcomes and admission thresholds remain byte-identical. Existing Agent Workflow remains disabled.",
+    "writes": "Diagnostic scripts and outputs, if later approved for execution, may be added only under the newly registered diagnostic root; this planning turn creates only this advice file.",
+    "private": "Raw replays, per-turn inputs, full traces, models, local logs and detailed witnesses remain local. Never copy hardware, hostnames, absolute paths or credentials to public artifacts.",
+    "public": "Publish only relative paths, schema, aggregate counters, source hashes, budget receipts, public-safe summary and review conclusions. Public examples must be redacted mechanism descriptions, not raw private observations.",
+    "temporary_files": "Use the established owned OS-temp scratch lifecycle for disposable work; close and wait owned children before cleanup. Preserve current recovery evidence and report any policy-blocked cleanup without bypassing it."
+  },
+  "evidence_read": [
+    "learning/task_bc_holdout_v1/README.zh-CN.md",
+    "TASK_BC_V1.zh-CN.md",
+    "TASK_CHOICE_V1.zh-CN.md",
+    "learning/task_bc_holdout_v1/audit.py",
+    "learning/task_choice_v1/agent.py",
+    "learning/task_choice_v1/features.py",
+    "learning/task_bc_v1/cache.py",
+    "learning/task_bc_v1/deployment.py",
+    "learning/task_bc_v1/model.py"
+  ]
+}
