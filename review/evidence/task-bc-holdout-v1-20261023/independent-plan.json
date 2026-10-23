@@ -1,0 +1,92 @@
+{
+  "stage": "task_bc_holdout_v1",
+  "role": "Independent reviewer; no implementation, training or new-game dispatch",
+  "baseline_public_head": "2f5cf67cb2adcff0003285a3c341833e55fd8ea3",
+  "planned_before_registration_and_results": true,
+  "source_basis_sha256": {
+    "repair_next_advice": "d2aa4a9760762600bc50068edc5aba7f844cf270a4962fddcd6450bb510a9c7f",
+    "novelty_helper": "d51a01555f4710932e80c8e3aa328cb0bb4179f08531473df12149126074ea8c",
+    "earlier_epoch6_holdout_runner": "93afa1dfcabadcb748f8e525a19ec2f5b7e3de1a999554697961fb7229e7ecd5",
+    "installed_official_rules": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "installed_official_seed_protocol": "537b627b11784d424147ef57ebb0369b039bf83c9f891e81f10486b1f552334b"
+  },
+  "budget": {
+    "panel_game_attempts": 96,
+    "training_runs": 0,
+    "parameter_updates": 0,
+    "checkpoint_reselection": 0,
+    "maximum_concurrent_game_processes": 2,
+    "reviewer_new_games": 0,
+    "reviewer_maximum_saved_replay_transitions": 2876
+  },
+  "sample_rule": [
+    {
+      "seed_position": "first in frozen test_seeds, not numerically smallest",
+      "arm": "fixed_trained_task_plus_fixed_crop",
+      "opponent": "market",
+      "seat": 0
+    },
+    {
+      "seed_position": "first in frozen test_seeds, not numerically smallest",
+      "arm": "fixed_trained_task_plus_fixed_crop",
+      "opponent": "market",
+      "seat": 1
+    },
+    {
+      "seed_position": "last in frozen test_seeds, not numerically largest",
+      "arm": "fixed_trained_task_plus_fixed_crop",
+      "opponent": "market",
+      "seat": 0
+    },
+    {
+      "seed_position": "last in frozen test_seeds, not numerically largest",
+      "arm": "fixed_trained_task_plus_fixed_crop",
+      "opponent": "market",
+      "seat": 1
+    }
+  ],
+  "sample_binding": "Bind actual seed integers and deployed arm/opponent names after preregistration, before any outcome. Missing or unstarted samples are not replaced.",
+  "pre_review": [
+    "Current clean public HEAD and all inherited model/controller/encoder/teacher/default/opponent/rule/loader identities; prior repair accepted, original training-stage filename failure unchanged.",
+    "Exactly eight unique explicit integer seeds in official domain; reproduce frozen generator and declared distribution. Conservative novelty scan includes current tracked public text and local recorded registration/config/manifest/ledger/result/summary/seed files, including market192 reserved tests. Scope and exclusions disclosed; no claim of global novelty.",
+    "Fixed candidate and hybrid reference use identical crop model and opportunity generation, candidate masks, protocol constraints and teacher-controlled transport/market. Only task selector differs; no feature/schema/model/gate changes.",
+    "Official resolve_episode_seed removes config seed and preserves it in replay info; deployed actor receives legal observations/config only, never root replay/info/opponent private or future data.",
+    "Exact registration/freeze/pre-review and source Git blobs before first game; loader preflight compatibility, current installed engine+loader hash before dispatch.",
+    "Every game uses separate official Python process and output/trace path. Threads may schedule subprocesses but must not simulate environments or share actor/RNG state. At most two in-flight, no prequeued launches after observed error.",
+    "Single-use markers; attempts recorded before launch; stop refill on any process/error/audit/identity/isolation failure, drain and retain in-flight results; never retry or replace. Finish each whole seed before safety decision, never stop early for success.",
+    "Strictly 8seeds x3opponents x2seats x2arms =96; no extra filename panel because all96 already use official filename loader.",
+    "Targeted synthetic regressions cover exact pair grid, duplicate/missing/mismatched identity rejection, whole-seed bootstrap, nonpositive ratio denominators and exact gate boundaries; no new official game for regression."
+  ],
+  "statistics": {
+    "primary": "Mean paired student-minus-reference own net profit divided by mean reference net profit, not mean of pairwise percentages. Net profit is final minus initial cash.",
+    "cluster": "Eight complete seed clusters; every resample retains all opponent-seat-arm pairs of each sampled seed. Equal seed weights.",
+    "bootstrap_rng": "numpy Generator(PCG64(2026102341))",
+    "bootstrap_draws": 20000,
+    "sampled_clusters_per_draw": 8,
+    "quantiles": [
+      0.025,
+      0.975
+    ],
+    "quantile_method": "linear",
+    "primary_gate": "95percent ratio interval lower strictly greater than -0.02",
+    "opponent_guards": "Each opponent mean relative net-profit delta >=-0.05 and match-score delta >=-0.05; equality passes. Point-estimate guards only.",
+    "denominator": "Every reported reference denominator, including bootstrap draws, must be positive; otherwise leave ratio undefined and admission false. No silent dropping, clipping or epsilon division.",
+    "interpretation": "Engineering retention tolerance, not superior performance. Eight clusters remain small regardless of20k draws; per-opponent observed guards are not population statistical noninferiority."
+  },
+  "post_review": [
+    "Independently check all attempted/completed tuples, identity hashes, raw replay final cash/rewards/status, trace and source bindings, audit coverage, safety-stop timing and zero retry.",
+    "Independently recompute all48pairs,8seed aggregates,3opponent summaries, W/D/L and match scores, primary ratio,20k whole-seed percentile interval and gates without relying only on production summarize.",
+    "Replay only four prespecified saved student-market games, at most2876official transitions; distinguish root all96 certificates from independent sample scope.",
+    "Check protected historic files and prior negative outcomes unchanged; only explicit complete-prefix append of two review documents at publication.",
+    "Report actual sample count and partial safety/failure stop without confirmatory inference if panel incomplete. No model change or new seed draw after result."
+  ],
+  "current_execution": {
+    "formal_games": 0,
+    "training": 0,
+    "official_transitions": 0
+  },
+  "limitations": [
+    "Plan only; actual new source, seeds and freeze require separate pre-review before execution.",
+    "Seed novelty is bounded by recorded local/public history and cannot prove unrecorded external novelty."
+  ]
+}

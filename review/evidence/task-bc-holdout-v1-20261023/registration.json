@@ -1,0 +1,106 @@
+{
+  "experiment": "task-bc-holdout-v1",
+  "created_utc": "2026-10-23T10:10:53.973872+00:00",
+  "baseline_head": "2f5cf67cb2adcff0003285a3c341833e55fd8ea3",
+  "initial_worktree_clean": true,
+  "runtime_versions": {
+    "python": "3.12.2",
+    "numpy": "2.5.4",
+    "kaggle_environments": "1.33.0"
+  },
+  "evaluation_role": "independent-holdout-fixed-model",
+  "previous_root": "artifacts/task-entry-repair-v1-20261023",
+  "prior_task_stage_acceptance_passed": false,
+  "default_changed": false,
+  "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+  "crop_checkpoint": "artifacts/bc-epoch6-holdout-v1-20261023/panels/fixed_epoch6/model/trained.npz",
+  "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+  "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "official_loader_sha256": "0ac7baf1212b4ce1eabae3cc1cbb55c98effef5e0d0485522a8be87097c39a4f",
+  "explicit_seed_config": {
+    "test_seeds": [
+      1714414373,
+      2117918555,
+      2087726158,
+      3767282565,
+      2941093011,
+      78378034,
+      1616203861,
+      870190021
+    ],
+    "generation": {
+      "algorithm": "Python random.Random.sample without replacement",
+      "rng_seed": 2026102340,
+      "minimum": 0,
+      "maximum_exclusive": 4294967296,
+      "count": 8,
+      "draws": 1,
+      "selection": "One draw before any new outcomes; collision fails preparation, no automatic redraw"
+    }
+  },
+  "seed_config_sha256": "088cb25bd10774b13dda5d523bd5e8172bb17c44301d3c44b40113d84beb0bab",
+  "test_seeds": [
+    1714414373,
+    2117918555,
+    2087726158,
+    3767282565,
+    2941093011,
+    78378034,
+    1616203861,
+    870190021
+  ],
+  "seed_novelty": {
+    "passed": true,
+    "public_text_files": 686,
+    "local_evidence_files": 2354,
+    "scanned_manifest_sha256": "175af0187252cc068002fece9dfba4c0d9dba19c4062e97c6f46604f63df5e70",
+    "scope": "Current tracked public text plus local JSON filenames containing registration/manifest/ledger/config/result/summary/seed",
+    "limitation": "Conservative decimal occurrences; no claim about deleted Git history, raw replay-only seeds, other machines or external experiments",
+    "failed_attempt_files": 2,
+    "failed_attempt_manifest_sha256": "e283b38e3ca93dfbcc3998c51d80b8298aacc65679b3439138f3a09a4e5193cd"
+  },
+  "source_sha256": {
+    "v1.py": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "market.py": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "round2.py": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848"
+  },
+  "arms": [
+    "trained",
+    "teacher_task"
+  ],
+  "opponents": [
+    "v1",
+    "market",
+    "round2"
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "game_budget": 96,
+  "max_workers": 2,
+  "per_game_timeout_seconds": 900,
+  "training_runs": 0,
+  "parameter_updates": 0,
+  "checkpoint_reselections": 0,
+  "bootstrap": {
+    "replicates": 20000,
+    "seed": 2026102341,
+    "quantile_method": "linear"
+  },
+  "gates": {
+    "relative_ci_lower_gt": -0.02,
+    "opponent_relative_mean_min": -0.05,
+    "opponent_score_delta_min": -0.05
+  },
+  "generation_population": "Eight uniform sampled uint32 seeds without replacement; no outcome-dependent redraw",
+  "execution_order": "Seed configuration order; within seed opponent order, then arm order, then seat order. Maximum two independent game processes; no next-seed prefetch.",
+  "statistic": "Own net=actual final cash minus own initial Replay cash; pair trained-teacher_task at identical seed/opponent/seat; relative=mean paired difference/reference mean. 20k PCG64 seed2026102341 resamples of eight whole seeds, retaining all six pairs per seed; re-estimate numerator and denominator; linear 2.5/97.5 percentiles.",
+  "denominator": "Every full-sample, per-opponent and bootstrap reference mean net denominator must be positive; otherwise undefined relative gate and no admission.",
+  "interpretation": "Engineering retention tolerance of2percent, not natural threshold or superiority premise. Eight independent seed clusters, not96independent games. Per-opponent observed guards are not statistical noninferiority guarantees. Known opponents only; teacher_task is hybrid rule task plus same improved crop head.",
+  "stop": "Any error, timeout, source/model/privacy/audit mismatch stops new dispatch; bounded in-flight work finishes or is killed and waited at timeout. No retries/replacements. After complete seed stop if mean student final cash <50percent reference; no truncated confirmatory inference. Never stop early for favorable results.",
+  "acceptance": "All96 real official filename games720states719actionsDONEboth0errors; official ordered replay and both actor/model traces regenerated; all frozen identity/history/privacy checks; complete paired statistics and gates.",
+  "inference_scope": "If gates pass only retain fixed task student as research baseline for this known-opponent/new-seed panel. Do not replace default or claim full mechanism freedom/teacher superiority. Only primary lower>0 permits panel profit-improvement claim.",
+  "boundaries": "No new training/data/parameter search/checkpoint choice/DAgger/PPO. Failure consumes all attempted seeds; no adaptive extension. Raw Replay, traces, weights and local logs remain private."
+}

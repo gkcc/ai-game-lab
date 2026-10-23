@@ -1,0 +1,39 @@
+{
+  "planned_before_results": true,
+  "original_plan_sha256": "87720f58d6a74d7552faff36e510f5f012cbae84a7cb4e2b7251be5df64f0554",
+  "freeze_sha256": "3345932b4e85f48f6740664f3361ec69af7e964d13211cfcd3bad7372382ea6d",
+  "registration_sha256": "b180982229484a3e0a02afa759dccd80f3a49c10c22cd23732abb9d6420e2517",
+  "samples": [
+    {
+      "seed": 1714414373,
+      "side": 0,
+      "policy": "trained",
+      "opponent": "market",
+      "game": "holdout-1714414373-market-0-trained"
+    },
+    {
+      "seed": 1714414373,
+      "side": 1,
+      "policy": "trained",
+      "opponent": "market",
+      "game": "holdout-1714414373-market-1-trained"
+    },
+    {
+      "seed": 870190021,
+      "side": 0,
+      "policy": "trained",
+      "opponent": "market",
+      "game": "holdout-870190021-market-0-trained"
+    },
+    {
+      "seed": 870190021,
+      "side": 1,
+      "policy": "trained",
+      "opponent": "market",
+      "game": "holdout-870190021-market-1-trained"
+    }
+  ],
+  "maximum_independent_saved_replay_transitions": 2876,
+  "missing_samples": "No replacement or new-game dispatch",
+  "denominator_clarification": "Mandatory positive reference denominators are overall, each opponent and their actual bootstrap draws. Per-seed/per-pair descriptive nonpositive denominators produce null, not an extra gate."
+}

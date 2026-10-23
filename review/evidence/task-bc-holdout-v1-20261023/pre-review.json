@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "registration_sha256": "b180982229484a3e0a02afa759dccd80f3a49c10c22cd23732abb9d6420e2517",
+  "freeze_sha256": "3345932b4e85f48f6740664f3361ec69af7e964d13211cfcd3bad7372382ea6d",
+  "independent_plan_sha256": "87720f58d6a74d7552faff36e510f5f012cbae84a7cb4e2b7251be5df64f0554",
+  "independent_sample_plan_sha256": "656d02ba441e12ca42089175ac3cf94c9fb04810d9acd18ebb61e6a4410940c5",
+  "synthetic_statistics_review_sha256": "c8a69665b85f2428e507236da50f94a5c077b21b0b5fb80c023b187819831fc5",
+  "reviewed_sources_sha256": {
+    "learning/task_bc_holdout_v1/audit.py": "af2ff8d75f2637c0a11c04736765e216b7003c76a2f2e1288416b06300aa15f9",
+    "learning/task_bc_holdout_v1/experiment.py": "752bacb8c943e40e5358206e06251ef7eaa908be190661a313438eac71a7bbf4",
+    "learning/task_bc_holdout_v1/games.py": "209fb79b80c2ea4f466a118548c773cfa54432d96f0ce7710532d59434f9061c",
+    "learning/task_bc_holdout_v1/preflight.py": "3f8ec8c5dca87119862cece966310d2d14358264208ae93482ae73147564093a",
+    "learning/task_bc_holdout_v1/README.zh-CN.md": "02747dc6270e4ed6cc6e7c100a77bfac5ae74c1c700302c5a59a2687bccc7bc8",
+    "learning/task_bc_holdout_v1/seeds.json": "088cb25bd10774b13dda5d523bd5e8172bb17c44301d3c44b40113d84beb0bab",
+    "learning/task_bc_holdout_v1/statistics.py": "63784afe816cd575bc57747dbafa71d4c04049852e0e8ceee2cf059881d88fd4",
+    "learning/task_bc_holdout_v1/verify_statistics.py": "942f02141ead894d6c6ae4bf56077eb3bf2df736c2f86ecc87c752ec4b0748df",
+    "learning/task_bc_holdout_v1/__init__.py": "928cb0cf10b2bed3c1ceb88bb0052483963936d923824d5b2815abb5cce472ea"
+  },
+  "frozen_source_files_verified": 85,
+  "protected_runtime_files_verified": 3335,
+  "protected_public_files_verified": 703,
+  "seed_novelty_independent": {
+    "public_text_files": 686,
+    "local_evidence_files": 2354,
+    "attempt_files": 2,
+    "recorded_manifests_reproduced": true,
+    "current_stage_excluded": "Only the new output directory; current new source seed configuration is not in the protected pre-stage tracked-public snapshot.",
+    "limitations": "Conservative decimal occurrences; no claim about deleted Git history, raw replay-only seeds, other machines or external experiments"
+  },
+  "checks": [
+    "Eight exact once-drawn uniform uint32 seeds reproduce; all96 exact tuple identities and ordered four sample targets verified.",
+    "Frozen models, opponents, installed rules/loader and prior acceptance/failed training outcome remain bound and unchanged.",
+    "Independent7synthetic regressions plus heterogeneous8cluster resampling/linear-quantile calculation passed; no real outcomes used.",
+    "Only two independent official Python job processes, including per-job offline audit, can be active. No next-seed prefetch; fixed900s per-job timeout; observed error stops refill, retains completed raw evidence and drains/kills owned jobs.",
+    "Precommit registration/freeze/pre-review exact-byte readiness and single-use preflight/run markers reviewed.",
+    "New deployed wrappers feed unchanged legal observation/controller/model interfaces; privacy injection preflight is registered but not yet executed.",
+    "Primary interval retains whole seed and reestimates numerator and denominator; engineering retention threshold and point guards are not superiority or population subgroup noninferiority claims."
+  ],
+  "real_matches_executed": 0,
+  "official_transitions_executed": 0,
+  "training_runs": 0,
+  "limitations": [
+    "Source/freeze pre-review; actual two-arm official-loader/privacy preflight and all96matches remain unexecuted.",
+    "Only eight seed clusters; novelty is limited to preserved local and tracked public evidence.",
+    "Future audit independently replays only4prespecified saved games, at most2876official transitions; main audit must coverall96."
+  ]
+}

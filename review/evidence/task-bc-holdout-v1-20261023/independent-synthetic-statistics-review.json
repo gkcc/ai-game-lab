@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "existing_regression_tests_passed": 7,
+  "independent_heterogeneous_clusters": 8,
+  "independent_synthetic_games": 96,
+  "independent_resamples": 20000,
+  "independent_linear_ratio_interval": [
+    -0.04712404712404712,
+    0.0634774842232619
+  ],
+  "production_linear_ratio_interval": [
+    -0.04712404712404712,
+    0.0634774842232619
+  ],
+  "independent_method": "Per-draw integer frequency counts, weighted seed sums and explicit sorted interpolation; not production summarize for oracle",
+  "real_games": 0,
+  "training_updates": 0,
+  "source_sha256": "63784afe816cd575bc57747dbafa71d4c04049852e0e8ceee2cf059881d88fd4"
+}

@@ -1,0 +1,21 @@
+{
+  "test_seeds": [
+    1714414373,
+    2117918555,
+    2087726158,
+    3767282565,
+    2941093011,
+    78378034,
+    1616203861,
+    870190021
+  ],
+  "generation": {
+    "algorithm": "Python random.Random.sample without replacement",
+    "rng_seed": 2026102340,
+    "minimum": 0,
+    "maximum_exclusive": 4294967296,
+    "count": 8,
+    "draws": 1,
+    "selection": "One draw before any new outcomes; collision fails preparation, no automatic redraw"
+  }
+}
