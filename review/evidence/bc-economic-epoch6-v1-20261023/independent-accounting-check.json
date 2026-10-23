@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "market_same_full_trajectory_pairs": [
+    {
+      "seed": 35242228,
+      "side": 0,
+      "same_v2": true,
+      "same_v1": true
+    },
+    {
+      "seed": 35242228,
+      "side": 1,
+      "same_v2": true,
+      "same_v1": true
+    },
+    {
+      "seed": 35558356,
+      "side": 0,
+      "same_v2": true,
+      "same_v1": true
+    },
+    {
+      "seed": 35558356,
+      "side": 1,
+      "same_v2": true,
+      "same_v1": true
+    },
+    {
+      "seed": 35803069,
+      "side": 0,
+      "same_v2": true,
+      "same_v1": true
+    },
+    {
+      "seed": 35803069,
+      "side": 1,
+      "same_v2": true,
+      "same_v1": true
+    },
+    {
+      "seed": 35912282,
+      "side": 0,
+      "same_v2": true,
+      "same_v1": true
+    },
+    {
+      "seed": 35912282,
+      "side": 1,
+      "same_v2": true,
+      "same_v1": true
+    }
+  ],
+  "mean_cash_changes": {
+    "net_profit": 1237.4166666666667,
+    "sales_revenue": 1483.5833333333333,
+    "other_cash": -246.16666666666666
+  },
+  "interpretation": "Bookkeeping identity only; not independent causal percentages or market-policy improvement."
+}

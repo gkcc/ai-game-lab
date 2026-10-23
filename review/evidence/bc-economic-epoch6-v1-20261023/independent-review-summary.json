@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "panel_games": 48,
+  "entry_games": 2,
+  "unique_pairs": 24,
+  "script_sha256": "bd613e8e7cf134f3e2087f73333aa87307383db06d3bffe09334710be26ec693",
+  "preregistration_commit": "9cb47cd0307b6456f0a0fcce7d140ebe31650d39",
+  "registration_sha256": "21ae510d1d5ce942302666185d8727de5ba7ec8d2eb1aa8eea558a989e642bd0",
+  "freeze_sha256": "8c15b13c2dd38b2f9d42fe4f19940ef31b9abf7505e15a147879835f10bfb90b",
+  "ledger_sha256": "4093e93197e5a6b6ac6079ea3088aba421d50ddce77ae7c6688ce4c1504a8fff",
+  "entry_ledger_sha256": "e2783e1ecb0102c3529adf6b803c51b16f31afa03d556644f92f650949740127",
+  "old_model_gate_rejected": true,
+  "protected_runtime_files": 1828,
+  "public_byte_identical": 523,
+  "public_append_only": [],
+  "preselected_replay_games": [
+    "dev-35912282-round2-1-original_student",
+    "dev-35803069-v1-0-fixed_epoch6",
+    "entry-dev-0",
+    "entry-dev-1"
+  ],
+  "new_games": 0,
+  "training_runs": 0,
+  "paired_recomputed": 24,
+  "seed_groups": 4,
+  "opponent_groups": 3,
+  "both_player_cash_and_inventory_checks": 100,
+  "all50_certificates_checked": true,
+  "root_full_audit_games": 50,
+  "independent_full_replay_games": 4,
+  "independent_replayed_transitions": 5752,
+  "sampled_replays": [
+    {
+      "game": "dev-35912282-round2-1-original_student",
+      "official_transitions_reexecuted": 1438,
+      "exact_certificate_match": true
+    },
+    {
+      "game": "dev-35803069-v1-0-fixed_epoch6",
+      "official_transitions_reexecuted": 1438,
+      "exact_certificate_match": true
+    },
+    {
+      "game": "entry-dev-0",
+      "official_transitions_reexecuted": 1438,
+      "exact_certificate_match": true
+    },
+    {
+      "game": "entry-dev-1",
+      "official_transitions_reexecuted": 1438,
+      "exact_certificate_match": true
+    }
+  ],
+  "exploration_gate_passed": true,
+  "own_profit_delta": 1237.4166666666667,
+  "market_profit_delta": 0.0,
+  "audit_sha256": "5c09d4b93e1834096614f4d466fe3e13c50300e1fddb2b5cee68888c6aad838a",
+  "results_sha256": "74422793f1c0cea8c408ade5d5f23119afc0739cef047d2412812f0d662fda61",
+  "limitations": "Four development seed clusters, no promotion or threshold calibration. Full50 official execution certificate is root-produced; independent reviewer replayed only four preselected games. Other economic aggregates independently checked against ledger/state, not all50 event streams."
+}

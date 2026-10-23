@@ -1,0 +1,42 @@
+{
+  "source": "next_stage_advisor; independently reviewed by audit_bc_diagnostics",
+  "external_webchat": false,
+  "implemented": false,
+  "proposal": "One independent holdout evaluation of the same fixed epoch6 versus original student",
+  "fixed_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+  "new_holdout_seeds": 8,
+  "opponents": [
+    "v1",
+    "market",
+    "round2"
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "models": 2,
+  "panel_games": 96,
+  "entry_repeats": 2,
+  "max_new_games": 98,
+  "training_runs": 0,
+  "parameter_updates": 0,
+  "bootstrap": {
+    "draws": 20000,
+    "unit": "whole seed retaining all opponents and seats",
+    "ci": "two-sided95percent percentile"
+  },
+  "acceptance": "paired own-profit95percent lower>0 and mean improvement>=1percent of new panel baseline mean; pooled margin/score>=0; market profit/margin/score>=0; all execution/preservation gates",
+  "promotion_scope": "research improved-student baseline only, never default replacement or claim of beating teacher",
+  "limitations": [
+    "8seed uncertainty and bootstrap support are limited",
+    "point-estimate competition guards do not establish statistical noninferiority",
+    "old failed offline stage unchanged",
+    "implementation author is not independent reviewer",
+    "20k bootstrap draws do not add independent seed clusters",
+    "inference conditional on fixed development-selected model, registered seed generator and3 frozen opponents"
+  ],
+  "stop": "One fixed candidate, no new-model reselection or post-result tuning; no seed extension or valid-game replacement; freeze and local commit before results",
+  "independent_plan_review_passed": true,
+  "root_decision": "Adopt one bounded independent holdout evaluation, with fixed checkpoint and restricted claims",
+  "robustness": "Publish all8 whole-seed paired deltas and leave-one-seed-out means, descriptive only; no outcome-based model/seed change"
+}

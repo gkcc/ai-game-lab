@@ -1,0 +1,92 @@
+[
+  {
+    "seed": 35242228,
+    "side": 0,
+    "banks": [
+      41217.0,
+      41075.0
+    ],
+    "bank": 41217.0,
+    "opponent_bank": 41075.0,
+    "net_profit": 38217.0,
+    "margin": 142.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "795541efe03d72aa8bf8985ae324f23c6b6c34d6fb38dbb52f96f0ad42e33379",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "2b3682548266db278660137124a9cead221769a64aa0dafe3bd3559868b51813",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "69de43108ee0971145fe054e51093fb34a57cf499d84a4792ef34158fac1e7f3",
+    "audit_version": 2,
+    "policy": "trained",
+    "opponent": "market",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      41217.0,
+      41075.0
+    ],
+    "replay_gzip_sha256": "206a644a4518988fbd8e5df0936168a25b64a6b83a85d39fef556425f1f19015",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "entry-dev-0",
+    "stage": "entry",
+    "model_family": "fixed_epoch6",
+    "checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "agent_relative": "bots/bc_crop_student.py",
+    "trace_sha256": "09b2cc2c2fd79a0b65141ef38ad4f307cf77ef6c7a4a7d14575d91e880bdc0c2",
+    "entry": "official filename, unrelated cwd",
+    "repeat_of": "dev-35242228-market-0-fixed_epoch6",
+    "excluded_from_statistics": true
+  },
+  {
+    "seed": 35242228,
+    "side": 1,
+    "banks": [
+      41075.0,
+      41217.0
+    ],
+    "bank": 41217.0,
+    "opponent_bank": 41075.0,
+    "net_profit": 38217.0,
+    "margin": 142.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "795541efe03d72aa8bf8985ae324f23c6b6c34d6fb38dbb52f96f0ad42e33379",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "af29e4f04629f7a5acefc324a5a82d53fc4631b63b520ba821d63e00432966c7",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "85911f28e7aff158f0e217d0b82b4ffb74743c5f46be59f59ca4d66ebf39b243",
+    "audit_version": 2,
+    "policy": "trained",
+    "opponent": "market",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      41075.0,
+      41217.0
+    ],
+    "replay_gzip_sha256": "9c4e7e46ca91d62e466ac230cffe271337a3efb1237f63ae02526aa0215527e9",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "entry-dev-1",
+    "stage": "entry",
+    "model_family": "fixed_epoch6",
+    "checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "agent_relative": "bots/bc_crop_student.py",
+    "trace_sha256": "d08a72a092ef3af65b99d69aaa1b36f9001f5821333e0f7eb76b9fc7c8c971bf",
+    "entry": "official filename, unrelated cwd",
+    "repeat_of": "dev-35242228-market-1-fixed_epoch6",
+    "excluded_from_statistics": true
+  }
+]

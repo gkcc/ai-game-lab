@@ -1,0 +1,90 @@
+{
+  "post_result_descriptive_only": true,
+  "no_model_or_strategy_selection": true,
+  "source_sha256": {
+    "economic-ledger.json": "d52d55555adf3e9273e2cd952e96240c2d6e2477edcf76df8af44c5a7741c087",
+    "panel-ledger.json": "4093e93197e5a6b6ac6079ea3088aba421d50ddce77ae7c6688ce4c1504a8fff",
+    "results.json": "74422793f1c0cea8c408ade5d5f23119afc0739cef047d2412812f0d662fda61"
+  },
+  "by_opponent_and_model": {
+    "v1": {
+      "original_student": {
+        "games": 8,
+        "net_profit": 36763.5,
+        "opponent_net_profit": 37056.25,
+        "margin": -292.75,
+        "wins": 4,
+        "draws": 0,
+        "losses": 4
+      },
+      "fixed_epoch6": {
+        "games": 8,
+        "net_profit": 38268.75,
+        "opponent_net_profit": 36334.5,
+        "margin": 1934.25,
+        "wins": 6,
+        "draws": 0,
+        "losses": 2
+      }
+    },
+    "market": {
+      "original_student": {
+        "games": 8,
+        "net_profit": 39712.75,
+        "opponent_net_profit": 38564.25,
+        "margin": 1148.5,
+        "wins": 6,
+        "draws": 0,
+        "losses": 2
+      },
+      "fixed_epoch6": {
+        "games": 8,
+        "net_profit": 39712.75,
+        "opponent_net_profit": 38564.25,
+        "margin": 1148.5,
+        "wins": 6,
+        "draws": 0,
+        "losses": 2
+      }
+    },
+    "round2": {
+      "original_student": {
+        "games": 8,
+        "net_profit": 36162.75,
+        "opponent_net_profit": 37150.75,
+        "margin": -988.0,
+        "wins": 4,
+        "draws": 0,
+        "losses": 4
+      },
+      "fixed_epoch6": {
+        "games": 8,
+        "net_profit": 38369.75,
+        "opponent_net_profit": 36703.0,
+        "margin": 1666.75,
+        "wins": 4,
+        "draws": 0,
+        "losses": 4
+      }
+    }
+  },
+  "paired_trajectory_identity": {
+    "v1": {
+      "pairs": 8,
+      "identical_semantic_v2": 0
+    },
+    "market": {
+      "pairs": 8,
+      "identical_semantic_v2": 8
+    },
+    "round2": {
+      "pairs": 8,
+      "identical_semantic_v2": 0
+    }
+  },
+  "mean_extra_sales_revenue": 1483.5833333333333,
+  "mean_other_net_cash_delta": -246.16666666666674,
+  "mean_extra_net_profit": 1237.4166666666665,
+  "relative_net_profit_improvement": 0.03295705750228606,
+  "causal_percentages_claimed": false
+}
