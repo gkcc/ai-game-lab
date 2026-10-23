@@ -1,0 +1,68 @@
+{
+  "experiment": "bc-head-zero-update-diagnostics-v1",
+  "created_utc": "2026-10-23T06:15:56.811560+00:00",
+  "baseline_head": "f73d6f5945087506f98a3deaf95e0fe2c27b9083",
+  "previous_experiment": "artifacts/bc-head-v1-20261023",
+  "original_experiment": "artifacts/bc-crop-v1-20261023-run1",
+  "probe_experiment": "artifacts/bc-diagnostics-v1-20261023",
+  "budgets": {
+    "training_runs": 0,
+    "optimizer_updates": 0,
+    "new_games": 0,
+    "new_checkpoints": 0
+  },
+  "precision": "fixed original deployment float64 normalization, hidden activations and logits; not a reconstruction of GPU FP32 training",
+  "objectives": "unweighted and original float32 class-weighted training; unweighted developer validation and each seed; fixed160 errors; each train seed/class and raw-x deduplicated training, descriptive only",
+  "batches": {
+    "seed": 2026102321,
+    "size": 256,
+    "epochs": 1,
+    "expected_batches": 36,
+    "expected_last_real_samples": 167,
+    "state": "each batch independently evaluated at same original theta and zero Adam moments; no update"
+  },
+  "adam": {
+    "learning_rate": 0.0003,
+    "epsilon": 1e-08,
+    "beta1": 0.9,
+    "beta2": 0.999,
+    "epsilon_root": 0,
+    "nesterov": false,
+    "formula": "negative lr * gradient / (abs(gradient) + epsilon), ideal first-step bias correction"
+  },
+  "sgd": "negative lr * gradient using same nominal lr, no step executed",
+  "directions": "full weighted/unweighted train SGD and ideal first Adam; all36 weighted first-epoch batches both directions",
+  "directional_sign_tolerance": 1e-12,
+  "neighbors": {
+    "pool": "unique training raw-float32 x, first occurrence; no val/probe fitting",
+    "query": "23 unique fixed160 error x;12 unique corrected probe x",
+    "metric": "Euclidean raw64D deployment hidden activations; report original-model-normalized289D input distance for selected neighbor",
+    "ties": "exact numeric hidden distance then lexicographic raw-float32 feature SHA256",
+    "comparison": "nearest different teacher label; nearest same teacher label excluding identical raw x; no threshold"
+  },
+  "hidden_collisions": "exact float64 hidden numerical vectors, signed zero canonicalized; train and train+developer-validation separately",
+  "acceptance": "synthetic math regressions; full11483 deployment logits parity; fixed160 and23 unique errors;12 query x and52 calls;36 batches; finite derivatives/curvature; unchanged source/weights/history; independent recomputation",
+  "interpretation": "local derivatives/curvature are not actual loss changes or causal attribution of previous failure; no collisions does not prove separability; no independent generalization claim",
+  "stop": "one fixed diagnostic, no actual parameter perturbation, line search, fitting, model export or games; future training requires a separately frozen bounded plan",
+  "input_sha256": {
+    "artifacts/bc-crop-v1-20261023-run1/data/dataset.npz": "5e8f15f513906f83ba03c705f0a64d0223429cac488bbbcc3bc6a897e0498e1d",
+    "artifacts/bc-crop-v1-20261023-run1/data/manifest.json": "7cc986a3d422257a1178206543cdc1e42ab38ceef570dd772b78c43fb276301f",
+    "artifacts/bc-crop-v1-20261023-run1/data/samples.jsonl.gz": "2db37f6f1ed9c3d25b5b18d4b95598aff407451ff6122404d495f6760da2eeed",
+    "artifacts/bc-crop-v1-20261023-run1/model/trained.npz": "9806383a2d335fdfe21639f911946b29b36708aba89f7b3961a4f9999b0388fd",
+    "artifacts/bc-head-v1-20261023/model/report.json": "f38c6de5e06c3da632afed706a56448b1e3e646b279e1df6744855593ef5030f",
+    "artifacts/bc-head-v1-20261023/acceptance.json": "278e8437256f1f3619744369f45e0a6edb856a500474563299701bae3423f49c",
+    "artifacts/bc-diagnostics-v1-20261023/panel-ledger.json": "6649bcc551e9e70d9cdf39e42273f44dd72cc1eecafeee0b6a0e1aae359b7cf2",
+    "artifacts/bc-diagnostics-v1-20261023/traces/panel-33223745-market-0-probe.jsonl.gz": "2050d11c8e3e251c197e58079145130c342d2f2e8eb6bcd50b1e71596b2a9155",
+    "artifacts/bc-diagnostics-v1-20261023/traces/panel-33223745-market-1-probe.jsonl.gz": "7eb6d67889e507edacebf7c4cbff5dd3fce391dd6d21e9cc79cf2ab617a9daad",
+    "artifacts/bc-diagnostics-v1-20261023/traces/panel-33223745-round2-0-probe.jsonl.gz": "4d39edc7397ff499dc1040ca7bbff3b9b6ce3fcf6e05f12605ed3812ed4b1291",
+    "artifacts/bc-diagnostics-v1-20261023/traces/panel-33223745-round2-1-probe.jsonl.gz": "4bd79dfeb502e3d5e0c4bf441e3852dde7a04aa91f49fed84b9ac2b2b09630ae",
+    "artifacts/bc-diagnostics-v1-20261023/traces/panel-33223745-v1-0-probe.jsonl.gz": "6375ee6f78b39a08c5100ed760cdf13fcd47ee8488a80681f895dead0dca17d2",
+    "artifacts/bc-diagnostics-v1-20261023/traces/panel-33223745-v1-1-probe.jsonl.gz": "07cbfb7497dbec341c85909b183bc7b28cbe97cf4033bd3fd2fa2b4dd7625aff",
+    "artifacts/bc-diagnostics-v1-20261023/traces/panel-33691168-market-0-probe.jsonl.gz": "75b5ca1204626bbc38146567b092fb873d8266034267508efb28ef0470760b8b",
+    "artifacts/bc-diagnostics-v1-20261023/traces/panel-33691168-market-1-probe.jsonl.gz": "83133e58e57d5ca54c344b2ecd9405115537d6e0b3cdb2d266133430cbb7f0cf",
+    "artifacts/bc-diagnostics-v1-20261023/traces/panel-33691168-round2-0-probe.jsonl.gz": "4e3f4b83264752340ca70915c2de5fb289fe745d701cf47ae531ef6f41daf210",
+    "artifacts/bc-diagnostics-v1-20261023/traces/panel-33691168-round2-1-probe.jsonl.gz": "d72e7b06fec7d271e55c81c50ee057059f86adc94546c1beca96848b4a425247",
+    "artifacts/bc-diagnostics-v1-20261023/traces/panel-33691168-v1-0-probe.jsonl.gz": "b0d3a5a176c0073993f6926a16d3159e58e3e029a7f86dad248c5388629166e0",
+    "artifacts/bc-diagnostics-v1-20261023/traces/panel-33691168-v1-1-probe.jsonl.gz": "0242793f63bef783b47c3a98a22843391b990df03da998cbf7d9db687b3aae3a"
+  }
+}

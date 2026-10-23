@@ -1,0 +1,14 @@
+{
+  "reviewer": "audit_bc_diagnostics",
+  "independent_subagent": true,
+  "external_webchat": false,
+  "passed": true,
+  "scope": [
+    "synthetic8 regressions",
+    "explicit Kronecker softmax Hessian and PSD",
+    "zero-state Adam descent algebra",
+    "data paths and zero-update bounds"
+  ],
+  "real_data_diagnostics_not_run": true,
+  "freeze_sha256": "7cccc124e871bb82dc302522e2470c1f1dfb2b589e0548b4300a343a82d0dc52"
+}
