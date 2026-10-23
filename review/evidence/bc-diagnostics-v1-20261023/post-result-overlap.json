@@ -1,0 +1,37 @@
+{
+  "post_result_descriptive": true,
+  "selection_or_gate_changed": false,
+  "counts": {
+    "correction_calls": 52,
+    "seen_in_training_calls": 44,
+    "move_with_seed": 20,
+    "plant_request": 24,
+    "request_seed": 8
+  },
+  "step_histogram": {
+    "13": 12,
+    "14": 12,
+    "15": 12,
+    "16": 8,
+    "12": 8
+  },
+  "unique_correction_vectors": 12,
+  "unique_correction_vectors_seen_in_training": 10,
+  "training_unique_vectors": 2896,
+  "training_dataset_sha256": "5e8f15f513906f83ba03c705f0a64d0223429cac488bbbcc3bc6a897e0498e1d",
+  "probe_trace_sha256": {
+    "panel-33223745-market-0-probe": "2050d11c8e3e251c197e58079145130c342d2f2e8eb6bcd50b1e71596b2a9155",
+    "panel-33223745-market-1-probe": "7eb6d67889e507edacebf7c4cbff5dd3fce391dd6d21e9cc79cf2ab617a9daad",
+    "panel-33223745-round2-0-probe": "4d39edc7397ff499dc1040ca7bbff3b9b6ce3fcf6e05f12605ed3812ed4b1291",
+    "panel-33223745-round2-1-probe": "4bd79dfeb502e3d5e0c4bf441e3852dde7a04aa91f49fed84b9ac2b2b09630ae",
+    "panel-33223745-v1-0-probe": "6375ee6f78b39a08c5100ed760cdf13fcd47ee8488a80681f895dead0dca17d2",
+    "panel-33223745-v1-1-probe": "07cbfb7497dbec341c85909b183bc7b28cbe97cf4033bd3fd2fa2b4dd7625aff",
+    "panel-33691168-market-0-probe": "75b5ca1204626bbc38146567b092fb873d8266034267508efb28ef0470760b8b",
+    "panel-33691168-market-1-probe": "83133e58e57d5ca54c344b2ecd9405115537d6e0b3cdb2d266133430cbb7f0cf",
+    "panel-33691168-round2-0-probe": "4e3f4b83264752340ca70915c2de5fb289fe745d701cf47ae531ef6f41daf210",
+    "panel-33691168-round2-1-probe": "d72e7b06fec7d271e55c81c50ee057059f86adc94546c1beca96848b4a425247",
+    "panel-33691168-v1-0-probe": "b0d3a5a176c0073993f6926a16d3159e58e3e029a7f86dad248c5388629166e0",
+    "panel-33691168-v1-1-probe": "0242793f63bef783b47c3a98a22843391b990df03da998cbf7d9db687b3aae3a"
+  },
+  "interpretation": "Exact float32 feature recurrence; suggests investigating fit of already-seen early contexts before assuming missing demonstrations or broad on-policy shift. Not a new candidate or causal economic decomposition."
+}

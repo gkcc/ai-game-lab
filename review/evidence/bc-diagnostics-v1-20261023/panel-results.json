@@ -1,0 +1,475 @@
+{
+  "development_only": true,
+  "independent_significance_claim": false,
+  "exploration_gate_passed": true,
+  "new_games": 36,
+  "training_runs": 0,
+  "paired": [
+    {
+      "seed": 33691168,
+      "opponent": "v1",
+      "side": 0,
+      "probe_minus_student": {
+        "net_profit": 3215.0,
+        "opponent_bank": -2187.0,
+        "margin": 5402.0,
+        "match_score": 1.0,
+        "correction_calls": 4,
+        "successful_plants": 4,
+        "seed_units_bought": 4,
+        "ending_seed_units": 0,
+        "sales_units": 8,
+        "sales_revenue": 4089.0
+      },
+      "student_minus_teacher": {
+        "net_profit": -3341.0,
+        "opponent_bank": 2193.0,
+        "margin": -5534.0,
+        "match_score": -1.0,
+        "correction_calls": 0,
+        "successful_plants": -4,
+        "seed_units_bought": -4,
+        "ending_seed_units": 0,
+        "sales_units": -12,
+        "sales_revenue": -3847.0
+      }
+    },
+    {
+      "seed": 33691168,
+      "opponent": "v1",
+      "side": 1,
+      "probe_minus_student": {
+        "net_profit": 3215.0,
+        "opponent_bank": -2187.0,
+        "margin": 5402.0,
+        "match_score": 1.0,
+        "correction_calls": 4,
+        "successful_plants": 4,
+        "seed_units_bought": 4,
+        "ending_seed_units": 0,
+        "sales_units": 8,
+        "sales_revenue": 4089.0
+      },
+      "student_minus_teacher": {
+        "net_profit": -3341.0,
+        "opponent_bank": 2193.0,
+        "margin": -5534.0,
+        "match_score": -1.0,
+        "correction_calls": 0,
+        "successful_plants": -4,
+        "seed_units_bought": -4,
+        "ending_seed_units": 0,
+        "sales_units": -12,
+        "sales_revenue": -3847.0
+      }
+    },
+    {
+      "seed": 33691168,
+      "opponent": "market",
+      "side": 0,
+      "probe_minus_student": {
+        "net_profit": 506.0,
+        "opponent_bank": -148.0,
+        "margin": 654.0,
+        "match_score": 0.0,
+        "correction_calls": 4,
+        "successful_plants": 1,
+        "seed_units_bought": 1,
+        "ending_seed_units": 0,
+        "sales_units": 1,
+        "sales_revenue": 758.0
+      },
+      "student_minus_teacher": {
+        "net_profit": -576.0,
+        "opponent_bank": 137.0,
+        "margin": -713.0,
+        "match_score": 0.0,
+        "correction_calls": 0,
+        "successful_plants": -1,
+        "seed_units_bought": -1,
+        "ending_seed_units": 0,
+        "sales_units": -5,
+        "sales_revenue": -460.0
+      }
+    },
+    {
+      "seed": 33691168,
+      "opponent": "market",
+      "side": 1,
+      "probe_minus_student": {
+        "net_profit": 506.0,
+        "opponent_bank": -148.0,
+        "margin": 654.0,
+        "match_score": 0.0,
+        "correction_calls": 4,
+        "successful_plants": 1,
+        "seed_units_bought": 1,
+        "ending_seed_units": 0,
+        "sales_units": 1,
+        "sales_revenue": 758.0
+      },
+      "student_minus_teacher": {
+        "net_profit": -576.0,
+        "opponent_bank": 137.0,
+        "margin": -713.0,
+        "match_score": 0.0,
+        "correction_calls": 0,
+        "successful_plants": -1,
+        "seed_units_bought": -1,
+        "ending_seed_units": 0,
+        "sales_units": -5,
+        "sales_revenue": -460.0
+      }
+    },
+    {
+      "seed": 33691168,
+      "opponent": "round2",
+      "side": 0,
+      "probe_minus_student": {
+        "net_profit": 3274.0,
+        "opponent_bank": -2308.0,
+        "margin": 5582.0,
+        "match_score": 0.0,
+        "correction_calls": 5,
+        "successful_plants": 4,
+        "seed_units_bought": 4,
+        "ending_seed_units": 0,
+        "sales_units": 8,
+        "sales_revenue": 4148.0
+      },
+      "student_minus_teacher": {
+        "net_profit": -3331.0,
+        "opponent_bank": 2336.0,
+        "margin": -5667.0,
+        "match_score": 0.0,
+        "correction_calls": 0,
+        "successful_plants": -4,
+        "seed_units_bought": -4,
+        "ending_seed_units": 0,
+        "sales_units": -12,
+        "sales_revenue": -3837.0
+      }
+    },
+    {
+      "seed": 33691168,
+      "opponent": "round2",
+      "side": 1,
+      "probe_minus_student": {
+        "net_profit": 3274.0,
+        "opponent_bank": -2308.0,
+        "margin": 5582.0,
+        "match_score": 0.0,
+        "correction_calls": 5,
+        "successful_plants": 4,
+        "seed_units_bought": 4,
+        "ending_seed_units": 0,
+        "sales_units": 8,
+        "sales_revenue": 4148.0
+      },
+      "student_minus_teacher": {
+        "net_profit": -3331.0,
+        "opponent_bank": 2336.0,
+        "margin": -5667.0,
+        "match_score": 0.0,
+        "correction_calls": 0,
+        "successful_plants": -4,
+        "seed_units_bought": -4,
+        "ending_seed_units": 0,
+        "sales_units": -12,
+        "sales_revenue": -3837.0
+      }
+    },
+    {
+      "seed": 33223745,
+      "opponent": "v1",
+      "side": 0,
+      "probe_minus_student": {
+        "net_profit": 3003.0,
+        "opponent_bank": -2477.0,
+        "margin": 5480.0,
+        "match_score": 0.0,
+        "correction_calls": 4,
+        "successful_plants": 1,
+        "seed_units_bought": 1,
+        "ending_seed_units": 0,
+        "sales_units": 4,
+        "sales_revenue": 3288.0
+      },
+      "student_minus_teacher": {
+        "net_profit": -3003.0,
+        "opponent_bank": 2477.0,
+        "margin": -5480.0,
+        "match_score": 0.0,
+        "correction_calls": 0,
+        "successful_plants": -1,
+        "seed_units_bought": -1,
+        "ending_seed_units": 0,
+        "sales_units": -4,
+        "sales_revenue": -3288.0
+      }
+    },
+    {
+      "seed": 33223745,
+      "opponent": "v1",
+      "side": 1,
+      "probe_minus_student": {
+        "net_profit": 3003.0,
+        "opponent_bank": -2477.0,
+        "margin": 5480.0,
+        "match_score": 0.0,
+        "correction_calls": 4,
+        "successful_plants": 1,
+        "seed_units_bought": 1,
+        "ending_seed_units": 0,
+        "sales_units": 4,
+        "sales_revenue": 3288.0
+      },
+      "student_minus_teacher": {
+        "net_profit": -3003.0,
+        "opponent_bank": 2477.0,
+        "margin": -5480.0,
+        "match_score": 0.0,
+        "correction_calls": 0,
+        "successful_plants": -1,
+        "seed_units_bought": -1,
+        "ending_seed_units": 0,
+        "sales_units": -4,
+        "sales_revenue": -3288.0
+      }
+    },
+    {
+      "seed": 33223745,
+      "opponent": "market",
+      "side": 0,
+      "probe_minus_student": {
+        "net_profit": 391.0,
+        "opponent_bank": -276.0,
+        "margin": 667.0,
+        "match_score": 0.0,
+        "correction_calls": 4,
+        "successful_plants": 1,
+        "seed_units_bought": 1,
+        "ending_seed_units": 0,
+        "sales_units": 2,
+        "sales_revenue": 491.0
+      },
+      "student_minus_teacher": {
+        "net_profit": -391.0,
+        "opponent_bank": 276.0,
+        "margin": -667.0,
+        "match_score": 0.0,
+        "correction_calls": 0,
+        "successful_plants": -1,
+        "seed_units_bought": -1,
+        "ending_seed_units": 0,
+        "sales_units": -2,
+        "sales_revenue": -491.0
+      }
+    },
+    {
+      "seed": 33223745,
+      "opponent": "market",
+      "side": 1,
+      "probe_minus_student": {
+        "net_profit": 391.0,
+        "opponent_bank": -276.0,
+        "margin": 667.0,
+        "match_score": 0.0,
+        "correction_calls": 4,
+        "successful_plants": 1,
+        "seed_units_bought": 1,
+        "ending_seed_units": 0,
+        "sales_units": 2,
+        "sales_revenue": 491.0
+      },
+      "student_minus_teacher": {
+        "net_profit": -391.0,
+        "opponent_bank": 276.0,
+        "margin": -667.0,
+        "match_score": 0.0,
+        "correction_calls": 0,
+        "successful_plants": -1,
+        "seed_units_bought": -1,
+        "ending_seed_units": 0,
+        "sales_units": -2,
+        "sales_revenue": -491.0
+      }
+    },
+    {
+      "seed": 33223745,
+      "opponent": "round2",
+      "side": 0,
+      "probe_minus_student": {
+        "net_profit": 3045.0,
+        "opponent_bank": -2505.0,
+        "margin": 5550.0,
+        "match_score": 0.0,
+        "correction_calls": 5,
+        "successful_plants": 1,
+        "seed_units_bought": 1,
+        "ending_seed_units": 0,
+        "sales_units": 3,
+        "sales_revenue": 3485.0
+      },
+      "student_minus_teacher": {
+        "net_profit": -3003.0,
+        "opponent_bank": 2505.0,
+        "margin": -5508.0,
+        "match_score": 0.0,
+        "correction_calls": 0,
+        "successful_plants": -1,
+        "seed_units_bought": -1,
+        "ending_seed_units": 0,
+        "sales_units": -4,
+        "sales_revenue": -3288.0
+      }
+    },
+    {
+      "seed": 33223745,
+      "opponent": "round2",
+      "side": 1,
+      "probe_minus_student": {
+        "net_profit": 3045.0,
+        "opponent_bank": -2505.0,
+        "margin": 5550.0,
+        "match_score": 0.0,
+        "correction_calls": 5,
+        "successful_plants": 1,
+        "seed_units_bought": 1,
+        "ending_seed_units": 0,
+        "sales_units": 3,
+        "sales_revenue": 3485.0
+      },
+      "student_minus_teacher": {
+        "net_profit": -3003.0,
+        "opponent_bank": 2505.0,
+        "margin": -5508.0,
+        "match_score": 0.0,
+        "correction_calls": 0,
+        "successful_plants": -1,
+        "seed_units_bought": -1,
+        "ending_seed_units": 0,
+        "sales_units": -4,
+        "sales_revenue": -3288.0
+      }
+    }
+  ],
+  "by_seed": {
+    "33691168": {
+      "net_profit": 2331.6666666666665,
+      "opponent_bank": -1547.6666666666667,
+      "margin": 3879.3333333333335,
+      "match_score": 0.3333333333333333,
+      "correction_calls": 4.333333333333333,
+      "successful_plants": 3,
+      "seed_units_bought": 3,
+      "ending_seed_units": 0,
+      "sales_units": 5.666666666666667,
+      "sales_revenue": 2998.3333333333335
+    },
+    "33223745": {
+      "net_profit": 2146.3333333333335,
+      "opponent_bank": -1752.6666666666667,
+      "margin": 3899.0,
+      "match_score": 0.0,
+      "correction_calls": 4.333333333333333,
+      "successful_plants": 1,
+      "seed_units_bought": 1,
+      "ending_seed_units": 0,
+      "sales_units": 3,
+      "sales_revenue": 2421.3333333333335
+    }
+  },
+  "by_opponent": {
+    "v1": {
+      "net_profit": 3109.0,
+      "opponent_bank": -2332.0,
+      "margin": 5441.0,
+      "match_score": 0.5,
+      "correction_calls": 4,
+      "successful_plants": 2.5,
+      "seed_units_bought": 2.5,
+      "ending_seed_units": 0,
+      "sales_units": 6,
+      "sales_revenue": 3688.5
+    },
+    "market": {
+      "net_profit": 448.5,
+      "opponent_bank": -212.0,
+      "margin": 660.5,
+      "match_score": 0.0,
+      "correction_calls": 4,
+      "successful_plants": 1,
+      "seed_units_bought": 1,
+      "ending_seed_units": 0,
+      "sales_units": 1.5,
+      "sales_revenue": 624.5
+    },
+    "round2": {
+      "net_profit": 3159.5,
+      "opponent_bank": -2406.5,
+      "margin": 5566.0,
+      "match_score": 0.0,
+      "correction_calls": 5,
+      "successful_plants": 2.5,
+      "seed_units_bought": 2.5,
+      "ending_seed_units": 0,
+      "sales_units": 5.5,
+      "sales_revenue": 3816.5
+    }
+  },
+  "probe_minus_student": {
+    "net_profit": 2239.0,
+    "opponent_bank": -1650.1666666666667,
+    "margin": 3889.1666666666665,
+    "match_score": 0.16666666666666666,
+    "correction_calls": 4.333333333333333,
+    "successful_plants": 2,
+    "seed_units_bought": 2,
+    "ending_seed_units": 0,
+    "sales_units": 4.333333333333333,
+    "sales_revenue": 2709.8333333333335
+  },
+  "policies": {
+    "teacher": {
+      "net_profit": 43570.5,
+      "opponent_bank": 41778.333333333336,
+      "margin": 4792.166666666667,
+      "match_score": 0.8333333333333334,
+      "correction_calls": 0,
+      "successful_plants": 54.5,
+      "seed_units_bought": 54.5,
+      "ending_seed_units": 0,
+      "sales_units": 288.5,
+      "sales_revenue": 51287.0
+    },
+    "student": {
+      "net_profit": 41296.333333333336,
+      "opponent_bank": 43432.333333333336,
+      "margin": 864.0,
+      "match_score": 0.6666666666666666,
+      "correction_calls": 0,
+      "successful_plants": 52.5,
+      "seed_units_bought": 52.5,
+      "ending_seed_units": 0,
+      "sales_units": 282,
+      "sales_revenue": 48751.833333333336
+    },
+    "probe": {
+      "net_profit": 43535.333333333336,
+      "opponent_bank": 41782.166666666664,
+      "margin": 4753.166666666667,
+      "match_score": 0.8333333333333334,
+      "correction_calls": 4.333333333333333,
+      "successful_plants": 54.5,
+      "seed_units_bought": 54.5,
+      "ending_seed_units": 0,
+      "sales_units": 286.3333333333333,
+      "sales_revenue": 51461.666666666664
+    }
+  },
+  "ledger_sha256": "6649bcc551e9e70d9cdf39e42273f44dd72cc1eecafeee0b6a0e1aae359b7cf2",
+  "audit_sha256": "ccc09327347cdbf9d7fa8b4d88d82ba713a91ffc54b01390277e4b7f5d9c14f8",
+  "registration_sha256": "80870aee745d21dd357661529efe0af2312d15e8c68a2064913d81c882e9496d",
+  "freeze_sha256": "b51029835088a365bea2e78fc4fb9e929217185a92e03597d942709df445c268"
+}

@@ -1,0 +1,26 @@
+{
+  "reviewer": "audit_bc_diagnostics",
+  "independent_subagent": true,
+  "external_webchat": false,
+  "disposition": "passed; no remaining blocking finding",
+  "all_game_identity_and_trace_checks": 36,
+  "independent_official_reexecution": {
+    "games": 4,
+    "transitions": 2876,
+    "subset": "probe, both development seeds and both seats, market opponent",
+    "certificate_fields_identical": true
+  },
+  "all_statistics_independently_recomputed": true,
+  "all_probe_model_logits_independently_recomputed": true,
+  "post_result_overlap_independently_recomputed": true,
+  "preservation": {
+    "runtime_files_directly_rehashed": 1452,
+    "original_public_byte_identical": 416,
+    "original_public_append_only": 2
+  },
+  "report_checked": "kaggriculture/BC_DIAGNOSTICS_V1.zh-CN.md",
+  "report_sha256": "61a4f13a7c300d1dc4d98b3812d46b52af2a2076308016b0c0d974a0580e38f3",
+  "scope": "Independent internal code/evidence review; four independently rerun official replays, not all36. Not external attestation or public access to private raw states.",
+  "verified_result_sha256": "31db391464d035bab9e62f324f7beb4dea941df01aa982f266bcf4292aae4d74",
+  "verified_audit_sha256": "ccc09327347cdbf9d7fa8b4d88d82ba713a91ffc54b01390277e4b7f5d9c14f8"
+}

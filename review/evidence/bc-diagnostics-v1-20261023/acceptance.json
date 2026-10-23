@@ -1,0 +1,73 @@
+{
+  "passed": true,
+  "stage": "fixed-model crop-error diagnostic",
+  "new_games": 36,
+  "new_training_runs": 0,
+  "gpu_training_in_this_stage": false,
+  "official_full_reexecution": {
+    "games": 36,
+    "transitions": 25884,
+    "states_per_game": 720,
+    "action_turns_per_game": 719,
+    "both_done": true,
+    "agent_errors": 0,
+    "all_actor_and_rival_actions_reproduced": true,
+    "all_stable_traces_reproduced": true
+  },
+  "exploratory_gate_passed": true,
+  "new_learned_student": false,
+  "independent_significance_claim": false,
+  "promotion": false,
+  "checkpoint_sha256": "9806383a2d335fdfe21639f911946b29b36708aba89f7b3961a4f9999b0388fd",
+  "default_unchanged": true,
+  "preserved_history": {
+    "passed": true,
+    "prior_snapshot_sha256": "7c0a352559411f6b338c8e56b29b80e2e90cdd7c80da5019cfb79e519abe2f57",
+    "runtime_files_checked": 1452,
+    "runtime_mismatches": [],
+    "original_public_files": 418,
+    "public_byte_identical": 416,
+    "public_append_only": {
+      "review/PROGRESS.md": {
+        "original_bytes": 16336,
+        "original_sha256": "d3b25561b4fbcbe347a5097aa480fcc6bcba95db4bc85ce2f693986ef4ca2e5b",
+        "current_sha256": "a072ba7831a999796cd59a078b4ad0a2b724e23b5c28933f0626b45fe1f8e527"
+      },
+      "review/WEBCHAT_REVIEW.md": {
+        "original_bytes": 10819,
+        "original_sha256": "70517e2a1595402ff6cbc6069e9f5cb7d5d30adc5f75b47a4f3d6da91fd07f48",
+        "current_sha256": "727a4e254c632e4c022f5f1c20ca2e12c259fd0369c2c3063251920c6a9a7295"
+      }
+    },
+    "public_mismatches": [],
+    "default_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "model_sha256": "9806383a2d335fdfe21639f911946b29b36708aba89f7b3961a4f9999b0388fd",
+    "original_phase_freeze_sha256": "37fe765b01dddd182190b1645d14327e99291f0a45f0c20235b13da5cb45a04e",
+    "amended_phase_freeze_sha256": "b51029835088a365bea2e78fc4fb9e929217185a92e03597d942709df445c268",
+    "old_experiment_and_certificates_not_modified": true,
+    "new_games": 36,
+    "new_training_runs": 0
+  },
+  "independent_review_sha256": "5a3273307bb7275794e75cae899b79778ae29b06644cc140ca57e4ed81e534f6",
+  "evidence_sha256": {
+    "analysis-plan.json": "224e23545e6b5ad5f8714d6f80f46dd7731753a2659e6ef27fdcf502eb75c991",
+    "existing-diagnostics.json": "cac3025973e3bf74f8b7b1e64c4bdb1061a5f8d594f5aa5a678fcfeabf5020e5",
+    "overlap-diagnostics.json": "3bf89444d50a4e4376b0583d7c95fde4105f3d7ee247249fe16f5acb66fdf045",
+    "panel-registration.json": "80870aee745d21dd357661529efe0af2312d15e8c68a2064913d81c882e9496d",
+    "panel-freeze.json": "37fe765b01dddd182190b1645d14327e99291f0a45f0c20235b13da5cb45a04e",
+    "panel-freeze-v2.json": "b51029835088a365bea2e78fc4fb9e929217185a92e03597d942709df445c268",
+    "entry-amendment.json": "b889ebe7c85dc1f7d32ea43b855a6ba3ff9d6c9b468d0ab9d00f4a4e894eab50",
+    "panel-ledger.json": "6649bcc551e9e70d9cdf39e42273f44dd72cc1eecafeee0b6a0e1aae359b7cf2",
+    "panel-audit.json": "ccc09327347cdbf9d7fa8b4d88d82ba713a91ffc54b01390277e4b7f5d9c14f8",
+    "panel-results.json": "31db391464d035bab9e62f324f7beb4dea941df01aa982f266bcf4292aae4d74",
+    "post-result-overlap.json": "a33b272b97fad74d7357caac65472fac4357c73e66f19c36fe38f6427be886d8",
+    "probe-entry-regression.json": "c496b4fbeee9b5a4c397328e9b0b7a8ac72383e01751ca04ee2eccb84a0c76bf"
+  },
+  "stopped_at_registered_budget": true,
+  "limitations": [
+    "Two development seeds, repeated early states",
+    "Teacher oracle correction, not model training or deployment fallback",
+    "Raw replay/telemetry/model weights local only; public hash evidence does not enable full external reproduction",
+    "Sales and non-SELL cash differences are accounting, not separable causal percentages"
+  ]
+}

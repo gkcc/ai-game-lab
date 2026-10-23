@@ -1,0 +1,19 @@
+{
+  "source": "independent planning subagent next_stage_advisor; not external WebChat",
+  "status": "recommendation only; not executed in this phase",
+  "recommendation": "One fixed-data output-head fine-tune; freeze hidden layers/encoder/normalization/controller; no new demonstrations or DAgger",
+  "evidence": "44 of52 corrected calls (10 of12 unique float32 vectors) were exactly present in training; developer oracle helped but did not train the student",
+  "suggested_budget": {
+    "training_runs": 1,
+    "max_epochs": 20,
+    "max_updates": 720,
+    "new_games": 14
+  },
+  "constraints": [
+    "Original checkpoint and default Bot preserved",
+    "Epoch0 included; validation is disclosed developer selection only",
+    "One candidate; stop if offline/development gate fails",
+    "No new formal panel within the next development stage",
+    "Separate future registration before any new independent holdout; never reuse this phase development seeds as holdout"
+  ]
+}
