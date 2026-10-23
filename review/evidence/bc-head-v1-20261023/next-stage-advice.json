@@ -1,0 +1,22 @@
+{
+  "source": "independent planning subagent; not WebChat",
+  "status": "proposed only",
+  "recommendation": "Zero-update output-head local optimization and representation diagnosis before any next fit",
+  "budget": {
+    "training_runs": 0,
+    "optimizer_updates": 0,
+    "new_games": 0,
+    "new_checkpoints": 0
+  },
+  "questions": [
+    "At original fixed weights, compare weighted/unweighted train, developer validation and fixed strawberry-group gradient directions; use whole-seed and exact-vector descriptive views",
+    "At same original point, compare fixed registered first-epoch batch gradients and analytic zero-state Adam directions; do not claim reconstruction of continuous training",
+    "Check exact hidden-vector label collisions and nearest different-label neighbors; proximity does not prove linear separability"
+  ],
+  "constraints": [
+    "No new learning-rate sweep or validation-driven epoch substitution",
+    "Do not infer all20 epochs failed strawberry correction from absent weights",
+    "Do not assume weighted/unweighted objective conflict without evidence",
+    "No DAgger/PPO; existing validation remains developer data"
+  ]
+}

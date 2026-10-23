@@ -1,0 +1,19 @@
+{
+  "stopped_after_offline_gate": true,
+  "reason": "epoch0 selected; fixed selected-error set unchanged",
+  "new_training_runs": 1,
+  "optimizer_updates": 720,
+  "new_games": 0,
+  "reserved_games_not_run": 14,
+  "absent_outputs": [
+    "candidate-freeze.json",
+    "dev-ledger.json",
+    "entry-dev-ledger.json",
+    "games",
+    "agents",
+    "traces"
+  ],
+  "fit_report_sha256": "f38c6de5e06c3da632afed706a56448b1e3e646b279e1df6744855593ef5030f",
+  "reload_verification_sha256": "7059066458e170e90b63a0ee126c5949c698c38cbfacb024d8707d7a8d6ef015",
+  "new_student_promoted": false
+}

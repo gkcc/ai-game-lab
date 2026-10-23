@@ -1,0 +1,1429 @@
+{
+  "experiment": "bc-output-head-v1",
+  "development_only": true,
+  "new_independent_evidence": false,
+  "cuda_training": true,
+  "framework": {
+    "jax": "0.4.38",
+    "optax": "0.2.4",
+    "numpy": "2.5.4"
+  },
+  "gpu_gradient_devices": [
+    "cuda:0"
+  ],
+  "gpu_batch_device": "cuda:0",
+  "optimizer_updates": 720,
+  "nonzero_gradient_updates": 720,
+  "best_epoch": 0,
+  "selected_checkpoint_updates": 0,
+  "frozen_tensors_equal": {
+    "w0": true,
+    "b0": true,
+    "w1": true,
+    "b1": true,
+    "mean": true,
+    "scale": true
+  },
+  "selected_head_tensors_changed": 0,
+  "final_head_tensors_changed": 2,
+  "original_checkpoint_sha256": "9806383a2d335fdfe21639f911946b29b36708aba89f7b3961a4f9999b0388fd",
+  "checkpoint_sha256": "f62a356356b922f81fd5a4e3aea58a558db0f8e5e9e002657c016326d8e2e4f8",
+  "selected_error_row_indices_sha256": "436560952e882187b6a7ac294f87750048101974106c243cdf08530fb4c32182",
+  "fixed_data_sha256": "5e8f15f513906f83ba03c705f0a64d0223429cac488bbbcc3bc6a897e0498e1d",
+  "class_counts": [
+    960,
+    1374,
+    326,
+    2851,
+    3616
+  ],
+  "class_weights": [
+    1.0758593082427979,
+    0.8992858529090881,
+    1.8462151288986206,
+    0.6242988109588623,
+    0.5543408393859863
+  ],
+  "baseline": {
+    "train": {
+      "samples": 9127,
+      "errors": 508,
+      "accuracy": 0.9443409663635367,
+      "cross_entropy": 0.12271958928615052,
+      "confusion": [
+        [
+          888,
+          18,
+          34,
+          20,
+          0
+        ],
+        [
+          106,
+          1220,
+          40,
+          8,
+          0
+        ],
+        [
+          6,
+          0,
+          314,
+          6,
+          0
+        ],
+        [
+          18,
+          4,
+          40,
+          2597,
+          192
+        ],
+        [
+          0,
+          16,
+          0,
+          0,
+          3600
+        ]
+      ]
+    },
+    "validation": {
+      "samples": 2356,
+      "errors": 298,
+      "accuracy": 0.8735144312393888,
+      "cross_entropy": 0.3930159100598784,
+      "confusion": [
+        [
+          172,
+          28,
+          18,
+          0,
+          0
+        ],
+        [
+          62,
+          302,
+          8,
+          10,
+          0
+        ],
+        [
+          44,
+          8,
+          32,
+          0,
+          0
+        ],
+        [
+          14,
+          12,
+          42,
+          648,
+          48
+        ],
+        [
+          0,
+          4,
+          0,
+          0,
+          904
+        ]
+      ]
+    },
+    "validation_unseen": {
+      "samples": 1324,
+      "errors": 246,
+      "accuracy": 0.8141993957703928,
+      "cross_entropy": 0.6273422954035318,
+      "confusion": [
+        [
+          172,
+          28,
+          18,
+          0,
+          0
+        ],
+        [
+          62,
+          278,
+          8,
+          10,
+          0
+        ],
+        [
+          44,
+          8,
+          32,
+          0,
+          0
+        ],
+        [
+          14,
+          12,
+          42,
+          588,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          8
+        ]
+      ]
+    },
+    "selected_strawberry_errors": {
+      "samples": 160,
+      "errors": 160,
+      "accuracy": 0.0,
+      "cross_entropy": 1.0940903051270587,
+      "confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          12,
+          4,
+          16,
+          0,
+          128
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    }
+  },
+  "candidate": {
+    "train": {
+      "samples": 9127,
+      "errors": 508,
+      "accuracy": 0.9443409663635367,
+      "cross_entropy": 0.12271958928615052,
+      "confusion": [
+        [
+          888,
+          18,
+          34,
+          20,
+          0
+        ],
+        [
+          106,
+          1220,
+          40,
+          8,
+          0
+        ],
+        [
+          6,
+          0,
+          314,
+          6,
+          0
+        ],
+        [
+          18,
+          4,
+          40,
+          2597,
+          192
+        ],
+        [
+          0,
+          16,
+          0,
+          0,
+          3600
+        ]
+      ]
+    },
+    "validation": {
+      "samples": 2356,
+      "errors": 298,
+      "accuracy": 0.8735144312393888,
+      "cross_entropy": 0.3930159100598784,
+      "confusion": [
+        [
+          172,
+          28,
+          18,
+          0,
+          0
+        ],
+        [
+          62,
+          302,
+          8,
+          10,
+          0
+        ],
+        [
+          44,
+          8,
+          32,
+          0,
+          0
+        ],
+        [
+          14,
+          12,
+          42,
+          648,
+          48
+        ],
+        [
+          0,
+          4,
+          0,
+          0,
+          904
+        ]
+      ]
+    },
+    "validation_unseen": {
+      "samples": 1324,
+      "errors": 246,
+      "accuracy": 0.8141993957703928,
+      "cross_entropy": 0.6273422954035318,
+      "confusion": [
+        [
+          172,
+          28,
+          18,
+          0,
+          0
+        ],
+        [
+          62,
+          278,
+          8,
+          10,
+          0
+        ],
+        [
+          44,
+          8,
+          32,
+          0,
+          0
+        ],
+        [
+          14,
+          12,
+          42,
+          588,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          8
+        ]
+      ]
+    },
+    "selected_strawberry_errors": {
+      "samples": 160,
+      "errors": 160,
+      "accuracy": 0.0,
+      "cross_entropy": 1.0940903051270587,
+      "confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          12,
+          4,
+          16,
+          0,
+          128
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    }
+  },
+  "history": [
+    {
+      "epoch": 0,
+      "validation_ce": 0.3930159100598784,
+      "selected": true
+    },
+    {
+      "epoch": 1,
+      "validation_ce": 0.395289888730148,
+      "selected_at_epoch": false
+    },
+    {
+      "epoch": 2,
+      "validation_ce": 0.40663305396507826,
+      "selected_at_epoch": false
+    },
+    {
+      "epoch": 3,
+      "validation_ce": 0.4115335276902321,
+      "selected_at_epoch": false
+    },
+    {
+      "epoch": 4,
+      "validation_ce": 0.4141703983669588,
+      "selected_at_epoch": false
+    },
+    {
+      "epoch": 5,
+      "validation_ce": 0.41616287629218285,
+      "selected_at_epoch": false
+    },
+    {
+      "epoch": 6,
+      "validation_ce": 0.4197506457623683,
+      "selected_at_epoch": false
+    },
+    {
+      "epoch": 7,
+      "validation_ce": 0.4197705214297584,
+      "selected_at_epoch": false
+    },
+    {
+      "epoch": 8,
+      "validation_ce": 0.42150339818181276,
+      "selected_at_epoch": false
+    },
+    {
+      "epoch": 9,
+      "validation_ce": 0.4227016448399703,
+      "selected_at_epoch": false
+    },
+    {
+      "epoch": 10,
+      "validation_ce": 0.4252798645352422,
+      "selected_at_epoch": false
+    },
+    {
+      "epoch": 11,
+      "validation_ce": 0.4251771086543549,
+      "selected_at_epoch": false
+    },
+    {
+      "epoch": 12,
+      "validation_ce": 0.4277684735420389,
+      "selected_at_epoch": false
+    },
+    {
+      "epoch": 13,
+      "validation_ce": 0.4294448519499508,
+      "selected_at_epoch": false
+    },
+    {
+      "epoch": 14,
+      "validation_ce": 0.4279992461905828,
+      "selected_at_epoch": false
+    },
+    {
+      "epoch": 15,
+      "validation_ce": 0.43081567949432104,
+      "selected_at_epoch": false
+    },
+    {
+      "epoch": 16,
+      "validation_ce": 0.4322486958205022,
+      "selected_at_epoch": false
+    },
+    {
+      "epoch": 17,
+      "validation_ce": 0.43277941638413425,
+      "selected_at_epoch": false
+    },
+    {
+      "epoch": 18,
+      "validation_ce": 0.4319103967334767,
+      "selected_at_epoch": false
+    },
+    {
+      "epoch": 19,
+      "validation_ce": 0.4320928505472476,
+      "selected_at_epoch": false
+    },
+    {
+      "epoch": 20,
+      "validation_ce": 0.437161856614572,
+      "selected_at_epoch": false
+    }
+  ],
+  "offline_gates": {
+    "nonzero_epoch": false,
+    "selected_train_errors_halved": false,
+    "validation_accuracy_guard": true,
+    "unseen_validation_accuracy_guard": true,
+    "frozen_tensors": true,
+    "gpu_gradients_and_updates": true,
+    "export_fp32_parity": true
+  },
+  "offline_gate_passed": false,
+  "prediction_sha256": {
+    "baseline": "7a7f0ec86636d01324994d8a99668d38febd03303730057e30ceb07f5deeb2f4",
+    "candidate": "7a7f0ec86636d01324994d8a99668d38febd03303730057e30ceb07f5deeb2f4"
+  },
+  "by_seed": [
+    {
+      "seed": 31205138,
+      "role": "developer-validation",
+      "baseline": {
+        "samples": 1038,
+        "errors": 26,
+        "accuracy": 0.9749518304431599,
+        "cross_entropy": 0.050316222552283525,
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            174,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            390,
+            24
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            448
+          ]
+        ]
+      },
+      "candidate": {
+        "samples": 1038,
+        "errors": 26,
+        "accuracy": 0.9749518304431599,
+        "cross_entropy": 0.050316222552283525,
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            174,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            390,
+            24
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            448
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 31273729,
+      "role": "original-training",
+      "baseline": {
+        "samples": 991,
+        "errors": 28,
+        "accuracy": 0.9717457114026236,
+        "cross_entropy": 0.05732490364189665,
+        "confusion": [
+          [
+            4,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            156,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            6,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            349,
+            24
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            448
+          ]
+        ]
+      },
+      "candidate": {
+        "samples": 991,
+        "errors": 28,
+        "accuracy": 0.9717457114026236,
+        "cross_entropy": 0.05732490364189665,
+        "confusion": [
+          [
+            4,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            156,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            6,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            349,
+            24
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            448
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 31317742,
+      "role": "original-training",
+      "baseline": {
+        "samples": 960,
+        "errors": 26,
+        "accuracy": 0.9729166666666667,
+        "cross_entropy": 0.050368704955795124,
+        "confusion": [
+          [
+            78,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            12,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            396,
+            24
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            448
+          ]
+        ]
+      },
+      "candidate": {
+        "samples": 960,
+        "errors": 26,
+        "accuracy": 0.9729166666666667,
+        "cross_entropy": 0.050368704955795124,
+        "confusion": [
+          [
+            78,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            12,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            396,
+            24
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            448
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 31360134,
+      "role": "original-training",
+      "baseline": {
+        "samples": 930,
+        "errors": 26,
+        "accuracy": 0.9720430107526882,
+        "cross_entropy": 0.05236108428811328,
+        "confusion": [
+          [
+            42,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            12,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            402,
+            24
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            448
+          ]
+        ]
+      },
+      "candidate": {
+        "samples": 930,
+        "errors": 26,
+        "accuracy": 0.9720430107526882,
+        "cross_entropy": 0.05236108428811328,
+        "confusion": [
+          [
+            42,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            12,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            402,
+            24
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            448
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 31504409,
+      "role": "developer-validation",
+      "baseline": {
+        "samples": 1318,
+        "errors": 272,
+        "accuracy": 0.7936267071320182,
+        "cross_entropy": 0.6629114150924151,
+        "confusion": [
+          [
+            172,
+            28,
+            18,
+            0,
+            0
+          ],
+          [
+            62,
+            128,
+            8,
+            10,
+            0
+          ],
+          [
+            44,
+            8,
+            32,
+            0,
+            0
+          ],
+          [
+            14,
+            12,
+            42,
+            258,
+            24
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            456
+          ]
+        ]
+      },
+      "candidate": {
+        "samples": 1318,
+        "errors": 272,
+        "accuracy": 0.7936267071320182,
+        "cross_entropy": 0.6629114150924151,
+        "confusion": [
+          [
+            172,
+            28,
+            18,
+            0,
+            0
+          ],
+          [
+            62,
+            128,
+            8,
+            10,
+            0
+          ],
+          [
+            44,
+            8,
+            32,
+            0,
+            0
+          ],
+          [
+            14,
+            12,
+            42,
+            258,
+            24
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            456
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 31637216,
+      "role": "original-training",
+      "baseline": {
+        "samples": 1832,
+        "errors": 154,
+        "accuracy": 0.915938864628821,
+        "cross_entropy": 0.20278335655564442,
+        "confusion": [
+          [
+            532,
+            8,
+            16,
+            20,
+            0
+          ],
+          [
+            46,
+            494,
+            0,
+            8,
+            0
+          ],
+          [
+            6,
+            0,
+            18,
+            0,
+            0
+          ],
+          [
+            18,
+            4,
+            2,
+            178,
+            24
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            456
+          ]
+        ]
+      },
+      "candidate": {
+        "samples": 1832,
+        "errors": 154,
+        "accuracy": 0.915938864628821,
+        "cross_entropy": 0.20278335655564442,
+        "confusion": [
+          [
+            532,
+            8,
+            16,
+            20,
+            0
+          ],
+          [
+            46,
+            494,
+            0,
+            8,
+            0
+          ],
+          [
+            6,
+            0,
+            18,
+            0,
+            0
+          ],
+          [
+            18,
+            4,
+            2,
+            178,
+            24
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            456
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 31659052,
+      "role": "original-training",
+      "baseline": {
+        "samples": 954,
+        "errors": 26,
+        "accuracy": 0.9727463312368972,
+        "cross_entropy": 0.05065114013929547,
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            84,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            36,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            360,
+            24
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            448
+          ]
+        ]
+      },
+      "candidate": {
+        "samples": 954,
+        "errors": 26,
+        "accuracy": 0.9727463312368972,
+        "cross_entropy": 0.05065114013929547,
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            84,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            36,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            360,
+            24
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            448
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 31834104,
+      "role": "original-training",
+      "baseline": {
+        "samples": 1468,
+        "errors": 196,
+        "accuracy": 0.8664850136239782,
+        "cross_entropy": 0.3054595804301766,
+        "confusion": [
+          [
+            232,
+            10,
+            16,
+            0,
+            0
+          ],
+          [
+            60,
+            204,
+            40,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            254,
+            6,
+            0
+          ],
+          [
+            0,
+            0,
+            38,
+            126,
+            24
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            456
+          ]
+        ]
+      },
+      "candidate": {
+        "samples": 1468,
+        "errors": 196,
+        "accuracy": 0.8664850136239782,
+        "cross_entropy": 0.3054595804301766,
+        "confusion": [
+          [
+            232,
+            10,
+            16,
+            0,
+            0
+          ],
+          [
+            60,
+            204,
+            40,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            254,
+            6,
+            0
+          ],
+          [
+            0,
+            0,
+            38,
+            126,
+            24
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            456
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 31921285,
+      "role": "original-training",
+      "baseline": {
+        "samples": 954,
+        "errors": 26,
+        "accuracy": 0.9727463312368972,
+        "cross_entropy": 0.05058907963606297,
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            84,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            396,
+            24
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            448
+          ]
+        ]
+      },
+      "candidate": {
+        "samples": 954,
+        "errors": 26,
+        "accuracy": 0.9727463312368972,
+        "cross_entropy": 0.05058907963606297,
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            84,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            396,
+            24
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            448
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 31932889,
+      "role": "original-training",
+      "baseline": {
+        "samples": 1038,
+        "errors": 26,
+        "accuracy": 0.9749518304431599,
+        "cross_entropy": 0.04788632351920608,
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            174,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            390,
+            24
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            448
+          ]
+        ]
+      },
+      "candidate": {
+        "samples": 1038,
+        "errors": 26,
+        "accuracy": 0.9749518304431599,
+        "cross_entropy": 0.04788632351920608,
+        "confusion": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            174,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            390,
+            24
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            448
+          ]
+        ]
+      }
+    }
+  ],
+  "export_validation": {
+    "samples": 11483,
+    "cpu_reload_exact_logits": true,
+    "float32_max_abs_logit_error": 6.485665135613772e-06,
+    "argmax_disagreements": 0
+  },
+  "synchronized_training_seconds": 1.2884209020000004,
+  "selection_evaluation_seconds": 0.023430518999998817,
+  "total_fit_seconds": 2.163298771,
+  "official_simulation_on_gpu": false,
+  "teacher_correction_enabled": false
+}

@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "fresh_native_process": true,
+  "samples": 11483,
+  "changed_tensors": [],
+  "frozen_tensors_identical": {
+    "w0": true,
+    "b0": true,
+    "w1": true,
+    "b1": true,
+    "mean": true,
+    "scale": true
+  },
+  "statistics_and_gate_recomputed": true,
+  "checkpoint_sha256": "f62a356356b922f81fd5a4e3aea58a558db0f8e5e9e002657c016326d8e2e4f8",
+  "changed_predictions": 0,
+  "per_row_predictions_exact": true,
+  "cross_platform_ce_max_errors": {
+    "baseline": 5.551115123125783e-17,
+    "candidate": 5.551115123125783e-17
+  },
+  "ce_tolerance": {
+    "atol": 1e-12,
+    "rtol": 1e-12
+  },
+  "offline_gate_passed": false,
+  "teacher_correction_enabled": false
+}

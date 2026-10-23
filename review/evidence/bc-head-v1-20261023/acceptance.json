@@ -1,0 +1,31 @@
+{
+  "stage_execution_passed": true,
+  "learning_gate_passed": false,
+  "new_effective_candidate": false,
+  "promotion": false,
+  "training_runs": 1,
+  "actual_gpu_updates": 720,
+  "selected_checkpoint_new_updates": 0,
+  "new_games": 0,
+  "reserved_games_not_run": 14,
+  "frozen_hidden_and_normalization_unchanged": true,
+  "all_selected_weights_equal_parent": true,
+  "default_and_parent_model_preserved": true,
+  "source_commit": "1df65930dbed4e4cfaf5bb72662e5815f7852758",
+  "evidence_sha256": {
+    "registration.json": "3e87cc87777ea868bfff8cdd661182325a0474230eee769babd0a7fc6302b35c",
+    "freeze.json": "3147b1ec1685e1ee4c1366edc413c9411ec37288aff84a7dff31f412001f4ef5",
+    "pre-training-commit.json": "3f24c0646f65e92ff67a0c42db914c4c06e617626181c488eb66fb1e1f51c6e4",
+    "model/report.json": "f38c6de5e06c3da632afed706a56448b1e3e646b279e1df6744855593ef5030f",
+    "reload-verification.json": "7059066458e170e90b63a0ee126c5949c698c38cbfacb024d8707d7a8d6ef015",
+    "stop-record.json": "3ffe1608c1c0b505e00cbb78c3c976eb4e6e9b53113d64c0ffa5ec70845ae4b0",
+    "preservation-final.json": "cb33dd1905b6ea86835c40b34da731d704e4a5e5b781470a40fc8264de9a0ee7",
+    "independent-review.json": "2403d94d0c12d07a1e7cd7451bc5a0b7b6bcd4f03e86c0ad1c98b5d59f6542ce"
+  },
+  "limitations": [
+    "Fixed-config developer negative result; no new independent holdout",
+    "Discarded epoch weights and class accuracy unavailable",
+    "No CPU/GPU speed comparison",
+    "Private weights/data/device identity not published"
+  ]
+}
