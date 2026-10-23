@@ -1,0 +1,37 @@
+{
+  "stage_execution_passed": true,
+  "new_learning_improvement_claim": false,
+  "promotion": false,
+  "training_runs": 0,
+  "optimizer_updates": 0,
+  "new_games": 0,
+  "new_checkpoints": 0,
+  "default_and_original_model_preserved": true,
+  "primary_result": "results-corrected.json",
+  "initial_result_and_freeze_preserved": true,
+  "corrected_curvatures": 76,
+  "all_other_original_fields_exact": true,
+  "independent_review_passed": true,
+  "external_webchat": false,
+  "evidence_sha256": {
+    "registration.json": "117f04b4650ebeaa9c304634fa907576ca3f417876b6c36105f5199fe835a442",
+    "freeze.json": "7cccc124e871bb82dc302522e2470c1f1dfb2b589e0548b4300a343a82d0dc52",
+    "pre-analysis-commit.json": "0ba4448c3dab912dcf51a25d270c5aa238d587e05ce2aed3b0eb65ada8fabfe7",
+    "repair-registration.json": "b2a349ad9f35a09052c21637527189188153688f3e1af71e48ad0429e2e8af39",
+    "pre-repair-commit.json": "713f5991510084560c85788eb94993c465e382662433cb3f724f7e903e448739",
+    "results.json": "b071821d863c79973db5c18b5af4cdc4027a8a7363f05522cdb0058b3aefeb62",
+    "results-corrected.json": "f7844dcd08ee8c3292393a13f03e762ea64726dd11b36bf17d2d17617d1cfa23",
+    "curvature-repair-certificate.json": "c7adaea6f8f33270c867886eb867b0798d65c4e0ed4293d949dbc24be06ff370",
+    "numerical-followup.json": "15814bbcb95c6a22adfe256ee5807a8cd9f4f3d5913a5cac92ecfc2410ac8929",
+    "independent-review-summary.json": "e311b96c0f85db1115744142ec03878ecaad4807b407aa9ba78b513f3137b8ec",
+    "publication-preservation.json": "29fe023cc17bef63e60e2dc3eec68a3b498b0d33707ccf2546bc2f920e59728e",
+    "final-review.json": "a5fe82077f0ae0dcc7cbee839bcb36e3751db88bf7afe62c12b5e5a04187820e"
+  },
+  "limitations": [
+    "No real parameter update or loss-after-step test",
+    "No recreation of discarded GPU epoch weights",
+    "No linear separability proof",
+    "Developer data only; no new independent competition evidence"
+  ],
+  "next": "Separately freeze one20-update fullbatch head experiment after this phase; not implemented"
+}

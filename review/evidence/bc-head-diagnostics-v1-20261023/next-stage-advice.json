@@ -1,0 +1,23 @@
+{
+  "source": "independent_subagent_next_stage_advisor",
+  "external_webchat": false,
+  "implemented": false,
+  "recommendation": "One full-batch output-head Adam fit after current diagnostic acceptance",
+  "training_runs": 1,
+  "max_updates": 20,
+  "fixed": [
+    "original parent weights",
+    "hidden layers",
+    "normalization",
+    "original9127 train rows",
+    "inverse-sqrt class weights",
+    "lr0.0003"
+  ],
+  "selection": "minimum deployment float64 unweighted developer CE among step0..20, strict improvement earliest tie",
+  "save": "all21 output-head weights and per-group metrics, local only",
+  "offline_gate": "selected step>0; fixed160 errors<=80; val accuracy drop<=.01; exact-unseen validation accuracy drop<=.02; frozen/export/reload guards",
+  "max_new_games": 14,
+  "game_condition": "Only if offline gate passes;12 developer panel plus2 official filename repeats; reused12 original student baselines",
+  "stop": "If fail, no step extension, learning-rate/classweight change, alternative optimizer, DAgger or PPO within this phase",
+  "limitations": "20 fullbatch updates vs720 minibatch updates both20 data traversals, different optimizer step count; existing validation and2 developer seeds are not independent evidence"
+}

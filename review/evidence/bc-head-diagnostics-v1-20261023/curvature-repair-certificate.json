@@ -1,0 +1,400 @@
+{
+  "passed": true,
+  "original_result_sha256": "b071821d863c79973db5c18b5af4cdc4027a8a7363f05522cdb0058b3aefeb62",
+  "corrected_result_sha256": "f7844dcd08ee8c3292393a13f03e762ea64726dd11b36bf17d2d17617d1cfa23",
+  "repair_registration_sha256": "b2a349ad9f35a09052c21637527189188153688f3e1af71e48ad0429e2e8af39",
+  "changed_curvatures": [
+    {
+      "location": "train_weighted/sgd/train_weighted",
+      "old": 3.528544238547226e-08,
+      "corrected": 3.528544192847179e-08
+    },
+    {
+      "location": "train_weighted/zero_state_adam/train_weighted",
+      "old": 7.698655531727862e-05,
+      "corrected": 7.698655432018494e-05
+    },
+    {
+      "location": "train_unweighted/sgd/train_weighted",
+      "old": 4.467374709381037e-08,
+      "corrected": 4.4673746515216994e-08
+    },
+    {
+      "location": "train_unweighted/zero_state_adam/train_weighted",
+      "old": 9.308770490996376e-05,
+      "corrected": 9.308770370433556e-05
+    },
+    {
+      "location": "batch_0/sgd/train_weighted",
+      "old": 3.4641554387854014e-08,
+      "corrected": 3.464155393919288e-08
+    },
+    {
+      "location": "batch_0/zero_state_adam/train_weighted",
+      "old": 8.972334437100469e-05,
+      "corrected": 8.97233432089501e-05
+    },
+    {
+      "location": "batch_1/sgd/train_weighted",
+      "old": 1.370917673925733e-07,
+      "corrected": 1.3709176561702516e-07
+    },
+    {
+      "location": "batch_1/zero_state_adam/train_weighted",
+      "old": 7.769332451520441e-05,
+      "corrected": 7.769332350895699e-05
+    },
+    {
+      "location": "batch_2/sgd/train_weighted",
+      "old": 8.435686384908698e-09,
+      "corrected": 8.435686275653652e-09
+    },
+    {
+      "location": "batch_2/zero_state_adam/train_weighted",
+      "old": 3.8122021286482416e-05,
+      "corrected": 3.8122020792743915e-05
+    },
+    {
+      "location": "batch_3/sgd/train_weighted",
+      "old": 1.3774366965070933e-07,
+      "corrected": 1.3774366786671805e-07
+    },
+    {
+      "location": "batch_3/zero_state_adam/train_weighted",
+      "old": 7.762041663598275e-05,
+      "corrected": 7.762041563067959e-05
+    },
+    {
+      "location": "batch_4/sgd/train_weighted",
+      "old": 2.619639744439242e-07,
+      "corrected": 2.619639710510899e-07
+    },
+    {
+      "location": "batch_4/zero_state_adam/train_weighted",
+      "old": 9.649939169392773e-05,
+      "corrected": 9.649939044411295e-05
+    },
+    {
+      "location": "batch_5/sgd/train_weighted",
+      "old": 3.5571362766782205e-08,
+      "corrected": 3.557136230607863e-08
+    },
+    {
+      "location": "batch_5/zero_state_adam/train_weighted",
+      "old": 5.962378495287152e-05,
+      "corrected": 5.962378418065228e-05
+    },
+    {
+      "location": "batch_6/sgd/train_weighted",
+      "old": 2.1499084772152385e-09,
+      "corrected": 2.1499084493706342e-09
+    },
+    {
+      "location": "batch_6/zero_state_adam/train_weighted",
+      "old": 2.6170550171432916e-05,
+      "corrected": 2.617054983248425e-05
+    },
+    {
+      "location": "batch_7/sgd/train_weighted",
+      "old": 5.954761759792797e-08,
+      "corrected": 5.954761682669522e-08
+    },
+    {
+      "location": "batch_7/zero_state_adam/train_weighted",
+      "old": 9.067917743062646e-05,
+      "corrected": 9.067917625619237e-05
+    },
+    {
+      "location": "batch_8/sgd/train_weighted",
+      "old": 1.2946214956050643e-08,
+      "corrected": 1.2946214788377353e-08
+    },
+    {
+      "location": "batch_8/zero_state_adam/train_weighted",
+      "old": 2.747931770338338e-05,
+      "corrected": 2.747931734748417e-05
+    },
+    {
+      "location": "batch_9/sgd/train_weighted",
+      "old": 6.589144816372513e-08,
+      "corrected": 6.589144731033005e-08
+    },
+    {
+      "location": "batch_9/zero_state_adam/train_weighted",
+      "old": 6.592239981378666e-05,
+      "corrected": 6.592239895999072e-05
+    },
+    {
+      "location": "batch_10/sgd/train_weighted",
+      "old": 1.3375104531900616e-07,
+      "corrected": 1.337510435867255e-07
+    },
+    {
+      "location": "batch_10/zero_state_adam/train_weighted",
+      "old": 8.849262086812035e-05,
+      "corrected": 8.849261972200552e-05
+    },
+    {
+      "location": "batch_11/sgd/train_weighted",
+      "old": 1.126786177057149e-08,
+      "corrected": 1.1267861624635441e-08
+    },
+    {
+      "location": "batch_11/zero_state_adam/train_weighted",
+      "old": 5.5522321449284543e-05,
+      "corrected": 5.552232073018553e-05
+    },
+    {
+      "location": "batch_12/sgd/train_weighted",
+      "old": 2.1973432459700778e-08,
+      "corrected": 2.1973432175111207e-08
+    },
+    {
+      "location": "batch_12/zero_state_adam/train_weighted",
+      "old": 7.53683874563775e-05,
+      "corrected": 7.536838648024158e-05
+    },
+    {
+      "location": "batch_13/sgd/train_weighted",
+      "old": 8.457430788503916e-08,
+      "corrected": 8.457430678967247e-08
+    },
+    {
+      "location": "batch_13/zero_state_adam/train_weighted",
+      "old": 8.9013345339685e-05,
+      "corrected": 8.901334418682598e-05
+    },
+    {
+      "location": "batch_14/sgd/train_weighted",
+      "old": 7.87620685777654e-09,
+      "corrected": 7.87620675576761e-09
+    },
+    {
+      "location": "batch_14/zero_state_adam/train_weighted",
+      "old": 5.099696956683079e-05,
+      "corrected": 5.099696890634201e-05
+    },
+    {
+      "location": "batch_15/sgd/train_weighted",
+      "old": 6.424854692606752e-08,
+      "corrected": 6.424854609395053e-08
+    },
+    {
+      "location": "batch_15/zero_state_adam/train_weighted",
+      "old": 8.271985252385616e-05,
+      "corrected": 8.271985145250752e-05
+    },
+    {
+      "location": "batch_16/sgd/train_weighted",
+      "old": 1.303134811742653e-07,
+      "corrected": 1.3031347948650634e-07
+    },
+    {
+      "location": "batch_16/zero_state_adam/train_weighted",
+      "old": 9.070776764963132e-05,
+      "corrected": 9.070776647482694e-05
+    },
+    {
+      "location": "batch_17/sgd/train_weighted",
+      "old": 1.8423979661179513e-07,
+      "corrected": 1.842397942256079e-07
+    },
+    {
+      "location": "batch_17/zero_state_adam/train_weighted",
+      "old": 9.53171790590906e-05,
+      "corrected": 9.531717782458729e-05
+    },
+    {
+      "location": "batch_18/sgd/train_weighted",
+      "old": 6.796939712381312e-08,
+      "corrected": 6.796939624350544e-08
+    },
+    {
+      "location": "batch_18/zero_state_adam/train_weighted",
+      "old": 4.982580821847079e-05,
+      "corrected": 4.9825807573150345e-05
+    },
+    {
+      "location": "batch_19/sgd/train_weighted",
+      "old": 3.0252518277236746e-07,
+      "corrected": 3.0252517885420343e-07
+    },
+    {
+      "location": "batch_19/zero_state_adam/train_weighted",
+      "old": 8.690742888008443e-05,
+      "corrected": 8.690742775450026e-05
+    },
+    {
+      "location": "batch_20/sgd/train_weighted",
+      "old": 2.8545182459023748e-08,
+      "corrected": 2.8545182089319962e-08
+    },
+    {
+      "location": "batch_20/zero_state_adam/train_weighted",
+      "old": 8.179725137877235e-05,
+      "corrected": 8.179725031937279e-05
+    },
+    {
+      "location": "batch_21/sgd/train_weighted",
+      "old": 2.8753899082624494e-07,
+      "corrected": 2.8753898710217507e-07
+    },
+    {
+      "location": "batch_21/zero_state_adam/train_weighted",
+      "old": 8.852383983501145e-05,
+      "corrected": 8.852383868849229e-05
+    },
+    {
+      "location": "batch_22/sgd/train_weighted",
+      "old": 2.0998441697678747e-07,
+      "corrected": 2.09984414257168e-07
+    },
+    {
+      "location": "batch_22/zero_state_adam/train_weighted",
+      "old": 9.878299969681599e-05,
+      "corrected": 9.8782998417425e-05
+    },
+    {
+      "location": "batch_23/sgd/train_weighted",
+      "old": 3.841060347852913e-09,
+      "corrected": 3.841060298105304e-09
+    },
+    {
+      "location": "batch_23/zero_state_adam/train_weighted",
+      "old": 2.9408187849387708e-05,
+      "corrected": 2.940818746850668e-05
+    },
+    {
+      "location": "batch_24/sgd/train_weighted",
+      "old": 4.107108887208707e-09,
+      "corrected": 4.107108834015363e-09
+    },
+    {
+      "location": "batch_24/zero_state_adam/train_weighted",
+      "old": 2.8070956203210945e-05,
+      "corrected": 2.8070955839649113e-05
+    },
+    {
+      "location": "batch_25/sgd/train_weighted",
+      "old": 1.2548105421921768e-07,
+      "corrected": 1.2548105259404606e-07
+    },
+    {
+      "location": "batch_25/zero_state_adam/train_weighted",
+      "old": 7.363084604253167e-05,
+      "corrected": 7.363084508889956e-05
+    },
+    {
+      "location": "batch_26/sgd/train_weighted",
+      "old": 4.829125857358339e-07,
+      "corrected": 4.82912579481377e-07
+    },
+    {
+      "location": "batch_26/zero_state_adam/train_weighted",
+      "old": 8.619230882778067e-05,
+      "corrected": 8.619230771145838e-05
+    },
+    {
+      "location": "batch_27/sgd/train_weighted",
+      "old": 1.682505939773236e-08,
+      "corrected": 1.6825059179822096e-08
+    },
+    {
+      "location": "batch_27/zero_state_adam/train_weighted",
+      "old": 8.690235272672327e-05,
+      "corrected": 8.690235160120483e-05
+    },
+    {
+      "location": "batch_28/sgd/train_weighted",
+      "old": 2.9409257639501367e-08,
+      "corrected": 2.9409257258606482e-08
+    },
+    {
+      "location": "batch_28/zero_state_adam/train_weighted",
+      "old": 8.636149982583592e-05,
+      "corrected": 8.636149870732237e-05
+    },
+    {
+      "location": "batch_29/sgd/train_weighted",
+      "old": 7.291716374603521e-08,
+      "corrected": 7.291716280164638e-08
+    },
+    {
+      "location": "batch_29/zero_state_adam/train_weighted",
+      "old": 8.769676857375512e-05,
+      "corrected": 8.769676743794778e-05
+    },
+    {
+      "location": "batch_30/sgd/train_weighted",
+      "old": 6.257671746551844e-08,
+      "corrected": 6.257671665505421e-08
+    },
+    {
+      "location": "batch_30/zero_state_adam/train_weighted",
+      "old": 4.5103022144172894e-05,
+      "corrected": 4.510302156001975e-05
+    },
+    {
+      "location": "batch_31/sgd/train_weighted",
+      "old": 6.635101887831957e-08,
+      "corrected": 6.635101801897236e-08
+    },
+    {
+      "location": "batch_31/zero_state_adam/train_weighted",
+      "old": 7.89932778564035e-05,
+      "corrected": 7.89932768333197e-05
+    },
+    {
+      "location": "batch_32/sgd/train_weighted",
+      "old": 1.9607666822087313e-08,
+      "corrected": 1.9607666568138027e-08
+    },
+    {
+      "location": "batch_32/zero_state_adam/train_weighted",
+      "old": 3.1065659008560634e-05,
+      "corrected": 3.106565860621282e-05
+    },
+    {
+      "location": "batch_33/sgd/train_weighted",
+      "old": 8.447934699759061e-08,
+      "corrected": 8.447934590345382e-08
+    },
+    {
+      "location": "batch_33/zero_state_adam/train_weighted",
+      "old": 9.985970077116509e-05,
+      "corrected": 9.985969947782918e-05
+    },
+    {
+      "location": "batch_34/sgd/train_weighted",
+      "old": 8.248674561731576e-07,
+      "corrected": 8.24867445489862e-07
+    },
+    {
+      "location": "batch_34/zero_state_adam/train_weighted",
+      "old": 8.992788778412639e-05,
+      "corrected": 8.992788661942265e-05
+    },
+    {
+      "location": "batch_35/sgd/train_weighted",
+      "old": 1.4979539811682034e-07,
+      "corrected": 1.4979539617674074e-07
+    },
+    {
+      "location": "batch_35/zero_state_adam/train_weighted",
+      "old": 9.754348853831549e-05,
+      "corrected": 9.754348727497807e-05
+    }
+  ],
+  "other_fields_exactly_unchanged": true,
+  "regression": {
+    "passed": true,
+    "float32_input_equals_float64": true,
+    "old_failure_reproduced": true,
+    "finite_difference": true,
+    "zero_padding": true
+  },
+  "training_runs": 0,
+  "optimizer_updates": 0,
+  "new_games": 0,
+  "new_checkpoints": 0
+}

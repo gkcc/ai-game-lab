@@ -1,0 +1,17 @@
+{
+  "post_result_numerical_followup": true,
+  "reason": "Exact-hidden unique count exceeds unique input count in frozen output",
+  "train_unique_x": 2896,
+  "same_x_different_teacher_labels": 0,
+  "duplicate_calls_with_nonzero_hidden_roundoff": 32,
+  "maximum_duplicate_hidden_absolute_difference": 2.6645352591003757e-15,
+  "first_occurrence_unique_input_hidden": {
+    "unique_hidden": 2896,
+    "different_label_groups": 0
+  },
+  "interpretation": "Frozen collision count describes this batch float64 execution, not mathematical representation cardinality. It is not a separability proof. No results overwritten or tolerance-fitted collision classes.",
+  "frozen_result_sha256": "b071821d863c79973db5c18b5af4cdc4027a8a7363f05522cdb0058b3aefeb62",
+  "training_runs": 0,
+  "optimizer_updates": 0,
+  "new_games": 0
+}

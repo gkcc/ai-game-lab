@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "runtime_files": 1742,
+  "runtime_all_original_bytes": true,
+  "public_byte_identical_files": 470,
+  "public_append_only": [
+    {
+      "file": "review/PROGRESS.md",
+      "old_sha256": "b0abec8be689a8d2a61309296aa30958321ce441f8dc67af0662439a144ea4b1",
+      "old_bytes": 17454,
+      "new_sha256": "1fec24f49500c5d25a4cd12b598a88d3de091dd13a0db7db31c8170386988ed5",
+      "old_bytes_retained_as_prefix": true
+    },
+    {
+      "file": "review/WEBCHAT_REVIEW.md",
+      "old_sha256": "1248f30d527a4b7f567af144fcdcefc242e771550391ae740c5beb7bc3365780",
+      "old_bytes": 11996,
+      "new_sha256": "ab97bab51bf372765d7885c1cd4993a83d2b902d6cbeb46b47becddc43dd885f",
+      "old_bytes_retained_as_prefix": true
+    }
+  ],
+  "protection_sha256": "35a9ec8df57442d5b4cf07f2269f32447ef50593204f4f6d30ccdaf5a90f076f"
+}

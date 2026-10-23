@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "reviewer": "independent sub-agent",
+  "script_sha256": "3c339fda7b2e9cf9488676969066173cf6a0ecbf16c44f37330c746ea3f802da",
+  "original_result_sha256": "b071821d863c79973db5c18b5af4cdc4027a8a7363f05522cdb0058b3aefeb62",
+  "corrected_result_sha256": "f7844dcd08ee8c3292393a13f03e762ea64726dd11b36bf17d2d17617d1cfa23",
+  "source_freeze_sha256": "7cccc124e871bb82dc302522e2470c1f1dfb2b589e0548b4300a343a82d0dc52",
+  "repair_registration_sha256": "b2a349ad9f35a09052c21637527189188153688f3e1af71e48ad0429e2e8af39",
+  "changed_curvatures": 76,
+  "all_other_original_fields_exact": true,
+  "independent_objectives": 20,
+  "derivative_and_curvature_target_checks": 456,
+  "independent_batches": 36,
+  "queries": 35,
+  "neighbor_checks": 70,
+  "canonical_single_vector_collisions": {
+    "train": {
+      "unique_hidden": 2896,
+      "different_label_groups": 0
+    },
+    "train_and_developer_validation": {
+      "unique_hidden": 3558,
+      "different_label_groups": 0
+    }
+  },
+  "same_raw_x_batch_splitting": {
+    "train": {
+      "groups": 31,
+      "max_abs_difference": 2.6645352591003757e-15
+    },
+    "all": {
+      "groups": 36,
+      "max_abs_difference": 2.6645352591003757e-15
+    }
+  },
+  "batch_vs_single_max_hidden_difference": 1.0658141036401503e-14,
+  "changed_predictions": 0,
+  "canonical_neighbor_identity_changes": 0,
+  "canonical_neighbor_max_distance_difference": 1.9984014443252818e-15,
+  "protected_runtime_files": 1742,
+  "original_public_files": 472,
+  "public_byte_identical": 472,
+  "public_append_only": [],
+  "real_parameter_updates": 0,
+  "training_runs": 0,
+  "new_games": 0,
+  "new_checkpoints": 0,
+  "limitations": "Local float64 derivatives only; no reconstruction of GPU training, no separability proof or economic causal attribution."
+}
