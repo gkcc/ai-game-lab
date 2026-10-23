@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "reviewer": "independent audit sub-agent",
+  "registration_sha256": "21ae510d1d5ce942302666185d8727de5ba7ec8d2eb1aa8eea558a989e642bd0",
+  "freeze_sha256": "8c15b13c2dd38b2f9d42fe4f19940ef31b9abf7505e15a147879835f10bfb90b",
+  "reviewed_source_sha256": {
+    "learning/bc_crop_economic_diagnostic/analysis.py": "299f7727ba014066c9212e61fd5b00d2cd795b2284f42ec0edff1d04f1bf1362",
+    "learning/bc_crop_economic_diagnostic/experiment.py": "e73d1dd9e2809001f125b07fc622ca2a13d86d181513403959265517473b28cb",
+    "learning/bc_crop_economic_diagnostic/verify_admission.py": "7816f9e70b5c90b29eeb469198fcc1896fa7227ce9ed4db852c2e7894274e934",
+    "learning/bc_crop_economic_diagnostic/verify_analysis.py": "34dc89f26dad716bf05f53a61b4172bb70670e6c1a113da6b11fc733859a7aae",
+    "learning/bc_crop_economic_diagnostic/__init__.py": "c776fe292fc84de22c4e0fe227ae48fb89cfc219b12563e832f3885dabaea62b"
+  },
+  "checks": {
+    "admission_regression": true,
+    "analysis_regressions": 9,
+    "official_single_step_cases": 12,
+    "single_step_transitions_including_controls": 24,
+    "frozen_registration_and_child_identity": true,
+    "global_bounded_dispatch_and_persistent_start_guards_reviewed": true,
+    "fixed_two_entry_model_card_and_repeat_identity_reviewed": true,
+    "exact_48_coordinate_pairs_and_entry_exclusion": true,
+    "prior_model_gate_still_rejects": true,
+    "new_game_outputs_absent": true
+  },
+  "independent_historical_replay": {
+    "game": "panel-33223745-market-1-student",
+    "replay_sha256": "ef54ed44467f2fdd906e6f36c329d3c5f2d3f88ca42b09a75f0459ad30e36c90",
+    "semantic_replay_sha256_v2": "2476dff6c72a916c97035e46b77f9058e1e0c8aae5958f96d8c7a9f4dca5da3b",
+    "official_transitions": 719,
+    "both_cash_reconciled": true,
+    "sales_units": [
+      305,
+      283
+    ],
+    "sales_revenue": [
+      44713,
+      51524
+    ],
+    "seed_units_bought": [
+      82,
+      52
+    ],
+    "final_cash": [
+      43157,
+      47183
+    ]
+  },
+  "budgets_used": {
+    "new_full_games": 0,
+    "training_runs": 0,
+    "parameter_updates": 0
+  },
+  "limitations": [
+    "Pre-execution review, not evidence of candidate economic improvement.",
+    "Four developer seed clusters and one fixed candidate cannot calibrate the old offline threshold or establish promotion.",
+    "Historical replay and official single-step regression are not new panel games.",
+    "Seed novelty is bounded to the documented current public and local evidence scan."
+  ]
+}
