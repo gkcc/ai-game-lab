@@ -1,0 +1,59 @@
+{
+  "source": "Independent planning subagent plan_task_next; root accepted subject to preregistration review; not external WebChat",
+  "stage": "task_bc_holdout_v1",
+  "status": "planned_not_executed",
+  "scientific_question": "Can the fixed task network retain hybrid-reference economics within a preregistered loss tolerance on unseen seeds and known frozen opponents?",
+  "reason": "Actual task control and near-reference development performance are sufficient to test generalization; avoid further tuning to the two consumed validation seeds",
+  "budgets": {
+    "training_runs": 0,
+    "parameter_changes": 0,
+    "checkpoint_reselection": 0,
+    "new_seeds": 8,
+    "complete_game_attempts": 96,
+    "maximum_concurrent_games": 2,
+    "per_game_timeout_seconds": 900
+  },
+  "opponents": [
+    "heuristic_v1",
+    "heuristic_v1_market",
+    "tuned_round2"
+  ],
+  "arms": [
+    "fixed_trained_task_plus_fixed_crop",
+    "teacher_task_plus_same_fixed_crop"
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "seed_requirements": "Explicit new configuration; exclude all historical train/development/test and registered unused reserved seeds, including market192 panel",
+  "execution": "All games through repaired real official filename loader; protected models and fixed full source dependency/official loader/opponent hashes; local preregistration commit before first match",
+  "statistics": {
+    "primary": "paired net-profit difference divided by reference mean net profit; net profit=final minus initial cash",
+    "cluster": "whole seed retaining all opponent-seat-arm pairs",
+    "bootstrap_replicates": 20000,
+    "interval": "two-sided95%, re-estimate ratio numerator and denominator per resample",
+    "denominator": "Reference mean net profit must be strictly positive for every reported ratio; otherwise primary gate undefined and no admission",
+    "reports": [
+      "per-seed",
+      "per-opponent",
+      "own and opponent net profit",
+      "margin",
+      "W/D/L and match score",
+      "8-cluster limitations"
+    ]
+  },
+  "provisional_gates": {
+    "primary_ratio_ci95_lower_greater_than": -0.02,
+    "per_opponent_mean_net_profit_relative_min": -0.05,
+    "per_opponent_match_score_delta_min": -0.05,
+    "execution_identity_isolation_audit_pass": true
+  },
+  "gate_interpretation": "2% is a declared engineering tolerance, not a natural game threshold; per-opponent point guards are not statistical noninferiority guarantees; passing is restricted panel ability retention, not stronger-than-teacher",
+  "stop": "Any official error, timeout, identity/privacy/audit failure stops new dispatch; no retries/replacement. After each complete seed stop if student mean final cash <50% reference, mark safety stop with no confirmatory inference. Never stop early for success.",
+  "independent_review": "Preselect first and last seed student-versus-market both seats (4 saved replay audits); separately recompute all96 ledger/statistics/hashes. Root audits all96; independent scope explicit.",
+  "failed_gate": "Retain fixed research model, consume all tested seeds permanently; only a separate later zero-training diagnosis, no retuning/retest on these seeds",
+  "default_changed": false,
+  "PPO": false,
+  "DAgger": false
+}

@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "scope": "Final publication of completed historical official filename compatibility repair; no new economic evidence.",
+  "report_sha256": "78673ffa6307a117b741671ecfc63db87b286966061ed7514728a4e791cc7542",
+  "acceptance_sha256": "48a7993d463b8f15ff76bc5ebdad3d13a638686886e294cd50e8e4873ce14e59",
+  "publication_map_sha256": "2741809117df87aff685453af85aa274a94ee6460391201c8bef380ffaac86e9",
+  "reviewed_public_evidence_sha256": {
+    "acceptance.json": "48a7993d463b8f15ff76bc5ebdad3d13a638686886e294cd50e8e4873ce14e59",
+    "attempts.json": "990cbb7c38f2e08a593ef73c90804bde2447cc562876d3064583c05eeade4ef0",
+    "audit.json": "7eb399219d52a4111f77a8cfa7819c8efc035f830ee9b6e5daf308be961de898",
+    "entry-ledger.json": "1226aa27929804bf34ec289ddd778e41d64c7ea2dd275adcdcc0f9cf9efcfefd",
+    "freeze.json": "6af69f7254a2b18a7dd1ca30e928d35c2325207e12a0fae5aad5aa0edb8d157c",
+    "independent-plan.json": "5d0608a9c8ce520e35a682744650de951ee9329cb4323ac6520a6f34fe62563c",
+    "independent-regression-review.json": "39abd76046a23e0e34088059befdb68762f8e2ec68f5c20e631908f6e6a9666b",
+    "independent-review.json": "fae597b038157d3021aa7a66aeeb5c9bcc25322515721b8998fa21e5e68a6ae1",
+    "independent-review.py": "7b6db981fd4825a08342d79fd1624304a882e4d5083411a3bd75c88d7332c1e4",
+    "next-stage-advice.json": "d2aa4a9760762600bc50068edc5aba7f844cf270a4962fddcd6450bb510a9c7f",
+    "pre-execution-commit.json": "eb04d1a926370c57a80b8839ef23814509327a88b0c72d364a7dda9f86f21167",
+    "pre-review.json": "e3c9fec45c6503faf0cb5a8eb24ceb7e64e11e5971d41500f0423912ee60e730",
+    "protection-before.json": "8b771259aeeb6c2669a83f4d50ac5a55f4566b70c42ea38fd3fbd16af659a9f3",
+    "publication-map.json": "2741809117df87aff685453af85aa274a94ee6460391201c8bef380ffaac86e9",
+    "registration.json": "32a9880133608d1206f8b6676ecc5ba26fecefdb54ff7ec265f84de52e00bea9",
+    "regressions.json": "563d1821c004b3c1f63e6923f53b700fad63af5e5cf365a7b4aaced1d5b09a0b",
+    "result.json": "67f084063295b165afc5b9cd73342e75e0cd27540352ced64ed028a1e3547e5a"
+  },
+  "reviewed_source_copies_sha256": {
+    "entry.py": "d35bd58661ac6065fd9ae92ce806943df50481d0587be9434933c230234f08f2",
+    "experiment.py": "c18d8cc03d77b87dcb2af992a1c0986d19f43d4538e10d26631993a0c67ce7bd",
+    "README.zh-CN.md": "8f8627387c3743eb3fc0bd449fdd71264679f840e2b6b756f447386e06595aa3",
+    "verify_entry.py": "767adabf597e9acf7f4113e4dfcb7dda0711e1877f4432d478b9ce773f346194",
+    "__init__.py": "3d5bde4b71974a465bbba5a0d79a4fb7974ab234974573dffc52b52cc9e27a4b"
+  },
+  "old_public_byte_identical": 677,
+  "old_public_append_only": {
+    "review/PROGRESS.md": {
+      "old_bytes": 21808,
+      "old_sha256": "e894ea48e0ccb74cc05810cb6aa08e777a2852b7d3325c266b245f520a944df4",
+      "new_sha256": "768da2ae0e3ff6543996bd2241b58c361b3052523a1db6483b0e53487fc54331"
+    },
+    "review/WEBCHAT_REVIEW.md": {
+      "old_bytes": 16714,
+      "old_sha256": "a63c5c874c37149ddf0596a97f4bf944304d3fd7e747585c6873bac8fdd19391",
+      "new_sha256": "4e1c95e07d76e9474648b91855b040a08f4aa0755dfc2a18b19f2a9efa5a50f9"
+    }
+  },
+  "protected_runtime_prior_check": {
+    "files": 3274,
+    "independent_review_sha256": "fae597b038157d3021aa7a66aeeb5c9bcc25322515721b8998fa21e5e68a6ae1",
+    "not_rehashed_again_in_final_publication_pass": true
+  },
+  "checks": [
+    "Chinese report counts and evidence boundaries match independent full two-entry replay review.",
+    "Acceptance evidence hashes match current immutable files; earlier task_bc_v1 failure remains explicitly false.",
+    "All17 public evidence files and5 new source copies match local bytes; no raw weights/replays/traces/logs/absolute private paths or hardware identifiers found.",
+    "Next-stage advice is planned only: unchanged model, new preregistered seeds, no training, bounded retention question.",
+    "Future implementation must freeze bootstrap RNG, quantile algorithm, seed-generation distribution and paired-ratio formula; eight clusters remain a small sample and opponent point guards are not statistical noninferiority."
+  ],
+  "reviewer_additional_replays_in_final_pass": 0,
+  "reviewer_new_games": 0,
+  "reviewer_training_runs": 0,
+  "limitations": [
+    "No future holdout stage is executed or accepted by this publication review.",
+    "Entry compatibility evidence is for the fixed historical models and seeds, not proof of economic improvement."
+  ]
+}

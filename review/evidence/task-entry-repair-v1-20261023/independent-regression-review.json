@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "script_sha256": "7b6db981fd4825a08342d79fd1624304a882e4d5083411a3bd75c88d7332c1e4",
+  "freeze_sha256": "6af69f7254a2b18a7dd1ca30e928d35c2325207e12a0fae5aad5aa0edb8d157c",
+  "registration_sha256": "32a9880133608d1206f8b6676ecc5ba26fecefdb54ff7ec265f84de52e00bea9",
+  "pre_execution_commit": "187990441f3b52026011175e431b3fb4fcc44f0b",
+  "regressions_sha256": "563d1821c004b3c1f63e6923f53b700fad63af5e5cf365a7b4aaced1d5b09a0b",
+  "all_regression_file_hashes": 11,
+  "precommit_receipt_blobs_verified": 3,
+  "precommit_new_source_blobs_verified": 5,
+  "raw_trace_paths_compared": 4,
+  "saved_observations_independently_reconstructed": 2,
+  "reviewer_official_loader_calls": 0,
+  "reviewer_official_transitions": 0,
+  "reviewer_new_games": 0,
+  "reviewer_training_runs": 0,
+  "limitations": [
+    "Actual loader calls were made by the frozen root regression; reviewer verifies its raw actions/traces, source, identities and separately reconstructs two decisions."
+  ]
+}

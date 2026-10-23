@@ -1,0 +1,118 @@
+[
+  {
+    "game": "repair-31205138-0-trained",
+    "passed": true,
+    "official": {
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "27b6ee5eb6e0b61d95cadf0ce3840ae8f89329ece70e9fafc2a82b48a186918b",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "17842123e39817913c740a24fce1081e0efaa3b2056bcd342905163d1fae458c",
+      "final_rewards": [
+        41430.0,
+        37919.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 366,
+          "unit:executed": 4227,
+          "unit:pass": 3225
+        },
+        "ordered_effect_sha256": "7fafa4393c9befa9854128dfcc64650420defad363a00e040a517cd40d816d5b",
+        "successful_plants": [
+          58,
+          61
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    "counts": {
+      "task_calls": 2167,
+      "crop_calls": 170,
+      "selected_PLANT": 170,
+      "different_from_conditional_teacher": 95,
+      "selected_WATER": 1765,
+      "selected_FERTILIZE": 62,
+      "selected_HARVEST": 166,
+      "selected_DIG": 4,
+      "unit_pass": 1770,
+      "market_executed": 200,
+      "unit_executed": 2206
+    },
+    "actor_actions_reproduced": 719,
+    "rival_actions_reproduced": 719,
+    "decision_traces_reproduced": 719,
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "fallback": 0,
+    "load_errors": 0,
+    "inference_errors": 0
+  },
+  {
+    "game": "repair-31205138-1-trained",
+    "passed": true,
+    "official": {
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "791d35911ad58f2712bb23f772959e46afccc9916b9773f22697f8ae6c8db6be",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "e0fba31a2fa5f0d518da125fa674db8ca4e43e4f32ae69685766d896095b8ba4",
+      "final_rewards": [
+        37919.0,
+        41430.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 366,
+          "unit:executed": 4227,
+          "unit:pass": 3225
+        },
+        "ordered_effect_sha256": "29d0268b339e3fb021709bfe955568b398927feb81700d994a807cc9a697213b",
+        "successful_plants": [
+          61,
+          58
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    "counts": {
+      "task_calls": 2167,
+      "crop_calls": 170,
+      "selected_PLANT": 170,
+      "different_from_conditional_teacher": 95,
+      "selected_WATER": 1765,
+      "selected_FERTILIZE": 62,
+      "selected_HARVEST": 166,
+      "selected_DIG": 4,
+      "unit_pass": 1770,
+      "market_executed": 200,
+      "unit_executed": 2206
+    },
+    "actor_actions_reproduced": 719,
+    "rival_actions_reproduced": 719,
+    "decision_traces_reproduced": 719,
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "fallback": 0,
+    "load_errors": 0,
+    "inference_errors": 0
+  }
+]

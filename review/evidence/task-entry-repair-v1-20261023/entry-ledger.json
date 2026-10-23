@@ -1,0 +1,84 @@
+[
+  {
+    "seed": 31205138,
+    "side": 0,
+    "banks": [
+      41430.0,
+      37919.0
+    ],
+    "bank": 41430.0,
+    "opponent_bank": 37919.0,
+    "net_profit": 38430.0,
+    "margin": 3511.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "8491b95276cfa328274fdf9a9b57895e8eddbd916b2bbc5181534aec77f868b2",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "27b6ee5eb6e0b61d95cadf0ce3840ae8f89329ece70e9fafc2a82b48a186918b",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "17842123e39817913c740a24fce1081e0efaa3b2056bcd342905163d1fae458c",
+    "audit_version": 2,
+    "policy": "trained",
+    "opponent": "round2",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      41430.0,
+      37919.0
+    ],
+    "replay_gzip_sha256": "1592691f1ddc7de66c94953499c107c0ba617e5e189473f33b8c430e12719ccc",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "repair-31205138-0-trained",
+    "agent_relative": "artifacts/task-entry-repair-v1-20261023/agents/repair-31205138-0-trained.py",
+    "trace_sha256": "c4a09844505f2ace089f57c0b3b058f684d7c9a346969f1e2e799408b414d25e",
+    "reference_game": "dev-31205138-round2-0-trained",
+    "historical_reproduction": true
+  },
+  {
+    "seed": 31205138,
+    "side": 1,
+    "banks": [
+      37919.0,
+      41430.0
+    ],
+    "bank": 41430.0,
+    "opponent_bank": 37919.0,
+    "net_profit": 38430.0,
+    "margin": 3511.0,
+    "states": 720,
+    "action_turns": 719,
+    "bot_sha256": "ee17efaab56f665e99f951a5b1173d8a8b61baa90610b58abfa8e08c1e7651d9",
+    "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "package": "1.33.0",
+    "passed": true,
+    "semantic_replay_sha256": "791d35911ad58f2712bb23f772959e46afccc9916b9773f22697f8ae6c8db6be",
+    "semantic_replay_sha256_version": 1,
+    "semantic_replay_sha256_v2": "e0fba31a2fa5f0d518da125fa674db8ca4e43e4f32ae69685766d896095b8ba4",
+    "audit_version": 2,
+    "policy": "trained",
+    "opponent": "round2",
+    "final_status": [
+      "DONE",
+      "DONE"
+    ],
+    "rewards": [
+      37919.0,
+      41430.0
+    ],
+    "replay_gzip_sha256": "69e36b29e204f6b3e3377a096539cc4dbff23e1c61d4198bb3af58524a51082d",
+    "agent_errors": 0,
+    "both_player_farming_and_seed_audits_passed": true,
+    "game": "repair-31205138-1-trained",
+    "agent_relative": "artifacts/task-entry-repair-v1-20261023/agents/repair-31205138-1-trained.py",
+    "trace_sha256": "9b082550e4d1d39446856623a62dea1311999c9e2d6e2aaeef5301fe06fe1f31",
+    "reference_game": "dev-31205138-round2-1-trained",
+    "historical_reproduction": true
+  }
+]

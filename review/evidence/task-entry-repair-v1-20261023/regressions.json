@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "old_official_counterexample": {
+    "type": "InvalidArgument",
+    "cause": "NameError: __file__ is not defined"
+  },
+  "freeze_sha256": "6af69f7254a2b18a7dd1ca30e928d35c2325207e12a0fae5aad5aa0edb8d157c",
+  "registration_sha256": "32a9880133608d1206f8b6676ecc5ba26fecefdb54ff7ec265f84de52e00bea9",
+  "official_loader_sha256": "0ac7baf1212b4ce1eabae3cc1cbb55c98effef5e0d0485522a8be87097c39a4f",
+  "files_sha256": {
+    "artifacts/task-bc-v1-20261023-run1/agents/entry-31205138-0-trained.py": "4db0a017469aa3a1401a851e456442ba1b94b742b1e39ab0619b407d65a0e436",
+    "artifacts/task-entry-repair-v1-20261023/agents/regression-official.py": "80ffe2cb644b16dc149f86e74902194af1b0fb2ae0a78adc4e137f86494ab2d9",
+    "artifacts/task-entry-repair-v1-20261023/agents/regression-worker.py": "af4cb25818fd3ebafa44a4f778dc8925410345bf2d1fb5d632946a6291a9e52f",
+    "artifacts/task-bc-v1-20261023-run1/games/dev-31205138-round2-0-trained/replay.json.gz": "6d26c0696705995e0a9624eeb447f8b5e9539ee1ae9dfb67e3b60197886744bc",
+    "artifacts/task-bc-v1-20261023-run1/traces/dev-31205138-round2-0-trained.jsonl.gz": "7b103772e153f8e935b822f30f061958845d297004e8864434a7cda7afaebeb9",
+    "artifacts/task-entry-repair-v1-20261023/traces/regression-official.jsonl.gz": "6f661dbdc223a7e3b448f816d49f17a4f68606ed11cea049e00dd03d593ce733",
+    "artifacts/task-entry-repair-v1-20261023/traces/regression-worker.jsonl.gz": "b8ca0402217dafb7f49be5f127b3d13084cf9019c74bfb83482fe67f61db1193",
+    "artifacts/task-entry-repair-v1-20261023/traces/regression-direct.jsonl.gz": "f1ae6fe78514d09b2f81039fee5b2f7732c348791635595b67dab4f021482887",
+    "artifacts/task-entry-repair-v1-20261023/sources/worker.py": "a80158b26d1f4ae3d366c1d1276a1ca63e652bcd350f5ca25545b0f5f33759f1",
+    "artifacts/task-entry-repair-v1-20261023/model/trained.npz": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "artifacts/bc-epoch6-holdout-v1-20261023/panels/fixed_epoch6/model/trained.npz": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd"
+  },
+  "observation_steps": [
+    0,
+    1
+  ],
+  "seed": 31205138,
+  "side": 0,
+  "official_load_attempts": 2,
+  "worker_load_attempts": 1,
+  "official_agent_calls": 2,
+  "worker_agent_calls": 2,
+  "direct_calls": 2,
+  "action_equalities": 2,
+  "complete_stable_trace_equalities": 2,
+  "equals_original_saved_actions_and_traces": true,
+  "worker_loader": "Actual frozen module import with empty stdin, then load_agent; no play requests",
+  "official_loader": "get_last_callable with absolute filename and no injected __file__",
+  "non_project_cwd": true,
+  "regression_trace_paths_separate": true,
+  "official_transitions": 0,
+  "complete_games": 0,
+  "training_updates": 0
+}

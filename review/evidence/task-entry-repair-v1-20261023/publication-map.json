@@ -1,0 +1,77 @@
+{
+  "files": [
+    {
+      "file": "pre-execution-commit.json",
+      "local_sha256": "eb04d1a926370c57a80b8839ef23814509327a88b0c72d364a7dda9f86f21167",
+      "public_sha256": "eb04d1a926370c57a80b8839ef23814509327a88b0c72d364a7dda9f86f21167",
+      "transform": "none; aggregate or reviewer source allowlist"
+    },
+    {
+      "file": "regressions.json",
+      "local_sha256": "563d1821c004b3c1f63e6923f53b700fad63af5e5cf365a7b4aaced1d5b09a0b",
+      "public_sha256": "563d1821c004b3c1f63e6923f53b700fad63af5e5cf365a7b4aaced1d5b09a0b",
+      "transform": "none; aggregate or reviewer source allowlist"
+    },
+    {
+      "file": "entry-ledger.json",
+      "local_sha256": "1226aa27929804bf34ec289ddd778e41d64c7ea2dd275adcdcc0f9cf9efcfefd",
+      "public_sha256": "1226aa27929804bf34ec289ddd778e41d64c7ea2dd275adcdcc0f9cf9efcfefd",
+      "transform": "none; aggregate or reviewer source allowlist"
+    },
+    {
+      "file": "audit.json",
+      "local_sha256": "7eb399219d52a4111f77a8cfa7819c8efc035f830ee9b6e5daf308be961de898",
+      "public_sha256": "7eb399219d52a4111f77a8cfa7819c8efc035f830ee9b6e5daf308be961de898",
+      "transform": "none; aggregate or reviewer source allowlist"
+    },
+    {
+      "file": "result.json",
+      "local_sha256": "67f084063295b165afc5b9cd73342e75e0cd27540352ced64ed028a1e3547e5a",
+      "public_sha256": "67f084063295b165afc5b9cd73342e75e0cd27540352ced64ed028a1e3547e5a",
+      "transform": "none; aggregate or reviewer source allowlist"
+    },
+    {
+      "file": "attempts.json",
+      "local_sha256": "990cbb7c38f2e08a593ef73c90804bde2447cc562876d3064583c05eeade4ef0",
+      "public_sha256": "990cbb7c38f2e08a593ef73c90804bde2447cc562876d3064583c05eeade4ef0",
+      "transform": "none; aggregate or reviewer source allowlist"
+    },
+    {
+      "file": "independent-regression-review.json",
+      "local_sha256": "39abd76046a23e0e34088059befdb68762f8e2ec68f5c20e631908f6e6a9666b",
+      "public_sha256": "39abd76046a23e0e34088059befdb68762f8e2ec68f5c20e631908f6e6a9666b",
+      "transform": "none; aggregate or reviewer source allowlist"
+    },
+    {
+      "file": "independent-review.json",
+      "local_sha256": "fae597b038157d3021aa7a66aeeb5c9bcc25322515721b8998fa21e5e68a6ae1",
+      "public_sha256": "fae597b038157d3021aa7a66aeeb5c9bcc25322515721b8998fa21e5e68a6ae1",
+      "transform": "none; aggregate or reviewer source allowlist"
+    },
+    {
+      "file": "independent-review.py",
+      "local_sha256": "7b6db981fd4825a08342d79fd1624304a882e4d5083411a3bd75c88d7332c1e4",
+      "public_sha256": "7b6db981fd4825a08342d79fd1624304a882e4d5083411a3bd75c88d7332c1e4",
+      "transform": "none; aggregate or reviewer source allowlist"
+    },
+    {
+      "file": "acceptance.json",
+      "local_sha256": "48a7993d463b8f15ff76bc5ebdad3d13a638686886e294cd50e8e4873ce14e59",
+      "public_sha256": "48a7993d463b8f15ff76bc5ebdad3d13a638686886e294cd50e8e4873ce14e59",
+      "transform": "none; aggregate or reviewer source allowlist"
+    },
+    {
+      "file": "next-stage-advice.json",
+      "local_sha256": "d2aa4a9760762600bc50068edc5aba7f844cf270a4962fddcd6450bb510a9c7f",
+      "public_sha256": "d2aa4a9760762600bc50068edc5aba7f844cf270a4962fddcd6450bb510a9c7f",
+      "transform": "none; aggregate or reviewer source allowlist"
+    }
+  ],
+  "original_evidence_preserved": true,
+  "old_public_same_bytes": 677,
+  "old_public_append_only": [
+    "review/PROGRESS.md",
+    "review/WEBCHAT_REVIEW.md"
+  ],
+  "raw_artifacts": "Local only; no replay, model, trace, log or private path publication"
+}

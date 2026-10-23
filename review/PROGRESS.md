@@ -177,3 +177,8 @@
 ## 联合任务 BC V1：训练完成、文件入口验收失败
 
 事前20b2154，原60示范135406组，单次GPU8轮3392更新，最低合格验证CE选任务epoch6，多候选ID命中93.97%，全验证CPU重载ID零分歧。12场已消费验证种子开发比赛完整结束，训练头平均净收益33718，混合参考33873（差−155），均4胜；不能声称超越教师或新留出泛化。首官方filename入口因wrapper依赖未提供的__file__加载失败，第二入口未启动，整体stage_acceptance=false，保留所有失败和停止事实。主12场8628官方复演，独立两场1438；独立全账本/9头指标复算通过仅证明证据一致。下一步只另登记入口兼容修复、最多2原seed历史复现，不重训/重跑面板/default不变。见[报告](../kaggriculture/TASK_BC_V1.zh-CN.md)、[证据](evidence/task-bc-v1-20261023-run1/)。
+
+
+## 联合任务学生官方文件入口修复 V1
+
+事前登记1879904，只新增co_filename兼容包装器和独立修复入口，旧task_bc源码/模型不变。真实官方旧错误反例及新官方/Worker/direct连续2步动作与完整trace一致；两场原seed历史filename比赛均720/719/DONE、零错误，全部动作/trace/v1v2/现金等于旧trained双席。主1438官方复演，独立再1438及2876双方动作/1438trace比较通过。旧3274runtime保留；旧679public仅两review追加，其余677原字节。0训练/0新增经济样本，旧stagefalse和−155开发均差不变；修复通过不等于模型晋级。下一步独立建议另登记固定双头8新seed多对手96场能力保留评估，当前未实施。见[修复报告](../kaggriculture/TASK_ENTRY_REPAIR_V1.zh-CN.md)与[证据](evidence/task-entry-repair-v1-20261023/)。

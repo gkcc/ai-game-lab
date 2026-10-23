@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "scope": "Official filename compatibility for unchanged fixed models on two historical games",
+  "prior_task_bc_stage_acceptance_passed": false,
+  "training_runs": 0,
+  "new_economic_samples": 0,
+  "historical_filename_games": 2,
+  "root_official_transitions": 1438,
+  "independent_official_transitions": 1438,
+  "protected_runtime_files": 3274,
+  "default_changed": false,
+  "evidence_sha256": {
+    "registration.json": "32a9880133608d1206f8b6676ecc5ba26fecefdb54ff7ec265f84de52e00bea9",
+    "freeze.json": "6af69f7254a2b18a7dd1ca30e928d35c2325207e12a0fae5aad5aa0edb8d157c",
+    "pre-execution-commit.json": "eb04d1a926370c57a80b8839ef23814509327a88b0c72d364a7dda9f86f21167",
+    "regressions.json": "563d1821c004b3c1f63e6923f53b700fad63af5e5cf365a7b4aaced1d5b09a0b",
+    "entry-ledger.json": "1226aa27929804bf34ec289ddd778e41d64c7ea2dd275adcdcc0f9cf9efcfefd",
+    "audit.json": "7eb399219d52a4111f77a8cfa7819c8efc035f830ee9b6e5daf308be961de898",
+    "result.json": "67f084063295b165afc5b9cd73342e75e0cd27540352ced64ed028a1e3547e5a",
+    "independent-regression-review.json": "39abd76046a23e0e34088059befdb68762f8e2ec68f5c20e631908f6e6a9666b",
+    "independent-review.json": "fae597b038157d3021aa7a66aeeb5c9bcc25322515721b8998fa21e5e68a6ae1"
+  },
+  "old_development_mean_increment": -155,
+  "competitive_improvement_proven": false
+}
