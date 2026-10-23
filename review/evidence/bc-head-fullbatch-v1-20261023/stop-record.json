@@ -1,0 +1,16 @@
+{
+  "stopped": true,
+  "reason": "Selected epoch6 still112/160 fixed errors; threshold80 not met",
+  "predeclared_offline_gate_passed": false,
+  "selected_epoch": 6,
+  "actual_freeze_candidate_entry_rejected": true,
+  "training_runs": 1,
+  "optimizer_updates": 20,
+  "new_games": 0,
+  "reserved_games_not_run": 14,
+  "no_checkpoint_reselection": true,
+  "no_retraining_or_step_extension": true,
+  "report_sha256": "88b23e35858be6b514badbb18f2a4a9276434b40ab19332d5aff5349ef096dfa",
+  "history_sha256": "b5d2a4d12759e08a34e4c57b0fed46ec41f7bba8d0f616724eb437dddfbb97b6",
+  "reload_sha256": "e9ebf64fee762891c60609c712be4d0154109946c96f70a830bbefb3656f24af"
+}

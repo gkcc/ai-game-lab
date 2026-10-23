@@ -1,0 +1,179 @@
+{
+  "passed": true,
+  "script_sha256": "0598073dfade05de10725a639693269f379f73d4e3d2dcf984b0b89325ad62a0",
+  "pre_training_commit": "5d0d3d34dc72634a7d8d3ee7da6fadbe2a3eb349",
+  "registration_sha256": "659b1b53619127672569ce5e5cebf3c76a7f385baa1f4865a06e36278b5adaa3",
+  "freeze_sha256": "e741cfb97703c5d8d6577e30747f50514faedd2b934becf8f05d3ce4d0fc2bc4",
+  "checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+  "history_sha256": "b5d2a4d12759e08a34e4c57b0fed46ec41f7bba8d0f616724eb437dddfbb97b6",
+  "heads_recomputed": 21,
+  "adjacent_head_changes": 20,
+  "group_metric_checks": 504,
+  "maximum_ce_difference": 4.440892098500626e-16,
+  "best_epoch": 6,
+  "selected_errors": 112,
+  "offline_gates": {
+    "nonzero_epoch": true,
+    "selected_train_errors_halved": false,
+    "validation_accuracy_guard": true,
+    "unseen_validation_accuracy_guard": true
+  },
+  "offline_gate_passed": false,
+  "actual_model_gate_rejected": true,
+  "protected_runtime_files": 1768,
+  "public_byte_identical": 497,
+  "public_append_only": [],
+  "new_games": 0,
+  "review_training_runs": 0,
+  "review_parameter_updates": 0,
+  "steps": [
+    {
+      "epoch": 0,
+      "head_sha256": "8091082b4bedd8bb5137e18299a30ff852f2385a8fb1cb2056a0c06e7601162f",
+      "prediction_sha256": "7a7f0ec86636d01324994d8a99668d38febd03303730057e30ceb07f5deeb2f4",
+      "validation_ce": 0.39301591005987846,
+      "selected_errors": 160
+    },
+    {
+      "epoch": 1,
+      "head_sha256": "7822bf5098732753d5dfdc0f526b57614770d8b711509eb6cfcddc808c417b53",
+      "prediction_sha256": "c3ecabcf9085467f7057f481e45718833acd2121cb48e6afde6da9a791b3ac57",
+      "validation_ce": 0.3922637593596208,
+      "selected_errors": 160
+    },
+    {
+      "epoch": 2,
+      "head_sha256": "a5288e2b613b6840d818f52ed9c1d6083cc7906d79e32a4b4966a46de1dd6860",
+      "prediction_sha256": "a32b3f098343c4bcd9bc5727579bcc9ce467d9040960fafe31f8340d5156cb2a",
+      "validation_ce": 0.39164539853445424,
+      "selected_errors": 160
+    },
+    {
+      "epoch": 3,
+      "head_sha256": "07da0fe757d708118649c98842ec2ed6e24bd8c5af867f003561873296a9e6cc",
+      "prediction_sha256": "55f47dd12304709dd3a8e4799412a9036f21028d092ae6cd05df317b851fc25f",
+      "validation_ce": 0.3911702080241778,
+      "selected_errors": 160
+    },
+    {
+      "epoch": 4,
+      "head_sha256": "9127ecf0af42785457c977778a0eb36b3ec3e0521547295f2c62341a0064fb34",
+      "prediction_sha256": "44f945a132c880aea52d28ae3254ba0d224fd8e4aff62c12c656477f719d704f",
+      "validation_ce": 0.3908248400679768,
+      "selected_errors": 160
+    },
+    {
+      "epoch": 5,
+      "head_sha256": "c8a83371e3006ee2466162518d166138d1376a55c9fc0cdd63e558bc0b69abc0",
+      "prediction_sha256": "1943af79544098487dc426b7a8c98c73070341250ae0c5712833ec2c1644574e",
+      "validation_ce": 0.3906036057211726,
+      "selected_errors": 144
+    },
+    {
+      "epoch": 6,
+      "head_sha256": "a52f3d9819fabc1c2cbbf7f8d6d26588233ee941edf9e2a9d3dfc39191bfe8ba",
+      "prediction_sha256": "b45cfeacda71eea72d8143961e6b138cf1dcbf29116c5afcf700c6da553b1ab2",
+      "validation_ce": 0.39050680768777707,
+      "selected_errors": 112
+    },
+    {
+      "epoch": 7,
+      "head_sha256": "d6bcc250910834d7e9f89a69cd36c61aed7abcef86f1763863e3945a630c0bc8",
+      "prediction_sha256": "9a720a91a982eea624a8e6c509f4188c711e7002d3b06f66296dacd14b5a64fa",
+      "validation_ce": 0.3905333983514977,
+      "selected_errors": 96
+    },
+    {
+      "epoch": 8,
+      "head_sha256": "970b13addb21df5a292bb48cbd52faa2ad9fa0856b28ee58e82288a08241b9d3",
+      "prediction_sha256": "827b2d02392cdbd31177898460414e6aec774e2e46c638fd7ac1606ef9ddabc3",
+      "validation_ce": 0.3906784493723241,
+      "selected_errors": 96
+    },
+    {
+      "epoch": 9,
+      "head_sha256": "3065fb7fe44bf7c11fe2a3519e0cbe535e5d9ada27f9fba9decdf9526a739e33",
+      "prediction_sha256": "93ac223e665187fb576e7e6d1d42435987a1391d0fccf6113af4f4f165066ca3",
+      "validation_ce": 0.390933267683058,
+      "selected_errors": 96
+    },
+    {
+      "epoch": 10,
+      "head_sha256": "85d3df38f9dedd0d6f0e9706691e5d0a3d74587e85f59c6f8dfd0b23c13d84f8",
+      "prediction_sha256": "478a76dec69404679514c1cb1c1fb6a62d4907e6549641a242ca9b257a40c447",
+      "validation_ce": 0.3912874383871422,
+      "selected_errors": 96
+    },
+    {
+      "epoch": 11,
+      "head_sha256": "69bf04da3bf5d4829a67f96f29cc93d6bfc84deea1827a807ca940d5c7ab46e6",
+      "prediction_sha256": "ae7dda355c5e735241dc8121d6f75af09e21872ec402e73cf6ef100fcb291cf8",
+      "validation_ce": 0.391730700223274,
+      "selected_errors": 80
+    },
+    {
+      "epoch": 12,
+      "head_sha256": "8baa374b0151fa1d01c843c5ad7ebf822d6698bfb475e3227dd6390e081378a5",
+      "prediction_sha256": "d64d4a561cab943a6c8cd28999a3d6acb2696b89bb7af957a4e44c878b881663",
+      "validation_ce": 0.39225378762411256,
+      "selected_errors": 64
+    },
+    {
+      "epoch": 13,
+      "head_sha256": "c0a15aa52060d2abf740b42dd9e146bd15b5f7c8bc0992e5496547bb0832df5e",
+      "prediction_sha256": "bc867a5e75143bbc40a848863f1ad9680dc8b5008ccadd9b44894a448bf63b69",
+      "validation_ce": 0.3928485276128359,
+      "selected_errors": 64
+    },
+    {
+      "epoch": 14,
+      "head_sha256": "b4c5933cd5d7b8f1442e9f7fd153732ea20f523ff269e8836fe68a6c93f5380b",
+      "prediction_sha256": "660a8f3d72ff81e9a48a1f5797b889e654235ecf269ca7c848314fef32aed633",
+      "validation_ce": 0.3935076828312971,
+      "selected_errors": 64
+    },
+    {
+      "epoch": 15,
+      "head_sha256": "947ed6a59d9cb35b6158002e7b7811859f6b30b4fbf785892bceaf4e6c09c69e",
+      "prediction_sha256": "ddba57da9a1dde23a373dc17f1df0573c7dd272a686f2c97ec4e29c878cbdee4",
+      "validation_ce": 0.39422476408948065,
+      "selected_errors": 64
+    },
+    {
+      "epoch": 16,
+      "head_sha256": "2692b9c0a89750e713fb478032a79f9f8929e6811c00b1f689b38fa235e0ef4f",
+      "prediction_sha256": "0a9e59557e389dcaf6c0144a339739395b02d531560476a85fc95fd6fa6c745d",
+      "validation_ce": 0.39499399777392635,
+      "selected_errors": 64
+    },
+    {
+      "epoch": 17,
+      "head_sha256": "459d9afffade195e5a9eb11a6ff9177ea802153246c085511326914dfc1afc4b",
+      "prediction_sha256": "6fad4741279768427b95bf0a70f134b4feac0a9cce06a92a8e5ac3ae169d478e",
+      "validation_ce": 0.3958100613127345,
+      "selected_errors": 48
+    },
+    {
+      "epoch": 18,
+      "head_sha256": "68bd7e6b992da52e4dd46f707ca3f534172513c8bb23dbe6819de158715ea8f3",
+      "prediction_sha256": "bb76ae84d60b37e353aa03690fe90fa393334cff2cd92f83ea270ba1842eefb1",
+      "validation_ce": 0.39666758393750956,
+      "selected_errors": 32
+    },
+    {
+      "epoch": 19,
+      "head_sha256": "9df3f733d195548e815b6e0871916917bd66b4506317b959c56b41e6d75219df",
+      "prediction_sha256": "87c4334cd0c67dff8cb2fca02ac13e3948a7a271399d6d32d0601e0fb7e457dd",
+      "validation_ce": 0.3975607314358395,
+      "selected_errors": 32
+    },
+    {
+      "epoch": 20,
+      "head_sha256": "3e531e2fce48dd709054a7ff8c5ac98d54a839d5bd66f860845e449f3d46db4a",
+      "prediction_sha256": "af3af76bbd4314f1603b05f20cd7f8812c75eb7697dd9425fdaef231ed5dee41",
+      "validation_ce": 0.39848302786931444,
+      "selected_errors": 32
+    }
+  ],
+  "limitations": "Independent CPU recomputation of every retained head, metrics and gates. GPU execution relies on frozen code and run evidence; no rerun of training, no optimizer-state reconstruction, no independent economic or generalization claim."
+}

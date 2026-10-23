@@ -1,0 +1,42 @@
+{
+  "stage_execution_passed": true,
+  "offline_learning_gate_passed": false,
+  "promotion": false,
+  "training_runs": 1,
+  "actual_gpu_updates": 20,
+  "selected_epoch": 6,
+  "selected_checkpoint_updates": 6,
+  "all21_heads_retained": true,
+  "selected_fixed_errors": 112,
+  "required_maximum_fixed_errors": 80,
+  "new_games": 0,
+  "reserved_games_not_run": 14,
+  "actual_candidate_gate_rejected": true,
+  "original_model_and_default_preserved": true,
+  "new_weights_change_predictions": true,
+  "independent_review_passed": true,
+  "independent_heads_recomputed": 21,
+  "independent_group_metric_checks": 504,
+  "no_checkpoint_reselection": true,
+  "no_training_retry_or_extension": true,
+  "evidence_sha256": {
+    "registration.json": "659b1b53619127672569ce5e5cebf3c76a7f385baa1f4865a06e36278b5adaa3",
+    "freeze.json": "e741cfb97703c5d8d6577e30747f50514faedd2b934becf8f05d3ce4d0fc2bc4",
+    "pre-training-commit.json": "ed6ebf9804dede432a85cea94e385dfdc03c9fd08e951115588a35547a7ce6f5",
+    "model/report.json": "88b23e35858be6b514badbb18f2a4a9276434b40ab19332d5aff5349ef096dfa",
+    "model/history.json": "b5d2a4d12759e08a34e4c57b0fed46ec41f7bba8d0f616724eb437dddfbb97b6",
+    "reload-verification.json": "e9ebf64fee762891c60609c712be4d0154109946c96f70a830bbefb3656f24af",
+    "stop-record.json": "3f91ca05b02e06cca1a275209db7e1e4491742ac8d9dc4e4a71d1a33471d2f04",
+    "independent-review-summary.json": "c439d6770c3e8b4c3e5d62a9c4b9e22fda886f4c89eb41e6b025ce864c66a532",
+    "independent-review-public-summary.json": "033e9f571bd1e903d5fc198ce51fdca7b126cc13fe330ea4d8653aa76ddf4657",
+    "review-redaction.json": "c41edac1cd31a84f6daced87ce31d09550d07aa0c9dbab93c83b83b0bcc79a08",
+    "publication-preservation.json": "d99431cc8610bcf3c7d99c554cf7d6eb821403b83c6cc5cd6668fa176edd61f5",
+    "final-review.json": "fbcb3e2156df66b774d2f61f553ea7d3884d4ab74869b7e9567652b3ed953c2b"
+  },
+  "limitations": [
+    "No new economic or independent generalization evidence",
+    "GPU updates rely on executed frozen code/run evidence and stored heads; no training rerun",
+    "20fullbatch versus720minibatch updates is not a pure stochasticity intervention"
+  ],
+  "future_diagnostic_exception": "Only a separately registered nonpromotional study of this fixed epoch6 may be considered; old failed phase and zero games remain"
+}

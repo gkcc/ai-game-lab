@@ -1,0 +1,50 @@
+{
+  "source": "independent_next_stage_advisor_with_audit_bc_diagnostics_review",
+  "external_webchat": false,
+  "root_decision": "Adopt only with explicit diagnostic admission exception",
+  "implemented": false,
+  "diagnostic_exception_required": true,
+  "reason": "Fixed epoch6 learned48/160 target corrections but failed original50percent screen; economic value unknown",
+  "research_question": "Does this exact already-selected epoch6 improve game economics relative to frozen original student?",
+  "not_a_gate_calibration_study": true,
+  "all21_heads_previously_inspected": true,
+  "old_phase_remains_failed": true,
+  "old_phase_games_permanently_zero": true,
+  "frozen_candidate_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+  "selected_epoch": 6,
+  "training_runs": 0,
+  "parameter_changes": 0,
+  "proposed_new_development_seeds": 4,
+  "opponents": [
+    "v1",
+    "market",
+    "round2"
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "policies": [
+    "original_student",
+    "fixed_epoch6"
+  ],
+  "development_games": 48,
+  "file_entry_repeats": 2,
+  "max_games": 50,
+  "preregister_before_running": true,
+  "primary_metrics": [
+    "own_net_profit",
+    "opponent_net_profit",
+    "cash_margin",
+    "match_score"
+  ],
+  "accounting": [
+    "planting and seed purchases",
+    "sales units and revenue",
+    "ending seed and goods inventory"
+  ],
+  "criterion": "All4 whole-seed paired profit deltas>0; pooled cash margin/score>=0; market opponent profit/margin/score>=0; descriptive only",
+  "execution": "Official720states/719actions/DONE, zero fallbacks, source/model identity, ordered replay and two file entries",
+  "stop": "One fixed candidate only; no reselection, no extra seeds, no retuning or training; no automatic promotion/default change even positive",
+  "caveat": "Explicit exception to diagnostic game admission; not a claim old gate passed, not a proof50percent threshold is valid or invalid, not independent promotion evidence"
+}
