@@ -1,0 +1,20 @@
+{
+  "official_transitions": 0,
+  "training_runs": 0,
+  "new_games": 0,
+  "cache_runs": 0,
+  "repairs": [
+    "Bound padding with negative infinity, verified extreme finite logits and real JAX gradient accumulation before training",
+    "Game entry checks installed official engine SHA before dispatch",
+    "Bind standalone reload receipt directly to selected checkpoint and game admission",
+    "Initial prepare failed copying absent runtime model path before registration/freeze; partial sources retained in earlier directory; use hash-checked original frozen demonstration opponent source",
+    "Preserved first freeze before correcting README output commands; no code or data execution changed"
+  ],
+  "tests": {
+    "cache_regressions": 6,
+    "model_regressions": 6,
+    "actual_jax_gradient_checked": true,
+    "optimizer_updates": 0
+  },
+  "independent_plan_sha256": "2be267358ffc7a1a7f459bb7873b041670ab2e6fb94c5b49f699e56c7cdd6408"
+}

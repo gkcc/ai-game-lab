@@ -1,0 +1,139 @@
+{
+  "experiment": "joint-task-bc-v1",
+  "created_utc": "2026-10-23T09:03:56.299830+00:00",
+  "baseline_head": "f23770fd87e6f81de8fe9782089b1b369140364c",
+  "initial_worktree_clean": true,
+  "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "teacher_sha256": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+  "task_dataset_root": "artifacts/task-choice-v1-20261023",
+  "demonstration_root": "artifacts/bc-crop-v1-20261023-run1",
+  "crop_checkpoint": "artifacts/bc-epoch6-holdout-v1-20261023/panels/fixed_epoch6/model/trained.npz",
+  "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+  "train_seeds": [
+    31317742,
+    31921285,
+    31834104,
+    31637216,
+    31360134,
+    31273729,
+    31659052,
+    31932889
+  ],
+  "validation_seeds": [
+    31205138,
+    31504409
+  ],
+  "input_files": {
+    "artifacts/task-choice-v1-20261023/dataset-manifest.json": "6482ed09e8fd7348c08046810232146ec463472ee5babf187fe6822aa420bc00",
+    "artifacts/task-choice-v1-20261023/schema.json": "5da73f58f736c75a05908e3f1bc83d64348e995511220b61171eb4d01e7eeee0",
+    "artifacts/task-choice-v1-20261023/coverage.json": "e1a69030bfae071ca48916853187260b8e7284c58bcffce3449e6e39c0bd9545",
+    "artifacts/task-choice-v1-20261023/acceptance.json": "794b1e04f2116d0b984cfc9f33f0f2c8cc118fb51fa3e3e20887d761df329223",
+    "artifacts/task-choice-v1-20261023/next-stage-advice.json": "09a0fb43797ff44142db04a8d620eeaef6733aebdc9017580da83d6e974afc16",
+    "artifacts/task-choice-v1-20261023/reconstruction-ledger.json": "c3e634274c089664c731925eaa31a820c71dae511159bef46ad323be37ab31fb",
+    "artifacts/task-choice-v1-20261023/registration.json": "ca0077198188f82136c3b974c47fd6cac3b07e70bd72eb99fe444f8925f5dfa4",
+    "artifacts/bc-crop-v1-20261023-run1/registration.json": "acb2e8ed41c28d39db615693f3ff697d28453418217a77592269611cc5148f22",
+    "artifacts/bc-crop-v1-20261023-run1/collect-ledger.json": "b7e577b2879e53bfe8a728023b2b375db9baa40741847b3affa100660433e5eb",
+    "artifacts/bc-crop-v1-20261023-run1/collect-smoke-ledger.json": "7432e2b1eea0b804cf4b5295988fe3d3c61295b09ef32df91dced43b27bb71f9",
+    "artifacts/bc-epoch6-holdout-v1-20261023/panels/fixed_epoch6/model/trained.npz": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd"
+  },
+  "model_seed": 2026102331,
+  "training": {
+    "framework": "existing verified JAX/Optax GPU environment",
+    "runs": 1,
+    "epochs": 8,
+    "maximum_updates": 3400,
+    "maximum_synchronized_training_minutes": 30,
+    "maximum_process_minutes_including_compile": 45,
+    "optimizer": "Adam",
+    "learning_rate": 0.0003,
+    "gradient_norm_clip": 1,
+    "effective_batch_decision_groups": 256,
+    "microbatch_padded_candidate_budget": 65536,
+    "normalization": "train-only continuous mean/std floor1; one-hot/presence stay0/1",
+    "class_weight": "clip(sqrt(N/(5*n_selected_op)),0.5,5), normalized to mean1 on train groups",
+    "gradient_accumulation": "complete groups only, sum weighted losses divided by entire effective batch weight denominator; not mean of microbatch means",
+    "selection": "lowest fixed weighted validation CE among gate-passing complete epochs; earliest tie",
+    "save": "initial and every complete epoch; no resampling or extra fits",
+    "timeout": "Eight complete epochs required for fit completion. Time/update/size cap or error ends the run and prevents game entry; retain partial evidence, no automatic restart.",
+    "seed": 2026102331,
+    "batch_size": 256,
+    "padded_candidate_budget": 65536,
+    "normalization_std_floor": 1.0,
+    "class_weight_clip": [
+      0.5,
+      5.0
+    ]
+  },
+  "model": {
+    "dimensions": [
+      373,
+      128,
+      64,
+      1
+    ],
+    "parameters": 56193,
+    "activation": "ReLU",
+    "decision": "masked group softmax over all real joint candidates; mask padding only"
+  },
+  "offline_entry_gate": {
+    "multicandidate_exact_top1_min": 0.6,
+    "improvement_over_initial_percentage_points": 10,
+    "cross_operation_macro_recall_min": 0.7,
+    "each_operation_recall_min": 0.5,
+    "weighted_ce_better_than_initial": true,
+    "all_validation_export_logit_atol": 0.0001,
+    "all_validation_export_logit_rtol": 1e-05,
+    "candidate_id_exact_agreement_required": true,
+    "actual_initial_vs_trained_action_or_reservation_change_required": true,
+    "interpretation": "development engineering entry only, not economic promotion"
+  },
+  "development_games": {
+    "budget": 12,
+    "entry_repeats": 2,
+    "seeds": "original two validation seeds, already consumed development data",
+    "opponent": "frozen round2",
+    "seats": [
+      0,
+      1
+    ],
+    "arms": [
+      "teacher_task_plus_fixed_epoch6_crop",
+      "initial_task_plus_fixed_epoch6_crop",
+      "trained_task_plus_fixed_epoch6_crop"
+    ],
+    "order": "first seed trained two seats, then remaining first-seed four arms/seats; safety failure stops dispatch. Compare trained two-seat mean terminal cash against corresponding teacher-task plus epoch6 two seats before second seed.",
+    "stop_if_trained_cash_below_baseline_fraction": 0.75,
+    "repeats": "only after12 complete, trained first seed both seats via official file entry, excluded from statistics",
+    "independent_holdout": false,
+    "failure_consumes_budget": true
+  },
+  "workers": 1,
+  "extra_demonstrations": 0,
+  "new_formal_holdout": 0,
+  "default_changed": false,
+  "normalization_denominators": {
+    "shared": "train decision groups",
+    "candidate": "train real candidate rows"
+  },
+  "task_candidate_scope": "frozen teacher economic opportunities, not all official legal actions",
+  "data_role": "Original8train/2validation only; development, not independent testing",
+  "cache": "All original180files/135406groups; ragged275+98, no truncation/drop/oversampling",
+  "numerical_upper_bound": "Optimistic deterministic complete ordered numeric input consistency bound, not MLP attainable accuracy",
+  "composition": "Four original validation round2-seat observation trajectories; TaskAgent teacher task+epoch6 versus CropAgent epoch6 actions/crop/reservations; not original teacher raw action or new closed-loop equivalence",
+  "training_seed_scope": "single fixed model/batch generator; no search or restart",
+  "acceptance": "Eight epochs complete; frozen offline gates, whole validation independent NumPy export identity, actual action or reservation influence and privacy isolation before any games. No epoch passes means zero games.",
+  "game_acceptance": "All attempted games720states/719actions/DONE both, no errors/fallback; ordered official replay, actor+rival actions, task/crop traces and cash reproduced; maximum12development+2entry repeats.",
+  "stop": "No extension, retries, relaxed gates, replacement games, additional data, PPO or DAgger. Failure consumes budget; old evidence retained.",
+  "limitations": [
+    "original teacher-task labels come from original crop choices; epoch6 deployment causes distribution changes not solved by wiring parity",
+    "teacher-task plus epoch6 is a hybrid reference, not the original frozen teacher",
+    "padding mask is not official legality; teacher economic candidate generator remains",
+    "two development seeds and one opponent do not establish competitive generalization",
+    "strict cross-device ID agreement can fail; never loosen after results"
+  ],
+  "source_sha256": {
+    "worker.py": "a80158b26d1f4ae3d366c1d1276a1ca63e652bcd350f5ca25545b0f5f33759f1",
+    "round2.py": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848"
+  }
+}

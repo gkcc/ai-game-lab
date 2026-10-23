@@ -1,0 +1,63 @@
+{
+  "created_utc": "2026-10-23T08:57:16.853115+00:00",
+  "planned_before_new_cache_and_training_results": true,
+  "formal_experiment": "task-bc-v1-20261023",
+  "prior_advice_sha256": "09a0fb43797ff44142db04a8d620eeaef6733aebdc9017580da83d6e974afc16",
+  "source_dataset_manifest_sha256": "6482ed09e8fd7348c08046810232146ec463472ee5babf187fe6822aa420bc00",
+  "full_checks": [
+    "All original180 input file hashes, cache shapes/offsets and label bounds, split assignment, padding exclusion.",
+    "Initial plus all8 complete epoch validation metrics/gates and unique selected checkpoint; no post-result reselection."
+  ],
+  "numeric_cache_reconstruction_samples": [
+    {
+      "split": "train",
+      "game": "collect-smoke-31317742-market-0-teacher",
+      "seed": 31317742,
+      "opponent": "market",
+      "side": 0,
+      "replay_gzip_sha256": "a75651cc642bbcd60e2f570ca254c214069039f56e63e6d440db78339da98921"
+    },
+    {
+      "split": "validation",
+      "game": "collect-smoke-31205138-market-1-teacher",
+      "seed": 31205138,
+      "opponent": "market",
+      "side": 1,
+      "replay_gzip_sha256": "0c3a1fa1b83cb8713cb4ade1d86c0681caf1b8cd76ecd220450a5f6ec244ce52"
+    }
+  ],
+  "numeric_cache_samples_new_official_transitions": 0,
+  "manual_loss_samples": {
+    "ordering": "Frozen cache manifest file order followed by original per-file line order.",
+    "rule": "In each split, first example of each teacher-selected operation with at least two distinct operation types among real candidates; additionally first and last group in each split. Deduplicate selected indexes.",
+    "operations": [
+      "PLANT",
+      "DIG",
+      "WATER",
+      "HARVEST",
+      "FERTILIZE"
+    ],
+    "maximum_groups": 14,
+    "checks": [
+      "All real candidates retained, first-argmax and label position.",
+      "Group CE and whole-effective-batch denominator with unequal microbatch sizes.",
+      "Padding contributes neither logits nor normalizer/class counts."
+    ],
+    "missing_group_policy": "Report missing evidence; do not replace using results."
+  },
+  "normalization_population": {
+    "shared": "train decision groups",
+    "candidate": "train real candidate rows"
+  },
+  "if_games_admitted": {
+    "samples": "First original validation seed, both trained seats, plus both corresponding official filename entry repeats.",
+    "sample_count_maximum": 4,
+    "selection_not_based_on_results": true,
+    "stop_case": "If a sampled game is not attempted under the frozen stop rule, report unavailable; do not substitute another seed or arm."
+  },
+  "boundaries": [
+    "No training, full games or official transitions executed to create this plan.",
+    "Original validation is consumed development evidence, not a new holdout.",
+    "Dataset cache identity and conflicting labels do not prove achievable neural accuracy."
+  ]
+}
