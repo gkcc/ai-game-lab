@@ -1,0 +1,87 @@
+{
+  "schema": "task-capacity-public-budget-json-v1",
+  "source_jsonl_sha256": "72440475c1ac0f85c5c6ac03c15080f24f5cf70c7047d2438f04c889c64ac51e",
+  "canonical_reconstruction": "For each row in list order: json.dumps(row, separators=(comma,colon), ensure_ascii=False, allow_nan=False), UTF-8, then LF. Preserve the declared JSON object key order.",
+  "exact_roundtrip_confirmed": true,
+  "rows": [
+    {
+      "sequence": 0,
+      "previous_line_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "phase": "preparation",
+      "key": "tree",
+      "groups": 0,
+      "candidates": 0,
+      "reserved_before_dispatch": true,
+      "refunded": false,
+      "created_utc": "2026-10-23T12:09:39.942631+00:00"
+    },
+    {
+      "sequence": 1,
+      "previous_line_sha256": "e0e468b31f925dfb3c42c6eb4571a88a82a469382e5cb52e3040681787103aa4",
+      "phase": "preparation",
+      "key": "synthetic",
+      "groups": 0,
+      "candidates": 0,
+      "reserved_before_dispatch": true,
+      "refunded": false,
+      "created_utc": "2026-10-23T12:09:45.491411+00:00"
+    },
+    {
+      "sequence": 2,
+      "previous_line_sha256": "a82aa6aaba78b4f9ca038296a4e859321909a94a99f4dafa4821e04cd16d6d36",
+      "phase": "preparation",
+      "key": "sample",
+      "groups": 0,
+      "candidates": 0,
+      "reserved_before_dispatch": true,
+      "refunded": false,
+      "created_utc": "2026-10-23T12:09:48.219915+00:00"
+    },
+    {
+      "sequence": 3,
+      "previous_line_sha256": "f8df3ae44a200ab81e233b7ecf2ab53822120805f04228591c13a54c4e6eb1b4",
+      "phase": "preparation",
+      "key": "reference",
+      "groups": 1280,
+      "candidates": 73750,
+      "reserved_before_dispatch": true,
+      "refunded": false,
+      "created_utc": "2026-10-23T12:09:51.758597+00:00"
+    },
+    {
+      "sequence": 4,
+      "previous_line_sha256": "1c2ca8231ad93bf47bbee460d0ef69057f19d7a937593a8274c859dc3a28b93b",
+      "phase": "preparation",
+      "key": "build",
+      "groups": 0,
+      "candidates": 0,
+      "reserved_before_dispatch": true,
+      "refunded": false,
+      "created_utc": "2026-10-23T12:10:01.342532+00:00"
+    },
+    {
+      "sequence": 5,
+      "previous_line_sha256": "58ae4a4d63a18cc4b02e50251d9fff7f9f3de3ab14b8449559d372ef4f84f2b0",
+      "phase": "preparation",
+      "key": "score-collect-31205138-v1-0-teacher",
+      "groups": 128,
+      "candidates": 7375,
+      "reserved_before_dispatch": true,
+      "refunded": false,
+      "created_utc": "2026-10-23T12:10:06.316984+00:00"
+    },
+    {
+      "sequence": 6,
+      "previous_line_sha256": "44c50807362a64ebe7fd979414b8dbb63653a2893bd8e758701bc4c7f78d5403",
+      "phase": "preparation",
+      "key": "score-collect-31273729-v1-0-teacher",
+      "groups": 128,
+      "candidates": 7375,
+      "reserved_before_dispatch": true,
+      "refunded": false,
+      "created_utc": "2026-10-23T12:10:07.736911+00:00"
+    }
+  ],
+  "reserved_groups": 1536,
+  "reserved_candidates": 88500
+}

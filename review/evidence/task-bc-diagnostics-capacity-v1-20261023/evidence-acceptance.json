@@ -1,0 +1,25 @@
+{
+  "schema": "task-capacity-evidence-acceptance-v1",
+  "evidence_review_accepted": true,
+  "stage_acceptance": false,
+  "preparation_passed": false,
+  "formal_started": false,
+  "real_full_sample_equivalence_completed": false,
+  "result_sha256": "db541f5ac2e79c7f004f9a01d5200b02948cab3d05ee327ed5e75fddf16d304a",
+  "preparation_evidence_review_sha256": "85229657011ec883ac863b60f30c421a8d15e90844fbec07fa2652bcf84c6ff3",
+  "process_exit_diagnosis_sha256": "9c994d84f98870a782762b5610e437b8ad637656d663a30fe097b3705c0f1916",
+  "history_before_publication_sha256": "8f6ef8626c58e8530f077934c3b84c3d9f892a2addf7d9dd4fa530ad404dc6fb",
+  "formal_gate_rejection_sha256": "106f8206cbe1f2d00416cbfd977e764a8302962b85b84be0f0322b445882e7c6",
+  "root_next_decision_sha256": "e7449d195e57336fc7b0f4694c25ed33144bd635a6413da287bc2ec2de549077",
+  "policy_admission": false,
+  "new_training_runs": 0,
+  "new_games": 0,
+  "official_transitions": 0,
+  "default_and_models_unchanged": true,
+  "limits": [
+    "Failure evidence is accepted, not capacity completion.",
+    "No independently repeated scoring; audit read existing artifacts only.",
+    "No full-data or GPU training throughput claim.",
+    "Next stage planned only."
+  ]
+}

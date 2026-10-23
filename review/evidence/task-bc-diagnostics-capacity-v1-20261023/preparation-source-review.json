@@ -1,0 +1,81 @@
+{
+  "schema": "task-capacity-preparation-source-review-v1",
+  "stage": "task-bc-diagnostics-capacity-v1",
+  "reviewer": "independent_static_reviewer",
+  "review_kind": "source_and_registration_only",
+  "public_safe": true,
+  "passed": true,
+  "freeze_sha256": "019b8f38008e9ea6f5e6db6a02ed2115ed7db37bad4df836defe036689eb73b3",
+  "registration_sha256": "4ed04f8f8cdcc311107fa24b3b446a77e9fc420ed246f75d098cd9be6a2ee9e8",
+  "protection_manifest_sha256": "da28bf3141269ca0cea648b688c2cdeaa04e5da78d9ceac255a0c5acb83276c9",
+  "approval_scope": "Start the registered single preparation run only. This is not preparation execution success, formal capacity acceptance, full diagnostic acceptance, or policy admission.",
+  "source_identity": {
+    "frozen_runtime_files_checked": 105,
+    "runtime_hash_mismatches": 0,
+    "new_module_python_files_reviewed": 8,
+    "new_module_documentation_reviewed": true,
+    "explicit_old_source_line_ending_mappings": 4,
+    "mapped_baseline_blobs_checked_exactly": 4,
+    "mapped_sources_equal_after_crlf_to_lf_only": true,
+    "new_package_requires_exact_public_bytes": true,
+    "superseded_unexecuted_freeze_retained": true,
+    "preparation_started_marker_absent_at_review": true
+  },
+  "resolved_findings": [
+    {
+      "id": "source-commit-binding",
+      "status": "resolved_in_reviewed_source",
+      "finding": "The formal commit gate previously checked evidence JSON only and could omit the implementation source.",
+      "resolution": "ready checks every actual committed public source blob against its frozen SHA256. The four existing CRLF/LF differences preserve both original byte hashes and an explicit normalized hash; runtime hashes remain unchanged."
+    },
+    {
+      "id": "comparison-receipt-binding",
+      "status": "resolved_in_reviewed_source",
+      "finding": "The comparison previously reread reference and aggregate receipts without checking the hashes returned by their completed jobs.",
+      "resolution": "The parent retains both receipt hashes. compare_reference verifies those exact hashes, stage identities, current and reference freeze hashes, sample/model provenance, support-index hashes and shard receipts before comparing outputs."
+    },
+    {
+      "id": "tested-source-binding",
+      "status": "resolved_in_reviewed_source",
+      "finding": "Formal execution could otherwise use lifecycle or numeric source different from the implementation tested during preparation.",
+      "resolution": "Formal freeze requires the preparation runtime source map, public source map and explicit line-ending map to match and binds the successful preparation summary to its preparation freeze."
+    }
+  ],
+  "verified_static_constraints": [
+    "The registered ten source groups retain the original eight train and two validation seeds, v1 opponent, seat0, and original manifest ordering.",
+    "Collection reads exactly the first 128 physical aligned rows per group, does not skip invalid rows, preserves complete candidate lists, and rejects an over-cap predefined sample.",
+    "The sample-only train index is fully built and committed before scoring; validation does not update support ranges, discrete values, labels or candidate frequencies.",
+    "Numeric keys, original float64 scoring, candidate semantics, tie behavior and global SummaryAccumulator semantics reuse the frozen prior pure functions.",
+    "Every shard retains original row identity; aggregation replays original manifest and row order separately per split, preserving repeated keys, conflicting labels, global unique denominators and null empty slices.",
+    "Parent reservations cover complete evaluation populations before dispatch, share the registered 5120-group and 320000-candidate caps across preparation and formal phases, and are not refunded on failure. Actual score calls, candidates and cache hits are distinct counters.",
+    "A nested result with passed=false cannot become a completed successful job. Completion binds the exact request and freeze, and successful dispatch requires tree closure without forced descendant cleanup.",
+    "The Windows implementation assigns the process to its Job during creation, checks membership before resume, prohibits breakaway, and requires observed zero active processes plus signaled retained identity handles before claiming closure.",
+    "The four fixed real Windows fixture designs include venv launcher/interpreter evidence, noncooperative descendants, controller hard interruption before any outer guard cleanup, and a separately owned surviving sentinel.",
+    "Preparation and formal clocks, single-worker and thread settings, per-job deadlines and resource bounds remain fixed. Missing, reordered, duplicated, truncated, nonfinite or hash-mismatched artifacts fail closed.",
+    "The capacity path does not invoke the old full runner, JointAgent policy calls, training, new games, official transitions, the full historical population or the 96-game panel."
+  ],
+  "blocking_findings": [],
+  "review_execution_budget_consumed": {
+    "source_observation_rows_decoded": 0,
+    "model_checkpoint_loads": 0,
+    "real_model_score_calls": 0,
+    "real_evaluated_groups": 0,
+    "real_evaluated_candidates": 0,
+    "synthetic_fixture_runs": 0,
+    "windows_fixture_runs": 0,
+    "training_runs": 0,
+    "new_games": 0,
+    "official_transitions": 0
+  },
+  "limitations": [
+    "Static source review does not prove real Windows API behavior, descendant shutdown, runtime resource measurements, numerical equality or sample completeness. Those remain for the registered preparation run and independent evidence review.",
+    "The registered source-file and model identities were reviewed as metadata; this reviewer did not decode source observations, load a model or run any fixture.",
+    "A successful sample preparation or capacity run cannot prove full-support, full-population or panel-wide throughput. The original failed diagnostic result and negative policy admission remain unchanged."
+  ],
+  "preparation_execution_passed": null,
+  "formal_capacity_accepted": false,
+  "full_diagnostics_completed": false,
+  "original_diagnostic_stage_acceptance": false,
+  "original_policy_admission": false,
+  "independent_execution_evidence_review_required": true
+}

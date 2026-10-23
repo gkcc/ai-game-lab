@@ -1,0 +1,27 @@
+{
+  "passed": false,
+  "phase": "preparation",
+  "sample_only": true,
+  "elapsed_seconds": 29.34399999998277,
+  "completed_jobs": 6,
+  "attempts": 7,
+  "owned_trees_closed": true,
+  "reserved_real_evaluations": 1536,
+  "reserved_real_candidates": 88500,
+  "reservations_not_refunded_on_failure": true,
+  "budget_ledger_sha256": "72440475c1ac0f85c5c6ac03c15080f24f5cf70c7047d2438f04c889c64ac51e",
+  "freeze_sha256": "019b8f38008e9ea6f5e6db6a02ed2115ed7db37bad4df836defe036689eb73b3",
+  "failure": {
+    "kind": "ValueError",
+    "passed": false,
+    "retry": false
+  },
+  "retries": 0,
+  "training_runs": 0,
+  "new_games": 0,
+  "official_transitions": 0,
+  "policy_calls": 0,
+  "full_diagnostics_completed": false,
+  "original_diagnostic_stage_acceptance": false,
+  "original_policy_admission": false
+}

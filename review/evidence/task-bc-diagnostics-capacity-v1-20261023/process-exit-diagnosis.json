@@ -1,0 +1,160 @@
+{
+  "schema": "task-capacity-process-exit-diagnosis-v1",
+  "public_safe": true,
+  "scope": "Read-only diagnosis of the preserved preparation failure; one new diagnosis artifact only.",
+  "path_bases": {
+    "artifact_paths": "Relative to this artifact's directory",
+    "source_paths": "Relative to the runtime source root"
+  },
+  "verdict": {
+    "classification": "parent_lifecycle_acceptance_failure_after_worker_completion",
+    "confirmed_implementation_gap": "Normal direct-process exit is followed by immediate TerminateJobObject when the first close query reports any active processes. There is no natural-drain grace period.",
+    "specific_survivor_cause_established": false,
+    "original_failed_stage_remains_failed": true,
+    "retroactive_acceptance_allowed": false
+  },
+  "evidence": [
+    {
+      "path": "preparation/attempts.json",
+      "sha256": "b99386da0abfcbfa871f15f25cdf90b9cab12788e3bc5ce23cd5380c7e9bdaa6"
+    },
+    {
+      "path": "preparation/job-complete/score-collect-31273729-v1-0-teacher.json",
+      "sha256": "43d5ee60cd1b5fb05e20bb44f678e9a5eb75eb831a0131e5e8bb33644f87bb88"
+    },
+    {
+      "path": "preparation/job-inputs/score-collect-31273729-v1-0-teacher.json",
+      "sha256": "380926c03b5fda619bef6d48871dbd39b395290351825cb5ddc7cb0dbd99c82e"
+    },
+    {
+      "path": "preparation-freeze.json",
+      "sha256": "019b8f38008e9ea6f5e6db6a02ed2115ed7db37bad4df836defe036689eb73b3"
+    },
+    {
+      "path": "preparation-summary.json",
+      "sha256": "65081ac40256bce8ff495a54bd897b505714cc0308bdaffe2c069664046eab20"
+    },
+    {
+      "path": "preparation/job-complete/tree.json",
+      "sha256": "721bbab9df3421e3a58b5c3a1b0bf7d77a7010b30a8002d99bd456f61511cafc"
+    }
+  ],
+  "frozen_source_checked": [
+    {
+      "path": "learning/task_bc_diagnostics_capacity_v1/windows_tree.py",
+      "sha256": "52ec668c2a91e939bca3a5eb4cad9a4609ec665a47557b4cafdeb20d12b7b7c8",
+      "matches_preparation_freeze": true,
+      "relevant_lines": {"sample": [379, 422], "poll": [424, 427], "close": [447, 477], "run_owned": [570, 588]}
+    },
+    {
+      "path": "learning/task_bc_diagnostics_capacity_v1/runner.py",
+      "sha256": "0f75efbc208c94f012336016d9dc5b984089aeca7a99c0d11191c5fdca51a646",
+      "matches_preparation_freeze": true,
+      "relevant_lines": {"worker_completion": [200, 212], "parent_acceptance_gate": [250, 268]}
+    },
+    {
+      "path": "learning/task_bc_diagnostics_capacity_v1/tree_fixture.py",
+      "sha256": "981726641bb2c1f6efec34b63d43576ee5f5faa1b1ce72706b086c357595aa03",
+      "matches_preparation_freeze": true,
+      "relevant_lines": {"normal_and_cooperative_wait_for_child": [53, 68]}
+    }
+  ],
+  "confirmed_observations": {
+    "failed_attempt_key": "score-collect-31273729-v1-0-teacher",
+    "attempt_status": "failed",
+    "direct_returncode": 0,
+    "stop_reason": "root_exit",
+    "termination_requested": true,
+    "tree_closed": true,
+    "active_processes_after_close": 0,
+    "all_process_handles_closed": true,
+    "job_handle_closed": true,
+    "containment_established": true,
+    "exception_type": null,
+    "close_error_types": [],
+    "total_processes_over_job_lifetime": 3,
+    "close_seconds": 0.046999999991385266,
+    "worker_completion_passed": true,
+    "worker_completed_groups": 128,
+    "worker_completed_candidates": 7375,
+    "worker_completion_request_and_freeze_hashes_match": true,
+    "preparation_passed": false,
+    "preparation_owned_trees_closed": true,
+    "preparation_attempts": 7,
+    "preparation_accepted_jobs": 6,
+    "prior_real_tree_regressions_passed": 4
+  },
+  "control_flow_findings": [
+    "run_owned samples the job, polls only the direct process handle, and returns as soon as that handle is signaled. It does not require job ActiveProcesses to be zero before entering finally.",
+    "close performs a fresh accounting query. A nonzero result immediately sets termination_requested and calls TerminateJobObject; the bounded wait begins after that call.",
+    "The persisted termination flag, absent close errors, and matching frozen source establish that the nonzero branch was taken and the termination API reported success. They do not establish how many processes the API actually killed.",
+    "The parent rejects termination_requested even when direct_returncode is zero and closure is proven. The failure log identifies this exact gate. The worker completion marker precedes that parent gate and cannot override it.",
+    "The earlier normal and cooperative fixtures explicitly wait for their children before returning. The timeout case keeps the root running, and the hard-interrupt case exercises kill-on-last-close. None targets a successful root that exits before a naturally draining descendant. Four passing cases therefore do not contradict this uncovered boundary."
+  ],
+  "evidence_limits": [
+    "The normal worker call did not persist local_lifecycle. Its public receipt omits the exact pre-close active count, individual creation identities, per-process exit codes, and a pre-termination timeline.",
+    "A brief normal shutdown tail is plausible, but an actually lingering descendant is also consistent with the retained evidence. Which process remained, and whether it would have exited naturally, are unresolved.",
+    "total_processes=3 is a lifetime total, not three active survivors at close.",
+    "The approximately 47 ms close measurement includes a forced termination request and polling. It is not a measurement of how long unforced natural shutdown would have taken.",
+    "The completed shard is evidence of its recorded worker work, not completed global aggregation or capacity acceptance. No failed reservation is refunded."
+  ],
+  "single_minimal_next_fix": {
+    "status": "proposed_not_implemented",
+    "change": "In a separately registered and frozen revision, permit a bounded natural-drain interval only after a normal direct return code of zero, before deciding to call TerminateJobObject.",
+    "normal_success_grace_seconds_max": 1.0,
+    "deadline_rule": "Use the minimum of cleanup_start plus 1 second, the original job deadline, and cleanup_start plus the existing 10-second close allowance. Do not reset the 10-second allowance after grace or after TerminateJobObject.",
+    "algorithm": [
+      "During this interval, re-query ActiveProcesses and retained identity handles at the existing bounded cadence. If the entire job reaches zero and all retained handles are signaled, close handles and keep termination_requested=false.",
+      "If the interval expires with active members, perform a fresh query, terminate the owned job when still necessary, and prove closure within the remaining original close allowance. Keep termination_requested=true so the existing parent success gate rejects the attempt.",
+      "Timeouts, controller exceptions, nonzero direct exits, and containment failures retain immediate forced cleanup. Preserve kill-on-close, atomic membership, memory limits, and the parent prohibition on forced cleanup for a successful worker."
+    ],
+    "minimal_supporting_receipt_fields": [
+      "active_processes_at_normal_root_exit",
+      "natural_drain_seconds",
+      "natural_tree_exit_observed",
+      "active_processes_before_termination_request"
+    ],
+    "privacy": "Aggregate counts and timings may be public; native process evidence remains in an explicit local receipt.",
+    "stage_boundary": "Do not modify or rerun this failed preparation directory. The proposed change and any execution require a distinct registered revision and new output."
+  },
+  "targeted_regression_plan": {
+    "status": "not_executed",
+    "new_attempts_per_case": 1,
+    "real_windows_venv_required": true,
+    "single_worker": true,
+    "fixture_body_seconds_max": 5,
+    "tree_close_seconds_max_including_grace": 10,
+    "outside_tested_job_owned_sentinel_required": true,
+    "cases": [
+      {
+        "name": "successful_root_then_natural_descendant_drain",
+        "fixture": "A root starts a child and grandchild, waits for both readiness acknowledgements, and exits zero without joining them. Descendants hold the parent process identity before exit, wait for its exit signal, then finish a fixed 0.25-second cleanup and exit zero.",
+        "required_precondition": "The controller must actually observe an active descendant after the direct root has exited. If that boundary was not observed, report the test as unproved rather than passing it or automatically repeating it.",
+        "expected": "The entire job reaches zero within the fixed grace; all retained identities exit; termination_requested is false; the ordinary parent success gate passes; sentinel survives."
+      },
+      {
+        "name": "successful_root_with_noncooperative_descendants",
+        "fixture": "Use the same readiness and zero-exit root boundary, but descendants remain alive beyond the one-second grace, with the fixture's independent five-second safety bound.",
+        "expected": "Grace expires, the owned job is terminated and proven empty within the unchanged close allowance, termination_requested remains true, the ordinary parent gate rejects the attempt, and the sentinel survives."
+      }
+    ],
+    "required_measurements": "Capture the direct-root exit observation, active counts at grace entry and before any termination request, grace elapsed time, final ActiveProcesses=0, retained-handle exit observations, and sentinel survival. Keep all native identity details local.",
+    "historical_four_case_receipt": "Preserve it as evidence for the old frozen implementation. It is not execution evidence for the proposed revision.",
+    "model_calls": 0,
+    "source_observations_read": 0,
+    "training_runs": 0,
+    "new_games": 0,
+    "official_transitions": 0
+  },
+  "work_performed_now": {
+    "read_existing_source_and_receipts_only": true,
+    "new_diagnosis_files": 1,
+    "source_files_modified": 0,
+    "process_fixtures_started": 0,
+    "model_calls": 0,
+    "source_observations_decoded": 0,
+    "training_runs": 0,
+    "new_games": 0,
+    "official_transitions": 0
+  }
+}

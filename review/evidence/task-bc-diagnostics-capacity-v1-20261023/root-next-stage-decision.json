@@ -1,0 +1,29 @@
+{
+  "schema": "task-capacity-root-next-decision-v1",
+  "accepted_advice_sha256": "a1ddb6fe18ccb74b2263e4873f167ac0651334cd8fbc43a853cdb2fbd079aad4",
+  "author_diagnosis_sha256": "9c994d84f98870a782762b5610e437b8ad637656d663a30fe097b3705c0f1916",
+  "stage": "task-bc-diagnostics-capacity-exit-v1",
+  "status": "planned_not_implemented_or_executed",
+  "real_webchat": false,
+  "adjudication": [
+    "Accept the independent planning direction; the implementation gap is established but the particular surviving identity and whether it would naturally exit remain unknown.",
+    "Choose the planner proposed 2.0-second upper bound, rather than the author proposed 1.0 second. This is a fixed engineering bound selected before new execution, not an estimate derived from the forced 47ms closure. No post-result grace tuning.",
+    "Require exactly all seven registered lifecycle cases for success: four original behaviors rerun against the new source and three targeted root-before-child cases. Fewer executed because of failure cannot pass.",
+    "Freeze and commit the new source, sample/reference provenance, case matrix, thresholds and budget before the first new lifecycle fixture, avoiding an uncommitted implementation or a commit wait inside benchmark execution.",
+    "Keep at most2s normal-root-zero natural drain within original work and phase deadlines and the existing total10s close allowance; never renew timeout. Nonzero/error/timeout paths cannot become success through a wait. Forced cleanup still rejects success.",
+    "Lifecycle success gates one fresh complete historical sample pass only. Reuse unchanged numeric functions and the hash-verified old complete reference, rebuild sample train index, score all10 shards in a new folder, compare exact ordered rows and summaries. Do not import old failed shards as new completed work.",
+    "Old reservation ledger remains byte-identical. A new append-only ledger binds its SHA and carries1536/88500; before each new score reserve counts, no refunds. Maximum new1280/73750 gives cumulative2816/162250 inside original5120/320000.",
+    "New benchmark max900s including all waiting/cleanup; one worker, BLAS1, numeric work max120s, close10s, real matrix max120s, current 4GiB tree/host floor and2GiB artifact cap. These bounds do not authorize consuming unused capacity on retries.",
+    "No full historical index,96-game diagnostics, shadow policy, training, models, default strategy, new games or official transitions. Evidence success and old policy non-admission remain separate."
+  ],
+  "old_capacity_stage_acceptance": false,
+  "original_diagnostic_stage_acceptance": false,
+  "original_policy_admission": false,
+  "new_execution_now": {
+    "fixtures": 0,
+    "model_scores": 0,
+    "training": 0,
+    "games": 0,
+    "official_transitions": 0
+  }
+}

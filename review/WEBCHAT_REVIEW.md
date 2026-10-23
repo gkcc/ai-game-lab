@@ -129,3 +129,8 @@
 ## 最新复审：固定任务误差诊断超时记录
 
 请先读[失败报告](../kaggriculture/TASK_BC_ERROR_DIAGNOSTICS_V1.zh-CN.md)、[冻结及失败证据](evidence/task-bc-error-diagnostics-v1-20261023/)。本次只有inventory完整核验通过，support在登记900秒内未完成，后续影子和见证均未运行，diagnostics_completed/stage_acceptance必须保持false。请重点核实：事前冻结提交与失败停止、已完成job零计数不被误读为零历史计算、未知partial行数/split保持未知、Windows直接子进程回收与实际解释器退出证据的区别，以及原4822运行文件/739公开文件保护。原留出准入失败不变，下一阶段只另立有界容量/生命周期验证，不直接重训或重跑96场。原始观测、Replay、日志、模型、进程身份只留本地，公开哈希不能代替这些原件的独立复算。
+
+
+## 最新复审：样本容量准备失败与进程退出门槛
+
+请对照[报告](../kaggriculture/TASK_DIAGNOSTICS_CAPACITY.zh-CN.md)和[冻结/失败证据](evidence/task-bc-diagnostics-capacity-v1-20261023/)，检查四类真实Windows测试、33项合成测试与真实全样本等价尚未完成的区分。重点核实：根进程返回0不等于Job自然退出；强制清理后active0不能证明无长期泄漏或已定位退出尾部；第二片完成收据与父拒绝均保留，1536/88500已评价不退款，384/22125实际score单列；只有128数值unique的开局前缀不能外推全量。核查旧源CRLF/LF显式双hash映射及全部公开blob门控、旧4875运行文件和781公开文件保护（发布仅两review追加），正式冻结入口必须拒绝失败准备。下一阶段是独立子代理建议的最小退出等待修复，不冒称WebChat；不能取消成功无强杀门槛、重用旧失败为新成功、改模型/默认或重训。私有样本、索引、进程身份和日志不公开。

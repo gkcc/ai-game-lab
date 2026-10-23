@@ -1,0 +1,210 @@
+{
+  "advice_only_not_implemented_or_executed": true,
+  "authorship": "independent subagent planning",
+  "baseline_head": "123cfe046f387174f010176b96c2dc129ab78b75",
+  "carried_acceptance_flags": {
+    "old_capacity_preparation_passed": false,
+    "original_diagnostic_stage_acceptance": false,
+    "original_policy_admission": false
+  },
+  "created_utc": "2026-10-23T12:16:41.555377+00:00",
+  "current_facts": {
+    "actual_model_score_calls_from_complete_receipts": 384,
+    "expected_numeric_shards": 10,
+    "failed_attempt": {
+      "active_processes_after_close": 0,
+      "artifact_finished_does_not_make_parent_attempt_passed": true,
+      "close_seconds": 0.046999999991385266,
+      "key": "score-collect-31273729-v1-0-teacher",
+      "root_returncode": 0,
+      "status": "failed",
+      "stop_reason": "root_exit",
+      "termination_requested": true,
+      "tree_closed": true
+    },
+    "no_actual_descendant_identity_at_failure_claimed": true,
+    "not_proven": [
+      "Which job member or accounting transition caused the nonempty query at failed cleanup.",
+      "Whether any member would have exited naturally, or how long it would have remained.",
+      "A persistent process leak or harmless cleanup; neither follows from the aggregate receipt.",
+      "Complete capacity equivalence, full diagnostic throughput or improved policy quality."
+    ],
+    "numeric_shards_parent_accepted": 1,
+    "numeric_shards_with_complete_outputs": 2,
+    "preparation_elapsed_seconds": 29.34399999998277,
+    "preparation_passed": false,
+    "real_windows_baseline_cases_passed": 4,
+    "reference_candidates_completed": 73750,
+    "reference_groups_completed": 1280,
+    "root_cause_class": "Immediate forced cleanup after root exit with no bounded natural whole-job completion wait.",
+    "sample_train_index_groups_completed": 1024,
+    "shared_real_candidate_reservations_used": 88500,
+    "shared_real_group_reservations_used": 1536,
+    "static_basis": [
+      {
+        "finding": "run_owned returns once the root handle is signaled, then calls close in finally.",
+        "lines": [
+          569,
+          593
+        ],
+        "path": "learning/task_bc_diagnostics_capacity_v1/windows_tree.py"
+      },
+      {
+        "finding": "close immediately requests TerminateJobObject when queried ActiveProcesses is nonzero.",
+        "lines": [
+          453,
+          464
+        ],
+        "path": "learning/task_bc_diagnostics_capacity_v1/windows_tree.py"
+      },
+      {
+        "finding": "The parent rejects successful-root jobs that required forced descendant cleanup; retain this gate.",
+        "lines": [
+          256,
+          261
+        ],
+        "path": "learning/task_bc_diagnostics_capacity_v1/runner.py"
+      },
+      {
+        "finding": "Existing normal/cooperative fixtures wait for children before returning, so they do not establish correct handling of a normal root that exits before the job becomes empty.",
+        "lines": [
+          61,
+          83
+        ],
+        "path": "learning/task_bc_diagnostics_capacity_v1/tree_fixture.py"
+      }
+    ],
+    "synthetic_checks_passed": 33
+  },
+  "evidence_scope": {
+    "frozen_runtime_files_checked": 105,
+    "frozen_runtime_hash_mismatches": 0,
+    "inspected": "Frozen source and existing metadata/receipts only; no fixture, raw observation decode, model score, policy call, training, game or official transition executed by planner.",
+    "relative_runtime_sources": {
+      "learning/task_bc_diagnostics_capacity_v1/runner.py": "0f75efbc208c94f012336016d9dc5b984089aeca7a99c0d11191c5fdca51a646",
+      "learning/task_bc_diagnostics_capacity_v1/tree_fixture.py": "981726641bb2c1f6efec34b63d43576ee5f5faa1b1ce72706b086c357595aa03",
+      "learning/task_bc_diagnostics_capacity_v1/verify_tree.py": "07a43ff9e0ae5bd3073b9627f0355ae75671e48f900478a32a78c7ee81abfe32",
+      "learning/task_bc_diagnostics_capacity_v1/windows_tree.py": "52ec668c2a91e939bca3a5eb4cad9a4609ec665a47557b4cafdeb20d12b7b7c8"
+    },
+    "relative_to_current_stage": {
+      "budget-reservations.jsonl": "72440475c1ac0f85c5c6ac03c15080f24f5cf70c7047d2438f04c889c64ac51e",
+      "preparation-freeze.json": "019b8f38008e9ea6f5e6db6a02ed2115ed7db37bad4df836defe036689eb73b3",
+      "preparation-registration.json": "4ed04f8f8cdcc311107fa24b3b446a77e9fc420ed246f75d098cd9be6a2ee9e8",
+      "preparation-summary.json": "65081ac40256bce8ff495a54bd897b505714cc0308bdaffe2c069664046eab20",
+      "preparation/attempts.json": "b99386da0abfcbfa871f15f25cdf90b9cab12788e3bc5ce23cd5380c7e9bdaa6",
+      "preparation/candidate/support-index-receipt.json": "4c0dd6b32e6f287a3a573b5c644aea36eacf715da0b4ec2de666a1162448507a",
+      "preparation/job-complete/tree.json": "721bbab9df3421e3a58b5c3a1b0bf7d77a7010b30a8002d99bd456f61511cafc",
+      "preparation/reference/reference-receipt.json": "f08fd799b7d14305b291b478a9fd14499b36039ff5fb858dadd1a514f8fe9ad8",
+      "preparation/reference/reference.jsonl.gz": "346b5c94d7a75bd64b27a8806b4a27d62e8585e35186984ca1a35ea67324f441",
+      "preparation/reference/summary.json": "dc0b3a2e893464320ad42dd26873c3fac9cecf2c32080676925f3947a821d9ee",
+      "preparation/synthetic/synthetic-verification.json": "f3c5f93f19bf3bf7be9dd3901cfd7e28f31f047f0c397ce2222e38a6cff90e09",
+      "sample-manifest.json": "61a980dbc2c9201a849d37c04a7ebcdf6f200d596693e2bde31070dfda21802c"
+    }
+  },
+  "real_webchat": false,
+  "schema": "task-diagnostics-capacity-next-stage-advice-v1",
+  "unique_recommended_next_stage": {
+    "acceptance": [
+      "All seven or fewer preregistered real Windows cases produce their expected outcomes and prove complete owned-tree closure; no success depends on killing a live child.",
+      "Every new capacity job finishes without forced cleanup, source identity changes, budget violations or unconfirmed ownership.",
+      "All 1280 ordered compact records and complete split summaries match the frozen pure-function reference exactly, using the same model and complete sample-only training support.",
+      "Existing failed preparation, original diagnostic failure and original policy non-admission remain false and byte-identical; protection hashes and independent review pass.",
+      "Publish only source, registered relative hashes, aggregate timings/counters, lifecycle outcomes and the independent review. No raw observations, model/index, compact diagnostics, private identities or logs."
+    ],
+    "budget": {
+      "accounting": "Hash-bind the complete old ledger as an immutable predecessor and carry its totals into a new append-only ledger. Reserve full planned job counts before dispatch. Do not append to or alter the old ledger.",
+      "after_one_planned_pass_candidates": 162250,
+      "after_one_planned_pass_groups": 2816,
+      "already_reserved_real_candidates": 88500,
+      "already_reserved_real_groups": 1536,
+      "blas_threads": 1,
+      "cleanup_inside_phase_wall_budget": true,
+      "cleanup_seconds_max": 10,
+      "clock": "Starts at first real lifecycle fixture and includes waits/edits until terminal; reserve cleanup time within the phase limit. No automatic restart or retry.",
+      "failed_dispatches_never_refunded": true,
+      "minimum_available_host_memory_bytes": 4294967296,
+      "minimum_free_disk_bytes": 4294967296,
+      "new_artifact_bytes_max": 2147483648,
+      "old_plus_new_capacity_benchmark_wall_seconds_max": 3600,
+      "per_numeric_job_work_seconds_max": 120,
+      "remaining_after_planned_pass_candidates": 157750,
+      "remaining_after_planned_pass_groups": 2304,
+      "remaining_before_new_stage_candidates": 231500,
+      "remaining_before_new_stage_groups": 3584,
+      "shared_original_real_candidates_cap": 320000,
+      "shared_original_real_groups_cap": 5120,
+      "total_benchmark_wall_seconds_max": 900,
+      "tree_private_commit_bytes_max": 4294967296,
+      "workers": 1
+    },
+    "historical_sample_capacity": {
+      "allowed_only_after": "Source freeze, independent source review and all registered lifecycle regressions pass. Commit local preregistration before new numeric execution.",
+      "execution": "Rebuild all 1024 training-support groups before any scoring, score all 10 shards in manifest order in a new directory, aggregate once, compare exact ordered compact outputs and split summaries with the immutable existing pure-function reference.",
+      "independent_review": "Review exact frozen sources, lifecycle receipts, budget chain and exact comparison artifacts without new model scoring; any requested extra scoring requires explicit reservation and fits the remaining original shared cap.",
+      "label": "Historical diagnostic sample reuse, never new holdout evidence.",
+      "maximum_complete_scoring_passes": 1,
+      "maximum_new_candidates_evaluated": 73750,
+      "maximum_new_groups_evaluated": 1280,
+      "no_reference_rescoring_needed": true,
+      "old_failed_shards_not_imported_as_new_success": true,
+      "old_reference_may_be_reused_only_with_verified_hash_chain": true,
+      "reference_receipt_sha256": "f08fd799b7d14305b291b478a9fd14499b36039ff5fb858dadd1a514f8fe9ad8",
+      "sample_manifest_sha256": "61a980dbc2c9201a849d37c04a7ebcdf6f200d596693e2bde31070dfda21802c",
+      "sample_reuse_allowed": true,
+      "selection": "Identical 10 original manifest groups and physical rows 0..127, 1024 train plus 256 validation; no replacement, skipped rows or reduced denominator.",
+      "this_stage_does_not_authorize_an_additional_formal_or_independent_full_pass": true
+    },
+    "objective": "Repair only the normal-root/whole-job completion contract, prove it with bounded real Windows cases, then attempt one complete capacity pass on the exact historical sample.",
+    "real_windows_regressions": {
+      "attempts_per_case": 1,
+      "case_body_seconds_max": 5,
+      "case_count_max": 7,
+      "existing_cases": [
+        "normal_exit",
+        "cooperative_deadline",
+        "noncooperative_descendants",
+        "controller_hard_interrupt"
+      ],
+      "final_cleanup_seconds_max": 10,
+      "matrix_wall_seconds_max": 120,
+      "model_scores": 0,
+      "new_targeted_cases": [
+        "A normal zero-code root demonstrably exits while an owned child is alive; the child naturally finishes within the fixed grace. Require no forced termination and a surviving separate owned sentinel.",
+        "A zero-code root exits while an owned descendant remains beyond grace. Require failure, forced owned-tree cleanup, active count zero, closed identity handles and an unaffected sentinel.",
+        "A zero-code root exits close to the original job deadline while a child would finish only after it. Require the original deadline to win; no grace-based timeout renewal."
+      ],
+      "path": "Use the actual local virtual-environment launcher/interpreter path and real Job Objects; deterministic ordering receipts must establish root-before-child, rather than hoping to reproduce a scheduling race.",
+      "source_rows": 0,
+      "successful_result_requires_no_forced_cleanup": true
+    },
+    "required_lifecycle_behavior": [
+      "Treat root exit and whole-job completion as separate observations. Preserve the observed root code.",
+      "For a zero root code, wait for ActiveProcesses==0 and retained identity handles signaled, with a fixed 2.0-second natural-completion limit clipped to the original job and phase deadlines.",
+      "Do not restart the timeout when the root exits and do not add grace beyond the registered phase deadline.",
+      "Continue resource checks and owned-member sampling during this wait; keep atomic job containment, no breakaway, kill-on-last-close, one-worker ownership and bounded final cleanup.",
+      "If natural completion is not proved in time, fail the job, terminate only its owned Job, prove closure and stop dispatch. A forced cleanup remains disqualifying for a successful job.",
+      "A nonzero root exit, timeout, controller exception or closure proof failure cannot become success through waiting.",
+      "Save public aggregate root-exit/job-empty ordering and wait duration; keep identities, command lines, local paths and detailed observations local."
+    ],
+    "scope_exclusions": [
+      "strategy edits",
+      "default Bot changes",
+      "model changes",
+      "training",
+      "BC expansion",
+      "DAgger",
+      "PPO",
+      "self-play",
+      "full diagnostics",
+      "new independent holdout",
+      "system or driver changes"
+    ],
+    "source_scope": "New version and new output directory; leave the failed capacity-v1 sources, freeze, reservation ledger, receipts and false result byte-identical. Reuse unchanged numeric functions; do not introduce a new audit framework.",
+    "stage": "task-bc-diagnostics-capacity-exit-v1",
+    "stop_conditions": [
+      "Any targeted lifecycle mismatch, grace/deadline violation, changed old evidence, unproven closure, source mismatch, resource cap, numeric mismatch or accounting failure stops the new stage immediately.",
+      "Retain the failed new stage and its reservations; no tuning grace or retrying the same registration after viewing results.",
+      "Do not proceed to a full historical index, full diagnostic scoring, 96-game panel, training, policy changes or new games in this stage."
+    ]
+  }
+}

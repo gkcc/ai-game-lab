@@ -1,0 +1,423 @@
+{
+  "schema": "task-diagnostics-capacity-preparation-registration-v1",
+  "stage": "task-bc-diagnostics-capacity-v1",
+  "created_utc": "2026-10-23T11:52:11.226840+00:00",
+  "baseline_head": "123cfe046f387174f010176b96c2dc129ab78b75",
+  "local_registration_not_external_timestamp": true,
+  "prior_stage_acceptance": false,
+  "prior_policy_admission": false,
+  "advice_sha256": "f6f29a85915fd40fb83e8d723ea5d86e2b098db6263975e6f8238717ac80145c",
+  "root_decision_sha256": "9c72bd51ebc4b7134661f562b5ec01a537a011bd4fdca7e247508c0869777be0",
+  "protection_sha256": "da28bf3141269ca0cea648b688c2cdeaa04e5da78d9ceac255a0c5acb83276c9",
+  "source_metadata_sha256": {
+    "registration.json": "ca0077198188f82136c3b974c47fd6cac3b07e70bd72eb99fe444f8925f5dfa4",
+    "dataset-manifest.json": "6482ed09e8fd7348c08046810232146ec463472ee5babf187fe6822aa420bc00",
+    "reconstruction-ledger.json": "c3e634274c089664c731925eaa31a820c71dae511159bef46ad323be37ab31fb",
+    "coverage.json": "e1a69030bfae071ca48916853187260b8e7284c58bcffce3449e6e39c0bd9545"
+  },
+  "source_dataset": "artifacts/task-choice-v1-20261023",
+  "selected_groups": [
+    {
+      "game": "collect-31205138-v1-0-teacher",
+      "seed": 31205138,
+      "split": "validation",
+      "opponent": "v1",
+      "side": 0,
+      "source_files": {
+        "inputs": {
+          "path": "data/validation/collect-31205138-v1-0-teacher.inputs.jsonl.gz",
+          "sha256": "2877e3acf8b41529544e060774ed52ffaf00932a6b808a5e6dc58f8057ad5093",
+          "rows": 2175
+        },
+        "labels": {
+          "path": "data/validation/collect-31205138-v1-0-teacher.labels.jsonl.gz",
+          "sha256": "0d9be9a01ff0f77296d29477c2c406828992d44c9715d1e3d4e9fb49d527ce4e",
+          "rows": 2175
+        },
+        "index": {
+          "path": "data/validation/collect-31205138-v1-0-teacher.index.jsonl.gz",
+          "sha256": "c158aaee0ffa079d80d3daeb11a684b0c51265be7f2fbc234f93136de981e111",
+          "rows": 2175
+        }
+      },
+      "source_row_start": 0,
+      "source_row_stop": 128
+    },
+    {
+      "game": "collect-31273729-v1-0-teacher",
+      "seed": 31273729,
+      "split": "train",
+      "opponent": "v1",
+      "side": 0,
+      "source_files": {
+        "inputs": {
+          "path": "data/train/collect-31273729-v1-0-teacher.inputs.jsonl.gz",
+          "sha256": "4afe9c79758e0a63f71ea42e90b8d1bbd75755c5dc9ee77f187d31c48771b550",
+          "rows": 2179
+        },
+        "labels": {
+          "path": "data/train/collect-31273729-v1-0-teacher.labels.jsonl.gz",
+          "sha256": "3d61f05eb6db75d21906c8f2938d9523da5a76b33c4d7c3aa412bfb6e6f09e9b",
+          "rows": 2179
+        },
+        "index": {
+          "path": "data/train/collect-31273729-v1-0-teacher.index.jsonl.gz",
+          "sha256": "3fea8bdd285e3f64a1fcc051fd345ff657fd67a0ec01c1421503b73ce804bfab",
+          "rows": 2179
+        }
+      },
+      "source_row_start": 0,
+      "source_row_stop": 128
+    },
+    {
+      "game": "collect-31317742-v1-0-teacher",
+      "seed": 31317742,
+      "split": "train",
+      "opponent": "v1",
+      "side": 0,
+      "source_files": {
+        "inputs": {
+          "path": "data/train/collect-31317742-v1-0-teacher.inputs.jsonl.gz",
+          "sha256": "d54dc5c2438e66e9026867b613adbcffcd8472c27d8622bf7c0a2772e32e8ff0",
+          "rows": 2261
+        },
+        "labels": {
+          "path": "data/train/collect-31317742-v1-0-teacher.labels.jsonl.gz",
+          "sha256": "c2db56ec26f77cdd84b5e4151ba662254dd294de2eba4b673572f49a427924c2",
+          "rows": 2261
+        },
+        "index": {
+          "path": "data/train/collect-31317742-v1-0-teacher.index.jsonl.gz",
+          "sha256": "87bc7ef55b97f11fcb14c02cfd5378a307f42e47d51b25b5a1664b1576e89248",
+          "rows": 2261
+        }
+      },
+      "source_row_start": 0,
+      "source_row_stop": 128
+    },
+    {
+      "game": "collect-31360134-v1-0-teacher",
+      "seed": 31360134,
+      "split": "train",
+      "opponent": "v1",
+      "side": 0,
+      "source_files": {
+        "inputs": {
+          "path": "data/train/collect-31360134-v1-0-teacher.inputs.jsonl.gz",
+          "sha256": "bbf77723ebed8a456b92de2031c37bf7e737fd6956d11511ca92475f9ebe6ae1",
+          "rows": 2221
+        },
+        "labels": {
+          "path": "data/train/collect-31360134-v1-0-teacher.labels.jsonl.gz",
+          "sha256": "31fb6c96f613f0312bef0a8b3e545d8f15cbd98826bee03282a23f21e9a94ddc",
+          "rows": 2221
+        },
+        "index": {
+          "path": "data/train/collect-31360134-v1-0-teacher.index.jsonl.gz",
+          "sha256": "7b791de5ca993d7954364acd4e98f4877c399e15414ef88657ce337eb21e5a30",
+          "rows": 2221
+        }
+      },
+      "source_row_start": 0,
+      "source_row_stop": 128
+    },
+    {
+      "game": "collect-31504409-v1-0-teacher",
+      "seed": 31504409,
+      "split": "validation",
+      "opponent": "v1",
+      "side": 0,
+      "source_files": {
+        "inputs": {
+          "path": "data/validation/collect-31504409-v1-0-teacher.inputs.jsonl.gz",
+          "sha256": "6a46feb7c7bc58c238fdae53c9527ac79f6d011fc8bc266c89cdf7e34fb0fd22",
+          "rows": 2354
+        },
+        "labels": {
+          "path": "data/validation/collect-31504409-v1-0-teacher.labels.jsonl.gz",
+          "sha256": "98c525b75b99e62532385a91dc6e77cfdfa8e7497c9209865628813b27884f2f",
+          "rows": 2354
+        },
+        "index": {
+          "path": "data/validation/collect-31504409-v1-0-teacher.index.jsonl.gz",
+          "sha256": "034ee51a7383cc5aff254638dd2c37cd646e3577aacfba34ac698f69f8593296",
+          "rows": 2354
+        }
+      },
+      "source_row_start": 0,
+      "source_row_stop": 128
+    },
+    {
+      "game": "collect-31637216-v1-0-teacher",
+      "seed": 31637216,
+      "split": "train",
+      "opponent": "v1",
+      "side": 0,
+      "source_files": {
+        "inputs": {
+          "path": "data/train/collect-31637216-v1-0-teacher.inputs.jsonl.gz",
+          "sha256": "ac11f15487a322ba9711f73ce3b74ced85f6106af9531ffcdf27bc96038d0e48",
+          "rows": 2485
+        },
+        "labels": {
+          "path": "data/train/collect-31637216-v1-0-teacher.labels.jsonl.gz",
+          "sha256": "b050034b7e2b4ce3f0d3b6e26ad151a774fdbd277cf264eab39dfeb2d5b93238",
+          "rows": 2485
+        },
+        "index": {
+          "path": "data/train/collect-31637216-v1-0-teacher.index.jsonl.gz",
+          "sha256": "9d5179d74947002c91fbde5ff7b976cd9931d614d913ef58dd321cfa4d2aad26",
+          "rows": 2485
+        }
+      },
+      "source_row_start": 0,
+      "source_row_stop": 128
+    },
+    {
+      "game": "collect-31659052-v1-0-teacher",
+      "seed": 31659052,
+      "split": "train",
+      "opponent": "v1",
+      "side": 0,
+      "source_files": {
+        "inputs": {
+          "path": "data/train/collect-31659052-v1-0-teacher.inputs.jsonl.gz",
+          "sha256": "1b41435e223b6ac2841be638342e4acfe32bc3348295c6a012bce0e316a55a5c",
+          "rows": 2227
+        },
+        "labels": {
+          "path": "data/train/collect-31659052-v1-0-teacher.labels.jsonl.gz",
+          "sha256": "493ae8b976dbc04fb24c9e1adda3e365c890aa1f2b92f4eb338fa66b98edca80",
+          "rows": 2227
+        },
+        "index": {
+          "path": "data/train/collect-31659052-v1-0-teacher.index.jsonl.gz",
+          "sha256": "b21b055c21c993456aae1ff337a0fe1f1fd363ae540a6b10fd57968376aaadf3",
+          "rows": 2227
+        }
+      },
+      "source_row_start": 0,
+      "source_row_stop": 128
+    },
+    {
+      "game": "collect-31834104-v1-0-teacher",
+      "seed": 31834104,
+      "split": "train",
+      "opponent": "v1",
+      "side": 0,
+      "source_files": {
+        "inputs": {
+          "path": "data/train/collect-31834104-v1-0-teacher.inputs.jsonl.gz",
+          "sha256": "20df897033318b429b0aafa58ecbb26b3b2eb3ce3b324b5cb3a59879d1d88a74",
+          "rows": 2354
+        },
+        "labels": {
+          "path": "data/train/collect-31834104-v1-0-teacher.labels.jsonl.gz",
+          "sha256": "6f794fd8f29a223aa542d648ef62a523c28aa09c37a42c4830735822f60f9ff3",
+          "rows": 2354
+        },
+        "index": {
+          "path": "data/train/collect-31834104-v1-0-teacher.index.jsonl.gz",
+          "sha256": "86f8226af838cdb22c53b10486efd455d8ebbc324c381b16a13aaf0d334d12f1",
+          "rows": 2354
+        }
+      },
+      "source_row_start": 0,
+      "source_row_stop": 128
+    },
+    {
+      "game": "collect-31921285-v1-0-teacher",
+      "seed": 31921285,
+      "split": "train",
+      "opponent": "v1",
+      "side": 0,
+      "source_files": {
+        "inputs": {
+          "path": "data/train/collect-31921285-v1-0-teacher.inputs.jsonl.gz",
+          "sha256": "6fcbddf764745404ae7bbca2f1b153850a443cdecb49a3c759a54f9dde7c3e2c",
+          "rows": 2260
+        },
+        "labels": {
+          "path": "data/train/collect-31921285-v1-0-teacher.labels.jsonl.gz",
+          "sha256": "df5e751b5e0cb5a0b5b3a14e979d8dc3ed2bb3fe438ca8e1fc2f58e9004062b6",
+          "rows": 2260
+        },
+        "index": {
+          "path": "data/train/collect-31921285-v1-0-teacher.index.jsonl.gz",
+          "sha256": "775198cfbd2f58bd094badecfcdf1ba1c02e64cf1b7cc78f45cabe2881c8dfe2",
+          "rows": 2260
+        }
+      },
+      "source_row_start": 0,
+      "source_row_stop": 128
+    },
+    {
+      "game": "collect-31932889-v1-0-teacher",
+      "seed": 31932889,
+      "split": "train",
+      "opponent": "v1",
+      "side": 0,
+      "source_files": {
+        "inputs": {
+          "path": "data/train/collect-31932889-v1-0-teacher.inputs.jsonl.gz",
+          "sha256": "4a6c7baf9d4553aa431c9fa9e77486dd9023b983e04ea0bd0170598d521a0033",
+          "rows": 2179
+        },
+        "labels": {
+          "path": "data/train/collect-31932889-v1-0-teacher.labels.jsonl.gz",
+          "sha256": "5b871c64716ee9bfb3cedf7fa6c4c61c4ee327c830a978c2b6d414e0ba326886",
+          "rows": 2179
+        },
+        "index": {
+          "path": "data/train/collect-31932889-v1-0-teacher.index.jsonl.gz",
+          "sha256": "2f6a636fee2aa2dd54ad8e76b461525a123936286fd038169d8260897dc46f69",
+          "rows": 2179
+        }
+      },
+      "source_row_start": 0,
+      "source_row_stop": 128
+    }
+  ],
+  "selection": "All original 8train+2validation seeds, v1 opponent and seat0, first128 complete aligned source rows per game; selected group ordering follows original dataset manifest. Prefix-only decoding; compressed hashing is counted separately.",
+  "sample_only": true,
+  "sample_groups_max": 1280,
+  "sample_candidates_max": 80000,
+  "sample_train_groups": 1024,
+  "sample_validation_groups": 256,
+  "real_evaluated_groups_shared_max": 5120,
+  "real_evaluated_candidates_shared_max": 320000,
+  "real_evaluation_pass_plan": [
+    "preparation original pure-function reference 1280",
+    "preparation sharded candidate1280",
+    "formal capacity candidate1280",
+    "independent same-sample verification at most1280 if needed; budget shared"
+  ],
+  "synthetic_limits": {
+    "unique_groups": 4096,
+    "unique_candidates": 262144,
+    "evaluations": 16384,
+    "candidate_evaluations": 1048576
+  },
+  "preparation_runtime_seconds": 1800,
+  "formal_runtime_seconds": 1800,
+  "total_benchmark_runtime_seconds": 3600,
+  "per_job_seconds": 900,
+  "max_workers": 1,
+  "blas_threads": 1,
+  "runtime_clock": "Preparation benchmark wall clock starts with the first actual fixture/synthetic/sample execution and includes waits/edits until preparation is terminal. Source authoring and read-only source/manifest inspection before that marker are not benchmark execution. Formal acceptance has its own single 1800-second marker.",
+  "resource_limits": {
+    "process_tree_private_commit_bytes": 4294967296,
+    "minimum_available_host_memory_bytes": 4294967296,
+    "new_artifact_bytes_max": 2147483648,
+    "minimum_free_disk_bytes": 4294967296
+  },
+  "task_model": "artifacts/task-bc-holdout-v1-20261023/model/trained.npz",
+  "task_model_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+  "fixed_runtime_sources_sha256": {
+    "learning/task_bc_v1/__init__.py": "53acf46748abd7c1696186b447505c1a42486621027fc52149dbc153e1e10b0f",
+    "learning/task_bc_v1/admission.py": "54fe8ffb51f5d35cb1fd373b21a904a055e787c68abcc095bd9f751b224a1f62",
+    "learning/task_bc_v1/cache.py": "dc4f82ac379516175f73919c35381b40e98759871cab41b76cf3f28df1efac83",
+    "learning/task_bc_v1/deployment.py": "17ae478de5f44658fc0df848b0afe64ae2032bb1176dab888eeff5a48648d5f5",
+    "learning/task_bc_v1/experiment.py": "40800bc02a193bc4cb69d4d256d81c3e7270c0b80cfda1d9f58506d289294098",
+    "learning/task_bc_v1/games.py": "eb72eb7718d8140c57bd6c63e53587ed62ebf2fd6666d98dfbfc340c70259160",
+    "learning/task_bc_v1/model.py": "dbdbe126029a16f15178d18a5088defac83c5b6447d77f48aa7c77cae70886d8",
+    "learning/task_bc_v1/parity.py": "1da16c192931752dd7fff437eeadd88e21da259cef24a98d1a339d50652654f8",
+    "learning/task_bc_v1/reload.py": "8e2fb90d31af508fa69f5887233c590d1b808c811cf13031a1127734f21f4fad",
+    "learning/task_bc_v1/train.py": "de5b704f8930ed0e00c5ecc83bc1c3b85b61a4501800f6f68d4949e4ae3c15f5",
+    "learning/task_bc_v1/verify_cache.py": "02e7d43a027824294cd0b8ed580f53444cce100bd39673f84ab2664862ab8e7f",
+    "learning/task_bc_v1/verify_model.py": "e370e87f96e7b3594959dc229a7d27102efd82ba45d19d236e1af3ec43f12f1d",
+    "learning/task_bc_v1/README.zh-CN.md": "687a30c291e1df541f45852ba86b7ae23fd130608023b05ecd7c4949a9462a9b",
+    "learning/task_choice_v1/__init__.py": "7645246b2ff833ffabb1388ffeaffda87008a658d4085b2dc970cf67fcb5b5c6",
+    "learning/task_choice_v1/agent.py": "b22e2a1a546abe39e76a412690d09926d0463d4c196e87614507cf16a0ab51ce",
+    "learning/task_choice_v1/cases.py": "df95b1a7d7f70543e9e12d22c0da9bef183d6f02c8e6ab7e4b096aef46d3b180",
+    "learning/task_choice_v1/dataset.py": "87d47b11ee6b3bc2432d856ea26e87fc3645e005f33e26034207877a9d637119",
+    "learning/task_choice_v1/experiment.py": "a47caec46245e780e38dd322ad52069e62d1ea3a46e22be68516240a25ebf344",
+    "learning/task_choice_v1/features.py": "b69e3fb590fb5c1159193d112977aa03170557dc47b8aa19bcffe0f09737c7d4",
+    "learning/task_choice_v1/verify_interface.py": "609d4243ce58a13275ddd8b924f4e935d528590c18517b822f3bae668bba30b2",
+    "learning/bc_crop/__init__.py": "62631c0302958d70277a9fb7f1886e53e3cad4d1bb516331699ed1da787dc0b7",
+    "learning/bc_crop/agent.py": "6923bf2d088ec0aefad45b27121d55c1c4338e72b39e5a8c874aa3223c3350a4",
+    "learning/bc_crop/analyze.py": "b7f447619094e95a775a30f77dd3061982c65ebf51905efcba38318d3c740dfb",
+    "learning/bc_crop/audit.py": "1df48cfb357689237f045b19110b9eebe7551669e5ab20e238b179cc07aa7a44",
+    "learning/bc_crop/entries.py": "b5c0c0c2cd130edfb6d7c298a40602199e5d715b5d8b14aa42ea94add979bca8",
+    "learning/bc_crop/experiment.py": "bb891ee3e888ac88d21b4553a9c1bd2a6360aeffd51553728cbcf1c23396b4c7",
+    "learning/bc_crop/features.py": "6612580dcf1c3b1db22769aca459765a84fdf527f98fdf185f4a99e618d5d397",
+    "learning/bc_crop/prepare.py": "d51a01555f4710932e80c8e3aa328cb0bb4179f08531473df12149126074ea8c",
+    "learning/bc_crop/reload.py": "f658cc36323b0937b838818521b24ff392998e0b6d0fca51f9ab1ab7f622161f",
+    "learning/bc_crop/report.py": "c2de319c31cf798b2e78bdf7810905ccd39f1a2c49d285980bd62c6aaa4c9bb4",
+    "learning/bc_crop/train.py": "cfe3ab87a18270a09129fa818222319128fcb1f44628a11c7a0fe78f638bff56",
+    "learning/bc_crop/verify.py": "caa71fff2b4027bd6533ef7dc3dc1936f31ce0d57a4f786b5b6a69edc49f1801",
+    "learning/bc_crop/verify_model_privacy.py": "f958590215e40c7388fd3bd8c8a5d7aec18d5661ca16bf30edb8f3691572dba1",
+    "learning/bc_crop/verify_prepare.py": "ff0d594da720ac517c0b47068afaab63c8f83bafa59dfedc5750dcbd6cc323c2",
+    "decision/__init__.py": "292c33c078490e76cf6576d8922f527acf23d59a01b8f523f7a1b595cbe15d0e",
+    "decision/action_views.py": "48dac3a44a42cf149ad94965a44c72405a9cdff80c885ec522fcc4f212ffc4a6",
+    "decision/api.py": "3ef4025bde61d240b298cbe4d31291f25021baaf5b396f5540bbfcdda4231917",
+    "decision/audit_fertilizer_ablation.py": "cd5ec5884738703b7c8305c9d0faaa949252c3ad25cd46dd0b4e1e37f38c8e36",
+    "decision/audit_market_teacher.py": "f0f35dcbf8edeff90db5762da81b09ee2208e7af2c9921c0176bcb32c6381dc0",
+    "decision/audit_profit_attribution.py": "a8a6ce62f8699d9b781afef5bf49d3bc5f0689b932e2bccd2cfc8326c35cc1b8",
+    "decision/audit_teacher_fertilizer.py": "ea44f11288cdd2ea20a75c2b3ecbfe648ab8e3acab50d13c9c4cefb009282fe6",
+    "decision/audit_terminal_windows.py": "1cd649755746bd61e94b4e99cc16bf5b511b24b4ce729cf184fde3e0ecfb2b5c",
+    "decision/compare_market_trajectories.py": "b279ba0484e1c97b0fbe5b72e37f9172b75d3eb534f00b25b3d3eb78da286bf3",
+    "decision/execution.py": "cbf38b17ca9c4c1c4f82ddb583ff59e4f605a0e8d8e971ef5bfc3664b2c76378",
+    "decision/full_audit.py": "84f7c7b4316fb98791c51b933f5329a271b8bc9aec60eebe133f6d433ec4510d",
+    "decision/play.py": "01554275bc56e50db468f320aea6512e3f7756bac7cead62e092cdebe3500ead",
+    "decision/profit_attribution.py": "bea6118d126115ef2899e8e08fddf4ded7987f4ef91df6c206239ef096f77d61",
+    "decision/recheck_attribution_consumer.py": "bf54e3d86c3cd2ea25b1115f11253a8582837730a6695ff4bc6f0a9e4ff87e81",
+    "decision/recheck_market_consumer.py": "15563c7e42ec84d1d5986bb58b0af0ae6e5abcdd335609f7326dd8f0548b2730",
+    "decision/reexecute_experiment.py": "9726071d449ec9aeceb4a410affbf17ac41cc94425f82d77f55af832c226be93",
+    "decision/semantics.py": "9ac62d0df7adca84c0feff805b2979bb45f9f9f4c2064d1e2b5c48efd3e779a5",
+    "decision/smoke_full_agent.py": "9122a912cab9ce89bdd1f002dbb9f1466c66c12ecb4b3068253eeea9a3be70d3",
+    "decision/telemetry_fixtures.py": "fac6fc713756bb9a7872bd059fa2ace827a63dfd6c0a5415ee81120a2cb6d6ac",
+    "decision/telemetry_worker.py": "65ec5613f2698bb3db0c66d7a0828b02e00e4ee1d4c6d2d4d64a140aa14814fb",
+    "decision/verify_ablation.py": "35659fa57879c8f3eade86aa2c6cd6eabe1545f6d5cfe0d04a3ed3cffab4fe6e",
+    "decision/verify_attribution_consumer.py": "5536c36472eda93eed2879b0d9b807dbca3aa4d5ea658d1e7e2e980b79c921eb",
+    "decision/verify_audit.py": "fd6bfc1c6c066c5ec8ff3daa1a97a52caced41991be631084bfdd90763b4be4e",
+    "decision/verify_experiment.py": "7d6031cf759b985111c77da3d2f77f784ca41e33692ef3ea0b0f44194e97f95b",
+    "decision/verify_market_consumer.py": "b832bae031b57be9079d174153ed5bf63710382a6cbb9f3db372cf1664d89ee5",
+    "decision/verify_market_entry.py": "392daccc0db6fb4b8e3c5d7ed2b0bc1f312a6b0d74a7ee4c0d3cdc972114f058",
+    "decision/verify_market_teacher.py": "0a59718731aecfa6fb499f67bc7f92daa76053830f4ca582143e46cdc2422ea8",
+    "decision/verify_mechanisms.py": "cc82fd118abd94e92a8833587aa2bfb9117214a8a5b00e8054225732af47fbbf",
+    "decision/verify_profit_attribution.py": "cd314d2f2741d7bbc9c5ca47e4f89733db93de7f178b2ceb21d314b40d30773f",
+    "decision/verify_terminal_teacher.py": "20e1ce3943b4160e13095e71f7d8191bffc5ec82a07146e6499b0ce801189c38",
+    "learning/round2_worker.py": "a80158b26d1f4ae3d366c1d1276a1ca63e652bcd350f5ca25545b0f5f33759f1",
+    "learning/optimize_round2.py": "9f4fcf09fecd42c6135a1a2a72b95948c52474636719863eb2d468b01dc102fe",
+    "learning/evaluate_holdout.py": "df599e139893081f0a5307b0aa9cf299e2d14d4d4a221672b7aa9ac1d3747d82",
+    "run_match.py": "1b521899ecd0594459dab0770c3f6bd41c094c57067099ffbeed48a26da46e21",
+    "replay_metrics.py": "dc2005ab79d682c57480e8d865655ddd4785655e59a761774ae5883babe435b4",
+    "localize_replay.py": "237588e8fcb977a55d68b4a42d4efe7afbb8003032917f4314c40c340f211786",
+    "bots/teacher_fertilizer_terminal_v2.py": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+    "learning/task_entry_repair_v1/entry.py": "d35bd58661ac6065fd9ae92ce806943df50481d0587be9434933c230234f08f2",
+    "learning/task_entry_repair_v1/experiment.py": "c18d8cc03d77b87dcb2af992a1c0986d19f43d4538e10d26631993a0c67ce7bd",
+    "learning/task_entry_repair_v1/README.zh-CN.md": "8f8627387c3743eb3fc0bd449fdd71264679f840e2b6b756f447386e06595aa3",
+    "learning/task_entry_repair_v1/verify_entry.py": "767adabf597e9acf7f4113e4dfcb7dda0711e1877f4432d478b9ce773f346194",
+    "learning/task_entry_repair_v1/__init__.py": "3d5bde4b71974a465bbba5a0d79a4fb7974ab234974573dffc52b52cc9e27a4b",
+    "learning/task_bc_holdout_v1/audit.py": "af2ff8d75f2637c0a11c04736765e216b7003c76a2f2e1288416b06300aa15f9",
+    "learning/task_bc_holdout_v1/experiment.py": "752bacb8c943e40e5358206e06251ef7eaa908be190661a313438eac71a7bbf4",
+    "learning/task_bc_holdout_v1/games.py": "209fb79b80c2ea4f466a118548c773cfa54432d96f0ce7710532d59434f9061c",
+    "learning/task_bc_holdout_v1/preflight.py": "3f8ec8c5dca87119862cece966310d2d14358264208ae93482ae73147564093a",
+    "learning/task_bc_holdout_v1/README.zh-CN.md": "02747dc6270e4ed6cc6e7c100a77bfac5ae74c1c700302c5a59a2687bccc7bc8",
+    "learning/task_bc_holdout_v1/seeds.json": "088cb25bd10774b13dda5d523bd5e8172bb17c44301d3c44b40113d84beb0bab",
+    "learning/task_bc_holdout_v1/statistics.py": "63784afe816cd575bc57747dbafa71d4c04049852e0e8ceee2cf059881d88fd4",
+    "learning/task_bc_holdout_v1/verify_statistics.py": "942f02141ead894d6c6ae4bf56077eb3bf2df736c2f86ecc87c752ec4b0748df",
+    "learning/task_bc_holdout_v1/__init__.py": "928cb0cf10b2bed3c1ceb88bb0052483963936d923824d5b2815abb5cce472ea",
+    "learning/task_bc_error_diagnostics_v1/analysis.py": "e037d5ad4b6eb3fb80faf35165ec328c7028e2864792ec9ada6d93f157f82888",
+    "learning/task_bc_error_diagnostics_v1/experiment.py": "241ba0a25c6e6fae7ba78451582e3699add6f51991d564c0c7b55715f8eddf69",
+    "learning/task_bc_error_diagnostics_v1/numeric.py": "5d7ffe44616e029079fafbdee47d3af4391e6c394d349ef46df5997275082a3a",
+    "learning/task_bc_error_diagnostics_v1/README.zh-CN.md": "5892b91f868456cfabba0a27cbb3512481c1695d9ba90ed502f31998d26cf8e5",
+    "learning/task_bc_error_diagnostics_v1/runner.py": "43ce8b99598fdbe4b71a320abc7ee771c0815130b16742367ab7ec03466034c7",
+    "learning/task_bc_error_diagnostics_v1/shadow.py": "095f6a896c259f840af4c59adc922cc9782fe69aafd3b0df7ea04df9160c3251",
+    "learning/task_bc_error_diagnostics_v1/verify_analysis.py": "24e13f33c2e0eb6cb53e2857dda6ea98f24e26f6b3ab34011948e87a8daaa97e",
+    "learning/task_bc_error_diagnostics_v1/verify_numeric.py": "346548427ea49987219885a290a4793dce3d8c67e16b7f7d1e93926d41848175",
+    "learning/task_bc_error_diagnostics_v1/verify_runner.py": "fac3eacac8835eb9b3749e0fd3875948d5c7b30fe64c1c98b532dcc2032c534f",
+    "learning/task_bc_error_diagnostics_v1/verify_shadow.py": "5456c5634d4dfd247e6fe23e22c91715d6425cc3a2e5479f2af0c2347bc130f1",
+    "learning/task_bc_error_diagnostics_v1/__init__.py": "7fe73d92a6f435034e2de4fc239e202b38b383508f2c426bd389dd7565f4a381"
+  },
+  "full_historical_index_prohibited": true,
+  "full_diagnostics_prohibited": true,
+  "policy_calls": 0,
+  "training_runs": 0,
+  "new_games": 0,
+  "official_transitions": 0,
+  "stop": "Any cap/hash/nonfinite/schema/equivalence or process tree closure failure stops dispatch. Preparation source fixes consume shared budgets and time; formal failure never retries the same frozen run. An over-cap predefined sample is a failed benchmark, never truncated or replaced.",
+  "acceptance": "Complete sample-only train index before all scoring; exact ordered compact and split summaries equal original pure-function reference, including global unique and cross-shard conflicts; missing/duplicate/reordered/incomplete outputs and tampering rejected; four real Windows lifecycle cases demonstrate observed full-tree closure and preserved owned sentinel; privacy/history and independent review. Capacity success never proves full diagnostic throughput or policy admission.",
+  "publication": "Only source, aggregate measurements, frozen relative-source hashes and independent reviews. Raw inputs, model/index, compact diagnostics, logs, PID/creation/host identities stay local."
+}

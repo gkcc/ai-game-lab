@@ -1,0 +1,70 @@
+{
+  "schema": "task-capacity-publication-format-addendum-v1",
+  "reviewer": "independent subagent audit_capacity_v1",
+  "public_safe": true,
+  "passed": true,
+  "scope": "Only the public budget ledger JSONL-to-JSON representation change and resulting export scope. Original source, experimental findings and their acceptance decisions are not reopened.",
+  "approval_scope": "Publication of preserved failure evidence only.",
+  "stage_acceptance": false,
+  "preparation_passed": false,
+  "formal_started": false,
+  "real_full_sample_equivalence_completed": false,
+  "original_policy_admission": false,
+  "bound_artifacts": {
+    "final-review.json": "2d4306364b0ed7a5de5fb19233d1d0ce2a58df1279729e1f17ff6a1c97c777e2",
+    "publication-export.json": "a2b75a9e063ae0de620f2c5e69ef0f0347ad59e0935c337b469e1ad8ca064f65",
+    "publication-export-final-preaddendum.json": "d89c8904a9b7babbcf7045e07e877f5fa950f235a7b957a7eaf858750733bd97",
+    "budget-reservations.jsonl": "72440475c1ac0f85c5c6ac03c15080f24f5cf70c7047d2438f04c889c64ac51e",
+    "public-budget-reservations.json": "46a84106a2d605db50990cb76d234413e6a1f95b780250351e857c4f26ec2dcf",
+    "public:review/evidence/task-bc-diagnostics-capacity-v1-20261023/budget-reservations.json": "46a84106a2d605db50990cb76d234413e6a1f95b780250351e857c4f26ec2dcf"
+  },
+  "verified_format_conversion": {
+    "original_local_jsonl_bytes_unchanged": true,
+    "prior_export_and_review_bytes_unchanged": true,
+    "public_json_matches_local_converted_json_bytes": true,
+    "rows": 7,
+    "sequences_in_order": [0, 1, 2, 3, 4, 5, 6],
+    "canonical_reconstruction": "Serialize each row in its declared object-key order with json.dumps(row, separators=(',', ':'), ensure_ascii=False, allow_nan=False), UTF-8, then LF; concatenate in list order.",
+    "independently_reconstructed_bytes_equal_original_jsonl": true,
+    "reconstructed_sha256": "72440475c1ac0f85c5c6ac03c15080f24f5cf70c7047d2438f04c889c64ac51e",
+    "previous_line_hashes_preserved_by_exact_byte_roundtrip": true,
+    "reserved_groups": 1536,
+    "reserved_candidates": 88500,
+    "all_reserved_before_dispatch": true,
+    "any_refunded": false,
+    "unpublished_public_jsonl_removed": true
+  },
+  "export_scope": {
+    "prior_review_applies_to_preconversion_28_entry_snapshot": true,
+    "new_bound_snapshot_files": 29,
+    "unchanged_entries_inherited_from_prior_snapshot": 27,
+    "replacement": "budget-reservations.json replaces the unpublished public budget-reservations.jsonl; the local original JSONL remains preserved.",
+    "additional_file_in_new_snapshot": "final-review.json",
+    "all_29_public_working_tree_files_match_new_snapshot_hashes": true,
+    "new_public_files_after_exporting_this_addendum": 30,
+    "new_source_files": 9,
+    "new_report_files": 1,
+    "new_evidence_files_including_this_addendum": 20,
+    "previous_review_documents_with_append_only_changes": 2,
+    "total_changed_public_paths_after_exporting_this_addendum": 32,
+    "append_only_paths": ["review/PROGRESS.md", "review/WEBCHAT_REVIEW.md"],
+    "this_addendum_is_separate_from_the_immutable_29_entry_snapshot": true
+  },
+  "blocking_findings": [],
+  "limits": [
+    "The old final review records the preconversion snapshot; this addendum records only the subsequent format replacement and export accounting.",
+    "The next privacy-tool run, commit, push and remote verification are publication steps outside this read-only format review; their success is not asserted here.",
+    "This representation change does not alter the failed experiment, reservation totals, no-refund rule, incomplete equivalence result or next-stage restrictions."
+  ],
+  "review_work": {
+    "existing_ledger_and_export_metadata_read_only": true,
+    "implementation_files_modified": 0,
+    "raw_sample_rows_decoded": 0,
+    "model_scores": 0,
+    "fixture_runs": 0,
+    "training_runs": 0,
+    "games": 0,
+    "official_transitions": 0,
+    "requested_addendum_files_written": 1
+  }
+}
