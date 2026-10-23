@@ -1,0 +1,85 @@
+{
+  "passed": true,
+  "script_sha256": "64810e4dda03b664f389fb8260275048e508090c63e802bdb2b9d7e853671e5b",
+  "freeze_sha256": "ae91d4ad36e7aee5eaebbdd7c9a28b96757df6283d68565e5e5c5623704faa22",
+  "ledger_sha256": "c3e634274c089664c731925eaa31a820c71dae511159bef46ad323be37ab31fb",
+  "coverage_sha256": "e1a69030bfae071ca48916853187260b8e7284c58bcffce3449e6e39c0bd9545",
+  "all_dataset_files_hashed": 180,
+  "all_dataset_rows_aligned": 135406,
+  "reconstructed_sample_input_rows": 4440,
+  "unique_count_method": "Sum candidate operation counts once per distinct complete context hash; selected uniqueness uses context hash plus candidate identity.",
+  "root_existing_official_replay_transitions": 43140,
+  "reviewer_existing_official_replay_transitions": 1438,
+  "reviewer_new_official_case_transitions": 0,
+  "new_complete_games": 0,
+  "training_runs": 0,
+  "protected_runtime_files": 2857,
+  "protected_public_files": 583,
+  "samples": [
+    {
+      "game": "collect-smoke-31317742-market-0-teacher",
+      "actor_actions": 719,
+      "rival_actions": 719,
+      "input_and_label_rows_reconstructed": 2261,
+      "official_transitions": 719,
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "cd13e52024f996ac236e30f61673ea6f53f2b31664b043301cfca651f052f5d5",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "d0343585e4cf9735ac3d609641db9fc18a890d3f92856e8efea32d365e240f92",
+        "final_rewards": [
+          49738.0,
+          43773.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+      }
+    },
+    {
+      "game": "collect-smoke-31205138-market-1-teacher",
+      "actor_actions": 719,
+      "rival_actions": 719,
+      "input_and_label_rows_reconstructed": 2179,
+      "official_transitions": 719,
+      "audit": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "ca09043647124d2f9daf821cb18927789a67daf38b2115d003dd5e98f95b8112",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "50b72517cbb48a5502db5ae2960df94d42865efd08cd56f3701121d6a07be31d",
+        "final_rewards": [
+          40541.0,
+          42916.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+      }
+    }
+  ],
+  "selected_counts": {
+    "train": {
+      "PLANT": 9127,
+      "DIG": 431,
+      "WATER": 85463,
+      "HARVEST": 9312,
+      "FERTILIZE": 3977
+    },
+    "validation": {
+      "PLANT": 2356,
+      "DIG": 88,
+      "WATER": 21340,
+      "HARVEST": 2448,
+      "FERTILIZE": 864
+    }
+  },
+  "limitations": [
+    "All saved dataset rows checked; only two preselected old trajectories independently reexecuted and reconstructed.",
+    "No new official case transitions; six cases separately reviewed from original saved evidence.",
+    "Structural coverage and uniqueness do not establish independent examples, class balance, learned policy strength or full-game legality coverage."
+  ]
+}

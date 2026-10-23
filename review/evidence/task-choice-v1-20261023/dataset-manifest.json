@@ -1,0 +1,1282 @@
+{
+  "schema_version": "task-choice-v1",
+  "schema_sha256": "235eef551a799e7dc61e8b25448f9b7f6215bf6f97d044bf84b6edf9bd91ea56",
+  "source": "Original 60 frozen-teacher official demonstration replays only",
+  "source_ledgers": {
+    "collect-ledger.json": "b7e577b2879e53bfe8a728023b2b375db9baa40741847b3affa100660433e5eb",
+    "collect-smoke-ledger.json": "7432e2b1eea0b804cf4b5295988fe3d3c61295b09ef32df91dced43b27bb71f9"
+  },
+  "teacher_sha256": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+  "registration_sha256": "ca0077198188f82136c3b974c47fd6cac3b07e70bd72eb99fe444f8925f5dfa4",
+  "reconstruction_ledger_sha256": "c3e634274c089664c731925eaa31a820c71dae511159bef46ad323be37ab31fb",
+  "coverage_sha256": "e1a69030bfae071ca48916853187260b8e7284c58bcffce3449e6e39c0bd9545",
+  "inputs": "data/<split>/<game>.inputs.jsonl.gz: one variable-candidate selector input per line",
+  "labels": "data/<split>/<game>.labels.jsonl.gz: separate teacher candidate ID and its zero-based input position",
+  "metadata": "data/<split>/<game>.index.jsonl.gz: offline identities only, never model features; line-aligned with inputs and labels",
+  "privacy": "All raw data files remain local; publish aggregate results and file hashes only.",
+  "training_runs": 0,
+  "new_games": 0,
+  "examples": 135406,
+  "files": [
+    {
+      "game": "collect-31205138-round2-0-teacher",
+      "split": "validation",
+      "files": {
+        "inputs": {
+          "path": "data/validation/collect-31205138-round2-0-teacher.inputs.jsonl.gz",
+          "sha256": "6bc08d504446bff02e28eddb8a7a21ffc9d5ae99bf4ca1fd98bd349fa64bd5af",
+          "rows": 2175
+        },
+        "labels": {
+          "path": "data/validation/collect-31205138-round2-0-teacher.labels.jsonl.gz",
+          "sha256": "0d9be9a01ff0f77296d29477c2c406828992d44c9715d1e3d4e9fb49d527ce4e",
+          "rows": 2175
+        },
+        "index": {
+          "path": "data/validation/collect-31205138-round2-0-teacher.index.jsonl.gz",
+          "sha256": "78cea05e00ae228acea6a046627a96d92cb8ba1e0088be2b7215905843346772",
+          "rows": 2175
+        }
+      }
+    },
+    {
+      "game": "collect-31205138-round2-1-teacher",
+      "split": "validation",
+      "files": {
+        "inputs": {
+          "path": "data/validation/collect-31205138-round2-1-teacher.inputs.jsonl.gz",
+          "sha256": "a7bc06c5a2940b4cfb106106be335a649e286a6cfb290684157c52903430544b",
+          "rows": 2175
+        },
+        "labels": {
+          "path": "data/validation/collect-31205138-round2-1-teacher.labels.jsonl.gz",
+          "sha256": "0d9be9a01ff0f77296d29477c2c406828992d44c9715d1e3d4e9fb49d527ce4e",
+          "rows": 2175
+        },
+        "index": {
+          "path": "data/validation/collect-31205138-round2-1-teacher.index.jsonl.gz",
+          "sha256": "07600d0b9724d1a01de701ffa0180a464d299a6a1e910f0b3746c8237ca656aa",
+          "rows": 2175
+        }
+      }
+    },
+    {
+      "game": "collect-31205138-v1-0-teacher",
+      "split": "validation",
+      "files": {
+        "inputs": {
+          "path": "data/validation/collect-31205138-v1-0-teacher.inputs.jsonl.gz",
+          "sha256": "2877e3acf8b41529544e060774ed52ffaf00932a6b808a5e6dc58f8057ad5093",
+          "rows": 2175
+        },
+        "labels": {
+          "path": "data/validation/collect-31205138-v1-0-teacher.labels.jsonl.gz",
+          "sha256": "0d9be9a01ff0f77296d29477c2c406828992d44c9715d1e3d4e9fb49d527ce4e",
+          "rows": 2175
+        },
+        "index": {
+          "path": "data/validation/collect-31205138-v1-0-teacher.index.jsonl.gz",
+          "sha256": "c158aaee0ffa079d80d3daeb11a684b0c51265be7f2fbc234f93136de981e111",
+          "rows": 2175
+        }
+      }
+    },
+    {
+      "game": "collect-31205138-v1-1-teacher",
+      "split": "validation",
+      "files": {
+        "inputs": {
+          "path": "data/validation/collect-31205138-v1-1-teacher.inputs.jsonl.gz",
+          "sha256": "0fda72aca14aa998ce3b19b330ad8694f6a4196bad6152e316721812d95f1109",
+          "rows": 2175
+        },
+        "labels": {
+          "path": "data/validation/collect-31205138-v1-1-teacher.labels.jsonl.gz",
+          "sha256": "0d9be9a01ff0f77296d29477c2c406828992d44c9715d1e3d4e9fb49d527ce4e",
+          "rows": 2175
+        },
+        "index": {
+          "path": "data/validation/collect-31205138-v1-1-teacher.index.jsonl.gz",
+          "sha256": "a71fff3ba3805c98cc7837897c8232b8b35db4d3f9e6161ff993c5c730095e06",
+          "rows": 2175
+        }
+      }
+    },
+    {
+      "game": "collect-31273729-market-0-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31273729-market-0-teacher.inputs.jsonl.gz",
+          "sha256": "54fa29ae04f49e9c89477fd213549fe59d90c518442b408890aa3539e56fd59c",
+          "rows": 2104
+        },
+        "labels": {
+          "path": "data/train/collect-31273729-market-0-teacher.labels.jsonl.gz",
+          "sha256": "6f5960f133909ac389bfa8de31691a5684f61a0ef0b2c10d215491cc5d360aca",
+          "rows": 2104
+        },
+        "index": {
+          "path": "data/train/collect-31273729-market-0-teacher.index.jsonl.gz",
+          "sha256": "e775f9009adfcdd3bb8a61996869bd6daac04e4097fb23a0df55d9f365f8705a",
+          "rows": 2104
+        }
+      }
+    },
+    {
+      "game": "collect-31273729-market-1-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31273729-market-1-teacher.inputs.jsonl.gz",
+          "sha256": "c68c603d352e061de55a40de6a5490737c16cdcf90fd6258766b98f8ab03c743",
+          "rows": 2180
+        },
+        "labels": {
+          "path": "data/train/collect-31273729-market-1-teacher.labels.jsonl.gz",
+          "sha256": "28cf2833164842e50f40a46902e1134efd6dc1ca4c9e65f37d6088ea0a9d3d32",
+          "rows": 2180
+        },
+        "index": {
+          "path": "data/train/collect-31273729-market-1-teacher.index.jsonl.gz",
+          "sha256": "b97fae257b95a233d8654efefb8ad5696550008cbdec1cf29a90b42e1669de5a",
+          "rows": 2180
+        }
+      }
+    },
+    {
+      "game": "collect-31273729-round2-0-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31273729-round2-0-teacher.inputs.jsonl.gz",
+          "sha256": "89d0cf3f67c708b0d0a237638af8d59f82488df926602fd4618f973f3a822d61",
+          "rows": 2164
+        },
+        "labels": {
+          "path": "data/train/collect-31273729-round2-0-teacher.labels.jsonl.gz",
+          "sha256": "4154b482c3787172338ff909e1f4094e2814d44d796a639b0a6bf64c10c967ab",
+          "rows": 2164
+        },
+        "index": {
+          "path": "data/train/collect-31273729-round2-0-teacher.index.jsonl.gz",
+          "sha256": "328ef991728f9a6e5284130f79100a1dc2bd105a2d4505eacd8748e187d32417",
+          "rows": 2164
+        }
+      }
+    },
+    {
+      "game": "collect-31273729-round2-1-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31273729-round2-1-teacher.inputs.jsonl.gz",
+          "sha256": "b0fee96d0b74e21ec5868ecaf36267ef0936feab2041a6da60e7bf2dddc4df9b",
+          "rows": 2163
+        },
+        "labels": {
+          "path": "data/train/collect-31273729-round2-1-teacher.labels.jsonl.gz",
+          "sha256": "112165b78d9a38f98988a41b9df879bba4349c462faa43e1a828f2d85ae2defd",
+          "rows": 2163
+        },
+        "index": {
+          "path": "data/train/collect-31273729-round2-1-teacher.index.jsonl.gz",
+          "sha256": "7a32b406394b9a00d286e0816aaa84a703bf10053d2814f09e132a1f591bf317",
+          "rows": 2163
+        }
+      }
+    },
+    {
+      "game": "collect-31273729-v1-0-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31273729-v1-0-teacher.inputs.jsonl.gz",
+          "sha256": "4afe9c79758e0a63f71ea42e90b8d1bbd75755c5dc9ee77f187d31c48771b550",
+          "rows": 2179
+        },
+        "labels": {
+          "path": "data/train/collect-31273729-v1-0-teacher.labels.jsonl.gz",
+          "sha256": "3d61f05eb6db75d21906c8f2938d9523da5a76b33c4d7c3aa412bfb6e6f09e9b",
+          "rows": 2179
+        },
+        "index": {
+          "path": "data/train/collect-31273729-v1-0-teacher.index.jsonl.gz",
+          "sha256": "3fea8bdd285e3f64a1fcc051fd345ff657fd67a0ec01c1421503b73ce804bfab",
+          "rows": 2179
+        }
+      }
+    },
+    {
+      "game": "collect-31273729-v1-1-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31273729-v1-1-teacher.inputs.jsonl.gz",
+          "sha256": "3235c283b28195aa7bb0845a4f2ef57180b547910e893191ac2d790c1332e8d6",
+          "rows": 2178
+        },
+        "labels": {
+          "path": "data/train/collect-31273729-v1-1-teacher.labels.jsonl.gz",
+          "sha256": "405c06b294533706b601ea78806726ebdd80f75673609032bd7e809f00bb38d0",
+          "rows": 2178
+        },
+        "index": {
+          "path": "data/train/collect-31273729-v1-1-teacher.index.jsonl.gz",
+          "sha256": "ffe2cffdef56eda39ee8c40277c0dcd95451dadc3d2253408606c7bccaba59fe",
+          "rows": 2178
+        }
+      }
+    },
+    {
+      "game": "collect-31317742-round2-0-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31317742-round2-0-teacher.inputs.jsonl.gz",
+          "sha256": "8480ab5303c0c4a8e80892e644c580b088c66f404a8d4bb7a381a2e331094dd1",
+          "rows": 2261
+        },
+        "labels": {
+          "path": "data/train/collect-31317742-round2-0-teacher.labels.jsonl.gz",
+          "sha256": "c2db56ec26f77cdd84b5e4151ba662254dd294de2eba4b673572f49a427924c2",
+          "rows": 2261
+        },
+        "index": {
+          "path": "data/train/collect-31317742-round2-0-teacher.index.jsonl.gz",
+          "sha256": "1691c43367341201611faba176878eb90bee6c61a8da32590b22d7eb06459e27",
+          "rows": 2261
+        }
+      }
+    },
+    {
+      "game": "collect-31317742-round2-1-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31317742-round2-1-teacher.inputs.jsonl.gz",
+          "sha256": "82e344e1a398f3b64cfef2b687c3f4b02d4d173476ca5c5484c4c804a5542f00",
+          "rows": 2261
+        },
+        "labels": {
+          "path": "data/train/collect-31317742-round2-1-teacher.labels.jsonl.gz",
+          "sha256": "c2db56ec26f77cdd84b5e4151ba662254dd294de2eba4b673572f49a427924c2",
+          "rows": 2261
+        },
+        "index": {
+          "path": "data/train/collect-31317742-round2-1-teacher.index.jsonl.gz",
+          "sha256": "8dba22086adff25694f62df15fa2a0f35c30ca5c24c8320211924ea5eb70f868",
+          "rows": 2261
+        }
+      }
+    },
+    {
+      "game": "collect-31317742-v1-0-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31317742-v1-0-teacher.inputs.jsonl.gz",
+          "sha256": "d54dc5c2438e66e9026867b613adbcffcd8472c27d8622bf7c0a2772e32e8ff0",
+          "rows": 2261
+        },
+        "labels": {
+          "path": "data/train/collect-31317742-v1-0-teacher.labels.jsonl.gz",
+          "sha256": "c2db56ec26f77cdd84b5e4151ba662254dd294de2eba4b673572f49a427924c2",
+          "rows": 2261
+        },
+        "index": {
+          "path": "data/train/collect-31317742-v1-0-teacher.index.jsonl.gz",
+          "sha256": "87bc7ef55b97f11fcb14c02cfd5378a307f42e47d51b25b5a1664b1576e89248",
+          "rows": 2261
+        }
+      }
+    },
+    {
+      "game": "collect-31317742-v1-1-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31317742-v1-1-teacher.inputs.jsonl.gz",
+          "sha256": "237bd5dd6e0f4924f1821e5650f4a47fae6f60d3032a6b3df822578592d997b2",
+          "rows": 2261
+        },
+        "labels": {
+          "path": "data/train/collect-31317742-v1-1-teacher.labels.jsonl.gz",
+          "sha256": "c2db56ec26f77cdd84b5e4151ba662254dd294de2eba4b673572f49a427924c2",
+          "rows": 2261
+        },
+        "index": {
+          "path": "data/train/collect-31317742-v1-1-teacher.index.jsonl.gz",
+          "sha256": "ef5e33b536b6ac3a9a14d55d2164cadcd50da655dcc3af4b467c7863f78cd181",
+          "rows": 2261
+        }
+      }
+    },
+    {
+      "game": "collect-31360134-market-0-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31360134-market-0-teacher.inputs.jsonl.gz",
+          "sha256": "aab472074004ddceb5f7c52ca743d53cb46b0390bdd0467d4406e354cd151a7a",
+          "rows": 2220
+        },
+        "labels": {
+          "path": "data/train/collect-31360134-market-0-teacher.labels.jsonl.gz",
+          "sha256": "6eb36ca6b47a04439957cf86eb1c3b5dbf3f86276660e5cea5850880d802f5b7",
+          "rows": 2220
+        },
+        "index": {
+          "path": "data/train/collect-31360134-market-0-teacher.index.jsonl.gz",
+          "sha256": "4339b7fc67956ad9057298dd987eb9041174a63343249eac086fdbc079a2f36a",
+          "rows": 2220
+        }
+      }
+    },
+    {
+      "game": "collect-31360134-market-1-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31360134-market-1-teacher.inputs.jsonl.gz",
+          "sha256": "135404aebb3dfcda30f9a7fecde43b2018c54deb9d68cbfa7b8c2a4c571b52fb",
+          "rows": 2220
+        },
+        "labels": {
+          "path": "data/train/collect-31360134-market-1-teacher.labels.jsonl.gz",
+          "sha256": "6eb36ca6b47a04439957cf86eb1c3b5dbf3f86276660e5cea5850880d802f5b7",
+          "rows": 2220
+        },
+        "index": {
+          "path": "data/train/collect-31360134-market-1-teacher.index.jsonl.gz",
+          "sha256": "d99f492d8bea4e0a9770845b78b86b6ee440e8f53ec0673bc14d65d421f1846c",
+          "rows": 2220
+        }
+      }
+    },
+    {
+      "game": "collect-31360134-round2-0-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31360134-round2-0-teacher.inputs.jsonl.gz",
+          "sha256": "729673c7c1fa763bc176650513e7bb88a9024372faac83c53e90016299779477",
+          "rows": 2218
+        },
+        "labels": {
+          "path": "data/train/collect-31360134-round2-0-teacher.labels.jsonl.gz",
+          "sha256": "9a60d92574dc47b06c6608d3308703399b6b8ded9992ebe94f2479d30b8ec532",
+          "rows": 2218
+        },
+        "index": {
+          "path": "data/train/collect-31360134-round2-0-teacher.index.jsonl.gz",
+          "sha256": "44d9e45da701dc9f6a7c82cfbddcdebdf6c809f679d4cbfe5983d404190af3e3",
+          "rows": 2218
+        }
+      }
+    },
+    {
+      "game": "collect-31360134-round2-1-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31360134-round2-1-teacher.inputs.jsonl.gz",
+          "sha256": "ca78be53d74df858f5a1016d7af465719dd6cf1cc45a370b8972f09cad67390d",
+          "rows": 2231
+        },
+        "labels": {
+          "path": "data/train/collect-31360134-round2-1-teacher.labels.jsonl.gz",
+          "sha256": "0c0ece162a45d2b8c86231f2fb814e0bd7f15585dd91d5755489c79cffea0118",
+          "rows": 2231
+        },
+        "index": {
+          "path": "data/train/collect-31360134-round2-1-teacher.index.jsonl.gz",
+          "sha256": "31b82d514384394c6ba8914f5d5b07f4893e874a764aa555deb260001c119b45",
+          "rows": 2231
+        }
+      }
+    },
+    {
+      "game": "collect-31360134-v1-0-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31360134-v1-0-teacher.inputs.jsonl.gz",
+          "sha256": "bbf77723ebed8a456b92de2031c37bf7e737fd6956d11511ca92475f9ebe6ae1",
+          "rows": 2221
+        },
+        "labels": {
+          "path": "data/train/collect-31360134-v1-0-teacher.labels.jsonl.gz",
+          "sha256": "31fb6c96f613f0312bef0a8b3e545d8f15cbd98826bee03282a23f21e9a94ddc",
+          "rows": 2221
+        },
+        "index": {
+          "path": "data/train/collect-31360134-v1-0-teacher.index.jsonl.gz",
+          "sha256": "7b791de5ca993d7954364acd4e98f4877c399e15414ef88657ce337eb21e5a30",
+          "rows": 2221
+        }
+      }
+    },
+    {
+      "game": "collect-31360134-v1-1-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31360134-v1-1-teacher.inputs.jsonl.gz",
+          "sha256": "3d9cd616d11f15d00a7d14cf916b0d4c20da435c0640e43ee21237b19186ae8d",
+          "rows": 2230
+        },
+        "labels": {
+          "path": "data/train/collect-31360134-v1-1-teacher.labels.jsonl.gz",
+          "sha256": "d5a986170f6f00eebe0bb11251277e1018cb810d20bb3e356f87f0156a375b61",
+          "rows": 2230
+        },
+        "index": {
+          "path": "data/train/collect-31360134-v1-1-teacher.index.jsonl.gz",
+          "sha256": "89344aa8400e9f73bacd86defb20372dbb0048a78504327d5747c6785c47a61d",
+          "rows": 2230
+        }
+      }
+    },
+    {
+      "game": "collect-31504409-market-0-teacher",
+      "split": "validation",
+      "files": {
+        "inputs": {
+          "path": "data/validation/collect-31504409-market-0-teacher.inputs.jsonl.gz",
+          "sha256": "7963ee8b8699f4905915bc599eb333063a028e94a62f42184d58a4d62efa79f3",
+          "rows": 2307
+        },
+        "labels": {
+          "path": "data/validation/collect-31504409-market-0-teacher.labels.jsonl.gz",
+          "sha256": "28cb4e722a9bb786104268121cdb2b0e99a4fe09c84c498923374cec479f4418",
+          "rows": 2307
+        },
+        "index": {
+          "path": "data/validation/collect-31504409-market-0-teacher.index.jsonl.gz",
+          "sha256": "d73eef5ed33279c089f2ad3c0214bdc3e4e67bf93ff91f77156af7fad5f07271",
+          "rows": 2307
+        }
+      }
+    },
+    {
+      "game": "collect-31504409-market-1-teacher",
+      "split": "validation",
+      "files": {
+        "inputs": {
+          "path": "data/validation/collect-31504409-market-1-teacher.inputs.jsonl.gz",
+          "sha256": "ee7e81885db953aa10629b0d3c52e2a9f9a08d9902134c5d0bda5dad9d27ad48",
+          "rows": 2307
+        },
+        "labels": {
+          "path": "data/validation/collect-31504409-market-1-teacher.labels.jsonl.gz",
+          "sha256": "28cb4e722a9bb786104268121cdb2b0e99a4fe09c84c498923374cec479f4418",
+          "rows": 2307
+        },
+        "index": {
+          "path": "data/validation/collect-31504409-market-1-teacher.index.jsonl.gz",
+          "sha256": "4885aefe7d080ac286a395c48b0a5b53706f12403d442bbde5812423de7e6382",
+          "rows": 2307
+        }
+      }
+    },
+    {
+      "game": "collect-31504409-round2-0-teacher",
+      "split": "validation",
+      "files": {
+        "inputs": {
+          "path": "data/validation/collect-31504409-round2-0-teacher.inputs.jsonl.gz",
+          "sha256": "35faa4171dc5a11261c2993f96a890c1cdc98799f653e2f6534bdf0d9732f253",
+          "rows": 2358
+        },
+        "labels": {
+          "path": "data/validation/collect-31504409-round2-0-teacher.labels.jsonl.gz",
+          "sha256": "33a7a38c6852a683269ce66b2bf89b98e0e3e3c2dcd7167555f6cab544e6f235",
+          "rows": 2358
+        },
+        "index": {
+          "path": "data/validation/collect-31504409-round2-0-teacher.index.jsonl.gz",
+          "sha256": "a6462b399bdf2f689c16426fb5487f5d40a298360a5f1a95ed8884aa5e5cc50a",
+          "rows": 2358
+        }
+      }
+    },
+    {
+      "game": "collect-31504409-round2-1-teacher",
+      "split": "validation",
+      "files": {
+        "inputs": {
+          "path": "data/validation/collect-31504409-round2-1-teacher.inputs.jsonl.gz",
+          "sha256": "accd2f962830fc92c260c833a844fdf7175a2f2b15bf359e41c27051abd213db",
+          "rows": 2358
+        },
+        "labels": {
+          "path": "data/validation/collect-31504409-round2-1-teacher.labels.jsonl.gz",
+          "sha256": "33a7a38c6852a683269ce66b2bf89b98e0e3e3c2dcd7167555f6cab544e6f235",
+          "rows": 2358
+        },
+        "index": {
+          "path": "data/validation/collect-31504409-round2-1-teacher.index.jsonl.gz",
+          "sha256": "3e311d08b790e61cd7ab3ae0807f7045cde88350d5c75470ca5f21a4647bb496",
+          "rows": 2358
+        }
+      }
+    },
+    {
+      "game": "collect-31504409-v1-0-teacher",
+      "split": "validation",
+      "files": {
+        "inputs": {
+          "path": "data/validation/collect-31504409-v1-0-teacher.inputs.jsonl.gz",
+          "sha256": "6a46feb7c7bc58c238fdae53c9527ac79f6d011fc8bc266c89cdf7e34fb0fd22",
+          "rows": 2354
+        },
+        "labels": {
+          "path": "data/validation/collect-31504409-v1-0-teacher.labels.jsonl.gz",
+          "sha256": "98c525b75b99e62532385a91dc6e77cfdfa8e7497c9209865628813b27884f2f",
+          "rows": 2354
+        },
+        "index": {
+          "path": "data/validation/collect-31504409-v1-0-teacher.index.jsonl.gz",
+          "sha256": "034ee51a7383cc5aff254638dd2c37cd646e3577aacfba34ac698f69f8593296",
+          "rows": 2354
+        }
+      }
+    },
+    {
+      "game": "collect-31504409-v1-1-teacher",
+      "split": "validation",
+      "files": {
+        "inputs": {
+          "path": "data/validation/collect-31504409-v1-1-teacher.inputs.jsonl.gz",
+          "sha256": "df845ad330b18e6b56bbe502b6e0d9d70148e034ffb520f04512548d98309d21",
+          "rows": 2354
+        },
+        "labels": {
+          "path": "data/validation/collect-31504409-v1-1-teacher.labels.jsonl.gz",
+          "sha256": "98c525b75b99e62532385a91dc6e77cfdfa8e7497c9209865628813b27884f2f",
+          "rows": 2354
+        },
+        "index": {
+          "path": "data/validation/collect-31504409-v1-1-teacher.index.jsonl.gz",
+          "sha256": "6e25c02410dc59a059685a074a5b1af2e9e09630afe60ca31b14f00c977e65d2",
+          "rows": 2354
+        }
+      }
+    },
+    {
+      "game": "collect-31637216-market-0-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31637216-market-0-teacher.inputs.jsonl.gz",
+          "sha256": "64c2a89bf9f722471059c68c149b9fa2fcd672042fc78e59120e8ba95431ae82",
+          "rows": 2338
+        },
+        "labels": {
+          "path": "data/train/collect-31637216-market-0-teacher.labels.jsonl.gz",
+          "sha256": "3182508b231c2e6980c135cbe8d604a121d29477b5b64d388be477a06c2cb6e0",
+          "rows": 2338
+        },
+        "index": {
+          "path": "data/train/collect-31637216-market-0-teacher.index.jsonl.gz",
+          "sha256": "72c3250ebf33f10e200996095f28f58749fafff99d80ed2e16e5209dbc726274",
+          "rows": 2338
+        }
+      }
+    },
+    {
+      "game": "collect-31637216-market-1-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31637216-market-1-teacher.inputs.jsonl.gz",
+          "sha256": "161975994424dddcf0a7e2366210849ce4c533a7b2789a09683d1b6cb63cfdc4",
+          "rows": 2338
+        },
+        "labels": {
+          "path": "data/train/collect-31637216-market-1-teacher.labels.jsonl.gz",
+          "sha256": "3182508b231c2e6980c135cbe8d604a121d29477b5b64d388be477a06c2cb6e0",
+          "rows": 2338
+        },
+        "index": {
+          "path": "data/train/collect-31637216-market-1-teacher.index.jsonl.gz",
+          "sha256": "21ae3ca5ecbd5988a179c9ffa0bbbe89ebc4c5c82b2ae998a771faabee9a9c04",
+          "rows": 2338
+        }
+      }
+    },
+    {
+      "game": "collect-31637216-round2-0-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31637216-round2-0-teacher.inputs.jsonl.gz",
+          "sha256": "2bc6b3c7e55e0ce1d06112f5110bbcb34e40f186b5c2005655f0ed343ec67f4e",
+          "rows": 2452
+        },
+        "labels": {
+          "path": "data/train/collect-31637216-round2-0-teacher.labels.jsonl.gz",
+          "sha256": "791ba1e1ef689d569dba93e0a2dd8a387150158bb118fd6d549dacb26b15f15e",
+          "rows": 2452
+        },
+        "index": {
+          "path": "data/train/collect-31637216-round2-0-teacher.index.jsonl.gz",
+          "sha256": "10fc803747e17fc861ccecce8897851864e154b054044391bc14eec4310a663d",
+          "rows": 2452
+        }
+      }
+    },
+    {
+      "game": "collect-31637216-round2-1-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31637216-round2-1-teacher.inputs.jsonl.gz",
+          "sha256": "f932a7f86cb0ef49d27bc7d4c9d643dafd41600e2a2b2226a6ef1053dfe1747f",
+          "rows": 2452
+        },
+        "labels": {
+          "path": "data/train/collect-31637216-round2-1-teacher.labels.jsonl.gz",
+          "sha256": "791ba1e1ef689d569dba93e0a2dd8a387150158bb118fd6d549dacb26b15f15e",
+          "rows": 2452
+        },
+        "index": {
+          "path": "data/train/collect-31637216-round2-1-teacher.index.jsonl.gz",
+          "sha256": "048707e6e2b30488aaa3d3bd7a9ecbf687b598009461fb6da05fd90052ebc055",
+          "rows": 2452
+        }
+      }
+    },
+    {
+      "game": "collect-31637216-v1-0-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31637216-v1-0-teacher.inputs.jsonl.gz",
+          "sha256": "ac11f15487a322ba9711f73ce3b74ced85f6106af9531ffcdf27bc96038d0e48",
+          "rows": 2485
+        },
+        "labels": {
+          "path": "data/train/collect-31637216-v1-0-teacher.labels.jsonl.gz",
+          "sha256": "b050034b7e2b4ce3f0d3b6e26ad151a774fdbd277cf264eab39dfeb2d5b93238",
+          "rows": 2485
+        },
+        "index": {
+          "path": "data/train/collect-31637216-v1-0-teacher.index.jsonl.gz",
+          "sha256": "9d5179d74947002c91fbde5ff7b976cd9931d614d913ef58dd321cfa4d2aad26",
+          "rows": 2485
+        }
+      }
+    },
+    {
+      "game": "collect-31637216-v1-1-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31637216-v1-1-teacher.inputs.jsonl.gz",
+          "sha256": "60ea1c3c96cc346b12b7546d0ecf053e2047f170f177aa838413046edc9776bc",
+          "rows": 2485
+        },
+        "labels": {
+          "path": "data/train/collect-31637216-v1-1-teacher.labels.jsonl.gz",
+          "sha256": "b050034b7e2b4ce3f0d3b6e26ad151a774fdbd277cf264eab39dfeb2d5b93238",
+          "rows": 2485
+        },
+        "index": {
+          "path": "data/train/collect-31637216-v1-1-teacher.index.jsonl.gz",
+          "sha256": "29eefdb2bd872a2f859b19dec2f50fb9da62e8ef4098d7b80c6638cd4396c8cb",
+          "rows": 2485
+        }
+      }
+    },
+    {
+      "game": "collect-31659052-market-0-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31659052-market-0-teacher.inputs.jsonl.gz",
+          "sha256": "9d6b75c34ee3fa88354f4f410479ac80769c5f9da87980d1dd34373d740de55f",
+          "rows": 2227
+        },
+        "labels": {
+          "path": "data/train/collect-31659052-market-0-teacher.labels.jsonl.gz",
+          "sha256": "493ae8b976dbc04fb24c9e1adda3e365c890aa1f2b92f4eb338fa66b98edca80",
+          "rows": 2227
+        },
+        "index": {
+          "path": "data/train/collect-31659052-market-0-teacher.index.jsonl.gz",
+          "sha256": "a1edd4a6ae54d58aaad571455bcb9a4c17eb4b171915faac1f9f0d2c089949a4",
+          "rows": 2227
+        }
+      }
+    },
+    {
+      "game": "collect-31659052-market-1-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31659052-market-1-teacher.inputs.jsonl.gz",
+          "sha256": "70af08849753a2e8affa16c5f19bdceee28c308fb4a2200ad431307fdb4ff84e",
+          "rows": 2227
+        },
+        "labels": {
+          "path": "data/train/collect-31659052-market-1-teacher.labels.jsonl.gz",
+          "sha256": "493ae8b976dbc04fb24c9e1adda3e365c890aa1f2b92f4eb338fa66b98edca80",
+          "rows": 2227
+        },
+        "index": {
+          "path": "data/train/collect-31659052-market-1-teacher.index.jsonl.gz",
+          "sha256": "a2ad7a563c7c26e0cad9cdcfca7f1a370e249d7cb7b558439afac87a27fcf3a0",
+          "rows": 2227
+        }
+      }
+    },
+    {
+      "game": "collect-31659052-round2-0-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31659052-round2-0-teacher.inputs.jsonl.gz",
+          "sha256": "1087103df806b1c95da6d9106adfc9e1365a76077899c1a4c8c77fe859c92994",
+          "rows": 2227
+        },
+        "labels": {
+          "path": "data/train/collect-31659052-round2-0-teacher.labels.jsonl.gz",
+          "sha256": "493ae8b976dbc04fb24c9e1adda3e365c890aa1f2b92f4eb338fa66b98edca80",
+          "rows": 2227
+        },
+        "index": {
+          "path": "data/train/collect-31659052-round2-0-teacher.index.jsonl.gz",
+          "sha256": "6003c9800ff9c4b157dc5210d32998860b30623a7b1c0ba270f535ed7eb7855d",
+          "rows": 2227
+        }
+      }
+    },
+    {
+      "game": "collect-31659052-round2-1-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31659052-round2-1-teacher.inputs.jsonl.gz",
+          "sha256": "391d53fe502d10100074132aa8be5f303feace7c26b56f24465199aae4a65dab",
+          "rows": 2227
+        },
+        "labels": {
+          "path": "data/train/collect-31659052-round2-1-teacher.labels.jsonl.gz",
+          "sha256": "493ae8b976dbc04fb24c9e1adda3e365c890aa1f2b92f4eb338fa66b98edca80",
+          "rows": 2227
+        },
+        "index": {
+          "path": "data/train/collect-31659052-round2-1-teacher.index.jsonl.gz",
+          "sha256": "438293c8c8b065883257b51640ef8ca0ccbdc0896182ff21adb9c24ba1708cdb",
+          "rows": 2227
+        }
+      }
+    },
+    {
+      "game": "collect-31659052-v1-0-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31659052-v1-0-teacher.inputs.jsonl.gz",
+          "sha256": "1b41435e223b6ac2841be638342e4acfe32bc3348295c6a012bce0e316a55a5c",
+          "rows": 2227
+        },
+        "labels": {
+          "path": "data/train/collect-31659052-v1-0-teacher.labels.jsonl.gz",
+          "sha256": "493ae8b976dbc04fb24c9e1adda3e365c890aa1f2b92f4eb338fa66b98edca80",
+          "rows": 2227
+        },
+        "index": {
+          "path": "data/train/collect-31659052-v1-0-teacher.index.jsonl.gz",
+          "sha256": "b21b055c21c993456aae1ff337a0fe1f1fd363ae540a6b10fd57968376aaadf3",
+          "rows": 2227
+        }
+      }
+    },
+    {
+      "game": "collect-31659052-v1-1-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31659052-v1-1-teacher.inputs.jsonl.gz",
+          "sha256": "0f5b56601a264628ee8061600fa2fa290644a12911c8df18d56029afb1b23715",
+          "rows": 2227
+        },
+        "labels": {
+          "path": "data/train/collect-31659052-v1-1-teacher.labels.jsonl.gz",
+          "sha256": "493ae8b976dbc04fb24c9e1adda3e365c890aa1f2b92f4eb338fa66b98edca80",
+          "rows": 2227
+        },
+        "index": {
+          "path": "data/train/collect-31659052-v1-1-teacher.index.jsonl.gz",
+          "sha256": "410251e4dae61d8cd56ae49fb565bb6ff8af17e780acf7f4a06388638e2cc7c0",
+          "rows": 2227
+        }
+      }
+    },
+    {
+      "game": "collect-31834104-market-0-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31834104-market-0-teacher.inputs.jsonl.gz",
+          "sha256": "81a4b5e29fe0a111c47a542d7e48aa097e1ef41a15dc5a7329d2d1d44edf2127",
+          "rows": 2313
+        },
+        "labels": {
+          "path": "data/train/collect-31834104-market-0-teacher.labels.jsonl.gz",
+          "sha256": "8f7222313663ac3426f774d5bf0205a391214b7b240e5194a9eb7112b6716325",
+          "rows": 2313
+        },
+        "index": {
+          "path": "data/train/collect-31834104-market-0-teacher.index.jsonl.gz",
+          "sha256": "358f1f29924c9bb7650714c2c516f455556befa2e5de57536b76e50522ab2874",
+          "rows": 2313
+        }
+      }
+    },
+    {
+      "game": "collect-31834104-market-1-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31834104-market-1-teacher.inputs.jsonl.gz",
+          "sha256": "96a18a6d2b0b275fd7de4ab1baf2b66e98b43dd1d7524972adc8392bdd464032",
+          "rows": 2313
+        },
+        "labels": {
+          "path": "data/train/collect-31834104-market-1-teacher.labels.jsonl.gz",
+          "sha256": "8f7222313663ac3426f774d5bf0205a391214b7b240e5194a9eb7112b6716325",
+          "rows": 2313
+        },
+        "index": {
+          "path": "data/train/collect-31834104-market-1-teacher.index.jsonl.gz",
+          "sha256": "1d444847d2c93f41c94520702faa5312a10855b5b73c667b132599b05eb0f127",
+          "rows": 2313
+        }
+      }
+    },
+    {
+      "game": "collect-31834104-round2-0-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31834104-round2-0-teacher.inputs.jsonl.gz",
+          "sha256": "a834c5bab2d204a6b1ea7d34655b5607cf853587129f6e7a489053aa0498023c",
+          "rows": 2309
+        },
+        "labels": {
+          "path": "data/train/collect-31834104-round2-0-teacher.labels.jsonl.gz",
+          "sha256": "bb5577db7def0cf4e2418a41493ee0b7a8d37e5de3d1bb89e4be1eb1fe557587",
+          "rows": 2309
+        },
+        "index": {
+          "path": "data/train/collect-31834104-round2-0-teacher.index.jsonl.gz",
+          "sha256": "7e204c26015ae466bb588c909dca0b0c3bbe360fcf87bee534691eca18f7529c",
+          "rows": 2309
+        }
+      }
+    },
+    {
+      "game": "collect-31834104-round2-1-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31834104-round2-1-teacher.inputs.jsonl.gz",
+          "sha256": "78c806fa269f1037b1a68c14be95ce4c9da021a8c6a7abfe0567187a42e82e95",
+          "rows": 2309
+        },
+        "labels": {
+          "path": "data/train/collect-31834104-round2-1-teacher.labels.jsonl.gz",
+          "sha256": "bb5577db7def0cf4e2418a41493ee0b7a8d37e5de3d1bb89e4be1eb1fe557587",
+          "rows": 2309
+        },
+        "index": {
+          "path": "data/train/collect-31834104-round2-1-teacher.index.jsonl.gz",
+          "sha256": "80ab42df0c439244258b1186c6a11f37f00b9eed63ef0099cee8f0877afe231c",
+          "rows": 2309
+        }
+      }
+    },
+    {
+      "game": "collect-31834104-v1-0-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31834104-v1-0-teacher.inputs.jsonl.gz",
+          "sha256": "20df897033318b429b0aafa58ecbb26b3b2eb3ce3b324b5cb3a59879d1d88a74",
+          "rows": 2354
+        },
+        "labels": {
+          "path": "data/train/collect-31834104-v1-0-teacher.labels.jsonl.gz",
+          "sha256": "6f794fd8f29a223aa542d648ef62a523c28aa09c37a42c4830735822f60f9ff3",
+          "rows": 2354
+        },
+        "index": {
+          "path": "data/train/collect-31834104-v1-0-teacher.index.jsonl.gz",
+          "sha256": "86f8226af838cdb22c53b10486efd455d8ebbc324c381b16a13aaf0d334d12f1",
+          "rows": 2354
+        }
+      }
+    },
+    {
+      "game": "collect-31834104-v1-1-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31834104-v1-1-teacher.inputs.jsonl.gz",
+          "sha256": "8e9eee70d5914bef217a4e7c08411d7c6e57c03022e16887f293458d75304893",
+          "rows": 2354
+        },
+        "labels": {
+          "path": "data/train/collect-31834104-v1-1-teacher.labels.jsonl.gz",
+          "sha256": "6f794fd8f29a223aa542d648ef62a523c28aa09c37a42c4830735822f60f9ff3",
+          "rows": 2354
+        },
+        "index": {
+          "path": "data/train/collect-31834104-v1-1-teacher.index.jsonl.gz",
+          "sha256": "64b2c13f257124803af54e1950612348acf9a4f6d569b2edcaccdf6a82e4d20f",
+          "rows": 2354
+        }
+      }
+    },
+    {
+      "game": "collect-31921285-market-0-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31921285-market-0-teacher.inputs.jsonl.gz",
+          "sha256": "80efabfe069cb7d011df9e71a48a3d91fecbb8b8b58a5fd91863c2cfe8786fa3",
+          "rows": 2260
+        },
+        "labels": {
+          "path": "data/train/collect-31921285-market-0-teacher.labels.jsonl.gz",
+          "sha256": "df5e751b5e0cb5a0b5b3a14e979d8dc3ed2bb3fe438ca8e1fc2f58e9004062b6",
+          "rows": 2260
+        },
+        "index": {
+          "path": "data/train/collect-31921285-market-0-teacher.index.jsonl.gz",
+          "sha256": "76047f78571b95a196bac1d5856c53ece6e40f55731745aae478665e31fe61ca",
+          "rows": 2260
+        }
+      }
+    },
+    {
+      "game": "collect-31921285-market-1-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31921285-market-1-teacher.inputs.jsonl.gz",
+          "sha256": "9894ec315c0551ce6dec9e2f3a761f7bc8e72e6722f6ab2583c286c9842f713d",
+          "rows": 2260
+        },
+        "labels": {
+          "path": "data/train/collect-31921285-market-1-teacher.labels.jsonl.gz",
+          "sha256": "df5e751b5e0cb5a0b5b3a14e979d8dc3ed2bb3fe438ca8e1fc2f58e9004062b6",
+          "rows": 2260
+        },
+        "index": {
+          "path": "data/train/collect-31921285-market-1-teacher.index.jsonl.gz",
+          "sha256": "d694c18a0ce335789f648f852ea4ca4bebebec8de8fba34bdc940395ffc22aa0",
+          "rows": 2260
+        }
+      }
+    },
+    {
+      "game": "collect-31921285-round2-0-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31921285-round2-0-teacher.inputs.jsonl.gz",
+          "sha256": "c9556e3daf13eec41fb42067540971f4f54e4aa87b08a485039e3efcaad854f5",
+          "rows": 2260
+        },
+        "labels": {
+          "path": "data/train/collect-31921285-round2-0-teacher.labels.jsonl.gz",
+          "sha256": "df5e751b5e0cb5a0b5b3a14e979d8dc3ed2bb3fe438ca8e1fc2f58e9004062b6",
+          "rows": 2260
+        },
+        "index": {
+          "path": "data/train/collect-31921285-round2-0-teacher.index.jsonl.gz",
+          "sha256": "3d12e1f7725c1d0e86dac7d13336f4088bc0ab993f4f3b5507efedd14d260b1b",
+          "rows": 2260
+        }
+      }
+    },
+    {
+      "game": "collect-31921285-round2-1-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31921285-round2-1-teacher.inputs.jsonl.gz",
+          "sha256": "c0820ea73b68af0b1245150613ebcca4477b4df970d18b4a6ea431057e3b7a55",
+          "rows": 2260
+        },
+        "labels": {
+          "path": "data/train/collect-31921285-round2-1-teacher.labels.jsonl.gz",
+          "sha256": "df5e751b5e0cb5a0b5b3a14e979d8dc3ed2bb3fe438ca8e1fc2f58e9004062b6",
+          "rows": 2260
+        },
+        "index": {
+          "path": "data/train/collect-31921285-round2-1-teacher.index.jsonl.gz",
+          "sha256": "bebacd86df2fb9372cf7be6a854667675f786e1d66245bf0aafc3270601838d8",
+          "rows": 2260
+        }
+      }
+    },
+    {
+      "game": "collect-31921285-v1-0-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31921285-v1-0-teacher.inputs.jsonl.gz",
+          "sha256": "6fcbddf764745404ae7bbca2f1b153850a443cdecb49a3c759a54f9dde7c3e2c",
+          "rows": 2260
+        },
+        "labels": {
+          "path": "data/train/collect-31921285-v1-0-teacher.labels.jsonl.gz",
+          "sha256": "df5e751b5e0cb5a0b5b3a14e979d8dc3ed2bb3fe438ca8e1fc2f58e9004062b6",
+          "rows": 2260
+        },
+        "index": {
+          "path": "data/train/collect-31921285-v1-0-teacher.index.jsonl.gz",
+          "sha256": "775198cfbd2f58bd094badecfcdf1ba1c02e64cf1b7cc78f45cabe2881c8dfe2",
+          "rows": 2260
+        }
+      }
+    },
+    {
+      "game": "collect-31921285-v1-1-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31921285-v1-1-teacher.inputs.jsonl.gz",
+          "sha256": "283c2cf35247b38174f8927fe84200cf3d215de5634e6d79ffd8141600926b27",
+          "rows": 2260
+        },
+        "labels": {
+          "path": "data/train/collect-31921285-v1-1-teacher.labels.jsonl.gz",
+          "sha256": "df5e751b5e0cb5a0b5b3a14e979d8dc3ed2bb3fe438ca8e1fc2f58e9004062b6",
+          "rows": 2260
+        },
+        "index": {
+          "path": "data/train/collect-31921285-v1-1-teacher.index.jsonl.gz",
+          "sha256": "e77d6075cc1e5f4e4c4dbb8b4860b1ce5e57183df40d096aa872ae35707526ef",
+          "rows": 2260
+        }
+      }
+    },
+    {
+      "game": "collect-31932889-market-0-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31932889-market-0-teacher.inputs.jsonl.gz",
+          "sha256": "fe5585110af3b8259793c5d5028dd3d48de2d64ba23d32d28068ef789cfd72b3",
+          "rows": 2155
+        },
+        "labels": {
+          "path": "data/train/collect-31932889-market-0-teacher.labels.jsonl.gz",
+          "sha256": "5aa70600e2ae1dafb4c5df9f45d0bdf3cd58cde9e2a335cd784e733520afa601",
+          "rows": 2155
+        },
+        "index": {
+          "path": "data/train/collect-31932889-market-0-teacher.index.jsonl.gz",
+          "sha256": "345a41e80c88c3ccd1a49dbc896452548a3a9ff5f651811b3d3e5a37de3159a9",
+          "rows": 2155
+        }
+      }
+    },
+    {
+      "game": "collect-31932889-market-1-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31932889-market-1-teacher.inputs.jsonl.gz",
+          "sha256": "56bad57139b586da6cc94ccfadb1a20e8c0c0a57c6f257f346e8f2329bd08f7b",
+          "rows": 2155
+        },
+        "labels": {
+          "path": "data/train/collect-31932889-market-1-teacher.labels.jsonl.gz",
+          "sha256": "5aa70600e2ae1dafb4c5df9f45d0bdf3cd58cde9e2a335cd784e733520afa601",
+          "rows": 2155
+        },
+        "index": {
+          "path": "data/train/collect-31932889-market-1-teacher.index.jsonl.gz",
+          "sha256": "dd3a83cf9fdb02651fb9226c6946f76eb7baca6a39dd6f1c073eeb9d3fd88c72",
+          "rows": 2155
+        }
+      }
+    },
+    {
+      "game": "collect-31932889-round2-0-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31932889-round2-0-teacher.inputs.jsonl.gz",
+          "sha256": "6e5aeda6ab54e7337f76d0283725cedb7e96c726ab1798b6b4ef0ddb7bebca92",
+          "rows": 2172
+        },
+        "labels": {
+          "path": "data/train/collect-31932889-round2-0-teacher.labels.jsonl.gz",
+          "sha256": "8d8f76bb9432c9027d3ed720353bafe96d12cbeee1f8823f21fbbb6bd19dc057",
+          "rows": 2172
+        },
+        "index": {
+          "path": "data/train/collect-31932889-round2-0-teacher.index.jsonl.gz",
+          "sha256": "b442510098a636247117c30303d180682ba0f57d358ff48efb7f7cca38b6b6d2",
+          "rows": 2172
+        }
+      }
+    },
+    {
+      "game": "collect-31932889-round2-1-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31932889-round2-1-teacher.inputs.jsonl.gz",
+          "sha256": "93186905b8a496b75e0249c943ddd24db6acc7dbf21687fe78ca084fcc81426c",
+          "rows": 2172
+        },
+        "labels": {
+          "path": "data/train/collect-31932889-round2-1-teacher.labels.jsonl.gz",
+          "sha256": "8d8f76bb9432c9027d3ed720353bafe96d12cbeee1f8823f21fbbb6bd19dc057",
+          "rows": 2172
+        },
+        "index": {
+          "path": "data/train/collect-31932889-round2-1-teacher.index.jsonl.gz",
+          "sha256": "34917e05fbee4c53415d288e6b77eaa0d7b6434756feacc5e53601990dfa7a0b",
+          "rows": 2172
+        }
+      }
+    },
+    {
+      "game": "collect-31932889-v1-0-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31932889-v1-0-teacher.inputs.jsonl.gz",
+          "sha256": "4a6c7baf9d4553aa431c9fa9e77486dd9023b983e04ea0bd0170598d521a0033",
+          "rows": 2179
+        },
+        "labels": {
+          "path": "data/train/collect-31932889-v1-0-teacher.labels.jsonl.gz",
+          "sha256": "5b871c64716ee9bfb3cedf7fa6c4c61c4ee327c830a978c2b6d414e0ba326886",
+          "rows": 2179
+        },
+        "index": {
+          "path": "data/train/collect-31932889-v1-0-teacher.index.jsonl.gz",
+          "sha256": "2f6a636fee2aa2dd54ad8e76b461525a123936286fd038169d8260897dc46f69",
+          "rows": 2179
+        }
+      }
+    },
+    {
+      "game": "collect-31932889-v1-1-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-31932889-v1-1-teacher.inputs.jsonl.gz",
+          "sha256": "ad0af197134eed5b2f8d95070489a3440575d9842f21eb78114aa7822c4b25dd",
+          "rows": 2179
+        },
+        "labels": {
+          "path": "data/train/collect-31932889-v1-1-teacher.labels.jsonl.gz",
+          "sha256": "5b871c64716ee9bfb3cedf7fa6c4c61c4ee327c830a978c2b6d414e0ba326886",
+          "rows": 2179
+        },
+        "index": {
+          "path": "data/train/collect-31932889-v1-1-teacher.index.jsonl.gz",
+          "sha256": "b30a4006f7f24514c509011735871f2a169f76a81c82fb858577cc53cc9c1fe0",
+          "rows": 2179
+        }
+      }
+    },
+    {
+      "game": "collect-smoke-31205138-market-0-teacher",
+      "split": "validation",
+      "files": {
+        "inputs": {
+          "path": "data/validation/collect-smoke-31205138-market-0-teacher.inputs.jsonl.gz",
+          "sha256": "db6dd24cb03cd8910328a1653990b736eb589d6b835edf660eb3e8d2819d9946",
+          "rows": 2179
+        },
+        "labels": {
+          "path": "data/validation/collect-smoke-31205138-market-0-teacher.labels.jsonl.gz",
+          "sha256": "5b871c64716ee9bfb3cedf7fa6c4c61c4ee327c830a978c2b6d414e0ba326886",
+          "rows": 2179
+        },
+        "index": {
+          "path": "data/validation/collect-smoke-31205138-market-0-teacher.index.jsonl.gz",
+          "sha256": "ff226f2e3a1c9cc020958054c8ad8cc5e5882caebfbc70d940ceab0927a98ccd",
+          "rows": 2179
+        }
+      }
+    },
+    {
+      "game": "collect-smoke-31205138-market-1-teacher",
+      "split": "validation",
+      "files": {
+        "inputs": {
+          "path": "data/validation/collect-smoke-31205138-market-1-teacher.inputs.jsonl.gz",
+          "sha256": "dda5bbb28c2b61078325e29e1ac20fd593327b8307ba13b25a082562f9ca121f",
+          "rows": 2179
+        },
+        "labels": {
+          "path": "data/validation/collect-smoke-31205138-market-1-teacher.labels.jsonl.gz",
+          "sha256": "5b871c64716ee9bfb3cedf7fa6c4c61c4ee327c830a978c2b6d414e0ba326886",
+          "rows": 2179
+        },
+        "index": {
+          "path": "data/validation/collect-smoke-31205138-market-1-teacher.index.jsonl.gz",
+          "sha256": "2f9c3d462e6702888d49a8a2ab46d6bc065393d79d860fff7a87e00f84f55831",
+          "rows": 2179
+        }
+      }
+    },
+    {
+      "game": "collect-smoke-31317742-market-0-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-smoke-31317742-market-0-teacher.inputs.jsonl.gz",
+          "sha256": "4bd1b2d31d93e4821e4eaa806e470d789b57aa0e6eb74e8ccd4bc12f8da84503",
+          "rows": 2261
+        },
+        "labels": {
+          "path": "data/train/collect-smoke-31317742-market-0-teacher.labels.jsonl.gz",
+          "sha256": "c2db56ec26f77cdd84b5e4151ba662254dd294de2eba4b673572f49a427924c2",
+          "rows": 2261
+        },
+        "index": {
+          "path": "data/train/collect-smoke-31317742-market-0-teacher.index.jsonl.gz",
+          "sha256": "1edc1b49fc2a1b58c29f92672379cae33c6b1cd34243057c7cf3859348bb028d",
+          "rows": 2261
+        }
+      }
+    },
+    {
+      "game": "collect-smoke-31317742-market-1-teacher",
+      "split": "train",
+      "files": {
+        "inputs": {
+          "path": "data/train/collect-smoke-31317742-market-1-teacher.inputs.jsonl.gz",
+          "sha256": "e25949df9e3bd6ad8d6410ae9cb7d84593e1f505525a99ca97a352026586ffbb",
+          "rows": 2261
+        },
+        "labels": {
+          "path": "data/train/collect-smoke-31317742-market-1-teacher.labels.jsonl.gz",
+          "sha256": "c2db56ec26f77cdd84b5e4151ba662254dd294de2eba4b673572f49a427924c2",
+          "rows": 2261
+        },
+        "index": {
+          "path": "data/train/collect-smoke-31317742-market-1-teacher.index.jsonl.gz",
+          "sha256": "215a661b610e44542006778fd4d1fa22db6f6a08fab067b47ea25b9c178977cd",
+          "rows": 2261
+        }
+      }
+    }
+  ]
+}

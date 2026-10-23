@@ -1,0 +1,499 @@
+{
+  "passed": true,
+  "pairs": 6,
+  "new_official_transitions": 12,
+  "new_complete_games": 0,
+  "rows": [
+    {
+      "case": "PLANT",
+      "synthetic_not_natural_trajectory": true,
+      "input_state_sha256": "9fb7f7634b03d0fafb51ad5136c6e4899f1e7680d7311c7f3c3eb444b0481cfe",
+      "branches": [
+        {
+          "branch": "baseline",
+          "action": {
+            "farmer": [
+              "EAST"
+            ],
+            "hands": [],
+            "market": [
+              [
+                "HIRE"
+              ]
+            ]
+          },
+          "local_raw_sha256": "e02e832a80eaf202915822deeb03fc65cad414b3566f7279601f608ad4ff6193",
+          "state_sha256": "38d7fc4d388f8d3d16ab9719fa227b7e425f37049bad1ab0871e5782e8961ca3",
+          "effect_sha256": "f3a719e68ba6130601df7fe5af6e33d5cd09571a8be6b94bc223528e043df4cd",
+          "units": [
+            {
+              "unit": 0,
+              "requested": [
+                "EAST"
+              ],
+              "effective": [
+                "EAST"
+              ],
+              "status": "executed",
+              "successful_plant": false
+            }
+          ]
+        },
+        {
+          "branch": "alternative",
+          "action": {
+            "farmer": [
+              "PLANT",
+              "MELON"
+            ],
+            "hands": [],
+            "market": [
+              [
+                "HIRE"
+              ]
+            ]
+          },
+          "local_raw_sha256": "1c11ea25758478944f897159dd67dfe9d95c39eed6aea1f28536b223db617005",
+          "state_sha256": "4ce97b27ac7b9de51d07015aa54a0f542e9c985960889fa817b90e8488983d1e",
+          "effect_sha256": "c68cd60a3fb5e20b62ee8c6eef4655b889d1e9f792a8f394f7fbc304e5fb1604",
+          "units": [
+            {
+              "unit": 0,
+              "requested": [
+                "PLANT",
+                "MELON"
+              ],
+              "effective": [
+                "PLANT",
+                "MELON"
+              ],
+              "status": "executed",
+              "successful_plant": true
+            }
+          ],
+          "target_direct_official_effect_verified": true
+        }
+      ],
+      "first_teacher_label": "u0:x2:y1:HARVEST",
+      "alternative_first_choice": "u0:x1:y1:PLANT",
+      "planned_second_unit_verified": false
+    },
+    {
+      "case": "DIG",
+      "synthetic_not_natural_trajectory": true,
+      "input_state_sha256": "8721549c21343d7a57b44dc678515da26a62ba757f2637ffa85ed843e84ef5af",
+      "branches": [
+        {
+          "branch": "baseline",
+          "action": {
+            "farmer": [
+              "EAST"
+            ],
+            "hands": [],
+            "market": [
+              [
+                "HIRE"
+              ]
+            ]
+          },
+          "local_raw_sha256": "55c75d75297cdbc19f432eb114fff370f787fc893b80bbb4a0536c338a2a2c14",
+          "state_sha256": "16834b9d1fa80ad515db314071b7e6bdef4ed3cc1ea1fb6bb471792cf631477a",
+          "effect_sha256": "f3a719e68ba6130601df7fe5af6e33d5cd09571a8be6b94bc223528e043df4cd",
+          "units": [
+            {
+              "unit": 0,
+              "requested": [
+                "EAST"
+              ],
+              "effective": [
+                "EAST"
+              ],
+              "status": "executed",
+              "successful_plant": false
+            }
+          ]
+        },
+        {
+          "branch": "alternative",
+          "action": {
+            "farmer": [
+              "DIG"
+            ],
+            "hands": [],
+            "market": [
+              [
+                "HIRE"
+              ]
+            ]
+          },
+          "local_raw_sha256": "920a5894c7d1969293c8c71f00c39894d8a085cef24e4a418a257337133eb3c9",
+          "state_sha256": "2232925ec40a946f8eba697d2278b483a5a344df97774999a9367ba16d0db45a",
+          "effect_sha256": "77d850660b2fdff6ec245b4294b755c34037d26d3068ae379fd34eb53923c685",
+          "units": [
+            {
+              "unit": 0,
+              "requested": [
+                "DIG"
+              ],
+              "effective": [
+                "DIG"
+              ],
+              "status": "executed",
+              "successful_plant": false
+            }
+          ],
+          "target_direct_official_effect_verified": true
+        }
+      ],
+      "first_teacher_label": "u0:x2:y1:HARVEST",
+      "alternative_first_choice": "u0:x1:y1:DIG",
+      "planned_second_unit_verified": false
+    },
+    {
+      "case": "WATER",
+      "synthetic_not_natural_trajectory": true,
+      "input_state_sha256": "e51c4bf3a7d9380fc7887c8f73fc2fe081e1dd4a20b3cfc9396451351d620aa3",
+      "branches": [
+        {
+          "branch": "baseline",
+          "action": {
+            "farmer": [
+              "FERTILIZE"
+            ],
+            "hands": [],
+            "market": [
+              [
+                "HIRE"
+              ]
+            ]
+          },
+          "local_raw_sha256": "df31ea0520840c624227d3cb71197220e775dd39a21e68bd23a2433adc540e2b",
+          "state_sha256": "d683eecdc553401b69be0b8197068a1ebe0fb4fc59910fc52ee34dce3285ed2c",
+          "effect_sha256": "129e3336e61469a5f86dc6212218f034762631234a4ccc9a51d41ea10880dbb4",
+          "units": [
+            {
+              "unit": 0,
+              "requested": [
+                "FERTILIZE"
+              ],
+              "effective": [
+                "FERTILIZE"
+              ],
+              "status": "executed",
+              "successful_plant": false
+            }
+          ]
+        },
+        {
+          "branch": "alternative",
+          "action": {
+            "farmer": [
+              "WATER"
+            ],
+            "hands": [],
+            "market": [
+              [
+                "HIRE"
+              ]
+            ]
+          },
+          "local_raw_sha256": "3f0226938ec443336ca62e5f4022fb9d0b222358ae10d68aabacc68ac57acffb",
+          "state_sha256": "bc9dd2fe20bef688235dccb557be73daf90aad65d29021e9b6d1ac1bee5a9f97",
+          "effect_sha256": "0bca51afcdc42f72d3640cfb219ceccca930c95214049125f2d7b224b0b1a7d4",
+          "units": [
+            {
+              "unit": 0,
+              "requested": [
+                "WATER"
+              ],
+              "effective": [
+                "WATER"
+              ],
+              "status": "executed",
+              "successful_plant": false
+            }
+          ],
+          "target_direct_official_effect_verified": true
+        }
+      ],
+      "first_teacher_label": "u0:x1:y1:FERTILIZE",
+      "alternative_first_choice": "u0:x1:y1:WATER",
+      "planned_second_unit_verified": false
+    },
+    {
+      "case": "HARVEST",
+      "synthetic_not_natural_trajectory": true,
+      "input_state_sha256": "e4702f21ec5cfd49c085f50fd063337abb2eb4f4d03f5bdd5c816ecf5142decf",
+      "branches": [
+        {
+          "branch": "baseline",
+          "action": {
+            "farmer": [
+              "FERTILIZE"
+            ],
+            "hands": [],
+            "market": [
+              [
+                "HIRE"
+              ]
+            ]
+          },
+          "local_raw_sha256": "063786a0a2270c20f336a55e6ff5994cabf56730d5522aae6cecfc8d947133ee",
+          "state_sha256": "695e7a21c396e4662ea83028574e3d578c0b283a0c46330dcf97afe4f5b1cbce",
+          "effect_sha256": "129e3336e61469a5f86dc6212218f034762631234a4ccc9a51d41ea10880dbb4",
+          "units": [
+            {
+              "unit": 0,
+              "requested": [
+                "FERTILIZE"
+              ],
+              "effective": [
+                "FERTILIZE"
+              ],
+              "status": "executed",
+              "successful_plant": false
+            }
+          ]
+        },
+        {
+          "branch": "alternative",
+          "action": {
+            "farmer": [
+              "HARVEST"
+            ],
+            "hands": [],
+            "market": [
+              [
+                "HIRE"
+              ]
+            ]
+          },
+          "local_raw_sha256": "7edb608acad532be0e3b9617898f09079301e35600bca275a737ae0a050690f6",
+          "state_sha256": "6450b5ccfcbe51c3f836703100a63881c5dcbf42012397496cce53c784770862",
+          "effect_sha256": "eaa2ccac5ba9694c6e697aca935988a778ca159b9c43b2324d32bae9dd7f382e",
+          "units": [
+            {
+              "unit": 0,
+              "requested": [
+                "HARVEST"
+              ],
+              "effective": [
+                "HARVEST"
+              ],
+              "status": "executed",
+              "successful_plant": false
+            }
+          ],
+          "target_direct_official_effect_verified": true
+        }
+      ],
+      "first_teacher_label": "u0:x1:y1:FERTILIZE",
+      "alternative_first_choice": "u0:x1:y1:HARVEST",
+      "planned_second_unit_verified": false
+    },
+    {
+      "case": "FERTILIZE",
+      "synthetic_not_natural_trajectory": true,
+      "input_state_sha256": "0641e750fa24e2556c10ce84438efed05c02d14c906d8fdfcd22e65406cb8b5b",
+      "branches": [
+        {
+          "branch": "baseline",
+          "action": {
+            "farmer": [
+              "FERTILIZE"
+            ],
+            "hands": [
+              [
+                "PASS"
+              ]
+            ],
+            "market": []
+          },
+          "local_raw_sha256": "891c1cc650c8922774d5a2b800f5c192221449d5dc3de2119619ed8cf7e538ca",
+          "state_sha256": "099eb2f044bd8c71ba29e78a51215a9fc9bac35df78b0d7d8e246697e4bb27f0",
+          "effect_sha256": "626d121455028dfc83bec5672a168879cbef4a3b90f293eb36f181495e379115",
+          "units": [
+            {
+              "unit": 0,
+              "requested": [
+                "FERTILIZE"
+              ],
+              "effective": [
+                "FERTILIZE"
+              ],
+              "status": "executed",
+              "successful_plant": false
+            },
+            {
+              "unit": 1,
+              "requested": [
+                "PASS"
+              ],
+              "effective": [
+                "PASS"
+              ],
+              "status": "pass",
+              "successful_plant": false
+            }
+          ]
+        },
+        {
+          "branch": "alternative",
+          "action": {
+            "farmer": [
+              "PASS"
+            ],
+            "hands": [
+              [
+                "FERTILIZE"
+              ]
+            ],
+            "market": []
+          },
+          "local_raw_sha256": "712fd8181534ab3c94e66520038e95c94f541a2489d4b72c5bf62c43b1250ac9",
+          "state_sha256": "f8de6d500c115436231b9e853cbb9443552bfbfb1de73e3c595fea7984630426",
+          "effect_sha256": "37a343d3d7e99bc1c98b59a6a9d0c11151ff77ee585ae4f4667219633ded5198",
+          "units": [
+            {
+              "unit": 0,
+              "requested": [
+                "PASS"
+              ],
+              "effective": [
+                "PASS"
+              ],
+              "status": "pass",
+              "successful_plant": false
+            },
+            {
+              "unit": 1,
+              "requested": [
+                "FERTILIZE"
+              ],
+              "effective": [
+                "FERTILIZE"
+              ],
+              "status": "executed",
+              "successful_plant": false
+            }
+          ],
+          "target_direct_official_effect_verified": true
+        }
+      ],
+      "first_teacher_label": "u0:x1:y1:FERTILIZE",
+      "alternative_first_choice": "u1:x1:y1:FERTILIZE",
+      "planned_second_unit_verified": false
+    },
+    {
+      "case": "joint_PLANT",
+      "synthetic_not_natural_trajectory": true,
+      "input_state_sha256": "ad709880b844123bc3a35da05e114b77c4a4657d7b2b4555e304bee8b74b81bb",
+      "branches": [
+        {
+          "branch": "baseline",
+          "action": {
+            "farmer": [
+              "PLANT",
+              "MELON"
+            ],
+            "hands": [
+              [
+                "EAST"
+              ]
+            ],
+            "market": [
+              [
+                "BUY_SEED",
+                "MELON",
+                1
+              ]
+            ]
+          },
+          "local_raw_sha256": "b285ffc3ce7456b41425fb9151ec183631716e5a5fc2119a7349347e66b158d5",
+          "state_sha256": "2782ad811862cedfd10c87b1c067c7fa1de7d993f313215e96d1ec0e7c4eb2e4",
+          "effect_sha256": "92efc46199bf1396336b972e39407cac95d0c8d6ec0a6dfc2f544249611fc26b",
+          "units": [
+            {
+              "unit": 0,
+              "requested": [
+                "PLANT",
+                "MELON"
+              ],
+              "effective": [
+                "PLANT",
+                "MELON"
+              ],
+              "status": "executed",
+              "successful_plant": true
+            },
+            {
+              "unit": 1,
+              "requested": [
+                "EAST"
+              ],
+              "effective": [
+                "EAST"
+              ],
+              "status": "executed",
+              "successful_plant": false
+            }
+          ]
+        },
+        {
+          "branch": "alternative",
+          "action": {
+            "farmer": [
+              "EAST"
+            ],
+            "hands": [
+              [
+                "PLANT",
+                "MELON"
+              ]
+            ],
+            "market": [
+              [
+                "BUY_SEED",
+                "MELON",
+                1
+              ]
+            ]
+          },
+          "local_raw_sha256": "27518da0ad7e135943ee0b97c9ebef497efd0426f54e7df24c60391fa7bdf7f6",
+          "state_sha256": "5f09c185633176ddf356e9965dd16ac070d0cd7e15535d1c574754ff794da130",
+          "effect_sha256": "a9cf7ac37d183abefc59578af28789ea0aaef6f6d3200def259f7d946922df9f",
+          "units": [
+            {
+              "unit": 0,
+              "requested": [
+                "EAST"
+              ],
+              "effective": [
+                "EAST"
+              ],
+              "status": "executed",
+              "successful_plant": false
+            },
+            {
+              "unit": 1,
+              "requested": [
+                "PLANT",
+                "MELON"
+              ],
+              "effective": [
+                "PLANT",
+                "MELON"
+              ],
+              "status": "executed",
+              "successful_plant": true
+            }
+          ],
+          "target_direct_official_effect_verified": true
+        }
+      ],
+      "first_teacher_label": "u0:x1:y1:PLANT",
+      "alternative_first_choice": "u1:x1:y1:PLANT",
+      "planned_second_unit_verified": true
+    }
+  ]
+}

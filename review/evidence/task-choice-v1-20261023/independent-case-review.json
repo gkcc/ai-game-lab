@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "case_count": 6,
+  "saved_raw_states_checked": 12,
+  "new_official_transitions_executed_by_reviewer": 0,
+  "new_complete_games": 0,
+  "training_runs": 0,
+  "official_case_transitions_recorded_by_root": 12,
+  "preexecution_commit": "1d43efcfaf1b9c96e6f3c107ecb9b11a12bdca4c",
+  "freeze_sha256": "ae91d4ad36e7aee5eaebbdd7c9a28b96757df6283d68565e5e5c5623704faa22",
+  "official_cases_sha256": "6b58a3cbc7f0fc2f9bfcf83f59e80b959ec2be57bc0b48a96eedfdeeff7f0440",
+  "script_sha256": "b3562990b9fd789bf65731479409ada22ce5dce81cc9fdbb1f22fdd1b91463e4",
+  "checked_cases": [
+    "PLANT",
+    "DIG",
+    "WATER",
+    "HARVEST",
+    "FERTILIZE",
+    "joint_PLANT"
+  ],
+  "limitations": [
+    "Reads original official execution evidence and reconstructs requests without executing transitions.",
+    "Synthetic fixtures are not natural trajectories or economic evidence.",
+    "Full60 dataset reconstruction and planned two old replay checks remain separate."
+  ]
+}

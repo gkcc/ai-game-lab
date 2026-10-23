@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "script_sha256": "f44698c019969dc4c09845a5e61de25005e43aa2d2fca31b74a74604fbc51991",
+  "source_sample_plan_sha256": "919ae858158ca5917b0b8c26819e3b6f5e67f27c3b5099ee29e857747f899f11",
+  "saved_decisions_checked": 4440,
+  "candidates_checked": 8682,
+  "candidate_feature_values_checked": 850836,
+  "shared_fields_checked": [
+    "step",
+    "day",
+    "hour"
+  ],
+  "scope": "First canonical candidate and teacher-selected candidate in every row of two preselected historical games. Direct coordinate, carried inventory, operation, distance and target/unit tile derivation without importing production encoders.",
+  "official_transitions_executed": 0,
+  "training_runs": 0,
+  "new_games": 0
+}

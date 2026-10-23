@@ -1,0 +1,262 @@
+{
+  "passed": true,
+  "gates": {
+    "all_60_full_action_parities": true,
+    "each_task_selected_in_both_splits": true,
+    "each_task_selected_with_competing_type_in_both_splits": true,
+    "both_splits_have_cross_task_competition": true
+  },
+  "splits": {
+    "train": {
+      "games": 48,
+      "seeds": [
+        31317742,
+        31921285,
+        31834104,
+        31637216,
+        31360134,
+        31273729,
+        31659052,
+        31932889
+      ],
+      "decisions": 108310,
+      "cross_task_competition_decisions": 38108,
+      "tasks": {
+        "PLANT": {
+          "candidate_count": 782343,
+          "selected_count": 9127,
+          "candidate_competitive_count": 541433,
+          "selected_competitive_count": 1613,
+          "candidate_seeds": [
+            31273729,
+            31317742,
+            31360134,
+            31637216,
+            31659052,
+            31834104,
+            31921285,
+            31932889
+          ],
+          "selected_seeds": [
+            31273729,
+            31317742,
+            31360134,
+            31637216,
+            31659052,
+            31834104,
+            31921285,
+            31932889
+          ],
+          "unique_candidate_encodings": 511327,
+          "unique_selected_encodings": 5303
+        },
+        "DIG": {
+          "candidate_count": 8068,
+          "selected_count": 431,
+          "candidate_competitive_count": 7986,
+          "selected_competitive_count": 414,
+          "candidate_seeds": [
+            31273729,
+            31317742,
+            31360134,
+            31637216,
+            31659052,
+            31834104,
+            31921285,
+            31932889
+          ],
+          "selected_seeds": [
+            31273729,
+            31317742,
+            31360134,
+            31637216,
+            31659052,
+            31834104,
+            31921285,
+            31932889
+          ],
+          "unique_candidate_encodings": 8068,
+          "unique_selected_encodings": 431
+        },
+        "WATER": {
+          "candidate_count": 4413190,
+          "selected_count": 85463,
+          "candidate_competitive_count": 1895568,
+          "selected_competitive_count": 23153,
+          "candidate_seeds": [
+            31273729,
+            31317742,
+            31360134,
+            31637216,
+            31659052,
+            31834104,
+            31921285,
+            31932889
+          ],
+          "selected_seeds": [
+            31273729,
+            31317742,
+            31360134,
+            31637216,
+            31659052,
+            31834104,
+            31921285,
+            31932889
+          ],
+          "unique_candidate_encodings": 4000690,
+          "unique_selected_encodings": 74541
+        },
+        "HARVEST": {
+          "candidate_count": 231315,
+          "selected_count": 9312,
+          "candidate_competitive_count": 228650,
+          "selected_competitive_count": 8951,
+          "candidate_seeds": [
+            31273729,
+            31317742,
+            31360134,
+            31637216,
+            31659052,
+            31834104,
+            31921285,
+            31932889
+          ],
+          "selected_seeds": [
+            31273729,
+            31317742,
+            31360134,
+            31637216,
+            31659052,
+            31834104,
+            31921285,
+            31932889
+          ],
+          "unique_candidate_encodings": 231315,
+          "unique_selected_encodings": 9312
+        },
+        "FERTILIZE": {
+          "candidate_count": 111938,
+          "selected_count": 3977,
+          "candidate_competitive_count": 111938,
+          "selected_competitive_count": 3977,
+          "candidate_seeds": [
+            31273729,
+            31317742,
+            31360134,
+            31637216,
+            31659052,
+            31834104,
+            31921285,
+            31932889
+          ],
+          "selected_seeds": [
+            31273729,
+            31317742,
+            31360134,
+            31637216,
+            31659052,
+            31834104,
+            31921285,
+            31932889
+          ],
+          "unique_candidate_encodings": 111938,
+          "unique_selected_encodings": 3977
+        }
+      }
+    },
+    "validation": {
+      "games": 12,
+      "seeds": [
+        31205138,
+        31504409
+      ],
+      "decisions": 27096,
+      "cross_task_competition_decisions": 9228,
+      "tasks": {
+        "PLANT": {
+          "candidate_count": 189190,
+          "selected_count": 2356,
+          "candidate_competitive_count": 128378,
+          "selected_competitive_count": 312,
+          "candidate_seeds": [
+            31205138,
+            31504409
+          ],
+          "selected_seeds": [
+            31205138,
+            31504409
+          ],
+          "unique_candidate_encodings": 134786,
+          "unique_selected_encodings": 1628
+        },
+        "DIG": {
+          "candidate_count": 854,
+          "selected_count": 88,
+          "candidate_competitive_count": 854,
+          "selected_competitive_count": 88,
+          "candidate_seeds": [
+            31205138,
+            31504409
+          ],
+          "selected_seeds": [
+            31205138,
+            31504409
+          ],
+          "unique_candidate_encodings": 854,
+          "unique_selected_encodings": 88
+        },
+        "WATER": {
+          "candidate_count": 1080130,
+          "selected_count": 21340,
+          "candidate_competitive_count": 450466,
+          "selected_competitive_count": 5600,
+          "candidate_seeds": [
+            31205138,
+            31504409
+          ],
+          "selected_seeds": [
+            31205138,
+            31504409
+          ],
+          "unique_candidate_encodings": 1047394,
+          "unique_selected_encodings": 20390
+        },
+        "HARVEST": {
+          "candidate_count": 60072,
+          "selected_count": 2448,
+          "candidate_competitive_count": 59852,
+          "selected_competitive_count": 2364,
+          "candidate_seeds": [
+            31205138,
+            31504409
+          ],
+          "selected_seeds": [
+            31205138,
+            31504409
+          ],
+          "unique_candidate_encodings": 60072,
+          "unique_selected_encodings": 2448
+        },
+        "FERTILIZE": {
+          "candidate_count": 23016,
+          "selected_count": 864,
+          "candidate_competitive_count": 23016,
+          "selected_competitive_count": 864,
+          "candidate_seeds": [
+            31205138,
+            31504409
+          ],
+          "selected_seeds": [
+            31205138,
+            31504409
+          ],
+          "unique_candidate_encodings": 23016,
+          "unique_selected_encodings": 864
+        }
+      }
+    }
+  },
+  "unique_encoding_definition": "Canonical complete selector input plus candidate ID; includes legally visible clock and current reservations. Structural uniqueness is not statistical independence.",
+  "interpretation": "Minimum structural coverage only, not sufficient examples, quality, or learned strength. Teacher opportunity filters remain heuristic, not official legality masks.",
+  "stop": "If coverage fails, retain gaps; no automatic extra demonstrations, changed splits, relaxed gates, training or new games."
+}
