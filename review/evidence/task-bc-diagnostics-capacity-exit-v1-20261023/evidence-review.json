@@ -1,0 +1,120 @@
+{
+  "schema": "task-capacity-exit-independent-evidence-review-v1",
+  "passed": true,
+  "authorship": "independent subagent evidence review",
+  "reviewer": "audit_capacity_exit_v1",
+  "real_webchat": false,
+  "created_utc": "2026-10-23T12:47:58.814783+00:00",
+  "pre_execution_commit": "73e1eaa175ebf64c7b671242f0139b4889d75405",
+  "freeze_sha256": "b265fccc0f5300404e92ff17c11b7ed6e544e407da712c2059455362d01dadb8",
+  "registration_sha256": "9f4f0730448723c47a747f582d002222a8679d1af3fdd3d80c38137647cbd9a6",
+  "pre_review_sha256": "5bfcc0d540ce6a5c0ae05c72daf95abd9570316e81e36871e9f5e09bd4d84b5b",
+  "summary_sha256": "39e636b3be34e31202a156cac17d1d431fcf9b3e3224401bbf433325ecd0868f",
+  "reviewer_script_sha256": "208d97138cbc41d99458e68269223493658cacf6fb85a0ceb5a595ce1ad57aef",
+  "runtime_protection_files_checked": 5259,
+  "public_protection_files_checked": 811,
+  "frozen_sources_checked": 112,
+  "old_hash_mismatches": 0,
+  "actual_elapsed_seconds": 29.45299999997951,
+  "elapsed_limit_seconds": 900,
+  "matrix_elapsed_seconds": 11.625,
+  "registered_cases_passed": 7,
+  "parent_accepted_jobs": 14,
+  "public_and_private_outer_lifecycles_matched": 14,
+  "outer_workers_with_forced_cleanup": 0,
+  "outer_workers_observed_root_before_live_descendants": 0,
+  "targeted_root_before_descendant_cases": [
+    {
+      "kind": "root_zero_natural_descendants",
+      "wait_seconds": 0.25,
+      "active_at_root_exit": 6,
+      "forced": false
+    },
+    {
+      "kind": "root_zero_stubborn_descendants",
+      "wait_seconds": 2.0,
+      "active_at_root_exit": 6,
+      "forced": true
+    },
+    {
+      "kind": "root_zero_original_deadline",
+      "wait_seconds": 0.28100000001722947,
+      "active_at_root_exit": 6,
+      "forced": true
+    }
+  ],
+  "unique_recorded_process_identities_checked": 111,
+  "current_identity_check": {
+    "absent": 101,
+    "reused_pid": 10,
+    "already_signaled": 0,
+    "matching_live": 0
+  },
+  "exact_compact_rows": 1280,
+  "exact_candidates": 73750,
+  "byte_identical_complete_split_summaries": true,
+  "all_training_support_groups": 1024,
+  "all_training_support_candidates": 59000,
+  "new_reserved_groups": 1280,
+  "new_reserved_candidates": 73750,
+  "carry_groups": 1536,
+  "carry_candidates": 88500,
+  "cumulative_reserved_groups": 2816,
+  "cumulative_reserved_candidates": 162250,
+  "budget_ledger_sha256": "40d1bef59790533a7593d23078cda2e5b4e11d7f9e9a66ef28f6e8b684f4c5ff",
+  "predecessor_ledger_sha256": "72440475c1ac0f85c5c6ac03c15080f24f5cf70c7047d2438f04c889c64ac51e",
+  "actual_score_calls_from_new_receipts": 1280,
+  "actual_score_candidates_from_new_receipts": 73750,
+  "comparison_sha256": "e370e1c2765ff494d28b6b331722c425692ac562499512bf9da8b9b742761161",
+  "aggregate_receipt_sha256": "a7bfa96be156b7227e3daf12bac00dbcb190ad9423872dcf9423abb3d80ac9f3",
+  "derived_public_artifacts_verified_sha256": {
+    "measurements.json": "1b1e34e59b8222d5ff9977ce3d6dff7b1ac9e55d8facf897f7cef765106311ee",
+    "tree-regressions-public.json": "ef28fa40d3a3308a22865c6b8e59be6aa79c0502299ed68df21c4b9db487b13b",
+    "budget-reservations-public.json": "42bce1d28ea2326d79aeaedcbc4c523752aca9bb24fc334039479374a6b6e580"
+  },
+  "reference_receipt_sha256": "f08fd799b7d14305b291b478a9fd14499b36039ff5fb858dadd1a514f8fe9ad8",
+  "support_index_receipt_sha256": "a62463a8547beeb17c77cee9d53fd693836099d62af98464ca63001b93d28d49",
+  "local_lifecycle_hashes": {
+    "run/local-lifecycle/tree.json": "386173da92e14e272506125cefe1eb4f353f1963b4d4d53c7639905717ad6004",
+    "run/local-lifecycle/build.json": "04ebe3b835f7cc4e35026e5bed27b289bd108a27691f1ef39f8e6277e0c80b3b",
+    "run/local-lifecycle/score-collect-31205138-v1-0-teacher.json": "15db4b4dbbea9f56e96d4b34b0a6f18bffff03185d6d834be823f6424ef32ecb",
+    "run/local-lifecycle/score-collect-31273729-v1-0-teacher.json": "c02077c5cae47aa4d0f4e8b9795b1e69c022c00d76f8245b4d31d36c0eb62fd8",
+    "run/local-lifecycle/score-collect-31317742-v1-0-teacher.json": "ed6022166c29b5fb2b79e946770c8e7bab7c6cbb86dfe04eb5b4eedf66b11a8b",
+    "run/local-lifecycle/score-collect-31360134-v1-0-teacher.json": "e48ac6d8bb6ffd59329b78fe574bc516294583cc2cbfeafc1c312fa7de720503",
+    "run/local-lifecycle/score-collect-31504409-v1-0-teacher.json": "7f945a9fe71836e78210405d3ff30369ed1198a43e4edef28bd4f5a920265ce3",
+    "run/local-lifecycle/score-collect-31637216-v1-0-teacher.json": "bb80074046f70b7d2b22d63cc4132a0ffdb3a596d5997164691bd766b23a0c50",
+    "run/local-lifecycle/score-collect-31659052-v1-0-teacher.json": "6491db5793b0cd98722d10ac8fcf01699dac62a3e9fe59ff47bd2462afbcde42",
+    "run/local-lifecycle/score-collect-31834104-v1-0-teacher.json": "b9f58db8aaf4f14e39d536f3a3a78093c2cb856815ed2b612fda0e7f23f3d112",
+    "run/local-lifecycle/score-collect-31921285-v1-0-teacher.json": "b8bbf5efe7c568fc3ea09fce26ff41fbb787a3b8911a22068ef30c14e20a04d6",
+    "run/local-lifecycle/score-collect-31932889-v1-0-teacher.json": "74e144144b77e2115e3a98ee05c9bb175ed677958cf2292bae78ffa47f7afa5d",
+    "run/local-lifecycle/aggregate.json": "d5b84282bb1f0f9a4b0be573f64c602e54d438c0009c5ae9ca636a3051d5c937",
+    "run/local-lifecycle/compare.json": "b22981a1862dfd78ba04a9473eb69722906813baf31b114ccf781d910f66667b"
+  },
+  "fixture_local_receipt_sha256": "1d8eb975f7a87fece1ac82c27d5f43ce65d236db1d97f7aedb78a73391a98d1b",
+  "blocking_findings": [],
+  "conclusions": [
+    "The registered seven-case real Windows matrix and single 1280-group historical sample capacity pass completed within the fixed limits.",
+    "The three targeted fixtures establish root-before-child natural waiting, forced rejection after fixed grace and original-deadline priority.",
+    "All fourteen actual outer workers already had empty Jobs when their root exit was observed. This run does not reproduce or identify the previous real worker survivor.",
+    "Independent read-only comparison matched every ordered compact record and both complete split summaries against the frozen prior reference without rescoring.",
+    "The immutable predecessor reservation ledger and all protected historical files remain byte-identical; failed-stage and policy non-admission outcomes remain false."
+  ],
+  "limitations": [
+    "Historical prefix sample reuse is capacity/reproducibility evidence, not independent holdout or policy improvement evidence.",
+    "Full historical index/scoring, complete diagnostics, general process behavior outside the registered trusted worker contract and GPU training acceleration remain unproved.",
+    "Recorded exit proofs were checked against local identity evidence and a current read-only identity lookup. No additional fixture or model execution was performed."
+  ],
+  "reviewer_execution": {
+    "fixtures": 0,
+    "source_observations_decoded": 0,
+    "compact_records_compared": 1280,
+    "model_score_calls": 0,
+    "policy_calls": 0,
+    "training_runs": 0,
+    "new_games": 0,
+    "official_transitions": 0
+  },
+  "old_capacity_stage_acceptance": false,
+  "original_diagnostic_stage_acceptance": false,
+  "original_policy_admission": false
+}

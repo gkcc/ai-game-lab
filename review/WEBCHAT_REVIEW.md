@@ -134,3 +134,8 @@
 ## 最新复审：样本容量准备失败与进程退出门槛
 
 请对照[报告](../kaggriculture/TASK_DIAGNOSTICS_CAPACITY.zh-CN.md)和[冻结/失败证据](evidence/task-bc-diagnostics-capacity-v1-20261023/)，检查四类真实Windows测试、33项合成测试与真实全样本等价尚未完成的区分。重点核实：根进程返回0不等于Job自然退出；强制清理后active0不能证明无长期泄漏或已定位退出尾部；第二片完成收据与父拒绝均保留，1536/88500已评价不退款，384/22125实际score单列；只有128数值unique的开局前缀不能外推全量。核查旧源CRLF/LF显式双hash映射及全部公开blob门控、旧4875运行文件和781公开文件保护（发布仅两review追加），正式冻结入口必须拒绝失败准备。下一阶段是独立子代理建议的最小退出等待修复，不冒称WebChat；不能取消成功无强杀门槛、重用旧失败为新成功、改模型/默认或重训。私有样本、索引、进程身份和日志不公开。
+
+
+## 任务诊断容量正常退出修复 V1：样本验收通过
+
+事前提交73e1eaa，新增root返回0后最多2秒whole-Job自然退出等待，仍受原工作截止及同一次10秒清理上限约束。7项真实Windows用例全部符合预期，14任务29.453秒，重建1024训练索引、10新分片1280行/73750候选，与旧参考逐行及完整摘要一致。独立全量只读比较、14私有/公共生命周期及预算核对通过，5259旧runtime和811既有public审查时原字节；最终发布仅两review入口追加。累计预算2816/162250，旧失败不退款。实际worker均root时已空，等待分支仅由targeted fixtures证明，旧失败具体原因仍未知。样本只有128数值unique及PLANT/WATER，不能外推全量或模型质量；0训练/新赛/official/default不变，旧三项false保留。见[报告](../kaggriculture/TASK_DIAGNOSTICS_CAPACITY_EXIT.zh-CN.md)及[证据](evidence/task-bc-diagnostics-capacity-exit-v1-20261023/)。

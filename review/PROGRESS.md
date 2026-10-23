@@ -197,3 +197,8 @@
 ## 任务诊断容量 V1：准备停止，失败证据保留
 
 基于123cfe0，本地准备登记与独立源码审查先于执行。四类真实Windows生命周期及33项合成回归通过；1280历史前缀、73750候选参考与1024训练样本索引完成。第二评分分片虽然返回0并写完成收据，退出时仍触发强制Job清理，父调度器按门槛停止；29.344秒，7尝试/6接受，2/10分片有产物但仅1/10获父接受，无完整汇总/比较/正式容量运行。1536评价88500候选不退款，实际score384次22125候选；训练样本仅128数值unique，不能外推全量吞吐。独立审查确认失败证据，具体残留身份和是否退出尾部未知；0训练/影子/新赛/official，旧准入false/default/model不变。下一步只另立正常退出后有界等待修复与实际回归，不直接重跑96面板。见[报告](../kaggriculture/TASK_DIAGNOSTICS_CAPACITY.zh-CN.md)及[证据](evidence/task-bc-diagnostics-capacity-v1-20261023/)。
+
+
+## 任务诊断容量正常退出修复 V1：样本验收通过
+
+事前提交73e1eaa，新增root返回0后最多2秒whole-Job自然退出等待，仍受原工作截止及同一次10秒清理上限约束。7项真实Windows用例全部符合预期，14任务29.453秒，重建1024训练索引、10新分片1280行/73750候选，与旧参考逐行及完整摘要一致。独立全量只读比较、14私有/公共生命周期及预算核对通过，5259旧runtime和811既有public审查时原字节；最终发布仅两review入口追加。累计预算2816/162250，旧失败不退款。实际worker均root时已空，等待分支仅由targeted fixtures证明，旧失败具体原因仍未知。样本只有128数值unique及PLANT/WATER，不能外推全量或模型质量；0训练/新赛/official/default不变，旧三项false保留。见[报告](../kaggriculture/TASK_DIAGNOSTICS_CAPACITY_EXIT.zh-CN.md)及[证据](evidence/task-bc-diagnostics-capacity-exit-v1-20261023/)。

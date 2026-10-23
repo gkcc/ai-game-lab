@@ -1,0 +1,165 @@
+{
+  "schema": "task-bc-next-stage-advice-v1",
+  "reviewer": "Independent Codex planning subagent; not WebChat",
+  "status": "recommendation_only_not_authorization_or_execution",
+  "requires_root_adjudication": true,
+  "requires_new_preregistration_source_freeze_exact_commit_and_independent_pre_review": true,
+  "recommended_stage": "task-bc-stratified-error-sample-v1",
+  "title_zh": "固定任务学生的分层历史小样本条件误差诊断",
+  "single_objective": "Determine which teacher task classes and game phases contain conditional candidate, operation, unit or target disagreements for the frozen student, and whether observed disagreements persist under numeric-unique weighting. Produce bounded local witnesses and an honest inconclusive outcome when coverage is insufficient.",
+  "basis": {
+    "current_registration": "artifacts/task-bc-diagnostics-capacity-exit-v1-20261023/registration.json",
+    "current_registration_sha256": "9f4f0730448723c47a747f582d002222a8679d1af3fdd3d80c38137647cbd9a6",
+    "current_summary": "artifacts/task-bc-diagnostics-capacity-exit-v1-20261023/summary.json",
+    "current_summary_sha256": "39e636b3be34e31202a156cac17d1d431fcf9b3e3224401bbf433325ecd0868f",
+    "current_comparison": "artifacts/task-bc-diagnostics-capacity-exit-v1-20261023/run/candidate/comparison.json",
+    "current_comparison_sha256": "e370e1c2765ff494d28b6b331722c425692ac562499512bf9da8b9b742761161",
+    "current_freeze_sha256": "b265fccc0f5300404e92ff17c11b7ed6e544e407da712c2059455362d01dadb8",
+    "parent_reported_independent_evidence_review_sha256": "d5de5e1f98d82ba0837d7f3906ff99d5e13028042cfb6c86ac0f1bcce12ec97e",
+    "fixed_model_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "measured_scope": "Seven lifecycle cases and one complete 1280-row, 73750-candidate prefix comparison passed. Fourteen jobs took 29.453 seconds including lifecycle fixtures. This is sample execution and numerical equivalence evidence, not full-data capacity or policy improvement.",
+    "prefix_blind_spots": "The 1024 training prefix rows contain only 128 numeric-unique inputs; the teacher labels cover PLANT and WATER only. All ten games use opponent v1 and seat 0. Neither the repeated openings nor their observed agreement support conclusions about DIG, FERTILIZE, HARVEST, later play, or full-history cost.",
+    "full_population_metadata": {
+      "training_rows": 108310,
+      "training_float32_numeric_distinct_groups": 51182,
+      "training_and_validation_rows": 135406,
+      "training_and_validation_candidates": 6900116,
+      "maximum_candidates_in_one_original_row": 242,
+      "source": "artifacts/task-bc-v1-20261023-run1/cache-summary.json"
+    },
+    "old_failures_remain_failures": true,
+    "original_policy_admission": false
+  },
+  "why_not_full_diagnostics_now": [
+    "The original complete-support job stopped at 900 seconds. The completed prefix has a radically smaller unique-input population, so its time and memory cannot justify complete support construction or the 96-game shadow diagnosis.",
+    "The remaining shared scoring ceiling is smaller than the full historical population and is not permission to extend scope. No shadow-policy or game budget is requested here.",
+    "A class-and-phase-stratified historical sample can immediately expose conditional learning errors without another infrastructure-only stage. It does not require complete training-support claims or a new scheduling framework."
+  ],
+  "selection_registered_before_predictions_errors_or_rewards": {
+    "source_root": "artifacts/task-choice-v1-20261023",
+    "source_manifest_sha256": "6482ed09e8fd7348c08046810232146ec463472ee5babf187fe6822aa420bc00",
+    "source_reconstruction_ledger_sha256": "c3e634274c089664c731925eaa31a820c71dae511159bef46ad323be37ab31fb",
+    "game_selection": "Within train and validation separately, preserve the original registration seed order and let i be its zero-based position. For each seed select seat b in [0,1] with opponent [v1,market,round2][(i+b)%3]. Resolve the exact original game identity through reconstruction-ledger rows and bind its dataset-manifest entry; do not manufacture game names because some original identities are smoke records.",
+    "selected_games": 20,
+    "selected_train_games": 16,
+    "selected_validation_games": 4,
+    "selected_source_rows_from_metadata": 45121,
+    "selected_source_compressed_bytes_from_file_metadata": 121152135,
+    "phase_step_ranges_inclusive": [[0,239],[240,479],[480,718]],
+    "teacher_classes": ["DIG","FERTILIZE","HARVEST","PLANT","WATER"],
+    "row_selection": "For each selected game, phase and teacher class, retain min(2,n) physical source rows with the smallest SHA256 of the canonical JSON tuple [task-bc-stratified-error-sample-v1,game,source_row_index], breaking an impossible hash tie by original row index. Determine phase from index metadata and teacher class from the canonical teacher_label suffix; validate that class against the selected original candidate after extracting inputs. Selection uses no logits, errors, returns, future outcomes or numeric deduplication. Freeze this rule and salt before reading those source streams, then hash-bind the resulting exact row manifest before the first model score.",
+    "empty_or_small_strata": "Retain all available rows when n is 0 or 1; never fill from another class, phase or game. Report every empty stratum and its source population count. Retain duplicated numeric inputs with their original multiplicities.",
+    "sample_rows_max": 600,
+    "sample_train_rows_max": 480,
+    "sample_validation_rows_max": 120,
+    "sample_candidates_eligible_for_scoring_max": 60000,
+    "scoring_order": "Original source-manifest game order, then original physical row order within each game; construct the entire selected train support before scoring any validation row.",
+    "scope_limit": "This includes all original eight training and two validation seeds and both seats per seed, with all three opponent types represented. It is not the full seed-by-opponent-by-seat population. In validation, two of the six opponent-seat cells remain unsampled. Phase/class balancing is diagnostic oversampling: pooled selected-row rates are sample statistics, not estimates of population or match reward."
+  },
+  "reuse_and_minimal_changes": {
+    "preserve_old_sources_and_runs": true,
+    "reuse": [
+      "learning/task_bc_error_diagnostics_v1/numeric.py: numeric_key, add_training, RecordAnalyzer and SummaryAccumulator without numerical changes",
+      "learning/task_bc_diagnostics_capacity_v1/pipeline.py: complete sample-train index, one-game score shards, receipt binding, ordered aggregation and pure-function reference pattern",
+      "learning/task_bc_diagnostics_capacity_exit_v1/windows_tree.py and its verified normal-zero-exit drain semantics",
+      "Existing hash-bound reservation chain, one worker, BLAS single thread and immutable output conventions"
+    ],
+    "required_sparse_sample_adaptations_only": [
+      "Add a new stage-specific sampler and manifest contract. Replace the old v1/seat0/one-game-per-seed/ten-game guard with the exact registered twenty source identities, while preserving original split and source hashes.",
+      "Store the exact ordered source_row_indices and their digest per game. Keep source_row_index as its original physical identity; sample ordinal is separate. Do not relabel sparse rows as a contiguous prefix.",
+      "Replace source_row_start/source_row_stop prefix receipts with exact index-list binding. Update _sample_rows, shard receipt validation, _shard_records and compare_reference to compare each stored physical index with the registered list, rather than with an enumerate counter.",
+      "Validate full index-metadata order and decision continuity during the bounded metadata scan. Sparse selected rows may legitimately omit earlier decisions in the same turn, so retain their original step/decision and require selected order and exact registration membership rather than artificial contiguity.",
+      "Use the existing decoder to validate each selected input/label/index triple, original input hash, candidate order and teacher identity. Carry phase/class membership through a separate manifest join for reporting; do not add those fields to model inputs.",
+      "Keep same-model float64 scoring, separate float32/float64 keys, numeric multiplicities, labels and global summaries unchanged. Do not introduce resumability, generic schedulers, new support algorithms or policy rules."
+    ],
+    "minimum_focused_checks": [
+      "A tiny synthetic sparse sample accepts later physical rows and legitimate decision gaps while rejecting missing, duplicate, reordered or misaligned selected identities.",
+      "A synthetic phase/class population proves deterministic selection, empty-stratum handling and exact quota limits; changing dummy prediction/error/reward values cannot change membership.",
+      "A synthetic validation-only unique input cannot enter the train index, including when the first manifest game belongs to validation and several games share a seed.",
+      "For the one real frozen sample, compare every ordered compact row and both complete split summaries between the pure-function reference and shard path. Reuse saved outputs for independent review; do not rescore as a separate review pass."
+    ],
+    "synthetic_checks_budget": "At most 12 tiny acceptance cases, 64 synthetic rows and 256 synthetic candidates in total; use a dummy scorer and existing focused checks. These are ceilings, not targets. No new generic test infrastructure. Do not rerun the seven real process fixtures when their executor bytes and contract are unchanged."
+  },
+  "proposed_new_stage_budgets": {
+    "historical_reservation_carry": {"groups":2816,"candidates":162250},
+    "original_shared_ceiling": {"groups":5120,"candidates":320000},
+    "one_reference_pass_max": {"groups":600,"candidates":60000},
+    "one_sharded_pass_max": {"groups":600,"candidates":60000},
+    "new_fixed_model_evaluation_total_max": {"groups":1200,"candidates":120000},
+    "cumulative_reservation_total_max": {"groups":4016,"candidates":282250},
+    "remaining_after_this_ceiling_is_not_authorized_for_use": {"groups":1104,"candidates":37750},
+    "reservation_rule": "Hash-bind the current predecessor ledger, carry all failed and completed reservations without refund, and reserve the complete known row/candidate count before every score job. Cache hits count as evaluations. Track actual score calls/candidates separately. Reference and shard passes are the entire new scoring allowance, including development, failed jobs and review; no retry allowance or independent extra scoring.",
+    "source_scan": {
+      "original_games_max":20,
+      "original_compressed_files_max":60,
+      "index_metadata_rows_max":45121,
+      "label_rows_max":45121,
+      "input_physical_lines_read_max":45121,
+      "all_original_gzip_physical_lines_max":135363,
+      "passes_per_original_stream_max":1,
+      "input_json_rows_decoded_max":600,
+      "input_json_candidates_decoded_absolute_max":145200,
+      "compressed_source_bytes_hashed_max":121152135,
+      "total_decompressed_source_bytes_max":4294967296,
+      "method": "Read only the twenty registered index/label stream pairs once to count strata and fix identities. Read their input gzip streams once, count every skipped physical line and every decompressed byte, but JSON-decode candidates only for selected rows. Keep selected labels and metadata locally for alignment. Compressed-file hash reads, gzip physical scans, selected candidate decoding and model evaluations are separate counters; never call skipped gzip data free random access. No other original games or 96-game panel trajectories may be read.",
+      "candidate_cap": "600 times the original manifest-backed maximum of 242 bounds candidate JSON decoding at 145200 even before the exact selected count is known. The materialized sample must total at most 60000 candidates to qualify for either score pass; otherwise stop before scoring, retain the failed attempt and do not shrink or replace the sample."
+    },
+    "derived_sample_processing": "Apart from the single extraction, each selected train row may be decoded once for the reference support and once for the candidate support; every selected row is decoded once per scoring path. This is at most 2160 derived row decodes and 240000 derived candidate decodes. Aggregate/comparison reads contain compact diagnostics only. Additional numeric parsing or scoring requires a different future decision, not hidden review work.",
+    "stage_wall_seconds_max":900,
+    "work_seconds_per_job_max":120,
+    "close_seconds_per_job_max_including_grace":10,
+    "normal_zero_exit_grace_seconds_max":2,
+    "max_workers":1,
+    "blas_threads":1,
+    "tree_private_commit_bytes_max":4294967296,
+    "minimum_available_host_memory_bytes":4294967296,
+    "minimum_free_disk_bytes":4294967296,
+    "new_artifact_bytes_max":2147483648,
+    "clock_scope": "One continuous execution clock starts before the first registered metadata/hash read and includes source selection, extraction, both support builds, both score paths, comparison, waiting and cleanup. Use per-game collection jobs if needed under the same clock; no fresh stage clock for a later phase.",
+    "training_runs":0,
+    "parameter_updates":0,
+    "policy_or_shadow_calls":0,
+    "new_games":0,
+    "official_transitions":0,
+    "online_submissions":0
+  },
+  "diagnostic_outputs_and_acceptance": {
+    "execution_acceptance": [
+      "Current stage independent review and root acceptance precede new implementation; the new selection rules, exact source identities, resource limits and source bytes are independently pre-reviewed and committed before source consumption. The exact extracted row manifest is hash-bound before any prediction is inspected.",
+      "Complete the registered sample without replacement or candidate truncation; all selected train support is complete before validation scoring; both paths agree on all compact rows and split summaries exactly.",
+      "All receipts reconcile raw scans, decode counts, reservations and actual score calls. No successful worker requires forced termination; all owned process trees close within the existing deadlines.",
+      "Publish the fixed coverage table, including zero/empty cells, source-versus-sample denominators and explicit missing categories. A sample that remains too repetitive or lacks a needed task class is inconclusive, not permission to resample."
+    ],
+    "reports": [
+      "Original-seed, split, phase, teacher-class, opponent and seat marginal summaries with explicit denominators; at most the predeclared phase-by-teacher-class diagnostic table, no exhaustive subgroup search.",
+      "Selected-call-weighted and numeric-unique32/64-weighted mismatch, operation confusion, unit/target mismatch and tie/alias statistics, preserving all repeated calls and label conflicts. Split-level and seed-level quantities describe this selected sample only; empty denominators are null.",
+      "Candidate-count distributions, actual cache hits/misses, numeric unique counts and stage timing/resource components. Do not linearly extrapolate full-data runtime from these observations.",
+      "At most one local conditional-mismatch witness for each of the five teacher classes, chosen after membership is fixed by original manifest order then physical row index. If a class has no mismatch its witness stays empty. Review uses stored original selected input and saved logits/compact outputs, with zero additional model or policy calls."
+    ],
+    "support_interpretation": "The support index contains only the selected historical train subset. A found exact training match proves that match exists in training, but absence, out-of-range features or unseen discrete values mean only absent from the sample support. Do not label these as full-training novelty, harmful distribution shift or evidence for DAgger. Training sample members being seen is tautological, not a generalization result.",
+    "learning_conclusion_rule": "A verified conditional mismatch is a local imitation counterexample, not an explanation of the negative reward gap. Conclude with the observed fixed task/phase pattern and at most one evidence-backed future research question, or explicitly conclude insufficient evidence. Do not impose a required positive pattern, change class weights, patch task rules, start training or automatically continue to full diagnostics."
+  },
+  "stop_conditions": [
+    "Any source/hash/schema/alignment/selection mismatch, incomplete required receipt, model identity change or reference disagreement stops the stage.",
+    "Any scan, decode, evaluation, memory, disk, artifact, job or stage limit stops dispatch. Failed reservations remain spent; no resume, retry, replacement games, increased quota or extended timeout in this stage.",
+    "Any natural-exit/owned-tree failure stops execution under the existing executor contract. Do not turn the stage into another broad lifecycle audit absent a concrete counterexample.",
+    "After the one diagnosis and independent review, stop for root adjudication. Unused shared allowance cannot authorize another sample, another reference pass, a full support index or a policy experiment."
+  ],
+  "causal_and_publication_limits": [
+    "All sampled trajectories are historical teacher demonstrations, not student-visited observations or a new holdout. The already consumed 96-game panel remains negative and unchanged.",
+    "Teacher class, teacher score, logit gap, exact-input novelty and conditional error rates do not establish bank-cash regret or the cause of the observed reward loss. No counterfactual game is executed.",
+    "The full-support timeout and the original root-zero/forced-close failure remain retained failures. The successful exit fixtures do not retrospectively identify the earlier surviving process.",
+    "Publish only relative source paths, hashes, source/sample counts, aggregate diagnostics and reviews. Raw observations, selected rows, model weights, support indexes, per-row diagnostics, witness contents, process identities and machine paths remain local."
+  ],
+  "actions_in_this_advisory_review": {
+    "read_only_docs_code_and_aggregate_metadata":true,
+    "raw_dataset_rows_read":0,
+    "fixtures_executed":0,
+    "model_scores":0,
+    "policy_calls":0,
+    "training_runs":0,
+    "games":0,
+    "official_transitions":0,
+    "only_created_file":"artifacts/task-bc-diagnostics-capacity-exit-v1-20261023/next-stage-advice.json"
+  }
+}

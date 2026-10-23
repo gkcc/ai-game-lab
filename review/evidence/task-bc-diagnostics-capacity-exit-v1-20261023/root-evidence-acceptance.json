@@ -1,0 +1,24 @@
+{
+  "schema": "task-capacity-exit-root-acceptance-v1",
+  "passed": true,
+  "independent_review_sha256": "d5de5e1f98d82ba0837d7f3906ff99d5e13028042cfb6c86ac0f1bcce12ec97e",
+  "summary_sha256": "39e636b3be34e31202a156cac17d1d431fcf9b3e3224401bbf433325ecd0868f",
+  "freeze_sha256": "b265fccc0f5300404e92ff17c11b7ed6e544e407da712c2059455362d01dadb8",
+  "local_pre_execution_commit": "73e1eaa175ebf64c7b671242f0139b4889d75405",
+  "accepted_scope": "Seven real Windows lifecycle cases and one historical sample equivalence pass only.",
+  "adjudication": [
+    "Accepted independent review after checking source and result bindings; no remaining blocker within this registered stage.",
+    "Specific root-before-child waiting branch is proved by targeted fixtures, not the fourteen naturally empty real scoring workers.",
+    "Old failure cause remains unidentified; prior false outcomes are preserved.",
+    "No additional scoring is required or authorized within this completed run."
+  ],
+  "old_capacity_stage_acceptance": false,
+  "original_diagnostic_stage_acceptance": false,
+  "original_policy_admission": false,
+  "reference_rescoring": 0,
+  "training_runs": 0,
+  "policy_calls": 0,
+  "new_games": 0,
+  "official_transitions": 0,
+  "public_release_pending": true
+}
