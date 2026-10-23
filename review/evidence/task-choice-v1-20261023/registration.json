@@ -1,0 +1,71 @@
+{
+  "experiment": "joint-task-choice-interface-v1",
+  "created_utc": "2026-10-23T08:14:59.102513+00:00",
+  "baseline_head": "671a759f0219ba06f1ccc7d1e9a89cc5748c03eb",
+  "initial_worktree_clean": true,
+  "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "teacher_sha256": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+  "demonstration_root": "artifacts/bc-crop-v1-20261023-run1",
+  "ledger_names": [
+    "collect-ledger.json",
+    "collect-smoke-ledger.json"
+  ],
+  "source_ledgers": {
+    "collect-ledger.json": "b7e577b2879e53bfe8a728023b2b375db9baa40741847b3affa100660433e5eb",
+    "collect-smoke-ledger.json": "7432e2b1eea0b804cf4b5295988fe3d3c61295b09ef32df91dced43b27bb71f9"
+  },
+  "train_seeds": [
+    31317742,
+    31921285,
+    31834104,
+    31637216,
+    31360134,
+    31273729,
+    31659052,
+    31932889
+  ],
+  "validation_seeds": [
+    31205138,
+    31504409
+  ],
+  "workers": 4,
+  "demonstrations": 60,
+  "training_runs": 0,
+  "new_complete_games": 0,
+  "new_official_step_pairs": 6,
+  "max_new_official_transitions": 12,
+  "existing_replay_transitions": 43140,
+  "selected_task_types": [
+    "PLANT",
+    "DIG",
+    "WATER",
+    "HARVEST",
+    "FERTILIZE"
+  ],
+  "candidate": "joint unit + target + operation; canonical order independent of teacher scores",
+  "input": "sanitized deployable view plus actual-path reservations; no teacher priority/score/rank/label or offline identities",
+  "labels": "separate teacher-selected candidate ID/index; original crop dataset is not reused as task labels",
+  "protocol_scope": "teacher economic opportunity generator and DROP/PICKUP/navigation/market remain rules; not a full legal mask",
+  "constructed_cases": [
+    "PLANT",
+    "DIG",
+    "WATER",
+    "HARVEST",
+    "FERTILIZE",
+    "joint_PLANT"
+  ],
+  "case_selection": "Six fixed constructed boundary states, not searched replay cases. Code frozen before official execution; one baseline/alternative step each.",
+  "fixture_preflight": "Observation-only preflight adjusted draft HARVEST to day28/planted20/stock9600 so original teacher has both fertilizer and harvest opportunities. Zero official transitions before freeze.",
+  "acceptance": [
+    "all60complete actor actions match raw replay and frozen teacher, rival actions match, official replay v1/v2/final rewards match",
+    "five task types selected in both original train/validation splits",
+    "each type has selected examples with competing task types in both splits",
+    "callback has direct official control over all five operations and actual second-unit reservations",
+    "input isolation, invalid-selection rejection, cross-episode reset, source identity and history/privacy checks pass"
+  ],
+  "stop": "Any failed case/reconstruction/coverage is retained; no automatic retries, extra demos, relaxed gate, new games, training or PPO/DAgger",
+  "private_holdout_steps_used": false,
+  "default_changed": false,
+  "prior_baseline_model_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd"
+}

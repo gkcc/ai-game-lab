@@ -1,0 +1,29 @@
+{
+  "selected_before_new_case_and_reconstruction_results": true,
+  "selection_rule": "First original train seed market side0; first original validation seed market side1; no outcome selection",
+  "registration_sha256": "ca0077198188f82136c3b974c47fd6cac3b07e70bd72eb99fe444f8925f5dfa4",
+  "freeze_sha256": "efb1ccc5a767964ad45ce4f27a4ac388bd33f052e091d519238ed4342e202e85",
+  "existing_replay_samples": [
+    {
+      "split": "train",
+      "game": "collect-smoke-31317742-market-0-teacher",
+      "seed": 31317742,
+      "opponent": "market",
+      "side": 0,
+      "replay_gzip_sha256": "a75651cc642bbcd60e2f570ca254c214069039f56e63e6d440db78339da98921"
+    },
+    {
+      "split": "validation",
+      "game": "collect-smoke-31205138-market-1-teacher",
+      "seed": 31205138,
+      "opponent": "market",
+      "side": 1,
+      "replay_gzip_sha256": "0c3a1fa1b83cb8713cb4ade1d86c0681caf1b8cd76ecd220450a5f6ec244ce52"
+    }
+  ],
+  "existing_replay_transitions_planned": 1438,
+  "new_official_case_transitions_by_reviewer": 0,
+  "other_checks": "All60 ledger and aggregate counts plus separated local input/label/index file identities; six cases reviewed from saved raw official trace without additional official steps",
+  "new_complete_games": 0,
+  "training_runs": 0
+}
