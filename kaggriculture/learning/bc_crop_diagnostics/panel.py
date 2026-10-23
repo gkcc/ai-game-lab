@@ -20,13 +20,14 @@ import time
 from learning.bc_crop.agent import ROOT, CropAgent, sha
 from learning.bc_crop.experiment import ENGINE_SHA, ENGINE_COMMIT, PANEL, read, save, integrity
 from learning.bc_crop.prepare import novelty, git
-from learning.bc_crop.audit import load, stable
 from .probe import StrawberryCorrection
+
+FREEZE_NAME = 'panel-freeze-v2.json'
 
 
 def verify(out):
     cfg = read(out/'panel-registration.json')
-    frozen = read(out/'panel-freeze.json')
+    frozen = read(out/FREEZE_NAME)
     assert sha(out/'panel-registration.json') == frozen['registration_sha256']
     for name, digest in frozen['runtime_files'].items():
         assert sha(ROOT/name) == digest, name
@@ -81,7 +82,7 @@ def prepare(out, source, public):
     paths = {**oldfreeze, **{p.relative_to(ROOT).as_posix():sha(p) for p in (ROOT/'learning/bc_crop_diagnostics').glob('*.py')}}
     paths['main.py'] = sha(ROOT/'main.py')
     for p in (out/'sources').glob('*.py'): paths[p.relative_to(ROOT).as_posix()] = sha(p)
-    save(out/'panel-freeze.json',dict(local_registration_only=True, results_absent=not (out/'panel-ledger.json').exists(),
+    save(out/FREEZE_NAME,dict(local_registration_only=True, results_absent=not (out/'panel-ledger.json').exists(),
          registration_sha256=sha(out/'panel-registration.json'), runtime_files=paths,
          original_public_files={p:sha(public/p) for p in tracked},
          analysis_inputs={n:sha(out/n) for n in ['analysis-plan.json','existing-diagnostics.json','overlap-diagnostics.json','diagnostic-decisions-private.jsonl.gz']}))
@@ -164,6 +165,7 @@ def run_games(out):
 
 
 def check(job):
+    from learning.bc_crop.audit import load, stable
     from decision.audit_market_teacher import observation
     from decision.full_audit import reexecute
     out,row=job;out=Path(out);cfg=verify(out);side=row['side']
@@ -258,7 +260,7 @@ def analyze(out):
                 new_games=36,training_runs=0,paired=paired,by_seed=seed_groups,by_opponent=opponent_groups,
                 probe_minus_student=overall,policies={p:{k:mean(r[k] for r in rows if r['policy']==p) for k in cfg['metrics']} for p in cfg['policies']},
                 ledger_sha256=sha(out/'panel-ledger.json'),audit_sha256=sha(out/'panel-audit.json'),
-                registration_sha256=sha(out/'panel-registration.json'),freeze_sha256=sha(out/'panel-freeze.json'))
+                registration_sha256=sha(out/'panel-registration.json'),freeze_sha256=sha(out/FREEZE_NAME))
     save(out/'panel-results.json',result)
     print(json.dumps(result,ensure_ascii=False))
 
