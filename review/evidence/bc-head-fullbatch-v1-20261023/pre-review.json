@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "reviewer": "audit_bc_diagnostics",
+  "independent_subagent": true,
+  "external_webchat": false,
+  "registration_sha256": "659b1b53619127672569ce5e5cebf3c76a7f385baa1f4865a06e36278b5adaa3",
+  "freeze_sha256": "e741cfb97703c5d8d6577e30747f50514faedd2b934becf8f05d3ce4d0fc2bc4",
+  "regression_checks": 11,
+  "training_samples": 9127,
+  "validation_samples": 2356,
+  "fixed_error_samples": 160,
+  "checked": [
+    "only output head Adam",
+    "20 full-data updates and all21 head retention",
+    "strict0..20 CE selection",
+    "original offline gates and fail-stop",
+    "old worker and12+2 game interfaces",
+    "source freeze and no formal test seeds"
+  ],
+  "training_runs": 0,
+  "new_games": 0,
+  "remaining": "Actual GPU updates, native all-head reload and conditional games await execution"
+}
