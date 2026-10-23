@@ -1,0 +1,20 @@
+{
+  "original_result_sha256": "b071821d863c79973db5c18b5af4cdc4027a8a7363f05522cdb0058b3aefeb62",
+  "original_freeze_sha256": "7cccc124e871bb82dc302522e2470c1f1dfb2b589e0548b4300a343a82d0dc52",
+  "repair_source_sha256": "0eb5ba623e7badc93c59d0a3a2f0374714c5cb6b004f82776fa87d8e014558f2",
+  "correction": "cast sample weights to float64 before curvature numerator and denominator reduction",
+  "expected_changes": "Only76 train_weighted target curvature values:4 full-direction and72 batch-direction evaluations",
+  "unchanged": "all gradients, directional derivatives, signs, query rows, collision results and historical evidence",
+  "regression": {
+    "passed": true,
+    "float32_input_equals_float64": true,
+    "old_failure_reproduced": true,
+    "finite_difference": true,
+    "zero_padding": true
+  },
+  "training_runs": 0,
+  "optimizer_updates": 0,
+  "new_games": 0,
+  "new_checkpoints": 0,
+  "local_freeze_not_external_timestamp": true
+}
