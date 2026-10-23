@@ -1,0 +1,43 @@
+{
+  "source": "Independent planning subagent plan_entry_repair; not external WebChat",
+  "stage": "task_entry_repair_v1",
+  "status": "planned_not_executed",
+  "scope": "Add separately frozen official-filename-compatible wrapper, runner and targeted regressions; preserve frozen task_bc_v1 sources and all results",
+  "source_path_fallback": "globals().get('__file__', sys._getframe().f_code.co_filename)",
+  "budgets": {
+    "training_runs": 0,
+    "new_seeds": 0,
+    "new_evaluation_panels": 0,
+    "maximum_complete_game_attempts": 2
+  },
+  "seed": 31205138,
+  "seats": [
+    0,
+    1
+  ],
+  "opponent": "frozen round2",
+  "model_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+  "crop_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+  "regressions": [
+    "Actually invoke old wrapper using official filename loader and capture missing __file__ counterexample",
+    "Invoke new official filename and Worker loaders for two consecutive saved observations; actions and complete traces equal direct frozen JointAgent",
+    "Use absolute agent paths with a non-project current directory; do not inject __file__ into official loader",
+    "Separate regression trace paths from full-game traces"
+  ],
+  "acceptance": [
+    "Freeze exact engine and loader bytes, all strategy/model/dependency hashes, old stage evidence before execution",
+    "Two historical official filename repetitions only; 720states/719actions/DONE both and no errors or fallback",
+    "All actions, task/crop traces, model identity, semantic v1/v2 digest, final banks and rewards equal corresponding old trained games",
+    "Reuse official ordered replay audit, 1438 primary transitions; independent replay two saved games separately",
+    "Preserve original failed stage, all old hashes and files; no retry/replacement, failure stops remaining dispatch"
+  ],
+  "economic_interpretation": "Not additional samples; no change to -155 development mean difference or absence of independent generalization",
+  "forbidden": [
+    "training",
+    "strategy change",
+    "default replacement",
+    "rerunning12developmentgames",
+    "PPO",
+    "DAgger"
+  ]
+}

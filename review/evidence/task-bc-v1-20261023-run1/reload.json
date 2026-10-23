@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "standalone_python_module_process": true,
+  "epoch": 6,
+  "checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+  "selected_export_sha256": "b3234fe7fc5b70f828f6de091a232a0524c6a651580fdc506a50a1dba61947cf",
+  "training_report_sha256": "d82a373f88f56f19229f234619099087e63e63f5fc79e521804d480a623294c0",
+  "cache_manifest_sha256": "abf0581baad3941a4e2fc7bf96835d1fe0cfa92d6fa4ac0939c096a1f6f4368d",
+  "gpu_logits_sha256": "668dca33c871ba5e512a21adfb26b041885694be564b6e0e775faba992d4a549",
+  "cpu_logits_sha256": "f722b9d3440c5b799f2d054b0d43070cc127ccd66b35a4479239089d3b69bfce",
+  "all_validation_groups": 27096,
+  "all_validation_candidates": 1353262,
+  "atol": 0.0001,
+  "rtol": 1e-05,
+  "tolerance_failures": 0,
+  "groups_with_tolerance_failure": 0,
+  "max_absolute_difference": 2.9011829539626888e-05,
+  "candidate_id_disagreements": 0,
+  "cpu_candidate_id_digest": "34a5626e5606d45ba9b7af120898fb36831defca0279bea4fadabdb73d32b71e",
+  "gpu_candidate_id_digest": "34a5626e5606d45ba9b7af120898fb36831defca0279bea4fadabdb73d32b71e",
+  "raw_logits": "local only",
+  "input_arrays": [
+    "shared",
+    "candidates"
+  ],
+  "metadata_use": "candidate_identity and candidate_ops only compare output IDs; no seeds, labels or teacher scores scored",
+  "wall_seconds": 7.628229199995985,
+  "device": "CPU NumPy float64 reload of saved epoch weights",
+  "new_games": 0,
+  "training_runs": 0,
+  "checkpoint_reselection": false,
+  "failure_rule": "Any tolerance or ID mismatch blocks game admission; retain this sole selected head and all old evidence, never try another epoch."
+}

@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "stage_acceptance_passed": false,
+  "evidence_sha256": {
+    "generated_wrapper": "4db0a017469aa3a1401a851e456442ba1b94b742b1e39ab0619b407d65a0e436",
+    "frozen_wrapper_generator": "eb72eb7718d8140c57bd6c63e53587ed62ebf2fd6666d98dfbfc340c70259160",
+    "frozen_worker": "a80158b26d1f4ae3d366c1d1276a1ca63e652bcd350f5ca25545b0f5f33759f1",
+    "installed_official_loader": "0ac7baf1212b4ce1eabae3cc1cbb55c98effef5e0d0485522a8be87097c39a4f"
+  },
+  "finding": {
+    "severity": "blocking deployment acceptance",
+    "cause": "The generated wrapper reads __file__ at module import. The frozen Worker explicitly injects it, while official get_last_callable executes compiled source with an empty globals dictionary. The official filename attempt therefore fails before the first action.",
+    "source_locations": {
+      "generator": "learning/task_bc_v1/games.py:28",
+      "worker": "sources/worker.py:36",
+      "official_loader": "kaggle_environments/agent.py:48,57",
+      "generated_wrapper": "agents/entry-31205138-0-trained.py:3"
+    },
+    "observed_error": "NameError: name __file__ is not defined",
+    "completed_development_games": 12,
+    "failed_filename_attempts": 1,
+    "unstarted_filename_repeats": 1,
+    "completed_filename_repeats": 0,
+    "prior_independent_pre_review_missed": true
+  },
+  "future_minimal_repair_scope": "A separately frozen loader-compatible wrapper and zero-game official-loader regression, followed only by the originally required entry repeats against unchanged completed development trajectories. Do not retrain or rerun the development panel; preserve this failed stage and original wrappers.",
+  "reviewer_official_loader_calls": 0,
+  "reviewer_new_games": 0,
+  "reviewer_training_runs": 0,
+  "independent_game_failure_review_sha256": "7c73b8a8d05ac9c4ffd52ae7859bfc45713b35f7d9585746032807c7da163596"
+}

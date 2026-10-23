@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "game": "collect-31205138-round2-0-teacher",
+      "seed": 31205138,
+      "side": 0,
+      "replay_gzip_sha256": "1d984819ec41e583163340484512eedf506b2d45642c7f530e2f9d619786cf28",
+      "paired_observations": 719,
+      "actions_equal": 719,
+      "crop_records_equal": true,
+      "complete_reservations_equal": true,
+      "hybrid_vs_original_teacher_raw_action_differences": 2,
+      "task_calls": 2175,
+      "crop_calls": 173,
+      "comparison_transcript_sha256": "20e5c3718d8445f0d018d29d11d13b08aa8d12d23a9ba705d1e5c962f9ea7d05"
+    },
+    {
+      "game": "collect-31205138-round2-1-teacher",
+      "seed": 31205138,
+      "side": 1,
+      "replay_gzip_sha256": "2810b199abdf2f08cafd39e736ad6e13e40d6bfac23e910be83026da9fff967c",
+      "paired_observations": 719,
+      "actions_equal": 719,
+      "crop_records_equal": true,
+      "complete_reservations_equal": true,
+      "hybrid_vs_original_teacher_raw_action_differences": 2,
+      "task_calls": 2175,
+      "crop_calls": 173,
+      "comparison_transcript_sha256": "20e5c3718d8445f0d018d29d11d13b08aa8d12d23a9ba705d1e5c962f9ea7d05"
+    },
+    {
+      "game": "collect-31504409-round2-0-teacher",
+      "seed": 31504409,
+      "side": 0,
+      "replay_gzip_sha256": "81d44691b9b01c3d4ab6e6ff9d64d04ec4aa9c50673fb4ca0fa1bb17d7d842c2",
+      "paired_observations": 719,
+      "actions_equal": 719,
+      "crop_records_equal": true,
+      "complete_reservations_equal": true,
+      "hybrid_vs_original_teacher_raw_action_differences": 18,
+      "task_calls": 2358,
+      "crop_calls": 222,
+      "comparison_transcript_sha256": "0248c3ff2f3fb8123248717b7cb1268d051ac0304459578def5d42c5b4c47491"
+    },
+    {
+      "game": "collect-31504409-round2-1-teacher",
+      "seed": 31504409,
+      "side": 1,
+      "replay_gzip_sha256": "85ec9b233b0b89e9b84b47c81c38a729d4c79958bd61588a580c308d4868fe1b",
+      "paired_observations": 719,
+      "actions_equal": 719,
+      "crop_records_equal": true,
+      "complete_reservations_equal": true,
+      "hybrid_vs_original_teacher_raw_action_differences": 18,
+      "task_calls": 2358,
+      "crop_calls": 222,
+      "comparison_transcript_sha256": "0248c3ff2f3fb8123248717b7cb1268d051ac0304459578def5d42c5b4c47491"
+    }
+  ],
+  "paired_observations": 2876,
+  "adapter_calls": 5752,
+  "wall_seconds": 22.362939299986465,
+  "device": "CPU observation-only parity; no training",
+  "new_games": 0,
+  "official_transitions": 0,
+  "training_runs": 0,
+  "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+  "boundary": "Wiring parity on original teacher-reached validation observations only. The hybrid uses epoch6 crop choices, so it need not match teacher raw actions. This is neither a hybrid closed-loop trajectory nor proof of distribution robustness."
+}

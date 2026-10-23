@@ -1,0 +1,126 @@
+{
+  "passed": true,
+  "offline_entry_passed": true,
+  "script_sha256": "923c986b36054455415ecb2badc7f8739e70f69716c6e2a2f0a7f97a88e1a426",
+  "evidence_sha256": {
+    "model/report.json": "d82a373f88f56f19229f234619099087e63e63f5fc79e521804d480a623294c0",
+    "model/history.json": "8ec850fd592db887d75a733bd0da39f1574228245c53d5f44a0fefa7a7170684",
+    "cache/manifest.json": "abf0581baad3941a4e2fc7bf96835d1fe0cfa92d6fa4ac0939c096a1f6f4368d",
+    "registration.json": "0dca48dcac0f78cebeae4a33fa1739b4e386ff5f25e92f2ed789a367efd0f6b4",
+    "freeze.json": "14920a9909bcf45cbb9677d3cfb1c0eaa4a098e5729bdc56366de09ac42090b0",
+    "model/initial.npz": "2352470924841dec28e2a1fd15202ceec6becd7bd024f1d746bb53bc649c57e4",
+    "model/checkpoints/epoch-00.npz": "2352470924841dec28e2a1fd15202ceec6becd7bd024f1d746bb53bc649c57e4",
+    "model/checkpoints/epoch-01.npz": "2362680dd796d8c6d91668d7674685f57cc668893f02619ba35c1be71bfebb88",
+    "model/checkpoints/epoch-02.npz": "63eb6d9aff13e54a97b7bfa3aa91c8cbee6c93e8a4a1f2b327a0289b2a5ff6f6",
+    "model/checkpoints/epoch-03.npz": "1663980218b3394a4420cf4ce481958f8da2350ab85e88ee2c4dcc3b7fce58b7",
+    "model/checkpoints/epoch-04.npz": "4f1dd84ad75d6b6db6328281d918f45d494cba590d6f4de2f6bc59ebed157d5e",
+    "model/checkpoints/epoch-05.npz": "c8a79ff1fd83069e07791b7dfee4d0058fd2ed3357590c8952d5fdc87cbe2601",
+    "model/checkpoints/epoch-06.npz": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "model/checkpoints/epoch-07.npz": "90b4fa19501d5985cf00634f912d282cde9f5202c8519006fc979654029a3051",
+    "model/checkpoints/epoch-08.npz": "4a6547aa5520de74a6f91a6e5c5e33deea25c2a75a7df41a266008efefc25f1f",
+    "model/selected-export.json": "b3234fe7fc5b70f828f6de091a232a0524c6a651580fdc506a50a1dba61947cf",
+    "model/selected-gpu-logits.npy": "668dca33c871ba5e512a21adfb26b041885694be564b6e0e775faba992d4a549",
+    "model/trained.npz": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "reload.json": "2defefb4f9390fa4fca33c8cfe024049bc78f8ccef61897d9dcae66cf413c9f0",
+    "model/reloaded-cpu-logits.npy": "f722b9d3440c5b799f2d054b0d43070cc127ccd66b35a4479239089d3b69bfce"
+  },
+  "all_epochs_recomputed": 9,
+  "validation_groups_per_epoch": 27096,
+  "epochs": [
+    {
+      "epoch": 0,
+      "weighted_ce": 3.729423566803921,
+      "multicandidate_exact_top1": 0.03198990573740073,
+      "cross_operation_macro_recall": 0.3565670508284721,
+      "passes": false,
+      "checkpoint_sha256": "2352470924841dec28e2a1fd15202ceec6becd7bd024f1d746bb53bc649c57e4"
+    },
+    {
+      "epoch": 1,
+      "weighted_ce": 0.42488800209611255,
+      "multicandidate_exact_top1": 0.8766421732353596,
+      "cross_operation_macro_recall": 0.9170174910631763,
+      "passes": true,
+      "checkpoint_sha256": "2362680dd796d8c6d91668d7674685f57cc668893f02619ba35c1be71bfebb88"
+    },
+    {
+      "epoch": 2,
+      "weighted_ce": 0.3085828644410404,
+      "multicandidate_exact_top1": 0.9070734060714021,
+      "cross_operation_macro_recall": 0.9513405426121162,
+      "passes": true,
+      "checkpoint_sha256": "63eb6d9aff13e54a97b7bfa3aa91c8cbee6c93e8a4a1f2b327a0289b2a5ff6f6"
+    },
+    {
+      "epoch": 3,
+      "weighted_ce": 0.2650132267086137,
+      "multicandidate_exact_top1": 0.9174645587471238,
+      "cross_operation_macro_recall": 0.9484090653659182,
+      "passes": true,
+      "checkpoint_sha256": "1663980218b3394a4420cf4ce481958f8da2350ab85e88ee2c4dcc3b7fce58b7"
+    },
+    {
+      "epoch": 4,
+      "weighted_ce": 0.24326486084011614,
+      "multicandidate_exact_top1": 0.9263712610405997,
+      "cross_operation_macro_recall": 0.9474523255462343,
+      "passes": true,
+      "checkpoint_sha256": "4f1dd84ad75d6b6db6328281d918f45d494cba590d6f4de2f6bc59ebed157d5e"
+    },
+    {
+      "epoch": 5,
+      "weighted_ce": 0.24749702641283344,
+      "multicandidate_exact_top1": 0.9311957247828991,
+      "cross_operation_macro_recall": 0.9465937189338204,
+      "passes": true,
+      "checkpoint_sha256": "c8a79ff1fd83069e07791b7dfee4d0058fd2ed3357590c8952d5fdc87cbe2601"
+    },
+    {
+      "epoch": 6,
+      "weighted_ce": 0.22436113974720162,
+      "multicandidate_exact_top1": 0.9397313144808135,
+      "cross_operation_macro_recall": 0.9466722239031883,
+      "passes": true,
+      "checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143"
+    },
+    {
+      "epoch": 7,
+      "weighted_ce": 0.2305871771111822,
+      "multicandidate_exact_top1": 0.9422548801306316,
+      "cross_operation_macro_recall": 0.9488295188548996,
+      "passes": true,
+      "checkpoint_sha256": "90b4fa19501d5985cf00634f912d282cde9f5202c8519006fc979654029a3051"
+    },
+    {
+      "epoch": 8,
+      "weighted_ce": 0.23883719107584944,
+      "multicandidate_exact_top1": 0.9424033251688563,
+      "cross_operation_macro_recall": 0.9512147674660365,
+      "passes": true,
+      "checkpoint_sha256": "4a6547aa5520de74a6f91a6e5c5e33deea25c2a75a7df41a266008efefc25f1f"
+    }
+  ],
+  "best_epoch": 6,
+  "maximum_ce_reduction_difference": 3.1086244689504383e-15,
+  "normalizer_max_mean_difference": 1.8189894035458565e-12,
+  "normalizer_max_scale_difference": 6.123457296780543e-11,
+  "gpu_evidence": {
+    "recorded_platform": "gpu",
+    "private_device_record_sha256": "e78916775ee6fa63a073110665152c2bff26e2b5bcca5f3aa07312358ef848eb",
+    "changed_final_parameter_tensors": 6,
+    "nonzero_gradient_updates": 3392,
+    "optimizer_updates": 3392
+  },
+  "protected_runtime_files": 3096,
+  "protected_public_files": 619,
+  "reviewer_training_runs": 0,
+  "reviewer_optimizer_updates": 0,
+  "new_games": 0,
+  "fresh_cpu_reload_verified": true,
+  "game_control_and_privacy_check_still_required": true,
+  "limitations": [
+    "Independent CPU recomputation checks saved weights, metrics, normalization, selection and receipts, not a second optimizer trajectory replay.",
+    "GPU execution is supported by frozen training code, private runtime record, completed updates and saved changed checkpoints; no hardware identity is published.",
+    "Development validation and strict engineering gates do not demonstrate economic or independent-test improvement."
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "arms": {
+    "teacher_task": {
+      "games": 4,
+      "mean_net_profit": 33873.0,
+      "mean_margin": 3242.5,
+      "wins": 4,
+      "draws": 0,
+      "losses": 0
+    },
+    "initial": {
+      "games": 4,
+      "mean_net_profit": 2105.5,
+      "mean_margin": -47572.5,
+      "wins": 0,
+      "draws": 0,
+      "losses": 4
+    },
+    "trained": {
+      "games": 4,
+      "mean_net_profit": 33718.0,
+      "mean_margin": 3081.0,
+      "wins": 4,
+      "draws": 0,
+      "losses": 0
+    }
+  },
+  "pairs": [
+    {
+      "seed": 31205138,
+      "side": 0,
+      "trained_net": 38430.0,
+      "reference_net": 38430.0,
+      "initial_net": 3361.0,
+      "trained_minus_reference": 0.0
+    },
+    {
+      "seed": 31205138,
+      "side": 1,
+      "trained_net": 38430.0,
+      "reference_net": 38430.0,
+      "initial_net": 3361.0,
+      "trained_minus_reference": 0.0
+    },
+    {
+      "seed": 31504409,
+      "side": 0,
+      "trained_net": 29006.0,
+      "reference_net": 29316.0,
+      "initial_net": 850.0,
+      "trained_minus_reference": -310.0
+    },
+    {
+      "seed": 31504409,
+      "side": 1,
+      "trained_net": 29006.0,
+      "reference_net": 29316.0,
+      "initial_net": 850.0,
+      "trained_minus_reference": -310.0
+    }
+  ],
+  "independent_holdout": false,
+  "complete_seeds": 2,
+  "opponents": 1,
+  "trained_minus_reference_mean": -155.0,
+  "relative_percent": -0.4575915921235202,
+  "ledger_sha256": "1420f6412706bd8976b6c74686d5757523b79c497b5962fb5249fb94542b8b9c"
+}

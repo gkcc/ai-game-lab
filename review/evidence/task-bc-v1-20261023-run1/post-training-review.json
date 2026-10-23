@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "offline_entry_passed": true,
+  "evidence_sha256": {
+    "model/report.json": "d82a373f88f56f19229f234619099087e63e63f5fc79e521804d480a623294c0",
+    "model/history.json": "8ec850fd592db887d75a733bd0da39f1574228245c53d5f44a0fefa7a7170684",
+    "cache/manifest.json": "abf0581baad3941a4e2fc7bf96835d1fe0cfa92d6fa4ac0939c096a1f6f4368d",
+    "registration.json": "0dca48dcac0f78cebeae4a33fa1739b4e386ff5f25e92f2ed789a367efd0f6b4",
+    "freeze.json": "14920a9909bcf45cbb9677d3cfb1c0eaa4a098e5729bdc56366de09ac42090b0",
+    "model/initial.npz": "2352470924841dec28e2a1fd15202ceec6becd7bd024f1d746bb53bc649c57e4",
+    "model/checkpoints/epoch-00.npz": "2352470924841dec28e2a1fd15202ceec6becd7bd024f1d746bb53bc649c57e4",
+    "model/checkpoints/epoch-01.npz": "2362680dd796d8c6d91668d7674685f57cc668893f02619ba35c1be71bfebb88",
+    "model/checkpoints/epoch-02.npz": "63eb6d9aff13e54a97b7bfa3aa91c8cbee6c93e8a4a1f2b327a0289b2a5ff6f6",
+    "model/checkpoints/epoch-03.npz": "1663980218b3394a4420cf4ce481958f8da2350ab85e88ee2c4dcc3b7fce58b7",
+    "model/checkpoints/epoch-04.npz": "4f1dd84ad75d6b6db6328281d918f45d494cba590d6f4de2f6bc59ebed157d5e",
+    "model/checkpoints/epoch-05.npz": "c8a79ff1fd83069e07791b7dfee4d0058fd2ed3357590c8952d5fdc87cbe2601",
+    "model/checkpoints/epoch-06.npz": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "model/checkpoints/epoch-07.npz": "90b4fa19501d5985cf00634f912d282cde9f5202c8519006fc979654029a3051",
+    "model/checkpoints/epoch-08.npz": "4a6547aa5520de74a6f91a6e5c5e33deea25c2a75a7df41a266008efefc25f1f",
+    "model/selected-export.json": "b3234fe7fc5b70f828f6de091a232a0524c6a651580fdc506a50a1dba61947cf",
+    "model/selected-gpu-logits.npy": "668dca33c871ba5e512a21adfb26b041885694be564b6e0e775faba992d4a549",
+    "model/trained.npz": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "reload.json": "2defefb4f9390fa4fca33c8cfe024049bc78f8ccef61897d9dcae66cf413c9f0",
+    "model/reloaded-cpu-logits.npy": "f722b9d3440c5b799f2d054b0d43070cc127ccd66b35a4479239089d3b69bfce",
+    "independent-training-review.json": "2c07cbe1635766d2b92fb37aa87010f4132a7fe287e73660d12140c7f697cb7f",
+    "independent-training-review.py": "923c986b36054455415ecb2badc7f8739e70f69716c6e2a2f0a7f97a88e1a426"
+  },
+  "fresh_standalone_reload_verified": true,
+  "games_allowed_by_this_receipt_alone": false
+}

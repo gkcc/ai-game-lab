@@ -1,0 +1,88 @@
+{
+  "passed": true,
+  "stage_acceptance_passed": false,
+  "report_sha256": "ff61df2b7f90dfcc4780a876abef48857c21cbc82383b323806253d0de5337bd",
+  "publication_map_sha256": "8076afebf1317e94f975913352b735ca8888a83d9148f30ffb0647bfe0cdb9b1",
+  "publication_preservation_sha256": "bfbcd4c8fd5e85e1cc122a90abcb6077be5d5f6d4378efe1f43656d405132c35",
+  "public_evidence_sha256": {
+    "admission.json": "cb3f72fc0b73d6f286b2c4e7b547ce3dc503430a3e38af287f98825ad0bdad71",
+    "attempts.json": "a1026f0d8f9b7c9278d44cffcd290f7eb4d572c2233f689d07e52d02a6d7c9dc",
+    "audit.json": "69652178bb787b3967d8df66c200e31341583fe2ea55f531620d92241ae3f26b",
+    "cache-summary.json": "653cd85b5ba3341476783139037823c4490b72ee3cb9e01ab811816b880b59ef",
+    "composition-parity.json": "fa931e16d9a277e86f1afad9e3424257cb708425450a35e5fe3379fde1280598",
+    "development-ledger.json": "1420f6412706bd8976b6c74686d5757523b79c497b5962fb5249fb94542b8b9c",
+    "development-summary.json": "4e55d750fba4a9a75126ddb17f38f74938dc2ead11c8ed1bce613aa9973e3621",
+    "freeze-draft1.json": "7ecd7cb8d67ee4e26ff9d3e9c6ff8757af9a02f865992f17ea55beb8dfa6b805",
+    "freeze.json": "14920a9909bcf45cbb9677d3cfb1c0eaa4a098e5729bdc56366de09ac42090b0",
+    "independent-admission-review.json": "220aa30427caded649b3e3fa336616c0b6c2b536e093e7ca070e5fe5b47d62fb",
+    "independent-data-review.json": "bcd07db0b63bbbed125773e7afe4bcf11414a82dc3817ff1d1eb9f2dc54a989c",
+    "independent-data-review.py": "0b6e2a1c114851821c457bc9921f0a4b2c161a7f4bbbd406a8699f67e02cfb84",
+    "independent-entry-defect.json": "7248df50a18866b1eff5301129932140d573a93839fed3521cd50187a11ce6e4",
+    "independent-game-failure-review-first-pass.json": "512c3d60240a583edc5d2d3238ae61d0e3728c946e5d4369cd82b2fbbbbb690a",
+    "independent-game-failure-review-first-pass.py": "ca05475c4313859f25180272bd4edf7df486c9d974a06a4ffca35c1e5c0e772f",
+    "independent-game-failure-review.json": "7c73b8a8d05ac9c4ffd52ae7859bfc45713b35f7d9585746032807c7da163596",
+    "independent-game-failure-review.py": "6765b008e2a2b124e85ea045741de5e3075f039847fc82179ecc9cb928b7b38c",
+    "independent-game-review.py": "c98520d4d78cdd17818cf6e326a5237f8ed7780e01b3891f7a333105e9f7dd18",
+    "independent-plan-amendment.json": "28a840ed5ed509db1ed3e025ee6e9aa81c644a5c292e1d7e6b914d953b85b730",
+    "independent-plan.json": "2be267358ffc7a1a7f459bb7873b041670ab2e6fb94c5b49f699e56c7cdd6408",
+    "independent-training-review-first-pass.json": "23e7552eb92ffe708a329627a37382860769cff046a37264fba86bd1c55f02ce",
+    "independent-training-review-first-pass.py": "764f812278b834ffa22d8565704f15306da8bb9bacc4695677f786532701e927",
+    "independent-training-review.json": "2c07cbe1635766d2b92fb37aa87010f4132a7fe287e73660d12140c7f697cb7f",
+    "independent-training-review.py": "923c986b36054455415ecb2badc7f8739e70f69716c6e2a2f0a7f97a88e1a426",
+    "launcher-compatibility.json": "3828ac1c156acea7a33233e16a3b116c6756fc98fda050777fe8ee188a3a9414",
+    "next-stage-advice.json": "2cae6cf7fa9fa4ea9f91654a32a8cb41a94ac22e559f4a950e8180a6c5852ae7",
+    "post-training-review.json": "423b9bb3b15dc6d9b0255f6a8f9b2e5f98814510d06de51cba18cb5d685a1171",
+    "pre-review.json": "d9cb8eab1f1b9c662bf588f1c49a9dfc04545ccf08e88010c9495dc33e66272e",
+    "pre-training-commit.json": "9e492dcfe4fcec7329e3759d2cc24beca0be64bc38bf3d7ede2749f842ae7445",
+    "pre-training-data-review.json": "e5c39d48104d24656a11aa4b86596780bd98544a3eb142b299df7b3b7468f1f6",
+    "preflight.json": "f64d760e349716d79bf5d13042fcd67bac6cb74286fce4db3f315dcf6c645894",
+    "protection-before.json": "13f7b9a18a3c8a5e10f9af39565cf1a73d35c06affd008732a2153726fe4c895",
+    "publication-map.json": "8076afebf1317e94f975913352b735ca8888a83d9148f30ffb0647bfe0cdb9b1",
+    "publication-preservation.json": "bfbcd4c8fd5e85e1cc122a90abcb6077be5d5f6d4378efe1f43656d405132c35",
+    "registration.json": "0dca48dcac0f78cebeae4a33fa1739b4e386ff5f25e92f2ed789a367efd0f6b4",
+    "reload.json": "5432c38dd3fd74c9fa19cb59bce9ba8003bd7b88e36dc5dbe0f7825843899b7b",
+    "stage-outcome.json": "7ea5b36590a7d053769d8e5f77cfe36b468dba756718b20764ce50fa73bed3c4",
+    "task-development-workers.json": "1baf2e8a40d343279b69d1dabcd7bc7369a518aebc8f933c02e46f05c6aa23b8",
+    "training-progress.json": "0bc8857b91d1d2ab35d4c92284d40f6de8102ef447995a5cf4b85feaa06da523",
+    "training-started.json": "4993b29ca308e0bbec8565c2fbcbd318f0a49bb637d1e4df05b15bed549fc215",
+    "cache/manifest.json": "abf0581baad3941a4e2fc7bf96835d1fe0cfa92d6fa4ac0939c096a1f6f4368d",
+    "cache/schema.json": "8a07ac2db593f6484e1ec0de7f85863fadf44729c898f509ac4eee41fab74e44",
+    "model/history.json": "8ec850fd592db887d75a733bd0da39f1574228245c53d5f44a0fefa7a7170684",
+    "model/report.json": "d82a373f88f56f19229f234619099087e63e63f5fc79e521804d480a623294c0",
+    "model/selected-export.json": "b3234fe7fc5b70f828f6de091a232a0524c6a651580fdc506a50a1dba61947cf"
+  },
+  "mapped_byte_identical_files": 33,
+  "mapped_redacted_files": 1,
+  "redaction": "reload.json: process_id field removed only; original local evidence unchanged",
+  "protected_public_byte_identical": 617,
+  "protected_public_appends": {
+    "review/PROGRESS.md": {
+      "old_sha256": "c12e517fc86ce6db12fbe28968359c84168d2138300d7526c312e6507195977b",
+      "old_bytes": 20922,
+      "new_sha256": "e894ea48e0ccb74cc05810cb6aa08e777a2852b7d3325c266b245f520a944df4"
+    },
+    "review/WEBCHAT_REVIEW.md": {
+      "old_sha256": "3de3311848cb308fbd390667eb698a08311c4c64bc2019ddc009ce9a01e6d9e7",
+      "old_bytes": 15828,
+      "new_sha256": "a63c5c874c37149ddf0596a97f4bf944304d3fd7e747585c6873bac8fdd19391"
+    }
+  },
+  "protected_runtime_prior_verification": {
+    "files": 3096,
+    "receipt_sha256": "7c73b8a8d05ac9c4ffd52ae7859bfc45713b35f7d9585746032807c7da163596",
+    "not_rehashed_in_final_publication_pass": true
+  },
+  "checks": [
+    "Report numbers and limitation statements match independent data, training, admission and partial game review.",
+    "Full development aggregate and outcomes match retained independent receipts.",
+    "Publication evidence allowlist contains no raw model arrays, replays, traces, device records or absolute private paths.",
+    "All current task module source copies match runtime; old public files unchanged except two exact-prefix appends.",
+    "Next repair scope is limited to official filename compatibility and two unchanged historical entry repeats."
+  ],
+  "reviewer_new_games": 0,
+  "reviewer_training_runs": 0,
+  "limitations": [
+    "Final review validates publication of a failed entry-acceptance stage, not stage promotion.",
+    "No future acceptance artifact or commit is included in this review."
+  ]
+}

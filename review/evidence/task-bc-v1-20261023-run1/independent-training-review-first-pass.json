@@ -1,0 +1,14 @@
+{
+  "passed": false,
+  "scope": "Reviewer reduction comparison only; production training unaffected.",
+  "script_sha256": "764f812278b834ffa22d8565704f15306da8bb9bacc4695677f786532701e927",
+  "epochs_fully_checked": 5,
+  "failure_epoch": 5,
+  "field": "cross_operation_macro_recall",
+  "independent": 0.9465937189338204,
+  "recorded": 0.9465937189338206,
+  "difference": 2.220446049250313e-16,
+  "resolution": "Allow1e-15 absolute difference only for the derived mean; exact per-operation recalls, counts, argmax hashes and gate booleans remain unchanged.",
+  "new_training_runs": 0,
+  "new_games": 0
+}

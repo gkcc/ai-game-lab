@@ -1,0 +1,696 @@
+[
+  {
+    "game": "dev-31205138-round2-0-trained",
+    "passed": true,
+    "official": {
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "27b6ee5eb6e0b61d95cadf0ce3840ae8f89329ece70e9fafc2a82b48a186918b",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "17842123e39817913c740a24fce1081e0efaa3b2056bcd342905163d1fae458c",
+      "final_rewards": [
+        41430.0,
+        37919.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 366,
+          "unit:executed": 4227,
+          "unit:pass": 3225
+        },
+        "ordered_effect_sha256": "7fafa4393c9befa9854128dfcc64650420defad363a00e040a517cd40d816d5b",
+        "successful_plants": [
+          58,
+          61
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    "counts": {
+      "task_calls": 2167,
+      "crop_calls": 170,
+      "selected_PLANT": 170,
+      "different_from_conditional_teacher": 95,
+      "selected_WATER": 1765,
+      "selected_FERTILIZE": 62,
+      "selected_HARVEST": 166,
+      "selected_DIG": 4,
+      "unit_pass": 1770,
+      "market_executed": 200,
+      "unit_executed": 2206
+    },
+    "actor_actions_reproduced": 719,
+    "rival_actions_reproduced": 719,
+    "decision_traces_reproduced": 719,
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "fallback": 0,
+    "load_errors": 0,
+    "inference_errors": 0
+  },
+  {
+    "game": "dev-31205138-round2-1-trained",
+    "passed": true,
+    "official": {
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "791d35911ad58f2712bb23f772959e46afccc9916b9773f22697f8ae6c8db6be",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "e0fba31a2fa5f0d518da125fa674db8ca4e43e4f32ae69685766d896095b8ba4",
+      "final_rewards": [
+        37919.0,
+        41430.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 366,
+          "unit:executed": 4227,
+          "unit:pass": 3225
+        },
+        "ordered_effect_sha256": "29d0268b339e3fb021709bfe955568b398927feb81700d994a807cc9a697213b",
+        "successful_plants": [
+          61,
+          58
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    "counts": {
+      "task_calls": 2167,
+      "crop_calls": 170,
+      "selected_PLANT": 170,
+      "different_from_conditional_teacher": 95,
+      "selected_WATER": 1765,
+      "selected_FERTILIZE": 62,
+      "selected_HARVEST": 166,
+      "selected_DIG": 4,
+      "unit_pass": 1770,
+      "market_executed": 200,
+      "unit_executed": 2206
+    },
+    "actor_actions_reproduced": 719,
+    "rival_actions_reproduced": 719,
+    "decision_traces_reproduced": 719,
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "fallback": 0,
+    "load_errors": 0,
+    "inference_errors": 0
+  },
+  {
+    "game": "dev-31205138-round2-0-teacher_task",
+    "passed": true,
+    "official": {
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "c3eb6931ceea2ceafc9ac02b4ee4a0da7002d4d8f92085898328d410363d18d2",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "fa89116d79a2a952de414640a8d371a1d8abe4a65d99ca86bcbb814ad6dedc56",
+      "final_rewards": [
+        41430.0,
+        37919.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 366,
+          "unit:executed": 4238,
+          "unit:pass": 3213
+        },
+        "ordered_effect_sha256": "1df932212599c3f75534ac7c11447c119fa7a6fc31c49b0be43f0ea7a7b7c1bc",
+        "successful_plants": [
+          58,
+          61
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    "counts": {
+      "task_calls": 2181,
+      "crop_calls": 175,
+      "selected_PLANT": 175,
+      "different_from_conditional_teacher": 0,
+      "selected_WATER": 1768,
+      "selected_FERTILIZE": 62,
+      "selected_HARVEST": 172,
+      "selected_DIG": 4,
+      "unit_pass": 1758,
+      "market_executed": 200,
+      "unit_executed": 2217
+    },
+    "actor_actions_reproduced": 719,
+    "rival_actions_reproduced": 719,
+    "decision_traces_reproduced": 719,
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "fallback": 0,
+    "load_errors": 0,
+    "inference_errors": 0
+  },
+  {
+    "game": "dev-31205138-round2-1-teacher_task",
+    "passed": true,
+    "official": {
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "53d2c2da0cb6e1ab5e3b6a0f71b949ef9b5824db1bbbed1976a280c1e5237d24",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "88f07332cee0e2363a122cec3347052a2844d257af3ac01e037d791e228a3efb",
+      "final_rewards": [
+        37919.0,
+        41430.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 366,
+          "unit:executed": 4238,
+          "unit:pass": 3213
+        },
+        "ordered_effect_sha256": "df4156c6e2190b3cc2394550db10a4b7e2348caff7218163b5ebcb14a66e533e",
+        "successful_plants": [
+          61,
+          58
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    "counts": {
+      "task_calls": 2181,
+      "crop_calls": 175,
+      "selected_PLANT": 175,
+      "different_from_conditional_teacher": 0,
+      "selected_WATER": 1768,
+      "selected_FERTILIZE": 62,
+      "selected_HARVEST": 172,
+      "selected_DIG": 4,
+      "unit_pass": 1758,
+      "market_executed": 200,
+      "unit_executed": 2217
+    },
+    "actor_actions_reproduced": 719,
+    "rival_actions_reproduced": 719,
+    "decision_traces_reproduced": 719,
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "fallback": 0,
+    "load_errors": 0,
+    "inference_errors": 0
+  },
+  {
+    "game": "dev-31205138-round2-0-initial",
+    "passed": true,
+    "official": {
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "c44263c22edf1607d04a49d4280fb8270950cdb2744b87b90ec8cf378af03498",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "cf632f16bacaf6e5eb2ee652385c93b0bfb398a3eb35fa963d7740ec52533693",
+      "final_rewards": [
+        6361.0,
+        56361.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 373,
+          "unit:executed": 6085,
+          "unit:pass": 2239
+        },
+        "ordered_effect_sha256": "a6a7df80954adad4b900c9a44e3f2114be82044fab14755b158e0de18bba55df",
+        "successful_plants": [
+          24,
+          52
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    "counts": {
+      "task_calls": 4402,
+      "crop_calls": 2648,
+      "selected_PLANT": 2648,
+      "different_from_conditional_teacher": 4293,
+      "selected_WATER": 732,
+      "selected_DIG": 910,
+      "selected_HARVEST": 27,
+      "selected_FERTILIZE": 85,
+      "unit_executed": 4100,
+      "market_executed": 216,
+      "unit_pass": 748
+    },
+    "actor_actions_reproduced": 719,
+    "rival_actions_reproduced": 719,
+    "decision_traces_reproduced": 719,
+    "task_checkpoint_sha256": "2352470924841dec28e2a1fd15202ceec6becd7bd024f1d746bb53bc649c57e4",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "fallback": 0,
+    "load_errors": 0,
+    "inference_errors": 0
+  },
+  {
+    "game": "dev-31205138-round2-1-initial",
+    "passed": true,
+    "official": {
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "74c081f7b419ebc6dd8ffb32413f53c45ee871093d879236cf663a6385af12d5",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "828839cb454f1fcbdb9e501f349c205f7edd5c2e92b3d03a23bbb8403c50d4f9",
+      "final_rewards": [
+        56361.0,
+        6361.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 373,
+          "unit:executed": 6085,
+          "unit:pass": 2239
+        },
+        "ordered_effect_sha256": "c63765d8bfd6e189d00662670c7f9adf2b6a4b7f9539ed8c37634d15c551a060",
+        "successful_plants": [
+          52,
+          24
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    "counts": {
+      "task_calls": 4402,
+      "crop_calls": 2648,
+      "selected_PLANT": 2648,
+      "different_from_conditional_teacher": 4293,
+      "selected_WATER": 732,
+      "selected_DIG": 910,
+      "selected_HARVEST": 27,
+      "selected_FERTILIZE": 85,
+      "unit_executed": 4100,
+      "market_executed": 216,
+      "unit_pass": 748
+    },
+    "actor_actions_reproduced": 719,
+    "rival_actions_reproduced": 719,
+    "decision_traces_reproduced": 719,
+    "task_checkpoint_sha256": "2352470924841dec28e2a1fd15202ceec6becd7bd024f1d746bb53bc649c57e4",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "fallback": 0,
+    "load_errors": 0,
+    "inference_errors": 0
+  },
+  {
+    "game": "dev-31504409-round2-0-trained",
+    "passed": true,
+    "official": {
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "c291bf39af35856a9dc43c93ece8cff437c869ec0881416623ef97d3fa3f2122",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "4e93ee26e5bfaae3bfa92b6322d43dd55d256418c8f2bef3c31477206bfb1571",
+      "final_rewards": [
+        32006.0,
+        29355.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 408,
+          "unit:executed": 4386,
+          "unit:pass": 3010
+        },
+        "ordered_effect_sha256": "265f5975915ffa7eba9b96af526b516415b38657d9fd90180094ba0ed0de5089",
+        "successful_plants": [
+          75,
+          88
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    "counts": {
+      "task_calls": 2185,
+      "crop_calls": 261,
+      "selected_PLANT": 261,
+      "different_from_conditional_teacher": 218,
+      "selected_WATER": 1721,
+      "selected_FERTILIZE": 32,
+      "selected_HARVEST": 164,
+      "selected_DIG": 7,
+      "unit_pass": 1566,
+      "market_executed": 207,
+      "unit_executed": 2173
+    },
+    "actor_actions_reproduced": 719,
+    "rival_actions_reproduced": 719,
+    "decision_traces_reproduced": 719,
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "fallback": 0,
+    "load_errors": 0,
+    "inference_errors": 0
+  },
+  {
+    "game": "dev-31504409-round2-1-trained",
+    "passed": true,
+    "official": {
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "0c22308fbecf176e9bbcbbbd5debe822b50711bf7ef8cd617850eccbecdc3aa7",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "ef4201432dedd6b266dc67937c367074607f44888176c934e20579076a5e8069",
+      "final_rewards": [
+        29355.0,
+        32006.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 408,
+          "unit:executed": 4386,
+          "unit:pass": 3010
+        },
+        "ordered_effect_sha256": "891c1625f22d2067cfd14353b882e16d0b2e575207b598c0f76b1b7376028f98",
+        "successful_plants": [
+          88,
+          75
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    "counts": {
+      "task_calls": 2185,
+      "crop_calls": 261,
+      "selected_PLANT": 261,
+      "different_from_conditional_teacher": 218,
+      "selected_WATER": 1721,
+      "selected_FERTILIZE": 32,
+      "selected_HARVEST": 164,
+      "selected_DIG": 7,
+      "unit_pass": 1566,
+      "market_executed": 207,
+      "unit_executed": 2173
+    },
+    "actor_actions_reproduced": 719,
+    "rival_actions_reproduced": 719,
+    "decision_traces_reproduced": 719,
+    "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "fallback": 0,
+    "load_errors": 0,
+    "inference_errors": 0
+  },
+  {
+    "game": "dev-31504409-round2-0-teacher_task",
+    "passed": true,
+    "official": {
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "d82910c95028c74c94094edbef07fb2b06cecd856c143d3ebf71cdd034058c7f",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "787c97e83f488f97edfc5fae17193e3b3d30abcfe957c05dfa21a612c419cab9",
+      "final_rewards": [
+        32316.0,
+        29342.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 403,
+          "unit:executed": 4414,
+          "unit:pass": 2995
+        },
+        "ordered_effect_sha256": "b43cd136ff7bd2a0f3c6e14c199814cdcdc91ba68230b08e2bd292fa2621c03c",
+        "successful_plants": [
+          72,
+          88
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    "counts": {
+      "task_calls": 2206,
+      "crop_calls": 257,
+      "selected_PLANT": 257,
+      "different_from_conditional_teacher": 0,
+      "selected_WATER": 1717,
+      "selected_FERTILIZE": 42,
+      "selected_HARVEST": 182,
+      "selected_DIG": 8,
+      "unit_pass": 1551,
+      "market_executed": 203,
+      "unit_executed": 2201
+    },
+    "actor_actions_reproduced": 719,
+    "rival_actions_reproduced": 719,
+    "decision_traces_reproduced": 719,
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "fallback": 0,
+    "load_errors": 0,
+    "inference_errors": 0
+  },
+  {
+    "game": "dev-31504409-round2-1-teacher_task",
+    "passed": true,
+    "official": {
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "96c24db9bf651a4d958c2a752518cd4d5d30aca4922f5b11114c5296258d6f87",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "efb44f0a23d1ce794040d94c0df9b7c6a80d2cf6c02c8712035322940b360d7a",
+      "final_rewards": [
+        29342.0,
+        32316.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 403,
+          "unit:executed": 4414,
+          "unit:pass": 2995
+        },
+        "ordered_effect_sha256": "1301d0be761e8d9f0fc184ad3102ccb0b7a04999947046c0b51ea46e8378dd82",
+        "successful_plants": [
+          88,
+          72
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    "counts": {
+      "task_calls": 2206,
+      "crop_calls": 257,
+      "selected_PLANT": 257,
+      "different_from_conditional_teacher": 0,
+      "selected_WATER": 1717,
+      "selected_FERTILIZE": 42,
+      "selected_HARVEST": 182,
+      "selected_DIG": 8,
+      "unit_pass": 1551,
+      "market_executed": 203,
+      "unit_executed": 2201
+    },
+    "actor_actions_reproduced": 719,
+    "rival_actions_reproduced": 719,
+    "decision_traces_reproduced": 719,
+    "task_checkpoint_sha256": null,
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "fallback": 0,
+    "load_errors": 0,
+    "inference_errors": 0
+  },
+  {
+    "game": "dev-31504409-round2-0-initial",
+    "passed": true,
+    "official": {
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "668d8002c5e84c7a4cde1e7fc91c79c2a7ff113959fc84d69ef7de2366936a95",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "820fb2779d756f9b86999d47211fc9d239d2047fb9f71b6c9d2bfebb39aadb8b",
+      "final_rewards": [
+        3850.0,
+        48995.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 469,
+          "unit:executed": 6815,
+          "unit:pass": 1973
+        },
+        "ordered_effect_sha256": "5ac74e1ff2f2d1c969767ed67c92221db26b5eab7db2ccc3725912a0add99057",
+        "successful_plants": [
+          9,
+          158
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    "counts": {
+      "task_calls": 4260,
+      "crop_calls": 3237,
+      "selected_PLANT": 3237,
+      "different_from_conditional_teacher": 4218,
+      "selected_WATER": 315,
+      "selected_HARVEST": 26,
+      "selected_DIG": 682,
+      "unit_executed": 4256,
+      "market_executed": 204,
+      "unit_pass": 541
+    },
+    "actor_actions_reproduced": 719,
+    "rival_actions_reproduced": 719,
+    "decision_traces_reproduced": 719,
+    "task_checkpoint_sha256": "2352470924841dec28e2a1fd15202ceec6becd7bd024f1d746bb53bc649c57e4",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "fallback": 0,
+    "load_errors": 0,
+    "inference_errors": 0
+  },
+  {
+    "game": "dev-31504409-round2-1-initial",
+    "passed": true,
+    "official": {
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "abd26572da5becfcca3f4c71ef36c1e30e819b3756aa4c2e3534c7ced46e1d54",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "ca5c2107cddcc8d9594afdc2a7a576cd3f2cb13b505cf3ab2c2f7d6b29aebdcf",
+      "final_rewards": [
+        48995.0,
+        3850.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 469,
+          "unit:executed": 6815,
+          "unit:pass": 1973
+        },
+        "ordered_effect_sha256": "f82f4da937c6ded9b625057694c7ac4df597c6c5318c66874010fe36d492e745",
+        "successful_plants": [
+          158,
+          9
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    "counts": {
+      "task_calls": 4260,
+      "crop_calls": 3237,
+      "selected_PLANT": 3237,
+      "different_from_conditional_teacher": 4218,
+      "selected_WATER": 315,
+      "selected_HARVEST": 26,
+      "selected_DIG": 682,
+      "unit_executed": 4256,
+      "market_executed": 204,
+      "unit_pass": 541
+    },
+    "actor_actions_reproduced": 719,
+    "rival_actions_reproduced": 719,
+    "decision_traces_reproduced": 719,
+    "task_checkpoint_sha256": "2352470924841dec28e2a1fd15202ceec6becd7bd024f1d746bb53bc649c57e4",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "fallback": 0,
+    "load_errors": 0,
+    "inference_errors": 0
+  }
+]

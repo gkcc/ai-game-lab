@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "evidence_sha256": {
+    "cache-summary.json": "653cd85b5ba3341476783139037823c4490b72ee3cb9e01ab811816b880b59ef",
+    "cache/manifest.json": "abf0581baad3941a4e2fc7bf96835d1fe0cfa92d6fa4ac0939c096a1f6f4368d",
+    "cache/schema.json": "8a07ac2db593f6484e1ec0de7f85863fadf44729c898f509ac4eee41fab74e44",
+    "composition-parity.json": "fa931e16d9a277e86f1afad9e3424257cb708425450a35e5fe3379fde1280598",
+    "registration.json": "0dca48dcac0f78cebeae4a33fa1739b4e386ff5f25e92f2ed789a367efd0f6b4",
+    "freeze.json": "14920a9909bcf45cbb9677d3cfb1c0eaa4a098e5729bdc56366de09ac42090b0",
+    "independent-data-review.json": "bcd07db0b63bbbed125773e7afe4bcf11414a82dc3817ff1d1eb9f2dc54a989c",
+    "independent-data-review.py": "0b6e2a1c114851821c457bc9921f0a4b2c161a7f4bbbd406a8699f67e02cfb84"
+  },
+  "scope": "Allows only the frozen single fit; not model export or game admission.",
+  "training_runs_executed": 0,
+  "new_games": 0
+}

@@ -1,0 +1,106 @@
+{
+  "passed": true,
+  "script_sha256": "0b6e2a1c114851821c457bc9921f0a4b2c161a7f4bbbd406a8699f67e02cfb84",
+  "preexecution_commit": "20b2154b68f3e71f6b4f9d7f6ee3206b5b8ad271",
+  "evidence_sha256": {
+    "cache-summary.json": "653cd85b5ba3341476783139037823c4490b72ee3cb9e01ab811816b880b59ef",
+    "cache/manifest.json": "abf0581baad3941a4e2fc7bf96835d1fe0cfa92d6fa4ac0939c096a1f6f4368d",
+    "cache/schema.json": "8a07ac2db593f6484e1ec0de7f85863fadf44729c898f509ac4eee41fab74e44",
+    "composition-parity.json": "fa931e16d9a277e86f1afad9e3424257cb708425450a35e5fe3379fde1280598",
+    "registration.json": "0dca48dcac0f78cebeae4a33fa1739b4e386ff5f25e92f2ed789a367efd0f6b4",
+    "freeze.json": "14920a9909bcf45cbb9677d3cfb1c0eaa4a098e5729bdc56366de09ac42090b0"
+  },
+  "source_files_hashed": 180,
+  "array_files_hashed": 16,
+  "all_groups_verified": 135406,
+  "total_candidates_verified": 6900116,
+  "numeric_overlap": {
+    "numeric_groups_shared_between_train_and_validation": 1150,
+    "validation_examples_with_train_numeric_match": 3978,
+    "shared_numeric_groups_with_multiple_labels": 0
+  },
+  "cache_samples": [
+    {
+      "game": "collect-smoke-31317742-market-0-teacher",
+      "groups": 2261
+    },
+    {
+      "game": "collect-smoke-31205138-market-1-teacher",
+      "groups": 2179
+    }
+  ],
+  "manual_loss_groups": [
+    {
+      "split": "train",
+      "index": 0
+    },
+    {
+      "split": "train",
+      "index": 8
+    },
+    {
+      "split": "train",
+      "index": 649
+    },
+    {
+      "split": "train",
+      "index": 692
+    },
+    {
+      "split": "train",
+      "index": 745
+    },
+    {
+      "split": "train",
+      "index": 1217
+    },
+    {
+      "split": "train",
+      "index": 108309
+    },
+    {
+      "split": "validation",
+      "index": 0
+    },
+    {
+      "split": "validation",
+      "index": 8
+    },
+    {
+      "split": "validation",
+      "index": 649
+    },
+    {
+      "split": "validation",
+      "index": 692
+    },
+    {
+      "split": "validation",
+      "index": 746
+    },
+    {
+      "split": "validation",
+      "index": 1218
+    },
+    {
+      "split": "validation",
+      "index": 27095
+    }
+  ],
+  "manual_loss_value": 3.315450996928303,
+  "jax_loss_value": 3.315451145172119,
+  "jax_gradient_max_error": 2.6197034956251808e-08,
+  "parity_root_observations": 2876,
+  "parity_independent_observations": 719,
+  "parity_independent_game": "collect-31205138-round2-0-teacher",
+  "max_group_size": 242,
+  "new_official_transitions": 0,
+  "new_games": 0,
+  "optimizer_updates": 0,
+  "training_runs": 0,
+  "limitations": [
+    "All offsets/labels and numeric equivalence aggregates checked; numeric cache values reconstructed from original structured rows for two preselected complete games.",
+    "Four composition parity receipts checked; one trajectory independently compared using two adapters. This is not a closed-loop deployment test.",
+    "Numerical consistency bounds and development overlap do not prove attainable neural accuracy or test independence."
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "observation_calls": 1,
+  "official_transitions": 0,
+  "new_games": 0,
+  "initial_sha256": "2352470924841dec28e2a1fd15202ceec6becd7bd024f1d746bb53bc649c57e4",
+  "trained_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+  "crop_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+  "evidence": [
+    {
+      "game": "collect-31205138-round2-0-teacher",
+      "step": 0,
+      "side": 0,
+      "raw_sha256": "f7c6a7ee6de4f3f5f0b2e0aede60ee5d5dff0132f040ce757e0bea620eec3869",
+      "initial_ids": [
+        "u0:x0:y0:PLANT"
+      ],
+      "trained_ids": [
+        "u0:x4:y4:PLANT"
+      ],
+      "action_changed": true,
+      "reservations_changed": true,
+      "privacy_injection_unchanged": true,
+      "replay_info_rejected": true
+    }
+  ],
+  "reload_sha256": "2defefb4f9390fa4fca33c8cfe024049bc78f8ccef61897d9dcae66cf413c9f0",
+  "post_training_review_sha256": "423b9bb3b15dc6d9b0255f6a8f9b2e5f98814510d06de51cba18cb5d685a1171"
+}

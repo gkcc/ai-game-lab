@@ -1,0 +1,18 @@
+{
+  "finding": "Game environment contains the official engine but not Optuna; learning environment contains Optuna but not the engine. New games module imports existing Games helper and official audit in one parent process.",
+  "solution": "Use official game Python and append the existing learning site-packages directory to the end of this process sys.path; package precedence remains official game environment first. No dependency installation or environment edits.",
+  "verified_imports": {
+    "optuna": "4.5.0",
+    "numpy": "2.5.4",
+    "Games": true,
+    "official_audit": true
+  },
+  "source_changed": false,
+  "models_changed": false,
+  "drivers_changed": false,
+  "global_configuration_changed": false,
+  "game_attempts_during_import_checks": 0,
+  "training_runs_during_import_checks": 0,
+  "command": "game-python -B -c: append project learning/.venv/Lib/site-packages; runpy.run_module(learning.task_bc_v1.games,run_name=__main__) with registered --out",
+  "boundary": "Parent orchestration only. Existing worker child still runs official game Python. Existing dependencies are read-only; this is not cross-version package installation."
+}

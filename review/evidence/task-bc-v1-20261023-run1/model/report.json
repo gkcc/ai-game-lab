@@ -1,0 +1,77 @@
+{
+  "actual_game_control_verified": false,
+  "best_epoch": 6,
+  "cache_manifest_sha256": "abf0581baad3941a4e2fc7bf96835d1fe0cfa92d6fa4ac0939c096a1f6f4368d",
+  "changed_final_parameter_tensors": 6,
+  "class_counts": [
+    431,
+    3977,
+    9312,
+    9127,
+    85463
+  ],
+  "class_weights": [
+    6.546228885650635,
+    3.055572986602783,
+    1.996866226196289,
+    2.0170023441314697,
+    0.6591456532478333
+  ],
+  "competitive_improvement_proven": false,
+  "completed": true,
+  "epochs": 8,
+  "expected_updates": 3392,
+  "export_validation": {
+    "all_validation_candidates": 1353262,
+    "atol": 0.0001,
+    "candidate_id_disagreements": 0,
+    "checked": true,
+    "max_absolute_logit_error": 2.9011829568048597e-05,
+    "passed": true,
+    "rtol": 1e-05,
+    "validation_groups": 27096
+  },
+  "framework": {
+    "jax": "0.4.38",
+    "numpy": "2.5.4",
+    "optax": "0.2.4"
+  },
+  "game_entry_requires_action_or_reservation_change": true,
+  "gpu_training": true,
+  "gradient_devices": [
+    "cuda:0"
+  ],
+  "gradient_norm_max": 8.32413387298584,
+  "gradient_norm_min": 0.28813034296035767,
+  "history_sha256": "8ec850fd592db887d75a733bd0da39f1574228245c53d5f44a0fefa7a7170684",
+  "initial_and_all_epochs_saved": true,
+  "new_process_numpy_reload_verified": false,
+  "nonzero_gradient_updates": 3392,
+  "normalization": {
+    "binary_preserved": true,
+    "local_training_candidates": 5546854,
+    "padding_included": false,
+    "shared_training_groups": 108310,
+    "standard_deviation_floor": 1
+  },
+  "official_simulation_on_gpu": false,
+  "offline_gate_passed": true,
+  "offline_metrics_passed": true,
+  "optimizer_updates": 3392,
+  "platform": "gpu",
+  "synchronized_training_seconds": 113.65126086399998,
+  "teacher_fallback": false,
+  "timings": {
+    "budget_interpretation": "Training limit includes packing, explicit compilation, transfers and synchronized updates; not CPU validation. Process limit includes everything.",
+    "budgeted_training_loop_seconds": 113.65126086399998,
+    "cpu_preparation_seconds": 17.237514511,
+    "cpu_training_pack_seconds": 34.654591701000726,
+    "cpu_validation_seconds": 38.18619829499998,
+    "explicit_gpu_compilation_seconds": 1.9124124180000024,
+    "first_update_wall_seconds": 2.51120843,
+    "synchronized_update_and_transfer_seconds": 77.08425674499927
+  },
+  "total_fit_seconds": 175.096645467,
+  "training_loss_max": 3.851921796798706,
+  "training_loss_min": 0.012453689239919186
+}

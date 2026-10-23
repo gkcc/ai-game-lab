@@ -109,3 +109,8 @@
 ## 联合任务接口与示范覆盖复审
 
 请检查联合unit/target/op而非五分类、canonical候选顺序、输入无teacher score/priority/rank/label/offline seed、标签与索引分离、真实路径预留以及无隐藏教师回退。核对原56+4示范的48train/12val与60完整action等价/43140旧复演、135406选择组与6900116候选的区别，五类两split选中和竞争覆盖、DIG少/WATER多以及结构unique不等于373维unique。6合成pair12官方step不是自然可达/收益证据，框架计数修复与旧冻结/旧漏检预审应保留；joint种子单位消耗与市场补购应分开。独立仅2旧game1438复演和8682candidate850836值抽查，另全量文件与行统计；不是独立重跑全60。默认/旧模型/策略不变，0训练，无任务学生比赛。见[报告](../kaggriculture/TASK_CHOICE_V1.zh-CN.md)、[证据](evidence/task-choice-v1-20261023/)。
+
+
+## 联合任务 BC V1：训练完成、文件入口验收失败
+
+事前20b2154，原60示范135406组，单次GPU8轮3392更新，最低合格验证CE选任务epoch6，多候选ID命中93.97%，全验证CPU重载ID零分歧。12场已消费验证种子开发比赛完整结束，训练头平均净收益33718，混合参考33873（差−155），均4胜；不能声称超越教师或新留出泛化。首官方filename入口因wrapper依赖未提供的__file__加载失败，第二入口未启动，整体stage_acceptance=false，保留所有失败和停止事实。主12场8628官方复演，独立两场1438；独立全账本/9头指标复算通过仅证明证据一致。下一步只另登记入口兼容修复、最多2原seed历史复现，不重训/重跑面板/default不变。见[报告](../kaggriculture/TASK_BC_V1.zh-CN.md)、[证据](evidence/task-bc-v1-20261023-run1/)。
