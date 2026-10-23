@@ -1,0 +1,113 @@
+{
+  "experiment": "bc-output-head-v1",
+  "created_utc": "2026-10-23T05:56:11.079325+00:00",
+  "baseline_head": "a00e9102665b985e32c0022cc805411be156828c",
+  "initial_worktree_clean": true,
+  "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "teacher_sha256": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+  "train_seeds": [
+    31317742,
+    31921285,
+    31834104,
+    31637216,
+    31360134,
+    31273729,
+    31659052,
+    31932889
+  ],
+  "validation_seeds": [
+    31205138,
+    31504409
+  ],
+  "test_seeds": [
+    31782299,
+    31200372,
+    31421954,
+    31147122,
+    31763082,
+    31219454,
+    31797877,
+    31805643
+  ],
+  "opponents": [
+    "v1",
+    "market",
+    "round2"
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "workers": 4,
+  "training": {
+    "seed": 2026102321,
+    "epochs": 20,
+    "batch_size": 256,
+    "learning_rate": 0.0003,
+    "optimizer": "Adam",
+    "architecture": [
+      289,
+      128,
+      64,
+      5
+    ],
+    "update_only": [
+      "w2",
+      "b2"
+    ],
+    "frozen": [
+      "w0",
+      "b0",
+      "w1",
+      "b1",
+      "mean",
+      "scale"
+    ],
+    "class_weights": "original inverse square root train counts, normalized over present classes",
+    "sampling": "all original train calls once per epoch in seeded permutation; no deduplication/reweighting/augmentation",
+    "precision": "highest FP32 GPU forward/gradients; selection uses deployment float64 CPU logits",
+    "selection": "minimum unweighted original validation CE over epoch0 and epochs1..20; strict improvement, earliest tie"
+  },
+  "formal_games": 0,
+  "demonstration_games": 0,
+  "acceptance_A": "Only w2/b2 can change; baseline weights/data/controller/default preserved; finite nonzero GPU gradients and actual parameter updates; exact identity reload; all permitted games720/719 DONE, zero fallback, complete official ordered reexecution; two real file-entry repeats match developer games.",
+  "acceptance_B": "Development gates only. Does not establish new independent improvement.",
+  "scope": "Only inner PLANT-task crop selection; teacher opportunity gates, post-choice economic rejection, and all other management retained",
+  "stop": "One fit, no sweep/retry of training hyperparameters; epoch0 or offline failure stops before games. At most14 new games. No formal holdout, DAgger/PPO, data additions or deployment promotion.",
+  "source_sha256": {
+    "teacher.py": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+    "worker.py": "a80158b26d1f4ae3d366c1d1276a1ca63e652bcd350f5ca25545b0f5f33759f1",
+    "v1.py": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "market.py": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "round2.py": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848"
+  },
+  "evaluation_role": "development-reuse",
+  "new_independent_evidence": false,
+  "original_experiment": "artifacts/bc-crop-v1-20261023-run1",
+  "diagnostics_experiment": "artifacts/bc-diagnostics-v1-20261023",
+  "development_seeds": [
+    33691168,
+    33223745
+  ],
+  "training_budget": 1,
+  "optimizer_update_budget": 720,
+  "new_game_budget": 14,
+  "development_games": 12,
+  "file_entry_repeats": 2,
+  "offline_gate": "selected epoch>0; errors on original160 eligible train strawberry errors <=80; developer val accuracy drop<=.01; val exact-unseen accuracy drop<=.02",
+  "development_gate": "candidate minus historical frozen student: net profit positive in each whole seed; pooled margin/score>=0; market mean profit/margin/score>=0. Descriptive only, no statistical significance or promotion.",
+  "baseline_reuse": "Exactly12 student rows from previous36-game developer panel; no new baseline games; hashes frozen here",
+  "input_sha256": {
+    "artifacts/bc-crop-v1-20261023-run1/data/dataset.npz": "5e8f15f513906f83ba03c705f0a64d0223429cac488bbbcc3bc6a897e0498e1d",
+    "artifacts/bc-crop-v1-20261023-run1/data/manifest.json": "7cc986a3d422257a1178206543cdc1e42ab38ceef570dd772b78c43fb276301f",
+    "artifacts/bc-crop-v1-20261023-run1/data/samples.jsonl.gz": "2db37f6f1ed9c3d25b5b18d4b95598aff407451ff6122404d495f6760da2eeed",
+    "artifacts/bc-crop-v1-20261023-run1/model/trained.npz": "9806383a2d335fdfe21639f911946b29b36708aba89f7b3961a4f9999b0388fd",
+    "artifacts/bc-diagnostics-v1-20261023/panel-ledger.json": "6649bcc551e9e70d9cdf39e42273f44dd72cc1eecafeee0b6a0e1aae359b7cf2",
+    "artifacts/bc-diagnostics-v1-20261023/panel-audit.json": "ccc09327347cdbf9d7fa8b4d88d82ba713a91ffc54b01390277e4b7f5d9c14f8",
+    "artifacts/bc-diagnostics-v1-20261023/panel-results.json": "31db391464d035bab9e62f324f7beb4dea941df01aa982f266bcf4292aae4d74",
+    "artifacts/bc-diagnostics-v1-20261023/panel-registration.json": "80870aee745d21dd357661529efe0af2312d15e8c68a2064913d81c882e9496d",
+    "artifacts/bc-diagnostics-v1-20261023/panel-freeze-v2.json": "b51029835088a365bea2e78fc4fb9e929217185a92e03597d942709df445c268",
+    "artifacts/bc-diagnostics-v1-20261023/acceptance.json": "0f0c8b390cfea094488b0f3e67760b22817cb99aedaba4d2d5da4c945e97695f"
+  }
+}

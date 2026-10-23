@@ -1,0 +1,186 @@
+{
+  "platform": "linux",
+  "numpy": "2.5.4",
+  "checkpoint_sha256": "9806383a2d335fdfe21639f911946b29b36708aba89f7b3961a4f9999b0388fd",
+  "dataset_sha256": "5e8f15f513906f83ba03c705f0a64d0223429cac488bbbcc3bc6a897e0498e1d",
+  "prediction_sha256": "7a7f0ec86636d01324994d8a99668d38febd03303730057e30ceb07f5deeb2f4",
+  "metrics": {
+    "train": {
+      "samples": 9127,
+      "errors": 508,
+      "accuracy": 0.9443409663635367,
+      "cross_entropy": 0.12271958928615052,
+      "confusion": [
+        [
+          888,
+          18,
+          34,
+          20,
+          0
+        ],
+        [
+          106,
+          1220,
+          40,
+          8,
+          0
+        ],
+        [
+          6,
+          0,
+          314,
+          6,
+          0
+        ],
+        [
+          18,
+          4,
+          40,
+          2597,
+          192
+        ],
+        [
+          0,
+          16,
+          0,
+          0,
+          3600
+        ]
+      ]
+    },
+    "validation": {
+      "samples": 2356,
+      "errors": 298,
+      "accuracy": 0.8735144312393888,
+      "cross_entropy": 0.3930159100598784,
+      "confusion": [
+        [
+          172,
+          28,
+          18,
+          0,
+          0
+        ],
+        [
+          62,
+          302,
+          8,
+          10,
+          0
+        ],
+        [
+          44,
+          8,
+          32,
+          0,
+          0
+        ],
+        [
+          14,
+          12,
+          42,
+          648,
+          48
+        ],
+        [
+          0,
+          4,
+          0,
+          0,
+          904
+        ]
+      ]
+    },
+    "validation_unseen": {
+      "samples": 1324,
+      "errors": 246,
+      "accuracy": 0.8141993957703928,
+      "cross_entropy": 0.6273422954035318,
+      "confusion": [
+        [
+          172,
+          28,
+          18,
+          0,
+          0
+        ],
+        [
+          62,
+          278,
+          8,
+          10,
+          0
+        ],
+        [
+          44,
+          8,
+          32,
+          0,
+          0
+        ],
+        [
+          14,
+          12,
+          42,
+          588,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          8
+        ]
+      ]
+    },
+    "selected_strawberry_errors": {
+      "samples": 160,
+      "errors": 160,
+      "accuracy": 0.0,
+      "cross_entropy": 1.0940903051270587,
+      "confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          12,
+          4,
+          16,
+          0,
+          128
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    }
+  },
+  "training_runs": 0,
+  "new_games": 0,
+  "cross_platform_comparison_passed": true,
+  "max_cross_entropy_difference": 5.551115123125783e-17,
+  "reference_sha256": "c78d6bad634e801005ef821a12503f536eab3f036592d6a429c14040cc1928b9"
+}

@@ -1,0 +1,28 @@
+{
+  "reviewer": "audit_bc_diagnostics",
+  "independent_subagent": true,
+  "external_webchat": false,
+  "passed": true,
+  "training_not_started": true,
+  "new_games": 0,
+  "checked": [
+    "fixed160 identities match previous diagnostic",
+    "9127/2356 split and labels",
+    "720 updates;167 valid/89 masked last batch",
+    "only output head optimized",
+    "epoch0 and developer CE selection",
+    "historical baseline identity and12+2 budget",
+    "seven regression checks and cross-platform original model"
+  ],
+  "fixed_finding": "Cross-platform floating CE exact comparison replaced by CE-only1e-12 absolute/relative tolerance; per-row prediction hash and all discrete outcomes remain exact",
+  "max_original_cross_platform_ce_difference": 5.551115123125783e-17,
+  "source_sha256": {
+    "baseline_check.py": "2b365b3cf34802745e770b4e7f41213e705db581762485db627c8e980f74524d",
+    "experiment.py": "de656645071d2fcff98d234ab187b692e9772bee49f0b36a8d95fc807e9e356f",
+    "fit.py": "c7ea48609f2727a5ae380bba9154fd437ca355fa658d3dc1e84a7671def560d9",
+    "metrics.py": "cf2dc4122fb3d36cfe3e4f9fcbb2545fd414af377a935ee9fe8c56e8996a2464",
+    "verify_export.py": "d7b97f30b3284dc5fc82317c5751ece11690cfa9366b0068aa357e8e52fbb2a4",
+    "verify_metrics.py": "91e539c8b65c0ec9d5824a5c9d35c5868ebe88656a718ecb109bc44004e57f96",
+    "__init__.py": "88a7f73c64261ca39f2f5c09f1dae360e1b7037d466f2b8695a565834b36c9fb"
+  }
+}
