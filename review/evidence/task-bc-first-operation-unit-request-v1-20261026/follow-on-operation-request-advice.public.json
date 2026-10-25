@@ -1,0 +1,454 @@
+{
+  "schema": "bc-follow-on-operation-request-advice-v1",
+  "status": "planned_not_started",
+  "role": "independent_static_next_stage_advice",
+  "current_accepted_commit": "4b58dcc6595a152ced73f5a4499477a499d2c635",
+  "proposed_stage": "task-bc-first-operation-unit-request-v1",
+  "decision": "只做一个固定历史来源中首次操作类别分歧的完整单位请求比较；不扩展六个WATER样本，不扫全部122处操作分歧，不进行收益归因。",
+  "scientific_question": "在固定已消费来源v1/席0中，最早的条件教师与学生操作类别分歧，若只把该回调改选当前合法条件教师候选并恢复原学生重新枚举、评分后缀，是否改变本回合按单位编号排列的完整最终单位请求？",
+  "why_this_step": [
+    "当前六例只证明step15的两个WATER分配可交换；无法回答不同操作类别是否也仅改变内部任务顺序。",
+    "一个预定案例足以区分该例请求不变与请求改变；不以覆盖所有类别、对手或出现正向结果为目标。",
+    "选固定来源的最早操作分歧，不按HARVEST、FERTILIZE标签、得分损失、严重程度或期望结论挑选。52个HARVEST到WATER和22个FERTILIZE到WATER仍只是线索。",
+    "已验收安全元数据表明该来源有24处操作分歧，且step0到239有1处；因此目标严格限制在早期240回合内，无需预先读取数据寻找位置。",
+    "不选完整教师整回合、官方step或比赛，因为那会改变问题并引入本阶段不能辨认的经济和环境路径。"
+  ],
+  "evidence_status": {
+    "original_student_admission": false,
+    "original_96_game_mean_self_net_gain_difference": -420.1875,
+    "original_96_game_relative_difference_percent": -1.0569,
+    "original_round2_score_difference": -0.25,
+    "original_metrics_provenance": "parent task statement; not independently re-read during this planning",
+    "current_six_water_pairs_accepted": true,
+    "current_six_water_pairs_requests_equal": true,
+    "current_six_water_pairs_are_one_seed_correlated_history": true,
+    "previous_timeout_and_rejected_reviews_preserved": true,
+    "cumulative_task_scoring_before_next_stage": {
+      "groups": 3910,
+      "candidates": 228122
+    },
+    "full_trace_and_model_hashes_are_inherited_until_registered_reads": true
+  },
+  "dataset_identity": {
+    "kind": "historical_development_diagnostic",
+    "source_game": "holdout-1714414373-v1-0-trained",
+    "seed": 1714414373,
+    "opponent": "v1",
+    "side": 0,
+    "historical_name_holdout_does_not_make_it_fresh_holdout": true,
+    "independent_sample_or_generalization_claim": false,
+    "additional_seed_opponent_seat_or_sample_allowed": false,
+    "original_96_or_retained_192_match_rerun_allowed": false
+  },
+  "selection_algorithm_frozen_before_data": {
+    "source_compact": "artifacts/task-bc-saved-student-decisions-v1-20261026/extracted/holdout-1714414373-v1-0-trained/compact.jsonl",
+    "compact_sha256": "e5218e62f5d09db7acbbd6feeab6bbe3b7169011957254399ea18b6fa0b339da",
+    "compact_bytes_exact": 923156,
+    "compact_total_rows_inherited": 2053,
+    "early_callback_rows_inherited": 691,
+    "projection_receipt": "artifacts/task-bc-saved-student-decisions-v1-20261026/extracted/holdout-1714414373-v1-0-trained/receipt.json",
+    "projection_receipt_sha256": "0f6e8918e44578fcd816fbc69eb1af6af91d30e7f0cc07022b3bd42c0f01d8c4",
+    "rule": [
+      "由事前独立编写并冻结的选择器作为唯一compact读取者，按文件原始顺序单遍读取、增量SHA256；主探针不再读compact。",
+      "仅解码从起点到首个teacher.op != chosen.op的前缀；每条必须是绑定game、合法schema，step和record_index严格符合已绑定receipt.turns的任务回调顺序。flags.op_mismatch必须与两个合法操作码直接比较一致。",
+      "选择该首行；要求step在0到239内。至多解码691条，遇到step>=240而仍未找到即停止为无法判定，不改挑别处。",
+      "选择后继续同一文件流读取余下原字节完成既有923156字节SHA绑定，但不解码后缀，不产生第二个候选，不重新打开。只有完整SHA符合时选择才有效。",
+      "选择收据绑定step、record_index、source_line_sha256、两个候选描述和选择前缀证书；证书只含必要行身份和操作码，保存在私有输出。",
+      "选择器全程不看最终单位请求差异、模型评分、收益或干预结果；源compact自带unit_request会随前缀JSON被解码，必须计入，不能用于选择。",
+      "独立最终核对器从本轮选择证书重算最早操作分歧及顺序，并核对选择收据、compact完整SHA和已绑定投影receipt；这是输出收据核对，不宣称第二次原始数据复现。"
+    ],
+    "target_step_and_record_index_now": null,
+    "target_operation_pair_now": null,
+    "selection_currently_executed": false,
+    "no_eligible_or_mismatch_action": "无法判定并停止；不补样、不改类别、不跨席位。"
+  },
+  "exact_future_input_scope": {
+    "trace": "artifacts/task-bc-holdout-v1-20261023/traces/holdout-1714414373-v1-0-trained.jsonl.gz",
+    "inherited_trace_sha256": "a07ac7ccecd84d492bc1b25adfde238bc423692e4c574ff31782e2be174269a5",
+    "inherited_trace_size_bytes": 6825738,
+    "inherited_trace_mtime_ns": 1792750489819226300,
+    "raw_read": "仅一次gzip流，从头读取至选择step+1物理行，只有目标行JSON解码；前缀其他行只计字节，不JSON解码。目标行原字节SHA必须等于选择器输出的source_line_sha256。到目标后关闭，不探测EOF，不重算全trace SHA。",
+    "target_payload": "仅一个完整事实回合的records、crop_records、final_reservations及其中观测/配置/数值输入；整行JSON已经解码的所有嵌套对象均计入，不将未使用字段写成零消费。",
+    "task_model": {
+      "path": "artifacts/task-bc-holdout-v1-20261023/model/trained.npz",
+      "sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143"
+    },
+    "crop_model": {
+      "path": "artifacts/bc-epoch6-holdout-v1-20261023/panels/fixed_epoch6/model/trained.npz",
+      "sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd"
+    },
+    "forbidden": [
+      "其他trace或原Replay",
+      "旧first-witness",
+      "旧pairs",
+      "其他compact",
+      "其他模型",
+      "新比赛",
+      "官方step",
+      "完整教师策略调用",
+      "重训",
+      "DAgger",
+      "PPO"
+    ]
+  },
+  "paired_protocol": [
+    "先独立选择并验证完整compact字节绑定，再读取唯一原流目标行；所有数据/模型读取必须在事前代码冻结、独立预审、root裁决及本地提交之后。",
+    "原学生基线从该回合相同事实观测和配置完整运行一次，必须精确复现完整历史语义trace和历史最终单位向量；仅排除已有定义的crop inference_seconds。不能回放记录ID掩盖复现失败。",
+    "基线全部成功后才允许干预。由同一事实观测与配置重新运行原学生，目标前每条输入、已声明控制器局部状态、实际选择及顺序与基线精确相同。",
+    "目标前允许学生与条件教师已有候选身份分歧；只要求原学生事实前缀复现。不得沿用index<target时student==teacher的WATER专用断言。目标定义是首次操作类别分歧，不是首次候选身份分歧。",
+    "目标回调验证当前合法候选全集、输入、局部状态及当前条件教师排名与历史/基线一致，并确认学生与教师操作类别不同；不要求两者单位或地块不同。只强制一次当前合法条件教师候选。",
+    "立即恢复原任务学生，真实执行任务移除、重新枚举与重新数值评分；作物选择仍用原作物模型。禁止复用旧后缀ID、缓存评分或完整教师接管。",
+    "比较历史unit_actions、基线返回和干预返回的[farmer,*hands]；严格保留单位索引、对象及数组顺序、数值类型和float64位表示。",
+    "主要结论仅是完整请求向量相同/不同；同时报告改变单位数及请求操作类别。只有收据逐项支持时才描述实际任务顺序交换或后缀重新汇合，不预设本例必有该结构。"
+  ],
+  "implementation_reuse": {
+    "reuse_unchanged": [
+      "learning.task_bc_first_water_unit_requests_v1.model_io.model_reads用于两个既有模型各一次原字节SHA和构造读取计量。",
+      "learning.task_bc_diagnostics_capacity_exit_v1.windows_tree.run_owned用于单工作进程、Job内存限制、截止、自然退出、树/句柄关闭。",
+      "learning.task_bc_error_diagnostics_v1.shadow.ordered_hash及first_difference作为主路径有序精确比较器。",
+      "现有probe的计量、限定局部上下文快照、完整基线核对、当前合法强制选择、原学生新后缀、配对收据协议；现有source的底层压缩读取计量和解码子对象计数。"
+    ],
+    "required_small_generalization": [
+      "新增小型阶段入口和独立选择器；通用读取/探针/核对逻辑通过少量显式scope/spec参数或小型共用核心复用，不复制整个历史实验框架。",
+      "source目标step、前缀step+1、样本数、首分歧谓词、接收的行SHA必须来自冻结选择规则的有效收据；移除新路径中的step15/16行/WATER限定，但保持schema和字节验证。",
+      "probe将目标前student==teacher限定替换为与事实学生前缀精确一致，将WATER同类且工人/地块不同限定替换为当前合法候选的操作不同。",
+      "独立checker不能沿用固定六个SHA、96行、六次替换或target前全教师相等的常量；应绑定独立选择收据，一例、实际step+1行、一次替换，并独立验证预算与前缀/后缀约束。",
+      "若为复用必须抽取现有函数，保留旧入口默认语义和已提交旧版本；新阶段绑定新源码SHA，绝不改写旧OUT、旧freeze或旧验收来伪称旧证据适用新源码。变动只限上述必要适配。"
+    ],
+    "known_blocker_if_not_resolved_before_data": "仅改samples或取消旧验证不能安全运行；若预审时尚未具备动态选样绑定、事实前缀复现及计量复用，就停止在准备阶段。",
+    "not_needed": [
+      "新通用审计平台",
+      "新全仓审计",
+      "大范围复制旧package",
+      "新训练器",
+      "永久性大套测试基础设施"
+    ]
+  },
+  "proposed_frozen_budget": {
+    "total_executable_seconds_max": 120,
+    "selection_phase_seconds_max_including_close": 15,
+    "primary_phase_seconds_max_including_close": 65,
+    "independent_checker_seconds_max_including_close": 20,
+    "finalization_and_close_reserve_seconds": 20,
+    "per_controller_call_seconds_max": 10,
+    "model_load_phase_seconds_max": 20,
+    "per_close_seconds_max": 10,
+    "clock": "单个连续时钟在首次compact/原流/模型读取及一次性协议核对前启动，覆盖选择、主探针、独立核对、最终账本和所属进程关闭。失败不重置时钟。",
+    "max_concurrent_workers": 1,
+    "worker_process_trees_max": 3,
+    "blas_threads": 1,
+    "process_tree_private_commit_bytes_max": 1073741824,
+    "compact": {
+      "files_opened_max": 1,
+      "read_passes_max": 1,
+      "bytes_read_max": 923156,
+      "json_decoded_prefix_rows_max": 691,
+      "single_line_bytes_max": 65536,
+      "decoded_teacher_descriptors_max": 691,
+      "decoded_chosen_descriptors_max": 691,
+      "decoded_unit_requests_max": 691,
+      "suffix_rows_json_decoded_max": 0,
+      "existing_witness_or_pair_reads_max": 0
+    },
+    "raw_source": {
+      "gzip_opens_max": 1,
+      "prefix_lines_returned_max": 240,
+      "target_json_turns_decoded_max": 1,
+      "skipped_lines_json_decoded_max": 0,
+      "compressed_bytes_read_max": 6825738,
+      "returned_payload_bytes_max": 67108864,
+      "single_line_bytes_max": 4194304,
+      "target_json_bytes_max": 4194304,
+      "target_task_records_max": 16,
+      "target_candidate_objects_and_x_arrays_max": 8192,
+      "target_shared_x_observation_configuration_objects_max_each": 16,
+      "target_crop_records_and_numeric_payloads_max": 16,
+      "rereads_max": 0,
+      "whole_trace_hash_passes_max": 0,
+      "raw_replay_reads_max": 0
+    },
+    "models": {
+      "distinct_npz_files_max": 2,
+      "checkpoint_hash_passes_max": 2,
+      "model_object_loads_max": 2,
+      "np_load_calls_max": 2,
+      "model_returned_read_bytes_max": 4194304,
+      "task_forward_calls_max": 31,
+      "task_scored_candidates_max": 15872,
+      "crop_forward_calls_max": 32,
+      "crop_logits_values_max": 160,
+      "numeric_cache_reuse": false,
+      "warmup_forwards_max": 0
+    },
+    "controller": {
+      "real_calls_max": 2,
+      "baseline_calls_max": 1,
+      "intervention_calls_max": 1,
+      "forced_choices_exact_when_complete": 1,
+      "units_per_observation_max": 16,
+      "callbacks_per_call_max": 16,
+      "callbacks_total_max": 32,
+      "task_candidate_encodings_max": 32,
+      "candidates_per_callback_max": 512,
+      "generated_candidate_objects_max": 16384,
+      "full_teacher_calls_max": 0
+    },
+    "source_and_metadata": {
+      "bound_projection_receipt_reads_max": 1,
+      "bound_projection_receipt_bytes_max": 131072,
+      "fixed_registration_and_selection_metadata_bytes_max": 262144
+    },
+    "outputs": {
+      "selection_receipt_bytes_max": 131072,
+      "primary_receipt_bytes_max": 131072,
+      "pair_receipt_files_max": 1,
+      "pair_receipt_bytes_max": 262144,
+      "machine_checker_aggregate_receipt_bytes_max": 524288,
+      "machine_checker_passes_per_receipt_max": 1,
+      "machine_checker_old_compact_raw_model_controller_reads_or_calls_max": 0,
+      "public_summary_bytes_max": 65536,
+      "all_new_diagnostic_artifact_bytes_max": 2097152
+    },
+    "human_review": {
+      "independent_reviewer_minutes_max": 5,
+      "selected_new_pair_reads_max": 1,
+      "selected_new_selection_receipt_reads_max": 1,
+      "private_receipt_bytes_max": 393216,
+      "root_old_or_new_raw_pair_model_reads_max": 0,
+      "root_safe_metadata_review_minutes_max": 3
+    },
+    "one_off_in_memory_protocol_checks": {
+      "cases_max": 5,
+      "fake_callback_events_max": 20,
+      "fake_candidates_max": 40,
+      "real_models_controllers_sources_max": 0,
+      "scope": "仅验证动态目标、存在较早同类身份分歧时仍复现原学生、非法强制/前缀错配拒绝、有序单位比较和前向超限前停止。复用现有检查，不为可逆适配新增测试体系。"
+    },
+    "training_runs_max": 0,
+    "new_games_max": 0,
+    "official_transitions_max": 0,
+    "retries_max": 0,
+    "replacement_samples_max": 0,
+    "maximum_cumulative_task_scoring_if_all_allowances_consumed": {
+      "groups": 3941,
+      "candidates": 243994
+    },
+    "accounting_rules": [
+      "先约束读取/前向；解码后立即计入所有已发生嵌套对象再检查限制。候选已经由控制器生成才进入回调时如实计入，不冒充未消费。",
+      "模型SHA和np.load读取分别计量，两个头的全部数值前向、失败部分和基线/干预均收费；强制回调不额外任务前向。",
+      "规划读取的安全元数据不是训练或实验数据；未来compact读取和目标原流解码均算历史数据再消费，不能因旧数据而免费。",
+      "失败消费不退款；记录reserved/started/completed及未确认部分，累计旧评分3910组/228122候选不回退。"
+    ]
+  },
+  "acceptance_and_stopping": {
+    "same": "协议和生命周期全部通过且有序向量完全相同：只接受该单例的单点操作偏好替换不改变当回合单位请求。保留它是否只是局部重排的收据证据，不外推。",
+    "different": "协议和生命周期全部通过且有序向量不同：接受该单例操作分歧会改变当回合单位请求；不称任何一边正确、更优、官方已执行或造成收益差。",
+    "undetermined": "无有效目标、绑定/基线/前缀/合法性失败、异常/fallback、超预算、进程不自然关闭或核对失败，记录无法判定及实际消费并停止；该次执行未验收。",
+    "single_execution": "单一新OUT、exclusive create started；唯一冻结入口只运行一次。既有输出即拒绝，不覆盖、刷新、补样、调阈值或自动重试。",
+    "stop_even_if_result_uninteresting": true,
+    "no_auto_followup_data_after_this_case": true,
+    "required_before_first_data": [
+      "root独立裁决本建议",
+      "最小实现和独立选择器/核对器完成",
+      "冻结代码/输入身份/预算",
+      "独立预审通过",
+      "本地事前提交并核对绑定"
+    ],
+    "required_before_acceptance": [
+      "独立机器核对通过",
+      "独立人工复审通过",
+      "root仅用安全元数据核实",
+      "保留历史/模型/default/教师",
+      "脱敏检查后提交发布"
+    ],
+    "this_advice_is_not_execution_authorization_or_passed_review": true
+  },
+  "unknowns_to_preserve": [
+    "目标实际step、回调索引、操作组合、任务/作物回调数、单位数及请求变化均未读取或计算。",
+    "原流前缀关闭后gzip内部已解压但未返回的字节量未知；即使成功也不得写成零或宣称EOF完整验证。",
+    "原流完整SHA沿用已验收证据；本轮只能新证明确切目标行原字节和读取计量。stat一致不等于重新哈希全部历史。",
+    "失败读取、解码、前向或进程中断的部分工作若不可精确计量，保留独立unknown，不能借计划内gzip未知掩盖。",
+    "本轮不比较完整市场返回值、隐藏状态、官方执行、下一回合或经济收益。",
+    "其余121处操作分歧、其余候选分歧、其他来源/种子及原96场保留能力仍未知；一次请求改变或不变均不说明泛化。",
+    "旧学生准入false及900秒旧诊断失败和其他失败证据均不被本阶段成功覆盖。"
+  ],
+  "publication": {
+    "public": "本建议、冻结代码及哈希、样本规则、计数、相同/不同/无法判定、改变单位数、请求操作类别与边界。",
+    "private": "compact内容、前缀证书、完整配对收据、数值特征、原始观测/坐标、完整单位请求向量、模型、原流、日志和进程身份。",
+    "public_hashes_not_independent_raw_reconstruction": true,
+    "only_new_file_in_this_planning": "artifacts/task-bc-first-water-unit-requests-v1-20261026/follow-on-operation-request-advice.json"
+  },
+  "planning_activity": {
+    "method": "bounded_static_source_and_sanitized_metadata_only",
+    "raw_trace_or_gzip_content_reads": 0,
+    "raw_replay_reads": 0,
+    "compact_content_reads": 0,
+    "witness_content_reads": 0,
+    "pair_content_reads": 0,
+    "model_content_reads_or_hashes": 0,
+    "model_loads": 0,
+    "model_forwards": 0,
+    "controller_calls": 0,
+    "candidate_reconstructions": 0,
+    "experiments": 0,
+    "tests": 0,
+    "training_runs": 0,
+    "new_games": 0,
+    "official_transitions": 0,
+    "existing_artifact_modifications": 0,
+    "implementation_modifications": 0,
+    "planning_json_creation_and_parse_is_not_an_experiment": true,
+    "Agent_Workflow_invocations": 0,
+    "scope_of_metadata_reads": "Two published reports, current registration/freeze/summary/review/root/publication metadata, previous safe summary/check summary/projection receipt; directory names and lengths only for private data; direct relevant source only."
+  },
+  "created_utc": "2026-10-25T16:59:45.2625189Z",
+  "evidence_and_source_sha256": [
+    {
+      "kind": "published_report",
+      "path": "publication/ai-game-lab/kaggriculture/TASK_BC_FIRST_WATER_UNIT_REQUESTS_V1.zh-CN.md",
+      "sha256": "0b188f32c02d33ad304bd38fb6a3391afe4906b1e1729c19b1a21eab2d77f13d",
+      "bytes": 7897,
+      "inspection": "relevant source sections or sanitized metadata fields; fresh hash covers this listed file only"
+    },
+    {
+      "kind": "published_report",
+      "path": "publication/ai-game-lab/kaggriculture/TASK_BC_SAVED_STUDENT_DECISIONS_V1.zh-CN.md",
+      "sha256": "a16b219bc3e26db0760c5c7e15438dbb0234bc22f937f4559689d3294084ca1f",
+      "bytes": 6608,
+      "inspection": "relevant source sections or sanitized metadata fields; fresh hash covers this listed file only"
+    },
+    {
+      "kind": "sanitized_metadata",
+      "path": "kaggriculture/artifacts/task-bc-first-water-unit-requests-v1-20261026/registration.json",
+      "sha256": "d806313ba7e519b676099203777e2c2e99f7103aeed7bef4ac6e9c5a1da1fd11",
+      "bytes": 33950,
+      "inspection": "relevant source sections or sanitized metadata fields; fresh hash covers this listed file only"
+    },
+    {
+      "kind": "sanitized_metadata",
+      "path": "kaggriculture/artifacts/task-bc-first-water-unit-requests-v1-20261026/freeze.json",
+      "sha256": "63941e6379dedd123184c99bda9f5238cf262273867cb30e404a36ced33c5bcd",
+      "bytes": 34411,
+      "inspection": "relevant source sections or sanitized metadata fields; fresh hash covers this listed file only"
+    },
+    {
+      "kind": "sanitized_metadata",
+      "path": "kaggriculture/artifacts/task-bc-first-water-unit-requests-v1-20261026/summary.json",
+      "sha256": "33a2838875ff0adb6b99fb7927cc422355313d84006b5df972f0d807e5183541",
+      "bytes": 32792,
+      "inspection": "relevant source sections or sanitized metadata fields; fresh hash covers this listed file only"
+    },
+    {
+      "kind": "sanitized_metadata",
+      "path": "kaggriculture/artifacts/task-bc-first-water-unit-requests-v1-20261026/evidence-review.json",
+      "sha256": "2ea0c2b3217f745c84a910bd7f9d5f380d996723d7c28ccc91c6f0f5a5a14510",
+      "bytes": 19497,
+      "inspection": "relevant source sections or sanitized metadata fields; fresh hash covers this listed file only"
+    },
+    {
+      "kind": "sanitized_metadata",
+      "path": "kaggriculture/artifacts/task-bc-first-water-unit-requests-v1-20261026/root-evidence-acceptance.json",
+      "sha256": "1fe5c31939c4e5b48cf80035e1ecc32838514ee5c54985452db5141f05e5747c",
+      "bytes": 3011,
+      "inspection": "relevant source sections or sanitized metadata fields; fresh hash covers this listed file only"
+    },
+    {
+      "kind": "sanitized_metadata",
+      "path": "kaggriculture/artifacts/task-bc-first-water-unit-requests-v1-20261026/publication-verification.json",
+      "sha256": "037c3d3c33477c2d63ab7f02e514a74ac792c823663b0ebeceb4bc3c49eab422",
+      "bytes": 2178,
+      "inspection": "relevant source sections or sanitized metadata fields; fresh hash covers this listed file only"
+    },
+    {
+      "kind": "sanitized_metadata",
+      "path": "kaggriculture/artifacts/task-bc-saved-student-decisions-v1-20261026/summary.json",
+      "sha256": "9e0d00faa9917b3ff151df901e2e5de87b71f07cc4e7baf2b8f236ba5f5947d1",
+      "bytes": 2363,
+      "inspection": "relevant source sections or sanitized metadata fields; fresh hash covers this listed file only"
+    },
+    {
+      "kind": "sanitized_metadata",
+      "path": "kaggriculture/artifacts/task-bc-saved-student-decisions-v1-20261026/check/summary.json",
+      "sha256": "41ff6a114eb30c6a4a7a89c77cde81c5a87720e9bbbb9ab54e43958023575bbd",
+      "bytes": 30661,
+      "inspection": "relevant source sections or sanitized metadata fields; fresh hash covers this listed file only"
+    },
+    {
+      "kind": "projection_metadata",
+      "path": "kaggriculture/artifacts/task-bc-saved-student-decisions-v1-20261026/extracted/holdout-1714414373-v1-0-trained/receipt.json",
+      "sha256": "0f6e8918e44578fcd816fbc69eb1af6af91d30e7f0cc07022b3bd42c0f01d8c4",
+      "bytes": 93269,
+      "inspection": "relevant source sections or sanitized metadata fields; fresh hash covers this listed file only"
+    },
+    {
+      "kind": "source",
+      "path": "kaggriculture/learning/task_bc_first_water_unit_requests_v1/source.py",
+      "sha256": "5905e4163fd7e1345a35240c9315e8b62dc4079d4f3fca95a3065718e322e6c4",
+      "bytes": 23941,
+      "inspection": "relevant source sections or sanitized metadata fields; fresh hash covers this listed file only"
+    },
+    {
+      "kind": "source",
+      "path": "kaggriculture/learning/task_bc_first_water_unit_requests_v1/probe.py",
+      "sha256": "8ddc5f979a40a4d0e7d5d3fc2fe227bab45e18098b1069d24411188a485b3d61",
+      "bytes": 32206,
+      "inspection": "relevant source sections or sanitized metadata fields; fresh hash covers this listed file only"
+    },
+    {
+      "kind": "source",
+      "path": "kaggriculture/learning/task_bc_first_water_unit_requests_v1/model_io.py",
+      "sha256": "6275a55af496902ce97340dc94f0d87e9f7e051232e4916410adf827c88d6c6a",
+      "bytes": 18718,
+      "inspection": "relevant source sections or sanitized metadata fields; fresh hash covers this listed file only"
+    },
+    {
+      "kind": "source",
+      "path": "kaggriculture/learning/task_bc_first_water_unit_requests_v1/experiment.py",
+      "sha256": "260d2ddf38c5fc12aa3eb26d8d0fd3dc16dac8a49a43d93fd55ce577b50d18d4",
+      "bytes": 23182,
+      "inspection": "relevant source sections or sanitized metadata fields; fresh hash covers this listed file only"
+    },
+    {
+      "kind": "source",
+      "path": "kaggriculture/learning/task_bc_first_water_unit_requests_v1/check.py",
+      "sha256": "cc1584a0ddb917cfb66e48476cd01ef45aa0264cf705344048c15f829d22773e",
+      "bytes": 42586,
+      "inspection": "relevant source sections or sanitized metadata fields; fresh hash covers this listed file only"
+    },
+    {
+      "kind": "source",
+      "path": "kaggriculture/learning/task_bc_saved_student_decisions_v1/extract.py",
+      "sha256": "bd2e238f581644e1036b20133c4cb2cd47aef78aa270433d79ccb9152e251107",
+      "bytes": 24693,
+      "inspection": "relevant source sections or sanitized metadata fields; fresh hash covers this listed file only"
+    },
+    {
+      "kind": "source",
+      "path": "kaggriculture/learning/task_bc_saved_student_decisions_v1/check.py",
+      "sha256": "48cc605eaff93c7a63b72fe3266b2ae0786ea0c79a64cf0352534b78570d28d7",
+      "bytes": 23409,
+      "inspection": "relevant source sections or sanitized metadata fields; fresh hash covers this listed file only"
+    },
+    {
+      "kind": "source",
+      "path": "kaggriculture/learning/task_bc_error_diagnostics_v1/shadow.py",
+      "sha256": "095f6a896c259f840af4c59adc922cc9782fe69aafd3b0df7ea04df9160c3251",
+      "bytes": 8220,
+      "inspection": "relevant source sections or sanitized metadata fields; fresh hash covers this listed file only"
+    },
+    {
+      "kind": "source",
+      "path": "kaggriculture/learning/task_bc_diagnostics_capacity_exit_v1/windows_tree.py",
+      "sha256": "04c7b51e8a97483f3650f50427c9e6e7bf74e31e790d93d5579d79726b292f38",
+      "bytes": 13090,
+      "inspection": "relevant source sections or sanitized metadata fields; fresh hash covers this listed file only"
+    }
+  ],
+  "publication_redaction": {
+    "removed_fields": [
+      "memory_boundary_reference",
+      "planning_activity.memory_use"
+    ],
+    "reason": "Omit unrelated local memory provenance from the public research artifact. Original advice stays local; experimental evidence, scope and budget are unchanged."
+  }
+}

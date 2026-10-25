@@ -1,0 +1,135 @@
+{
+  "schema": "first-operation-unit-request-static-pre-review-v1",
+  "passed": true,
+  "status": "static_pre_review_passed_execution_not_started",
+  "created_utc": "2026-10-25T17:16:57.427784+00:00",
+  "reviewer": "independent /root/unit_request_auditor",
+  "reviewer_implemented_or_edited_stage_sources": false,
+  "stage": "task-bc-first-operation-unit-request-v1",
+  "freeze_sha256": "6097655fc3391637783956241bd3d771837195080786d616e0e4505580a3063a",
+  "registration_sha256": "69a5eb74c141c9c3b7a15ae934691b89e2425290c94c5ef2a79ba096a5d01724",
+  "review_basis": "Direct static reading of all seven new source/documentation files and their relevant unchanged direct dependencies, followed by exact-byte metadata and source binding verification. No project import, experimental command, protocol case or machine checker was executed by this reviewer.",
+  "blocking_findings": [],
+  "resolved_before_this_review": [
+    {
+      "finding": "The rejected parent only aggregated all OUT bytes after its failure-finally rethrow; a failed dispatch or failed summary could leave log and partial-output aggregate consumption unrecorded.",
+      "rejected_freeze_sha256": "8d1f05be3cf55396927fec2c565c182bf02b8f003b4ac3a9c3629fe32e1bb475",
+      "rejected_experiment_sha256": "57a9286fa7a466ab79c872191c13198b1f33975fcdfde899c9e85fe2d89193a0",
+      "accepted_experiment_sha256": "77dd0db963e7c05d772d4f57349ca7ab30a16bde4af311e3281c04d40e16911b",
+      "resolution": "account_outputs now executes in an inner finally spanning dispatch, verification, historical checks and summary serialization/writes. It retains all current OUT sizes, logs and partial files, counts its own receipt by a size fixed point, records a partial known subtotal plus explicit unknown if enumeration/stat fails, and rejects unknown or over-limit totals. Original failure exits remain nonzero; the successful acceptance path still rechecks the final aggregate and original deadline.",
+      "validation": "Static control-flow review of the exact preserved-old/current-source diff only; failure injection was not run.",
+      "preserved_rejection_directory": "preexecution-revisions/1",
+      "registration_bytes_unchanged": true
+    }
+  ],
+  "exact_binding_evidence": {
+    "runtime_source_files_sha256_verified": 147,
+    "public_source_files_sha256_verified": 147,
+    "previous_frozen_source_entries_preserved_byte_for_byte": 140,
+    "new_source_files": {
+      "learning/task_bc_first_operation_unit_request_v1/check.py": "6ff34650d1b06b4e59da314a6cf9bec793b2784bc20560eb471b6a5e8aafa0ba",
+      "learning/task_bc_first_operation_unit_request_v1/experiment.py": "77dd0db963e7c05d772d4f57349ca7ab30a16bde4af311e3281c04d40e16911b",
+      "learning/task_bc_first_operation_unit_request_v1/probe.py": "0882445c5e75f6405fe35310d8793987f1204a29ec2f77bb07d13b64516bc17b",
+      "learning/task_bc_first_operation_unit_request_v1/README.zh-CN.md": "15c03a7e8e4397302c23b592b1153982b4e85ac956be43dd25be05140dc306ba",
+      "learning/task_bc_first_operation_unit_request_v1/select.py": "383035e5a848ead0b143b65b2d06a45668069af4656a1ec78b9c02981e263b48",
+      "learning/task_bc_first_operation_unit_request_v1/source.py": "88f17e4e6ca013a7f220e42d4bde6cc896dc528dffe5b0b2848b689fa10a5aa8",
+      "learning/task_bc_first_operation_unit_request_v1/__init__.py": "720b42b458112281efa6e89233300789dee90a1dcfe2be593c2cd3d03e68c329"
+    },
+    "public_source_overrides": {
+      "decision/execution.py": "e1b8acb32ef0b31c0de3048d481d84babf3b07510d18a9d3b2fd3da471d8f239",
+      "decision/full_audit.py": "0ae434974ac8fced76033c26b9c27f6ffce24e1f598f6fba6c7dc11306d903a8",
+      "decision/verify_audit.py": "3afc9b0a2bb04114d8bed42d6568809b87677dc39c0bd783a1b1898e3a693c3e",
+      "learning/round2_worker.py": "ff823541f43ec2a0671aefbb2a3803daf6d3b882cebed4534eb2bdbb5efb35a1"
+    },
+    "public_override_scope": "Only the four inherited CRLF/LF mappings; all seven new public sources match their runtime hashes directly.",
+    "safe_prior_metadata_hashes_verified": 6,
+    "adopted_planning_hashes_verified": 2,
+    "public_registration_freeze_and_two_plan_copies_match": true,
+    "protection_before_hash_verified": true,
+    "registered_budget_and_fixed_input_selection_fields_match_adopted_plan": true,
+    "official_default_and_model_stat_bindings_match_prior_registration": true,
+    "registration_freeze_bytes": 30482,
+    "maximum_registered_control_input_bytes": 253000,
+    "control_input_limit_bytes": 262144,
+    "control_input_definition": "Three worker registration+freeze reads, one parent final binding read, plus one primary selection receipt read. The separately capped checker reads and the original projection read retain their registered scopes; the definitions existed before execution.",
+    "new_execution_outputs_and_preregistration_commit_receipt_absent_when_reviewed": true,
+    "binding_mismatches": []
+  },
+  "static_contract_checks": [
+    {
+      "component": "select.py",
+      "result": "The independent selector opens only the fixed projection once and the fixed compact once. It validates registered stat/identity and the exact compact size, streams all 923156 bytes into the bound SHA without an extra EOF read, and JSON-decodes only the prefix through the first legal teacher.op != chosen.op, at most 691 rows. Prefix rows follow the bound projection callback sequence; earlier same-operation identity differences are not selected. Decoded teacher/chosen/request children and failed read/decode work are counted. The remaining compact suffix is hashed without JSON decoding. Target descriptors and the minimal prefix certificate remain private."
+    },
+    {
+      "component": "source.py",
+      "result": "The selected game/side, step/index, descriptor identities and source-line SHA are bound to the one fixed trace. One gzip stream returns at most selected step+1 physical lines (maximum 240), and only the selected line is JSON-decoded. The full target turn, factual observations/configurations, all nested records/candidate features and crop payloads are charged before validation; 16-unit/callback caps are used. Whole-trace SHA remains inherited. Planned unknown unreturned gzip buffer work is separate from failed-work unknowns. Internal device/inode identities are not serialized."
+    },
+    {
+      "component": "probe.py and unchanged original TaskAgent/JointAgent path",
+      "result": "The complete baseline is checked against the saved semantic trace, including ordered f64 inputs, records, crops, reservations and full unit vectors. Earlier same-operation teacher/student identity disagreements retain the actual student choice. One selected current legal candidate with a different operation is substituted at the target callback. The overridden callback calls the original TaskAgent selection/encoding path once and does not also score the task student. After the target, the original student selector is restored and new suffix contexts/candidates are enumerated and scored; saved future choices or cached numeric scores are not substituted."
+    },
+    {
+      "component": "unchanged model_io.py and forward meters",
+      "result": "The two registered model files each receive one original SHA pass and one load. The unchanged wrappers account for np.load lazy member access, returned read bytes including seek rereads, read/seek/open/close starts and completions, model object loads, and partial failures. Task/crop forward reservations and completed candidates/logits are separately charged. The adapted caps are 31 task forwards/15872 task candidates, 32 crop forwards/160 logits, two controller calls, 32 encodings and one forced choice."
+    },
+    {
+      "component": "check.py",
+      "result": "The independently authored checker imports validation helpers from the previous independent checker, not the producer. It recomputes selection prefix order/first operation mismatch, descriptor legality, whole ordered unit vectors, baseline history bindings, the unique override and fresh later score sequence. Reimplemented vector and callback validation allows up to 16 units/callbacks without inheriting the prior 8-unit limit. It reads only the three new selection/primary/pair receipts once each, at most 512 KiB in aggregate; it neither rereads compact/raw/projection/model data nor invokes a controller."
+    },
+    {
+      "component": "experiment.py and README.zh-CN.md",
+      "result": "The root entry requires the exact reviewed freeze and local commit bytes before first data/protocol execution. An exclusive started marker rejects repeat execution. Three owned workers run sequentially under one 120-second clock with phase limits 15/80/100 seconds, stage duration caps 15/65/20 and the original 10-second close reserve subtracted within each phase. Successful acceptance requires zero worker exits, natural tree closure, zero active processes, all native handles closed, valid terminal counters, unchanged source/dependency/metadata bindings and original final deadlines. Incomplete terminal work is retained as partial/unknown, never zero. Safe receipts do not include private observation payloads, coordinate descriptors, native identities or raw exception text; logs/local lifecycle/private receipts remain local."
+    }
+  ],
+  "registered_execution_caps_reviewed": {
+    "total_seconds": 120,
+    "sequential_worker_trees": 3,
+    "max_concurrent_workers": 1,
+    "private_commit_bytes": 1073741824,
+    "blas_threads": 1,
+    "compact_json_prefix_rows_max": 691,
+    "compact_bytes_exact": 923156,
+    "raw_prefix_lines_max": 240,
+    "target_json_turns_max": 1,
+    "model_hashes_and_loads_each": 2,
+    "real_controller_calls_max": 2,
+    "completed_baselines_and_interventions_each": 1,
+    "forced_choices_exact": 1,
+    "protocol_cases_max": 5,
+    "fake_callback_events_max": 20,
+    "fake_candidates_max": 40,
+    "checker_new_receipt_bytes_max": 524288,
+    "all_out_artifact_bytes_max": 2097152,
+    "retries_replacement_samples_training_new_games_official_transitions": 0,
+    "prior_consumed_task_groups": 3910,
+    "prior_consumed_task_candidates": 228122,
+    "maximum_cumulative_task_groups": 3941,
+    "maximum_cumulative_task_candidates": 243994
+  },
+  "reviewer_activity_for_this_stage": {
+    "new_source_files_read": 7,
+    "source_and_safe_metadata_only": true,
+    "compact_files_read": 0,
+    "projection_receipt_contents_read": 0,
+    "raw_trace_or_replay_files_read": 0,
+    "old_or_new_pairs_or_witness_files_read": 0,
+    "model_content_reads_hashes_loads_or_forwards": 0,
+    "controller_calls": 0,
+    "project_imports": 0,
+    "protocol_or_other_tests_executed": 0,
+    "machine_checker_executions": 0,
+    "training_games_official_steps": 0,
+    "temporary_files_created": 0,
+    "implementation_files_modified": 0,
+    "agent_workflow_used": false,
+    "deliverable_written": "pre-review.json only"
+  },
+  "limitations_and_required_next_evidence": [
+    "This passed flag certifies only the exact static pre-review. It is not an execution, lifecycle, failure-injection, data-reproduction or numerical-result acceptance.",
+    "The selected target and student operation remain unknown to this reviewer. No claim about changed or equal unit requests is made before execution.",
+    "The independently checked future receipts will be output-evidence verification, not a second raw-source or model reproduction. The planned unknown unreturned gzip buffers must remain visible.",
+    "A local exact-byte commit is required after this review and before any data/protocol execution; it is not an external timestamp proof.",
+    "Execution must remain a single bounded case and stop regardless of equality, difference or failure. There is no authorization here for another sample, retry, training, market comparison, official step, new game or economic claim.",
+    "Later acceptance still requires natural closure and final zero parent exit, final deadline/output accounting, independent machine and separately budgeted human receipt review, root safe-metadata acceptance and publication redaction. Earlier model-admission and strict-review failures remain unchanged."
+  ]
+}

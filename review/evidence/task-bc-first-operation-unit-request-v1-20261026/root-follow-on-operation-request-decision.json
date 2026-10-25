@@ -1,0 +1,233 @@
+{
+  "schema": "bc-root-follow-on-operation-request-decision-v1",
+  "status": "planned_not_started",
+  "created_utc": "2026-10-25T17:02:11.595005+00:00",
+  "current_published_commit": "4b58dcc6595a152ced73f5a4499477a499d2c635",
+  "accepted_original_advice_sha256": "49859b779998978e7f3a5ca6d212cffda8580343b844fcb0df65318c836193d4",
+  "accepted_public_advice_sha256": "f4f7345f5e02e32587fcfdcbd2ea901ba7c6f075b6ef205d3d273fa29a9cc4aa",
+  "freeze_planning_input": "follow-on-operation-request-advice.public.json",
+  "next_stage": "task-bc-first-operation-unit-request-v1",
+  "rationale": "The completed six cases resolve only a within-WATER ordering issue. One predetermined earliest operation mismatch tests the missing request-level distinction without multiplying correlated mirror samples or presuming an error. This does not diagnose the original economic loss.",
+  "fixed_selection": {
+    "source_compact": "artifacts/task-bc-saved-student-decisions-v1-20261026/extracted/holdout-1714414373-v1-0-trained/compact.jsonl",
+    "compact_sha256": "e5218e62f5d09db7acbbd6feeab6bbe3b7169011957254399ea18b6fa0b339da",
+    "compact_bytes_exact": 923156,
+    "compact_total_rows_inherited": 2053,
+    "early_callback_rows_inherited": 691,
+    "projection_receipt": "artifacts/task-bc-saved-student-decisions-v1-20261026/extracted/holdout-1714414373-v1-0-trained/receipt.json",
+    "projection_receipt_sha256": "0f6e8918e44578fcd816fbc69eb1af6af91d30e7f0cc07022b3bd42c0f01d8c4",
+    "rule": [
+      "由事前独立编写并冻结的选择器作为唯一compact读取者，按文件原始顺序单遍读取、增量SHA256；主探针不再读compact。",
+      "仅解码从起点到首个teacher.op != chosen.op的前缀；每条必须是绑定game、合法schema，step和record_index严格符合已绑定receipt.turns的任务回调顺序。flags.op_mismatch必须与两个合法操作码直接比较一致。",
+      "选择该首行；要求step在0到239内。至多解码691条，遇到step>=240而仍未找到即停止为无法判定，不改挑别处。",
+      "选择后继续同一文件流读取余下原字节完成既有923156字节SHA绑定，但不解码后缀，不产生第二个候选，不重新打开。只有完整SHA符合时选择才有效。",
+      "选择收据绑定step、record_index、source_line_sha256、两个候选描述和选择前缀证书；证书只含必要行身份和操作码，保存在私有输出。",
+      "选择器全程不看最终单位请求差异、模型评分、收益或干预结果；源compact自带unit_request会随前缀JSON被解码，必须计入，不能用于选择。",
+      "独立最终核对器从本轮选择证书重算最早操作分歧及顺序，并核对选择收据、compact完整SHA和已绑定投影receipt；这是输出收据核对，不宣称第二次原始数据复现。"
+    ],
+    "target_step_and_record_index_now": null,
+    "target_operation_pair_now": null,
+    "selection_currently_executed": false,
+    "no_eligible_or_mismatch_action": "无法判定并停止；不补样、不改类别、不跨席位。"
+  },
+  "fixed_input_scope": {
+    "trace": "artifacts/task-bc-holdout-v1-20261023/traces/holdout-1714414373-v1-0-trained.jsonl.gz",
+    "inherited_trace_sha256": "a07ac7ccecd84d492bc1b25adfde238bc423692e4c574ff31782e2be174269a5",
+    "inherited_trace_size_bytes": 6825738,
+    "inherited_trace_mtime_ns": 1792750489819226300,
+    "raw_read": "仅一次gzip流，从头读取至选择step+1物理行，只有目标行JSON解码；前缀其他行只计字节，不JSON解码。目标行原字节SHA必须等于选择器输出的source_line_sha256。到目标后关闭，不探测EOF，不重算全trace SHA。",
+    "target_payload": "仅一个完整事实回合的records、crop_records、final_reservations及其中观测/配置/数值输入；整行JSON已经解码的所有嵌套对象均计入，不将未使用字段写成零消费。",
+    "task_model": {
+      "path": "artifacts/task-bc-holdout-v1-20261023/model/trained.npz",
+      "sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143"
+    },
+    "crop_model": {
+      "path": "artifacts/bc-epoch6-holdout-v1-20261023/panels/fixed_epoch6/model/trained.npz",
+      "sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd"
+    },
+    "forbidden": [
+      "其他trace或原Replay",
+      "旧first-witness",
+      "旧pairs",
+      "其他compact",
+      "其他模型",
+      "新比赛",
+      "官方step",
+      "完整教师策略调用",
+      "重训",
+      "DAgger",
+      "PPO"
+    ]
+  },
+  "budget": {
+    "total_executable_seconds_max": 120,
+    "selection_phase_seconds_max_including_close": 15,
+    "primary_phase_seconds_max_including_close": 65,
+    "independent_checker_seconds_max_including_close": 20,
+    "finalization_and_close_reserve_seconds": 20,
+    "per_controller_call_seconds_max": 10,
+    "model_load_phase_seconds_max": 20,
+    "per_close_seconds_max": 10,
+    "clock": "单个连续时钟在首次compact/原流/模型读取及一次性协议核对前启动，覆盖选择、主探针、独立核对、最终账本和所属进程关闭。失败不重置时钟。",
+    "max_concurrent_workers": 1,
+    "worker_process_trees_max": 3,
+    "blas_threads": 1,
+    "process_tree_private_commit_bytes_max": 1073741824,
+    "compact": {
+      "files_opened_max": 1,
+      "read_passes_max": 1,
+      "bytes_read_max": 923156,
+      "json_decoded_prefix_rows_max": 691,
+      "single_line_bytes_max": 65536,
+      "decoded_teacher_descriptors_max": 691,
+      "decoded_chosen_descriptors_max": 691,
+      "decoded_unit_requests_max": 691,
+      "suffix_rows_json_decoded_max": 0,
+      "existing_witness_or_pair_reads_max": 0
+    },
+    "raw_source": {
+      "gzip_opens_max": 1,
+      "prefix_lines_returned_max": 240,
+      "target_json_turns_decoded_max": 1,
+      "skipped_lines_json_decoded_max": 0,
+      "compressed_bytes_read_max": 6825738,
+      "returned_payload_bytes_max": 67108864,
+      "single_line_bytes_max": 4194304,
+      "target_json_bytes_max": 4194304,
+      "target_task_records_max": 16,
+      "target_candidate_objects_and_x_arrays_max": 8192,
+      "target_shared_x_observation_configuration_objects_max_each": 16,
+      "target_crop_records_and_numeric_payloads_max": 16,
+      "rereads_max": 0,
+      "whole_trace_hash_passes_max": 0,
+      "raw_replay_reads_max": 0
+    },
+    "models": {
+      "distinct_npz_files_max": 2,
+      "checkpoint_hash_passes_max": 2,
+      "model_object_loads_max": 2,
+      "np_load_calls_max": 2,
+      "model_returned_read_bytes_max": 4194304,
+      "task_forward_calls_max": 31,
+      "task_scored_candidates_max": 15872,
+      "crop_forward_calls_max": 32,
+      "crop_logits_values_max": 160,
+      "numeric_cache_reuse": false,
+      "warmup_forwards_max": 0
+    },
+    "controller": {
+      "real_calls_max": 2,
+      "baseline_calls_max": 1,
+      "intervention_calls_max": 1,
+      "forced_choices_exact_when_complete": 1,
+      "units_per_observation_max": 16,
+      "callbacks_per_call_max": 16,
+      "callbacks_total_max": 32,
+      "task_candidate_encodings_max": 32,
+      "candidates_per_callback_max": 512,
+      "generated_candidate_objects_max": 16384,
+      "full_teacher_calls_max": 0
+    },
+    "source_and_metadata": {
+      "bound_projection_receipt_reads_max": 1,
+      "bound_projection_receipt_bytes_max": 131072,
+      "fixed_registration_and_selection_metadata_bytes_max": 262144
+    },
+    "outputs": {
+      "selection_receipt_bytes_max": 131072,
+      "primary_receipt_bytes_max": 131072,
+      "pair_receipt_files_max": 1,
+      "pair_receipt_bytes_max": 262144,
+      "machine_checker_aggregate_receipt_bytes_max": 524288,
+      "machine_checker_passes_per_receipt_max": 1,
+      "machine_checker_old_compact_raw_model_controller_reads_or_calls_max": 0,
+      "public_summary_bytes_max": 65536,
+      "all_new_diagnostic_artifact_bytes_max": 2097152
+    },
+    "human_review": {
+      "independent_reviewer_minutes_max": 5,
+      "selected_new_pair_reads_max": 1,
+      "selected_new_selection_receipt_reads_max": 1,
+      "private_receipt_bytes_max": 393216,
+      "root_old_or_new_raw_pair_model_reads_max": 0,
+      "root_safe_metadata_review_minutes_max": 3
+    },
+    "one_off_in_memory_protocol_checks": {
+      "cases_max": 5,
+      "fake_callback_events_max": 20,
+      "fake_candidates_max": 40,
+      "real_models_controllers_sources_max": 0,
+      "scope": "仅验证动态目标、存在较早同类身份分歧时仍复现原学生、非法强制/前缀错配拒绝、有序单位比较和前向超限前停止。复用现有检查，不为可逆适配新增测试体系。"
+    },
+    "training_runs_max": 0,
+    "new_games_max": 0,
+    "official_transitions_max": 0,
+    "retries_max": 0,
+    "replacement_samples_max": 0,
+    "maximum_cumulative_task_scoring_if_all_allowances_consumed": {
+      "groups": 3941,
+      "candidates": 243994
+    },
+    "accounting_rules": [
+      "先约束读取/前向；解码后立即计入所有已发生嵌套对象再检查限制。候选已经由控制器生成才进入回调时如实计入，不冒充未消费。",
+      "模型SHA和np.load读取分别计量，两个头的全部数值前向、失败部分和基线/干预均收费；强制回调不额外任务前向。",
+      "规划读取的安全元数据不是训练或实验数据；未来compact读取和目标原流解码均算历史数据再消费，不能因旧数据而免费。",
+      "失败消费不退款；记录reserved/started/completed及未确认部分，累计旧评分3910组/228122候选不回退。"
+    ]
+  },
+  "root_verified_safe_metadata": {
+    "bound_compact_bytes": 923156,
+    "total_operation_mismatches": 24,
+    "early_callback_count": 691,
+    "early_operation_mismatches": 1,
+    "early_mismatch_conditional_teacher_class": "WATER",
+    "target_step_callback_and_student_operation_not_read": true,
+    "source_and_metadata_hashes_checked": 20
+  },
+  "root_scope_decisions": [
+    "Preserve every existing frozen source file byte-for-byte, including the current first-WATER package. Do not use the advice option of editing old entrypoints while merely retaining their Git history. Add narrow adapters or a new small shared module; import unchanged model I/O, comparison and Windows process helpers. Copying a necessary small function is preferable to changing historical frozen bytes; do not clone the whole experiment framework.",
+    "Target selection is the earliest operation mismatch in the one fixed source, not the earliest candidate-identity mismatch and not a targeted HARVEST loss case. Safe metadata already shows its conditional teacher class is WATER; the exact target and student class remain unknown.",
+    "Replay the actual student factual prefix, including any earlier same-operation identity disagreements. Compare it exactly with the saved trace and the two call contexts. Do not make the earlier prefix obey the teacher.",
+    "The independently authored selector is the only compact reader: one full byte hash pass, JSON prefix only through the selected first operation mismatch, at most 691 rows. Keep a minimal private prefix certificate and complete bound hash before the primary reads a source or model.",
+    "The one original trace prefix ends at selected step plus one, at most 240 lines, with only the target JSON decoded. Preserve inherited whole-file-hash scope and planned unreturned gzip buffer uncertainty. Do not probe EOF or add another trace.",
+    "Keep one original hash/load per model and at most two controller calls. One current legal teacher candidate is forced; subsequent candidate sets and both heads are computed by the original deployment paths without cached scores. Same or different full ordered unit vectors are equally valid diagnostic results.",
+    "One continuous 120-second execution includes at most three sequential owned jobs: selection phase through second 15, primary through second 80, checker through second 100, finalization through second 120. Each original ten-second close allowance is within these deadlines, never added to them; explicit sublimits remain in force.",
+    "The five allowed in-memory protocol cases are a maximum and must target the new selection/prefix conditions, ordered request comparison and budget-before-forward contract. No unrelated lifecycle or whole-repository suite rerun.",
+    "Freeze and exact local commit precede all compact, source, model and protocol-test execution. Register metadata/output byte interpretations explicitly before execution; do not silently exempt logs or partial failures after observing them.",
+    "The independent human review has one new pair and one new selection receipt at most; root reads source and safe metadata only. Keep reviewer and machine consumption separate and do not call either a second original reproduction.",
+    "After this one case, stop data consumption irrespective of outcome. No automatic sequence through the other mismatches, retry, sample substitution, training, economic claim or new match panel. Any later phase needs a new question and independent root adjudication.",
+    "The original advice remains intact locally. Only the field-filtered public advice is eligible for future publication; unrelated private memory provenance is not research evidence and is omitted."
+  ],
+  "acceptance": {
+    "same": "协议和生命周期全部通过且有序向量完全相同：只接受该单例的单点操作偏好替换不改变当回合单位请求。保留它是否只是局部重排的收据证据，不外推。",
+    "different": "协议和生命周期全部通过且有序向量不同：接受该单例操作分歧会改变当回合单位请求；不称任何一边正确、更优、官方已执行或造成收益差。",
+    "undetermined": "无有效目标、绑定/基线/前缀/合法性失败、异常/fallback、超预算、进程不自然关闭或核对失败，记录无法判定及实际消费并停止；该次执行未验收。",
+    "single_execution": "单一新OUT、exclusive create started；唯一冻结入口只运行一次。既有输出即拒绝，不覆盖、刷新、补样、调阈值或自动重试。",
+    "stop_even_if_result_uninteresting": true,
+    "no_auto_followup_data_after_this_case": true,
+    "required_before_first_data": [
+      "root独立裁决本建议",
+      "最小实现和独立选择器/核对器完成",
+      "冻结代码/输入身份/预算",
+      "独立预审通过",
+      "本地事前提交并核对绑定"
+    ],
+    "required_before_acceptance": [
+      "独立机器核对通过",
+      "独立人工复审通过",
+      "root仅用安全元数据核实",
+      "保留历史/模型/default/教师",
+      "脱敏检查后提交发布"
+    ],
+    "this_advice_is_not_execution_authorization_or_passed_review": true
+  },
+  "original_policy_admission": false,
+  "models_default_teachers_and_history_preserved": true,
+  "next_stage_data_reads": 0,
+  "next_stage_model_reads": 0,
+  "next_stage_calls": 0,
+  "next_stage_tests": 0,
+  "next_stage_implemented": false,
+  "next_action": "Implement the narrow new adapter and independent selector/checker, then metadata-only registration, exact-source independent pre-review and local preregistration commit before one execution.",
+  "goal_remains_active": true
+}

@@ -1,0 +1,11 @@
+{
+  "schema": "first-operation-static-rejection-v1",
+  "passed": false,
+  "phase": "before_first_data_model_test_execution",
+  "freeze_sha256": "8d1f05be3cf55396927fec2c565c182bf02b8f003b4ac3a9c3629fe32e1bb475",
+  "source_sha256": "57a9286fa7a466ab79c872191c13198b1f33975fcdfde899c9e85fe2d89193a0",
+  "finding": "The final output aggregate stat gate was reached only on success, so dispatch/verification failures omitted aggregate failed-output size or unknown accounting.",
+  "required_change": "Record current OUT file byte totals, including logs and partial outputs, in finally before its failure propagation; keep actual exceedance or unknown without retry.",
+  "tests_data_models_calls_executed": 0,
+  "old_strategy_model_default_changes": 0
+}
