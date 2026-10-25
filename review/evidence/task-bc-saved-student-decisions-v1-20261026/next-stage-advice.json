@@ -1,0 +1,266 @@
+{
+  "schema": "task-bc-saved-student-decision-next-stage-advice-v1",
+  "planning_date": "2026-10-25",
+  "author_role": "authorized_independent_subagent_not_external_webchat",
+  "status": "proposal_only_not_registered_not_executed",
+  "publication": "Local planning only; excluded from the completed repair publication. Root decides whether to register and publish this proposal with a later stage.",
+  "unique_recommendation": {
+    "proposed_stage_id": "task-bc-saved-student-decisions-v1",
+    "title_zh": "六条既有学生轨迹的零推理任务选择与首分歧诊断",
+    "question_zh": "在固定的学生实际到达状态中，已保存的 chosen 与同一回调上下文下的 teacher_label 最早何时不同，差别涉及任务、工人还是地块，学生最终保存了什么请求？",
+    "why_this_next_zh": "前一批 514 条来自教师示范，不能代表学生到达状态。现有学生 trace 已同时保存事实选择和条件教师标签，无需重建候选或重新评分即可补上这个证据缺口。先用一个冻结种子覆盖全部三个对手和双席，避免立即恢复全 96 场影子执行。",
+    "evidence_class": "historical_development_diagnostic_not_new_holdout",
+    "execution_requires": "Separate root acceptance, registration, independent source pre-review and local pre-execution commit; this advice authorizes no data consumption."
+  },
+  "current_evidence_boundary": {
+    "holdout_relative_profit_difference_percent": -1.05694,
+    "round2_score_difference": -0.25,
+    "original_policy_admission": false,
+    "full_96_game_shadow_diagnostic_completed": false,
+    "teacher_demonstration_sample_rows": 514,
+    "sample_candidate_disagreements": 10,
+    "all_sample_disagreements_include_target_difference": true,
+    "sample_not_student_state_distribution": true,
+    "sample_not_economic_cause_evidence": true,
+    "concrete_report_defect_conditionally_closed": true,
+    "strict_original_review_acceptance": false,
+    "unqualified_full_stage_acceptance": false,
+    "source_stage_acceptance": false,
+    "review_exception_preserved_zh": "原独立审查误把至多五个见证写成恰好五个，原 attempt 和完整连续审查门槛继续为 false。另登记的零 compact 元数据纠正支持根代理有条件关闭具体报告缺陷；本建议不重审、不追认、不改写该例外。",
+    "cumulative_reserved_evaluation_groups_unchanged": 3844,
+    "cumulative_reserved_evaluation_candidates_unchanged": 226982
+  },
+  "source_findings": {
+    "same_callback": "learning/task_choice_v1/agent.py:64-78 saves inputs, teacher_label, chosen, unit, target, op and source. teacher_label is computed from this exact factual callback before invoking the selector.",
+    "saved_inputs": "learning/task_choice_v1/features.py:51-120 saves ordered candidate IDs/unit/target/op/x, shared_x, sanitized observation/configuration, pre-assignment reservations and inventory order. Candidates are teacher opportunities, not the complete official action mask.",
+    "saved_turn": "learning/task_choice_v1/agent.py:80-100 and learning/task_bc_v1/deployment.py:16-23 save step, ordered task records, final factual unit_request, crop_records, final_reservations and both checkpoint identity strings; one gzip JSON line per turn.",
+    "absent": "No task-network logits, teacher priority lookup, complete top-level farmer/hands/market action, or full counterfactual teacher request. crop_records do contain saved x/logits and will also be decoded.",
+    "identity": "games.py:123-145 binds trace SHA; audit.py:25-70 previously reproduced 719 factual actions and stable traces and stored callback/mismatch counts. Reuse certificates; do not execute audit() again.",
+    "shadow_limit": "shadow.py:94-160 compares already supplied factual/shadow traces from the same sanitized observation and stops alignment at unequal inputs. It cannot generate a teacher action from teacher_label or align different historical arms by step.",
+    "zero_model_feasible": true,
+    "candidates_need_reconstruction": false
+  },
+  "fixed_selection": {
+    "source_stage": "artifacts/task-bc-holdout-v1-20261023",
+    "arm": "trained",
+    "seed": 1714414373,
+    "seed_rule": "The first seed in the original frozen registration order, fixed before reading raw trace contents or selecting by results.",
+    "opponents_in_order": [
+      "v1",
+      "market",
+      "round2"
+    ],
+    "seats_in_order": [
+      0,
+      1
+    ],
+    "steps": "All saved steps 0 through 718 in original physical line order; all task records in original list order. No prefix-only or error-selected sampling.",
+    "phase_boundaries": [
+      [
+        0,
+        239
+      ],
+      [
+        240,
+        479
+      ],
+      [
+        480,
+        718
+      ]
+    ],
+    "first_witness_rule": "At most one witness per game: lexicographically earliest (step, original record index) with chosen != teacher_label. If none exists, keep the game witness null. Do not substitute another seed, game, phase or class.",
+    "no_selection_by": [
+      "bank",
+      "profit",
+      "score",
+      "win/loss",
+      "logit",
+      "loss size",
+      "disagreement count",
+      "future outcome"
+    ],
+    "reason_for_six_not_twelve": "Six streams are the smallest complete three-opponent/two-seat panel. The extra second seed is not needed to answer the initial localization question; no automatic enlargement is permitted.",
+    "independence_limit": "This is one seed with six correlated games. Opponents, seats, callbacks and repeated states do not create independent seed replicates. No interval, significance claim or general deployment error-rate estimate.",
+    "selected_games": [
+      {
+        "game": "holdout-1714414373-v1-0-trained",
+        "compressed_bytes": 6825738,
+        "turns": 719,
+        "task_callbacks": 2053,
+        "task_candidates": 98614,
+        "crop_records": 153,
+        "trace_sha256": "a07ac7ccecd84d492bc1b25adfde238bc423692e4c574ff31782e2be174269a5"
+      },
+      {
+        "game": "holdout-1714414373-v1-1-trained",
+        "compressed_bytes": 6822335,
+        "turns": 719,
+        "task_callbacks": 2053,
+        "task_candidates": 98614,
+        "crop_records": 153,
+        "trace_sha256": "02785d557095caecfe7647c93239e7419c744837e95a7520c1bc48f808e126cc"
+      },
+      {
+        "game": "holdout-1714414373-market-0-trained",
+        "compressed_bytes": 6671785,
+        "turns": 719,
+        "task_callbacks": 2013,
+        "task_candidates": 91815,
+        "crop_records": 152,
+        "trace_sha256": "9490f1a8ef308d9a820f99f97d50e03f7f420f05b4bb5acdef6568315486cc26"
+      },
+      {
+        "game": "holdout-1714414373-market-1-trained",
+        "compressed_bytes": 6681928,
+        "turns": 719,
+        "task_callbacks": 2013,
+        "task_candidates": 91815,
+        "crop_records": 152,
+        "trace_sha256": "82fcc219f4c2804516395804601979382d8f9beba150bc7e9f0a34d2dccbb8cb"
+      },
+      {
+        "game": "holdout-1714414373-round2-0-trained",
+        "compressed_bytes": 6829322,
+        "turns": 719,
+        "task_callbacks": 2050,
+        "task_candidates": 97408,
+        "crop_records": 155,
+        "trace_sha256": "11e6192e08f4977378bede71232139a1a59635306b923f0934fe9596902e68c1"
+      },
+      {
+        "game": "holdout-1714414373-round2-1-trained",
+        "compressed_bytes": 6829781,
+        "turns": 719,
+        "task_callbacks": 2050,
+        "task_candidates": 97408,
+        "crop_records": 155,
+        "trace_sha256": "721d8b85e68e8c60f69a420a6505b4305b63f95988b35fc8bb634860f44f7843"
+      }
+    ],
+    "metadata_totals": {
+      "games": 6,
+      "compressed_bytes": 40660889,
+      "turns": 4314,
+      "task_callbacks": 12232,
+      "task_candidates": 575674,
+      "crop_records": 920
+    },
+    "uncompressed_byte_size_known": false
+  },
+  "budget": {
+    "mandatory_accounting": "Zero inference is not zero numeric-input processing. Standard json.loads decodes the complete selected line, including unused task and crop arrays and embedded observations. Report separate counters rather than calling these reads zero.",
+    "hard_wall_seconds_all_data_processing_review_and_cleanup": 600,
+    "primary_work_deadline_seconds": 450,
+    "independent_compact_review_seconds": 120,
+    "reserved_owned_process_cleanup_seconds": 30,
+    "per_game_primary_seconds": 60,
+    "simultaneous_workers": 1,
+    "worker_memory_limit_bytes": 1073741824,
+    "new_source_trace_files": 6,
+    "compressed_sha_passes_per_trace": 1,
+    "compressed_bytes_hashed_max": 40660889,
+    "gzip_json_passes_per_trace": 1,
+    "compressed_bytes_for_decode_max": 40660889,
+    "all_selected_compressed_source_bytes_read_max": 81321778,
+    "uncompressed_bytes_total_max": 1073741824,
+    "uncompressed_bytes_per_trace_max": 268435456,
+    "uncompressed_bytes_per_line_max": 8388608,
+    "trace_physical_json_lines_decoded_max": 4314,
+    "task_callback_objects_decoded_max": 12232,
+    "task_candidate_objects_and_x_arrays_decoded_max": 575674,
+    "task_shared_x_arrays_decoded_max": 12232,
+    "embedded_full_observation_objects_decoded_max": 12232,
+    "embedded_configuration_objects_decoded_max": 12232,
+    "crop_records_with_x_and_saved_logits_decoded_max": 920,
+    "new_compact_rows_max": 12232,
+    "new_compact_independent_review_passes": 1,
+    "first_divergence_witness_packages_max": 6,
+    "model_file_reads": 0,
+    "model_loads": 0,
+    "model_score_calls": 0,
+    "scored_candidates": 0,
+    "candidate_reconstructions": 0,
+    "policy_calls": 0,
+    "full_teacher_shadows": 0,
+    "raw_replay_reads": 0,
+    "old_compact_or_demonstration_stream_reads": 0,
+    "official_transitions": 0,
+    "new_games": 0,
+    "training_runs": 0,
+    "retries": 0,
+    "no_need_to_spend_remaining_budget": true,
+    "unknown_size_rule": "Decompressed sizes are not known from the saved inventory. Enforce byte limits while reading bounded lines; if a source exceeds any ceiling, stop and retain an explicitly incomplete result. Do not enlarge limits or silently truncate and claim completion.",
+    "counter_rule": "Reserve a physical JSON line before json.loads, enforce byte and line limits before allocation, then charge all decoded child objects even if a later schema/count check fails. Exact existing per-game counts must match before accepting a completed file. Do not continue after a discrepancy.",
+    "model_fallback_rule": "There is no automatic model or reconstruction fallback. If saved fields are insufficient, finish as insufficient evidence and return to root planning. This advice does not reserve any hidden inference allowance."
+  },
+  "protocol": [
+    "Root accepts scope; separately register exact six source paths, inherited SHA/counts, extractor, outputs and budgets; independent source pre-review and local commit precede raw consumption. Agent Workflow remains disabled.",
+    "Hash each selected compressed source once; stop before decoding on identity mismatch. Then stream/decode it once within byte, line, time and memory limits. No model files, policies, candidate reconstruction, replay, old compact or demonstration reads.",
+    "Validate step/order/schema, selected descriptor consistency, unique candidate IDs, chosen and teacher_label membership, checkpoint identity strings and saved error flags. Match completed per-game callback/candidate/crop totals to existing metadata.",
+    "For each original callback resolve chosen and teacher_label in its own candidates. Project overlapping candidate/op/unit/target mismatch flags and the factual unit_request. Preserve zero-task turns. Select at most one earliest mismatch per game, otherwise null; do not select by score, profit or future outcome.",
+    "Write one local compact projection and at most six source-bound witnesses during the same pass. Produce per-game and fixed phase/teacher-operation descriptive marginals. No numeric deduplication/support index, significance test or comparisons treating the prior teacher sample as a matched population.",
+    "Independent review reads the new compact once, verifies marginals/earliest indices and old per-game audit totals, and reviews extraction source. No second raw pass. Explicitly disclose that this is not independent raw-trace reproduction. Root decides completion and at most one follow-up."
+  ],
+  "acceptance": [
+    "Exactly six traces and all declared inventory counts completed within budgets; inherited compressed SHA and metadata agree, with no schema/identity/error failures.",
+    "Each game has its earliest conditional disagreement or null; no forced witness quota. Independent compact review and root acceptance fit the registered deadline.",
+    "Evidence integrity, descriptive findings and sufficiency for an intervention are separate. Completed with insufficient intervention evidence is allowed."
+  ],
+  "stop": [
+    "Any source/hash/count/schema/candidate/selected-descriptor/checkpoint mismatch or saved error/fallback; retain failure without retry.",
+    "Any deadline, compressed/decompressed byte, line, callback, candidate, memory or lifecycle ceiling; retain explicit incomplete coverage without silently truncating or expanding.",
+    "Any attempt to load/score models, rebuild candidates, call a policy, read replay/old compact/demo inputs or execute official transitions.",
+    "No replacing games/seeds, adding a second seed or expanding to 96 games to obtain a result. Unknown decompressed size remains unknown until bounded consumption; cap failure does not authorize extra reads."
+  ],
+  "minimum_change": "One narrow standard-library bounded extractor/entrypoint plus a short stage specification. Use a small owned synthetic acceptance run for first mismatch, overlapping flags, zero-task turns and stop/count behavior. No edits to agents/features/models/default/history, no new framework or durable test infrastructure.",
+  "outputs": {
+    "local": [
+      "Exact source manifest and original metadata identities",
+      "Compact per-callback projection without numeric vectors",
+      "At most six first-disagreement witness packages with source pointers and factual request descriptors"
+    ],
+    "public": [
+      "Sanitized descriptive report with one-seed/conditional-choice limits",
+      "One compact verification record with actual read/decode/evaluation counters and review limits",
+      "Root decision: at most one later direction or insufficient evidence"
+    ],
+    "forbidden_public": [
+      "Raw observations/inventories/features/logits",
+      "Raw traces/replays/models",
+      "Private paths/process identity"
+    ]
+  },
+  "interpretation": {
+    "conditional": "teacher_label is the teacher preference under the factual student callback, including any prior student reservations. It is not necessarily a decision visited by the complete teacher_task trajectory.",
+    "first": "Earliest stored chosen != teacher_label; not automatically the first complete-action/state divergence or start of reward loss.",
+    "no_alignment": "Read no reference-arm traces. Different states/reservations cannot be aligned by common seed, step or callback ordinal.",
+    "request": "unit_request and reservations are requests/estimates; selecting another target can initially produce the same MOVE or delayed procurement. No teacher full request or official effect is observed here.",
+    "independence": "One seed only; seats/opponents/repeated calls are correlated. No across-seed, general deployment-error or economic-causality claim."
+  },
+  "followup_gate": {
+    "concrete_contract_violation": "Stop and support only a targeted integrity/interface repair proposal; not a preference/model change.",
+    "consistent_first_disagreement": "A reproducible source-bound witness can support one separately registered same-observation request comparison. A repeated target/unit signature may choose a hypothesis but does not authorize retraining.",
+    "insufficient": "Preference differences, WATER/late-stage frequency, no mismatch or no execution/economic evidence are insufficient to select a learning intervention. Report this and stop; no extra sample or inference fallback.",
+    "maximum_later_directions": 1,
+    "implemented_interventions": 0
+  },
+  "planning_actions": {
+    "reads": "Current source, published/saved aggregates, ledger/inventory/audit metadata and trace filesystem stat only. Resource totals are sums of existing metadata, not new scientific statistics.",
+    "raw_trace_contents_read": 0,
+    "raw_replays_read": 0,
+    "compact_records_read": 0,
+    "model_files_read_or_hashed": 0,
+    "policy_or_model_calls": 0,
+    "candidate_reconstructions": 0,
+    "games_training_official_transitions": 0,
+    "only_output_written": "artifacts/task-bc-stratified-report-repair-v1-20261025/next-stage-advice.json"
+  },
+  "protected_decisions": {
+    "default_bot_changed": false,
+    "frozen_models_or_teacher_changed": false,
+    "historical_evidence_changed": false,
+    "new_training_dagger_ppo_or_games_authorized": false,
+    "agent_workflow_enabled_or_invoked": false
+  }
+}

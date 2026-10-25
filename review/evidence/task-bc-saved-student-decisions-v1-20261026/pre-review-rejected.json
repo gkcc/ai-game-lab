@@ -1,0 +1,11 @@
+{
+  "passed": false,
+  "executed": false,
+  "freeze_sha256": "d33e170c7f1bf9de395b752e91aeb85a3bf5d25467afba3c32883c938bcfdde9",
+  "findings": [
+    "Disposable synthetic files need owned OS-temp cleanup.",
+    "Returned gzip payload bytes need explicit unknown accounting on incomplete decode.",
+    "Primary450/check570/final600 gates must include bookkeeping and final acceptance.",
+    "Truncated terminal receipts must mark consumed work unknown rather than leave zero."
+  ]
+}

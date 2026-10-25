@@ -1,0 +1,71 @@
+{
+  "schema": "saved-student-decisions-independent-source-pre-review-v1",
+  "passed": true,
+  "reviewer": "/root/student_trace_auditor",
+  "reviewer_role": "user-authorized independent subagent; not external web review",
+  "freeze_sha256": "585c2b9c129e4c819b421eb077048f114a740502b7a80545e98f67a5e75b902f",
+  "registration_sha256": "5037c008668e81ff3bdbbab1d4f057823c94a9055f8123ff2876492b497a3621",
+  "previous_rejected_freeze_sha256": "d33e170c7f1bf9de395b752e91aeb85a3bf5d25467afba3c32883c938bcfdde9",
+  "review_scope": "Static source and metadata only; focused re-review of the four prior blockers and unchanged extraction/checker contracts.",
+  "reviewed_package_sha256": {
+    "check.py": "48cc605eaff93c7a63b72fe3266b2ae0786ea0c79a64cf0352534b78570d28d7",
+    "experiment.py": "0e7d6bc2913acf097dd740662db35a5a424b40e362eabccdadc7562af5e1468c",
+    "extract.py": "bd2e238f581644e1036b20133c4cb2cd47aef78aa270433d79ccb9152e251107",
+    "README.zh-CN.md": "7ec1811463ac758d16dd41721a13f1da30d19836e425c754f4240f69253c8567",
+    "verify_extract.py": "f7af7fdefa09d9d5ab7da1e311369bfb05541719df5a1acb500cb58c21b98d90",
+    "__init__.py": "1cc4e4deda5d9af441bec2ad593279579a2013e4361cc46a629f64a614decacb"
+  },
+  "new_package_runtime_and_public_hashes_match_freeze": true,
+  "standalone_scratch_helper_sha256": "03dcb408c80c13ca70e52ab3b2adb4519f1aaf6aeceb5120410882ccec29c142",
+  "resolved_blockers": [
+    {
+      "id": "B1-terminal-consumption",
+      "evidence": "experiment.py:63-84,274-295: terminal receipt parsing validates the complete counter map before aggregation; missing, truncated, wrong-typed or otherwise invalid receipts produce an explicit consumption-unknown record. Independent checker terminal absence or invalid counters remains known=false and blocks acceptance.",
+      "verification": "Static inspection only. Two newly registered in-memory malformed-receipt cases have not been executed."
+    },
+    {
+      "id": "B2-original-deadlines",
+      "evidence": "experiment.py:254-265,304-335: primary bookkeeping must finish before the original 450-second deadline; checker work is bounded by its own 120 seconds and stage second 570; its original close remains at most ten seconds within phase second 580. Final persistence is followed by the original 600-second gate. summary.json is provisional until the bound execution-acceptance record, zero exit, and no final-deadline-failure marker are established.",
+      "verification": "Static inspection of dispatcher and the unchanged accepted Windows owner. No timing or process test was executed."
+    },
+    {
+      "id": "B3-gzip-buffer-accounting",
+      "evidence": "extract.py:321,348-364,431-433 and registration.source_byte_measurement: any decode-started failure before normal EOF records unreturned buffered bytes as unknown. uncompressed_bytes is explicitly delivered gzip payload; complete normal EOF yields the complete decompressed stream. Original compressed read accounting and consume-before-check JSON child accounting remain unchanged.",
+      "verification": "Static inspection only. No compressed source was opened or decoded."
+    },
+    {
+      "id": "B4-owned-temporary-fixtures",
+      "evidence": "verify_extract.py:264-339: the user-specified standalone scratch_directory helper is SHA-bound, executed from the verified bytes, and receives a fresh UUID root directly under resolved OS temp. Its startup sweep is confined to that new empty root. The owned context makes one cleanup attempt; only the verified empty UUID root is then removed nonrecursively. Rejection retains the marker and a local failure record, without alternate cleanup. Only compact regression evidence persists under the stage output.",
+      "verification": "Static inspection of this call path and the pinned helper's scratch_directory/create/close behavior. The helper was not executed. Agent Workflow task registration, router, skill, hooks and monitoring were not invoked or enabled."
+    }
+  ],
+  "preserved_contract": {
+    "selection": "Six fixed trained traces: first registered historical seed 1714414373, three opponents in fixed order, both seats; no result-based replacement.",
+    "source_consumption": "One compressed hash pass plus one gzip JSON pass per source, with 4314 turns, 12232 callbacks, 575674 candidate objects/x arrays and 920 crop records; no retry or hidden inference allowance.",
+    "first_witness": "Original step/record order; earliest conditional chosen-versus-teacher mismatch or null per game; at most six non-null witnesses.",
+    "mismatch_flags": "Candidate, operation, unit and target differences remain overlapping flags.",
+    "semantics": "teacher_label is conditional on factual student reservations; final unit_request is a request, not complete teacher policy, official execution or economic regret.",
+    "independent_check": "Separately authored checker reads each new compact once, at most 12232 rows, recomputes descriptive aggregates and earliest indices, and checks bound receipts and inherited audit totals. It does not reproduce original traces.",
+    "protected_state": "No default, model, teacher or historical evidence mutation is authorized; original diagnostic acceptance, policy admission and previous strict-review acceptance remain false."
+  },
+  "review_actions": {
+    "source_and_metadata_reads_only": true,
+    "original_trace_reads": 0,
+    "raw_replay_reads": 0,
+    "new_or_old_compact_reads": 0,
+    "model_file_reads_or_hashes": 0,
+    "model_or_policy_calls": 0,
+    "candidate_reconstructions": 0,
+    "synthetic_or_other_tests_executed": 0,
+    "games_training_official_transitions": 0,
+    "implementation_files_modified": 0
+  },
+  "limitations": [
+    "This is permission to proceed to the already registered pre-execution commit and one bounded executable phase, not evidence that extraction or tests passed.",
+    "The exact local pre-execution commit must still be recorded and verified by the frozen entrypoint. It is not an external timestamp.",
+    "The old 133-file inherited source set was not re-audited; this review checked the six new package hashes, their public copies, relevant frozen controller/source semantics, registration/freeze binding, and the standalone helper hash and call path.",
+    "On early gzip failure, delivered payload is known while internal unreturned bytes may be unknown; no claim of exact failed-path internal decompression work is accepted.",
+    "Runtime acceptance requires all registered synthetic checks, exact source inventory and hashes, one independent compact verification, original deadlines, natural owned process closure, protected-state checks, and final acceptance evidence. Any failure stops without retry.",
+    "Subsequent human review may read the new safe aggregates, metadata and at most six source-bound witness packages; it may not add another raw or compact pass."
+  ]
+}
