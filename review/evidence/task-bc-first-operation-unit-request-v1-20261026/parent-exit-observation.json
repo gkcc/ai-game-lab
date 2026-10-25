@@ -1,0 +1,19 @@
+{
+  "schema": "first-operation-parent-exit-observation-v1",
+  "observed_parent_exit_code": 0,
+  "observed_tool_wall_seconds": 8.200643,
+  "observed_executable_elapsed_seconds": 1.8130000000237487,
+  "accepted_jobs_stdout": 3,
+  "original_run_invocations": 1,
+  "retries": 0,
+  "observed_utc": "2026-10-25T17:20:43.961869+00:00",
+  "safe_receipt_sha256": {
+    "summary.json": "e72f853c24dc3261938f95e4ddfd8623b844e8bdafa2ec305017ad84af2ba008",
+    "execution-acceptance.json": "595924ca2df61cbffff01ca09d88d86c0ed3ae025095e3eb7e5837124190a0a2",
+    "output-accounting.json": "0107783f598f54d808dc9c96f1477fc76607d3e2c417286764a312275215b7c9"
+  },
+  "final_deadline_failure_present": false,
+  "checker_failure_present": false,
+  "root_private_pair_selection_raw_model_reads": 0,
+  "outside_executable_phase": true
+}

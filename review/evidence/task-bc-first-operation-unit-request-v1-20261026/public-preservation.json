@@ -1,0 +1,47 @@
+{
+  "schema": "first-operation-public-history-preservation-v1",
+  "passed": true,
+  "created_utc": "2026-10-25T17:26:51.235457+00:00",
+  "scope": "Publication-only Git blob/current file comparisons; no original private experiment data, models or controllers accessed.",
+  "trees": {
+    "prior_public": {
+      "commit": "4b58dcc6595a152ced73f5a4499477a499d2c635",
+      "tracked_files": 962,
+      "exact_original_bytes": 960,
+      "append_only_files": {
+        "review/PROGRESS.md": {
+          "before_sha256": "0721061cd77a34b0dc1f742c97862b62e3e26ce4be8a403a0df081e0e73b2f54",
+          "after_sha256": "4fcc59e0257acf78225880272ada74a3f8cd6d4a8ee6434b49d69d7ff58b3aee",
+          "bytes_appended": 1591
+        },
+        "review/WEBCHAT_REVIEW.md": {
+          "before_sha256": "c42352f72fe26487184c0fc8dedfef0446bebdf1a4839f6cd24788891ac930a5",
+          "after_sha256": "4acfce9d1e333aad3d7fad5fe3cf40ae3c6f2e21763672c636f3311e926c3825",
+          "bytes_appended": 1435
+        }
+      },
+      "mismatches": []
+    },
+    "preregistered": {
+      "commit": "608e95dc8819c0a7d402610271e5c2a260143885",
+      "tracked_files": 978,
+      "exact_original_bytes": 976,
+      "append_only_files": {
+        "review/PROGRESS.md": {
+          "before_sha256": "0721061cd77a34b0dc1f742c97862b62e3e26ce4be8a403a0df081e0e73b2f54",
+          "after_sha256": "4fcc59e0257acf78225880272ada74a3f8cd6d4a8ee6434b49d69d7ff58b3aee",
+          "bytes_appended": 1591
+        },
+        "review/WEBCHAT_REVIEW.md": {
+          "before_sha256": "c42352f72fe26487184c0fc8dedfef0446bebdf1a4839f6cd24788891ac930a5",
+          "after_sha256": "4acfce9d1e333aad3d7fad5fe3cf40ae3c6f2e21763672c636f3311e926c3825",
+          "bytes_appended": 1435
+        }
+      },
+      "mismatches": []
+    }
+  },
+  "exact_preregistration_manifest_entries": 152,
+  "preregistered_rejected_freeze_source_and_rejection_preserved": true,
+  "new_report_runtime_public_bytes_equal": true
+}

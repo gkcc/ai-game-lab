@@ -1,0 +1,109 @@
+{
+  "schema": "first-operation-publication-text-review-v1",
+  "passed": true,
+  "status": "publication_text_and_safe_metadata_review_passed",
+  "reviewer": "independent /root/unit_request_auditor",
+  "scope": "Only the new Chinese report, root safe evidence acceptance and this round's added paragraphs in the two public review documents. This is a separate publication text review; it does not reopen or extend the completed result review.",
+  "clock": {
+    "started_utc": "2026-10-25T17:26:42.853281+00:00",
+    "started_monotonic": 352222.984,
+    "original_deadline_monotonic": 352342.984,
+    "limit_seconds": 120,
+    "clock_restarts": 0,
+    "ended_utc": "2026-10-25T17:27:48.877738+00:00",
+    "ended_monotonic": 352289.015,
+    "elapsed_seconds": 66.03100000001723,
+    "end_timestamp_scope": "Text review complete, immediately before exclusive receipt write."
+  },
+  "bindings": {
+    "report": {
+      "path": "TASK_BC_FIRST_OPERATION_UNIT_REQUEST_V1.zh-CN.md",
+      "sha256": "5d37e49bbb328d829c4de2d61751308664f0892514764b63a96bd0ee417eed70",
+      "bytes": 6640,
+      "public_copy_bytes_equal": true
+    },
+    "root_evidence_acceptance": {
+      "path": "root-evidence-acceptance.json",
+      "sha256": "41811709976872392d22efdb53ae173af0d58de21adf8f8d4bcbadeb53862020",
+      "bytes": 3773
+    },
+    "public_review_documents": {
+      "review/PROGRESS.md": {
+        "sha256": "4fcc59e0257acf78225880272ada74a3f8cd6d4a8ee6434b49d69d7ff58b3aee",
+        "bytes": 32854
+      },
+      "review/WEBCHAT_REVIEW.md": {
+        "sha256": "4acfce9d1e333aad3d7fad5fe3cf40ae3c6f2e21763672c636f3311e926c3825",
+        "bytes": 27570
+      }
+    },
+    "original_independent_review_sha256": "1d11feae218e00f7061bd1eabf98d87f60c659f784e5f1441834a22dd22ddc16",
+    "original_independent_review_seconds": 205.61,
+    "original_independent_review_record_changed": false,
+    "freeze_sha256": "6097655fc3391637783956241bd3d771837195080786d616e0e4505580a3063a",
+    "preregistration_commit": "608e95dc8819c0a7d402610271e5c2a260143885"
+  },
+  "checks": [
+    {
+      "topic": "Historical sample scope",
+      "result": "The report explicitly identifies one previously consumed historical scene, not a new holdout or model promotion. The earlier six cases are not combined into an overall error rate or economic result."
+    },
+    {
+      "topic": "Causal and correctness limits",
+      "result": "The first operation mismatch is reported as step 225, zero-based callback 2, FERTILIZE versus current legal conditional-teacher WATER. Exactly one substitution followed by the original student leaves the complete ordered six-unit request vector unchanged. The adjacent assignment swap, next candidate count 25 to 28 and rejoining from index 4 are explicitly limited to this pair. No teacher superiority, harmlessness of other mismatches, official/market equivalence, future trajectory or reward claim is made."
+    },
+    {
+      "topic": "Unit-request comparison boundary",
+      "result": "The report compares ordered [farmer, *hands] and its returned unit-request evidence, and explicitly excludes market return values and full-game replay. It does not equate operation preference labels with action correctness."
+    },
+    {
+      "topic": "Selection and factual prefix",
+      "result": "The report preserves the distinction between the first 664 operation-equal rows and candidate identity equality. It describes a complete factual student baseline, one current legal override and three fresh student suffix forwards, with no forced teacher prefix."
+    },
+    {
+      "topic": "Accounting consistency",
+      "result": "Reported counts agree with the accepted safe conclusion: 923156 compact bytes, 665 decoded prefix rows, one 93269-byte projection read; one gzip with 226 returned lines and one target; compressed/payload/target bytes 2219946/29110296/236985; model returned reads 783840; two real controller calls, twelve callbacks/encodings, 423 generated candidates, eleven task forwards and 383 scored candidates, zero crop forwards; cumulative 3921 groups and 228505 candidates."
+    },
+    {
+      "topic": "Independent review and timing scopes",
+      "result": "Machine receipt reading 103110 bytes and human private reading 96182 bytes are separate. The human review's original 205.610 seconds within 300 seconds remains unchanged. Root acceptance reports its separate 22.765 seconds within 180 seconds. Executable time 1.813 seconds is distinguished from outer command wall time about 8.201 seconds; final executable output 1275133 bytes is compared with the registered 2097152-byte limit."
+    },
+    {
+      "topic": "Uncertainty and preservation",
+      "result": "One intentional unreturned gzip-buffer unknown is retained separately from zero failed-work unknowns; the whole trace hash is inherited and EOF is not claimed. The 6782-path history check is described as stat-based rather than fresh whole-history hashing. The failure-output-accounting repair is identified as statically reviewed without claiming failure injection."
+    },
+    {
+      "topic": "Publication privacy",
+      "result": "The reviewed report, new public paragraphs and root receipt contain safe aggregate counts, operations, relative evidence links and hashes. No raw observations, coordinates, numeric feature vectors, complete private selection/pair contents, model contents, private absolute filesystem paths, logs or native process identities are included."
+    },
+    {
+      "topic": "Admission and stopping",
+      "result": "Original policy-admission and prior failure states remain unchanged. No retry, additional sample, training, match or official transition is authorized by the text."
+    }
+  ],
+  "findings": [],
+  "required_text_corrections": [],
+  "limits": [
+    "This review checks only publication wording against already accepted safe evidence. It is not another data, numerical, lifecycle or source-code audit.",
+    "The root independently owns the old-Git-byte and append-only preservation checks; this reviewer did not repeat them.",
+    "Bindings describe the reviewed document snapshot. Later substantive text changes require their own check.",
+    "An initial console transport rendering of Chinese was resolved by Unicode-safe serialization; the report itself has zero replacement characters and matches its public copy."
+  ],
+  "additional_consumption": {
+    "private_selection_or_pair_receipt_reads": 0,
+    "raw_compact_projection_trace_replay_witness_reads": 0,
+    "model_content_reads_loads_or_forwards": 0,
+    "controller_calls": 0,
+    "experiment_or_checker_runs": 0,
+    "unit_tests": 0,
+    "official_steps": 0,
+    "training_or_new_games": 0,
+    "source_audit_reopened": false,
+    "private_process_identity_or_log_reads": 0,
+    "original_result_review_seconds_added": 0,
+    "temporary_files_created": 0,
+    "existing_files_modified": 0,
+    "agent_workflow_used": false
+  },
+  "deliverable": "publication-review.json only"
+}
