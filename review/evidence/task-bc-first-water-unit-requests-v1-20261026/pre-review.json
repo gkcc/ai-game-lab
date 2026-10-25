@@ -1,0 +1,99 @@
+{
+  "schema": "first-water-unit-request-static-pre-review-v1",
+  "created_utc": "2026-10-25T16:43:53Z",
+  "passed": true,
+  "reviewer": "independent unit_request_auditor subagent; no implementation authorship",
+  "freeze_sha256": "63941e6379dedd123184c99bda9f5238cf262273867cb30e404a36ced33c5bcd",
+  "registration_sha256": "d806313ba7e519b676099203777e2c2e99f7103aeed7bef4ac6e9c5a1da1fd11",
+  "review_kind": "Exact-source static pre-review only; not runtime or evidence acceptance",
+  "blocking_findings": [],
+  "resolved_findings": [
+    {
+      "finding": "The primary producer returns status, while the parent originally required a passed key.",
+      "resolution": "experiment.worker now interprets primary.status separately from checker.passed. terminal_status validates the distinct terminal schemas and required counter groups. Malformed envelopes retain partial_receipt and known=false instead of zero consumption.",
+      "evidence": "learning/task_bc_first_water_unit_requests_v1/experiment.py:66-121,232-253,309-329"
+    },
+    {
+      "finding": "Registered dependency versions originally had no execution verification gate.",
+      "resolution": "verify now compares the actual Python, NumPy and kaggle-environments versions with registration.dependencies before and after worker work.",
+      "evidence": "learning/task_bc_first_water_unit_requests_v1/experiment.py:61-63,213-229,250-251"
+    }
+  ],
+  "binding_verification": {
+    "runtime_entries_hashed": 140,
+    "public_entries_hashed": 140,
+    "hash_mismatches": 0,
+    "registration_binding_matches": true,
+    "copied_plan_hashes_match": true,
+    "protection_metadata_hash_matches": true,
+    "new_package_files_match_public_bytes": true,
+    "inherited_line_ending_mappings_verified_as_crlf_only": [
+      "decision/execution.py",
+      "decision/full_audit.py",
+      "decision/verify_audit.py",
+      "learning/round2_worker.py"
+    ],
+    "scope": "Hash verification covers the declared source closure and the registered seeds metadata, not raw traces or model contents. Semantic review focused on the seven new package files and their directly used deployment, comparison and process-owner paths; inherited unrelated code was not reopened as a whole-repository audit."
+  },
+  "reviewed_new_files_sha256": {
+    "learning/task_bc_first_water_unit_requests_v1/__init__.py": "f2860e2a0dc25b9d2f12c8cebdc70edfb460c3b0dbef18308bab2a8a5f45e6ab",
+    "learning/task_bc_first_water_unit_requests_v1/check.py": "cc1584a0ddb917cfb66e48476cd01ef45aa0264cf705344048c15f829d22773e",
+    "learning/task_bc_first_water_unit_requests_v1/experiment.py": "260d2ddf38c5fc12aa3eb26d8d0fd3dc16dac8a49a43d93fd55ce577b50d18d4",
+    "learning/task_bc_first_water_unit_requests_v1/model_io.py": "6275a55af496902ce97340dc94f0d87e9f7e051232e4916410adf827c88d6c6a",
+    "learning/task_bc_first_water_unit_requests_v1/probe.py": "8ddc5f979a40a4d0e7d5d3fc2fe227bab45e18098b1069d24411188a485b3d61",
+    "learning/task_bc_first_water_unit_requests_v1/README.zh-CN.md": "4e8924f4175d09f202c805faa6553e15ea2fd90dd2f40d4957cc35730fc398bc",
+    "learning/task_bc_first_water_unit_requests_v1/source.py": "5905e4163fd7e1345a35240c9315e8b62dc4079d4f3fca95a3065718e322e6c4"
+  },
+  "static_evidence": [
+    {
+      "area": "Source scope and failure accounting",
+      "finding": "read_targets binds the six fixed games and step 15. Each source opens once and returns at most sixteen physical lines; only the sixteenth line is hashed and JSON-decoded. Compressed reads and returned payload are bounded before reads and charged on return. Decoded known child counts are charged before schema/limit rejection. The intentional gzip prefix-buffer unknown has a separate category from failed reads and partial decode. Whole-trace hashes remain inherited evidence. Device/inode identities remain internal.",
+      "evidence": "source.py:_CompressedReader, _charge_children, _validate, _read_one, read_targets"
+    },
+    {
+      "area": "Original model loading and installed-library compatibility",
+      "finding": "The wrapper preserves the two original constructors and their numerical paths, with one original SHA pass and one np.load per model. Both builtins.open and io.open are wrapped; returned bytes after seek, starts/completions, lazy NPZ reads and closes are charged. np_load phase remains active through each original constructor. All patches restore in finally and successful completion requires closed handles. Static inspection of installed NumPy and Python confirms this exact access path: NumPy load opens through builtins.open, NpzFile lazily uses ZipFile, Path.read_bytes uses io.open, and ZipFile shared reads use the wrapped read/seek/tell methods.",
+      "evidence": "model_io.py:_MeteredFile, _ModelMeter, model_reads; learning/task_bc_v1/model.py:TaskNetwork; learning/bc_crop/agent.py:Network; installed numpy/lib/_npyio_impl.py:192-261,449-474; installed Python pathlib.py:1005-1020 and zipfile/__init__.py:771-808"
+    },
+    {
+      "area": "Causal intervention and exact comparison",
+      "finding": "All six complete baseline calls precede every intervention and compare the entire semantic saved trace and full ordered unit vector. Only crop inference_seconds is omitted. Each intervention deep-copies the same observation/configuration, matches the saved and baseline prefix plus declared live controller locals, forces the one current legal WATER teacher ID at the registered index, and restores the original student in finally. Original controller removal and fresh choice enumeration continue into the new suffix; no historical suffix IDs are selected. Returned farmer/hands must equal that call's recorded unit_actions. Existing typed comparison preserves object order, array order, numeric types and float64 bits; original float64 scoring and first-argmax remain in use.",
+      "evidence": "probe.py:_semantic_trace, _context_snapshot, _ProbeAgent.select, _run_call, run_primary; learning/task_choice_v1/agent.py:select; bots/teacher_fertilizer_terminal_v2.py:225-260; learning/task_bc_error_diagnostics_v1/shadow.py:16-61"
+    },
+    {
+      "area": "Independent bounded checker",
+      "finding": "check.py imports only standard-library modules and implements its own typed comparison/hash and budget reconciliation. It reads one bound primary envelope and at most six bound pair receipts once, with the aggregate one-MiB decoded-byte limit. It independently recomputes ordered unit differences, exact override position, current legal candidate membership, baseline-before-intervention and fresh scoring sequences, source/model/controller totals, and expected prefix unknowns. It rejects unresolved failure unknowns. Late failures write failure.json and remain fatal to parent acceptance. This is receipt verification, not a second source or policy execution.",
+      "evidence": "check.py:_same, _typed, _event, _call, _pair, _sequences, _primary, _ledger, check"
+    },
+    {
+      "area": "Single execution, budgets and terminal lifecycle",
+      "finding": "The parent requires exact freeze/pre-review/commit bindings before the once-only started record. Its original 180-second monotonic deadline covers worker startup, protocol checks, data/model work, checker and finalization; work deadlines reserve the existing close allowance. Model loading and each controller call have checked sublimits, with per-pair active time limited to twenty seconds. Both heads charge forwards before the original computation, with failure work retained. One sequential owned worker and single-thread numerical environment are used. Acceptance requires zero process exit, natural whole-job closure, no forced termination, known terminal envelope, protection checks and final deadline gates; a provisional summary alone is insufficient.",
+      "evidence": "experiment.py:256-368; probe.py:_Meter, _task_score, _crop_logits, _run_call, run_primary; learning/task_bc_diagnostics_capacity_exit_v1/windows_tree.py:OwnedTree.close, run_owned"
+    }
+  ],
+  "review_activity": {
+    "source_and_safe_metadata_reads": true,
+    "installed_library_source_reads": true,
+    "raw_trace_reads": 0,
+    "replay_reads": 0,
+    "old_compact_or_first_witness_reads": 0,
+    "model_content_reads_or_loads": 0,
+    "model_forward_calls": 0,
+    "controller_or_policy_calls": 0,
+    "protocol_checks_executed": 0,
+    "checker_or_experiment_executions": 0,
+    "official_transitions": 0,
+    "new_games": 0,
+    "training_calls": 0,
+    "implementation_edits": 0,
+    "agent_workflow_used": false,
+    "only_artifact_written": "artifacts/task-bc-first-water-unit-requests-v1-20261026/pre-review.json"
+  },
+  "limits": [
+    "This pass establishes no runtime success, baseline reproduction, unit-vector outcome or actual execution consumption.",
+    "The exact preregistration commit is still a subsequent execution gate. Any frozen-byte change invalidates this review binding.",
+    "The six correlated consumed historical samples are not independent holdout evidence. No official execution, market equality, reward causality, generalization or policy admission is established.",
+    "A failed or partial execution consumes its actual work and must stop without retry, new samples, extra budget or training."
+  ],
+  "admission_scope": "The frozen implementation has no identified static blocker to the single registered execution after exact local preregistration-commit verification. Runtime acceptance still requires the registered evidence, independent receipt check, root review and lifecycle/deadline proof."
+}

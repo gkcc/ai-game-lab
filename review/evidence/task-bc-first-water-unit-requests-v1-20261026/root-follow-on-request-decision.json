@@ -1,0 +1,225 @@
+{
+  "schema": "first-water-unit-request-root-plan-v1",
+  "status": "planned_not_started",
+  "created_utc": "2026-10-25T16:27:39.620283+00:00",
+  "accepted_advice_sha256": "933337cb40560a3cd3b255bb436717c690c00281274ca1df50ea068164250102",
+  "current_published_commit": "c74ae971bd0a235741fc0e7918922f5d3d09db04",
+  "chosen_stage": "task-bc-first-water-unit-requests-v1",
+  "fixed_selection": {
+    "seed": 1714414373,
+    "policy": "trained",
+    "physical_line_1_based": 16,
+    "step": 15,
+    "sample_count": 6,
+    "sampling_rule": "全部六份已绑定首分歧，每份只取其 step 15；无按结果筛选、双席去重、补样或其他回合。",
+    "samples": [
+      {
+        "game": "holdout-1714414373-v1-0-trained",
+        "opponent": "v1",
+        "side": 0,
+        "first_callback_index_0_based": 1,
+        "step": 15,
+        "source_path": "artifacts/task-bc-holdout-v1-20261023/traces/holdout-1714414373-v1-0-trained.jsonl.gz",
+        "source_line_sha256": "9f8d0dfd5b9c3db69aba220147a540bc9b4fbf3f0202d97b0c070e07e9c08cbc",
+        "inherited_whole_trace_sha256": "a07ac7ccecd84d492bc1b25adfde238bc423692e4c574ff31782e2be174269a5"
+      },
+      {
+        "game": "holdout-1714414373-v1-1-trained",
+        "opponent": "v1",
+        "side": 1,
+        "first_callback_index_0_based": 1,
+        "step": 15,
+        "source_path": "artifacts/task-bc-holdout-v1-20261023/traces/holdout-1714414373-v1-1-trained.jsonl.gz",
+        "source_line_sha256": "2393bd9e453684babfec6dfd7323e9200b8161911470a136615daba495284c09",
+        "inherited_whole_trace_sha256": "02785d557095caecfe7647c93239e7419c744837e95a7520c1bc48f808e126cc"
+      },
+      {
+        "game": "holdout-1714414373-market-0-trained",
+        "opponent": "market",
+        "side": 0,
+        "first_callback_index_0_based": 1,
+        "step": 15,
+        "source_path": "artifacts/task-bc-holdout-v1-20261023/traces/holdout-1714414373-market-0-trained.jsonl.gz",
+        "source_line_sha256": "10cdcee851af015f8cbfdb0129a40846dec1a4b093242a1b9c8f85893c021155",
+        "inherited_whole_trace_sha256": "9490f1a8ef308d9a820f99f97d50e03f7f420f05b4bb5acdef6568315486cc26"
+      },
+      {
+        "game": "holdout-1714414373-market-1-trained",
+        "opponent": "market",
+        "side": 1,
+        "first_callback_index_0_based": 1,
+        "step": 15,
+        "source_path": "artifacts/task-bc-holdout-v1-20261023/traces/holdout-1714414373-market-1-trained.jsonl.gz",
+        "source_line_sha256": "fa63efd11dc6e8937226206056f74d7a365d3d827364c3ee0b54914d542a62d7",
+        "inherited_whole_trace_sha256": "82fcc219f4c2804516395804601979382d8f9beba150bc7e9f0a34d2dccbb8cb"
+      },
+      {
+        "game": "holdout-1714414373-round2-0-trained",
+        "opponent": "round2",
+        "side": 0,
+        "first_callback_index_0_based": 0,
+        "step": 15,
+        "source_path": "artifacts/task-bc-holdout-v1-20261023/traces/holdout-1714414373-round2-0-trained.jsonl.gz",
+        "source_line_sha256": "a459aa67421d5cc46a460fe28357d4116684555a680faf6ad454ecbb3db22f47",
+        "inherited_whole_trace_sha256": "11e6192e08f4977378bede71232139a1a59635306b923f0934fe9596902e68c1"
+      },
+      {
+        "game": "holdout-1714414373-round2-1-trained",
+        "opponent": "round2",
+        "side": 1,
+        "first_callback_index_0_based": 0,
+        "step": 15,
+        "source_path": "artifacts/task-bc-holdout-v1-20261023/traces/holdout-1714414373-round2-1-trained.jsonl.gz",
+        "source_line_sha256": "c683e65dae97622e918f9fde6ffa5881f12292d5d5ee30c8c5387811cfd184b8",
+        "inherited_whole_trace_sha256": "721d8b85e68e8c60f69a420a6505b4305b63f95988b35fc8bb634860f44f7843"
+      }
+    ]
+  },
+  "fixed_models": {
+    "task": {
+      "path": "artifacts/task-bc-holdout-v1-20261023/model/trained.npz",
+      "sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143"
+    },
+    "crop": {
+      "path": "artifacts/bc-epoch6-holdout-v1-20261023/panels/fixed_epoch6/model/trained.npz",
+      "sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd"
+    },
+    "load_policy": "单个顺序工作进程、两个模型对象各加载一次，并在所有12次调用间复用；保留原始归一化、候选排序、float64部署评分及首argmax平局规则。禁止重新选模型。",
+    "model_hash_and_npz_load_reads": "SHA读取和np.load是分别计数的物理读取；初始化不允许试打分。"
+  },
+  "budget": {
+    "stage_seconds_max": 180,
+    "primary_phase_seconds_max": 120,
+    "independent_checker_seconds_max": 40,
+    "finalization_and_close_reserve_seconds": 20,
+    "per_sample_pair_seconds_max": 20,
+    "model_load_phase_seconds_max": 20,
+    "per_close_seconds_max": 10,
+    "max_workers": 1,
+    "blas_threads": 1,
+    "process_tree_private_commit_bytes_max": 1073741824,
+    "source": {
+      "gzip_opens_max": 6,
+      "prefix_lines_returned_max": 96,
+      "prefix_lines_per_source_max": 16,
+      "target_json_turns_decoded_max": 6,
+      "skipped_prefix_lines_json_decoded_max": 0,
+      "compressed_bytes_read_per_source_max": 2097152,
+      "compressed_bytes_read_total_max": 12582912,
+      "returned_payload_bytes_per_source_max": 8388608,
+      "returned_payload_bytes_total_max": 50331648,
+      "single_line_bytes_max": 2097152,
+      "target_json_bytes_total_max": 12582912,
+      "target_task_records_max": 48,
+      "target_candidate_objects_and_x_arrays_max": 24576,
+      "target_shared_x_observation_and_configuration_objects_max_each": 48,
+      "target_crop_records_and_numeric_payloads_max": 48,
+      "reread_passes_max": 0,
+      "complete_trace_hash_passes_max": 0,
+      "raw_replay_reads_max": 0,
+      "existing_compact_or_first_witness_reads_max": 0
+    },
+    "models": {
+      "distinct_npz_files_max": 2,
+      "checkpoint_hash_passes_max": 2,
+      "model_object_loads_max": 2,
+      "np_load_calls_max": 2,
+      "total_model_bytes_returned_by_reads_max": 4194304,
+      "task_forward_calls_max": 90,
+      "task_scored_candidates_max": 46080,
+      "crop_forward_calls_max": 96,
+      "crop_logits_values_max": 480,
+      "numeric_cache_reuse": false,
+      "training_calls_max": 0
+    },
+    "controller": {
+      "real_calls_max": 12,
+      "baseline_calls_max": 6,
+      "intervention_calls_max": 6,
+      "forced_choices_exact_on_completed_stage": 6,
+      "forced_choices_per_intervention_exact": 1,
+      "units_per_observation_max": 8,
+      "callbacks_per_controller_call_max": 8,
+      "task_candidate_encodings_max": 96,
+      "candidates_per_callback_max": 512,
+      "generated_candidate_objects_max": 49152,
+      "full_teacher_policy_calls_max": 0,
+      "official_transitions_max": 0,
+      "new_games_max": 0
+    },
+    "one_off_protocol_checks": {
+      "in_memory_cases_max": 4,
+      "fake_callback_events_max": 16,
+      "fake_candidates_max": 32,
+      "real_model_calls_max": 0,
+      "real_controller_calls_max": 0,
+      "official_transitions_max": 0,
+      "coverage": "精确单位编号比较、拒绝前缀错配/非法强制ID、禁止旧后缀重用、超限前停止评分；只用内存小型合成对象。"
+    },
+    "independent_checker": {
+      "pair_receipt_files_max": 6,
+      "aggregate_decoded_bytes_max": 1048576,
+      "passes_per_receipt_max": 1,
+      "source_reads_max": 0,
+      "model_reads_or_scores_max": 0,
+      "controller_calls_max": 0
+    },
+    "retries_max": 0,
+    "additional_seeds_or_turns_max": 0,
+    "prior_cumulative_task_scoring": {
+      "groups": 3844,
+      "candidates": 226982
+    },
+    "maximum_cumulative_task_scoring_if_fully_consumed": {
+      "groups": 3934,
+      "candidates": 273062
+    },
+    "accounting": "模型装载/哈希、所有头的前向、基线与干预调用、编码候选、已解码源对象、核对器输出读回和失败消费分别记账；无缓存免费额度或第三路策略。执行前限制读取/评分，JSON嵌套计数在解码后立即如实计入再判限。",
+    "gzip_limit": "gzip前缀读取会提前关闭；包装底层read计数实际压缩字节，另计readline返回payload。内部解压但未返回的缓冲量可能未知，应标记该量unknown，不能把提前停止说成完整EOF或精确全部解压消费。字节硬上限约束实际底层压缩读取与返回payload。",
+    "model_load_limit": "原构造器会先读取SHA再np.load；二者均包含在上述模型读取额度。若实现无法可靠拦截/计量，预审阶段视为具体阻塞，不在执行后补造计数。"
+  },
+  "rationale": "The saved conditional disagreement is real, but no full unit-vector difference is yet established. Test that narrow missing link before changing training or strategy.",
+  "root_scope_decisions": [
+    "Only historical unit_actions / returned farmer+hands are primary. Do not read Replay merely to establish historical market equality.",
+    "All six baseline calls must reproduce their saved step-15 trace and full unit vector before any intervention starts. No recorded-ID replay may mask a mismatch.",
+    "Force one current legal teacher candidate at the exact bound context, then restore the same student and enumerate/score its new suffix. Full teacher-from-turn-start is a different question and is excluded.",
+    "Use the existing ordered_hash / first_difference so object order, array order, numeric types and float64 bits remain explicit. Capture only declared controller locals; represent an unordered available-unit set explicitly as a sorted list, without reordering inventories or requests.",
+    "Model constructors hash and load once each, with returned file-read bytes and both heads real forward counts charged. No hidden scorer warmup or uncharged numerical verification.",
+    "The six source prefixes intentionally stop before gzip EOF. Actual compressed reads and returned payload are bounded and counted; unreturned internal buffer work remains unknown and is not represented as zero. This does not waive malformed/failed-read accounting.",
+    "Operational 180-second clock covers preparation data reads, model load, twelve calls, prewritten independent checker and cleanup. Sequential baselines precede interventions, so pair time means sum of its two active calls, not elapsed wall time across unrelated samples; use an explicit ten-second checked budget per call, still under original primary and total deadlines.",
+    "Independent checker code, synthetic protocol checks, source-read and model-read meters must be frozen and independently reviewed before the first prefix or model read. Machine checker consumes at most six small receipts once; no second inference pass.",
+    "Same or different vectors are equally acceptable diagnostic outcomes. No economic, official execution, generalization or policy promotion claim follows automatically."
+  ],
+  "source_code_reviewed_by_root": [
+    "learning/task_choice_v1/agent.py",
+    "learning/task_bc_v1/deployment.py",
+    "learning/task_bc_v1/model.py",
+    "learning/bc_crop/agent.py",
+    "learning/task_bc_error_diagnostics_v1/shadow.py",
+    "bots/teacher_fertilizer_terminal_v2.py"
+  ],
+  "acceptance": {
+    "operational": "全部六个绑定样本及12次以内调用正常完成；六个基线完整单位向量逐项等于历史；全部前缀及目标上下文精确一致；每个干预恰有一次当前合法WATER替换，之后原学生重新选择；预算、进程关闭和保护文件检查通过。",
+    "no_required_direction": "相同或不同都可构成成功诊断；不把正面结果设为执行验收条件。",
+    "unit_vectors_equal_in_all_six": "支持这六个固定首分歧在该回合的单位请求向量上等价。若后续候选/分配轨迹不同，可称同轮分配顺序差异；不得从向量相同推断隐藏任务目标、market或未来必然相同。",
+    "any_unit_vector_differs": "至少该样本的首分歧不只是最终单位请求不变的重排；逐样本报告差异单位数和请求操作类别。不能据此称它是错误、官方无效或收益损失。",
+    "partial_or_failed": "停止并保留实际完成/消费；本阶段未验收，不补样、不扩预算、不改阈值、不转训。",
+    "no_statistics": "只列六个相关历史样本的精确相等/不等，不做显著性、CI、跨种子推广或策略晋级。"
+  },
+  "stop_conditions": [
+    "固定源行SHA、模型SHA、源码冻结、schema、样本身份或原零错误条件任一不符。",
+    "任一基线回调/选种/预留/历史单位向量不复现；严禁用记录ID硬塞来掩盖复现失败。",
+    "目标前上下文或选择不一致；目标不再是已绑定的合法WATER/WATER工人与目标分歧；强制次数不是恰好一次。",
+    "候选失效、输入非有限、模型异常、fallback、后缀旧ID重用，或任何未登记策略/模型/源读取。",
+    "任何读取、评分、候选、时间、内存或进程生命周期限额触发。保留失败消费；无自动重试或预算扩展。",
+    "清理被策略拒绝时按用户规定停止清理并报告所属保留路径；不能换壳绕过。"
+  ],
+  "default_models_teachers_and_history_preserved": true,
+  "original_policy_admission": false,
+  "new_stage_data_reads": 0,
+  "new_stage_model_reads": 0,
+  "new_stage_calls": 0,
+  "new_stage_code_implemented": false,
+  "next_action": "Create one narrow source/output package, metadata-only registration and independent exact-source pre-review; do not execute until local preregistration commit is verified.",
+  "goal_remains_active": true
+}

@@ -1,0 +1,319 @@
+{
+  "schema": "first-water-unit-request-follow-on-advice-v1",
+  "status": "planned_not_started",
+  "visibility": "local_only",
+  "advisor": "independent user-authorized subagent",
+  "advice_date_local": "2026-10-26",
+  "recommendation": "仅开展首个 WATER 条件分歧的完整单位请求比较；本建议不是登记、冻结、预审通过或执行授权凭证。",
+  "recommended_stage": "task-bc-first-water-unit-requests-v1",
+  "question": "在同一事实观测及完全相同的分歧前预留上下文中，只把首个分歧选择换成当时的条件教师偏好，随后继续同一冻结学生，最终按单位编号排列的全部请求是否仍相同？",
+  "evidence_role": "六份已消费的同一种子历史诊断样本；不是新留出、六个独立样本或收益因果实验。",
+  "current_stage": {
+    "accepted": true,
+    "execution_freeze_sha256": "585c2b9c129e4c819b421eb077048f114a740502b7a80545e98f67a5e75b902f",
+    "pre_execution_commit": "8b12cabf8a13161f6341c64b5953879010e175a7",
+    "callbacks": 12232,
+    "conditional_candidate_mismatches": 236,
+    "complete_unit_request_difference_established": false,
+    "original_policy_admission": false,
+    "original_diagnostic_stage_acceptance": false,
+    "previous_strict_review_acceptance": false
+  },
+  "fixed_selection": {
+    "seed": 1714414373,
+    "policy": "trained",
+    "physical_line_1_based": 16,
+    "step": 15,
+    "sample_count": 6,
+    "sampling_rule": "全部六份已绑定首分歧，每份只取其 step 15；无按结果筛选、双席去重、补样或其他回合。",
+    "samples": [
+      {
+        "game": "holdout-1714414373-v1-0-trained",
+        "opponent": "v1",
+        "side": 0,
+        "first_callback_index_0_based": 1,
+        "step": 15,
+        "source_path": "artifacts/task-bc-holdout-v1-20261023/traces/holdout-1714414373-v1-0-trained.jsonl.gz",
+        "source_line_sha256": "9f8d0dfd5b9c3db69aba220147a540bc9b4fbf3f0202d97b0c070e07e9c08cbc",
+        "inherited_whole_trace_sha256": "a07ac7ccecd84d492bc1b25adfde238bc423692e4c574ff31782e2be174269a5"
+      },
+      {
+        "game": "holdout-1714414373-v1-1-trained",
+        "opponent": "v1",
+        "side": 1,
+        "first_callback_index_0_based": 1,
+        "step": 15,
+        "source_path": "artifacts/task-bc-holdout-v1-20261023/traces/holdout-1714414373-v1-1-trained.jsonl.gz",
+        "source_line_sha256": "2393bd9e453684babfec6dfd7323e9200b8161911470a136615daba495284c09",
+        "inherited_whole_trace_sha256": "02785d557095caecfe7647c93239e7419c744837e95a7520c1bc48f808e126cc"
+      },
+      {
+        "game": "holdout-1714414373-market-0-trained",
+        "opponent": "market",
+        "side": 0,
+        "first_callback_index_0_based": 1,
+        "step": 15,
+        "source_path": "artifacts/task-bc-holdout-v1-20261023/traces/holdout-1714414373-market-0-trained.jsonl.gz",
+        "source_line_sha256": "10cdcee851af015f8cbfdb0129a40846dec1a4b093242a1b9c8f85893c021155",
+        "inherited_whole_trace_sha256": "9490f1a8ef308d9a820f99f97d50e03f7f420f05b4bb5acdef6568315486cc26"
+      },
+      {
+        "game": "holdout-1714414373-market-1-trained",
+        "opponent": "market",
+        "side": 1,
+        "first_callback_index_0_based": 1,
+        "step": 15,
+        "source_path": "artifacts/task-bc-holdout-v1-20261023/traces/holdout-1714414373-market-1-trained.jsonl.gz",
+        "source_line_sha256": "fa63efd11dc6e8937226206056f74d7a365d3d827364c3ee0b54914d542a62d7",
+        "inherited_whole_trace_sha256": "82fcc219f4c2804516395804601979382d8f9beba150bc7e9f0a34d2dccbb8cb"
+      },
+      {
+        "game": "holdout-1714414373-round2-0-trained",
+        "opponent": "round2",
+        "side": 0,
+        "first_callback_index_0_based": 0,
+        "step": 15,
+        "source_path": "artifacts/task-bc-holdout-v1-20261023/traces/holdout-1714414373-round2-0-trained.jsonl.gz",
+        "source_line_sha256": "a459aa67421d5cc46a460fe28357d4116684555a680faf6ad454ecbb3db22f47",
+        "inherited_whole_trace_sha256": "11e6192e08f4977378bede71232139a1a59635306b923f0934fe9596902e68c1"
+      },
+      {
+        "game": "holdout-1714414373-round2-1-trained",
+        "opponent": "round2",
+        "side": 1,
+        "first_callback_index_0_based": 0,
+        "step": 15,
+        "source_path": "artifacts/task-bc-holdout-v1-20261023/traces/holdout-1714414373-round2-1-trained.jsonl.gz",
+        "source_line_sha256": "c683e65dae97622e918f9fde6ffa5881f12292d5d5ee30c8c5387811cfd184b8",
+        "inherited_whole_trace_sha256": "721d8b85e68e8c60f69a420a6505b4305b63f95988b35fc8bb634860f44f7843"
+      }
+    ]
+  },
+  "fixed_models": {
+    "task": {
+      "path": "artifacts/task-bc-holdout-v1-20261023/model/trained.npz",
+      "sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143"
+    },
+    "crop": {
+      "path": "artifacts/bc-epoch6-holdout-v1-20261023/panels/fixed_epoch6/model/trained.npz",
+      "sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd"
+    },
+    "load_policy": "单个顺序工作进程、两个模型对象各加载一次，并在所有12次调用间复用；保留原始归一化、候选排序、float64部署评分及首argmax平局规则。禁止重新选模型。",
+    "model_hash_and_npz_load_reads": "SHA读取和np.load是分别计数的物理读取；初始化不允许试打分。"
+  },
+  "feasibility": {
+    "result": "现有源码支持，无需修改教师、默认Bot或模型。",
+    "deployment_entry": "learning/task_bc_v1/deployment.py:JointAgent；learning/task_bc_v1/agent.py不存在。",
+    "injection": "TaskAgent 的AST将唯一任务选择表达式绑定到 self.select(context)。诊断子类可在单个回调暂时包装 task_selector，并仍由原 select 校验合法ID和写记录；finally必须恢复原学生选择器。",
+    "context": "encode_candidates保存观测、配置、候选、已有单位请求、available_units、seeds、needed_seeds、supply、projected_shed及物品顺序。诊断包装器还可只读复制当时tasks/choices/available等控制器局部量，用于两次调用的分歧前精确一致性检查。",
+    "continuation": "控制器选择后会移除工人与目标地块，再枚举新choices；后续回调必须调用原TaskNetwork，作物选择继续原CropAgent网络。",
+    "trace_boundary": "已存trace含final_reservations.unit_actions，足够核对完整单位向量；未保存完整market返回值。本阶段不读取Replay，不声称复现历史完整farmer/hands/market action。",
+    "prohibited_shortcut": "不得用从回合开头全程teacher_task接管来替代单次干预；不得在分歧后的新上下文套用旧候选ID、旧teacher_label或历史后续选择。"
+  },
+  "implementation_scope": {
+    "size": "一个窄用途运行入口及单次选择包装器；复用现有输入编码、JointAgent、部署评分、精确结构比较和有界进程收据工具。不要新建索引、缓存、通用评估框架或新面板。",
+    "numeric_reuse": "直接复用TaskNetwork/__call__/score和CropAgent网络。numeric.RecordAnalyzer依赖支持索引且带缓存，本问题不需要它，不加载数据集或重建支持集。",
+    "comparison_reuse": "可复用shadow.py的ordered_hash与first_difference。其整回合opposite-policy runner不适用；不能未经标注把完整action比较结果当历史单位向量验收。",
+    "independent_checks": "只做有界协议/比较器检查及实样本无干预复现；不新增测试基础设施。检查代码与执行代码须在读取新源内容或模型前一并冻结。"
+  },
+  "protocol": [
+    "先登记本建议的六个源行、两模型、源码/依赖闭包、各项硬限额和结果分类，完成独立预审及本地事前提交；记录当前阶段正式发布提交。不得直接执行旧冻结入口或覆盖旧输出。",
+    "每源只打开一次gzip，读取前16个物理行；前15行只跳过字节，不JSON解码。第16行先按当前抽取器的原字节规则验证source_line_sha256，再解码。校验step、player、两个checkpoint、schema、零fallback以及固定首分歧索引。无需整条trace重哈希，不能宣称本轮证明整条源字节未变。",
+    "从第16行现有inputs取得同一事实观测/配置；验证该行所有回调记录的观测/配置一致并保留inventory/shed顺序。保存历史有序unit_actions作为唯一历史请求基准。",
+    "先顺序执行全部六次原学生基线调用，未启用任何强制选择。所有记录的输入、候选身份、chosen、teacher_label、预留、选种结果和最终unit_actions必须复现归档行；仅排除明确非语义的inference_seconds。任一不符就不进入干预。",
+    "逐样本用同一事实观测/配置的独立深拷贝再调用同一冻结学生。重置包装器计数和原有每回合缓冲。目标之前的每个回调均由原学生重新评分，输入、选择及控制器预留快照必须与已通过基线完全一致。",
+    "在固定目标索引，再验证完整inputs与基线及归档记录一致，tasks/choices/available/actions及资源预留与基线一致。只在该处从当前context的max(choices)导出条件教师候选，核对它与绑定旧label相同、合法、不同于学生，且双方都是WATER、unit和target都不同。临时选择器返回这个当前合法ID一次；本次不额外调用学生网络。",
+    "立刻恢复原学生选择器；控制器正常移除所选工人和地块，重新枚举候选并由原学生评分其余选择。作物头不更换。目标之后不配对不同上下文的同序号回调，不回放旧后缀。",
+    "取两次返回中的[farmer,*hands]，分别验证其与各自last.final_reservations.unit_actions一致，再按固定单位编号逐项比较归档基准、基线和干预向量。包括PASS、移动方向、参数及数组长度，禁止排序成操作多重集或只比被选工人。",
+    "独立机器核对器只读取本轮至多六份小型本地对照收据一次，重新计算单位向量相等/差异单位数、唯一override及预算汇总；不追加源、模型或策略读取。独立人工复审核对冻结源码及有限收据，root核实后只发布脱敏摘要。它不是第二次原始trace复现。",
+    "写出唯一终态并确认全部所属子进程关闭、临时文件实际清理；预算与来源口径完整后才接受。当前顾问不执行以上步骤。"
+  ],
+  "budget": {
+    "stage_seconds_max": 180,
+    "primary_phase_seconds_max": 120,
+    "independent_checker_seconds_max": 40,
+    "finalization_and_close_reserve_seconds": 20,
+    "per_sample_pair_seconds_max": 20,
+    "model_load_phase_seconds_max": 20,
+    "per_close_seconds_max": 10,
+    "max_workers": 1,
+    "blas_threads": 1,
+    "process_tree_private_commit_bytes_max": 1073741824,
+    "source": {
+      "gzip_opens_max": 6,
+      "prefix_lines_returned_max": 96,
+      "prefix_lines_per_source_max": 16,
+      "target_json_turns_decoded_max": 6,
+      "skipped_prefix_lines_json_decoded_max": 0,
+      "compressed_bytes_read_per_source_max": 2097152,
+      "compressed_bytes_read_total_max": 12582912,
+      "returned_payload_bytes_per_source_max": 8388608,
+      "returned_payload_bytes_total_max": 50331648,
+      "single_line_bytes_max": 2097152,
+      "target_json_bytes_total_max": 12582912,
+      "target_task_records_max": 48,
+      "target_candidate_objects_and_x_arrays_max": 24576,
+      "target_shared_x_observation_and_configuration_objects_max_each": 48,
+      "target_crop_records_and_numeric_payloads_max": 48,
+      "reread_passes_max": 0,
+      "complete_trace_hash_passes_max": 0,
+      "raw_replay_reads_max": 0,
+      "existing_compact_or_first_witness_reads_max": 0
+    },
+    "models": {
+      "distinct_npz_files_max": 2,
+      "checkpoint_hash_passes_max": 2,
+      "model_object_loads_max": 2,
+      "np_load_calls_max": 2,
+      "total_model_bytes_returned_by_reads_max": 4194304,
+      "task_forward_calls_max": 90,
+      "task_scored_candidates_max": 46080,
+      "crop_forward_calls_max": 96,
+      "crop_logits_values_max": 480,
+      "numeric_cache_reuse": false,
+      "training_calls_max": 0
+    },
+    "controller": {
+      "real_calls_max": 12,
+      "baseline_calls_max": 6,
+      "intervention_calls_max": 6,
+      "forced_choices_exact_on_completed_stage": 6,
+      "forced_choices_per_intervention_exact": 1,
+      "units_per_observation_max": 8,
+      "callbacks_per_controller_call_max": 8,
+      "task_candidate_encodings_max": 96,
+      "candidates_per_callback_max": 512,
+      "generated_candidate_objects_max": 49152,
+      "full_teacher_policy_calls_max": 0,
+      "official_transitions_max": 0,
+      "new_games_max": 0
+    },
+    "one_off_protocol_checks": {
+      "in_memory_cases_max": 4,
+      "fake_callback_events_max": 16,
+      "fake_candidates_max": 32,
+      "real_model_calls_max": 0,
+      "real_controller_calls_max": 0,
+      "official_transitions_max": 0,
+      "coverage": "精确单位编号比较、拒绝前缀错配/非法强制ID、禁止旧后缀重用、超限前停止评分；只用内存小型合成对象。"
+    },
+    "independent_checker": {
+      "pair_receipt_files_max": 6,
+      "aggregate_decoded_bytes_max": 1048576,
+      "passes_per_receipt_max": 1,
+      "source_reads_max": 0,
+      "model_reads_or_scores_max": 0,
+      "controller_calls_max": 0
+    },
+    "retries_max": 0,
+    "additional_seeds_or_turns_max": 0,
+    "prior_cumulative_task_scoring": {
+      "groups": 3844,
+      "candidates": 226982
+    },
+    "maximum_cumulative_task_scoring_if_fully_consumed": {
+      "groups": 3934,
+      "candidates": 273062
+    },
+    "accounting": "模型装载/哈希、所有头的前向、基线与干预调用、编码候选、已解码源对象、核对器输出读回和失败消费分别记账；无缓存免费额度或第三路策略。执行前限制读取/评分，JSON嵌套计数在解码后立即如实计入再判限。",
+    "gzip_limit": "gzip前缀读取会提前关闭；包装底层read计数实际压缩字节，另计readline返回payload。内部解压但未返回的缓冲量可能未知，应标记该量unknown，不能把提前停止说成完整EOF或精确全部解压消费。字节硬上限约束实际底层压缩读取与返回payload。",
+    "model_load_limit": "原构造器会先读取SHA再np.load；二者均包含在上述模型读取额度。若实现无法可靠拦截/计量，预审阶段视为具体阻塞，不在执行后补造计数。"
+  },
+  "acceptance": {
+    "operational": "全部六个绑定样本及12次以内调用正常完成；六个基线完整单位向量逐项等于历史；全部前缀及目标上下文精确一致；每个干预恰有一次当前合法WATER替换，之后原学生重新选择；预算、进程关闭和保护文件检查通过。",
+    "no_required_direction": "相同或不同都可构成成功诊断；不把正面结果设为执行验收条件。",
+    "unit_vectors_equal_in_all_six": "支持这六个固定首分歧在该回合的单位请求向量上等价。若后续候选/分配轨迹不同，可称同轮分配顺序差异；不得从向量相同推断隐藏任务目标、market或未来必然相同。",
+    "any_unit_vector_differs": "至少该样本的首分歧不只是最终单位请求不变的重排；逐样本报告差异单位数和请求操作类别。不能据此称它是错误、官方无效或收益损失。",
+    "partial_or_failed": "停止并保留实际完成/消费；本阶段未验收，不补样、不扩预算、不改阈值、不转训。",
+    "no_statistics": "只列六个相关历史样本的精确相等/不等，不做显著性、CI、跨种子推广或策略晋级。"
+  },
+  "stop_conditions": [
+    "固定源行SHA、模型SHA、源码冻结、schema、样本身份或原零错误条件任一不符。",
+    "任一基线回调/选种/预留/历史单位向量不复现；严禁用记录ID硬塞来掩盖复现失败。",
+    "目标前上下文或选择不一致；目标不再是已绑定的合法WATER/WATER工人与目标分歧；强制次数不是恰好一次。",
+    "候选失效、输入非有限、模型异常、fallback、后缀旧ID重用，或任何未登记策略/模型/源读取。",
+    "任何读取、评分、候选、时间、内存或进程生命周期限额触发。保留失败消费；无自动重试或预算扩展。",
+    "清理被策略拒绝时按用户规定停止清理并报告所属保留路径；不能换壳绕过。"
+  ],
+  "outputs_and_privacy": {
+    "new_output_directory": "artifacts/task-bc-first-water-unit-requests-v1-20261026",
+    "local_only": "六份单位请求对照收据、完整局部上下文或候选细节以及进程身份仅本地；不输出新的Replay、训练样本或模型。",
+    "safe_summary": "登记/冻结标识、各样本相等性与差异单位数量、精确计数与耗时、局限、独立复审和root裁决；无坐标、完整请求向量、候选载荷或私人绝对路径。",
+    "old_artifacts": "保留所有旧默认策略/教师/模型/原结果/哈希和false准入；不得覆盖当前阶段已冻结的next-stage-advice.json或root-continuation-decision.json。",
+    "evidence_levels": {
+      "this_stage": "只回答当前回合的完整有序单位请求是否变化。",
+      "official_single_step_effect": "未执行、未证明；若将来需要，另行固定状态与双方动作并登记预算。",
+      "long_term_reward_causality": "未执行、未证明；不因本轮结果自动启动新比赛、DAgger、PPO或训练。"
+    }
+  },
+  "source_basis": [
+    {
+      "path": "learning/task_choice_v1/agent.py",
+      "lines": "18-61,64-100",
+      "finding": "可替换的任务回调、合法ID校验、最终单位请求保存及每次调用清空缓冲。"
+    },
+    {
+      "path": "learning/task_choice_v1/features.py",
+      "lines": "51-120",
+      "finding": "当前choices到合法ID映射、固定候选排序、完整pre-assignment预留与结构输入。"
+    },
+    {
+      "path": "learning/task_bc_v1/deployment.py",
+      "lines": "10-24",
+      "finding": "实际JointAgent接入两冻结头；trace记录last而非完整market返回值。"
+    },
+    {
+      "path": "learning/task_bc_v1/model.py",
+      "lines": "37-106",
+      "finding": "模型身份校验、float64部署评分与first-argmax；不是重新训练。"
+    },
+    {
+      "path": "learning/bc_crop/agent.py",
+      "lines": "24-59,98-129",
+      "finding": "作物头加载与评分单独计量，trace只含选种记录/最终预留且含非语义耗时。"
+    },
+    {
+      "path": "bots/teacher_fertilizer_terminal_v2.py",
+      "lines": "195-260,281-305",
+      "finding": "每次任务选择移除工人与整块地，后续重新枚举；通常最多7名雇工，仍必须显式核对8单位硬限额。"
+    },
+    {
+      "path": "learning/task_bc_error_diagnostics_v1/shadow.py",
+      "lines": "16-61,94-170",
+      "finding": "可复用精确结构哈希和首差异定位；上下文分裂后不得配对后续同序号回调。"
+    },
+    {
+      "path": "learning/task_bc_error_diagnostics_v1/numeric.py",
+      "lines": "137-168",
+      "finding": "现有RecordAnalyzer缓存/支持索引超出本问题；不因复用而隐含重读、评分或缓存免计。"
+    }
+  ],
+  "evidence_and_source_sha256": {
+    "artifacts/task-bc-saved-student-decisions-v1-20261026/root-evidence-acceptance.json": "56100fc0db1e26f74437fd047f44ddb5708db840f69c42783afc642ad56fc93c",
+    "artifacts/task-bc-saved-student-decisions-v1-20261026/evidence-review.json": "c115dc34917c8ef2df56d2a1afdd017ed58744782db07f05ff926a78c4cc4b65",
+    "TASK_BC_SAVED_STUDENT_DECISIONS_V1.zh-CN.md": "a16b219bc3e26db0760c5c7e15438dbb0234bc22f937f4559689d3294084ca1f",
+    "learning/task_bc_error_diagnostics_v1/shadow.py": "095f6a896c259f840af4c59adc922cc9782fe69aafd3b0df7ea04df9160c3251",
+    "bots/teacher_fertilizer_terminal_v2.py": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+    "learning/task_bc_v1/model.py": "dbdbe126029a16f15178d18a5088defac83c5b6447d77f48aa7c77cae70886d8",
+    "artifacts/task-bc-saved-student-decisions-v1-20261026/root-continuation-decision.json": "7ad9f90cccc5e342528248a19f1fc2a11fbe41cdcff231fc396044d6118b4ccf",
+    "learning/task_choice_v1/features.py": "b69e3fb590fb5c1159193d112977aa03170557dc47b8aa19bcffe0f09737c7d4",
+    "learning/task_bc_error_diagnostics_v1/numeric.py": "5d7ffe44616e029079fafbdee47d3af4391e6c394d349ef46df5997275082a3a",
+    "learning/task_bc_v1/deployment.py": "17ae478de5f44658fc0df848b0afe64ae2032bb1176dab888eeff5a48648d5f5",
+    "learning/bc_crop/agent.py": "6923bf2d088ec0aefad45b27121d55c1c4338e72b39e5a8c874aa3223c3350a4",
+    "artifacts/task-bc-saved-student-decisions-v1-20261026/check/summary.json": "41ff6a114eb30c6a4a7a89c77cde81c5a87720e9bbbb9ab54e43958023575bbd",
+    "learning/task_choice_v1/agent.py": "b22e2a1a546abe39e76a412690d09926d0463d4c196e87614507cf16a0ab51ce",
+    "artifacts/task-bc-saved-student-decisions-v1-20261026/registration.json": "5037c008668e81ff3bdbbab1d4f057823c94a9055f8123ff2876492b497a3621",
+    "artifacts/task-bc-saved-student-decisions-v1-20261026/next-stage-advice.json": "a2ae16eacf64499143100b90920238ab924c748759c7a97068d5193da6cc44fd"
+  },
+  "planning_activity": {
+    "source_metadata_and_source_code_reads": true,
+    "raw_trace_replay_compact_first_witness_reads": 0,
+    "model_file_reads_loads_or_scores": 0,
+    "policy_calls": 0,
+    "official_transitions": 0,
+    "tests_or_experiments_executed": 0,
+    "implementation_changes": 0,
+    "only_file_created": "artifacts/task-bc-saved-student-decisions-v1-20261026/follow-on-request-comparison-advice.json",
+    "agent_workflow_used": false
+  }
+}
