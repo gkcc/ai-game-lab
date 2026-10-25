@@ -151,3 +151,9 @@
 事前1f04b98，新输出下8回归和514 compact报告一次完成，1.547秒，0新评分/数值输入/原始流/训练/比赛，累计3844/226982不变。整数JSON键严格比较保留真实差异、字段和数组顺序；来源/修复冻结分开，6581历史stat不变。独立514遍历已核6边际/30格与首个见证，但审查器误要求恰好5而非至多5，原attempt及完整120s复审门槛仍false。另登记0compact元数据纠正0.094秒通过，root据已核数据有条件关闭具体报告缺陷，不宣称原严格审查或全阶段无条件通过。训练412中5分歧、验证102中5分歧，全10涉及地块，4类首见证；仅历史条件描述，不能解释原净收益下降。见[报告](../kaggriculture/TASK_BC_STRATIFIED_REPORT_REPAIR_V1.zh-CN.md)、[证据及审查例外](evidence/task-bc-stratified-report-repair-v1-20261025/)。
 
 生命周期措辞澄清：上文分层阶段的“47树自然关闭”应按原证据理解为47树均已关闭、0强杀，其中46个成功任务满足natural_tree_exit；失败的报告任务只证明非零退出、无强杀且树已关闭，不能称其达到成功自然退出门槛。此澄清追加保留原历史文字和证书。
+
+
+## 学生实际任务历史诊断 V1：执行与分解通过，尚无收益归因
+
+事前8b12cab，固定一个已消费seed、三对手双席六条trained轨迹，单次压缩哈希＋gzip读取，4314turn/12232callback/575674candidate/920crop；547988954返回payload，非零输入JSON解码但0模型/重建/策略/official/训练/新赛。6合成＋2收据失败回归通过且所属temp已移除；8job自然关闭，最终11.516秒在原600秒内验收。独立预写checker单遍12232compact、0.219秒，重算投影及统计，不冒充第二遍raw复现。
+236条件候选分歧中op122/unit130/target212重叠，首见证六个均step15 WATER→WATER、工人及地块不同；三个对手各自双席汇总相同，不当独立样本。HARVEST→WATER52、FERTILIZE→WATER22仅检查线索，不是失败执行或收益损失。独立人工仅六见证，不追加raw/compact；报告两处过大措辞已修正。6623历史stat保留、133源与138预提交清单绑定，模型只继承hash＋stat；旧准入/旧诊断/前轮strictreview false不变。下一唯一问题是同一事实观测及预留下首分歧是否改变完整单位请求，尚未执行，不据此重训。见[报告](../kaggriculture/TASK_BC_SAVED_STUDENT_DECISIONS_V1.zh-CN.md)与[证据](evidence/task-bc-saved-student-decisions-v1-20261026/)。

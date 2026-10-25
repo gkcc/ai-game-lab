@@ -1,0 +1,110 @@
+{
+  "passed": true,
+  "jobs": [
+    {
+      "key": "holdout-1714414373-market-0-trained",
+      "passed": true,
+      "lifecycle": {
+        "tree_closed": true,
+        "active_processes_after_close": 0,
+        "natural_tree_exit": true,
+        "termination_requested": false,
+        "job_handle_closed": true,
+        "all_process_handles_closed": true
+      },
+      "attempt_sha256": "02bf09500b56bfaf4b3a68726b0e5312d753ff46b1853c0db0027d9bd8e6d1b5"
+    },
+    {
+      "key": "holdout-1714414373-market-1-trained",
+      "passed": true,
+      "lifecycle": {
+        "tree_closed": true,
+        "active_processes_after_close": 0,
+        "natural_tree_exit": true,
+        "termination_requested": false,
+        "job_handle_closed": true,
+        "all_process_handles_closed": true
+      },
+      "attempt_sha256": "1486d53f2ad6b942cc31b48b81dec14cb240fc44b405c7bd06837ff46b3facc4"
+    },
+    {
+      "key": "holdout-1714414373-round2-0-trained",
+      "passed": true,
+      "lifecycle": {
+        "tree_closed": true,
+        "active_processes_after_close": 0,
+        "natural_tree_exit": true,
+        "termination_requested": false,
+        "job_handle_closed": true,
+        "all_process_handles_closed": true
+      },
+      "attempt_sha256": "65abd29c3a51ae51c05970b5a057dd8c1f33c8380a034a8aacde3120c66aa47d"
+    },
+    {
+      "key": "holdout-1714414373-round2-1-trained",
+      "passed": true,
+      "lifecycle": {
+        "tree_closed": true,
+        "active_processes_after_close": 0,
+        "natural_tree_exit": true,
+        "termination_requested": false,
+        "job_handle_closed": true,
+        "all_process_handles_closed": true
+      },
+      "attempt_sha256": "2237a7e851b132f1f67380e3692aeb09c9d6a7a84c091f012c8feeadea6c6005"
+    },
+    {
+      "key": "holdout-1714414373-v1-0-trained",
+      "passed": true,
+      "lifecycle": {
+        "tree_closed": true,
+        "active_processes_after_close": 0,
+        "natural_tree_exit": true,
+        "termination_requested": false,
+        "job_handle_closed": true,
+        "all_process_handles_closed": true
+      },
+      "attempt_sha256": "598c8430f3d45301b09b159dd5a81ead39c4051e00b473cca12535f444975954"
+    },
+    {
+      "key": "holdout-1714414373-v1-1-trained",
+      "passed": true,
+      "lifecycle": {
+        "tree_closed": true,
+        "active_processes_after_close": 0,
+        "natural_tree_exit": true,
+        "termination_requested": false,
+        "job_handle_closed": true,
+        "all_process_handles_closed": true
+      },
+      "attempt_sha256": "44ff3a7f15db8bf037ea9ea946f2e0f98ba3912fb08264f5c86f468fa419dd22"
+    },
+    {
+      "key": "independent-check",
+      "passed": true,
+      "lifecycle": {
+        "tree_closed": true,
+        "active_processes_after_close": 0,
+        "natural_tree_exit": true,
+        "termination_requested": false,
+        "job_handle_closed": true,
+        "all_process_handles_closed": true
+      },
+      "attempt_sha256": "d70a5720d761e72d622992e52c28a96338dbacb6ed9e422977f3026942402112"
+    },
+    {
+      "key": "synthetic",
+      "passed": true,
+      "lifecycle": {
+        "tree_closed": true,
+        "active_processes_after_close": 0,
+        "natural_tree_exit": true,
+        "termination_requested": false,
+        "job_handle_closed": true,
+        "all_process_handles_closed": true
+      },
+      "attempt_sha256": "af0b52404b1ad39613f45530b76843e0df59e68d99c64d328de320611f08f2e9"
+    }
+  ],
+  "scope": "Safe parent-accepted lifecycle flags and exact attempt hashes; private process identities and logs remain local."
+}
