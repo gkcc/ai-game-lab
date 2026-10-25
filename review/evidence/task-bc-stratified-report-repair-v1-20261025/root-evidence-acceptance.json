@@ -1,0 +1,21 @@
+{
+  "schema": "stratified-report-repair-root-conditional-closure-v1",
+  "review_sha256": "03908c3b26b548318ab5b55e71f1ba87bd4c98fd9de63b0cd1f549352188e0b7",
+  "metadata_correction_sha256": "e099bc6fa1e2b3257822bd10deb7737d399b107e9d35403ea7adf031c7df7aeb",
+  "concrete_report_defect_closed": true,
+  "report_integrity_accepted": true,
+  "strict_original_review_acceptance": false,
+  "unqualified_full_stage_acceptance": false,
+  "source_stage_acceptance": false,
+  "original_policy_admission": false,
+  "basis": [
+    "Actual one-shot report completed with eight comparison regressions and all source/output/receipt invariants.",
+    "Independent single 514-record pass completed all statistical and first-witness comparisons before its incorrect exactly-five assertion.",
+    "Separately registered zero-compact metadata correction confirmed the original at-most-five rule, identities, lifecycle and preservation."
+  ],
+  "exception": "Administrative reviewer mistake corrected with disclosed metadata-only follow-up; original attempt and continuous full-review gate remain false. No statistical or product gate was weakened, no compact rescan or model evaluation was added.",
+  "cumulative_reserved_groups": 3844,
+  "cumulative_reserved_candidates": 226982,
+  "no_default_model_or_strategy_changes": true,
+  "next_step_permission": "Independent planning only for one bounded investigation of saved student-game decisions; new experimental execution requires separate registration and review."
+}

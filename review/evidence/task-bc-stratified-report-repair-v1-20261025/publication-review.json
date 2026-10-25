@@ -1,0 +1,58 @@
+{
+  "schema": "stratified-report-repair-publication-review-v1",
+  "created_utc": "2026-10-25T15:49:53.1051615Z",
+  "reviewer": "independent-subagent-audit-stratified-resume",
+  "passed": true,
+  "public_safe": true,
+  "scope": "Current public source, sanitized aggregate evidence and documentation only. This is a publication review, not a rerun or pass of the original strict compact review.",
+  "working_copy_check_sha256": "0085dba78ec22fe862285493a0a58af295b4347bd45b0ff92a2dddad876db35c",
+  "evidence_review_sha256": "03908c3b26b548318ab5b55e71f1ba87bd4c98fd9de63b0cd1f549352188e0b7",
+  "root_conditional_closure_sha256": "1fe55843e7804c579fc7ff5bf31edc88fd43862c294df6619d634472ee8303e2",
+  "preservation": {
+    "baseline_commit": "e417a4f3861f45000e92e67a08d77ab448dfed7c",
+    "protected_files": 834,
+    "exact_original_bytes": 832,
+    "append_only_paths": [
+      "review/PROGRESS.md",
+      "review/WEBCHAT_REVIEW.md"
+    ],
+    "first_preregistration_commit": "f7b57f24136982574a2dee0ec9dddf5bdcb59322",
+    "first_preregistration_added_source_and_metadata_unchanged": 12,
+    "repair_preregistration_commit": "1f04b983e7445815950c532a149ba5065aa00454",
+    "repair_required_source_and_metadata_unchanged": 131,
+    "source_failure_and_budget_records_preserved": true
+  },
+  "privacy": {
+    "current_new_or_appended_public_files_checked": 55,
+    "json_documents_checked": 36,
+    "project_privacy_patterns_reused": true,
+    "recursive_private_record_and_process_fields_checked": true,
+    "raw_replays_original_streams_selected_inputs_compact_witnesses_model_weights_support_pickles_logs_native_identities_absent": true,
+    "private_absolute_paths_credentials_hardware_inventory_absent": true,
+    "findings": []
+  },
+  "documentation": {
+    "fixed_sample_counts_and_existing_aggregate_numbers_verified": true,
+    "root_closure_is_explicitly_conditional": true,
+    "original_strict_review_failure_and_continuous_gate_disclosed": true,
+    "original_514_pass_and_zero_compact_metadata_correction_separated": true,
+    "original_source_stage_stays_false": true,
+    "no_model_strategy_holdout_or_profit_promotion_claim": true,
+    "sample_relative_support_and_noncausal_limitations_retained": true,
+    "historical_stat_not_fresh_full_byte_proof": true,
+    "lifecycle_correction_appended_without_rewriting_history": "47 trees closed without force; 46 successful workers satisfy natural_tree_exit. Failed report had nonzero exit and closure, not successful natural-exit acceptance."
+  },
+  "strict_original_review_acceptance": false,
+  "unqualified_full_stage_acceptance": false,
+  "source_stage_acceptance": false,
+  "original_policy_admission": false,
+  "blocking_publication_findings": [],
+  "pending_final_publication_checks": [
+    "Root must run the existing guard against the exact staged bytes and verify committed/pushed identities.",
+    "Any subsequently added planning JSONs require a focused supplemental source/metadata review; they are outside this 55-file working-copy snapshot."
+  ],
+  "reviewer_new_compact_records": 0,
+  "reviewer_original_stream_reads": 0,
+  "reviewer_model_calls": 0,
+  "reviewer_report_or_regression_executions": 0
+}

@@ -1,0 +1,156 @@
+{
+  "acceptance_scope": "The observed report data and execution evidence are consistent. Root may conditionally close the concrete report defect with this disclosed review-method exception; this certificate does not claim original strict-review success or new model/strategy admission.",
+  "aggregate_values_checked": {
+    "phase_candidate_mismatches": [
+      1,
+      3,
+      6
+    ],
+    "source": "Saved independently calculated aggregate; no new compact reading or statistical regeneration.",
+    "split": {
+      "train": {
+        "candidate_mismatch": 5,
+        "op_mismatch": 2,
+        "rows": 412,
+        "target_mismatch": 5,
+        "unique32": 409,
+        "unique64": 409,
+        "unit_mismatch": 3
+      },
+      "validation": {
+        "candidate_mismatch": 5,
+        "op_mismatch": 3,
+        "rows": 102,
+        "target_mismatch": 5,
+        "unique32": 101,
+        "unique64": 101,
+        "unit_mismatch": 4
+      }
+    },
+    "teacher_class": {
+      "DIG": {
+        "candidate_mismatch": 1,
+        "selected": 79
+      },
+      "FERTILIZE": {
+        "candidate_mismatch": 3,
+        "selected": 115
+      },
+      "HARVEST": {
+        "candidate_mismatch": 0,
+        "selected": 80
+      },
+      "PLANT": {
+        "candidate_mismatch": 1,
+        "selected": 120
+      },
+      "WATER": {
+        "candidate_mismatch": 5,
+        "selected": 120
+      }
+    }
+  },
+  "conditional_report_evidence_consistent": true,
+  "created_utc": "2026-10-25T15:45:10.815355+00:00",
+  "diagnostics_sha256_from_verified_receipt": "e4286e1ffdc0bdc2a825eb0494e9f96307ca8e3b4393a2f41ecae2779ec2e175",
+  "focused_regressions_sha256": "6a303d19fa61cf717e8f9a7fa8abedb484bd11ed1d02b06c3cf367f16bc2c41c",
+  "freeze_sha256": "4f5d956600c266f5d7cabe867b2254c9db01535999c0f8a2acf85371241a65d6",
+  "history_stat_check_sha256": "063a6af72d4867b971522f546b01edede89bb7b24d126ba13e504f9aa9da9cdd",
+  "lifecycle_sha256": "8cad97432aa914c6ce620a13d48ab81707ca1cd91d69f9367081570917b6a556",
+  "limitations": [
+    "Known historical stratified teacher sample, not new holdout or student-visited states.",
+    "All support novelty is relative only to the selected training subset.",
+    "Teacher preference, conditional disagreement and logit gap are not economic regret or causal profit evidence.",
+    "No additional compact rows, reference compact, private witnesses, model bytes or original numerical inputs were read by the metadata correction.",
+    "Private compact/witness/process data and raw tool logs remain local."
+  ],
+  "local_lifecycle_sha256": "b15473317e2143c59bdd36280259b50398b5fe4d5047288c8746dcfa5fb983b7",
+  "metadata_correction": {
+    "actual_witness_count": 4,
+    "compact_records_read": 0,
+    "completion_sha256": "e099bc6fa1e2b3257822bd10deb7737d399b107e9d35403ea7adf031c7df7aeb",
+    "distinct_from_original_review": true,
+    "local_registration_not_external_timestamp": true,
+    "model_calls": 0,
+    "numerical_input_decodes": 0,
+    "passed": true,
+    "registration_sha256": "452a28c398d32c34ad81c641d213c427f88a1eb92b027e5dbd39dd871adc744f",
+    "wall_seconds": 0.09399999998277053,
+    "wall_seconds_max": 120
+  },
+  "metadata_correction_passed": true,
+  "original_compact_review": {
+    "compact_candidates_accounted": 32366,
+    "compact_passes": 1,
+    "compact_records_read": 514,
+    "completed_checks_before_failure": [
+      "all six marginals against the compact rebuild and old independent full summaries",
+      "all thirty interactions against both references",
+      "aggregate split values and repetition",
+      "historical scoring counts and missing-class status",
+      "per-class first mismatch witness contents or None"
+    ],
+    "continuous_end_to_end_completion_satisfied": false,
+    "elapsed_until_assertion_seconds": 1.0929999999934807,
+    "executed_tool_command_sha256": "e06bf743b3ba94696ee0b96a86f5abde71043193241b811a32319828a3f853bf",
+    "failed_tool_output_sha256": "ef111d28af1071aba873c2bdf81f929bce8355563baf7ce5ac6de20e3c16bb2c",
+    "failure": "Reviewer incorrectly asserted exactly five witnesses, while the registered rule is at most five.",
+    "failure_line": 164,
+    "failure_sha256": "be4b4d526680f78fe008c2a9ca7fafd665223692413b6c2596c2050c5bb03f4e",
+    "new_model_calls": 0,
+    "numerical_input_decodes": 0,
+    "passed": false,
+    "script_local_path": "independent-review-local/executed-review.py",
+    "script_sha256": "634ce31ebc34c5609a31e0c347da5e490e289d5ec16d76221664eb759e5b1ca1",
+    "wall_seconds_max": 120
+  },
+  "original_diagnostic_stage_acceptance": false,
+  "original_policy_admission": false,
+  "original_review_attempt_passed": false,
+  "original_review_continuous_completion_within_120_seconds": false,
+  "passed": false,
+  "pre_execution_commit": "1f04b983e7445815950c532a149ba5065aa00454",
+  "private_witnesses_sha256_from_verified_receipt": "98437882a8d3c39c47bc741fdd1f9c42f63f6383e614c683689d694ac6de95cb",
+  "public_safe": true,
+  "registration_sha256": "ed6384aa843cdd3e198461608b5d03b0869d5f583953dddfa5f94e7311d21153",
+  "remaining_product_defects": [],
+  "report_execution_integrity_verified": true,
+  "report_receipt_sha256": "246419f14331c0adba82dd905b1116fadd8cdba94cca4366432a9e47dd101ab1",
+  "review_method_exceptions": [
+    "The original reviewer attempt failed on an incorrect exact-five assertion. Its 514-row pass was not repeated.",
+    "Overall completion under the original continuous 120-second reviewer gate was not met and remains false.",
+    "A separately registered metadata-only correction verified the proper bound and remaining receipt/lifecycle/history facts. It does not rewrite the original review outcome."
+  ],
+  "reviewer": "independent-subagent-audit-stratified-resume",
+  "root_conditional_closure_required": true,
+  "schema": "task-stratified-report-repair-independent-evidence-with-review-exception-v1",
+  "source_budget_ledger_sha256": "0c0a6838a65b9d8970ff55e5c9c0a68c717c3cae6bf1231d8e7a8023745faf9d",
+  "source_failure_sha256": "2f3fe34718ed6661be827bbacefbb485de7aff2c9aac73b9481c5220b649392f",
+  "source_freeze_sha256": "300627f342c1db6ee623c6d116ee17f9af9931881a49d518843eb65a71ba267d",
+  "source_report_failure_sha256": "ea8abe67942cddc9d69cf49822ddffb24be944d7d17ebe7a05b61a2e14fd33a0",
+  "source_stage_acceptance": false,
+  "source_summary_sha256": "1b37002a858847e3f7fd20224be3a7ded0932aa3f9d4f6ff7f99b7b241e4c73d",
+  "strict_original_review_acceptance": false,
+  "summary_sha256": "c5798e62f9a7cdec3f297c8ec8c3dff7b3e4689e688815e6f84cebe5f48a8eb8",
+  "verified_execution_facts": {
+    "attempts": 1,
+    "cumulative_evaluation_candidates": 226982,
+    "cumulative_evaluation_groups": 3844,
+    "elapsed_seconds": 1.5469999999622814,
+    "focused_regressions_passed": 8,
+    "forced_successes": 0,
+    "historical_stat_files": 6581,
+    "natural_owned_tree_exit": true,
+    "new_evaluations": 0,
+    "new_full_historical_byte_proof": false,
+    "new_games": 0,
+    "new_input_decodes": 0,
+    "new_model_calls": 0,
+    "new_official_transitions": 0,
+    "new_training": 0,
+    "retained_process_records": 3,
+    "retries": 0,
+    "saved_report_candidates": 32366,
+    "saved_report_rows": 514
+  }
+}

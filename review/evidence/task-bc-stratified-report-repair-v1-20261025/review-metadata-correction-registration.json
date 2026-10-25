@@ -1,0 +1,27 @@
+{
+  "schema": "report-repair-review-metadata-correction-registration-v1",
+  "created_utc": "2026-10-25T15:43:38.497456+00:00",
+  "authority": "Root adjudication under user-authorized independent review loop; no research or scoring scope expansion.",
+  "reason": "Independent review incorrectly demanded exactly five witnesses instead of the registered maximum five. The single 514-record pass reached this assertion after all marginal/cell/first-witness comparisons.",
+  "original_review_attempt_passed": false,
+  "original_review_continuous_completion_within_120_seconds": false,
+  "original_review_failure_sha256": "be4b4d526680f78fe008c2a9ca7fafd665223692413b6c2596c2050c5bb03f4e",
+  "original_review_started_sha256": "c50ff9697f7d3615b9d2d8a5fb23db99226209dc77f8a17392e7fcb9b3d663a8",
+  "source_script_sha256": "634ce31ebc34c5609a31e0c347da5e490e289d5ec16d76221664eb759e5b1ca1",
+  "new_scope": "One metadata-only completion. Verify at-most-five and existing identity/lifecycle/history/counter facts from saved receipts and the executed review script/failure evidence. No regenerated statistical evidence.",
+  "attempts_max": 1,
+  "wall_seconds_max": 120,
+  "compact_records_read_max": 0,
+  "original_stream_reads": 0,
+  "numerical_input_decodes": 0,
+  "new_model_calls": 0,
+  "new_games": 0,
+  "training_runs": 0,
+  "output": "evidence-review.json and metadata completion receipt; never overwrite original review started/failure or original summary.",
+  "acceptance": "Metadata evidence consistent; exact original review acceptance remains false. Root may separately close the concrete report defect with a disclosed review-method exception; no retroactive stage/model/holdout promotion.",
+  "local_registration_not_external_timestamp": true,
+  "preserve_original_budget": {
+    "groups": 3844,
+    "candidates": 226982
+  }
+}
