@@ -1,0 +1,50 @@
+{
+  "schema": "first-water-unit-request-root-evidence-acceptance-v1",
+  "created_utc": "2026-10-25T16:53:12.142252+00:00",
+  "passed": true,
+  "preregistration_commit": "1b9429e410f73ae503b7017b1f53deb373f22b97",
+  "freeze_sha256": "63941e6379dedd123184c99bda9f5238cf262273867cb30e404a36ced33c5bcd",
+  "evidence_review_sha256": "2ea0c2b3217f745c84a910bd7f9d5f380d996723d7c28ccc91c6f0f5a5a14510",
+  "report_sha256": "0b188f32c02d33ad304bd38fb6a3391afe4906b1e1729c19b1a21eab2d77f13d",
+  "evidence_sha256": {
+    "summary.json": "33a2838875ff0adb6b99fb7927cc422355313d84006b5df972f0d807e5183541",
+    "primary-receipt.json": "d81381cc2830a11bd36fca1e65e94f86bf4681e32037def1daa204dfc21fdacd",
+    "execution-acceptance.json": "09b6e649dd06ff18d08433660b344871648332e11cf892988cf62f4dfdec1603",
+    "parent-exit-observation.json": "f42aba79f0bd4fd373ad7768d4f9c6dce6ca4c5f85d31fda1b915356d8b28d91",
+    "check/complete.json": "9f2569510a90c11cd9f47d311aeed3a56a2147a6aaa0f12c9b23e0eb2d48fcdb",
+    "check/safe-summary.json": "48d6a0d4e4a7921b25afdf3c84877834ee18352d4c128970aaf92c42a9065366",
+    "history-stat-check.json": "cf2ecf677ce1b9732be9e4624fbf7d2cdd371a38a18d8d6e4e785d3e8d1116f2"
+  },
+  "adjudication": {
+    "accepted": "One preregistered execution; all six factual baselines reproduced and each single legal WATER intervention preserved the full ordered seven-unit request vector. The adjacent two assignments exchange order in these six receipts.",
+    "blocking_findings": [],
+    "no_postexecution_code_or_threshold_edits": true,
+    "root_review_activity": "Read frozen source and safe metadata only; delegated independent pair inspection, with no extra raw/model/pair reads or experimental execution.",
+    "independent_machine_check_bytes": 117655,
+    "independent_manual_pair_check_bytes": 101078,
+    "both_checks_are_receipt_verification_not_second_original_reproduction": true,
+    "planned_prefix_unknowns_retained": 6,
+    "failure_unknowns": 0,
+    "cumulative_task_scoring": {
+      "groups": 3910,
+      "candidates": 228122
+    },
+    "protected_runtime_stat_files": 6735,
+    "fresh_runtime_source_hash_checks": 140
+  },
+  "limits": [
+    "Historical correlated scenes from one consumed seed, not independent holdout.",
+    "No market, official-execution, future-trajectory or economic equivalence claim.",
+    "No claim that all 236 candidate disagreements are harmless.",
+    "Historical full-file hashes remain inherited; fresh source proof covers six target lines, with bounded prefix reads.",
+    "Public hashes cannot independently reconstruct unpublished private receipts or original traces."
+  ],
+  "original_policy_admission": false,
+  "previous_diagnostic_stage_acceptance": false,
+  "previous_strict_review_acceptance": false,
+  "new_training": 0,
+  "new_games": 0,
+  "official_transitions": 0,
+  "goal_remains_active": true,
+  "next_step": "Publish the accepted bounded diagnostic after final privacy and preservation checks, then obtain independent next-stage advice."
+}

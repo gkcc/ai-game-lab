@@ -220,3 +220,10 @@
 
 事前8b12cab，固定一个已消费seed、三对手双席六条trained轨迹，单次压缩哈希＋gzip读取，4314turn/12232callback/575674candidate/920crop；547988954返回payload，非零输入JSON解码但0模型/重建/策略/official/训练/新赛。6合成＋2收据失败回归通过且所属temp已移除；8job自然关闭，最终11.516秒在原600秒内验收。独立预写checker单遍12232compact、0.219秒，重算投影及统计，不冒充第二遍raw复现。
 236条件候选分歧中op122/unit130/target212重叠，首见证六个均step15 WATER→WATER、工人及地块不同；三个对手各自双席汇总相同，不当独立样本。HARVEST→WATER52、FERTILIZE→WATER22仅检查线索，不是失败执行或收益损失。独立人工仅六见证，不追加raw/compact；报告两处过大措辞已修正。6623历史stat保留、133源与138预提交清单绑定，模型只继承hash＋stat；旧准入/旧诊断/前轮strictreview false不变。下一唯一问题是同一事实观测及预留下首分歧是否改变完整单位请求，尚未执行，不据此重训。见[报告](../kaggriculture/TASK_BC_SAVED_STUDENT_DECISIONS_V1.zh-CN.md)与[证据](evidence/task-bc-saved-student-decisions-v1-20261026/)。
+
+
+## 首个 WATER 分歧的单位请求实验：六例均相同
+
+事前1b9429e，固定同一已消费seed的三对手双席step15，只执行6基线＋6单点干预。全部基线先完整复现历史语义trace；在原事实上下文选择一次当前合法教师WATER，后续学生重新枚举/评分。6例均只是相邻两项WATER分配顺序交换，完整7单位请求逐项相同；不表示其余236处分歧无害、market/官方/未来/收益相同。0训练/新赛/official，旧准入和失败状态不变。
+
+连续阶段2.750秒内验收，2job自然关闭，4内存协议检查通过。6源只读16行前缀、解码6目标：压缩2776875字节、返回payload29645728、目标JSON1142873；gzip内部未返回缓冲6项unknown保留，无失败unknown，完整trace哈希只继承。两模型各原SHA及加载一次，文件返回读取783840字节；72编码观察1344候选，任务66前向1140候选、作物36前向180logit值，累计task3910/228122。独立机器只读117655字节新收据，独立人工另读6pair共101078字节，无第二原始/模型复现；140源、145提交绑定及6735旧stat核对通过。见[报告](../kaggriculture/TASK_BC_FIRST_WATER_UNIT_REQUESTS_V1.zh-CN.md)与[登记、证据和独立复审](evidence/task-bc-first-water-unit-requests-v1-20261026/)。

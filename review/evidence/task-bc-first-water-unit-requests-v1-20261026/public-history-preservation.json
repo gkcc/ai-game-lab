@@ -1,0 +1,27 @@
+{
+  "schema": "first-water-unit-request-public-history-preservation-v1",
+  "passed": true,
+  "previous_accepted_head": "c74ae971bd0a235741fc0e7918922f5d3d09db04",
+  "previous_tracked_files": 926,
+  "exact_original_bytes": 924,
+  "append_only_review_files": [
+    {
+      "path": "review/PROGRESS.md",
+      "old_sha256": "2d3511035d4d494b98c271da179d07e12906b02dd829ab4fee530368be485c75",
+      "current_sha256": "0721061cd77a34b0dc1f742c97862b62e3e26ce4be8a403a0df081e0e73b2f54",
+      "old_bytes": 29946,
+      "appended_bytes": 1317
+    },
+    {
+      "path": "review/WEBCHAT_REVIEW.md",
+      "old_sha256": "871a721d34d24181645135c49821be08efc8f187a765b2d2b1ddd5f27e77565f",
+      "current_sha256": "c42352f72fe26487184c0fc8dedfef0446bebdf1a4839f6cd24788891ac930a5",
+      "old_bytes": 24897,
+      "appended_bytes": 1238
+    }
+  ],
+  "removed_or_rewritten_history_files": 0,
+  "preregistration_commit": "1b9429e410f73ae503b7017b1f53deb373f22b97",
+  "exact_preregistered_bindings_preserved": 145,
+  "method": "Compared every old tracked blob via git cat-file with current public bytes; only the two review indexes have preserved-prefix additions. No private data/model read."
+}
