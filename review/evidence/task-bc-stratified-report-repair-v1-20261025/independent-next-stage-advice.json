@@ -1,0 +1,120 @@
+{
+  "schema": "stratified-report-repair-independent-advice-v1",
+  "stage": "task-bc-stratified-report-repair-v1",
+  "role": "independent_next_stage_adviser",
+  "public_safe": true,
+  "advice_only": true,
+  "registration_or_execution_approval": false,
+  "recommended_next_stage_count": 1,
+  "recommendation": "Register one bounded report-only repair, preserving the failed source stage. Reuse its exact committed compact diagnostics; repair only JSON-value comparison and separate source from destination paths.",
+  "diagnosis": {
+    "source_stage": "artifacts/task-bc-stratified-error-sample-v1-20261025",
+    "source_location": "learning/task_bc_stratified_error_sample_v1/reporting.py:203",
+    "observed_failure": "The recomputed SummaryAccumulator has integer counter-map keys. Sorting them before JSON encoding differs from sorting the string keys in the saved JSON, despite identical values.",
+    "minimal_example": "Integer keys 2 and 10 sort as 2,10; loaded JSON keys sort as 10,2.",
+    "existing_evidence": "Candidate and reference summaries have the same SHA256; the independent counterexample reports exact equality after JSON key normalization. This adviser did not recompute compact diagnostics.",
+    "source_attempts": 47,
+    "source_completed_jobs": 46,
+    "source_passed": false,
+    "exact_compact_rows": 514,
+    "exact_candidates": 32366,
+    "train_rows": 412,
+    "validation_rows": 102,
+    "cumulative_reserved_groups": 3844,
+    "cumulative_reserved_candidates": 226982
+  },
+  "checked_source_identity": {
+    "reporting_source_sha256": "607a45617bdbe5976063f56896c2ca3a90329727ffad4623bc86942dec1c15f6",
+    "registration_sha256": "2ea88375c8cf430b100922bd90907ba7670eade1259047fc597894ec88f34fb5",
+    "freeze_sha256": "300627f342c1db6ee623c6d116ee17f9af9931881a49d518843eb65a71ba267d",
+    "sample_manifest_sha256": "cdc976a54c8b04c60b45d78e848e16ae490665a6a05dc8a17ae6f17dea73b145",
+    "sample_freeze_sha256": "30466fa80cd41fa31b8e57a345885329fbf655780963cbae87d637cb3a77ae8e",
+    "failed_stage_summary_sha256": "1b37002a858847e3f7fd20224be3a7ded0932aa3f9d4f6ff7f99b7b241e4c73d",
+    "failed_stage_failure_sha256": "2f3fe34718ed6661be827bbacefbb485de7aff2c9aac73b9481c5220b649392f",
+    "failed_report_failure_sha256": "ea8abe67942cddc9d69cf49822ddffb24be944d7d17ebe7a05b61a2e14fd33a0",
+    "budget_ledger_sha256": "0c0a6838a65b9d8970ff55e5c9c0a68c717c3cae6bf1231d8e7a8023745faf9d",
+    "comparison_sha256": "08db54b454273f1e59bde4b94a669043f2eabfb9dde8545a7797c0ed3d2a7d02",
+    "candidate_and_reference_summary_sha256": "a9840451ef6e3c40f68d433bae95358ae5477b4acb78a1e06b2ea0dfa35c236c",
+    "aggregate_receipt_sha256": "9224b7500d3e764235fa376eb619e92c4ad2c38a2f736799d5223ec10c448263",
+    "reference_receipt_sha256": "c7297c9d14bab3305cf1f706b5830bd4c802a1403475e43acfecf6c551ca9da0",
+    "independent_comparison_sha256": "443060752f7cbae1075e39b6e24a9bc7d461faa0466794d6af6f3470bdbbb88b",
+    "counterexample_sha256": "81688c1ec8f40f6aa862ee30c7b857bbcb1354428fcf6ef3dd226fc1e430b672",
+    "identity_scope": "These are freshly hashed named source/code and metadata files. Compact-content identity is inherited from the bound completion/comparison evidence until the registered repair verifies its selected compact inputs. No model weights, original streams or selected numerical inputs were opened by this adviser."
+  },
+  "minimal_implementation": {
+    "new_package": "learning/task_bc_stratified_report_repair_v1",
+    "frozen_source_changes": 0,
+    "reporter": "Make a narrowly derived report-only entry point with explicit source_root and output_root. Reuse the frozen compact reader and SummaryAccumulator unchanged. Retain the original report's coverage, join, source hash, row count, candidate count and receipt checks. Do not call the old stage runner or monkeypatch frozen modules.",
+    "allowed_changes": [
+      "Replace only the faulty split-summary comparison with one shared strict JSON-value comparator in the new package.",
+      "Read all old artifacts from source_root and create all repair outputs under output_root; reject equal or overlapping roots and existing attempt outputs.",
+      "Record source_stage, source_freeze_sha256, repair_stage and repair_freeze_sha256 separately. Existing source receipt checks must continue to use the original source freeze.",
+      "Provide a small standalone report-only registration/entry path and targeted checks. No new general audit framework or numerical pipeline."
+    ],
+    "shared_json_comparison": {
+      "domain": "Native JSON value types plus exact Python int object keys produced by counters; reject unsupported containers/scalars and all non-finite floats.",
+      "key_normalization": "Walk recursively. Preserve string keys verbatim; convert only type(key) is int to its decimal string. Reject bool, float, null and other key types. Check the normalized-name set before insertion and fail on collisions such as 2 and '2'; do not silently overwrite either value.",
+      "saved_json": "Hash-check saved summary bytes first, then parse with duplicate-object-name rejection and non-finite-value rejection. A plain json.loads roundtrip alone is insufficient because duplicate names could be lost.",
+      "comparison": "Serialize the normalized values with identical strict JSON options: sort_keys=True, separators=(',', ':'), ensure_ascii=False, allow_nan=False. Compare exact resulting bytes. Object insertion order is irrelevant; list order, multiplicity, field presence, scalar type and numeric value remain significant.",
+      "numeric_rule": "No tolerance, rounding, stringification of values, boolean/number equivalence, or integer/float coercion. Preserve 1 versus 1.0 and signed floating zero as a conservative contract. Do not use Python dictionary equality as the acceptance test.",
+      "shared_use": "The reporter's split checks, repaired-output verification and focused regression checks must import this same helper. Do not alter the frozen global canonical serializer or hash rules."
+    }
+  },
+  "registration": {
+    "output_root": "artifacts/task-bc-stratified-report-repair-v1-20261025",
+    "source_access": "Allow only the named failed-stage metadata, sample manifest/freeze, reference/candidate summaries and receipts, and the exact receipt-bound candidate compact files. Hash the explicit allowlist; do not scan the repository or history.",
+    "before_execution": "Record exact source hashes, new code hashes, the ordered twenty-shard identities and expected compact hashes from existing receipts; freeze once, obtain independent focused pre-review and record the local pre-execution commit under the existing protocol.",
+    "new_model_evaluations": 0,
+    "new_model_loads": 0,
+    "new_input_json_decodes": 0,
+    "original_stream_reads": 0,
+    "support_index_loads": 0,
+    "training_runs": 0,
+    "policy_calls": 0,
+    "new_games": 0,
+    "official_transitions": 0,
+    "report_attempts_max": 1,
+    "report_compact_rows": 514,
+    "independent_acceptance_compact_rows_max": 514,
+    "total_compact_record_decodes_max": 1028,
+    "compact_decode_accounting": "Compact diagnostics and metadata JSON are permitted and counted separately; zero input decodes means no original or derived numerical model-input arrays. One production pass and at most one independent acceptance pass over the same 514 rows; no reference rescore or sample refill.",
+    "execution_wall_seconds_max": 120,
+    "clock_scope": "One continuous execution clock for targeted checks, report, compact acceptance, file validation and owned-process cleanup; static authoring/review precedes it. No deadline extension.",
+    "workers_max": 1,
+    "blas_threads": 1,
+    "cumulative_evaluation_budget_after_repair": {
+      "groups": 3844,
+      "candidates": 226982,
+      "preserve_source_ledger_bytes": true
+    },
+    "failure": "Any hash/schema/equivalence/membership/count/deadline failure stops the new stage with a write-once failure receipt. No retry/resume, rescore, new sample or automatic escalation to training. Old summary passed=false and both old failure receipts remain immutable."
+  },
+  "targeted_regressions": [
+    "The actual {2:2,10:2} counter example and nested counter maps compare equal to their collision-free JSON readback despite insertion order.",
+    "A changed count or representable float, missing field, numeric string, or bool-versus-number fails; no comparison tolerance.",
+    "Array reordering and changed duplicate multiplicity fail while object-key ordering alone succeeds.",
+    "Integer/string normalized-key collision, duplicate names in saved JSON, unsupported keys and NaN/Infinity fail closed.",
+    "A tiny saved-compact/summary fixture traverses the new report entry and catches the original roundtrip failure without model inputs; using the source output directory or an existing attempt directory is rejected."
+  ],
+  "acceptance": [
+    "Execute the actual new report entry once on the exact 514 committed compact rows, 32366 candidates, 412 train and 102 validation rows. The two split accumulations match the bound saved summaries using the shared strict helper.",
+    "Preserve all original report invariants: 20 games, 300 game/phase/class strata including 41 empty and 4 singleton cells; selected classes DIG=79, FERTILIZE=115, HARVEST=80, PLANT=120, WATER=120; no refill or changed membership.",
+    "Write diagnostics, bounded local witnesses and a receipt to the new directory. Validate marginal and phase/class denominators, all zero cells, duplicate/conflicting-label weighting and at most five unchanged-rule witnesses using compact outputs only. Compare the stable statistical projection with the existing independently recalculated evidence; do not require incidental timestamps/provenance bytes to match.",
+    "The independent checker uses the same JSON semantics and may inspect each of the same 514 compact rows once. If it needs any different input or another pass, stop for a new explicit scope decision.",
+    "Recheck the explicitly bound old failure, budget and source metadata hashes after completion. The new success is report_integrity_passed only; source_stage_passed, original_diagnostic_stage_acceptance and original_policy_admission remain false.",
+    "Confirm all new model/input/original-stream/training/game counters are zero and cumulative reservations stay 3844 groups and 226982 candidates. Independent focused review and privacy review precede any sanitized publication."
+  ],
+  "interpretation": "This repairs reporting of a fixed historical diagnostic sample. It supplies neither an independent holdout nor causal reward evidence, deployment-shift proof, sufficient-coverage threshold or authorization for DAgger/PPO/default policy changes.",
+  "publication": "Publish only new source, relative identities/hashes, aggregate statistics and concise review/verification. Keep compact records, sparse indices, local witnesses, inputs, weights and process/log details local. Do not rewrite or relabel the failed source stage.",
+  "adviser_activity": {
+    "report_executions": 0,
+    "compact_record_decodes": 0,
+    "model_calls": 0,
+    "numerical_input_decodes": 0,
+    "original_stream_reads": 0,
+    "training_runs": 0,
+    "new_games": 0,
+    "frozen_source_modifications": 0,
+    "files_written": 1
+  }
+}

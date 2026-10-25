@@ -1,0 +1,11 @@
+{
+  "passed": false,
+  "review_type": "static_pre_execution",
+  "freeze_sha256": "27f806cd4eea9e28d5cc3b9fed59e666f8800ccd985260a1fd6e682ebd0d5688",
+  "actual_execution_performed": false,
+  "findings": [
+    "Commit receipt must bind the exact required source/registration/freeze/review set; an empty self-reported map must not pass.",
+    "Continuous deadline must be rechecked after historical stat verification, before successful summary creation."
+  ],
+  "source_snapshot": "pre-review-source-v0/experiment.py"
+}

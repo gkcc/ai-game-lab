@@ -1,0 +1,199 @@
+{
+  "passed": true,
+  "cases": 12,
+  "numeric_processing_groups": 40,
+  "numeric_processing_candidates": 80,
+  "sampling": {
+    "schema": "task-stratified-sampling-regressions-v1",
+    "passed": true,
+    "synthetic_only": true,
+    "cases": [
+      {
+        "name": "stable_sparse_selection_and_empty_strata",
+        "passed": true
+      },
+      {
+        "name": "foreign_metadata_identity_rejected_before_inputs",
+        "passed": true
+      },
+      {
+        "name": "full_metadata_missing_decision_rejected",
+        "passed": true
+      },
+      {
+        "name": "selected_triple_teacher_alignment_rejected",
+        "passed": true
+      },
+      {
+        "name": "consumed_bytes_and_row_survive_deadline_rejection",
+        "passed": true
+      },
+      {
+        "name": "consumed_candidates_survive_quota_rejection",
+        "passed": true
+      }
+    ],
+    "synthetic_rows": 18,
+    "synthetic_candidates": 36,
+    "original_source_reads": 0,
+    "model_calls": 0,
+    "original_model_loads": 0,
+    "synthetic_input_rows_decoded": 7,
+    "synthetic_input_candidates_decoded": 14,
+    "synthetic_readback_rows_decoded": 6,
+    "synthetic_readback_candidates_decoded": 12,
+    "synthetic_numeric_processing_groups": 13,
+    "synthetic_numeric_processing_candidates": 26,
+    "frozen_model_calls": 0,
+    "original_streams_read": 0,
+    "counter_only_cases": 2,
+    "counter_only_cases_parse_no_numeric_inputs": true,
+    "simulated_counter_outcomes": {
+      "expired_deadline": {
+        "compressed_source_bytes_hashed": 7,
+        "index_metadata_rows": 1,
+        "label_rows": 0,
+        "input_physical_lines_read": 0,
+        "all_original_gzip_physical_lines": 1,
+        "input_json_rows_decoded": 0,
+        "input_json_candidates_decoded": 0,
+        "decompressed_source_bytes": 11
+      },
+      "exceeded_quota": {
+        "compressed_source_bytes_hashed": 0,
+        "index_metadata_rows": 0,
+        "label_rows": 0,
+        "input_physical_lines_read": 0,
+        "all_original_gzip_physical_lines": 0,
+        "input_json_rows_decoded": 0,
+        "input_json_candidates_decoded": 2,
+        "decompressed_source_bytes": 0
+      }
+    },
+    "fixture_counter_receipts": [
+      {
+        "game": "synthetic_sparse",
+        "passed": true,
+        "counters": {
+          "compressed_source_bytes_hashed": 1830,
+          "index_metadata_rows": 9,
+          "label_rows": 9,
+          "input_physical_lines_read": 9,
+          "all_original_gzip_physical_lines": 27,
+          "input_json_rows_decoded": 6,
+          "input_json_candidates_decoded": 12,
+          "decompressed_source_bytes": 44361
+        }
+      },
+      {
+        "game": "synthetic_identity",
+        "passed": false,
+        "counters": {
+          "all_original_gzip_physical_lines": 4,
+          "compressed_source_bytes_hashed": 1601,
+          "decompressed_source_bytes": 697,
+          "index_metadata_rows": 2,
+          "input_json_candidates_decoded": 0,
+          "input_json_rows_decoded": 0,
+          "input_physical_lines_read": 0,
+          "label_rows": 2
+        }
+      },
+      {
+        "game": "synthetic_continuity",
+        "passed": false,
+        "counters": {
+          "all_original_gzip_physical_lines": 4,
+          "compressed_source_bytes_hashed": 1532,
+          "decompressed_source_bytes": 699,
+          "index_metadata_rows": 2,
+          "input_json_candidates_decoded": 0,
+          "input_json_rows_decoded": 0,
+          "input_physical_lines_read": 0,
+          "label_rows": 2
+        }
+      },
+      {
+        "game": "synthetic_teacher",
+        "passed": false,
+        "counters": {
+          "all_original_gzip_physical_lines": 7,
+          "compressed_source_bytes_hashed": 1599,
+          "decompressed_source_bytes": 14798,
+          "index_metadata_rows": 3,
+          "input_json_candidates_decoded": 2,
+          "input_json_rows_decoded": 1,
+          "input_physical_lines_read": 1,
+          "label_rows": 3
+        }
+      }
+    ]
+  },
+  "pipeline": {
+    "schema": "task-stratified-pipeline-regression-v1",
+    "passed": true,
+    "synthetic_only": true,
+    "cases": [
+      {
+        "case": "sparse_equivalence_and_train_isolation",
+        "passed": true
+      },
+      {
+        "case": "duplicate_identity",
+        "passed": true
+      },
+      {
+        "case": "missing_identity",
+        "passed": true
+      },
+      {
+        "case": "reordered_identity",
+        "passed": true
+      },
+      {
+        "case": "misaligned_identity",
+        "passed": true
+      },
+      {
+        "case": "derived_decode_budget",
+        "passed": true
+      }
+    ],
+    "counts": {
+      "decoded_groups": 19,
+      "decoded_candidates": 38,
+      "evaluated_groups": 8,
+      "evaluated_candidates": 16,
+      "actual_score_calls": 5,
+      "actual_score_candidates": 10
+    },
+    "synthetic_numeric_processing_groups": 27,
+    "synthetic_numeric_processing_candidates": 54,
+    "exact_comparison": {
+      "schema": "task-stratified-error-sample-v1",
+      "passed": true,
+      "sample_only": true,
+      "exact_compact_rows": 4,
+      "exact_candidates": 8,
+      "byte_identical_summary": true,
+      "model_calls": 0,
+      "evaluated_groups": 0,
+      "evaluated_candidates": 0,
+      "decoded_groups": 0,
+      "decoded_candidates": 0,
+      "sample_manifest_sha256": "52f239afe1f38ed5f5af789cec495d69d9166fa789a074026b7cba7e7c340cbc",
+      "model_sha256": "708d3e1d96007d0db2823cb76ced86e54ba3180d5200592fb2035df9c3895efe",
+      "freeze_sha256": "a2d02939058d1f10ab217adb8f760750216fea028d60e36140f328b9d289a2f1",
+      "reference_freeze_sha256": "a2d02939058d1f10ab217adb8f760750216fea028d60e36140f328b9d289a2f1",
+      "aggregate_receipt_sha256": "270159693bdb7ca6f15836eaaa0234bc0a4987286aeeb04ed6f532648d6bb6dc",
+      "reference_receipt_sha256": "808f183e3ef7a49db1d763c802ba058bc09919ebf4a67220d42a5ebcdebdb042"
+    },
+    "original_streams_read": 0,
+    "frozen_model_calls": 0,
+    "training_runs": 0,
+    "new_games": 0,
+    "official_transitions": 0
+  },
+  "model_calls": 0,
+  "original_streams_read": 0
+}

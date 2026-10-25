@@ -1,0 +1,13 @@
+{
+  "schema": "task-stratified-root-adjudication-v1",
+  "review_sha256": "7492f06d6ab20755bcf99cec34bc1ebbefed74d0658b7f4c9e0e339d2c5ab8b7",
+  "accepted_finding": "JSON object numeric-key roundtrip ordering falsely rejects equivalent summaries. New stage required for report-only repair.",
+  "collection_and_score_comparison_accepted": true,
+  "stage_acceptance": false,
+  "reporting_stage_acceptance": false,
+  "no_retry_rescore_or_refill": true,
+  "cumulative_reserved_groups": 3844,
+  "cumulative_reserved_candidates": 226982,
+  "original_policy_admission": false,
+  "default_and_model_unchanged": true
+}

@@ -1,0 +1,18 @@
+{
+  "schema": "stratified-report-repair-root-decision-v1",
+  "advice_sha256": "7c1403cc552f494262f5af2ee412655a217fac180a0ac7e27c959768cebd13ac",
+  "decision": "Adopt one isolated compact-only report repair, preserving the failed source stage.",
+  "scope_adjudication": [
+    "Strict comparator accepts already-parsed, SHA-bound JSON values from the existing committed writer. Do not extend old parsers; duplicate-name untrusted JSON text is outside this interface.",
+    "Use eight tiny in-memory comparison regressions plus the actual unique 514-record report entry; no redundant miniature report fixture or extra data pass.",
+    "Execution has a continuous 120-second cap with 110-second worker and ten-second cleanup inside it. The later independent 514-compact acceptance pass has a separate 120-second bound; static review is outside these clocks.",
+    "Source/model/official identity hashing reads bytes only; no model loading, inference, numerical input decode or original stream access."
+  ],
+  "source_stage_acceptance": false,
+  "new_evaluations": 0,
+  "new_games": 0,
+  "new_training": 0,
+  "cumulative_reserved_groups": 3844,
+  "cumulative_reserved_candidates": 226982,
+  "no_default_or_model_change": true
+}

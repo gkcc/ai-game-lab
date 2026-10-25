@@ -202,3 +202,8 @@
 ## 任务诊断容量正常退出修复 V1：样本验收通过
 
 事前提交73e1eaa，新增root返回0后最多2秒whole-Job自然退出等待，仍受原工作截止及同一次10秒清理上限约束。7项真实Windows用例全部符合预期，14任务29.453秒，重建1024训练索引、10新分片1280行/73750候选，与旧参考逐行及完整摘要一致。独立全量只读比较、14私有/公共生命周期及预算核对通过，5259旧runtime和811既有public审查时原字节；最终发布仅两review入口追加。累计预算2816/162250，旧失败不退款。实际worker均root时已空，等待分支仅由targeted fixtures证明，旧失败具体原因仍未知。样本只有128数值unique及PLANT/WATER，不能外推全量或模型质量；0训练/新赛/official/default不变，旧三项false保留。见[报告](../kaggriculture/TASK_DIAGNOSTICS_CAPACITY_EXIT.zh-CN.md)及[证据](evidence/task-bc-diagnostics-capacity-exit-v1-20261023/)。
+
+
+## 分层历史任务诊断：评分一致，报告比较失败
+
+事前f7b57f2，20旧示范按时段和五类标签稳定抽取514组/32366候选，412训练/102验证。两路径compact逐条和summary字节相同；47任务46接受，59.562秒，最后report因整数键与JSON字符串键排序误判停止，阶段false。12小回归40/80通过，47树自然关闭，0训练/新赛/官方步骤。评价1028/64732、累计3844/226982不退款；135363原流物理行与514数值解码分列，5489历史stat不冒充全字节复核。独立审查已定位真实比较反例，旧模型/default/失败不变。后续仅另登记compact报告修复，尚不代表模型改善。见[失败报告](../kaggriculture/TASK_BC_STRATIFIED_ERROR_SAMPLE_V1.zh-CN.md)及[证据](evidence/task-bc-stratified-error-sample-v1-20261025/)。

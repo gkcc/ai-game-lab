@@ -1,0 +1,181 @@
+{
+  "all_recomputed_values_equal_after_json_roundtrip": true,
+  "cause": "Python integer mapping keys are sorted numerically before JSON encoding; JSON roundtrip converts them to strings, which sort lexically. The split comparison re-serializes the loaded side and falsely rejects equal values.",
+  "differences": [
+    {
+      "different_fields": [
+        {
+          "live_key_types": [
+            "int"
+          ],
+          "live_sorted_keys": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "path": "train.candidate_count_calls",
+          "saved_key_types": [
+            "str"
+          ],
+          "saved_sorted_keys": [
+            "1",
+            "10",
+            "100",
+            "101",
+            "102",
+            "103",
+            "108",
+            "11",
+            "110",
+            "111",
+            "114",
+            "115",
+            "116",
+            "119",
+            "12",
+            "120"
+          ],
+          "values_equal_after_json_key_normalization": true
+        }
+      ],
+      "normalized_canonical_equal": true,
+      "raw_canonical_equal": false,
+      "split": "train"
+    },
+    {
+      "different_fields": [
+        {
+          "live_key_types": [
+            "int"
+          ],
+          "live_sorted_keys": [
+            26,
+            59,
+            116,
+            145,
+            146,
+            187,
+            188
+          ],
+          "path": "validation.range_exceedance_calls_by_feature",
+          "saved_key_types": [
+            "str"
+          ],
+          "saved_sorted_keys": [
+            "116",
+            "145",
+            "146",
+            "187",
+            "188",
+            "26",
+            "59"
+          ],
+          "values_equal_after_json_key_normalization": true
+        },
+        {
+          "live_key_types": [
+            "int"
+          ],
+          "live_sorted_keys": [
+            2,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "path": "validation.candidate_count_calls",
+          "saved_key_types": [
+            "str"
+          ],
+          "saved_sorted_keys": [
+            "10",
+            "11",
+            "111",
+            "114",
+            "115",
+            "118",
+            "12",
+            "120",
+            "125",
+            "127",
+            "129",
+            "132",
+            "14",
+            "15",
+            "150",
+            "152"
+          ],
+          "values_equal_after_json_key_normalization": true
+        }
+      ],
+      "normalized_canonical_equal": true,
+      "raw_canonical_equal": false,
+      "split": "validation"
+    }
+  ],
+  "exact_candidates": 32366,
+  "exact_compact_rows": 514,
+  "freeze_sha256": "300627f342c1db6ee623c6d116ee17f9af9931881a49d518843eb65a71ba267d",
+  "minimal_actual_data_example": {
+    "json_loaded_keys": [
+      {
+        "count": 2,
+        "type": "str",
+        "value": "2"
+      },
+      {
+        "count": 2,
+        "type": "str",
+        "value": "10"
+      }
+    ],
+    "live_keys": [
+      {
+        "count": 2,
+        "type": "int",
+        "value": 2
+      },
+      {
+        "count": 2,
+        "type": "int",
+        "value": 10
+      }
+    ],
+    "live_sorted_serialization": "{\"2\":2,\"10\":2}",
+    "loaded_sorted_serialization": "{\"10\":2,\"2\":2}",
+    "path": "train.candidate_count_calls"
+  },
+  "new_model_calls": 0,
+  "numerical_input_decodes": 0,
+  "original_stream_reads": 0,
+  "public_safe": true,
+  "schema": "stratified-summary-json-roundtrip-counterexample-v1",
+  "source_location": "learning/task_bc_stratified_error_sample_v1/reporting.py:203",
+  "stage_acceptance": false,
+  "summary_accumulator_location": "learning/task_bc_error_diagnostics_v1/numeric.py:269",
+  "summary_sha256": "a9840451ef6e3c40f68d433bae95358ae5477b4acb78a1e06b2ea0dfa35c236c"
+}

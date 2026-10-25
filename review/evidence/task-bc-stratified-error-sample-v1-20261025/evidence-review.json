@@ -1,0 +1,118 @@
+{
+  "accepted_facts": {
+    "accepted_jobs": 46,
+    "all_five_teacher_classes_present": true,
+    "attempts": 47,
+    "cumulative_reservations": [
+      3844,
+      226982
+    ],
+    "derived_decodes": [
+      1852,
+      117742
+    ],
+    "elapsed_seconds": 59.56199999997625,
+    "empty_source_cells": 41,
+    "exact_compact_comparison": true,
+    "forced_successes": 0,
+    "new_reservations": [
+      1028,
+      64732
+    ],
+    "normalized_recomputed_summaries_equal": true,
+    "owned_trees_closed": 47,
+    "phase_class_source_cells": 300,
+    "sample_candidates": 32366,
+    "sample_rows": 514,
+    "saved_summaries_byte_identical": true,
+    "source_scan_counters": {
+      "all_original_gzip_physical_lines": 135363,
+      "compressed_source_bytes_hashed": 121152135,
+      "decompressed_source_bytes": 2086405426,
+      "index_metadata_rows": 45121,
+      "input_json_candidates_decoded": 32366,
+      "input_json_rows_decoded": 514,
+      "input_physical_lines_read": 45121,
+      "label_rows": 45121
+    },
+    "synthetic_cases": 12,
+    "synthetic_numeric_processing": [
+      40,
+      80
+    ],
+    "train_candidates": 26505,
+    "train_rows": 412,
+    "validation_rows": 102
+  },
+  "blocking_findings": [
+    {
+      "actual_paths": [
+        "train.candidate_count_calls",
+        "validation.range_exceedance_calls_by_feature",
+        "validation.candidate_count_calls"
+      ],
+      "evidence": "All 514/32366 compact records agree and both saved summaries are byte-identical. Independently reconstructed summaries equal the stored values after JSON object-key normalization.",
+      "finding": "The live accumulator uses integer keys while loaded JSON uses string keys. sort_keys sorts these in different orders, causing a false equality failure on equivalent histogram data.",
+      "id": "report-summary-json-key-roundtrip",
+      "minimal_followup": "Repair only summary comparison at the JSON semantic boundary. Cover actual integer-key histograms (including 2 and 10), empty/single counts, and true value-mismatch rejection. Any compact-only recovery must be separately registered in a new result directory; no original data, model evaluation, training or game rerun is necessary.",
+      "severity": "stage-blocker",
+      "source": "learning/task_bc_stratified_error_sample_v1/reporting.py:203"
+    }
+  ],
+  "budget_and_lifecycle": {
+    "path": "independent-review/budget-and-lifecycle.json",
+    "sha256": "18f959d146b401ef7a6a70a809b3e7c1a1cf4d13697a8039c725e9076f696fbe"
+  },
+  "collection_and_score_comparison_acceptance": true,
+  "compact_comparison": {
+    "path": "independent-review/compact-comparison.json",
+    "sha256": "443060752f7cbae1075e39b6e24a9bc7d461faa0466794d6af6f3470bdbbb88b"
+  },
+  "conditional_recalculation": {
+    "path": "independent-review/conditional-recalculation.json",
+    "sha256": "f8e7d2a4663f43ee270e684dd119558b6f2f71c2d6b04bb28de944e652502068"
+  },
+  "counterexample": {
+    "path": "independent-review/summary-roundtrip-counterexample.json",
+    "sha256": "81688c1ec8f40f6aa862ee30c7b857bbcb1354428fcf6ef3dd226fc1e430b672"
+  },
+  "created_utc": "2026-10-25T15:31:10.846530+00:00",
+  "evidence_consistency_passed": true,
+  "failure_sha256": "2f3fe34718ed6661be827bbacefbb485de7aff2c9aac73b9481c5220b649392f",
+  "freeze_sha256": "300627f342c1db6ee623c6d116ee17f9af9931881a49d518843eb65a71ba267d",
+  "history_stat_check_sha256": "270c78f030a0b16c46ecaadd4ec91fd55b3ffa54f904960dce90317cbbe03cfc",
+  "interpretation": [
+    "The full stage remains failed; this review does not rerun or retroactively pass the failed reporting job.",
+    "This is a known historical stratified sample. All conditional tables are sample diagnostics, not estimates of the complete teacher or game distribution.",
+    "The selected-train support has 412 rows; support misses cannot be called complete-training novelty.",
+    "Full-diagnostics failure and original policy-admission failure stay false. Model, policy, default Bot and old data remain frozen.",
+    "Old files were protected through inherited hashes and 5489 unchanged stat records; this is not fresh byte verification of all historical data."
+  ],
+  "passed": false,
+  "pre_execution_commit": "f7b57f24136982574a2dee0ec9dddf5bdcb59322",
+  "pre_review_sha256": "15b7c50c6780df96196ea08824ce78603b78695812c7515e2e5388d9a77c6013",
+  "public_safe": true,
+  "registration_sha256": "2ea88375c8cf430b100922bd90907ba7670eade1259047fc597894ec88f34fb5",
+  "report_failure_sha256": "ea8abe67942cddc9d69cf49822ddffb24be944d7d17ebe7a05b61a2e14fd33a0",
+  "reporting_stage_acceptance": false,
+  "review_completed": true,
+  "reviewer": "independent-subagent-audit-stratified-resume",
+  "reviewer_operations": {
+    "existing_compact_records_read": 1028,
+    "model_weight_reads": 0,
+    "new_games": 0,
+    "new_model_calls": 0,
+    "numerical_input_decodes": 0,
+    "official_transitions": 0,
+    "original_stream_reads": 0,
+    "policy_calls": 0,
+    "report_entrypoint_calls": 0,
+    "synthetic_cases_executed": 0,
+    "training_runs": 0
+  },
+  "sample_freeze_sha256": "30466fa80cd41fa31b8e57a345885329fbf655780963cbae87d637cb3a77ae8e",
+  "sample_manifest_sha256": "cdc976a54c8b04c60b45d78e848e16ae490665a6a05dc8a17ae6f17dea73b145",
+  "schema": "task-stratified-independent-evidence-review-v1",
+  "stage_acceptance": false,
+  "summary_sha256": "1b37002a858847e3f7fd20224be3a7ded0932aa3f9d4f6ff7f99b7b241e4c73d"
+}
