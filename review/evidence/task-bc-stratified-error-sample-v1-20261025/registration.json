@@ -1,0 +1,1179 @@
+{
+  "schema": "task-stratified-diagnostic-registration-v1",
+  "stage": "task-bc-stratified-error-sample-v1",
+  "created_utc": "2026-10-25T15:22:32.561587+00:00",
+  "baseline_head": "e417a4f3861f45000e92e67a08d77ab448dfed7c",
+  "local_registration_not_external_timestamp": true,
+  "sample_only": true,
+  "historical_reuse_not_new_holdout": true,
+  "old_stage": "artifacts/task-bc-diagnostics-capacity-exit-v1-20261023",
+  "old_artifacts_sha256": {
+    "registration.json": "9f4f0730448723c47a747f582d002222a8679d1af3fdd3d80c38137647cbd9a6",
+    "freeze.json": "b265fccc0f5300404e92ff17c11b7ed6e544e407da712c2059455362d01dadb8",
+    "summary.json": "39e636b3be34e31202a156cac17d1d431fcf9b3e3224401bbf433325ecd0868f",
+    "budget-reservations.jsonl": "40d1bef59790533a7593d23078cda2e5b4e11d7f9e9a66ef28f6e8b684f4c5ff",
+    "evidence-review.json": "d5de5e1f98d82ba0837d7f3906ff99d5e13028042cfb6c86ac0f1bcce12ec97e",
+    "root-evidence-acceptance.json": "fa686b34de9378ac4795ef72f08fad5a561f446ba89dc6c5437a0b54a8d5e67e",
+    "next-stage-advice.json": "20c2a2d7e58d7a167244a7b0a374c2691de026829212b265af951ca491e7a60d",
+    "root-next-stage-decision.json": "a14667c4380754f9ea417aafff27889222e3128bcefdda13abb3d8c0623ca0c3",
+    "publication-review.json": "92426fe6438620aaaeb8d5f6b7b18483b6f56f76f1cd3eb66600a491e583abe4",
+    "publication-verification.json": "79199fe3b142eb42060e31b87cad9b12284f89bfc9159a26b3064e3749138d4f"
+  },
+  "protection_sha256": "7af98b8e40f737fb57977f9b9b969391e8128a7fab4000a6cfd930fe2734884c",
+  "fixed_runtime_sources_sha256": {
+    "learning/task_bc_v1/__init__.py": "53acf46748abd7c1696186b447505c1a42486621027fc52149dbc153e1e10b0f",
+    "learning/task_bc_v1/admission.py": "54fe8ffb51f5d35cb1fd373b21a904a055e787c68abcc095bd9f751b224a1f62",
+    "learning/task_bc_v1/cache.py": "dc4f82ac379516175f73919c35381b40e98759871cab41b76cf3f28df1efac83",
+    "learning/task_bc_v1/deployment.py": "17ae478de5f44658fc0df848b0afe64ae2032bb1176dab888eeff5a48648d5f5",
+    "learning/task_bc_v1/experiment.py": "40800bc02a193bc4cb69d4d256d81c3e7270c0b80cfda1d9f58506d289294098",
+    "learning/task_bc_v1/games.py": "eb72eb7718d8140c57bd6c63e53587ed62ebf2fd6666d98dfbfc340c70259160",
+    "learning/task_bc_v1/model.py": "dbdbe126029a16f15178d18a5088defac83c5b6447d77f48aa7c77cae70886d8",
+    "learning/task_bc_v1/parity.py": "1da16c192931752dd7fff437eeadd88e21da259cef24a98d1a339d50652654f8",
+    "learning/task_bc_v1/reload.py": "8e2fb90d31af508fa69f5887233c590d1b808c811cf13031a1127734f21f4fad",
+    "learning/task_bc_v1/train.py": "de5b704f8930ed0e00c5ecc83bc1c3b85b61a4501800f6f68d4949e4ae3c15f5",
+    "learning/task_bc_v1/verify_cache.py": "02e7d43a027824294cd0b8ed580f53444cce100bd39673f84ab2664862ab8e7f",
+    "learning/task_bc_v1/verify_model.py": "e370e87f96e7b3594959dc229a7d27102efd82ba45d19d236e1af3ec43f12f1d",
+    "learning/task_bc_v1/README.zh-CN.md": "687a30c291e1df541f45852ba86b7ae23fd130608023b05ecd7c4949a9462a9b",
+    "learning/task_choice_v1/__init__.py": "7645246b2ff833ffabb1388ffeaffda87008a658d4085b2dc970cf67fcb5b5c6",
+    "learning/task_choice_v1/agent.py": "b22e2a1a546abe39e76a412690d09926d0463d4c196e87614507cf16a0ab51ce",
+    "learning/task_choice_v1/cases.py": "df95b1a7d7f70543e9e12d22c0da9bef183d6f02c8e6ab7e4b096aef46d3b180",
+    "learning/task_choice_v1/dataset.py": "87d47b11ee6b3bc2432d856ea26e87fc3645e005f33e26034207877a9d637119",
+    "learning/task_choice_v1/experiment.py": "a47caec46245e780e38dd322ad52069e62d1ea3a46e22be68516240a25ebf344",
+    "learning/task_choice_v1/features.py": "b69e3fb590fb5c1159193d112977aa03170557dc47b8aa19bcffe0f09737c7d4",
+    "learning/task_choice_v1/verify_interface.py": "609d4243ce58a13275ddd8b924f4e935d528590c18517b822f3bae668bba30b2",
+    "learning/bc_crop/__init__.py": "62631c0302958d70277a9fb7f1886e53e3cad4d1bb516331699ed1da787dc0b7",
+    "learning/bc_crop/agent.py": "6923bf2d088ec0aefad45b27121d55c1c4338e72b39e5a8c874aa3223c3350a4",
+    "learning/bc_crop/analyze.py": "b7f447619094e95a775a30f77dd3061982c65ebf51905efcba38318d3c740dfb",
+    "learning/bc_crop/audit.py": "1df48cfb357689237f045b19110b9eebe7551669e5ab20e238b179cc07aa7a44",
+    "learning/bc_crop/entries.py": "b5c0c0c2cd130edfb6d7c298a40602199e5d715b5d8b14aa42ea94add979bca8",
+    "learning/bc_crop/experiment.py": "bb891ee3e888ac88d21b4553a9c1bd2a6360aeffd51553728cbcf1c23396b4c7",
+    "learning/bc_crop/features.py": "6612580dcf1c3b1db22769aca459765a84fdf527f98fdf185f4a99e618d5d397",
+    "learning/bc_crop/prepare.py": "d51a01555f4710932e80c8e3aa328cb0bb4179f08531473df12149126074ea8c",
+    "learning/bc_crop/reload.py": "f658cc36323b0937b838818521b24ff392998e0b6d0fca51f9ab1ab7f622161f",
+    "learning/bc_crop/report.py": "c2de319c31cf798b2e78bdf7810905ccd39f1a2c49d285980bd62c6aaa4c9bb4",
+    "learning/bc_crop/train.py": "cfe3ab87a18270a09129fa818222319128fcb1f44628a11c7a0fe78f638bff56",
+    "learning/bc_crop/verify.py": "caa71fff2b4027bd6533ef7dc3dc1936f31ce0d57a4f786b5b6a69edc49f1801",
+    "learning/bc_crop/verify_model_privacy.py": "f958590215e40c7388fd3bd8c8a5d7aec18d5661ca16bf30edb8f3691572dba1",
+    "learning/bc_crop/verify_prepare.py": "ff0d594da720ac517c0b47068afaab63c8f83bafa59dfedc5750dcbd6cc323c2",
+    "decision/__init__.py": "292c33c078490e76cf6576d8922f527acf23d59a01b8f523f7a1b595cbe15d0e",
+    "decision/action_views.py": "48dac3a44a42cf149ad94965a44c72405a9cdff80c885ec522fcc4f212ffc4a6",
+    "decision/api.py": "3ef4025bde61d240b298cbe4d31291f25021baaf5b396f5540bbfcdda4231917",
+    "decision/audit_fertilizer_ablation.py": "cd5ec5884738703b7c8305c9d0faaa949252c3ad25cd46dd0b4e1e37f38c8e36",
+    "decision/audit_market_teacher.py": "f0f35dcbf8edeff90db5762da81b09ee2208e7af2c9921c0176bcb32c6381dc0",
+    "decision/audit_profit_attribution.py": "a8a6ce62f8699d9b781afef5bf49d3bc5f0689b932e2bccd2cfc8326c35cc1b8",
+    "decision/audit_teacher_fertilizer.py": "ea44f11288cdd2ea20a75c2b3ecbfe648ab8e3acab50d13c9c4cefb009282fe6",
+    "decision/audit_terminal_windows.py": "1cd649755746bd61e94b4e99cc16bf5b511b24b4ce729cf184fde3e0ecfb2b5c",
+    "decision/compare_market_trajectories.py": "b279ba0484e1c97b0fbe5b72e37f9172b75d3eb534f00b25b3d3eb78da286bf3",
+    "decision/execution.py": "cbf38b17ca9c4c1c4f82ddb583ff59e4f605a0e8d8e971ef5bfc3664b2c76378",
+    "decision/full_audit.py": "84f7c7b4316fb98791c51b933f5329a271b8bc9aec60eebe133f6d433ec4510d",
+    "decision/play.py": "01554275bc56e50db468f320aea6512e3f7756bac7cead62e092cdebe3500ead",
+    "decision/profit_attribution.py": "bea6118d126115ef2899e8e08fddf4ded7987f4ef91df6c206239ef096f77d61",
+    "decision/recheck_attribution_consumer.py": "bf54e3d86c3cd2ea25b1115f11253a8582837730a6695ff4bc6f0a9e4ff87e81",
+    "decision/recheck_market_consumer.py": "15563c7e42ec84d1d5986bb58b0af0ae6e5abcdd335609f7326dd8f0548b2730",
+    "decision/reexecute_experiment.py": "9726071d449ec9aeceb4a410affbf17ac41cc94425f82d77f55af832c226be93",
+    "decision/semantics.py": "9ac62d0df7adca84c0feff805b2979bb45f9f9f4c2064d1e2b5c48efd3e779a5",
+    "decision/smoke_full_agent.py": "9122a912cab9ce89bdd1f002dbb9f1466c66c12ecb4b3068253eeea9a3be70d3",
+    "decision/telemetry_fixtures.py": "fac6fc713756bb9a7872bd059fa2ace827a63dfd6c0a5415ee81120a2cb6d6ac",
+    "decision/telemetry_worker.py": "65ec5613f2698bb3db0c66d7a0828b02e00e4ee1d4c6d2d4d64a140aa14814fb",
+    "decision/verify_ablation.py": "35659fa57879c8f3eade86aa2c6cd6eabe1545f6d5cfe0d04a3ed3cffab4fe6e",
+    "decision/verify_attribution_consumer.py": "5536c36472eda93eed2879b0d9b807dbca3aa4d5ea658d1e7e2e980b79c921eb",
+    "decision/verify_audit.py": "fd6bfc1c6c066c5ec8ff3daa1a97a52caced41991be631084bfdd90763b4be4e",
+    "decision/verify_experiment.py": "7d6031cf759b985111c77da3d2f77f784ca41e33692ef3ea0b0f44194e97f95b",
+    "decision/verify_market_consumer.py": "b832bae031b57be9079d174153ed5bf63710382a6cbb9f3db372cf1664d89ee5",
+    "decision/verify_market_entry.py": "392daccc0db6fb4b8e3c5d7ed2b0bc1f312a6b0d74a7ee4c0d3cdc972114f058",
+    "decision/verify_market_teacher.py": "0a59718731aecfa6fb499f67bc7f92daa76053830f4ca582143e46cdc2422ea8",
+    "decision/verify_mechanisms.py": "cc82fd118abd94e92a8833587aa2bfb9117214a8a5b00e8054225732af47fbbf",
+    "decision/verify_profit_attribution.py": "cd314d2f2741d7bbc9c5ca47e4f89733db93de7f178b2ceb21d314b40d30773f",
+    "decision/verify_terminal_teacher.py": "20e1ce3943b4160e13095e71f7d8191bffc5ec82a07146e6499b0ce801189c38",
+    "learning/round2_worker.py": "a80158b26d1f4ae3d366c1d1276a1ca63e652bcd350f5ca25545b0f5f33759f1",
+    "learning/optimize_round2.py": "9f4fcf09fecd42c6135a1a2a72b95948c52474636719863eb2d468b01dc102fe",
+    "learning/evaluate_holdout.py": "df599e139893081f0a5307b0aa9cf299e2d14d4d4a221672b7aa9ac1d3747d82",
+    "run_match.py": "1b521899ecd0594459dab0770c3f6bd41c094c57067099ffbeed48a26da46e21",
+    "replay_metrics.py": "dc2005ab79d682c57480e8d865655ddd4785655e59a761774ae5883babe435b4",
+    "localize_replay.py": "237588e8fcb977a55d68b4a42d4efe7afbb8003032917f4314c40c340f211786",
+    "bots/teacher_fertilizer_terminal_v2.py": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+    "learning/task_entry_repair_v1/entry.py": "d35bd58661ac6065fd9ae92ce806943df50481d0587be9434933c230234f08f2",
+    "learning/task_entry_repair_v1/experiment.py": "c18d8cc03d77b87dcb2af992a1c0986d19f43d4538e10d26631993a0c67ce7bd",
+    "learning/task_entry_repair_v1/README.zh-CN.md": "8f8627387c3743eb3fc0bd449fdd71264679f840e2b6b756f447386e06595aa3",
+    "learning/task_entry_repair_v1/verify_entry.py": "767adabf597e9acf7f4113e4dfcb7dda0711e1877f4432d478b9ce773f346194",
+    "learning/task_entry_repair_v1/__init__.py": "3d5bde4b71974a465bbba5a0d79a4fb7974ab234974573dffc52b52cc9e27a4b",
+    "learning/task_bc_holdout_v1/audit.py": "af2ff8d75f2637c0a11c04736765e216b7003c76a2f2e1288416b06300aa15f9",
+    "learning/task_bc_holdout_v1/experiment.py": "752bacb8c943e40e5358206e06251ef7eaa908be190661a313438eac71a7bbf4",
+    "learning/task_bc_holdout_v1/games.py": "209fb79b80c2ea4f466a118548c773cfa54432d96f0ce7710532d59434f9061c",
+    "learning/task_bc_holdout_v1/preflight.py": "3f8ec8c5dca87119862cece966310d2d14358264208ae93482ae73147564093a",
+    "learning/task_bc_holdout_v1/README.zh-CN.md": "02747dc6270e4ed6cc6e7c100a77bfac5ae74c1c700302c5a59a2687bccc7bc8",
+    "learning/task_bc_holdout_v1/seeds.json": "088cb25bd10774b13dda5d523bd5e8172bb17c44301d3c44b40113d84beb0bab",
+    "learning/task_bc_holdout_v1/statistics.py": "63784afe816cd575bc57747dbafa71d4c04049852e0e8ceee2cf059881d88fd4",
+    "learning/task_bc_holdout_v1/verify_statistics.py": "942f02141ead894d6c6ae4bf56077eb3bf2df736c2f86ecc87c752ec4b0748df",
+    "learning/task_bc_holdout_v1/__init__.py": "928cb0cf10b2bed3c1ceb88bb0052483963936d923824d5b2815abb5cce472ea",
+    "learning/task_bc_error_diagnostics_v1/analysis.py": "e037d5ad4b6eb3fb80faf35165ec328c7028e2864792ec9ada6d93f157f82888",
+    "learning/task_bc_error_diagnostics_v1/experiment.py": "241ba0a25c6e6fae7ba78451582e3699add6f51991d564c0c7b55715f8eddf69",
+    "learning/task_bc_error_diagnostics_v1/numeric.py": "5d7ffe44616e029079fafbdee47d3af4391e6c394d349ef46df5997275082a3a",
+    "learning/task_bc_error_diagnostics_v1/README.zh-CN.md": "5892b91f868456cfabba0a27cbb3512481c1695d9ba90ed502f31998d26cf8e5",
+    "learning/task_bc_error_diagnostics_v1/runner.py": "43ce8b99598fdbe4b71a320abc7ee771c0815130b16742367ab7ec03466034c7",
+    "learning/task_bc_error_diagnostics_v1/shadow.py": "095f6a896c259f840af4c59adc922cc9782fe69aafd3b0df7ea04df9160c3251",
+    "learning/task_bc_error_diagnostics_v1/verify_analysis.py": "24e13f33c2e0eb6cb53e2857dda6ea98f24e26f6b3ab34011948e87a8daaa97e",
+    "learning/task_bc_error_diagnostics_v1/verify_numeric.py": "346548427ea49987219885a290a4793dce3d8c67e16b7f7d1e93926d41848175",
+    "learning/task_bc_error_diagnostics_v1/verify_runner.py": "fac3eacac8835eb9b3749e0fd3875948d5c7b30fe64c1c98b532dcc2032c534f",
+    "learning/task_bc_error_diagnostics_v1/verify_shadow.py": "5456c5634d4dfd247e6fe23e22c91715d6425cc3a2e5479f2af0c2347bc130f1",
+    "learning/task_bc_error_diagnostics_v1/__init__.py": "7fe73d92a6f435034e2de4fc239e202b38b383508f2c426bd389dd7565f4a381",
+    "learning/task_bc_diagnostics_capacity_v1/experiment.py": "e332d296a6e001e07a96d96b73be01c4de370b277756f6875f3c7e8fa9c2bd9c",
+    "learning/task_bc_diagnostics_capacity_v1/pipeline.py": "255c0e3c85b8e98f2cc7b1c28f8f470d0157f3b61cc0947facf849d58fac358e",
+    "learning/task_bc_diagnostics_capacity_v1/README.zh-CN.md": "90c8c767c6fa6bf917659f57f8fb58d5a82f74501ed399981755dd80de2d8c01",
+    "learning/task_bc_diagnostics_capacity_v1/runner.py": "0f75efbc208c94f012336016d9dc5b984089aeca7a99c0d11191c5fdca51a646",
+    "learning/task_bc_diagnostics_capacity_v1/tree_fixture.py": "981726641bb2c1f6efec34b63d43576ee5f5faa1b1ce72706b086c357595aa03",
+    "learning/task_bc_diagnostics_capacity_v1/verify_pipeline.py": "dbac9a6311dd6f74bd17dc028c814a80ca2342311c9a111dd184c41dd6a2711f",
+    "learning/task_bc_diagnostics_capacity_v1/verify_tree.py": "07a43ff9e0ae5bd3073b9627f0355ae75671e48f900478a32a78c7ee81abfe32",
+    "learning/task_bc_diagnostics_capacity_v1/windows_tree.py": "52ec668c2a91e939bca3a5eb4cad9a4609ec665a47557b4cafdeb20d12b7b7c8",
+    "learning/task_bc_diagnostics_capacity_v1/__init__.py": "81027222e3ec4d4bfd9c1e80bd9684d954ae572223a41f8eccd56ec89f1630e4",
+    "learning/task_bc_diagnostics_capacity_exit_v1/experiment.py": "1a8ed68484b5cb735783f5a8b8c2235398648720a7025be6602b7fb1c9b43988",
+    "learning/task_bc_diagnostics_capacity_exit_v1/README.zh-CN.md": "c8a2dee524d8a76a3301b34ee1817d89176216223c672d548383ce9435bd80f7",
+    "learning/task_bc_diagnostics_capacity_exit_v1/runner.py": "7e66215fd16e6ecbe58459065be7360288d3b127985e651696cd852cc5b42834",
+    "learning/task_bc_diagnostics_capacity_exit_v1/tree_fixture.py": "12a7810371327835ef610743de371dd084ab8491c9959a24609a72e22fd76f4f",
+    "learning/task_bc_diagnostics_capacity_exit_v1/verify_tree.py": "8ed91afba2e4d1b65d69460f51961048295ca1a45e2657ee92a7bca3356f9a9e",
+    "learning/task_bc_diagnostics_capacity_exit_v1/windows_tree.py": "04c7b51e8a97483f3650f50427c9e6e7bf74e31e790d93d5579d79726b292f38",
+    "learning/task_bc_diagnostics_capacity_exit_v1/__init__.py": "b771ee616687b270fc83caffa90fd9aeb892c178de3eea4cfce3723d734e14e9"
+  },
+  "source_root": "artifacts/task-choice-v1-20261023",
+  "source_metadata_sha256": {
+    "registration.json": "ca0077198188f82136c3b974c47fd6cac3b07e70bd72eb99fe444f8925f5dfa4",
+    "dataset-manifest.json": "6482ed09e8fd7348c08046810232146ec463472ee5babf187fe6822aa420bc00",
+    "reconstruction-ledger.json": "c3e634274c089664c731925eaa31a820c71dae511159bef46ad323be37ab31fb"
+  },
+  "selected_groups": [
+    {
+      "game": "collect-31205138-v1-0-teacher",
+      "split": "validation",
+      "seed": 31205138,
+      "side": 0,
+      "opponent": "v1",
+      "source_files": {
+        "inputs": {
+          "path": "data/validation/collect-31205138-v1-0-teacher.inputs.jsonl.gz",
+          "sha256": "2877e3acf8b41529544e060774ed52ffaf00932a6b808a5e6dc58f8057ad5093",
+          "rows": 2175,
+          "bytes": 5616062
+        },
+        "labels": {
+          "path": "data/validation/collect-31205138-v1-0-teacher.labels.jsonl.gz",
+          "sha256": "0d9be9a01ff0f77296d29477c2c406828992d44c9715d1e3d4e9fb49d527ce4e",
+          "rows": 2175,
+          "bytes": 4610
+        },
+        "index": {
+          "path": "data/validation/collect-31205138-v1-0-teacher.index.jsonl.gz",
+          "sha256": "c158aaee0ffa079d80d3daeb11a684b0c51265be7f2fbc234f93136de981e111",
+          "rows": 2175,
+          "bytes": 95288
+        }
+      },
+      "source_sha256": {
+        "inputs": "2877e3acf8b41529544e060774ed52ffaf00932a6b808a5e6dc58f8057ad5093",
+        "labels": "0d9be9a01ff0f77296d29477c2c406828992d44c9715d1e3d4e9fb49d527ce4e",
+        "index": "c158aaee0ffa079d80d3daeb11a684b0c51265be7f2fbc234f93136de981e111"
+      },
+      "source_rows": 2175
+    },
+    {
+      "game": "collect-31273729-round2-0-teacher",
+      "split": "train",
+      "seed": 31273729,
+      "side": 0,
+      "opponent": "round2",
+      "source_files": {
+        "inputs": {
+          "path": "data/train/collect-31273729-round2-0-teacher.inputs.jsonl.gz",
+          "sha256": "89d0cf3f67c708b0d0a237638af8d59f82488df926602fd4618f973f3a822d61",
+          "rows": 2164,
+          "bytes": 5534455
+        },
+        "labels": {
+          "path": "data/train/collect-31273729-round2-0-teacher.labels.jsonl.gz",
+          "sha256": "4154b482c3787172338ff909e1f4094e2814d44d796a639b0a6bf64c10c967ab",
+          "rows": 2164,
+          "bytes": 4515
+        },
+        "index": {
+          "path": "data/train/collect-31273729-round2-0-teacher.index.jsonl.gz",
+          "sha256": "328ef991728f9a6e5284130f79100a1dc2bd105a2d4505eacd8748e187d32417",
+          "rows": 2164,
+          "bytes": 94792
+        }
+      },
+      "source_sha256": {
+        "inputs": "89d0cf3f67c708b0d0a237638af8d59f82488df926602fd4618f973f3a822d61",
+        "labels": "4154b482c3787172338ff909e1f4094e2814d44d796a639b0a6bf64c10c967ab",
+        "index": "328ef991728f9a6e5284130f79100a1dc2bd105a2d4505eacd8748e187d32417"
+      },
+      "source_rows": 2164
+    },
+    {
+      "game": "collect-31273729-v1-1-teacher",
+      "split": "train",
+      "seed": 31273729,
+      "side": 1,
+      "opponent": "v1",
+      "source_files": {
+        "inputs": {
+          "path": "data/train/collect-31273729-v1-1-teacher.inputs.jsonl.gz",
+          "sha256": "3235c283b28195aa7bb0845a4f2ef57180b547910e893191ac2d790c1332e8d6",
+          "rows": 2178,
+          "bytes": 5642884
+        },
+        "labels": {
+          "path": "data/train/collect-31273729-v1-1-teacher.labels.jsonl.gz",
+          "sha256": "405c06b294533706b601ea78806726ebdd80f75673609032bd7e809f00bb38d0",
+          "rows": 2178,
+          "bytes": 4529
+        },
+        "index": {
+          "path": "data/train/collect-31273729-v1-1-teacher.index.jsonl.gz",
+          "sha256": "ffe2cffdef56eda39ee8c40277c0dcd95451dadc3d2253408606c7bccaba59fe",
+          "rows": 2178,
+          "bytes": 95451
+        }
+      },
+      "source_sha256": {
+        "inputs": "3235c283b28195aa7bb0845a4f2ef57180b547910e893191ac2d790c1332e8d6",
+        "labels": "405c06b294533706b601ea78806726ebdd80f75673609032bd7e809f00bb38d0",
+        "index": "ffe2cffdef56eda39ee8c40277c0dcd95451dadc3d2253408606c7bccaba59fe"
+      },
+      "source_rows": 2178
+    },
+    {
+      "game": "collect-31317742-v1-0-teacher",
+      "split": "train",
+      "seed": 31317742,
+      "side": 0,
+      "opponent": "v1",
+      "source_files": {
+        "inputs": {
+          "path": "data/train/collect-31317742-v1-0-teacher.inputs.jsonl.gz",
+          "sha256": "d54dc5c2438e66e9026867b613adbcffcd8472c27d8622bf7c0a2772e32e8ff0",
+          "rows": 2261,
+          "bytes": 6055173
+        },
+        "labels": {
+          "path": "data/train/collect-31317742-v1-0-teacher.labels.jsonl.gz",
+          "sha256": "c2db56ec26f77cdd84b5e4151ba662254dd294de2eba4b673572f49a427924c2",
+          "rows": 2261,
+          "bytes": 5223
+        },
+        "index": {
+          "path": "data/train/collect-31317742-v1-0-teacher.index.jsonl.gz",
+          "sha256": "87bc7ef55b97f11fcb14c02cfd5378a307f42e47d51b25b5a1664b1576e89248",
+          "rows": 2261,
+          "bytes": 99098
+        }
+      },
+      "source_sha256": {
+        "inputs": "d54dc5c2438e66e9026867b613adbcffcd8472c27d8622bf7c0a2772e32e8ff0",
+        "labels": "c2db56ec26f77cdd84b5e4151ba662254dd294de2eba4b673572f49a427924c2",
+        "index": "87bc7ef55b97f11fcb14c02cfd5378a307f42e47d51b25b5a1664b1576e89248"
+      },
+      "source_rows": 2261
+    },
+    {
+      "game": "collect-31360134-market-0-teacher",
+      "split": "train",
+      "seed": 31360134,
+      "side": 0,
+      "opponent": "market",
+      "source_files": {
+        "inputs": {
+          "path": "data/train/collect-31360134-market-0-teacher.inputs.jsonl.gz",
+          "sha256": "aab472074004ddceb5f7c52ca743d53cb46b0390bdd0467d4406e354cd151a7a",
+          "rows": 2220,
+          "bytes": 5984333
+        },
+        "labels": {
+          "path": "data/train/collect-31360134-market-0-teacher.labels.jsonl.gz",
+          "sha256": "6eb36ca6b47a04439957cf86eb1c3b5dbf3f86276660e5cea5850880d802f5b7",
+          "rows": 2220,
+          "bytes": 4890
+        },
+        "index": {
+          "path": "data/train/collect-31360134-market-0-teacher.index.jsonl.gz",
+          "sha256": "4339b7fc67956ad9057298dd987eb9041174a63343249eac086fdbc079a2f36a",
+          "rows": 2220,
+          "bytes": 97275
+        }
+      },
+      "source_sha256": {
+        "inputs": "aab472074004ddceb5f7c52ca743d53cb46b0390bdd0467d4406e354cd151a7a",
+        "labels": "6eb36ca6b47a04439957cf86eb1c3b5dbf3f86276660e5cea5850880d802f5b7",
+        "index": "4339b7fc67956ad9057298dd987eb9041174a63343249eac086fdbc079a2f36a"
+      },
+      "source_rows": 2220
+    },
+    {
+      "game": "collect-31360134-round2-1-teacher",
+      "split": "train",
+      "seed": 31360134,
+      "side": 1,
+      "opponent": "round2",
+      "source_files": {
+        "inputs": {
+          "path": "data/train/collect-31360134-round2-1-teacher.inputs.jsonl.gz",
+          "sha256": "ca78be53d74df858f5a1016d7af465719dd6cf1cc45a370b8972f09cad67390d",
+          "rows": 2231,
+          "bytes": 5941075
+        },
+        "labels": {
+          "path": "data/train/collect-31360134-round2-1-teacher.labels.jsonl.gz",
+          "sha256": "0c0ece162a45d2b8c86231f2fb814e0bd7f15585dd91d5755489c79cffea0118",
+          "rows": 2231,
+          "bytes": 5147
+        },
+        "index": {
+          "path": "data/train/collect-31360134-round2-1-teacher.index.jsonl.gz",
+          "sha256": "31b82d514384394c6ba8914f5d5b07f4893e874a764aa555deb260001c119b45",
+          "rows": 2231,
+          "bytes": 97707
+        }
+      },
+      "source_sha256": {
+        "inputs": "ca78be53d74df858f5a1016d7af465719dd6cf1cc45a370b8972f09cad67390d",
+        "labels": "0c0ece162a45d2b8c86231f2fb814e0bd7f15585dd91d5755489c79cffea0118",
+        "index": "31b82d514384394c6ba8914f5d5b07f4893e874a764aa555deb260001c119b45"
+      },
+      "source_rows": 2231
+    },
+    {
+      "game": "collect-31504409-market-0-teacher",
+      "split": "validation",
+      "seed": 31504409,
+      "side": 0,
+      "opponent": "market",
+      "source_files": {
+        "inputs": {
+          "path": "data/validation/collect-31504409-market-0-teacher.inputs.jsonl.gz",
+          "sha256": "7963ee8b8699f4905915bc599eb333063a028e94a62f42184d58a4d62efa79f3",
+          "rows": 2307,
+          "bytes": 6105823
+        },
+        "labels": {
+          "path": "data/validation/collect-31504409-market-0-teacher.labels.jsonl.gz",
+          "sha256": "28cb4e722a9bb786104268121cdb2b0e99a4fe09c84c498923374cec479f4418",
+          "rows": 2307,
+          "bytes": 5652
+        },
+        "index": {
+          "path": "data/validation/collect-31504409-market-0-teacher.index.jsonl.gz",
+          "sha256": "d73eef5ed33279c089f2ad3c0214bdc3e4e67bf93ff91f77156af7fad5f07271",
+          "rows": 2307,
+          "bytes": 101019
+        }
+      },
+      "source_sha256": {
+        "inputs": "7963ee8b8699f4905915bc599eb333063a028e94a62f42184d58a4d62efa79f3",
+        "labels": "28cb4e722a9bb786104268121cdb2b0e99a4fe09c84c498923374cec479f4418",
+        "index": "d73eef5ed33279c089f2ad3c0214bdc3e4e67bf93ff91f77156af7fad5f07271"
+      },
+      "source_rows": 2307
+    },
+    {
+      "game": "collect-31504409-round2-1-teacher",
+      "split": "validation",
+      "seed": 31504409,
+      "side": 1,
+      "opponent": "round2",
+      "source_files": {
+        "inputs": {
+          "path": "data/validation/collect-31504409-round2-1-teacher.inputs.jsonl.gz",
+          "sha256": "accd2f962830fc92c260c833a844fdf7175a2f2b15bf359e41c27051abd213db",
+          "rows": 2358,
+          "bytes": 6247301
+        },
+        "labels": {
+          "path": "data/validation/collect-31504409-round2-1-teacher.labels.jsonl.gz",
+          "sha256": "33a7a38c6852a683269ce66b2bf89b98e0e3e3c2dcd7167555f6cab544e6f235",
+          "rows": 2358,
+          "bytes": 5669
+        },
+        "index": {
+          "path": "data/validation/collect-31504409-round2-1-teacher.index.jsonl.gz",
+          "sha256": "3e311d08b790e61cd7ab3ae0807f7045cde88350d5c75470ca5f21a4647bb496",
+          "rows": 2358,
+          "bytes": 103208
+        }
+      },
+      "source_sha256": {
+        "inputs": "accd2f962830fc92c260c833a844fdf7175a2f2b15bf359e41c27051abd213db",
+        "labels": "33a7a38c6852a683269ce66b2bf89b98e0e3e3c2dcd7167555f6cab544e6f235",
+        "index": "3e311d08b790e61cd7ab3ae0807f7045cde88350d5c75470ca5f21a4647bb496"
+      },
+      "source_rows": 2358
+    },
+    {
+      "game": "collect-31637216-market-1-teacher",
+      "split": "train",
+      "seed": 31637216,
+      "side": 1,
+      "opponent": "market",
+      "source_files": {
+        "inputs": {
+          "path": "data/train/collect-31637216-market-1-teacher.inputs.jsonl.gz",
+          "sha256": "161975994424dddcf0a7e2366210849ce4c533a7b2789a09683d1b6cb63cfdc4",
+          "rows": 2338,
+          "bytes": 6057608
+        },
+        "labels": {
+          "path": "data/train/collect-31637216-market-1-teacher.labels.jsonl.gz",
+          "sha256": "3182508b231c2e6980c135cbe8d604a121d29477b5b64d388be477a06c2cb6e0",
+          "rows": 2338,
+          "bytes": 5288
+        },
+        "index": {
+          "path": "data/train/collect-31637216-market-1-teacher.index.jsonl.gz",
+          "sha256": "21ae3ca5ecbd5988a179c9ffa0bbbe89ebc4c5c82b2ae998a771faabee9a9c04",
+          "rows": 2338,
+          "bytes": 102361
+        }
+      },
+      "source_sha256": {
+        "inputs": "161975994424dddcf0a7e2366210849ce4c533a7b2789a09683d1b6cb63cfdc4",
+        "labels": "3182508b231c2e6980c135cbe8d604a121d29477b5b64d388be477a06c2cb6e0",
+        "index": "21ae3ca5ecbd5988a179c9ffa0bbbe89ebc4c5c82b2ae998a771faabee9a9c04"
+      },
+      "source_rows": 2338
+    },
+    {
+      "game": "collect-31637216-v1-0-teacher",
+      "split": "train",
+      "seed": 31637216,
+      "side": 0,
+      "opponent": "v1",
+      "source_files": {
+        "inputs": {
+          "path": "data/train/collect-31637216-v1-0-teacher.inputs.jsonl.gz",
+          "sha256": "ac11f15487a322ba9711f73ce3b74ced85f6106af9531ffcdf27bc96038d0e48",
+          "rows": 2485,
+          "bytes": 6478531
+        },
+        "labels": {
+          "path": "data/train/collect-31637216-v1-0-teacher.labels.jsonl.gz",
+          "sha256": "b050034b7e2b4ce3f0d3b6e26ad151a774fdbd277cf264eab39dfeb2d5b93238",
+          "rows": 2485,
+          "bytes": 5964
+        },
+        "index": {
+          "path": "data/train/collect-31637216-v1-0-teacher.index.jsonl.gz",
+          "sha256": "9d5179d74947002c91fbde5ff7b976cd9931d614d913ef58dd321cfa4d2aad26",
+          "rows": 2485,
+          "bytes": 108933
+        }
+      },
+      "source_sha256": {
+        "inputs": "ac11f15487a322ba9711f73ce3b74ced85f6106af9531ffcdf27bc96038d0e48",
+        "labels": "b050034b7e2b4ce3f0d3b6e26ad151a774fdbd277cf264eab39dfeb2d5b93238",
+        "index": "9d5179d74947002c91fbde5ff7b976cd9931d614d913ef58dd321cfa4d2aad26"
+      },
+      "source_rows": 2485
+    },
+    {
+      "game": "collect-31659052-market-1-teacher",
+      "split": "train",
+      "seed": 31659052,
+      "side": 1,
+      "opponent": "market",
+      "source_files": {
+        "inputs": {
+          "path": "data/train/collect-31659052-market-1-teacher.inputs.jsonl.gz",
+          "sha256": "70af08849753a2e8affa16c5f19bdceee28c308fb4a2200ad431307fdb4ff84e",
+          "rows": 2227,
+          "bytes": 6080380
+        },
+        "labels": {
+          "path": "data/train/collect-31659052-market-1-teacher.labels.jsonl.gz",
+          "sha256": "493ae8b976dbc04fb24c9e1adda3e365c890aa1f2b92f4eb338fa66b98edca80",
+          "rows": 2227,
+          "bytes": 5141
+        },
+        "index": {
+          "path": "data/train/collect-31659052-market-1-teacher.index.jsonl.gz",
+          "sha256": "a2ad7a563c7c26e0cad9cdcfca7f1a370e249d7cb7b558439afac87a27fcf3a0",
+          "rows": 2227,
+          "bytes": 97611
+        }
+      },
+      "source_sha256": {
+        "inputs": "70af08849753a2e8affa16c5f19bdceee28c308fb4a2200ad431307fdb4ff84e",
+        "labels": "493ae8b976dbc04fb24c9e1adda3e365c890aa1f2b92f4eb338fa66b98edca80",
+        "index": "a2ad7a563c7c26e0cad9cdcfca7f1a370e249d7cb7b558439afac87a27fcf3a0"
+      },
+      "source_rows": 2227
+    },
+    {
+      "game": "collect-31659052-v1-0-teacher",
+      "split": "train",
+      "seed": 31659052,
+      "side": 0,
+      "opponent": "v1",
+      "source_files": {
+        "inputs": {
+          "path": "data/train/collect-31659052-v1-0-teacher.inputs.jsonl.gz",
+          "sha256": "1b41435e223b6ac2841be638342e4acfe32bc3348295c6a012bce0e316a55a5c",
+          "rows": 2227,
+          "bytes": 6028848
+        },
+        "labels": {
+          "path": "data/train/collect-31659052-v1-0-teacher.labels.jsonl.gz",
+          "sha256": "493ae8b976dbc04fb24c9e1adda3e365c890aa1f2b92f4eb338fa66b98edca80",
+          "rows": 2227,
+          "bytes": 5141
+        },
+        "index": {
+          "path": "data/train/collect-31659052-v1-0-teacher.index.jsonl.gz",
+          "sha256": "b21b055c21c993456aae1ff337a0fe1f1fd363ae540a6b10fd57968376aaadf3",
+          "rows": 2227,
+          "bytes": 97692
+        }
+      },
+      "source_sha256": {
+        "inputs": "1b41435e223b6ac2841be638342e4acfe32bc3348295c6a012bce0e316a55a5c",
+        "labels": "493ae8b976dbc04fb24c9e1adda3e365c890aa1f2b92f4eb338fa66b98edca80",
+        "index": "b21b055c21c993456aae1ff337a0fe1f1fd363ae540a6b10fd57968376aaadf3"
+      },
+      "source_rows": 2227
+    },
+    {
+      "game": "collect-31834104-round2-0-teacher",
+      "split": "train",
+      "seed": 31834104,
+      "side": 0,
+      "opponent": "round2",
+      "source_files": {
+        "inputs": {
+          "path": "data/train/collect-31834104-round2-0-teacher.inputs.jsonl.gz",
+          "sha256": "a834c5bab2d204a6b1ea7d34655b5607cf853587129f6e7a489053aa0498023c",
+          "rows": 2309,
+          "bytes": 5994286
+        },
+        "labels": {
+          "path": "data/train/collect-31834104-round2-0-teacher.labels.jsonl.gz",
+          "sha256": "bb5577db7def0cf4e2418a41493ee0b7a8d37e5de3d1bb89e4be1eb1fe557587",
+          "rows": 2309,
+          "bytes": 5474
+        },
+        "index": {
+          "path": "data/train/collect-31834104-round2-0-teacher.index.jsonl.gz",
+          "sha256": "7e204c26015ae466bb588c909dca0b0c3bbe360fcf87bee534691eca18f7529c",
+          "rows": 2309,
+          "bytes": 101084
+        }
+      },
+      "source_sha256": {
+        "inputs": "a834c5bab2d204a6b1ea7d34655b5607cf853587129f6e7a489053aa0498023c",
+        "labels": "bb5577db7def0cf4e2418a41493ee0b7a8d37e5de3d1bb89e4be1eb1fe557587",
+        "index": "7e204c26015ae466bb588c909dca0b0c3bbe360fcf87bee534691eca18f7529c"
+      },
+      "source_rows": 2309
+    },
+    {
+      "game": "collect-31834104-v1-1-teacher",
+      "split": "train",
+      "seed": 31834104,
+      "side": 1,
+      "opponent": "v1",
+      "source_files": {
+        "inputs": {
+          "path": "data/train/collect-31834104-v1-1-teacher.inputs.jsonl.gz",
+          "sha256": "8e9eee70d5914bef217a4e7c08411d7c6e57c03022e16887f293458d75304893",
+          "rows": 2354,
+          "bytes": 6187777
+        },
+        "labels": {
+          "path": "data/train/collect-31834104-v1-1-teacher.labels.jsonl.gz",
+          "sha256": "6f794fd8f29a223aa542d648ef62a523c28aa09c37a42c4830735822f60f9ff3",
+          "rows": 2354,
+          "bytes": 5606
+        },
+        "index": {
+          "path": "data/train/collect-31834104-v1-1-teacher.index.jsonl.gz",
+          "sha256": "64b2c13f257124803af54e1950612348acf9a4f6d569b2edcaccdf6a82e4d20f",
+          "rows": 2354,
+          "bytes": 103184
+        }
+      },
+      "source_sha256": {
+        "inputs": "8e9eee70d5914bef217a4e7c08411d7c6e57c03022e16887f293458d75304893",
+        "labels": "6f794fd8f29a223aa542d648ef62a523c28aa09c37a42c4830735822f60f9ff3",
+        "index": "64b2c13f257124803af54e1950612348acf9a4f6d569b2edcaccdf6a82e4d20f"
+      },
+      "source_rows": 2354
+    },
+    {
+      "game": "collect-31921285-market-0-teacher",
+      "split": "train",
+      "seed": 31921285,
+      "side": 0,
+      "opponent": "market",
+      "source_files": {
+        "inputs": {
+          "path": "data/train/collect-31921285-market-0-teacher.inputs.jsonl.gz",
+          "sha256": "80efabfe069cb7d011df9e71a48a3d91fecbb8b8b58a5fd91863c2cfe8786fa3",
+          "rows": 2260,
+          "bytes": 6144369
+        },
+        "labels": {
+          "path": "data/train/collect-31921285-market-0-teacher.labels.jsonl.gz",
+          "sha256": "df5e751b5e0cb5a0b5b3a14e979d8dc3ed2bb3fe438ca8e1fc2f58e9004062b6",
+          "rows": 2260,
+          "bytes": 5339
+        },
+        "index": {
+          "path": "data/train/collect-31921285-market-0-teacher.index.jsonl.gz",
+          "sha256": "76047f78571b95a196bac1d5856c53ece6e40f55731745aae478665e31fe61ca",
+          "rows": 2260,
+          "bytes": 98922
+        }
+      },
+      "source_sha256": {
+        "inputs": "80efabfe069cb7d011df9e71a48a3d91fecbb8b8b58a5fd91863c2cfe8786fa3",
+        "labels": "df5e751b5e0cb5a0b5b3a14e979d8dc3ed2bb3fe438ca8e1fc2f58e9004062b6",
+        "index": "76047f78571b95a196bac1d5856c53ece6e40f55731745aae478665e31fe61ca"
+      },
+      "source_rows": 2260
+    },
+    {
+      "game": "collect-31921285-round2-1-teacher",
+      "split": "train",
+      "seed": 31921285,
+      "side": 1,
+      "opponent": "round2",
+      "source_files": {
+        "inputs": {
+          "path": "data/train/collect-31921285-round2-1-teacher.inputs.jsonl.gz",
+          "sha256": "c0820ea73b68af0b1245150613ebcca4477b4df970d18b4a6ea431057e3b7a55",
+          "rows": 2260,
+          "bytes": 6073215
+        },
+        "labels": {
+          "path": "data/train/collect-31921285-round2-1-teacher.labels.jsonl.gz",
+          "sha256": "df5e751b5e0cb5a0b5b3a14e979d8dc3ed2bb3fe438ca8e1fc2f58e9004062b6",
+          "rows": 2260,
+          "bytes": 5339
+        },
+        "index": {
+          "path": "data/train/collect-31921285-round2-1-teacher.index.jsonl.gz",
+          "sha256": "bebacd86df2fb9372cf7be6a854667675f786e1d66245bf0aafc3270601838d8",
+          "rows": 2260,
+          "bytes": 98991
+        }
+      },
+      "source_sha256": {
+        "inputs": "c0820ea73b68af0b1245150613ebcca4477b4df970d18b4a6ea431057e3b7a55",
+        "labels": "df5e751b5e0cb5a0b5b3a14e979d8dc3ed2bb3fe438ca8e1fc2f58e9004062b6",
+        "index": "bebacd86df2fb9372cf7be6a854667675f786e1d66245bf0aafc3270601838d8"
+      },
+      "source_rows": 2260
+    },
+    {
+      "game": "collect-31932889-market-0-teacher",
+      "split": "train",
+      "seed": 31932889,
+      "side": 0,
+      "opponent": "market",
+      "source_files": {
+        "inputs": {
+          "path": "data/train/collect-31932889-market-0-teacher.inputs.jsonl.gz",
+          "sha256": "fe5585110af3b8259793c5d5028dd3d48de2d64ba23d32d28068ef789cfd72b3",
+          "rows": 2155,
+          "bytes": 5563856
+        },
+        "labels": {
+          "path": "data/train/collect-31932889-market-0-teacher.labels.jsonl.gz",
+          "sha256": "5aa70600e2ae1dafb4c5df9f45d0bdf3cd58cde9e2a335cd784e733520afa601",
+          "rows": 2155,
+          "bytes": 4397
+        },
+        "index": {
+          "path": "data/train/collect-31932889-market-0-teacher.index.jsonl.gz",
+          "sha256": "345a41e80c88c3ccd1a49dbc896452548a3a9ff5f651811b3d3e5a37de3159a9",
+          "rows": 2155,
+          "bytes": 94389
+        }
+      },
+      "source_sha256": {
+        "inputs": "fe5585110af3b8259793c5d5028dd3d48de2d64ba23d32d28068ef789cfd72b3",
+        "labels": "5aa70600e2ae1dafb4c5df9f45d0bdf3cd58cde9e2a335cd784e733520afa601",
+        "index": "345a41e80c88c3ccd1a49dbc896452548a3a9ff5f651811b3d3e5a37de3159a9"
+      },
+      "source_rows": 2155
+    },
+    {
+      "game": "collect-31932889-round2-1-teacher",
+      "split": "train",
+      "seed": 31932889,
+      "side": 1,
+      "opponent": "round2",
+      "source_files": {
+        "inputs": {
+          "path": "data/train/collect-31932889-round2-1-teacher.inputs.jsonl.gz",
+          "sha256": "93186905b8a496b75e0249c943ddd24db6acc7dbf21687fe78ca084fcc81426c",
+          "rows": 2172,
+          "bytes": 5548724
+        },
+        "labels": {
+          "path": "data/train/collect-31932889-round2-1-teacher.labels.jsonl.gz",
+          "sha256": "8d8f76bb9432c9027d3ed720353bafe96d12cbeee1f8823f21fbbb6bd19dc057",
+          "rows": 2172,
+          "bytes": 4595
+        },
+        "index": {
+          "path": "data/train/collect-31932889-round2-1-teacher.index.jsonl.gz",
+          "sha256": "34917e05fbee4c53415d288e6b77eaa0d7b6434756feacc5e53601990dfa7a0b",
+          "rows": 2172,
+          "bytes": 95153
+        }
+      },
+      "source_sha256": {
+        "inputs": "93186905b8a496b75e0249c943ddd24db6acc7dbf21687fe78ca084fcc81426c",
+        "labels": "8d8f76bb9432c9027d3ed720353bafe96d12cbeee1f8823f21fbbb6bd19dc057",
+        "index": "34917e05fbee4c53415d288e6b77eaa0d7b6434756feacc5e53601990dfa7a0b"
+      },
+      "source_rows": 2172
+    },
+    {
+      "game": "collect-smoke-31205138-market-1-teacher",
+      "split": "validation",
+      "seed": 31205138,
+      "side": 1,
+      "opponent": "market",
+      "source_files": {
+        "inputs": {
+          "path": "data/validation/collect-smoke-31205138-market-1-teacher.inputs.jsonl.gz",
+          "sha256": "dda5bbb28c2b61078325e29e1ac20fd593327b8307ba13b25a082562f9ca121f",
+          "rows": 2179,
+          "bytes": 5674321
+        },
+        "labels": {
+          "path": "data/validation/collect-smoke-31205138-market-1-teacher.labels.jsonl.gz",
+          "sha256": "5b871c64716ee9bfb3cedf7fa6c4c61c4ee327c830a978c2b6d414e0ba326886",
+          "rows": 2179,
+          "bytes": 4541
+        },
+        "index": {
+          "path": "data/validation/collect-smoke-31205138-market-1-teacher.index.jsonl.gz",
+          "sha256": "2f9c3d462e6702888d49a8a2ab46d6bc065393d79d860fff7a87e00f84f55831",
+          "rows": 2179,
+          "bytes": 95200
+        }
+      },
+      "source_sha256": {
+        "inputs": "dda5bbb28c2b61078325e29e1ac20fd593327b8307ba13b25a082562f9ca121f",
+        "labels": "5b871c64716ee9bfb3cedf7fa6c4c61c4ee327c830a978c2b6d414e0ba326886",
+        "index": "2f9c3d462e6702888d49a8a2ab46d6bc065393d79d860fff7a87e00f84f55831"
+      },
+      "source_rows": 2179
+    },
+    {
+      "game": "collect-smoke-31317742-market-1-teacher",
+      "split": "train",
+      "seed": 31317742,
+      "side": 1,
+      "opponent": "market",
+      "source_files": {
+        "inputs": {
+          "path": "data/train/collect-smoke-31317742-market-1-teacher.inputs.jsonl.gz",
+          "sha256": "e25949df9e3bd6ad8d6410ae9cb7d84593e1f505525a99ca97a352026586ffbb",
+          "rows": 2261,
+          "bytes": 6114651
+        },
+        "labels": {
+          "path": "data/train/collect-smoke-31317742-market-1-teacher.labels.jsonl.gz",
+          "sha256": "c2db56ec26f77cdd84b5e4151ba662254dd294de2eba4b673572f49a427924c2",
+          "rows": 2261,
+          "bytes": 5223
+        },
+        "index": {
+          "path": "data/train/collect-smoke-31317742-market-1-teacher.index.jsonl.gz",
+          "sha256": "215a661b610e44542006778fd4d1fa22db6f6a08fab067b47ea25b9c178977cd",
+          "rows": 2261,
+          "bytes": 98822
+        }
+      },
+      "source_sha256": {
+        "inputs": "e25949df9e3bd6ad8d6410ae9cb7d84593e1f505525a99ca97a352026586ffbb",
+        "labels": "c2db56ec26f77cdd84b5e4151ba662254dd294de2eba4b673572f49a427924c2",
+        "index": "215a661b610e44542006778fd4d1fa22db6f6a08fab067b47ea25b9c178977cd"
+      },
+      "source_rows": 2261
+    }
+  ],
+  "registered_groups": [
+    {
+      "game": "collect-31205138-v1-0-teacher",
+      "split": "validation",
+      "seed": 31205138,
+      "side": 0,
+      "opponent": "v1",
+      "source_sha256": {
+        "inputs": "2877e3acf8b41529544e060774ed52ffaf00932a6b808a5e6dc58f8057ad5093",
+        "labels": "0d9be9a01ff0f77296d29477c2c406828992d44c9715d1e3d4e9fb49d527ce4e",
+        "index": "c158aaee0ffa079d80d3daeb11a684b0c51265be7f2fbc234f93136de981e111"
+      }
+    },
+    {
+      "game": "collect-31273729-round2-0-teacher",
+      "split": "train",
+      "seed": 31273729,
+      "side": 0,
+      "opponent": "round2",
+      "source_sha256": {
+        "inputs": "89d0cf3f67c708b0d0a237638af8d59f82488df926602fd4618f973f3a822d61",
+        "labels": "4154b482c3787172338ff909e1f4094e2814d44d796a639b0a6bf64c10c967ab",
+        "index": "328ef991728f9a6e5284130f79100a1dc2bd105a2d4505eacd8748e187d32417"
+      }
+    },
+    {
+      "game": "collect-31273729-v1-1-teacher",
+      "split": "train",
+      "seed": 31273729,
+      "side": 1,
+      "opponent": "v1",
+      "source_sha256": {
+        "inputs": "3235c283b28195aa7bb0845a4f2ef57180b547910e893191ac2d790c1332e8d6",
+        "labels": "405c06b294533706b601ea78806726ebdd80f75673609032bd7e809f00bb38d0",
+        "index": "ffe2cffdef56eda39ee8c40277c0dcd95451dadc3d2253408606c7bccaba59fe"
+      }
+    },
+    {
+      "game": "collect-31317742-v1-0-teacher",
+      "split": "train",
+      "seed": 31317742,
+      "side": 0,
+      "opponent": "v1",
+      "source_sha256": {
+        "inputs": "d54dc5c2438e66e9026867b613adbcffcd8472c27d8622bf7c0a2772e32e8ff0",
+        "labels": "c2db56ec26f77cdd84b5e4151ba662254dd294de2eba4b673572f49a427924c2",
+        "index": "87bc7ef55b97f11fcb14c02cfd5378a307f42e47d51b25b5a1664b1576e89248"
+      }
+    },
+    {
+      "game": "collect-31360134-market-0-teacher",
+      "split": "train",
+      "seed": 31360134,
+      "side": 0,
+      "opponent": "market",
+      "source_sha256": {
+        "inputs": "aab472074004ddceb5f7c52ca743d53cb46b0390bdd0467d4406e354cd151a7a",
+        "labels": "6eb36ca6b47a04439957cf86eb1c3b5dbf3f86276660e5cea5850880d802f5b7",
+        "index": "4339b7fc67956ad9057298dd987eb9041174a63343249eac086fdbc079a2f36a"
+      }
+    },
+    {
+      "game": "collect-31360134-round2-1-teacher",
+      "split": "train",
+      "seed": 31360134,
+      "side": 1,
+      "opponent": "round2",
+      "source_sha256": {
+        "inputs": "ca78be53d74df858f5a1016d7af465719dd6cf1cc45a370b8972f09cad67390d",
+        "labels": "0c0ece162a45d2b8c86231f2fb814e0bd7f15585dd91d5755489c79cffea0118",
+        "index": "31b82d514384394c6ba8914f5d5b07f4893e874a764aa555deb260001c119b45"
+      }
+    },
+    {
+      "game": "collect-31504409-market-0-teacher",
+      "split": "validation",
+      "seed": 31504409,
+      "side": 0,
+      "opponent": "market",
+      "source_sha256": {
+        "inputs": "7963ee8b8699f4905915bc599eb333063a028e94a62f42184d58a4d62efa79f3",
+        "labels": "28cb4e722a9bb786104268121cdb2b0e99a4fe09c84c498923374cec479f4418",
+        "index": "d73eef5ed33279c089f2ad3c0214bdc3e4e67bf93ff91f77156af7fad5f07271"
+      }
+    },
+    {
+      "game": "collect-31504409-round2-1-teacher",
+      "split": "validation",
+      "seed": 31504409,
+      "side": 1,
+      "opponent": "round2",
+      "source_sha256": {
+        "inputs": "accd2f962830fc92c260c833a844fdf7175a2f2b15bf359e41c27051abd213db",
+        "labels": "33a7a38c6852a683269ce66b2bf89b98e0e3e3c2dcd7167555f6cab544e6f235",
+        "index": "3e311d08b790e61cd7ab3ae0807f7045cde88350d5c75470ca5f21a4647bb496"
+      }
+    },
+    {
+      "game": "collect-31637216-market-1-teacher",
+      "split": "train",
+      "seed": 31637216,
+      "side": 1,
+      "opponent": "market",
+      "source_sha256": {
+        "inputs": "161975994424dddcf0a7e2366210849ce4c533a7b2789a09683d1b6cb63cfdc4",
+        "labels": "3182508b231c2e6980c135cbe8d604a121d29477b5b64d388be477a06c2cb6e0",
+        "index": "21ae3ca5ecbd5988a179c9ffa0bbbe89ebc4c5c82b2ae998a771faabee9a9c04"
+      }
+    },
+    {
+      "game": "collect-31637216-v1-0-teacher",
+      "split": "train",
+      "seed": 31637216,
+      "side": 0,
+      "opponent": "v1",
+      "source_sha256": {
+        "inputs": "ac11f15487a322ba9711f73ce3b74ced85f6106af9531ffcdf27bc96038d0e48",
+        "labels": "b050034b7e2b4ce3f0d3b6e26ad151a774fdbd277cf264eab39dfeb2d5b93238",
+        "index": "9d5179d74947002c91fbde5ff7b976cd9931d614d913ef58dd321cfa4d2aad26"
+      }
+    },
+    {
+      "game": "collect-31659052-market-1-teacher",
+      "split": "train",
+      "seed": 31659052,
+      "side": 1,
+      "opponent": "market",
+      "source_sha256": {
+        "inputs": "70af08849753a2e8affa16c5f19bdceee28c308fb4a2200ad431307fdb4ff84e",
+        "labels": "493ae8b976dbc04fb24c9e1adda3e365c890aa1f2b92f4eb338fa66b98edca80",
+        "index": "a2ad7a563c7c26e0cad9cdcfca7f1a370e249d7cb7b558439afac87a27fcf3a0"
+      }
+    },
+    {
+      "game": "collect-31659052-v1-0-teacher",
+      "split": "train",
+      "seed": 31659052,
+      "side": 0,
+      "opponent": "v1",
+      "source_sha256": {
+        "inputs": "1b41435e223b6ac2841be638342e4acfe32bc3348295c6a012bce0e316a55a5c",
+        "labels": "493ae8b976dbc04fb24c9e1adda3e365c890aa1f2b92f4eb338fa66b98edca80",
+        "index": "b21b055c21c993456aae1ff337a0fe1f1fd363ae540a6b10fd57968376aaadf3"
+      }
+    },
+    {
+      "game": "collect-31834104-round2-0-teacher",
+      "split": "train",
+      "seed": 31834104,
+      "side": 0,
+      "opponent": "round2",
+      "source_sha256": {
+        "inputs": "a834c5bab2d204a6b1ea7d34655b5607cf853587129f6e7a489053aa0498023c",
+        "labels": "bb5577db7def0cf4e2418a41493ee0b7a8d37e5de3d1bb89e4be1eb1fe557587",
+        "index": "7e204c26015ae466bb588c909dca0b0c3bbe360fcf87bee534691eca18f7529c"
+      }
+    },
+    {
+      "game": "collect-31834104-v1-1-teacher",
+      "split": "train",
+      "seed": 31834104,
+      "side": 1,
+      "opponent": "v1",
+      "source_sha256": {
+        "inputs": "8e9eee70d5914bef217a4e7c08411d7c6e57c03022e16887f293458d75304893",
+        "labels": "6f794fd8f29a223aa542d648ef62a523c28aa09c37a42c4830735822f60f9ff3",
+        "index": "64b2c13f257124803af54e1950612348acf9a4f6d569b2edcaccdf6a82e4d20f"
+      }
+    },
+    {
+      "game": "collect-31921285-market-0-teacher",
+      "split": "train",
+      "seed": 31921285,
+      "side": 0,
+      "opponent": "market",
+      "source_sha256": {
+        "inputs": "80efabfe069cb7d011df9e71a48a3d91fecbb8b8b58a5fd91863c2cfe8786fa3",
+        "labels": "df5e751b5e0cb5a0b5b3a14e979d8dc3ed2bb3fe438ca8e1fc2f58e9004062b6",
+        "index": "76047f78571b95a196bac1d5856c53ece6e40f55731745aae478665e31fe61ca"
+      }
+    },
+    {
+      "game": "collect-31921285-round2-1-teacher",
+      "split": "train",
+      "seed": 31921285,
+      "side": 1,
+      "opponent": "round2",
+      "source_sha256": {
+        "inputs": "c0820ea73b68af0b1245150613ebcca4477b4df970d18b4a6ea431057e3b7a55",
+        "labels": "df5e751b5e0cb5a0b5b3a14e979d8dc3ed2bb3fe438ca8e1fc2f58e9004062b6",
+        "index": "bebacd86df2fb9372cf7be6a854667675f786e1d66245bf0aafc3270601838d8"
+      }
+    },
+    {
+      "game": "collect-31932889-market-0-teacher",
+      "split": "train",
+      "seed": 31932889,
+      "side": 0,
+      "opponent": "market",
+      "source_sha256": {
+        "inputs": "fe5585110af3b8259793c5d5028dd3d48de2d64ba23d32d28068ef789cfd72b3",
+        "labels": "5aa70600e2ae1dafb4c5df9f45d0bdf3cd58cde9e2a335cd784e733520afa601",
+        "index": "345a41e80c88c3ccd1a49dbc896452548a3a9ff5f651811b3d3e5a37de3159a9"
+      }
+    },
+    {
+      "game": "collect-31932889-round2-1-teacher",
+      "split": "train",
+      "seed": 31932889,
+      "side": 1,
+      "opponent": "round2",
+      "source_sha256": {
+        "inputs": "93186905b8a496b75e0249c943ddd24db6acc7dbf21687fe78ca084fcc81426c",
+        "labels": "8d8f76bb9432c9027d3ed720353bafe96d12cbeee1f8823f21fbbb6bd19dc057",
+        "index": "34917e05fbee4c53415d288e6b77eaa0d7b6434756feacc5e53601990dfa7a0b"
+      }
+    },
+    {
+      "game": "collect-smoke-31205138-market-1-teacher",
+      "split": "validation",
+      "seed": 31205138,
+      "side": 1,
+      "opponent": "market",
+      "source_sha256": {
+        "inputs": "dda5bbb28c2b61078325e29e1ac20fd593327b8307ba13b25a082562f9ca121f",
+        "labels": "5b871c64716ee9bfb3cedf7fa6c4c61c4ee327c830a978c2b6d414e0ba326886",
+        "index": "2f9c3d462e6702888d49a8a2ab46d6bc065393d79d860fff7a87e00f84f55831"
+      }
+    },
+    {
+      "game": "collect-smoke-31317742-market-1-teacher",
+      "split": "train",
+      "seed": 31317742,
+      "side": 1,
+      "opponent": "market",
+      "source_sha256": {
+        "inputs": "e25949df9e3bd6ad8d6410ae9cb7d84593e1f505525a99ca97a352026586ffbb",
+        "labels": "c2db56ec26f77cdd84b5e4151ba662254dd294de2eba4b673572f49a427924c2",
+        "index": "215a661b610e44542006778fd4d1fa22db6f6a08fab067b47ea25b9c178977cd"
+      }
+    }
+  ],
+  "source_selection": {
+    "source_root": "artifacts/task-choice-v1-20261023",
+    "source_manifest_sha256": "6482ed09e8fd7348c08046810232146ec463472ee5babf187fe6822aa420bc00",
+    "source_reconstruction_ledger_sha256": "c3e634274c089664c731925eaa31a820c71dae511159bef46ad323be37ab31fb",
+    "game_selection": "Within train and validation separately, preserve the original registration seed order and let i be its zero-based position. For each seed select seat b in [0,1] with opponent [v1,market,round2][(i+b)%3]. Resolve the exact original game identity through reconstruction-ledger rows and bind its dataset-manifest entry; do not manufacture game names because some original identities are smoke records.",
+    "selected_games": 20,
+    "selected_train_games": 16,
+    "selected_validation_games": 4,
+    "selected_source_rows_from_metadata": 45121,
+    "selected_source_compressed_bytes_from_file_metadata": 121152135,
+    "phase_step_ranges_inclusive": [
+      [
+        0,
+        239
+      ],
+      [
+        240,
+        479
+      ],
+      [
+        480,
+        718
+      ]
+    ],
+    "teacher_classes": [
+      "DIG",
+      "FERTILIZE",
+      "HARVEST",
+      "PLANT",
+      "WATER"
+    ],
+    "row_selection": "For each selected game, phase and teacher class, retain min(2,n) physical source rows with the smallest SHA256 of the canonical JSON tuple [task-bc-stratified-error-sample-v1,game,source_row_index], breaking an impossible hash tie by original row index. Determine phase from index metadata and teacher class from the canonical teacher_label suffix; validate that class against the selected original candidate after extracting inputs. Selection uses no logits, errors, returns, future outcomes or numeric deduplication. Freeze this rule and salt before reading those source streams, then hash-bind the resulting exact row manifest before the first model score.",
+    "empty_or_small_strata": "Retain all available rows when n is 0 or 1; never fill from another class, phase or game. Report every empty stratum and its source population count. Retain duplicated numeric inputs with their original multiplicities.",
+    "sample_rows_max": 600,
+    "sample_train_rows_max": 480,
+    "sample_validation_rows_max": 120,
+    "sample_candidates_eligible_for_scoring_max": 60000,
+    "scoring_order": "Original source-manifest game order, then original physical row order within each game; construct the entire selected train support before scoring any validation row.",
+    "scope_limit": "This includes all original eight training and two validation seeds and both seats per seed, with all three opponent types represented. It is not the full seed-by-opponent-by-seat population. In validation, two of the six opponent-seat cells remain unsampled. Phase/class balancing is diagnostic oversampling: pooled selected-row rates are sample statistics, not estimates of population or match reward."
+  },
+  "old_budget_groups": 2816,
+  "old_budget_candidates": 162250,
+  "new_evaluated_groups_max": 1200,
+  "new_evaluated_candidates_max": 120000,
+  "shared_evaluated_groups_max": 5120,
+  "shared_evaluated_candidates_max": 320000,
+  "max_cumulative_groups": 4016,
+  "max_cumulative_candidates": 282250,
+  "sample_groups_max": 600,
+  "sample_train_groups_max": 480,
+  "sample_validation_groups_max": 120,
+  "sample_candidates_max": 60000,
+  "source_scan_limits": {
+    "compressed_source_bytes_hashed": 121152135,
+    "index_metadata_rows": 45121,
+    "label_rows": 45121,
+    "input_physical_lines_read": 45121,
+    "all_original_gzip_physical_lines": 135363,
+    "input_json_rows_decoded": 600,
+    "input_json_candidates_decoded": 145200,
+    "decompressed_source_bytes": 4294967296
+  },
+  "maximum_source_json_line_bytes": 16777216,
+  "maximum_original_candidates_per_row": 242,
+  "max_derived_decoded_groups": 2160,
+  "max_derived_decoded_candidates": 240000,
+  "synthetic_limits": {
+    "cases": 12,
+    "required_cases": 12,
+    "rows": 64,
+    "candidates": 256,
+    "counting": "Count every numerical input JSON decode, including test readback, plus every pipeline evaluate conservatively again. Fixture construction and metadata-only operations are reported separately, not model evaluations."
+  },
+  "task_model": "artifacts/task-bc-holdout-v1-20261023/model/trained.npz",
+  "task_model_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+  "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "official_loader_sha256": "0ac7baf1212b4ce1eabae3cc1cbb55c98effef5e0d0485522a8be87097c39a4f",
+  "engine_provenance": "Pinned official source exact rule hash verified in predecessor; installed rule and loader bytes rechecked now.",
+  "python_version": "3.12.2",
+  "dependency_versions": {
+    "numpy": "2.5.4",
+    "kaggle-environments": "1.33.0"
+  },
+  "stage_wall_seconds_max": 900.0,
+  "numeric_job_work_seconds_max": 120.0,
+  "close_seconds_max_including_grace": 10.0,
+  "normal_zero_exit_grace_seconds_max": 2.0,
+  "max_workers": 1,
+  "blas_threads": 1,
+  "resource_limits": {
+    "process_tree_private_commit_bytes": 4294967296,
+    "minimum_available_host_memory_bytes": 4294967296,
+    "new_artifact_bytes_max": 2147483648,
+    "minimum_free_disk_bytes": 4294967296
+  },
+  "clock": "One continuous clock starts before the first tiny synthetic job; includes all subsequent source hash/read, extraction, both score paths, reporting, waiting and cleanup. Static authoring/metadata preregistration precedes it.",
+  "acceptance": [
+    "All focused synthetic checks pass within the shared tiny-fixture allowance.",
+    "Exact twenty registered source identities, once per original hash/stream; full original-order checks and immutable sparse membership before predictions.",
+    "One reference and one shard pass only, all selected train support complete, all compact rows and split summaries exact; every budget/receipt reconciles.",
+    "Conditional coverage and disagreement statistics report zero cells, sample denominators and sample-relative support; informativeness may be inconclusive.",
+    "No forced successful worker, deadline or resource breach; independent review and privacy pass."
+  ],
+  "stop": "Any failure stops dispatch. No retry/resume/refill, sample truncation, extra model call or deadline extension.",
+  "reporting": {
+    "marginals": [
+      "split",
+      "seed",
+      "phase",
+      "teacher_class",
+      "opponent",
+      "side"
+    ],
+    "interaction": [
+      "phase",
+      "teacher_class"
+    ],
+    "witness_max": 5,
+    "witness_selection": "Per teacher class, first candidate mismatch in original manifest then physical-row order; stored compact only.",
+    "no_population_estimate": true,
+    "no_reward_causal_claim": true,
+    "support_is_sample_relative": true
+  },
+  "policy_calls": 0,
+  "training_runs": 0,
+  "new_games": 0,
+  "official_transitions": 0,
+  "full_history_processing": false,
+  "original_diagnostic_stage_acceptance": false,
+  "original_policy_admission": false,
+  "publication": "Only source, relative hashes, aggregate counts/statistics and reviews. Raw samples, compact rows, witnesses, indexes, model weights, native process identities and logs stay local."
+}

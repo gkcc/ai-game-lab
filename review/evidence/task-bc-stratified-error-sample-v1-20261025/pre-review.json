@@ -1,0 +1,109 @@
+{
+  "schema": "task-stratified-static-pre-review-v1",
+  "stage": "task-bc-stratified-error-sample-v1",
+  "created_utc": "2026-10-25T15:25:09.5916455Z",
+  "reviewer": "independent-subagent-audit-stratified-resume",
+  "review_kind": "static source and existing aggregate metadata only",
+  "passed": true,
+  "public_safe": true,
+  "baseline_head": "e417a4f3861f45000e92e67a08d77ab448dfed7c",
+  "registration_sha256": "2ea88375c8cf430b100922bd90907ba7670eade1259047fc597894ec88f34fb5",
+  "freeze_sha256": "300627f342c1db6ee623c6d116ee17f9af9931881a49d518843eb65a71ba267d",
+  "protection_sha256": "7af98b8e40f737fb57977f9b9b969391e8128a7fab4000a6cfd930fe2734884c",
+  "allowed_scope": "One locally preregistered bounded historical sampling and fixed-model diagnostic execution after the exact pre-review, registration, freeze and sources are committed. No retries, additional samples, training, games or policy calls.",
+  "actual_execution_acceptance": false,
+  "blocking_findings": [],
+  "checks": {
+    "runtime_source_hashes_checked": 121,
+    "public_source_hashes_checked": 121,
+    "unchanged_predecessor_runtime_sources": 112,
+    "normalized_line_ending_mappings_checked": 4,
+    "source_metadata_hashes_checked": 3,
+    "exact_game_identities_checked": 20,
+    "original_source_manifest_order_checked": true,
+    "source_metadata_rows": 45121,
+    "source_metadata_compressed_bytes": 121152135,
+    "source_selection": "Independently resolved old train/validation seed order, both seats and indexed opponent through original reconstruction metadata; compared exact identities, file hashes and original manifest order.",
+    "sparse_selection": "Metadata-only per-game phase/class minimum-hash selection; no prediction/reward/dedup ranking; preserve original physical row and sparse step/decision identities.",
+    "freeze_before_scoring": "All 20 collection receipts and exact sample manifest are bound before reference scoring; full selected train support is built before validation.",
+    "reporting": "Saved compact-only six marginals and phase/class cells; sample-relative support, local first-per-class disagreement witnesses, no reward-causal or population claim.",
+    "source_counter_failure_semantics": "Completed hash/inflate/candidate work is recorded before quota/deadline failure. Physical line counters are atomic; charged parse attempts and buffered bytes are distinguished.",
+    "failure_stop": "Failed work retains reservations and available source receipts; killed source work without a receipt is explicitly unknown. No retry or refund.",
+    "lifecycle": "Reuses unchanged accepted exit-capacity Windows executor; one worker and original deadlines. Successful results require a natural contained empty tree.",
+    "publication": "Only code, relative identities/hashes and aggregate results/reviews. No original inputs, compact rows, witnesses, support pickle, weights, process identities or raw logs."
+  },
+  "resolved_findings": [
+    {
+      "id": "sampler-numerical-readback-budget",
+      "status": "resolved in frozen source",
+      "evidence": "verify_sampling explicitly adds six readback JSON rows and twelve candidates. Its expected numerical total is 13/26; pipeline conservative decode-plus-evaluate total is 27/54, giving 40/80. Fixture construction and metadata are not presented as numerical consumption."
+    },
+    {
+      "id": "sampler-post-consumption-failure-counts",
+      "status": "resolved in frozen source",
+      "evidence": "sampling._Meter.record records all actual event fields before rejection. New in-memory cases cover expired deadline and observed candidate excess; no extra numerical fixtures."
+    },
+    {
+      "id": "synthetic-parent-deadline",
+      "status": "resolved in frozen source",
+      "evidence": "Both focused suites receive the same worker deadline; sampler clips its local sixty-second limit to it."
+    }
+  ],
+  "budgets": {
+    "sample_rows_max": 600,
+    "sample_train_rows_max": 480,
+    "sample_validation_rows_max": 120,
+    "sample_candidates_max": 60000,
+    "new_evaluations_max": 1200,
+    "new_evaluated_candidates_max": 120000,
+    "cumulative_evaluations_max": 4016,
+    "cumulative_evaluated_candidates_max": 282250,
+    "derived_numeric_decodes_max": 2160,
+    "derived_decoded_candidates_max": 240000,
+    "original_streams": 60,
+    "source_hash_passes_per_stream": 1,
+    "source_decompression_passes_per_stream": 1,
+    "selected_original_json_attempts_max": 600,
+    "selected_original_candidates_max": 145200,
+    "physical_source_rows": 135363,
+    "decompressed_source_bytes_max": 4294967296,
+    "stage_seconds_max": 900,
+    "worker_work_seconds_max": 120,
+    "cleanup_seconds_within_stage": 10,
+    "workers": 1,
+    "expected_jobs": 47,
+    "required_synthetic_cases": 12,
+    "synthetic_numeric_rows_max": 64,
+    "synthetic_numeric_candidates_max": 256,
+    "expected_synthetic_numeric_rows_from_static_trace": 40,
+    "expected_synthetic_numeric_candidates_from_static_trace": 80
+  },
+  "history_protection": {
+    "inherited_hashes_and_certificates_retained": true,
+    "current_whitelist_sources_metadata_and_predecessor_derived_hashes": "Stage prepare/verify checks these byte hashes; this review independently checked current source and metadata bindings, not model or historical raw bytes.",
+    "unselected_historical_large_data": "Before/after stat only; not a fresh byte-integrity claim.",
+    "selected_original_stream_hashes": "Deferred to the once-only charged collection jobs; not read by reviewer."
+  },
+  "reviewer_operations": {
+    "static_source_read": true,
+    "existing_aggregate_metadata_read": true,
+    "source_and_metadata_hash_check": true,
+    "original_gzip_reads": 0,
+    "selected_numeric_input_reads": 0,
+    "model_weight_reads": 0,
+    "synthetic_cases_executed": 0,
+    "numerical_scores": 0,
+    "training_runs": 0,
+    "policy_calls": 0,
+    "games": 0,
+    "official_transitions": 0,
+    "stage_started_at_review": false
+  },
+  "limits": [
+    "This is execution-before-result static approval, not proof that the new tests or real source sampling pass.",
+    "The selected data are known historical demonstrations, not an independent holdout or the full opponent-seat population.",
+    "Missing classes, duplicates or no clear errors can leave diagnosis inconclusive even when integrity passes.",
+    "Original full-diagnostics failure, capacity history and policy-admission failure remain unchanged.",
+    "Local registration and commit do not constitute an external prior timestamp."
+  ]
+}
