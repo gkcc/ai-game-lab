@@ -1,0 +1,60 @@
+{
+  "actual_receipt_close_seconds": 132.454000000027,
+  "correction_scope": "Append-only explanation of receipt bookkeeping defects; not a second semantic review or a changed original certificate.",
+  "created_utc": "2026-10-26T16:05:11.785474+00:00",
+  "defects": [
+    "Final writer overwrote _semantic_end with receipt-serialization time, losing the already recorded comparison checkpoint in that field.",
+    "completed_within_original_deadline combines two time gates; false is not evidence that the 180-second total elapsed.",
+    "The prescribed completion_passed field was omitted."
+  ],
+  "derived_timing": {
+    "comparisons_within_120": true,
+    "derivation": "The print-time sample lies inside the completed tool call; adding that whole call duration bounds its completion. This relies on the supplied original tool metadata and the attestation that later work contained no semantic comparisons.",
+    "exact_last_display_completion_unknown": true,
+    "last_material_display_bounded_within_120": true,
+    "total_close_within_180": true
+  },
+  "independent_correction_review_pending": true,
+  "later_work": "As attested from the original tool code: receipt assembly, status summarization, time gates, JSON/size validation, write/flush/close/hash and natural exit only; no further jeq, candidate/action/trajectory comparison or input read.",
+  "natural_exit": {
+    "exit_code": 0,
+    "source": "Original retained-session exit result reported by the independent reviewer; no process restart. Fresh root recovery found no matching live process."
+  },
+  "new_case_reads": 0,
+  "new_model_reads": 0,
+  "new_original_source_reads": 0,
+  "new_semantic_comparisons": 0,
+  "original_decision_bytes": 6470,
+  "original_decision_preserved": true,
+  "original_decision_sha256": "88a39471f27bab3206934022c4fa9207485a5e5dba2cd337356779585eeee07a",
+  "original_policy_admission": false,
+  "original_result_status": "inconclusive",
+  "original_v2_stage_acceptance": false,
+  "original_v2_strict_review_passed": false,
+  "publication_note": "Sanitized derivative. Original receipt and its status remain unchanged locally; exact removed fields and both hashes are listed in publication-receipt-map.json.",
+  "reported_hash_correction": {
+    "authoritative_file_sha256": "88a39471f27bab3206934022c4fa9207485a5e5dba2cd337356779585eeee07a",
+    "file_unchanged": true,
+    "prose_hash_has_65_characters": true,
+    "prose_reported_sha256": "88a39471f27baab3206934022c4fa9207485a5e5dba2cd337356779585eeee07a",
+    "scope": "One extra character in the agent prose hash; actual file identity is measured here, not inferred from prose."
+  },
+  "schema": "conditional-equivalence-witness-timing-clarification-v1",
+  "source": "Original tool-return excerpts supplied by the independent reviewer from existing conversation context. Root did not read a raw tool transcript. No input read, comparison or receipt rewrite during that clarification.",
+  "tool_observations": [
+    {
+      "all_three_observed": true,
+      "elapsed_seconds": 67.64100000000326,
+      "phase": "A/B/C comparisons completed",
+      "stop_reason": null
+    },
+    {
+      "complete_output_and_interpreter_prompt_returned": true,
+      "derived_completion_upper_bound_seconds": 92.00009760004424,
+      "elapsed_sample_before_print_arguments": 90.98500000004424,
+      "exact_display_completion_timestamp": null,
+      "phase": "Last in-memory contract and old-status display",
+      "tool_wall_seconds": 1.0150976
+    }
+  ]
+}

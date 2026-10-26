@@ -265,3 +265,12 @@
 公开副本省略本机monotonic时钟，原SHA及变换见映射；私有case、观测、动作、Replay、模型、日志及进程身份未发布。
 
 [报告](../kaggriculture/TASK_BC_TEACHER_LABEL_EQUIVALENCE_V2.zh-CN.md) | [登记、机器结果、失败复审与主裁决](evidence/task-bc-teacher-label-equivalence-v2-20261026/)
+
+
+## 条件等价实例核实：局部证据可用，原收据限制保留
+
+事前提交0e97af4，限定同一历史训练实例的已有获胜替代。独立代理单读五份输入89285字节，其中case64440字节；标签/首候选绑定、完整farmer/hands/有序market相等、两次WATER分配互换的条件轨迹均记录observed。没有重新运行教师、模型或官方引擎，也未搜索其他候选。累计人工case读取2次，原机器核对器1次另列。
+
+原decision仍为inconclusive：writer把比较完成时刻覆盖成落盘时刻，并漏completion_passed。更正说明依据原审查者摘录的工具返回：比较完成67.641秒、最后材料展示结束上界92.000098秒、关闭132.454秒。独立复核仅重算安全收据和时间边界，没有验证原工具日志或再次检查私有实例；认可有限语义证据，不认可严格登记完成。原收据、旧V2严格失败与模型准入失败均保留。旧默认Bot、冻结教师和模型未改，0训练/新赛/官方步/GPU。本例不能证明单标签BC有害、现象普遍或收益改善；关闭单实例诊断分支，下一任务另登记新证据。
+
+[报告](../kaggriculture/CONDITIONAL_EQUIVALENCE_WITNESS_DECISION_V1.zh-CN.md) | [登记、原结果脱敏副本、更正及独立复核](evidence/conditional-equivalence-witness-decision-v1-20261026/)

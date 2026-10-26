@@ -1,0 +1,82 @@
+{
+  "created_utc": "2026-10-26T16:11:32.349534+00:00",
+  "entries": [
+    {
+      "added_fields": [],
+      "local_receipt": "pre-execution-commit.json",
+      "original_bytes": 1029,
+      "original_sha256": "aadac556fcc7c9c7e9597097df99b00d8df1cb082a574685b0277a509e5a7857",
+      "public_bytes": 1029,
+      "public_receipt": "pre-execution-commit.json",
+      "public_sha256": "aadac556fcc7c9c7e9597097df99b00d8df1cb082a574685b0277a509e5a7857",
+      "removed_fields": [],
+      "reserialized": false
+    },
+    {
+      "added_fields": [
+        "publication_note"
+      ],
+      "local_receipt": "decision.json",
+      "original_bytes": 6470,
+      "original_sha256": "88a39471f27bab3206934022c4fa9207485a5e5dba2cd337356779585eeee07a",
+      "public_bytes": 8184,
+      "public_receipt": "decision-public.json",
+      "public_sha256": "701b62f3834986b0c62055d0e294cded1dc5b3881761b050d7199547d6e499ad",
+      "removed_fields": [
+        "started.monotonic_start",
+        "result.preserved_original_status.old_human_review_timing.started_monotonic",
+        "result.preserved_original_status.old_human_review_timing.deadline_monotonic"
+      ],
+      "reserialized": true
+    },
+    {
+      "added_fields": [
+        "publication_note"
+      ],
+      "local_receipt": "timing-clarification.json",
+      "original_bytes": 3410,
+      "original_sha256": "1c915f6b77910c66c227fe260fd612d54c2f19d286da153c04a27eb9eff77334",
+      "public_bytes": 3490,
+      "public_receipt": "timing-clarification-public.json",
+      "public_sha256": "048c87a763a06d6042894c3b0c21cc00badee8a995eb8fa46390fb5496b8961c",
+      "removed_fields": [
+        "tool_session_reference_local_only",
+        "tool_observations.0.tool_chunk",
+        "tool_observations.1.tool_chunk"
+      ],
+      "reserialized": true
+    },
+    {
+      "added_fields": [],
+      "local_receipt": "correction-review.json",
+      "original_bytes": 4823,
+      "original_sha256": "c765d4b3234a2d07198b3c93a39618e8ecd9a822f8a937961261ce7d98162adc",
+      "public_bytes": 4823,
+      "public_receipt": "correction-review.json",
+      "public_sha256": "c765d4b3234a2d07198b3c93a39618e8ecd9a822f8a937961261ce7d98162adc",
+      "removed_fields": [],
+      "reserialized": false
+    },
+    {
+      "added_fields": [],
+      "local_receipt": "root-closure.json",
+      "original_bytes": 2910,
+      "original_sha256": "af2c1deaa6dc4421bfbbf725c93c4da5985a10c45312490fdfdd8de39d795b7f",
+      "public_bytes": 2910,
+      "public_receipt": "root-closure.json",
+      "public_sha256": "af2c1deaa6dc4421bfbbf725c93c4da5985a10c45312490fdfdd8de39d795b7f",
+      "removed_fields": [],
+      "reserialized": false
+    }
+  ],
+  "excluded": [
+    "private case",
+    "original inputs/labels/index/Replay",
+    "models",
+    "native process identity",
+    "logs"
+  ],
+  "root_private_case_reads": 0,
+  "schema": "conditional-equivalence-witness-public-map-v1",
+  "status": "final_publication_with_qualified_correction_review"
+}

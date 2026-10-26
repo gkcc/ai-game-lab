@@ -1,0 +1,184 @@
+{
+  "publication_note": "Sanitized derivative. Original receipt and its status remain unchanged locally; exact removed fields and both hashes are listed in publication-receipt-map.json.",
+  "result": {
+    "activity": {
+      "children_spawned": 0,
+      "code_changes": 0,
+      "compressed_source_reads": 0,
+      "extra_cache_files_created": 0,
+      "label_changes": 0,
+      "loss_changes": 0,
+      "model_reads": 0,
+      "new_games": 0,
+      "new_result_files": 1,
+      "old_60_68_counters_recomputed": 0,
+      "old_checker_imports": 0,
+      "old_history_hashes_recomputed": 0,
+      "original_replay_reads": 0,
+      "other_trials_compared": 0,
+      "private_actions_coordinates_features_or_observations_printed": 0,
+      "project_imports": 0,
+      "remaining_candidates_searched": 0,
+      "simulation_calls": 0,
+      "teacher_calls": 0,
+      "temporary_files_created": 0,
+      "test_runs": 0,
+      "training_runs": 0,
+      "winning_trials_compared": 1
+    },
+    "bounded_interpretation": "One saved historical witness supports considering a separately registered research scope for conditional label equivalence. This does not establish benefit, prevalence, official legality, an independent holdout result, or permission to relabel, train or run new games. Source binding and execution provenance remain inherited from existing V2 records.",
+    "closure": {
+      "file_handle_closed_before_exit": true,
+      "natural_exit_confirmation": "Parent must use the retained process handle exit_code; not pre-certified in this file.",
+      "natural_exit_requested": 0
+    },
+    "comparison_method": "Independent standard-library recursive equality: exact Python JSON-decoded types, dictionary key sets, recursive values, exact ordered list lengths and entries. No project or prior checker imported.",
+    "criteria": {
+      "A": {
+        "checks": {
+          "baseline_first_choice_is_saved_label": true,
+          "first_callback_candidate_digest_same": true,
+          "first_callback_input_binding": true,
+          "saved_label_integer_ordinal_in_range": true,
+          "saved_ordinal_binds_unique_candidate_id": true,
+          "stored_original_adapter_full_action_equal": true,
+          "winning_first_choice_is_override": true,
+          "winning_override_different_and_unique_member": true
+        },
+        "scope": "Saved first-callback candidate membership and label ordinal binding, plus stored/original/adapter complete actions; candidate membership is not proof of full official legality.",
+        "status": "observed"
+      },
+      "B": {
+        "checks": {
+          "complete_typed_action_equal": true,
+          "farmer_typed_recursive_ordered_equal": true,
+          "full_action_has_exact_three_components": true,
+          "hands_typed_recursive_ordered_equal": true,
+          "market_typed_recursive_ordered_equal": true
+        },
+        "scope": "Only the existing designated winning witness at trial index 10, compared directly against baseline farmer, hands and ordered market with exact JSON value types and list order.",
+        "status": "observed"
+      },
+      "C": {
+        "checks": {
+          "callback_one_inputs_differ": true,
+          "callback_two_onward_inputs_and_choices_rejoin": true,
+          "complete_baseline_and_witness": true,
+          "distinct_fresh_task_encoding_records": true,
+          "first_two_assignments_are_water": true,
+          "first_two_assignments_swapped": true,
+          "input_clone_snapshots_unchanged": true,
+          "only_witness_first_callback_forced": true,
+          "ordered_zero_based_callback_indices": true,
+          "same_trace_length_with_two_initial_callbacks": true
+        },
+        "scope": "Existing recorded baseline and winning trajectories only; first two WATER assignments swap, callback 1 input hashes differ, callback 2 onward input hashes and recorded choices rejoin. Distinct increasing encoding sequence records support fresh recorded suffix encoding; no fresh execution or original-source provenance was re-proved.",
+        "status": "observed"
+      }
+    },
+    "observation_status": "unknown",
+    "preserved_original_status": {
+      "new_experiment_acceptance_granted": false,
+      "old_human_review_timing": {
+        "completed_within_original_deadline": false,
+        "deadline_reset": false,
+        "elapsed_seconds": 375.26600000000326,
+        "ended_utc": "2026-10-26T13:23:44.091607+00:00",
+        "limit_seconds": 300,
+        "review_completion_not_backdated": true,
+        "started_utc": "2026-10-26T13:17:28.832678+00:00"
+      },
+      "original_equivalence_execution_passed": false,
+      "original_failure_not_overridden": true,
+      "stage_acceptance": false,
+      "strict_review": false,
+      "strict_review_passed": false
+    },
+    "read_accounting": {
+      "cumulative_human_case_reads": 2,
+      "files": [
+        {
+          "bytes": 7167,
+          "expected_match": true,
+          "name": "task",
+          "path": "kaggriculture/TASK_BC_TEACHER_LABEL_EQUIVALENCE_V2.zh-CN.md",
+          "read_count": 1,
+          "sha256": "8c2341e356119d77d72877b3bda9afed78044fad762fe630db3fc2c585733cb3"
+        },
+        {
+          "bytes": 6711,
+          "expected_match": true,
+          "name": "contract",
+          "path": "kaggriculture/learning/task_bc_teacher_label_equivalence_v2/CONTRACT.md",
+          "read_count": 1,
+          "sha256": "e6332eec2712b1d74e9c912c795261466a47a1f5732032603da19bb63b015ec2"
+        },
+        {
+          "bytes": 2067,
+          "expected_match": true,
+          "name": "adjudication",
+          "path": "kaggriculture/artifacts/task-bc-teacher-label-equivalence-v2-20261026/root-adjudication.json",
+          "read_count": 1,
+          "sha256": "67a1ba2590774a452ee4efcf6438301e0e813f4eb3a85d6a942928ff1c000c48"
+        },
+        {
+          "bytes": 8900,
+          "expected_match": true,
+          "name": "review",
+          "path": "kaggriculture/artifacts/task-bc-teacher-label-equivalence-v2-20261026/independent-result-review.json",
+          "read_count": 1,
+          "sha256": "af3076833e0a9e2aa1d3895c20b61e56fd8caceae96c62249145bdc14bbca635"
+        },
+        {
+          "bytes": 64440,
+          "expected_match": true,
+          "name": "case",
+          "path": "kaggriculture/artifacts/task-bc-teacher-label-equivalence-v2-20261026/case.json",
+          "read_count": 1,
+          "sha256": "3dc5625e0a6029e1f299da7da5548e00c6ec453aa7544b0cce99b7b394543822"
+        }
+      ],
+      "input_open_count": 5,
+      "original_machine_checker_case_reads_separate": 1,
+      "other_input_reads": 0,
+      "prior_human_case_reads": 1,
+      "private_case_bytes": 64440,
+      "private_case_reads_this_task": 1,
+      "total_input_bytes": 89285
+    },
+    "registration_reference": {
+      "commit_supplied_by_parent": "0e97af4c0c331c21ce60dfed5dcd97e877a41326",
+      "git_blob_verification": "inherited_parent_attestation",
+      "registration_read_in_this_task": false,
+      "sha256_supplied_by_parent": "ebe2fbb7d805f9fa1539e8cbd051d57d100c2ff55e43ceac82b33efa50c0591c"
+    },
+    "research_value_decision": "inconclusive",
+    "reviewer": {
+      "implemented_original_experiment": false,
+      "kind": "independent_subagent",
+      "webchat": false
+    },
+    "schema": "conditional-equivalence-witness-decision-v1",
+    "stop_reason": null,
+    "timing": {
+      "completed_at": "2026-10-26T13:42:30.979240+00:00",
+      "completed_within_original_deadline": false,
+      "deadline_reset": false,
+      "elapsed_seconds": 132.454000000027,
+      "original_deadline_at": "2026-10-26T13:43:18.536226+00:00",
+      "retry_count": 0,
+      "semantic_completed_at": "2026-10-26T13:42:30.979240+00:00",
+      "semantic_elapsed_seconds": 132.454000000027,
+      "semantic_limit_seconds": 120,
+      "start_persisted_before_input_reads": true,
+      "wall_limit_seconds": 180
+    }
+  },
+  "started": {
+    "deadline_at": "2026-10-26T13:43:18.536226+00:00",
+    "semantic_deadline_at": "2026-10-26T13:42:18.536226+00:00",
+    "semantic_limit_seconds": 120,
+    "started_at": "2026-10-26T13:40:18.536226+00:00",
+    "wall_clock_limit_seconds": 180
+  }
+}
