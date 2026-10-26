@@ -1,0 +1,187 @@
+{
+  "experiment": "task-reward-gate-v1",
+  "created_utc": "2026-10-26T16:57:58.285514+00:00",
+  "baseline_head": "862b632681a8428f695c849d36a09fec7bcb6098",
+  "runtime_versions": {
+    "python": "3.12.2",
+    "numpy": "2.5.4",
+    "kaggle_environments": "1.33.0"
+  },
+  "explicit_seed_config": {
+    "train_seeds": [
+      355793896,
+      3766401297,
+      1548293009,
+      3735487071,
+      1048308863,
+      1637505918,
+      622662681,
+      1335785613
+    ],
+    "validation_seeds": [
+      587813249,
+      158595096
+    ],
+    "test_seeds": [
+      2601715517,
+      2583801394,
+      1286601462,
+      927763418,
+      1208059340,
+      3106718355,
+      3065336467,
+      4195719149
+    ],
+    "generation": {
+      "rng": "Python Random.sample",
+      "seed": 2026102701,
+      "draws": 1,
+      "population": "uint32",
+      "count": 18
+    }
+  },
+  "train_seeds": [
+    355793896,
+    3766401297,
+    1548293009,
+    3735487071,
+    1048308863,
+    1637505918,
+    622662681,
+    1335785613
+  ],
+  "validation_seeds": [
+    587813249,
+    158595096
+  ],
+  "test_seeds": [
+    2601715517,
+    2583801394,
+    1286601462,
+    927763418,
+    1208059340,
+    3106718355,
+    3065336467,
+    4195719149
+  ],
+  "seed_novelty": {
+    "passed": true,
+    "public_text_files": 1076,
+    "local_evidence_files": 2532,
+    "scanned_manifest_sha256": "63789c1d92fcd8a49426e99081e1073d7b6b988f0c28a272c85032e3a5661df8",
+    "scope": "Current tracked public text plus local JSON filenames containing registration/manifest/ledger/config/result/summary/seed",
+    "limitation": "Conservative decimal occurrences; no claim about deleted Git history, raw replay-only seeds, other machines or external experiments",
+    "failed_attempt_files": 174,
+    "failed_attempt_manifest_sha256": "f2bcc61ab58168b342f71ca5994301b5677e2d93b3dbe1f96b9a6ae4d9b2fa6e"
+  },
+  "opponents": [
+    "round2",
+    "market"
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "windows": [
+    [
+      80,
+      119
+    ],
+    [
+      260,
+      299
+    ],
+    [
+      440,
+      479
+    ]
+  ],
+  "window_assignment": "(seed_index+opponent_index+seat)%3",
+  "task_checkpoint": "artifacts/task-bc-holdout-v1-20261023/model/trained.npz",
+  "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+  "crop_checkpoint": "artifacts/bc-epoch6-holdout-v1-20261023/panels/fixed_epoch6/model/trained.npz",
+  "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+  "source_sha256": {
+    "round2.py": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "market.py": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b"
+  },
+  "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "official_loader_sha256": "0ac7baf1212b4ce1eabae3cc1cbb55c98effef5e0d0485522a8be87097c39a4f",
+  "max_workers": 2,
+  "per_job_timeout_seconds": 900,
+  "campaign_seconds": 5400,
+  "max_games": 144,
+  "live_transition_limit": 103536,
+  "primary_reexecution_limit": 103536,
+  "independent_reexecution_limit": 2876,
+  "total_official_transition_limit": 209948,
+  "independent_reexecution_selection": "first two train cells, baseline and intervention if present; at most four games; no outcome selection",
+  "policy_turn_budget": 416000,
+  "task_forward_budget": 1200000,
+  "crop_forward_budget": 1200000,
+  "neural_input_row_budget": 42000000,
+  "gate_evaluation_budget": 2000,
+  "game_limits": {
+    "task_forwards": 4000,
+    "crop_forwards": 4000,
+    "neural_input_rows": 140000,
+    "max_task_forwards_per_turn": 32,
+    "max_crop_forwards_per_turn": 32,
+    "max_neural_input_rows_per_turn": 2000,
+    "gate_evaluations": 3
+  },
+  "shadow_limits": {
+    "task_forwards": 32,
+    "crop_forwards": 32,
+    "neural_input_rows": 2000
+  },
+  "training": {
+    "max_pairs": 32,
+    "minimum_eligible": 24,
+    "minimum_nonzero": 12,
+    "minimum_positive": 4,
+    "minimum_negative": 4,
+    "minimum_nonzero_seeds": 6,
+    "fits": 1,
+    "parameters": 13,
+    "objective": "mean squared target error + 1.0*sum(nonintercept weights squared)",
+    "target": "(intervention own terminal cash - baseline own terminal cash)/1000",
+    "continuous_normalization": "train only mean/std with scale floor1; other ten onehot columns unchanged",
+    "seconds": 60,
+    "zero_negative_and_same_action_pairs_retained": true
+  },
+  "development": {
+    "max_pairs": 8,
+    "minimum_eligible": 6,
+    "minimum_nonzero": 4,
+    "minimum_nonzero_seeds": 2,
+    "minimum_positive_choices": 2,
+    "mean_realized_uplift_gt": 0,
+    "each_seed_mean_at_least": 0,
+    "tuning": false
+  },
+  "bootstrap": {
+    "replicates": 20000,
+    "seed": 2026102702,
+    "quantile_method": "linear"
+  },
+  "holdout": {
+    "max_pairs": 32,
+    "relative_ci_lower_gt": 0,
+    "opponent_relative_mean_min": -0.02,
+    "opponent_score_delta_min": -0.05,
+    "minimum_changed_request_games": 4
+  },
+  "baseline": "frozen task+crop student; prior independent panel failed retention; not teacher_task",
+  "continuation": "one top2 intervention then same frozen student including same-turn suffix; holdout up to3 consumed opportunities",
+  "candidate_scope": "existing frozen teacher economic opportunities, not complete official legal action space",
+  "train_or_dev_missing": "retain cell with eligible=false; no alternative B game, replacement, extra window or seed",
+  "stop": "Any source/entry/audit/counter/timeout failure stops dispatch. No retries or replacement. Train signal or dev gate failure stops before later stages.",
+  "accounting": "Live, primary reproduction, same-state shadow, original student parity and independent official-only replay counted separately; crop row means one input vector, not five output logits.",
+  "neural_weight_updates": 0,
+  "gpu_operations": 0,
+  "default_changed": false,
+  "teacher_admission": false,
+  "interpretation": "Restricted reward selector research on two known opponents; local preregistration is not a third-party timestamp; no teacher superiority claim."
+}

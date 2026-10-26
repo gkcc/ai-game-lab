@@ -1,0 +1,12 @@
+{
+  "stage": "pre-execution",
+  "kind": "missing_source_path",
+  "requested_relative": "official_worker.py",
+  "actual_relative": "learning/official_worker.py",
+  "seed_config_sha256": "2d6f3644c8f85321d832006470b0492bea98bb9d96529d9f1a44f9c364fa7ddf",
+  "registration_sha256": "7af5a9fb72b083fd1f46b4c74d3abc25314f32d28c3f1472f30bbf9ce42f1569",
+  "seed_redraws": 0,
+  "new_games": 0,
+  "neural_forwards": 0,
+  "correction": "Separate finish-freeze function preserves seed and registration bytes; no game retry"
+}

@@ -1,0 +1,29 @@
+{
+  "previous": {
+    "freeze.json": "b4c51c3b71ed1ba3b21220719c8491e8f6e5f52d922918ef7ed49f6b778d3a12",
+    "protection-before.json": "937640a4364af9978876477af2512a4937300cfc4e92c2fcdcdb7552ce61cbb7",
+    "pre-review.json": "66efed575e45fc6e3ad05799dd50f499271d9ee44cbad48572e9eafd08f7dc87"
+  },
+  "current_freeze_sha256": "e7715790dcdf2eb55581294ee8803866b3fc4ea78da6bab7f9d9d885c818139c",
+  "line_endings_only_mappings": {
+    "decision/execution.py": {
+      "runtime_sha256": "cbf38b17ca9c4c1c4f82ddb583ff59e4f605a0e8d8e971ef5bfc3664b2c76378",
+      "published_sha256": "e1b8acb32ef0b31c0de3048d481d84babf3b07510d18a9d3b2fd3da471d8f239"
+    },
+    "decision/full_audit.py": {
+      "runtime_sha256": "84f7c7b4316fb98791c51b933f5329a271b8bc9aec60eebe133f6d433ec4510d",
+      "published_sha256": "0ae434974ac8fced76033c26b9c27f6ffce24e1f598f6fba6c7dc11306d903a8"
+    },
+    "decision/verify_audit.py": {
+      "runtime_sha256": "fd6bfc1c6c066c5ec8ff3daa1a97a52caced41991be631084bfdd90763b4be4e",
+      "published_sha256": "3afc9b0a2bb04114d8bed42d6568809b87677dc39c0bd783a1b1898e3a693c3e"
+    },
+    "learning/round2_worker.py": {
+      "runtime_sha256": "a80158b26d1f4ae3d366c1d1276a1ca63e652bcd350f5ca25545b0f5f33759f1",
+      "published_sha256": "ff823541f43ec2a0671aefbb2a3803daf6d3b882cebed4534eb2bdbb5efb35a1"
+    }
+  },
+  "new_games": 0,
+  "seed_redraws": 0,
+  "registration_unchanged": true
+}

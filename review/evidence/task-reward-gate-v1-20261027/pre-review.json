@@ -1,0 +1,119 @@
+{
+  "schema": "task-reward-gate-pre-review-v2",
+  "passed": true,
+  "reviewer_role": "independent subagent; not an implementation author or WebChat",
+  "scope": "Pre-execution source review, focused synthetic regressions and frozen source identity checks only",
+  "registration_sha256": "7af5a9fb72b083fd1f46b4c74d3abc25314f32d28c3f1472f30bbf9ce42f1569",
+  "freeze_sha256": "e7715790dcdf2eb55581294ee8803866b3fc4ea78da6bab7f9d9d885c818139c",
+  "frozen_source_files_verified": 97,
+  "new_source_sha256": {
+    "learning/task_reward_gate_v1/campaign.py": "2c78d397efd5c0099a3dea3f05955b4257367ee3c22d2ca469165ed70ec1e021",
+    "learning/task_reward_gate_v1/experiment.py": "2bba6b633dcab4f0b324e0f27a504c971c959a991034773103263c58df06507a",
+    "learning/task_reward_gate_v1/games.py": "deec369ce4c16791d29317a467bb1bd166b9a8770edd264f922010d801c4b7a9",
+    "learning/task_reward_gate_v1/policy.py": "5a00f2ac7adeeb9b34234320ee496c2d667fe282b7c4e5080e964bad51dd005c",
+    "learning/task_reward_gate_v1/README.zh-CN.md": "485a013955e52921884cf839db54cadee53c06bd458e98b3bc6fbbb7f7312b37",
+    "learning/task_reward_gate_v1/statistics.py": "482f00bc8a5e7f6d4ca8c4489f80f375697182d7936f53d79ee6d07dd5a363f4",
+    "learning/task_reward_gate_v1/test_campaign.py": "9696bb60e83bc06c66dd9005311ae64777e9d1927ccf51af4a4301bf3dd906da",
+    "learning/task_reward_gate_v1/test_policy.py": "e9316e59c944c0232b09196a589ab942c5bcc17dfb8aceeb098b0d16fb38ca5b",
+    "learning/task_reward_gate_v1/test_statistics.py": "e3f29fc82a7a64a527e0195e83f5e66a223dba2dcc3d771ea6ed970f82060ab2",
+    "learning/task_reward_gate_v1/__init__.py": "ab997b1e38b77e48e3e5999257fdfc60d53b0da97aa404cc36f1b8da08f61e32"
+  },
+  "tests": {
+    "command": "python -B -m unittest learning.task_reward_gate_v1.test_policy learning.task_reward_gate_v1.test_statistics learning.task_reward_gate_v1.test_campaign",
+    "count": 29,
+    "passed": 29,
+    "failed": 0
+  },
+  "findings": [
+    {
+      "id": "learned-gate-identity",
+      "severity": "pre-execution blocker",
+      "status": "fixed before freeze",
+      "counterexample": "Replacing gate-model.json after fit/development but before dispatch formerly caused each new job to accept the replacement SHA as its own reference.",
+      "resolution": "Exclusive gate-model-freeze binds fitted weights and training-pair bytes. gate_identity verifies the binding before dispatch and after audit; generated deployment, primary audit and fresh reload load the expected SHA. Fit and development receipts bind the same gate. Two regressions reject a replaced valid model or changed fitted identity."
+    },
+    {
+      "id": "fit-timing-scope",
+      "severity": "reporting defect",
+      "status": "fixed before freeze",
+      "counterexample": "fit_seconds previously included export and fresh-process reload although the fit deadline applied only to the solve interval.",
+      "resolution": "fit_seconds is captured immediately after fitting; export_and_reload_seconds is a separate value."
+    },
+    {
+      "id": "historical-published-line-endings",
+      "severity": "pre-execution readiness blocker",
+      "status": "fixed before first game",
+      "counterexample": "Exact Git bytes differed from runtime bytes in four historical files solely because of CRLF/LF conversion, so the previous ready() gate would reject the unchanged code.",
+      "resolution": "freeze records exact runtime and published SHA256 identities separately. ready() verifies the pinned Git bytes and accepts only exact equality after CRLF-to-LF normalization. Content edits and added lines are rejected. Four actual historical Git blobs were checked against runtime bytes and unchanged public worktree bytes."
+    }
+  ],
+  "checked_contracts": [
+    "Existing validated float64 scorer called once per task callback; canonical input-order score ties match the original first argmax.",
+    "Only callback zero of the first eligible turn consumes an assigned window; same-turn suffix and later decisions return to the frozen student. Step-zero episode reset prevents cross-game window reuse.",
+    "Gate features use visible time, score gap and two operation identities. Offline targets, Replay seeds and opponent private state do not enter the selector.",
+    "One-shot pairs compare canonical initial/prefix states and actual complete requests. An unchanged intervention request requires the entire later trajectory to match.",
+    "All eligible zero and negative targets are retained; missing opportunities are retained as missing population cells with no replacement intervention game.",
+    "One CPU ridge fit after training signal gates, development pass/fail without tuning, and at most one restricted repeated-use holdout candidate.",
+    "Holdout analysis validates the full 64-game panel, resamples all opponents and seats in each of eight complete seed clusters, and recomputes both relative numerator and positive reference denominator.",
+    "Live, primary audit, same-state shadow, two original-student parity episodes and at most four independent official-only replay checks fit the declared separate and aggregate budgets.",
+    "Registered official run_match filename entry and existing ordered official reexecution are reused. Worker failure stops new dispatch and owned child processes are killed/reaped in finally."
+  ],
+  "execution_boundary": {
+    "actual_filename_entry_proven_in_this_review": false,
+    "actual_frozen_network_full_game_parity_proven_in_this_review": false,
+    "required_runtime_check": "First registered train baseline games include full original JointAgent action parity; every game requires actual filename execution and official ordered replay. Any failure stops the campaign without retry.",
+    "no_permission_to_skip_runtime_acceptance": true
+  },
+  "review_resources": {
+    "official_games": 0,
+    "official_steps": 0,
+    "real_neural_checkpoint_reads": 0,
+    "real_neural_forwards": 0,
+    "raw_replay_reads": 0,
+    "candidate_training_runs": 0,
+    "gpu_operations": 0
+  },
+  "limitations": [
+    "Synthetic regression models and arrays are test fixtures, not training data or a learned research candidate.",
+    "Source and registration inspection does not establish realized profit, model admission, teacher parity or empirical compute throughput.",
+    "Existing teacher economic opportunities remain a restricted candidate set; this gate does not model the full official legal action space.",
+    "Local preregistration is not a third-party prior timestamp. No prior failed research or audit verdict is overridden.",
+    "Publication privacy approval and final runtime/data review remain separate gates."
+  ],
+  "previous_review": {
+    "path": "pre-publication-v1/pre-review.json",
+    "sha256": "66efed575e45fc6e3ad05799dd50f499271d9ee44cbad48572e9eafd08f7dc87",
+    "preserved_bytes": 5996
+  },
+  "targeted_followup": {
+    "freeze_revision_sha256": "a2a97f4dfbe87ceed6840b5811bd75c28968860cb6f51c8242543f5d0c705748",
+    "previous_freeze_sha256": "b4c51c3b71ed1ba3b21220719c8491e8f6e5f52d922918ef7ed49f6b778d3a12",
+    "previous_protection_sha256": "937640a4364af9978876477af2512a4937300cfc4e92c2fcdcdb7552ce61cbb7",
+    "registration_and_seeds_unchanged": true,
+    "old_review_and_freeze_bytes_preserved": true,
+    "changed_new_sources": [
+      "learning/task_reward_gate_v1/experiment.py",
+      "learning/task_reward_gate_v1/test_campaign.py"
+    ],
+    "line_endings_only_mappings": {
+      "decision/execution.py": {
+        "runtime_sha256": "cbf38b17ca9c4c1c4f82ddb583ff59e4f605a0e8d8e971ef5bfc3664b2c76378",
+        "published_sha256": "e1b8acb32ef0b31c0de3048d481d84babf3b07510d18a9d3b2fd3da471d8f239"
+      },
+      "decision/full_audit.py": {
+        "runtime_sha256": "84f7c7b4316fb98791c51b933f5329a271b8bc9aec60eebe133f6d433ec4510d",
+        "published_sha256": "0ae434974ac8fced76033c26b9c27f6ffce24e1f598f6fba6c7dc11306d903a8"
+      },
+      "decision/verify_audit.py": {
+        "runtime_sha256": "fd6bfc1c6c066c5ec8ff3daa1a97a52caced41991be631084bfdd90763b4be4e",
+        "published_sha256": "3afc9b0a2bb04114d8bed42d6568809b87677dc39c0bd783a1b1898e3a693c3e"
+      },
+      "learning/round2_worker.py": {
+        "runtime_sha256": "a80158b26d1f4ae3d366c1d1276a1ca63e652bcd350f5ca25545b0f5f33759f1",
+        "published_sha256": "ff823541f43ec2a0671aefbb2a3803daf6d3b882cebed4534eb2bdbb5efb35a1"
+      }
+    },
+    "all_other_frozen_source_identities_unchanged": true,
+    "review_scope": "Only source-publication mapping, regression and updated identity bindings; no reopened scientific or historical replay audit"
+  }
+}

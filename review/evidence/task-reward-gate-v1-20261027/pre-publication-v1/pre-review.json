@@ -1,0 +1,77 @@
+{
+  "schema": "task-reward-gate-pre-review-v1",
+  "passed": true,
+  "reviewer_role": "independent subagent; not an implementation author or WebChat",
+  "scope": "Pre-execution source review, focused synthetic regressions and frozen source identity checks only",
+  "registration_sha256": "7af5a9fb72b083fd1f46b4c74d3abc25314f32d28c3f1472f30bbf9ce42f1569",
+  "freeze_sha256": "b4c51c3b71ed1ba3b21220719c8491e8f6e5f52d922918ef7ed49f6b778d3a12",
+  "frozen_source_files_verified": 97,
+  "new_source_sha256": {
+    "learning/task_reward_gate_v1/campaign.py": "2c78d397efd5c0099a3dea3f05955b4257367ee3c22d2ca469165ed70ec1e021",
+    "learning/task_reward_gate_v1/experiment.py": "ff13caacdb90937f6e31339bdb6c18f2a1d41eaeacc9710e4ed0372b456f42c3",
+    "learning/task_reward_gate_v1/games.py": "deec369ce4c16791d29317a467bb1bd166b9a8770edd264f922010d801c4b7a9",
+    "learning/task_reward_gate_v1/policy.py": "5a00f2ac7adeeb9b34234320ee496c2d667fe282b7c4e5080e964bad51dd005c",
+    "learning/task_reward_gate_v1/README.zh-CN.md": "485a013955e52921884cf839db54cadee53c06bd458e98b3bc6fbbb7f7312b37",
+    "learning/task_reward_gate_v1/statistics.py": "482f00bc8a5e7f6d4ca8c4489f80f375697182d7936f53d79ee6d07dd5a363f4",
+    "learning/task_reward_gate_v1/test_campaign.py": "15b8f7b43f76bfa7af10f157e7e4c9657d43a6ee4caf5e8f8a413396a844eee0",
+    "learning/task_reward_gate_v1/test_policy.py": "e9316e59c944c0232b09196a589ab942c5bcc17dfb8aceeb098b0d16fb38ca5b",
+    "learning/task_reward_gate_v1/test_statistics.py": "e3f29fc82a7a64a527e0195e83f5e66a223dba2dcc3d771ea6ed970f82060ab2",
+    "learning/task_reward_gate_v1/__init__.py": "ab997b1e38b77e48e3e5999257fdfc60d53b0da97aa404cc36f1b8da08f61e32"
+  },
+  "tests": {
+    "command": "python -B -m unittest learning.task_reward_gate_v1.test_policy learning.task_reward_gate_v1.test_statistics learning.task_reward_gate_v1.test_campaign",
+    "count": 28,
+    "passed": 28,
+    "failed": 0,
+    "reported_test_seconds": 0.087
+  },
+  "findings": [
+    {
+      "id": "learned-gate-identity",
+      "severity": "pre-execution blocker",
+      "status": "fixed before freeze",
+      "counterexample": "Replacing gate-model.json after fit/development but before dispatch formerly caused each new job to accept the replacement SHA as its own reference.",
+      "resolution": "Exclusive gate-model-freeze binds fitted weights and training-pair bytes. gate_identity verifies the binding before dispatch and after audit; generated deployment, primary audit and fresh reload load the expected SHA. Fit and development receipts bind the same gate. Two regressions reject a replaced valid model or changed fitted identity."
+    },
+    {
+      "id": "fit-timing-scope",
+      "severity": "reporting defect",
+      "status": "fixed before freeze",
+      "counterexample": "fit_seconds previously included export and fresh-process reload although the fit deadline applied only to the solve interval.",
+      "resolution": "fit_seconds is captured immediately after fitting; export_and_reload_seconds is a separate value."
+    }
+  ],
+  "checked_contracts": [
+    "Existing validated float64 scorer called once per task callback; canonical input-order score ties match the original first argmax.",
+    "Only callback zero of the first eligible turn consumes an assigned window; same-turn suffix and later decisions return to the frozen student. Step-zero episode reset prevents cross-game window reuse.",
+    "Gate features use visible time, score gap and two operation identities. Offline targets, Replay seeds and opponent private state do not enter the selector.",
+    "One-shot pairs compare canonical initial/prefix states and actual complete requests. An unchanged intervention request requires the entire later trajectory to match.",
+    "All eligible zero and negative targets are retained; missing opportunities are retained as missing population cells with no replacement intervention game.",
+    "One CPU ridge fit after training signal gates, development pass/fail without tuning, and at most one restricted repeated-use holdout candidate.",
+    "Holdout analysis validates the full 64-game panel, resamples all opponents and seats in each of eight complete seed clusters, and recomputes both relative numerator and positive reference denominator.",
+    "Live, primary audit, same-state shadow, two original-student parity episodes and at most four independent official-only replay checks fit the declared separate and aggregate budgets.",
+    "Registered official run_match filename entry and existing ordered official reexecution are reused. Worker failure stops new dispatch and owned child processes are killed/reaped in finally."
+  ],
+  "execution_boundary": {
+    "actual_filename_entry_proven_in_this_review": false,
+    "actual_frozen_network_full_game_parity_proven_in_this_review": false,
+    "required_runtime_check": "First registered train baseline games include full original JointAgent action parity; every game requires actual filename execution and official ordered replay. Any failure stops the campaign without retry.",
+    "no_permission_to_skip_runtime_acceptance": true
+  },
+  "review_resources": {
+    "official_games": 0,
+    "official_steps": 0,
+    "real_neural_checkpoint_reads": 0,
+    "real_neural_forwards": 0,
+    "raw_replay_reads": 0,
+    "candidate_training_runs": 0,
+    "gpu_operations": 0
+  },
+  "limitations": [
+    "Synthetic regression models and arrays are test fixtures, not training data or a learned research candidate.",
+    "Source and registration inspection does not establish realized profit, model admission, teacher parity or empirical compute throughput.",
+    "Existing teacher economic opportunities remain a restricted candidate set; this gate does not model the full official legal action space.",
+    "Local preregistration is not a third-party prior timestamp. No prior failed research or audit verdict is overridden.",
+    "Publication privacy approval and final runtime/data review remain separate gates."
+  ]
+}
