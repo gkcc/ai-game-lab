@@ -1,0 +1,239 @@
+{
+  "schema": "teacher-label-equivalence-v2-static-pre-review-v1",
+  "stage": "task-bc-teacher-label-equivalence-v2-20261026",
+  "reviewer": "/root/unit_request_auditor",
+  "passed": true,
+  "status": "static_pre_review_passed_execution_not_started",
+  "execution_passed": null,
+  "freeze_sha256": "946f79ff18d261500d44e278b4e4aac6fc2981c950ccca848c925032e49d828c",
+  "registration_sha256": "0728722d0c2e747287835f91e91cd4f970bdf5bf2e0c5178ebe632e6940d73e5",
+  "baseline_commit": "1bd2ca626400a597dafb4df342c8f84689af328f",
+  "review_scope": "Previously reviewed V2 wiring plus the narrow pre-freeze prepare correction; this final pass verified exact frozen source/configuration/public-copy bindings only.",
+  "final_binding_pass_started_utc": "2026-10-26T13:09:45.430691+00:00",
+  "final_binding_pass_ended_utc": "2026-10-26T13:09:45.485071+00:00",
+  "bindings": {
+    "prior_freeze_sha256": "dd3e2c9f0f2e2244fdd3f7f8b3d7acee5612124d23624eacfb9ca2d6a768dc03",
+    "runtime_sources_verified": 163,
+    "public_sources_verified": 163,
+    "old_runtime_source_bytes_preserved": 158,
+    "new_reviewed_files": {
+      "learning/task_bc_teacher_label_equivalence_v2/check.py": "9b638d1d3e694aa1dd1f9839f4710fdf6885c05ed3604a24301a5f5db23e3d7a",
+      "learning/task_bc_teacher_label_equivalence_v2/CONTRACT.md": "e6332eec2712b1d74e9c912c795261466a47a1f5732032603da19bb63b015ec2",
+      "learning/task_bc_teacher_label_equivalence_v2/experiment.py": "d552706235718c02be14746347c327812341eb4c02c1aa4405c12c47da5bd154",
+      "learning/task_bc_teacher_label_equivalence_v2/probe.py": "cf3508e3af8b3512c10e922b7c8c8e42319fb8d22051c7bacf5b569b8b2dc42d",
+      "learning/task_bc_teacher_label_equivalence_v2/__init__.py": "484a3ce39560d92206c2d1fcba95a3650ed31db64033fde181b4e7919faaecbb"
+    },
+    "inherited_public_crlf_lf_mappings_verified": 4,
+    "inherited_public_override_map_unchanged": true,
+    "public_control_metadata_exact_copies": [
+      {
+        "name": "registration.json",
+        "bytes": 30865,
+        "sha256": "0728722d0c2e747287835f91e91cd4f970bdf5bf2e0c5178ebe632e6940d73e5"
+      },
+      {
+        "name": "freeze.json",
+        "bytes": 20470,
+        "sha256": "946f79ff18d261500d44e278b4e4aac6fc2981c950ccca848c925032e49d828c"
+      },
+      {
+        "name": "follow-on-integration-advice.json",
+        "bytes": 13091,
+        "sha256": "b7771c18ec3090b7f1a940fa5878adf7af2c443097af1fc693ece3bed935e8df"
+      },
+      {
+        "name": "root-follow-on-integration-decision.json",
+        "bytes": 11571,
+        "sha256": "21261295d9ca6599274954a5d85b3759b687fce2cdd9f950ec91f48bdc7097b8"
+      },
+      {
+        "name": "public-before.json",
+        "bytes": 86,
+        "sha256": "f0aec550001ab64e7dc98a1557f461601baf1ccdf72b3db73ae05bac5703661a"
+      }
+    ],
+    "same_registration_bound_by_freeze": true,
+    "pinned_plan_configuration_equal": true,
+    "execution_markers_absent": {
+      "started.json": false,
+      "pre-execution-commit.json": false,
+      "primary-receipt.json": false,
+      "execution-acceptance.json": false,
+      "pre-review.json": false
+    }
+  },
+  "preparation_issue_resolved": {
+    "initial_reviewed_parent_sha256": "d5da17d1e72475887f3193a91401c6e63388a20a1774d2621a69b860dffe95f8",
+    "final_reviewed_parent_sha256": "d552706235718c02be14746347c327812341eb4c02c1aa4405c12c47da5bd154",
+    "issue": "The initial prepare gate required a nonexistent OUT although the authorized OUT already held only the two pinned planning copies.",
+    "fix_before_first_freeze": true,
+    "evidence": [
+      "experiment.py:86-95 accepts an absent OUT or a directory containing exactly the two named regular non-symlink planning files with pinned SHA256 values; any other artifact rejects preparation.",
+      "experiment.py:57-67 validates source and destination planning hashes, preserves exact existing copies, and exclusively creates absent copies.",
+      "The unique execution marker and exclusive registration/freeze/run gates were not relaxed."
+    ],
+    "resolved": true
+  },
+  "protocol_contract": {
+    "configuration": {
+      "source_protocol_cases": 3,
+      "probe_protocol_cases": 4,
+      "synthetic_candidates_on_success": 6,
+      "synthetic_raw_bytes_max": 131072,
+      "synthetic_returned_payload_bytes_max": 1024,
+      "synthetic_json_decodes": 2
+    },
+    "real_source_synthetic_accounting_separate": true,
+    "source_protocol_actual_scenarios": 3,
+    "unchanged_probe_protocol_cases": 4,
+    "required_total_cases": 7,
+    "synthetic_candidates_on_success": 6,
+    "source_access_after_protocol_gate": true,
+    "evidence": [
+      "probe.py:189-239 calls repaired protocol_checks(deadline, caller-owned ledger) once and the unchanged four-case helper once; only after both result and budget gates does it call source.read_case.",
+      "The source ledger is attached before the call. Its partial counters survive exceptions; failed old four-case progress is explicitly unknown rather than prefilled as four cases or zero consumption.",
+      "The producer receipt gate rechecks the new source ledger without running a second fixture. check.py:33-228 independently reconstructs per-case and aggregate synthetic counters and validates 3+4, scoped expected errors, null unknown quantities, and cfg.new_synthetic_limits.",
+      "check.py:231-278 uses original pure source/action validators with the new primary/protocol contract; it does not call the old six-case verifier or mutate old.LIMITS.",
+      "The parent checks the v2 protocol envelope and expected synthetic-fault boundary separately from production failure unknowns. Failed or malformed terminal evidence cannot admit success."
+    ],
+    "versioned_receipts": {
+      "primary_schema": "teacher-label-equivalence-primary-v2",
+      "check_schema": "teacher-label-equivalence-independent-check-v2",
+      "private_case_schema": "teacher-label-equivalence-case-v1",
+      "source_certificate_schema": "teacher-label-original-source-certificate-v1",
+      "original_reader": "learning.task_bc_teacher_label_equivalence_v1.source.read_case",
+      "repaired_protocol": "learning.task_bc_teacher_label_protocol_repair_v1.protocol.protocol_checks",
+      "new_protocol_cases": 7,
+      "original_source_sha_reads_only_in_unique_run": true,
+      "expected_fault_exception_scope": "Only read_failure_boundary: OSError, final AssertionError and its three null unknown quantities. Other protocol failures and all production-source failure unknowns still reject.",
+      "index_prefix_limit": "At 256 inspected rows without the target, inconclusive_source_prefix_limit proves neither presence nor absence and never permits replacement."
+    }
+  },
+  "preserved_logic": {
+    "nested_probe_ast_comparisons": {
+      "task_encode": true,
+      "crop_encode": true,
+      "blocked_network": true,
+      "blocked_load": true,
+      "MeteredCrop": true,
+      "TeacherProbe": true,
+      "call": true
+    },
+    "source_read_and_following_try_body_ast_identical": true,
+    "original_production_reader_reused": true,
+    "original_label_input_action_comparisons_reused": true,
+    "original_fresh_teacher_clone_and_suffix_control_reused": true,
+    "scope_limit": "This verifies unchanged integration dependencies; it is not a new semantic or runtime acceptance of the old controller or source implementation."
+  },
+  "budget": {
+    "exact_registered_budget": {
+      "total_executable_seconds_max": 300,
+      "primary_phase_deadline_seconds": 220,
+      "independent_phase_deadline_seconds": 270,
+      "final_deadline_seconds": 300,
+      "per_close_seconds_max_included_in_original_phase": 10,
+      "max_workers": 1,
+      "blas_threads": 1,
+      "process_tree_private_commit_bytes_max": 1073741824,
+      "teacher_controller_calls_max": 66,
+      "original_teacher_calls_max": 1,
+      "teacher_adapter_baseline_calls_max": 1,
+      "alternative_calls_max": 64,
+      "per_controller_call_seconds_max": 10,
+      "callbacks_per_adapter_call_max": 16,
+      "candidate_encodings_max": 1040,
+      "candidates_per_callback_max": 512,
+      "encoded_candidate_objects_max": 200000,
+      "model_reads_hashes_loads_forwards": 0,
+      "training_new_games_official_steps": 0,
+      "original_compressed_opens_max": 4,
+      "original_compressed_bytes_total_exact_if_all_completed": 6586966,
+      "replay_json_decodes_max": 1,
+      "replay_payload_bytes_max": 67108864,
+      "source_returned_payload_bytes_total_max": 134217728,
+      "index_prefix_json_rows_max": 256,
+      "inputs_labels_prefix_lines_each_max": 256,
+      "target_input_json_rows_max": 1,
+      "target_label_json_rows_max": 1,
+      "per_input_json_line_bytes_max": 4194304,
+      "full_replay_states_decoded_max": 720,
+      "replay_agent_states_decoded_max": 1440,
+      "raw_data_reread_passes": 0,
+      "new_independent_machine_receipt_read_bytes_max": 2097152,
+      "new_private_case_receipt_bytes_max": 1048576,
+      "all_executable_artifact_bytes_max": 4194304,
+      "tiny_in_memory_cases_max": 7,
+      "synthetic_candidates_max": 32,
+      "temporary_files": 0,
+      "independent_human_new_private_receipt_passes_max": 1,
+      "independent_human_new_private_receipt_bytes_max": 1048576,
+      "independent_human_review_seconds_max": 300,
+      "root_safe_metadata_review_seconds_max": 180,
+      "crop_callbacks_per_adapter_call_max": 16,
+      "crop_encodings_max": 1040,
+      "per_crop_vector_values_max": 1024,
+      "crop_feature_values_max": 1064960,
+      "fixed_control_metadata_bytes_max": 262144
+    },
+    "fixed_control_metadata": {
+      "registration_bytes": 30865,
+      "freeze_bytes": 20470,
+      "state_pair_bytes": 51335,
+      "execution_state_pair_reads": 3,
+      "execution_state_pair_bytes": 154005,
+      "maximum_bytes": 262144,
+      "allocation_within_cap": true,
+      "scope": "Primary worker, independent checker worker, and parent final state read. The preflight state read occurs before the original executable clock and is not one of these three execution reads."
+    },
+    "original_registered_source_files": 4,
+    "original_registered_compressed_bytes_if_all_completed": 6586966,
+    "controller_cap_interpretation": "One original teacher plus one baseline plus at most 64 alternative calls; each call at most 10 seconds. The same 300-second clock owns primary deadline 220, checker deadline 270, final deadline 300, and per-tree close allowance 10 inside each phase.",
+    "independent_checker_scope": "Only the new private case and primary receipt, once each, combined at most 2 MiB; private case at most 1 MiB.",
+    "all_executable_artifact_limit_bytes": 4194304,
+    "one_execution_only": true,
+    "retries_allowed": 0
+  },
+  "preservation": {
+    "historical_stat_count_reported_by_preparer": 6901,
+    "history_rescanned_by_this_final_binding_pass": false,
+    "original_payload_or_model_content_read_by_reviewer": false,
+    "original_equivalence_execution_passed": false,
+    "old_strict_result_review_passed": false,
+    "original_policy_admission": false,
+    "cumulative_task_scoring_unchanged": {
+      "groups": 3921,
+      "candidates": 228505
+    },
+    "production_source_default_teacher_model_and_old_evidence_modified_by_reviewer": false
+  },
+  "reviewer_activity": {
+    "source_and_safe_metadata_hashing": true,
+    "static_ast_comparison": true,
+    "original_payload_reads": 0,
+    "private_case_reads": 0,
+    "replay_reads": 0,
+    "model_content_reads": 0,
+    "project_imports": 0,
+    "fixture_executions": 0,
+    "controller_calls": 0,
+    "model_loads": 0,
+    "model_forwards": 0,
+    "training_runs": 0,
+    "new_games": 0,
+    "official_steps": 0,
+    "project_tests": 0,
+    "temporary_files": 0,
+    "implementation_edits": 0,
+    "old_evidence_edits": 0,
+    "agent_workflow_calls": 0,
+    "only_new_output": "pre-review.json"
+  },
+  "limitations": [
+    "Static pre-review only. The newly integrated seven checks, original-source access, controller run, independent checker, budgets, and process lifecycle have not been executed by this reviewer.",
+    "A local preregistration commit and the unique bounded execution remain required; this receipt is not execution acceptance.",
+    "Earlier failed execution and failed strict result review remain preserved. This review does not recover their unknown consumption or revise their status.",
+    "The fixed original training state is historical development evidence, not fresh holdout evidence. No equivalence, coverage, economic, label/loss/training, or policy-admission conclusion follows from this static review."
+  ],
+  "blocking_findings": [],
+  "created_utc": "2026-10-26T13:10:56.447946+00:00"
+}

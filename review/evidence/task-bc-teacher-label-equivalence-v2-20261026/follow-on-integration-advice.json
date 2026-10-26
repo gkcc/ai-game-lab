@@ -1,0 +1,219 @@
+{
+  "schema": "teacher-label-protocol-follow-on-integration-advice-v1",
+  "status": "recommended_not_started",
+  "created_utc": "2026-10-26T12:47:51.627Z",
+  "based_on_public_commit": "1bd2ca626400a597dafb4df342c8f84689af328f",
+  "recommendation_is_not_new_data_evidence": true,
+  "role_limit": "合同衔接建议。作者曾实现旧 check.py；本建议不是对新实现的独立验收，也不是新的实验结果。",
+  "context_provenance": {
+    "reported_by_root_not_reopened_here": [
+      "修复阶段的三个合成场景、独立复审、root核对及隐私发布已通过，公布基线为上述提交。",
+      "旧 teacher-label-equivalence-v1 唯一执行仍失败，固定训练来源及控制器未被消费。",
+      "历史154份和修复后158份源码绑定应继续保留；本任务未打开这两份冻结清单。"
+    ],
+    "verified_here": "仅核对下面四份源码的接口、预算和消费者合同；未独立重验先前执行证书或远端发布。"
+  },
+  "reading_scope": [
+    {
+      "path": "learning/task_bc_teacher_label_equivalence_v1/probe.py",
+      "sha256": "11c176edd3d987366f9b4d33d1856621217b0a65525d0f6ec413015997c56672",
+      "necessary_line_ranges": [
+        [
+          73,
+          158
+        ],
+        [
+          286,
+          395
+        ]
+      ],
+      "finding": "旧 run_primary 直接调用 source.protocol_checks(deadline)，再运行四项 probe 检查；按 tiny_in_memory_cases+cases 汇总，成功返回前的协议失败不会生成 first_tests。"
+    },
+    {
+      "path": "learning/task_bc_teacher_label_equivalence_v1/check.py",
+      "sha256": "9ea5ae233cf69fe23885e309e543b113e51bb53ef7167b64dffe1550b6ee0752",
+      "necessary_line_ranges": [
+        [
+          43,
+          75
+        ],
+        [
+          430,
+          486
+        ],
+        [
+          582,
+          632
+        ]
+      ],
+      "finding": "LIMITS 固定 tiny_in_memory_cases_max=6；469行要求总数6，473-474行要求source计数2且列表长度2。不能用新3项结果直接通过，也不能伪装成2项。"
+    },
+    {
+      "path": "learning/task_bc_teacher_label_equivalence_v1/experiment.py",
+      "sha256": "89cee9e21a20e4d0cd017900ee0180880c33014500e31c721d3f5da848d08a82",
+      "necessary_line_ranges": [
+        [
+          1,
+          37
+        ],
+        [
+          79,
+          205
+        ],
+        [
+          241,
+          352
+        ],
+        [
+          388,
+          486
+        ],
+        [
+          530,
+          585
+        ]
+      ],
+      "finding": "STAGE、OUT、BASE_HEAD、规划SHA、旧预算和终态schema均固定；已有冻结、一次执行、owned worker、两收据hash绑定、超时/失败优先和输出总量验收可沿用其结构。"
+    },
+    {
+      "path": "learning/task_bc_teacher_label_protocol_repair_v1/protocol.py",
+      "sha256": "0632dadc06e0461069bd59dd553d3ecf9205c55efe02c7514f525a907549dca4",
+      "necessary_line_ranges": [
+        [
+          1,
+          282
+        ]
+      ],
+      "finding": "protocol_checks(deadline, ledger)运行zero_drain、positive_drain、read_failure_boundary三项；返回schema/passed/scenario_count=3，逐项和失败消费在调用方持有ledger中。合成故障场景会保留预期operation/assertion错误和未知量，不能归入真实来源故障。"
+    }
+  ],
+  "source_read_method": "四文件限定符号搜索、上述必要局部展示；为记录SHA对这四份源码各做完整字节散列。没有读取其他源码、数据、模型、Replay、case或日志。",
+  "unique_next_task": {
+    "suggested_stage": "task-bc-teacher-label-equivalence-v2",
+    "objective": "以修复后发布提交为基线，创建最小版本化接入口，真实执行修复协议3项和原probe4项；门禁通过后仅对原定一个训练状态执行标签等价探针及新收据独立核对。",
+    "minimum_new_boundaries": [
+      {
+        "path": "learning/task_bc_teacher_label_equivalence_v2/probe.py",
+        "purpose": "保留旧探针的完整动作/标签/替代循环逻辑；只替换前置协议接线与其失败回执边界。调用修复protocol一次、旧probe.protocol_checks一次，旧source.protocol_checks零次；生产来源直接复用旧source.read_case。",
+        "necessary_change": "在调用修复函数之前，把空的caller-owned ledger挂到将被finally保存的protocol_checks.source.ledger；源协议结果返回到source.result。四项probe成功返回才计4项完成，异常时保留已有source账本并明确probe进度未知，不能记成完成或零消费。"
+      },
+      {
+        "path": "learning/task_bc_teacher_label_equivalence_v2/check.py",
+        "purpose": "新协议合同的消费者与证书入口。可复用旧check纯比较、_source、_calls及有界收据读写助手；不得调用旧硬编码6项的整段_verify，也不得临时篡改旧LIMITS或伪造输入让其通过。",
+        "necessary_change": "独立核对3+4=7、三项源协议真实ledger及其预期故障边界；其余单状态、saved label、完整动作、替代顺序、真实来源及控制器账本要求保持原义。仍只各读新case和primary一次，不重新读取原始来源。"
+      },
+      {
+        "path": "learning/task_bc_teacher_label_equivalence_v2/experiment.py",
+        "purpose": "新的prepare/freeze/run与父级终态消费者，沿用既有owned worker和验收结构；使用新OUT、新登记、新源码清单和新schema绑定，不修改旧运行入口或预算。",
+        "necessary_change": "以实际发布基线及其冻结清单登记新增边界。父级保留协议失败账本并验证新终态；继续执行原始deadline、自然退出、零退出码、输出字节上限、failure优先及case/primary精确SHA绑定。"
+      }
+    ],
+    "additional_non_framework_files": "一份新CONTRACT.md冻结字段与计数口径；包发现确有需要时才增加空__init__.py。不新建source副本、仿真器、审计框架或另一个fixture套件。",
+    "preservation": "旧等价阶段、修复协议源码、旧154/修复158来源绑定、旧证书、失败状态、预算和哈希全部保留；继承实际清单并登记新增项，不把历史失败改为成功。"
+  },
+  "unified_contract": {
+    "fixed_case": {
+      "game": "collect-31317742-v1-0-teacher",
+      "seed": 31317742,
+      "opponent": "v1",
+      "side": 0,
+      "step": 15,
+      "callback_index_zero_based": 0,
+      "split": "original_train",
+      "replacement_allowed": false,
+      "fresh_holdout": false
+    },
+    "source_boundary": "旧source.read_case(root,cfg,deadline,ledger)及原source_certificate/真实来源计数保持不变；修复protocol只复用其生产计量原语，合成raw_*不能加进真实四文件消费。",
+    "protocol_boundary": {
+      "new_total_cases": 7,
+      "repaired_source_cases": 3,
+      "unchanged_probe_cases": 4,
+      "synthetic_candidates_on_success": 6,
+      "repaired_source_result": {
+        "schema": "teacher-label-protocol-repair-v1",
+        "passed": true,
+        "scenario_count": 3
+      },
+      "source_ledger_required": [
+        "schema",
+        "status",
+        "passed",
+        "counter_scope",
+        "prohibited",
+        "fixture",
+        "cases",
+        "totals",
+        "elapsed_seconds"
+      ],
+      "exact_case_order": [
+        "zero_drain",
+        "positive_drain",
+        "read_failure_boundary"
+      ],
+      "aggregate_success_only": "成功的protocol_checks.cases必须等于7，且从source.result/scenario_count、source.ledger三项和probe返回四项交叉核对。失败不预填7或伪造2；保留已知计数和明确未知进度。",
+      "expected_fault_is_scoped": "read_failure_boundary的预期读失败、预期最终断言失败及三个未知量必须保留并验证；它们不是生产源unknown_accounting.failures。其他场景的意外错误不能被这个例外放行。",
+      "failure_receipt": "protocol_checks对象在调用前创建，finally中完整保留source.ledger，即使函数未返回或probe四项失败；父级与独立消费者均不能仅看passed布尔值。",
+      "synthetic_limits_separate": {
+        "in_memory_raw_bytes_max": 131072,
+        "returned_payload_bytes_max": 1024,
+        "completed_json_decodes": 2,
+        "real_files_opened": 0
+      }
+    },
+    "consumer_boundary": "新primary/check/execution外层schema与新stage一致；未变的私有case及source_certificate可继续使用原v1 schema并明确登记。消费者同步更新总数7和嵌套source result/ledger，独立重加每项合成消费；实际source与模型/训练禁项仍按原账本核验。",
+    "new_registration": {
+      "tiny_in_memory_cases_max": 7,
+      "synthetic_candidates_max": 32,
+      "total_executable_seconds_max": 300,
+      "primary_phase_deadline_seconds": 220,
+      "independent_phase_deadline_seconds": 270,
+      "final_deadline_seconds": 300,
+      "close_seconds_included_in_phase": 10,
+      "original_source_and_controller_caps": "数值沿用旧单状态上限并在新登记重新冻结：四文件完整压缩SHA合计6586966字节；原教师1+baseline1+最多64替代、每call10秒；不增加读取pass、模型调用或正式状态转移。",
+      "note": "这是新阶段独立预算，不能回写旧freeze，也不能将旧失败的未知合成消费补写为零或退还。300秒是否足够不在本次规划实测；同次运行到限即保留失败停止，不现场加时。"
+    }
+  },
+  "execution_shape_decision": {
+    "recommendation": "新登记中同次执行7项内存检查，再进入同一个固定train state；不要求额外仅接线实验。",
+    "evidence": [
+      "修复3项已通过真实执行和复审是root提供的前置事实；本次源码显示其参数/返回/持有账本差异是明确、有限的。",
+      "旧probe.py:297-306已有协议门禁先于source.read_case的顺序，新入口可以保持这个顺序；接线失败应在原始来源读取前停止。",
+      "旧check.py的6/2限制及旧experiment的固定stage/out/budget均已找到明确代码位置；需要新版本消费者，而不是另一轮探索。",
+      "既有单状态探针和父级运行设施不需要新算法或新来源。新边界完成后先做静态独立预审、冻结并本地提交，再唯一执行，足以处理目前已知接口风险。"
+    ],
+    "admission_gate": "在首次原数据读取前，修复三项的返回与caller-owned账本一致、全部三项通过且预期故障边界吻合，原probe四项返回通过，合计7在新预算内；否则不调用source.read_case。",
+    "remaining_uncertainty": "修复前置协议不证明原教师重现、单标签绑定或替代等价一定成功；真实单状态结果尚未知，按既定负结果/不确定/失败分支诚实结束。",
+    "only_if_new_evidence": "只有静态预审发现不能在读取真实来源前拒绝的具体接线反例，才考虑额外小型接线验证；不能因为泛泛不放心自动新增阶段。"
+  },
+  "acceptance_invariants": [
+    "旧文件/证书/模型/default/loss不变，新阶段身份、源码清单、计数7及所有预算在读取数据前冻结并复审。",
+    "实际恰一遍修复3项及原probe4项；caller-owned账本跨异常保留，合成正常未知量、注入失败未知量和真实来源未知量各有明确口径。",
+    "只有协议门禁通过才读取原固定训练组；不换点、不重读、不补跑，全来源SHA、实际标签与baseline输入绑定仍必须通过。",
+    "完整stored action==原教师==baseline，替代仅首callback一次，后续纯教师重算；完整action含市场顺序的首次等价才算正例，阴性/不确定仍按原合同停止。",
+    "新独立消费者、父级终态/自然退出/原deadline/输出总量/隐私检查全部通过后，才形成新阶段验收；旧失败保持失败。"
+  ],
+  "stop_conditions": [
+    "新协议/消费者接口或冻结不一致：停止，不打开原数据。",
+    "任一非预期协议错误、真实来源/基线/标签绑定失败、超预算、失败unknown或生命周期异常：保留实际及未知账本，唯一执行结束，不改代码后就地重试。",
+    "首次完整动作等价、穷尽允许替代、64次限额或固定目标不可用：保存相应范围内结果并结束，不换状态。",
+    "本阶段无论正负，不改标签、loss、策略或模型，不启动训练、比赛、BC新面板、DAgger/PPO。"
+  ],
+  "work_performed_for_this_advice": {
+    "source_files_semantically_inspected": 4,
+    "source_file_sha256_reads": 4,
+    "advice_file_writes": 1,
+    "project_imports": 0,
+    "fixture_executions": 0,
+    "original_data_reads": 0,
+    "replay_reads": 0,
+    "case_or_log_reads": 0,
+    "model_content_reads": 0,
+    "controller_calls": 0,
+    "model_forwards": 0,
+    "training_runs": 0,
+    "new_games": 0,
+    "official_transitions": 0,
+    "implementation_files_written": 0,
+    "old_files_modified": 0
+  }
+}

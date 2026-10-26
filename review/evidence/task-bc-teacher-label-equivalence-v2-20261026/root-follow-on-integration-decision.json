@@ -1,0 +1,210 @@
+{
+  "schema": "teacher-label-equivalence-v2-root-planning-decision-v1",
+  "created_utc": "2026-10-26T12:50:12.039860+00:00",
+  "status": "planned_not_started",
+  "based_on_public_commit": "1bd2ca626400a597dafb4df342c8f84689af328f",
+  "advice_sha256": "b7771c18ec3090b7f1a940fa5878adf7af2c443097af1fc693ece3bed935e8df",
+  "adviser_role_limit": "合同衔接建议。作者曾实现旧 check.py；本建议不是对新实现的独立验收，也不是新的实验结果。",
+  "accepted": true,
+  "one_next_stage": "task-bc-teacher-label-equivalence-v2",
+  "runtime_package": "learning/task_bc_teacher_label_equivalence_v2",
+  "planned_out": "artifacts/task-bc-teacher-label-equivalence-v2-20261026",
+  "rationale": "Known interface mismatches are finite: old consumer enforces six total/two source cases; new function has three cases and caller-owned ledger. Version probe/check/parent together, verify the new contract before source access, and use the existing one-state probe in the same frozen run. No separate wiring-only experiment without a concrete counterexample.",
+  "fixed_case": {
+    "game": "collect-31317742-v1-0-teacher",
+    "seed": 31317742,
+    "seed_rule": "first seed in the unchanged original train_seeds list; not selected from new outcomes",
+    "opponent": "v1",
+    "side": 0,
+    "step": 15,
+    "callback_index_zero_based": 0,
+    "split": "original_train",
+    "not_a_fresh_holdout": true,
+    "selection_rule": "Use this exact turn and first task callback; if absent, out of source prefix budget or fewer than two choices, report inconclusive. Never choose another turn/game.",
+    "raw_source_files": {
+      "inputs": {
+        "path": "artifacts/task-choice-v1-20261023/data/train/collect-31317742-v1-0-teacher.inputs.jsonl.gz",
+        "sha256_inherited": "d54dc5c2438e66e9026867b613adbcffcd8472c27d8622bf7c0a2772e32e8ff0",
+        "bytes": 6055173,
+        "mtime_ns": 1792743976831170900,
+        "registered_rows": 2261
+      },
+      "labels": {
+        "path": "artifacts/task-choice-v1-20261023/data/train/collect-31317742-v1-0-teacher.labels.jsonl.gz",
+        "sha256_inherited": "c2db56ec26f77cdd84b5e4151ba662254dd294de2eba4b673572f49a427924c2",
+        "bytes": 5223,
+        "mtime_ns": 1792743976830170400,
+        "registered_rows": 2261
+      },
+      "index": {
+        "path": "artifacts/task-choice-v1-20261023/data/train/collect-31317742-v1-0-teacher.index.jsonl.gz",
+        "sha256_inherited": "87bc7ef55b97f11fcb14c02cfd5378a307f42e47d51b25b5a1664b1576e89248",
+        "bytes": 99098,
+        "mtime_ns": 1792743976828171000,
+        "registered_rows": 2261
+      },
+      "replay": {
+        "path": "artifacts/bc-crop-v1-20261023-run1/games/collect-31317742-v1-0-teacher/replay.json.gz",
+        "sha256_inherited": "6ebe2a567af569bb425b7acec640da84ee727adb5666223fcf062ea30c395aac",
+        "bytes": 427472,
+        "mtime_ns": 1792698826267403700,
+        "registered_states": 720
+      }
+    },
+    "source_bot_wrapper_sha256": "e28a3c1bb55083adffcf3f4db6c70353baba1302138d4238f51e22b0209f62c4",
+    "original_teacher_sha256": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+    "official_engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+  },
+  "budget": {
+    "total_executable_seconds_max": 300,
+    "primary_phase_deadline_seconds": 220,
+    "independent_phase_deadline_seconds": 270,
+    "final_deadline_seconds": 300,
+    "per_close_seconds_max_included_in_original_phase": 10,
+    "max_workers": 1,
+    "blas_threads": 1,
+    "process_tree_private_commit_bytes_max": 1073741824,
+    "teacher_controller_calls_max": 66,
+    "original_teacher_calls_max": 1,
+    "teacher_adapter_baseline_calls_max": 1,
+    "alternative_calls_max": 64,
+    "per_controller_call_seconds_max": 10,
+    "callbacks_per_adapter_call_max": 16,
+    "candidate_encodings_max": 1040,
+    "candidates_per_callback_max": 512,
+    "encoded_candidate_objects_max": 200000,
+    "model_reads_hashes_loads_forwards": 0,
+    "training_new_games_official_steps": 0,
+    "original_compressed_opens_max": 4,
+    "original_compressed_bytes_total_exact_if_all_completed": 6586966,
+    "replay_json_decodes_max": 1,
+    "replay_payload_bytes_max": 67108864,
+    "source_returned_payload_bytes_total_max": 134217728,
+    "index_prefix_json_rows_max": 256,
+    "inputs_labels_prefix_lines_each_max": 256,
+    "target_input_json_rows_max": 1,
+    "target_label_json_rows_max": 1,
+    "per_input_json_line_bytes_max": 4194304,
+    "full_replay_states_decoded_max": 720,
+    "replay_agent_states_decoded_max": 1440,
+    "raw_data_reread_passes": 0,
+    "new_independent_machine_receipt_read_bytes_max": 2097152,
+    "new_private_case_receipt_bytes_max": 1048576,
+    "all_executable_artifact_bytes_max": 4194304,
+    "tiny_in_memory_cases_max": 7,
+    "synthetic_candidates_max": 32,
+    "temporary_files": 0,
+    "independent_human_new_private_receipt_passes_max": 1,
+    "independent_human_new_private_receipt_bytes_max": 1048576,
+    "independent_human_review_seconds_max": 300,
+    "root_safe_metadata_review_seconds_max": 180,
+    "crop_callbacks_per_adapter_call_max": 16,
+    "crop_encodings_max": 1040,
+    "per_crop_vector_values_max": 1024,
+    "crop_feature_values_max": 1064960,
+    "fixed_control_metadata_bytes_max": 262144
+  },
+  "new_synthetic_limits": {
+    "source_protocol_cases": 3,
+    "probe_protocol_cases": 4,
+    "synthetic_candidates_on_success": 6,
+    "synthetic_raw_bytes_max": 131072,
+    "synthetic_returned_payload_bytes_max": 1024,
+    "synthetic_json_decodes": 2
+  },
+  "runtime_sources_to_preserve": 158,
+  "contract": {
+    "fixed_case": {
+      "game": "collect-31317742-v1-0-teacher",
+      "seed": 31317742,
+      "opponent": "v1",
+      "side": 0,
+      "step": 15,
+      "callback_index_zero_based": 0,
+      "split": "original_train",
+      "replacement_allowed": false,
+      "fresh_holdout": false
+    },
+    "source_boundary": "旧source.read_case(root,cfg,deadline,ledger)及原source_certificate/真实来源计数保持不变；修复protocol只复用其生产计量原语，合成raw_*不能加进真实四文件消费。",
+    "protocol_boundary": {
+      "new_total_cases": 7,
+      "repaired_source_cases": 3,
+      "unchanged_probe_cases": 4,
+      "synthetic_candidates_on_success": 6,
+      "repaired_source_result": {
+        "schema": "teacher-label-protocol-repair-v1",
+        "passed": true,
+        "scenario_count": 3
+      },
+      "source_ledger_required": [
+        "schema",
+        "status",
+        "passed",
+        "counter_scope",
+        "prohibited",
+        "fixture",
+        "cases",
+        "totals",
+        "elapsed_seconds"
+      ],
+      "exact_case_order": [
+        "zero_drain",
+        "positive_drain",
+        "read_failure_boundary"
+      ],
+      "aggregate_success_only": "成功的protocol_checks.cases必须等于7，且从source.result/scenario_count、source.ledger三项和probe返回四项交叉核对。失败不预填7或伪造2；保留已知计数和明确未知进度。",
+      "expected_fault_is_scoped": "read_failure_boundary的预期读失败、预期最终断言失败及三个未知量必须保留并验证；它们不是生产源unknown_accounting.failures。其他场景的意外错误不能被这个例外放行。",
+      "failure_receipt": "protocol_checks对象在调用前创建，finally中完整保留source.ledger，即使函数未返回或probe四项失败；父级与独立消费者均不能仅看passed布尔值。",
+      "synthetic_limits_separate": {
+        "in_memory_raw_bytes_max": 131072,
+        "returned_payload_bytes_max": 1024,
+        "completed_json_decodes": 2,
+        "real_files_opened": 0
+      }
+    },
+    "consumer_boundary": "新primary/check/execution外层schema与新stage一致；未变的私有case及source_certificate可继续使用原v1 schema并明确登记。消费者同步更新总数7和嵌套source result/ledger，独立重加每项合成消费；实际source与模型/训练禁项仍按原账本核验。",
+    "new_registration": {
+      "tiny_in_memory_cases_max": 7,
+      "synthetic_candidates_max": 32,
+      "total_executable_seconds_max": 300,
+      "primary_phase_deadline_seconds": 220,
+      "independent_phase_deadline_seconds": 270,
+      "final_deadline_seconds": 300,
+      "close_seconds_included_in_phase": 10,
+      "original_source_and_controller_caps": "数值沿用旧单状态上限并在新登记重新冻结：四文件完整压缩SHA合计6586966字节；原教师1+baseline1+最多64替代、每call10秒；不增加读取pass、模型调用或正式状态转移。",
+      "note": "这是新阶段独立预算，不能回写旧freeze，也不能将旧失败的未知合成消费补写为零或退还。300秒是否足够不在本次规划实测；同次运行到限即保留失败停止，不现场加时。"
+    }
+  },
+  "invariants": [
+    "旧文件/证书/模型/default/loss不变，新阶段身份、源码清单、计数7及所有预算在读取数据前冻结并复审。",
+    "实际恰一遍修复3项及原probe4项；caller-owned账本跨异常保留，合成正常未知量、注入失败未知量和真实来源未知量各有明确口径。",
+    "只有协议门禁通过才读取原固定训练组；不换点、不重读、不补跑，全来源SHA、实际标签与baseline输入绑定仍必须通过。",
+    "完整stored action==原教师==baseline，替代仅首callback一次，后续纯教师重算；完整action含市场顺序的首次等价才算正例，阴性/不确定仍按原合同停止。",
+    "新独立消费者、父级终态/自然退出/原deadline/输出总量/隐私检查全部通过后，才形成新阶段验收；旧失败保持失败。"
+  ],
+  "stops": [
+    "新协议/消费者接口或冻结不一致：停止，不打开原数据。",
+    "任一非预期协议错误、真实来源/基线/标签绑定失败、超预算、失败unknown或生命周期异常：保留实际及未知账本，唯一执行结束，不改代码后就地重试。",
+    "首次完整动作等价、穷尽允许替代、64次限额或固定目标不可用：保存相应范围内结果并结束，不换状态。",
+    "本阶段无论正负，不改标签、loss、策略或模型，不启动训练、比赛、BC新面板、DAgger/PPO。"
+  ],
+  "implementation_scope": [
+    "New versioned probe protocol boundary with source ledger attached before call; original four probe fixtures progress explicit on failure",
+    "New versioned checker accepts and independently validates actual 3+4 contract; no fake counts or monkeypatching old limits",
+    "New versioned parent/config/schema/out with current source freeze and original failure records preserved",
+    "Reuse original production source.read_case and accepted repaired protocol; no new source copy or simulator"
+  ],
+  "review_gate": "Implement and AST-check, freeze exact new sources/config, independent static pre-review, local preregistration commit, then one bounded run; failure is retained without retry. Result and publication review remain separate.",
+  "original_data_model_fixture_reads_during_planning": 0,
+  "experiments_run": 0,
+  "new_stage_registered_or_frozen": false,
+  "strategy_default_model_loss_changes_allowed": false,
+  "training_new_match_panel_dagger_ppo_allowed": false,
+  "original_equivalence_execution_passed": false,
+  "old_strict_result_review_passed": false,
+  "original_policy_admission": false,
+  "cumulative_task_scoring_unchanged": {
+    "groups": 3921,
+    "candidates": 228505
+  }
+}
