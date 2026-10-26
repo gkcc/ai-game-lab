@@ -1,0 +1,74 @@
+{
+  "schema": "root-anchor-spawn-repair-decision-v1",
+  "status": "approved_for_versioned_implementation_and_bounded_synthetic_entry_check",
+  "task": "task_anchor_spawn_repair_v1",
+  "advice_sha256": "0373e0ccf22fa1185a65228d31f12516e30f1407fd4b92c0720fe694e7d9318b",
+  "closed_stage_acceptance_sha256": "ddcf87ee02842c51bb508ab6e67fedcfb4f3dd84b3172235bb99907c4d7d9dac",
+  "objective": "Repair only the POSIX spawn/parent receipt writer boundary; preserve the failed experiment and all learning parameters.",
+  "scope": [
+    "Remove the global artifact IO adapter from process creation, startup-pipe transmission and process control. Apply narrow guarded scopes to the two parent receipt writes, keeping their combined writes within the existing 65536-byte parent allowance.",
+    "Keep all worker experiment artifact writes under their existing guard and keep the outer owned-session supervisor, deadlines, bounded logs and cleanup intact.",
+    "Do not solve this by globally permitting arbitrary writable integer descriptors, custom openers or closefd=False through the artifact guard.",
+    "Change only the launcher/receipt boundary and one focused regression needed to protect the identified startup failure; preserve all learning configuration and frozen historical evidence."
+  ],
+  "must_preserve_failed_frozen_source": true,
+  "new_versioned_launcher_required": true,
+  "accepted_validation": {
+    "acceptance": [
+      "Exactly one synthetic target reaches its marker and exits successfully through the real spawn path.",
+      "Parent and target receipts stay within their explicit output allowances; original failed-stage artifacts remain byte-identical.",
+      "The owned session has no live members and its direct child is reaped within the total deadline.",
+      "Existing focused storage protections still reject out-of-scope writes; ordinary artifact writes remain charged."
+    ],
+    "cache_array_decodes": 0,
+    "cleanup_seconds_included": 10,
+    "environment": "Actual WSL POSIX spawn using the configured interpreter; configuration stays private.",
+    "failure_stop": "Any startup, storage, cleanup or immutability failure stops this repair check without a second real spawn or a model-based substitute.",
+    "gpu_arithmetic_operations": 0,
+    "maximum_real_spawn_starts": 1,
+    "model_array_decodes": 0,
+    "neural_forward_rows": 0,
+    "new_output_bytes_cap": 1048576,
+    "official_games": 0,
+    "path": "Call the repaired real launch-control entry with an importable top-level pure-synthetic target. Do not mock Process.start, serialization, pipes or process cleanup.",
+    "process_seconds_cap": 30,
+    "target": "Emit one small owned marker or receipt, then exit. Do not load real models, cached arrays, JAX computations or the official engine.",
+    "training_fits": 0
+  },
+  "root_amendments": [
+    {
+      "topic": "cleanup reserve",
+      "proposal_cleanup_seconds": 10,
+      "accepted_cleanup_seconds": 15,
+      "process_total_seconds": 30,
+      "maximum_work_seconds": 15,
+      "reason": "Reuse existing Linux whole-session supervisor whose cleanup reserve is15 seconds; total30 is unchanged."
+    }
+  ],
+  "fixed_bounds": {
+    "total_task_seconds": 3600,
+    "real_synthetic_spawn_starts": 1,
+    "total_output_bytes": 1048576,
+    "model_array_decodes": 0,
+    "cache_array_decodes": 0,
+    "neural_rows": 0,
+    "gpu_arithmetic": 0,
+    "training_fits": 0,
+    "new_games": 0,
+    "official_steps": 0
+  },
+  "gates": [
+    "Freeze new launcher and exact test before one real spawn",
+    "Independent source review before synthetic dispatch",
+    "Actual WSL spawn reaches one marker, returns cleanly, and leaves no owned session members",
+    "Parent receipt bytes remain cumulatively bounded and worker artifact writes remain guarded",
+    "Existing storage rejection semantics and old failed evidence unchanged"
+  ],
+  "stop_on_any_failure": true,
+  "no_second_spawn_or_model_substitute": true,
+  "unchanged_anchor_experiment_retry_authorized": false,
+  "replacement_fit_authorized": false,
+  "next_after_repair": "Independent review and root adjudication only; any actual learning run requires a separate explicit stage decision",
+  "user_authorized_continuation": true,
+  "created_utc": "2026-10-26T21:22:18.531615+00:00"
+}

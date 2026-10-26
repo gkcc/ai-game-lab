@@ -1,0 +1,45 @@
+{
+  "after_validation": "Return a source diff and a bounded entry-regression receipt for root adjudication. Passing that check proves startup compatibility only and does not restore the consumed experiment attempt.",
+  "created_utc": "2026-10-26T21:20:08.958287+00:00",
+  "does_not_authorize": [
+    "Rerunning task_anchor_once_v1",
+    "A fresh or replacement fit",
+    "Any game or official reexecution",
+    "Model or cache array decoding",
+    "Hyperparameter, threshold or seed adjustment",
+    "Reopening a repository-wide audit"
+  ],
+  "implementation_scope": [
+    "Remove the global artifact IO adapter from process creation, startup-pipe transmission and process control. Apply narrow guarded scopes to the two parent receipt writes, keeping their combined writes within the existing 65536-byte parent allowance.",
+    "Keep all worker experiment artifact writes under their existing guard and keep the outer owned-session supervisor, deadlines, bounded logs and cleanup intact.",
+    "Do not solve this by globally permitting arbitrary writable integer descriptors, custom openers or closefd=False through the artifact guard.",
+    "Change only the launcher/receipt boundary and one focused regression needed to protect the identified startup failure; preserve all learning configuration and frozen historical evidence."
+  ],
+  "proposal_total_wall_budget_seconds": 3600,
+  "reason": "The original failed launch is the concrete counterexample; no whole-repository audit or alternative learning experiment is warranted.",
+  "required_first_validation": {
+    "acceptance": [
+      "Exactly one synthetic target reaches its marker and exits successfully through the real spawn path.",
+      "Parent and target receipts stay within their explicit output allowances; original failed-stage artifacts remain byte-identical.",
+      "The owned session has no live members and its direct child is reaped within the total deadline.",
+      "Existing focused storage protections still reject out-of-scope writes; ordinary artifact writes remain charged."
+    ],
+    "cache_array_decodes": 0,
+    "cleanup_seconds_included": 10,
+    "environment": "Actual WSL POSIX spawn using the configured interpreter; configuration stays private.",
+    "failure_stop": "Any startup, storage, cleanup or immutability failure stops this repair check without a second real spawn or a model-based substitute.",
+    "gpu_arithmetic_operations": 0,
+    "maximum_real_spawn_starts": 1,
+    "model_array_decodes": 0,
+    "neural_forward_rows": 0,
+    "new_output_bytes_cap": 1048576,
+    "official_games": 0,
+    "path": "Call the repaired real launch-control entry with an importable top-level pure-synthetic target. Do not mock Process.start, serialization, pipes or process cleanup.",
+    "process_seconds_cap": 30,
+    "target": "Emit one small owned marker or receipt, then exit. Do not load real models, cached arrays, JAX computations or the official engine.",
+    "training_fits": 0
+  },
+  "schema": "task-anchor-independent-next-step-proposal-v1",
+  "single_next_task": "Repair the real POSIX spawn entry boundary and validate it without a model or data.",
+  "status": "proposed_not_approved_or_executed"
+}

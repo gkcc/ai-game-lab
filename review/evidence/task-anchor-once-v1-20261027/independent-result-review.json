@@ -1,0 +1,248 @@
+{
+  "blocker": {
+    "additional_reproduction_unnecessary": "The original parent and child tracebacks plus the actual WSL standard-library source establish the same concrete failing interface.",
+    "child_exception": "EOFError",
+    "kind": "artifact_guard_intercepts_multiprocessing_startup_pipe",
+    "parent_exception": "UnsafeWriteError",
+    "pre_execution_review_gap": "The 33 focused cases and import-only probes did not exercise this actual POSIX multiprocessing startup path under the parent artifact adapter.",
+    "precise_sequence": [
+      "The POSIX spawn launcher serializes preparation_data and the Process object to an in-memory buffer.",
+      "It creates pipes and starts a child interpreter, then attempts open(parent_w, wb, closefd=False).",
+      "The parent artifact adapter rejects that writable pipe open before transmitting the already serialized startup pickle.",
+      "The child fails on its first pickle.load for preparation_data, before prepare, unpickling the Process object, _bootstrap or target execution."
+    ],
+    "precision_correction_to_root_failure_summary": "Failure was before transmission of already serialized startup pickle; serialization into BytesIO had already completed.",
+    "pure_synthetic_spawn_reproduction_runs": 0,
+    "source_references": [
+      {
+        "fact": "Parent artifact context encloses process.start; receipt fixes one nonrefundable attempt before that call.",
+        "file": "learning/task_anchor_once_v1/training.py",
+        "lines": [
+          685,
+          730
+        ]
+      },
+      {
+        "fact": "The writable closefd=False open is rejected before any pipe transmission.",
+        "file": "learning/task_anchor_once_v1/storage.py",
+        "lines": [
+          228,
+          248
+        ]
+      },
+      {
+        "fact": "The adapter replaces builtins.open process-wide inside its context.",
+        "file": "learning/task_anchor_once_v1/storage.py",
+        "lines": [
+          309,
+          337
+        ]
+      },
+      {
+        "fact": "The worker dependency initialization and _fit call are downstream of the unreachable target.",
+        "file": "learning/task_anchor_once_v1/training.py",
+        "lines": [
+          663,
+          682
+        ]
+      },
+      {
+        "fact": "All official games follow successful gpu_fit and the offline gate.",
+        "file": "learning/task_anchor_once_v1/campaign.py",
+        "lines": [
+          181,
+          213
+        ]
+      },
+      {
+        "fact": "The unreaped direct child pins the owned session identifier through killpg, live-member checks and wait.",
+        "file": "learning/task_dagger_once_v1/gpu_guard.py",
+        "lines": [
+          31,
+          70
+        ]
+      }
+    ],
+    "stdlib_locations": {
+      "multiprocessing/popen_spawn_posix.py": [
+        38,
+        72
+      ],
+      "multiprocessing/spawn.py": [
+        126,
+        135
+      ]
+    },
+    "wsl_standard_library_read_only_verified": true
+  },
+  "cleanup": {
+    "current_named_linux_stage_process_count": 0,
+    "limits": "The original receipt proves the owned session check at cleanup time. The later name scan is supplementary and cannot independently attribute arbitrary orphan processes because the receipt does not persist a Linux session id.",
+    "original_linux_receipt": {
+      "direct_child_reaped": true,
+      "no_live_owned_session_members_before_reap": true,
+      "owned_process_group_signalled": true,
+      "within_total_deadline": true
+    },
+    "recorded_windows_supervisor_absent_at_read_only_check": true,
+    "review_launched_experiment_children": 0,
+    "review_temporary_artifacts_created": 0,
+    "review_temporary_artifacts_deleted": 0,
+    "temporary_artifact_method": "All reviewer scripts were inline; no on-disk temporary scripts or scratch directories were needed."
+  },
+  "conclusion_boundaries": [
+    "This failure establishes an infrastructure entry-point defect, not a numerical instability or a negative result for the anchor objective.",
+    "No candidate model, loss comparison, economic estimate, teacher-retention result or admission evidence was produced.",
+    "The previous failed experiment and this failed attempt remain preserved; neither may be relabeled or retried.",
+    "No threshold, coefficient, temperature, step count, learning rate, mixture, initialization, checkpoint, model interpolation or seed adjustment is authorized."
+  ],
+  "consumption": {
+    "attempt_allowance_consumed": true,
+    "child_supervision_seconds": 1.0900445159999999,
+    "completed_fits": 0,
+    "completed_official_games": 0,
+    "fit_launch_attempts": 1,
+    "guard_elapsed_seconds": 1.3285323889999998,
+    "independent_numeric_and_official_reexecution": "Not applicable because the prerequisite model and official panels were never produced; no replacement samples or games.",
+    "measured_optimizer_update_counter": null,
+    "measured_training_row_counters": null,
+    "nonreach_is_separate_from_unknown_counters": true,
+    "official_game_attempts": 0,
+    "official_transitions": 0,
+    "official_zero_evidence": "Campaign failure receipt reports zero attempts/completions; frozen ordering and absent job-inputs show no dispatch.",
+    "original_partial_accounting_unavailable": true,
+    "original_registered_caps_remain_consumed_bounds": true,
+    "parent_start_failure_elapsed_seconds": 0.004404570999999802,
+    "replacement_allowed": false,
+    "retry_allowed": false,
+    "storage": {
+      "actual_owned_bytes_at_exit_before_final_receipts": 4311918,
+      "campaign_initial_owned_bytes": 4307649,
+      "campaign_parent_guard": {
+        "created_count": 4,
+        "limit_bytes": 259933503,
+        "refused": 0,
+        "remaining_bytes": 259930070,
+        "used_bytes": 3433
+      },
+      "campaign_storage_passed": false,
+      "gpu_guard_completed": false,
+      "meaning": "Storage and supervisor failure statuses remain failed; bounded cleanup is not execution success.",
+      "primary_run_artifact_bytes_after_final_receipts": 4312482
+    },
+    "unused_phases_do_not_refund_attempt_or_authorize_reuse": true
+  },
+  "created_utc": "2026-10-26T21:20:08.958287+00:00",
+  "economic_or_algorithmic_result_available": false,
+  "execution_succeeded": false,
+  "freeze_sha256": "61a6412d692202dcc612e69c90012a4036aa136aa22149fc31f9641d4d601353",
+  "learning_success_accepted": false,
+  "local_preregistration_commit": "95a22ebc0396e7fed741443a107d890b62fdf965",
+  "protection": {
+    "checked_at_review_before_root_publication_document_appends": true,
+    "committed_registration_freeze_and_pre_review_exact": true,
+    "committed_runtime_sha_files": 137,
+    "default_bot_changed": false,
+    "historical_public_sha_files_at_initial_check": 1200,
+    "historical_runtime_sha_files": 2333,
+    "historical_stat_bytes": 35454348673,
+    "historical_stat_content_hashes_recomputed": false,
+    "historical_stat_entries": 17207,
+    "later_publication_note": "Root added one stage report and appended the two review documents after the initial hash check. The old-public-preservation receipt reports 1198 identical old blobs plus these two exact-prefix appends; reviewer independently checked the two prefixes only.",
+    "later_two_document_append_checks": {
+      "review/PROGRESS.md": {
+        "appended_bytes": 1140,
+        "exact_old_prefix_preserved": true,
+        "old_blob_bytes": 42038
+      },
+      "review/WEBCHAT_REVIEW.md": {
+        "appended_bytes": 1140,
+        "exact_old_prefix_preserved": true,
+        "old_blob_bytes": 36754
+      }
+    },
+    "mismatches": 0,
+    "original_failure_receipt_sha256": {
+      "campaign-storage.json": "d5321a35047aa18cc91dfabd8c6fa36936cc4695e6fbd8d5e223414b70c6ceb5",
+      "failure.json": "b84e45d7e3162d537e3d7f73c792d3e4faada6384a11792e5d1ce0b2050c186b",
+      "gpu-guard-result.json": "f51d697008ebeb9ed0a8aad024211ae45e509e794ccd16d26da086157d360e4c",
+      "training-failed.json": "8c4d98c5d0380a6b15dea0d1cc6924728240445419f93ddde8de0b88fee3740b"
+    },
+    "original_model_arrays_decoded": 0,
+    "original_model_sha_bytes": 392074,
+    "original_model_sha_files": 2,
+    "parent_publication_append_receipt_sha256": "e545c42cfdfbefdac60973268379477062b0ee2de66a46d0e3f765ad1b512a23",
+    "prior_acceptance_decision_and_advice_bindings_unchanged": true,
+    "private_log_sha256_only": "dacd7ad8a21efcd9136c8265f3f36c7d95442a31c4f63c8a3dffd04f86967f03",
+    "protected_source_bytes_hashed_in_that_check": 60838100,
+    "protected_source_hash_presentations": 3807,
+    "public_frozen_sha_files": 137,
+    "real_cache_array_hashes_recomputed": false,
+    "real_cache_arrays_decoded": 0,
+    "reviewer_source_edits": 0,
+    "runtime_frozen_sha_files": 137
+  },
+  "registration_sha256": "b7f6066855b445efe8cd719305fd4c5d82845255c5f335e220fcb224f35b6836",
+  "remote_main_observed_before_publication": "7141729e00913a2418d06abc9aac87b8f9a83a74",
+  "review_passed": true,
+  "review_resources": {
+    "cache_array_decodes": 0,
+    "cpu_neural_row_presentations": 0,
+    "experiment_fit_launches": 0,
+    "gpu_arithmetic_operations": 0,
+    "gpu_neural_row_presentations": 0,
+    "inherited_preexecution_rows_are_not_new_review_work": true,
+    "inherited_preexecution_synthetic_cpu_rows": 24,
+    "model_array_decodes": 0,
+    "new_output_budget_bytes": 268435456,
+    "official_games": 0,
+    "official_transitions": 0,
+    "output_accounting_receipt": "independent-verification.json",
+    "pure_synthetic_spawn_launches": 0,
+    "review_seconds_budget": 3600,
+    "test_executions": 0,
+    "wall_seconds_upper_bound_at_report_creation": 547.088743,
+    "wall_upper_bound_basis": "Reviewer work began after the recorded campaign start; this conservative bound is not a fabricated stopwatch measurement.",
+    "wsl_read_only_stdlib_and_process_query_runs": 1
+  },
+  "reviewer_role": "Independent result reviewer; no implementation edits, retraining or game execution",
+  "schema": "task-anchor-independent-result-review-v1",
+  "stage_disposition": "closed_launch_failure_no_retry",
+  "worker_nonreach": {
+    "basis": "Control-flow inference from the original dual traceback and the SHA-bound source, corroborated by absent worker receipts and products.",
+    "corroborating_absent_paths": [
+      "model",
+      "training-storage.json",
+      "model-freeze.json",
+      "fit-result.json",
+      "offline-gate.json",
+      "training-process-result.json",
+      "job-inputs",
+      "job-results",
+      "development-gate.json",
+      "holdout-statistics.json",
+      "run-summary.json",
+      "ledger.json",
+      "audit.json"
+    ],
+    "limits": [
+      "This is not a newly instrumented worker-entry counter or a complete OS IO trace.",
+      "Absence of model files alone would not prove nonentry; the startup traceback is essential.",
+      "Parent readiness work did read metadata and hash the frozen input-model bytes; this is distinct from array decoding.",
+      "The original missing partial-consumption ledger remains missing and is not rewritten as measured zeros."
+    ],
+    "not_reached": [
+      "worker dependency initialization",
+      "worker cache-content verification and array decoding",
+      "task-model loading and numerical forwards",
+      "optimizer updates",
+      "initial/final numerical checks",
+      "offline learning gate",
+      "fresh development games",
+      "holdout games",
+      "preselected independent official reexecutions"
+    ],
+    "primary_evidence": "Child EOF is at the first preparation_data pickle.load, before the target Process object can be deserialized.",
+    "worker_reached": false
+  }
+}

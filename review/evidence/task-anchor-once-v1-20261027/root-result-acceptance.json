@@ -1,0 +1,45 @@
+{
+  "schema": "root-anchor-failed-stage-acceptance-v1",
+  "passed": true,
+  "acceptance_meaning": "Accept independently reviewed failure closeout and preservation, not successful execution or learning",
+  "status": "closed_launch_failure",
+  "execution_succeeded": false,
+  "learning_success_accepted": false,
+  "independent_review_sha256": "a8d5bff21e9e03be018244d5bcd7e8a8cfeb77a3225b7a65545c44b38c99a772",
+  "independent_verification_sha256": "18ca75e236b02e1c0fc2b37c46f50e1e4a3549316e95a99fb8dbdf4384c79f3a",
+  "failure_summary_sha256": "ebcb1e0d7a0dc719f327997aabd9d330ae0eea80c4f4c3d36943095862d3d675",
+  "resource_accounting_sha256": "63a6c5c430eef091806a368cab82a2ec95d8848fb904f307a37d7e118a97c347",
+  "historical_public_preservation_sha256": "e545c42cfdfbefdac60973268379477062b0ee2de66a46d0e3f765ad1b512a23",
+  "root_judgment": "Concrete IPC/artifact-guard boundary defect. Independent evidence establishes worker nonentry without rewriting missing counters. No algorithmic conclusion and no retry.",
+  "precision_correction": {
+    "original_failure_summary_preserved": true,
+    "field": "worker_nonreach_evidence",
+    "correction": "Startup pickle serialization into memory had completed; the failure was opening the writable pipe before transmitting those already serialized bytes."
+  },
+  "fit_launch_slots_consumed": 1,
+  "completed_fits": 0,
+  "new_games": 0,
+  "worker_measured_consumption": null,
+  "worker_nonreach_control_flow_derived": true,
+  "attempt_refunded": false,
+  "final_neural_evaluations": {
+    "preexecution_synthetic_cpu_rows": 24,
+    "preexecution_synthetic_gpu_rows": 0,
+    "independent_result_cpu_rows": 0,
+    "independent_result_gpu_rows": 0
+  },
+  "independent_output_bytes": 15721,
+  "owned_bytes_before_acceptance": 4332535,
+  "original_failures_hashes_preserved": {
+    "campaign-storage.json": "d5321a35047aa18cc91dfabd8c6fa36936cc4695e6fbd8d5e223414b70c6ceb5",
+    "failure.json": "b84e45d7e3162d537e3d7f73c792d3e4faada6384a11792e5d1ce0b2050c186b",
+    "gpu-guard-result.json": "f51d697008ebeb9ed0a8aad024211ae45e509e794ccd16d26da086157d360e4c",
+    "training-failed.json": "8c4d98c5d0380a6b15dea0d1cc6924728240445419f93ddde8de0b88fee3740b"
+  },
+  "source_or_strategy_or_default_changed": false,
+  "old_models_and_history_preserved": true,
+  "raw_private_artifacts_publish_allowed": false,
+  "current_experiment_rerun_allowed": false,
+  "new_fit_authorized": false,
+  "created_utc": "2026-10-26T21:22:18.531615+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "independent_pre_review_sha256": "918cf8ed1c4baa3850c5806ef76249adbd844ae55ae769c78d7ba83d9b8302d0",
+  "accepted_closed_findings": [
+    "concurrent writer free-space headroom",
+    "cancel write failure still reaches wait and join"
+  ],
+  "training_and_strategy_scope_unchanged": true,
+  "fit_authorization_conditional_on_local_preregistration_and_privacy": true,
+  "allowed_fits": 1,
+  "allow_retries": false,
+  "allow_source_change_after_fit": false,
+  "formatting_check": {
+    "command": "git diff --cached --check",
+    "exit_code": 1,
+    "blocking": false,
+    "finding": "One extra blank line at end of new processes.py; preserve already frozen bytes. No functional or privacy change."
+  },
+  "old_source_models_and_evidence_preserved": true
+}

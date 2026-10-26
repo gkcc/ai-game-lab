@@ -1,0 +1,35 @@
+{
+  "schema": "anchor-once-failure-accounting-v1",
+  "fit_launch_slots_consumed": 1,
+  "attempt_refund": false,
+  "completed_fits": 0,
+  "recorded_worker_consumption": null,
+  "original_unknown_accounting_retained": true,
+  "control_flow_derived_unreached_work": {
+    "worker_entered": false,
+    "cache_array_decodes": 0,
+    "network_forward_rows": 0,
+    "optimizer_updates": 0,
+    "new_games": 0,
+    "live_official_transitions": 0,
+    "primary_official_transitions": 0,
+    "independent_official_transitions": 0
+  },
+  "synthetic_actual": {
+    "cpu_neural_rows": 24,
+    "gpu_neural_rows": 0
+  },
+  "reserves_not_actual_work": {
+    "synthetic_rows": 1024,
+    "independent_numerical_rows": 100000,
+    "independent_official_steps": 2157
+  },
+  "parent_recorded_write_bytes": 3433,
+  "initial_owned_bytes": 4307649,
+  "owned_bytes_before_final_review_closure": 4315396,
+  "total_owned_limit_bytes": 17179869184,
+  "original_failure_sha256": "8c4d98c5d0380a6b15dea0d1cc6924728240445419f93ddde8de0b88fee3740b",
+  "campaign_storage_sha256": "d5321a35047aa18cc91dfabd8c6fa36936cc4695e6fbd8d5e223414b70c6ceb5",
+  "independent_future_work_must_be_added_before_acceptance": true,
+  "counters_interpretation": "Attempt quota consumed; missing worker counters stay null. The listed zeros describe unreachable code stages proved by the original spawn exception and EOF, not an instrumented counter or budget refund."
+}

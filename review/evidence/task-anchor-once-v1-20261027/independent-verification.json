@@ -1,0 +1,26 @@
+{
+  "created_utc": "2026-10-26T21:20:09.062295+00:00",
+  "final_refused_writes": 0,
+  "finalization_check_elapsed_seconds": 0.10999999998603016,
+  "guard_before_verification_receipt": {
+    "created_count": 2,
+    "limit_bytes": 268435456,
+    "refused": 0,
+    "remaining_bytes": 268420670,
+    "used_bytes": 14786
+  },
+  "next_step_sha256": "0373e0ccf22fa1185a65228d31f12516e30f1407fd4b92c0720fe694e7d9318b",
+  "no_training_or_reexecution_by_reviewer": true,
+  "old_evidence_files_preserved": 30,
+  "original_failure_accounting_preserved": true,
+  "output_files": 3,
+  "output_limit_bytes": 268435456,
+  "passed": true,
+  "report_sha256": "a8d5bff21e9e03be018244d5bcd7e8a8cfeb77a3225b7a65545c44b38c99a772",
+  "reviewer_source_edits": 0,
+  "schema": "task-anchor-independent-verification-v1",
+  "temporary_files_created": 0,
+  "temporary_files_deleted": 0,
+  "total_guarded_output_bytes": 15721,
+  "verification_receipt_bytes": 935
+}
