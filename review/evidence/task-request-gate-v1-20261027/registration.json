@@ -1,0 +1,215 @@
+{
+  "experiment": "task-request-gate-v1",
+  "created_utc": "2026-10-26T18:19:39.147060+00:00",
+  "baseline_head": "4b17dc3558ee5ae81660e789d7b96a4d3bbafff0",
+  "runtime_versions": {
+    "python": "3.12.2",
+    "numpy": "2.5.4",
+    "kaggle_environments": "1.33.0"
+  },
+  "previous_experiment": "artifacts/task-reward-gate-v1-20261027",
+  "previous_signal_passed": false,
+  "explicit_seed_config": {
+    "train_seeds": [
+      3962026951,
+      402036908,
+      3387754129,
+      3650747980,
+      3209649535,
+      1391085783,
+      1480967704,
+      3530032642
+    ],
+    "validation_seeds": [
+      1310336139,
+      2178664547
+    ],
+    "test_seeds": [
+      3740977434,
+      3974919668,
+      2704167216,
+      2286967793,
+      1742173690,
+      3733361670,
+      1857301159,
+      4032093039
+    ],
+    "generation": {
+      "rng": "Python Random.sample",
+      "seed": 2026102703,
+      "draws": 1,
+      "population": "uint32",
+      "count": 18
+    }
+  },
+  "train_seeds": [
+    3962026951,
+    402036908,
+    3387754129,
+    3650747980,
+    3209649535,
+    1391085783,
+    1480967704,
+    3530032642
+  ],
+  "validation_seeds": [
+    1310336139,
+    2178664547
+  ],
+  "test_seeds": [
+    3740977434,
+    3974919668,
+    2704167216,
+    2286967793,
+    1742173690,
+    3733361670,
+    1857301159,
+    4032093039
+  ],
+  "seed_novelty": {
+    "passed": true,
+    "public_text_files": 1104,
+    "local_evidence_files": 2606,
+    "scanned_manifest_sha256": "a062e70eb2021c3d107ff49ba40bddd94449572a5e8b0fe4ac101ed2b553b823",
+    "scope": "Current tracked public text plus local JSON filenames containing registration/manifest/ledger/config/result/summary/seed",
+    "limitation": "Conservative decimal occurrences; no claim about deleted Git history, raw replay-only seeds, other machines or external experiments",
+    "failed_attempt_files": 238,
+    "attempt_manifest_sha256": "ed0118fbab0e1afe79609e2ab7ef3f127becbbb4e21c794b1b6300e17dd13106"
+  },
+  "opponents": [
+    "round2",
+    "market"
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "holdout_arms": [
+    "baseline",
+    "gated",
+    "teacher_task"
+  ],
+  "windows": [
+    [
+      80,
+      119
+    ],
+    [
+      260,
+      299
+    ],
+    [
+      440,
+      479
+    ]
+  ],
+  "window_assignment": "(seed_index+opponent_index+seat)%3",
+  "task_checkpoint": "artifacts/task-bc-holdout-v1-20261023/model/trained.npz",
+  "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+  "crop_checkpoint": "artifacts/bc-epoch6-holdout-v1-20261023/panels/fixed_epoch6/model/trained.npz",
+  "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+  "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "official_loader_sha256": "0ac7baf1212b4ce1eabae3cc1cbb55c98effef5e0d0485522a8be87097c39a4f",
+  "source_sha256": {
+    "round2.py": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "market.py": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b"
+  },
+  "max_games": 176,
+  "max_workers": 2,
+  "per_job_timeout_seconds": 900,
+  "campaign_seconds": 10800,
+  "live_transition_limit": 126544,
+  "primary_reexecution_limit": 126544,
+  "independent_reexecution_limit": 2876,
+  "total_official_transition_limit": 255964,
+  "policy_turn_budget": 600000,
+  "task_forward_budget": 1200000,
+  "crop_forward_budget": 3000000,
+  "neural_input_row_budget": 60000000,
+  "gate_evaluation_budget": 1000,
+  "game_limits": {
+    "task_forwards": 4000,
+    "crop_forwards": 8000,
+    "neural_input_rows": 160000,
+    "gate_evaluations": 3,
+    "controller_calls": 839,
+    "teacher_proposals": 120,
+    "max_task_forwards_per_turn": 32,
+    "max_crop_forwards_per_turn": 64,
+    "max_neural_input_rows_per_turn": 4096,
+    "max_controller_calls_per_turn": 2
+  },
+  "counter_proof": {
+    "neural_policy_games": 144,
+    "full_teacher_task_games": 32,
+    "max_task_forwards": 1160000,
+    "max_crop_forwards": 2840000,
+    "max_neural_rows": 56800000,
+    "max_controllers_and_opponents": 522413,
+    "explanation": "All live and primary calls, teacher proposals and three possible original-controller parity episodes. Full teacher_task has zero task-network calls. Independent replay uses recorded actions, no neural forward. Per-pass caps enforce these worst-case bounds before calls."
+  },
+  "early_screen": {
+    "after_train_seeds": 2,
+    "planned_cells": 8,
+    "minimum_eligible": 4,
+    "any_nonzero_margin_required": true
+  },
+  "training": {
+    "max_pairs": 32,
+    "minimum_eligible": 24,
+    "minimum_nonzero_margin": 12,
+    "minimum_nonzero_seeds": 6,
+    "sign_quota": false,
+    "fits": 1,
+    "parameters": 9,
+    "seconds": 60,
+    "target": "(intervention final own-minus-opponent cash - baseline final own-minus-opponent cash)/1000",
+    "objective": "mean squared margin-target error + sum squared non-intercept coefficients",
+    "normalization": "all8 numeric feature columns train-only mean/std with floor1",
+    "zero_and_negative_targets_retained": true
+  },
+  "development": {
+    "max_pairs": 8,
+    "minimum_eligible": 6,
+    "minimum_nonzero": 4,
+    "minimum_nonzero_seeds": 2,
+    "exceeds_constant_student": true,
+    "exceeds_constant_teacher_at_opportunity": true,
+    "each_seed_margin_at_least": 0,
+    "own_relative_min": -0.02,
+    "overall_score_delta_min": -0.05,
+    "tuning": false
+  },
+  "bootstrap": {
+    "replicates": 20000,
+    "seed": 2026102704,
+    "quantile_method": "linear"
+  },
+  "holdout": {
+    "max_pairs": 32,
+    "margin_ci_lower_gt": 0,
+    "opponent_relative_mean_min": -0.02,
+    "opponent_score_delta_min": -0.05,
+    "minimum_changed_request_games": 4,
+    "teacher_relative_ci_lower_gt": -0.02,
+    "teacher_opponent_relative_mean_min": -0.05,
+    "teacher_opponent_score_delta_min": -0.05
+  },
+  "teacher_definition": "TaskAgent(None, model, SAME frozen crop checkpoint); not the original all-rule teacher",
+  "intervention": "Select one complete farmer/hands/ordered-market object at FIRST observed request disagreement in assigned window, then student on all later turns; never blend fields or select by future outcomes.",
+  "features": "step/719; student assignment count; teacher-minus-student selected counts of5OPS; difference of sums of selected task.distance. Aggregate each own trace independently; no teacher priority or ordinal pairing.",
+  "holdout_behavior": "Gated: first disagreement in each of3windows, consume either choice, teacher iff predicted margin advantage>0. Baseline purestudent; teacher_task fullteacher on allturns.",
+  "missing": "Keep missing cell, no intervention game or replacement seed/window. Missing reward target stays unknown; constant-policy no-op effect is zero for dev scoring only.",
+  "execution_order": "Train one complete seed at a time, baseline4cells then eligible interventions; aftersecondseed screen beforeanythirdseedjob. Dev samechronology; holdout fullseed3arms. No outcome-selected extra cells.",
+  "parity": "Firsttrainseed/round2/baseline bothseats reproduce originalJointAgent all719turns; firstholdoutseed/round2/seat0 teacher_task reproduces originalTaskAgent all719turns ifreached.",
+  "independent_selection": "Firsttrainseed/round2/seat0 baseline+intervention ifpresent; firstholdoutseed/market/seat0 gated+teacher_task ifreached. Max4, no replacements.",
+  "stop": "Any execution, source, budget, model identity or audit failure stops dispatch. Single two-seed screen or final signal/dev gate failure closes this whole-request candidate; no retries, gate relaxation, second fit or same-design probe loop.",
+  "implementation_clock": "No human implementation/proof timer; machine campaign10800s, perjob900s, fit60s, independentcompute3600s. Limits are not automatically extended.",
+  "publication": "Only source, explicit registration, aggregate/terminal/pair evidence and hashes; rawReplay/HTML/actions/observations/features/weights/logs/privatepaths remainlocal.",
+  "local_registration_not_external_timestamp": true,
+  "neural_weight_updates": 0,
+  "gpu_operations": 0,
+  "default_changed": false,
+  "automatic_teacher_admission": false
+}

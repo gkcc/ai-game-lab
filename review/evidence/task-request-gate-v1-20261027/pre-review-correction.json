@@ -1,0 +1,12 @@
+{
+  "old": {
+    "freeze.json": "902bfa31b1f97fe9e2712aa313a9abc8916fdcbf580d92e88ec72309229f09e2",
+    "protection-before.json": "2249711f6673f4c08f4c8fd9c7f30eb98446aa05e0fc99b3db2be70933520e3e"
+  },
+  "freeze_sha256": "28c29ead0727b2d98141d7725c869c18e24d61f64352b6e84b1c715ee0fa05bb",
+  "registration_unchanged": true,
+  "changed_source": "learning/task_request_gate_v1/games.py",
+  "reason": "teacher_task row checkpoint is null; frozen student identity remains in registration",
+  "new_games": 0,
+  "model_updates": 0
+}

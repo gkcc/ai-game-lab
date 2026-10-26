@@ -1,0 +1,78 @@
+{
+  "schema": "task-request-gate-independent-pre-review-v1",
+  "passed": true,
+  "reviewed_utc": "2026-10-26T18:28:50.772102+00:00",
+  "experiment": "task-request-gate-v1",
+  "reviewer_role": "independent review agent",
+  "freeze_sha256": "28c29ead0727b2d98141d7725c869c18e24d61f64352b6e84b1c715ee0fa05bb",
+  "registration_sha256": "7ace44dec636a32328bbd9ee7ca7238cf085a3a5f7ede80a8aa0013f751c3ae2",
+  "seeds_sha256": "3bb681e84de787e003015fb4cf538b33e342fa62e0e3e2fc942e8d1fa32415e7",
+  "protection_sha256": "a0e8406c11e19710a2a1e9adce177c11fcd1589e8022a78bedbd0c190ce4f317",
+  "source_sha256": {
+    "learning/task_request_gate_v1/campaign.py": "b18129166406382cf451b772322377d0fb1914c1d8cfb226b4708af52e833804",
+    "learning/task_request_gate_v1/experiment.py": "b8fb1edb5a7b2ace6c266a6f6bcc1db0d35daf9212e31db38802193a5fb14cce",
+    "learning/task_request_gate_v1/games.py": "30ec65c1afc2e2b2056818303be0d91a00dfb9fb77723906e6adc4ae94012e50",
+    "learning/task_request_gate_v1/policy.py": "d6844737c962a90f54414a8efbfe637b5fd314cdbd277ec3d13f26fdb81c0b1a",
+    "learning/task_request_gate_v1/README.zh-CN.md": "ce117169e0456b26c173e0910b8b0601457fc22da119c7c70148a6375da5b19f",
+    "learning/task_request_gate_v1/statistics.py": "fbca7fbcf5f0719448f9e066065aa00508a346009726a654ffe28d80a0d88ab3",
+    "learning/task_request_gate_v1/test_campaign.py": "5be2d19851b02698c8b53dfce53008d6f0df1f9401abaeb082bd6e7892cefc69",
+    "learning/task_request_gate_v1/test_policy.py": "45f4d3c3f70fec5dcf368ffe500e2e95bb8f5f8b9cadee667680d262bf68e5f9",
+    "learning/task_request_gate_v1/test_statistics.py": "21d1259b5279de901cf69a54ec680526df6f2207d3a9b8f46e13273ca14ccb38",
+    "learning/task_request_gate_v1/__init__.py": "60a8af5fc6b0ed1c0aff962b20a1efd63b8a9da70b54bbcd54e0302c5326e03c"
+  },
+  "source_binding": {
+    "runtime_source_files": 107,
+    "unchanged_inherited_source_files": 97,
+    "new_source_files": 10,
+    "all_runtime_source_hashes_match": true
+  },
+  "scope": [
+    "Whole farmer/hands/ordered-market request selection; typed equality preserves list order and scalar type.",
+    "First same-observation disagreement consumes one fixed window; reset and legal-observation isolation.",
+    "Eight independently aggregated proposal features; one nine-parameter ridge fit on paired terminal margin targets.",
+    "Hybrid teacher uses rule task selection and the same frozen crop network, with zero task-network calls.",
+    "Chronological two-training-seed information stop before any third-seed dispatch; no replacement cells.",
+    "Development must beat both constant choices; three-arm holdout uses eight complete seed clusters and positive ratio denominators.",
+    "Frozen registration/source identities and fitted-model SHA binding before development.",
+    "Official filename entry, per-turn typed request and trace replay, original-controller parity, official ordered-state reexecution, and paired prefix consumer.",
+    "Before-call neural/controller caps and before-dispatch reservation include all live, audit, proposal, original-parity, and in-flight work."
+  ],
+  "tests": {
+    "independently_executed": 31,
+    "passed": 31,
+    "failed": 0,
+    "kind": "Existing synthetic unit tests only",
+    "command": "python -B -m unittest learning.task_request_gate_v1.test_policy learning.task_request_gate_v1.test_statistics learning.task_request_gate_v1.test_campaign",
+    "timing": "Run before the sole report-metadata correction; targeted final code/hash review performed after that correction."
+  },
+  "finding": {
+    "severity": "reporting ambiguity, no observed execution defect",
+    "location": "learning/task_request_gate_v1/games.py",
+    "issue": "teacher_task rows unconditionally reported the configured student task checkpoint although that arm constructs no task network.",
+    "resolution": "teacher_task row task_checkpoint_sha256 is now null; registration retains the frozen student identity.",
+    "verified": true,
+    "prior_freeze_and_protection_preserved": true,
+    "correction_receipt": "pre-review-correction.json"
+  },
+  "unresolved_concrete_blockers": [],
+  "evidence_limits": [
+    "No real checkpoint file was opened or loaded by this reviewer; checkpoint identity enforcement was reviewed in source.",
+    "Synthetic tests do not establish actual official filename execution, real-model loading, or full-game original-controller parity.",
+    "The first registered student jobs must establish official 720 states/719 actions, DONE status, exact proposal/request reconstruction, original parity, and official replay before further seed progression; any failure stops the campaign.",
+    "If holdout is reached, the registered first teacher_task parity job must establish its full-game reference identity.",
+    "Passing pre-execution review is not an experiment outcome, teacher admission, or default change."
+  ],
+  "review_activity": {
+    "real_games": 0,
+    "official_transitions": 0,
+    "real_neural_forwards": 0,
+    "real_model_fits": 0,
+    "raw_replay_reads": 0,
+    "real_checkpoint_reads": 0
+  },
+  "public_safety": {
+    "project_relative_paths_only": true,
+    "no_observations_actions_features_weights_or_logs": true
+  },
+  "local_review_not_external_timestamp": true
+}
