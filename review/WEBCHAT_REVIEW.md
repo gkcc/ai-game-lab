@@ -191,3 +191,14 @@
 复审仅通过合成协议结果。本次预定读取错误和完整性断言是在成功的合成测试程序内部捕获，**没有动态验证非预期异常穿过 worker 退出边界的路径**，也没有接入真实教师标签探针。旧严格复审 false 保留，不能用本次新复审覆盖。最终主代理裁决另见同名 evidence 目录。
 
 [Report](../kaggriculture/TASK_BC_TEACHER_LABEL_PROTOCOL_REPAIR_V1.zh-CN.md) | [Evidence](evidence/task-bc-teacher-label-protocol-repair-v1-20261026/)
+
+
+## 教师单标签等价性 V2：机器完成，严格复审超时
+
+事前提交 48ce3f4，唯一固定原训练状态 seed31317742／v1／席0／step15／首任务回调。七项前置检查通过后，原 inputs、labels、index、Replay 各读取并完整校验一次。原教师与适配器基线复现保存的完整动作，按原候选顺序测试41个可用替代中的前11个，第11个首次产生相同 farmer、hands 和有序 market；随即停止，没有穷尽。机器证据显示首两次 WATER 分配交换，不能据此估计全数据频率、收益或直接合并标签。
+
+机器阶段16.469秒，两worker自然零退出；13控制器调用、72任务编码／1344候选、36作物编码／10404特征值，0模型读取／前向／训练／新赛／官方步／GPU。原压缩6586966字节、payload18961505，机器独立核对只读新收据94419字节。独立人工case单读64440字节，已做复算未记录矛盾，但375.266秒超过原300秒，因此严格复审及阶段验收仍为false；root0.454秒安全收尾不覆盖此失败。163源码、168提交绑定及6901旧stat核对；旧模型准入、旧失败、策略、默认Bot不变。不是新的留出测试。
+
+公开副本省略本机monotonic时钟，原SHA及变换见映射；私有case、观测、动作、Replay、模型、日志及进程身份未发布。
+
+[报告](../kaggriculture/TASK_BC_TEACHER_LABEL_EQUIVALENCE_V2.zh-CN.md) | [登记、机器结果、失败复审与主裁决](evidence/task-bc-teacher-label-equivalence-v2-20261026/)

@@ -1,0 +1,231 @@
+{
+  "completed_evidence_checks": {
+    "alternatives_available": 41,
+    "alternatives_inspected": 11,
+    "comparison": {
+      "attempted": 11,
+      "available_alternatives": 41,
+      "exhaustive": false,
+      "first_full_match_trial_index": 10,
+      "unit_only_matches_market_different": 0
+    },
+    "controller_counters": {
+      "baseline": 1,
+      "callbacks": 72,
+      "calls": 13,
+      "crop_callbacks": 36,
+      "crop_encodings": 36,
+      "crop_feature_values": 10404,
+      "encoded_candidates": 1344,
+      "encodings": 72,
+      "forced_choices": 11,
+      "original": 1,
+      "trials": 11
+    },
+    "exhaustive": false,
+    "first_match_trial_zero_based": 10,
+    "fresh_encodings_and_unchanged_clone_snapshots": true,
+    "label_binding": "Saved label.index is a candidate ordinal, not a source row number. The ordinal, unique label identity, first-candidate descriptor hash, saved/index/baseline input hashes and neural-projection hashes reconcile. The source prefix selects the fixed first callback. Controller call indices are zero-based.",
+    "mechanism": {
+      "adjacent_first_two_swapped": true,
+      "changed_callback_indices": [
+        0,
+        1
+      ],
+      "equivalent_alternative_operation": "WATER",
+      "farmer_equal": true,
+      "fresh_crop_encodings_in_winner": 3,
+      "fresh_task_encodings_in_winner": 6,
+      "from_callback_two_inputs_rejoin": true,
+      "next_callback_input_changed": true,
+      "ordered_hands_equal": true,
+      "ordered_market_equal": true,
+      "original_label_operation": "WATER",
+      "request_multiset_equal": true,
+      "request_order_equal": false
+    },
+    "method": "Independent typed recursive comparisons and arithmetic over one new case plus ten safe receipts. No project helper, producer, checker, original source or model was rerun.",
+    "no_trial_after_first_match": true,
+    "old_probe_cases": 4,
+    "original_source_hashes_match_registered_metadata": true,
+    "production_failure_unknowns": 0,
+    "production_planned_prefix_unknowns": 3,
+    "production_source_counter_fields_recomputed": 60,
+    "recorded_discrepancies": [],
+    "replay_agent_states_decoded": 1440,
+    "replay_states_decoded": 720,
+    "source_decodes": 103,
+    "source_inputs_and_labels_target_decodes_each": 1,
+    "source_raw_bytes": 6586966,
+    "source_returned_payload_bytes": 18961505,
+    "stored_original_adapter_complete_action_equal": true,
+    "strict_json_types_and_ordered_lists_compared": true,
+    "synthetic_cases": 3,
+    "synthetic_counter_fields_recomputed": 68,
+    "synthetic_expected_failure_unknowns": 3,
+    "synthetic_json_decodes": 2,
+    "synthetic_planned_prefix_unknowns": 2,
+    "synthetic_raw_bytes": 38198,
+    "synthetic_returned_payload_bytes": 18,
+    "total_protocol_cases": 7,
+    "unique_legal_first_override_and_pure_teacher_suffix": true,
+    "unknown_values_retained_as_null": true
+  },
+  "execution_passed": null,
+  "failures": [
+    {
+      "detail": "The saved original 300-second deadline elapsed before this result receipt was written. Completed arithmetic is retained as partial evidence; no strict review acceptance is issued.",
+      "kind": "IndependentReviewDeadlineExceeded",
+      "scope": "Human review completion and durable result receipt"
+    }
+  ],
+  "freeze_sha256": "946f79ff18d261500d44e278b4e4aac6fc2981c950ccca848c925032e49d828c",
+  "limitations": [
+    "This failed human review cannot serve as the required successful bounded independent acceptance. Root must adjudicate the timing failure explicitly.",
+    "Receipt evidence is not a second original-data, teacher, model or official-step reproduction.",
+    "The limited observations support at most one historical training context and requested-action equivalence; no economic benefit, holdout, official execution, exhaustive alternative set or reusable union label set is established.",
+    "Fresh instance and suffix execution are evidenced by frozen code and receipt snapshots/encoding sequences; this reviewer did not execute them.",
+    "Historical preservation is executor stat evidence plus prior frozen-source binding, not a new full-history content pass."
+  ],
+  "machine_evidence": {
+    "acceptance_bytes": 406,
+    "acceptance_elapsed_seconds": 16.46899999998277,
+    "active_processes_after_close": 0,
+    "artifact_bytes_at_parent_exit": 1289899,
+    "artifact_bytes_before_acceptance": 1289493,
+    "both_worker_trees_naturally_closed": true,
+    "close_limit_seconds": 10,
+    "control_state_execution_bytes": 154005,
+    "control_state_execution_reads": 3,
+    "historical_content_rehash_performed_by_reviewer": false,
+    "history_changed_files": 0,
+    "history_stat_checked_files": 6901,
+    "human_case_bytes_separate": 64440,
+    "later_review_outputs_excluded_from_machine_bytes": true,
+    "machine_checker_bytes": 94419,
+    "machine_checker_reads": 2,
+    "no_forced_termination": true,
+    "parent_exit_code": 0,
+    "receipt_hash_chain_and_results_consistent": true,
+    "receipts_report_passed": true,
+    "summary_elapsed_seconds": 16.45299999997951
+  },
+  "passed": false,
+  "pre_execution_commit": "48ce3f40dd196118d86d174f303947ea93332bb3",
+  "preserved_old_status": {
+    "old_strict_result_review_passed": false,
+    "original_equivalence_execution_passed": false,
+    "original_policy_admission": false
+  },
+  "publication_note": "Sanitized derivative: local monotonic clock values omitted; original hash retained in publication-receipt-map.json.",
+  "read_accounting": {
+    "case_reused_in_memory": true,
+    "files": [
+      {
+        "bytes": 29979,
+        "name": "primary-receipt.json",
+        "read_count": 1,
+        "sha256": "b5fb51f2a61de977720e9d4db0ad28528be7098255436ad75516aea06ed19e0d"
+      },
+      {
+        "bytes": 35590,
+        "name": "summary.json",
+        "read_count": 1,
+        "sha256": "37698471f0f06a4f240352199dd34f173d4f1c2c92b80d1429c9894af16eba04"
+      },
+      {
+        "bytes": 406,
+        "name": "execution-acceptance.json",
+        "read_count": 1,
+        "sha256": "66a5dd81eb8c8da0bca4fd1732af44fd5ae6e1d79f696d7b0b0b9ce10c0b47dd"
+      },
+      {
+        "bytes": 412,
+        "name": "parent-exit-observation.json",
+        "read_count": 1,
+        "sha256": "d8101da515cb47dfbafe9396415b41657d3bc7a03c21526530c49c32d6f2735a"
+      },
+      {
+        "bytes": 22897,
+        "name": "pre-execution-commit.json",
+        "read_count": 1,
+        "sha256": "3bdb70a5450e0aab762f616f775d1f80f42ee9102f7442d1497097a94c26580a"
+      },
+      {
+        "bytes": 4199,
+        "name": "check/safe-summary.json",
+        "read_count": 1,
+        "sha256": "ea0f63ad3aa7c46cfa0aad9e4d01df6806d36e8e267b2fa996786b931bc238f0"
+      },
+      {
+        "bytes": 1464,
+        "name": "attempts/primary.json",
+        "read_count": 1,
+        "sha256": "36b6a59cca3a110237f4838d87a4062d63e27652b9cdea6f77af44d221e539b1"
+      },
+      {
+        "bytes": 1455,
+        "name": "attempts/independent-check.json",
+        "read_count": 1,
+        "sha256": "5eb0c6a9327abe5536f1b2591dcc69746df5eaf136277330c7a50cabe0ceab89"
+      },
+      {
+        "bytes": 218,
+        "name": "history-stat-check.json",
+        "read_count": 1,
+        "sha256": "7635e6910456f712095147ffa31260ffa9d4d2a5008d14df6c1f22264f1fa6ca"
+      },
+      {
+        "bytes": 388,
+        "name": "output-accounting.json",
+        "read_count": 1,
+        "sha256": "8fa88c28eeba9b78c561c77b3928fbb4a54c14cd8af6568778b5344813ce8091"
+      },
+      {
+        "bytes": 64440,
+        "name": "case.json",
+        "read_count": 1,
+        "sha256": "3dc5625e0a6029e1f299da7da5548e00c6ec453aa7544b0cce99b7b394543822"
+      }
+    ],
+    "private_case_bytes": 64440,
+    "private_case_cap": 1048576,
+    "private_case_read_count": 1,
+    "raw_case_or_actions_printed": false,
+    "safe_receipt_bytes": 97008,
+    "total_bytes": 161448
+  },
+  "reviewer": "/root/unit_request_auditor",
+  "reviewer_activity": {
+    "agent_workflow_calls": 0,
+    "controllers": 0,
+    "fixtures": 0,
+    "implementation_or_old_evidence_edits": 0,
+    "machine_checker_invocations": 0,
+    "model_reads": 0,
+    "new_games": 0,
+    "official_steps": 0,
+    "only_new_files": [
+      "independent-review-started.json",
+      "independent-result-review.json"
+    ],
+    "original_source_reads": 0,
+    "project_imports": 0,
+    "replay_reads": 0,
+    "temporary_files": 0,
+    "training": 0
+  },
+  "schema": "teacher-label-equivalence-v2-independent-result-review-v1",
+  "start_receipt_sha256": "9d14125048f5e11d3f194435de05eaac7ab84169534caf6b8f23d0d200a3e349",
+  "status": "failed_review_deadline",
+  "strict_review_passed": false,
+  "timing": {
+    "completed_within_original_deadline": false,
+    "deadline_reset": false,
+    "elapsed_seconds": 375.26600000000326,
+    "ended_utc": "2026-10-26T13:23:44.091607+00:00",
+    "limit_seconds": 300,
+    "review_completion_not_backdated": true,
+    "started_utc": "2026-10-26T13:17:28.832678+00:00"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "created_utc": "2026-10-26T13:26:20.568019+00:00",
+  "excluded": [
+    "case.json",
+    "protection-before.json",
+    "started.json",
+    "logs/",
+    "local-lifecycle/",
+    "original source files",
+    "Replay",
+    "models"
+  ],
+  "files": [
+    {
+      "local_receipt": "pre-execution-commit.json",
+      "original_sha256": "3bdb70a5450e0aab762f616f775d1f80f42ee9102f7442d1497097a94c26580a",
+      "public_receipt": "pre-execution-commit.json",
+      "public_sha256": "3bdb70a5450e0aab762f616f775d1f80f42ee9102f7442d1497097a94c26580a",
+      "transformation": "Reviewed safe receipt fields only; exact bytes"
+    },
+    {
+      "local_receipt": "primary-receipt.json",
+      "original_sha256": "b5fb51f2a61de977720e9d4db0ad28528be7098255436ad75516aea06ed19e0d",
+      "public_receipt": "primary-receipt.json",
+      "public_sha256": "b5fb51f2a61de977720e9d4db0ad28528be7098255436ad75516aea06ed19e0d",
+      "transformation": "Reviewed safe receipt fields only; exact bytes"
+    },
+    {
+      "local_receipt": "execution-acceptance.json",
+      "original_sha256": "66a5dd81eb8c8da0bca4fd1732af44fd5ae6e1d79f696d7b0b0b9ce10c0b47dd",
+      "public_receipt": "execution-acceptance.json",
+      "public_sha256": "66a5dd81eb8c8da0bca4fd1732af44fd5ae6e1d79f696d7b0b0b9ce10c0b47dd",
+      "transformation": "Reviewed safe receipt fields only; exact bytes"
+    },
+    {
+      "local_receipt": "history-stat-check.json",
+      "original_sha256": "7635e6910456f712095147ffa31260ffa9d4d2a5008d14df6c1f22264f1fa6ca",
+      "public_receipt": "history-stat-check.json",
+      "public_sha256": "7635e6910456f712095147ffa31260ffa9d4d2a5008d14df6c1f22264f1fa6ca",
+      "transformation": "Reviewed safe receipt fields only; exact bytes"
+    },
+    {
+      "local_receipt": "output-accounting.json",
+      "original_sha256": "8fa88c28eeba9b78c561c77b3928fbb4a54c14cd8af6568778b5344813ce8091",
+      "public_receipt": "output-accounting.json",
+      "public_sha256": "8fa88c28eeba9b78c561c77b3928fbb4a54c14cd8af6568778b5344813ce8091",
+      "transformation": "Reviewed safe receipt fields only; exact bytes"
+    },
+    {
+      "local_receipt": "parent-exit-observation.json",
+      "original_sha256": "d8101da515cb47dfbafe9396415b41657d3bc7a03c21526530c49c32d6f2735a",
+      "public_receipt": "parent-exit-observation.json",
+      "public_sha256": "d8101da515cb47dfbafe9396415b41657d3bc7a03c21526530c49c32d6f2735a",
+      "transformation": "Reviewed safe receipt fields only; exact bytes"
+    },
+    {
+      "local_receipt": "attempts/primary.json",
+      "original_sha256": "36b6a59cca3a110237f4838d87a4062d63e27652b9cdea6f77af44d221e539b1",
+      "public_receipt": "attempts/primary.json",
+      "public_sha256": "36b6a59cca3a110237f4838d87a4062d63e27652b9cdea6f77af44d221e539b1",
+      "transformation": "Reviewed safe receipt fields only; exact bytes"
+    },
+    {
+      "local_receipt": "attempts/independent-check.json",
+      "original_sha256": "5eb0c6a9327abe5536f1b2591dcc69746df5eaf136277330c7a50cabe0ceab89",
+      "public_receipt": "attempts/independent-check.json",
+      "public_sha256": "5eb0c6a9327abe5536f1b2591dcc69746df5eaf136277330c7a50cabe0ceab89",
+      "transformation": "Reviewed safe receipt fields only; exact bytes"
+    },
+    {
+      "local_receipt": "check/safe-summary.json",
+      "original_sha256": "ea0f63ad3aa7c46cfa0aad9e4d01df6806d36e8e267b2fa996786b931bc238f0",
+      "public_receipt": "check/safe-summary.json",
+      "public_sha256": "ea0f63ad3aa7c46cfa0aad9e4d01df6806d36e8e267b2fa996786b931bc238f0",
+      "transformation": "Reviewed safe receipt fields only; exact bytes"
+    },
+    {
+      "local_receipt": "check/complete.json",
+      "original_sha256": "ea0f63ad3aa7c46cfa0aad9e4d01df6806d36e8e267b2fa996786b931bc238f0",
+      "public_receipt": "check/complete.json",
+      "public_sha256": "ea0f63ad3aa7c46cfa0aad9e4d01df6806d36e8e267b2fa996786b931bc238f0",
+      "transformation": "Reviewed safe receipt fields only; exact bytes"
+    },
+    {
+      "local_receipt": "summary.json",
+      "original_sha256": "37698471f0f06a4f240352199dd34f173d4f1c2c92b80d1429c9894af16eba04",
+      "public_receipt": "summary-public.json",
+      "public_sha256": "bb196a1dc4d2b289e29f92bec785048ae734b4a59b234285210c3842dc5af1b7",
+      "transformation": "Omit original_deadline_monotonic; add publication_note; JSON reserialization"
+    },
+    {
+      "local_receipt": "root-adjudication.json",
+      "original_sha256": "67a1ba2590774a452ee4efcf6438301e0e813f4eb3a85d6a942928ff1c000c48",
+      "public_receipt": "root-adjudication.json",
+      "public_sha256": "67a1ba2590774a452ee4efcf6438301e0e813f4eb3a85d6a942928ff1c000c48",
+      "transformation": "Reviewed safe receipt fields only; exact bytes"
+    },
+    {
+      "local_receipt": "independent-result-review.json",
+      "original_sha256": "af3076833e0a9e2aa1d3895c20b61e56fd8caceae96c62249145bdc14bbca635",
+      "public_receipt": "independent-result-review-public.json",
+      "public_sha256": "1dde6d2b3b6da19b51e97daa4a97345c98aa1ee6bb9ade41484a3827aaef5d59",
+      "transformation": "Omit timing.started_monotonic, timing.deadline_monotonic; add publication_note; JSON reserialization"
+    },
+    {
+      "local_receipt": "independent-review-started.json",
+      "original_sha256": "9d14125048f5e11d3f194435de05eaac7ab84169534caf6b8f23d0d200a3e349",
+      "public_receipt": "independent-review-started-public.json",
+      "public_sha256": "91fd9f8b27bf85e7cb3d9daad2aedd328e1eca6e36a818c31598633bfae579da",
+      "transformation": "Omit started_monotonic, deadline_monotonic; add publication_note; JSON reserialization"
+    }
+  ],
+  "schema": "teacher-label-equivalence-v2-safe-publication-map-v1",
+  "stage": "final_publication_machine_complete_strict_review_failed"
+}
