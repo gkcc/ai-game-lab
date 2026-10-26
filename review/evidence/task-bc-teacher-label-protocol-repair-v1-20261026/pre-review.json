@@ -1,0 +1,95 @@
+{
+  "schema": "teacher-label-synthetic-protocol-repair-static-pre-review-v1",
+  "passed": true,
+  "status": "static_pre_review_passed_execution_not_started",
+  "reviewer": "independent /root/unit_request_auditor",
+  "stage": "task-bc-teacher-label-protocol-repair-v1-20261026",
+  "freeze_sha256": "dd3e2c9f0f2e2244fdd3f7f8b3d7acee5612124d23624eacfb9ca2d6a768dc03",
+  "registration_sha256": "c7b68306505ea71bfe6e2418af745fb010d37360ff2d96d1b9bda18ce61b48de",
+  "review_scope": "Final close-budget delta and exact frozen bindings, combined with the already completed static review of this stage's parent, protocol, README and adopted planning. No full repository audit was reopened.",
+  "execution_passed": null,
+  "binding_evidence": {
+    "runtime_source_files_verified": 158,
+    "public_source_files_verified": 158,
+    "old_frozen_source_files_preserved_byte_for_byte": 154,
+    "new_source_files": {
+      "learning/task_bc_teacher_label_protocol_repair_v1/__init__.py": "820f29dfa98734c5f09ab27e85149ab92dce22eb2d82bf1a9e469d2b4849006e",
+      "learning/task_bc_teacher_label_protocol_repair_v1/protocol.py": "0632dadc06e0461069bd59dd553d3ecf9205c55efe02c7514f525a907549dca4",
+      "learning/task_bc_teacher_label_protocol_repair_v1/experiment.py": "0808e1be9b4aa0c237c71f094e498da7f3c2105dbf16e21eb9b97221e0bcb2c8",
+      "learning/task_bc_teacher_label_protocol_repair_v1/README.zh-CN.md": "fc8478146f5ba370ae69375fbc43c04847eeb773bacc8e9fe8fbec2ffa4985cb"
+    },
+    "new_runtime_and_public_sources_exactly_equal": true,
+    "inherited_public_line_ending_mappings": 4,
+    "public_overrides_unchanged": true,
+    "existing_line_ending_overrides_normalized_bytes_match": true,
+    "public_registration_freeze_and_planning_copies_match": true,
+    "previous_safe_receipt_hashes_verified": 6,
+    "planning_sha256": "d82cfae04afda4dc38e8a6d5546ad28e5998e98e24e417b89f6e2fa0f7852c0b",
+    "history_manifest_sha256": "045b87bd90d08a5b9f5e803200494dadf2602244f14e510514d129182073cb2e",
+    "registered_protected_history_stat_paths": 6874,
+    "no_execution_or_preregistration_commit_receipt_present_when_reviewed": true,
+    "mismatches": []
+  },
+  "resolved_finding": {
+    "issue": "A new five-second tree-close allowance did not match the inherited runner's ten-second cleanup ceiling.",
+    "resolution": "Registration and parent now set tree close_seconds=10, subtract it inside the unchanged 40-second worker phase, and explicitly reject lifecycle.close_seconds above 10. The original whole-stage bound remains 60 seconds; worker work ends at second 30. README distinguishes each synthetic memory-stream close check's stricter five-second bound, which remains inside the work deadline.",
+    "reviewed_parent_lines": [
+      21,
+      235,
+      245,
+      250
+    ],
+    "original_runner_sources_changed": false,
+    "validation": "Static source delta and exact registration/source hashes only; no fixture or lifecycle execution."
+  },
+  "reviewed_contracts": [
+    "The fixed new OUT and exclusive registration/start/pre-execution files reject replacement or retries. The parent requires the exact reviewed freeze and committed source/control blobs before starting the executable clock.",
+    "Only three preregistered synthetic scenarios are present: controlled zero drain, controlled positive drain, and second-read failure followed by the expected complete-hash assertion rejection on that same partial pass.",
+    "The zero-drain path uses an explicit buffer bridge to prefetch through the unchanged metered reader. The positive-drain path caps lower read chunks. These paths do not depend on incidental gzip buffer size to define whether a drain branch is exercised.",
+    "Each case row and its live meter reference become caller-owned before stream operations. The outer finally records closure observations, elapsed time and aggregate partial counters; expected operation/assertion failures remain distinct from unexpected failures.",
+    "The failed-read case retains two started/one completed raw reads, its returned prefix bytes, incomplete hash/zero JSON decode, explicit unknown failed-read quantities, expected operation and final assertion errors, and closed handles. Its case pass means the expected failure contract was verified, not that the source read completed.",
+    "Gzip, raw and optional buffer/bridge handles are explicitly owned and closed; close-time reads are measured and required to remain zero. Normal paths require one complete compressed SHA and exactly one prefix JSON decode each; suffix decoding and rereads remain zero.",
+    "The parent recomputes totals and checks three-case order, expected errors, hash/decode/closure conditions, prohibited-work counters and fixed byte budgets from the one new synthetic receipt. This is not an independent original-source reproduction.",
+    "Worker exceptions retain the caller ledger in primary.json; parent failures retain lifecycle, summary and output accounting. A primary/summary flag alone is provisional: acceptance requires the natural zero worker exit, closed tree/handles, original final deadline, final output cap and zero parent exit.",
+    "All 154 prior frozen source hashes are preserved. Default/model stat and inherited history protection remain registered; the old failed teacher-label execution and its failed strict review are explicitly kept false. No original state, teacher, model, training, game or official-transition path is invoked by these synthetic scenarios."
+  ],
+  "budget": {
+    "wall_seconds": 60,
+    "worker_phase_seconds": 40,
+    "close_seconds": 10,
+    "memory_bytes": 268435456,
+    "synthetic_raw_bytes_max": 131072,
+    "returned_payload_bytes_max": 1024,
+    "json_decodes_max": 2,
+    "scenarios": 3,
+    "output_bytes_max": 2097152,
+    "receipt_bytes_max": 131072,
+    "retries": 0
+  },
+  "reviewer_activity": {
+    "review_method": "Static source excerpts and safe metadata/hash comparisons.",
+    "original_payload_reads": 0,
+    "original_Replay_inputs_labels_index_reads": 0,
+    "private_case_or_historical_witness_reads": 0,
+    "model_content_reads_hashes_loads_forwards": 0,
+    "project_imports": 0,
+    "fixtures_or_protocol_calls": 0,
+    "controller_calls": 0,
+    "tests_executed": 0,
+    "official_steps": 0,
+    "training_or_new_games": 0,
+    "temporary_files_created": 0,
+    "implementation_or_old_files_modified": 0,
+    "agent_workflow_used": false,
+    "new_deliverable": "pre-review.json only"
+  },
+  "blocking_findings": [],
+  "limitations": [
+    "This certificate is static prereview only. It does not claim that the three fixtures, parent receipt gate, natural closure or output budget have passed at runtime.",
+    "The exact local commit is still required before the one authorized execution. A local commit is not an external timestamp proof.",
+    "The registered synthetic fault case intentionally has failed-read unknown quantities; these must not be zero-filled or mistaken for original-data consumption.",
+    "This new synthetic prerequisite stage does not reopen the old failed OUT, repair old missing counters, erase its strict-review timing exception, establish label equivalence or authorize original-data/model work.",
+    "Runtime evidence still requires the retained new receipt, parent comparisons, final certificate and external zero exit, followed by the separately authorized evidence review."
+  ],
+  "created_utc": "2026-10-26T12:29:07.458602+00:00"
+}

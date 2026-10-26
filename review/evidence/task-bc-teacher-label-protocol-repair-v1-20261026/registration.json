@@ -1,0 +1,72 @@
+{
+  "schema": "teacher-label-synthetic-protocol-repair-registration-v1",
+  "created_utc": "2026-10-26T12:26:40.186316+00:00",
+  "baseline_head": "5a98fa04c9ca58a8997ba53525f561bade6f8bd5",
+  "budget": {
+    "wall_seconds": 60,
+    "worker_phase_seconds": 40,
+    "close_seconds": 10,
+    "memory_bytes": 268435456,
+    "synthetic_raw_bytes_max": 131072,
+    "returned_payload_bytes_max": 1024,
+    "json_decodes_max": 2,
+    "scenarios": 3,
+    "output_bytes_max": 2097152,
+    "receipt_bytes_max": 131072,
+    "retries": 0
+  },
+  "planning_sha256": "d82cfae04afda4dc38e8a6d5546ad28e5998e98e24e417b89f6e2fa0f7852c0b",
+  "python_version": "3.12.2",
+  "scope": "Exactly three in-memory synthetic cases; no original samples, controllers, models or matches.",
+  "cases": [
+    "zero_drain",
+    "positive_drain",
+    "read_failure_boundary"
+  ],
+  "acceptance": [
+    "both normal paths hash all compressed bytes once and decode only one prefix JSON",
+    "zero drain is valid and positive drain is exercised using a controlled boundary",
+    "injected read failure and final completeness rejection retain partial caller-owned counts",
+    "all owned handles close, no retries, original deadline and output limits hold",
+    "old frozen bytes and history remain; this is not a teacher-label experiment result"
+  ],
+  "previous_receipt_sha256": {
+    "registration.json": "723be92a750932bf2c456005268673a314a544d5bd46f26fb9c4c17c671af0f1",
+    "freeze.json": "d03abef8904cd235be6a21ec31f288f55852804fa2dce45fe8bafc6e83de3226",
+    "summary.json": "5f6af105873ec7f36e64c2ea5cc3d4a7101c761ef8a1eed9fc95c2ce72966023",
+    "primary-receipt.json": "106575fbc617236e30f539efa8f20d0d65ef9a8b42725784ae1034bd43ee30da",
+    "root-failure-adjudication.json": "97db13b608f3bd68c8bcbdfd40d4b814f9885283a4bbd292194dd60c8d732f10",
+    "publication-verification.json": "99afa442e50018d2c94fceea75160fe3819d8193a580819d91fd1d700e0c6e63"
+  },
+  "history_manifest_sha256": "045b87bd90d08a5b9f5e803200494dadf2602244f14e510514d129182073cb2e",
+  "protected_history_stat_paths": 6874,
+  "model_stat": {
+    "artifacts/task-bc-holdout-v1-20261023/model/trained.npz": {
+      "size": 215961,
+      "mtime_ns": 1792750255478921600
+    },
+    "artifacts/bc-epoch6-holdout-v1-20261023/panels/fixed_epoch6/model/trained.npz": {
+      "size": 176113,
+      "mtime_ns": 1792740765612530800
+    }
+  },
+  "default_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+  "inherited_official_sha256": {
+    "rules": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "loader": "0ac7baf1212b4ce1eabae3cc1cbb55c98effef5e0d0485522a8be87097c39a4f"
+  },
+  "prior_task_scoring": {
+    "groups": 3921,
+    "candidates": 228505
+  },
+  "old_execution_passed": false,
+  "old_strict_result_review_passed": false,
+  "original_policy_admission": false,
+  "local_commit_not_external_timestamp": true,
+  "original_data_reads_allowed": 0,
+  "model_reads_allowed": 0,
+  "controller_calls_allowed": 0,
+  "training_runs_allowed": 0,
+  "new_games_allowed": 0,
+  "official_transitions_allowed": 0
+}

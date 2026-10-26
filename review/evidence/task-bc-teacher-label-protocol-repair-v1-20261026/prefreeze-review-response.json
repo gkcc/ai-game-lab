@@ -1,0 +1,12 @@
+{
+  "schema": "synthetic-protocol-prefreeze-adjudication-v1",
+  "created_utc": "2026-10-26T12:26:39.629891+00:00",
+  "finding": "Requested 5-second tree close budget disagreed with the reused runner 10-second limit.",
+  "accepted": true,
+  "change": "Tree close=10 seconds within the original 40-second worker phase, work deadline=30; explicit close_seconds gate added. Per-stream close remains stricter 5 seconds.",
+  "old_sources_changed": 0,
+  "fixtures_executed": 0,
+  "registration_exists": false,
+  "freeze_exists": false,
+  "scope": "Draft correction before initial registration/freeze; no executed version replaced."
+}

@@ -1,0 +1,23 @@
+{
+  "schema": "teacher-label-synthetic-repair-planning-v1",
+  "created_utc": "2026-10-26T12:21:39.914929+00:00",
+  "status": "planned_not_executed",
+  "baseline_commit": "5a98fa04c9ca58a8997ba53525f561bade6f8bd5",
+  "adviser": "independent subagent /root/operation_checker",
+  "advice_tool_or_data_reads": 0,
+  "advice_is_not_experimental_evidence": true,
+  "root_decision": "Accept the single synthetic-only prerequisite repair; no execution of the original label experiment.",
+  "cases": [
+    "zero_drain",
+    "positive_drain",
+    "read_failure_boundary"
+  ],
+  "invariants": [
+    "Controlled read boundaries, not incidental gzip buffer size",
+    "Full raw hash once and one prefix JSON on each normal path",
+    "Started/completed and unknown counters remain caller-owned through a read failure",
+    "The injected failure also reaches a completeness rejection without another read case",
+    "Close all owned handles, preserve old frozen bytes and historical failed run"
+  ],
+  "stop": "Stop after the three synthetic cases or first unexpected failure. No original samples, models, controllers, games, training or retries."
+}
