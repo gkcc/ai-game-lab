@@ -1,0 +1,909 @@
+[
+  {
+    "game": "train-3962026951-round2-1-baseline",
+    "passed": true,
+    "official": {
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "fa376242b5b468aab5060a48bd09b839cf89bde299d5f1bfbc004839bfc33e84",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "023e4f6f38d825f04e9cac1ec3999631463a300bea708e0e3e6ece1b33826ad9",
+      "final_rewards": [
+        41220.0,
+        41342.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 357,
+          "unit:executed": 4229,
+          "unit:pass": 3380
+        },
+        "ordered_effect_sha256": "274205cf9cb5819c99306294796bf7f67085ff6cf25395a135758dbaf214c266",
+        "successful_plants": [
+          52,
+          53
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    "complete_request_changes": 0,
+    "live_model_counts": {
+      "task_forwards": 2191,
+      "task_rows": 116545,
+      "crop_forwards": 160,
+      "crop_rows": 160,
+      "gate_evaluations": 0,
+      "controller_calls": 721,
+      "teacher_proposals": 2
+    },
+    "primary_model_counts": {
+      "task_forwards": 2191,
+      "task_rows": 116545,
+      "crop_forwards": 160,
+      "crop_rows": 160,
+      "gate_evaluations": 0,
+      "controller_calls": 721,
+      "teacher_proposals": 2
+    },
+    "original_parity_model_counts": {
+      "task_forwards": 2191,
+      "task_rows": 116545,
+      "crop_forwards": 156,
+      "crop_rows": 156,
+      "gate_evaluations": 0,
+      "controller_calls": 719,
+      "teacher_proposals": 0
+    },
+    "total_model_counts": {
+      "task_forwards": 6573,
+      "task_rows": 349635,
+      "crop_forwards": 476,
+      "crop_rows": 476,
+      "gate_evaluations": 0,
+      "controller_calls": 2161,
+      "teacher_proposals": 4
+    },
+    "policy_turns": 3599,
+    "original_controller_parity_turns": 719,
+    "parity_kind": "student",
+    "replay_sha256": "aae7ef21bf5dd3e81ed1c2dd69ddb47f396df47ff3a47a853992db46f4590e39",
+    "trace_sha256": "d84a0a6bc6be0a2b536875c084248c5ae3392f112d4d75f4d7cc6d8170d7f47f",
+    "actor_actions_reproduced": 719,
+    "rival_actions_reproduced": 719,
+    "trace_turns_reproduced": 719,
+    "execution_counts": {
+      "unit:pass": 3380,
+      "market:executed": 357,
+      "unit:executed": 4229
+    },
+    "errors": 0,
+    "opportunities_count": 1
+  },
+  {
+    "game": "train-3962026951-round2-0-baseline",
+    "passed": true,
+    "official": {
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "ef485f0402be0a885885da78550ca01fb3f506fe1cf3e02859abfca7945a3ab1",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "7e498347a3ca5baf0371b43c3f60b4e9cf0311abe191a49a6535d778a62f450e",
+      "final_rewards": [
+        41342.0,
+        41220.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 357,
+          "unit:executed": 4229,
+          "unit:pass": 3380
+        },
+        "ordered_effect_sha256": "d8091122606692c6f0e2ad99e602f685a18a104879962d24fb0dc5fc5fc5fefb",
+        "successful_plants": [
+          53,
+          52
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    "complete_request_changes": 0,
+    "live_model_counts": {
+      "task_forwards": 2191,
+      "task_rows": 116545,
+      "crop_forwards": 156,
+      "crop_rows": 156,
+      "gate_evaluations": 0,
+      "controller_calls": 759,
+      "teacher_proposals": 40
+    },
+    "primary_model_counts": {
+      "task_forwards": 2191,
+      "task_rows": 116545,
+      "crop_forwards": 156,
+      "crop_rows": 156,
+      "gate_evaluations": 0,
+      "controller_calls": 759,
+      "teacher_proposals": 40
+    },
+    "original_parity_model_counts": {
+      "task_forwards": 2191,
+      "task_rows": 116545,
+      "crop_forwards": 156,
+      "crop_rows": 156,
+      "gate_evaluations": 0,
+      "controller_calls": 719,
+      "teacher_proposals": 0
+    },
+    "total_model_counts": {
+      "task_forwards": 6573,
+      "task_rows": 349635,
+      "crop_forwards": 468,
+      "crop_rows": 468,
+      "gate_evaluations": 0,
+      "controller_calls": 2237,
+      "teacher_proposals": 80
+    },
+    "policy_turns": 3675,
+    "original_controller_parity_turns": 719,
+    "parity_kind": "student",
+    "replay_sha256": "4b4c41eaa170a090db3d190d760b59d587dcaf013351daf5a9e8ffd803c77303",
+    "trace_sha256": "c1a29a62b44fd84f3b4b3c6ba0409e6204d8cde9a2c906ba85c8340082bf32b1",
+    "actor_actions_reproduced": 719,
+    "rival_actions_reproduced": 719,
+    "trace_turns_reproduced": 719,
+    "execution_counts": {
+      "unit:pass": 3380,
+      "market:executed": 357,
+      "unit:executed": 4229
+    },
+    "errors": 0,
+    "opportunities_count": 0
+  },
+  {
+    "game": "train-3962026951-market-0-baseline",
+    "passed": true,
+    "official": {
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "b52446aaac3db90b91f6c18a8535adb43f0b09f7c8d16a78d6a6e505f1ab5607",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "11a2a9df00336ba783f43b21bc0346078f4d9108080d5263641fbce14190dfc1",
+      "final_rewards": [
+        44783.0,
+        45999.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 400,
+          "unit:executed": 4369,
+          "unit:pass": 3343
+        },
+        "ordered_effect_sha256": "03ec51a058a5e90b6b36e7946de2e3c4f9179898203eae3b05d774f139faf9e7",
+        "successful_plants": [
+          52,
+          74
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    "complete_request_changes": 0,
+    "live_model_counts": {
+      "task_forwards": 2166,
+      "task_rows": 114679,
+      "crop_forwards": 165,
+      "crop_rows": 165,
+      "gate_evaluations": 0,
+      "controller_calls": 728,
+      "teacher_proposals": 9
+    },
+    "primary_model_counts": {
+      "task_forwards": 2166,
+      "task_rows": 114679,
+      "crop_forwards": 165,
+      "crop_rows": 165,
+      "gate_evaluations": 0,
+      "controller_calls": 728,
+      "teacher_proposals": 9
+    },
+    "original_parity_model_counts": {},
+    "total_model_counts": {
+      "task_forwards": 4332,
+      "task_rows": 229358,
+      "crop_forwards": 330,
+      "crop_rows": 330,
+      "gate_evaluations": 0,
+      "controller_calls": 1456,
+      "teacher_proposals": 18
+    },
+    "policy_turns": 2894,
+    "original_controller_parity_turns": 0,
+    "parity_kind": null,
+    "replay_sha256": "37a1c5d3c3292c9897c76eb8522987842898cb2a10ec3380fb12611d275d81ce",
+    "trace_sha256": "1ce27c137ba2a1455dc1b3ac93d215e9daeceb7edb63bb0b7b71f45c64ed5f4f",
+    "actor_actions_reproduced": 719,
+    "rival_actions_reproduced": 719,
+    "trace_turns_reproduced": 719,
+    "execution_counts": {
+      "unit:pass": 3343,
+      "market:executed": 400,
+      "unit:executed": 4369
+    },
+    "errors": 0,
+    "opportunities_count": 1
+  },
+  {
+    "game": "train-3962026951-market-1-baseline",
+    "passed": true,
+    "official": {
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "1bb147fbf06892068767348d3ce4cdd96dd9f473b1b9c4ca8b83f9f7b65905f8",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "eeba2d2c157dcf3483a1de893d3bae1726efe2895cea2ea6311848160c148fab",
+      "final_rewards": [
+        45999.0,
+        44783.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 400,
+          "unit:executed": 4369,
+          "unit:pass": 3343
+        },
+        "ordered_effect_sha256": "337c320793ac8a7bd475025cb1a082bb5910808bf510f2801c7273d1aa19faf0",
+        "successful_plants": [
+          74,
+          52
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    "complete_request_changes": 0,
+    "live_model_counts": {
+      "task_forwards": 2166,
+      "task_rows": 114679,
+      "crop_forwards": 158,
+      "crop_rows": 158,
+      "gate_evaluations": 0,
+      "controller_calls": 759,
+      "teacher_proposals": 40
+    },
+    "primary_model_counts": {
+      "task_forwards": 2166,
+      "task_rows": 114679,
+      "crop_forwards": 158,
+      "crop_rows": 158,
+      "gate_evaluations": 0,
+      "controller_calls": 759,
+      "teacher_proposals": 40
+    },
+    "original_parity_model_counts": {},
+    "total_model_counts": {
+      "task_forwards": 4332,
+      "task_rows": 229358,
+      "crop_forwards": 316,
+      "crop_rows": 316,
+      "gate_evaluations": 0,
+      "controller_calls": 1518,
+      "teacher_proposals": 80
+    },
+    "policy_turns": 2956,
+    "original_controller_parity_turns": 0,
+    "parity_kind": null,
+    "replay_sha256": "277b410b9dda4f74aedae30ae0567cda32995dc44ca5719adee94b50abe99558",
+    "trace_sha256": "ab736f2eb88807fd73f3bd1c27b74cacc891761bcd13593043033a0cf3843330",
+    "actor_actions_reproduced": 719,
+    "rival_actions_reproduced": 719,
+    "trace_turns_reproduced": 719,
+    "execution_counts": {
+      "unit:pass": 3343,
+      "market:executed": 400,
+      "unit:executed": 4369
+    },
+    "errors": 0,
+    "opportunities_count": 0
+  },
+  {
+    "game": "train-3962026951-round2-1-intervention",
+    "passed": true,
+    "official": {
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "51a63a0973b69a42e86fc8b575988adbc75459e446a572549f207a75dd0a0897",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "0f95f72d39a076b0cafe74d7cd56696a8c95184bf4147e465383242ce23e3af9",
+      "final_rewards": [
+        41220.0,
+        41342.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 358,
+          "unit:executed": 4227,
+          "unit:pass": 3383
+        },
+        "ordered_effect_sha256": "f2f6f87d17d5f48026cba20a501ac14d1ecc9505efc49d1569a72f5a4a6c72e3",
+        "successful_plants": [
+          52,
+          53
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    "complete_request_changes": 1,
+    "live_model_counts": {
+      "task_forwards": 2187,
+      "task_rows": 116550,
+      "crop_forwards": 156,
+      "crop_rows": 156,
+      "gate_evaluations": 0,
+      "controller_calls": 721,
+      "teacher_proposals": 2
+    },
+    "primary_model_counts": {
+      "task_forwards": 2187,
+      "task_rows": 116550,
+      "crop_forwards": 156,
+      "crop_rows": 156,
+      "gate_evaluations": 0,
+      "controller_calls": 721,
+      "teacher_proposals": 2
+    },
+    "original_parity_model_counts": {},
+    "total_model_counts": {
+      "task_forwards": 4374,
+      "task_rows": 233100,
+      "crop_forwards": 312,
+      "crop_rows": 312,
+      "gate_evaluations": 0,
+      "controller_calls": 1442,
+      "teacher_proposals": 4
+    },
+    "policy_turns": 2880,
+    "original_controller_parity_turns": 0,
+    "parity_kind": null,
+    "replay_sha256": "d4347b467a80a3d2bcdc09dab1b3c2db2ce7815de096b59b1489abc5f2fc43f8",
+    "trace_sha256": "1805d8d55913d66690cf0dec635f8b80b847cafc71f9bfa0f9e32f0058f3b116",
+    "actor_actions_reproduced": 719,
+    "rival_actions_reproduced": 719,
+    "trace_turns_reproduced": 719,
+    "execution_counts": {
+      "unit:pass": 3383,
+      "market:executed": 358,
+      "unit:executed": 4227
+    },
+    "errors": 0,
+    "opportunities_count": 1
+  },
+  {
+    "game": "train-3962026951-market-0-intervention",
+    "passed": true,
+    "official": {
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "f550120273aefc9af1ce9958721daab735a696dc0ae8f58e0b512a7c8a97cd10",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "39d0d33039536e86e9dcc0b328a4778aecd20141dba91dcca1f338aae588b873",
+      "final_rewards": [
+        44783.0,
+        45999.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 399,
+          "unit:executed": 4369,
+          "unit:pass": 3344
+        },
+        "ordered_effect_sha256": "6214d3149d46dd8ed3d9f0c965a3b7781139e1e740ec85e3fd0213ce6393c7ba",
+        "successful_plants": [
+          52,
+          74
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    "complete_request_changes": 1,
+    "live_model_counts": {
+      "task_forwards": 2161,
+      "task_rows": 114567,
+      "crop_forwards": 161,
+      "crop_rows": 161,
+      "gate_evaluations": 0,
+      "controller_calls": 728,
+      "teacher_proposals": 9
+    },
+    "primary_model_counts": {
+      "task_forwards": 2161,
+      "task_rows": 114567,
+      "crop_forwards": 161,
+      "crop_rows": 161,
+      "gate_evaluations": 0,
+      "controller_calls": 728,
+      "teacher_proposals": 9
+    },
+    "original_parity_model_counts": {},
+    "total_model_counts": {
+      "task_forwards": 4322,
+      "task_rows": 229134,
+      "crop_forwards": 322,
+      "crop_rows": 322,
+      "gate_evaluations": 0,
+      "controller_calls": 1456,
+      "teacher_proposals": 18
+    },
+    "policy_turns": 2894,
+    "original_controller_parity_turns": 0,
+    "parity_kind": null,
+    "replay_sha256": "f0020e74238855da92d509a9cbd048f61be7ac97782cb691164aefa757ab99db",
+    "trace_sha256": "6ce0909ec3636bacb392db1878fc0295643fe997008b354a6db7e4b3466d323e",
+    "actor_actions_reproduced": 719,
+    "rival_actions_reproduced": 719,
+    "trace_turns_reproduced": 719,
+    "execution_counts": {
+      "unit:pass": 3344,
+      "market:executed": 399,
+      "unit:executed": 4369
+    },
+    "errors": 0,
+    "opportunities_count": 1
+  },
+  {
+    "game": "train-402036908-round2-0-baseline",
+    "passed": true,
+    "official": {
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "07bb14662c09207771e71789271442145f9969d7414fc332bef7dfc587a6b93d",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "18bb597f4d7d6fc37a409f995a7caeaf548144fa617959db60e058c821417750",
+      "final_rewards": [
+        37862.0,
+        33927.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 353,
+          "unit:executed": 4175,
+          "unit:pass": 3321
+        },
+        "ordered_effect_sha256": "f003f747baf29febc928820185ed163ded3062b9e17d474277f1a80e0ee09855",
+        "successful_plants": [
+          52,
+          52
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    "complete_request_changes": 0,
+    "live_model_counts": {
+      "task_forwards": 2150,
+      "task_rows": 110916,
+      "crop_forwards": 162,
+      "crop_rows": 162,
+      "gate_evaluations": 0,
+      "controller_calls": 721,
+      "teacher_proposals": 2
+    },
+    "primary_model_counts": {
+      "task_forwards": 2150,
+      "task_rows": 110916,
+      "crop_forwards": 162,
+      "crop_rows": 162,
+      "gate_evaluations": 0,
+      "controller_calls": 721,
+      "teacher_proposals": 2
+    },
+    "original_parity_model_counts": {},
+    "total_model_counts": {
+      "task_forwards": 4300,
+      "task_rows": 221832,
+      "crop_forwards": 324,
+      "crop_rows": 324,
+      "gate_evaluations": 0,
+      "controller_calls": 1442,
+      "teacher_proposals": 4
+    },
+    "policy_turns": 2880,
+    "original_controller_parity_turns": 0,
+    "parity_kind": null,
+    "replay_sha256": "68a2ddbebb1078b9b6469c9b0b8b9bf3bbd39355a01e2b5e51eee31087aa12c9",
+    "trace_sha256": "66c756a116d9c029fe9a157f6e3108c7ee59130c03c7c0023ae1f416a5777490",
+    "actor_actions_reproduced": 719,
+    "rival_actions_reproduced": 719,
+    "trace_turns_reproduced": 719,
+    "execution_counts": {
+      "unit:pass": 3321,
+      "market:executed": 353,
+      "unit:executed": 4175
+    },
+    "errors": 0,
+    "opportunities_count": 1
+  },
+  {
+    "game": "train-402036908-round2-1-baseline",
+    "passed": true,
+    "official": {
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "07c253d77c7f8c437fd5d07aa97d9fd32a35aa1c49c8a83b91e5a14b93741df6",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "de1ffc574dd53b9e9661a4639e8752babf55ca3cc7f20c421dfa9544e6b61bd9",
+      "final_rewards": [
+        33927.0,
+        37862.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 353,
+          "unit:executed": 4175,
+          "unit:pass": 3321
+        },
+        "ordered_effect_sha256": "cc098a53b0997eec9f4e8ea3b349adaf3bb5def37bc888ad9715dd4220175bd0",
+        "successful_plants": [
+          52,
+          52
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    "complete_request_changes": 0,
+    "live_model_counts": {
+      "task_forwards": 2150,
+      "task_rows": 110916,
+      "crop_forwards": 157,
+      "crop_rows": 157,
+      "gate_evaluations": 0,
+      "controller_calls": 759,
+      "teacher_proposals": 40
+    },
+    "primary_model_counts": {
+      "task_forwards": 2150,
+      "task_rows": 110916,
+      "crop_forwards": 157,
+      "crop_rows": 157,
+      "gate_evaluations": 0,
+      "controller_calls": 759,
+      "teacher_proposals": 40
+    },
+    "original_parity_model_counts": {},
+    "total_model_counts": {
+      "task_forwards": 4300,
+      "task_rows": 221832,
+      "crop_forwards": 314,
+      "crop_rows": 314,
+      "gate_evaluations": 0,
+      "controller_calls": 1518,
+      "teacher_proposals": 80
+    },
+    "policy_turns": 2956,
+    "original_controller_parity_turns": 0,
+    "parity_kind": null,
+    "replay_sha256": "55b8a22dac0a22f4e02de7f639af8560b33d1afe009a5cd10b227d327a6aa879",
+    "trace_sha256": "6c8d758d3d6effbcd788a8943c21ab06300625f01b2f21ae346146bb48fe36a8",
+    "actor_actions_reproduced": 719,
+    "rival_actions_reproduced": 719,
+    "trace_turns_reproduced": 719,
+    "execution_counts": {
+      "unit:pass": 3321,
+      "market:executed": 353,
+      "unit:executed": 4175
+    },
+    "errors": 0,
+    "opportunities_count": 0
+  },
+  {
+    "game": "train-402036908-market-0-baseline",
+    "passed": true,
+    "official": {
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "1d3992afe5c9f6b7c87c28d98c7b5fd6a6b2d1bed51acbdb4cae73382c979eac",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "cfdf982bd2b7fdecbdb82c7ee74e0dc514dccdb2b1898d68152aaaa63ac495e5",
+      "final_rewards": [
+        39079.0,
+        38522.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 411,
+          "unit:executed": 4428,
+          "unit:pass": 3203
+        },
+        "ordered_effect_sha256": "d1bf9086355c65a878ed3c2b2d1a47be03a7188a8ad38fb6dabb4f4cc3df71ae",
+        "successful_plants": [
+          52,
+          90
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    "complete_request_changes": 0,
+    "live_model_counts": {
+      "task_forwards": 2128,
+      "task_rows": 107551,
+      "crop_forwards": 159,
+      "crop_rows": 159,
+      "gate_evaluations": 0,
+      "controller_calls": 759,
+      "teacher_proposals": 40
+    },
+    "primary_model_counts": {
+      "task_forwards": 2128,
+      "task_rows": 107551,
+      "crop_forwards": 159,
+      "crop_rows": 159,
+      "gate_evaluations": 0,
+      "controller_calls": 759,
+      "teacher_proposals": 40
+    },
+    "original_parity_model_counts": {},
+    "total_model_counts": {
+      "task_forwards": 4256,
+      "task_rows": 215102,
+      "crop_forwards": 318,
+      "crop_rows": 318,
+      "gate_evaluations": 0,
+      "controller_calls": 1518,
+      "teacher_proposals": 80
+    },
+    "policy_turns": 2956,
+    "original_controller_parity_turns": 0,
+    "parity_kind": null,
+    "replay_sha256": "f81f0ec5a684d35b4adee069ff9e3edbccf7ce460ab0d64d78cac28028616990",
+    "trace_sha256": "dcc888bb4161debe1ab4444315767337f18068e171e1e6bb28b810f921b1aa28",
+    "actor_actions_reproduced": 719,
+    "rival_actions_reproduced": 719,
+    "trace_turns_reproduced": 719,
+    "execution_counts": {
+      "unit:pass": 3203,
+      "market:executed": 411,
+      "unit:executed": 4428
+    },
+    "errors": 0,
+    "opportunities_count": 0
+  },
+  {
+    "game": "train-402036908-market-1-baseline",
+    "passed": true,
+    "official": {
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "8ca47e9ba82ee6fa8c91343afdbe5761e4dc2578061503a1dd2bbc2e387df39b",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "e0b4856e13030d6299ea32c8214db887fa4d2aacc3164ec32734779ae402f153",
+      "final_rewards": [
+        38522.0,
+        39079.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 411,
+          "unit:executed": 4428,
+          "unit:pass": 3203
+        },
+        "ordered_effect_sha256": "6e60948e18ef8cbd43e612f545e35710bcb4b140d28bbf6600cfacec4f279200",
+        "successful_plants": [
+          90,
+          52
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    "complete_request_changes": 0,
+    "live_model_counts": {
+      "task_forwards": 2128,
+      "task_rows": 107551,
+      "crop_forwards": 159,
+      "crop_rows": 159,
+      "gate_evaluations": 0,
+      "controller_calls": 759,
+      "teacher_proposals": 40
+    },
+    "primary_model_counts": {
+      "task_forwards": 2128,
+      "task_rows": 107551,
+      "crop_forwards": 159,
+      "crop_rows": 159,
+      "gate_evaluations": 0,
+      "controller_calls": 759,
+      "teacher_proposals": 40
+    },
+    "original_parity_model_counts": {},
+    "total_model_counts": {
+      "task_forwards": 4256,
+      "task_rows": 215102,
+      "crop_forwards": 318,
+      "crop_rows": 318,
+      "gate_evaluations": 0,
+      "controller_calls": 1518,
+      "teacher_proposals": 80
+    },
+    "policy_turns": 2956,
+    "original_controller_parity_turns": 0,
+    "parity_kind": null,
+    "replay_sha256": "9ee552bc3d559a2b4d2f3c00cc811a0f11d910c1f481c10eee7a358eb960272f",
+    "trace_sha256": "ee5db991c3a11e79d46f23af24e1c50b4e2deaf1024d8323321eede2136b90d4",
+    "actor_actions_reproduced": 719,
+    "rival_actions_reproduced": 719,
+    "trace_turns_reproduced": 719,
+    "execution_counts": {
+      "unit:pass": 3203,
+      "market:executed": 411,
+      "unit:executed": 4428
+    },
+    "errors": 0,
+    "opportunities_count": 0
+  },
+  {
+    "game": "train-402036908-round2-0-intervention",
+    "passed": true,
+    "official": {
+      "passed": true,
+      "audit_version": 2,
+      "official_transitions_reexecuted": 719,
+      "both_public_and_private_states_match_each_step": true,
+      "inventory_order_checked_each_step": true,
+      "semantic_sha256": "61b6e239e848e053b89e1843b820f212498007df763b7d994fc3443852b86239",
+      "semantic_sha256_version": 1,
+      "semantic_sha256_v2": "ed80cabe0852010d72f4d7c999c94152a56e00de04b8597deace73aafb9e2824",
+      "final_rewards": [
+        37795.0,
+        33857.0
+      ],
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "execution": {
+        "label_version": 2,
+        "counts": {
+          "market:executed": 353,
+          "unit:executed": 4172,
+          "unit:pass": 3301
+        },
+        "ordered_effect_sha256": "384b91ea2fbf192cf2ec59d1101a8fab5eacf416af3fd706109a789f7e1ef0d0",
+        "successful_plants": [
+          52,
+          52
+        ],
+        "successful_plants_new_land": [
+          0,
+          0
+        ],
+        "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+      }
+    },
+    "complete_request_changes": 1,
+    "live_model_counts": {
+      "task_forwards": 2145,
+      "task_rows": 110079,
+      "crop_forwards": 160,
+      "crop_rows": 160,
+      "gate_evaluations": 0,
+      "controller_calls": 721,
+      "teacher_proposals": 2
+    },
+    "primary_model_counts": {
+      "task_forwards": 2145,
+      "task_rows": 110079,
+      "crop_forwards": 160,
+      "crop_rows": 160,
+      "gate_evaluations": 0,
+      "controller_calls": 721,
+      "teacher_proposals": 2
+    },
+    "original_parity_model_counts": {},
+    "total_model_counts": {
+      "task_forwards": 4290,
+      "task_rows": 220158,
+      "crop_forwards": 320,
+      "crop_rows": 320,
+      "gate_evaluations": 0,
+      "controller_calls": 1442,
+      "teacher_proposals": 4
+    },
+    "policy_turns": 2880,
+    "original_controller_parity_turns": 0,
+    "parity_kind": null,
+    "replay_sha256": "cf2c7fe81e2f48d4cee0f786709fe6a8fbfe256ed30e0e8e1b054f2cde5af559",
+    "trace_sha256": "496da66296de9bd455774f8776caa3c0866eb8c63cbbbc655428e2f6da09b379",
+    "actor_actions_reproduced": 719,
+    "rival_actions_reproduced": 719,
+    "trace_turns_reproduced": 719,
+    "execution_counts": {
+      "unit:pass": 3301,
+      "market:executed": 353,
+      "unit:executed": 4172
+    },
+    "errors": 0,
+    "opportunities_count": 1
+  }
+]

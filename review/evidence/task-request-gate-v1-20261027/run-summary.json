@@ -1,0 +1,30 @@
+{
+  "status": "stopped_early_signal",
+  "completed_games": 11,
+  "attempted_games": 11,
+  "all_attempts_completed": true,
+  "live_official_transitions": 7909,
+  "primary_official_transitions": 7909,
+  "model_counts": {
+    "task_forwards": 51908,
+    "task_rows": 2714246,
+    "crop_forwards": 3818,
+    "crop_rows": 3818,
+    "gate_evaluations": 0,
+    "controller_calls": 17708,
+    "teacher_proposals": 452
+  },
+  "extra_gate_evaluations": 0,
+  "policy_turns": 33526,
+  "campaign_seconds": 402.43800000002375,
+  "neural_weight_updates": 0,
+  "gpu_operations": 0,
+  "gate_fits": 0,
+  "default_changed": false,
+  "automatic_teacher_admission": false,
+  "registration_sha256": "7ace44dec636a32328bbd9ee7ca7238cf085a3a5f7ede80a8aa0013f751c3ae2",
+  "freeze_sha256": "28c29ead0727b2d98141d7725c869c18e24d61f64352b6e84b1c715ee0fa05bb",
+  "early_signal_passed": false,
+  "training_signal_evaluated": false,
+  "holdout_run": false
+}

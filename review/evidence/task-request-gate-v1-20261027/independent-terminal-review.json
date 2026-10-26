@@ -1,0 +1,196 @@
+{
+  "schema": "task-request-gate-independent-terminal-v1",
+  "passed": true,
+  "reviewer_role": "independent subagent",
+  "games": 11,
+  "rows": [
+    {
+      "game": "train-3962026951-round2-1-baseline",
+      "replay_sha256": "aae7ef21bf5dd3e81ed1c2dd69ddb47f396df47ff3a47a853992db46f4590e39",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "banks": [
+        41220.0,
+        41342.0
+      ],
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-3962026951-round2-0-baseline",
+      "replay_sha256": "4b4c41eaa170a090db3d190d760b59d587dcaf013351daf5a9e8ffd803c77303",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "banks": [
+        41342.0,
+        41220.0
+      ],
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-3962026951-market-0-baseline",
+      "replay_sha256": "37a1c5d3c3292c9897c76eb8522987842898cb2a10ec3380fb12611d275d81ce",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "banks": [
+        44783.0,
+        45999.0
+      ],
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-3962026951-market-1-baseline",
+      "replay_sha256": "277b410b9dda4f74aedae30ae0567cda32995dc44ca5719adee94b50abe99558",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "banks": [
+        45999.0,
+        44783.0
+      ],
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-3962026951-round2-1-intervention",
+      "replay_sha256": "d4347b467a80a3d2bcdc09dab1b3c2db2ce7815de096b59b1489abc5f2fc43f8",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "banks": [
+        41220.0,
+        41342.0
+      ],
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-3962026951-market-0-intervention",
+      "replay_sha256": "f0020e74238855da92d509a9cbd048f61be7ac97782cb691164aefa757ab99db",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "banks": [
+        44783.0,
+        45999.0
+      ],
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-402036908-round2-0-baseline",
+      "replay_sha256": "68a2ddbebb1078b9b6469c9b0b8b9bf3bbd39355a01e2b5e51eee31087aa12c9",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "banks": [
+        37862.0,
+        33927.0
+      ],
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-402036908-round2-1-baseline",
+      "replay_sha256": "55b8a22dac0a22f4e02de7f639af8560b33d1afe009a5cd10b227d327a6aa879",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "banks": [
+        33927.0,
+        37862.0
+      ],
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-402036908-market-0-baseline",
+      "replay_sha256": "f81f0ec5a684d35b4adee069ff9e3edbccf7ce460ab0d64d78cac28028616990",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "banks": [
+        39079.0,
+        38522.0
+      ],
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-402036908-market-1-baseline",
+      "replay_sha256": "9ee552bc3d559a2b4d2f3c00cc811a0f11d910c1f481c10eee7a358eb960272f",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "banks": [
+        38522.0,
+        39079.0
+      ],
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-402036908-round2-0-intervention",
+      "replay_sha256": "cf2c7fe81e2f48d4cee0f786709fe6a8fbfe256ed30e0e8e1b054f2cde5af559",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "banks": [
+        37795.0,
+        33857.0
+      ],
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    }
+  ],
+  "evidence_sha256": {
+    "registration.json": "7ace44dec636a32328bbd9ee7ca7238cf085a3a5f7ede80a8aa0013f751c3ae2",
+    "freeze.json": "28c29ead0727b2d98141d7725c869c18e24d61f64352b6e84b1c715ee0fa05bb",
+    "ledger.json": "46867da4fbc2084328acdfea67a667c0085a79bb10deb1c245b66600a18b51cd",
+    "audit.json": "5341c4f90b7781e66d6030025e76baafe2dae87cd8fe99e4bb958b7abec941ac",
+    "train-pairs.json": "66045a24c8d89c84a2013ed896d7d9580ff329013375c1f7297f422f274bcaa9",
+    "run-summary.json": "5f57f62ad39c741e8ee7a057ccc8a4c5b5e71dc3eb0657d0e47a4e348e7d3aa5"
+  },
+  "neural_forwards": 0,
+  "fits": 0,
+  "gpu_operations": 0,
+  "new_games": 0
+}

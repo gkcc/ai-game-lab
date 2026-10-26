@@ -1,0 +1,27 @@
+{
+  "schema": "task-request-gate-independent-registration-history-v1",
+  "passed": true,
+  "reviewer_role": "independent subagent",
+  "preregistration_commit": "517d7b60f5729af6896ec5a386bdd455a65984ad",
+  "registration_sha256": "7ace44dec636a32328bbd9ee7ca7238cf085a3a5f7ede80a8aa0013f751c3ae2",
+  "freeze_sha256": "28c29ead0727b2d98141d7725c869c18e24d61f64352b6e84b1c715ee0fa05bb",
+  "pre_review_sha256": "c13fbf97a25305f52eefc3dfbe319324616001c9616b899b761eccd08aa347e9",
+  "protection_sha256": "a0e8406c11e19710a2a1e9adce177c11fcd1589e8022a78bedbd0c190ce4f317",
+  "runtime_published_bindings": 107,
+  "line_endings_only_count": 4,
+  "protected_runtime_source_content_hashes": 2303,
+  "protected_historical_stat_paths": 16555,
+  "history_content_rehashed": false,
+  "neural_checkpoint_content_reads": 0,
+  "neural_forwards": 0,
+  "new_games": 0,
+  "official_steps": 0,
+  "elapsed_seconds": 4.063000000023749,
+  "limits": [
+    "The frozen runtime/public source pairs match Git blobs; documented CRLF/LF differences are normalized only for equivalence.",
+    "Historical artifact protection compares recorded byte size and mtime_ns, not full historical content hashes.",
+    "Protected source hashes cover Python files and one Markdown document, including existing environment package sources.",
+    "The registration commit is a local Git identity, not an independent external timestamp.",
+    "This check does not rerun historical experiments or assert their scientific conclusions."
+  ]
+}

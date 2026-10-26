@@ -1,0 +1,104 @@
+{
+  "schema": "task-request-gate-independent-result-v1",
+  "passed": true,
+  "reviewer_role": "independent subagent",
+  "reviewed_utc": "2026-10-26T18:42:09.718375+00:00",
+  "script_sha256": "a4ab19b8be28901afbddfdfdc20ff3b6a3ff45e554d2ec11143469385ba6ab58",
+  "evidence_sha256": {
+    "registration.json": "7ace44dec636a32328bbd9ee7ca7238cf085a3a5f7ede80a8aa0013f751c3ae2",
+    "freeze.json": "28c29ead0727b2d98141d7725c869c18e24d61f64352b6e84b1c715ee0fa05bb",
+    "ledger.json": "46867da4fbc2084328acdfea67a667c0085a79bb10deb1c245b66600a18b51cd",
+    "audit.json": "5341c4f90b7781e66d6030025e76baafe2dae87cd8fe99e4bb958b7abec941ac",
+    "train-pairs.json": "66045a24c8d89c84a2013ed896d7d9580ff329013375c1f7297f422f274bcaa9",
+    "run-summary.json": "5f57f62ad39c741e8ee7a057ccc8a4c5b5e71dc3eb0657d0e47a4e348e7d3aa5"
+  },
+  "games": 11,
+  "pairs": 8,
+  "training_counts": {
+    "population_cells": 8,
+    "eligible": 3,
+    "missing": 5,
+    "zero_margin": 2,
+    "nonzero_margin": 1,
+    "positive_margin": 1,
+    "negative_margin": 0,
+    "nonzero_seed_count": 1,
+    "nonzero_seeds": [
+      402036908
+    ]
+  },
+  "early_screen_passed": false,
+  "training_gate_evaluated": false,
+  "training_signal_passed": null,
+  "gate_fits": 0,
+  "independent_reexecutions": [
+    {
+      "game": "train-3962026951-round2-0-baseline",
+      "passed": true,
+      "replay_sha256": "4b4c41eaa170a090db3d190d760b59d587dcaf013351daf5a9e8ffd803c77303",
+      "official": {
+        "passed": true,
+        "audit_version": 2,
+        "official_transitions_reexecuted": 719,
+        "both_public_and_private_states_match_each_step": true,
+        "inventory_order_checked_each_step": true,
+        "semantic_sha256": "ef485f0402be0a885885da78550ca01fb3f506fe1cf3e02859abfca7945a3ab1",
+        "semantic_sha256_version": 1,
+        "semantic_sha256_v2": "7e498347a3ca5baf0371b43c3f60b4e9cf0311abe191a49a6535d778a62f450e",
+        "final_rewards": [
+          41342.0,
+          41220.0
+        ],
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "label_version": 2,
+          "counts": {
+            "market:executed": 357,
+            "unit:executed": 4229,
+            "unit:pass": 3380
+          },
+          "ordered_effect_sha256": "d8091122606692c6f0e2ad99e602f685a18a104879962d24fb0dc5fc5fc5fefb",
+          "successful_plants": [
+            53,
+            52
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ],
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+        }
+      },
+      "execution_counts": {
+        "unit:pass": 3380,
+        "market:executed": 357,
+        "unit:executed": 4229
+      }
+    }
+  ],
+  "independent_official_steps": 719,
+  "total_official_steps": 16537,
+  "computation_counts_recounted_from_all_traces": {
+    "task_forwards": 51908,
+    "task_rows": 2714246,
+    "crop_forwards": 3818,
+    "crop_rows": 3818,
+    "gate_evaluations": 0,
+    "controller_calls": 17708,
+    "teacher_proposals": 452
+  },
+  "raw_terminal_checks": 11,
+  "elapsed_seconds": 50.68699999997625,
+  "neural_forwards": 0,
+  "model_reads": 0,
+  "model_fits": 0,
+  "new_games": 0,
+  "gpu_operations": 0,
+  "limits": [
+    "Official reexecution uses the existing fixed-engine verifier, not a second implementation.",
+    "All recorded trace counts and proposal-selection facts were checked without re-running neural networks.",
+    "Main replay certificates establish network recomputation; this review does not duplicate those forward passes.",
+    "Both review files come from this one independent subagent, not two reviewers.",
+    "Training information stopping does not establish independent policy improvement."
+  ]
+}

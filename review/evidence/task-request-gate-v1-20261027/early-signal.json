@@ -1,0 +1,26 @@
+{
+  "schema": "task-request-gate-early-signal-v1",
+  "seeds": [
+    3962026951,
+    402036908
+  ],
+  "counts": {
+    "population_cells": 8,
+    "eligible": 3,
+    "missing": 5,
+    "zero_margin": 2,
+    "nonzero_margin": 1,
+    "positive_margin": 1,
+    "negative_margin": 0,
+    "nonzero_seed_count": 1,
+    "nonzero_seeds": [
+      402036908
+    ]
+  },
+  "checks": {
+    "eligible_ge_4": false,
+    "any_nonzero_margin": true
+  },
+  "passed": false,
+  "role": "First two registered training seeds, not an additional probe or replacement sample"
+}
