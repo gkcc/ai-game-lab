@@ -1,0 +1,158 @@
+{
+  "schema": "teacher-label-equivalence-v2-follow-on-scoped-advice-v1",
+  "role": "independent_planning_agent",
+  "provenance": "Independent delegated planning; not WebChat and not an experiment acceptance.",
+  "planning_started_utc": "2026-10-26T21:28:53.0020961+08:00",
+  "planning_limit_seconds": 180,
+  "planning_deadline_reset": false,
+  "planning_inputs": [
+    {
+      "path": "kaggriculture/TASK_BC_TEACHER_LABEL_EQUIVALENCE_V2.zh-CN.md",
+      "sha256": "8c2341e356119d77d72877b3bda9afed78044fad762fe630db3fc2c585733cb3",
+      "read_count": 1,
+      "bytes_read": 7167
+    },
+    {
+      "path": "kaggriculture/learning/task_bc_teacher_label_equivalence_v2/CONTRACT.md",
+      "sha256": "e6332eec2712b1d74e9c912c795261466a47a1f5732032603da19bb63b015ec2",
+      "read_count": 1,
+      "bytes_read": 6711
+    },
+    {
+      "path": "kaggriculture/artifacts/task-bc-teacher-label-equivalence-v2-20261026/root-adjudication.json",
+      "sha256": "67a1ba2590774a452ee4efcf6438301e0e813f4eb3a85d6a942928ff1c000c48",
+      "read_count": 1,
+      "bytes_read": 2067
+    },
+    {
+      "path": "kaggriculture/artifacts/task-bc-teacher-label-equivalence-v2-20261026/independent-result-review.json",
+      "sha256": "af3076833e0a9e2aa1d3895c20b61e56fd8caceae96c62249145bdc14bbca635",
+      "read_count": 1,
+      "bytes_read": 8900
+    }
+  ],
+  "planning_total_bytes_read": 24845,
+  "planning_read_count": 4,
+  "source_baseline_commit": "1bd2ca626400a597dafb4df342c8f84689af328f",
+  "pre_execution_commit": "48ce3f40dd196118d86d174f303947ea93332bb3",
+  "evidence_classification": {
+    "confirmed_procedural_failure": "原独立人工复审 375.266 秒超过登记 300 秒；严格复审和阶段验收仍为 false。",
+    "recorded_code_or_data_discrepancies": 0,
+    "interpretation": "超时是已证实的程序验收失败；现有安全收据没有记录实现或数据矛盾。未发现矛盾不能推出无代码缺陷，本建议没有读取源码或私有 witness。",
+    "scientific_scope": "现有部分证据仅支持一个历史训练上下文中的条件性整回合请求等价，不支持频率、收益、官方规则执行或可跨条件合并标签。"
+  },
+  "sole_recommendation": {
+    "task_id": "conditional-equivalence-witness-decision-v1",
+    "title": "一次窄范围独立 witness 核实与研究价值裁决",
+    "purpose": "只核实决定研究方向的语义证据是否成立，并判定是否值得登记后续条件等价监督研究；不补签原实验通过，也不重做全套审计。",
+    "execution_authority": "此文件仅是建议。由 root 核实范围并单独登记后执行；本规划不启动该任务。",
+    "inputs": [
+      {
+        "path": "kaggriculture/TASK_BC_TEACHER_LABEL_EQUIVALENCE_V2.zh-CN.md",
+        "sha256": "8c2341e356119d77d72877b3bda9afed78044fad762fe630db3fc2c585733cb3",
+        "bytes": 7167,
+        "read_count_cap": 1
+      },
+      {
+        "path": "kaggriculture/learning/task_bc_teacher_label_equivalence_v2/CONTRACT.md",
+        "sha256": "e6332eec2712b1d74e9c912c795261466a47a1f5732032603da19bb63b015ec2",
+        "bytes": 6711,
+        "read_count_cap": 1
+      },
+      {
+        "path": "kaggriculture/artifacts/task-bc-teacher-label-equivalence-v2-20261026/root-adjudication.json",
+        "sha256": "67a1ba2590774a452ee4efcf6438301e0e813f4eb3a85d6a942928ff1c000c48",
+        "bytes": 2067,
+        "read_count_cap": 1
+      },
+      {
+        "path": "kaggriculture/artifacts/task-bc-teacher-label-equivalence-v2-20261026/independent-result-review.json",
+        "sha256": "af3076833e0a9e2aa1d3895c20b61e56fd8caceae96c62249145bdc14bbca635",
+        "bytes": 8900,
+        "read_count_cap": 1
+      },
+      {
+        "path": "kaggriculture/artifacts/task-bc-teacher-label-equivalence-v2-20261026/case.json",
+        "sha256": "3dc5625e0a6029e1f299da7da5548e00c6ec453aa7544b0cce99b7b394543822",
+        "bytes": 64440,
+        "read_count_cap": 1,
+        "accounting": "新任务新增一次私有 case 阅读，单列 64,440 字节；此前人工阅读保持 1 次，完成后累计人工阅读为 2 次，不能重置或把新增读取归入旧预算。只在内存复用，不打印私有内容。"
+      }
+    ],
+    "implementation": "由独立核实者用标准库解析和自行实现的带类型递归比较，一次读取后在内存核对；不导入项目、不调用已有生产或核对器。不新建通用工具、审计框架或持久测试文件。",
+    "decisive_checks": [
+      "在同一固定输入绑定下，保存标签唯一，替代选择与该标签不同且属于该输入的合法候选；原保存动作、教师动作和适配器基线完整一致。",
+      "直接比较已保存的获胜替代与基线：farmer、按编号的 hands、market 内容及顺序、JSON 类型均完全相同；只确认这个既有 witness，不重算其余十个试验或搜索其余三十个候选。",
+      "检查既有轨迹是否支持回调 0/1 的两次 WATER 分配互换、回调 1 输入不同、回调 2 起输入重合，以及首回调唯一强制和后缀新编码记录。将“重新执行后缀”的历史收据依据与本次不执行控制器的边界写明。"
+    ],
+    "reasoning_boundary": "只有同一输入、指定教师后缀完成方式和完整请求比较一起成立，才称该 witness 条件等价。不能将两个回调的候选直接并成通用多标签，也不能把下一回调输入当作未变。",
+    "output": {
+      "new_file": "kaggriculture/artifacts/task-bc-teacher-label-equivalence-v2-20261026/conditional-equivalence-witness-decision-v1.json",
+      "max_bytes": 12288,
+      "fields": [
+        "真实首次读取前起点、完成时间、耗时和固定截止；逐文件实际 SHA、读次数、字节；新增与累计私有读取分别列出",
+        "三个语义断言的 observed / contradicted / unknown 状态，只写脱敏结论",
+        "原 strict_review_passed=false 与 stage_acceptance=false 原样保留",
+        "新窄任务自身的 completion_passed，不命名为原 experiment_passed",
+        "research_value_decision 以及一句依据和结论适用范围"
+      ],
+      "privacy": "不输出完整动作、候选描述、原观测、进程身份或私有来源；公开时只用脱敏判定、计数、哈希。"
+    },
+    "budget": {
+      "wall_clock_total_seconds": 180,
+      "semantic_work_stop_seconds": 120,
+      "decision_and_receipt_reserve_seconds": 60,
+      "start": "独立核实者第一次工具先记录真实起点，须早于任何输入读取。",
+      "reads_max": 5,
+      "total_input_bytes_max": 89285,
+      "private_case_reads_max": 1,
+      "private_case_bytes_max": 64440,
+      "output_files_max": 1,
+      "output_bytes_max": 12288,
+      "project_imports": 0,
+      "project_or_checker_executions": 0,
+      "retries": 0,
+      "deadline_extensions": 0
+    },
+    "acceptance": {
+      "narrow_task": "按时落盘且五份输入 SHA/字节身份一致，三个语义断言均 observed，无矛盾、无缺失、无越界；这只通过新窄任务。",
+      "research_value_decision": "满足上述条件时只允许写 worth_scoping：值得把“条件于教师后缀完成方式的等价监督”保留为后续有界研究问题。当前不估计收益，不修改训练目标，不授予任何模型准入。",
+      "preserved_failure": "原人工复审超时和原阶段失败永久保留；后续窄核实成功也不补签、不重算原用时、不把执行通过设为 true。"
+    },
+    "stop_conditions": [
+      "发现首个 SHA/类型/输入绑定/完整动作或轨迹矛盾，立即停止本任务并保存 contradicted；明确它是哪个证据断言的矛盾，不能仅凭该矛盾断言生产代码根因。",
+      "关键字段缺失、语义无法由现有 witness 判定或预算不足，写 unknown / inconclusive 并停止；不追加源码阅读、原来源读取或新运行。",
+      "达到 120 秒停止语义工作，余时只写收据；超过 180 秒记录本任务超时失败，不改起点、不重试。",
+      "输出并由 root 作一次范围裁决后结束；研究价值为 worth_scoping 也不自动开始下一个实验。"
+    ],
+    "prohibited": [
+      "修改、覆盖、重命名旧证据或修改旧验收状态",
+      "重跑机器实验、教师、适配器、核对器、原检查或官方状态转移",
+      "读取原压缩数据、Replay、模型、其他来源、其他报告或全仓源码",
+      "重新核算已经完成的 60/68 项计量、全部历史 SHA 或 6,901 条历史路径",
+      "扩样、换状态、补跑未试候选、重标注、改 loss、训练、新比赛面板、DAgger 或 PPO",
+      "启用 Agent Workflow，搭建新审计框架或开启无边界后续分叉"
+    ]
+  },
+  "planning_activity": {
+    "private_case_reads": 0,
+    "original_source_reads": 0,
+    "replay_reads": 0,
+    "model_reads": 0,
+    "project_imports": 0,
+    "project_runs": 0,
+    "tests": 0,
+    "source_edits": 0,
+    "old_evidence_edits": 0,
+    "temporary_files": 0,
+    "agent_workflow_calls": 0,
+    "output_files": 1
+  },
+  "advice_is_experiment_acceptance": false,
+  "preserved_strict_review_passed": false,
+  "preserved_stage_acceptance": false,
+  "planning_ended_utc": "2026-10-26T13:30:52.3200722+00:00",
+  "planning_elapsed_seconds": 119.3200722,
+  "planning_completed_within_budget": true,
+  "planning_status": "advice_ready_not_experiment_acceptance"
+}
