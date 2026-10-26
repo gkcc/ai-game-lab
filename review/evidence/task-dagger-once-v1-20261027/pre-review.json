@@ -1,0 +1,121 @@
+{
+  "schema": "independent-pre-execution-review-v2",
+  "reviewer_role": "independent source-review subagent; not implementation author and not WebChat",
+  "created_utc": "2026-10-26T19:37:57.953283+00:00",
+  "passed": true,
+  "disposition": "Scoped privacy correction passes. Prior substantive source review remains applicable to unchanged contracts. Local preregistration commit and all frozen runtime gates are still required.",
+  "reviewed_public_commit": "c10a517c06c141a9d33e305d4770315496b6c5aa",
+  "freeze_sha256": "45a6804c952089cc145049a7d4623182f818818256e5e78daffa8d48dcf182a7",
+  "registration_sha256": "7fcef4841bbd26727826628ae4c7613389ba610ba48e4781e45d65c7d1092372",
+  "protection_sha256": "ee574ea24e03920b401887b7fd1400c267fca970caa06d586aef77aa7a166288",
+  "previous_review_sha256": "6638f06f9ab65f61b4e9939768136cd229a77dcbd57d39a327d1487d81c3082a",
+  "privacy_correction_sha256": "62985634a15d97063b7496581e38dba82841233ecddef6ab92d36606ac4b875b",
+  "source_bindings": {
+    "frozen_runtime_files_verified": 122,
+    "new_package_files": 15,
+    "new_source_sha256": {
+      "learning/task_dagger_once_v1/campaign.py": "e2c5e9d61e58cba3c8bd6b7aa5fcbece2ea8ff004d16507a87f66960471b5d28",
+      "learning/task_dagger_once_v1/data.py": "9b53624ff931b8ee3f725d0399c4d2ee3b6660949abd4e55a738dd0b9837fbf2",
+      "learning/task_dagger_once_v1/experiment.py": "e215d98ae7644035e61143a1e52a1c04e48dc2fc784d200fb04d522929770654",
+      "learning/task_dagger_once_v1/games.py": "8c74f2447cd6c89c6f4d08fa461f521140dd0bfed0f146e2a985993c99cc3930",
+      "learning/task_dagger_once_v1/gpu_guard.py": "b85263dea410dfa37ceae35f91790883d4e6fca27aebc7485cfb69c095b67a08",
+      "learning/task_dagger_once_v1/policy.py": "f065ef443d06f6c1cbef6686973e2f205aa652c08647b7deadf3a043e30a1555",
+      "learning/task_dagger_once_v1/README.zh-CN.md": "1c3548eda8302c20c89b6908b7b4bb8730bed8ac4cf25af4b5f8dc3ef98c67b6",
+      "learning/task_dagger_once_v1/statistics.py": "900be372baeada40c768db34df960f0d160f34b72b69d1c5ea706921d04a9a5f",
+      "learning/task_dagger_once_v1/test_campaign.py": "ae414f6e4fb88e88d530d65a272c2470c55d4f2e7308a843b3e2a258d4fc3bb9",
+      "learning/task_dagger_once_v1/test_data.py": "b3782c0246d5919e11779854b2312f20dd18ef3d04000ca3d0754b484448fd6d",
+      "learning/task_dagger_once_v1/test_policy.py": "18177d794c15d8b8b6e0635ccb86ccc9ebe1eedc82aa396d3079e4c556ed362e",
+      "learning/task_dagger_once_v1/test_statistics.py": "f8ec6292956f88cf703d8861ec914e76d425d269d241fe2c9e25f799ed97471d",
+      "learning/task_dagger_once_v1/test_training.py": "7a637a5bd48c6159114926703ab1930da616c5bd48bf79701e47571908b5f3fe",
+      "learning/task_dagger_once_v1/training.py": "5d29b0d1c12d0f6fb87566136883e4a7729c113d6e93fbb3748bbe69c93845f9",
+      "learning/task_dagger_once_v1/__init__.py": "796151b10daeb85b0de82b2aeb1fff5630488138a91ae6907b05769abf499c5e"
+    },
+    "frozen_runtime_map_sha256": "1e36cef28018b3937496b4fbba485cfb89aea3608d0f466abc5883e0a66cef51",
+    "unchanged_from_prior_review": 118,
+    "focused_changed_sources": [
+      {
+        "path": "learning/task_dagger_once_v1/experiment.py",
+        "previous_sha256": "c6e4c25b36b2fa39e960d809dc63cc3e02098565ff2caa712cdf04b6c50ba7b4",
+        "sha256": "e215d98ae7644035e61143a1e52a1c04e48dc2fc784d200fb04d522929770654"
+      },
+      {
+        "path": "learning/task_dagger_once_v1/README.zh-CN.md",
+        "previous_sha256": "930ad18d64acd83d6d281b554fd80623faddc737f2e19fe54342a232dafcb029",
+        "sha256": "1c3548eda8302c20c89b6908b7b4bb8730bed8ac4cf25af4b5f8dc3ef98c67b6"
+      },
+      {
+        "path": "learning/task_dagger_once_v1/test_training.py",
+        "previous_sha256": "db33df2a1d1c089d7e0cad52bd786781ad76bf755d310e4e653492c5e1a383b8",
+        "sha256": "7a637a5bd48c6159114926703ab1930da616c5bd48bf79701e47571908b5f3fe"
+      },
+      {
+        "path": "learning/task_dagger_once_v1/training.py",
+        "previous_sha256": "71b4b88248151736e473c312c8583f41ff35b8d370d07a213f0008af2bd5a420",
+        "sha256": "5d29b0d1c12d0f6fb87566136883e4a7729c113d6e93fbb3748bbe69c93845f9"
+      }
+    ],
+    "review_scope": "Four-file diff and preservation/device-identity binding only; no repeat full-repository review"
+  },
+  "tests": {
+    "prior_independent_review": {
+      "passed": 38,
+      "failed": 0,
+      "certificate_sha256": "6638f06f9ab65f61b4e9939768136cd229a77dcbd57d39a327d1487d81c3082a",
+      "scope": "All five synthetic CPU test modules on prior freeze"
+    },
+    "this_focused_independent_run": {
+      "command": "python -B -m unittest learning.task_dagger_once_v1.test_training",
+      "passed": 11,
+      "failed": 0,
+      "new_test_cases": 1,
+      "scope": "Synthetic CPU; no real checkpoint/cache/Replay/JAX/GPU"
+    },
+    "current_full_suite_reported_by_root": {
+      "passed": 39,
+      "failed": 0,
+      "independently_rerun_in_full_this_pass": false,
+      "record_sha256": "d74fa2825275d16010452ea15f75bccbe8c6af89e2934eaa5b39b3b391a2d9aa"
+    },
+    "count_interpretation": "The eleven focused tests include ten earlier tests;38+11 is not49 distinct tests. The current full suite has39 tests."
+  },
+  "focused_checks": {
+    "limited_changes_verified": true,
+    "same_private_launch_bytes_hashed_then_decoded": true,
+    "device_platform_must_be_gpu": true,
+    "private_device_selector_nonblank_and_at_least_as_strict_as_prior_literal": true,
+    "private_launch_original_fields_unchanged": true,
+    "registration_only_changed_key": "gpu_launch_config_sha256",
+    "seeds_training_algorithm_budget_and_economic_gates_unchanged": true,
+    "history_stat_and_public_protection_maps_unchanged": true,
+    "old_backup_content_files_hash_verified": 11,
+    "old_review_both_retained_copies_identical": true,
+    "private_configuration_values_in_this_certificate": false
+  },
+  "inherited_substantive_review_checks": {
+    "conditional_labels": "Labels bind to each current callback candidate set and student-conditioned reservations; no independent-trajectory ordinal alignment. Labels/priority/seed/opponent-private data do not enter numeric deployment inputs.",
+    "warm_start": "One fixed 512-update fit from original task tensors; original mean/scale bytes and crop weights retained; one final model; no model selection. Initial/final real-file identity checks remain runtime obligations.",
+    "training": "Uniform replacement sampling of 128 old-train plus 128 new-train groups; weights from old train only; whole groups preserved; shared weighted-loss denominator; compact padding equivalence covered. CPU float64 deployment and float32 training remain explicitly distinct.",
+    "entry_and_stage_order": "First four official filename games must pass before further collection; first-seed round2 both seats compare all719 original-student requests. Maximum136 games, with separate offline/development gates before holdout and no retries/refits.",
+    "statistics": "Eight complete seed clusters retain all opponents/seats/arms;20000 fixed bootstrap draws. Improvement over S and retention against hybrid teacher T are separate gates;96 holdout games are not treated as96 independent samples.",
+    "budgets_and_lifecycle": "Game reservations include attempted/inflight jobs; model counters debit before calls; offline and padding budgets include stated scoring/compile scope. Linux guard retains session identity through cleanup; Windows requires guard acknowledgement and does not equate killing wsl with Linux child cleanup.",
+    "preservation_and_privacy": "Frozen identities and preregistration Git blobs are checked by actual readiness path. Old models/sources retain hashes; general historic artifacts use size/mtime preservation, not a claim of content rehash. Raw observations/weights/Replay/traces/logs/private launch/device data remain local; public export still requires whitelist checks."
+  },
+  "nonblocking_findings": [
+    {
+      "file": "pre-publication-v1/preservation.json",
+      "issue": "The files map includes its own preservation.json with the SHA of empty bytes, recorded while the manifest was being created. That self-reference is not a valid final-file identity.",
+      "impact": "No old artifact mismatch: all eleven other preserved content files match their listed hashes. Both preserved copies of the old review match its previously established SHA.",
+      "disposition": "Original manifest remains untouched. This certificate explicitly excludes the invalid self row from preservation evidence and binds the final manifest bytes separately.",
+      "actual_manifest_sha256": "db7a4551c64734da038ed96bc9980d03bff6a009377148c45ccaec4776c688a5"
+    }
+  ],
+  "blockers": [],
+  "evidence_limits": [
+    "This is a pre-execution review, not proof of completed GPU fitting, official games or economic improvement.",
+    "Only source, safe evidence and the local device configuration were read; no real weights, training feature arrays or Replay were read; no games or GPU operations were run by this reviewer.",
+    "Root-reported39-test full-suite result and inherited three Linux lifecycle checks are distinguished from this reviewers eleven focused tests and prior38-test execution.",
+    "Real data/checkpoint identity, synchronized512-update GPU fit, normalizer preservation, final numerical parity and every official-entry/replay/economic gate remain runtime obligations.",
+    "Publishing still requires allowlisted exports and privacy checks. Private launch values and device inventory must not be exported.",
+    "No policy/default change, extra seeds, refit, checkpoint selection, second aggregation iteration or PPO is approved."
+  ]
+}

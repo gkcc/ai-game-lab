@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "source_files": 122,
+  "new_source_files": 15,
+  "focused_tests": 39,
+  "test_groups": {
+    "policy": 3,
+    "data": 8,
+    "statistics": 13,
+    "training": 11,
+    "campaign": 4
+  },
+  "root_test_commands": [
+    "python -B -m unittest learning.task_dagger_once_v1.test_policy learning.task_dagger_once_v1.test_data learning.task_dagger_once_v1.test_statistics learning.task_dagger_once_v1.test_training",
+    "python -B -m unittest learning.task_dagger_once_v1.test_campaign"
+  ],
+  "linux_process_path_tests": {
+    "normal_exit": true,
+    "deadline": true,
+    "cancel": true,
+    "no_live_owned_session_members_before_reap": true,
+    "model_reads": 0,
+    "gpu_operations": 0,
+    "temporary_files": 0
+  },
+  "gpu_backend_discovery": {
+    "available": true,
+    "expected_device_observed": true,
+    "actual_tensor_operations": 0,
+    "training_runs": 0
+  },
+  "real_model_reads": 0,
+  "real_training_features_read": 0,
+  "new_games": 0,
+  "official_steps": 0,
+  "training_runs": 0,
+  "registration_sha256": "7fcef4841bbd26727826628ae4c7613389ba610ba48e4781e45d65c7d1092372",
+  "freeze_sha256": "45a6804c952089cc145049a7d4623182f818818256e5e78daffa8d48dcf182a7",
+  "evidence_scope": "Synthetic regressions and real Linux process lifecycle only; not actual model fitting or official match acceptance",
+  "additional_targeted_test": "Private expected-device requirement rejects empty, non-string, mismatched and non-GPU devices"
+}

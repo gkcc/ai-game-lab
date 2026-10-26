@@ -1,0 +1,50 @@
+{
+  "schema": "task-dagger-prepublication-privacy-correction-v1",
+  "reason": "Move hardware requirement from public source and documentation to private SHA-bound launch configuration",
+  "previous_freeze_sha256": "708b4354060b5447fd840d09a9aa7779539562350b801751b7a0e9f748c38d04",
+  "freeze_sha256": "45a6804c952089cc145049a7d4623182f818818256e5e78daffa8d48dcf182a7",
+  "previous_registration_sha256": "fdadd50e66597e6960fad5e1920bb0cdf469cd386dfc851c327111d9b7168354",
+  "registration_sha256": "7fcef4841bbd26727826628ae4c7613389ba610ba48e4781e45d65c7d1092372",
+  "previous_pre_review_sha256": "6638f06f9ab65f61b4e9939768136cd229a77dcbd57d39a327d1487d81c3082a",
+  "initial_privacy_scan_sha256": "8521fcfcfe27e7478685409dbb93468f91da7e2047fa326297ff546398472e35",
+  "initial_findings": [
+    {
+      "file": "kaggriculture/learning/task_dagger_once_v1/README.zh-CN.md",
+      "reason": "hardware_inventory",
+      "line": 13
+    },
+    {
+      "file": "kaggriculture/learning/task_dagger_once_v1/training.py",
+      "reason": "hardware_inventory",
+      "line": 228
+    }
+  ],
+  "changed_sources": [
+    {
+      "path": "learning/task_dagger_once_v1/experiment.py",
+      "previous_sha256": "c6e4c25b36b2fa39e960d809dc63cc3e02098565ff2caa712cdf04b6c50ba7b4",
+      "sha256": "e215d98ae7644035e61143a1e52a1c04e48dc2fc784d200fb04d522929770654"
+    },
+    {
+      "path": "learning/task_dagger_once_v1/README.zh-CN.md",
+      "previous_sha256": "930ad18d64acd83d6d281b554fd80623faddc737f2e19fe54342a232dafcb029",
+      "sha256": "1c3548eda8302c20c89b6908b7b4bb8730bed8ac4cf25af4b5f8dc3ef98c67b6"
+    },
+    {
+      "path": "learning/task_dagger_once_v1/test_training.py",
+      "previous_sha256": "db33df2a1d1c089d7e0cad52bd786781ad76bf755d310e4e653492c5e1a383b8",
+      "sha256": "7a637a5bd48c6159114926703ab1930da616c5bd48bf79701e47571908b5f3fe"
+    },
+    {
+      "path": "learning/task_dagger_once_v1/training.py",
+      "previous_sha256": "71b4b88248151736e473c312c8583f41ff35b8d370d07a213f0008af2bd5a420",
+      "sha256": "5d29b0d1c12d0f6fb87566136883e4a7729c113d6e93fbb3748bbe69c93845f9"
+    }
+  ],
+  "seeds_unchanged": true,
+  "strategy_fit_and_evaluation_settings_unchanged": true,
+  "new_games": 0,
+  "training_runs": 0,
+  "old_freeze_and_source_snapshots_preserved": true,
+  "prior_review_does_not_cover_new_source": true
+}

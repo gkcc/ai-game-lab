@@ -1,0 +1,233 @@
+{
+  "experiment": "task-dagger-once-v1",
+  "created_utc": "2026-10-26T19:22:17.874494+00:00",
+  "baseline_head": "c10a517c06c141a9d33e305d4770315496b6c5aa",
+  "runtime_versions": {
+    "python": "3.12.2",
+    "numpy": "2.5.4",
+    "kaggle_environments": "1.33.0"
+  },
+  "explicit_seed_config": {
+    "train_seeds": [
+      3915533099,
+      4042989318,
+      1192929723,
+      3641798866
+    ],
+    "validation_seeds": [
+      672488797,
+      3774138801
+    ],
+    "test_seeds": [
+      3378610590,
+      4077971678,
+      517822374,
+      1250230989,
+      3172816415,
+      3476556695,
+      2663156140,
+      2893797299
+    ],
+    "generation": {
+      "rng": "Python Random.sample",
+      "seed": 2026102705,
+      "draws": 1,
+      "population": "uint32",
+      "count": 14
+    }
+  },
+  "train_seeds": [
+    3915533099,
+    4042989318,
+    1192929723,
+    3641798866
+  ],
+  "validation_seeds": [
+    672488797,
+    3774138801
+  ],
+  "test_seeds": [
+    3378610590,
+    4077971678,
+    517822374,
+    1250230989,
+    3172816415,
+    3476556695,
+    2663156140,
+    2893797299
+  ],
+  "seed_novelty": {
+    "passed": true,
+    "public_text_files": 1131,
+    "local_evidence_files": 2628,
+    "scanned_manifest_sha256": "af694970519aded01ffa6579e1efa5f57904334aa2bc316c6592246cb4f2508c",
+    "scope": "Current tracked public text plus local JSON filenames containing registration/manifest/ledger/config/result/summary/seed",
+    "limitation": "Conservative decimal occurrences; no claim about deleted Git history, raw replay-only seeds, other machines or external experiments",
+    "failed_attempt_files": 249,
+    "attempt_manifest_sha256": "6e3dd72ff65335050fd67f5f099370b33467477ec8ac4399f897cb7e8f7e7ab0"
+  },
+  "opponents": [
+    "round2",
+    "market"
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "arms": [
+    "baseline",
+    "candidate",
+    "teacher_task"
+  ],
+  "task_checkpoint": "artifacts/task-bc-holdout-v1-20261023/model/trained.npz",
+  "task_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+  "crop_checkpoint": "artifacts/bc-epoch6-holdout-v1-20261023/panels/fixed_epoch6/model/trained.npz",
+  "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+  "old_cache": "artifacts/task-bc-v1-20261023-run1/cache",
+  "old_cache_manifest_sha256": "abf0581baad3941a4e2fc7bf96835d1fe0cfa92d6fa4ac0939c096a1f6f4368d",
+  "old_cache_input_sha256": {
+    "artifacts/task-bc-v1-20261023-run1/cache/manifest.json": "abf0581baad3941a4e2fc7bf96835d1fe0cfa92d6fa4ac0939c096a1f6f4368d",
+    "artifacts/task-bc-v1-20261023-run1/cache/schema.json": "8a07ac2db593f6484e1ec0de7f85863fadf44729c898f509ac4eee41fab74e44",
+    "artifacts/task-bc-v1-20261023-run1/cache/train/shared.npy": "b0ae34bc2a53d4cc8a23942cf3e3bb23302bec5bff1a61cf3f204f3bd2a187cd",
+    "artifacts/task-bc-v1-20261023-run1/cache/train/candidates.npy": "80348ab50cc544cf5885d54662308f026c7eee3c8bb2144dd8a00eb05c325699",
+    "artifacts/task-bc-v1-20261023-run1/cache/train/offsets.npy": "f8d83b6813867a822c9f72edbeb4dcc9f6e42132c6af3359b349e5221599bf9a",
+    "artifacts/task-bc-v1-20261023-run1/cache/train/labels.npy": "036c1bc2a54da621550e8c92b13b725cef7c937d3313439f797717b3bc289873",
+    "artifacts/task-bc-v1-20261023-run1/cache/train/selected_ops.npy": "9776c20426e32755fa9d0bc8b6ddc33fbea8d10f9342d57aade1c5972cf57489",
+    "artifacts/task-bc-v1-20261023-run1/cache/train/candidate_ops.npy": "a1e81b000a9f6f7b0685b55d56cddf3c587946350ee8eecd631c5ae246f71de8",
+    "artifacts/task-bc-v1-20261023-run1/cache/train/candidate_identity.npy": "170e555fa3e679a34e17ea4c1520b020f2f775b705f33069b3475ca12e896c9e",
+    "artifacts/task-bc-v1-20261023-run1/cache/train/seeds.npy": "4e8dba7effefdec913202632652b59b945a98409f52b550ddefb9bb6f179af38",
+    "artifacts/task-bc-v1-20261023-run1/cache/validation/shared.npy": "d6eb34e3db79cd766d74e9f29248d6bd6888eb394c50c6c74d2e91bdcd9ef36a",
+    "artifacts/task-bc-v1-20261023-run1/cache/validation/candidates.npy": "144477c3324dc883d4bd47f8c979994f1b6c424f83a9e1c695e780081e2a74ff",
+    "artifacts/task-bc-v1-20261023-run1/cache/validation/offsets.npy": "7909b6e29e59d7b0dbd45afdf30dd77a854caed23f7489949e1537c642c4b9c4",
+    "artifacts/task-bc-v1-20261023-run1/cache/validation/labels.npy": "3b68ef0163d0ac9e39cd47963329ea86944c4827b04bff739a212636083f3107",
+    "artifacts/task-bc-v1-20261023-run1/cache/validation/selected_ops.npy": "c430f7275de0308cc775facec8b010857c8421d520f9d3ea0439e2c16d6625f6",
+    "artifacts/task-bc-v1-20261023-run1/cache/validation/candidate_ops.npy": "ffd749738a77808aec6e94f768d4c993833227b00a65685ece5e340d648c0855",
+    "artifacts/task-bc-v1-20261023-run1/cache/validation/candidate_identity.npy": "c3cde0d5f9700cee87df3478559e79949ba946a059b6e44f74b8b2b80b5ec3a3",
+    "artifacts/task-bc-v1-20261023-run1/cache/validation/seeds.npy": "e724c652fcc225932e3a34ca9611f11bccc261261dc9c0d73ec62d38df5ef468"
+  },
+  "source_sha256": {
+    "round2.py": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "market.py": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b"
+  },
+  "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "official_loader_sha256": "0ac7baf1212b4ce1eabae3cc1cbb55c98effef5e0d0485522a8be87097c39a4f",
+  "max_games": 136,
+  "max_workers": 2,
+  "per_job_timeout_seconds": 900,
+  "campaign_seconds": 10800,
+  "live_transition_limit": 97784,
+  "primary_reexecution_limit": 97784,
+  "independent_reexecution_limit": 2876,
+  "total_official_transition_limit": 198444,
+  "task_forward_budget": 776000,
+  "crop_forward_budget": 2192000,
+  "neural_input_row_budget": 43840000,
+  "policy_turn_budget": 392574,
+  "game_limits": {
+    "task_forwards": 4000,
+    "crop_forwards": 8000,
+    "neural_input_rows": 160000,
+    "gate_evaluations": 1,
+    "controller_calls": 719,
+    "teacher_proposals": 1,
+    "max_task_forwards_per_turn": 32,
+    "max_crop_forwards_per_turn": 64,
+    "max_neural_input_rows_per_turn": 4096,
+    "max_controller_calls_per_turn": 1
+  },
+  "counter_proof": {
+    "neural_policy_games": 96,
+    "teacher_task_games": 40,
+    "student_parity_games": 2,
+    "task_forwards": 776000,
+    "crop_forwards": 2192000,
+    "neural_rows": 43840000,
+    "controllers_and_opponents": 392574
+  },
+  "early_screen": {
+    "minimum_disagreements": 128,
+    "minimum_games_with_disagreement": 2
+  },
+  "development": {
+    "own_mean_delta_gt": 0.0,
+    "overall_margin_delta_min": 0.0,
+    "overall_score_delta_min": 0.0,
+    "opponent_relative_mean_min": -0.02,
+    "opponent_score_delta_min": -0.05,
+    "teacher_relative_mean_min": -0.02,
+    "teacher_opponent_score_delta_min": -0.05
+  },
+  "holdout": {
+    "own_ci_lower_gt": 0.0,
+    "minimum_relative_gain": 0.005,
+    "overall_margin_delta_min": 0.0,
+    "overall_score_delta_min": 0.0,
+    "opponent_relative_mean_min": -0.02,
+    "opponent_score_delta_min": -0.05,
+    "minimum_changed_request_games": 4,
+    "teacher_relative_ci_lower_gt": -0.02,
+    "teacher_opponent_relative_mean_min": -0.05,
+    "teacher_opponent_score_delta_min": -0.05
+  },
+  "bootstrap": {
+    "replicates": 20000,
+    "seed": 2026102706,
+    "quantile_method": "linear"
+  },
+  "training": {
+    "updates": 512,
+    "effective_batch_groups": 256,
+    "old_groups_per_update": 128,
+    "new_groups_per_update": 128,
+    "learning_rate": 0.0001,
+    "gradient_norm_clip": 1.0,
+    "microbatch_padded_candidates": 65536,
+    "training_real_row_limit": 20000000,
+    "training_padded_row_limit": 40000000,
+    "offline_row_limit": 12000000,
+    "independent_offline_row_reserve": 100000,
+    "synchronized_seconds": 600,
+    "process_seconds": 1200,
+    "new_dev_ce_ratio_max": 0.95,
+    "old_validation_ce_ratio_max": 1.02,
+    "cpu_gpu_atol": 0.0001,
+    "cpu_gpu_rtol": 1e-05,
+    "offline_block_rows": 8192
+  },
+  "training_seed": 2026102707,
+  "gpu_guard": {
+    "work_seconds": 1185,
+    "cleanup_seconds": 15,
+    "process_seconds": 1200
+  },
+  "data_limits": {
+    "train_groups": 64000,
+    "validation_groups": 32000,
+    "train_candidates": 2560000,
+    "validation_candidates": 1280000
+  },
+  "gpu_launch_config_sha256": "99e2a808c67a6aa21f1974eab388e33d2fd546b0974246908707f054b400747c",
+  "gpu_environment": {
+    "python": "3.12.3",
+    "versions": {
+      "jax": "0.4.38",
+      "jaxlib": "0.4.38",
+      "numpy": "2.5.4",
+      "optax": "0.2.4"
+    },
+    "platform_required": "gpu"
+  },
+  "controller_scope": "Frozen teacher opportunities and current student-conditioned reservations; not complete official action control",
+  "labels": "Conditional teacher choice on the same current callback inputs; metadata only, never a deployment feature or reward/optimality claim",
+  "fit": "One512-update warm start with unchanged mean/scale, architecture and crop head; original train+new train equal presentations; one final checkpoint, no selection",
+  "evaluation": "Eight whole-seed clusters; candidate versus both failed original student and hybrid teacher; independent improvement and retention gates",
+  "parity": "First collection seed, round2, baseline both seats: originalJointAgent all719requests",
+  "independent_selection": "Firsttrainseed round2 seat0 baseline; firstdevseed round2 seat0 candidate; firstholdoutseed market seat0 candidate and teacher_task. Missing stages not replaced.",
+  "stop": "Any execution, identity, budget, data, supervision, offline or development failure stops; no retry, refit, replacement seeds/checkpoints or second aggregation iteration",
+  "privacy": "Raw Replay/actions/observations/features/logits/weights/logs/device strings/private launch config stay local; allowlisted summaries only",
+  "local_registration_not_external_timestamp": true,
+  "human_review_stopwatch": false,
+  "default_changed": false,
+  "automatic_teacher_admission": false
+}
