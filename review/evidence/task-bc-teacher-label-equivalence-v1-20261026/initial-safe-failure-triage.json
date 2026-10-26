@@ -1,0 +1,42 @@
+{
+  "schema": "teacher-label-initial-safe-failure-triage-v1",
+  "created_utc": "2026-10-26T12:08:50.400372+00:00",
+  "execution_passed": false,
+  "run_invocations": 1,
+  "retries": 0,
+  "phase": "protocol",
+  "observed_exception_code": "protocol_prefix_drain_hash",
+  "fixture_subcondition_observed": false,
+  "fixture_partial_counters_recoverable": false,
+  "source_read_not_reached": true,
+  "controller_calls": 0,
+  "model_reads": 0,
+  "model_forwards": 0,
+  "training_runs": 0,
+  "new_games": 0,
+  "official_transitions": 0,
+  "machine_checker_started": false,
+  "root_private_case_reads": 0,
+  "root_original_data_reads": 0,
+  "root_model_reads": 0,
+  "reads_scope": [
+    "safe execution receipts and schema metadata",
+    "source.py protocol/read/decode/close implementations",
+    "probe.py protocol/source/finally boundaries",
+    "experiment.py dispatch/control/finalization",
+    "local worker traceback tail",
+    "local Python gzip read-size constants"
+  ],
+  "interpretation": "The compound fixture assertion failed before raw source access. Mandatory positive drain conflicts with allowed compressed read-ahead. Exact failed predicate and fixture consumption are not recorded; no replay of the old attempt is used to fill these unknowns.",
+  "timing_scope": "Initial safe failure triage outside the separately registered root evidence adjudication; not claimed to satisfy that timer.",
+  "receipt_sha256": {
+    "primary-receipt.json": "106575fbc617236e30f539efa8f20d0d65ef9a8b42725784ae1034bd43ee30da",
+    "summary.json": "5f6af105873ec7f36e64c2ea5cc3d4a7101c761ef8a1eed9fc95c2ce72966023",
+    "attempts/primary.json": "f8fcecd879efa5ba09ad732684d23b3c1798953b28d4b5fc20ac636de8135ea3",
+    "output-accounting.json": "ff5edd28a255459b772083570816375b1a95103d7ad8b4ca0a7ac1d80d5a3de9",
+    "history-stat-check.json": "9008888e65cdf1801da3e428f3cd751332f4c73caf5edc98611f6bd37632373d",
+    "parent-exit-observation.json": "f9ca833fae033101051c4894ee37555c32d2bb62455801c14f46009d972015af",
+    "worker-inputs/primary.json": "a2e60f2dbe6e5cf38e3c744d2541489b6b25594df26d6249ac2dccdf0f54bc5f",
+    "parent-final-inputs.json": "57955ae8bcb6f8b703c1a9129b395c477a16e25993c7bacb06a63f38a9a26e48"
+  }
+}

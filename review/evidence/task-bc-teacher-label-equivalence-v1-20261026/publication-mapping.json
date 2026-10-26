@@ -1,0 +1,84 @@
+{
+  "schema": "teacher-label-failure-publication-mapping-v1",
+  "files": [
+    {
+      "local_receipt": "pre-execution-commit.json",
+      "public_receipt": "pre-execution-commit.json",
+      "local_sha256": "a06f085554c6f5c416b0e3b091a57d011ac34486ff4be808cd5fa2cf1190793c",
+      "public_sha256": "a06f085554c6f5c416b0e3b091a57d011ac34486ff4be808cd5fa2cf1190793c",
+      "omitted_fields": []
+    },
+    {
+      "local_receipt": "primary-receipt.json",
+      "public_receipt": "primary-receipt.json",
+      "local_sha256": "106575fbc617236e30f539efa8f20d0d65ef9a8b42725784ae1034bd43ee30da",
+      "public_sha256": "106575fbc617236e30f539efa8f20d0d65ef9a8b42725784ae1034bd43ee30da",
+      "omitted_fields": []
+    },
+    {
+      "local_receipt": "attempts/primary.json",
+      "public_receipt": "attempts/primary.json",
+      "local_sha256": "f8fcecd879efa5ba09ad732684d23b3c1798953b28d4b5fc20ac636de8135ea3",
+      "public_sha256": "f8fcecd879efa5ba09ad732684d23b3c1798953b28d4b5fc20ac636de8135ea3",
+      "omitted_fields": []
+    },
+    {
+      "local_receipt": "history-stat-check.json",
+      "public_receipt": "history-stat-check.json",
+      "local_sha256": "9008888e65cdf1801da3e428f3cd751332f4c73caf5edc98611f6bd37632373d",
+      "public_sha256": "9008888e65cdf1801da3e428f3cd751332f4c73caf5edc98611f6bd37632373d",
+      "omitted_fields": []
+    },
+    {
+      "local_receipt": "output-accounting.json",
+      "public_receipt": "output-accounting.json",
+      "local_sha256": "ff5edd28a255459b772083570816375b1a95103d7ad8b4ca0a7ac1d80d5a3de9",
+      "public_sha256": "ff5edd28a255459b772083570816375b1a95103d7ad8b4ca0a7ac1d80d5a3de9",
+      "omitted_fields": []
+    },
+    {
+      "local_receipt": "initial-safe-failure-triage.json",
+      "public_receipt": "initial-safe-failure-triage.json",
+      "local_sha256": "acb5f8c0d297a218c04f71f98b6aead34234f11839980c3ebdb2727f46be7cde",
+      "public_sha256": "acb5f8c0d297a218c04f71f98b6aead34234f11839980c3ebdb2727f46be7cde",
+      "omitted_fields": []
+    },
+    {
+      "local_receipt": "root-failure-adjudication.json",
+      "public_receipt": "root-failure-adjudication.json",
+      "local_sha256": "97db13b608f3bd68c8bcbdfd40d4b814f9885283a4bbd292194dd60c8d732f10",
+      "public_sha256": "97db13b608f3bd68c8bcbdfd40d4b814f9885283a4bbd292194dd60c8d732f10",
+      "omitted_fields": []
+    },
+    {
+      "local_receipt": "summary.json",
+      "public_receipt": "summary.json",
+      "local_sha256": "5f6af105873ec7f36e64c2ea5cc3d4a7101c761ef8a1eed9fc95c2ce72966023",
+      "public_sha256": "5596f60d17513742ca8bcf4968d56c26ea1d5435af00ffb85e76453ddd399063",
+      "omitted_fields": [
+        "original_deadline_monotonic"
+      ]
+    },
+    {
+      "local_receipt": "parent-exit-observation.json",
+      "public_receipt": "parent-exit-observation.json",
+      "local_sha256": "f9ca833fae033101051c4894ee37555c32d2bb62455801c14f46009d972015af",
+      "public_sha256": "d1871d3e23721dc830902aa15d1c5c6a6d72d24ba36da7bfeaa11ac8fd0a4208",
+      "omitted_fields": [
+        "observation_tool_session"
+      ]
+    },
+    {
+      "local_receipt": "failure-evidence-review.json",
+      "public_receipt": "failure-evidence-review.json",
+      "local_sha256": "45672c060d2a04c95f2ce1c146c4b4779282ed5994d8825abad6a130b156165d",
+      "public_sha256": "20c5059b338ab3e546f8538a693c0db560066ce38a0347ca54453b10d9fc4cc9",
+      "omitted_fields": [
+        "timing.later_observed_monotonic_reference_only",
+        "timing.ended_monotonic"
+      ]
+    }
+  ],
+  "raw_case_logs_models_original_data_and_native_lifecycle_published": false,
+  "historical_hashes_not_rewritten": true
+}

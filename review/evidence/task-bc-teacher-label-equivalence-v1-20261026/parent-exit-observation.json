@@ -1,0 +1,18 @@
+{
+  "schema": "teacher-label-parent-exit-observation-v1",
+  "parent_exit_code": 1,
+  "run_invocations": 1,
+  "retries": 0,
+  "observed_utc": "2026-10-26T12:01:36.207961+00:00",
+  "external_exit_observed": true,
+  "execution_acceptance_present": false,
+  "checker_complete_present": false,
+  "safe_receipt_sha256": {
+    "summary.json": "5f6af105873ec7f36e64c2ea5cc3d4a7101c761ef8a1eed9fc95c2ce72966023",
+    "primary-receipt.json": "106575fbc617236e30f539efa8f20d0d65ef9a8b42725784ae1034bd43ee30da",
+    "output-accounting.json": "ff5edd28a255459b772083570816375b1a95103d7ad8b4ca0a7ac1d80d5a3de9",
+    "history-stat-check.json": "9008888e65cdf1801da3e428f3cd751332f4c73caf5edc98611f6bd37632373d",
+    "attempts/primary.json": "f8fcecd879efa5ba09ad732684d23b3c1798953b28d4b5fc20ac636de8135ea3"
+  },
+  "root_private_case_original_data_or_model_reads": 0
+}

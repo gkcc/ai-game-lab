@@ -1,0 +1,224 @@
+{
+  "schema": "teacher-label-equivalence-failure-evidence-review-v1",
+  "passed": false,
+  "strict_review_passed": false,
+  "execution_passed": false,
+  "status": "partial_failure_evidence_review_deadline_origin_unknown",
+  "reviewer": "independent /root/unit_request_auditor",
+  "preregistration_commit": "a892b6ced76e99fd38fd122319e9752a93ea862f",
+  "freeze_sha256": "d03abef8904cd235be6a21ec31f288f55852804fa2dce45fe8bafc6e83de3226",
+  "registration_sha256": "723be92a750932bf2c456005268673a314a544d5bd46f26fb9c4c17c671af0f1",
+  "source_sha256": "378ad85cb75804bcc08059cc31b47c38e99836725c31408963ad52d4e0fac1dd",
+  "timing": {
+    "time_budget_verified": false,
+    "deadline_origin_unknown": true,
+    "started_utc": null,
+    "started_monotonic": null,
+    "original_deadline_monotonic": null,
+    "elapsed_seconds": null,
+    "requested_limit_seconds": 300,
+    "clock_restarts": 0,
+    "reason": "The first read command started a monotonic/UTC clock before I/O, but its combined registration/freeze output was truncated. The orchestration JSON parser failed before persisting the returned start values. The initial raw result was not retained in store, so an exact origin cannot be recovered. The later observed time is not substituted as a new start.",
+    "later_observed_utc_reference_only": "2026-10-26T12:07:08.020663+00:00",
+    "root_instruction": "Stop further reading, preserve unknown origin and do not claim the 300-second review passed.",
+    "ended_utc": "2026-10-26T12:09:47.679864+00:00"
+  },
+  "established_failure_facts": {
+    "parent_exit_code": 1,
+    "primary_worker_exit_code": 1,
+    "original_run_invocations": 1,
+    "retries": 0,
+    "summary_passed": false,
+    "accepted_jobs": 0,
+    "attempts": 1,
+    "execution_acceptance_present": false,
+    "independent_checker_started": false,
+    "phase": "protocol",
+    "failure_type": "SourceStopped",
+    "failure_code": "protocol_prefix_drain_hash",
+    "safe_log_location": {
+      "file": "source.py",
+      "line": 625,
+      "function": "protocol_checks"
+    },
+    "caller_location": {
+      "file": "probe.py",
+      "line": 298,
+      "function": "run_primary"
+    },
+    "interpretation": "The first source in-memory fixture reached its composite final assertion and failed. Original source.read_case and all teacher baseline/trial calls are later in the control flow and were not reached.",
+    "real_original_payload_reads": 0,
+    "real_model_content_reads_loads_forwards": 0,
+    "real_controller_calls": 0,
+    "original_source_ledger_absent": true,
+    "protocol_checks_receipt": null,
+    "no_equivalence_label_result_obtained": true,
+    "partial_case_manifest_only": {
+      "bytes": 298,
+      "sha256": "a620943d2b289b828aa6a6c92b557e5194509bad51028652b0228bd0e2c8e7ef",
+      "case_contents_read": 0
+    },
+    "primary_elapsed_seconds_reported": 0,
+    "primary_zero_time_interpretation": "This reported zero is not evidence that the fixture did no work; it is the clock-resolution/result field recorded around the failed protocol path.",
+    "summary_elapsed_seconds": 8.85899999999674
+  },
+  "defects_and_evidence_limits": [
+    {
+      "severity": "must_fix_before_a_new_preregistered_attempt",
+      "established": true,
+      "issue": "The fixture's success predicate conflates correct one-pass prefix-plus-hash behavior with a strictly positive compressed drain.",
+      "source_location": "source.py:625-629",
+      "explanation": "Its composite assertion requires raw_drain_bytes_returned > 0. A legal gzip read-ahead can already consume and hash the complete compressed member while returning only the requested first line; in that case a zero-byte later drain is valid. The fixture does not control the upstream read chunk or guarantee an unread compressed suffix.",
+      "runtime_limit": "The exception identifies only the composite predicate. No surviving per-conjunct values prove which term was false in this run."
+    },
+    {
+      "severity": "must_fix_before_a_new_preregistered_attempt",
+      "established": true,
+      "issue": "Partial synthetic protocol consumption was not retained in the outer failure receipt.",
+      "source_locations": [
+        "source.py:protocol_checks local meter and reports",
+        "probe.py:run_primary protocol call and tests assignment"
+      ],
+      "explanation": "The local fixture ledger is appended/returned only after its final assertion succeeds. run_primary assigns tests only after the source/probe protocol calls return. This exception leaves protocol_checks null and only a generic phase=protocol unknown. A first synthetic case did execute, but its actual compressed/payload/decode/hash/drain counters and individual assertion values are unavailable in the retained safe evidence.",
+      "required_accounting": "Do not write zero fixture cases, zero synthetic byte consumption, or a fully known protocol budget. Preserve an active per-case ledger and status before assertions and retain it on exception."
+    }
+  ],
+  "root_cause_hypothesis": {
+    "status": "source_supported_hypothesis_not_measured_run_counter",
+    "description": "Gzip read-ahead likely consumed the entire small compressed fixture during the first readline, leaving raw_drain_bytes_returned == 0.",
+    "basis": "The reviewed fixture constructs 32778 bytes of uncompressed payload and the raw reader caps a read at 65536. Root separately reports its read-only installed-stdlib check: gzip READ_BUFFER_SIZE is 131072 and _GzipReader requests that amount. These sizes support whole-compressed-member read-ahead.",
+    "attribution": "The installed gzip source-size details are root-provided read-only evidence, not a new library read or reproduction by this reviewer.",
+    "not_proven": "The failed run's local counters were lost; its precise false subcondition and exact synthetic byte consumption are not retrospectively established.",
+    "reproduction_performed": false
+  },
+  "control_input_reconciliation": {
+    "one_registration_plus_freeze_read_bytes": 47500,
+    "parent_preflight_before_executable_clock": {
+      "reads": 1,
+      "bytes": 47500,
+      "in_registered_execution_total": false
+    },
+    "primary_worker_inside_executable_clock": {
+      "reads": 1,
+      "bytes": 47500,
+      "in_registered_execution_total": true
+    },
+    "independent_checker_inside_executable_clock": {
+      "reads": 0,
+      "bytes": 0,
+      "not_started": true
+    },
+    "parent_final_inside_executable_clock": {
+      "reads": 1,
+      "bytes": 47500,
+      "in_registered_execution_total": true
+    },
+    "registered_execution_actual": {
+      "reads": 2,
+      "bytes": 95000
+    },
+    "failed_command_state_loads_including_preflight": {
+      "reads": 3,
+      "bytes": 142500
+    },
+    "planned_successful_execution_allocation": {
+      "reads": 3,
+      "bytes": 142500
+    },
+    "registered_execution_byte_limit": 262144,
+    "correction": "The summary's 95000 already includes the primary worker's 47500 plus parent_final's 47500. It is not two parent reads with an omitted worker read. Adding preflight yields 142500 under a different scope. No summary-accounting repair is indicated.",
+    "scope_limit": "These figures count the registered registration+freeze state-load pairs, not every repeated source/safe-identity hash read."
+  },
+  "lifecycle": {
+    "tree_closed": true,
+    "active_processes_after_close": 0,
+    "all_process_handles_closed": true,
+    "job_handle_closed": true,
+    "termination_requested": false,
+    "direct_returncode": 1,
+    "natural_tree_exit": false,
+    "interpretation": "The success-qualified natural_tree_exit flag is false for this failed nonzero worker. The same receipt explicitly shows the tree closed, zero remaining active processes and all handles closed without forced termination. This is not evidence of a process leak.",
+    "lifetime_total_processes": 327,
+    "lifetime_process_count_interpretation": "A lifetime Job process count, not a count of processes still running.",
+    "peak_job_memory_bytes": 75378688,
+    "close_error_types": []
+  },
+  "preservation_and_output": {
+    "history_checked_files": 6842,
+    "history_changed_files": [],
+    "history_basis": "The authorized executor safe stat receipt, not a new whole-history pass by this review.",
+    "output_accounting_known": true,
+    "output_bytes_including_accounting_receipt": 1112185,
+    "output_limit_bytes": 4194304,
+    "output_unknown_accounting": [],
+    "failed_logs_and_partial_results_included": true,
+    "old_source_or_result_files_modified_by_reviewer": false,
+    "cumulative_task_model_scoring_unchanged": {
+      "groups": 3921,
+      "candidates": 228505
+    }
+  },
+  "independently_compared_receipt_bindings": {
+    "summary_primary_sha_matches": true,
+    "summary_history_sha_matches": true,
+    "parent_observed_safe_hashes_match": true,
+    "worker_and_parent_final_state_match": true,
+    "execution_control_sum_matches": true
+  },
+  "consumption_unknowns": {
+    "synthetic_protocol_case_completion_counts": "unknown beyond reaching the first fixture final assertion",
+    "synthetic_compressed_payload_decode_hash_and_drain_actual_counts": "not preserved; unknown, not zero",
+    "false_term_of_composite_assertion": "not uniquely established by exception code",
+    "reviewer_deadline_origin_and_total_elapsed": "unknown because first tool-return truncation prevented timestamp retention",
+    "known_zero_scope": "Original Replay/inputs/labels/index payloads, models and real controllers were not reached; this is distinct from nonzero but incompletely recorded synthetic fixture work."
+  },
+  "reviewer_read_scope": {
+    "authorized_safe_receipts": [
+      "primary-receipt.json",
+      "summary.json",
+      "attempts/primary.json",
+      "worker-inputs/primary.json",
+      "parent-final-inputs.json",
+      "history-stat-check.json",
+      "output-accounting.json",
+      "parent-exit-observation.json"
+    ],
+    "control_metadata": [
+      "registration.json",
+      "freeze.json"
+    ],
+    "worker_log": "logs/primary.log (local read; only basename/line and fixed exception code retained)",
+    "first_batch_note": "The first authorized batch output was truncated before its clock/result could be persisted. The same permitted safe receipt/log batch was read again with bounded output; no new experimental or private-case read occurred.",
+    "safe_receipt_and_log_batch_attempts": 2,
+    "first_batch_exact_read_completion_details_retained": false,
+    "completed_second_batch_read_bytes": 56203,
+    "private_case_read_count": 0,
+    "original_payload_reads": 0,
+    "model_reads": 0,
+    "project_imports": 0,
+    "fixture_executions": 0,
+    "controller_calls": 0,
+    "checker_runs": 0,
+    "tests": 0,
+    "official_steps": 0,
+    "training_or_new_games": 0,
+    "temporary_files": 0,
+    "new_source_file_reads_in_this_review": 0,
+    "source_reasoning_basis": "Already statically reviewed exact frozen source and the sanitized new exception location; no further source scan was undertaken after the root stop instruction.",
+    "raw_log_copied": false,
+    "private_absolute_paths_or_native_identifiers_in_this_review": false
+  },
+  "safe_receipt_sha256": {
+    "primary-receipt.json": "106575fbc617236e30f539efa8f20d0d65ef9a8b42725784ae1034bd43ee30da",
+    "summary.json": "5f6af105873ec7f36e64c2ea5cc3d4a7101c761ef8a1eed9fc95c2ce72966023",
+    "attempts/primary.json": "f8fcecd879efa5ba09ad732684d23b3c1798953b28d4b5fc20ac636de8135ea3",
+    "worker-inputs/primary.json": "a2e60f2dbe6e5cf38e3c744d2541489b6b25594df26d6249ac2dccdf0f54bc5f",
+    "parent-final-inputs.json": "57955ae8bcb6f8b703c1a9129b395c477a16e25993c7bacb06a63f38a9a26e48",
+    "history-stat-check.json": "9008888e65cdf1801da3e428f3cd751332f4c73caf5edc98611f6bd37632373d",
+    "output-accounting.json": "ff5edd28a255459b772083570816375b1a95103d7ad8b4ca0a7ac1d80d5a3de9",
+    "parent-exit-observation.json": "f9ca833fae033101051c4894ee37555c32d2bb62455801c14f46009d972015af"
+  },
+  "log_sha256": "2a73224fcf19cb47f9767a6199da2982f379262edd5f2bbcba447c44bd9fa152",
+  "only_next_recommendation": "Preserve this failed run and frozen bytes. Propose only a narrow separately preregistered fixture/accounting repair: allow legitimate zero-drain completion, use deterministic controlled chunking or an adequate fixture to exercise positive drain, and retain partial fixture counters before every assertion. Split diagnostic predicates or retain their observed values. Obtain a new exact freeze and review before any new execution; do not rerun this OUT or consume original data to fill the old missing counters.",
+  "acceptance_boundary": "This record preserves specific checked failure facts and an explicitly qualified hypothesis. Because the review clock origin is unknown, it does not claim a passed strict 300-second review; execution remains failed and no training-label equivalence result is accepted."
+}

@@ -1,0 +1,113 @@
+{
+  "schema": "teacher-label-equivalence-execution-summary-v1",
+  "passed": false,
+  "accepted_jobs": 0,
+  "attempts": 1,
+  "terminal_consumption": {
+    "primary": {
+      "known": true,
+      "passed": false,
+      "sha256": "106575fbc617236e30f539efa8f20d0d65ef9a8b42725784ae1034bd43ee30da",
+      "bytes": 1288,
+      "result": {
+        "schema": "teacher-label-equivalence-primary-v1",
+        "status": "failed",
+        "case": {
+          "path": "case.json",
+          "sha256": "a620943d2b289b828aa6a6c92b557e5194509bad51028652b0228bd0e2c8e7ef",
+          "bytes": 298
+        },
+        "fixed": {
+          "game": "collect-31317742-v1-0-teacher",
+          "side": 0,
+          "step": 15,
+          "callback_index_zero_based": 0
+        },
+        "outcome": "failed",
+        "comparison": null,
+        "protocol_checks": null,
+        "ledger": {
+          "controller": {
+            "calls_started": 0,
+            "calls_completed": 0,
+            "original_started": 0,
+            "original_completed": 0,
+            "baseline_started": 0,
+            "baseline_completed": 0,
+            "trials_started": 0,
+            "trials_completed": 0,
+            "callbacks_started": 0,
+            "callbacks_completed": 0,
+            "encodings_started": 0,
+            "encodings_completed": 0,
+            "encoded_candidates_started": 0,
+            "encoded_candidates_completed": 0,
+            "crop_callbacks_started": 0,
+            "crop_callbacks_completed": 0,
+            "crop_encodings_started": 0,
+            "crop_encodings_completed": 0,
+            "crop_feature_values_started": 0,
+            "crop_feature_values_completed": 0,
+            "forced_choices": 0
+          },
+          "prohibited": {
+            "model_read_attempts": 0,
+            "np_load_attempts": 0,
+            "model_forwards": 0,
+            "training_runs": 0,
+            "new_games": 0,
+            "official_transitions": 0
+          },
+          "unknown_accounting": [
+            {
+              "phase": "protocol",
+              "kind": "SourceStopped",
+              "meaning": "Failed or partial work is preserved; unfinished encoding/output work is not assumed zero."
+            }
+          ],
+          "patches_restored": true
+        },
+        "phase": "protocol",
+        "failure_type": "SourceStopped",
+        "elapsed_seconds": 0.0
+      }
+    }
+  },
+  "control_input_consumption": {
+    "bytes_known": 95000,
+    "completed_reads": 2,
+    "unknown_accounting": [],
+    "final_binding_read_completed": true
+  },
+  "history_stat_check_sha256": "9008888e65cdf1801da3e428f3cd751332f4c73caf5edc98611f6bd37632373d",
+  "failures": [
+    {
+      "phase": "workers",
+      "kind": "ValueError",
+      "retry": false
+    }
+  ],
+  "retries": 0,
+  "freeze_sha256": "d03abef8904cd235be6a21ec31f288f55852804fa2dce45fe8bafc6e83de3226",
+  "elapsed_seconds": 8.85899999999674,
+  "original_policy_admission": false,
+  "previous_diagnostic_stage_acceptance": false,
+  "previous_strict_review_acceptance": false,
+  "cumulative_task_scoring": {
+    "groups": 3921,
+    "candidates": 228505
+  },
+  "prohibited_consumption": {
+    "model_read_attempts": 0,
+    "np_load_attempts": 0,
+    "model_forwards": 0,
+    "training_runs": 0,
+    "new_games": 0,
+    "official_transitions": 0
+  },
+  "new_model_forwards": 0,
+  "training_runs": 0,
+  "new_games": 0,
+  "official_transitions": 0,
+  "acceptance_requires_execution_certificate_original_deadline_and_parent_zero_exit": true
+}
