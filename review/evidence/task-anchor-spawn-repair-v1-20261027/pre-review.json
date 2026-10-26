@@ -1,0 +1,73 @@
+{
+  "blocking_findings": [],
+  "checks": {
+    "capture_limit_bytes": 65536,
+    "declared_partition_bytes": 954368,
+    "new_source_sha256_matched": 6,
+    "old_artifact_sha256_matched": 40,
+    "old_frozen_runtime_sha256_matched": 137,
+    "outer_cleanup_reserve_seconds": 15,
+    "outer_process_seconds": 30,
+    "outer_work_seconds": 15,
+    "parent_receipt_cumulative_limit_bytes": 65536,
+    "parent_refusal_latched_across_scopes": true,
+    "prefreeze_preservation_sha256_matched": 9,
+    "spawn_construction_start_ipc_join_terminate_kill_close_outside_artifact_scopes": true,
+    "stage_seconds_at_review": 1184.31516,
+    "target_marker_and_receipt_guard_bytes_each": 4096,
+    "target_wait_seconds": 5,
+    "total_artifact_cap_bytes": 1048576,
+    "unchanged_descriptor_and_outside_path_rejection": true
+  },
+  "created_utc": "2026-10-26T21:45:23.642303+00:00",
+  "dispatch_conditions": [
+    "Root must commit the exact frozen source, registration and this review, then bind pre-execution-commit.json before dispatch.",
+    "Exactly one real synthetic target may be started. Any failure stops this stage without a second target or a model substitute.",
+    "Acceptance requires the real marker, zero target exit, parent/target storage receipts, completed Linux whole-session cleanup, joined capture reader, reaped transport, immutable old evidence and all registered bounds.",
+    "Unknown cleanup is failure evidence, not evidence that owned processes ended. A live non-daemon reader may keep the entry alive and does not authorize restart.",
+    "Time after the 30-second process deadline is failed-run recovery time only and cannot produce a pass."
+  ],
+  "freeze_sha256": "9e5b2141e7a708a978e5816ab9cdc9180dc28591afcee28c646becf76b68ad0e",
+  "interpretation": {
+    "actual_spawn_pass_proven_by_this_review": false,
+    "learning_usability_proven": false,
+    "policy_improvement_proven": false,
+    "replacement_fit_authorized": false,
+    "unchanged_anchor_fit_retry_authorized": false
+  },
+  "passed": true,
+  "registration_sha256": "d925d9776702f481873a9db356f205302d2132dc25a7cd6a4c3d77644b7f6e02",
+  "resolved_finding": {
+    "code": [
+      "learning/task_anchor_spawn_repair_v1/entry.py:95",
+      "learning/task_anchor_spawn_repair_v1/entry.py:124"
+    ],
+    "issue": "Outer wait or reader-join failure could replace the primary exception and skip its failure receipt.",
+    "regressions": "Two model-free failure-injection cases inspect helper status and the real entry failure receipt with a fake child. No actual target is spawned by these cases.",
+    "resolution": "finish_capture returns separate cancellation, transport, reader and Linux receipt states; run attempts the failure receipt before rethrowing the primary error. Unknown cleanup and time beyond 30 seconds cannot pass."
+  },
+  "reviewer": "independent spawn_boundary_review subagent",
+  "reviewer_activity": {
+    "cache_array_decodes": 0,
+    "gpu_operations": 0,
+    "model_array_decodes": 0,
+    "neural_rows": 0,
+    "official_games": 0,
+    "official_steps": 0,
+    "real_spawn_starts": 0,
+    "source_files_edited": 0,
+    "temporary_artifacts_created": 0,
+    "training_fits": 0
+  },
+  "schema": "anchor-spawn-repair-independent-pre-review-v1",
+  "scope": "Versioned receipt/real spawn boundary, fixed synthetic target, captured WSL entry and its bounded failure reporting; no broad repository audit.",
+  "status": "source_pre_review_passed_for_one_registered_synthetic_dispatch_only",
+  "test_evidence": {
+    "implementation_verification_sha256": "5b1f1d66ce1bb55b3800d723c279f7b746869b8a06ef6887d7c92cb882df1119",
+    "note": "Reviewed focused test source and root result record; did not repeat previously passed checks.",
+    "reviewer_test_executions": 0,
+    "root_reported_final_targeted_tests_passed": 3,
+    "root_reported_fixture_failure_preserved_and_fixed": true,
+    "root_reported_unique_focused_tests_passed": 9
+  }
+}

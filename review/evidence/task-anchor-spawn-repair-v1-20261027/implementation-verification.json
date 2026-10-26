@@ -1,0 +1,27 @@
+{
+  "cache_array_decodes": 0,
+  "final_targeted_cases_passed": 3,
+  "focused_tests": 9,
+  "gpu_operations": 0,
+  "model_array_decodes": 0,
+  "neural_rows": 0,
+  "owned_test_temporary_directories_removed": true,
+  "passed": true,
+  "real_spawn_starts": 0,
+  "review_finding": "Cleanup exceptions could mask primary error and skip failure receipt",
+  "root_test_executions": [
+    7,
+    2,
+    3,
+    3
+  ],
+  "root_test_failures_preserved": [
+    {
+      "errors": 1,
+      "fixed": true,
+      "kind": "Missing synthetic freeze fixture; before entry failure-injection path",
+      "suite": 3
+    }
+  ],
+  "skips": 0
+}

@@ -1,0 +1,19 @@
+{
+  "archive_method": "Original entry/registration/freeze/verification copied; unchanged source files copied; README/test exact patch reversal verified against original frozen SHA. An initial README reversal hash mismatch wrote no file; corrected reconstruction matched all original hashes.",
+  "new_freeze_sha256": "9e5b2141e7a708a978e5816ab9cdc9180dc28591afcee28c646becf76b68ad0e",
+  "old_failed_stage_artifacts_untouched": true,
+  "preserved_prefreeze_files": {
+    "prefreeze-v1/README.zh-CN.md": "963af7c3b0a8a350fcf9633ff1511a230a880c5335e7975d323b14b68861eb76",
+    "prefreeze-v1/__init__.py": "ac363e2aa864a0ec85647bf7f60e016484ea546c171254782188fe052d7d6718",
+    "prefreeze-v1/entry.py": "2f471bd69416c2581b54f401135c178eb205cabae05a3593d94fc16533c83f16",
+    "prefreeze-v1/freeze.json": "bc99a64b7e1e6e7682c72ed0a5b6ef87776b1e82b8895a8e208d2d95cf2d2f4e",
+    "prefreeze-v1/implementation-verification.json": "d26cd43b5e03c0c682e7275526dc9496a564ee55dd18aea427a623d425fe334f",
+    "prefreeze-v1/launcher.py": "aa798f24662eeff6cc676c35832407cf2286772285b981bf6e790349e920e3a3",
+    "prefreeze-v1/probe.py": "71fd83176c9aba48540e8f0703ec3ed03949686412b4c3b4e84ebae3e90f8d62",
+    "prefreeze-v1/registration.json": "2d210378d5a4374cf45cf50be712c07268c1f58481e052a2946251099afd28dc",
+    "prefreeze-v1/test_launcher.py": "11a6ef748a640f243e126025fd878699a2a89b2baf9c5bfc4a3ce12acdf802c4"
+  },
+  "previous_freeze_sha256": "bc99a64b7e1e6e7682c72ed0a5b6ef87776b1e82b8895a8e208d2d95cf2d2f4e",
+  "real_spawn_starts_before_revision": 0,
+  "reason": "Independent review concrete wait/join failure: preserve primary error and cleanup evidence, always attempt failure receipt"
+}
