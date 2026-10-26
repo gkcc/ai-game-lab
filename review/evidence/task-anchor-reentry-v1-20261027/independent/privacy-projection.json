@@ -1,0 +1,10 @@
+{
+  "local_original_sha256": "0349a5e33e5852a8e76756ae937061cf2c5820c9d5c052adc44079343c1488f1",
+  "public_projection_sha256": "e3a9c6cb4358260e20155d44d6d83a900968581b3032f6c374f89c9eaf72eea6",
+  "removed_fields": [
+    "free_disk_bytes"
+  ],
+  "original_retained_unchanged": true,
+  "reason": "Omit exact host free-space reading; retain artifact quotas, identities and conclusions",
+  "hash_reference_scope": "Other receipts bind the unchanged local original; this explicit projection has its own hash"
+}

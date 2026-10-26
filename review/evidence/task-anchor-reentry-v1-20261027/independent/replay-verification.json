@@ -1,0 +1,78 @@
+{
+  "all_children_reaped": true,
+  "all_readers_exited": true,
+  "created_utc": "2026-10-26T22:42:39.044657+00:00",
+  "failed_or_inflight_replays": 0,
+  "games": [
+    {
+      "dispatch_seconds": 3.01500000001397,
+      "dispatch_sha256": "026059ab1df51d5f02fc5a79a680dcd058293bab35e7d04240804f01a4e1ec5d",
+      "game": "dev-4202490418-round2-0-candidate",
+      "job_identity_sha256": {
+        "audit": "99701ec679022b8aa062f9cda7f9b71d2d3f470f61f4d554ecd8ada79c414e5c",
+        "complete": "940d002fcc0d26c795ef2ccc955d37e039208f80127bac669c2092fedaf07caf",
+        "row": "179013df55987afedf6c7c75f18b124b18d346723439c31dc3bffcfce35dcbc0",
+        "storage": "d6d79db812f7541f86e035573189e88ce76aae8a8dce2ded8cc5b7cc15f675fd"
+      },
+      "native_log_bytes": 0,
+      "official_transitions_completed": 719,
+      "official_transitions_debited": 719,
+      "official_transitions_reserved": 719,
+      "passed": true,
+      "result_sha256": "6ccb607e2d3e153103ddc5cf6a8c10eb338f0c85146e5a1ccfa2047f3a6386a6",
+      "worker_seconds": 2.219000000040978
+    },
+    {
+      "dispatch_seconds": 3.0160000000032596,
+      "dispatch_sha256": "882c6e05ec37f476e8a4a8296395ad8a2aff6f85857b7dba2664b19e5b448811",
+      "game": "holdout-2240228007-market-0-candidate",
+      "job_identity_sha256": {
+        "audit": "a02e5967d13b4b0964b7fc7c39bfabf862839483f4b4b24695375f5656146f2b",
+        "complete": "93074b34b60883fbccc05da89997388e60441690c9635f2c28ac66c9b50a5070",
+        "row": "17a2d874ec1ce9d46b0e546b2fd6cdce6bbe2aa95e86fcc732ee11d695f7ef04",
+        "storage": "2b4040eb529980f3a98fa30cf8b2c3106e367b9ee12b0c096d2ac03724b4339e"
+      },
+      "native_log_bytes": 0,
+      "official_transitions_completed": 719,
+      "official_transitions_debited": 719,
+      "official_transitions_reserved": 719,
+      "passed": true,
+      "result_sha256": "8cb04fff729978434e19e8d6cee15c2d5538993571f5ea135f39e8a124c2adf4",
+      "worker_seconds": 2.2339999999967404
+    },
+    {
+      "dispatch_seconds": 3.0160000000032596,
+      "dispatch_sha256": "882c6e05ec37f476e8a4a8296395ad8a2aff6f85857b7dba2664b19e5b448811",
+      "game": "holdout-2240228007-market-0-teacher_task",
+      "job_identity_sha256": {
+        "audit": "1c159979b4fc1e5e5409831485f712ac78a5673063d0e43c27fe617f17d4cffe",
+        "complete": "7fded22e9388fa6a45bb81a3af85129e1d99a63d6c78dae96a9ce267300d7b31",
+        "row": "be7f5d733195b8222223db59d7231c488d5ab026df7444a0bf34f138411f39fd",
+        "storage": "b05eeacafdf032a9abddf1f1023b1fe1fb7494a5f6a66aa8d7e6c2f4c9b728ba"
+      },
+      "native_log_bytes": 0,
+      "official_transitions_completed": 719,
+      "official_transitions_debited": 719,
+      "official_transitions_reserved": 719,
+      "passed": true,
+      "result_sha256": "09aff20909a131cf8bbf445ea97dec6f80a24c9858d3f39570ad9d3795ccbe88",
+      "worker_seconds": 2.2179999999934807
+    }
+  ],
+  "independent_deadline_utc": "2026-10-26T23:24:51.249633+00:00",
+  "independent_output_bytes_before_receipt": 67778,
+  "independent_output_limit_bytes": 268435456,
+  "neural_rows": 0,
+  "new_games": 0,
+  "official_replays": 3,
+  "official_transition_limit": 2157,
+  "official_transitions_completed": 2157,
+  "official_transitions_debited": 2157,
+  "official_transitions_reserved": 2157,
+  "passed": true,
+  "policy_callbacks": 0,
+  "retry_count": 0,
+  "reviewer_role": "Independent result reviewer",
+  "schema": "independent-anchor-official-replay-verification-v1",
+  "selection": "Exactly the three preregistered first-seed jobs; no replacement"
+}

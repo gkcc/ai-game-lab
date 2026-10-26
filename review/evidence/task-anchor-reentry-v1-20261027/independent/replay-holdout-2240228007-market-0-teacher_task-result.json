@@ -1,0 +1,34 @@
+{
+  "frozen_source_sha256": {
+    "decision/execution.py": "cbf38b17ca9c4c1c4f82ddb583ff59e4f605a0e8d8e971ef5bfc3664b2c76378",
+    "decision/full_audit.py": "84f7c7b4316fb98791c51b933f5329a271b8bc9aec60eebe133f6d433ec4510d",
+    "decision/semantics.py": "9ac62d0df7adca84c0feff805b2979bb45f9f9f4c2064d1e2b5c48efd3e779a5",
+    "decision/verify_mechanisms.py": "cc82fd118abd94e92a8833587aa2bfb9117214a8a5b00e8054225732af47fbbf"
+  },
+  "game": "holdout-2240228007-market-0-teacher_task",
+  "neural_rows": 0,
+  "new_games": 0,
+  "official": {
+    "audit_version": 2,
+    "both_public_and_private_states_match_each_step": true,
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "final_rewards": [
+      49432.0,
+      44671.0
+    ],
+    "inventory_order_checked_each_step": true,
+    "official_transitions_reexecuted": 719,
+    "passed": true,
+    "semantic_sha256": "52493e3f914238a1f542b5e583518d33cfd331ada7fa8cf16dca98d9c382308a",
+    "semantic_sha256_v2": "d663169130406e868bbb907a4bdf7bbcdae235b768e2eb7e9077ad07166bacd1",
+    "semantic_sha256_version": 1
+  },
+  "official_transitions_completed": 719,
+  "official_transitions_debited": 719,
+  "passed": true,
+  "policy_callbacks": 0,
+  "reservation_sha256": "896a2a857f14e89867562d0d5538c1f6d765b19e73b5d5b73e583cbd86073d33",
+  "row_sha256": "be7f5d733195b8222223db59d7231c488d5ab026df7444a0bf34f138411f39fd",
+  "source_sha256": "0bf0ec92cd933a2b7f2995f0fde3b117d6d86eaf8258fa3e683371c8acb8ef7c",
+  "worker_seconds": 2.2179999999934807
+}

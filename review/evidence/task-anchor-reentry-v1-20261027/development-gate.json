@@ -1,0 +1,858 @@
+{
+  "schema": "task-anchor-once-development-v1",
+  "games": 24,
+  "pairs": 8,
+  "seeds": [
+    4202490418,
+    2219033805
+  ],
+  "gates": {
+    "own_mean_delta_gt": 0.0,
+    "overall_margin_delta_min": 0.0,
+    "overall_score_delta_min": 0.0,
+    "opponent_relative_mean_min": -0.02,
+    "opponent_score_delta_min": -0.05,
+    "teacher_relative_mean_min": -0.02,
+    "teacher_opponent_score_delta_min": -0.05
+  },
+  "comparisons": {
+    "baseline": {
+      "overall": {
+        "pairs": 8,
+        "reference": "baseline",
+        "arms": {
+          "baseline": {
+            "games": 8,
+            "wins": 6,
+            "draws": 0,
+            "losses": 2,
+            "means": {
+              "net_profit": 43631.75,
+              "opponent_net_profit": 42443.75,
+              "margin": 1188.0,
+              "score": 0.75
+            }
+          },
+          "candidate": {
+            "games": 8,
+            "wins": 6,
+            "draws": 0,
+            "losses": 2,
+            "means": {
+              "net_profit": 44170.25,
+              "opponent_net_profit": 41226.75,
+              "margin": 2943.5,
+              "score": 0.75
+            }
+          }
+        },
+        "delta_means": {
+          "net_profit": 538.5,
+          "opponent_net_profit": -1217.0,
+          "margin": 1755.5,
+          "score": 0.0
+        },
+        "reference_net_profit_mean": 43631.75,
+        "relative_net_profit_defined": true,
+        "relative_net_profit_mean": 0.012341929901963594
+      },
+      "by_opponent": {
+        "round2": {
+          "pairs": 4,
+          "reference": "baseline",
+          "arms": {
+            "baseline": {
+              "games": 4,
+              "wins": 2,
+              "draws": 0,
+              "losses": 2,
+              "means": {
+                "net_profit": 41763.5,
+                "opponent_net_profit": 43113.0,
+                "margin": -1349.5,
+                "score": 0.5
+              }
+            },
+            "candidate": {
+              "games": 4,
+              "wins": 2,
+              "draws": 0,
+              "losses": 2,
+              "means": {
+                "net_profit": 42840.5,
+                "opponent_net_profit": 40679.0,
+                "margin": 2161.5,
+                "score": 0.5
+              }
+            }
+          },
+          "delta_means": {
+            "net_profit": 1077.0,
+            "opponent_net_profit": -2434.0,
+            "margin": 3511.0,
+            "score": 0.0
+          },
+          "reference_net_profit_mean": 41763.5,
+          "relative_net_profit_defined": true,
+          "relative_net_profit_mean": 0.02578806852873921
+        },
+        "market": {
+          "pairs": 4,
+          "reference": "baseline",
+          "arms": {
+            "baseline": {
+              "games": 4,
+              "wins": 4,
+              "draws": 0,
+              "losses": 0,
+              "means": {
+                "net_profit": 45500.0,
+                "opponent_net_profit": 41774.5,
+                "margin": 3725.5,
+                "score": 1.0
+              }
+            },
+            "candidate": {
+              "games": 4,
+              "wins": 4,
+              "draws": 0,
+              "losses": 0,
+              "means": {
+                "net_profit": 45500.0,
+                "opponent_net_profit": 41774.5,
+                "margin": 3725.5,
+                "score": 1.0
+              }
+            }
+          },
+          "delta_means": {
+            "net_profit": 0.0,
+            "opponent_net_profit": 0.0,
+            "margin": 0.0,
+            "score": 0.0
+          },
+          "reference_net_profit_mean": 45500.0,
+          "relative_net_profit_defined": true,
+          "relative_net_profit_mean": 0.0
+        }
+      },
+      "by_seed": [
+        {
+          "seed": 4202490418,
+          "pairs": 4,
+          "reference": "baseline",
+          "arms": {
+            "baseline": {
+              "games": 4,
+              "wins": 4,
+              "draws": 0,
+              "losses": 0,
+              "means": {
+                "net_profit": 47028.5,
+                "opponent_net_profit": 42708.5,
+                "margin": 4320.0,
+                "score": 1.0
+              }
+            },
+            "candidate": {
+              "games": 4,
+              "wins": 4,
+              "draws": 0,
+              "losses": 0,
+              "means": {
+                "net_profit": 47028.5,
+                "opponent_net_profit": 42708.5,
+                "margin": 4320.0,
+                "score": 1.0
+              }
+            }
+          },
+          "delta_means": {
+            "net_profit": 0.0,
+            "opponent_net_profit": 0.0,
+            "margin": 0.0,
+            "score": 0.0
+          },
+          "reference_net_profit_mean": 47028.5,
+          "relative_net_profit_defined": true,
+          "relative_net_profit_mean": 0.0
+        },
+        {
+          "seed": 2219033805,
+          "pairs": 4,
+          "reference": "baseline",
+          "arms": {
+            "baseline": {
+              "games": 4,
+              "wins": 2,
+              "draws": 0,
+              "losses": 2,
+              "means": {
+                "net_profit": 40235.0,
+                "opponent_net_profit": 42179.0,
+                "margin": -1944.0,
+                "score": 0.5
+              }
+            },
+            "candidate": {
+              "games": 4,
+              "wins": 2,
+              "draws": 0,
+              "losses": 2,
+              "means": {
+                "net_profit": 41312.0,
+                "opponent_net_profit": 39745.0,
+                "margin": 1567.0,
+                "score": 0.5
+              }
+            }
+          },
+          "delta_means": {
+            "net_profit": 1077.0,
+            "opponent_net_profit": -2434.0,
+            "margin": 3511.0,
+            "score": 0.0
+          },
+          "reference_net_profit_mean": 40235.0,
+          "relative_net_profit_defined": true,
+          "relative_net_profit_mean": 0.026767739530259724
+        }
+      ]
+    },
+    "teacher_task": {
+      "overall": {
+        "pairs": 8,
+        "reference": "teacher_task",
+        "arms": {
+          "teacher_task": {
+            "games": 8,
+            "wins": 6,
+            "draws": 0,
+            "losses": 2,
+            "means": {
+              "net_profit": 43701.0,
+              "opponent_net_profit": 41245.25,
+              "margin": 2455.75,
+              "score": 0.75
+            }
+          },
+          "candidate": {
+            "games": 8,
+            "wins": 6,
+            "draws": 0,
+            "losses": 2,
+            "means": {
+              "net_profit": 44170.25,
+              "opponent_net_profit": 41226.75,
+              "margin": 2943.5,
+              "score": 0.75
+            }
+          }
+        },
+        "delta_means": {
+          "net_profit": 469.25,
+          "opponent_net_profit": -18.5,
+          "margin": 487.75,
+          "score": 0.0
+        },
+        "reference_net_profit_mean": 43701.0,
+        "relative_net_profit_defined": true,
+        "relative_net_profit_mean": 0.010737740555136039
+      },
+      "by_opponent": {
+        "round2": {
+          "pairs": 4,
+          "reference": "teacher_task",
+          "arms": {
+            "teacher_task": {
+              "games": 4,
+              "wins": 2,
+              "draws": 0,
+              "losses": 2,
+              "means": {
+                "net_profit": 41809.0,
+                "opponent_net_profit": 40720.5,
+                "margin": 1088.5,
+                "score": 0.5
+              }
+            },
+            "candidate": {
+              "games": 4,
+              "wins": 2,
+              "draws": 0,
+              "losses": 2,
+              "means": {
+                "net_profit": 42840.5,
+                "opponent_net_profit": 40679.0,
+                "margin": 2161.5,
+                "score": 0.5
+              }
+            }
+          },
+          "delta_means": {
+            "net_profit": 1031.5,
+            "opponent_net_profit": -41.5,
+            "margin": 1073.0,
+            "score": 0.0
+          },
+          "reference_net_profit_mean": 41809.0,
+          "relative_net_profit_defined": true,
+          "relative_net_profit_mean": 0.02467172139969863
+        },
+        "market": {
+          "pairs": 4,
+          "reference": "teacher_task",
+          "arms": {
+            "teacher_task": {
+              "games": 4,
+              "wins": 4,
+              "draws": 0,
+              "losses": 0,
+              "means": {
+                "net_profit": 45593.0,
+                "opponent_net_profit": 41770.0,
+                "margin": 3823.0,
+                "score": 1.0
+              }
+            },
+            "candidate": {
+              "games": 4,
+              "wins": 4,
+              "draws": 0,
+              "losses": 0,
+              "means": {
+                "net_profit": 45500.0,
+                "opponent_net_profit": 41774.5,
+                "margin": 3725.5,
+                "score": 1.0
+              }
+            }
+          },
+          "delta_means": {
+            "net_profit": -93.0,
+            "opponent_net_profit": 4.5,
+            "margin": -97.5,
+            "score": 0.0
+          },
+          "reference_net_profit_mean": 45593.0,
+          "relative_net_profit_defined": true,
+          "relative_net_profit_mean": -0.0020397868093786327
+        }
+      },
+      "by_seed": [
+        {
+          "seed": 4202490418,
+          "pairs": 4,
+          "reference": "teacher_task",
+          "arms": {
+            "teacher_task": {
+              "games": 4,
+              "wins": 4,
+              "draws": 0,
+              "losses": 0,
+              "means": {
+                "net_profit": 45997.0,
+                "opponent_net_profit": 42750.0,
+                "margin": 3247.0,
+                "score": 1.0
+              }
+            },
+            "candidate": {
+              "games": 4,
+              "wins": 4,
+              "draws": 0,
+              "losses": 0,
+              "means": {
+                "net_profit": 47028.5,
+                "opponent_net_profit": 42708.5,
+                "margin": 4320.0,
+                "score": 1.0
+              }
+            }
+          },
+          "delta_means": {
+            "net_profit": 1031.5,
+            "opponent_net_profit": -41.5,
+            "margin": 1073.0,
+            "score": 0.0
+          },
+          "reference_net_profit_mean": 45997.0,
+          "relative_net_profit_defined": true,
+          "relative_net_profit_mean": 0.022425375567971823
+        },
+        {
+          "seed": 2219033805,
+          "pairs": 4,
+          "reference": "teacher_task",
+          "arms": {
+            "teacher_task": {
+              "games": 4,
+              "wins": 2,
+              "draws": 0,
+              "losses": 2,
+              "means": {
+                "net_profit": 41405.0,
+                "opponent_net_profit": 39740.5,
+                "margin": 1664.5,
+                "score": 0.5
+              }
+            },
+            "candidate": {
+              "games": 4,
+              "wins": 2,
+              "draws": 0,
+              "losses": 2,
+              "means": {
+                "net_profit": 41312.0,
+                "opponent_net_profit": 39745.0,
+                "margin": 1567.0,
+                "score": 0.5
+              }
+            }
+          },
+          "delta_means": {
+            "net_profit": -93.0,
+            "opponent_net_profit": 4.5,
+            "margin": -97.5,
+            "score": 0.0
+          },
+          "reference_net_profit_mean": 41405.0,
+          "relative_net_profit_defined": true,
+          "relative_net_profit_mean": -0.0022461055428088395
+        }
+      ]
+    }
+  },
+  "paired_detail": [
+    {
+      "seed": 4202490418,
+      "opponent": "round2",
+      "side": 0,
+      "baseline": {
+        "game": "dev-4202490418-round2-0-baseline",
+        "bank": 49362.0,
+        "opponent_bank": 44226.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 46362.0,
+        "opponent_net_profit": 41226.0,
+        "margin": 5136.0,
+        "score": 1.0
+      },
+      "candidate": {
+        "game": "dev-4202490418-round2-0-candidate",
+        "bank": 49362.0,
+        "opponent_bank": 44226.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 46362.0,
+        "opponent_net_profit": 41226.0,
+        "margin": 5136.0,
+        "score": 1.0
+      },
+      "teacher_task": {
+        "game": "dev-4202490418-round2-0-teacher_task",
+        "bank": 47299.0,
+        "opponent_bank": 44309.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 44299.0,
+        "opponent_net_profit": 41309.0,
+        "margin": 2990.0,
+        "score": 1.0
+      },
+      "delta_vs_baseline": {
+        "net_profit": 0.0,
+        "opponent_net_profit": 0.0,
+        "margin": 0.0,
+        "score": 0.0
+      },
+      "delta_vs_teacher_task": {
+        "net_profit": 2063.0,
+        "opponent_net_profit": -83.0,
+        "margin": 2146.0,
+        "score": 0.0
+      },
+      "first_request_difference_step": 266
+    },
+    {
+      "seed": 4202490418,
+      "opponent": "round2",
+      "side": 1,
+      "baseline": {
+        "game": "dev-4202490418-round2-1-baseline",
+        "bank": 49362.0,
+        "opponent_bank": 44226.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 46362.0,
+        "opponent_net_profit": 41226.0,
+        "margin": 5136.0,
+        "score": 1.0
+      },
+      "candidate": {
+        "game": "dev-4202490418-round2-1-candidate",
+        "bank": 49362.0,
+        "opponent_bank": 44226.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 46362.0,
+        "opponent_net_profit": 41226.0,
+        "margin": 5136.0,
+        "score": 1.0
+      },
+      "teacher_task": {
+        "game": "dev-4202490418-round2-1-teacher_task",
+        "bank": 47299.0,
+        "opponent_bank": 44309.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 44299.0,
+        "opponent_net_profit": 41309.0,
+        "margin": 2990.0,
+        "score": 1.0
+      },
+      "delta_vs_baseline": {
+        "net_profit": 0.0,
+        "opponent_net_profit": 0.0,
+        "margin": 0.0,
+        "score": 0.0
+      },
+      "delta_vs_teacher_task": {
+        "net_profit": 2063.0,
+        "opponent_net_profit": -83.0,
+        "margin": 2146.0,
+        "score": 0.0
+      },
+      "first_request_difference_step": 266
+    },
+    {
+      "seed": 4202490418,
+      "opponent": "market",
+      "side": 0,
+      "baseline": {
+        "game": "dev-4202490418-market-0-baseline",
+        "bank": 50695.0,
+        "opponent_bank": 47191.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 47695.0,
+        "opponent_net_profit": 44191.0,
+        "margin": 3504.0,
+        "score": 1.0
+      },
+      "candidate": {
+        "game": "dev-4202490418-market-0-candidate",
+        "bank": 50695.0,
+        "opponent_bank": 47191.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 47695.0,
+        "opponent_net_profit": 44191.0,
+        "margin": 3504.0,
+        "score": 1.0
+      },
+      "teacher_task": {
+        "game": "dev-4202490418-market-0-teacher_task",
+        "bank": 50695.0,
+        "opponent_bank": 47191.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 47695.0,
+        "opponent_net_profit": 44191.0,
+        "margin": 3504.0,
+        "score": 1.0
+      },
+      "delta_vs_baseline": {
+        "net_profit": 0.0,
+        "opponent_net_profit": 0.0,
+        "margin": 0.0,
+        "score": 0.0
+      },
+      "delta_vs_teacher_task": {
+        "net_profit": 0.0,
+        "opponent_net_profit": 0.0,
+        "margin": 0.0,
+        "score": 0.0
+      },
+      "first_request_difference_step": 269
+    },
+    {
+      "seed": 4202490418,
+      "opponent": "market",
+      "side": 1,
+      "baseline": {
+        "game": "dev-4202490418-market-1-baseline",
+        "bank": 50695.0,
+        "opponent_bank": 47191.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 47695.0,
+        "opponent_net_profit": 44191.0,
+        "margin": 3504.0,
+        "score": 1.0
+      },
+      "candidate": {
+        "game": "dev-4202490418-market-1-candidate",
+        "bank": 50695.0,
+        "opponent_bank": 47191.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 47695.0,
+        "opponent_net_profit": 44191.0,
+        "margin": 3504.0,
+        "score": 1.0
+      },
+      "teacher_task": {
+        "game": "dev-4202490418-market-1-teacher_task",
+        "bank": 50695.0,
+        "opponent_bank": 47191.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 47695.0,
+        "opponent_net_profit": 44191.0,
+        "margin": 3504.0,
+        "score": 1.0
+      },
+      "delta_vs_baseline": {
+        "net_profit": 0.0,
+        "opponent_net_profit": 0.0,
+        "margin": 0.0,
+        "score": 0.0
+      },
+      "delta_vs_teacher_task": {
+        "net_profit": 0.0,
+        "opponent_net_profit": 0.0,
+        "margin": 0.0,
+        "score": 0.0
+      },
+      "first_request_difference_step": 269
+    },
+    {
+      "seed": 2219033805,
+      "opponent": "round2",
+      "side": 0,
+      "baseline": {
+        "game": "dev-2219033805-round2-0-baseline",
+        "bank": 40165.0,
+        "opponent_bank": 48000.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 37165.0,
+        "opponent_net_profit": 45000.0,
+        "margin": -7835.0,
+        "score": 0.0
+      },
+      "candidate": {
+        "game": "dev-2219033805-round2-0-candidate",
+        "bank": 42319.0,
+        "opponent_bank": 43132.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 39319.0,
+        "opponent_net_profit": 40132.0,
+        "margin": -813.0,
+        "score": 0.0
+      },
+      "teacher_task": {
+        "game": "dev-2219033805-round2-0-teacher_task",
+        "bank": 42319.0,
+        "opponent_bank": 43132.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 39319.0,
+        "opponent_net_profit": 40132.0,
+        "margin": -813.0,
+        "score": 0.0
+      },
+      "delta_vs_baseline": {
+        "net_profit": 2154.0,
+        "opponent_net_profit": -4868.0,
+        "margin": 7022.0,
+        "score": 0.0
+      },
+      "delta_vs_teacher_task": {
+        "net_profit": 0.0,
+        "opponent_net_profit": 0.0,
+        "margin": 0.0,
+        "score": 0.0
+      },
+      "first_request_difference_step": 173
+    },
+    {
+      "seed": 2219033805,
+      "opponent": "round2",
+      "side": 1,
+      "baseline": {
+        "game": "dev-2219033805-round2-1-baseline",
+        "bank": 40165.0,
+        "opponent_bank": 48000.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 37165.0,
+        "opponent_net_profit": 45000.0,
+        "margin": -7835.0,
+        "score": 0.0
+      },
+      "candidate": {
+        "game": "dev-2219033805-round2-1-candidate",
+        "bank": 42319.0,
+        "opponent_bank": 43132.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 39319.0,
+        "opponent_net_profit": 40132.0,
+        "margin": -813.0,
+        "score": 0.0
+      },
+      "teacher_task": {
+        "game": "dev-2219033805-round2-1-teacher_task",
+        "bank": 42319.0,
+        "opponent_bank": 43132.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 39319.0,
+        "opponent_net_profit": 40132.0,
+        "margin": -813.0,
+        "score": 0.0
+      },
+      "delta_vs_baseline": {
+        "net_profit": 2154.0,
+        "opponent_net_profit": -4868.0,
+        "margin": 7022.0,
+        "score": 0.0
+      },
+      "delta_vs_teacher_task": {
+        "net_profit": 0.0,
+        "opponent_net_profit": 0.0,
+        "margin": 0.0,
+        "score": 0.0
+      },
+      "first_request_difference_step": 173
+    },
+    {
+      "seed": 2219033805,
+      "opponent": "market",
+      "side": 0,
+      "baseline": {
+        "game": "dev-2219033805-market-0-baseline",
+        "bank": 46305.0,
+        "opponent_bank": 42358.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 43305.0,
+        "opponent_net_profit": 39358.0,
+        "margin": 3947.0,
+        "score": 1.0
+      },
+      "candidate": {
+        "game": "dev-2219033805-market-0-candidate",
+        "bank": 46305.0,
+        "opponent_bank": 42358.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 43305.0,
+        "opponent_net_profit": 39358.0,
+        "margin": 3947.0,
+        "score": 1.0
+      },
+      "teacher_task": {
+        "game": "dev-2219033805-market-0-teacher_task",
+        "bank": 46491.0,
+        "opponent_bank": 42349.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 43491.0,
+        "opponent_net_profit": 39349.0,
+        "margin": 4142.0,
+        "score": 1.0
+      },
+      "delta_vs_baseline": {
+        "net_profit": 0.0,
+        "opponent_net_profit": 0.0,
+        "margin": 0.0,
+        "score": 0.0
+      },
+      "delta_vs_teacher_task": {
+        "net_profit": -186.0,
+        "opponent_net_profit": 9.0,
+        "margin": -195.0,
+        "score": 0.0
+      },
+      "first_request_difference_step": 259
+    },
+    {
+      "seed": 2219033805,
+      "opponent": "market",
+      "side": 1,
+      "baseline": {
+        "game": "dev-2219033805-market-1-baseline",
+        "bank": 46305.0,
+        "opponent_bank": 42358.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 43305.0,
+        "opponent_net_profit": 39358.0,
+        "margin": 3947.0,
+        "score": 1.0
+      },
+      "candidate": {
+        "game": "dev-2219033805-market-1-candidate",
+        "bank": 46305.0,
+        "opponent_bank": 42358.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 43305.0,
+        "opponent_net_profit": 39358.0,
+        "margin": 3947.0,
+        "score": 1.0
+      },
+      "teacher_task": {
+        "game": "dev-2219033805-market-1-teacher_task",
+        "bank": 46491.0,
+        "opponent_bank": 42349.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 43491.0,
+        "opponent_net_profit": 39349.0,
+        "margin": 4142.0,
+        "score": 1.0
+      },
+      "delta_vs_baseline": {
+        "net_profit": 0.0,
+        "opponent_net_profit": 0.0,
+        "margin": 0.0,
+        "score": 0.0
+      },
+      "delta_vs_teacher_task": {
+        "net_profit": -186.0,
+        "opponent_net_profit": 9.0,
+        "margin": -195.0,
+        "score": 0.0
+      },
+      "first_request_difference_step": 259
+    }
+  ],
+  "checks": {
+    "own_mean_improved": true,
+    "overall_margin_not_lower": true,
+    "overall_score_not_lower": true,
+    "student_ratios_defined": true,
+    "teacher_mean_retained": true
+  },
+  "student_opponent_point_guards": {
+    "round2": true,
+    "market": true
+  },
+  "teacher_opponent_point_guards": {
+    "round2": true,
+    "market": true
+  },
+  "passed": true,
+  "independent_holdout": false,
+  "confidence_intervals_computed": false,
+  "default_replacement": false,
+  "role": "Fixed-checkpoint development screen, not independent improvement evidence",
+  "reused_screen_outcomes_in_panel": false,
+  "checkpoint_sha256": "799f3f3238f10b5ee66166c91f529f162be59bc0cdb5cc1883f6d7d8b1150ea5"
+}

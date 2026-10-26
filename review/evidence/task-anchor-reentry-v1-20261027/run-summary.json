@@ -1,0 +1,31 @@
+{
+  "status": "completed_holdout",
+  "completed_games": 120,
+  "attempted_games": 120,
+  "all_attempts_completed": true,
+  "live_official_transitions": 86280,
+  "primary_official_transitions": 86280,
+  "game_model_counts": {
+    "task_forwards": 353584,
+    "task_rows": 18781436,
+    "crop_forwards": 38026,
+    "crop_rows": 38026,
+    "gate_evaluations": 0,
+    "controller_calls": 172560,
+    "teacher_proposals": 0
+  },
+  "policy_turns": 345120,
+  "machine_seconds": 2797.7660000000033,
+  "fit_attempts": 1,
+  "fit_completed": true,
+  "fit_result_sha256": "d1f377f00a94eb13d5111300bb3d0b5ca8696c540f66e40a66c5ec22821dbd88",
+  "default_changed": false,
+  "automatic_teacher_admission": false,
+  "registration_sha256": "8db5bc96919a81df484c480f282ae924c389f43949ea24df0a9c8a26980141b5",
+  "freeze_sha256": "010d760b55357100e5ca1bf8314e70c16fb0445499b959d4701fe46add400606",
+  "holdout_run": true,
+  "actual_gpu_training": true,
+  "research_positive": false,
+  "teacher_retention": true,
+  "candidate_admission": false
+}

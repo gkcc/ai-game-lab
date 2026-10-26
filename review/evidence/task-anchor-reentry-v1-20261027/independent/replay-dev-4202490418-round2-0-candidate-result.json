@@ -1,0 +1,34 @@
+{
+  "frozen_source_sha256": {
+    "decision/execution.py": "cbf38b17ca9c4c1c4f82ddb583ff59e4f605a0e8d8e971ef5bfc3664b2c76378",
+    "decision/full_audit.py": "84f7c7b4316fb98791c51b933f5329a271b8bc9aec60eebe133f6d433ec4510d",
+    "decision/semantics.py": "9ac62d0df7adca84c0feff805b2979bb45f9f9f4c2064d1e2b5c48efd3e779a5",
+    "decision/verify_mechanisms.py": "cc82fd118abd94e92a8833587aa2bfb9117214a8a5b00e8054225732af47fbbf"
+  },
+  "game": "dev-4202490418-round2-0-candidate",
+  "neural_rows": 0,
+  "new_games": 0,
+  "official": {
+    "audit_version": 2,
+    "both_public_and_private_states_match_each_step": true,
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "final_rewards": [
+      49362.0,
+      44226.0
+    ],
+    "inventory_order_checked_each_step": true,
+    "official_transitions_reexecuted": 719,
+    "passed": true,
+    "semantic_sha256": "894760042b5fe4e4f4fa0b1ad320b8059d4e6ee3ebba684eb80ebf99392d4c00",
+    "semantic_sha256_v2": "32938d8b2b9795d0522aca6ef6fcc893c9b28b46d3a41b678b81ab5a1010b3ff",
+    "semantic_sha256_version": 1
+  },
+  "official_transitions_completed": 719,
+  "official_transitions_debited": 719,
+  "passed": true,
+  "policy_callbacks": 0,
+  "reservation_sha256": "76ace0cc35bbaf0c5f16bb69f88941fd5d37469cc22771e0b6dd59ddd6173003",
+  "row_sha256": "179013df55987afedf6c7c75f18b124b18d346723439c31dc3bffcfce35dcbc0",
+  "source_sha256": "0bf0ec92cd933a2b7f2995f0fde3b117d6d86eaf8258fa3e683371c8acb8ef7c",
+  "worker_seconds": 2.219000000040978
+}

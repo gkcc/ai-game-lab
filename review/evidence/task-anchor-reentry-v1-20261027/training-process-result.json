@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "process_seconds": 137.56200000003446,
+  "checkpoint_sha256": "799f3f3238f10b5ee66166c91f529f162be59bc0cdb5cc1883f6d7d8b1150ea5",
+  "fit_count": 1,
+  "linux_guard_completed": true,
+  "capture": {
+    "limit_bytes": 1048576,
+    "written_bytes": 659,
+    "observed_bytes": 659,
+    "reader_joined": true,
+    "child_exit_code": 0
+  },
+  "cleanup": {
+    "errors": [],
+    "transport_reaped": true,
+    "reader_exited": true,
+    "linux_cleanup_evidence": true,
+    "elapsed_seconds": 137.56200000003446,
+    "within_total_deadline": true,
+    "post_deadline_recovery_seconds": 0.0,
+    "passed": true
+  },
+  "parent_write_bytes": 1071,
+  "fit_adapter_sha256": "60a40932881b52468dd14a8698f4cb96afb4048833be30448714e728418c3eac"
+}

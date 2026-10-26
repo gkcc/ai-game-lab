@@ -1,0 +1,33 @@
+{
+  "schema": "root-anchor-reentry-acceptance-v1",
+  "passed": true,
+  "created_utc": "2026-10-26T23:14:30.702410+00:00",
+  "meaning": "Accept complete reproducible execution and the non-admission result; not proof of economic superiority",
+  "independent_result_sha256": "0349a5e33e5852a8e76756ae937061cf2c5820c9d5c052adc44079343c1488f1",
+  "independent_verification_sha256": "e4bf8334650f1495b90e842501f9b9f89c9885f4bda2507e10f22e721ac2b0bc",
+  "registration_sha256": "8db5bc96919a81df484c480f282ae924c389f43949ea24df0a9c8a26980141b5",
+  "freeze_sha256": "010d760b55357100e5ca1bf8314e70c16fb0445499b959d4701fe46add400606",
+  "run_summary_sha256": "e5c6a1d7735c261f9ccf3d6d75fb9fe793b04225ac01bc381378d30146ec642f",
+  "statistics_sha256": "4ae90e93dbb623010b6834d3634dca1f57f69493d6065dacafd6bca3d61fd8fc",
+  "resource_accounting_sha256": "c0e683242c6ab87f34fe35a2eefe7e72a86bc19cf2277c219759ca6ba7294c33",
+  "must_fix": [],
+  "engineering_complete": true,
+  "actual_gpu_training": true,
+  "completed_games": 120,
+  "holdout_games": 96,
+  "research_positive": false,
+  "teacher_retention": true,
+  "candidate_admission": false,
+  "default_changed": false,
+  "old_attempts_refunded": false,
+  "old_evidence_unchanged": true,
+  "judgment": [
+    "S own-profit mean increased but preregistered CI crosses zero; no reliable superiority established",
+    "Teacher retention refers to the exact own-profit and score gates, not universal noninferiority; C versus T margin CI is below zero",
+    "All32 holdout action differences prove active control, not economic causality",
+    "Original failed attempts remain consumed and unchanged; repaired entry completed one new bounded fit"
+  ],
+  "same_data_same_architecture_rescue_allowed": false,
+  "current_stage_closed": true,
+  "next_action": "Seek separate independent next-step advice; no second fit, extra holdout or PPO"
+}

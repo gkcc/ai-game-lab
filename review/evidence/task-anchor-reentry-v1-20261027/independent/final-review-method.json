@@ -1,0 +1,30 @@
+{
+  "additional_GPU_operations": 0,
+  "additional_neural_rows": 0,
+  "additional_official_reexecution_transitions": 0,
+  "bootstrap": {
+    "quantile_method": "linear",
+    "replicates": 20000,
+    "seed": 2026102706
+  },
+  "common_draws_for_references_and_subgroups": true,
+  "comparison_atol": 1e-09,
+  "comparison_rtol": 1e-12,
+  "complete_job_identity_checks": true,
+  "created_utc": "2026-10-26T23:02:27.993399+00:00",
+  "deadline_utc": "2026-10-26T23:24:51.249633+00:00",
+  "expected_dev": 24,
+  "expected_games": 120,
+  "expected_holdout": 96,
+  "final_output_partition_bytes": 8388608,
+  "freeze_sha256": "010d760b55357100e5ca1bf8314e70c16fb0445499b959d4701fe46add400606",
+  "gate_thresholds_unchanged": true,
+  "original_deadline_not_extended": true,
+  "output_limit_bytes": 268435456,
+  "paired_array_order": "registered seed, registered opponent, seat, baseline/candidate/teacher_task, metric",
+  "recorded_first_action_difference_checks": true,
+  "registration_sha256": "8db5bc96919a81df484c480f282ae924c389f43949ea24df0a9c8a26980141b5",
+  "requires_closed_campaign_summary": true,
+  "reviewer_source_sha256": "9891eecc2af9ac55a85d6f8a404abd5f9bf6f9e47d333adfcbd71aed43d573f7",
+  "schema": "independent-anchor-final-review-method-v1"
+}

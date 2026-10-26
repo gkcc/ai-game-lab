@@ -1,0 +1,2468 @@
+{
+  "additional_neural_rows": 0,
+  "additional_official_transitions": 0,
+  "all_job_evidence_sha256": {
+    "dev-2219033805-market-0-baseline": {
+      "audit": "ab53e6694bbece15b928227f2eadf91b4cfcc555af7c6c57d152406266a013d9",
+      "complete": "9590ed5ab47713e0e35cb38662727c8283b1d33333a00a1486acc45f75ba6af4",
+      "row": "fe7806bf2d7b6ef91ca29b349a915ad1debe4bc3d16450cb2cd4b6cc1bd4d6fd",
+      "storage": "3b2b1ee8a8c25f4fbacaea341eb037a3ad5c712f648c0044aa53446ee3e0e726"
+    },
+    "dev-2219033805-market-0-candidate": {
+      "audit": "fbb7e4b8a7c46c7edf055e70126d385b9862f8700715279d5fec4a4603b9c603",
+      "complete": "dd2263182833b0107e7a3b64695f0dbd34b8ef857997764e3f934e22f3b24321",
+      "row": "7144eb3c19f3de84a3b910fa19e94512843a132c565214d394d3d6c9efb8218e",
+      "storage": "e606d319415939a73f0975d1c5b3cb3f7e58ecee5b5c2c35eb27b29818c117c1"
+    },
+    "dev-2219033805-market-0-teacher_task": {
+      "audit": "4c49a03a60c3589c859aaa67f6ef324774679c20d4c68e34f296eb31dfbcc597",
+      "complete": "9d017c0db92cb720210a0d8251254928f5498f4037197b1f8db2ccd1a8209aae",
+      "row": "78abf4c2556d92891eb51b64d0745a963a18a8f6721ff865416838e13582a54a",
+      "storage": "e06d1b6a6b4e7b7cc8092480dde372fbba197e694dec4d3bfb33016af2d22e93"
+    },
+    "dev-2219033805-market-1-baseline": {
+      "audit": "cc4fb156d417c4d9478451f23705c62055033a646614b2186f2ee8a33f9cfbfe",
+      "complete": "ff4c7f39ddfdc63187dc5ec2f0fbda50dc0c2eac3a469b9dd35fc44c14ea1b00",
+      "row": "dcc86a36847f294cd5155607a76a0fcc16833ec0d75cbab370373f4ebaf5e047",
+      "storage": "7f23f06b92b195de3216f8f614149785b6eaf82019de201b7bc89d1e2075a38b"
+    },
+    "dev-2219033805-market-1-candidate": {
+      "audit": "32eb0613ffa69bb15e851ac932f351dfdef78d00a19bb8c37af6a4dd9247ae98",
+      "complete": "d6482102ed67574d8dc5bd4e23eb1c6b8586f913fe2f7755ae5dc6ccf8803321",
+      "row": "f78a4854c61bdd363c3014d8642c302e8dee52e3c16a6f95e4ad3fc61602cfe2",
+      "storage": "ac725818a49b0ffdb672530b9f97ce0f798a56478938467933d15f720b211d43"
+    },
+    "dev-2219033805-market-1-teacher_task": {
+      "audit": "255933be3a31eb7bf625d24bbd6e8a6c290bc09178c125d04aa4525dde796ca1",
+      "complete": "086eb99170c66df406cefde451b92dc2d214035b2ff5aca184257eb7027057a5",
+      "row": "0ec26d55f6a3775d7b921a527ef1fb32bcf4ddf2edf574eb7ce8fc27525a0aa4",
+      "storage": "20de4559f57bc6e66cc56ad54467770b4f8fbc287ff44b63554e5e84c0455e61"
+    },
+    "dev-2219033805-round2-0-baseline": {
+      "audit": "3414465c637a8240e83b98d1fd27bc5eefea24aaab5289c2e9a693eaff9932f2",
+      "complete": "06dc74e933b27538ec28115633d2f9e3a62a3a9e04ceaeb46534185c250c112a",
+      "row": "489b3fd7c40dcd87fd8455b326b6250ece16b58c302723588a91830a6a4fda4e",
+      "storage": "256aee8bbbc91f2a84af4ab51d2b588541fab4c834955644037a9ea5c7f64c7b"
+    },
+    "dev-2219033805-round2-0-candidate": {
+      "audit": "6bc91c6110267a354dd7eb7af534a5771b6903e57c109bf1b1f85d533506ccf0",
+      "complete": "85e5c1b83c2846f7ea578b12fc2e80980202e349a5233fafc01df0faaf9f7bcd",
+      "row": "5c487f9abcbaf47224a6a673e955c9e237ebce387df92d8282ecb29eac311077",
+      "storage": "b23c0300c93cfb4b379354f27f94d04a2fab2895891fda23e9203fd4e66324f1"
+    },
+    "dev-2219033805-round2-0-teacher_task": {
+      "audit": "7bb93424a91cc2ef6487f96d91eaeb2a90002d9c87ce47221b7729198d326fc4",
+      "complete": "f13661135bd8fe695d16a0f5f22a4d7511b65bce9eb5fed9f0813581e12298f4",
+      "row": "87e8d913b6c562c840b5c21ae7ad09862399c1d889fce608e3eda55deb26714a",
+      "storage": "95404b055f91cbc20ab6aa6f613ee175d8d2ff16513fa27fb25d8d60dc8c0e1b"
+    },
+    "dev-2219033805-round2-1-baseline": {
+      "audit": "655f07c65ef07528e21e2afd1154ef1f7fd5f7c31576e2f2393305438ae18b69",
+      "complete": "f3b1ab754572230dade6940c735195210132103d2c65e8182dafecdfd0064191",
+      "row": "2e3c53cf2ae7f77fd38903f55846ff23cc5373bcaa05a5e85ca1403ae8ebbfcc",
+      "storage": "05eed0320d72ff90d7ffe775b9cb7318a8bb240fcbe826739445dd0f766877a2"
+    },
+    "dev-2219033805-round2-1-candidate": {
+      "audit": "f32f2b4616cf0c0cc16aacbd4d41fd943d8fe65f86665e0148427ebd142d3dee",
+      "complete": "ee4fa6ad7188f8110a006e9c2832863b0f42a1e7e54dfdf9baaa99192c8506fb",
+      "row": "f87f1736e5d6695fdcf556ae69e17aa2740cc6ce868dd97740c0b4f27319444e",
+      "storage": "c6960433ebb852071b7284e85c21632779d7d0521dad66d6254330e81760946d"
+    },
+    "dev-2219033805-round2-1-teacher_task": {
+      "audit": "465776c02002c1ca38d6e81666249b216ea8961bebe97067d0ee0585603f5e03",
+      "complete": "3196dbdb3ce87db7fdf7ae46241aa9f3b0a29627a1c07ce999daa5d5cd646957",
+      "row": "b143eea34b1f9f255a3bf1005a4a44dd0877da743a3d348a6ddd8fd018309ea1",
+      "storage": "2b025deb74496af9b0a2126f6aab2463b1f084feb1dc6e270390b7e245b2f704"
+    },
+    "dev-4202490418-market-0-baseline": {
+      "audit": "e8d3f5d03601cd8c75fcc48b933ac7ff394585a67cebce31efc2a6afd2dd5c23",
+      "complete": "2c4023bff61c941ac205bb17a1d47fe035d0b009e40f8d46d4a8717b35231169",
+      "row": "383fbd2f709b3a3b4d784f8b2477e83adc8dd41bf9c50abebc0bed407a7dd16f",
+      "storage": "32cadd7f01712c58df64aaf0015912d8ed0c1ce5e996de6e4d77cf43f878a76a"
+    },
+    "dev-4202490418-market-0-candidate": {
+      "audit": "9391426cf1286422f67c4c2dfd603ff2d3c8231c842849fff8c711d5414d4f38",
+      "complete": "2ba0b63324f009712c9bd389e9d5b93e4af3b275734e4c7c9632e4282a923ae9",
+      "row": "e4dde25250f4149b00068943a4b218ee510938bb2a30a9410c9ad2c8ad967c5f",
+      "storage": "2904ad6f5a2dcd02a43737e2f6eb079f26128fef886b9e2f19f510fbfe468d27"
+    },
+    "dev-4202490418-market-0-teacher_task": {
+      "audit": "2d86839274eb1d45a57baff689afd8ebbaf000648d031208fc80c203b8bf0b64",
+      "complete": "c3403d5df4a99d345f72becebdb52b762769a496944f18378fa285edf37da9d9",
+      "row": "84a8dacf7ac775240e7a90de0eb546d85627429da2e2f3c14c08cd968720d912",
+      "storage": "80556c6ef39eeb49920a4a454131059b9d58a76b2350c66778f07c4fc2bf063c"
+    },
+    "dev-4202490418-market-1-baseline": {
+      "audit": "3613771e8e43ee2d86f1361fcca51724b8a58444923367fa3168e57bbcf9ec3d",
+      "complete": "81a534a58f62cc6b9d08ce59e2a2c902abe71e97756dada4814428fdcb5f0abe",
+      "row": "9fb73e2e0324a68f882854e0462903b90e026c1ba27c0f53a41c1c191f630eb3",
+      "storage": "188f2012bb6c481fca42d7a5923e1be24d69ee9edc842a3a11f6cd8d2104f8c1"
+    },
+    "dev-4202490418-market-1-candidate": {
+      "audit": "a39d19e2f8c8d5cc4b2c04008bc5a8fe3e5af3a1f8dced8dc212ac5ca3446a1f",
+      "complete": "886798f9fa4b605c0b8c28827843dc03363336600715d0f28e36d47e1dd79be6",
+      "row": "30ce59526b413c4172619dfa296449a35070cf47d78668d171d61ef2d0c4817f",
+      "storage": "e63ed56badbd08d5694f09757df7d5452b5532d908e00c707f764b32b34af564"
+    },
+    "dev-4202490418-market-1-teacher_task": {
+      "audit": "a1ec65d17a18b2f041b3ac0d337d529c45dff97c32fa23f77ffed17dad3cf4b0",
+      "complete": "5a65e640105ab5932b161ce42ddccf05116a5f14ba2eb921a0e6111223b399e5",
+      "row": "13e6f0b6c7688e581cc5ccf4df7e4778b2c9e40fdbbdd03af4c8db5b8fc0f36d",
+      "storage": "45439e3bdc312a58e3e84581150d7d98674de2bd0234699ba56038e1f64dfb0f"
+    },
+    "dev-4202490418-round2-0-baseline": {
+      "audit": "03194ad6b6683351ac9e2f392d9e600748d7f4247619c0e9e75b6665138a7d68",
+      "complete": "a39f3d790ece371f4440ad8eca0aeee9d11ab45762b7862b483604f2b2cbbb5c",
+      "row": "da04a0ae44ad350e9e07c6c6e6d7b8c578ef74b11b2ba7195e08fa1dbd4643c2",
+      "storage": "1d20a61408145759de2a53819633ecf7d1e0eb41c711ce3b7614bcdb3547d8da"
+    },
+    "dev-4202490418-round2-0-candidate": {
+      "audit": "99701ec679022b8aa062f9cda7f9b71d2d3f470f61f4d554ecd8ada79c414e5c",
+      "complete": "940d002fcc0d26c795ef2ccc955d37e039208f80127bac669c2092fedaf07caf",
+      "row": "179013df55987afedf6c7c75f18b124b18d346723439c31dc3bffcfce35dcbc0",
+      "storage": "d6d79db812f7541f86e035573189e88ce76aae8a8dce2ded8cc5b7cc15f675fd"
+    },
+    "dev-4202490418-round2-0-teacher_task": {
+      "audit": "aa4de67fa61f9611be01b4e659312f49c09bc8215a64b502f177e821c9867272",
+      "complete": "8f0f203c54baef43b9489be104f05ffc1a9e9b7a54ff6073469a73e7d973371d",
+      "row": "aafe9e28177cb18d0ff718d4e8c32f6f2b0ac5054467dcbd2a71f0cec6ca1a81",
+      "storage": "89568c97b70a8794c6b7de28953bec560e00d82e0b745a968e84ebb093e066c0"
+    },
+    "dev-4202490418-round2-1-baseline": {
+      "audit": "5104608192076bfff37bf4d4c1dd0c6565c848c5a2ac5609dad4cc106184ec94",
+      "complete": "1a74179f0e9884bd1a107235910aa372ec753cae53f193640700eee2d896460e",
+      "row": "231674ffa52426b7c88e79ddd2e0b8dcc7a4fcaf46426e737a796658c0a4d00e",
+      "storage": "01341dc27560c71e6dea5e27cfcc403a7340b45a7d6ac437292a9aeb3602b53b"
+    },
+    "dev-4202490418-round2-1-candidate": {
+      "audit": "53d4442c20d378523f1541bdf2d4a4e83f49b626a5ae73d51333d820f6b530ae",
+      "complete": "4b398ed0873e50dfa9265f8fc24fd1dfadb03a4933be9502dae71f6fd4139cc4",
+      "row": "a39636b557925d6fcb5a22e7b761a6646e7bf4da5a94cdf5a843d0f7a78f9ffd",
+      "storage": "a8e16031f444e65cc45a36ec8f7088f479f4e8d5291db09357c0c130ae431fba"
+    },
+    "dev-4202490418-round2-1-teacher_task": {
+      "audit": "1005e9c8fa4e42c3264aa3858cb62e6db556fe06082695a6bc06dbd8db086d90",
+      "complete": "bbd17f0bba4257b0d360aeb78efad8298e87a522837cbb97bfb79da4e9ee61bf",
+      "row": "61ead183a357ec1c4a0bf83da8da3d953635d55b12b356ae11664ee5c818c6b3",
+      "storage": "555e5452acf47532325c31639e9e0d91f19fbb3ce9f61287c8336c4da270cff0"
+    },
+    "holdout-149009525-market-0-baseline": {
+      "audit": "829f5830796e31d42c7136c6543ed7ce19abf3a6bedd122107ad63e4ab87b2d4",
+      "complete": "b8834e9fe335b9d791cb14104ed10f8076c2dbb9fc7f6882e2fdefda1410cc62",
+      "row": "e92e16e687d9879031734548e96964f1fdc55d33e60106c4f39f3857d4faf947",
+      "storage": "f0fa805a415274e3c0e3e0390b05247826e090141ee09cef6e5d52834c91f2ad"
+    },
+    "holdout-149009525-market-0-candidate": {
+      "audit": "29bb57342e197cc868d74c78ac38f88041540fae84bd5f88f51825a4ba0ce482",
+      "complete": "7e9176cd0f6137c0af01909c3b8d737e613ce2c0b4ed344bed2ac012dd0486bf",
+      "row": "3fc8fac317acf1031a42597d001d67417e06e66c14bab081083f5e9432c02a4d",
+      "storage": "0451ffd368cf29308927343728fda019518edb24269e7cc03817ce2ab77177e5"
+    },
+    "holdout-149009525-market-0-teacher_task": {
+      "audit": "80c928ff49594768d7d7a6d56c47d9296a750a20d87f98484bfde6750b002c35",
+      "complete": "98b6a8afb48d0a1c870d226a3e275280311bb1886cbfb89beb95ae6121b617c0",
+      "row": "7427ab6a3133e5f80f556c9bb1dbfac2bdfe2b9b38c4472c507d58d77d2ce889",
+      "storage": "ec521a800f0371223a05925676399f72bb98aea4b99fcede6f392e5ce283d8f8"
+    },
+    "holdout-149009525-market-1-baseline": {
+      "audit": "d064837a36d7afef0f0c56a97bca67601eead637627b7eb93e7083bba61d749a",
+      "complete": "6b3183de358227027bea79a7aaf276ca7f4f2b2613d7d07802d20540a95aab75",
+      "row": "c66a703a5bf6876407b70ea2cb7e00cc3136d3ef5992980243274a7978e52796",
+      "storage": "2e3c940a967333871facaba6fd24bfef6c49c8ed7bb30d78e1535ed9358e9904"
+    },
+    "holdout-149009525-market-1-candidate": {
+      "audit": "e502ec08aea11672af2a8345420945de0db88c071d491553928dd9cf4b922544",
+      "complete": "a3396a6bb9ccc9a39ebff5cdba7f55f4416300c7bde752d980efa0ebfeadc00f",
+      "row": "655437ab083ec2d38922aa2625fcdd9b0a2435739999a8f282cee1f4d7c19063",
+      "storage": "89e41fea14309236699321a352dc09e52075cdc8973a3f45addc7553cd4526d5"
+    },
+    "holdout-149009525-market-1-teacher_task": {
+      "audit": "eba9d30d10c1bb4589ce3874418833bef2eabf03b04c06e83547d12e1b72e295",
+      "complete": "78f0c7fd4fabecfe8b3783e3273458bbf643930d441c4128435380c43e1ac727",
+      "row": "4b4bbdc54429b6ff96a6dc3e5266c82150f730d75a8fc9857158fda3fb6ecaa8",
+      "storage": "f137cfdae72ea27761addbab2d7d13bbcef4e793449d50cf3cfef9ea326e1c49"
+    },
+    "holdout-149009525-round2-0-baseline": {
+      "audit": "c6fc4e25086248f55e644336f52c791e58efb831859edd081caba17f626f6a31",
+      "complete": "622e8b44e02719adef40fc50dee23206d0340e57d222fa88055b72c31717800a",
+      "row": "2d9d24943b347101334428d4336e5609de998927d87d3d80f17ef8db4ace6979",
+      "storage": "34828d97404d904495f38489a862c6642c0d52e8d18168e5d0edf5036eb5a0cc"
+    },
+    "holdout-149009525-round2-0-candidate": {
+      "audit": "c192190ddf6a7d70195200d10b647db743e3cbc81686c8267df412ee6ad1656f",
+      "complete": "0a106ad93e4e19337e737afc3cc2eca579c5fa55f7df6d61d746a09681622314",
+      "row": "d394a4added8b6e17fd6090d8badcc17a9dd7c7d4f863318f9c36d0bae54d266",
+      "storage": "bb6ab7bb17442be139d132648f7ef1debd6255df519ace788c66f30a7cc3cef3"
+    },
+    "holdout-149009525-round2-0-teacher_task": {
+      "audit": "5a52ca2a685f4218ef2a45d45d56f72a442daccd4843ffb55815da0eee36f8a5",
+      "complete": "abab3ad1d8bc6d0a2deb8d68ded6f4a8eaaf78fbdcbcd80fabeb41e0f92e6d65",
+      "row": "6881a5a87fd58f99517f8fe5567f57902ad356f37bf59acfb7b24b5cbe93447f",
+      "storage": "28889709c7a53fc865f2db70c289fd6104443541cb2726ec8c8bcfd02bbfb2c3"
+    },
+    "holdout-149009525-round2-1-baseline": {
+      "audit": "ba21f77adc639fea36a59cca6c1e165c7a63a123d993f480da6973955c1b69b8",
+      "complete": "f07e09a5aad89756e9dcc7054df07e386af27b7f02d4c4ada5f66064f59a2b7f",
+      "row": "5994320c7497cfff9a78d017cfa8a06a5ddb522922da84d93caf91040078e5d3",
+      "storage": "34ac7e53562cc53d6a33b96b38c77a7be9b791987eede83d1fcc620b54941acf"
+    },
+    "holdout-149009525-round2-1-candidate": {
+      "audit": "afd5465c780efcdfe94ceeb01e922496015766666c64f05b9a5abce1f4f7a812",
+      "complete": "fc5c4677cf07d6329b041d270807030e7b522dcfeddeb2154b593ca535066082",
+      "row": "c9756197e5503088238ed70a58412cdd021b157af269c6216f8c57d66a539820",
+      "storage": "f850b3db3585b4e78b5850cbe68c47816ce8c84b1e6a6fed1e67a503574fb36a"
+    },
+    "holdout-149009525-round2-1-teacher_task": {
+      "audit": "e47e205a828a2f26c23969c9125e663938736b9947fc80c28dce7a3286806e49",
+      "complete": "cbf64638cc9c554ef05325ce77a7b25263b6f9cf86c4a5b083be2739ee6de3cf",
+      "row": "9920339aea6ae4d17db4c7101f2dcb5bf2c95fff79e5146809e67b890c5c37bd",
+      "storage": "46b3c2ca37b53db4d89070fc73dff6109ae25bc76a255ef00f77d9c1369fc4e9"
+    },
+    "holdout-1600614327-market-0-baseline": {
+      "audit": "9f75187eb5c52621b8545694eb7fda2e0c92e17a6bd8521bd1f7f94d455f579a",
+      "complete": "f2eb854549af297b84bdd435a197a5930670f6b5ae9c8e7d6d6b302bf409d1e4",
+      "row": "8f7717ab98b28baa555e13cd2508acecdfff90146e3ac57903f3263df0029915",
+      "storage": "d79eacafde80790faf477c39ddfd0067a3ffab1ad8fdcad90054702eff9c6046"
+    },
+    "holdout-1600614327-market-0-candidate": {
+      "audit": "917a48d0f4f4647d3b9e7b6608e8f10b82128f64c2b503249d0c36918e6933e4",
+      "complete": "ed09b5b17ca38d3171ec0ac6e3e8c7496568f6995674608c4148b6663cce41a5",
+      "row": "7c3dad61834c9444d4fdda24cc4c40fcca3ce9dba6dd7b65b227e2a42fd4065a",
+      "storage": "0d0868127960a6e6af70504ba50a4aa6ce6769d42131c3180dbb4e65929573b7"
+    },
+    "holdout-1600614327-market-0-teacher_task": {
+      "audit": "f9686bf47387e6262a9a3ebf01f89c0b08f027a5a9499da48b59d18525db8a91",
+      "complete": "2935829a684661941764a8225b8e42d302c14c0ec7dfec997663b080d6282d8a",
+      "row": "c173649e19df8e028ad1a31e967fae37238ff69f60293c54ee2c7bde3c6d4025",
+      "storage": "d7044dacd206fd708cafcf805a6a4c8c28e8526f5ab4d79970bcee06dfb3b4e6"
+    },
+    "holdout-1600614327-market-1-baseline": {
+      "audit": "1ca64c68185f0026b22dd3b9f50142f90556ad2542a43377d4266c37e76812b1",
+      "complete": "5fbf5d9f4a6bd4b329b917318553f8c5bbedadb87369eff74e113709915708c5",
+      "row": "bca800e6b686c226570179709647a647bf6d64d65b317493115e2a8869b7fd47",
+      "storage": "9314957ee50106f85f397ad3993107e10cb81e2162979448fdba3e5fb85fb0a6"
+    },
+    "holdout-1600614327-market-1-candidate": {
+      "audit": "7397b75e345b2017f9feac690d65ff605fd3adb2c3450f64e40942cf7751aa3b",
+      "complete": "7215ff8d192b78559330350932317fcb3b15a5259f38de6df24dbeb9c7670817",
+      "row": "d32f7dae092c9524f28753664e8bb03cb3bdf307f064614f322958a7e0324753",
+      "storage": "8a10544586a6bd8e3b23e105ba884f1ef5a33b57c8c5c1c4c887228f1c2d87b1"
+    },
+    "holdout-1600614327-market-1-teacher_task": {
+      "audit": "b6701dc53248edcec4a57fe0f316f7c9301808cda21172cb1ac5be93b38126a3",
+      "complete": "c49e3ed1b12d4430b4c8753530e11ca53da9fe6fe121c325dac3d24f5d227495",
+      "row": "f6812efb9c3501cb6972afa757118f25ce8ab4652e87c2c20ce997ea1c660103",
+      "storage": "7716ae6cd392724cce37deeb677703f5b3a5aad2b8a440c9cc935204bbcd6806"
+    },
+    "holdout-1600614327-round2-0-baseline": {
+      "audit": "038d8d75b3529d7adc5b785ae3b1ac0d263f18af813d3fd00380dc57f6e36bf6",
+      "complete": "6d6489c2095372b6b08a16db479c3c6b31a2c81c49803eee0ad46041a81f28e1",
+      "row": "fc0256edb8d012f34f72fc5366e8cbf369797f93b3e567ed0d6b32803b07ec0c",
+      "storage": "8331fe2ba7662aa40ab2f7a23343994cf02c8f4ae6cde4b9a6417505890e0ad9"
+    },
+    "holdout-1600614327-round2-0-candidate": {
+      "audit": "3b98f97af9ceb1a49a5a6b87c0eefd4301b0b097252128280e349ed9c1990243",
+      "complete": "2b1c16ddd1978f0f1bb3486c5b825ffbdc71a44ae6a8619aeaf8f7327c23bb32",
+      "row": "72e2bdafdb0518b48aa96be29e6fec10d4e9f991692e64eb47ed93a9814a975a",
+      "storage": "3c7546e5823a9700e68e4def1cdeb6b7bebb40597fafd61efb6f5c004fc4385e"
+    },
+    "holdout-1600614327-round2-0-teacher_task": {
+      "audit": "c9f81cfc654519c69b88c892d1114b3fac74592ed680772832e0ea4eee446317",
+      "complete": "23e2cedc6eedf0e3081c3c98e94c784714a0d6677629e27d0c416f2cae7b7415",
+      "row": "5e3496ac8a931b366ac8a05fc2c775034acfcd8609f4b155e3a82a939e9f3966",
+      "storage": "f18c8c7fe7b09fe97255674e03d23c028c12862cc01d9774b3337e5048aabb93"
+    },
+    "holdout-1600614327-round2-1-baseline": {
+      "audit": "5444681fcdb69cca12f34587f4ef57a06bef451961ccc0c09bb55b0e834d4b43",
+      "complete": "c57ecf7809be7c0fbbaae4ecab9720b880b133ee2db9b8c986fd1f2eba2e550a",
+      "row": "9863af2f407556bf81788e88465b6e01b3364be8c786869518454aeb0e945abe",
+      "storage": "60ecf62176bfc62c97e9a7273f220525a219949f57fceac10eda21f0c58a6e24"
+    },
+    "holdout-1600614327-round2-1-candidate": {
+      "audit": "a71304ef0721337f812e1150f2017f88134882bff2d3f6b7ced8f9bf4ebf5bcd",
+      "complete": "8a5de25e9d95d0c1920a6ad20a6cd85ff9bc413288e6d03c28360da70a4073f1",
+      "row": "0f1efe4d744b775fab1d21335a4b9df4ec3d5291492caa5d619d7d51109cac56",
+      "storage": "e28d0b3e7a378832450297e666bd0a616e993f2a738c05ab92a60b2271e4e16c"
+    },
+    "holdout-1600614327-round2-1-teacher_task": {
+      "audit": "1a77519e82156bbc4115e0649de9e9943582545ab9400042328f3a5790e6ba03",
+      "complete": "7278bef699afab597ceb53ee5ed790fe447b22783f7573072b241085de79a734",
+      "row": "a36cda0253c4f2378043e8052a6b39d45b848ef95cd3d31c61f0c56fb6251bef",
+      "storage": "ff19c35fa0d8ae62240a28a239624f271c21d245c2bc2a961cc9803c396bb947"
+    },
+    "holdout-1836204477-market-0-baseline": {
+      "audit": "d132927d6592d9de3d1ec32a29086c17bdd18a8e6085872c021db4a2b5ee69e2",
+      "complete": "b6a93fc736b0a7fe5d037f5cb1505493802b9487f470cb62540fd66386e9fa7d",
+      "row": "35ab441a2f0b6824d9b8260f9df16864cce5c2690d8abeab260980b6af20a127",
+      "storage": "f35505baf4a846fa8760c7e865bfd3a50d06e21bb0849f06b77fc0ea6ff80dbf"
+    },
+    "holdout-1836204477-market-0-candidate": {
+      "audit": "651b40be1fe9426cf8bc3f36368ca8274816dec7d99c1e12d07e7138ce97c6eb",
+      "complete": "920b506ba33393a32399d52dac6a7e527cddb97ae436a7ab996f598526596088",
+      "row": "3042b0e68e121aacc690baabda7efb28c37ebabf05f10f3cffe8e364691fd3ed",
+      "storage": "f77fc3d913b9502a48cafbad0643eb14c75ce7a9f82f3377816ae77dd5a7145a"
+    },
+    "holdout-1836204477-market-0-teacher_task": {
+      "audit": "dee4fbbad49c22ccd25f2b068bb475bb9cf0d538eff926fbc54eb3facc8408f6",
+      "complete": "fb8e1f5722aba7586dc09ec050a46bb0738e43e1e00c71fe555ab059648fe29e",
+      "row": "a8cdde219223e28c42b148195b7509a838d67970ae69f1af6433d8c7a19c1fcd",
+      "storage": "66ca802212ada5e480f6b694c3f65f7b563f9b8f1bb694f9c534c68ce4d7a98b"
+    },
+    "holdout-1836204477-market-1-baseline": {
+      "audit": "73dde9c899d2e5c8d3adacfe39635c7141568e0c8d2115babef083118f0677f0",
+      "complete": "143e529f348b3d1c390f52da1e9aab3d6c9e93e8e61f0c8ae224689a7561167e",
+      "row": "9d3d0285fcc58ee9ce3af3b89b541c96366616f2f4f0a7af340951149f4e3dcd",
+      "storage": "a0e4eb6a9b1472dc469e36b29124f9a3aff2a5b9cb3418acc08d48566bab0a55"
+    },
+    "holdout-1836204477-market-1-candidate": {
+      "audit": "b5bcca62dd5f2ea0e3bee94759e41e51156fadcf035c2ca29a6996acc532fa0c",
+      "complete": "1ccc5a36a213ff7e0eb6a94e265eadf04e9c7931e695ef46c6975b74792ab81b",
+      "row": "c023adca6d6d0fc824792d02e2e65e576171512f9060bf820612009b527b4807",
+      "storage": "a915b25e5d7eca518e5654a5342604f463a1c38410e733623008b6030d575a83"
+    },
+    "holdout-1836204477-market-1-teacher_task": {
+      "audit": "b73aac188f63ad57ab696f372818aef4842fb64c164eda687d027194db1b9888",
+      "complete": "e1bdd306b0db1c5ce3dc38e8e2dfa66aa40215d388618bd4864346fe27a74600",
+      "row": "5d90a7a6baa1c1d00dcb44a19b58982313412de1942e6d08e3260b0242cf1299",
+      "storage": "6f18650089420e47d98fd35ab909e5a0d345783692a4af23cd631969046d09fc"
+    },
+    "holdout-1836204477-round2-0-baseline": {
+      "audit": "c352dce3b478f1124e9477da4053c87fbcedecaef39040a7aeb7bf6991a95656",
+      "complete": "8ec917d3d32ee0a8b85e4235da89cfafb7ae95961b5b8d7ce415ad067555a58a",
+      "row": "04f8e16f0bc51d85f752ed17aad2a0ec2727334b115907822e6b514d48d5ee7d",
+      "storage": "c488e835a3a79c521cab8880784e88d2efbf2cd3f27a33da9a14624fb319f0e7"
+    },
+    "holdout-1836204477-round2-0-candidate": {
+      "audit": "ab080a1a28b50fa9d4d23b3545296296e56ab2a6fd912403c9a94cab4775dd74",
+      "complete": "7a023de56e52262790f8b45d8981aa413ab1dd6f1626538d5d4ece3642a1e119",
+      "row": "c7dbbe0f14014f60aa2ee6348817528812a25cef1970abbb58f0a18b59f977c0",
+      "storage": "a36574d1ca88b6f8c2dbddc12d17ab4d87dac0ebf44fd86f5532db6774f37c93"
+    },
+    "holdout-1836204477-round2-0-teacher_task": {
+      "audit": "1c59cd374c7dbf430ffe054ebc8d5bd98fce4326604d3f6e21f0343f380d8772",
+      "complete": "27f22455457cec1cca77643205ff305fef1a473d17bff6b60e0a9ea8d2061cf0",
+      "row": "d2c80815446bc645c49394201608f444bdf5069959ca4fe999bf09cc28e4d4d4",
+      "storage": "e7222ec6d161c2df0ac8513515be96e27e55d1a3af45abc292fc0f37b731c1f1"
+    },
+    "holdout-1836204477-round2-1-baseline": {
+      "audit": "bee6be1b20e6630b19ecdeb798abb41e48601dcb36d2f0e10ef9074d72560b84",
+      "complete": "a42c02fa553d044e24e528b428e836038cc256e8dc27c6944bf7965cd478f129",
+      "row": "634caaea48b00b3a97c98a59de894c81b860fdd5a9dcb668b2d26edc263190fe",
+      "storage": "0956740b2f7cd382ce97a77238357a0dbce48574c95af4acfeacaa0f5b23ea85"
+    },
+    "holdout-1836204477-round2-1-candidate": {
+      "audit": "c2eae05fb7364431f883ebc4329654108f25298099596ba89758d23f98b845a2",
+      "complete": "7873d5bbe420df41541f0ac44ccc1ad1dfbfbc9e8f99e562f7f6a7c618a88165",
+      "row": "bbbb263b4fe7b21d4664ec541fa24f0033f7304948bbb0de2dec06cc9291202a",
+      "storage": "1f6f11bc6c372821b46caf411def7424f8480d78720da578ccfa13003d670e08"
+    },
+    "holdout-1836204477-round2-1-teacher_task": {
+      "audit": "dca9dcde8dc1c2d6c958bff212559482fcd7bc2d486991b3c608d0994debed6b",
+      "complete": "9b1f68e6c5e76402d4bbaab13171fdb827ad81a474d1b8cf43dabc671be492f3",
+      "row": "fcb6c5f07d9a3a73fc5395697fc45f1b884ffd468d7b2605f59420fc16cbb281",
+      "storage": "df8ac9a891b4b3c741d1f1c0d8874f82cd0689443cfde11be47ca43602d720c6"
+    },
+    "holdout-1845894395-market-0-baseline": {
+      "audit": "25933c78f4a23eba4d0112bf3f12424a3023fd074dda801348d8c3bfcc9ab2f6",
+      "complete": "e2167c0bd9ac3e12b473bd6723de43588e2b4ff080ed3ae2d9a6dbe78223b86d",
+      "row": "c367c7c56a2eac01b71bf1d32b05e314a0644320b5a0819864b4568421e17523",
+      "storage": "30b12f4c97bc05fc9f26d94e7a99428d6ec7e42dd1240805d1bf7a4ff39a9fcd"
+    },
+    "holdout-1845894395-market-0-candidate": {
+      "audit": "6e50375a31ebd3860c83262616c73fc1f9266ac75567d1cddd37f3617253d718",
+      "complete": "0db5c6374160f56be0024d15d66eed7e8743a61a5ab55bc22023c42203118700",
+      "row": "cccc508b98b6d619c8ee29a641e3f4178c7fe44226d7327aea35137626fb3a15",
+      "storage": "29b38e9de21e104bfefa36634347e6f8ba450dc5efdaa9ae4473d271f49a5544"
+    },
+    "holdout-1845894395-market-0-teacher_task": {
+      "audit": "993aa7058333e6ea29669904fa7f35a3166e6478a3689cbfe54490a7353a3c4a",
+      "complete": "2526e629f5f9cd852502d3a29f9ae54667d102e1e6f7448fda28e31ee825ac15",
+      "row": "59392f0a6cf0124449acc11e37162915a36e788f1762ee65a0552979e90c7ebf",
+      "storage": "b9872e62563e460b6e60724ee2ef41e586594102d5728371c1e64425f90c423b"
+    },
+    "holdout-1845894395-market-1-baseline": {
+      "audit": "a77ee551e01f643e88ca27ac17cb2bcb227e3144bfe6bba34fca102c56ce7488",
+      "complete": "fba7d739851ff7273a0ce59a496f8ca235f75f72117581a2f34278805d47352f",
+      "row": "6b4b8da7e7aeb1bdedc71ffd325809b0dcad160aca7379ef00210285b6ff78c5",
+      "storage": "e1ca5f0c007996298ecc2c93c71d0f63246d13a490c213bfcf75833dc44cec9b"
+    },
+    "holdout-1845894395-market-1-candidate": {
+      "audit": "9cbf932e6b43b55f544d24f61262ada3a066563e10e28290440c1a6375a5ad40",
+      "complete": "21d36698fafdd4e636f1ef38f803e02029cd6d225604bd61742d906a89458ad9",
+      "row": "37fb64268a140ed4c31eb28ebc5cee2e046e9f6ffe21afa689f7861eba91cd91",
+      "storage": "bb9fcd1f99e88de8781a292286d7e939df0f365240ccd8a4c432bfe1c3275f8e"
+    },
+    "holdout-1845894395-market-1-teacher_task": {
+      "audit": "76b0a521669e6cd189eeb3e2c14ae4549dc8b9d91bb6424c1c258914d5ddbaf2",
+      "complete": "47780e43122837b3bde765a9a2b31f50ee77c8e5a941dddedfb78b336b24a45d",
+      "row": "4b7b291f2c7a393282d9eaf4d742541e013d2c9ffcdc30e01ab4fa6d7eaa15dc",
+      "storage": "d5168a5ef52f2a04c3f4134b5118525c4f7b767d7036ef754ed52e0b96a465a2"
+    },
+    "holdout-1845894395-round2-0-baseline": {
+      "audit": "9be3722797ffad111c37beac3b632216b666e46059caf4c1273beb031b52f9ae",
+      "complete": "b7f2d11132ab514d5eaaaf72559913faa2fc65e98c7325be04146e947bc1e2ae",
+      "row": "c5742a466aa9d1c042b78e97afe7e4e0693aa3958d2926af69f86846623506a4",
+      "storage": "edab497dc2d67fe827bf29d1518bbc17d7265bc299bbdfc89f42239ede831c9c"
+    },
+    "holdout-1845894395-round2-0-candidate": {
+      "audit": "522a5ec909262d91cb623e5234c26eb51b1e7e690c4541961cf4ca7d606c8349",
+      "complete": "5d07f267425ee9f9b7ed6adbd350b8eb0781be306640c2f0e0f1c3b9425e553c",
+      "row": "7ba816c99e9a16211f576794b85b7c1cc8590478eeb6ff1e92245ad0b2b0060f",
+      "storage": "35380ab8860d08992da0a7ca650c2d88936960cc7638a393da8c952c2cf65034"
+    },
+    "holdout-1845894395-round2-0-teacher_task": {
+      "audit": "962b9bd6a7c86cabfa214d227e16b7b163d182079d0ea72b6946bd724ebdc38c",
+      "complete": "bd0a3036148d4deb4462454c1cd897c6570d65fb402795064e98f4764302cd6f",
+      "row": "821a6b1c3b5b4cb77bf7fa9f0eb18020aed57cdd2f3da26adbd32525175a32b5",
+      "storage": "e6cca557539db7477b4d824cfc57101936925a1329c344814480b6654190cf16"
+    },
+    "holdout-1845894395-round2-1-baseline": {
+      "audit": "51dd9f2fb62b4d2231069cfb824e50c96a5276d2583530ffa9c556e7c7cd80a2",
+      "complete": "bda909dae58c47386ef2b1d669e03e2bfb3d50ed5246c096f159277b564d65d7",
+      "row": "bee2102697f7593b02c5eadba9dd5eead7528e6084d6555b1f0b03f6f3504525",
+      "storage": "a48efbcab2bc69fb1aee5709cff18f23e89b10672d9cae44bf555f3b704ffe75"
+    },
+    "holdout-1845894395-round2-1-candidate": {
+      "audit": "d0a38541da7ce2278feaaba3cb06ed4a2ec23c1c85ee9c49a74629ac9b96013d",
+      "complete": "1d8068ce44a62fed39a2fa9160376b50a93cb3b0b96d0eb80469471a744fa1d6",
+      "row": "d93ceb5e2212b35c41bb7a79e47963ee0ac2245351078e4b22edda74b255e0ae",
+      "storage": "f8ecd33282ef728156daa0ceb818d4f1bed6b2758a0e66a2bde1491c13655365"
+    },
+    "holdout-1845894395-round2-1-teacher_task": {
+      "audit": "eb0bc6259a3fb07f1566195bada0f412de8f03d69c76c6d3b91e1d9b989e9024",
+      "complete": "f5221b89f94be47b9457541eebf91579cdcd714c49a733fe97ede21379c9766a",
+      "row": "9ea4b3f9354658374c86d33ca6a9e2a33612e402d8d8b52fd2112142963483b7",
+      "storage": "6891ec339d371faff5468d1042a2870c4f3ee86aa9c7478d69e7024374b3f42b"
+    },
+    "holdout-2240228007-market-0-baseline": {
+      "audit": "c985393200f10f3d987e6ead546e344c36b62ebbc0e51d4d0f31a396e3fe74c4",
+      "complete": "f2e63d9b1b8432275d509f6964852998fad08a063e45a45597925c13b13d9f5c",
+      "row": "527c4bb7d37f2d7c0803cab1fd7fc06080f70c542f959388b981b7907bbc84f5",
+      "storage": "f83635d1f163faa272c1882209c10fa581c2966f5c945d99fba6bfd62a4da48a"
+    },
+    "holdout-2240228007-market-0-candidate": {
+      "audit": "a02e5967d13b4b0964b7fc7c39bfabf862839483f4b4b24695375f5656146f2b",
+      "complete": "93074b34b60883fbccc05da89997388e60441690c9635f2c28ac66c9b50a5070",
+      "row": "17a2d874ec1ce9d46b0e546b2fd6cdce6bbe2aa95e86fcc732ee11d695f7ef04",
+      "storage": "2b4040eb529980f3a98fa30cf8b2c3106e367b9ee12b0c096d2ac03724b4339e"
+    },
+    "holdout-2240228007-market-0-teacher_task": {
+      "audit": "1c159979b4fc1e5e5409831485f712ac78a5673063d0e43c27fe617f17d4cffe",
+      "complete": "7fded22e9388fa6a45bb81a3af85129e1d99a63d6c78dae96a9ce267300d7b31",
+      "row": "be7f5d733195b8222223db59d7231c488d5ab026df7444a0bf34f138411f39fd",
+      "storage": "b05eeacafdf032a9abddf1f1023b1fe1fb7494a5f6a66aa8d7e6c2f4c9b728ba"
+    },
+    "holdout-2240228007-market-1-baseline": {
+      "audit": "59434e9a8002650b82dcff32e2fd5641154228eb0db690a5b5c1e0e6e70d2026",
+      "complete": "63a8ea9f1f7620b39b2ee64cb95b12eb4f7f1d0e9789dcfe971752261cf4d396",
+      "row": "c4348e96e907372889f6c912ba910e5e594c5682b0a59640379783ed14d3cc50",
+      "storage": "5021864d595c18eb33283dabf9220a8db44a19c6ef74ef0580bb7e002ba776f6"
+    },
+    "holdout-2240228007-market-1-candidate": {
+      "audit": "122b6e3f0be5ae655fc93699227070e608167ec9a07231c46af88723345ca56a",
+      "complete": "c6bd12940d429295686b95a1b99f2f33e1bdef45472ee40ec4ca92f04cde60ec",
+      "row": "45ed19b92e8b0f896e622ef94d7c5383ad8bf2762f2ce04df5479d35b447e5d6",
+      "storage": "d7ddb4ba895c6e050bc9b409481915f0ed782bff854b795968ad1afeff1c9c0b"
+    },
+    "holdout-2240228007-market-1-teacher_task": {
+      "audit": "628dadbfbfca12daf8fd7ecd253b11980b7d812160032d7d02c875adf5b13a1c",
+      "complete": "65eea5626f9a430c5c31a263683fc94720e6c6f25faa0aa91e218e38d99a191c",
+      "row": "b7d9b36613910202e7db492262b9dcf984ca77d4399e4161a64cab362359c059",
+      "storage": "23f15c6984ede6f7c09addd64ff17eef1f512ab3cd46b9726f56099073ebbdd9"
+    },
+    "holdout-2240228007-round2-0-baseline": {
+      "audit": "c4e575b923d37a38790eb7f8630f47efac52043a68e78baf463794f535236fc3",
+      "complete": "95de1ca0e3f3071e8f36fc2d2427b9b3611d971aabf6e9cfe625c5eebe7eb375",
+      "row": "50c075a44b94fa92941c6d1185e3035826913a604844a2fb484be9dfc5a890e1",
+      "storage": "e50804617dfaae96a64b98d2ca06871735214b3b2996f51e1e9a5366043e4524"
+    },
+    "holdout-2240228007-round2-0-candidate": {
+      "audit": "74939363c7d72f645fcb20b83bf4b970bcfea78db6165afaee8f7def366f7faa",
+      "complete": "139a268a12554b0cdb2f45d819ccb9d20db42b750622a0dff7fc43d4b795a6d5",
+      "row": "112c6d2885aedf964d600c3925fd75e6dee94d68ca0734dceceeade9667dcd54",
+      "storage": "80955c10ef569a6393fd8fe51c71de0185efc8cbfa3fb7e924f194730444344e"
+    },
+    "holdout-2240228007-round2-0-teacher_task": {
+      "audit": "ce1a53b2e573673073fb889235bfe0a562b9a181941f85ca6988cbeafecc3ef4",
+      "complete": "24d16fc8c6d45b33f403cc4b7245440a5434b8ca08e66eccc7f428e951810338",
+      "row": "f3c343224b4d5fcc2ddc078f9ab609437c57264e4bbdadbd064e52fe4a901b13",
+      "storage": "be37557c7364b9f79ed46a9e893665acba21a21afc83d43d16a8693449836d1b"
+    },
+    "holdout-2240228007-round2-1-baseline": {
+      "audit": "4a9b49fc349da4f434c22a332f5e18259c2f0e6f3be06047dfb680c30126a738",
+      "complete": "9d6b5f3be6c33c2dc467693ddb3aa1b5937df659c72264976c9ccb8aaff73612",
+      "row": "e3de95045d9d21bc1043c348549535d56ccccdaf1054c45370194e47a253c8c6",
+      "storage": "91aba8d72aa103538be7409e01c4181c3db80519f8fad9d7c54ce89809a08cf8"
+    },
+    "holdout-2240228007-round2-1-candidate": {
+      "audit": "97aa0fd793c893ab987738f8c274a38b87943faed88360c3e4449ac6e8667da9",
+      "complete": "e065899543e8d04a0b387bfae2c6cd970de76d528dddad5284dd15e8620b5b0f",
+      "row": "c8ff2889412b2441376e9c3a4f294efb5f981c99f88bae7771138b87ce07c53e",
+      "storage": "761d24b7bea58eef12ee0e7353f7c83a81534e405b38f8227d29c09f396f003a"
+    },
+    "holdout-2240228007-round2-1-teacher_task": {
+      "audit": "528408c147b40bf55abb9e00da2e97fe7edf1ce58b6ba361f804c521eb62e327",
+      "complete": "19917489a2e65660f965acd2c27d6a5480f26892d5b4e4efc20e797570ca097b",
+      "row": "666ec66d4192fdeab066e63354488559991aaed589c0fee9863d56e565372ae2",
+      "storage": "91fe74c8d495e8d6900ff491b18959fc0d351ee08524c49bfd0ee6aaf047f801"
+    },
+    "holdout-2997782266-market-0-baseline": {
+      "audit": "ad4b12ccf4ca9469f9eeb2411715eaa67a2b9e0d6eb75e2916440deebe3811ef",
+      "complete": "130187918bb4fb96df5e708f57bea9cad19bfc058875ef0dd7ed703655c15ff3",
+      "row": "752bce7dc44af1530e53031b479123014644b431fc66a3a84075eacb398dc05e",
+      "storage": "88fd0f9fdd024a0f569af3eed6cafba0ed518943aa1e994ac6c553f54a43fd0b"
+    },
+    "holdout-2997782266-market-0-candidate": {
+      "audit": "449435b3a9694a2026e632b7d8aefd59a05fbd526a23a9f86c5d458a352d0fc7",
+      "complete": "4ab9321d4bd93ee21cc31366a0bd1794fbd4d143e0579fd660ef14512d62e59a",
+      "row": "1266f23a6420a99d76718030c596f5c443b953882112b13f268a37a3391e2acf",
+      "storage": "014f251e671ae31f94c80b6bc892e69c7ce04d7c7e94bb4596adf5ff79d846c2"
+    },
+    "holdout-2997782266-market-0-teacher_task": {
+      "audit": "84192cf5b4015c21bc026a711e3e44b0ca6d3f3967ae058a5c10be39eaeee580",
+      "complete": "195d118810b99887e05b92c3ca4b98ead87ca8eeef0b1c2fa80227867ec26246",
+      "row": "8e544113323a8d5ac693f401aee7d7a1f95770054139889e4505e6229a1f48b6",
+      "storage": "be4eb4cff254deace5e38732fb0d7c7163bb9a2daa1dd3a617aca0ee72b23801"
+    },
+    "holdout-2997782266-market-1-baseline": {
+      "audit": "af5746da8fc0b0e8b9e2769a234c52db6a5feeddb145684ea09dfa999ab0975a",
+      "complete": "b07e87501a6dbd073e565bc09d5fbf9851e18b1f001428cd99953b5248dcbc85",
+      "row": "79fc586f3765284cfdf27145346b18509902e0830ab4b80e3aadea7f91054d81",
+      "storage": "a3cb92368ac873418504e9256ee2a50ec997c7d9f16a28d938c1cdc9a7fa06f8"
+    },
+    "holdout-2997782266-market-1-candidate": {
+      "audit": "1ddcf3f5bb341bf140e223ccf6823df248b9039b9e2aa6702d8ed385f010c641",
+      "complete": "e968d8b2a7cf7ea694142d0957f0e3111b8d22856eac6064cc6d12f431b84964",
+      "row": "8fed8f757f8e267e8a271c66d74733981769bc19cb323c239a2af840cce65829",
+      "storage": "3b79f78bbce80d6c3dea2a0cf10bc46911e21a0c77f5bc2778d13b238cbb85fd"
+    },
+    "holdout-2997782266-market-1-teacher_task": {
+      "audit": "67324e6d8019043cb0414663f540f03ce015e9043b346e0735e8a0b280befa05",
+      "complete": "707458bf08dc707d51247b936daed8a46a2c53e2798e9d72638b730373101132",
+      "row": "865b03b25465a757e7af233107738a0919cc9d2d5a7ddb71e2aaa076caf91007",
+      "storage": "e61e23cf70f6845de8c33de9f55661a3d2e1a16bf51cd211848e1adee897f4cd"
+    },
+    "holdout-2997782266-round2-0-baseline": {
+      "audit": "9ab7b4a272eeaedefbb3b5ca12f4185a9845fed62867bdd8a1a6a9ec71eb1126",
+      "complete": "2031a142d261419cb00bb7a727f5744195ec986356284dbf25434a020ce94417",
+      "row": "6930f1f6fd79c647144b0178b218431da982b0d5017a79b8166e63c302663fd0",
+      "storage": "2b49915f4c7a2b9883124c62b9da3753cd286f8c5a2b4cea95e7a529699520b4"
+    },
+    "holdout-2997782266-round2-0-candidate": {
+      "audit": "c0d4872ba5782f562d3cd8fbc9767033ef18164553e098bdbd0e0a0f1a274f88",
+      "complete": "2676b293eb489aa062243ecab274203eb59fd57c193567e683310ceb697cb6f3",
+      "row": "d6bf1275b7a015bdf003e7d3bf0eef5e2304d6dc0866537b8e3cbc9d4e36eea3",
+      "storage": "91e1e3cd63d7db0db9e18533cac0b82f93f7a9136f27f07a56c980472d601642"
+    },
+    "holdout-2997782266-round2-0-teacher_task": {
+      "audit": "9577a1841c2e1b2e75c572e41fefd8ebea92f9d010afe936538c1df3584aae3b",
+      "complete": "a677bb80d9a3bccc17ca95072a7a8b5b2e781dc963669832e67986d6bbbd202b",
+      "row": "91fda7eb0fc57c07ea444995d7d4b51dd5323b14262a120ecee362f7695d275d",
+      "storage": "673d4d0b69d5189074f5cbcd15f647b289878412502c5c11c30d3c72ba64f0fd"
+    },
+    "holdout-2997782266-round2-1-baseline": {
+      "audit": "bbbf8bdbe69262a8e0893a6149c67414bbb8833b6fc4e00feef46398bb904582",
+      "complete": "1aa28431cabf99c5daba5dc2fe8d68e064fd821eddaf51aeccedb62b3638b665",
+      "row": "af14a90e74ba74dc24bb5b3da8e64570c7b9012cf7bc9b90b5cffea51439fde5",
+      "storage": "4715da3c5b21fa705e9f58b3b8a24789106ad68a21173c03d4ba61478c8d3faf"
+    },
+    "holdout-2997782266-round2-1-candidate": {
+      "audit": "2c15ed2a510de61a07be83602bd879f4500cbc8653bf32f567f93e5e204db5de",
+      "complete": "955865f022e56a0b09b82f9f6d652e4244f0dfd88945da89f32a872b3be177ef",
+      "row": "df0e147091ddc795a4919008e7d9ac2d9a94d18d46343a4f26fc9aca11659fa2",
+      "storage": "c07cbd2009b48fa5eaf316a89a0ef5c0117333d0554e443a5075e6cda4573387"
+    },
+    "holdout-2997782266-round2-1-teacher_task": {
+      "audit": "eaf8f78288ab13eda077979369513ebe3c53d6cf03d72426bf49da28e236a442",
+      "complete": "b65a2f2e805ccc1a7d975781b3793af81ecb9df0ccbdcdb164f32f450d20fea1",
+      "row": "23e80a18ed756e570f2127612dac0a5f535ab41fb8c29359b6ec9a98346be29a",
+      "storage": "96494386f5148ddcbb7c2ec4ebc1391e33b9abc56dfbace112f54be582d8cbdf"
+    },
+    "holdout-3351711015-market-0-baseline": {
+      "audit": "d9c6a6896508ee30dce1e65d00f3c8225b1fe06016b193759d652e8b3edcd1fa",
+      "complete": "c6d19ea724737d219cc7ee0ffd56dc5f42a1653239b7ebcaaac352ce0287e93b",
+      "row": "c945348fec9cf7d13f90c6dcf070144f48cefaf9ec9d2a88a7274d588c8e08f6",
+      "storage": "c951a02d535f5df1b245c2e1b9a5fb4e2457cbcff96ef47756e62b27f317b031"
+    },
+    "holdout-3351711015-market-0-candidate": {
+      "audit": "2047beec6507d1953482691418292f937bf11f836a153aacd83570269d0f306e",
+      "complete": "94466193402a02ecee2012c2e09978bf1b2001cbf178fe33ee82cff5c6d2133b",
+      "row": "834d71efd2b218c6421709c16e7767ef55dbdb38dcc564cde9eec9010d3b5521",
+      "storage": "c91a78363069a83a2164b278ae77b711c6da0e38c827ab8823ab386923af9562"
+    },
+    "holdout-3351711015-market-0-teacher_task": {
+      "audit": "006e1228b5064c521d0ebe10171f328220aa69ea387476f0954668b26aab10f5",
+      "complete": "525fea67ab6147f8a4f6fed6c607bdc32c086e2668304682d18ad27cfca555e4",
+      "row": "7a7b59dcde26470df4cde04c3796a64436e4451e041d2b5e45d65d969a1f10b9",
+      "storage": "b4fdf1a557132dd4db0c533ceb1a7cf389fdd2f159623ab95efa3f51a1b4caa6"
+    },
+    "holdout-3351711015-market-1-baseline": {
+      "audit": "577df17dd2ad6766f8fdd952d1ceefd0b536b6969f954890169bf18ca3cab7da",
+      "complete": "bc4a1a1af98a58402d83c0bba6546b9263fdfd131702c58cde95783683f4b6fe",
+      "row": "6dea5e8661c8b48826aba7981a36a6af21566e7e9363ddb88ff62ea70a715608",
+      "storage": "d03a7c3451b81ec0699b93af7ba2cd75a86aef8d6698bbf02eb672340ae657e2"
+    },
+    "holdout-3351711015-market-1-candidate": {
+      "audit": "faedaa17b82923cdb3e999842f9b68f500cdf3df00ce27f1e16b15c4ea06b0a7",
+      "complete": "f4ca6c85f767c46cf04af3b5ac2845e8808b99ba4ca3e3519a51041be09c7ba5",
+      "row": "ed577bcdfb56c1b076747289b9d63d6543d30a0b825d2896ebd9a8bed3e7d45b",
+      "storage": "7cf61d82979905d472eaa7e2e0e088fae06eedb737aaaca8c91e380dc79e4d81"
+    },
+    "holdout-3351711015-market-1-teacher_task": {
+      "audit": "0a5dfbf22d57f69b3edbfd4150800fe29c9c889f3cec3c67f72cbd1d64dc686f",
+      "complete": "0f0480b310438df9b4a57da146cfaef9b0b8cbc7ccf6d57443c36e43ca4d005d",
+      "row": "80abb69163388e72d19bbd2ebbffb32a84db5cdcc304cd26ca1c72511b39aac7",
+      "storage": "2edfba3d6f65d3ba23e926b56d3b56a449af0833f848792b6fcc33eb8a4e95db"
+    },
+    "holdout-3351711015-round2-0-baseline": {
+      "audit": "87073c7a90eaf7897d5d8f0ef7363c5c677ce44ccc917d75b27db6073f4f184b",
+      "complete": "b5b32d2dee9e2cad77ae7ab308582ededaf64143fe5efa08a2da584e5ee1cad9",
+      "row": "1b6d22a5f74975c0cc957cb6dfff4393ca21a5db4467b98c78cf8e7a03bea811",
+      "storage": "b46bfb7d1aeeb76215f02a28c8728460e0ca6d4429229ce69c5628877df97032"
+    },
+    "holdout-3351711015-round2-0-candidate": {
+      "audit": "c02a24096699c54c65779fae16cb4e6e271fab7e8105df482afaad5bf0ed2075",
+      "complete": "b7f2539dac0511db6e488a4da5e5313f2bb795f9e9a70b8c44632322bb6a18ed",
+      "row": "f7bd967a0144990f7ff62bcd8a9c918919557b3f462e5d8bd0c55fbcf07ddc98",
+      "storage": "2a14fd661088be31b980c4dde2ee15e12b8c11cb3391580eff49da2991eca8f4"
+    },
+    "holdout-3351711015-round2-0-teacher_task": {
+      "audit": "d50d15eb8658cc3a0ce81b91ac8109c618f6a27be16062dd2e19d30e85074e81",
+      "complete": "17ff8d7f636273c599485b7a17bcef64aed7082e0e2d0a7c8607d3a2dff34b14",
+      "row": "71ada342326fa5ccebf392656a94062fd3a053867c37c89602d9f012a30411f8",
+      "storage": "704bb9d19ca3b9d41d815dd296195f0657f5fcbe1f71509b3c41ccbf1fc6f12e"
+    },
+    "holdout-3351711015-round2-1-baseline": {
+      "audit": "6b7ed7a03cc320178ea0e58ad51e283dfe6cf0bef1eae336bf8990125a606714",
+      "complete": "30f8e987fa9617def492af5c58327d77a542c19f42620f9966fc908099fa6652",
+      "row": "d4fa23d705a1d81295dcdec257dce1d5b2137148178bd11984e7da9b0766357e",
+      "storage": "73f43e9048c0d5070831d6ea0e534f4e8679a01487d73c7afffd51bdb46c5345"
+    },
+    "holdout-3351711015-round2-1-candidate": {
+      "audit": "8395d6217fe82b3dd09d12755c6f274501a345c1be90729ab275809e0da6f3b8",
+      "complete": "177036df25510b25bc29aaf2d07a3d4a514a0988be1db6d9ca68a7a7539d1163",
+      "row": "f5fdec0428e48fb46eec480aa39e4497427d5faa02fe2ae9d48b09062ea40397",
+      "storage": "27e7bc7683dcff85becd5777e1cf8a4dabcb0bc4f5ec5fdfb7716c7d9110e272"
+    },
+    "holdout-3351711015-round2-1-teacher_task": {
+      "audit": "e3054ba717d37b406013a66fe15cc6a56ee10618bd8400b9802bc17a0b916b06",
+      "complete": "80f6d846e6d2c24b0813e1ddfa3add254f09937344ac76464cbb893cc6bcd475",
+      "row": "bb86d171c5a422ef987175cec50710443b170c76e3e8cccecebedab51d3e079b",
+      "storage": "4967d90bc6d9478944301519e46769ec967537c3c67222d05fb5e76eb58f13c3"
+    },
+    "holdout-51518447-market-0-baseline": {
+      "audit": "80be4556fd726d85b854d8b05f615b129c47d5e15e09e8801d9a154462cf4518",
+      "complete": "9257c6ea01b960db91b7d8bde22f8e946c8b00e55aeff5d701d77129a612af2f",
+      "row": "b027d94e8006f885a9e415af80592b7c086fed77ec662231f410d03d6de31bfb",
+      "storage": "68bf0abc4956dd06292578f5a2f6054912f1fdda0afa14381067c873644a836a"
+    },
+    "holdout-51518447-market-0-candidate": {
+      "audit": "b552bfa2f7d7ea9cf38bf6b37f682553ac48148af3f5b87928a5ab18437db22a",
+      "complete": "11bb77e03784216dd1ee2ed2ddba6014d43dddd958d74f389937ff24df49eb80",
+      "row": "da195eb8fcc91952778dcb630b7f1823d2c88fccb1ec1c4db8a1be1b6d0f3eb6",
+      "storage": "8cbf9d5d869dea744f23b3448389d37dbc368ca09ab782d15bb95be1cc75176f"
+    },
+    "holdout-51518447-market-0-teacher_task": {
+      "audit": "bdae0854177c076c4d0162b4eab0b3ec974cd8a96c6820c48d171db6628eac86",
+      "complete": "86b19dfbb82ccfcc051ceb8c13f6f03ba741ec32b2c2835964cb9d316509cb97",
+      "row": "c59d0734ecbb7bd1f0c6b2db6a1f3727d6b458d00fc5dadf01e61f202074c1a9",
+      "storage": "3cd990f8669c6d0552ee6f5ad4cbb1b891fcc51579b9b584b305f6d08303c9e8"
+    },
+    "holdout-51518447-market-1-baseline": {
+      "audit": "8877e28d5a074e3bae1e1908ae977f2d297630184ff123929fb376b6ba73a0b6",
+      "complete": "8401ba327ffa315ca0f8b41ab021b9b42d792fe53d879a00b405d9f2de4bf766",
+      "row": "9aa85bba9f7777f4bd0e13215afb08fa84b1194890aaab9824d83422797d4dd5",
+      "storage": "4c43a84523e6ad715d5cfbc3ebd1b67ea415d60e11b8dda95bc86c908d25dc6e"
+    },
+    "holdout-51518447-market-1-candidate": {
+      "audit": "b092b759b0d38f410ee42255e7b07cbda5574f032214d11ae8351d92ab3942f6",
+      "complete": "56a9308054d3077b7632f0c684a588bbc9f43583cff626743a2899310958c43b",
+      "row": "d731e42eb3069666545e4c93bb3baae6bf43381b64a5f04c3000a96da74dce04",
+      "storage": "773458b138e8b32bb17926453d1c86cee9369d8fea98dbf95c11e5bcc17b7adf"
+    },
+    "holdout-51518447-market-1-teacher_task": {
+      "audit": "3133d85801fbc668f6671f5987bb7326a6f666bfc1c5e0fe75ec602b114fa579",
+      "complete": "bfa2b779fbc1e771a8fa43c831339d885fb990ddfa2dda19c5763b7bebc82251",
+      "row": "602dd2c8423a462f6d534e6dff31a09fd524c4b20cebd0acaa9b8ceb9e344d05",
+      "storage": "c4a72e31fc4822a1c4ad80c1480bcdc52546fd6e6a07e2495c7d49e1b79779ae"
+    },
+    "holdout-51518447-round2-0-baseline": {
+      "audit": "f16702fbbf6fdbba421b72e3fc666316d9823a04b81e49d0ef63067ebd650508",
+      "complete": "01e7d6a741a0c00d5f3b60c25c9fa7ef374a31cff4b215485c6684b37d24b081",
+      "row": "7035882ba1bbeb724b30ba0fbd25b8d419671153f3f995b2aff3e8ed3cfc27d8",
+      "storage": "6ea7a783aa55144f939c33af02e8cfa014b53349e1044ab7a2e80c782e3303aa"
+    },
+    "holdout-51518447-round2-0-candidate": {
+      "audit": "885d07e5c87d9e60feaf13ee1b3051a382647f3ce6c5717e5807137e3fa076d8",
+      "complete": "4cc91b3bde8b1994b3972a17bcee494f1050019983e99508a9c7c61f02d83972",
+      "row": "273eb2bf25c27e0ea8f285cbaa93ccfc6144a708bc4f63a79a8211d18117f9b8",
+      "storage": "c76865c9f1b681c34b2a2f796056abaf2a6f7cf3a60caba605fbd61d75263cbd"
+    },
+    "holdout-51518447-round2-0-teacher_task": {
+      "audit": "853ba03bb503218ed96cf8246aede9c541b73645dc4dc43d2be19a55144b7c84",
+      "complete": "0a7ae22b9fe6900785df04295e86ff68903c685c0cd1938588753254f07fe09b",
+      "row": "2ceb376f872041236159d15b87e39fe473ec337e5fcddd507bf515378a0eb55b",
+      "storage": "51fe303e762e1f3e428a0b547c550f3c1fb06975e924137eeff42866eea51430"
+    },
+    "holdout-51518447-round2-1-baseline": {
+      "audit": "ec12b06c749ef282159bfeba33473af684eface0817a1289b4b2b06e2a3f8c3d",
+      "complete": "00a364a21329db0ee314ac31adb0ece1e3ce15eabfb2ef2380e3ce070b36a33c",
+      "row": "c134f8ede93c161583597e28bf1acf545fab849c667b274a7c91839ab89c99e2",
+      "storage": "c627d2ac8463bda94c65e501b255e8ce938d38a37bba3f560ad5bbb71fac62e6"
+    },
+    "holdout-51518447-round2-1-candidate": {
+      "audit": "8c082e5d5bea442681a3e491e143605b1c9065606dc791e5ffe6b290ea666219",
+      "complete": "9e60a6b79f406c70c3f54291449480f306ae499680941e2056895d3a2a300b71",
+      "row": "4e79936370b1ed3e9afb13b24fbc2dcaff60ff4934e3d416e34438e8825e6a7f",
+      "storage": "25c58642f461087b4651c556c0a0092f3cf2b207768895d37acbb1cd0f1b8608"
+    },
+    "holdout-51518447-round2-1-teacher_task": {
+      "audit": "63a593a519fa5eff7d4e602bb6a9525927f3ac08c6227f0ebe3521b1fac8150b",
+      "complete": "feefa4819d282060c6b6a943fda699fa42681681fc187dd04382bd94e058bef4",
+      "row": "50a212bdf512e29a3ef154408b5720668485f4bfc2cae04444ff1226c681b10b",
+      "storage": "31f25d3a0e07d5fcd6bcfe8e6585652e1660269654a43f16ab7b162156f230fb"
+    }
+  },
+  "development": {
+    "arm_summaries": {
+      "baseline": {
+        "draws": 0,
+        "games": 8,
+        "losses": 2,
+        "means": {
+          "margin": 1188.0,
+          "net_profit": 43631.75,
+          "opponent_net_profit": 42443.75,
+          "score": 0.75
+        },
+        "wins": 6
+      },
+      "candidate": {
+        "draws": 0,
+        "games": 8,
+        "losses": 2,
+        "means": {
+          "margin": 2943.5,
+          "net_profit": 44170.25,
+          "opponent_net_profit": 41226.75,
+          "score": 0.75
+        },
+        "wins": 6
+      },
+      "teacher_task": {
+        "draws": 0,
+        "games": 8,
+        "losses": 2,
+        "means": {
+          "margin": 2455.75,
+          "net_profit": 43701.0,
+          "opponent_net_profit": 41245.25,
+          "score": 0.75
+        },
+        "wins": 6
+      }
+    },
+    "bootstrap_draw_sha256": null,
+    "comparisons": {
+      "baseline": {
+        "by_opponent": {
+          "market": {
+            "arms": {
+              "baseline": {
+                "draws": 0,
+                "games": 4,
+                "losses": 0,
+                "means": {
+                  "margin": 3725.5,
+                  "net_profit": 45500.0,
+                  "opponent_net_profit": 41774.5,
+                  "score": 1.0
+                },
+                "wins": 4
+              },
+              "candidate": {
+                "draws": 0,
+                "games": 4,
+                "losses": 0,
+                "means": {
+                  "margin": 3725.5,
+                  "net_profit": 45500.0,
+                  "opponent_net_profit": 41774.5,
+                  "score": 1.0
+                },
+                "wins": 4
+              }
+            },
+            "delta_means": {
+              "margin": 0.0,
+              "net_profit": 0.0,
+              "opponent_net_profit": 0.0,
+              "score": 0.0
+            },
+            "pairs": 4,
+            "reference": "baseline",
+            "reference_net_profit_mean": 45500.0,
+            "relative_net_profit_defined": true,
+            "relative_net_profit_mean": 0.0
+          },
+          "round2": {
+            "arms": {
+              "baseline": {
+                "draws": 0,
+                "games": 4,
+                "losses": 2,
+                "means": {
+                  "margin": -1349.5,
+                  "net_profit": 41763.5,
+                  "opponent_net_profit": 43113.0,
+                  "score": 0.5
+                },
+                "wins": 2
+              },
+              "candidate": {
+                "draws": 0,
+                "games": 4,
+                "losses": 2,
+                "means": {
+                  "margin": 2161.5,
+                  "net_profit": 42840.5,
+                  "opponent_net_profit": 40679.0,
+                  "score": 0.5
+                },
+                "wins": 2
+              }
+            },
+            "delta_means": {
+              "margin": 3511.0,
+              "net_profit": 1077.0,
+              "opponent_net_profit": -2434.0,
+              "score": 0.0
+            },
+            "pairs": 4,
+            "reference": "baseline",
+            "reference_net_profit_mean": 41763.5,
+            "relative_net_profit_defined": true,
+            "relative_net_profit_mean": 0.02578806852873921
+          }
+        },
+        "by_seed": [
+          {
+            "arms": {
+              "baseline": {
+                "draws": 0,
+                "games": 4,
+                "losses": 0,
+                "means": {
+                  "margin": 4320.0,
+                  "net_profit": 47028.5,
+                  "opponent_net_profit": 42708.5,
+                  "score": 1.0
+                },
+                "wins": 4
+              },
+              "candidate": {
+                "draws": 0,
+                "games": 4,
+                "losses": 0,
+                "means": {
+                  "margin": 4320.0,
+                  "net_profit": 47028.5,
+                  "opponent_net_profit": 42708.5,
+                  "score": 1.0
+                },
+                "wins": 4
+              }
+            },
+            "delta_means": {
+              "margin": 0.0,
+              "net_profit": 0.0,
+              "opponent_net_profit": 0.0,
+              "score": 0.0
+            },
+            "pairs": 4,
+            "reference": "baseline",
+            "reference_net_profit_mean": 47028.5,
+            "relative_net_profit_defined": true,
+            "relative_net_profit_mean": 0.0,
+            "seed": 4202490418
+          },
+          {
+            "arms": {
+              "baseline": {
+                "draws": 0,
+                "games": 4,
+                "losses": 2,
+                "means": {
+                  "margin": -1944.0,
+                  "net_profit": 40235.0,
+                  "opponent_net_profit": 42179.0,
+                  "score": 0.5
+                },
+                "wins": 2
+              },
+              "candidate": {
+                "draws": 0,
+                "games": 4,
+                "losses": 2,
+                "means": {
+                  "margin": 1567.0,
+                  "net_profit": 41312.0,
+                  "opponent_net_profit": 39745.0,
+                  "score": 0.5
+                },
+                "wins": 2
+              }
+            },
+            "delta_means": {
+              "margin": 3511.0,
+              "net_profit": 1077.0,
+              "opponent_net_profit": -2434.0,
+              "score": 0.0
+            },
+            "pairs": 4,
+            "reference": "baseline",
+            "reference_net_profit_mean": 40235.0,
+            "relative_net_profit_defined": true,
+            "relative_net_profit_mean": 0.026767739530259724,
+            "seed": 2219033805
+          }
+        ],
+        "overall": {
+          "arms": {
+            "baseline": {
+              "draws": 0,
+              "games": 8,
+              "losses": 2,
+              "means": {
+                "margin": 1188.0,
+                "net_profit": 43631.75,
+                "opponent_net_profit": 42443.75,
+                "score": 0.75
+              },
+              "wins": 6
+            },
+            "candidate": {
+              "draws": 0,
+              "games": 8,
+              "losses": 2,
+              "means": {
+                "margin": 2943.5,
+                "net_profit": 44170.25,
+                "opponent_net_profit": 41226.75,
+                "score": 0.75
+              },
+              "wins": 6
+            }
+          },
+          "delta_means": {
+            "margin": 1755.5,
+            "net_profit": 538.5,
+            "opponent_net_profit": -1217.0,
+            "score": 0.0
+          },
+          "pairs": 8,
+          "reference": "baseline",
+          "reference_net_profit_mean": 43631.75,
+          "relative_net_profit_defined": true,
+          "relative_net_profit_mean": 0.012341929901963594
+        }
+      },
+      "teacher_task": {
+        "by_opponent": {
+          "market": {
+            "arms": {
+              "candidate": {
+                "draws": 0,
+                "games": 4,
+                "losses": 0,
+                "means": {
+                  "margin": 3725.5,
+                  "net_profit": 45500.0,
+                  "opponent_net_profit": 41774.5,
+                  "score": 1.0
+                },
+                "wins": 4
+              },
+              "teacher_task": {
+                "draws": 0,
+                "games": 4,
+                "losses": 0,
+                "means": {
+                  "margin": 3823.0,
+                  "net_profit": 45593.0,
+                  "opponent_net_profit": 41770.0,
+                  "score": 1.0
+                },
+                "wins": 4
+              }
+            },
+            "delta_means": {
+              "margin": -97.5,
+              "net_profit": -93.0,
+              "opponent_net_profit": 4.5,
+              "score": 0.0
+            },
+            "pairs": 4,
+            "reference": "teacher_task",
+            "reference_net_profit_mean": 45593.0,
+            "relative_net_profit_defined": true,
+            "relative_net_profit_mean": -0.0020397868093786327
+          },
+          "round2": {
+            "arms": {
+              "candidate": {
+                "draws": 0,
+                "games": 4,
+                "losses": 2,
+                "means": {
+                  "margin": 2161.5,
+                  "net_profit": 42840.5,
+                  "opponent_net_profit": 40679.0,
+                  "score": 0.5
+                },
+                "wins": 2
+              },
+              "teacher_task": {
+                "draws": 0,
+                "games": 4,
+                "losses": 2,
+                "means": {
+                  "margin": 1088.5,
+                  "net_profit": 41809.0,
+                  "opponent_net_profit": 40720.5,
+                  "score": 0.5
+                },
+                "wins": 2
+              }
+            },
+            "delta_means": {
+              "margin": 1073.0,
+              "net_profit": 1031.5,
+              "opponent_net_profit": -41.5,
+              "score": 0.0
+            },
+            "pairs": 4,
+            "reference": "teacher_task",
+            "reference_net_profit_mean": 41809.0,
+            "relative_net_profit_defined": true,
+            "relative_net_profit_mean": 0.02467172139969863
+          }
+        },
+        "by_seed": [
+          {
+            "arms": {
+              "candidate": {
+                "draws": 0,
+                "games": 4,
+                "losses": 0,
+                "means": {
+                  "margin": 4320.0,
+                  "net_profit": 47028.5,
+                  "opponent_net_profit": 42708.5,
+                  "score": 1.0
+                },
+                "wins": 4
+              },
+              "teacher_task": {
+                "draws": 0,
+                "games": 4,
+                "losses": 0,
+                "means": {
+                  "margin": 3247.0,
+                  "net_profit": 45997.0,
+                  "opponent_net_profit": 42750.0,
+                  "score": 1.0
+                },
+                "wins": 4
+              }
+            },
+            "delta_means": {
+              "margin": 1073.0,
+              "net_profit": 1031.5,
+              "opponent_net_profit": -41.5,
+              "score": 0.0
+            },
+            "pairs": 4,
+            "reference": "teacher_task",
+            "reference_net_profit_mean": 45997.0,
+            "relative_net_profit_defined": true,
+            "relative_net_profit_mean": 0.022425375567971823,
+            "seed": 4202490418
+          },
+          {
+            "arms": {
+              "candidate": {
+                "draws": 0,
+                "games": 4,
+                "losses": 2,
+                "means": {
+                  "margin": 1567.0,
+                  "net_profit": 41312.0,
+                  "opponent_net_profit": 39745.0,
+                  "score": 0.5
+                },
+                "wins": 2
+              },
+              "teacher_task": {
+                "draws": 0,
+                "games": 4,
+                "losses": 2,
+                "means": {
+                  "margin": 1664.5,
+                  "net_profit": 41405.0,
+                  "opponent_net_profit": 39740.5,
+                  "score": 0.5
+                },
+                "wins": 2
+              }
+            },
+            "delta_means": {
+              "margin": -97.5,
+              "net_profit": -93.0,
+              "opponent_net_profit": 4.5,
+              "score": 0.0
+            },
+            "pairs": 4,
+            "reference": "teacher_task",
+            "reference_net_profit_mean": 41405.0,
+            "relative_net_profit_defined": true,
+            "relative_net_profit_mean": -0.0022461055428088395,
+            "seed": 2219033805
+          }
+        ],
+        "overall": {
+          "arms": {
+            "candidate": {
+              "draws": 0,
+              "games": 8,
+              "losses": 2,
+              "means": {
+                "margin": 2943.5,
+                "net_profit": 44170.25,
+                "opponent_net_profit": 41226.75,
+                "score": 0.75
+              },
+              "wins": 6
+            },
+            "teacher_task": {
+              "draws": 0,
+              "games": 8,
+              "losses": 2,
+              "means": {
+                "margin": 2455.75,
+                "net_profit": 43701.0,
+                "opponent_net_profit": 41245.25,
+                "score": 0.75
+              },
+              "wins": 6
+            }
+          },
+          "delta_means": {
+            "margin": 487.75,
+            "net_profit": 469.25,
+            "opponent_net_profit": -18.5,
+            "score": 0.0
+          },
+          "pairs": 8,
+          "reference": "teacher_task",
+          "reference_net_profit_mean": 43701.0,
+          "relative_net_profit_defined": true,
+          "relative_net_profit_mean": 0.010737740555136039
+        }
+      }
+    },
+    "pairs": 8,
+    "seed_order": [
+      4202490418,
+      2219033805
+    ],
+    "verdict": {
+      "checks": {
+        "overall_margin_not_lower": true,
+        "overall_score_not_lower": true,
+        "own_mean_improved": true,
+        "student_ratios_defined": true,
+        "teacher_mean_retained": true
+      },
+      "passed": true,
+      "student_opponent_point_guards": {
+        "market": true,
+        "round2": true
+      },
+      "teacher_opponent_point_guards": {
+        "market": true,
+        "round2": true
+      }
+    }
+  },
+  "holdout": {
+    "arm_summaries": {
+      "baseline": {
+        "draws": 0,
+        "games": 32,
+        "losses": 14,
+        "means": {
+          "margin": -416.8125,
+          "net_profit": 41379.09375,
+          "opponent_net_profit": 41795.90625,
+          "score": 0.5625
+        },
+        "wins": 18
+      },
+      "candidate": {
+        "draws": 0,
+        "games": 32,
+        "losses": 14,
+        "means": {
+          "margin": 126.6875,
+          "net_profit": 41791.0625,
+          "opponent_net_profit": 41664.375,
+          "score": 0.5625
+        },
+        "wins": 18
+      },
+      "teacher_task": {
+        "draws": 0,
+        "games": 32,
+        "losses": 14,
+        "means": {
+          "margin": 736.4375,
+          "net_profit": 41931.5625,
+          "opponent_net_profit": 41195.125,
+          "score": 0.5625
+        },
+        "wins": 18
+      }
+    },
+    "bootstrap_draw_sha256": "08afc51fef6e371a652d9c971b785ee585c9d7bbcb46e18771d3b694ae3e382f",
+    "comparisons": {
+      "baseline": {
+        "by_opponent": {
+          "market": {
+            "arms": {
+              "baseline": {
+                "draws": 0,
+                "games": 16,
+                "losses": 6,
+                "means": {
+                  "margin": 945.25,
+                  "net_profit": 43626.125,
+                  "opponent_net_profit": 42680.875,
+                  "score": 0.625
+                },
+                "wins": 10
+              },
+              "candidate": {
+                "draws": 0,
+                "games": 16,
+                "losses": 6,
+                "means": {
+                  "margin": 971.25,
+                  "net_profit": 43649.75,
+                  "opponent_net_profit": 42678.5,
+                  "score": 0.625
+                },
+                "wins": 10
+              }
+            },
+            "bootstrap_reference_min": 39586.125,
+            "delta_ci95": {
+              "margin": [
+                0.0,
+                76.75
+              ],
+              "net_profit": [
+                0.0,
+                66.875
+              ],
+              "opponent_net_profit": [
+                -11.25,
+                4.125
+              ],
+              "score": [
+                0.0,
+                0.0
+              ]
+            },
+            "delta_means": {
+              "margin": 26.0,
+              "net_profit": 23.625,
+              "opponent_net_profit": -2.375,
+              "score": 0.0
+            },
+            "nonpositive_bootstrap_reference_count": 0,
+            "pairs": 16,
+            "reference": "baseline",
+            "reference_net_profit_mean": 43626.125,
+            "relative_net_profit_ci95": [
+              0.0,
+              0.0015219834151284572
+            ],
+            "relative_net_profit_defined": true,
+            "relative_net_profit_mean": 0.0005415333128945099
+          },
+          "round2": {
+            "arms": {
+              "baseline": {
+                "draws": 0,
+                "games": 16,
+                "losses": 8,
+                "means": {
+                  "margin": -1778.875,
+                  "net_profit": 39132.0625,
+                  "opponent_net_profit": 40910.9375,
+                  "score": 0.5
+                },
+                "wins": 8
+              },
+              "candidate": {
+                "draws": 0,
+                "games": 16,
+                "losses": 8,
+                "means": {
+                  "margin": -717.875,
+                  "net_profit": 39932.375,
+                  "opponent_net_profit": 40650.25,
+                  "score": 0.5
+                },
+                "wins": 8
+              }
+            },
+            "bootstrap_reference_min": 33439.75,
+            "delta_ci95": {
+              "margin": [
+                -142.625,
+                2401.75
+              ],
+              "net_profit": [
+                -72.5,
+                1791.125
+              ],
+              "opponent_net_profit": [
+                -981.9359374999999,
+                409.0562499999951
+              ],
+              "score": [
+                0.0,
+                0.0
+              ]
+            },
+            "delta_means": {
+              "margin": 1061.0,
+              "net_profit": 800.3125,
+              "opponent_net_profit": -260.6875,
+              "score": 0.0
+            },
+            "nonpositive_bootstrap_reference_count": 0,
+            "pairs": 16,
+            "reference": "baseline",
+            "reference_net_profit_mean": 39132.0625,
+            "relative_net_profit_ci95": [
+              -0.0017385911874467073,
+              0.04705237409795178
+            ],
+            "relative_net_profit_defined": true,
+            "relative_net_profit_mean": 0.020451579826644712
+          }
+        },
+        "by_seed": [
+          {
+            "arms": {
+              "baseline": {
+                "draws": 0,
+                "games": 4,
+                "losses": 2,
+                "means": {
+                  "margin": 450.0,
+                  "net_profit": 43401.5,
+                  "opponent_net_profit": 42951.5,
+                  "score": 0.5
+                },
+                "wins": 2
+              },
+              "candidate": {
+                "draws": 0,
+                "games": 4,
+                "losses": 2,
+                "means": {
+                  "margin": 2263.0,
+                  "net_profit": 44301.0,
+                  "opponent_net_profit": 42038.0,
+                  "score": 0.5
+                },
+                "wins": 2
+              }
+            },
+            "delta_means": {
+              "margin": 1813.0,
+              "net_profit": 899.5,
+              "opponent_net_profit": -913.5,
+              "score": 0.0
+            },
+            "pairs": 4,
+            "reference": "baseline",
+            "reference_net_profit_mean": 43401.5,
+            "relative_net_profit_defined": true,
+            "relative_net_profit_mean": 0.020725090146653916,
+            "seed": 2240228007
+          },
+          {
+            "arms": {
+              "baseline": {
+                "draws": 0,
+                "games": 4,
+                "losses": 2,
+                "means": {
+                  "margin": -2351.5,
+                  "net_profit": 35942.5,
+                  "opponent_net_profit": 38294.0,
+                  "score": 0.5
+                },
+                "wins": 2
+              },
+              "candidate": {
+                "draws": 0,
+                "games": 4,
+                "losses": 2,
+                "means": {
+                  "margin": -2349.0,
+                  "net_profit": 35950.5,
+                  "opponent_net_profit": 38299.5,
+                  "score": 0.5
+                },
+                "wins": 2
+              }
+            },
+            "delta_means": {
+              "margin": 2.5,
+              "net_profit": 8.0,
+              "opponent_net_profit": 5.5,
+              "score": 0.0
+            },
+            "pairs": 4,
+            "reference": "baseline",
+            "reference_net_profit_mean": 35942.5,
+            "relative_net_profit_defined": true,
+            "relative_net_profit_mean": 0.00022257772831606038,
+            "seed": 149009525
+          },
+          {
+            "arms": {
+              "baseline": {
+                "draws": 0,
+                "games": 4,
+                "losses": 0,
+                "means": {
+                  "margin": 2350.0,
+                  "net_profit": 44895.5,
+                  "opponent_net_profit": 42545.5,
+                  "score": 1.0
+                },
+                "wins": 4
+              },
+              "candidate": {
+                "draws": 0,
+                "games": 4,
+                "losses": 0,
+                "means": {
+                  "margin": 2446.0,
+                  "net_profit": 45001.5,
+                  "opponent_net_profit": 42555.5,
+                  "score": 1.0
+                },
+                "wins": 4
+              }
+            },
+            "delta_means": {
+              "margin": 96.0,
+              "net_profit": 106.0,
+              "opponent_net_profit": 10.0,
+              "score": 0.0
+            },
+            "pairs": 4,
+            "reference": "baseline",
+            "reference_net_profit_mean": 44895.5,
+            "relative_net_profit_defined": true,
+            "relative_net_profit_mean": 0.00236103841142208,
+            "seed": 3351711015
+          },
+          {
+            "arms": {
+              "baseline": {
+                "draws": 0,
+                "games": 4,
+                "losses": 2,
+                "means": {
+                  "margin": 1179.5,
+                  "net_profit": 46345.0,
+                  "opponent_net_profit": 45165.5,
+                  "score": 0.5
+                },
+                "wins": 2
+              },
+              "candidate": {
+                "draws": 0,
+                "games": 4,
+                "losses": 2,
+                "means": {
+                  "margin": 625.5,
+                  "net_profit": 45987.0,
+                  "opponent_net_profit": 45361.5,
+                  "score": 0.5
+                },
+                "wins": 2
+              }
+            },
+            "delta_means": {
+              "margin": -554.0,
+              "net_profit": -358.0,
+              "opponent_net_profit": 196.0,
+              "score": 0.0
+            },
+            "pairs": 4,
+            "reference": "baseline",
+            "reference_net_profit_mean": 46345.0,
+            "relative_net_profit_defined": true,
+            "relative_net_profit_mean": -0.00772467364332722,
+            "seed": 1845894395
+          },
+          {
+            "arms": {
+              "baseline": {
+                "draws": 0,
+                "games": 4,
+                "losses": 2,
+                "means": {
+                  "margin": 275.0,
+                  "net_profit": 44080.0,
+                  "opponent_net_profit": 43805.0,
+                  "score": 0.5
+                },
+                "wins": 2
+              },
+              "candidate": {
+                "draws": 0,
+                "games": 4,
+                "losses": 2,
+                "means": {
+                  "margin": 275.0,
+                  "net_profit": 44080.0,
+                  "opponent_net_profit": 43805.0,
+                  "score": 0.5
+                },
+                "wins": 2
+              }
+            },
+            "delta_means": {
+              "margin": 0.0,
+              "net_profit": 0.0,
+              "opponent_net_profit": 0.0,
+              "score": 0.0
+            },
+            "pairs": 4,
+            "reference": "baseline",
+            "reference_net_profit_mean": 44080.0,
+            "relative_net_profit_defined": true,
+            "relative_net_profit_mean": 0.0,
+            "seed": 1600614327
+          },
+          {
+            "arms": {
+              "baseline": {
+                "draws": 0,
+                "games": 4,
+                "losses": 2,
+                "means": {
+                  "margin": 22.5,
+                  "net_profit": 39810.25,
+                  "opponent_net_profit": 39787.75,
+                  "score": 0.5
+                },
+                "wins": 2
+              },
+              "candidate": {
+                "draws": 0,
+                "games": 4,
+                "losses": 2,
+                "means": {
+                  "margin": -106.0,
+                  "net_profit": 39690.5,
+                  "opponent_net_profit": 39796.5,
+                  "score": 0.5
+                },
+                "wins": 2
+              }
+            },
+            "delta_means": {
+              "margin": -128.5,
+              "net_profit": -119.75,
+              "opponent_net_profit": 8.75,
+              "score": 0.0
+            },
+            "pairs": 4,
+            "reference": "baseline",
+            "reference_net_profit_mean": 39810.25,
+            "relative_net_profit_defined": true,
+            "relative_net_profit_mean": -0.00300801929151412,
+            "seed": 1836204477
+          },
+          {
+            "arms": {
+              "baseline": {
+                "draws": 0,
+                "games": 4,
+                "losses": 4,
+                "means": {
+                  "margin": -6852.0,
+                  "net_profit": 38258.5,
+                  "opponent_net_profit": 45110.5,
+                  "score": 0.0
+                },
+                "wins": 0
+              },
+              "candidate": {
+                "draws": 0,
+                "games": 4,
+                "losses": 4,
+                "means": {
+                  "margin": -4750.0,
+                  "net_profit": 39361.5,
+                  "opponent_net_profit": 44111.5,
+                  "score": 0.0
+                },
+                "wins": 0
+              }
+            },
+            "delta_means": {
+              "margin": 2102.0,
+              "net_profit": 1103.0,
+              "opponent_net_profit": -999.0,
+              "score": 0.0
+            },
+            "pairs": 4,
+            "reference": "baseline",
+            "reference_net_profit_mean": 38258.5,
+            "relative_net_profit_defined": true,
+            "relative_net_profit_mean": 0.028830194597279035,
+            "seed": 51518447
+          },
+          {
+            "arms": {
+              "baseline": {
+                "draws": 0,
+                "games": 4,
+                "losses": 0,
+                "means": {
+                  "margin": 1592.0,
+                  "net_profit": 38299.5,
+                  "opponent_net_profit": 36707.5,
+                  "score": 1.0
+                },
+                "wins": 4
+              },
+              "candidate": {
+                "draws": 0,
+                "games": 4,
+                "losses": 0,
+                "means": {
+                  "margin": 2609.0,
+                  "net_profit": 39956.5,
+                  "opponent_net_profit": 37347.5,
+                  "score": 1.0
+                },
+                "wins": 4
+              }
+            },
+            "delta_means": {
+              "margin": 1017.0,
+              "net_profit": 1657.0,
+              "opponent_net_profit": 640.0,
+              "score": 0.0
+            },
+            "pairs": 4,
+            "reference": "baseline",
+            "reference_net_profit_mean": 38299.5,
+            "relative_net_profit_defined": true,
+            "relative_net_profit_mean": 0.04326427237953498,
+            "seed": 2997782266
+          }
+        ],
+        "overall": {
+          "arms": {
+            "baseline": {
+              "draws": 0,
+              "games": 32,
+              "losses": 14,
+              "means": {
+                "margin": -416.8125,
+                "net_profit": 41379.09375,
+                "opponent_net_profit": 41795.90625,
+                "score": 0.5625
+              },
+              "wins": 18
+            },
+            "candidate": {
+              "draws": 0,
+              "games": 32,
+              "losses": 14,
+              "means": {
+                "margin": 126.6875,
+                "net_profit": 41791.0625,
+                "opponent_net_profit": 41664.375,
+                "score": 0.5625
+              },
+              "wins": 18
+            }
+          },
+          "bootstrap_reference_min": 36526.625,
+          "delta_ci95": {
+            "margin": [
+              -49.3125,
+              1208.875
+            ],
+            "net_profit": [
+              -19.8125,
+              899.2054687499984
+            ],
+            "opponent_net_profit": [
+              -495.21875,
+              203.61484374999816
+            ],
+            "score": [
+              0.0,
+              0.0
+            ]
+          },
+          "delta_means": {
+            "margin": 543.5,
+            "net_profit": 411.96875,
+            "opponent_net_profit": -131.53125,
+            "score": 0.0
+          },
+          "nonpositive_bootstrap_reference_count": 0,
+          "pairs": 32,
+          "reference": "baseline",
+          "reference_net_profit_mean": 41379.09375,
+          "relative_net_profit_ci95": [
+            -0.0004524447950085214,
+            0.02237278298603303
+          ],
+          "relative_net_profit_defined": true,
+          "relative_net_profit_mean": 0.009955963571580153
+        }
+      },
+      "teacher_task": {
+        "by_opponent": {
+          "market": {
+            "arms": {
+              "candidate": {
+                "draws": 0,
+                "games": 16,
+                "losses": 6,
+                "means": {
+                  "margin": 971.25,
+                  "net_profit": 43649.75,
+                  "opponent_net_profit": 42678.5,
+                  "score": 0.625
+                },
+                "wins": 10
+              },
+              "teacher_task": {
+                "draws": 0,
+                "games": 16,
+                "losses": 6,
+                "means": {
+                  "margin": 946.625,
+                  "net_profit": 43643.5,
+                  "opponent_net_profit": 42696.875,
+                  "score": 0.625
+                },
+                "wins": 10
+              }
+            },
+            "bootstrap_reference_min": 39564.75,
+            "delta_ci95": {
+              "margin": [
+                -1.75,
+                66.5
+              ],
+              "net_profit": [
+                -2.625,
+                22.125
+              ],
+              "opponent_net_profit": [
+                -44.375,
+                0.0
+              ],
+              "score": [
+                0.0,
+                0.0
+              ]
+            },
+            "delta_means": {
+              "margin": 24.625,
+              "net_profit": 6.25,
+              "opponent_net_profit": -18.375,
+              "score": 0.0
+            },
+            "nonpositive_bootstrap_reference_count": 0,
+            "pairs": 16,
+            "reference": "teacher_task",
+            "reference_net_profit_mean": 43643.5,
+            "relative_net_profit_ci95": [
+              -6.372863515463357e-05,
+              0.0005186079410400394
+            ],
+            "relative_net_profit_defined": true,
+            "relative_net_profit_mean": 0.00014320574656019797
+          },
+          "round2": {
+            "arms": {
+              "candidate": {
+                "draws": 0,
+                "games": 16,
+                "losses": 8,
+                "means": {
+                  "margin": -717.875,
+                  "net_profit": 39932.375,
+                  "opponent_net_profit": 40650.25,
+                  "score": 0.5
+                },
+                "wins": 8
+              },
+              "teacher_task": {
+                "draws": 0,
+                "games": 16,
+                "losses": 8,
+                "means": {
+                  "margin": 526.25,
+                  "net_profit": 40219.625,
+                  "opponent_net_profit": 39693.375,
+                  "score": 0.5
+                },
+                "wins": 8
+              }
+            },
+            "bootstrap_reference_min": 36247.875,
+            "delta_ci95": {
+              "margin": [
+                -2696.759375,
+                -90.74687500000027
+              ],
+              "net_profit": [
+                -1241.884375,
+                602.125
+              ],
+              "opponent_net_profit": [
+                277.875,
+                1641.625
+              ],
+              "score": [
+                0.0,
+                0.0
+              ]
+            },
+            "delta_means": {
+              "margin": -1244.125,
+              "net_profit": -287.25,
+              "opponent_net_profit": 956.875,
+              "score": 0.0
+            },
+            "nonpositive_bootstrap_reference_count": 0,
+            "pairs": 16,
+            "reference": "teacher_task",
+            "reference_net_profit_mean": 40219.625,
+            "relative_net_profit_ci95": [
+              -0.03201328804497692,
+              0.014865399006907256
+            ],
+            "relative_net_profit_defined": true,
+            "relative_net_profit_mean": -0.007142035759905767
+          }
+        },
+        "by_seed": [
+          {
+            "arms": {
+              "candidate": {
+                "draws": 0,
+                "games": 4,
+                "losses": 2,
+                "means": {
+                  "margin": 2263.0,
+                  "net_profit": 44301.0,
+                  "opponent_net_profit": 42038.0,
+                  "score": 0.5
+                },
+                "wins": 2
+              },
+              "teacher_task": {
+                "draws": 0,
+                "games": 4,
+                "losses": 2,
+                "means": {
+                  "margin": 2256.5,
+                  "net_profit": 44294.5,
+                  "opponent_net_profit": 42038.0,
+                  "score": 0.5
+                },
+                "wins": 2
+              }
+            },
+            "delta_means": {
+              "margin": 6.5,
+              "net_profit": 6.5,
+              "opponent_net_profit": 0.0,
+              "score": 0.0
+            },
+            "pairs": 4,
+            "reference": "teacher_task",
+            "reference_net_profit_mean": 44294.5,
+            "relative_net_profit_defined": true,
+            "relative_net_profit_mean": 0.00014674508121775842,
+            "seed": 2240228007
+          },
+          {
+            "arms": {
+              "candidate": {
+                "draws": 0,
+                "games": 4,
+                "losses": 2,
+                "means": {
+                  "margin": -2349.0,
+                  "net_profit": 35950.5,
+                  "opponent_net_profit": 38299.5,
+                  "score": 0.5
+                },
+                "wins": 2
+              },
+              "teacher_task": {
+                "draws": 0,
+                "games": 4,
+                "losses": 2,
+                "means": {
+                  "margin": 132.5,
+                  "net_profit": 37365.5,
+                  "opponent_net_profit": 37233.0,
+                  "score": 0.5
+                },
+                "wins": 2
+              }
+            },
+            "delta_means": {
+              "margin": -2481.5,
+              "net_profit": -1415.0,
+              "opponent_net_profit": 1066.5,
+              "score": 0.0
+            },
+            "pairs": 4,
+            "reference": "teacher_task",
+            "reference_net_profit_mean": 37365.5,
+            "relative_net_profit_defined": true,
+            "relative_net_profit_mean": -0.037869157377795025,
+            "seed": 149009525
+          },
+          {
+            "arms": {
+              "candidate": {
+                "draws": 0,
+                "games": 4,
+                "losses": 0,
+                "means": {
+                  "margin": 2446.0,
+                  "net_profit": 45001.5,
+                  "opponent_net_profit": 42555.5,
+                  "score": 1.0
+                },
+                "wins": 4
+              },
+              "teacher_task": {
+                "draws": 0,
+                "games": 4,
+                "losses": 0,
+                "means": {
+                  "margin": 2441.0,
+                  "net_profit": 44996.5,
+                  "opponent_net_profit": 42555.5,
+                  "score": 1.0
+                },
+                "wins": 4
+              }
+            },
+            "delta_means": {
+              "margin": 5.0,
+              "net_profit": 5.0,
+              "opponent_net_profit": 0.0,
+              "score": 0.0
+            },
+            "pairs": 4,
+            "reference": "teacher_task",
+            "reference_net_profit_mean": 44996.5,
+            "relative_net_profit_defined": true,
+            "relative_net_profit_mean": 0.00011111975375862567,
+            "seed": 3351711015
+          },
+          {
+            "arms": {
+              "candidate": {
+                "draws": 0,
+                "games": 4,
+                "losses": 2,
+                "means": {
+                  "margin": 625.5,
+                  "net_profit": 45987.0,
+                  "opponent_net_profit": 45361.5,
+                  "score": 0.5
+                },
+                "wins": 2
+              },
+              "teacher_task": {
+                "draws": 0,
+                "games": 4,
+                "losses": 2,
+                "means": {
+                  "margin": 2673.0,
+                  "net_profit": 46933.5,
+                  "opponent_net_profit": 44260.5,
+                  "score": 0.5
+                },
+                "wins": 2
+              }
+            },
+            "delta_means": {
+              "margin": -2047.5,
+              "net_profit": -946.5,
+              "opponent_net_profit": 1101.0,
+              "score": 0.0
+            },
+            "pairs": 4,
+            "reference": "teacher_task",
+            "reference_net_profit_mean": 46933.5,
+            "relative_net_profit_defined": true,
+            "relative_net_profit_mean": -0.020166831793921185,
+            "seed": 1845894395
+          },
+          {
+            "arms": {
+              "candidate": {
+                "draws": 0,
+                "games": 4,
+                "losses": 2,
+                "means": {
+                  "margin": 275.0,
+                  "net_profit": 44080.0,
+                  "opponent_net_profit": 43805.0,
+                  "score": 0.5
+                },
+                "wins": 2
+              },
+              "teacher_task": {
+                "draws": 0,
+                "games": 4,
+                "losses": 2,
+                "means": {
+                  "margin": 412.5,
+                  "net_profit": 43123.0,
+                  "opponent_net_profit": 42710.5,
+                  "score": 0.5
+                },
+                "wins": 2
+              }
+            },
+            "delta_means": {
+              "margin": -137.5,
+              "net_profit": 957.0,
+              "opponent_net_profit": 1094.5,
+              "score": 0.0
+            },
+            "pairs": 4,
+            "reference": "teacher_task",
+            "reference_net_profit_mean": 43123.0,
+            "relative_net_profit_defined": true,
+            "relative_net_profit_mean": 0.02219233355749832,
+            "seed": 1600614327
+          },
+          {
+            "arms": {
+              "candidate": {
+                "draws": 0,
+                "games": 4,
+                "losses": 2,
+                "means": {
+                  "margin": -106.0,
+                  "net_profit": 39690.5,
+                  "opponent_net_profit": 39796.5,
+                  "score": 0.5
+                },
+                "wins": 2
+              },
+              "teacher_task": {
+                "draws": 0,
+                "games": 4,
+                "losses": 2,
+                "means": {
+                  "margin": 184.5,
+                  "net_profit": 39448.0,
+                  "opponent_net_profit": 39263.5,
+                  "score": 0.5
+                },
+                "wins": 2
+              }
+            },
+            "delta_means": {
+              "margin": -290.5,
+              "net_profit": 242.5,
+              "opponent_net_profit": 533.0,
+              "score": 0.0
+            },
+            "pairs": 4,
+            "reference": "teacher_task",
+            "reference_net_profit_mean": 39448.0,
+            "relative_net_profit_defined": true,
+            "relative_net_profit_mean": 0.0061473331981342525,
+            "seed": 1836204477
+          },
+          {
+            "arms": {
+              "candidate": {
+                "draws": 0,
+                "games": 4,
+                "losses": 4,
+                "means": {
+                  "margin": -4750.0,
+                  "net_profit": 39361.5,
+                  "opponent_net_profit": 44111.5,
+                  "score": 0.0
+                },
+                "wins": 0
+              },
+              "teacher_task": {
+                "draws": 0,
+                "games": 4,
+                "losses": 4,
+                "means": {
+                  "margin": -4762.0,
+                  "net_profit": 39346.5,
+                  "opponent_net_profit": 44108.5,
+                  "score": 0.0
+                },
+                "wins": 0
+              }
+            },
+            "delta_means": {
+              "margin": 12.0,
+              "net_profit": 15.0,
+              "opponent_net_profit": 3.0,
+              "score": 0.0
+            },
+            "pairs": 4,
+            "reference": "teacher_task",
+            "reference_net_profit_mean": 39346.5,
+            "relative_net_profit_defined": true,
+            "relative_net_profit_mean": 0.00038122831763943424,
+            "seed": 51518447
+          },
+          {
+            "arms": {
+              "candidate": {
+                "draws": 0,
+                "games": 4,
+                "losses": 0,
+                "means": {
+                  "margin": 2609.0,
+                  "net_profit": 39956.5,
+                  "opponent_net_profit": 37347.5,
+                  "score": 1.0
+                },
+                "wins": 4
+              },
+              "teacher_task": {
+                "draws": 0,
+                "games": 4,
+                "losses": 0,
+                "means": {
+                  "margin": 2553.5,
+                  "net_profit": 39945.0,
+                  "opponent_net_profit": 37391.5,
+                  "score": 1.0
+                },
+                "wins": 4
+              }
+            },
+            "delta_means": {
+              "margin": 55.5,
+              "net_profit": 11.5,
+              "opponent_net_profit": -44.0,
+              "score": 0.0
+            },
+            "pairs": 4,
+            "reference": "teacher_task",
+            "reference_net_profit_mean": 39945.0,
+            "relative_net_profit_defined": true,
+            "relative_net_profit_mean": 0.00028789585680310425,
+            "seed": 2997782266
+          }
+        ],
+        "overall": {
+          "arms": {
+            "candidate": {
+              "draws": 0,
+              "games": 32,
+              "losses": 14,
+              "means": {
+                "margin": 126.6875,
+                "net_profit": 41791.0625,
+                "opponent_net_profit": 41664.375,
+                "score": 0.5625
+              },
+              "wins": 18
+            },
+            "teacher_task": {
+              "draws": 0,
+              "games": 32,
+              "losses": 14,
+              "means": {
+                "margin": 736.4375,
+                "net_profit": 41931.5625,
+                "opponent_net_profit": 41195.125,
+                "score": 0.5625
+              },
+              "wins": 18
+            }
+          },
+          "bootstrap_reference_min": 37935.5625,
+          "delta_ci95": {
+            "margin": [
+              -1342.6875,
+              -27.8125
+            ],
+            "net_profit": [
+              -617.75,
+              304.1875
+            ],
+            "opponent_net_profit": [
+              126.5625,
+              816.3125
+            ],
+            "score": [
+              0.0,
+              0.0
+            ]
+          },
+          "delta_means": {
+            "margin": -609.75,
+            "net_profit": -140.5,
+            "opponent_net_profit": 469.25,
+            "score": 0.0
+          },
+          "nonpositive_bootstrap_reference_count": 0,
+          "pairs": 32,
+          "reference": "teacher_task",
+          "reference_net_profit_mean": 41931.5625,
+          "relative_net_profit_ci95": [
+            -0.015264046897511053,
+            0.007259652994557303
+          ],
+          "relative_net_profit_defined": true,
+          "relative_net_profit_mean": -0.0033506979378600545
+        }
+      }
+    },
+    "pairs": 32,
+    "seed_order": [
+      2240228007,
+      149009525,
+      3351711015,
+      1845894395,
+      1600614327,
+      1836204477,
+      51518447,
+      2997782266
+    ],
+    "verdict": {
+      "admission": false,
+      "complete_action_changed_games": 32,
+      "complete_action_effect_gate_passed": true,
+      "research_positive": false,
+      "student_checks": {
+        "meaningful_own_profit_gain": true,
+        "overall_margin_not_lower": true,
+        "overall_score_not_lower": true,
+        "own_profit_ci_positive": false
+      },
+      "student_opponent_point_guards": {
+        "market": true,
+        "round2": true
+      },
+      "teacher_opponent_point_guards": {
+        "market": true,
+        "round2": true
+      },
+      "teacher_retention": true,
+      "teacher_retention_primary_passed": true
+    }
+  },
+  "method_sha256": "cd48c0007671b6b948ba97d86c4ecc1d6cce09e5c41347c5989df5650ce6d7f6",
+  "passed": true,
+  "stored_action_control": [
+    {
+      "first_request_difference_step": 266,
+      "game": "dev-4202490418-round2-0-candidate"
+    },
+    {
+      "first_request_difference_step": 266,
+      "game": "dev-4202490418-round2-1-candidate"
+    },
+    {
+      "first_request_difference_step": 269,
+      "game": "dev-4202490418-market-0-candidate"
+    },
+    {
+      "first_request_difference_step": 269,
+      "game": "dev-4202490418-market-1-candidate"
+    },
+    {
+      "first_request_difference_step": 173,
+      "game": "dev-2219033805-round2-0-candidate"
+    },
+    {
+      "first_request_difference_step": 173,
+      "game": "dev-2219033805-round2-1-candidate"
+    },
+    {
+      "first_request_difference_step": 259,
+      "game": "dev-2219033805-market-0-candidate"
+    },
+    {
+      "first_request_difference_step": 259,
+      "game": "dev-2219033805-market-1-candidate"
+    },
+    {
+      "first_request_difference_step": 173,
+      "game": "holdout-2240228007-round2-1-candidate"
+    },
+    {
+      "first_request_difference_step": 173,
+      "game": "holdout-2240228007-round2-0-candidate"
+    },
+    {
+      "first_request_difference_step": 249,
+      "game": "holdout-2240228007-market-0-candidate"
+    },
+    {
+      "first_request_difference_step": 249,
+      "game": "holdout-2240228007-market-1-candidate"
+    },
+    {
+      "first_request_difference_step": 270,
+      "game": "holdout-149009525-round2-0-candidate"
+    },
+    {
+      "first_request_difference_step": 270,
+      "game": "holdout-149009525-round2-1-candidate"
+    },
+    {
+      "first_request_difference_step": 173,
+      "game": "holdout-149009525-market-0-candidate"
+    },
+    {
+      "first_request_difference_step": 173,
+      "game": "holdout-149009525-market-1-candidate"
+    },
+    {
+      "first_request_difference_step": 180,
+      "game": "holdout-3351711015-round2-0-candidate"
+    },
+    {
+      "first_request_difference_step": 180,
+      "game": "holdout-3351711015-round2-1-candidate"
+    },
+    {
+      "first_request_difference_step": 269,
+      "game": "holdout-3351711015-market-0-candidate"
+    },
+    {
+      "first_request_difference_step": 269,
+      "game": "holdout-3351711015-market-1-candidate"
+    },
+    {
+      "first_request_difference_step": 249,
+      "game": "holdout-1845894395-round2-0-candidate"
+    },
+    {
+      "first_request_difference_step": 249,
+      "game": "holdout-1845894395-round2-1-candidate"
+    },
+    {
+      "first_request_difference_step": 173,
+      "game": "holdout-1845894395-market-1-candidate"
+    },
+    {
+      "first_request_difference_step": 173,
+      "game": "holdout-1845894395-market-0-candidate"
+    },
+    {
+      "first_request_difference_step": 270,
+      "game": "holdout-1600614327-round2-0-candidate"
+    },
+    {
+      "first_request_difference_step": 270,
+      "game": "holdout-1600614327-round2-1-candidate"
+    },
+    {
+      "first_request_difference_step": 268,
+      "game": "holdout-1600614327-market-1-candidate"
+    },
+    {
+      "first_request_difference_step": 268,
+      "game": "holdout-1600614327-market-0-candidate"
+    },
+    {
+      "first_request_difference_step": 269,
+      "game": "holdout-1836204477-round2-0-candidate"
+    },
+    {
+      "first_request_difference_step": 268,
+      "game": "holdout-1836204477-round2-1-candidate"
+    },
+    {
+      "first_request_difference_step": 266,
+      "game": "holdout-1836204477-market-0-candidate"
+    },
+    {
+      "first_request_difference_step": 266,
+      "game": "holdout-1836204477-market-1-candidate"
+    },
+    {
+      "first_request_difference_step": 173,
+      "game": "holdout-51518447-round2-0-candidate"
+    },
+    {
+      "first_request_difference_step": 173,
+      "game": "holdout-51518447-round2-1-candidate"
+    },
+    {
+      "first_request_difference_step": 365,
+      "game": "holdout-51518447-market-0-candidate"
+    },
+    {
+      "first_request_difference_step": 365,
+      "game": "holdout-51518447-market-1-candidate"
+    },
+    {
+      "first_request_difference_step": 252,
+      "game": "holdout-2997782266-round2-0-candidate"
+    },
+    {
+      "first_request_difference_step": 252,
+      "game": "holdout-2997782266-round2-1-candidate"
+    },
+    {
+      "first_request_difference_step": 224,
+      "game": "holdout-2997782266-market-0-candidate"
+    },
+    {
+      "first_request_difference_step": 224,
+      "game": "holdout-2997782266-market-1-candidate"
+    }
+  ]
+}

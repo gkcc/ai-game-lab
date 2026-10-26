@@ -1,0 +1,175 @@
+{
+  "actual_gpu": true,
+  "anchor_checkpoint_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+  "anchor_extra_passes": {
+    "group_presentations": 65536,
+    "padded_candidate_rows": 6635959,
+    "real_candidate_rows": 3350332
+  },
+  "anchor_in_deployment": false,
+  "budget_interpretation": "Candidate value-and-gradient and extra frozen-S forwards are debited separately before calls, including padding; rows are presentations, not FLOPs. CPU and GPU offline calls are separate row evaluations. Independent and synthetic allowances are reserved, not this fit's actual work; external synthetic work is accounted separately.",
+  "cache_array_verifications": {
+    "dagger": 1,
+    "old": 1
+  },
+  "cache_roles": {
+    "dagger": "unchanged prior student-state train and known development; no fresh observations",
+    "old": "historical train and old validation"
+  },
+  "changed_parameter_tensors": 6,
+  "checkpoint_sha256": "799f3f3238f10b5ee66166c91f529f162be59bc0cdb5cc1883f6d7d8b1150ea5",
+  "class_weights_use_old_training_only": true,
+  "combined_training_padded_candidate_rows": 20008635,
+  "combined_training_real_candidate_rows": 10075814,
+  "competitive_improvement_established": false,
+  "completed": true,
+  "consumption": {
+    "anchor_forward_evaluations": 4303,
+    "anchor_padded_candidate_rows": 6635959,
+    "anchor_real_candidate_rows": 3350332,
+    "anchor_train_group_presentations": 65536,
+    "cpu_offline_candidate_rows": 5572124,
+    "dagger_train_group_presentations": 65536,
+    "gpu_offline_candidate_rows": 955200,
+    "gradient_evaluations": 8620,
+    "old_train_group_presentations": 65536,
+    "optimizer_updates_completed": 512,
+    "optimizer_updates_issued": 512,
+    "training_padded_candidate_rows": 13372676,
+    "training_real_candidate_rows": 6725482
+  },
+  "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+  "dagger_cache_arrays": 16,
+  "dagger_cache_manifest_sha256": "719a8ed64905db4e7802c5125c2eab64270b6ff62210bd17da21c06e86d07f42",
+  "dagger_train_groups": 34552,
+  "expected_device_verified": true,
+  "final_parameter_sha256": {
+    "b0": "eeaf5637d8cc5b85decf3820443326febe6f77e01f9ac3e4922acbdd262177a4",
+    "b1": "7f589aa0bd23184b15dca9c093708f1a0efecf74c18ab059ed3512965912d5d2",
+    "b2": "cd9a4a2498748ff9abe6b978784fe96e0e66116aff8515f62cf829ad8225c423",
+    "w0": "b9a612155f64fe4877c971d5a36c17075064e6a402a31c75f1ab33c502901884",
+    "w1": "4de10737da0f2a4a44e4c8d5b1049525544f739e379172d4e1d95f22fa7e4ff9",
+    "w2": "fdcd5826338f15962b369de0c5739658e84b195517e927888c3eea581d89344a"
+  },
+  "fit_count": 1,
+  "frozen_anchor_bits_preserved": true,
+  "frozen_anchor_forward_evaluations": 4303,
+  "frozen_normalizer_array_sha256": {
+    "mean": "e508308a4eaabec9d5160c97bd97e4a9059633af29de70fd1f939ba5fc26d9b1",
+    "scale": "66fe0ddb19e7af7f26af5a7ddba52d2c2ea58224a9f9e18ebfe8222fdef19b40"
+  },
+  "frozen_normalizer_bits_preserved": true,
+  "gpu_platform": "gpu",
+  "gpu_speedup_measured": false,
+  "gpu_training": true,
+  "gradient_norm_max": 4.860502243041992,
+  "gradient_norm_min": 0.37324151396751404,
+  "independent_offline_row_reserve": 100000,
+  "initial_parameter_sha256": {
+    "b0": "a10757df5f3b930d43cb601b8d3789b0993ce4c47bd60a03ba6a98e8a0dc0f0f",
+    "b1": "33c6afe735266e2a12d1ee130d11c75cde8ab21781891b9c3e9dd0c3e4d5be2a",
+    "b2": "46af6a4c658d457f7c75809c7266ad96860d10fb8a63eca301c5c98a9e87dac5",
+    "w0": "3ecdd5ba4449b0fc6adc4d49758b5d2d837d14bfabdccb9c4a4377da395d2e14",
+    "w1": "0aaf60d89505e3d7635dfded8667f4ef7b0d5be82efa7c356ec9b9cc706cc522",
+    "w2": "b4a063fcf1aeb747585d7f2007554ed9a335a3e57f00069616961c6605dc292b"
+  },
+  "initial_task_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+  "known_dev_groups": 17786,
+  "known_screens_are_independent": false,
+  "loss_max": 0.26225489377975464,
+  "loss_min": 0.02834421582520008,
+  "model_selection": false,
+  "nonzero_gradient_updates": 512,
+  "normalization_recomputed": false,
+  "official_simulation_on_gpu": false,
+  "offline_gate_passed": true,
+  "offline_input_representation": "Float32 ragged cache values scored with float64 CPU deployment arithmetic; raw live observation actions are verified separately in official matches.",
+  "offline_primary_row_limit": 11898976,
+  "offline_remaining_total": 5472676,
+  "offline_rows_total_used": 6527324,
+  "offline_total_limit": 12000000,
+  "old_cache_arrays": 16,
+  "old_cache_manifest_sha256": "abf0581baad3941a4e2fc7bf96835d1fe0cfa92d6fa4ac0939c096a1f6f4368d",
+  "old_train_groups": 108310,
+  "old_training_class_counts": [
+    431,
+    3977,
+    9312,
+    9127,
+    85463
+  ],
+  "old_training_class_weights": [
+    6.546228885650635,
+    3.055572986602783,
+    1.996866226196289,
+    2.0170023441314697,
+    0.6591456532478333
+  ],
+  "old_validation_groups": 27096,
+  "optimizer_updates": 512,
+  "output_storage_before_final_reports": {
+    "created_count": 10,
+    "limit_bytes": 536870912,
+    "refused": 0,
+    "remaining_bytes": 491857551,
+    "used_bytes": 45013361
+  },
+  "registration_sha256": "8db5bc96919a81df484c480f282ae924c389f43949ea24df0a9c8a26980141b5",
+  "reserves_are_not_actual_consumption": true,
+  "retry_allowed": false,
+  "schema": "task-anchor-once-fit-v1",
+  "seed_roles": {
+    "fresh_test_seeds": [
+      51518447,
+      149009525,
+      1600614327,
+      1836204477,
+      1845894395,
+      2240228007,
+      2997782266,
+      3351711015
+    ],
+    "fresh_validation_seeds": [
+      2219033805,
+      4202490418
+    ],
+    "known_screen_seeds": [
+      672488797,
+      3774138801
+    ],
+    "known_screens_are_independent": false,
+    "old_training_source_seeds": [
+      31273729,
+      31317742,
+      31360134,
+      31637216,
+      31659052,
+      31834104,
+      31921285,
+      31932889
+    ],
+    "old_validation_source_seeds": [
+      31205138,
+      31504409
+    ],
+    "training_source_seeds": [
+      1192929723,
+      3641798866,
+      3915533099,
+      4042989318
+    ]
+  },
+  "software": {
+    "jax": "0.4.38",
+    "numpy": "2.5.4",
+    "optax": "0.2.4"
+  },
+  "synthetic_row_reserve": 1024,
+  "timings": {
+    "explicit_compile_seconds": 16.365178627000034,
+    "process_seconds": 132.103009547,
+    "synchronized_training_loop_seconds": 73.466557864,
+    "training_loop_includes": "packing, compilation, transfers, all updates synchronized, and reporting",
+    "training_packing_seconds": 43.16446641399988
+  }
+}

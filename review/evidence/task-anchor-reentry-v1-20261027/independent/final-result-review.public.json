@@ -1,0 +1,100 @@
+{
+  "all_registered_jobs_completed": true,
+  "automatic_teacher_admission": false,
+  "checked_source_sha256": {
+    "decision/semantics.py": "9ac62d0df7adca84c0feff805b2979bb45f9f9f4c2064d1e2b5c48efd3e779a5",
+    "learning/task_anchor_once_v1/games.py": "0a0afbe1aea859397ec17642a7dcac6ba93717f8c91e099df89fb8262798773e",
+    "learning/task_anchor_once_v1/statistics.py": "0db37bbd78f7013987b78cfeade218821ebff0d9ded4975e28128b494adc8533",
+    "learning/task_anchor_once_v1/training.py": "a8d5fd4775ba6a2a27786b1022c3943455605763f86a0c94bf3cc4d46d20ec65",
+    "learning/task_anchor_reentry_v1/README.zh-CN.md": "0fe42f899cf27a206f9147a1b866b9bc52be0aded6f37a0704716bc1c655eef8",
+    "learning/task_anchor_reentry_v1/__init__.py": "a79592f8af8ad152512cd44ef07da06dca8ceae3eaa5baf07a78a55adc8e6f33",
+    "learning/task_anchor_reentry_v1/campaign.py": "18760fb6162d865a88b403f5aaf0987e2f36b712ba786317e3c17cc3c63e40c6",
+    "learning/task_anchor_reentry_v1/experiment.py": "8f8e81a854e044771fdd282e5e07755a7981bebfbf24836a9e5387f693c70a89",
+    "learning/task_anchor_reentry_v1/gpu_guard.py": "0439c5ca6442f388bee6aa3f1c1e085d20234cca48740f83e5057ab7f05567b4",
+    "learning/task_anchor_reentry_v1/test_entry.py": "dc5f86234fff4160ae12f962bb8a66b99983234d2929ccd9513254445c0525eb",
+    "learning/task_anchor_reentry_v1/training.py": "0dc82620818c9ec238b79958335ca882b470c14bd342fc393002d3898987647c",
+    "learning/task_anchor_spawn_repair_v1/launcher.py": "aa798f24662eeff6cc676c35832407cf2286772285b981bf6e790349e920e3a3",
+    "learning/task_dagger_once_v1/statistics.py": "900be372baeada40c768db34df960f0d160f34b72b69d1c5ea706921d04a9a5f"
+  },
+  "checkpoint_sha256": "799f3f3238f10b5ee66166c91f529f162be59bc0cdb5cc1883f6d7d8b1150ea5",
+  "completed_games": 120,
+  "conservative_elapsed_seconds": 2867.415922,
+  "created_utc": "2026-10-26T23:12:38.653146+00:00",
+  "deadline_utc": "2026-10-26T23:24:51.249633+00:00",
+  "default_bot_changed": false,
+  "development_games": 24,
+  "final_statistics_sha256": "103089d951b6ae35aff0cfcf1ed1573a17ad26aa0dbdc2f6d84537e3cc730c3f",
+  "freeze_sha256": "010d760b55357100e5ca1bf8314e70c16fb0445499b959d4701fe46add400606",
+  "game_output_debited_bytes": 9352378525,
+  "holdout_games": 96,
+  "independent_added_neural_rows": 0,
+  "independent_added_official_transitions": 0,
+  "independent_output_bytes_before_final_reports": 100541,
+  "independent_total_neural_rows_completed": 12776,
+  "independent_total_neural_rows_debited": 12776,
+  "independent_total_official_transitions_completed": 2157,
+  "independent_total_official_transitions_debited": 2157,
+  "initial_and_crop_checkpoint_byte_identity_verified": true,
+  "limitations": [
+    "Eight independent holdout seed clusters; bootstrap resamples do not increase the number of independent seeds.",
+    "Per-opponent point guards are not statistical noninferiority guarantees.",
+    "Teacher-task combines rule tasks and the frozen crop network; it is not an entirely rule-based teacher.",
+    "All 120 producer job certificates and identities were checked. Exactly three action-recorded official reexecutions were independently run, not another 120.",
+    "The 40 candidate/baseline stored-state action differences were checked without policy or model calls; changed control alone is not an economic causal attribution.",
+    "Passing evidence review does not imply every scientific gate passed and does not change the default Bot."
+  ],
+  "local_preregistration_commit": "933adadf2223cbed21f2c93d2cb59fe7658b9197",
+  "numeric_verification_sha256": "2c191f205202ff8c9bcef90dbda26a1519a2f58abffec67a43a4c5d8496a99a8",
+  "official_transitions": {
+    "independent_reexecuted": 2157,
+    "live": 86280,
+    "primary_reexecuted": 86280,
+    "total": 174717
+  },
+  "old_artifacts_preserved": {
+    "failed_anchor_artifact_sha256": 40,
+    "repair_artifact_sha256": 35
+  },
+  "owned_output_bytes_at_review": 9403141506,
+  "protected_default_source_files": 11,
+  "registered_game_model_counts": {
+    "controller_calls": 172560,
+    "crop_forwards": 38026,
+    "crop_rows": 38026,
+    "gate_evaluations": 0,
+    "task_forwards": 353584,
+    "task_rows": 18781436,
+    "teacher_proposals": 0
+  },
+  "registered_policy_turns": 345120,
+  "registration_sha256": "8db5bc96919a81df484c480f282ae924c389f43949ea24df0a9c8a26980141b5",
+  "replay_verification_sha256": "22ca662a1d6a57b1dbd0e31240b7b73d93ac7f0fd334b0e5e3a087240677d7f6",
+  "review_passed": true,
+  "reviewer_execution_seconds": 19.76600000000326,
+  "reviewer_role": "Independent result reviewer",
+  "schema": "independent-anchor-reentry-final-result-review-v1",
+  "scientific_verdict": {
+    "admission": false,
+    "complete_action_changed_games": 32,
+    "complete_action_effect_gate_passed": true,
+    "research_positive": false,
+    "student_checks": {
+      "meaningful_own_profit_gain": true,
+      "overall_margin_not_lower": true,
+      "overall_score_not_lower": true,
+      "own_profit_ci_positive": false
+    },
+    "student_opponent_point_guards": {
+      "market": true,
+      "round2": true
+    },
+    "teacher_opponent_point_guards": {
+      "market": true,
+      "round2": true
+    },
+    "teacher_retention": true,
+    "teacher_retention_primary_passed": true
+  },
+  "source_scope": "Seven new files and direct frozen consumers; no repeated whole-repository audit.",
+  "training_review_sha256": "5392c97e896c57066f9caa0cccb5e9f29f07e7845bd40852e4d5b8d1227790e9"
+}

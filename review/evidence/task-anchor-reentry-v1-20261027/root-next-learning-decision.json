@@ -1,0 +1,148 @@
+{
+  "schema": "root-action-impact-diagnostic-decision-v1",
+  "created_utc": "2026-10-26T23:24:40.584164+00:00",
+  "status": "approved_for_versioned_implementation_not_execution",
+  "task": "task_action_impact_diagnostic_v1",
+  "advice_sha256": "298dee7f33005fdd99d3c6553847672910da95515dd1830df2cb22ede576ea0b",
+  "previous_acceptance_sha256": "6a11ff4cf5bac0301ffb8b2cece61ea290fba71ce36b09a748a99a98a15356fa",
+  "conditional_on_current_stage_publication": true,
+  "reason": "The fixed fit now changes actions and preserves the narrow teacher gate, but did not establish S improvement and loses margin to T. Study recorded action transmission before choosing a different learning question.",
+  "sample": {
+    "root": "artifacts/task-anchor-reentry-v1-20261027",
+    "role": "Historical post-result development diagnosis; former holdout seeds are already seen",
+    "seed_order": [
+      2240228007,
+      149009525,
+      3351711015,
+      1845894395,
+      1600614327,
+      1836204477,
+      51518447,
+      2997782266
+    ],
+    "opponent_order": [
+      "round2",
+      "market"
+    ],
+    "seat_order": [
+      0,
+      1
+    ],
+    "arm_order": [
+      "baseline",
+      "candidate",
+      "teacher_task"
+    ],
+    "selection": "All eight registration.test_seeds x both registered opponents x both seats x all three arms, in the listed nested order; no outcome filtering, replacement or seat-symmetry assumption",
+    "games": 96,
+    "triads": 32,
+    "comparisons": 64,
+    "primary_comparison": "candidate versus teacher_task, 32 pairs",
+    "secondary_comparison": "candidate versus baseline, 32 pairs",
+    "raw_paths": [
+      "games/holdout-{seed}-{opponent}-{seat}-{arm}/replay.json.gz",
+      "traces/holdout-{seed}-{opponent}-{seat}-{arm}.jsonl.gz"
+    ],
+    "selected_file_count": 192,
+    "selected_compressed_bytes_observed_from_metadata": 854529469,
+    "missing_selected_files_observed": 0,
+    "metadata_allowlist": [
+      "registration.json",
+      "root-result-acceptance.json",
+      "run-summary.json",
+      "holdout-statistics.json",
+      "development-gate.json",
+      "job-results/holdout-*.row.json",
+      "job-results/holdout-*.audit.json",
+      "job-results/holdout-*.complete.json"
+    ],
+    "exclude": "All 24 development games, prior caches, other historical stages, weights, logits and new games",
+    "manifest": "Before opening any selected raw data, freeze these exact 192 paths, expected hashes from existing certificates, byte sizes and the analysis source hash in a new task registration; missing identities close the task without substitution"
+  },
+  "budgets": {
+    "cpu_workers": 1,
+    "cpu_threads": 1,
+    "max_process_working_set_bytes": 2147483648,
+    "max_total_memory_bytes": 3221225472,
+    "gpu_seconds": 0,
+    "neural_forwards": 0,
+    "training_updates": 0,
+    "official_transitions": 0,
+    "new_games": 0,
+    "compressed_input_read_bytes": 1073741824,
+    "decoded_input_bytes": 34359738368,
+    "metadata_and_source_read_bytes": 16777216,
+    "raw_decode_passes_per_selected_file": 1,
+    "decompressed_copies_on_disk": 0,
+    "analysis_cpu_seconds": 1800,
+    "analysis_wall_seconds": 1800,
+    "total_task_wall_seconds_including_implementation_review_cleanup": 5400,
+    "owned_output_bytes": 8388608,
+    "public_report_bytes": 65536,
+    "log_bytes_included_in_output_cap": 1048576,
+    "budget_accounting": "Count compressed reads and decompressed bytes separately before they exceed limits; hashes must be computed during the same raw read, not a second full pass. Stream trace lines, release each triad before the next, and externally stop the owned process at its memory/time cap. A budget failure consumes the attempt and closes the task; no silent cap increase or smaller replacement sample",
+    "review": "Review the compact derived rows, scalar identities, source and manifest within the same total budget; no repeated raw decode or official replay is included",
+    "temporary_artifacts": "Use the existing owned scratch_directory convention, reap owned processes and clean the run before completion; preserve only one compact current verification record and requested deliverables"
+  },
+  "analysis_method": {
+    "execution": "One sequential streaming extraction; replay and trace are data only. Do not import or invoke an agent, model, controller or official engine",
+    "alignment": [
+      "Retain separate pair identities for every seed/opponent/seat; never count seats or turns as additional independent seeds",
+      "Use the existing typed complete-request semantics and inventory-order-preserving observation semantics",
+      "Compare common pre-divergence observation states. Within a turn, compare sequential task records only while the full visible inputs, candidate identities/order and pre-assignment reservations match",
+      "Stop same-context callback alignment at the first mismatching input or selection; later callbacks are not matched by array index or task label",
+      "A final unit_request is an emitted controller request, not proof that the selected task was executed",
+      "Physical-state comparisons must use recorded observations and preserve both players' recorded inventory ordering; exclude action/request fields and incidental timing so an action difference is not tautologically a state difference"
+    ],
+    "fixed_extractions": [
+      "Counts of equal-context chosen-task disagreements, same-turn complete-request agreement/disagreement, and missing/unalignable cases",
+      "For each comparison, the first equal-context task-choice divergence and first complete-request divergence, or an explicit none/unknown value",
+      "Whether a directly recorded observation difference follows the first request difference; use horizons +1 and +24 transitions and terminal, clipped at terminal without replacement",
+      "At those horizons, observed own bank, opponent bank and their difference; terminal values must agree exactly with existing pair metadata",
+      "A fixed descriptive partition: no task disagreement; task disagreement with the same request; request difference without a recorded observation effect; recorded observation difference with zero terminal margin gap; recorded observation difference with nonzero terminal margin gap; unknown",
+      "For task/request linkage, only predeclared descriptors: chosen operation, same/different unit and target, emitted move versus work request, and observed repeated reassignment before recorded completion. Derive completion only when unambiguous in already saved fields",
+      "Summaries by seed and opponent with both seats retained, including exact own/opponent contribution to the terminal margin gap. No fresh bootstrap, hypothesis search, best-case selection or per-turn p-values"
+    ],
+    "ambiguity_rule": "Resources, day-end changes, simultaneous player interaction, market execution, failure reasons and task completion are unknown unless existing recorded fields resolve them directly. Unknown is an admissible finding, not permission to reconstruct rules or run the engine",
+    "causal_boundary": "Common-state divergence identifies a changed decision; subsequent trajectory or terminal differences remain descriptive associations of the full policy trajectories. Do not attribute the terminal return to the first task, label it action regret, infer counterfactual value, or convert this diagnosis into supervised value targets",
+    "missing_trace_rule": "If the stored trace cannot link selected task to request or actual observation, report evidence_insufficient and stop. Do not add simulator labels, shadow controllers or fresh games"
+  },
+  "acceptance": {
+    "delivery_success": [
+      "All 32 planned triads and 64 comparisons appear exactly once with classified or unknown status; excluded cases and reasons remain in the denominator",
+      "All terminal own/opponent/margin scalars reproduce the existing metadata exactly, and 32/32 stored C-S first-request-difference steps reproduce the accepted values",
+      "Any disagreement with those identities/scalars is a specific extraction blocker; stop the diagnosis rather than reopening the entire repository audit",
+      "No raw data, weights, private configuration, per-step observations, candidate features or exact requests enter the public report",
+      "One decision record states evidence_sufficient_for_new_question or evidence_insufficient, with denominators, budget consumption and limitations; a negative/unknown result completes this task"
+    ],
+    "new_question_screen": {
+      "purpose": "A preregistered resource-allocation screen, not a significance test or a modification of the closed admission gates",
+      "minimum_coverage": "At least 24/32 primary C-T comparisons have an identifiable task-to-request-to-observation chain or an identifiable null chain, spanning at least six of the eight seed clusters",
+      "mechanism_requirement": "For a duration-aware task-option question, directly recorded repeated reassignment/noncompletion or delayed completion must occur in at least eight primary C-T comparisons, span at least three seed clusters and both seats, and those loss-associated cases must cover at least half of the sum of negative C-T terminal margin gaps. Terminal-gap coverage is association only, never percent loss caused",
+      "conditional_follow_on": "Only if both requirements pass, consider a separately registered causal-data study of temporally extended task options (unit,target,operation,commitment until a recorded completion condition) and their duration-aware competitive value. This changes the controlled temporal decision and label source; it is not another CE/KL fit or a thresholded rescue of S/C",
+      "learning_not_yet_authorized": "The diagnosis itself authorizes no fit or branching. Before any later learning, separately establish valid option completion, obtain prospectively registered paired-intervention outcome data and reserve entirely fresh evaluation seeds with a new budget",
+      "otherwise": "Stop with evidence_insufficient_for_this_new_learning_question. Do not search additional mechanisms, expand windows/samples, append rules, or retry the closed learning family within this task"
+    }
+  },
+  "root_adjudication": [
+    "Accept all96 already-seen holdout games and both seats; no outcome-filtered or seat-symmetry subset",
+    "Accept descriptor-only linkage and unknown handling; do not import models/controllers/official engine or reconstruct execution rules",
+    "Duration-option criteria are a resource-allocation screen only; no causal labels, no fit and no next intervention study is authorized by this record",
+    "Memory monitoring must preserve actual measured limits and failed-overage evidence, not claim an OS hard quota unless one is actually used",
+    "Synthetic-only extraction/streaming/ambiguity checks and independent source review precede a local exact-byte registration commit; no selected raw-file decode before that commit",
+    "Within the same90-minute task total, verify derived compact rows, source and manifest without a second raw decode; preserve uncertainty and failed attempts"
+  ],
+  "requires_new_source_and_output_namespace": true,
+  "requires_fixed_192_input_identity_manifest": true,
+  "requires_local_preregistration_commit": true,
+  "requires_independent_pre_review": true,
+  "all_previously_seen_seeds_are_historical": true,
+  "current_stage_official_budget_exhausted": true,
+  "new_training_authorized": false,
+  "ppo_authorized": false,
+  "default_change_authorized": false,
+  "old_evidence_changes_authorized": false,
+  "stop_on_budget_or_source_or_scalar_or_insufficient_evidence": true,
+  "same_data_same_architecture_rescue_allowed": false,
+  "user_continuous_goal_authorization_persists": true
+}

@@ -1,0 +1,27 @@
+{
+  "created_utc": "2026-10-26T22:41:41.653879+00:00",
+  "cumulative_reserved_transitions": 1438,
+  "deadline_utc": "2026-10-26T23:24:51.249633+00:00",
+  "frozen_source_sha256": {
+    "decision/execution.py": "cbf38b17ca9c4c1c4f82ddb583ff59e4f605a0e8d8e971ef5bfc3664b2c76378",
+    "decision/full_audit.py": "84f7c7b4316fb98791c51b933f5329a271b8bc9aec60eebe133f6d433ec4510d",
+    "decision/semantics.py": "9ac62d0df7adca84c0feff805b2979bb45f9f9f4c2064d1e2b5c48efd3e779a5",
+    "decision/verify_mechanisms.py": "cc82fd118abd94e92a8833587aa2bfb9117214a8a5b00e8054225732af47fbbf"
+  },
+  "game": "holdout-2240228007-market-0-candidate",
+  "native_log_bytes": 1048576,
+  "neural_rows_authorized": 0,
+  "new_games_authorized": 0,
+  "official_transitions_reserved": 719,
+  "policy_callbacks_authorized": 0,
+  "process_seconds": 900,
+  "recorded_actions_only": true,
+  "registration_sha256": "8db5bc96919a81df484c480f282ae924c389f43949ea24df0a9c8a26980141b5",
+  "replacement_allowed": false,
+  "replay_sha256": "379f0177611e558dbd9692bd34316d7ed3c4b1ba7ca960aec7180b7e8431f869",
+  "retry_allowed": false,
+  "reviewer_source_sha256": "0bf0ec92cd933a2b7f2995f0fde3b117d6d86eaf8258fa3e683371c8acb8ef7c",
+  "row_sha256": "17a2d874ec1ce9d46b0e546b2fd6cdce6bbe2aa95e86fcc732ee11d695f7ef04",
+  "schema": "independent-anchor-fixed-official-replay-v1",
+  "total_limit": 2157
+}
