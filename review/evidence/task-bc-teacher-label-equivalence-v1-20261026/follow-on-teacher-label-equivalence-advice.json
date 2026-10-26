@@ -1,0 +1,20 @@
+{
+  "schema": "teacher-label-equivalence-narrow-advice-v1",
+  "created_utc": "2026-10-26T11:26:34.082091+00:00",
+  "advisor": "independent /root/unit_request_auditor",
+  "scope": "Narrow conceptual advice based on the already accepted context, not a new source/data audit, timed execution acceptance or WebChat opinion.",
+  "previous_broad_advice_sha256": "67b34d5c7785cf218fb9af1e5dbbb534220c2671b328bb055cd45e0d4a95a564",
+  "previous_broad_advice_status": "advisory_deadline_exceeded; complete=false; passed=false; unchanged",
+  "recommendation": "先做固定训练状态的标签诊断，不继续自动遍历学生分歧或直接重训。先精确复现原冻结完整教师，再在同一状态快照逐个强制候选首选，由该教师重新完成。",
+  "methodological_limits": [
+    "存在一次教师续接得到相同向量，不等于这些标签可任意互换。",
+    "条件教师不等于完整教师；资源、预留和联合约束依赖前缀，各分支正例不能跨状态或前缀合并。",
+    "同单位向量不覆盖市场、未来或收益。"
+  ],
+  "stopping": [
+    "一例非原标签得到相同向量只记录为该状态/前缀的候选漏标反例。",
+    "完整枚举无例只记局部未发现；基线不符、隔离失败或超预算则无法判定，不换样。",
+    "暂不合并标签、不改loss、不训练。"
+  ],
+  "recommendation_is_not_new_data_evidence": true
+}

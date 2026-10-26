@@ -1,0 +1,166 @@
+{
+  "schema": "root-teacher-label-equivalence-continuation-v1",
+  "created_utc": "2026-10-26T11:26:34.082091+00:00",
+  "status": "planned_not_started",
+  "based_on_public_commit": "48b1799fc459f4aa0fe8868e9429f441131f5d0a",
+  "advice_sha256": "d8b74d0f4a79fc5f716ac8b84431e62a7d5c8650f47afa369ec901ee1943f52f",
+  "previous_broad_advice_still_failed": true,
+  "one_next_stage": "task-bc-teacher-label-equivalence-v1",
+  "question": "在一份固定旧训练示范的第一任务回调，单个已保存正标签之外，是否存在由原教师续接后得到完全相同当回合官方请求的候选？",
+  "why_this_stage": [
+    "Current serialized dataset has one teacher candidate ID/index per group; weighted_group_loss subtracts exactly that one logit.",
+    "Accepted historical probes show some intermediate-choice disagreements are only assignment permutations. They are insufficient to justify changed labels or loss across the dataset.",
+    "A verified training-signal counterexample can support a later bounded label/target design; this stage does not demonstrate improved reward or recommend retraining yet."
+  ],
+  "verified_source_basis": {
+    "single_label": "learning/task_choice_v1/dataset.py:132",
+    "teacher_first_choice": "learning/task_choice_v1/agent.py:64",
+    "stateless_fresh_buffers": "learning/task_choice_v1/agent.py:93",
+    "single_label_cross_entropy": "learning/task_bc_v1/train.py:142",
+    "source_and_safe_metadata_sha256": {
+      "learning/task_choice_v1/agent.py": "b22e2a1a546abe39e76a412690d09926d0463d4c196e87614507cf16a0ab51ce",
+      "learning/task_choice_v1/dataset.py": "87d47b11ee6b3bc2432d856ea26e87fc3645e005f33e26034207877a9d637119",
+      "learning/task_choice_v1/features.py": "b69e3fb590fb5c1159193d112977aa03170557dc47b8aa19bcffe0f09737c7d4",
+      "learning/task_bc_v1/train.py": "de5b704f8930ed0e00c5ecc83bc1c3b85b61a4501800f6f68d4949e4ae3c15f5",
+      "artifacts/task-choice-v1-20261023/registration.json": "ca0077198188f82136c3b974c47fd6cac3b07e70bd72eb99fe444f8925f5dfa4",
+      "artifacts/task-choice-v1-20261023/dataset-manifest.json": "6482ed09e8fd7348c08046810232146ec463472ee5babf187fe6822aa420bc00",
+      "artifacts/bc-crop-v1-20261023-run1/collect-ledger.json": "b7e577b2879e53bfe8a728023b2b375db9baa40741847b3affa100660433e5eb"
+    }
+  },
+  "fixed_case": {
+    "game": "collect-31317742-v1-0-teacher",
+    "seed": 31317742,
+    "seed_rule": "first seed in the unchanged original train_seeds list; not selected from new outcomes",
+    "opponent": "v1",
+    "side": 0,
+    "step": 15,
+    "callback_index_zero_based": 0,
+    "split": "original_train",
+    "not_a_fresh_holdout": true,
+    "selection_rule": "Use this exact turn and first task callback; if absent, out of source prefix budget or fewer than two choices, report inconclusive. Never choose another turn/game.",
+    "raw_source_files": {
+      "inputs": {
+        "path": "artifacts/task-choice-v1-20261023/data/train/collect-31317742-v1-0-teacher.inputs.jsonl.gz",
+        "sha256_inherited": "d54dc5c2438e66e9026867b613adbcffcd8472c27d8622bf7c0a2772e32e8ff0",
+        "bytes": 6055173,
+        "mtime_ns": 1792743976831170900,
+        "registered_rows": 2261
+      },
+      "labels": {
+        "path": "artifacts/task-choice-v1-20261023/data/train/collect-31317742-v1-0-teacher.labels.jsonl.gz",
+        "sha256_inherited": "c2db56ec26f77cdd84b5e4151ba662254dd294de2eba4b673572f49a427924c2",
+        "bytes": 5223,
+        "mtime_ns": 1792743976830170400,
+        "registered_rows": 2261
+      },
+      "index": {
+        "path": "artifacts/task-choice-v1-20261023/data/train/collect-31317742-v1-0-teacher.index.jsonl.gz",
+        "sha256_inherited": "87bc7ef55b97f11fcb14c02cfd5378a307f42e47d51b25b5a1664b1576e89248",
+        "bytes": 99098,
+        "mtime_ns": 1792743976828171000,
+        "registered_rows": 2261
+      },
+      "replay": {
+        "path": "artifacts/bc-crop-v1-20261023-run1/games/collect-31317742-v1-0-teacher/replay.json.gz",
+        "sha256_inherited": "6ebe2a567af569bb425b7acec640da84ee727adb5666223fcf062ea30c395aac",
+        "bytes": 427472,
+        "mtime_ns": 1792698826267403700,
+        "registered_states": 720
+      }
+    },
+    "source_bot_wrapper_sha256": "e28a3c1bb55083adffcf3f4db6c70353baba1302138d4238f51e22b0209f62c4",
+    "original_teacher_sha256": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff",
+    "official_engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"
+  },
+  "required_design": [
+    "Keep all old source bytes. New narrow module/output only; reuse TaskAgent teacher crop mode, existing legitimate observation extractor and owned Windows process-tree runner. No model checkpoint is supplied or loaded.",
+    "Before any original payload read or fixture execution, finish loader/probe/independent checker/focused checks, freeze exact source and budgets, obtain independent static review and make an exact local preregistration commit.",
+    "The one original Replay supplies the ordered factual observation and stored action at step+1. Original unpatched frozen teacher and fresh TaskAgent(task_selector=None,crop_mode=teacher) must both reproduce the entire stored action. This is not a hybrid teacher with a learned crop head.",
+    "Original index, labels and inputs bind this one actual serialized training group. Only index prefix is parsed until step15/decision0; inputs/labels are parsed only at that aligned target. Bind the saved single label, candidate identities/order and actual numeric shared/candidate arrays to the baseline encoding. Do not run the teacher from a sorted serialized cache observation; preserve the original Replay observation order.",
+    "Each trial starts from a fresh deep-copied legitimate observation/configuration and fresh teacher adapter. Only first callback chooses one existing alternative ID; restore pure teacher immediately, independently regenerate all later choices and reservations, and complete the entire action.",
+    "Enumerate alternatives in the frozen baseline candidate-list order, exclude the original label, try at most64 and stop at the first exact whole-action match. Never merge positive alternatives across contexts or assume simultaneous substitution is safe.",
+    "Primary positive requires type-sensitive equality of the complete ordered farmer/hands vector AND every ordered market order. Unit-only equality with market differences is separately reported and is not an accepted complete-action positive. Candidate availability is within the existing opportunity generator, not a full official legality mask.",
+    "Record whole original/adapter/alternative action evidence locally plus input/candidate/control-path hashes and counters. Preserve requested-vs-executed distinction: no official transition or future rollout is performed.",
+    "Use existing streaming measurement primitives: once per compressed source, hash every compressed byte. Prefix files close gzip at the target and drain remaining compressed bytes for SHA without decoding their suffix. Full Replay reads to EOF. Record three intentional prefix-buffer unknowns if all three prefixes are read; no fake zero unknown for failures.",
+    "Output-evidence checker is written before data and reads only new bound receipt(s) once, checks baseline stored action agreement, one forced current candidate, pure-teacher suffix, ordered action equality, trial order, early stopping, total consumption and scope. Its independence is not a second original-file reproduction."
+  ],
+  "budget": {
+    "total_executable_seconds_max": 300,
+    "primary_phase_deadline_seconds": 220,
+    "independent_phase_deadline_seconds": 270,
+    "final_deadline_seconds": 300,
+    "per_close_seconds_max_included_in_original_phase": 10,
+    "max_workers": 1,
+    "blas_threads": 1,
+    "process_tree_private_commit_bytes_max": 1073741824,
+    "teacher_controller_calls_max": 66,
+    "original_teacher_calls_max": 1,
+    "teacher_adapter_baseline_calls_max": 1,
+    "alternative_calls_max": 64,
+    "per_controller_call_seconds_max": 10,
+    "callbacks_per_adapter_call_max": 16,
+    "candidate_encodings_max": 1040,
+    "candidates_per_callback_max": 512,
+    "encoded_candidate_objects_max": 200000,
+    "model_reads_hashes_loads_forwards": 0,
+    "training_new_games_official_steps": 0,
+    "original_compressed_opens_max": 4,
+    "original_compressed_bytes_total_exact_if_all_completed": 6586966,
+    "replay_json_decodes_max": 1,
+    "replay_payload_bytes_max": 67108864,
+    "source_returned_payload_bytes_total_max": 134217728,
+    "index_prefix_json_rows_max": 256,
+    "inputs_labels_prefix_lines_each_max": 256,
+    "target_input_json_rows_max": 1,
+    "target_label_json_rows_max": 1,
+    "per_input_json_line_bytes_max": 4194304,
+    "full_replay_states_decoded_max": 720,
+    "replay_agent_states_decoded_max": 1440,
+    "raw_data_reread_passes": 0,
+    "new_independent_machine_receipt_read_bytes_max": 2097152,
+    "new_private_case_receipt_bytes_max": 1048576,
+    "all_executable_artifact_bytes_max": 4194304,
+    "tiny_in_memory_cases_max": 6,
+    "synthetic_candidates_max": 32,
+    "temporary_files": 0,
+    "independent_human_new_private_receipt_passes_max": 1,
+    "independent_human_new_private_receipt_bytes_max": 1048576,
+    "independent_human_review_seconds_max": 300,
+    "root_safe_metadata_review_seconds_max": 180
+  },
+  "acceptance_and_stops": [
+    "Evidence-path acceptance is separate from a positive label finding. A fully validated negative or inconclusive result is an honest endpoint, not permission to resample.",
+    "Stop at first complete-action alternative match; it is only an existential counterexample in this exact context, not a full positive set or a value-improvement claim.",
+    "If every alternative is actually enumerated and none matches, report local no-match. If64 exhausted with others remaining, report incomplete enumeration/inconclusive, not no-match.",
+    "No target callback, too many candidates, failed original baseline, changed model/default/history, leaked observations, accounting failures or any exceeded scope stops the unique execution; preserve started/completed/unknown consumption and no retry.",
+    "Source/runner/checker commitments, natural process closure, parent zero exit and final original deadlines are required for accepted execution; results cannot override old failed admission or old certificates."
+  ],
+  "deferred": [
+    "Changing loss or labels in the real training dataset",
+    "GPU or CPU model fitting, inference scoring, or model selection",
+    "Fresh holdout games, old96-panel reruns, full official replays or alternative official steps",
+    "DAgger/PPO and another teacher mechanism expansion"
+  ],
+  "gpu_role": "No GPU work in this diagnostic. Possible later BC loss/target experiment would use the proven GPU training path only after separate preregistration and independent evaluation design.",
+  "previous_task_model_scoring_consumption": {
+    "groups": 3921,
+    "candidates": 228505,
+    "this_next_stage_expected_model_forwards": 0,
+    "no_refund": true
+  },
+  "implementation_details_to_fix_before_freeze": [
+    "Exact new module/output names, public-source line-ending maps and complete source inventory",
+    "One-pass compressed prefix/drain tests, ordered action comparator tests and cross-trial isolated controller checks",
+    "Detailed safe/partial receipt schemas and exact timer origin including all data/fixtures/cleanup; no extension after data"
+  ],
+  "current_execution_state": {
+    "new_stage_source_payload_reads": 0,
+    "model_content_reads": 0,
+    "controller_calls": 0,
+    "new_experiment_files_implemented": 0,
+    "new_tests": 0,
+    "only_source_and_safe_metadata_reads_plus_source_file_stat": true
+  },
+  "privacy": "Private raw files, numeric features, coordinates, complete action evidence and logs stay local. Publish only source, sanitized counts, SHA bindings and scoped conclusions. Original advisory failure remains local and is never overwritten.",
+  "goal_remains_active": true
+}

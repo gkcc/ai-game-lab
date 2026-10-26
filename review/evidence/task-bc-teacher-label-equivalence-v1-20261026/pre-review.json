@@ -1,0 +1,197 @@
+{
+  "schema": "teacher-label-equivalence-static-pre-review-v1",
+  "passed": true,
+  "status": "exact_static_pre_review_passed_execution_not_started",
+  "reviewer": "independent /root/unit_request_auditor",
+  "stage": "task-bc-teacher-label-equivalence-v1",
+  "freeze_sha256": "d03abef8904cd235be6a21ec31f288f55852804fa2dce45fe8bafc6e83de3226",
+  "registration_sha256": "723be92a750932bf2c456005268673a314a544d5bd46f26fb9c4c17c671af0f1",
+  "reviewer_implemented_stage_sources": false,
+  "review_type": "Source and safe metadata only. This is not runtime, numerical, fixture, data-reproduction or lifecycle acceptance.",
+  "binding_evidence": {
+    "freeze_sha256": "d03abef8904cd235be6a21ec31f288f55852804fa2dce45fe8bafc6e83de3226",
+    "registration_sha256": "723be92a750932bf2c456005268673a314a544d5bd46f26fb9c4c17c671af0f1",
+    "runtime_files_verified": 154,
+    "public_files_verified": 154,
+    "previous_frozen_sources_unchanged": 147,
+    "new_source_files": {
+      "learning/task_bc_teacher_label_equivalence_v1/check.py": "9ea5ae233cf69fe23885e309e543b113e51bb53ef7167b64dffe1550b6ee0752",
+      "learning/task_bc_teacher_label_equivalence_v1/CONTRACT.md": "564683ec2952cf63e491a87ef2e781f80c1f4587d7d7249f1770745b29229424",
+      "learning/task_bc_teacher_label_equivalence_v1/experiment.py": "89cee9e21a20e4d0cd017900ee0180880c33014500e31c721d3f5da848d08a82",
+      "learning/task_bc_teacher_label_equivalence_v1/probe.py": "11c176edd3d987366f9b4d33d1856621217b0a65525d0f6ec413015997c56672",
+      "learning/task_bc_teacher_label_equivalence_v1/README.zh-CN.md": "a22fb00f4f0a6be969f98a33a445e082fff7c35e81db167bf0cf013f74bd93a9",
+      "learning/task_bc_teacher_label_equivalence_v1/source.py": "378ad85cb75804bcc08059cc31b47c38e99836725c31408963ad52d4e0fac1dd",
+      "learning/task_bc_teacher_label_equivalence_v1/__init__.py": "5b627bac132d8b9e5361063405edfca10082e5bd654ed04553026bb1a79bc20f"
+    },
+    "public_overrides": {
+      "decision/execution.py": "e1b8acb32ef0b31c0de3048d481d84babf3b07510d18a9d3b2fd3da471d8f239",
+      "decision/full_audit.py": "0ae434974ac8fced76033c26b9c27f6ffce24e1f598f6fba6c7dc11306d903a8",
+      "decision/verify_audit.py": "3afc9b0a2bb04114d8bed42d6568809b87677dc39c0bd783a1b1898e3a693c3e",
+      "learning/round2_worker.py": "ff823541f43ec2a0671aefbb2a3803daf6d3b882cebed4534eb2bdbb5efb35a1"
+    },
+    "source_metadata_verified": 7,
+    "source_and_safe_basis_verified": 7,
+    "planning_hashes": {
+      "follow-on-teacher-label-equivalence-advice.json": "d8b74d0f4a79fc5f716ac8b84431e62a7d5c8650f47afa369ec901ee1943f52f",
+      "root-follow-on-teacher-label-equivalence-decision.json": "b8829e5933f3a8730825180010a8d096e4882d95aaa1790dc1b2121ddaf60617"
+    },
+    "protection_before_sha256": "e793be48561b53264a33fa383ef87648f48eed69c5789783038903a70b291f1c",
+    "protected_history_stat_entries": 6842,
+    "control_state_bytes": 47500,
+    "control_reads": 3,
+    "maximum_control_bytes": 142500,
+    "control_limit": 262144,
+    "dependencies": {
+      "python": "3.12.2",
+      "numpy": "2.5.4",
+      "kaggle_environments": "1.33.0"
+    },
+    "not_started": {
+      "pre-review.json": true,
+      "pre-execution-commit.json": true,
+      "started.json": true,
+      "case.json": true,
+      "primary-receipt.json": true,
+      "check/complete.json": true,
+      "execution-acceptance.json": true
+    },
+    "errors": []
+  },
+  "scope": {
+    "fixed_training_case": "collect-31317742-v1-0-teacher",
+    "seed": 31317742,
+    "side": 0,
+    "step": 15,
+    "callback_index_zero_based": 0,
+    "training_split": "original_train",
+    "new_holdout": false,
+    "scientific_question": "Whether the saved single positive label omits a candidate in this one factual first-callback context that the same frozen pure teacher can complete into the identical entire requested action.",
+    "full_action_boundary": "Typed JSON farmer/hands and complete ordered market orders, not merely operation labels or unit-only equality.",
+    "existential_only": true,
+    "context_independent_positive_set": false,
+    "official_legality_mask": false,
+    "reward_or_generalization_claim": false
+  },
+  "static_checks": [
+    {
+      "component": "prepare and plan interfaces",
+      "evidence": "The current narrow advice has recommendation_is_not_new_data_evidence and no status field. The final prepare checks that field, the decision's planned_not_started status/one_next_stage, and both exact original SHA bindings. The safe publication receipt has the required passed/commit/remote_main_matches fields. The earlier broad advice remains failed and its contents are not overwritten."
+    },
+    {
+      "component": "source.py: compressed reads and failure accounting",
+      "evidence": "The fixed index/inputs/labels/Replay paths are metadata-bound before opening. Each admitted source opens once and every returned compressed byte enters one incremental SHA. Prefix gzip handles close at the fixed target/admission boundary; the same raw reader drains the remaining compressed bytes without suffix JSON decoding. The Replay alone is decoded completely to EOF. Generic decoded-value inventories include unused nested payloads; named state/candidate arrays, returned bytes and failed started/completed work are retained. Any decode/inventory/read uncertainty is explicit. Internal inode/device identities remain in memory."
+    },
+    {
+      "component": "source.py: fixed admission and inconclusive outcomes",
+      "evidence": "The index prefix enforces original training identity and step/decision order, never substitutes another callback, and binds the aligned actual input line and actual label line. Exactly reaching the 256-row limit without finding the fixed callback yields inconclusive_source_prefix_limit; this is not absence proof. Overruns, schema/hash/stat failures and failed work remain failures. Unavailable cases read only index; successful available cases require all four full compressed hashes and exactly 6586966 compressed bytes."
+    },
+    {
+      "component": "original observation and training-input binding",
+      "evidence": "The original Replay JSON mapping order is preserved and the existing legitimate observation extractor feeds both controllers. The sorted cached training observation never drives either teacher. The dataset writer's canonical UTF-8 sorted-map compact JSON agrees with the new digest format. Baseline first-input SHA, actual saved input/index SHA, complete ordered candidate descriptors and actual shared/candidate numerical projection must match. The independent checker also reconstructs the exact saved label line with LF and compares its SHA/length."
+    },
+    {
+      "component": "probe.py: original and adapter baselines",
+      "evidence": "The unpatched hash-pinned original teacher is compiled into its own fresh namespace and must reproduce the entire stored step+1 action. The pure TaskAgent baseline, with task_selector=None and crop_mode=teacher, must independently reproduce the same entire action. Direct dependency inspection confirms the original script only imports math, requires no __file__ or model, and TaskAgent/CropAgent expose the expected original selection/finish interfaces. Fresh clone ordered snapshot hashes detect input mutation or inventory-order changes."
+    },
+    {
+      "component": "probe.py: alternative completion",
+      "evidence": "Alternatives follow the baseline candidate-list order and exclude the actual saved label. Every trial gets fresh deep-copied observation/configuration and a fresh controller instance. Only its first callback selects the existing alternative; the selector is reset immediately and each later callback chooses the newly recomputed pure-teacher label. All callbacks encode afresh with global contiguous sequences. Stop at the first entire-action match or 64 attempts; only complete enumeration with no match yields local_no_match. Unit-only matches with different markets are not positives."
+    },
+    {
+      "component": "typed action comparison and candidate scope",
+      "evidence": "Producer and independent checker use distinct recursively type-sensitive comparison implementations: list order, including market-order order and unit order, is preserved; mapping field insertion order is ignored; Boolean/integer and integer/float are distinct; finite floats compare by same-type numerical equality. The request envelope includes farmer/hands/market. Opportunity-generator alternatives are explicitly not claimed to be a complete official legal-action mask."
+    },
+    {
+      "component": "task/crop encoding and prohibited model work",
+      "evidence": "Task encodings reserve candidate counts before the original encoder and retain starts/completions. Pure-teacher crop selections still invoke their original feature encoder and now have separate crop callback/encoding/value counts and event hashes. The final registration adds all four crop caps without changing the adopted plan bytes. Crop mode/network/trace guards, blocked Network construction and np.load, and the inspected pure original teacher exclude model-weight/model-forward paths. Source construction/import definitions do not execute the registered fixtures."
+    },
+    {
+      "component": "check.py independence and bounded input",
+      "evidence": "The checker imports no producer or policy. It reads only the two new case/primary receipts, each once, and enforces the aggregate 2 MiB bound and per-case 1 MiB bound. It recomputes index-prefix evidence, original label/source-line binding, typed entire-action matches, legal first override, pure-teacher suffix, global encoding counts, trial order, first-match stopping and exhaustive-versus-capped outcomes. Raw private source arrays are not reread, so this is output-evidence verification rather than another original-source/controller reproduction."
+    },
+    {
+      "component": "safe/private receipt separation",
+      "evidence": "The actual private index_prefix is retained only in the case certificate and removed from the safe source ledger. The checker verifies the safe ledger equals the certificate after precisely that removal, including one synchronized source elapsed value. Full candidate IDs, coordinates and action evidence remain private. Safe failures expose fixed codes or exception type, not raw exception strings; logs/native lifecycle identities remain local. Synthetic fixture counters remain separate from original-source consumption."
+    },
+    {
+      "component": "experiment.py: exact commit gate and original phase clock",
+      "evidence": "Before first payload or fixture execution, parent and workers require the exact reviewed freeze, clean local commit and actual committed source/control bytes. The fixed output directory and exclusive started marker forbid retries. One continuous 300-second clock covers two sequential owned workers, with absolute phase endpoints 220/270 and final endpoint 300 seconds; each original 10-second close reserve is subtracted within its phase. Natural zero exit, zero active processes, all handles closed, no forced termination and bound completion receipts are required."
+    },
+    {
+      "component": "experiment.py: failed finalization and control/output accounting",
+      "evidence": "Partial control-state reads retain bytes=None plus explicit unknown; unknown/malformed terminal work is never converted to zero. Worker final identity checks run even on failure. The parent's final binding/history/summary attempts run under finally, and an inner finally always invokes the inherited all-OUT output accounting, including logs and partial failures. Successful acceptance additionally checks the original final deadline, aggregate cap after acceptance write and dominant checker/final failure markers. The three defined execution control-state reads are 47500 bytes each, totaling 142500 below 262144."
+    }
+  ],
+  "registered_caps": {
+    "executable_seconds": 300,
+    "primary_phase_endpoint_seconds": 220,
+    "checker_phase_endpoint_seconds": 270,
+    "final_endpoint_seconds": 300,
+    "close_seconds_in_original_phase": 10,
+    "max_concurrent_workers": 1,
+    "sequential_worker_jobs": 2,
+    "worker_private_commit_bytes": 1073741824,
+    "blas_threads": 1,
+    "controller_calls_max": 66,
+    "original_teacher_calls_max": 1,
+    "adapter_baselines_max": 1,
+    "alternative_trials_max": 64,
+    "per_controller_seconds_max": 10,
+    "task_callbacks_per_adapter_max": 16,
+    "task_encodings_max": 1040,
+    "candidates_per_callback_max": 512,
+    "encoded_candidate_objects_max": 200000,
+    "crop_callbacks_per_adapter_max": 16,
+    "crop_encodings_max": 1040,
+    "crop_values_per_vector_max": 1024,
+    "crop_feature_values_total_max": 1064960,
+    "original_compressed_opens_max": 4,
+    "all_four_completed_compressed_bytes_exact": 6586966,
+    "index_prefix_rows_max": 256,
+    "input_and_label_target_json_rows_each_max": 1,
+    "replay_json_decodes_max": 1,
+    "replay_states_max": 720,
+    "replay_agent_states_max": 1440,
+    "original_returned_payload_total_max": 134217728,
+    "replay_payload_max": 67108864,
+    "checker_new_receipt_bytes_max": 2097152,
+    "private_case_bytes_max": 1048576,
+    "executable_all_OUT_bytes_max": 4194304,
+    "protocol_cases_max": 6,
+    "synthetic_candidates_max": 32,
+    "new_model_reads_hashes_loads_forwards": 0,
+    "training_new_games_official_steps": 0,
+    "retries": 0,
+    "inherited_task_scoring_groups": 3921,
+    "inherited_task_scoring_candidates": 228505
+  },
+  "reviewer_activity": {
+    "new_source_documentation_files_read": 7,
+    "source_and_safe_metadata_only": true,
+    "original_Replay_inputs_labels_index_payload_opens": 0,
+    "models_opened_hashed_loaded_or_scored": 0,
+    "private_case_or_other_private_result_receipts_read": 0,
+    "project_modules_imported": 0,
+    "fixtures_or_protocol_checks_executed": 0,
+    "unit_tests_executed": 0,
+    "controller_calls": 0,
+    "checker_or_experiment_runs": 0,
+    "official_transitions": 0,
+    "training_or_new_games": 0,
+    "temporary_files_created": 0,
+    "implementation_or_old_files_modified": 0,
+    "agent_workflow_used": false,
+    "new_deliverable": "pre-review.json only"
+  },
+  "blocking_findings": [],
+  "limits_and_required_followup": [
+    "The passed flag applies only to this exact static freeze and registration. No alternative, absent callback, baseline parity or source consumption result has been observed in this review.",
+    "Metadata-only preparation/freeze and source hashes do not establish runtime API behavior, protocol fixture success, natural closure or whole-action equivalence. These remain to be checked in the single frozen execution.",
+    "An exact local preregistration commit is still required after this review and before any payload or fixture execution; it is not an external timestamp.",
+    "Failed paths have been inspected statically only. No failure injection, synthetic fixture execution or original-source access was performed by the reviewer.",
+    "The complete Replay will consume unused decoded states as registered; planned prefix buffer unknowns must remain separate from failed-work unknowns. No refund or retry is permitted.",
+    "A first match is an existential same-request counterexample at this state/prefix, not a reusable positive-label set. No match under the 64-trial cap is inconclusive unless all alternatives were actually exhausted.",
+    "Later acceptance requires the independent machine certificate, zero parent exit, original final deadlines/aggregate output accounting, natural closure, a separately bounded human receipt review and root safe-metadata adjudication. Original policy-admission/diagnostic/strict-review failures and the prior broad planning failure remain unchanged."
+  ],
+  "created_utc": "2026-10-26T11:57:14.041468+00:00"
+}
