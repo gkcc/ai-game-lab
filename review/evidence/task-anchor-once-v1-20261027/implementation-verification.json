@@ -1,0 +1,62 @@
+{
+  "schema": "anchor-implementation-verification-v1",
+  "passed": true,
+  "created_utc": "2026-10-26T21:04:59.290710+00:00",
+  "distinct_focused_tests": 33,
+  "root_test_executions": [
+    31,
+    7,
+    5
+  ],
+  "root_test_failures": 0,
+  "root_test_skips": 0,
+  "independent_pre_freeze_tests": [
+    22,
+    16,
+    1
+  ],
+  "independent_test_failures": 0,
+  "independent_test_skips": 0,
+  "synthetic_neural_cpu_rows": 24,
+  "synthetic_neural_gpu_rows": 0,
+  "real_model_array_decodes": 0,
+  "real_cache_array_decodes": 0,
+  "model_identity_sha_reads_are_not_array_decodes": true,
+  "official_transitions": 0,
+  "real_fits": 0,
+  "dependency_import_probe": {
+    "first_attempt_passed": false,
+    "reason": "Optax transitive tempfile probe used writable descriptor inside artifact adapter",
+    "correction": "Dependency import before artifact adapter inside unchanged process deadline; no data, weights, forward or optimizer there",
+    "corrected_windows_official_import_passed": true,
+    "corrected_wsl_dependency_import_and_device_discovery_passed": true,
+    "probe_gpu_arithmetic": 0,
+    "probe_artifact_write_bytes": 0,
+    "probe_log_bytes": 203,
+    "all_owned_temp_directories_removed": true
+  },
+  "closed_review_findings": [
+    "Free-space floor now reserves remaining parent output and conservative foreign receipts",
+    "Cancellation write failure still waits for bounded Linux supervisor and joins output reader"
+  ],
+  "source_runtime_sha256": {
+    "learning/task_anchor_once_v1/campaign.py": "bc1ca7b722f059a544715a7cb788169a9416a5e459092e982baef8efccd1d41a",
+    "learning/task_anchor_once_v1/experiment.py": "0fbb57198dc6ce31b84b45c064911bd0c321d8954a4e77ff138cbd798017b0d0",
+    "learning/task_anchor_once_v1/games.py": "0a0afbe1aea859397ec17642a7dcac6ba93717f8c91e099df89fb8262798773e",
+    "learning/task_anchor_once_v1/gpu_guard.py": "35672d9b3109a2d0f9fce6cd516a75f34cddf5bd7b1c37d6b218903375752a1d",
+    "learning/task_anchor_once_v1/processes.py": "9711f7d38e1494dc2cceef718482bef9470d7416a8d07284f900e487c1dc1092",
+    "learning/task_anchor_once_v1/README.zh-CN.md": "7fb4e1db352f7b6641c7f2bfd3309002e143108982b9ba312acf720a17180cd8",
+    "learning/task_anchor_once_v1/statistics.py": "0db37bbd78f7013987b78cfeade218821ebff0d9ded4975e28128b494adc8533",
+    "learning/task_anchor_once_v1/storage.py": "2ff0e3209f25196081babdaea758f2fe1dc1d8254873d70a7a4118eb16f37d45",
+    "learning/task_anchor_once_v1/test_campaign.py": "158f11b70152cfeae9a3ac4a5e6bd695d10644666fa211b2658dec6af286a015",
+    "learning/task_anchor_once_v1/test_entry.py": "9dcfde6a0d9fdb01601984a53e9983f012f323188c67a91a2abe7d1e36d02b23",
+    "learning/task_anchor_once_v1/test_processes.py": "20b4f5bcc50ffad703b190ee032808ca040d741d9a62699ba9c34735d117613c",
+    "learning/task_anchor_once_v1/test_storage.py": "65a9215f9ab38780663263f028307c75e74a0e5a0aded81bb68235e54ee39214",
+    "learning/task_anchor_once_v1/test_training.py": "b4dfa333cabd8f7fa4d78ce80fab19e413920622fb83a9f32011b3be3a1e7b52",
+    "learning/task_anchor_once_v1/training.py": "a8d5fd4775ba6a2a27786b1022c3943455605763f86a0c94bf3cc4d46d20ec65",
+    "learning/task_anchor_once_v1/__init__.py": "4978d6f44ce420931cddf54f31bcff0d06ce9fd8a036c92b590a69cad07e6c94"
+  },
+  "freeze_sha256": "61a6412d692202dcc612e69c90012a4036aa136aa22149fc31f9641d4d601353",
+  "registration_sha256": "b7f6066855b445efe8cd719305fd4c5d82845255c5f335e220fcb224f35b6836",
+  "final_review_and_local_commit_required_before_fit": true
+}

@@ -1,0 +1,24 @@
+{
+  "validation_seeds": [
+    2697472690,
+    1251124725
+  ],
+  "test_seeds": [
+    1164124482,
+    1524297348,
+    287614767,
+    3833105285,
+    163765311,
+    3857533568,
+    417215345,
+    2956026355
+  ],
+  "generation": {
+    "rng": "PCG64",
+    "seed": 2026102718,
+    "population": "uint32",
+    "draws": 10,
+    "rejected": [],
+    "rule": "First ten eligible values; only inventory matches and duplicates rejected"
+  }
+}
