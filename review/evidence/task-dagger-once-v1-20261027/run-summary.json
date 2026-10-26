@@ -1,0 +1,28 @@
+{
+  "status": "stopped_offline_gate",
+  "completed_games": 24,
+  "attempted_games": 24,
+  "all_attempts_completed": true,
+  "live_official_transitions": 17256,
+  "primary_official_transitions": 17256,
+  "game_model_counts": {
+    "task_forwards": 108778,
+    "task_rows": 5666098,
+    "crop_forwards": 7728,
+    "crop_rows": 7728,
+    "gate_evaluations": 0,
+    "controller_calls": 35950,
+    "teacher_proposals": 0
+  },
+  "policy_turns": 70462,
+  "machine_seconds": 836.0310000000172,
+  "fit_attempts": 1,
+  "fit_completed": true,
+  "fit_result_sha256": "176cbaaa7ecdeadccf25dbb1c3cdb23181507e747961a034066887b076f99d4c",
+  "default_changed": false,
+  "automatic_teacher_admission": false,
+  "registration_sha256": "7fcef4841bbd26727826628ae4c7613389ba610ba48e4781e45d65c7d1092372",
+  "freeze_sha256": "45a6804c952089cc145049a7d4623182f818818256e5e78daffa8d48dcf182a7",
+  "holdout_run": false,
+  "actual_gpu_training": true
+}

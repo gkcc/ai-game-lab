@@ -1,0 +1,38 @@
+{
+  "budget_segment": {
+    "additional_model_forwards": 0,
+    "additional_official_transitions": 0,
+    "cumulative_actual_execution_seconds": 100.875,
+    "remaining_actual_execution_seconds": 3499.125,
+    "stage_actual_execution_seconds": 16.48499999998603
+  },
+  "checks": {
+    "default_bot_hash_unchanged": true,
+    "frozen_runtime_files": 122,
+    "historical_files_size_mtime_verified": 16757,
+    "installed_official_engine_and_loader_unchanged": true,
+    "original_task_and_crop_models_unchanged": true,
+    "preregistered_evidence_blobs_exact": true,
+    "preregistered_public_runtime_blobs": 122,
+    "protected_public_files_byte_verified": 1148,
+    "protected_runtime_and_model_files_byte_verified": 2318
+  },
+  "created_utc": "2026-10-26T20:02:19.529209+00:00",
+  "evidence_blobs_sha256": {
+    "freeze.json": "45a6804c952089cc145049a7d4623182f818818256e5e78daffa8d48dcf182a7",
+    "pre-review.json": "e927b7296540065df88ea833d2ad0af533946ff64500d7e352419cbd8e100dab",
+    "registration.json": "7fcef4841bbd26727826628ae4c7613389ba610ba48e4781e45d65c7d1092372"
+  },
+  "freeze_sha256": "45a6804c952089cc145049a7d4623182f818818256e5e78daffa8d48dcf182a7",
+  "limitations": [
+    "Historical general artifacts are size/mtime checked, not all content rehashed.",
+    "This local Git preregistration is not an external third-party timestamp.",
+    "The prior preservation manifest self-row remains excluded as documented by pre-review; this review does not reinterpret that row as valid evidence.",
+    "Seed novelty search scope and pre-execution synthetic tests are inherited from preregistration/pre-review, not repeated."
+  ],
+  "passed": true,
+  "preregistration_commit": "bb390749a026e2539a2a2391f6ad70da8d9946ce",
+  "registration_sha256": "7fcef4841bbd26727826628ae4c7613389ba610ba48e4781e45d65c7d1092372",
+  "reviewer_role": "independent result reviewer; not implementation author",
+  "schema": "task-dagger-once-independent-registration-history-v1"
+}

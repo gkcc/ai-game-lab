@@ -1,0 +1,57 @@
+{
+  "audit_sha256": "5353e9649f0e16d8420d1b9234c1e82c5a02e76f15a55336158bdca7711fa737",
+  "budget_segment": {
+    "additional_model_forwards": 0,
+    "additional_official_transitions": 0,
+    "cumulative_actual_execution_seconds": 100.875,
+    "remaining_actual_execution_seconds": 3499.125,
+    "stage_actual_execution_seconds": 16.48499999998603
+  },
+  "checks": {
+    "all_aggregate_rows_and_counters_bound": true,
+    "candidate_official_games": 0,
+    "development_baseline_games": 8,
+    "exact_24_registered_attempts_completed": true,
+    "holdout_official_games": 0,
+    "local_stage_chronology_consistent": true,
+    "no_later_stage_or_failure_files": true,
+    "offline_rejection_honored": true,
+    "teacher_task_official_games": 0,
+    "train_baseline_games": 16,
+    "training_attempts": 1,
+    "unique_final_checkpoint": true
+  },
+  "collection_review_sha256": "c2f9efcdeb9388ea65cc4fa4cd144c81e8a5331d500cc62d51baa751c07613c3",
+  "created_utc": "2026-10-26T20:02:19.529209+00:00",
+  "disposition": "Completed one authorized update and stopped at the failed fixed offline retention gate; candidate rejected from later evaluation.",
+  "freeze_sha256": "45a6804c952089cc145049a7d4623182f818818256e5e78daffa8d48dcf182a7",
+  "ledger_sha256": "53ebf0160509bf94845007b144edf6e1ae4e605c229cd0bfecc0b695df360b8c",
+  "limitations": [
+    "Candidate new weights have zero official games; complete-request effect, economic improvement and teacher retention in games are untested.",
+    "The three later preregistered independent samples were not reached and were not replaced.",
+    "Game terminal/trace conclusions inherit the two SHA-bound independent certificates; their raw files are not rescanned here.",
+    "File chronology is local corroboration, not an external timestamp."
+  ],
+  "model_counts": {
+    "controller_calls": 35950,
+    "crop_forwards": 7728,
+    "crop_rows": 7728,
+    "gate_evaluations": 0,
+    "task_forwards": 108778,
+    "task_rows": 5666098,
+    "teacher_proposals": 0
+  },
+  "passed": true,
+  "policy_turns": 70462,
+  "registration_sha256": "7fcef4841bbd26727826628ae4c7613389ba610ba48e4781e45d65c7d1092372",
+  "reviewer_role": "independent result reviewer; not implementation author",
+  "run_summary_sha256": "5279f4408907bd8835a33f28cce0b4e07b06fdb72e3fc0c8169df4803bee2da2",
+  "schema": "task-dagger-once-independent-terminal-v1",
+  "status": "stopped_offline_gate",
+  "transitions": {
+    "independent_reexecution": 719,
+    "live": 17256,
+    "primary_reexecution": 17256,
+    "total": 35231
+  }
+}

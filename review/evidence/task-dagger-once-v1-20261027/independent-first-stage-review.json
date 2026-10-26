@@ -1,0 +1,260 @@
+{
+  "budget": {
+    "actual_review_execution_seconds": 15.172000000020489,
+    "fit_attempts": 0,
+    "independent_transition_cap": 2876,
+    "model_forwards": 0,
+    "new_games": 0,
+    "official_calls_completed": 719,
+    "official_calls_issued": 719,
+    "official_transitions_reserved": 719,
+    "offline_numeric_scoring_rows": 0,
+    "remaining_review_execution_seconds": 3584.8279999999795,
+    "remaining_unreserved_transitions": 2157,
+    "total_actual_review_execution_seconds_cap": 3600
+  },
+  "created_utc": "2026-10-26T19:48:19.125263+00:00",
+  "early_collection_summary_sha256": "7dee0dfacc9fd9a490c707312c33dbc057bd0b31e1f20b28a13fb33077c717fa",
+  "early_gate_sha256": "5989313ce00ebf9473ff02d91d060af0fcd6adc62a49bf16e83b6db9a65dd5cd",
+  "freeze_sha256": "45a6804c952089cc145049a7d4623182f818818256e5e78daffa8d48dcf182a7",
+  "independently_recomputed_early_gate": {
+    "counts": {
+      "candidate_rows": 383582,
+      "games": 4,
+      "games_with_disagreement": 4,
+      "groups": 8144,
+      "teacher_ID_disagreements": 226
+    },
+    "gates": {
+      "minimum_disagreements": 128,
+      "minimum_games_with_disagreement": 2
+    },
+    "passed": true
+  },
+  "limitations": [
+    "The trace audit checks conditional-label membership and current observation/candidate/reservation provenance. It does not independently regenerate teacher priorities or rerun either learned selector.",
+    "Only one preregistered game is independently reexecuted. The other three receive terminal, ordered-hash and complete trace checks, not another official transition run.",
+    "Supervision quantity and teacher-ID disagreement do not establish economic harm, teacher optimality, completed training or improvement.",
+    "Later collection/development/holdout outputs are outside this certificate and were not opened.",
+    "Historic artifact content preservation and public export review remain final-stage obligations."
+  ],
+  "methods": [
+    "Require exact first-seed four-cell population and SHA-bound row/audit/completion/Replay/trace identities before opening raw evidence.",
+    "Independently inspect all four 720-state terminal records; recompute cash, winner score and v1/v2 ordered semantic digests.",
+    "Stream exactly719 trace turns per game; match every callback observation/configuration to its actual preturn public and own-private view, including inventory and shed order.",
+    "Check current candidate identity/order, teacher and chosen ID membership, chosen metadata, per-turn reservation availability, final unit requests and requested-action binding; recompute group/candidate/disagreement counts without the production data summarizer.",
+    "Reexecute only the preregistered first training round2 seat0 game with official full_audit.reexecute(trace=True), ordered semantics and ExecutionTrace; a transparent step wrapper debits calls before forwarding unchanged.",
+    "No games.audit, policy/controller replay, checkpoint loading, array loading, neural inference, GPU work or offline numeric scoring."
+  ],
+  "owned_scratch_removed": true,
+  "passed": true,
+  "pre_review_sha256": "e927b7296540065df88ea833d2ad0af533946ff64500d7e352419cbd8e100dab",
+  "preregistration_commit": "bb390749a026e2539a2a2391f6ad70da8d9946ce",
+  "read_source_sha256": {
+    "decision/api.py": "3ef4025bde61d240b298cbe4d31291f25021baaf5b396f5540bbfcdda4231917",
+    "decision/execution.py": "cbf38b17ca9c4c1c4f82ddb583ff59e4f605a0e8d8e971ef5bfc3664b2c76378",
+    "decision/full_audit.py": "84f7c7b4316fb98791c51b933f5329a271b8bc9aec60eebe133f6d433ec4510d",
+    "decision/semantics.py": "9ac62d0df7adca84c0feff805b2979bb45f9f9f4c2064d1e2b5c48efd3e779a5",
+    "learning/task_choice_v1/agent.py": "b22e2a1a546abe39e76a412690d09926d0463d4c196e87614507cf16a0ab51ce",
+    "learning/task_choice_v1/features.py": "b69e3fb590fb5c1159193d112977aa03170557dc47b8aa19bcffe0f09737c7d4"
+  },
+  "registration_sha256": "7fcef4841bbd26727826628ae4c7613389ba610ba48e4781e45d65c7d1092372",
+  "reservation_sha256": "3800e43203af7cab45c0eea28c39f0710bb495f3b717c10a3f539e00693215a3",
+  "reviewed_games": [
+    {
+      "actual_preturn_observation_binding": true,
+      "candidate_rows": 98465,
+      "crop_records": 155,
+      "current_candidate_label_membership": true,
+      "final_unit_request_binding": true,
+      "game": "train-3915533099-round2-0-baseline",
+      "groups": 2051,
+      "independent_official_reexecution": {
+        "audit_version": 2,
+        "both_public_and_private_states_match_each_step": true,
+        "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+        "execution": {
+          "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee",
+          "counts": {
+            "market:executed": 337,
+            "unit:executed": 4078,
+            "unit:pass": 3135
+          },
+          "label_version": 2,
+          "ordered_effect_sha256": "44f3fec9e2eace9bdff2cfd710b7cc6f654381adfa5be7b0df4334081459157f",
+          "successful_plants": [
+            52,
+            52
+          ],
+          "successful_plants_new_land": [
+            0,
+            0
+          ]
+        },
+        "final_rewards": [
+          32642.0,
+          34037.0
+        ],
+        "inventory_order_checked_each_step": true,
+        "official_transitions_reexecuted": 719,
+        "passed": true,
+        "semantic_sha256": "85328617a3d692ee364e5d39b148bbd2d917afe381323d88d3d124a4299f0a89",
+        "semantic_sha256_v2": "6d6670d3448dab2e596b0540a9c5bab79d9074c7dfd0347826e2f206089fd304",
+        "semantic_sha256_version": 1
+      },
+      "input_sha256": {
+        "audit": "d0a89207f7f55f40f823982c3ebae4facee392246be526296547f8527a4d958e",
+        "completion": "7fc16637ad575acdd0c4fb49c78e5c67884d4ed86137c0502a451554aa3d242d",
+        "replay": "dd37b68daa72d448b67e0fb76b79e25e31ef4cf8a319e4428b6340014184b5c2",
+        "result": "938395f78ba199c497cb55f35da9f070d18b7e17693ec75b95d6b22d8a81616b",
+        "row": "4dc6a685dd89308a9c66c3a94d1d9467ad1304e12aa68711368e687bc59872a5",
+        "trace": "ea4e8772ef96c087119fdd0d436048a9b402210ea0cf7d6be159b87edbec28c8"
+      },
+      "inventory_order_binding": true,
+      "noninitial_callbacks": 1606,
+      "opponent": "round2",
+      "passed": true,
+      "recorded_live_model_counts": {
+        "controller_calls": 719,
+        "crop_forwards": 155,
+        "crop_rows": 155,
+        "gate_evaluations": 0,
+        "task_forwards": 2051,
+        "task_rows": 98465,
+        "teacher_proposals": 0
+      },
+      "semantics": {
+        "v1": "85328617a3d692ee364e5d39b148bbd2d917afe381323d88d3d124a4299f0a89",
+        "v2": "6d6670d3448dab2e596b0540a9c5bab79d9074c7dfd0347826e2f206089fd304"
+      },
+      "side": 0,
+      "states": 720,
+      "student_reserved_unit_exclusion_checked": true,
+      "teacher_ID_disagreements": 66,
+      "terminal_cash_and_score_checked": true,
+      "trace_turns": 719
+    },
+    {
+      "actual_preturn_observation_binding": true,
+      "candidate_rows": 98465,
+      "crop_records": 155,
+      "current_candidate_label_membership": true,
+      "final_unit_request_binding": true,
+      "game": "train-3915533099-round2-1-baseline",
+      "groups": 2051,
+      "input_sha256": {
+        "audit": "1d0c871ce15f3db33c7d97f69f384c7938c6b472b26be12d1a5d4664ae78e933",
+        "completion": "c37252038e038d2ffa23e2fb1f2d993715035ee818f5400c9fd23440e2c6dda7",
+        "replay": "679d6de3497b13be6c35ff08f8c6b278f104fe072d35ecff07d407d3de5af946",
+        "result": "152e01cebdd5a82d802e897acf5de81f33e5c871e133c79af2e6dc4a402de872",
+        "row": "aee4e0298c488b15b48393552d0bd7ffea71262bffe13f7d9023e9754bc5d06e",
+        "trace": "db052af6c949401e00e8f515e71d084aec6a59741be82582ba7bac15a6d7afe5"
+      },
+      "inventory_order_binding": true,
+      "noninitial_callbacks": 1606,
+      "opponent": "round2",
+      "passed": true,
+      "recorded_live_model_counts": {
+        "controller_calls": 719,
+        "crop_forwards": 155,
+        "crop_rows": 155,
+        "gate_evaluations": 0,
+        "task_forwards": 2051,
+        "task_rows": 98465,
+        "teacher_proposals": 0
+      },
+      "semantics": {
+        "v1": "0a661040372e131fafae682663879c772e304b9bc3df77c051a131da2fdc513d",
+        "v2": "c30762ea7025dd126c56ff529252c5adc8d50f2ddd4f18c96dd8bf837867f6ae"
+      },
+      "side": 1,
+      "states": 720,
+      "student_reserved_unit_exclusion_checked": true,
+      "teacher_ID_disagreements": 66,
+      "terminal_cash_and_score_checked": true,
+      "trace_turns": 719
+    },
+    {
+      "actual_preturn_observation_binding": true,
+      "candidate_rows": 93326,
+      "crop_records": 154,
+      "current_candidate_label_membership": true,
+      "final_unit_request_binding": true,
+      "game": "train-3915533099-market-0-baseline",
+      "groups": 2021,
+      "input_sha256": {
+        "audit": "2cc0b94b2a6f00664e64d5cae8e950420a78d8734776cf219c0b4162b1263f2f",
+        "completion": "de221e500f08ce8aa9269fe2003aa7406f4d109c7a3532f39017800912f2d4fd",
+        "replay": "0f0c199fb6149557ddd7e552aaa652b5c99ee530ea97d447055708b495b3889e",
+        "result": "3fcb28b659b7cc2e9df5d3fb813d159dc4abe219fa46618a480f43c5699cb47e",
+        "row": "95c364e963add9151d66265487e687172398a7e951c2bca68533264739d766d2",
+        "trace": "a1647c7ab8d221f35ce1cd550a081e9471957de27606b55f562e98c272049c2b"
+      },
+      "inventory_order_binding": true,
+      "noninitial_callbacks": 1572,
+      "opponent": "market",
+      "passed": true,
+      "recorded_live_model_counts": {
+        "controller_calls": 719,
+        "crop_forwards": 154,
+        "crop_rows": 154,
+        "gate_evaluations": 0,
+        "task_forwards": 2021,
+        "task_rows": 93326,
+        "teacher_proposals": 0
+      },
+      "semantics": {
+        "v1": "4e71a5c2e517c583f1425d68e95b67c3fdff8756ffeabf442720c4eda41adafa",
+        "v2": "03aaf7e778c9b25f08e0021c8ae11124256c7b722078c2035b7513ec755ad5ba"
+      },
+      "side": 0,
+      "states": 720,
+      "student_reserved_unit_exclusion_checked": true,
+      "teacher_ID_disagreements": 47,
+      "terminal_cash_and_score_checked": true,
+      "trace_turns": 719
+    },
+    {
+      "actual_preturn_observation_binding": true,
+      "candidate_rows": 93326,
+      "crop_records": 154,
+      "current_candidate_label_membership": true,
+      "final_unit_request_binding": true,
+      "game": "train-3915533099-market-1-baseline",
+      "groups": 2021,
+      "input_sha256": {
+        "audit": "65d1dd0214e8886a8c4c9f91f7e5e065b5e4937d5c784413fb0eec8da65a4f64",
+        "completion": "4411f44749d3c02999caedbb374627eed8a72e8417062f775b778be797487f0f",
+        "replay": "6289adbe8034be57e27126260cc6fa263c62493ed306969ed044fdc4825f2f25",
+        "result": "ac954c6341f089d002e1eaed503747fd316c624f4a83c4bc6b5c7acfd1a4d919",
+        "row": "e0346a4bd5de16b58b247a799717e4c532894b426b77a2854afaf72e28bd93fd",
+        "trace": "6e4b31f58ec6e79c07bba26b0e714799fea9a1fe3bb6628c197c64e192ce4d00"
+      },
+      "inventory_order_binding": true,
+      "noninitial_callbacks": 1572,
+      "opponent": "market",
+      "passed": true,
+      "recorded_live_model_counts": {
+        "controller_calls": 719,
+        "crop_forwards": 154,
+        "crop_rows": 154,
+        "gate_evaluations": 0,
+        "task_forwards": 2021,
+        "task_rows": 93326,
+        "teacher_proposals": 0
+      },
+      "semantics": {
+        "v1": "970de9b0f88dae9d639347d3deeb73c521b6f1138e42e14922b84f775b8406b2",
+        "v2": "0fe0950c0c32db9992ea32d38de931e9e889fec8f3bd8953bc90ccfd4bbf2d13"
+      },
+      "side": 1,
+      "states": 720,
+      "student_reserved_unit_exclusion_checked": true,
+      "teacher_ID_disagreements": 47,
+      "terminal_cash_and_score_checked": true,
+      "trace_turns": 719
+    }
+  ],
+  "reviewer_role": "independent result reviewer; not implementation author",
+  "schema": "task-dagger-once-independent-first-stage-review-v1"
+}

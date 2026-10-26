@@ -1,0 +1,143 @@
+{
+  "blockers": [],
+  "budget": {
+    "accounting_note": "The history/terminal certificates describe one shared execution segment and are counted once. Waiting for root messages is excluded.",
+    "actual_review_execution_cap_seconds": 3600,
+    "additional_training_updates": 0,
+    "combined_offline_rows": 6605676,
+    "cumulative_review_procedure_seconds": 109.56099999992875,
+    "final_aggregation_execution_seconds": 0.014999999955762178,
+    "independent_official_step_cap": 2876,
+    "independent_official_steps": 719,
+    "numerical_row_cap": 100000,
+    "numerical_rows_completed": 78352,
+    "numerical_rows_issued": 78352,
+    "numerical_rows_reserved": 78352,
+    "primary_offline_rows": 6527324,
+    "prior_review_procedure_seconds": 109.54599999997299,
+    "registered_offline_cap": 12000000
+  },
+  "candidate_admission": false,
+  "certificate_sha256": {
+    "independent-collection-review.json": "c2f9efcdeb9388ea65cc4fa4cd144c81e8a5331d500cc62d51baa751c07613c3",
+    "independent-first-stage-review.json": "e3402038e4e0d8afe798db415efd908b32dc1cc51003347eff917fb1e8accef6",
+    "independent-registration-history-review.json": "5d9e59d5479a693e983e203a0bcfb28c39f23c21c6f5b6c8d815ec239d274b25",
+    "independent-terminal-review.json": "3876b2a65db6405da7b56eaf38cc45a53fb8f32e15330603f07cc13a9096dc20",
+    "independent-training-review.json": "d0e3038a81e40f4267a8613c1de59aae7a48fd66402e227836f073c2805efdb5"
+  },
+  "created_utc": "2026-10-26T20:09:31.950886+00:00",
+  "disposition": "accept_controlled_stop_evidence_reject_candidate_admission",
+  "established": {
+    "actual_terminal_status": "stopped_offline_gate",
+    "candidate_official_games": 0,
+    "changed_task_parameter_tensors": 6,
+    "current_callback_trace_binding_checked": true,
+    "development_baseline_games": 8,
+    "frozen_normalizer_bits_preserved": true,
+    "holdout_official_games": 0,
+    "initial_final_actual_models_verified": true,
+    "no_refit_or_checkpoint_selection": true,
+    "offline_gate_fixed_and_enforced": true,
+    "old_evidence_protection_verified": true,
+    "old_task_crop_and_default_bot_unchanged": true,
+    "one_final_gpu_warm_start_fit_completed": true,
+    "optimizer_updates": 512,
+    "registered_baseline_games_completed": 24,
+    "teacher_task_official_games": 0,
+    "training_baseline_games": 16
+  },
+  "evidence_boundaries": {
+    "independently_performed": [
+      "Exact24-game registration/input/row/audit/completion/model binding checks.",
+      "All24full terminal/ordered semantic/trace checks, with the first4reused by immutable certificate instead of rescanned.",
+      "One preregistered719-step official ordered reexecution with actual execution tracing.",
+      "All32actual cache arrays byte-hashed and ragged splits checked; actual initial/final tensor and normalization identities verified.",
+      "Full saved final-development CPU/GPU logits independently reduced to conditional weighted CE and first argmax without new inference.",
+      "Pre-reserved78352CPU/GPU candidate-row evaluations across two models and four fixed prefix splits; actual platform and child cleanup verified.",
+      "Fixed offline scalar ratios, terminal absence of candidate/teacher/holdout games, source/public byte protections and historical stat protection."
+    ],
+    "inherited_or_not_recomputed": [
+      "Historical512-gradient execution is reconstructed from frozen source, progress, bounded receipts, device identity and actual weight changes; not rerun or directly observed during this review.",
+      "Initial-development and old-validation complete CE remain primary-fit measurements. Their reported ratios/gates are independently recomputed, while numerical checks cover only fixed prefixes.",
+      "Conditional teacher priority maxima are not independently regenerated; trace membership/current context/reservation/request consistency is checked.",
+      "Primary24-game policy re-inference and official reexecution are receipt-bound and not all independently repeated.",
+      "Pre-execution synthetic tests, three original Linux lifecycle tests and original seed novelty search are inherited, not rerun.",
+      "General historical artifacts are size/mtime protected; only the explicitly protected runtime/model/public maps receive fresh byte hashes."
+    ]
+  },
+  "freeze_sha256": "45a6804c952089cc145049a7d4623182f818818256e5e78daffa8d48dcf182a7",
+  "independent_result_reviewers": 1,
+  "next_action_boundary": "No extra games, refit, new checkpoint, threshold relaxation or PPO under this run. Any subsequent experiment needs a separate reviewed registration.",
+  "numeric_reservation_sha256": "19c60a198af9b1cb547beeb41efcf2fff91962ecd374e0bf0f05cc8a4c91461c",
+  "numerical_sampling_limitation": {
+    "actual_scoring_rows": 78352,
+    "cpu_scoring_rows": 39176,
+    "distinct_normalized_prefix_array_hashes": 2,
+    "gpu_scoring_rows": 39176,
+    "identical_normalized_prefixes": [
+      "old_validation",
+      "new_train",
+      "new_validation"
+    ],
+    "independent_states_or_samples_count_established": false,
+    "interpretation": "78352counts repeated model/platform scoring presentations, not78352distinct states or independent samples. Three split prefixes are identical normalized opening inputs. Two different whole-prefix hashes do not establish a count of unique rows or states. No replacement samples were added.",
+    "model_count": 2,
+    "no_full_old_validation_loss_inference_from_prefix": true,
+    "platform_count": 2,
+    "prefix_groups_per_split": 64,
+    "prefix_rows_per_split": 4897
+  },
+  "official_transition_accounting": {
+    "independent_reexecution": 719,
+    "live": 17256,
+    "primary_reexecution": 17256,
+    "total": 35231
+  },
+  "offline_result": {
+    "full_saved_final_dev_cpu_gpu_candidate_rows": 955200,
+    "full_saved_final_dev_groups": 17786,
+    "full_saved_first_argmax_disagreements": 0,
+    "full_saved_max_absolute_cpu_gpu_error": 6.321296442024504e-05,
+    "new_development_ce_ratio": 0.8987282717381372,
+    "new_development_max": 0.95,
+    "new_development_passed": true,
+    "old_validation_ce_ratio": 1.025164051043476,
+    "old_validation_max": 1.02,
+    "old_validation_passed": false,
+    "retained_failure_conclusion": true
+  },
+  "old_certificates_preserved": true,
+  "passed": true,
+  "policy_acceptance": false,
+  "preregistration_commit": "bb390749a026e2539a2a2391f6ad70da8d9946ce",
+  "privacy": {
+    "authored_certificates_and_final_report_scoped_scan_passed": true,
+    "only_aggregate_counts_errors_and_hashes": true,
+    "private_device_or_launch_values_exported": false,
+    "raw_states_actions_features_logits_weights_exported": false
+  },
+  "registration_sha256": "7fcef4841bbd26727826628ae4c7613389ba610ba48e4781e45d65c7d1092372",
+  "reviewer_role": "Independent result reviewer; not implementation author and not WebChat",
+  "root_report_review": {
+    "final_key_claims_consistent": true,
+    "inspected_final_changes": [
+      "actual78352scoring rows and repeated prefix limitation",
+      "saved-full-logit versus primary-only CE evidence boundary",
+      "one independent result reviewer",
+      "root accepts controlled stop but rejects candidate promotion"
+    ],
+    "path": "TASK_DAGGER_ONCE_V1.zh-CN.md",
+    "pending_review_placeholders": false,
+    "sha256": "fffdd0344249b10c1320cfa531333d32185fa6f385676dcadd0cc48a499fb896"
+  },
+  "schema": "task-dagger-once-independent-result-review-v1",
+  "scope_complete": true,
+  "unperformed_claims": {
+    "economic_improvement_vs_S": "not_tested",
+    "eight_seed_cluster_statistics": "not_run",
+    "in_game_teacher_retention_vs_T": "not_tested",
+    "independent_training_repetition": false,
+    "later_independent_samples": "not_reached_not_replaced",
+    "new_weight_complete_official_request_control": "not_tested"
+  }
+}

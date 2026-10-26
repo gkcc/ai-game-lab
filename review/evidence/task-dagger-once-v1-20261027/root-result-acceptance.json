@@ -1,0 +1,40 @@
+{
+  "schema": "task-dagger-once-root-acceptance-v1",
+  "created_utc": "2026-10-26T20:10:23.177070+00:00",
+  "passed": true,
+  "scientific_disposition": "controlled_run_completed_and_stopped_at_failed_offline_retention_gate",
+  "candidate_admission": false,
+  "default_changed": false,
+  "new_candidate_official_games": 0,
+  "competitive_improvement_established": false,
+  "official_games": 24,
+  "optimizer_updates": 512,
+  "actual_gpu_training": true,
+  "independent_result_review_sha256": "22a2931167610ce67f441bb6cbde3ed158a2cea0402c97e809518fdb5fa6cc08",
+  "report_sha256": "fffdd0344249b10c1320cfa531333d32185fa6f385676dcadd0cc48a499fb896",
+  "registration_sha256": "7fcef4841bbd26727826628ae4c7613389ba610ba48e4781e45d65c7d1092372",
+  "freeze_sha256": "45a6804c952089cc145049a7d4623182f818818256e5e78daffa8d48dcf182a7",
+  "run_summary_sha256": "5279f4408907bd8835a33f28cce0b4e07b06fdb72e3fc0c8169df4803bee2da2",
+  "old_public_preservation_sha256": "4bcb3621f411e263c78f9aa4190894cb12f34d983649d30dfcc1e4c1867775c3",
+  "official_transition_counts": {
+    "independent_reexecution": 719,
+    "live": 17256,
+    "primary_reexecution": 17256,
+    "total": 35231
+  },
+  "independent_offline_scoring_rows": 78352,
+  "total_offline_scoring_rows": 6605676,
+  "old_models_rules_and_default_preserved": true,
+  "historical_stat_not_full_content_hash": true,
+  "review_limits": [
+    "Historical512-gradient execution is reconstructed from frozen source, progress, bounded receipts, device identity and actual weight changes; not rerun or directly observed during this review.",
+    "Initial-development and old-validation complete CE remain primary-fit measurements. Their reported ratios/gates are independently recomputed, while numerical checks cover only fixed prefixes.",
+    "Conditional teacher priority maxima are not independently regenerated; trace membership/current context/reservation/request consistency is checked.",
+    "Primary24-game policy re-inference and official reexecution are receipt-bound and not all independently repeated.",
+    "Pre-execution synthetic tests, three original Linux lifecycle tests and original seed novelty search are inherited, not rerun.",
+    "General historical artifacts are size/mtime protected; only the explicitly protected runtime/model/public maps receive fresh byte hashes."
+  ],
+  "root_adjudication": "Accept negative result and bounded stop; do not relax gate, refit, use reserved holdout or claim new candidate official control. Preserve repeated-prefix audit limitation.",
+  "next_stage_requires_separate_reviewed_registration": true,
+  "publication_still_requires_final_privacy_check": true
+}

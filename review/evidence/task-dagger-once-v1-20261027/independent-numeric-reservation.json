@@ -1,0 +1,75 @@
+{
+  "cache_manifest_sha256": {
+    "new": "719a8ed64905db4e7802c5125c2eab64270b6ff62210bd17da21c06e86d07f42",
+    "old": "abf0581baad3941a4e2fc7bf96835d1fe0cfa92d6fa4ac0939c096a1f6f4368d"
+  },
+  "created_utc": "2026-10-26T20:05:44.707545+00:00",
+  "evaluations_per_unique_row": 4,
+  "independent_formula_source_sha256": {
+    "cpu_forward": "37a3dd7e422c55c7d5b7faac609de495cec67a9ee77c1658d2b7dbb003dc17f2",
+    "gpu_sampling_worker": "b962f397e39753dbcdc8e1059fe4410b9d76e8387547df28a9a3ecb44a93d78e"
+  },
+  "models": {
+    "final": {
+      "path": "artifacts/task-dagger-once-v1-20261027/model/trained.npz",
+      "sha256": "8da95bbcf959d0cc8e064977eac0d939c41617ae0fd915400486c51138bfb7c2"
+    },
+    "initial": {
+      "path": "artifacts/task-dagger-once-v1-20261027/model/initial.npz",
+      "sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143"
+    }
+  },
+  "per_platform_rows_reserved": 39176,
+  "platforms": [
+    "cpu_float64",
+    "gpu_float32"
+  ],
+  "registration_sha256": "7fcef4841bbd26727826628ae4c7613389ba610ba48e4781e45d65c7d1092372",
+  "retry_allowed": false,
+  "row_cap": 100000,
+  "rows_reserved": 78352,
+  "schema": "task-dagger-once-independent-numeric-reservation-v1",
+  "selection_rule": "Each of four frozen cache splits: first at most64complete groups, stop before6250candidate rows. Offsets only; no value/error/outcome selection.",
+  "selections": [
+    {
+      "cache_path": "artifacts/task-bc-v1-20261023-run1/cache",
+      "group_start": 0,
+      "group_stop": 64,
+      "offsets_sha256": "f8d83b6813867a822c9f72edbeb4dcc9f6e42132c6af3359b349e5221599bf9a",
+      "pool": "old_train",
+      "row_start": 0,
+      "row_stop": 4897,
+      "split": "train"
+    },
+    {
+      "cache_path": "artifacts/task-bc-v1-20261023-run1/cache",
+      "group_start": 0,
+      "group_stop": 64,
+      "offsets_sha256": "7909b6e29e59d7b0dbd45afdf30dd77a854caed23f7489949e1537c642c4b9c4",
+      "pool": "old_validation",
+      "row_start": 0,
+      "row_stop": 4897,
+      "split": "validation"
+    },
+    {
+      "cache_path": "artifacts/task-dagger-once-v1-20261027/cache",
+      "group_start": 0,
+      "group_stop": 64,
+      "offsets_sha256": "e3b3e6d49bff197435f5e139360295beaffa2a4f1364956e03f6e6a1535af793",
+      "pool": "new_train",
+      "row_start": 0,
+      "row_stop": 4897,
+      "split": "train"
+    },
+    {
+      "cache_path": "artifacts/task-dagger-once-v1-20261027/cache",
+      "group_start": 0,
+      "group_stop": 64,
+      "offsets_sha256": "1bc026524c343216f33c795bdfca3ebbde6f4bab123e1c98c7f29dca1f14ef03",
+      "pool": "new_validation",
+      "row_start": 0,
+      "row_stop": 4897,
+      "split": "validation"
+    }
+  ]
+}

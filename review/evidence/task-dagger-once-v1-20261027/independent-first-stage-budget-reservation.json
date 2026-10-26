@@ -1,0 +1,27 @@
+{
+  "allowed_completed_games": [
+    "train-3915533099-round2-0-baseline",
+    "train-3915533099-round2-1-baseline",
+    "train-3915533099-market-0-baseline",
+    "train-3915533099-market-1-baseline"
+  ],
+  "created_utc": "2026-10-26T19:48:03.947185+00:00",
+  "cumulative_transitions_reserved": 719,
+  "freeze_sha256": "45a6804c952089cc145049a7d4623182f818818256e5e78daffa8d48dcf182a7",
+  "neural_forward_budget": 0,
+  "new_games_budget": 0,
+  "offline_numeric_scoring_rows_budget": 0,
+  "original_models_arrays_unread": true,
+  "other_match_outputs_unread": true,
+  "preregistration_commit": "bb390749a026e2539a2a2391f6ad70da8d9946ce",
+  "previous_independent_transitions_reserved": 0,
+  "registration_sha256": "7fcef4841bbd26727826628ae4c7613389ba610ba48e4781e45d65c7d1092372",
+  "remaining_unreserved_transitions": 2157,
+  "retry_or_sample_replacement_allowed": false,
+  "reviewer_role": "independent result reviewer; not implementation author",
+  "schema": "task-dagger-once-independent-first-stage-reservation-v1",
+  "selected_official_reexecution": "train-3915533099-round2-0-baseline",
+  "total_actual_review_execution_seconds_cap": 3600,
+  "total_independent_transition_cap": 2876,
+  "transitions_reserved_before_work": 719
+}

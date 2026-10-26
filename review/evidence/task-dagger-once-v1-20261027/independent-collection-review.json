@@ -1,0 +1,1081 @@
+{
+  "budget": {
+    "additional_official_calls_completed": 0,
+    "additional_official_calls_issued": 0,
+    "additional_official_transitions_reserved": 0,
+    "cumulative_actual_execution_seconds": 84.39000000001397,
+    "cumulative_independent_official_transitions": 719,
+    "execution_seconds_cap": 3600,
+    "fit_attempts": 0,
+    "independent_transition_cap": 2876,
+    "model_forwards": 0,
+    "new_games": 0,
+    "offline_numeric_scoring_rows": 0,
+    "previous_execution_seconds": 15.172000000020489,
+    "previous_independent_official_transitions": 719,
+    "remaining_actual_execution_seconds": 3515.609999999986,
+    "remaining_unreserved_transitions": 2157,
+    "stage_actual_execution_seconds": 69.21799999999348
+  },
+  "cache_or_model_arrays_read": false,
+  "collection_totals": {
+    "dev": {
+      "candidate_rows": 955200,
+      "crop_records": 1237,
+      "games": 8,
+      "groups": 17786,
+      "teacher_ID_disagreements": 607,
+      "trace_turns": 5752
+    },
+    "train": {
+      "candidate_rows": 1779384,
+      "crop_records": 2472,
+      "games": 16,
+      "groups": 34552,
+      "teacher_ID_disagreements": 898,
+      "trace_turns": 11504
+    }
+  },
+  "created_utc": "2026-10-26T19:55:46.700300+00:00",
+  "cumulative_trace_turns_reviewed": 17256,
+  "exact_registered_population_complete": true,
+  "freeze_sha256": "45a6804c952089cc145049a7d4623182f818818256e5e78daffa8d48dcf182a7",
+  "fresh_raw_full_games": 20,
+  "fresh_trace_turns": 14380,
+  "inherited_first_stage_review_sha256": "e3402038e4e0d8afe798db415efd908b32dc1cc51003347eff917fb1e8accef6",
+  "inherited_raw_full_games": 4,
+  "later_stage_outputs_read": false,
+  "limitations": [
+    "First4raw files are inherited from the SHA-bound prior independent certificate, not newly byte-verified in this phase.",
+    "Trace checks do not independently regenerate teacher priorities or neural decisions. Later primary audits remain distinct from the independently recomputed checks here.",
+    "No additional official reexecution is performed; cumulative independent official coverage remains the one preregistered719-step first-stage game.",
+    "Cache completeness, gradients, GPU execution, exported models and later development/holdout economic gates are outside this certificate.",
+    "Conditional label disagreement and complete source traces do not establish optimal actions or economic improvement."
+  ],
+  "methods": [
+    "Derive the exact16training and8development frozen-student game identities from the registered seed/opponent/seat Cartesian product; no outcome selection.",
+    "For all24games rehash small input,row,audit,completion,result and wrapper files; require row/input equality, exact intended role and parity assignment, frozen model and opponent identities, completion SHA bindings and internally consistent audit counters.",
+    "For the first4games inherit the earlier independent raw Replay/trace hashes and results without rereading their large raw files; current small evidence hashes and their embedded raw hashes must remain identical.",
+    "For the additional20games rehash and parse each complete Replay and stream exactly719trace turns. Independently recompute terminal status,cash,net cash,margin,score and ordered semantics v1/v2.",
+    "Match every callback observation and configuration to the official preturn player view, preserve private inventory/shed ordering, verify candidate ordering and current-label/choice membership, reserved-unit exclusion and final requests, and derive all trace counters and supervision totals.",
+    "No production games.audit/data.summarize_game calls, no controller/policy replay, official transitions, model/array reads, numerical scoring or inference in this phase."
+  ],
+  "owned_scratch_removed": true,
+  "passed": true,
+  "preregistration_commit": "bb390749a026e2539a2a2391f6ad70da8d9946ce",
+  "recorded_primary_live_and_reexecution_model_counts": {
+    "controller_calls": 35950,
+    "crop_forwards": 7728,
+    "crop_rows": 7728,
+    "gate_evaluations": 0,
+    "task_forwards": 108778,
+    "task_rows": 5666098,
+    "teacher_proposals": 0
+  },
+  "registered_population": {
+    "development_baseline_games": 8,
+    "total": 24,
+    "train_baseline_games": 16
+  },
+  "registration_sha256": "7fcef4841bbd26727826628ae4c7613389ba610ba48e4781e45d65c7d1092372",
+  "repeatable_readonly_entrypoints": [
+    "python -B -X utf8 - runs the one-off review procedure recorded in the session tool invocation; no persistent audit framework was added.",
+    "hashlib.sha256(file_bytes) for immutable evidence bindings and gzip.open(...,rt) plus json for complete Replay and streaming trace inspection.",
+    "decision.api.observe(actual_player_observation,replay_configuration) for deployment-visible state filtering.",
+    "decision.semantics.digest(replay_steps,1) and decision.semantics.digest(replay_steps,2) for existing ordered semantics.",
+    "learning.task_choice_v1.features.schema_hash(feature_names,shared_feature_names) for callback schema identity."
+  ],
+  "reviewed_games": [
+    {
+      "actual_callback_and_current_label_binding_checked": true,
+      "candidate_rows": 98465,
+      "crop_records": 155,
+      "game": "train-3915533099-round2-0-baseline",
+      "groups": 2051,
+      "input_sha256": {
+        "audit": "d0a89207f7f55f40f823982c3ebae4facee392246be526296547f8527a4d958e",
+        "completion": "7fc16637ad575acdd0c4fb49c78e5c67884d4ed86137c0502a451554aa3d242d",
+        "input": "e9026794e06d7cc0d0342c620a32c037132133023f67ea68e4897ce93b10c562",
+        "replay": "dd37b68daa72d448b67e0fb76b79e25e31ef4cf8a319e4428b6340014184b5c2",
+        "result": "938395f78ba199c497cb55f35da9f070d18b7e17693ec75b95d6b22d8a81616b",
+        "row": "4dc6a685dd89308a9c66c3a94d1d9467ad1304e12aa68711368e687bc59872a5",
+        "trace": "ea4e8772ef96c087119fdd0d436048a9b402210ea0cf7d6be159b87edbec28c8",
+        "wrapper": "e49aa0fcaf610223be40d27db1ca58ba4437c9ee12f6943cabdbfcfc61517226"
+      },
+      "inspection": "inherited_first_stage_raw_checks_fresh_small_bindings",
+      "noninitial_callbacks": 1606,
+      "opponent": "round2",
+      "parity_kind": "student",
+      "passed": true,
+      "policy": "baseline",
+      "recorded_live_model_counts": {
+        "controller_calls": 719,
+        "crop_forwards": 155,
+        "crop_rows": 155,
+        "gate_evaluations": 0,
+        "task_forwards": 2051,
+        "task_rows": 98465,
+        "teacher_proposals": 0
+      },
+      "seed": 3915533099,
+      "semantics": {
+        "v1": "85328617a3d692ee364e5d39b148bbd2d917afe381323d88d3d124a4299f0a89",
+        "v2": "6d6670d3448dab2e596b0540a9c5bab79d9074c7dfd0347826e2f206089fd304"
+      },
+      "side": 0,
+      "split": "train",
+      "teacher_ID_disagreements": 66,
+      "terminal_cash_and_score_checked": true
+    },
+    {
+      "actual_callback_and_current_label_binding_checked": true,
+      "candidate_rows": 98465,
+      "crop_records": 155,
+      "game": "train-3915533099-round2-1-baseline",
+      "groups": 2051,
+      "input_sha256": {
+        "audit": "1d0c871ce15f3db33c7d97f69f384c7938c6b472b26be12d1a5d4664ae78e933",
+        "completion": "c37252038e038d2ffa23e2fb1f2d993715035ee818f5400c9fd23440e2c6dda7",
+        "input": "88ac0defbbea5d58cb81e5a3bf1d543464996b164d11a4a2e4615355c9c1bba7",
+        "replay": "679d6de3497b13be6c35ff08f8c6b278f104fe072d35ecff07d407d3de5af946",
+        "result": "152e01cebdd5a82d802e897acf5de81f33e5c871e133c79af2e6dc4a402de872",
+        "row": "aee4e0298c488b15b48393552d0bd7ffea71262bffe13f7d9023e9754bc5d06e",
+        "trace": "db052af6c949401e00e8f515e71d084aec6a59741be82582ba7bac15a6d7afe5",
+        "wrapper": "3dd0ce9ae63ceb499466785caa96e90079fea15bfe01c5c692bf9cb137da089e"
+      },
+      "inspection": "inherited_first_stage_raw_checks_fresh_small_bindings",
+      "noninitial_callbacks": 1606,
+      "opponent": "round2",
+      "parity_kind": "student",
+      "passed": true,
+      "policy": "baseline",
+      "recorded_live_model_counts": {
+        "controller_calls": 719,
+        "crop_forwards": 155,
+        "crop_rows": 155,
+        "gate_evaluations": 0,
+        "task_forwards": 2051,
+        "task_rows": 98465,
+        "teacher_proposals": 0
+      },
+      "seed": 3915533099,
+      "semantics": {
+        "v1": "0a661040372e131fafae682663879c772e304b9bc3df77c051a131da2fdc513d",
+        "v2": "c30762ea7025dd126c56ff529252c5adc8d50f2ddd4f18c96dd8bf837867f6ae"
+      },
+      "side": 1,
+      "split": "train",
+      "teacher_ID_disagreements": 66,
+      "terminal_cash_and_score_checked": true
+    },
+    {
+      "actual_callback_and_current_label_binding_checked": true,
+      "candidate_rows": 93326,
+      "crop_records": 154,
+      "game": "train-3915533099-market-0-baseline",
+      "groups": 2021,
+      "input_sha256": {
+        "audit": "2cc0b94b2a6f00664e64d5cae8e950420a78d8734776cf219c0b4162b1263f2f",
+        "completion": "de221e500f08ce8aa9269fe2003aa7406f4d109c7a3532f39017800912f2d4fd",
+        "input": "fcc1ecde6d414de261bc4da0d21cf843545830d40f36e09e211a8a308f008ef8",
+        "replay": "0f0c199fb6149557ddd7e552aaa652b5c99ee530ea97d447055708b495b3889e",
+        "result": "3fcb28b659b7cc2e9df5d3fb813d159dc4abe219fa46618a480f43c5699cb47e",
+        "row": "95c364e963add9151d66265487e687172398a7e951c2bca68533264739d766d2",
+        "trace": "a1647c7ab8d221f35ce1cd550a081e9471957de27606b55f562e98c272049c2b",
+        "wrapper": "d52b04a7085bf026dc57aa9315af304318ed2e50bdd5bbab1d23e29fb3315322"
+      },
+      "inspection": "inherited_first_stage_raw_checks_fresh_small_bindings",
+      "noninitial_callbacks": 1572,
+      "opponent": "market",
+      "parity_kind": null,
+      "passed": true,
+      "policy": "baseline",
+      "recorded_live_model_counts": {
+        "controller_calls": 719,
+        "crop_forwards": 154,
+        "crop_rows": 154,
+        "gate_evaluations": 0,
+        "task_forwards": 2021,
+        "task_rows": 93326,
+        "teacher_proposals": 0
+      },
+      "seed": 3915533099,
+      "semantics": {
+        "v1": "4e71a5c2e517c583f1425d68e95b67c3fdff8756ffeabf442720c4eda41adafa",
+        "v2": "03aaf7e778c9b25f08e0021c8ae11124256c7b722078c2035b7513ec755ad5ba"
+      },
+      "side": 0,
+      "split": "train",
+      "teacher_ID_disagreements": 47,
+      "terminal_cash_and_score_checked": true
+    },
+    {
+      "actual_callback_and_current_label_binding_checked": true,
+      "candidate_rows": 93326,
+      "crop_records": 154,
+      "game": "train-3915533099-market-1-baseline",
+      "groups": 2021,
+      "input_sha256": {
+        "audit": "65d1dd0214e8886a8c4c9f91f7e5e065b5e4937d5c784413fb0eec8da65a4f64",
+        "completion": "4411f44749d3c02999caedbb374627eed8a72e8417062f775b778be797487f0f",
+        "input": "98be58db61a5df066249706cde563807ec9125e05d4eebb0d520003da8f0748a",
+        "replay": "6289adbe8034be57e27126260cc6fa263c62493ed306969ed044fdc4825f2f25",
+        "result": "ac954c6341f089d002e1eaed503747fd316c624f4a83c4bc6b5c7acfd1a4d919",
+        "row": "e0346a4bd5de16b58b247a799717e4c532894b426b77a2854afaf72e28bd93fd",
+        "trace": "6e4b31f58ec6e79c07bba26b0e714799fea9a1fe3bb6628c197c64e192ce4d00",
+        "wrapper": "8b47d9ca6c3dbd50862afc63b81864a70acb32912986e6bc95bb59f8f0ba2999"
+      },
+      "inspection": "inherited_first_stage_raw_checks_fresh_small_bindings",
+      "noninitial_callbacks": 1572,
+      "opponent": "market",
+      "parity_kind": null,
+      "passed": true,
+      "policy": "baseline",
+      "recorded_live_model_counts": {
+        "controller_calls": 719,
+        "crop_forwards": 154,
+        "crop_rows": 154,
+        "gate_evaluations": 0,
+        "task_forwards": 2021,
+        "task_rows": 93326,
+        "teacher_proposals": 0
+      },
+      "seed": 3915533099,
+      "semantics": {
+        "v1": "970de9b0f88dae9d639347d3deeb73c521b6f1138e42e14922b84f775b8406b2",
+        "v2": "0fe0950c0c32db9992ea32d38de931e9e889fec8f3bd8953bc90ccfd4bbf2d13"
+      },
+      "side": 1,
+      "split": "train",
+      "teacher_ID_disagreements": 47,
+      "terminal_cash_and_score_checked": true
+    },
+    {
+      "actual_callback_and_current_label_binding_checked": true,
+      "candidate_rows": 118853,
+      "crop_records": 158,
+      "game": "train-4042989318-round2-0-baseline",
+      "groups": 2225,
+      "input_sha256": {
+        "audit": "3eea46d44a082e932dd394e3165fdee4612ef17e5b245142aa311d829a1777c1",
+        "completion": "d3c708c85f2c36d0238e6369245978002270e54f8ca11e838da4b041ca3a1cc1",
+        "input": "2c0deec4859b5fd9274f4ed54ea562ab92779a07e84e01f62bb1aa96ed6242f7",
+        "replay": "909cd72053ffce121e559ce30faceadb07da858a50711db9cbddfffd6b85a0d6",
+        "result": "b8cf07ee997be8e7fd85c60ab22e2c16d6d78fa1e7e2a81f4e760b085e976baf",
+        "row": "7ff206dfb8aa89c1f0b133221b6cdcba6ab7b8a3fc102ebc06fe738a42ca416f",
+        "trace": "250c0c93a651819888f1ab391b35c09d876b1bdab2e37a50473ecf21d10bdd49",
+        "wrapper": "df74b5f761f23bbd099f8be7720ac0cea1e63a296d92b1ef6a370cf282793d54"
+      },
+      "inspection": "fresh_terminal_semantic_and_complete_trace_checks",
+      "noninitial_callbacks": 1774,
+      "opponent": "round2",
+      "parity_kind": null,
+      "passed": true,
+      "policy": "baseline",
+      "recorded_live_model_counts": {
+        "controller_calls": 719,
+        "crop_forwards": 158,
+        "crop_rows": 158,
+        "gate_evaluations": 0,
+        "task_forwards": 2225,
+        "task_rows": 118853,
+        "teacher_proposals": 0
+      },
+      "seed": 4042989318,
+      "semantics": {
+        "v1": "c669f74d6c37f4fe12a6a152cba970efcce76b9735954d8932ecd7689b961e70",
+        "v2": "04c3c1054a8fd184525f61680d40b58a7100fb015f276296ceeb8b9ff26df0bc"
+      },
+      "side": 0,
+      "split": "train",
+      "teacher_ID_disagreements": 55,
+      "terminal_cash_and_score_checked": true
+    },
+    {
+      "actual_callback_and_current_label_binding_checked": true,
+      "candidate_rows": 118853,
+      "crop_records": 158,
+      "game": "train-4042989318-round2-1-baseline",
+      "groups": 2225,
+      "input_sha256": {
+        "audit": "c510eba703defb64139a631267ef19cae448c7847c81668ba581281e0e66b9a8",
+        "completion": "d69b47a78a1e888bb116f2f6ed75e26f56cc8debdaed54f29abcbe91ea838029",
+        "input": "067834582a4d09063f4015d1f7552839921cc94fb7421bfccfc57e1091de3f9d",
+        "replay": "ebee36a698738499f53dd6895790015dc4f8d11c15b7349bddb4dd12aa468f96",
+        "result": "0ca08040dbc820316fc19128bb1d4f8dbf7d354af273eff4028ef3c336398384",
+        "row": "5a49f684330497a8661cb5779d14577647b85c9920a119d1ed27cdb17d152ff8",
+        "trace": "2e2d54a792b1a5d94748d18e2ae9c2961ca35f4ba98ae6b2a85454720d83cd67",
+        "wrapper": "d437011c7d31040034fede889ee598ea221cf7c5ee7dd55cfc639dea0675c846"
+      },
+      "inspection": "fresh_terminal_semantic_and_complete_trace_checks",
+      "noninitial_callbacks": 1774,
+      "opponent": "round2",
+      "parity_kind": null,
+      "passed": true,
+      "policy": "baseline",
+      "recorded_live_model_counts": {
+        "controller_calls": 719,
+        "crop_forwards": 158,
+        "crop_rows": 158,
+        "gate_evaluations": 0,
+        "task_forwards": 2225,
+        "task_rows": 118853,
+        "teacher_proposals": 0
+      },
+      "seed": 4042989318,
+      "semantics": {
+        "v1": "aef3fc26691895de0e59c4a7da7a7a1100f9ec696e2b505e8d48e252b6db500e",
+        "v2": "e0ed66cf660b35d7e4941067244abd758b458e977da0ebe70c168158bbe464db"
+      },
+      "side": 1,
+      "split": "train",
+      "teacher_ID_disagreements": 55,
+      "terminal_cash_and_score_checked": true
+    },
+    {
+      "actual_callback_and_current_label_binding_checked": true,
+      "candidate_rows": 116782,
+      "crop_records": 157,
+      "game": "train-4042989318-market-0-baseline",
+      "groups": 2206,
+      "input_sha256": {
+        "audit": "c8acdc8739a7f49ec8299c057694bd48b38a624a52d9c79e6c9055597d808eb9",
+        "completion": "2a71428bbd95fe7aa83f912e739d6f78d31efb573a1076b20bfa849d08910570",
+        "input": "5e9b401ba799956e1f83555d857b921c91c6eb69a371614b1090197df488c597",
+        "replay": "2df51870dcf3cae3f4c5570df9837df77ea815258539a3d3b9c07007eb5922ab",
+        "result": "55a9f0c469fcc25b5beb925c810c73dbf906d375ef7bbde1ba4fc19f14b81a92",
+        "row": "32af1cceb5b8e80f98710e6cf82addb2e7b25a24807d8e4efaeccdc2cda46d59",
+        "trace": "4e56aabf2e7429cb5d284f0316670e0691ec67d72502c348e53b66dd253155ea",
+        "wrapper": "b139eae6132dc592ec9a9b8479f06de60e81dc42d365fe9b373910758fb3e71d"
+      },
+      "inspection": "fresh_terminal_semantic_and_complete_trace_checks",
+      "noninitial_callbacks": 1760,
+      "opponent": "market",
+      "parity_kind": null,
+      "passed": true,
+      "policy": "baseline",
+      "recorded_live_model_counts": {
+        "controller_calls": 719,
+        "crop_forwards": 157,
+        "crop_rows": 157,
+        "gate_evaluations": 0,
+        "task_forwards": 2206,
+        "task_rows": 116782,
+        "teacher_proposals": 0
+      },
+      "seed": 4042989318,
+      "semantics": {
+        "v1": "96732c44d9b0781238e25454127ae31dcbdf158f73a5b28c64e6ef3b837178e1",
+        "v2": "92430e727fd370538c81242074ac675d4abfdd8ad89a01763906fba7a4222e48"
+      },
+      "side": 0,
+      "split": "train",
+      "teacher_ID_disagreements": 49,
+      "terminal_cash_and_score_checked": true
+    },
+    {
+      "actual_callback_and_current_label_binding_checked": true,
+      "candidate_rows": 116782,
+      "crop_records": 157,
+      "game": "train-4042989318-market-1-baseline",
+      "groups": 2206,
+      "input_sha256": {
+        "audit": "d7e67a75f69eda5e18fc5a921b4af95c2000c4ae1c352e08d70adc89844b0ba6",
+        "completion": "f332a30038f470f8d8e8d0ded8fee683a767930fc66f788ec691d9bff1e9b375",
+        "input": "cb3cc8525315c85c1123e5206fdb431b9cce71171cbe31750381d53762e61152",
+        "replay": "973152229228ec9137795c8016cc43130822d856b989492aa81fb5cc6b0328cc",
+        "result": "e131f7caec202b071017fc2b57699ebdc83a3ce68a959798776a69f6b6097406",
+        "row": "cb7d96c5b72b177b31f5e3abb5a72470edce33ab7af460da7889fa7ce1d0be00",
+        "trace": "77d1770b58b847bd8f4869fdc92eb0234e61e900acadb62853159bdddc8bf8ac",
+        "wrapper": "edee68bf2d39a6c05f60156f9ba23c9e52ed7cd4ae0e5a5279bd92467e306e66"
+      },
+      "inspection": "fresh_terminal_semantic_and_complete_trace_checks",
+      "noninitial_callbacks": 1760,
+      "opponent": "market",
+      "parity_kind": null,
+      "passed": true,
+      "policy": "baseline",
+      "recorded_live_model_counts": {
+        "controller_calls": 719,
+        "crop_forwards": 157,
+        "crop_rows": 157,
+        "gate_evaluations": 0,
+        "task_forwards": 2206,
+        "task_rows": 116782,
+        "teacher_proposals": 0
+      },
+      "seed": 4042989318,
+      "semantics": {
+        "v1": "141ce6a3dc3c2124741589ca9b2c85e918cdb17244bfbd9a1ab347e0eb49414c",
+        "v2": "d63fbc7150734f508d3724152965bbe661c15620a03bc8841ca786a380b36062"
+      },
+      "side": 1,
+      "split": "train",
+      "teacher_ID_disagreements": 49,
+      "terminal_cash_and_score_checked": true
+    },
+    {
+      "actual_callback_and_current_label_binding_checked": true,
+      "candidate_rows": 119117,
+      "crop_records": 146,
+      "game": "train-1192929723-round2-0-baseline",
+      "groups": 2209,
+      "input_sha256": {
+        "audit": "27c7debb28a5d26457b12066bacd0475bf4f29b920ba8a85837a2968b3de1a77",
+        "completion": "dd2963c3443ea01e79aca3e9d31685b86bbc607ec528d460aac8df70e46f68ab",
+        "input": "c607623e77ca9e0aa809fc044e93ca276f8595efb8838b6f1296b8f8a56ff5b4",
+        "replay": "dfe87a842b39382c44f8251fb7234d666a5e490c8c76883278749bd14c590573",
+        "result": "b5cb515c5be363f4779949afd2a5dd4f9838630428c55572e84d286f279f021d",
+        "row": "fc27f63c1cda3bd57f484e9d783d956645957cfbf812547495862fd77aa18fd6",
+        "trace": "a57b75ea14718a17dbfa9a1a80977715be6f31ce4920ad493811cdff1cd8d5cd",
+        "wrapper": "52bc73b4cd3deb7d6226da832567a86b2b173cb831c53090e4f8f7ce65a6673e"
+      },
+      "inspection": "fresh_terminal_semantic_and_complete_trace_checks",
+      "noninitial_callbacks": 1766,
+      "opponent": "round2",
+      "parity_kind": null,
+      "passed": true,
+      "policy": "baseline",
+      "recorded_live_model_counts": {
+        "controller_calls": 719,
+        "crop_forwards": 146,
+        "crop_rows": 146,
+        "gate_evaluations": 0,
+        "task_forwards": 2209,
+        "task_rows": 119117,
+        "teacher_proposals": 0
+      },
+      "seed": 1192929723,
+      "semantics": {
+        "v1": "94ce0d7724f2bedb001cec8b28b12d5ad3b5de21e37748705656feacb488fd26",
+        "v2": "a0ed9c1d24d7e5c03d9b1749532d9141730813266492080b4e4009b70479dcb6"
+      },
+      "side": 0,
+      "split": "train",
+      "teacher_ID_disagreements": 70,
+      "terminal_cash_and_score_checked": true
+    },
+    {
+      "actual_callback_and_current_label_binding_checked": true,
+      "candidate_rows": 119117,
+      "crop_records": 146,
+      "game": "train-1192929723-round2-1-baseline",
+      "groups": 2209,
+      "input_sha256": {
+        "audit": "c6c6bd6292f6925bfa13a14a45c3540497f78cbd93fb4cc38f699cd9f5a7e645",
+        "completion": "eaf786f845fec8a25296b62962bd3d8bb2707c0b3a3743b32e7742885b219f93",
+        "input": "14fefc8f733df77e4fb188c628d67f11a0327d02d9c8c8e707710ea90c0c27ca",
+        "replay": "b26299af688792998675f824751d21e02dd79beccb49826a7c044280c79f9610",
+        "result": "8115190b963f96211e091802a72f61cd777601660ec52dacd310774065712029",
+        "row": "bfe8854e3a70b0a615b1c14b858cb1a1107f97366af1bf292fa8b40d9252a317",
+        "trace": "2d3d4de8cd67ab2af517d87201707cfc7008e6d772539fd108b5ac0910a6024e",
+        "wrapper": "d3bd3de653f1997f815a56094c0e74b4167d316ff617843c4787f95e2f9587f4"
+      },
+      "inspection": "fresh_terminal_semantic_and_complete_trace_checks",
+      "noninitial_callbacks": 1766,
+      "opponent": "round2",
+      "parity_kind": null,
+      "passed": true,
+      "policy": "baseline",
+      "recorded_live_model_counts": {
+        "controller_calls": 719,
+        "crop_forwards": 146,
+        "crop_rows": 146,
+        "gate_evaluations": 0,
+        "task_forwards": 2209,
+        "task_rows": 119117,
+        "teacher_proposals": 0
+      },
+      "seed": 1192929723,
+      "semantics": {
+        "v1": "b9a47a652c2f078910c15c5963f3e46f0672ad2dd2aee01afd0c235573b17a8f",
+        "v2": "70947bfeef4512dfb69561219679b7aeeaff191d3b1a14a743ca280971c28560"
+      },
+      "side": 1,
+      "split": "train",
+      "teacher_ID_disagreements": 70,
+      "terminal_cash_and_score_checked": true
+    },
+    {
+      "actual_callback_and_current_label_binding_checked": true,
+      "candidate_rows": 120274,
+      "crop_records": 157,
+      "game": "train-1192929723-market-0-baseline",
+      "groups": 2259,
+      "input_sha256": {
+        "audit": "dee1fa8f22decaf15ac71072fb6329f6c32734b4ef95e625e11b53f2010c9290",
+        "completion": "343f7875c6e5bf175b425928403c8b18021185bec482ca68bdcf0970a9ac23a3",
+        "input": "ef352a11f2f1e62d41583a5ddcf1f67580991bebf06e8bdbb9de8e2221c3613c",
+        "replay": "d50812a34aeaa1653eeea463d74e8192e79d114476c069c2e95ea15f47e8c863",
+        "result": "106fa247ddef8b217cc4eabf03188291f1269815a221259ea1a14ff6110ebb79",
+        "row": "748fc38a76e978cb206397ae79cfd16cc20f802f103f822071d848f56a11ad98",
+        "trace": "95139d1766992806664234a477ab37691d12daeeca906091511694f0ec40514c",
+        "wrapper": "daa93f4ec7658e7c5605213f520408759f540840ae5c0a1ad046b46f996ec030"
+      },
+      "inspection": "fresh_terminal_semantic_and_complete_trace_checks",
+      "noninitial_callbacks": 1810,
+      "opponent": "market",
+      "parity_kind": null,
+      "passed": true,
+      "policy": "baseline",
+      "recorded_live_model_counts": {
+        "controller_calls": 719,
+        "crop_forwards": 157,
+        "crop_rows": 157,
+        "gate_evaluations": 0,
+        "task_forwards": 2259,
+        "task_rows": 120274,
+        "teacher_proposals": 0
+      },
+      "seed": 1192929723,
+      "semantics": {
+        "v1": "da19be39ab7e964cb1b2becd19d13c8831e2689995c65a20a0c724ce8b297193",
+        "v2": "f1ba425faa4eae8ac0af7d887db09438defb21be66faaa7917e9b874e39d1cb7"
+      },
+      "side": 0,
+      "split": "train",
+      "teacher_ID_disagreements": 82,
+      "terminal_cash_and_score_checked": true
+    },
+    {
+      "actual_callback_and_current_label_binding_checked": true,
+      "candidate_rows": 120274,
+      "crop_records": 157,
+      "game": "train-1192929723-market-1-baseline",
+      "groups": 2259,
+      "input_sha256": {
+        "audit": "83a7a548ef02eeae06beb69131f66c18838fa5c6badf8399b9d871f935757d1e",
+        "completion": "c355a948db94744f72979bdd643a42fafa12b99461d78b04bcf91e2e0067e0e6",
+        "input": "05b8f90356c7e36204a5f92c2468e43bb8395b42b0b7efe9d638a2e1ee5381e3",
+        "replay": "d9e2d0b6ab341133aa27f7ef000d9307a3491d8a96ae7333098868af5f8a8e93",
+        "result": "61c807a5190782e29fea53924293f4e1b3c6ed9b952511e96a5bfe08df1bd712",
+        "row": "11a6ea3cae49cd96e008613a14475aa4a2343aa8600a907719a98f2cd07afbec",
+        "trace": "19ccfbc70ed90f6f0a53e41a4f52e623e78f49fc0ea1667746b273906b7dfc85",
+        "wrapper": "1b8d843a57afb45c1a6909d15fbd9a5ffe5880675f90cebc5c61a8ec7821984a"
+      },
+      "inspection": "fresh_terminal_semantic_and_complete_trace_checks",
+      "noninitial_callbacks": 1810,
+      "opponent": "market",
+      "parity_kind": null,
+      "passed": true,
+      "policy": "baseline",
+      "recorded_live_model_counts": {
+        "controller_calls": 719,
+        "crop_forwards": 157,
+        "crop_rows": 157,
+        "gate_evaluations": 0,
+        "task_forwards": 2259,
+        "task_rows": 120274,
+        "teacher_proposals": 0
+      },
+      "seed": 1192929723,
+      "semantics": {
+        "v1": "24266a881e3c3fdad98e48d10a463ccb6b770e8f0e3ccd1ae09d7b1492d45472",
+        "v2": "d60a6e450034dfdfc203f714bf72136359118501a5f446f2a5aa96a568ef36ef"
+      },
+      "side": 1,
+      "split": "train",
+      "teacher_ID_disagreements": 82,
+      "terminal_cash_and_score_checked": true
+    },
+    {
+      "actual_callback_and_current_label_binding_checked": true,
+      "candidate_rows": 113173,
+      "crop_records": 155,
+      "game": "train-3641798866-round2-0-baseline",
+      "groups": 2167,
+      "input_sha256": {
+        "audit": "91444246963b7cb9c5394c9950bc0dd13254b4f5967caee1679106c5f5e4dd71",
+        "completion": "cf2796e9b11f4f6149a04524df866ef5d6cf8c15cf145503ba26f7a7cd816453",
+        "input": "3c23c2fe26395a5a670de2e0943e41279587d49ef6375f87017a6b2009b0d82b",
+        "replay": "20cf583f39ec0eebba37ab1c534d4d5cbaa1421dfbf671ac8dce9be311d4d18c",
+        "result": "87f90f0bcaf1376c07d3466db6bbbd9830850e05481abfc3f3c1a21d55891885",
+        "row": "22b51f386dcdbe5266a023774e9d2f6b3679f6a42703c84f214b091ca243dffa",
+        "trace": "b43131222336ababe3614b99d567eb549517d8a99110b8f59afd419e9b0d1dda",
+        "wrapper": "f18d8043ab97890d5c4d0b05dc5767a4ac43fdbb9d8937f61637c9fa373a0c50"
+      },
+      "inspection": "fresh_terminal_semantic_and_complete_trace_checks",
+      "noninitial_callbacks": 1718,
+      "opponent": "round2",
+      "parity_kind": null,
+      "passed": true,
+      "policy": "baseline",
+      "recorded_live_model_counts": {
+        "controller_calls": 719,
+        "crop_forwards": 155,
+        "crop_rows": 155,
+        "gate_evaluations": 0,
+        "task_forwards": 2167,
+        "task_rows": 113173,
+        "teacher_proposals": 0
+      },
+      "seed": 3641798866,
+      "semantics": {
+        "v1": "994ccf3acc931d4746db00abd79bba8ee20df192cfe208062b720db600d99e95",
+        "v2": "88df505cfc417d04255626ad93b4f2e7089ecf133c7845033809916e640531e6"
+      },
+      "side": 0,
+      "split": "train",
+      "teacher_ID_disagreements": 37,
+      "terminal_cash_and_score_checked": true
+    },
+    {
+      "actual_callback_and_current_label_binding_checked": true,
+      "candidate_rows": 113173,
+      "crop_records": 155,
+      "game": "train-3641798866-round2-1-baseline",
+      "groups": 2167,
+      "input_sha256": {
+        "audit": "929985c3b66e1eb38764314d725792623bf1185c2e268f5882afd2f5d181ba02",
+        "completion": "535aa555ef83abf432bac6a55bf3509beeecb4472fad8492bdbe7ef6a05398a2",
+        "input": "36bf15d6df5fec9d7981900676ff3fb93ba44fd6be5afb9509034e5e1be21d47",
+        "replay": "1618143993c1ca2bd3be12c5b44dc6e1a7b55b1de40b43cd48304bc65e77774a",
+        "result": "41395e5cf8bdb52c65ecf988f91142744c61e587dae12dafaafdaef0f1a5dbc0",
+        "row": "baa798b84cbeff84d1774d092d7608cb851eb701e6bbde2c671d1c87bffc00b5",
+        "trace": "be6255c68f1dfd9318093160993728246b863ac521e0cfffc5e611edc2673e0e",
+        "wrapper": "248eecceb0f83c277cf2a04a9acbf82145b7e6d9c508538d4a2e162fac1f7b90"
+      },
+      "inspection": "fresh_terminal_semantic_and_complete_trace_checks",
+      "noninitial_callbacks": 1718,
+      "opponent": "round2",
+      "parity_kind": null,
+      "passed": true,
+      "policy": "baseline",
+      "recorded_live_model_counts": {
+        "controller_calls": 719,
+        "crop_forwards": 155,
+        "crop_rows": 155,
+        "gate_evaluations": 0,
+        "task_forwards": 2167,
+        "task_rows": 113173,
+        "teacher_proposals": 0
+      },
+      "seed": 3641798866,
+      "semantics": {
+        "v1": "bee5cbbec6392a65b791ed7df6c4c2e615a1445f5ffe4f1b83ec63c4fad67232",
+        "v2": "9582522037c6c70d6c8d7539968ee8050193b425f52ff57ff5719cc1a8bdbab4"
+      },
+      "side": 1,
+      "split": "train",
+      "teacher_ID_disagreements": 37,
+      "terminal_cash_and_score_checked": true
+    },
+    {
+      "actual_callback_and_current_label_binding_checked": true,
+      "candidate_rows": 109702,
+      "crop_records": 154,
+      "game": "train-3641798866-market-0-baseline",
+      "groups": 2138,
+      "input_sha256": {
+        "audit": "e14156c28de9f028fe19cedff637c9aaefbe3c46a59cefcb34834943433f07f2",
+        "completion": "dfa32626282e9b00be392784096c4804d05506f785c135fe3dd5b1484c188aba",
+        "input": "6aa108c84687ef07435db181bd98c88f711a026dc510e5d75e44c18e46750d35",
+        "replay": "0674e08b2da250736b9d4966ede9841e26f03abad2bcec283387ec4e57373fff",
+        "result": "ca796594833c9f9f6ff38c8ac035eca6c49151b143d5de5ee568bf659b8fd283",
+        "row": "b4aa3b08361437557b52a97c0fb673bfc9d6b8b42fc9dd7e1103e544f4ec474b",
+        "trace": "63addf6c5acab492da2210ad9928c146f799d3e449b9289583f70ced813e1728",
+        "wrapper": "04d41f74bfc40b2338e15a7e35dbd400f929a1554a59c4077c6d1fb03f9675b3"
+      },
+      "inspection": "fresh_terminal_semantic_and_complete_trace_checks",
+      "noninitial_callbacks": 1694,
+      "opponent": "market",
+      "parity_kind": null,
+      "passed": true,
+      "policy": "baseline",
+      "recorded_live_model_counts": {
+        "controller_calls": 719,
+        "crop_forwards": 154,
+        "crop_rows": 154,
+        "gate_evaluations": 0,
+        "task_forwards": 2138,
+        "task_rows": 109702,
+        "teacher_proposals": 0
+      },
+      "seed": 3641798866,
+      "semantics": {
+        "v1": "92c0bf435c356219b2f595497177c2d0483fc61b901f4748fece20b1dfec912d",
+        "v2": "e8fd7eb1e9120bef24f2cf8955f0d67616daa15c70070630ae5a625f3488a944"
+      },
+      "side": 0,
+      "split": "train",
+      "teacher_ID_disagreements": 43,
+      "terminal_cash_and_score_checked": true
+    },
+    {
+      "actual_callback_and_current_label_binding_checked": true,
+      "candidate_rows": 109702,
+      "crop_records": 154,
+      "game": "train-3641798866-market-1-baseline",
+      "groups": 2138,
+      "input_sha256": {
+        "audit": "eda3398414b5372e2da66ccccd3476af6e21bbb724a139f408a190f89b56128a",
+        "completion": "a90dd807bcba928a5d697002abad9f64cee68dc12a098f17bfde76929c48c021",
+        "input": "e9be3692aaf509f360a87e29559738402c570a5ce947e9902a350b987f66ed10",
+        "replay": "a3b20dbb5b20a5cb05ee5c89d6740ca3358201f9a67e0373932d0200de4a9ec8",
+        "result": "5bf40ad14449114a3db997c26b289939d80ffeae1ee918dbbfc6576d5c8a54ed",
+        "row": "f6bc24af26ca5026300d2b6e33c4008462fa74e9d6469dd4ff660eccf0bb76c9",
+        "trace": "d3d0c01b30e6ca0f88e41651123270d95b3ab4eb701622bd098abe568dee6ff2",
+        "wrapper": "35a80ad2ce1501f6957d718aa7b1d3358ce2dfd98dabd2cc669e5d670ebd5277"
+      },
+      "inspection": "fresh_terminal_semantic_and_complete_trace_checks",
+      "noninitial_callbacks": 1694,
+      "opponent": "market",
+      "parity_kind": null,
+      "passed": true,
+      "policy": "baseline",
+      "recorded_live_model_counts": {
+        "controller_calls": 719,
+        "crop_forwards": 154,
+        "crop_rows": 154,
+        "gate_evaluations": 0,
+        "task_forwards": 2138,
+        "task_rows": 109702,
+        "teacher_proposals": 0
+      },
+      "seed": 3641798866,
+      "semantics": {
+        "v1": "63a63030a810c8954096cea2a61797dd6d61b8ff2e5be3b2e5f6e911074b614e",
+        "v2": "8bfbc38a2e2eb94e2bffcfd0a3e24bb4c8b2ba94111c4680715d5c7cd1ce6179"
+      },
+      "side": 1,
+      "split": "train",
+      "teacher_ID_disagreements": 43,
+      "terminal_cash_and_score_checked": true
+    },
+    {
+      "actual_callback_and_current_label_binding_checked": true,
+      "candidate_rows": 119734,
+      "crop_records": 149,
+      "game": "dev-672488797-round2-0-baseline",
+      "groups": 2214,
+      "input_sha256": {
+        "audit": "ac9a26f5462470406730512c4f2ee3a240dda89a240674b5d83f8ca8850531bc",
+        "completion": "cc92e4a3fc18450bd72acaf8189222047a6042ceacaaf7b7c54d0fe6a292babd",
+        "input": "19c3aac1d66ac529c66751e1bc3082586aea0dcb7eac98ad7fcb470f0a909cfa",
+        "replay": "836867e4f832c9b214b4fdf68deec95889c2c890c97448e3abe33307892b7ce7",
+        "result": "b1b6ac6e10a64c1831aeccba0cb1b03ea2472ae7c59eb8342b298d2e6c9cf443",
+        "row": "2ddcc70fc79b6fb0ad8d77de805959098573d49b372c29f35a6e7d6fa9b6e90f",
+        "trace": "82321161726b024bf22807a321b60e3cf3cf43a7e0566451361f99257ab64c0b",
+        "wrapper": "e52ce36e47cd8e8c7e050ac268bc7c42d6a809ef0098950d0f9d11ac17af06cc"
+      },
+      "inspection": "fresh_terminal_semantic_and_complete_trace_checks",
+      "noninitial_callbacks": 1773,
+      "opponent": "round2",
+      "parity_kind": null,
+      "passed": true,
+      "policy": "baseline",
+      "recorded_live_model_counts": {
+        "controller_calls": 719,
+        "crop_forwards": 149,
+        "crop_rows": 149,
+        "gate_evaluations": 0,
+        "task_forwards": 2214,
+        "task_rows": 119734,
+        "teacher_proposals": 0
+      },
+      "seed": 672488797,
+      "semantics": {
+        "v1": "0526469a5f032077daaaddb22276320bc25f97744f702f8544972a6f4ce3bba1",
+        "v2": "e32e60c9b17096a05ed4e893b3bff488f3848ee0b1fef8eb445d3795f23e094c"
+      },
+      "side": 0,
+      "split": "dev",
+      "teacher_ID_disagreements": 84,
+      "terminal_cash_and_score_checked": true
+    },
+    {
+      "actual_callback_and_current_label_binding_checked": true,
+      "candidate_rows": 119734,
+      "crop_records": 149,
+      "game": "dev-672488797-round2-1-baseline",
+      "groups": 2214,
+      "input_sha256": {
+        "audit": "7d3b90986a53ec50a7b2de2a1123b4cb22f602830b7dcf855a1cdd653458a05e",
+        "completion": "78676ab848d203c57730a8e7bf482d8bad4bcff34ffad802e80e69bc045c044c",
+        "input": "8f3ed40cb1caf6705e1b0abf57d887ca2e4e6a4f1b94673e1893e054a4857d69",
+        "replay": "bb348f2c7374dba1efb20778e2861e68a10c87674b96f2d55d49f6ff6673ee58",
+        "result": "a73d238ed6c6bbb027195619cb7479aadaccfa0903ac52239eb91836d66526ca",
+        "row": "00f23a1976c9fd4829cb5f4e666b5a90b42e477ac0e3b9ac30de3004c8257a70",
+        "trace": "cd309f61cf3348f20b8163e2ed7fa7d462ab309e5b2d8f5e1454f96028f9138a",
+        "wrapper": "11fa6a2515237631d596a17b9f05d33115b0a1944fec5d8e79a63dbb7aa19cd7"
+      },
+      "inspection": "fresh_terminal_semantic_and_complete_trace_checks",
+      "noninitial_callbacks": 1773,
+      "opponent": "round2",
+      "parity_kind": null,
+      "passed": true,
+      "policy": "baseline",
+      "recorded_live_model_counts": {
+        "controller_calls": 719,
+        "crop_forwards": 149,
+        "crop_rows": 149,
+        "gate_evaluations": 0,
+        "task_forwards": 2214,
+        "task_rows": 119734,
+        "teacher_proposals": 0
+      },
+      "seed": 672488797,
+      "semantics": {
+        "v1": "ebb0ba6c3b4467b0be84a36b54c2efa7ceae6db74ba3c57223095e3b22fbfd82",
+        "v2": "e3be3a24e82f835fc4a006fb29da2a9828b05ddeed7747fc328df6afbd585b77"
+      },
+      "side": 1,
+      "split": "dev",
+      "teacher_ID_disagreements": 84,
+      "terminal_cash_and_score_checked": true
+    },
+    {
+      "actual_callback_and_current_label_binding_checked": true,
+      "candidate_rows": 119831,
+      "crop_records": 160,
+      "game": "dev-672488797-market-0-baseline",
+      "groups": 2236,
+      "input_sha256": {
+        "audit": "b204f5a8806099b23f1e4a112fb19b8513f828b55ccab33805669111b7a1fbee",
+        "completion": "2f25e1f4fbe4071846abdda898f1c7aebd5d3a41adf8d1c88fe0f4953a5eba5b",
+        "input": "65e2f2a9179a1752a8610bf5653f7459488fb4455125abefed0f8bb1c46f4782",
+        "replay": "60fee3132792c6f4bc238a0f58330fec5442b67ae0fba736085162b5cdb37e50",
+        "result": "6abc1c854fd3cc693f31f86be8a8301bf4a1953fe1c561f242292aadff4ee0e4",
+        "row": "7c99be1dd455a20f360e772c91d6af0375523684da23c98de2deff39d809f797",
+        "trace": "1e9b9d7cfc8ddb5ceaa69bafd8eb322b02ee68f35bf057513b93a661839299a9",
+        "wrapper": "d98671fe1aca2ef9d45257f8e9df9f29a57812f99a3cb49ceb26d92506e223db"
+      },
+      "inspection": "fresh_terminal_semantic_and_complete_trace_checks",
+      "noninitial_callbacks": 1788,
+      "opponent": "market",
+      "parity_kind": null,
+      "passed": true,
+      "policy": "baseline",
+      "recorded_live_model_counts": {
+        "controller_calls": 719,
+        "crop_forwards": 160,
+        "crop_rows": 160,
+        "gate_evaluations": 0,
+        "task_forwards": 2236,
+        "task_rows": 119831,
+        "teacher_proposals": 0
+      },
+      "seed": 672488797,
+      "semantics": {
+        "v1": "6e694004c6ed039ad26f823b23cf5590dcb90ad03fdec7767abd5bd757441f01",
+        "v2": "c7679bbd0b212b9529e58c7f886bd168671a7dbc91c25b25ffe3402cb604ec87"
+      },
+      "side": 0,
+      "split": "dev",
+      "teacher_ID_disagreements": 62,
+      "terminal_cash_and_score_checked": true
+    },
+    {
+      "actual_callback_and_current_label_binding_checked": true,
+      "candidate_rows": 119831,
+      "crop_records": 160,
+      "game": "dev-672488797-market-1-baseline",
+      "groups": 2236,
+      "input_sha256": {
+        "audit": "507667ee99b763d9eb505be1e0de6b3e8b68ba2beb0025050097414d52df123d",
+        "completion": "8195e980589384e9e9dcb97fa4c71b9e1a4392484a378abad0f193434a5cd87c",
+        "input": "fd217ae243722043d58c74373794b3d523fe0f69a8016c001e3a9c5f5389f0a9",
+        "replay": "8b51f1f9ebe147010f36484fafd66b1a62c76d003573b401a8e9072e77fad545",
+        "result": "cc4ea810112c576281de218cbb4e5e210fcdc6b1080fb30f9f86d8f7e138e424",
+        "row": "d9c910abcb9b5a0c7975d696175677b4b1decd0c9b5ded5f585d35dfee8d06f1",
+        "trace": "58496d15bcc771f7033c326a5878f098ff373d877988334b0fd5371752ff6186",
+        "wrapper": "21ae0a82cbb4428e548fddd17ea7dcc69494cd2661ad4abfd3d6287ba88c5fb9"
+      },
+      "inspection": "fresh_terminal_semantic_and_complete_trace_checks",
+      "noninitial_callbacks": 1788,
+      "opponent": "market",
+      "parity_kind": null,
+      "passed": true,
+      "policy": "baseline",
+      "recorded_live_model_counts": {
+        "controller_calls": 719,
+        "crop_forwards": 160,
+        "crop_rows": 160,
+        "gate_evaluations": 0,
+        "task_forwards": 2236,
+        "task_rows": 119831,
+        "teacher_proposals": 0
+      },
+      "seed": 672488797,
+      "semantics": {
+        "v1": "54928f3d1042c7c46b6aabab2b136c80bb70898ce105bc8223a182e92cfb0b5b",
+        "v2": "81a78b06f1fa1e9bfed80c9e974ac7b632343e362241c810e3c703f1cc082a87"
+      },
+      "side": 1,
+      "split": "dev",
+      "teacher_ID_disagreements": 62,
+      "terminal_cash_and_score_checked": true
+    },
+    {
+      "actual_callback_and_current_label_binding_checked": true,
+      "candidate_rows": 119117,
+      "crop_records": 155,
+      "game": "dev-3774138801-round2-0-baseline",
+      "groups": 2223,
+      "input_sha256": {
+        "audit": "60e50c67cc48ad67c4131b685a549a250e781c00d09fcba6f4ec865aee389a2e",
+        "completion": "80ab8b46cb579ce94f5175ca98296f03586078d0b340dc7b9f0113afd6303ca7",
+        "input": "bc520b33924a27519fe61b86605911049ade46dfe90e839ea67d763a3bf1e105",
+        "replay": "d0763afbf230c5b773255140c96476f0e94b8474166ff998920fc8c65b63dade",
+        "result": "9b6c756fd1ad78f2b648e5c05bf3a1f260645876e4fdac7355889764afeef746",
+        "row": "993e0b6f1b5b46b34fe16310cb8ad0543ef2e40ce7de1e8578b53d2f39996530",
+        "trace": "80e1de4cc51d720aeabcc189a0287f6555e5dc10235808497381a81a4870a4b0",
+        "wrapper": "b23ccdffb20476746d3b34a241dd7dc2629c78cff6782d6b4d584634455bfe1f"
+      },
+      "inspection": "fresh_terminal_semantic_and_complete_trace_checks",
+      "noninitial_callbacks": 1774,
+      "opponent": "round2",
+      "parity_kind": null,
+      "passed": true,
+      "policy": "baseline",
+      "recorded_live_model_counts": {
+        "controller_calls": 719,
+        "crop_forwards": 155,
+        "crop_rows": 155,
+        "gate_evaluations": 0,
+        "task_forwards": 2223,
+        "task_rows": 119117,
+        "teacher_proposals": 0
+      },
+      "seed": 3774138801,
+      "semantics": {
+        "v1": "9383d7eb7ad12b669b04669c028a768f1b57e362f019bffdca262b4abb60932d",
+        "v2": "64b854dc6e4033434322dec18979ce44b1f7756374d15af14025c2b879cc1287"
+      },
+      "side": 0,
+      "split": "dev",
+      "teacher_ID_disagreements": 92,
+      "terminal_cash_and_score_checked": true
+    },
+    {
+      "actual_callback_and_current_label_binding_checked": true,
+      "candidate_rows": 119060,
+      "crop_records": 154,
+      "game": "dev-3774138801-round2-1-baseline",
+      "groups": 2212,
+      "input_sha256": {
+        "audit": "eb6aedc5cf13c192cdad2e63a4daba928029441860937bc3d27939f7504a8458",
+        "completion": "ba80078ce19113795ad1ad81c88fd53f40cb3725587933630f032c6f50568188",
+        "input": "acb249ec552d309dd8c102891274626ea4c17a82ff9545a9a911061afb2ef555",
+        "replay": "ee5d5fe756df08044101a09789f92e0cb827e07ef7bc0ab5f0b406302e9e476a",
+        "result": "76a8c7346b6b884d61242dd86e53c3c606a452e22a8399596b6eee38ba955da0",
+        "row": "056a14ff4fdfa46e384477d83e6f6e75159a504d1eb80a9e7e9a26803da0572b",
+        "trace": "3761cbb6a6bc075a461a14ba6ee092cda6b400dbceba8348589c06350f7fa9b9",
+        "wrapper": "801a51b97586e9b63d1dd5bc71833f930bdb7b93a79c513327c88e4ac987eda9"
+      },
+      "inspection": "fresh_terminal_semantic_and_complete_trace_checks",
+      "noninitial_callbacks": 1769,
+      "opponent": "round2",
+      "parity_kind": null,
+      "passed": true,
+      "policy": "baseline",
+      "recorded_live_model_counts": {
+        "controller_calls": 719,
+        "crop_forwards": 154,
+        "crop_rows": 154,
+        "gate_evaluations": 0,
+        "task_forwards": 2212,
+        "task_rows": 119060,
+        "teacher_proposals": 0
+      },
+      "seed": 3774138801,
+      "semantics": {
+        "v1": "f6e1c028ed984dbb4b5c5534095407dfa30361245dc5d13bbe0622f48b6fbfdd",
+        "v2": "24f340067bf9c59deb315cd6a601fdd77557c4168f6eddefce835d25eb981917"
+      },
+      "side": 1,
+      "split": "dev",
+      "teacher_ID_disagreements": 79,
+      "terminal_cash_and_score_checked": true
+    },
+    {
+      "actual_callback_and_current_label_binding_checked": true,
+      "candidate_rows": 118928,
+      "crop_records": 155,
+      "game": "dev-3774138801-market-0-baseline",
+      "groups": 2225,
+      "input_sha256": {
+        "audit": "58589d8dd7e5dee2165fa5198e8f5c16a39afc299654dadfc3e051a487d5c0b4",
+        "completion": "9983c5ec780cfb9b213d47b98ed9c5bd54d514cf846892374f6a43434c1b7656",
+        "input": "6fc15492bcc273d05c71c9d79a94855d0d211c907a42eb5f7910d8a13327da8b",
+        "replay": "9c7255d417d93c06063e5f3d5c8ee5bc431a18feaa34a61b064004670f5087e1",
+        "result": "63b6ac54f5b69406c4f49c44264f7db7c0fd771520594560ec4e72fca46c7751",
+        "row": "50a7687145cac8e57fc65630edf54a15ee31c7072b5611afce8121743843816a",
+        "trace": "6d13cd6c4d887271fe05d04b3cd88df89a6c36cf70e2363de434559a2f686874",
+        "wrapper": "a5be6090b4303942bb6ed494772e78e6899992244b429531190e4be5623b3362"
+      },
+      "inspection": "fresh_terminal_semantic_and_complete_trace_checks",
+      "noninitial_callbacks": 1781,
+      "opponent": "market",
+      "parity_kind": null,
+      "passed": true,
+      "policy": "baseline",
+      "recorded_live_model_counts": {
+        "controller_calls": 719,
+        "crop_forwards": 155,
+        "crop_rows": 155,
+        "gate_evaluations": 0,
+        "task_forwards": 2225,
+        "task_rows": 118928,
+        "teacher_proposals": 0
+      },
+      "seed": 3774138801,
+      "semantics": {
+        "v1": "010dfbe08e03d9b132133e751e3d64f522cf4a8642b55dc5807e0576fe39490a",
+        "v2": "cfcd5b2eb9322c42cfd213efe8912df29d50751345baf110a9a5566e3caa7c02"
+      },
+      "side": 0,
+      "split": "dev",
+      "teacher_ID_disagreements": 72,
+      "terminal_cash_and_score_checked": true
+    },
+    {
+      "actual_callback_and_current_label_binding_checked": true,
+      "candidate_rows": 118965,
+      "crop_records": 155,
+      "game": "dev-3774138801-market-1-baseline",
+      "groups": 2226,
+      "input_sha256": {
+        "audit": "57a9754fc10793ad5c7277be75fa2e5e7a7aad83b3a362d095d0e15bb104b91a",
+        "completion": "5df12aa117285e3625c5d2268a4755b6f083664dbf835786bf5148afe78e5d01",
+        "input": "d4323f1b6b9def71b53a19495c11d6d1bd25d73bba34f558b6abec8d4b6a180f",
+        "replay": "5f53cef5f88a9b7f5d3d1b1d97cb55e0b785f3c58e48787f5eb04cabad2607d9",
+        "result": "de4045a70fc6b4499a7b82c119cc9a2518446244c9903b65fa1fa2da1fd21d27",
+        "row": "688a51926a6674092bb4b88b3eb6406f8961c51561631a09f082e2ff3eefaf19",
+        "trace": "6a5a21f4ed572eba54b17eb374f7143c44f8326ee94e69fa4dbf5c193ab36ebd",
+        "wrapper": "e1c313ea34d901003ae63586b5f81c37091d1927bedf98b2434dcc73ce9fa017"
+      },
+      "inspection": "fresh_terminal_semantic_and_complete_trace_checks",
+      "noninitial_callbacks": 1783,
+      "opponent": "market",
+      "parity_kind": null,
+      "passed": true,
+      "policy": "baseline",
+      "recorded_live_model_counts": {
+        "controller_calls": 719,
+        "crop_forwards": 155,
+        "crop_rows": 155,
+        "gate_evaluations": 0,
+        "task_forwards": 2226,
+        "task_rows": 118965,
+        "teacher_proposals": 0
+      },
+      "seed": 3774138801,
+      "semantics": {
+        "v1": "63cbfd377c2506472c79757d268148b39dc4b3ecbd7c67d0f9444303871e2e52",
+        "v2": "6114439c1ff93c1225508bfb84424204642c8a58d0eda8f57841d3d93c083da9"
+      },
+      "side": 1,
+      "split": "dev",
+      "teacher_ID_disagreements": 72,
+      "terminal_cash_and_score_checked": true
+    }
+  ],
+  "reviewer_role": "independent result reviewer; not implementation author",
+  "schema": "task-dagger-once-independent-collection-review-v1",
+  "source_sha256": {
+    "decision/api.py": "3ef4025bde61d240b298cbe4d31291f25021baaf5b396f5540bbfcdda4231917",
+    "decision/semantics.py": "9ac62d0df7adca84c0feff805b2979bb45f9f9f4c2064d1e2b5c48efd3e779a5",
+    "learning/task_choice_v1/features.py": "b69e3fb590fb5c1159193d112977aa03170557dc47b8aa19bcffe0f09737c7d4"
+  }
+}

@@ -1,0 +1,1213 @@
+{
+  "passed": true,
+  "splits": {
+    "train": {
+      "groups": 34552,
+      "candidate_rows": 1779384,
+      "teacher_ID_disagreements": 898,
+      "games": 16
+    },
+    "validation": {
+      "groups": 17786,
+      "candidate_rows": 955200,
+      "teacher_ID_disagreements": 607,
+      "games": 8
+    }
+  },
+  "games": [
+    {
+      "game": "train-3915533099-round2-0-baseline",
+      "split": "train",
+      "policy": "baseline",
+      "seed": 3915533099,
+      "opponent": "round2",
+      "side": 0,
+      "passed": true,
+      "label_binding_passed": true,
+      "states": 720,
+      "action_turns": 719,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "agent_errors": 0,
+      "groups": 2051,
+      "candidate_rows": 98465,
+      "teacher_ID_disagreements": 66,
+      "perop": {
+        "DIG": {
+          "groups": 4,
+          "candidate_rows": 431,
+          "teacher_ID_disagreements": 0
+        },
+        "FERTILIZE": {
+          "groups": 44,
+          "candidate_rows": 4950,
+          "teacher_ID_disagreements": 7
+        },
+        "HARVEST": {
+          "groups": 171,
+          "candidate_rows": 10012,
+          "teacher_ID_disagreements": 19
+        },
+        "PLANT": {
+          "groups": 152,
+          "candidate_rows": 5650,
+          "teacher_ID_disagreements": 4
+        },
+        "WATER": {
+          "groups": 1680,
+          "candidate_rows": 77422,
+          "teacher_ID_disagreements": 36
+        }
+      },
+      "trace_sha256": "ea4e8772ef96c087119fdd0d436048a9b402210ea0cf7d6be159b87edbec28c8",
+      "schema_sha256": "235eef551a799e7dc61e8b25448f9b7f6215bf6f97d044bf84b6edf9bd91ea56"
+    },
+    {
+      "game": "train-3915533099-round2-1-baseline",
+      "split": "train",
+      "policy": "baseline",
+      "seed": 3915533099,
+      "opponent": "round2",
+      "side": 1,
+      "passed": true,
+      "label_binding_passed": true,
+      "states": 720,
+      "action_turns": 719,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "agent_errors": 0,
+      "groups": 2051,
+      "candidate_rows": 98465,
+      "teacher_ID_disagreements": 66,
+      "perop": {
+        "DIG": {
+          "groups": 4,
+          "candidate_rows": 431,
+          "teacher_ID_disagreements": 0
+        },
+        "FERTILIZE": {
+          "groups": 44,
+          "candidate_rows": 4950,
+          "teacher_ID_disagreements": 7
+        },
+        "HARVEST": {
+          "groups": 171,
+          "candidate_rows": 10012,
+          "teacher_ID_disagreements": 19
+        },
+        "PLANT": {
+          "groups": 152,
+          "candidate_rows": 5650,
+          "teacher_ID_disagreements": 4
+        },
+        "WATER": {
+          "groups": 1680,
+          "candidate_rows": 77422,
+          "teacher_ID_disagreements": 36
+        }
+      },
+      "trace_sha256": "db052af6c949401e00e8f515e71d084aec6a59741be82582ba7bac15a6d7afe5",
+      "schema_sha256": "235eef551a799e7dc61e8b25448f9b7f6215bf6f97d044bf84b6edf9bd91ea56"
+    },
+    {
+      "game": "train-3915533099-market-0-baseline",
+      "split": "train",
+      "policy": "baseline",
+      "seed": 3915533099,
+      "opponent": "market",
+      "side": 0,
+      "passed": true,
+      "label_binding_passed": true,
+      "states": 720,
+      "action_turns": 719,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "agent_errors": 0,
+      "groups": 2021,
+      "candidate_rows": 93326,
+      "teacher_ID_disagreements": 47,
+      "perop": {
+        "DIG": {
+          "groups": 4,
+          "candidate_rows": 335,
+          "teacher_ID_disagreements": 0
+        },
+        "FERTILIZE": {
+          "groups": 35,
+          "candidate_rows": 2534,
+          "teacher_ID_disagreements": 6
+        },
+        "HARVEST": {
+          "groups": 170,
+          "candidate_rows": 9846,
+          "teacher_ID_disagreements": 16
+        },
+        "PLANT": {
+          "groups": 156,
+          "candidate_rows": 5781,
+          "teacher_ID_disagreements": 3
+        },
+        "WATER": {
+          "groups": 1656,
+          "candidate_rows": 74830,
+          "teacher_ID_disagreements": 22
+        }
+      },
+      "trace_sha256": "a1647c7ab8d221f35ce1cd550a081e9471957de27606b55f562e98c272049c2b",
+      "schema_sha256": "235eef551a799e7dc61e8b25448f9b7f6215bf6f97d044bf84b6edf9bd91ea56"
+    },
+    {
+      "game": "train-3915533099-market-1-baseline",
+      "split": "train",
+      "policy": "baseline",
+      "seed": 3915533099,
+      "opponent": "market",
+      "side": 1,
+      "passed": true,
+      "label_binding_passed": true,
+      "states": 720,
+      "action_turns": 719,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "agent_errors": 0,
+      "groups": 2021,
+      "candidate_rows": 93326,
+      "teacher_ID_disagreements": 47,
+      "perop": {
+        "DIG": {
+          "groups": 4,
+          "candidate_rows": 335,
+          "teacher_ID_disagreements": 0
+        },
+        "FERTILIZE": {
+          "groups": 35,
+          "candidate_rows": 2534,
+          "teacher_ID_disagreements": 6
+        },
+        "HARVEST": {
+          "groups": 170,
+          "candidate_rows": 9846,
+          "teacher_ID_disagreements": 16
+        },
+        "PLANT": {
+          "groups": 156,
+          "candidate_rows": 5781,
+          "teacher_ID_disagreements": 3
+        },
+        "WATER": {
+          "groups": 1656,
+          "candidate_rows": 74830,
+          "teacher_ID_disagreements": 22
+        }
+      },
+      "trace_sha256": "6e4b31f58ec6e79c07bba26b0e714799fea9a1fe3bb6628c197c64e192ce4d00",
+      "schema_sha256": "235eef551a799e7dc61e8b25448f9b7f6215bf6f97d044bf84b6edf9bd91ea56"
+    },
+    {
+      "game": "train-4042989318-round2-0-baseline",
+      "split": "train",
+      "policy": "baseline",
+      "seed": 4042989318,
+      "opponent": "round2",
+      "side": 0,
+      "passed": true,
+      "label_binding_passed": true,
+      "states": 720,
+      "action_turns": 719,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "agent_errors": 0,
+      "groups": 2225,
+      "candidate_rows": 118853,
+      "teacher_ID_disagreements": 55,
+      "perop": {
+        "DIG": {
+          "groups": 5,
+          "candidate_rows": 616,
+          "teacher_ID_disagreements": 0
+        },
+        "FERTILIZE": {
+          "groups": 84,
+          "candidate_rows": 11015,
+          "teacher_ID_disagreements": 3
+        },
+        "HARVEST": {
+          "groups": 180,
+          "candidate_rows": 14971,
+          "teacher_ID_disagreements": 4
+        },
+        "PLANT": {
+          "groups": 158,
+          "candidate_rows": 5847,
+          "teacher_ID_disagreements": 6
+        },
+        "WATER": {
+          "groups": 1798,
+          "candidate_rows": 86404,
+          "teacher_ID_disagreements": 42
+        }
+      },
+      "trace_sha256": "250c0c93a651819888f1ab391b35c09d876b1bdab2e37a50473ecf21d10bdd49",
+      "schema_sha256": "235eef551a799e7dc61e8b25448f9b7f6215bf6f97d044bf84b6edf9bd91ea56"
+    },
+    {
+      "game": "train-4042989318-round2-1-baseline",
+      "split": "train",
+      "policy": "baseline",
+      "seed": 4042989318,
+      "opponent": "round2",
+      "side": 1,
+      "passed": true,
+      "label_binding_passed": true,
+      "states": 720,
+      "action_turns": 719,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "agent_errors": 0,
+      "groups": 2225,
+      "candidate_rows": 118853,
+      "teacher_ID_disagreements": 55,
+      "perop": {
+        "DIG": {
+          "groups": 5,
+          "candidate_rows": 616,
+          "teacher_ID_disagreements": 0
+        },
+        "FERTILIZE": {
+          "groups": 84,
+          "candidate_rows": 11015,
+          "teacher_ID_disagreements": 3
+        },
+        "HARVEST": {
+          "groups": 180,
+          "candidate_rows": 14971,
+          "teacher_ID_disagreements": 4
+        },
+        "PLANT": {
+          "groups": 158,
+          "candidate_rows": 5847,
+          "teacher_ID_disagreements": 6
+        },
+        "WATER": {
+          "groups": 1798,
+          "candidate_rows": 86404,
+          "teacher_ID_disagreements": 42
+        }
+      },
+      "trace_sha256": "2e2d54a792b1a5d94748d18e2ae9c2961ca35f4ba98ae6b2a85454720d83cd67",
+      "schema_sha256": "235eef551a799e7dc61e8b25448f9b7f6215bf6f97d044bf84b6edf9bd91ea56"
+    },
+    {
+      "game": "train-4042989318-market-0-baseline",
+      "split": "train",
+      "policy": "baseline",
+      "seed": 4042989318,
+      "opponent": "market",
+      "side": 0,
+      "passed": true,
+      "label_binding_passed": true,
+      "states": 720,
+      "action_turns": 719,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "agent_errors": 0,
+      "groups": 2206,
+      "candidate_rows": 116782,
+      "teacher_ID_disagreements": 49,
+      "perop": {
+        "DIG": {
+          "groups": 4,
+          "candidate_rows": 437,
+          "teacher_ID_disagreements": 0
+        },
+        "FERTILIZE": {
+          "groups": 80,
+          "candidate_rows": 11062,
+          "teacher_ID_disagreements": 2
+        },
+        "HARVEST": {
+          "groups": 203,
+          "candidate_rows": 15121,
+          "teacher_ID_disagreements": 8
+        },
+        "PLANT": {
+          "groups": 159,
+          "candidate_rows": 5811,
+          "teacher_ID_disagreements": 3
+        },
+        "WATER": {
+          "groups": 1760,
+          "candidate_rows": 84351,
+          "teacher_ID_disagreements": 36
+        }
+      },
+      "trace_sha256": "4e56aabf2e7429cb5d284f0316670e0691ec67d72502c348e53b66dd253155ea",
+      "schema_sha256": "235eef551a799e7dc61e8b25448f9b7f6215bf6f97d044bf84b6edf9bd91ea56"
+    },
+    {
+      "game": "train-4042989318-market-1-baseline",
+      "split": "train",
+      "policy": "baseline",
+      "seed": 4042989318,
+      "opponent": "market",
+      "side": 1,
+      "passed": true,
+      "label_binding_passed": true,
+      "states": 720,
+      "action_turns": 719,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "agent_errors": 0,
+      "groups": 2206,
+      "candidate_rows": 116782,
+      "teacher_ID_disagreements": 49,
+      "perop": {
+        "DIG": {
+          "groups": 4,
+          "candidate_rows": 437,
+          "teacher_ID_disagreements": 0
+        },
+        "FERTILIZE": {
+          "groups": 80,
+          "candidate_rows": 11062,
+          "teacher_ID_disagreements": 2
+        },
+        "HARVEST": {
+          "groups": 203,
+          "candidate_rows": 15121,
+          "teacher_ID_disagreements": 8
+        },
+        "PLANT": {
+          "groups": 159,
+          "candidate_rows": 5811,
+          "teacher_ID_disagreements": 3
+        },
+        "WATER": {
+          "groups": 1760,
+          "candidate_rows": 84351,
+          "teacher_ID_disagreements": 36
+        }
+      },
+      "trace_sha256": "77d1770b58b847bd8f4869fdc92eb0234e61e900acadb62853159bdddc8bf8ac",
+      "schema_sha256": "235eef551a799e7dc61e8b25448f9b7f6215bf6f97d044bf84b6edf9bd91ea56"
+    },
+    {
+      "game": "train-1192929723-round2-0-baseline",
+      "split": "train",
+      "policy": "baseline",
+      "seed": 1192929723,
+      "opponent": "round2",
+      "side": 0,
+      "passed": true,
+      "label_binding_passed": true,
+      "states": 720,
+      "action_turns": 719,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "agent_errors": 0,
+      "groups": 2209,
+      "candidate_rows": 119117,
+      "teacher_ID_disagreements": 70,
+      "perop": {
+        "DIG": {
+          "groups": 3,
+          "candidate_rows": 218,
+          "teacher_ID_disagreements": 0
+        },
+        "FERTILIZE": {
+          "groups": 92,
+          "candidate_rows": 12439,
+          "teacher_ID_disagreements": 5
+        },
+        "HARVEST": {
+          "groups": 173,
+          "candidate_rows": 13389,
+          "teacher_ID_disagreements": 8
+        },
+        "PLANT": {
+          "groups": 138,
+          "candidate_rows": 5412,
+          "teacher_ID_disagreements": 1
+        },
+        "WATER": {
+          "groups": 1803,
+          "candidate_rows": 87659,
+          "teacher_ID_disagreements": 56
+        }
+      },
+      "trace_sha256": "a57b75ea14718a17dbfa9a1a80977715be6f31ce4920ad493811cdff1cd8d5cd",
+      "schema_sha256": "235eef551a799e7dc61e8b25448f9b7f6215bf6f97d044bf84b6edf9bd91ea56"
+    },
+    {
+      "game": "train-1192929723-round2-1-baseline",
+      "split": "train",
+      "policy": "baseline",
+      "seed": 1192929723,
+      "opponent": "round2",
+      "side": 1,
+      "passed": true,
+      "label_binding_passed": true,
+      "states": 720,
+      "action_turns": 719,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "agent_errors": 0,
+      "groups": 2209,
+      "candidate_rows": 119117,
+      "teacher_ID_disagreements": 70,
+      "perop": {
+        "DIG": {
+          "groups": 3,
+          "candidate_rows": 218,
+          "teacher_ID_disagreements": 0
+        },
+        "FERTILIZE": {
+          "groups": 92,
+          "candidate_rows": 12439,
+          "teacher_ID_disagreements": 5
+        },
+        "HARVEST": {
+          "groups": 173,
+          "candidate_rows": 13389,
+          "teacher_ID_disagreements": 8
+        },
+        "PLANT": {
+          "groups": 138,
+          "candidate_rows": 5412,
+          "teacher_ID_disagreements": 1
+        },
+        "WATER": {
+          "groups": 1803,
+          "candidate_rows": 87659,
+          "teacher_ID_disagreements": 56
+        }
+      },
+      "trace_sha256": "2d3d4de8cd67ab2af517d87201707cfc7008e6d772539fd108b5ac0910a6024e",
+      "schema_sha256": "235eef551a799e7dc61e8b25448f9b7f6215bf6f97d044bf84b6edf9bd91ea56"
+    },
+    {
+      "game": "train-1192929723-market-0-baseline",
+      "split": "train",
+      "policy": "baseline",
+      "seed": 1192929723,
+      "opponent": "market",
+      "side": 0,
+      "passed": true,
+      "label_binding_passed": true,
+      "states": 720,
+      "action_turns": 719,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "agent_errors": 0,
+      "groups": 2259,
+      "candidate_rows": 120274,
+      "teacher_ID_disagreements": 82,
+      "perop": {
+        "DIG": {
+          "groups": 7,
+          "candidate_rows": 943,
+          "teacher_ID_disagreements": 0
+        },
+        "FERTILIZE": {
+          "groups": 86,
+          "candidate_rows": 11195,
+          "teacher_ID_disagreements": 4
+        },
+        "HARVEST": {
+          "groups": 199,
+          "candidate_rows": 16489,
+          "teacher_ID_disagreements": 14
+        },
+        "PLANT": {
+          "groups": 152,
+          "candidate_rows": 5548,
+          "teacher_ID_disagreements": 5
+        },
+        "WATER": {
+          "groups": 1815,
+          "candidate_rows": 86099,
+          "teacher_ID_disagreements": 59
+        }
+      },
+      "trace_sha256": "95139d1766992806664234a477ab37691d12daeeca906091511694f0ec40514c",
+      "schema_sha256": "235eef551a799e7dc61e8b25448f9b7f6215bf6f97d044bf84b6edf9bd91ea56"
+    },
+    {
+      "game": "train-1192929723-market-1-baseline",
+      "split": "train",
+      "policy": "baseline",
+      "seed": 1192929723,
+      "opponent": "market",
+      "side": 1,
+      "passed": true,
+      "label_binding_passed": true,
+      "states": 720,
+      "action_turns": 719,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "agent_errors": 0,
+      "groups": 2259,
+      "candidate_rows": 120274,
+      "teacher_ID_disagreements": 82,
+      "perop": {
+        "DIG": {
+          "groups": 7,
+          "candidate_rows": 943,
+          "teacher_ID_disagreements": 0
+        },
+        "FERTILIZE": {
+          "groups": 86,
+          "candidate_rows": 11195,
+          "teacher_ID_disagreements": 4
+        },
+        "HARVEST": {
+          "groups": 199,
+          "candidate_rows": 16489,
+          "teacher_ID_disagreements": 14
+        },
+        "PLANT": {
+          "groups": 152,
+          "candidate_rows": 5548,
+          "teacher_ID_disagreements": 5
+        },
+        "WATER": {
+          "groups": 1815,
+          "candidate_rows": 86099,
+          "teacher_ID_disagreements": 59
+        }
+      },
+      "trace_sha256": "19ccfbc70ed90f6f0a53e41a4f52e623e78f49fc0ea1667746b273906b7dfc85",
+      "schema_sha256": "235eef551a799e7dc61e8b25448f9b7f6215bf6f97d044bf84b6edf9bd91ea56"
+    },
+    {
+      "game": "train-3641798866-round2-0-baseline",
+      "split": "train",
+      "policy": "baseline",
+      "seed": 3641798866,
+      "opponent": "round2",
+      "side": 0,
+      "passed": true,
+      "label_binding_passed": true,
+      "states": 720,
+      "action_turns": 719,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "agent_errors": 0,
+      "groups": 2167,
+      "candidate_rows": 113173,
+      "teacher_ID_disagreements": 37,
+      "perop": {
+        "DIG": {
+          "groups": 5,
+          "candidate_rows": 625,
+          "teacher_ID_disagreements": 0
+        },
+        "FERTILIZE": {
+          "groups": 58,
+          "candidate_rows": 8544,
+          "teacher_ID_disagreements": 3
+        },
+        "HARVEST": {
+          "groups": 156,
+          "candidate_rows": 12789,
+          "teacher_ID_disagreements": 4
+        },
+        "PLANT": {
+          "groups": 156,
+          "candidate_rows": 5633,
+          "teacher_ID_disagreements": 5
+        },
+        "WATER": {
+          "groups": 1792,
+          "candidate_rows": 85582,
+          "teacher_ID_disagreements": 25
+        }
+      },
+      "trace_sha256": "b43131222336ababe3614b99d567eb549517d8a99110b8f59afd419e9b0d1dda",
+      "schema_sha256": "235eef551a799e7dc61e8b25448f9b7f6215bf6f97d044bf84b6edf9bd91ea56"
+    },
+    {
+      "game": "train-3641798866-round2-1-baseline",
+      "split": "train",
+      "policy": "baseline",
+      "seed": 3641798866,
+      "opponent": "round2",
+      "side": 1,
+      "passed": true,
+      "label_binding_passed": true,
+      "states": 720,
+      "action_turns": 719,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "agent_errors": 0,
+      "groups": 2167,
+      "candidate_rows": 113173,
+      "teacher_ID_disagreements": 37,
+      "perop": {
+        "DIG": {
+          "groups": 5,
+          "candidate_rows": 625,
+          "teacher_ID_disagreements": 0
+        },
+        "FERTILIZE": {
+          "groups": 58,
+          "candidate_rows": 8544,
+          "teacher_ID_disagreements": 3
+        },
+        "HARVEST": {
+          "groups": 156,
+          "candidate_rows": 12789,
+          "teacher_ID_disagreements": 4
+        },
+        "PLANT": {
+          "groups": 156,
+          "candidate_rows": 5633,
+          "teacher_ID_disagreements": 5
+        },
+        "WATER": {
+          "groups": 1792,
+          "candidate_rows": 85582,
+          "teacher_ID_disagreements": 25
+        }
+      },
+      "trace_sha256": "be6255c68f1dfd9318093160993728246b863ac521e0cfffc5e611edc2673e0e",
+      "schema_sha256": "235eef551a799e7dc61e8b25448f9b7f6215bf6f97d044bf84b6edf9bd91ea56"
+    },
+    {
+      "game": "train-3641798866-market-0-baseline",
+      "split": "train",
+      "policy": "baseline",
+      "seed": 3641798866,
+      "opponent": "market",
+      "side": 0,
+      "passed": true,
+      "label_binding_passed": true,
+      "states": 720,
+      "action_turns": 719,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "agent_errors": 0,
+      "groups": 2138,
+      "candidate_rows": 109702,
+      "teacher_ID_disagreements": 43,
+      "perop": {
+        "DIG": {
+          "groups": 4,
+          "candidate_rows": 424,
+          "teacher_ID_disagreements": 0
+        },
+        "FERTILIZE": {
+          "groups": 55,
+          "candidate_rows": 8343,
+          "teacher_ID_disagreements": 1
+        },
+        "HARVEST": {
+          "groups": 182,
+          "candidate_rows": 13454,
+          "teacher_ID_disagreements": 5
+        },
+        "PLANT": {
+          "groups": 154,
+          "candidate_rows": 5792,
+          "teacher_ID_disagreements": 3
+        },
+        "WATER": {
+          "groups": 1743,
+          "candidate_rows": 81689,
+          "teacher_ID_disagreements": 34
+        }
+      },
+      "trace_sha256": "63addf6c5acab492da2210ad9928c146f799d3e449b9289583f70ced813e1728",
+      "schema_sha256": "235eef551a799e7dc61e8b25448f9b7f6215bf6f97d044bf84b6edf9bd91ea56"
+    },
+    {
+      "game": "train-3641798866-market-1-baseline",
+      "split": "train",
+      "policy": "baseline",
+      "seed": 3641798866,
+      "opponent": "market",
+      "side": 1,
+      "passed": true,
+      "label_binding_passed": true,
+      "states": 720,
+      "action_turns": 719,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "agent_errors": 0,
+      "groups": 2138,
+      "candidate_rows": 109702,
+      "teacher_ID_disagreements": 43,
+      "perop": {
+        "DIG": {
+          "groups": 4,
+          "candidate_rows": 424,
+          "teacher_ID_disagreements": 0
+        },
+        "FERTILIZE": {
+          "groups": 55,
+          "candidate_rows": 8343,
+          "teacher_ID_disagreements": 1
+        },
+        "HARVEST": {
+          "groups": 182,
+          "candidate_rows": 13454,
+          "teacher_ID_disagreements": 5
+        },
+        "PLANT": {
+          "groups": 154,
+          "candidate_rows": 5792,
+          "teacher_ID_disagreements": 3
+        },
+        "WATER": {
+          "groups": 1743,
+          "candidate_rows": 81689,
+          "teacher_ID_disagreements": 34
+        }
+      },
+      "trace_sha256": "d3d0c01b30e6ca0f88e41651123270d95b3ab4eb701622bd098abe568dee6ff2",
+      "schema_sha256": "235eef551a799e7dc61e8b25448f9b7f6215bf6f97d044bf84b6edf9bd91ea56"
+    },
+    {
+      "game": "dev-672488797-round2-0-baseline",
+      "split": "dev",
+      "policy": "baseline",
+      "seed": 672488797,
+      "opponent": "round2",
+      "side": 0,
+      "passed": true,
+      "label_binding_passed": true,
+      "states": 720,
+      "action_turns": 719,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "agent_errors": 0,
+      "groups": 2214,
+      "candidate_rows": 119734,
+      "teacher_ID_disagreements": 84,
+      "perop": {
+        "DIG": {
+          "groups": 4,
+          "candidate_rows": 431,
+          "teacher_ID_disagreements": 0
+        },
+        "FERTILIZE": {
+          "groups": 99,
+          "candidate_rows": 13380,
+          "teacher_ID_disagreements": 8
+        },
+        "HARVEST": {
+          "groups": 175,
+          "candidate_rows": 13346,
+          "teacher_ID_disagreements": 6
+        },
+        "PLANT": {
+          "groups": 142,
+          "candidate_rows": 5442,
+          "teacher_ID_disagreements": 4
+        },
+        "WATER": {
+          "groups": 1794,
+          "candidate_rows": 87135,
+          "teacher_ID_disagreements": 66
+        }
+      },
+      "trace_sha256": "82321161726b024bf22807a321b60e3cf3cf43a7e0566451361f99257ab64c0b",
+      "schema_sha256": "235eef551a799e7dc61e8b25448f9b7f6215bf6f97d044bf84b6edf9bd91ea56"
+    },
+    {
+      "game": "dev-672488797-round2-1-baseline",
+      "split": "dev",
+      "policy": "baseline",
+      "seed": 672488797,
+      "opponent": "round2",
+      "side": 1,
+      "passed": true,
+      "label_binding_passed": true,
+      "states": 720,
+      "action_turns": 719,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "agent_errors": 0,
+      "groups": 2214,
+      "candidate_rows": 119734,
+      "teacher_ID_disagreements": 84,
+      "perop": {
+        "DIG": {
+          "groups": 4,
+          "candidate_rows": 431,
+          "teacher_ID_disagreements": 0
+        },
+        "FERTILIZE": {
+          "groups": 99,
+          "candidate_rows": 13380,
+          "teacher_ID_disagreements": 8
+        },
+        "HARVEST": {
+          "groups": 175,
+          "candidate_rows": 13346,
+          "teacher_ID_disagreements": 6
+        },
+        "PLANT": {
+          "groups": 142,
+          "candidate_rows": 5442,
+          "teacher_ID_disagreements": 4
+        },
+        "WATER": {
+          "groups": 1794,
+          "candidate_rows": 87135,
+          "teacher_ID_disagreements": 66
+        }
+      },
+      "trace_sha256": "cd309f61cf3348f20b8163e2ed7fa7d462ab309e5b2d8f5e1454f96028f9138a",
+      "schema_sha256": "235eef551a799e7dc61e8b25448f9b7f6215bf6f97d044bf84b6edf9bd91ea56"
+    },
+    {
+      "game": "dev-672488797-market-0-baseline",
+      "split": "dev",
+      "policy": "baseline",
+      "seed": 672488797,
+      "opponent": "market",
+      "side": 0,
+      "passed": true,
+      "label_binding_passed": true,
+      "states": 720,
+      "action_turns": 719,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "agent_errors": 0,
+      "groups": 2236,
+      "candidate_rows": 119831,
+      "teacher_ID_disagreements": 62,
+      "perop": {
+        "DIG": {
+          "groups": 5,
+          "candidate_rows": 638,
+          "teacher_ID_disagreements": 0
+        },
+        "FERTILIZE": {
+          "groups": 90,
+          "candidate_rows": 12272,
+          "teacher_ID_disagreements": 2
+        },
+        "HARVEST": {
+          "groups": 175,
+          "candidate_rows": 15379,
+          "teacher_ID_disagreements": 5
+        },
+        "PLANT": {
+          "groups": 156,
+          "candidate_rows": 5719,
+          "teacher_ID_disagreements": 4
+        },
+        "WATER": {
+          "groups": 1810,
+          "candidate_rows": 85823,
+          "teacher_ID_disagreements": 51
+        }
+      },
+      "trace_sha256": "1e9b9d7cfc8ddb5ceaa69bafd8eb322b02ee68f35bf057513b93a661839299a9",
+      "schema_sha256": "235eef551a799e7dc61e8b25448f9b7f6215bf6f97d044bf84b6edf9bd91ea56"
+    },
+    {
+      "game": "dev-672488797-market-1-baseline",
+      "split": "dev",
+      "policy": "baseline",
+      "seed": 672488797,
+      "opponent": "market",
+      "side": 1,
+      "passed": true,
+      "label_binding_passed": true,
+      "states": 720,
+      "action_turns": 719,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "agent_errors": 0,
+      "groups": 2236,
+      "candidate_rows": 119831,
+      "teacher_ID_disagreements": 62,
+      "perop": {
+        "DIG": {
+          "groups": 5,
+          "candidate_rows": 638,
+          "teacher_ID_disagreements": 0
+        },
+        "FERTILIZE": {
+          "groups": 90,
+          "candidate_rows": 12272,
+          "teacher_ID_disagreements": 2
+        },
+        "HARVEST": {
+          "groups": 175,
+          "candidate_rows": 15379,
+          "teacher_ID_disagreements": 5
+        },
+        "PLANT": {
+          "groups": 156,
+          "candidate_rows": 5719,
+          "teacher_ID_disagreements": 4
+        },
+        "WATER": {
+          "groups": 1810,
+          "candidate_rows": 85823,
+          "teacher_ID_disagreements": 51
+        }
+      },
+      "trace_sha256": "58496d15bcc771f7033c326a5878f098ff373d877988334b0fd5371752ff6186",
+      "schema_sha256": "235eef551a799e7dc61e8b25448f9b7f6215bf6f97d044bf84b6edf9bd91ea56"
+    },
+    {
+      "game": "dev-3774138801-round2-0-baseline",
+      "split": "dev",
+      "policy": "baseline",
+      "seed": 3774138801,
+      "opponent": "round2",
+      "side": 0,
+      "passed": true,
+      "label_binding_passed": true,
+      "states": 720,
+      "action_turns": 719,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "agent_errors": 0,
+      "groups": 2223,
+      "candidate_rows": 119117,
+      "teacher_ID_disagreements": 92,
+      "perop": {
+        "DIG": {
+          "groups": 12,
+          "candidate_rows": 238,
+          "teacher_ID_disagreements": 0
+        },
+        "FERTILIZE": {
+          "groups": 88,
+          "candidate_rows": 12103,
+          "teacher_ID_disagreements": 8
+        },
+        "HARVEST": {
+          "groups": 164,
+          "candidate_rows": 12933,
+          "teacher_ID_disagreements": 6
+        },
+        "PLANT": {
+          "groups": 142,
+          "candidate_rows": 5438,
+          "teacher_ID_disagreements": 8
+        },
+        "WATER": {
+          "groups": 1817,
+          "candidate_rows": 88405,
+          "teacher_ID_disagreements": 70
+        }
+      },
+      "trace_sha256": "80e1de4cc51d720aeabcc189a0287f6555e5dc10235808497381a81a4870a4b0",
+      "schema_sha256": "235eef551a799e7dc61e8b25448f9b7f6215bf6f97d044bf84b6edf9bd91ea56"
+    },
+    {
+      "game": "dev-3774138801-round2-1-baseline",
+      "split": "dev",
+      "policy": "baseline",
+      "seed": 3774138801,
+      "opponent": "round2",
+      "side": 1,
+      "passed": true,
+      "label_binding_passed": true,
+      "states": 720,
+      "action_turns": 719,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "agent_errors": 0,
+      "groups": 2212,
+      "candidate_rows": 119060,
+      "teacher_ID_disagreements": 79,
+      "perop": {
+        "DIG": {
+          "groups": 3,
+          "candidate_rows": 209,
+          "teacher_ID_disagreements": 0
+        },
+        "FERTILIZE": {
+          "groups": 88,
+          "candidate_rows": 12366,
+          "teacher_ID_disagreements": 7
+        },
+        "HARVEST": {
+          "groups": 167,
+          "candidate_rows": 12875,
+          "teacher_ID_disagreements": 3
+        },
+        "PLANT": {
+          "groups": 141,
+          "candidate_rows": 5533,
+          "teacher_ID_disagreements": 7
+        },
+        "WATER": {
+          "groups": 1813,
+          "candidate_rows": 88077,
+          "teacher_ID_disagreements": 62
+        }
+      },
+      "trace_sha256": "3761cbb6a6bc075a461a14ba6ee092cda6b400dbceba8348589c06350f7fa9b9",
+      "schema_sha256": "235eef551a799e7dc61e8b25448f9b7f6215bf6f97d044bf84b6edf9bd91ea56"
+    },
+    {
+      "game": "dev-3774138801-market-0-baseline",
+      "split": "dev",
+      "policy": "baseline",
+      "seed": 3774138801,
+      "opponent": "market",
+      "side": 0,
+      "passed": true,
+      "label_binding_passed": true,
+      "states": 720,
+      "action_turns": 719,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "agent_errors": 0,
+      "groups": 2225,
+      "candidate_rows": 118928,
+      "teacher_ID_disagreements": 72,
+      "perop": {
+        "DIG": {
+          "groups": 7,
+          "candidate_rows": 886,
+          "teacher_ID_disagreements": 0
+        },
+        "FERTILIZE": {
+          "groups": 81,
+          "candidate_rows": 11013,
+          "teacher_ID_disagreements": 1
+        },
+        "HARVEST": {
+          "groups": 190,
+          "candidate_rows": 16047,
+          "teacher_ID_disagreements": 11
+        },
+        "PLANT": {
+          "groups": 146,
+          "candidate_rows": 5334,
+          "teacher_ID_disagreements": 5
+        },
+        "WATER": {
+          "groups": 1801,
+          "candidate_rows": 85648,
+          "teacher_ID_disagreements": 55
+        }
+      },
+      "trace_sha256": "6d13cd6c4d887271fe05d04b3cd88df89a6c36cf70e2363de434559a2f686874",
+      "schema_sha256": "235eef551a799e7dc61e8b25448f9b7f6215bf6f97d044bf84b6edf9bd91ea56"
+    },
+    {
+      "game": "dev-3774138801-market-1-baseline",
+      "split": "dev",
+      "policy": "baseline",
+      "seed": 3774138801,
+      "opponent": "market",
+      "side": 1,
+      "passed": true,
+      "label_binding_passed": true,
+      "states": 720,
+      "action_turns": 719,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "agent_errors": 0,
+      "groups": 2226,
+      "candidate_rows": 118965,
+      "teacher_ID_disagreements": 72,
+      "perop": {
+        "DIG": {
+          "groups": 9,
+          "candidate_rows": 916,
+          "teacher_ID_disagreements": 0
+        },
+        "FERTILIZE": {
+          "groups": 81,
+          "candidate_rows": 11013,
+          "teacher_ID_disagreements": 1
+        },
+        "HARVEST": {
+          "groups": 190,
+          "candidate_rows": 16047,
+          "teacher_ID_disagreements": 11
+        },
+        "PLANT": {
+          "groups": 145,
+          "candidate_rows": 5356,
+          "teacher_ID_disagreements": 4
+        },
+        "WATER": {
+          "groups": 1801,
+          "candidate_rows": 85633,
+          "teacher_ID_disagreements": 56
+        }
+      },
+      "trace_sha256": "6a5a21f4ed572eba54b17eb374f7143c44f8326ee94e69fa4dbf5c193ab36ebd",
+      "schema_sha256": "235eef551a799e7dc61e8b25448f9b7f6215bf6f97d044bf84b6edf9bd91ea56"
+    }
+  ],
+  "all_groups_retained": true,
+  "labels": "Conditional teacher_label on each actual student callback",
+  "numeric_model_inputs": [
+    "shared",
+    "candidates"
+  ],
+  "metric_only_arrays": [
+    "seeds",
+    "candidate_identity",
+    "selected_ops",
+    "candidate_ops"
+  ],
+  "seed_splits_disjoint": true,
+  "development_used_for_gradients": false,
+  "holdout_read": false,
+  "normalization_recomputed": false,
+  "cache_build_source_trace_passes_per_game": 2,
+  "note": "Counting and materialization both validate source identity; any earlier caller summaries are separate reads."
+}

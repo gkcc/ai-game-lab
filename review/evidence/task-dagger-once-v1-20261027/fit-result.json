@@ -1,0 +1,104 @@
+{
+  "actual_gpu": true,
+  "budget_interpretation": "Training rows count one full value-and-gradient evaluation presentation, including padding; not FLOPs. CPU and GPU offline calls are separate row evaluations. Reserved independent rows are not spent by this fit.",
+  "cache_array_verifications": {
+    "new": 1,
+    "old": 1
+  },
+  "changed_parameter_tensors": 6,
+  "checkpoint_sha256": "8da95bbcf959d0cc8e064977eac0d939c41617ae0fd915400486c51138bfb7c2",
+  "class_weights_use_old_training_only": true,
+  "competitive_improvement_established": false,
+  "completed": true,
+  "consumption": {
+    "cpu_offline_candidate_rows": 5572124,
+    "gpu_offline_candidate_rows": 955200,
+    "gradient_evaluations": 8620,
+    "new_train_group_presentations": 65536,
+    "old_train_group_presentations": 65536,
+    "optimizer_updates_completed": 512,
+    "optimizer_updates_issued": 512,
+    "training_padded_candidate_rows": 13372676,
+    "training_real_candidate_rows": 6725482
+  },
+  "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+  "expected_device_verified": true,
+  "final_parameter_sha256": {
+    "b0": "b2f782d9618916fb9456090abbb012dfef8d0ec54fd1a06e2632d5ee6f82669f",
+    "b1": "1ca2159331437cc1ef60b28bb6909cb9f1fe10fdb7c9546fbc66d8bf6937238b",
+    "b2": "e14afc9f1ea2702930134841c68618639a73a7afdc30e5c21d5ef669e31f3884",
+    "w0": "5a0d57e81334b0aee957eecb34db06ae1ae1448cc599520c619008209d3baa34",
+    "w1": "d340aef862d4a8c132f2ff074130dbf767616c619e165d5a18287351948bf68f",
+    "w2": "0f015840bbce9077410b2e9a3a2180d0e6f3b265501d4341185b2b201c2399ce"
+  },
+  "fit_count": 1,
+  "frozen_normalizer_array_sha256": {
+    "mean": "e508308a4eaabec9d5160c97bd97e4a9059633af29de70fd1f939ba5fc26d9b1",
+    "scale": "66fe0ddb19e7af7f26af5a7ddba52d2c2ea58224a9f9e18ebfe8222fdef19b40"
+  },
+  "frozen_normalizer_bits_preserved": true,
+  "gpu_platform": "gpu",
+  "gpu_speedup_measured": false,
+  "gpu_training": true,
+  "gradient_norm_max": 4.581015586853027,
+  "gradient_norm_min": 0.31537923216819763,
+  "independent_offline_row_reserve": 100000,
+  "initial_parameter_sha256": {
+    "b0": "a10757df5f3b930d43cb601b8d3789b0993ce4c47bd60a03ba6a98e8a0dc0f0f",
+    "b1": "33c6afe735266e2a12d1ee130d11c75cde8ab21781891b9c3e9dd0c3e4d5be2a",
+    "b2": "46af6a4c658d457f7c75809c7266ad96860d10fb8a63eca301c5c98a9e87dac5",
+    "w0": "3ecdd5ba4449b0fc6adc4d49758b5d2d837d14bfabdccb9c4a4377da395d2e14",
+    "w1": "0aaf60d89505e3d7635dfded8667f4ef7b0d5be82efa7c356ec9b9cc706cc522",
+    "w2": "b4a063fcf1aeb747585d7f2007554ed9a335a3e57f00069616961c6605dc292b"
+  },
+  "initial_task_sha256": "9253bc05e632eec2d5a813557272655ab97e023c09843c60a80781b6cc2ab143",
+  "loss_max": 0.261606365442276,
+  "loss_min": 0.02700633928179741,
+  "model_selection": false,
+  "new_cache_arrays": 16,
+  "new_cache_manifest_sha256": "719a8ed64905db4e7802c5125c2eab64270b6ff62210bd17da21c06e86d07f42",
+  "new_dev_groups": 17786,
+  "new_train_groups": 34552,
+  "nonzero_gradient_updates": 512,
+  "normalization_recomputed": false,
+  "official_simulation_on_gpu": false,
+  "offline_gate_passed": false,
+  "offline_input_representation": "Float32 ragged cache values scored with float64 CPU deployment arithmetic; raw live observation actions are verified separately in official matches.",
+  "offline_remaining_total": 5472676,
+  "offline_rows_total_used": 6527324,
+  "offline_total_limit": 12000000,
+  "old_cache_arrays": 16,
+  "old_cache_manifest_sha256": "abf0581baad3941a4e2fc7bf96835d1fe0cfa92d6fa4ac0939c096a1f6f4368d",
+  "old_train_groups": 108310,
+  "old_training_class_counts": [
+    431,
+    3977,
+    9312,
+    9127,
+    85463
+  ],
+  "old_training_class_weights": [
+    6.546228885650635,
+    3.055572986602783,
+    1.996866226196289,
+    2.0170023441314697,
+    0.6591456532478333
+  ],
+  "old_validation_groups": 27096,
+  "optimizer_updates": 512,
+  "registration_sha256": "7fcef4841bbd26727826628ae4c7613389ba610ba48e4781e45d65c7d1092372",
+  "retry_allowed": false,
+  "schema": "task-dagger-once-fit-v1",
+  "software": {
+    "jax": "0.4.38",
+    "numpy": "2.5.4",
+    "optax": "0.2.4"
+  },
+  "timings": {
+    "explicit_compile_seconds": 6.823103632000006,
+    "process_seconds": 117.200840291,
+    "synchronized_training_loop_seconds": 64.45082771399998,
+    "training_loop_includes": "packing, compilation, transfers, all updates synchronized, and reporting",
+    "training_packing_seconds": 44.615449739998944
+  }
+}

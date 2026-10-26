@@ -1,0 +1,21 @@
+{
+  "schema": "task-dagger-once-early-v1",
+  "seed": 3915533099,
+  "counts": {
+    "games": 4,
+    "groups": 8144,
+    "candidate_rows": 383582,
+    "teacher_ID_disagreements": 226,
+    "games_with_disagreement": 4
+  },
+  "gates": {
+    "minimum_disagreements": 128,
+    "minimum_games_with_disagreement": 2
+  },
+  "checks": {
+    "enough_disagreements": true,
+    "enough_games": true
+  },
+  "passed": true,
+  "role": "Supervision quantity only; teacher-ID disagreement is not economic harm or unique optimality"
+}
