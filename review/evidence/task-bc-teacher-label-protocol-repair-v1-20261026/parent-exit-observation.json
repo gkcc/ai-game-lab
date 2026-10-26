@@ -1,0 +1,13 @@
+{
+  "schema": "synthetic-protocol-parent-exit-observation-v1",
+  "created_utc": "2026-10-26T12:33:39.095510+00:00",
+  "parent_exit_code": 0,
+  "single_run_invocations": 1,
+  "retries": 0,
+  "external_exit_observed": true,
+  "freeze_sha256": "dd3e2c9f0f2e2244fdd3f7f8b3d7acee5612124d23624eacfb9ca2d6a768dc03",
+  "summary_sha256": "da70b32577eaa620ce5326818397f1421c32e8ff5e4ae9b36f09d6d917ad59ac",
+  "acceptance_sha256": "75dabd86bf7823d9b5139e6e2171ba4edf8091df84002a609a2702a43f86a83e",
+  "artifact_bytes_at_parent_exit_before_this_receipt": 1262258,
+  "scope": "Parent tool exit, independent of child receipt. Later human review and publication are separate phases."
+}

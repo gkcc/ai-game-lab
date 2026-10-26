@@ -1,0 +1,486 @@
+{
+  "schema": "teacher-label-synthetic-protocol-repair-independent-result-review-v1",
+  "stage": "task-bc-teacher-label-protocol-repair-v1-20261026",
+  "reviewer": "/root/unit_request_auditor",
+  "passed": true,
+  "status": "passed_synthetic_only_receipt_review",
+  "execution_passed": true,
+  "execution_scope": "The unique synthetic protocol repair run only; no original teacher-label experiment was rerun or accepted.",
+  "freeze_sha256": "dd3e2c9f0f2e2244fdd3f7f8b3d7acee5612124d23624eacfb9ca2d6a768dc03",
+  "registration_sha256": "c7b68306505ea71bfe6e2418af745fb010d37360ff2d96d1b9bda18ce61b48de",
+  "pre_execution_commit": "8094fdd17ba68dc69fd238d1ad83d334d18c9088",
+  "prior_static_review_sha256": "3c8296289bce7cb7821f25a56339d7b4022f3241f3cae3ed6e5565f7f1472e65",
+  "timing": {
+    "review_started_utc": "2026-10-26T12:34:39.799283+00:00",
+    "start_event": "Captured before any file byte reads in the first review tool call.",
+    "review_ended_utc": "2026-10-26T12:37:58.432412+00:00",
+    "elapsed_seconds": 198.63120110001182,
+    "new_strict_time_gate_requested": false,
+    "original_300_second_review_restarted": false,
+    "original_review_clock_or_status_changed": false
+  },
+  "read_scope": {
+    "safe_result_receipts": [
+      {
+        "path": "primary.json",
+        "read_count": 1,
+        "bytes": 24936,
+        "sha256": "81ab07872f3bc262ee2296045ec70d0718399fa0f27a9d8285dabd9046901bad"
+      },
+      {
+        "path": "summary.json",
+        "read_count": 1,
+        "bytes": 2301,
+        "sha256": "da70b32577eaa620ce5326818397f1421c32e8ff5e4ae9b36f09d6d917ad59ac"
+      },
+      {
+        "path": "execution-acceptance.json",
+        "read_count": 1,
+        "bytes": 371,
+        "sha256": "75dabd86bf7823d9b5139e6e2171ba4edf8091df84002a609a2702a43f86a83e"
+      },
+      {
+        "path": "parent-exit-observation.json",
+        "read_count": 1,
+        "bytes": 671,
+        "sha256": "541a8592311a2bc8d3fe3d0f4c83562c42354768db9cf8b43fc0184fc42147e2"
+      },
+      {
+        "path": "pre-execution-commit.json",
+        "read_count": 1,
+        "bytes": 21825,
+        "sha256": "0abfecde900ed9c0c99dc925062f66bec15fe1e02e6282fc115e97dc9f2abbe8"
+      }
+    ],
+    "code_files": [
+      {
+        "path": "learning/task_bc_teacher_label_protocol_repair_v1/experiment.py",
+        "read_count": 1,
+        "bytes": 17474,
+        "sha256": "0808e1be9b4aa0c237c71f094e498da7f3c2105dbf16e21eb9b97221e0bcb2c8"
+      },
+      {
+        "path": "learning/task_bc_teacher_label_protocol_repair_v1/protocol.py",
+        "read_count": 1,
+        "bytes": 15651,
+        "sha256": "0632dadc06e0461069bd59dd553d3ecf9205c55efe02c7514f525a907549dca4"
+      }
+    ],
+    "safe_receipt_file_count": 5,
+    "safe_receipt_bytes": 50104,
+    "code_file_count": 2,
+    "code_bytes": 33125,
+    "total_bytes": 83229,
+    "source_read_scope": "Two previously reviewed frozen files were read once, hashed, and parsed with stdlib ast. Only worker/check_primary/run and protocol ledger/error/finally paths were inspected again.",
+    "receipt_rereads": 0,
+    "prohibited_reads": {
+      "original_payloads": 0,
+      "private_case": 0,
+      "replay": 0,
+      "models": 0,
+      "old_private_evidence": 0,
+      "logs": 0
+    },
+    "other_old_sources_reopened": 0
+  },
+  "independent_recomputation": {
+    "method": "Arithmetic over the five read receipts and static source inspection; no producer, checker, project module, or fixture was invoked.",
+    "actual_case_order": [
+      "zero_drain",
+      "positive_drain",
+      "read_failure_boundary"
+    ],
+    "case_rows_observed": 3,
+    "aggregate_counter_fields_recomputed": 68,
+    "per_source_to_case_integer_counter_comparisons": 180,
+    "discrepancies": [],
+    "recomputed_totals": {
+      "sources_started": 3,
+      "sources_completed": 2,
+      "sources_failed": 1,
+      "raw_opens_started": 3,
+      "raw_opens_completed": 3,
+      "raw_read_calls_started": 80,
+      "raw_read_calls_completed": 79,
+      "raw_bytes_returned": 38198,
+      "raw_bytes_hashed": 38198,
+      "raw_bound_eof_returns": 1,
+      "raw_drain_read_calls_started": 74,
+      "raw_drain_read_calls_completed": 74,
+      "raw_drain_bytes_returned": 18832,
+      "raw_closes_started": 3,
+      "raw_closes_completed": 3,
+      "raw_hashes_completed": 2,
+      "gzip_opens_started": 3,
+      "gzip_opens_completed": 3,
+      "gzip_read_calls_started": 0,
+      "gzip_read_calls_completed": 0,
+      "gzip_readline_calls_started": 3,
+      "gzip_readline_calls_completed": 2,
+      "gzip_closes_started": 3,
+      "gzip_closes_completed": 3,
+      "returned_payload_bytes": 18,
+      "prefix_lines_returned": 2,
+      "partial_prefix_lines_returned": 0,
+      "skipped_prefix_lines": 0,
+      "skipped_prefix_bytes": 0,
+      "json_decodes_started": 2,
+      "json_decodes_completed": 2,
+      "json_bytes_submitted": 18,
+      "json_bytes_decoded": 18,
+      "decoded_json_values": 4,
+      "decoded_mapping_objects": 2,
+      "decoded_list_objects": 0,
+      "decoded_scalar_values": 2,
+      "decoded_mapping_keys": 2,
+      "decoded_replay_states": 0,
+      "decoded_replay_agent_states": 0,
+      "decoded_input_candidate_entries": 0,
+      "decoded_input_candidate_objects": 0,
+      "decoded_input_candidate_x_arrays": 0,
+      "decoded_input_shared_x_arrays": 0,
+      "decoded_observation_objects": 0,
+      "decoded_configuration_objects": 0,
+      "stat_checks_started": 0,
+      "stat_checks_completed": 0,
+      "raw_reread_passes": 0,
+      "suffix_json_decodes": 0,
+      "model_reads": 0,
+      "controller_calls": 0,
+      "index_json_decodes_started": 2,
+      "index_json_decodes_completed": 2,
+      "inputs_json_decodes_started": 0,
+      "inputs_json_decodes_completed": 0,
+      "labels_json_decodes_started": 0,
+      "labels_json_decodes_completed": 0,
+      "replay_json_decodes_started": 0,
+      "replay_json_decodes_completed": 0,
+      "cases_started": 3,
+      "cases_completed": 3,
+      "cases_passed": 3,
+      "operation_errors": 1,
+      "assertion_errors": 1,
+      "planned_prefix_unknowns": 2,
+      "failure_unknowns": 3,
+      "cases_with_unknown_consumption": 0
+    },
+    "parent_consumer_actual_scope": {
+      "source": "experiment.py:166-202",
+      "recomputed_fields": [
+        "raw_bytes_returned",
+        "raw_bytes_hashed",
+        "returned_payload_bytes",
+        "json_decodes_completed"
+      ],
+      "observed_totals": {
+        "raw_bytes_returned": 38198,
+        "raw_bytes_hashed": 38198,
+        "returned_payload_bytes": 18,
+        "json_decodes_completed": 2
+      },
+      "checks": "Checks the exact three ordered case names, all case passes, raw/gzip closures, full normal hash/one JSON, both drain branches, partial failed read and retained errors/unknowns, zero prohibited work, and budgets.",
+      "scope_limit": "The parent returns cases=3 after checking the actual ordered rows. It is a receipt consumer, not a second synthetic run or original-data reproduction."
+    }
+  },
+  "case_findings": [
+    {
+      "name": "zero_drain",
+      "case_passed": true,
+      "source_status": "completed",
+      "raw_read_calls_started": 1,
+      "raw_read_calls_completed": 1,
+      "raw_bytes_returned": 19098,
+      "raw_bytes_hashed": 19098,
+      "raw_drain_bytes_returned": 0,
+      "returned_payload_bytes": 9,
+      "json_decodes_completed": 1,
+      "observed": {
+        "raw_bytes_before_drain": 19098,
+        "raw_calls_before_drain": 1,
+        "remaining_raw_before_drain": 0,
+        "buffer_closed": true,
+        "bridge_closed": true,
+        "raw_reads_during_gzip_and_aux_close": 0,
+        "raw_closed": true,
+        "gzip_closed": true,
+        "raw_calls": 1,
+        "drain_bytes": 0,
+        "raw_sha256_verified": true,
+        "internal_unreturned_payload_bytes": null
+      },
+      "failure": {
+        "operation_error": null,
+        "assertion_error": null,
+        "unexpected_error": null,
+        "close_errors": []
+      },
+      "unknown_accounting": {
+        "planned_prefix": [
+          {
+            "kind": "index",
+            "quantity": "gzip_internal_unreturned_payload_bytes",
+            "value": null,
+            "reason": "intentional_prefix_without_eof_probe"
+          }
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "positive_drain",
+      "case_passed": true,
+      "source_status": "completed",
+      "raw_read_calls_started": 77,
+      "raw_read_calls_completed": 77,
+      "raw_bytes_returned": 19098,
+      "raw_bytes_hashed": 19098,
+      "raw_drain_bytes_returned": 18832,
+      "returned_payload_bytes": 9,
+      "json_decodes_completed": 1,
+      "observed": {
+        "raw_bytes_before_drain": 266,
+        "raw_calls_before_drain": 3,
+        "remaining_raw_before_drain": 18832,
+        "raw_reads_during_gzip_and_aux_close": 0,
+        "raw_closed": true,
+        "gzip_closed": true,
+        "raw_calls": 77,
+        "drain_bytes": 18832,
+        "raw_sha256_verified": true,
+        "internal_unreturned_payload_bytes": null
+      },
+      "failure": {
+        "operation_error": null,
+        "assertion_error": null,
+        "unexpected_error": null,
+        "close_errors": []
+      },
+      "unknown_accounting": {
+        "planned_prefix": [
+          {
+            "kind": "index",
+            "quantity": "gzip_internal_unreturned_payload_bytes",
+            "value": null,
+            "reason": "intentional_prefix_without_eof_probe"
+          }
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "read_failure_boundary",
+      "case_passed": true,
+      "source_status": "failed",
+      "raw_read_calls_started": 2,
+      "raw_read_calls_completed": 1,
+      "raw_bytes_returned": 2,
+      "raw_bytes_hashed": 2,
+      "raw_drain_bytes_returned": 0,
+      "returned_payload_bytes": 0,
+      "json_decodes_completed": 0,
+      "observed": {
+        "raw_bytes_before_drain": 2,
+        "raw_calls_before_drain": 2,
+        "remaining_raw_before_drain": 19096,
+        "raw_reads_during_gzip_and_aux_close": 0,
+        "raw_closed": true,
+        "gzip_closed": true,
+        "raw_calls": 2,
+        "drain_bytes": 0,
+        "raw_sha256_verified": false,
+        "internal_unreturned_payload_bytes": null
+      },
+      "failure": {
+        "operation_error": {
+          "type": "OSError",
+          "message": "synthetic_second_raw_read"
+        },
+        "assertion_error": {
+          "type": "AssertionError",
+          "message": "expected_complete_sha_assertion_failure"
+        },
+        "unexpected_error": null,
+        "close_errors": []
+      },
+      "unknown_accounting": {
+        "planned_prefix": [],
+        "failures": [
+          {
+            "kind": "index",
+            "quantity": "raw_bytes_in_failed_read",
+            "value": null,
+            "reason": "OSError",
+            "requested_bytes": 8
+          },
+          {
+            "kind": "index",
+            "quantity": "payload_bytes_in_failed_gzip_call",
+            "value": null,
+            "reason": "OSError",
+            "requested_bytes": 1006
+          },
+          {
+            "kind": "index",
+            "quantity": "gzip_internal_unreturned_payload_bytes",
+            "value": null,
+            "reason": "failed_prefix_read"
+          }
+        ]
+      }
+    }
+  ],
+  "unknown_semantics": {
+    "planned_prefix_unknowns": 2,
+    "injected_failure_unknowns": 3,
+    "values_remain_null": true,
+    "cases_with_unknown_consumption": 0,
+    "interpretation": "Zero cases_with_unknown_consumption means every case has an available consumption ledger. It does not mean zero unknown byte quantities. There are two planned gzip-buffer unknowns and three injected-failure unknowns.",
+    "successful_source_completions": 2,
+    "failed_source_completions": 1,
+    "case_pass_interpretation": "The third case passes its expected-failure contract while its source remains failed and incomplete.",
+    "synthetic_generated_payload_bytes": 32778,
+    "generated_payload_is_not_the_returned_prefix_byte_counter": true
+  },
+  "caller_owned_failure_and_closure": {
+    "static_evidence": [
+      "protocol.py:88-107 appends the case before stream work and attaches the live meter counts to the caller ledger.",
+      "protocol.py:123-129 retains the synthetic OSError; 137-186 closes owned gzip/raw/auxiliary objects and preserves failed status/partial hash.",
+      "protocol.py:191-213 records the expected final AssertionError on the same partial pass and requires failure quantities to remain null.",
+      "protocol.py:230-242 rethrows unexpected errors while retaining observations/totals in finally; 274-282 similarly retains outer status and propagates failure.",
+      "experiment.py:146-163 passes the caller-owned ledger and writes it in worker finally, rethrowing failures."
+    ],
+    "observed": "The injected read returned and hashed two bytes before its second read failed. The original OSError and expected final AssertionError are both present. All three raw/gzip streams and zero-drain auxiliary streams are closed; recorded reads during close are zero.",
+    "unexercised_boundary": "The expected fault is caught inside the successful synthetic harness. This run does not dynamically exercise an unexpected exception escaping the protocol into a failing worker, or failure propagation through the unchanged original teacher-label probe."
+  },
+  "lifecycle_and_limits": {
+    "primary_elapsed_seconds": 0.045999999972991645,
+    "lifecycle": {
+      "tree_closed": true,
+      "active_processes_after_close": 0,
+      "elapsed_seconds": 0.2029999999795109,
+      "peak_job_memory_bytes": 17424384,
+      "peak_job_memory_kind": "job_commit_peak_from_Windows_PeakJobMemoryUsed",
+      "direct_returncode": 0,
+      "close_seconds": 0,
+      "sampled_peak_tree_working_set_bytes": 36306944,
+      "sampled_peak_tree_private_commit_bytes": 16093184,
+      "working_set_is_sampled_lower_bound": true,
+      "memory_limit_bytes": 268435456,
+      "memory_sample_interval_seconds": 0.05,
+      "total_processes": 3,
+      "containment_established": true,
+      "creation_mode": "atomic_job_list_then_resume",
+      "termination_requested": false,
+      "job_handle_closed": true,
+      "all_process_handles_closed": true,
+      "stop_reason": "root_exit",
+      "exception_type": null,
+      "close_error_types": [],
+      "active_at_root_exit": 0,
+      "retained_live_at_root_exit": 0,
+      "natural_wait_seconds": 0,
+      "natural_tree_exit": true,
+      "natural_exit_proof": "job_active_processes_zero_and_retained_identity_handles_signaled",
+      "natural_limit_reason": "fixed_grace",
+      "active_before_force": null,
+      "natural_wait_limit_seconds": 2
+    },
+    "summary_elapsed_seconds": 0.34399999998277053,
+    "acceptance_elapsed_seconds": 0.35899999999674037,
+    "original_executable_clock_seconds": 60,
+    "work_phase_seconds": 30,
+    "worker_phase_seconds": 40,
+    "tree_close_seconds_limit": 10,
+    "original_clock_evidence": "experiment.py:232 establishes one monotonic deadline; 235/245 derive work and worker phase from it; 256/273/280 check it through final acceptance.",
+    "preflight_excluded_from_executable_clock": true,
+    "parent_exit_code": 0,
+    "external_parent_exit_receipt_observed": true,
+    "reviewer_directly_observed_execution": false,
+    "single_run_invocations": 1,
+    "retries": 0,
+    "raw_synthetic_bytes_limit": 131072,
+    "returned_payload_bytes_limit": 1024,
+    "json_decode_limit": 2,
+    "output_bytes_limit": 2097152,
+    "artifact_bytes_before_acceptance": 1261887,
+    "acceptance_bytes": 371,
+    "artifact_bytes_at_parent_exit_before_exit_receipt": 1262258,
+    "exact_acceptance_size_addition_verified": true,
+    "post_execution_review_and_publication_are_separate": true
+  },
+  "binding_and_preservation": {
+    "crosschecks": {
+      "commit": true,
+      "freeze": true,
+      "primary_hash": true,
+      "summary_hashes": true,
+      "acceptance_hash": true,
+      "final_size": true,
+      "source_hashes": true,
+      "timing": true,
+      "exit_and_lifecycle": true,
+      "old_failed_preserved": true,
+      "output_under_cap": true
+    },
+    "additional_checks": {
+      "expected_case_names": true,
+      "all_case_ledgers_available": true,
+      "unknowns_are_null": true,
+      "original_prohibited_zero": true,
+      "fixture_size_all_normal_hash_bindings": true,
+      "full_raw_formula": true,
+      "closed_no_new_read": true,
+      "preserved_old_totals": true,
+      "case_source_counts": true,
+      "all_numeric_counts_nonnegative_integer": true
+    },
+    "pre_execution_receipt_source_bindings": 158,
+    "pre_execution_receipt_control_bindings": 4,
+    "this_review_reopened_git_objects": false,
+    "two_inspected_source_hashes_match_preregistered_receipt": true,
+    "prior_static_full_binding_review_reused": true,
+    "runtime_history_receipt": {
+      "passed": true,
+      "checked_paths": 6874,
+      "changed_paths": [],
+      "full_history_content_rehashed": false
+    },
+    "history_scope": "6874 stat entries were checked by the executor. This review checked that receipt and the stat-guard source path; it did not reread or rehash historical payloads.",
+    "old_execution_passed": false,
+    "old_strict_result_review_passed": false,
+    "original_policy_admission": false,
+    "cumulative_task_scoring": {
+      "groups": 3921,
+      "candidates": 228505
+    }
+  },
+  "activity": {
+    "project_imports": 0,
+    "fixtures_executed": 0,
+    "new_synthetic_trials": 0,
+    "machine_checker_invocations": 0,
+    "controller_calls": 0,
+    "model_loads": 0,
+    "model_forwards": 0,
+    "training_runs": 0,
+    "new_games": 0,
+    "official_transitions": 0,
+    "temporary_files": 0,
+    "implementation_files_modified": 0,
+    "old_receipts_modified": 0,
+    "agent_workflow_calls": 0,
+    "new_output_files": [
+      "independent-result-review.json"
+    ]
+  },
+  "limitations": [
+    "This is independent evidence arithmetic and static path review, not a second original-data/model reproduction.",
+    "Only the three fixed in-memory synthetic cases are supported. No teacher-label equivalence, alternative-label coverage, policy benefit, or economic result follows.",
+    "The repair is not yet connected to the real teacher-label probe; the old failed run and strict-review failure remain unchanged.",
+    "Unknown quantities remain unknown; this run does not recover lost counts from the old failed fixture.",
+    "Local preregistration commit binding is not an external timestamp.",
+    "The reported natural exit and historical stat protection come from bound executor receipts; this reviewer did not monitor the process or reopen history."
+  ],
+  "blocking_findings": [],
+  "unique_next_recommendation": "Separately preregister the smallest integration that connects this verified synthetic prerequisite and caller-owned failure ledger to the teacher-label entry point, with an independent static wiring check. Preserve the old failure and authorize no original-data retry from this synthetic result alone."
+}

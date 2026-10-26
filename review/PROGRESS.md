@@ -243,3 +243,14 @@
 主代理另在 180 秒上限内用 0.250 秒核对安全收据、154 份运行／公开源码、159 个 Git 原字节绑定、6,842 个历史 stat、模型 stat 和默认 Bot SHA；未读取 case、原样本或模型。裁决仅关闭这次失败阶段，并确认没有可接受的标签实验结果；不覆盖独立复审的计时例外或旧失败。公开证据仅含脱敏摘要及原哈希，原日志、进程身份、私有 case、模型和 Replay 留在本地。
 
 [Report](../kaggriculture/TASK_BC_TEACHER_LABEL_EQUIVALENCE_V1.zh-CN.md) | [Evidence](evidence/task-bc-teacher-label-equivalence-v1-20261026/)
+
+
+## 教师标签前置协议修复：三个合成场景通过
+
+本轮只验证新的前置协议函数，尚未接入真实教师标签探针。三个预定合成场景在唯一一次入口执行中全部通过，解决了零 drain 被错误拒绝以及失败测试局部账本丢失的问题。旧 `task-bc-teacher-label-equivalence-v1` 仍是失败，没有重跑，没有新的标签等价性或比赛收益结论。
+
+合计读取并散列 **38,198 个合成压缩字节**，返回 payload **18 字节**，完成 **2 次 JSON 解码**。两个正常前缀有 **2 项计划内缓冲未知量**；注入失败留下 **3 项失败未知量**。它们都保留为 null，不以零替代。所有 gzip、内存 raw 及附加 buffer／bridge 均关闭；关闭动作没有额外读取。
+
+复审仅通过合成协议结果。本次预定读取错误和完整性断言是在成功的合成测试程序内部捕获，**没有动态验证非预期异常穿过 worker 退出边界的路径**，也没有接入真实教师标签探针。旧严格复审 false 保留，不能用本次新复审覆盖。最终主代理裁决另见同名 evidence 目录。
+
+[Report](../kaggriculture/TASK_BC_TEACHER_LABEL_PROTOCOL_REPAIR_V1.zh-CN.md) | [Evidence](evidence/task-bc-teacher-label-protocol-repair-v1-20261026/)
