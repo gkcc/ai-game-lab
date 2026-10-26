@@ -1,0 +1,80 @@
+{
+  "authorization_boundary": [
+    "Root must explicitly approve a new stage and a fresh single fit slot under the continuing learning route; this advice itself grants no fit permission.",
+    "The old failed stage, consumed launch slot, sources, evidence and interpretation remain final. No refund or direct rerun in its directory.",
+    "Close and publish this synthetic stage first. Its 3600-second budget is not silently extended into training."
+  ],
+  "basis": {
+    "approved_anchor_route_decision_sha256": "65fd39187fbea3d4715292f444ea31b34a9369daa199ba285e1102771d2ed80f",
+    "closed_anchor_failure_acceptance_sha256": "ddcf87ee02842c51bb508ab6e67fedcfb4f3dd84b3172235bb99907c4d7d9dac",
+    "frozen_anchor_registration_sha256": "b7f6066855b445efe8cd719305fd4c5d82845255c5f335e220fcb224f35b6836",
+    "repair_dispatch_result_sha256": "5b3743e886f8634f896a8f57eb72baaa705aefce5a139c45ae8a6579147b507f",
+    "repaired_freeze_sha256": "9e5b2141e7a708a978e5816ab9cdc9180dc28591afcee28c646becf76b68ad0e"
+  },
+  "created_utc": "2026-10-26T21:55:00.008724+00:00",
+  "data_and_evaluation_roles": [
+    "Reuse existing training data read-only. Old validation and previous development remain known screens, never fresh independent evidence or gradient data.",
+    "Keep the fixed independent numerical full-group sampling rule. Do not choose groups after seeing errors or replace over-budget groups.",
+    "Register a fresh ten-seed official panel before scoring using the same declared generator/exclusion rule, excluding all earlier registered, failed and unused reserved game seeds. First two are development; last eight stay untouched until development passes. Do not choose seeds by results.",
+    "Retain all gates, bootstrap rules and stop rules. Never reuse old test outcomes to tune or lower thresholds."
+  ],
+  "implementation_scope": [
+    "Use a new source namespace and output directory; connect only necessary registration, worker and campaign adapters to the frozen repaired launcher.",
+    "Keep spawn creation/start/serialization/IPC/control outside artifact guards, parent receipts cumulatively bounded and real-worker artifact writers guarded. Do not call the unchanged globally guarded old launcher.",
+    "Preserve feature/candidate/controller/statistics/official-replay behavior by frozen identity. Review concrete adapter differences and changed behavior; no repository-wide audit.",
+    "Freeze sources, data/source identities, counters and seed roles. Independent source review and an exact-byte local preregistration commit must pass before the one real fit."
+  ],
+  "ordered_gates": [
+    "One fit only. Count failed/in-flight work and apply the fixed process/artifact limits.",
+    "Require numeric integrity, zero CPU/GPU first-argmax differences and unchanged CE ratio gates: known development at most 0.95 and original validation at most 1.02.",
+    "Only after that gate run 24 preregistered development games; only if their gates pass run 96 holdout games. A reached-stage failure closes the stage without replacement.",
+    "Independently verify reached numeric/game/replay evidence. Root judges S improvement, teacher retention and changed control separately. Fit success is not policy improvement and never automatically changes the default Bot."
+  ],
+  "performed_by_this_advice": {
+    "fits": 0,
+    "implementation": false,
+    "model_or_cache_array_decodes": 0,
+    "new_games": 0
+  },
+  "proposed_budgets_inherited_without_extension": {
+    "additional_frozen_S_rows_padded_max": 20000000,
+    "additional_frozen_S_rows_real_max": 10000000,
+    "candidate_gradient_rows_padded_max": 40000000,
+    "candidate_gradient_rows_real_max": 20000000,
+    "final_models": 1,
+    "fit_process_seconds_including_cleanup": 1200,
+    "fits": 1,
+    "free_disk_floor_bytes": 4294967296,
+    "independent_offline_presentations_reserved": 100000,
+    "independent_review_seconds": 3600,
+    "new_games_max": 120,
+    "new_training_games": 0,
+    "official_transitions_total_max": 174717,
+    "offline_presentations_max": 12000000,
+    "other_limits": "Carry every stricter per-turn/per-game/storage partition from the frozen original registration and accepted amendments unchanged; debit before dispatch/call.",
+    "owned_artifacts_bytes_max": 17179869184,
+    "primary_campaign_seconds": 10800,
+    "training_loop_seconds": 600,
+    "updates": 512
+  },
+  "reason": "The prior worker never entered, so the fixed anchor method has no completed fit or scientific result. The startup counterexample is now closed without changing that method. A separately authorized replacement execution answers the original question without a hyperparameter search.",
+  "schema": "anchor-spawn-repair-independent-next-step-v1",
+  "single_next_task": "Register one new versioned execution of the previously fixed original-S anchor treatment through the proven launcher boundary.",
+  "status": "proposed_not_approved_or_executed",
+  "stop_condition": "Any entry, storage, immutability, cleanup, numeric, development or holdout failure closes the new stage with actual consumption. No retry/refund, second fit or silent extension. A materially different future learning question needs separate root adjudication.",
+  "suggested_task": "task_anchor_reentry_v1",
+  "treatment_unchanged": {
+    "dagger_groups_per_update": 128,
+    "final_checkpoints": 1,
+    "frozen_components": "Existing architecture, normalizer, crop head, masks, candidate ordering and controller mechanisms; only the already specified task treatment trains.",
+    "gradient_norm_clip": 1.0,
+    "initialization": "Original S checkpoint and fresh optimizer; never the failed DAgger candidate.",
+    "learning_rate": 0.0001,
+    "loss": "Weighted CE over 256 complete groups plus 1.0 times weighted KL(p_S || p_C) over old 128 groups; temperature 1; frozen S stop_gradient.",
+    "no_search": "No coefficient/direction/temperature/LR/step/mix/init/checkpoint/threshold changes, interpolation, model selection, PPO or action-space expansion.",
+    "old_groups_per_update": 128,
+    "training_rng": 2026102707,
+    "training_settings_source_sha256": "b7f6066855b445efe8cd719305fd4c5d82845255c5f335e220fcb224f35b6836",
+    "updates": 512
+  }
+}

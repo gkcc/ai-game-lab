@@ -1,0 +1,81 @@
+{
+  "committed_exact_bytes_matched": {
+    "preregistration_files": 4,
+    "source_files": 6
+  },
+  "created_utc": "2026-10-26T21:55:00.008724+00:00",
+  "default_bot_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+  "evidence_sha256": {
+    "dispatch-result.json": "5b3743e886f8634f896a8f57eb72baaa705aefce5a139c45ae8a6579147b507f",
+    "dispatch-started.json": "71308df224738c81a8ff5245acbc45b8bc7794bbb43632bb36f5330f33cdc94e",
+    "freeze.json": "9e5b2141e7a708a978e5816ab9cdc9180dc28591afcee28c646becf76b68ad0e",
+    "guard-result.json": "07c085da48f3c770aebacd49d8af87e53474f3c7f5b6f4d5abb02181b53cf92e",
+    "guard-started.json": "f382e75802442a2dd053763398aa6cb4effbcbb3385465d1a5ffcaf55e360809",
+    "parent/launch-result.json": "2363300b83621c5d3592bcb6daac1a776d566d7bb0b387bee304c7f6c4ad01c2",
+    "parent/launch-started.json": "320c4dd5d817da66660f13891c6c643937392ac91268403e9f1985aa22259d9d",
+    "pre-execution-commit.json": "677d7631387d4f819c476ff96e89ea0c67df97ec815c5c14c75ba00d91493e8d",
+    "pre-review.json": "ba487340dcded04ac628aaa7f2291b4382c54d2c2b20d3175eb8761a9c04cf1a",
+    "probe-result.json": "e00655f70b23b698cd2459996d3e79a6c28c5ce5b962d99a8baf1b3e72ae6ff0",
+    "process.local.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "registration.json": "d925d9776702f481873a9db356f205302d2132dc25a7cd6a4c3d77644b7f6e02",
+    "rejection-check.json": "149dff96d15deddafca245cc99af5d941c6ec22d17b6d83e31a4a9f4fa9156df",
+    "target/marker.json": "403e907b54e9d04f3f31d6250dcceda6ea60fdf5d6a1df93a4a1cbd254a1d59d",
+    "target/target-storage.json": "1379f0163f81f229898ffc2f931c39a4d55f3a41228151ca8b32fbd9db929ab7"
+  },
+  "fit_or_learning_pass_claimed": false,
+  "freeze_sha256": "9e5b2141e7a708a978e5816ab9cdc9180dc28591afcee28c646becf76b68ad0e",
+  "measured_files": {
+    "parent/launch-result.json": 296,
+    "parent/launch-started.json": 122,
+    "process.local.log": 0,
+    "rejection-check.json": 90,
+    "target/marker.json": 128,
+    "target/target-storage.json": 245
+  },
+  "next_step_advice_sha256": "b4045854a8a091591eef54dcb49a0f4bb3df443d724ddf30a903c2a52bbd1df3",
+  "old_artifact_hashes_matched": 40,
+  "old_artifact_reference_manifest_sha256": "d925d9776702f481873a9db356f205302d2132dc25a7cd6a4c3d77644b7f6e02",
+  "old_key_modules_matched_frozen": [
+    "storage.py",
+    "training.py",
+    "task_dagger_once_v1/gpu_guard.py"
+  ],
+  "output_accounting": {
+    "independent_limit_bytes": 262144,
+    "prior_pre_review_bytes": 3933,
+    "stage_limit_bytes": 1048576,
+    "stage_owned_bytes_before_this_review": 48410,
+    "this_scope_allowance_bytes": 258211,
+    "this_scope_bytes_before_this_receipt": 11180
+  },
+  "passed": true,
+  "pre_execution_commit": "6f237c37bf32465b70c0786b61a6c7033d3e0ce8",
+  "process_evidence_limit": "Original supervisor/capture/handle receipts establish recorded cleanup; reviewer did not perform a fresh OS process-table scan.",
+  "receipt_prewrite_event": "A stale exact directory-size assertion stopped before any independent output write when root added its 324-byte preservation record. Fresh total-cap accounting replaced that incidental assertion; no target or test ran.",
+  "registration_sha256": "d925d9776702f481873a9db356f205302d2132dc25a7cd6a4c3d77644b7f6e02",
+  "result_review_sha256": "b8bb305472472cdff37637df93b176cabe70b960a506b7969485c31f836ff7da",
+  "reviewer_activity": {
+    "cache_array_decodes": 0,
+    "gpu_operations": 0,
+    "implementation_files_edited": 0,
+    "model_array_decodes": 0,
+    "neural_rows": 0,
+    "new_games": 0,
+    "new_target_starts": 0,
+    "official_steps": 0,
+    "temporary_artifacts_created": 0,
+    "test_executions": 0,
+    "training_fits": 0
+  },
+  "schema": "anchor-spawn-repair-independent-verification-v1",
+  "stage_elapsed_seconds_at_review": 1760.681581,
+  "verification_method": "Read JSON receipts, measure files, recompute SHA256 and compare Git show bytes. No model/cache arrays decoded, tests or Linux commands run, or new target launched.",
+  "verified_new_source_sha256": {
+    "learning/task_anchor_spawn_repair_v1/README.zh-CN.md": "fc0ea185da5451d252f5f84b53ef0c8f0b18987ea8773f60754a902800217a42",
+    "learning/task_anchor_spawn_repair_v1/__init__.py": "ac363e2aa864a0ec85647bf7f60e016484ea546c171254782188fe052d7d6718",
+    "learning/task_anchor_spawn_repair_v1/entry.py": "44b06e7c93332a3bdb12e36063ab39aca108b57af289152ac90beca8c85d5878",
+    "learning/task_anchor_spawn_repair_v1/launcher.py": "aa798f24662eeff6cc676c35832407cf2286772285b981bf6e790349e920e3a3",
+    "learning/task_anchor_spawn_repair_v1/probe.py": "71fd83176c9aba48540e8f0703ec3ed03949686412b4c3b4e84ebae3e90f8d62",
+    "learning/task_anchor_spawn_repair_v1/test_launcher.py": "79522c37295fe626372427532113a616849a73262372af35f8fbab8ca3bd11fa"
+  }
+}

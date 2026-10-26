@@ -1,0 +1,26 @@
+{
+  "capture": {
+    "child_exit_code": 0,
+    "limit_bytes": 65536,
+    "observed_bytes": 0,
+    "reader_joined": true,
+    "written_bytes": 0
+  },
+  "cleanup": {
+    "elapsed_seconds": 3.5160000000032596,
+    "entry_may_still_wait_for_nondaemon_reader": false,
+    "errors": [],
+    "linux_cleanup_evidence": true,
+    "passed": true,
+    "post_deadline_recovery_seconds": 0.0,
+    "reader_exited": true,
+    "transport_reaped": true,
+    "within_total_deadline": true
+  },
+  "guard_sha256": "07c085da48f3c770aebacd49d8af87e53474f3c7f5b6f4d5abb02181b53cf92e",
+  "owned_bytes_before_receipt": 47299,
+  "passed": true,
+  "probe_sha256": "e00655f70b23b698cd2459996d3e79a6c28c5ce5b962d99a8baf1b3e72ae6ff0",
+  "process_seconds": 3.5160000000032596,
+  "stage_elapsed_seconds": 1397.821634
+}

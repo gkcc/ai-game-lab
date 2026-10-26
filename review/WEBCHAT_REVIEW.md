@@ -251,3 +251,12 @@
 Linux监督阶段1.329秒，整个自有进程组已清理并回收；原partial_accounting_unavailable=true及全部失败记录保留。24行CPU合成前向与GPU设备发现均不等于本轮GPU训练。原验证/已知开发仍属已知筛查，10个未运行新对局种子已登记保留。下一步仅处理实际spawn入口兼容性，先用无模型/数据/GPU的真实Linux启动回归，不改超参、模型、默认Bot或历史结果。独立结果复审与主裁决随证据发布。
 
 [报告](../kaggriculture/TASK_ANCHOR_ONCE_V1.zh-CN.md) | [登记、失败记录与独立裁决](evidence/task-anchor-once-v1-20261027/)
+
+
+## WSL 启动边界修复 V1：唯一真实合成目标通过
+
+事前本地提交6f237c3，新版本把父收据写入保护缩到写文件时，保持累计64KiB额度与旧描述符拒绝规则。唯一一次真实WSL multiprocessing目标接收固定payload并零退出；目标0.100秒、Linux监督0.886秒、Windows调用3.516秒，reader/transport及整个自有session清理记录通过。父收据122+296=418字节，目标标记128字节，原生日志0字节；未增加实际目标尝试。
+
+9项不同针对性用例通过。独立审查核对真实标记、字节计数、源码/提交及旧40份产物；旧失败名额、源码、模型和默认Bot保留。本轮0真实训练/数组解码/神经前向/GPU运算/官方比赛，只证明启动边界修复，不能称真实拟合或策略提升已经通过。后续学习需另登记新版本，不退款旧尝试、不调方法或门槛。
+
+[报告](../kaggriculture/TASK_ANCHOR_SPAWN_REPAIR_V1.zh-CN.md) | [登记、源码历史与独立验收](evidence/task-anchor-spawn-repair-v1-20261027/)

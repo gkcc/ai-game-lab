@@ -1,0 +1,38 @@
+{
+  "cache_array_decodes": 0,
+  "gpu_operations": 0,
+  "launch": {
+    "child_exit_code": 0,
+    "elapsed_seconds": 0.10035809999999978,
+    "error_kind": null,
+    "outer_session_supervisor_still_required": true,
+    "parent_receipt_bytes_before_final": 122,
+    "parent_receipt_bytes_total": 418,
+    "parent_receipt_refused": false,
+    "passed": true,
+    "process_start_returned": true,
+    "retry_allowed": false,
+    "target_handle_closed": true
+  },
+  "model_array_decodes": 0,
+  "neural_rows": 0,
+  "official_games": 0,
+  "official_steps": 0,
+  "parent_receipt_sha256": {
+    "launch-result.json": "2363300b83621c5d3592bcb6daac1a776d566d7bb0b387bee304c7f6c4ad01c2",
+    "launch-started.json": "320c4dd5d817da66660f13891c6c643937392ac91268403e9f1985aa22259d9d"
+  },
+  "passed": true,
+  "real_spawn_starts": 1,
+  "real_target_reached": 1,
+  "rejection_check_write_bytes": 90,
+  "target_marker_sha256": "403e907b54e9d04f3f31d6250dcceda6ea60fdf5d6a1df93a4a1cbd254a1d59d",
+  "target_output": {
+    "created_count": 1,
+    "limit_bytes": 4096,
+    "refused": 0,
+    "remaining_bytes": 3968,
+    "used_bytes": 128
+  },
+  "training_fits": 0
+}
