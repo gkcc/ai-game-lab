@@ -1,0 +1,27 @@
+{
+  "status": "stopped_training_signal",
+  "completed_games": 64,
+  "attempted_games": 64,
+  "all_attempts_completed": true,
+  "live_official_transitions": 46016,
+  "primary_official_transitions": 46016,
+  "model_counts": {
+    "task_forwards": 297765,
+    "task_rows": 15381234,
+    "crop_forwards": 27317,
+    "crop_rows": 27317,
+    "gate_evaluations": 0
+  },
+  "extra_gate_evaluations": 0,
+  "policy_turns": 185534,
+  "campaign_seconds": 1598.3279999999795,
+  "neural_weight_updates": 0,
+  "gpu_operations": 0,
+  "gate_fits": 0,
+  "default_changed": false,
+  "teacher_admission": false,
+  "registration_sha256": "7af5a9fb72b083fd1f46b4c74d3abc25314f32d28c3f1472f30bbf9ce42f1569",
+  "freeze_sha256": "e7715790dcdf2eb55581294ee8803866b3fc4ea78da6bab7f9d9d885c818139c",
+  "training_signal_passed": false,
+  "holdout_run": false
+}

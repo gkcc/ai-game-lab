@@ -1,0 +1,1488 @@
+{
+  "schema": "task-reward-gate-raw-terminal-supplement-v1",
+  "passed": true,
+  "original_independent_result_review_sha256": "b6926bbbc61b5842b45e0fdbef9287220cd9dd6281f839190efbb875d81363d3",
+  "original_review_unchanged": true,
+  "script_sha256": "1bd6d71541f3262bb404c9a1430a1c517f954853745d9acc14fa27bfb20d2386",
+  "ledger_sha256": "041e79ab5a1797f3d72d8f72cee94328bc1f61c6a30d56511dd4f457b25ad7df",
+  "pairs_sha256": "cbfcb5de485ce72c8ff6e5001987e81ca7e9d230504187ed3ed39b627f022170",
+  "raw_replays_checked": 64,
+  "all_raw_gzip_hashes_match_ledger": true,
+  "all_initial_final_cash_rewards_and_statuses_match": true,
+  "pairs_recomputed_from_raw_terminal_cash": 32,
+  "positive_pairs": [
+    {
+      "seed": 355793896,
+      "opponent": "market",
+      "side": 0,
+      "delta_own": 959.0,
+      "delta_opponent": 1224.0,
+      "delta_margin": -265.0,
+      "delta_score": 0.0
+    },
+    {
+      "seed": 3766401297,
+      "opponent": "market",
+      "side": 0,
+      "delta_own": 116.0,
+      "delta_opponent": -1.0,
+      "delta_margin": 117.0,
+      "delta_score": 0.0
+    },
+    {
+      "seed": 3735487071,
+      "opponent": "market",
+      "side": 0,
+      "delta_own": 237.0,
+      "delta_opponent": -1.0,
+      "delta_margin": 238.0,
+      "delta_score": 0.0
+    },
+    {
+      "seed": 1637505918,
+      "opponent": "market",
+      "side": 1,
+      "delta_own": 17.0,
+      "delta_opponent": 0.0,
+      "delta_margin": 17.0,
+      "delta_score": 0.0
+    }
+  ],
+  "mean_delta_own": 41.53125,
+  "mean_delta_opponent": 38.1875,
+  "mean_delta_margin": 3.34375,
+  "by_opponent_cash_totals": {
+    "round2": {
+      "pairs": 16,
+      "own_sum": 0.0,
+      "rival_sum": 0.0,
+      "margin_sum": 0.0
+    },
+    "market": {
+      "pairs": 16,
+      "own_sum": 1329.0,
+      "rival_sum": 1222.0,
+      "margin_sum": 107.0
+    }
+  },
+  "replay_terminal_checks": [
+    {
+      "game": "train-355793896-round2-0-baseline",
+      "passed": true,
+      "replay_gzip_sha256": "40861e0a4a9b84116662dc1ee5f91fe08ffa368c6b4ce9887ea389aa8f68de0b",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        45741.0,
+        46962.0
+      ],
+      "rewards": [
+        45741.0,
+        46962.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-355793896-round2-1-baseline",
+      "passed": true,
+      "replay_gzip_sha256": "d77ed1b79314417b84569afc0135c379cf1108b59383509ef589fa25e47eef04",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        46962.0,
+        45741.0
+      ],
+      "rewards": [
+        46962.0,
+        45741.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-355793896-market-1-baseline",
+      "passed": true,
+      "replay_gzip_sha256": "4b5e48efbee9c86b758a9b2500b3993a0784535c76e8190ae94cfb1f42986d37",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        49505.0,
+        48910.0
+      ],
+      "rewards": [
+        49505.0,
+        48910.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-355793896-market-0-baseline",
+      "passed": true,
+      "replay_gzip_sha256": "a79690c53647173df2e2515b49668465d091d979422201acf897e4507b70d7c0",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        48910.0,
+        49505.0
+      ],
+      "rewards": [
+        48910.0,
+        49505.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-3766401297-round2-0-baseline",
+      "passed": true,
+      "replay_gzip_sha256": "fed9fb94561f87c7f0dca94d226606627db78349369b3a85aab6fa889a8bd39f",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        32380.0,
+        30365.0
+      ],
+      "rewards": [
+        32380.0,
+        30365.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-3766401297-round2-1-baseline",
+      "passed": true,
+      "replay_gzip_sha256": "cca1a6537659a4842fa64bc9e20e21ab6d0e9f9ca8803afcd3b12a9ec341defe",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        30365.0,
+        32380.0
+      ],
+      "rewards": [
+        30365.0,
+        32380.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-3766401297-market-0-baseline",
+      "passed": true,
+      "replay_gzip_sha256": "94d9d97339784edbecd930750ddde5c5e0dd28b3c454ea53aa626c0eedc23226",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        34034.0,
+        35193.0
+      ],
+      "rewards": [
+        34034.0,
+        35193.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-3766401297-market-1-baseline",
+      "passed": true,
+      "replay_gzip_sha256": "ae0dde56b2397995050802f395c833092231d29101f4c8cfc6e5fa583ce0439a",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        35193.0,
+        34034.0
+      ],
+      "rewards": [
+        35193.0,
+        34034.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-1548293009-round2-0-baseline",
+      "passed": true,
+      "replay_gzip_sha256": "b12db92c764cb48df3a11d8adc817fcfacf10e30c2387df8c8d85a6b0ce40d6c",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        40738.0,
+        44903.0
+      ],
+      "rewards": [
+        40738.0,
+        44903.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-1548293009-round2-1-baseline",
+      "passed": true,
+      "replay_gzip_sha256": "400268c2dbfccd8bb432898b2879a18c89d71f79378c922489654902f279af47",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        44903.0,
+        40738.0
+      ],
+      "rewards": [
+        44903.0,
+        40738.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-1548293009-market-0-baseline",
+      "passed": true,
+      "replay_gzip_sha256": "0608f38b360adc90cc1108d1cf643b2a3e65d1ffabcbc3ad3594ffdde5a94d70",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        46580.0,
+        42399.0
+      ],
+      "rewards": [
+        46580.0,
+        42399.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-1548293009-market-1-baseline",
+      "passed": true,
+      "replay_gzip_sha256": "e23af4924c216f84b58a9825f9132ec7232c8f1c01698cb40f5ab9e8d7132e85",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        42399.0,
+        46580.0
+      ],
+      "rewards": [
+        42399.0,
+        46580.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-3735487071-round2-0-baseline",
+      "passed": true,
+      "replay_gzip_sha256": "f35cc06f5e3cc8a58abd81f38731e9e0836a64163bfbae1035a93dc8e122e6a3",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        44005.0,
+        47649.0
+      ],
+      "rewards": [
+        44005.0,
+        47649.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-3735487071-round2-1-baseline",
+      "passed": true,
+      "replay_gzip_sha256": "5d9138d130790736f401da942e3d8b73fd843c1175722024b3ea1eb85e9cf6b9",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        47649.0,
+        44005.0
+      ],
+      "rewards": [
+        47649.0,
+        44005.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-3735487071-market-0-baseline",
+      "passed": true,
+      "replay_gzip_sha256": "c7b4024d761a5bf30d4570853a21bfc4fa038d4e07db4be543a51847bff7c2da",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        49845.0,
+        44077.0
+      ],
+      "rewards": [
+        49845.0,
+        44077.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-3735487071-market-1-baseline",
+      "passed": true,
+      "replay_gzip_sha256": "fcf223d9e28a9ce52faf436da0b4fe42ae6733ace9a1ef24f38e01f4a50453ca",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        44077.0,
+        49845.0
+      ],
+      "rewards": [
+        44077.0,
+        49845.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-1048308863-round2-0-baseline",
+      "passed": true,
+      "replay_gzip_sha256": "d1658f6ceddcef95f7471e114a79b9bbc8f0ab9b3cdf5ff1890340cfc0731fc7",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        34335.0,
+        33456.0
+      ],
+      "rewards": [
+        34335.0,
+        33456.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-1048308863-round2-1-baseline",
+      "passed": true,
+      "replay_gzip_sha256": "f8e31a7dded36901e78be151793b66643f87fd184007f711d4331a94c2e7fdfc",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        33628.0,
+        34172.0
+      ],
+      "rewards": [
+        33628.0,
+        34172.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-1048308863-market-0-baseline",
+      "passed": true,
+      "replay_gzip_sha256": "ffff16b5cb10f93c337144ed958f067cde61eb012b85fe0e21c43c21ec36a36d",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        33123.0,
+        37114.0
+      ],
+      "rewards": [
+        33123.0,
+        37114.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-1048308863-market-1-baseline",
+      "passed": true,
+      "replay_gzip_sha256": "a6280afdd0cf835c3302ba5070d629689563f358739d43c29bcf3090c821a718",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        37114.0,
+        33123.0
+      ],
+      "rewards": [
+        37114.0,
+        33123.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-1637505918-round2-0-baseline",
+      "passed": true,
+      "replay_gzip_sha256": "5b98557a9436d3a10f897ebafb3594d92b0ceb5d8f3d3a5d1bff430d8a553571",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        44190.0,
+        40636.0
+      ],
+      "rewards": [
+        44190.0,
+        40636.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-1637505918-round2-1-baseline",
+      "passed": true,
+      "replay_gzip_sha256": "3dee38921a4e75c7f79a0de5725ba234e4111f75b9f47573e622fd18ff090974",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        40636.0,
+        44190.0
+      ],
+      "rewards": [
+        40636.0,
+        44190.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-1637505918-market-0-baseline",
+      "passed": true,
+      "replay_gzip_sha256": "4cf98cd064876eb3a5f5b1915d47cf6c7f17bda4816494c129e09c672afb12df",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        45831.0,
+        45575.0
+      ],
+      "rewards": [
+        45831.0,
+        45575.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-1637505918-market-1-baseline",
+      "passed": true,
+      "replay_gzip_sha256": "aeea70bbbbe3e83a94ed562049966d848be82ffe79900e7ad70299b635065cb3",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        45575.0,
+        45831.0
+      ],
+      "rewards": [
+        45575.0,
+        45831.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-622662681-round2-0-baseline",
+      "passed": true,
+      "replay_gzip_sha256": "892f894d5ccabdc8444f49862efa17cc960d175d80d8265ff72c8570e79555cc",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        38149.0,
+        44651.0
+      ],
+      "rewards": [
+        38149.0,
+        44651.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-622662681-round2-1-baseline",
+      "passed": true,
+      "replay_gzip_sha256": "dc6d6c4eae6d9af667816fcaac0c51140ab960b24cbb98135d036b03e4d31f7d",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        44651.0,
+        38149.0
+      ],
+      "rewards": [
+        44651.0,
+        38149.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-622662681-market-0-baseline",
+      "passed": true,
+      "replay_gzip_sha256": "7ac29f14532e9bc8393e00f4a6080a9b37c712d85d688a457c4970f5cc89daee",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        44221.0,
+        42713.0
+      ],
+      "rewards": [
+        44221.0,
+        42713.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-622662681-market-1-baseline",
+      "passed": true,
+      "replay_gzip_sha256": "4bcb4ae081d7ccc68bfca4bf3999d6256fc10c5e90a8594f2bafc0bde3aa00a6",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        42713.0,
+        44221.0
+      ],
+      "rewards": [
+        42713.0,
+        44221.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-1335785613-round2-0-baseline",
+      "passed": true,
+      "replay_gzip_sha256": "7c9bb45e039e40c5a2b81effe35db352ceda8b5fdfb9896d2961c989bd5012f3",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        47363.0,
+        43777.0
+      ],
+      "rewards": [
+        47363.0,
+        43777.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-1335785613-round2-1-baseline",
+      "passed": true,
+      "replay_gzip_sha256": "8566c4957450cff8918f1024373dc95e2b7f2ead417420b0363e849fe179c610",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        43777.0,
+        47363.0
+      ],
+      "rewards": [
+        43777.0,
+        47363.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-1335785613-market-0-baseline",
+      "passed": true,
+      "replay_gzip_sha256": "a1305bbd0513fca437b22e5b53b26ff27f7f178a4b9b913d912771835538dec9",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        48394.0,
+        48662.0
+      ],
+      "rewards": [
+        48394.0,
+        48662.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-1335785613-market-1-baseline",
+      "passed": true,
+      "replay_gzip_sha256": "bb648638c9b800faa88228474f3c634649f0679d54182a3c93da0a66b22bec47",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        48662.0,
+        48394.0
+      ],
+      "rewards": [
+        48662.0,
+        48394.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-355793896-round2-0-intervention",
+      "passed": true,
+      "replay_gzip_sha256": "71d0c9c53e627dae0b90889368bc4cb727163d3fc61cabeb4e36913a4b192111",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        45741.0,
+        46962.0
+      ],
+      "rewards": [
+        45741.0,
+        46962.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-355793896-round2-1-intervention",
+      "passed": true,
+      "replay_gzip_sha256": "bf3f70124e2eae9e4e08da2f0bc3996763bcb945686ad63a518b9e74c19e7ec1",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        46962.0,
+        45741.0
+      ],
+      "rewards": [
+        46962.0,
+        45741.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-355793896-market-0-intervention",
+      "passed": true,
+      "replay_gzip_sha256": "80ba70d2b405415c2105db5264550496b21c3fdd6d476b9d95e7a08831bf8c40",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        49869.0,
+        50729.0
+      ],
+      "rewards": [
+        49869.0,
+        50729.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-355793896-market-1-intervention",
+      "passed": true,
+      "replay_gzip_sha256": "86aed32840d0383ccc564efdbf793a1603673156379d3ee4fad1388221fe2e34",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        49505.0,
+        48910.0
+      ],
+      "rewards": [
+        49505.0,
+        48910.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-3766401297-round2-0-intervention",
+      "passed": true,
+      "replay_gzip_sha256": "6cbb1b760f6b10cb74c2ef26402eb708428609400cb852cf747889165cefdeec",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        32380.0,
+        30365.0
+      ],
+      "rewards": [
+        32380.0,
+        30365.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-3766401297-round2-1-intervention",
+      "passed": true,
+      "replay_gzip_sha256": "d97990ec78d8e58a25f854d6be9fa175cff5548bfc001d33e2c7a3ebab4e4e5a",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        30365.0,
+        32380.0
+      ],
+      "rewards": [
+        30365.0,
+        32380.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-3766401297-market-1-intervention",
+      "passed": true,
+      "replay_gzip_sha256": "3ee034a1139e6904f5442508827f4ead59e56cb29ad2d16df8e3f3766a27a52c",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        35193.0,
+        34034.0
+      ],
+      "rewards": [
+        35193.0,
+        34034.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-3766401297-market-0-intervention",
+      "passed": true,
+      "replay_gzip_sha256": "d25a5fd55d2221ba4ebd58bed97378cdb21b7e9542dd2fc73c683a80ff3c25c2",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        34150.0,
+        35192.0
+      ],
+      "rewards": [
+        34150.0,
+        35192.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-1548293009-round2-0-intervention",
+      "passed": true,
+      "replay_gzip_sha256": "32a592b15fba7dd57f2d4412d187499704b31b1a55dfcdbf1e10e05f172b9a82",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        40738.0,
+        44903.0
+      ],
+      "rewards": [
+        40738.0,
+        44903.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-1548293009-round2-1-intervention",
+      "passed": true,
+      "replay_gzip_sha256": "b133a73e46007386e2d8adce4d2138a750fd757a0cfd54b01892a3bf4d885ac0",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        44903.0,
+        40738.0
+      ],
+      "rewards": [
+        44903.0,
+        40738.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-1548293009-market-0-intervention",
+      "passed": true,
+      "replay_gzip_sha256": "1ec95f321ffa08b0ea96111dc655af2b573371d3495a1ecfec17ad0957349951",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        46580.0,
+        42399.0
+      ],
+      "rewards": [
+        46580.0,
+        42399.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-1548293009-market-1-intervention",
+      "passed": true,
+      "replay_gzip_sha256": "78a9433ddae94b823b44e4ef43bb03acdf40f0d049eef1ed1e7b9955125c9bdb",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        42399.0,
+        46580.0
+      ],
+      "rewards": [
+        42399.0,
+        46580.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-3735487071-round2-0-intervention",
+      "passed": true,
+      "replay_gzip_sha256": "e90ff5611bb2ac3b554cd4a8f18f30c8d29fa2eb7b4a845ae062bf459c52b7a8",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        44005.0,
+        47649.0
+      ],
+      "rewards": [
+        44005.0,
+        47649.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-3735487071-round2-1-intervention",
+      "passed": true,
+      "replay_gzip_sha256": "06a7cf08d267e9e1ca1aab9942cce14bee23469229d0661c105a67c5333a5fdd",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        47649.0,
+        44005.0
+      ],
+      "rewards": [
+        47649.0,
+        44005.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-3735487071-market-0-intervention",
+      "passed": true,
+      "replay_gzip_sha256": "6fd59e88d04328b20d5d69a7342fbe0c6d77d51a46149b431ef94fbd3e8b0dab",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        50082.0,
+        44076.0
+      ],
+      "rewards": [
+        50082.0,
+        44076.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-3735487071-market-1-intervention",
+      "passed": true,
+      "replay_gzip_sha256": "5ff7ee321e6ff7e7e769484ea1355a1ef4bc54c9de421b1341efc54ac46880d4",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        44077.0,
+        49845.0
+      ],
+      "rewards": [
+        44077.0,
+        49845.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-1048308863-round2-0-intervention",
+      "passed": true,
+      "replay_gzip_sha256": "ab25b711633303d7a251a903d9c98730a558f81015ad0377d3698b56cebd4d1d",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        34335.0,
+        33456.0
+      ],
+      "rewards": [
+        34335.0,
+        33456.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-1048308863-round2-1-intervention",
+      "passed": true,
+      "replay_gzip_sha256": "48207d1a2eeb7ca7759b4bbe38941bca714942f60dfb42beb123ea8e3cbf36c5",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        33628.0,
+        34172.0
+      ],
+      "rewards": [
+        33628.0,
+        34172.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-1048308863-market-0-intervention",
+      "passed": true,
+      "replay_gzip_sha256": "508a543ecda59890a643f9a762d569f5f34c77437731d3c86fab9d2bbfec93c5",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        33123.0,
+        37114.0
+      ],
+      "rewards": [
+        33123.0,
+        37114.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-1048308863-market-1-intervention",
+      "passed": true,
+      "replay_gzip_sha256": "9168198ffc69ae98763815adf2c964f2b376a01866f32e308f36206cbafa9e55",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        37114.0,
+        33123.0
+      ],
+      "rewards": [
+        37114.0,
+        33123.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-1637505918-round2-0-intervention",
+      "passed": true,
+      "replay_gzip_sha256": "86b4b3ca5224f7248e047da155fd38df0c194651d20422176018e35b4c222ba7",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        44190.0,
+        40636.0
+      ],
+      "rewards": [
+        44190.0,
+        40636.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-1637505918-round2-1-intervention",
+      "passed": true,
+      "replay_gzip_sha256": "6a504038dc80303761b988d38c404316d8daf29da99fb6a97835c6caf16546b3",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        40636.0,
+        44190.0
+      ],
+      "rewards": [
+        40636.0,
+        44190.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-1637505918-market-0-intervention",
+      "passed": true,
+      "replay_gzip_sha256": "044a0bd8fd37fc6a9542bad36892094a2c12094c9c21eaa2e2ea88be770b38de",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        45831.0,
+        45575.0
+      ],
+      "rewards": [
+        45831.0,
+        45575.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-1637505918-market-1-intervention",
+      "passed": true,
+      "replay_gzip_sha256": "72223ac0c626ffcfe54dc87dad9fdb30e4358c979c9071499f127a24c87992ab",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        45575.0,
+        45848.0
+      ],
+      "rewards": [
+        45575.0,
+        45848.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-622662681-round2-0-intervention",
+      "passed": true,
+      "replay_gzip_sha256": "77cd7b782a81d666c2754e9c945578e64acd6ddb28c0c29e1b4aab4414784acd",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        38149.0,
+        44651.0
+      ],
+      "rewards": [
+        38149.0,
+        44651.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-622662681-round2-1-intervention",
+      "passed": true,
+      "replay_gzip_sha256": "34819626f27ce253df40188f29bc3f14250d9db7703a47bf2242d23e7174bfd7",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        44651.0,
+        38149.0
+      ],
+      "rewards": [
+        44651.0,
+        38149.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-622662681-market-0-intervention",
+      "passed": true,
+      "replay_gzip_sha256": "42e64b191d528d984b686a2801da03cad4e03deac6d008eb5a4c4092ad6d9280",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        44221.0,
+        42713.0
+      ],
+      "rewards": [
+        44221.0,
+        42713.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-622662681-market-1-intervention",
+      "passed": true,
+      "replay_gzip_sha256": "63287f19e936ec76dfeca4b24751e24bd13361e4736d2987ccec621c7b7d0dae",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        42713.0,
+        44221.0
+      ],
+      "rewards": [
+        42713.0,
+        44221.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-1335785613-round2-0-intervention",
+      "passed": true,
+      "replay_gzip_sha256": "ebfcc63d01319853e400d574e4ec663161dd1b7bcf9612f55de604e15cab0383",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        47363.0,
+        43777.0
+      ],
+      "rewards": [
+        47363.0,
+        43777.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-1335785613-round2-1-intervention",
+      "passed": true,
+      "replay_gzip_sha256": "722fec6a2fd596ef2f101d7dd96261580ee7951781b6a5361a81a7bd256f165c",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        43777.0,
+        47363.0
+      ],
+      "rewards": [
+        43777.0,
+        47363.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-1335785613-market-1-intervention",
+      "passed": true,
+      "replay_gzip_sha256": "a6a875b24e5d7ce273435a2fb700a0880b90c02566caae3adbc2383729002a64",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        48662.0,
+        48394.0
+      ],
+      "rewards": [
+        48662.0,
+        48394.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "game": "train-1335785613-market-0-intervention",
+      "passed": true,
+      "replay_gzip_sha256": "9035d4d866f961e931eab0b8104911c2eff2fd0fad079865f0afd134a1d0e29b",
+      "initial_banks": [
+        3000.0,
+        3000.0
+      ],
+      "final_banks": [
+        48394.0,
+        48662.0
+      ],
+      "rewards": [
+        48394.0,
+        48662.0
+      ],
+      "states": 720,
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    }
+  ],
+  "additional_official_transitions": 0,
+  "additional_policy_calls": 0,
+  "additional_neural_forwards": 0,
+  "additional_gate_evaluations": 0,
+  "new_games": 0,
+  "new_fits": 0,
+  "gpu_operations": 0,
+  "elapsed_seconds": 9.108348899986595,
+  "evidence_scope": "All64 raw terminal accounts independently checked. Official step-by-step independent reexecution remains only the four preselected round2 games; no sampled positive market trajectory claim.",
+  "inference": "Four positive training interventions are descriptive observations, not fitted-policy or holdout improvement."
+}

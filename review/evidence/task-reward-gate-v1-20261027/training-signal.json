@@ -1,0 +1,40 @@
+{
+  "schema": "task-reward-gate-training-signal-v1",
+  "passed": false,
+  "seeds": [
+    355793896,
+    3766401297,
+    1548293009,
+    3735487071,
+    1048308863,
+    1637505918,
+    622662681,
+    1335785613
+  ],
+  "counts": {
+    "population_cells": 32,
+    "eligible": 32,
+    "missing": 0,
+    "zero": 28,
+    "nonzero": 4,
+    "positive": 4,
+    "negative": 0,
+    "nonzero_seed_count": 4,
+    "nonzero_seeds": [
+      355793896,
+      1637505918,
+      3735487071,
+      3766401297
+    ]
+  },
+  "checks": {
+    "eligible_ge_24": true,
+    "nonzero_ge_12": false,
+    "positive_ge_4": true,
+    "negative_ge_4": false,
+    "nonzero_seeds_ge_6": false
+  },
+  "fit_population": "Every eligible pair, including zero and negative targets; no missing target imputation",
+  "target": "(intervention final own cash - baseline final own cash) / 1000",
+  "evidence_role": "Training collection signal only; not independent improvement evidence"
+}

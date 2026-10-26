@@ -1,0 +1,228 @@
+{
+  "schema": "task-reward-gate-independent-result-review-v1",
+  "passed": true,
+  "meaning": "Registered collection, accounting and stop decision verified; no fitted policy or independent improvement demonstrated",
+  "preregistration_commit": "4d23f63b54f0cdbe7210a50575d3f55e83549bdc",
+  "registration_sha256": "7af5a9fb72b083fd1f46b4c74d3abc25314f32d28c3f1472f30bbf9ce42f1569",
+  "freeze_sha256": "e7715790dcdf2eb55581294ee8803866b3fc4ea78da6bab7f9d9d885c818139c",
+  "pre_review_sha256": "f666d0878423f7606fc1c4aae53230347dcefdfa474b7c0e66a3de08134275c3",
+  "review_script_sha256": "2fe9ae35b14869349c03cfc200119376e61333e7e9c04e51b25a5f7f0630a4d8",
+  "reviewed_artifact_sha256": {
+    "ledger.json": "041e79ab5a1797f3d72d8f72cee94328bc1f61c6a30d56511dd4f457b25ad7df",
+    "audit.json": "23547b7fa83b3d67cfb043a9bce0928c535557430c2906b5f95e62c8f179d0a3",
+    "train-pairs.json": "cbfcb5de485ce72c8ff6e5001987e81ca7e9d230504187ed3ed39b627f022170",
+    "training-signal.json": "1d68ee85f37295453d600feaa0a3e33d917e29a748161418c8ff4839197fdf74",
+    "run-summary.json": "acaf98e7e919bc46f6d5e8f30e294dffcb016c53eaf7a6e0e6997fe0cfb14d6f"
+  },
+  "games_and_pairs": {
+    "attempts": 64,
+    "complete_games": 64,
+    "pairs": 32,
+    "all_job_result_certificate_hash_links_checked": true,
+    "all_terminal_accounts_recomputed": true,
+    "primary_official_reexecutions_verified_from_certificates": 64,
+    "independently_official_reexecuted": 4,
+    "zero_gate_original_student_parity_turns_recorded": 1438
+  },
+  "signal": {
+    "counts": {
+      "population_cells": 32,
+      "eligible": 32,
+      "missing": 0,
+      "zero": 28,
+      "nonzero": 4,
+      "positive": 4,
+      "negative": 0,
+      "nonzero_seed_count": 4,
+      "nonzero_seeds": [
+        355793896,
+        1637505918,
+        3735487071,
+        3766401297
+      ]
+    },
+    "checks": {
+      "eligible_ge_24": true,
+      "nonzero_ge_12": false,
+      "positive_ge_4": true,
+      "negative_ge_4": false,
+      "nonzero_seeds_ge_6": false
+    },
+    "passed": false
+  },
+  "distinctions": {
+    "changed_candidate_ids": 32,
+    "complete_request_changes": 10,
+    "full_request_and_own_cash_outcome_cells": {
+      "same_request_zero": 22,
+      "changed_request_zero": 6,
+      "changed_request_positive": 4
+    },
+    "operation_pairs": {
+      "WATER -> WATER": 24,
+      "HARVEST -> HARVEST": 3,
+      "FERTILIZE -> FERTILIZE": 1,
+      "WATER -> PLANT": 2,
+      "HARVEST -> WATER": 2
+    },
+    "note": "Same-request classifications for all32 use primary certificates and matching semantic hashes; two selected pairs additionally compared directly from raw Replay"
+  },
+  "training_descriptive_only": {
+    "mean_delta_own": 41.53125,
+    "mean_delta_opponent": 38.1875,
+    "mean_delta_margin": 3.34375,
+    "mean_delta_score": 0.0,
+    "positive_pairs": [
+      {
+        "seed": 355793896,
+        "opponent": "market",
+        "side": 0,
+        "delta_own": 959.0,
+        "delta_opponent": 1224.0,
+        "delta_margin": -265.0,
+        "delta_score": 0.0
+      },
+      {
+        "seed": 3766401297,
+        "opponent": "market",
+        "side": 0,
+        "delta_own": 116.0,
+        "delta_opponent": -1.0,
+        "delta_margin": 117.0,
+        "delta_score": 0.0
+      },
+      {
+        "seed": 3735487071,
+        "opponent": "market",
+        "side": 0,
+        "delta_own": 237.0,
+        "delta_opponent": -1.0,
+        "delta_margin": 238.0,
+        "delta_score": 0.0
+      },
+      {
+        "seed": 1637505918,
+        "opponent": "market",
+        "side": 1,
+        "delta_own": 17.0,
+        "delta_opponent": 0.0,
+        "delta_margin": 17.0,
+        "delta_score": 0.0
+      }
+    ]
+  },
+  "independent_replay_checks": [
+    {
+      "game": "train-355793896-round2-0-baseline",
+      "passed": true,
+      "replay_sha256": "40861e0a4a9b84116662dc1ee5f91fe08ffa368c6b4ce9887ea389aa8f68de0b",
+      "official_transitions": 719,
+      "official_seconds": 2.628311999957077,
+      "semantic_sha256": "025fcbe9062b95d2791a487f43c434bb958b78f88e2ade2b3ff92a9d0c9a9520",
+      "semantic_sha256_v2": "b318b14bd981c7bc5ae7d22c267c69c07ab652c6b4fafc8b115511680789b18f",
+      "final_rewards": [
+        45741.0,
+        46962.0
+      ],
+      "ordered_effect_sha256": "f3ae3bb248b39f5ca5b60ffa2342be887d26a293eca74ef5eb2da8fddfebc4ce",
+      "all_public_private_states_inventory_order_and_execution_digest_match": true
+    },
+    {
+      "game": "train-355793896-round2-0-intervention",
+      "passed": true,
+      "replay_sha256": "71d0c9c53e627dae0b90889368bc4cb727163d3fc61cabeb4e36913a4b192111",
+      "official_transitions": 719,
+      "official_seconds": 2.6711303000338376,
+      "semantic_sha256": "025fcbe9062b95d2791a487f43c434bb958b78f88e2ade2b3ff92a9d0c9a9520",
+      "semantic_sha256_v2": "b318b14bd981c7bc5ae7d22c267c69c07ab652c6b4fafc8b115511680789b18f",
+      "final_rewards": [
+        45741.0,
+        46962.0
+      ],
+      "ordered_effect_sha256": "f3ae3bb248b39f5ca5b60ffa2342be887d26a293eca74ef5eb2da8fddfebc4ce",
+      "all_public_private_states_inventory_order_and_execution_digest_match": true
+    },
+    {
+      "game": "train-355793896-round2-1-baseline",
+      "passed": true,
+      "replay_sha256": "d77ed1b79314417b84569afc0135c379cf1108b59383509ef589fa25e47eef04",
+      "official_transitions": 719,
+      "official_seconds": 2.745913299964741,
+      "semantic_sha256": "d8d5f4724ff9d1f5ba15382b971faea3c4c10dbea973c31dc2ef64495d06c999",
+      "semantic_sha256_v2": "19d0f9290f5d6cde5340101ae3bad1d0f9fa8af4862c54facae5e78bb4ec5742",
+      "final_rewards": [
+        46962.0,
+        45741.0
+      ],
+      "ordered_effect_sha256": "68687b692325c170a5379c670016f3b0016dbe2393de93046ef10b3493c86965",
+      "all_public_private_states_inventory_order_and_execution_digest_match": true
+    },
+    {
+      "game": "train-355793896-round2-1-intervention",
+      "passed": true,
+      "replay_sha256": "bf3f70124e2eae9e4e08da2f0bc3996763bcb945686ad63a518b9e74c19e7ec1",
+      "official_transitions": 719,
+      "official_seconds": 2.692172200011555,
+      "semantic_sha256": "eeed66ccd76ff3127be59d7a58d81856bf7809d984fcafed397fba3489e07fe5",
+      "semantic_sha256_v2": "7a71b7d6ef253bcaff53f4b8367a0e962c85c4a50af981cd1b55e100680f6da2",
+      "final_rewards": [
+        46962.0,
+        45741.0
+      ],
+      "ordered_effect_sha256": "033aad452034c6bcca84dbbe98d76eb92d75dacad0b29e892e1c58a4a43ec7f0",
+      "all_public_private_states_inventory_order_and_execution_digest_match": true
+    }
+  ],
+  "budgets": {
+    "live_official_transitions": 46016,
+    "primary_official_reexecution_transitions": 46016,
+    "independent_official_reexecution_transitions": 2876,
+    "total_official_transitions": 94908,
+    "official_reexecution_seconds": 10.73752779996721,
+    "model_counts": {
+      "task_forwards": 297765,
+      "task_rows": 15381234,
+      "crop_forwards": 27317,
+      "crop_rows": 27317,
+      "gate_evaluations": 0
+    },
+    "policy_turns": 185534,
+    "review_additional_neural_forwards": 0,
+    "review_additional_gate_evaluations": 0,
+    "review_new_games": 0,
+    "review_fits": 0,
+    "review_gpu_operations": 0,
+    "all_registered_experiment_count_limits_satisfied": true
+  },
+  "preservation": {
+    "runtime_frozen_files": 97,
+    "protected_source_hashes": 2293,
+    "previous_artifact_stat_entries": 15550,
+    "previous_artifact_stat_inventory_unchanged": true,
+    "full_old_raw_history_rehashed": false,
+    "default_teacher_and_old_models_hashes_unchanged": true,
+    "old_prepublication_review_freeze_protection_bytes_preserved": true,
+    "public_runtime_mapping": "Frozen exact SHA plus CRLF/LF-only equivalence"
+  },
+  "boundary": {
+    "gate_fits": 0,
+    "neural_weight_updates": 0,
+    "development_games": 0,
+    "holdout_games": 0,
+    "validation_seeds_unused_reserved": true,
+    "test_seeds_unused_reserved": true,
+    "default_changed": false,
+    "teacher_admitted": false,
+    "retrospective_threshold_or_seed_changes": false
+  },
+  "limitations": [
+    "Four positive training branches are not independent improvement evidence.",
+    "No learned gate was fitted or deployed; the stop is signal insufficiency, not an execution failure.",
+    "Twenty-eight zero own-cash deltas do not show that all task choices or richer interventions lack value.",
+    "The reference is the previously failed frozen student, not the rule teacher.",
+    "Only four preregistered raw Replay files were independently reexecuted; the other60 rely on checked primary certificates and terminal ledgers.",
+    "Original student parity and all64 neural trace reproductions are primary-audit evidence, not repeated by this review.",
+    "Local preregistration is not an external third-party timestamp."
+  ],
+  "review_elapsed_seconds": 17.3600168999983
+}
