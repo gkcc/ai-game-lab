@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "created_utc": "2026-10-26T22:19:13.876711+00:00",
+  "distinct_focused_cases": 2,
+  "final_observed_execution": {
+    "passed": 2,
+    "failed": 0,
+    "skipped": 0,
+    "elapsed_seconds": 0.139
+  },
+  "scope": [
+    "Real os.pipe writer remains available when launching the exact frozen worker; shared parent receipt cap",
+    "Original GPU dispatch error survives separate transport and reader cleanup failures"
+  ],
+  "synthetic_opaque_model_fixture_only": true,
+  "real_fit_launches": 0,
+  "real_spawn_targets": 0,
+  "cache_array_decodes": 0,
+  "real_model_array_decodes": 0,
+  "neural_rows": 0,
+  "gpu_operations": 0,
+  "owned_scratch_cleanup_verified": true,
+  "source_sha256": {
+    "learning/task_anchor_reentry_v1/campaign.py": "18760fb6162d865a88b403f5aaf0987e2f36b712ba786317e3c17cc3c63e40c6",
+    "learning/task_anchor_reentry_v1/experiment.py": "8f8e81a854e044771fdd282e5e07755a7981bebfbf24836a9e5387f693c70a89",
+    "learning/task_anchor_reentry_v1/gpu_guard.py": "0439c5ca6442f388bee6aa3f1c1e085d20234cca48740f83e5057ab7f05567b4",
+    "learning/task_anchor_reentry_v1/README.zh-CN.md": "0fe42f899cf27a206f9147a1b866b9bc52be0aded6f37a0704716bc1c655eef8",
+    "learning/task_anchor_reentry_v1/test_entry.py": "dc5f86234fff4160ae12f962bb8a66b99983234d2929ccd9513254445c0525eb",
+    "learning/task_anchor_reentry_v1/training.py": "0dc82620818c9ec238b79958335ca882b470c14bd342fc393002d3898987647c",
+    "learning/task_anchor_reentry_v1/__init__.py": "a79592f8af8ad152512cd44ef07da06dca8ceae3eaa5baf07a78a55adc8e6f33"
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "schema": "task-anchor-reentry-independent-source-prereview-v1",
+  "passed": true,
+  "created_utc": "2026-10-26 22:22:35 UTC",
+  "reviewer": {
+    "author": "independent-source-reviewer",
+    "role": "independent_subagent",
+    "task": "audit_anchor_reentry",
+    "source_author": false,
+    "review_method": "User-authorized independent subagent review in place of WebChat; direct source and frozen identity inspection"
+  },
+  "approval_scope": "Exact-source pre-review only. These bytes may proceed to the exact-byte local preregistration commit and ready checks. This receipt alone does not authorize or prove a real fit.",
+  "execution_authorized_by_this_record": false,
+  "freeze_sha256": "010d760b55357100e5ca1bf8314e70c16fb0445499b959d4701fe46add400606",
+  "registration_sha256": "8db5bc96919a81df484c480f282ae924c389f43949ea24df0a9c8a26980141b5",
+  "baseline_public_commit": "bb8b9e34f7389c741e9b7eeb5fa3ff245fa365fa",
+  "must_fix": [],
+  "source_review": {
+    "scope": "Seven new source/document files and their direct frozen worker, launcher, storage, registration, game/statistics, capture and session-supervisor interfaces; no repository-wide re-audit.",
+    "new_source_sha256": {
+      "learning/task_anchor_reentry_v1/campaign.py": "18760fb6162d865a88b403f5aaf0987e2f36b712ba786317e3c17cc3c63e40c6",
+      "learning/task_anchor_reentry_v1/experiment.py": "8f8e81a854e044771fdd282e5e07755a7981bebfbf24836a9e5387f693c70a89",
+      "learning/task_anchor_reentry_v1/gpu_guard.py": "0439c5ca6442f388bee6aa3f1c1e085d20234cca48740f83e5057ab7f05567b4",
+      "learning/task_anchor_reentry_v1/README.zh-CN.md": "0fe42f899cf27a206f9147a1b866b9bc52be0aded6f37a0704716bc1c655eef8",
+      "learning/task_anchor_reentry_v1/test_entry.py": "dc5f86234fff4160ae12f962bb8a66b99983234d2929ccd9513254445c0525eb",
+      "learning/task_anchor_reentry_v1/training.py": "0dc82620818c9ec238b79958335ca882b470c14bd342fc393002d3898987647c",
+      "learning/task_anchor_reentry_v1/__init__.py": "a79592f8af8ad152512cd44ef07da06dca8ceae3eaa5baf07a78a55adc8e6f33"
+    },
+    "direct_frozen_source_sha256": {
+      "learning/task_anchor_once_v1/training.py": "a8d5fd4775ba6a2a27786b1022c3943455605763f86a0c94bf3cc4d46d20ec65",
+      "learning/task_anchor_once_v1/storage.py": "2ff0e3209f25196081babdaea758f2fe1dc1d8254873d70a7a4118eb16f37d45",
+      "learning/task_anchor_once_v1/experiment.py": "0fbb57198dc6ce31b84b45c064911bd0c321d8954a4e77ff138cbd798017b0d0",
+      "learning/task_anchor_once_v1/games.py": "0a0afbe1aea859397ec17642a7dcac6ba93717f8c91e099df89fb8262798773e",
+      "learning/task_anchor_once_v1/statistics.py": "0db37bbd78f7013987b78cfeade218821ebff0d9ded4975e28128b494adc8533",
+      "learning/task_anchor_once_v1/processes.py": "9711f7d38e1494dc2cceef718482bef9470d7416a8d07284f900e487c1dc1092",
+      "learning/task_anchor_spawn_repair_v1/launcher.py": "aa798f24662eeff6cc676c35832407cf2286772285b981bf6e790349e920e3a3",
+      "learning/task_dagger_once_v1/gpu_guard.py": "b85263dea410dfa37ceae35f91790883d4e6fca27aebc7485cfb69c095b67a08"
+    },
+    "runtime_manifest_entries": 150,
+    "runtime_manifest_union_exact": true,
+    "all_historical_runtime_files_reaudited": false,
+    "changes_to_prior_registration": [
+      "baseline_head",
+      "created_utc",
+      "experiment",
+      "explicit_seed_config",
+      "family_stop",
+      "seed_inventory_sha256",
+      "seed_novelty",
+      "test_seeds",
+      "validation_seeds"
+    ],
+    "remaining_prior_registration_fields_exact": true
+  },
+  "identity_checks": {
+    "authority_sha256": {
+      "decision_sha256": "7b29936c02fc8d99927446cd00e9ed530a94ba61bd45d661694fae77e6f029d3",
+      "repair_acceptance_sha256": "d685f10da6b1d229f014ad9b35284a1ffdbc8ba45e27a3dfb3e10fcc75f7b7fc",
+      "repair_publication_sha256": "4bd542a1ae7d25d98f689d32280222bcee75fba1fdfbd83627f17cefa565140d",
+      "method_registration_sha256": "b7f6066855b445efe8cd719305fd4c5d82845255c5f335e220fcb224f35b6836",
+      "failed_stage_acceptance_sha256": "ddcf87ee02842c51bb508ab6e67fedcfb4f3dd84b3172235bb99907c4d7d9dac"
+    },
+    "legacy_authority_chain_byte_verified": true,
+    "old_artifact_hashes_verified": {
+      "failed_anchor_artifact_sha256": 40,
+      "repair_artifact_sha256": 35
+    },
+    "copied_opponent_sources_verified": true,
+    "private_launch_configuration_hash_verified_without_public_contents": true,
+    "cache_manifest_and_reused_input_metadata_hashes_verified": true,
+    "model_identity_references_inherited_without_reading_model_bytes": true,
+    "seed_reproduction": {
+      "numpy": "2.5.4",
+      "draws": 20,
+      "rejected_old_reserved_seeds": 10,
+      "fresh_dev": [
+        4202490418,
+        2219033805
+      ],
+      "fresh_holdout": [
+        2240228007,
+        149009525,
+        3351711015,
+        1845894395,
+        1600614327,
+        1836204477,
+        51518447,
+        2997782266
+      ],
+      "inventory_sha256": "365bf0280e61bc61d6aa75e5ec197951ae371b515fc9bb1be1e368b97a56ffc2",
+      "inventory_file_scope_byte_rescan": false
+    },
+    "unstarted_markers_absent_before_signature": [
+      "campaign-started.json",
+      "training-launch.json",
+      "gpu-guard-started.json",
+      "training-parent",
+      "model",
+      "job-inputs",
+      "ledger.json",
+      "failure.json",
+      "pre-review.json"
+    ]
+  },
+  "boundary_findings": [
+    {
+      "files": "training.py:12-38; frozen launcher.py:39-74",
+      "finding": "New fit calls the exact frozen training._worker through the repaired launch function; it does not invoke the old globally guarded fit. Real spawn creation, serialization, pipes and process control are outside the training parent receipt guards."
+    },
+    {
+      "files": "training.py:25-38; frozen training.py:663-682",
+      "finding": "Launcher receipts and adapter receipt cumulatively share 65536 bytes without refund; the frozen worker retains its 536870912-byte artifact allowance and separate reserved small receipt."
+    },
+    {
+      "files": "gpu_guard.py:12-28; campaign.py:34-60,145-185,238-252",
+      "finding": "The existing Linux session supervisor is retained. New Windows dispatch cleanup records transport, reader and Linux evidence separately; unknown stays unknown and the original dispatch exception is re-raised before a cleanup-only exception. Post-deadline recovery cannot pass."
+    },
+    {
+      "files": "experiment.py:20-52,55-134; frozen experiment.py:195-254",
+      "finding": "New registration and source bytes are bound to the old failure, repair acceptance/publication and new conditional slot. Old authority remains for frozen consumers; exact local commit and review bindings remain prerequisites."
+    },
+    {
+      "files": "experiment.py:69,91-116; frozen statistics.py:10-23",
+      "finding": "Fresh PCG64 panel is deterministically reproduced from the frozen exclusion inventory; all ten old reserved panel seeds were rejected. Historical training and known screens remain separate, with known_screens_independent false."
+    },
+    {
+      "files": "campaign.py:145-148,207-237; training.py:13-20",
+      "finding": "One dispatch is debited before launch; exclusive attempt markers prevent retry in the same stage. The frozen numerical gate precedes 24 development games, which precede 96 holdout games. No method, threshold, checkpoint, default Bot or automatic teacher-admission change was found."
+    }
+  ],
+  "budgets": {
+    "inherited_registration_exact": true,
+    "new_fit_slots": 1,
+    "old_attempts_refunded": false,
+    "updates": 512,
+    "training_loop_seconds": 600,
+    "fit_process_seconds_including_cleanup": 1200,
+    "campaign_seconds": 10800,
+    "independent_review_seconds": 3600,
+    "parent_training_receipts_bytes": 65536,
+    "worker_artifact_bytes": 536870912,
+    "total_owned_artifacts_bytes": 17179869184,
+    "free_disk_floor_bytes": 4294967296,
+    "official_games_max": 120,
+    "official_transitions_total_max": 174717,
+    "independent_offline_rows_reserved": 100000,
+    "all_finer_limits_inherited": true
+  },
+  "focused_checks": {
+    "implementation_verification_sha256": "98c40bab9b3df7b3bd755eca0ab973cd31736f69919d3c681d4e6fbcd855eef9",
+    "executed_by": "root implementation agent",
+    "source_binding_matches_signed_freeze": true,
+    "existing_synthetic_cases_passed": 2,
+    "failed": 0,
+    "skipped": 0,
+    "reported_elapsed_seconds": 0.139,
+    "independent_reviewer_test_reruns": 0,
+    "independent_actions": "Read-only source/metadata inspection, exact SHA comparisons and scalar PCG64 seed reproduction; no experiment execution."
+  },
+  "limitations": [
+    "No real fit, experimental spawn target, GPU operation, neural forward, model-byte read, model/cache array decode or official game was performed by this reviewer.",
+    "The two focused synthetic cases were run by the root agent; this reviewer inspected their source-bound receipt rather than claiming an independent rerun.",
+    "The 150-entry runtime union was checked as a manifest. Only the seven new files and eight direct frozen source identities were freshly byte-verified in this review, not all historical modules.",
+    "Seed reproduction uses the byte-bound frozen inventory and explicitly checks the old panel exclusions; the thousands of inventory source files were not independently rescanned. Deleted, unavailable and external history remain outside its novelty claim.",
+    "Real worker entry, numeric integrity, live cleanup and economic results remain unproven for this new stage and require the registered bounded execution and later reached-stage independent checks.",
+    "Python artifact guards do not constitute an OS filesystem quota or a native syscall sandbox. Frozen internal behavior is inherited, not newly certified for every hypothetical fault."
+  ],
+  "required_before_real_fit": [
+    "Exact-byte local preregistration commit containing registration, freeze, this independent pre-review and frozen runtime sources.",
+    "Successful current experiment.ready checks and fresh registered storage preflight.",
+    "Retain the one-fit budget, no retry/refund rule, all failure evidence, and unchanged old/default artifacts."
+  ],
+  "reviewer_actual_consumption": {
+    "real_fit_launches": 0,
+    "real_spawn_targets": 0,
+    "real_model_bytes_read": 0,
+    "cache_array_decodes": 0,
+    "model_array_decodes": 0,
+    "neural_rows": 0,
+    "gpu_operations": 0,
+    "official_games": 0,
+    "additional_test_executions": 0
+  },
+  "reviewer_output_scope": "Only this pre-review.json is created; no sources, old artifacts, models or default Bot are edited."
+}
