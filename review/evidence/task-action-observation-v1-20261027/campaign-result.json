@@ -1,0 +1,51 @@
+{
+  "schema": "task-action-observation-campaign-v1",
+  "status": "completed_development_observation",
+  "passed": true,
+  "completed_games": 24,
+  "attempted_games": 24,
+  "all_attempts_completed": true,
+  "live_official_transitions": 17256,
+  "primary_official_transitions": 17256,
+  "total_official_transitions": 34512,
+  "game_model_counts": {
+    "task_forwards": 70348,
+    "task_rows": 3677572,
+    "crop_forwards": 7534,
+    "crop_rows": 7534,
+    "gate_evaluations": 0,
+    "controller_calls": 34512,
+    "teacher_proposals": 0
+  },
+  "live_model_counts": {
+    "task_forwards": 35174,
+    "task_rows": 1838786,
+    "crop_forwards": 3767,
+    "crop_rows": 3767,
+    "gate_evaluations": 0,
+    "controller_calls": 17256,
+    "teacher_proposals": 0
+  },
+  "primary_model_counts": {
+    "task_forwards": 35174,
+    "task_rows": 1838786,
+    "crop_forwards": 3767,
+    "crop_rows": 3767,
+    "gate_evaluations": 0,
+    "controller_calls": 17256,
+    "teacher_proposals": 0
+  },
+  "policy_turns": 69024,
+  "machine_seconds": 540.5470000000205,
+  "training_updates": 0,
+  "fit_attempts": 0,
+  "default_changed": false,
+  "model_changed": false,
+  "candidate_admission": false,
+  "holdout_run": false,
+  "retry_allowed": false,
+  "all_owned_processes_reaped": true,
+  "input_manifest_sha256": "b433ee9652f38bbb0cb39afb1e02dcdb3ad84183beabd678f3ecbc8c0570f4fa",
+  "registration_sha256": "4b31544c9c6f90dc9c9d035f58f92cea12a6f9a16a4974d50d58e369bfaa2666",
+  "freeze_sha256": "6ee40e6f6494d9a6d91cc20175c911aefa84c5003e5641376c26c8910256b975"
+}

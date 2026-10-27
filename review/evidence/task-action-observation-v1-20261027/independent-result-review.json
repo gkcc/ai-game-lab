@@ -1,0 +1,48 @@
+{
+  "schema": "independent-result-review-v1",
+  "passed": true,
+  "scope": "Registered development observation; two fixed independent replays and compact result review",
+  "campaign": {
+    "passed": true,
+    "games": 24,
+    "primary_official_transitions": 17256,
+    "input_manifest_sha256": "b433ee9652f38bbb0cb39afb1e02dcdb3ad84183beabd678f3ecbc8c0570f4fa"
+  },
+  "independent_replay": {
+    "receipt_sha256": "6ba04b2179cd08609dee577355966d8245f49bc2c29ec644ac82030ec95dc023",
+    "count": 2,
+    "official_transitions": 1438,
+    "manifest_sha256_and_primary_semantic_sha256_v2_match": true,
+    "entry": "One-time stdin script invoking existing decision.full_audit.reexecute; no script file saved",
+    "initial_global_python_import_failure": {
+      "reason": "kaggle_environments unavailable",
+      "raw_reads": 0,
+      "official_steps": 0,
+      "subsequent_project_venv_used": true
+    }
+  },
+  "analysis": {
+    "result_sha256": "ad94188326ea72f99de7d4d5d37bdae22d9e2a994bb92e13efa69bc5ccf6174e",
+    "paired_rows_sha256": "33fb4ee9c7c220f27daefa5dd9beaf87e65ee744404136ba57aad1f18c047055",
+    "comparisons": 16,
+    "teacher_task_pairs": 8,
+    "baseline_pairs": 8,
+    "terminal_checks": 24,
+    "completion_unknown_pairs": 16,
+    "unique_seeds": 2,
+    "transport_and_cleanup_passed": true,
+    "wsl_analysis_raw_files": 48,
+    "wsl_analysis_decode_passes_per_file": 1
+  },
+  "interpretation": "Recorded same-context choice, complete-request and subsequent observation differences describe associations between full-policy trajectories. They do not establish causation or task completion; terminal cash differences cannot be assigned causally to an individual choice. Two development seeds are insufficient for generalization, independent holdout claims, or promotion.",
+  "limits": {
+    "historical_raw_reads": 0,
+    "model_weight_reads": 0,
+    "new_games": 0,
+    "training_updates": 0,
+    "agent_workflow_used": false,
+    "source_metadata_review_budget_bytes": 20971520,
+    "conservative_prior_charge_bytes": 5242880,
+    "new_review_charge_upper_bound_bytes": 1048576
+  }
+}

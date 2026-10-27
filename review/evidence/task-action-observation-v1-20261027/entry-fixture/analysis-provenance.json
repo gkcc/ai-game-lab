@@ -1,0 +1,78 @@
+{
+  "schema": "task-action-observation-import-provenance-v1",
+  "modules": [
+    {
+      "module": "__main__",
+      "path": "learning/task_action_observation_v1/analysis_entry.py",
+      "sha256": "598c7eb3896f3385a425bb264d1b8c2ba7f65fce3f1f5eccc57db8a366b39222"
+    },
+    {
+      "module": "__mp_main__",
+      "path": "learning/task_action_observation_v1/analysis_entry.py",
+      "sha256": "598c7eb3896f3385a425bb264d1b8c2ba7f65fce3f1f5eccc57db8a366b39222"
+    },
+    {
+      "module": "decision",
+      "path": "decision/__init__.py",
+      "sha256": "292c33c078490e76cf6576d8922f527acf23d59a01b8f523f7a1b595cbe15d0e"
+    },
+    {
+      "module": "decision.api",
+      "path": "decision/api.py",
+      "sha256": "3ef4025bde61d240b298cbe4d31291f25021baaf5b396f5540bbfcdda4231917"
+    },
+    {
+      "module": "decision.semantics",
+      "path": "decision/semantics.py",
+      "sha256": "9ac62d0df7adca84c0feff805b2979bb45f9f9f4c2064d1e2b5c48efd3e779a5"
+    },
+    {
+      "module": "learning.task_action_impact_diagnostic_v1",
+      "path": "learning/task_action_impact_diagnostic_v1/__init__.py",
+      "sha256": "2049e94f1fe2891136fc09817309da1b3bc054bba42b23bd6f5cf06ac176921d"
+    },
+    {
+      "module": "learning.task_action_impact_diagnostic_v1.analysis",
+      "path": "learning/task_action_impact_diagnostic_v1/analysis.py",
+      "sha256": "f0263611bd3bddc1f9028938288a0a1ec4406ebbc3d27df2ec17772bbb581499"
+    },
+    {
+      "module": "learning.task_action_observation_v1",
+      "path": "learning/task_action_observation_v1/__init__.py",
+      "sha256": "f52902b08dde4a3380a4384d4c42c21128b1d8fb4fa46235ff24d14bf7f48ffe"
+    },
+    {
+      "module": "learning.task_action_observation_v1.analysis",
+      "path": "learning/task_action_observation_v1/analysis.py",
+      "sha256": "6669b20f246081e949a0df9017be230e6102faa57a2952f718423d85da74dead"
+    },
+    {
+      "module": "learning.task_action_observation_v1.experiment",
+      "path": "learning/task_action_observation_v1/experiment.py",
+      "sha256": "3d61e0a2479370a549adace97e4ad1a3180a74200935ccc24520a838d3f38f90"
+    },
+    {
+      "module": "learning.task_anchor_once_v1",
+      "path": "learning/task_anchor_once_v1/__init__.py",
+      "sha256": "4978d6f44ce420931cddf54f31bcff0d06ce9fd8a036c92b590a69cad07e6c94"
+    },
+    {
+      "module": "learning.task_anchor_once_v1.storage",
+      "path": "learning/task_anchor_once_v1/storage.py",
+      "sha256": "2ff0e3209f25196081babdaea758f2fe1dc1d8254873d70a7a4118eb16f37d45"
+    },
+    {
+      "module": "learning.task_bc_error_diagnostics_v1",
+      "path": "learning/task_bc_error_diagnostics_v1/__init__.py",
+      "sha256": "7fe73d92a6f435034e2de4fc239e202b38b383508f2c426bd389dd7565f4a381"
+    },
+    {
+      "module": "learning.task_bc_error_diagnostics_v1.shadow",
+      "path": "learning/task_bc_error_diagnostics_v1/shadow.py",
+      "sha256": "095f6a896c259f840af4c59adc922cc9782fe69aafd3b0df7ea04df9160c3251"
+    }
+  ],
+  "python_version": "3.12.3",
+  "frozen_sources_verified": true,
+  "numerical_model_engine_imports": 0
+}

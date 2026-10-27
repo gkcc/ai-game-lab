@@ -300,3 +300,9 @@ Linux监督阶段1.329秒，整个自有进程组已清理并回收；原partial
 各版源码、冻结哈希和失败尝试均保留；允许映像和父子链规则未放宽。本阶段不读取科学数据或模型、不运行GPU或新比赛，耗尽预算后不自动登记等价修复重试。
 
 [报告](../kaggriculture/TASK_LAUNCHER_EVIDENCE_REPAIR_V1.zh-CN.md) | [失败证据与审查裁决](evidence/task-launcher-evidence-repair-v1-20261027/)
+
+## 新任务选择到动作观察 V1
+
+请区分24场主官方复演、预登记的2场独立官方复演，以及WSL纯分析对新48个文件的一次解码。两个开发种子不支持统计显著或因果归因。复审应关注完整动作顺序、共享市场、冻结身份、分析清理及旧历史保护；原始回放、轨迹和模型未公开。
+
+[报告](../kaggriculture/TASK_ACTION_OBSERVATION_V1.zh-CN.md) | [证据](evidence/task-action-observation-v1-20261027/)

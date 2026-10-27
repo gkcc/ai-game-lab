@@ -1,0 +1,24 @@
+{
+  "schema": "task-action-observation-guard-result-v1",
+  "completed": true,
+  "fixture": true,
+  "primary": {
+    "status": "exited",
+    "child_exit_code": 0,
+    "child_completed": true
+  },
+  "cleanup": {
+    "owned_process_group_signalled": true,
+    "direct_child_reaped": true,
+    "no_live_owned_session_members_before_reap": true,
+    "proven": true
+  },
+  "owned_process_group_signalled": true,
+  "direct_child_reaped": true,
+  "no_live_owned_session_members_before_reap": true,
+  "elapsed_seconds": 0.9935731629999998,
+  "within_total_deadline": true,
+  "child_supervision_seconds": 0.7589706279999997,
+  "cleanup_state": "verified",
+  "retry_allowed": false
+}

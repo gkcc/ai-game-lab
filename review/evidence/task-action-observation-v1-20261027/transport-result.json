@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "fixture": false,
+  "primary_error_kind": null,
+  "cleanup_error_kind": null,
+  "cancel_error_kind": null,
+  "wait_error_kind": null,
+  "linux_cleanup_proven": true,
+  "windows_cleanup_proven": true,
+  "cleanup": {
+    "owned_instances_observed": 5,
+    "owned_instances_remaining": 0,
+    "reader_joined": true,
+    "launched_process_reaped": true
+  },
+  "capture": {
+    "limit_bytes": 1048576,
+    "written_bytes": 0,
+    "observed_bytes": 0,
+    "reader_joined": true,
+    "child_exit_code": 0
+  },
+  "elapsed_seconds": 163.07800000003772,
+  "limit_seconds": 287.310205,
+  "within_transport_deadline": true,
+  "retry_allowed": false,
+  "scientific_activity": "new registered game analysis only"
+}

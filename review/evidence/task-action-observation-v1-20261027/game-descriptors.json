@@ -1,0 +1,578 @@
+[
+  {
+    "game": "dev-3911611436-round2-0-baseline",
+    "seed": 3911611436,
+    "opponent": "round2",
+    "side": 0,
+    "arm": "baseline",
+    "selected_ops": {
+      "PLANT": 152,
+      "WATER": 1767,
+      "FERTILIZE": 63,
+      "HARVEST": 165,
+      "DIG": 5
+    },
+    "emitted_request_kind": {
+      "other": 19,
+      "work": 835,
+      "move": 1298
+    },
+    "adjacent_selected_identity_changes": 890,
+    "identity_changes_after_move_request": 223,
+    "trace_turns": 719,
+    "completion_observability": "unknown_in_saved_schema",
+    "geometry_is_descriptive_only": true
+  },
+  {
+    "game": "dev-3911611436-round2-0-candidate",
+    "seed": 3911611436,
+    "opponent": "round2",
+    "side": 0,
+    "arm": "candidate",
+    "selected_ops": {
+      "PLANT": 152,
+      "WATER": 1766,
+      "FERTILIZE": 65,
+      "HARVEST": 164,
+      "DIG": 5
+    },
+    "emitted_request_kind": {
+      "other": 19,
+      "work": 835,
+      "move": 1298
+    },
+    "adjacent_selected_identity_changes": 881,
+    "identity_changes_after_move_request": 213,
+    "trace_turns": 719,
+    "completion_observability": "unknown_in_saved_schema",
+    "geometry_is_descriptive_only": true
+  },
+  {
+    "game": "dev-3911611436-round2-0-teacher_task",
+    "seed": 3911611436,
+    "opponent": "round2",
+    "side": 0,
+    "arm": "teacher_task",
+    "selected_ops": {
+      "PLANT": 162,
+      "WATER": 1761,
+      "FERTILIZE": 66,
+      "HARVEST": 181,
+      "DIG": 4
+    },
+    "emitted_request_kind": {
+      "other": 22,
+      "work": 831,
+      "move": 1321
+    },
+    "adjacent_selected_identity_changes": 872,
+    "identity_changes_after_move_request": 206,
+    "trace_turns": 719,
+    "completion_observability": "unknown_in_saved_schema",
+    "geometry_is_descriptive_only": true
+  },
+  {
+    "game": "dev-3911611436-round2-1-baseline",
+    "seed": 3911611436,
+    "opponent": "round2",
+    "side": 1,
+    "arm": "baseline",
+    "selected_ops": {
+      "PLANT": 151,
+      "WATER": 1766,
+      "FERTILIZE": 63,
+      "HARVEST": 165,
+      "DIG": 8
+    },
+    "emitted_request_kind": {
+      "other": 20,
+      "work": 836,
+      "move": 1297
+    },
+    "adjacent_selected_identity_changes": 887,
+    "identity_changes_after_move_request": 219,
+    "trace_turns": 719,
+    "completion_observability": "unknown_in_saved_schema",
+    "geometry_is_descriptive_only": true
+  },
+  {
+    "game": "dev-3911611436-round2-1-candidate",
+    "seed": 3911611436,
+    "opponent": "round2",
+    "side": 1,
+    "arm": "candidate",
+    "selected_ops": {
+      "PLANT": 152,
+      "WATER": 1764,
+      "FERTILIZE": 65,
+      "HARVEST": 164,
+      "DIG": 8
+    },
+    "emitted_request_kind": {
+      "other": 20,
+      "work": 836,
+      "move": 1297
+    },
+    "adjacent_selected_identity_changes": 874,
+    "identity_changes_after_move_request": 205,
+    "trace_turns": 719,
+    "completion_observability": "unknown_in_saved_schema",
+    "geometry_is_descriptive_only": true
+  },
+  {
+    "game": "dev-3911611436-round2-1-teacher_task",
+    "seed": 3911611436,
+    "opponent": "round2",
+    "side": 1,
+    "arm": "teacher_task",
+    "selected_ops": {
+      "PLANT": 163,
+      "WATER": 1761,
+      "FERTILIZE": 66,
+      "HARVEST": 181,
+      "DIG": 7
+    },
+    "emitted_request_kind": {
+      "other": 24,
+      "work": 832,
+      "move": 1322
+    },
+    "adjacent_selected_identity_changes": 875,
+    "identity_changes_after_move_request": 208,
+    "trace_turns": 719,
+    "completion_observability": "unknown_in_saved_schema",
+    "geometry_is_descriptive_only": true
+  },
+  {
+    "game": "dev-3911611436-market-0-baseline",
+    "seed": 3911611436,
+    "opponent": "market",
+    "side": 0,
+    "arm": "baseline",
+    "selected_ops": {
+      "PLANT": 148,
+      "WATER": 1742,
+      "FERTILIZE": 54,
+      "HARVEST": 168,
+      "DIG": 5
+    },
+    "emitted_request_kind": {
+      "other": 15,
+      "work": 832,
+      "move": 1270
+    },
+    "adjacent_selected_identity_changes": 864,
+    "identity_changes_after_move_request": 196,
+    "trace_turns": 719,
+    "completion_observability": "unknown_in_saved_schema",
+    "geometry_is_descriptive_only": true
+  },
+  {
+    "game": "dev-3911611436-market-0-candidate",
+    "seed": 3911611436,
+    "opponent": "market",
+    "side": 0,
+    "arm": "candidate",
+    "selected_ops": {
+      "PLANT": 172,
+      "WATER": 1761,
+      "FERTILIZE": 55,
+      "HARVEST": 167,
+      "DIG": 6
+    },
+    "emitted_request_kind": {
+      "other": 25,
+      "work": 858,
+      "move": 1278
+    },
+    "adjacent_selected_identity_changes": 927,
+    "identity_changes_after_move_request": 231,
+    "trace_turns": 719,
+    "completion_observability": "unknown_in_saved_schema",
+    "geometry_is_descriptive_only": true
+  },
+  {
+    "game": "dev-3911611436-market-0-teacher_task",
+    "seed": 3911611436,
+    "opponent": "market",
+    "side": 0,
+    "arm": "teacher_task",
+    "selected_ops": {
+      "PLANT": 157,
+      "WATER": 1736,
+      "FERTILIZE": 54,
+      "HARVEST": 179,
+      "DIG": 4
+    },
+    "emitted_request_kind": {
+      "other": 19,
+      "work": 834,
+      "move": 1277
+    },
+    "adjacent_selected_identity_changes": 885,
+    "identity_changes_after_move_request": 213,
+    "trace_turns": 719,
+    "completion_observability": "unknown_in_saved_schema",
+    "geometry_is_descriptive_only": true
+  },
+  {
+    "game": "dev-3911611436-market-1-baseline",
+    "seed": 3911611436,
+    "opponent": "market",
+    "side": 1,
+    "arm": "baseline",
+    "selected_ops": {
+      "PLANT": 148,
+      "WATER": 1742,
+      "FERTILIZE": 54,
+      "HARVEST": 168,
+      "DIG": 5
+    },
+    "emitted_request_kind": {
+      "other": 15,
+      "work": 832,
+      "move": 1270
+    },
+    "adjacent_selected_identity_changes": 864,
+    "identity_changes_after_move_request": 196,
+    "trace_turns": 719,
+    "completion_observability": "unknown_in_saved_schema",
+    "geometry_is_descriptive_only": true
+  },
+  {
+    "game": "dev-3911611436-market-1-candidate",
+    "seed": 3911611436,
+    "opponent": "market",
+    "side": 1,
+    "arm": "candidate",
+    "selected_ops": {
+      "PLANT": 172,
+      "WATER": 1761,
+      "FERTILIZE": 55,
+      "HARVEST": 167,
+      "DIG": 6
+    },
+    "emitted_request_kind": {
+      "other": 25,
+      "work": 858,
+      "move": 1278
+    },
+    "adjacent_selected_identity_changes": 927,
+    "identity_changes_after_move_request": 231,
+    "trace_turns": 719,
+    "completion_observability": "unknown_in_saved_schema",
+    "geometry_is_descriptive_only": true
+  },
+  {
+    "game": "dev-3911611436-market-1-teacher_task",
+    "seed": 3911611436,
+    "opponent": "market",
+    "side": 1,
+    "arm": "teacher_task",
+    "selected_ops": {
+      "PLANT": 157,
+      "WATER": 1736,
+      "FERTILIZE": 54,
+      "HARVEST": 179,
+      "DIG": 4
+    },
+    "emitted_request_kind": {
+      "other": 19,
+      "work": 834,
+      "move": 1277
+    },
+    "adjacent_selected_identity_changes": 885,
+    "identity_changes_after_move_request": 213,
+    "trace_turns": 719,
+    "completion_observability": "unknown_in_saved_schema",
+    "geometry_is_descriptive_only": true
+  },
+  {
+    "game": "dev-2328454240-round2-0-baseline",
+    "seed": 2328454240,
+    "opponent": "round2",
+    "side": 0,
+    "arm": "baseline",
+    "selected_ops": {
+      "PLANT": 149,
+      "WATER": 1785,
+      "FERTILIZE": 102,
+      "HARVEST": 173,
+      "DIG": 4
+    },
+    "emitted_request_kind": {
+      "other": 18,
+      "work": 846,
+      "move": 1349
+    },
+    "adjacent_selected_identity_changes": 911,
+    "identity_changes_after_move_request": 237,
+    "trace_turns": 719,
+    "completion_observability": "unknown_in_saved_schema",
+    "geometry_is_descriptive_only": true
+  },
+  {
+    "game": "dev-2328454240-round2-0-candidate",
+    "seed": 2328454240,
+    "opponent": "round2",
+    "side": 0,
+    "arm": "candidate",
+    "selected_ops": {
+      "PLANT": 160,
+      "WATER": 1805,
+      "FERTILIZE": 98,
+      "HARVEST": 191,
+      "DIG": 8
+    },
+    "emitted_request_kind": {
+      "other": 22,
+      "work": 870,
+      "move": 1370
+    },
+    "adjacent_selected_identity_changes": 934,
+    "identity_changes_after_move_request": 246,
+    "trace_turns": 719,
+    "completion_observability": "unknown_in_saved_schema",
+    "geometry_is_descriptive_only": true
+  },
+  {
+    "game": "dev-2328454240-round2-0-teacher_task",
+    "seed": 2328454240,
+    "opponent": "round2",
+    "side": 0,
+    "arm": "teacher_task",
+    "selected_ops": {
+      "PLANT": 160,
+      "WATER": 1793,
+      "FERTILIZE": 99,
+      "HARVEST": 193,
+      "DIG": 8
+    },
+    "emitted_request_kind": {
+      "other": 24,
+      "work": 870,
+      "move": 1359
+    },
+    "adjacent_selected_identity_changes": 917,
+    "identity_changes_after_move_request": 232,
+    "trace_turns": 719,
+    "completion_observability": "unknown_in_saved_schema",
+    "geometry_is_descriptive_only": true
+  },
+  {
+    "game": "dev-2328454240-round2-1-baseline",
+    "seed": 2328454240,
+    "opponent": "round2",
+    "side": 1,
+    "arm": "baseline",
+    "selected_ops": {
+      "PLANT": 149,
+      "WATER": 1798,
+      "FERTILIZE": 99,
+      "HARVEST": 171,
+      "DIG": 7
+    },
+    "emitted_request_kind": {
+      "other": 21,
+      "work": 843,
+      "move": 1360
+    },
+    "adjacent_selected_identity_changes": 929,
+    "identity_changes_after_move_request": 252,
+    "trace_turns": 719,
+    "completion_observability": "unknown_in_saved_schema",
+    "geometry_is_descriptive_only": true
+  },
+  {
+    "game": "dev-2328454240-round2-1-candidate",
+    "seed": 2328454240,
+    "opponent": "round2",
+    "side": 1,
+    "arm": "candidate",
+    "selected_ops": {
+      "PLANT": 157,
+      "WATER": 1805,
+      "FERTILIZE": 98,
+      "HARVEST": 190,
+      "DIG": 11
+    },
+    "emitted_request_kind": {
+      "other": 25,
+      "work": 871,
+      "move": 1365
+    },
+    "adjacent_selected_identity_changes": 935,
+    "identity_changes_after_move_request": 246,
+    "trace_turns": 719,
+    "completion_observability": "unknown_in_saved_schema",
+    "geometry_is_descriptive_only": true
+  },
+  {
+    "game": "dev-2328454240-round2-1-teacher_task",
+    "seed": 2328454240,
+    "opponent": "round2",
+    "side": 1,
+    "arm": "teacher_task",
+    "selected_ops": {
+      "PLANT": 158,
+      "WATER": 1793,
+      "FERTILIZE": 99,
+      "HARVEST": 193,
+      "DIG": 10
+    },
+    "emitted_request_kind": {
+      "other": 23,
+      "work": 871,
+      "move": 1359
+    },
+    "adjacent_selected_identity_changes": 918,
+    "identity_changes_after_move_request": 231,
+    "trace_turns": 719,
+    "completion_observability": "unknown_in_saved_schema",
+    "geometry_is_descriptive_only": true
+  },
+  {
+    "game": "dev-2328454240-market-0-baseline",
+    "seed": 2328454240,
+    "opponent": "market",
+    "side": 0,
+    "arm": "baseline",
+    "selected_ops": {
+      "PLANT": 160,
+      "WATER": 1805,
+      "FERTILIZE": 98,
+      "HARVEST": 195,
+      "DIG": 7
+    },
+    "emitted_request_kind": {
+      "other": 19,
+      "work": 864,
+      "move": 1382
+    },
+    "adjacent_selected_identity_changes": 934,
+    "identity_changes_after_move_request": 252,
+    "trace_turns": 719,
+    "completion_observability": "unknown_in_saved_schema",
+    "geometry_is_descriptive_only": true
+  },
+  {
+    "game": "dev-2328454240-market-0-candidate",
+    "seed": 2328454240,
+    "opponent": "market",
+    "side": 0,
+    "arm": "candidate",
+    "selected_ops": {
+      "PLANT": 160,
+      "WATER": 1803,
+      "FERTILIZE": 100,
+      "HARVEST": 189,
+      "DIG": 7
+    },
+    "emitted_request_kind": {
+      "other": 19,
+      "work": 864,
+      "move": 1376
+    },
+    "adjacent_selected_identity_changes": 925,
+    "identity_changes_after_move_request": 245,
+    "trace_turns": 719,
+    "completion_observability": "unknown_in_saved_schema",
+    "geometry_is_descriptive_only": true
+  },
+  {
+    "game": "dev-2328454240-market-0-teacher_task",
+    "seed": 2328454240,
+    "opponent": "market",
+    "side": 0,
+    "arm": "teacher_task",
+    "selected_ops": {
+      "PLANT": 154,
+      "WATER": 1797,
+      "FERTILIZE": 101,
+      "HARVEST": 189,
+      "DIG": 7
+    },
+    "emitted_request_kind": {
+      "other": 19,
+      "work": 865,
+      "move": 1364
+    },
+    "adjacent_selected_identity_changes": 915,
+    "identity_changes_after_move_request": 236,
+    "trace_turns": 719,
+    "completion_observability": "unknown_in_saved_schema",
+    "geometry_is_descriptive_only": true
+  },
+  {
+    "game": "dev-2328454240-market-1-baseline",
+    "seed": 2328454240,
+    "opponent": "market",
+    "side": 1,
+    "arm": "baseline",
+    "selected_ops": {
+      "PLANT": 160,
+      "WATER": 1805,
+      "FERTILIZE": 98,
+      "HARVEST": 195,
+      "DIG": 7
+    },
+    "emitted_request_kind": {
+      "other": 19,
+      "work": 864,
+      "move": 1382
+    },
+    "adjacent_selected_identity_changes": 934,
+    "identity_changes_after_move_request": 252,
+    "trace_turns": 719,
+    "completion_observability": "unknown_in_saved_schema",
+    "geometry_is_descriptive_only": true
+  },
+  {
+    "game": "dev-2328454240-market-1-candidate",
+    "seed": 2328454240,
+    "opponent": "market",
+    "side": 1,
+    "arm": "candidate",
+    "selected_ops": {
+      "PLANT": 160,
+      "WATER": 1803,
+      "FERTILIZE": 100,
+      "HARVEST": 189,
+      "DIG": 7
+    },
+    "emitted_request_kind": {
+      "other": 19,
+      "work": 864,
+      "move": 1376
+    },
+    "adjacent_selected_identity_changes": 925,
+    "identity_changes_after_move_request": 245,
+    "trace_turns": 719,
+    "completion_observability": "unknown_in_saved_schema",
+    "geometry_is_descriptive_only": true
+  },
+  {
+    "game": "dev-2328454240-market-1-teacher_task",
+    "seed": 2328454240,
+    "opponent": "market",
+    "side": 1,
+    "arm": "teacher_task",
+    "selected_ops": {
+      "PLANT": 154,
+      "WATER": 1797,
+      "FERTILIZE": 101,
+      "HARVEST": 189,
+      "DIG": 7
+    },
+    "emitted_request_kind": {
+      "other": 19,
+      "work": 865,
+      "move": 1364
+    },
+    "adjacent_selected_identity_changes": 915,
+    "identity_changes_after_move_request": 236,
+    "trace_turns": 719,
+    "completion_observability": "unknown_in_saved_schema",
+    "geometry_is_descriptive_only": true
+  }
+]

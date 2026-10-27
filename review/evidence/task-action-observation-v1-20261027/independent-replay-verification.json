@@ -1,0 +1,39 @@
+{
+  "schema": "independent-replay-verification-v1",
+  "passed": true,
+  "replays": [
+    {
+      "seed": 3911611436,
+      "opponent": "round2",
+      "side": 0,
+      "arm": "candidate",
+      "replay_sha256": "7ae8efcd44b974384a28acaddcb17eab8403bc51674f1ff491558932be735f8e",
+      "compressed_bytes": 1194585,
+      "decoded_bytes": 38178823,
+      "passed": true,
+      "official_transitions": 719,
+      "semantic_sha256_v2": "5a6be858542c1696e7257f0e49642d277a4db5dbd3b2c9a23d474eda47b693ec"
+    },
+    {
+      "seed": 2328454240,
+      "opponent": "market",
+      "side": 1,
+      "arm": "teacher_task",
+      "replay_sha256": "1d1fbd1b6259a13e603b3f456505f0248dbffb33747dd86b1e58144bfdaf879a",
+      "compressed_bytes": 1321205,
+      "decoded_bytes": 38495287,
+      "passed": true,
+      "official_transitions": 719,
+      "semantic_sha256_v2": "73636e97b2c453c721a674775f75c8b783c94175c941668e69bc97ff2e817b17"
+    }
+  ],
+  "replay_count": 2,
+  "official_transitions": 1438,
+  "compressed_bytes": 2515790,
+  "decoded_bytes": 76674110,
+  "compressed_limit_bytes": 268435456,
+  "decoded_limit_bytes": 1073741824,
+  "new_games": 0,
+  "model_reads": 0,
+  "training_updates": 0
+}

@@ -1,0 +1,1698 @@
+[
+  {
+    "seed": 3911611436,
+    "opponent": "round2",
+    "side": 0,
+    "reference": "teacher_task",
+    "first_request_difference_step": 259,
+    "first_choice_difference": {
+      "step": 224,
+      "callback": 1,
+      "candidate_op": "FERTILIZE",
+      "reference_op": "WATER",
+      "same_unit": false,
+      "same_target": false,
+      "candidate_request_kind": "move",
+      "reference_request_kind": "work",
+      "emitted_unit_request_equal": false
+    },
+    "first_request_turn_choice_linkage": {
+      "step": 259,
+      "callback": 0,
+      "candidate_op": "HARVEST",
+      "reference_op": "WATER",
+      "same_unit": true,
+      "same_target": false,
+      "candidate_request_kind": "move",
+      "reference_request_kind": "move",
+      "emitted_unit_request_equal": true
+    },
+    "matched_context_calls": 773,
+    "equal_context_choice_disagreement_turns": 3,
+    "disagreement_same_complete_request_turns": 2,
+    "disagreement_different_complete_request_turns": 1,
+    "unalignable_common_turns": 0,
+    "common_prefix_turns": 260,
+    "first_unalignable_reason": null,
+    "terminal": {
+      "state_index": 719,
+      "observation_equal": false,
+      "candidate": {
+        "own_bank": 39361.0,
+        "opponent_bank": 36239.0,
+        "margin": 3122.0
+      },
+      "reference": {
+        "own_bank": 42963.0,
+        "opponent_bank": 38687.0,
+        "margin": 4276.0
+      },
+      "delta": {
+        "own_bank": -3602.0,
+        "opponent_bank": -2448.0,
+        "margin": -1154.0
+      }
+    },
+    "horizons": {
+      "1": {
+        "state_index": 260,
+        "observation_equal": false,
+        "candidate": {
+          "own_bank": 14862.0,
+          "opponent_bank": 15367.0,
+          "margin": -505.0
+        },
+        "reference": {
+          "own_bank": 15162.0,
+          "opponent_bank": 15367.0,
+          "margin": -205.0
+        },
+        "delta": {
+          "own_bank": -300.0,
+          "opponent_bank": 0.0,
+          "margin": -300.0
+        }
+      },
+      "24": {
+        "state_index": 283,
+        "observation_equal": false,
+        "candidate": {
+          "own_bank": 13680.0,
+          "opponent_bank": 13475.0,
+          "margin": 205.0
+        },
+        "reference": {
+          "own_bank": 13780.0,
+          "opponent_bank": 13375.0,
+          "margin": 405.0
+        },
+        "delta": {
+          "own_bank": -100.0,
+          "opponent_bank": 100.0,
+          "margin": -200.0
+        }
+      }
+    },
+    "first_sampled_observation_difference_state": 260,
+    "request_components_differ": {
+      "farmer": true,
+      "hands": true,
+      "market": true
+    },
+    "partition": "observation_difference_nonzero_terminal_margin_gap",
+    "identifiable_chain_or_null_chain": true,
+    "completion_observability": "unknown_in_saved_schema",
+    "duration_mechanism_supported": false,
+    "effect_causation": "unknown; observed full-policy trajectory association only"
+  },
+  {
+    "seed": 3911611436,
+    "opponent": "round2",
+    "side": 0,
+    "reference": "baseline",
+    "first_request_difference_step": 578,
+    "first_choice_difference": {
+      "step": 15,
+      "callback": 0,
+      "candidate_op": "WATER",
+      "reference_op": "WATER",
+      "same_unit": false,
+      "same_target": false,
+      "candidate_request_kind": "work",
+      "reference_request_kind": "work",
+      "emitted_unit_request_equal": true
+    },
+    "first_request_turn_choice_linkage": {
+      "step": 578,
+      "callback": 5,
+      "candidate_op": "WATER",
+      "reference_op": "WATER",
+      "same_unit": false,
+      "same_target": true,
+      "candidate_request_kind": "move",
+      "reference_request_kind": "move",
+      "emitted_unit_request_equal": false
+    },
+    "matched_context_calls": 1773,
+    "equal_context_choice_disagreement_turns": 8,
+    "disagreement_same_complete_request_turns": 7,
+    "disagreement_different_complete_request_turns": 1,
+    "unalignable_common_turns": 0,
+    "common_prefix_turns": 579,
+    "first_unalignable_reason": null,
+    "terminal": {
+      "state_index": 719,
+      "observation_equal": true,
+      "candidate": {
+        "own_bank": 39361.0,
+        "opponent_bank": 36239.0,
+        "margin": 3122.0
+      },
+      "reference": {
+        "own_bank": 39361.0,
+        "opponent_bank": 36239.0,
+        "margin": 3122.0
+      },
+      "delta": {
+        "own_bank": 0.0,
+        "opponent_bank": 0.0,
+        "margin": 0.0
+      }
+    },
+    "horizons": {
+      "1": {
+        "state_index": 579,
+        "observation_equal": false,
+        "candidate": {
+          "own_bank": 18463.0,
+          "opponent_bank": 16202.0,
+          "margin": 2261.0
+        },
+        "reference": {
+          "own_bank": 18463.0,
+          "opponent_bank": 16202.0,
+          "margin": 2261.0
+        },
+        "delta": {
+          "own_bank": 0.0,
+          "opponent_bank": 0.0,
+          "margin": 0.0
+        }
+      },
+      "24": {
+        "state_index": 602,
+        "observation_equal": true,
+        "candidate": {
+          "own_bank": 19839.0,
+          "opponent_bank": 16195.0,
+          "margin": 3644.0
+        },
+        "reference": {
+          "own_bank": 19839.0,
+          "opponent_bank": 16195.0,
+          "margin": 3644.0
+        },
+        "delta": {
+          "own_bank": 0.0,
+          "opponent_bank": 0.0,
+          "margin": 0.0
+        }
+      }
+    },
+    "first_sampled_observation_difference_state": 579,
+    "request_components_differ": {
+      "farmer": false,
+      "hands": true,
+      "market": false
+    },
+    "partition": "observation_difference_zero_terminal_margin_gap",
+    "identifiable_chain_or_null_chain": true,
+    "completion_observability": "unknown_in_saved_schema",
+    "duration_mechanism_supported": false,
+    "effect_causation": "unknown; observed full-policy trajectory association only"
+  },
+  {
+    "seed": 3911611436,
+    "opponent": "round2",
+    "side": 1,
+    "reference": "teacher_task",
+    "first_request_difference_step": 259,
+    "first_choice_difference": {
+      "step": 224,
+      "callback": 1,
+      "candidate_op": "FERTILIZE",
+      "reference_op": "WATER",
+      "same_unit": false,
+      "same_target": false,
+      "candidate_request_kind": "move",
+      "reference_request_kind": "work",
+      "emitted_unit_request_equal": false
+    },
+    "first_request_turn_choice_linkage": {
+      "step": 259,
+      "callback": 0,
+      "candidate_op": "HARVEST",
+      "reference_op": "WATER",
+      "same_unit": true,
+      "same_target": false,
+      "candidate_request_kind": "move",
+      "reference_request_kind": "move",
+      "emitted_unit_request_equal": true
+    },
+    "matched_context_calls": 773,
+    "equal_context_choice_disagreement_turns": 3,
+    "disagreement_same_complete_request_turns": 2,
+    "disagreement_different_complete_request_turns": 1,
+    "unalignable_common_turns": 0,
+    "common_prefix_turns": 260,
+    "first_unalignable_reason": null,
+    "terminal": {
+      "state_index": 719,
+      "observation_equal": false,
+      "candidate": {
+        "own_bank": 39361.0,
+        "opponent_bank": 36239.0,
+        "margin": 3122.0
+      },
+      "reference": {
+        "own_bank": 42963.0,
+        "opponent_bank": 38687.0,
+        "margin": 4276.0
+      },
+      "delta": {
+        "own_bank": -3602.0,
+        "opponent_bank": -2448.0,
+        "margin": -1154.0
+      }
+    },
+    "horizons": {
+      "1": {
+        "state_index": 260,
+        "observation_equal": false,
+        "candidate": {
+          "own_bank": 14862.0,
+          "opponent_bank": 15367.0,
+          "margin": -505.0
+        },
+        "reference": {
+          "own_bank": 15162.0,
+          "opponent_bank": 15367.0,
+          "margin": -205.0
+        },
+        "delta": {
+          "own_bank": -300.0,
+          "opponent_bank": 0.0,
+          "margin": -300.0
+        }
+      },
+      "24": {
+        "state_index": 283,
+        "observation_equal": false,
+        "candidate": {
+          "own_bank": 13680.0,
+          "opponent_bank": 13375.0,
+          "margin": 305.0
+        },
+        "reference": {
+          "own_bank": 13880.0,
+          "opponent_bank": 13375.0,
+          "margin": 505.0
+        },
+        "delta": {
+          "own_bank": -200.0,
+          "opponent_bank": 0.0,
+          "margin": -200.0
+        }
+      }
+    },
+    "first_sampled_observation_difference_state": 260,
+    "request_components_differ": {
+      "farmer": true,
+      "hands": true,
+      "market": true
+    },
+    "partition": "observation_difference_nonzero_terminal_margin_gap",
+    "identifiable_chain_or_null_chain": true,
+    "completion_observability": "unknown_in_saved_schema",
+    "duration_mechanism_supported": false,
+    "effect_causation": "unknown; observed full-policy trajectory association only"
+  },
+  {
+    "seed": 3911611436,
+    "opponent": "round2",
+    "side": 1,
+    "reference": "baseline",
+    "first_request_difference_step": 267,
+    "first_choice_difference": {
+      "step": 15,
+      "callback": 0,
+      "candidate_op": "WATER",
+      "reference_op": "WATER",
+      "same_unit": false,
+      "same_target": false,
+      "candidate_request_kind": "work",
+      "reference_request_kind": "work",
+      "emitted_unit_request_equal": true
+    },
+    "first_request_turn_choice_linkage": {
+      "step": 267,
+      "callback": 2,
+      "candidate_op": "PLANT",
+      "reference_op": "WATER",
+      "same_unit": true,
+      "same_target": false,
+      "candidate_request_kind": "move",
+      "reference_request_kind": "move",
+      "emitted_unit_request_equal": false
+    },
+    "matched_context_calls": 802,
+    "equal_context_choice_disagreement_turns": 3,
+    "disagreement_same_complete_request_turns": 2,
+    "disagreement_different_complete_request_turns": 1,
+    "unalignable_common_turns": 0,
+    "common_prefix_turns": 268,
+    "first_unalignable_reason": null,
+    "terminal": {
+      "state_index": 719,
+      "observation_equal": true,
+      "candidate": {
+        "own_bank": 39361.0,
+        "opponent_bank": 36239.0,
+        "margin": 3122.0
+      },
+      "reference": {
+        "own_bank": 39361.0,
+        "opponent_bank": 36239.0,
+        "margin": 3122.0
+      },
+      "delta": {
+        "own_bank": 0.0,
+        "opponent_bank": 0.0,
+        "margin": 0.0
+      }
+    },
+    "horizons": {
+      "1": {
+        "state_index": 268,
+        "observation_equal": false,
+        "candidate": {
+          "own_bank": 15501.0,
+          "opponent_bank": 15083.0,
+          "margin": 418.0
+        },
+        "reference": {
+          "own_bank": 15501.0,
+          "opponent_bank": 15083.0,
+          "margin": 418.0
+        },
+        "delta": {
+          "own_bank": 0.0,
+          "opponent_bank": 0.0,
+          "margin": 0.0
+        }
+      },
+      "24": {
+        "state_index": 291,
+        "observation_equal": true,
+        "candidate": {
+          "own_bank": 13703.0,
+          "opponent_bank": 13380.0,
+          "margin": 323.0
+        },
+        "reference": {
+          "own_bank": 13703.0,
+          "opponent_bank": 13380.0,
+          "margin": 323.0
+        },
+        "delta": {
+          "own_bank": 0.0,
+          "opponent_bank": 0.0,
+          "margin": 0.0
+        }
+      }
+    },
+    "first_sampled_observation_difference_state": 268,
+    "request_components_differ": {
+      "farmer": false,
+      "hands": true,
+      "market": false
+    },
+    "partition": "observation_difference_zero_terminal_margin_gap",
+    "identifiable_chain_or_null_chain": true,
+    "completion_observability": "unknown_in_saved_schema",
+    "duration_mechanism_supported": false,
+    "effect_causation": "unknown; observed full-policy trajectory association only"
+  },
+  {
+    "seed": 3911611436,
+    "opponent": "market",
+    "side": 0,
+    "reference": "teacher_task",
+    "first_request_difference_step": 227,
+    "first_choice_difference": {
+      "step": 224,
+      "callback": 5,
+      "candidate_op": "WATER",
+      "reference_op": "WATER",
+      "same_unit": true,
+      "same_target": false,
+      "candidate_request_kind": "move",
+      "reference_request_kind": "move",
+      "emitted_unit_request_equal": true
+    },
+    "first_request_turn_choice_linkage": {
+      "step": 227,
+      "callback": 3,
+      "candidate_op": "WATER",
+      "reference_op": "WATER",
+      "same_unit": true,
+      "same_target": false,
+      "candidate_request_kind": "move",
+      "reference_request_kind": "move",
+      "emitted_unit_request_equal": false
+    },
+    "matched_context_calls": 674,
+    "equal_context_choice_disagreement_turns": 4,
+    "disagreement_same_complete_request_turns": 3,
+    "disagreement_different_complete_request_turns": 1,
+    "unalignable_common_turns": 0,
+    "common_prefix_turns": 228,
+    "first_unalignable_reason": null,
+    "terminal": {
+      "state_index": 719,
+      "observation_equal": false,
+      "candidate": {
+        "own_bank": 41092.0,
+        "opponent_bank": 36545.0,
+        "margin": 4547.0
+      },
+      "reference": {
+        "own_bank": 41083.0,
+        "opponent_bank": 36661.0,
+        "margin": 4422.0
+      },
+      "delta": {
+        "own_bank": 9.0,
+        "opponent_bank": -116.0,
+        "margin": 125.0
+      }
+    },
+    "horizons": {
+      "1": {
+        "state_index": 228,
+        "observation_equal": false,
+        "candidate": {
+          "own_bank": 532.0,
+          "opponent_bank": 2320.0,
+          "margin": -1788.0
+        },
+        "reference": {
+          "own_bank": 532.0,
+          "opponent_bank": 2320.0,
+          "margin": -1788.0
+        },
+        "delta": {
+          "own_bank": 0.0,
+          "opponent_bank": 0.0,
+          "margin": 0.0
+        }
+      },
+      "24": {
+        "state_index": 251,
+        "observation_equal": false,
+        "candidate": {
+          "own_bank": 499.0,
+          "opponent_bank": 11201.0,
+          "margin": -10702.0
+        },
+        "reference": {
+          "own_bank": 499.0,
+          "opponent_bank": 11201.0,
+          "margin": -10702.0
+        },
+        "delta": {
+          "own_bank": 0.0,
+          "opponent_bank": 0.0,
+          "margin": 0.0
+        }
+      }
+    },
+    "first_sampled_observation_difference_state": 228,
+    "request_components_differ": {
+      "farmer": false,
+      "hands": true,
+      "market": false
+    },
+    "partition": "observation_difference_nonzero_terminal_margin_gap",
+    "identifiable_chain_or_null_chain": true,
+    "completion_observability": "unknown_in_saved_schema",
+    "duration_mechanism_supported": false,
+    "effect_causation": "unknown; observed full-policy trajectory association only"
+  },
+  {
+    "seed": 3911611436,
+    "opponent": "market",
+    "side": 0,
+    "reference": "baseline",
+    "first_request_difference_step": 221,
+    "first_choice_difference": {
+      "step": 15,
+      "callback": 1,
+      "candidate_op": "WATER",
+      "reference_op": "WATER",
+      "same_unit": false,
+      "same_target": false,
+      "candidate_request_kind": "work",
+      "reference_request_kind": "work",
+      "emitted_unit_request_equal": true
+    },
+    "first_request_turn_choice_linkage": {
+      "step": 221,
+      "callback": 3,
+      "candidate_op": "WATER",
+      "reference_op": "WATER",
+      "same_unit": false,
+      "same_target": true,
+      "candidate_request_kind": "move",
+      "reference_request_kind": "move",
+      "emitted_unit_request_equal": false
+    },
+    "matched_context_calls": 638,
+    "equal_context_choice_disagreement_turns": 2,
+    "disagreement_same_complete_request_turns": 1,
+    "disagreement_different_complete_request_turns": 1,
+    "unalignable_common_turns": 0,
+    "common_prefix_turns": 222,
+    "first_unalignable_reason": null,
+    "terminal": {
+      "state_index": 719,
+      "observation_equal": false,
+      "candidate": {
+        "own_bank": 41092.0,
+        "opponent_bank": 36545.0,
+        "margin": 4547.0
+      },
+      "reference": {
+        "own_bank": 40834.0,
+        "opponent_bank": 36697.0,
+        "margin": 4137.0
+      },
+      "delta": {
+        "own_bank": 258.0,
+        "opponent_bank": -152.0,
+        "margin": 410.0
+      }
+    },
+    "horizons": {
+      "1": {
+        "state_index": 222,
+        "observation_equal": false,
+        "candidate": {
+          "own_bank": 532.0,
+          "opponent_bank": 2320.0,
+          "margin": -1788.0
+        },
+        "reference": {
+          "own_bank": 532.0,
+          "opponent_bank": 2320.0,
+          "margin": -1788.0
+        },
+        "delta": {
+          "own_bank": 0.0,
+          "opponent_bank": 0.0,
+          "margin": 0.0
+        }
+      },
+      "24": {
+        "state_index": 245,
+        "observation_equal": false,
+        "candidate": {
+          "own_bank": 520.0,
+          "opponent_bank": 4012.0,
+          "margin": -3492.0
+        },
+        "reference": {
+          "own_bank": 520.0,
+          "opponent_bank": 4012.0,
+          "margin": -3492.0
+        },
+        "delta": {
+          "own_bank": 0.0,
+          "opponent_bank": 0.0,
+          "margin": 0.0
+        }
+      }
+    },
+    "first_sampled_observation_difference_state": 222,
+    "request_components_differ": {
+      "farmer": false,
+      "hands": true,
+      "market": false
+    },
+    "partition": "observation_difference_nonzero_terminal_margin_gap",
+    "identifiable_chain_or_null_chain": true,
+    "completion_observability": "unknown_in_saved_schema",
+    "duration_mechanism_supported": false,
+    "effect_causation": "unknown; observed full-policy trajectory association only"
+  },
+  {
+    "seed": 3911611436,
+    "opponent": "market",
+    "side": 1,
+    "reference": "teacher_task",
+    "first_request_difference_step": 227,
+    "first_choice_difference": {
+      "step": 224,
+      "callback": 5,
+      "candidate_op": "WATER",
+      "reference_op": "WATER",
+      "same_unit": true,
+      "same_target": false,
+      "candidate_request_kind": "move",
+      "reference_request_kind": "move",
+      "emitted_unit_request_equal": true
+    },
+    "first_request_turn_choice_linkage": {
+      "step": 227,
+      "callback": 3,
+      "candidate_op": "WATER",
+      "reference_op": "WATER",
+      "same_unit": true,
+      "same_target": false,
+      "candidate_request_kind": "move",
+      "reference_request_kind": "move",
+      "emitted_unit_request_equal": false
+    },
+    "matched_context_calls": 674,
+    "equal_context_choice_disagreement_turns": 4,
+    "disagreement_same_complete_request_turns": 3,
+    "disagreement_different_complete_request_turns": 1,
+    "unalignable_common_turns": 0,
+    "common_prefix_turns": 228,
+    "first_unalignable_reason": null,
+    "terminal": {
+      "state_index": 719,
+      "observation_equal": false,
+      "candidate": {
+        "own_bank": 41092.0,
+        "opponent_bank": 36545.0,
+        "margin": 4547.0
+      },
+      "reference": {
+        "own_bank": 41083.0,
+        "opponent_bank": 36661.0,
+        "margin": 4422.0
+      },
+      "delta": {
+        "own_bank": 9.0,
+        "opponent_bank": -116.0,
+        "margin": 125.0
+      }
+    },
+    "horizons": {
+      "1": {
+        "state_index": 228,
+        "observation_equal": false,
+        "candidate": {
+          "own_bank": 532.0,
+          "opponent_bank": 2320.0,
+          "margin": -1788.0
+        },
+        "reference": {
+          "own_bank": 532.0,
+          "opponent_bank": 2320.0,
+          "margin": -1788.0
+        },
+        "delta": {
+          "own_bank": 0.0,
+          "opponent_bank": 0.0,
+          "margin": 0.0
+        }
+      },
+      "24": {
+        "state_index": 251,
+        "observation_equal": false,
+        "candidate": {
+          "own_bank": 499.0,
+          "opponent_bank": 11201.0,
+          "margin": -10702.0
+        },
+        "reference": {
+          "own_bank": 499.0,
+          "opponent_bank": 11201.0,
+          "margin": -10702.0
+        },
+        "delta": {
+          "own_bank": 0.0,
+          "opponent_bank": 0.0,
+          "margin": 0.0
+        }
+      }
+    },
+    "first_sampled_observation_difference_state": 228,
+    "request_components_differ": {
+      "farmer": false,
+      "hands": true,
+      "market": false
+    },
+    "partition": "observation_difference_nonzero_terminal_margin_gap",
+    "identifiable_chain_or_null_chain": true,
+    "completion_observability": "unknown_in_saved_schema",
+    "duration_mechanism_supported": false,
+    "effect_causation": "unknown; observed full-policy trajectory association only"
+  },
+  {
+    "seed": 3911611436,
+    "opponent": "market",
+    "side": 1,
+    "reference": "baseline",
+    "first_request_difference_step": 221,
+    "first_choice_difference": {
+      "step": 15,
+      "callback": 1,
+      "candidate_op": "WATER",
+      "reference_op": "WATER",
+      "same_unit": false,
+      "same_target": false,
+      "candidate_request_kind": "work",
+      "reference_request_kind": "work",
+      "emitted_unit_request_equal": true
+    },
+    "first_request_turn_choice_linkage": {
+      "step": 221,
+      "callback": 3,
+      "candidate_op": "WATER",
+      "reference_op": "WATER",
+      "same_unit": false,
+      "same_target": true,
+      "candidate_request_kind": "move",
+      "reference_request_kind": "move",
+      "emitted_unit_request_equal": false
+    },
+    "matched_context_calls": 638,
+    "equal_context_choice_disagreement_turns": 2,
+    "disagreement_same_complete_request_turns": 1,
+    "disagreement_different_complete_request_turns": 1,
+    "unalignable_common_turns": 0,
+    "common_prefix_turns": 222,
+    "first_unalignable_reason": null,
+    "terminal": {
+      "state_index": 719,
+      "observation_equal": false,
+      "candidate": {
+        "own_bank": 41092.0,
+        "opponent_bank": 36545.0,
+        "margin": 4547.0
+      },
+      "reference": {
+        "own_bank": 40834.0,
+        "opponent_bank": 36697.0,
+        "margin": 4137.0
+      },
+      "delta": {
+        "own_bank": 258.0,
+        "opponent_bank": -152.0,
+        "margin": 410.0
+      }
+    },
+    "horizons": {
+      "1": {
+        "state_index": 222,
+        "observation_equal": false,
+        "candidate": {
+          "own_bank": 532.0,
+          "opponent_bank": 2320.0,
+          "margin": -1788.0
+        },
+        "reference": {
+          "own_bank": 532.0,
+          "opponent_bank": 2320.0,
+          "margin": -1788.0
+        },
+        "delta": {
+          "own_bank": 0.0,
+          "opponent_bank": 0.0,
+          "margin": 0.0
+        }
+      },
+      "24": {
+        "state_index": 245,
+        "observation_equal": false,
+        "candidate": {
+          "own_bank": 520.0,
+          "opponent_bank": 4012.0,
+          "margin": -3492.0
+        },
+        "reference": {
+          "own_bank": 520.0,
+          "opponent_bank": 4012.0,
+          "margin": -3492.0
+        },
+        "delta": {
+          "own_bank": 0.0,
+          "opponent_bank": 0.0,
+          "margin": 0.0
+        }
+      }
+    },
+    "first_sampled_observation_difference_state": 222,
+    "request_components_differ": {
+      "farmer": false,
+      "hands": true,
+      "market": false
+    },
+    "partition": "observation_difference_nonzero_terminal_margin_gap",
+    "identifiable_chain_or_null_chain": true,
+    "completion_observability": "unknown_in_saved_schema",
+    "duration_mechanism_supported": false,
+    "effect_causation": "unknown; observed full-policy trajectory association only"
+  },
+  {
+    "seed": 2328454240,
+    "opponent": "round2",
+    "side": 0,
+    "reference": "teacher_task",
+    "first_request_difference_step": 246,
+    "first_choice_difference": {
+      "step": 176,
+      "callback": 1,
+      "candidate_op": "FERTILIZE",
+      "reference_op": "WATER",
+      "same_unit": false,
+      "same_target": false,
+      "candidate_request_kind": "move",
+      "reference_request_kind": "work",
+      "emitted_unit_request_equal": false
+    },
+    "first_request_turn_choice_linkage": {
+      "step": 246,
+      "callback": 6,
+      "candidate_op": "PLANT",
+      "reference_op": "WATER",
+      "same_unit": true,
+      "same_target": false,
+      "candidate_request_kind": "work",
+      "reference_request_kind": "move",
+      "emitted_unit_request_equal": false
+    },
+    "matched_context_calls": 724,
+    "equal_context_choice_disagreement_turns": 3,
+    "disagreement_same_complete_request_turns": 2,
+    "disagreement_different_complete_request_turns": 1,
+    "unalignable_common_turns": 0,
+    "common_prefix_turns": 247,
+    "first_unalignable_reason": null,
+    "terminal": {
+      "state_index": 719,
+      "observation_equal": false,
+      "candidate": {
+        "own_bank": 42934.0,
+        "opponent_bank": 43042.0,
+        "margin": -108.0
+      },
+      "reference": {
+        "own_bank": 42927.0,
+        "opponent_bank": 43042.0,
+        "margin": -115.0
+      },
+      "delta": {
+        "own_bank": 7.0,
+        "opponent_bank": 0.0,
+        "margin": 7.0
+      }
+    },
+    "horizons": {
+      "1": {
+        "state_index": 247,
+        "observation_equal": false,
+        "candidate": {
+          "own_bank": 492.0,
+          "opponent_bank": 697.0,
+          "margin": -205.0
+        },
+        "reference": {
+          "own_bank": 492.0,
+          "opponent_bank": 697.0,
+          "margin": -205.0
+        },
+        "delta": {
+          "own_bank": 0.0,
+          "opponent_bank": 0.0,
+          "margin": 0.0
+        }
+      },
+      "24": {
+        "state_index": 270,
+        "observation_equal": false,
+        "candidate": {
+          "own_bank": 11371.0,
+          "opponent_bank": 18006.0,
+          "margin": -6635.0
+        },
+        "reference": {
+          "own_bank": 11371.0,
+          "opponent_bank": 18006.0,
+          "margin": -6635.0
+        },
+        "delta": {
+          "own_bank": 0.0,
+          "opponent_bank": 0.0,
+          "margin": 0.0
+        }
+      }
+    },
+    "first_sampled_observation_difference_state": 247,
+    "request_components_differ": {
+      "farmer": false,
+      "hands": true,
+      "market": false
+    },
+    "partition": "observation_difference_nonzero_terminal_margin_gap",
+    "identifiable_chain_or_null_chain": true,
+    "completion_observability": "unknown_in_saved_schema",
+    "duration_mechanism_supported": false,
+    "effect_causation": "unknown; observed full-policy trajectory association only"
+  },
+  {
+    "seed": 2328454240,
+    "opponent": "round2",
+    "side": 0,
+    "reference": "baseline",
+    "first_request_difference_step": 173,
+    "first_choice_difference": {
+      "step": 15,
+      "callback": 0,
+      "candidate_op": "WATER",
+      "reference_op": "WATER",
+      "same_unit": false,
+      "same_target": false,
+      "candidate_request_kind": "work",
+      "reference_request_kind": "work",
+      "emitted_unit_request_equal": true
+    },
+    "first_request_turn_choice_linkage": {
+      "step": 173,
+      "callback": 3,
+      "candidate_op": "WATER",
+      "reference_op": "WATER",
+      "same_unit": false,
+      "same_target": true,
+      "candidate_request_kind": "move",
+      "reference_request_kind": "move",
+      "emitted_unit_request_equal": false
+    },
+    "matched_context_calls": 511,
+    "equal_context_choice_disagreement_turns": 2,
+    "disagreement_same_complete_request_turns": 1,
+    "disagreement_different_complete_request_turns": 1,
+    "unalignable_common_turns": 0,
+    "common_prefix_turns": 174,
+    "first_unalignable_reason": null,
+    "terminal": {
+      "state_index": 719,
+      "observation_equal": false,
+      "candidate": {
+        "own_bank": 42934.0,
+        "opponent_bank": 43042.0,
+        "margin": -108.0
+      },
+      "reference": {
+        "own_bank": 41066.0,
+        "opponent_bank": 44907.0,
+        "margin": -3841.0
+      },
+      "delta": {
+        "own_bank": 1868.0,
+        "opponent_bank": -1865.0,
+        "margin": 3733.0
+      }
+    },
+    "horizons": {
+      "1": {
+        "state_index": 174,
+        "observation_equal": false,
+        "candidate": {
+          "own_bank": 526.0,
+          "opponent_bank": 731.0,
+          "margin": -205.0
+        },
+        "reference": {
+          "own_bank": 526.0,
+          "opponent_bank": 731.0,
+          "margin": -205.0
+        },
+        "delta": {
+          "own_bank": 0.0,
+          "opponent_bank": 0.0,
+          "margin": 0.0
+        }
+      },
+      "24": {
+        "state_index": 197,
+        "observation_equal": false,
+        "candidate": {
+          "own_bank": 519.0,
+          "opponent_bank": 724.0,
+          "margin": -205.0
+        },
+        "reference": {
+          "own_bank": 514.0,
+          "opponent_bank": 724.0,
+          "margin": -210.0
+        },
+        "delta": {
+          "own_bank": 5.0,
+          "opponent_bank": 0.0,
+          "margin": 5.0
+        }
+      }
+    },
+    "first_sampled_observation_difference_state": 174,
+    "request_components_differ": {
+      "farmer": false,
+      "hands": true,
+      "market": false
+    },
+    "partition": "observation_difference_nonzero_terminal_margin_gap",
+    "identifiable_chain_or_null_chain": true,
+    "completion_observability": "unknown_in_saved_schema",
+    "duration_mechanism_supported": false,
+    "effect_causation": "unknown; observed full-policy trajectory association only"
+  },
+  {
+    "seed": 2328454240,
+    "opponent": "round2",
+    "side": 1,
+    "reference": "teacher_task",
+    "first_request_difference_step": 246,
+    "first_choice_difference": {
+      "step": 176,
+      "callback": 1,
+      "candidate_op": "FERTILIZE",
+      "reference_op": "WATER",
+      "same_unit": false,
+      "same_target": false,
+      "candidate_request_kind": "move",
+      "reference_request_kind": "work",
+      "emitted_unit_request_equal": false
+    },
+    "first_request_turn_choice_linkage": {
+      "step": 246,
+      "callback": 6,
+      "candidate_op": "PLANT",
+      "reference_op": "WATER",
+      "same_unit": true,
+      "same_target": false,
+      "candidate_request_kind": "work",
+      "reference_request_kind": "move",
+      "emitted_unit_request_equal": false
+    },
+    "matched_context_calls": 724,
+    "equal_context_choice_disagreement_turns": 3,
+    "disagreement_same_complete_request_turns": 2,
+    "disagreement_different_complete_request_turns": 1,
+    "unalignable_common_turns": 0,
+    "common_prefix_turns": 247,
+    "first_unalignable_reason": null,
+    "terminal": {
+      "state_index": 719,
+      "observation_equal": false,
+      "candidate": {
+        "own_bank": 42947.0,
+        "opponent_bank": 43055.0,
+        "margin": -108.0
+      },
+      "reference": {
+        "own_bank": 42927.0,
+        "opponent_bank": 43055.0,
+        "margin": -128.0
+      },
+      "delta": {
+        "own_bank": 20.0,
+        "opponent_bank": 0.0,
+        "margin": 20.0
+      }
+    },
+    "horizons": {
+      "1": {
+        "state_index": 247,
+        "observation_equal": false,
+        "candidate": {
+          "own_bank": 492.0,
+          "opponent_bank": 697.0,
+          "margin": -205.0
+        },
+        "reference": {
+          "own_bank": 492.0,
+          "opponent_bank": 697.0,
+          "margin": -205.0
+        },
+        "delta": {
+          "own_bank": 0.0,
+          "opponent_bank": 0.0,
+          "margin": 0.0
+        }
+      },
+      "24": {
+        "state_index": 270,
+        "observation_equal": false,
+        "candidate": {
+          "own_bank": 11371.0,
+          "opponent_bank": 18006.0,
+          "margin": -6635.0
+        },
+        "reference": {
+          "own_bank": 11371.0,
+          "opponent_bank": 18006.0,
+          "margin": -6635.0
+        },
+        "delta": {
+          "own_bank": 0.0,
+          "opponent_bank": 0.0,
+          "margin": 0.0
+        }
+      }
+    },
+    "first_sampled_observation_difference_state": 247,
+    "request_components_differ": {
+      "farmer": false,
+      "hands": true,
+      "market": false
+    },
+    "partition": "observation_difference_nonzero_terminal_margin_gap",
+    "identifiable_chain_or_null_chain": true,
+    "completion_observability": "unknown_in_saved_schema",
+    "duration_mechanism_supported": false,
+    "effect_causation": "unknown; observed full-policy trajectory association only"
+  },
+  {
+    "seed": 2328454240,
+    "opponent": "round2",
+    "side": 1,
+    "reference": "baseline",
+    "first_request_difference_step": 173,
+    "first_choice_difference": {
+      "step": 15,
+      "callback": 0,
+      "candidate_op": "WATER",
+      "reference_op": "WATER",
+      "same_unit": false,
+      "same_target": false,
+      "candidate_request_kind": "work",
+      "reference_request_kind": "work",
+      "emitted_unit_request_equal": true
+    },
+    "first_request_turn_choice_linkage": {
+      "step": 173,
+      "callback": 3,
+      "candidate_op": "WATER",
+      "reference_op": "WATER",
+      "same_unit": false,
+      "same_target": true,
+      "candidate_request_kind": "move",
+      "reference_request_kind": "move",
+      "emitted_unit_request_equal": false
+    },
+    "matched_context_calls": 511,
+    "equal_context_choice_disagreement_turns": 2,
+    "disagreement_same_complete_request_turns": 1,
+    "disagreement_different_complete_request_turns": 1,
+    "unalignable_common_turns": 0,
+    "common_prefix_turns": 174,
+    "first_unalignable_reason": null,
+    "terminal": {
+      "state_index": 719,
+      "observation_equal": false,
+      "candidate": {
+        "own_bank": 42947.0,
+        "opponent_bank": 43055.0,
+        "margin": -108.0
+      },
+      "reference": {
+        "own_bank": 40404.0,
+        "opponent_bank": 45018.0,
+        "margin": -4614.0
+      },
+      "delta": {
+        "own_bank": 2543.0,
+        "opponent_bank": -1963.0,
+        "margin": 4506.0
+      }
+    },
+    "horizons": {
+      "1": {
+        "state_index": 174,
+        "observation_equal": false,
+        "candidate": {
+          "own_bank": 526.0,
+          "opponent_bank": 731.0,
+          "margin": -205.0
+        },
+        "reference": {
+          "own_bank": 526.0,
+          "opponent_bank": 731.0,
+          "margin": -205.0
+        },
+        "delta": {
+          "own_bank": 0.0,
+          "opponent_bank": 0.0,
+          "margin": 0.0
+        }
+      },
+      "24": {
+        "state_index": 197,
+        "observation_equal": false,
+        "candidate": {
+          "own_bank": 519.0,
+          "opponent_bank": 724.0,
+          "margin": -205.0
+        },
+        "reference": {
+          "own_bank": 514.0,
+          "opponent_bank": 724.0,
+          "margin": -210.0
+        },
+        "delta": {
+          "own_bank": 5.0,
+          "opponent_bank": 0.0,
+          "margin": 5.0
+        }
+      }
+    },
+    "first_sampled_observation_difference_state": 174,
+    "request_components_differ": {
+      "farmer": false,
+      "hands": true,
+      "market": false
+    },
+    "partition": "observation_difference_nonzero_terminal_margin_gap",
+    "identifiable_chain_or_null_chain": true,
+    "completion_observability": "unknown_in_saved_schema",
+    "duration_mechanism_supported": false,
+    "effect_causation": "unknown; observed full-policy trajectory association only"
+  },
+  {
+    "seed": 2328454240,
+    "opponent": "market",
+    "side": 0,
+    "reference": "teacher_task",
+    "first_request_difference_step": 179,
+    "first_choice_difference": {
+      "step": 176,
+      "callback": 5,
+      "candidate_op": "WATER",
+      "reference_op": "WATER",
+      "same_unit": true,
+      "same_target": false,
+      "candidate_request_kind": "move",
+      "reference_request_kind": "move",
+      "emitted_unit_request_equal": true
+    },
+    "first_request_turn_choice_linkage": {
+      "step": 179,
+      "callback": 3,
+      "candidate_op": "WATER",
+      "reference_op": "WATER",
+      "same_unit": true,
+      "same_target": false,
+      "candidate_request_kind": "move",
+      "reference_request_kind": "move",
+      "emitted_unit_request_equal": false
+    },
+    "matched_context_calls": 548,
+    "equal_context_choice_disagreement_turns": 4,
+    "disagreement_same_complete_request_turns": 3,
+    "disagreement_different_complete_request_turns": 1,
+    "unalignable_common_turns": 0,
+    "common_prefix_turns": 180,
+    "first_unalignable_reason": null,
+    "terminal": {
+      "state_index": 719,
+      "observation_equal": true,
+      "candidate": {
+        "own_bank": 46974.0,
+        "opponent_bank": 43268.0,
+        "margin": 3706.0
+      },
+      "reference": {
+        "own_bank": 46974.0,
+        "opponent_bank": 43268.0,
+        "margin": 3706.0
+      },
+      "delta": {
+        "own_bank": 0.0,
+        "opponent_bank": 0.0,
+        "margin": 0.0
+      }
+    },
+    "horizons": {
+      "1": {
+        "state_index": 180,
+        "observation_equal": false,
+        "candidate": {
+          "own_bank": 546.0,
+          "opponent_bank": 1335.0,
+          "margin": -789.0
+        },
+        "reference": {
+          "own_bank": 546.0,
+          "opponent_bank": 1335.0,
+          "margin": -789.0
+        },
+        "delta": {
+          "own_bank": 0.0,
+          "opponent_bank": 0.0,
+          "margin": 0.0
+        }
+      },
+      "24": {
+        "state_index": 203,
+        "observation_equal": true,
+        "candidate": {
+          "own_bank": 539.0,
+          "opponent_bank": 1328.0,
+          "margin": -789.0
+        },
+        "reference": {
+          "own_bank": 539.0,
+          "opponent_bank": 1328.0,
+          "margin": -789.0
+        },
+        "delta": {
+          "own_bank": 0.0,
+          "opponent_bank": 0.0,
+          "margin": 0.0
+        }
+      }
+    },
+    "first_sampled_observation_difference_state": 180,
+    "request_components_differ": {
+      "farmer": false,
+      "hands": true,
+      "market": false
+    },
+    "partition": "observation_difference_zero_terminal_margin_gap",
+    "identifiable_chain_or_null_chain": true,
+    "completion_observability": "unknown_in_saved_schema",
+    "duration_mechanism_supported": false,
+    "effect_causation": "unknown; observed full-policy trajectory association only"
+  },
+  {
+    "seed": 2328454240,
+    "opponent": "market",
+    "side": 0,
+    "reference": "baseline",
+    "first_request_difference_step": 257,
+    "first_choice_difference": {
+      "step": 15,
+      "callback": 1,
+      "candidate_op": "WATER",
+      "reference_op": "WATER",
+      "same_unit": false,
+      "same_target": false,
+      "candidate_request_kind": "work",
+      "reference_request_kind": "work",
+      "emitted_unit_request_equal": true
+    },
+    "first_request_turn_choice_linkage": {
+      "step": 257,
+      "callback": 2,
+      "candidate_op": "WATER",
+      "reference_op": "PLANT",
+      "same_unit": true,
+      "same_target": false,
+      "candidate_request_kind": "move",
+      "reference_request_kind": "other",
+      "emitted_unit_request_equal": false
+    },
+    "matched_context_calls": 755,
+    "equal_context_choice_disagreement_turns": 4,
+    "disagreement_same_complete_request_turns": 3,
+    "disagreement_different_complete_request_turns": 1,
+    "unalignable_common_turns": 0,
+    "common_prefix_turns": 258,
+    "first_unalignable_reason": null,
+    "terminal": {
+      "state_index": 719,
+      "observation_equal": true,
+      "candidate": {
+        "own_bank": 46974.0,
+        "opponent_bank": 43268.0,
+        "margin": 3706.0
+      },
+      "reference": {
+        "own_bank": 46974.0,
+        "opponent_bank": 43268.0,
+        "margin": 3706.0
+      },
+      "delta": {
+        "own_bank": 0.0,
+        "opponent_bank": 0.0,
+        "margin": 0.0
+      }
+    },
+    "horizons": {
+      "1": {
+        "state_index": 258,
+        "observation_equal": false,
+        "candidate": {
+          "own_bank": 9149.0,
+          "opponent_bank": 12602.0,
+          "margin": -3453.0
+        },
+        "reference": {
+          "own_bank": 9149.0,
+          "opponent_bank": 12602.0,
+          "margin": -3453.0
+        },
+        "delta": {
+          "own_bank": 0.0,
+          "opponent_bank": 0.0,
+          "margin": 0.0
+        }
+      },
+      "24": {
+        "state_index": 281,
+        "observation_equal": true,
+        "candidate": {
+          "own_bank": 15569.0,
+          "opponent_bank": 12495.0,
+          "margin": 3074.0
+        },
+        "reference": {
+          "own_bank": 15569.0,
+          "opponent_bank": 12495.0,
+          "margin": 3074.0
+        },
+        "delta": {
+          "own_bank": 0.0,
+          "opponent_bank": 0.0,
+          "margin": 0.0
+        }
+      }
+    },
+    "first_sampled_observation_difference_state": 258,
+    "request_components_differ": {
+      "farmer": false,
+      "hands": true,
+      "market": false
+    },
+    "partition": "observation_difference_zero_terminal_margin_gap",
+    "identifiable_chain_or_null_chain": true,
+    "completion_observability": "unknown_in_saved_schema",
+    "duration_mechanism_supported": false,
+    "effect_causation": "unknown; observed full-policy trajectory association only"
+  },
+  {
+    "seed": 2328454240,
+    "opponent": "market",
+    "side": 1,
+    "reference": "teacher_task",
+    "first_request_difference_step": 179,
+    "first_choice_difference": {
+      "step": 176,
+      "callback": 5,
+      "candidate_op": "WATER",
+      "reference_op": "WATER",
+      "same_unit": true,
+      "same_target": false,
+      "candidate_request_kind": "move",
+      "reference_request_kind": "move",
+      "emitted_unit_request_equal": true
+    },
+    "first_request_turn_choice_linkage": {
+      "step": 179,
+      "callback": 3,
+      "candidate_op": "WATER",
+      "reference_op": "WATER",
+      "same_unit": true,
+      "same_target": false,
+      "candidate_request_kind": "move",
+      "reference_request_kind": "move",
+      "emitted_unit_request_equal": false
+    },
+    "matched_context_calls": 548,
+    "equal_context_choice_disagreement_turns": 4,
+    "disagreement_same_complete_request_turns": 3,
+    "disagreement_different_complete_request_turns": 1,
+    "unalignable_common_turns": 0,
+    "common_prefix_turns": 180,
+    "first_unalignable_reason": null,
+    "terminal": {
+      "state_index": 719,
+      "observation_equal": true,
+      "candidate": {
+        "own_bank": 46974.0,
+        "opponent_bank": 43268.0,
+        "margin": 3706.0
+      },
+      "reference": {
+        "own_bank": 46974.0,
+        "opponent_bank": 43268.0,
+        "margin": 3706.0
+      },
+      "delta": {
+        "own_bank": 0.0,
+        "opponent_bank": 0.0,
+        "margin": 0.0
+      }
+    },
+    "horizons": {
+      "1": {
+        "state_index": 180,
+        "observation_equal": false,
+        "candidate": {
+          "own_bank": 546.0,
+          "opponent_bank": 1335.0,
+          "margin": -789.0
+        },
+        "reference": {
+          "own_bank": 546.0,
+          "opponent_bank": 1335.0,
+          "margin": -789.0
+        },
+        "delta": {
+          "own_bank": 0.0,
+          "opponent_bank": 0.0,
+          "margin": 0.0
+        }
+      },
+      "24": {
+        "state_index": 203,
+        "observation_equal": true,
+        "candidate": {
+          "own_bank": 539.0,
+          "opponent_bank": 1328.0,
+          "margin": -789.0
+        },
+        "reference": {
+          "own_bank": 539.0,
+          "opponent_bank": 1328.0,
+          "margin": -789.0
+        },
+        "delta": {
+          "own_bank": 0.0,
+          "opponent_bank": 0.0,
+          "margin": 0.0
+        }
+      }
+    },
+    "first_sampled_observation_difference_state": 180,
+    "request_components_differ": {
+      "farmer": false,
+      "hands": true,
+      "market": false
+    },
+    "partition": "observation_difference_zero_terminal_margin_gap",
+    "identifiable_chain_or_null_chain": true,
+    "completion_observability": "unknown_in_saved_schema",
+    "duration_mechanism_supported": false,
+    "effect_causation": "unknown; observed full-policy trajectory association only"
+  },
+  {
+    "seed": 2328454240,
+    "opponent": "market",
+    "side": 1,
+    "reference": "baseline",
+    "first_request_difference_step": 257,
+    "first_choice_difference": {
+      "step": 15,
+      "callback": 1,
+      "candidate_op": "WATER",
+      "reference_op": "WATER",
+      "same_unit": false,
+      "same_target": false,
+      "candidate_request_kind": "work",
+      "reference_request_kind": "work",
+      "emitted_unit_request_equal": true
+    },
+    "first_request_turn_choice_linkage": {
+      "step": 257,
+      "callback": 2,
+      "candidate_op": "WATER",
+      "reference_op": "PLANT",
+      "same_unit": true,
+      "same_target": false,
+      "candidate_request_kind": "move",
+      "reference_request_kind": "other",
+      "emitted_unit_request_equal": false
+    },
+    "matched_context_calls": 755,
+    "equal_context_choice_disagreement_turns": 4,
+    "disagreement_same_complete_request_turns": 3,
+    "disagreement_different_complete_request_turns": 1,
+    "unalignable_common_turns": 0,
+    "common_prefix_turns": 258,
+    "first_unalignable_reason": null,
+    "terminal": {
+      "state_index": 719,
+      "observation_equal": true,
+      "candidate": {
+        "own_bank": 46974.0,
+        "opponent_bank": 43268.0,
+        "margin": 3706.0
+      },
+      "reference": {
+        "own_bank": 46974.0,
+        "opponent_bank": 43268.0,
+        "margin": 3706.0
+      },
+      "delta": {
+        "own_bank": 0.0,
+        "opponent_bank": 0.0,
+        "margin": 0.0
+      }
+    },
+    "horizons": {
+      "1": {
+        "state_index": 258,
+        "observation_equal": false,
+        "candidate": {
+          "own_bank": 9149.0,
+          "opponent_bank": 12602.0,
+          "margin": -3453.0
+        },
+        "reference": {
+          "own_bank": 9149.0,
+          "opponent_bank": 12602.0,
+          "margin": -3453.0
+        },
+        "delta": {
+          "own_bank": 0.0,
+          "opponent_bank": 0.0,
+          "margin": 0.0
+        }
+      },
+      "24": {
+        "state_index": 281,
+        "observation_equal": true,
+        "candidate": {
+          "own_bank": 15569.0,
+          "opponent_bank": 12495.0,
+          "margin": 3074.0
+        },
+        "reference": {
+          "own_bank": 15569.0,
+          "opponent_bank": 12495.0,
+          "margin": 3074.0
+        },
+        "delta": {
+          "own_bank": 0.0,
+          "opponent_bank": 0.0,
+          "margin": 0.0
+        }
+      }
+    },
+    "first_sampled_observation_difference_state": 258,
+    "request_components_differ": {
+      "farmer": false,
+      "hands": true,
+      "market": false
+    },
+    "partition": "observation_difference_zero_terminal_margin_gap",
+    "identifiable_chain_or_null_chain": true,
+    "completion_observability": "unknown_in_saved_schema",
+    "duration_mechanism_supported": false,
+    "effect_causation": "unknown; observed full-policy trajectory association only"
+  }
+]

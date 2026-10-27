@@ -1,0 +1,12 @@
+{
+  "schema": "independent-observation-scope-correction-v1",
+  "source": "learning/task_action_impact_diagnostic_v1/analysis.py",
+  "physical_digest": "Hashes observations from both replay frame participants without observe filtering and may include both participants private information.",
+  "first_sampled_observation_difference_state": "An offline sampled replay-observation difference; public-field or deployed-agent-visible differences were not separately verified.",
+  "actor_observation": "Separately constructed using decision.api.observe filtering.",
+  "model_leakage": "This offline digest scope does not itself establish model or deployed-agent information leakage.",
+  "original_review_modified": false,
+  "raw_reads": 0,
+  "experiments_run": 0,
+  "official_steps": 0
+}

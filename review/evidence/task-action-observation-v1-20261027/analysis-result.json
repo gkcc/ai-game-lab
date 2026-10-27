@@ -1,0 +1,285 @@
+{
+  "schema": "task-action-observation-result-v1",
+  "complete": true,
+  "pairs": 16,
+  "primary_pairs": 8,
+  "groups": [
+    {
+      "reference": "teacher_task",
+      "dimension": "all",
+      "value": null,
+      "pairs": 8,
+      "seats": [
+        0,
+        1
+      ],
+      "partitions": {
+        "no_task_disagreement": 0,
+        "task_disagreement_same_request": 0,
+        "request_difference_no_recorded_observation_effect": 0,
+        "observation_difference_zero_terminal_margin_gap": 2,
+        "observation_difference_nonzero_terminal_margin_gap": 6,
+        "unknown": 0
+      },
+      "terminal_delta_sum": {
+        "own_bank": -7159.0,
+        "opponent_bank": -5128.0,
+        "margin": -2031.0
+      }
+    },
+    {
+      "reference": "teacher_task",
+      "dimension": "opponent",
+      "value": "round2",
+      "pairs": 4,
+      "seats": [
+        0,
+        1
+      ],
+      "partitions": {
+        "no_task_disagreement": 0,
+        "task_disagreement_same_request": 0,
+        "request_difference_no_recorded_observation_effect": 0,
+        "observation_difference_zero_terminal_margin_gap": 0,
+        "observation_difference_nonzero_terminal_margin_gap": 4,
+        "unknown": 0
+      },
+      "terminal_delta_sum": {
+        "own_bank": -7177.0,
+        "opponent_bank": -4896.0,
+        "margin": -2281.0
+      }
+    },
+    {
+      "reference": "teacher_task",
+      "dimension": "opponent",
+      "value": "market",
+      "pairs": 4,
+      "seats": [
+        0,
+        1
+      ],
+      "partitions": {
+        "no_task_disagreement": 0,
+        "task_disagreement_same_request": 0,
+        "request_difference_no_recorded_observation_effect": 0,
+        "observation_difference_zero_terminal_margin_gap": 2,
+        "observation_difference_nonzero_terminal_margin_gap": 2,
+        "unknown": 0
+      },
+      "terminal_delta_sum": {
+        "own_bank": 18.0,
+        "opponent_bank": -232.0,
+        "margin": 250.0
+      }
+    },
+    {
+      "reference": "teacher_task",
+      "dimension": "seed",
+      "value": 3911611436,
+      "pairs": 4,
+      "seats": [
+        0,
+        1
+      ],
+      "partitions": {
+        "no_task_disagreement": 0,
+        "task_disagreement_same_request": 0,
+        "request_difference_no_recorded_observation_effect": 0,
+        "observation_difference_zero_terminal_margin_gap": 0,
+        "observation_difference_nonzero_terminal_margin_gap": 4,
+        "unknown": 0
+      },
+      "terminal_delta_sum": {
+        "own_bank": -7186.0,
+        "opponent_bank": -5128.0,
+        "margin": -2058.0
+      }
+    },
+    {
+      "reference": "teacher_task",
+      "dimension": "seed",
+      "value": 2328454240,
+      "pairs": 4,
+      "seats": [
+        0,
+        1
+      ],
+      "partitions": {
+        "no_task_disagreement": 0,
+        "task_disagreement_same_request": 0,
+        "request_difference_no_recorded_observation_effect": 0,
+        "observation_difference_zero_terminal_margin_gap": 2,
+        "observation_difference_nonzero_terminal_margin_gap": 2,
+        "unknown": 0
+      },
+      "terminal_delta_sum": {
+        "own_bank": 27.0,
+        "opponent_bank": 0.0,
+        "margin": 27.0
+      }
+    },
+    {
+      "reference": "baseline",
+      "dimension": "all",
+      "value": null,
+      "pairs": 8,
+      "seats": [
+        0,
+        1
+      ],
+      "partitions": {
+        "no_task_disagreement": 0,
+        "task_disagreement_same_request": 0,
+        "request_difference_no_recorded_observation_effect": 0,
+        "observation_difference_zero_terminal_margin_gap": 4,
+        "observation_difference_nonzero_terminal_margin_gap": 4,
+        "unknown": 0
+      },
+      "terminal_delta_sum": {
+        "own_bank": 4927.0,
+        "opponent_bank": -4132.0,
+        "margin": 9059.0
+      }
+    },
+    {
+      "reference": "baseline",
+      "dimension": "opponent",
+      "value": "round2",
+      "pairs": 4,
+      "seats": [
+        0,
+        1
+      ],
+      "partitions": {
+        "no_task_disagreement": 0,
+        "task_disagreement_same_request": 0,
+        "request_difference_no_recorded_observation_effect": 0,
+        "observation_difference_zero_terminal_margin_gap": 2,
+        "observation_difference_nonzero_terminal_margin_gap": 2,
+        "unknown": 0
+      },
+      "terminal_delta_sum": {
+        "own_bank": 4411.0,
+        "opponent_bank": -3828.0,
+        "margin": 8239.0
+      }
+    },
+    {
+      "reference": "baseline",
+      "dimension": "opponent",
+      "value": "market",
+      "pairs": 4,
+      "seats": [
+        0,
+        1
+      ],
+      "partitions": {
+        "no_task_disagreement": 0,
+        "task_disagreement_same_request": 0,
+        "request_difference_no_recorded_observation_effect": 0,
+        "observation_difference_zero_terminal_margin_gap": 2,
+        "observation_difference_nonzero_terminal_margin_gap": 2,
+        "unknown": 0
+      },
+      "terminal_delta_sum": {
+        "own_bank": 516.0,
+        "opponent_bank": -304.0,
+        "margin": 820.0
+      }
+    },
+    {
+      "reference": "baseline",
+      "dimension": "seed",
+      "value": 3911611436,
+      "pairs": 4,
+      "seats": [
+        0,
+        1
+      ],
+      "partitions": {
+        "no_task_disagreement": 0,
+        "task_disagreement_same_request": 0,
+        "request_difference_no_recorded_observation_effect": 0,
+        "observation_difference_zero_terminal_margin_gap": 2,
+        "observation_difference_nonzero_terminal_margin_gap": 2,
+        "unknown": 0
+      },
+      "terminal_delta_sum": {
+        "own_bank": 516.0,
+        "opponent_bank": -304.0,
+        "margin": 820.0
+      }
+    },
+    {
+      "reference": "baseline",
+      "dimension": "seed",
+      "value": 2328454240,
+      "pairs": 4,
+      "seats": [
+        0,
+        1
+      ],
+      "partitions": {
+        "no_task_disagreement": 0,
+        "task_disagreement_same_request": 0,
+        "request_difference_no_recorded_observation_effect": 0,
+        "observation_difference_zero_terminal_margin_gap": 2,
+        "observation_difference_nonzero_terminal_margin_gap": 2,
+        "unknown": 0
+      },
+      "terminal_delta_sum": {
+        "own_bank": 4411.0,
+        "opponent_bank": -3828.0,
+        "margin": 8239.0
+      }
+    }
+  ],
+  "status": "evidence_insufficient",
+  "new_training_authorized": false,
+  "conclusion": "Saved observations can establish trajectory differences; missing completion evidence prevents the duration-option question.",
+  "causal_interpretation": "No regret labels, causal return shares, counterfactual outcomes or fresh holdout claim",
+  "observation_denominators": {
+    "paired_comparisons": 16,
+    "teacher_task_pairs": 8,
+    "baseline_pairs": 8,
+    "primary_identifiable_pairs": 8,
+    "primary_unknown_pairs": 0,
+    "completion_unknown_pairs": 16,
+    "unique_seeds": 2,
+    "unique_opponents": 2,
+    "seats": [
+      0,
+      1
+    ]
+  },
+  "sample_role": "development_observation_only",
+  "screen_applied": false,
+  "confidence_intervals_estimated": false,
+  "promotion_authorized": false,
+  "input_games": 24,
+  "triads": 8,
+  "raw_files": 48,
+  "terminal_checks": 24,
+  "accepted_campaign_metadata_sha256": {
+    "input-manifest.json": "b433ee9652f38bbb0cb39afb1e02dcdb3ad84183beabd678f3ecbc8c0570f4fa",
+    "ledger.json": "c97e24ecf4bbf010dab32e50cd9327d1dccf90df54d6590ae72f726d9af356fb",
+    "audit.json": "f604a3203ae4e93ccc771a61080b60122193afa42e656ee3c3d9f36ab7599d9c"
+  },
+  "accepted_first_request_checks": 8,
+  "raw_reads": {
+    "compressed_input_read_bytes": 212354798,
+    "decoded_input_bytes": 3421458495,
+    "files_opened": 48,
+    "files_completed": 48,
+    "raw_decode_passes_per_file": 1
+  },
+  "analysis_wall_seconds": 158.661350072,
+  "analysis_cpu_seconds": 146.30349844399998,
+  "gpu_seconds": 0,
+  "neural_forwards": 0,
+  "official_transitions": 0,
+  "training_updates": 0,
+  "new_games": 0,
+  "decompressed_copies_on_disk": 0
+}

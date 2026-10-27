@@ -1,0 +1,338 @@
+[
+  {
+    "path": "games/dev-3911611436-round2-0-baseline/replay.json.gz",
+    "compressed_bytes": 1192146,
+    "decoded_bytes": 38178825,
+    "sha256": "4a5b31167c0d24df23779fe6c8a51c0fac2f822724bfcebe9762151387072781",
+    "decode_passes": 1
+  },
+  {
+    "path": "games/dev-3911611436-round2-0-candidate/replay.json.gz",
+    "compressed_bytes": 1194585,
+    "decoded_bytes": 38178823,
+    "sha256": "7ae8efcd44b974384a28acaddcb17eab8403bc51674f1ff491558932be735f8e",
+    "decode_passes": 1
+  },
+  {
+    "path": "games/dev-3911611436-round2-0-teacher_task/replay.json.gz",
+    "compressed_bytes": 1203413,
+    "decoded_bytes": 38273752,
+    "sha256": "1d53fd7da21edaa5b473973fd42b2287693d7d5d7e3f1cb6beac8a82f1e22ef3",
+    "decode_passes": 1
+  },
+  {
+    "path": "traces/dev-3911611436-round2-0-baseline.jsonl.gz",
+    "compressed_bytes": 7364482,
+    "decoded_bytes": 101159887,
+    "sha256": "87510d2084239558dab64f33ac95b96bc4041ceaa14898b0483fac962cf40b59",
+    "decode_passes": 1
+  },
+  {
+    "path": "traces/dev-3911611436-round2-0-candidate.jsonl.gz",
+    "compressed_bytes": 7369040,
+    "decoded_bytes": 101180232,
+    "sha256": "32a2f36f4fa5c914732a43ef2a85fd92ed8ce166947a2c96db1802033b8c8015",
+    "decode_passes": 1
+  },
+  {
+    "path": "traces/dev-3911611436-round2-0-teacher_task.jsonl.gz",
+    "compressed_bytes": 7399657,
+    "decoded_bytes": 102619520,
+    "sha256": "ccb50cfb4f63ed51c5f377dc834fa29ee11752e7f10355a50d38aaf98c8128ec",
+    "decode_passes": 1
+  },
+  {
+    "path": "games/dev-3911611436-round2-1-baseline/replay.json.gz",
+    "compressed_bytes": 1200447,
+    "decoded_bytes": 38184344,
+    "sha256": "cd84f26a76fa083b66f8b7ccfc9df806c885a0920dae3ba1367ad38a383c4b69",
+    "decode_passes": 1
+  },
+  {
+    "path": "games/dev-3911611436-round2-1-candidate/replay.json.gz",
+    "compressed_bytes": 1198498,
+    "decoded_bytes": 38184772,
+    "sha256": "c236157a6691ea8d0e42328cf768aa253c8957bddbfe174e409c1afe190a13aa",
+    "decode_passes": 1
+  },
+  {
+    "path": "games/dev-3911611436-round2-1-teacher_task/replay.json.gz",
+    "compressed_bytes": 1212458,
+    "decoded_bytes": 38275936,
+    "sha256": "f4233329440dabe54e62ddd33ffda26de3b2b9f4f2a0753395243df421ff7b0a",
+    "decode_passes": 1
+  },
+  {
+    "path": "traces/dev-3911611436-round2-1-baseline.jsonl.gz",
+    "compressed_bytes": 7373628,
+    "decoded_bytes": 101160010,
+    "sha256": "afbfad7f9d2344edd1289b4399758c0f2e05ecc198d1bfe7ec0273f756ea2e95",
+    "decode_passes": 1
+  },
+  {
+    "path": "traces/dev-3911611436-round2-1-candidate.jsonl.gz",
+    "compressed_bytes": 7370816,
+    "decoded_bytes": 101168626,
+    "sha256": "84169499081b87c4e4c17def144c6f2b3fd25c5cd93e2faabff5094b0dc81aaf",
+    "decode_passes": 1
+  },
+  {
+    "path": "traces/dev-3911611436-round2-1-teacher_task.jsonl.gz",
+    "compressed_bytes": 7417962,
+    "decoded_bytes": 102775735,
+    "sha256": "1112f059e5bc4da16468f72f1a891350dc3a9aed9f8a7231b4f475d6f3137706",
+    "decode_passes": 1
+  },
+  {
+    "path": "games/dev-3911611436-market-0-baseline/replay.json.gz",
+    "compressed_bytes": 1336898,
+    "decoded_bytes": 38343035,
+    "sha256": "7b956ceee2e1bc3ed066752c6c1ca0b7aafa7ace666466246b1387ca6be2fc49",
+    "decode_passes": 1
+  },
+  {
+    "path": "games/dev-3911611436-market-0-candidate/replay.json.gz",
+    "compressed_bytes": 1344268,
+    "decoded_bytes": 38272946,
+    "sha256": "1b877bd72ec5948ec1fbf2b4b98cc6541232cfa55fe1235e7ce2ba76a5739047",
+    "decode_passes": 1
+  },
+  {
+    "path": "games/dev-3911611436-market-0-teacher_task/replay.json.gz",
+    "compressed_bytes": 1341459,
+    "decoded_bytes": 38280158,
+    "sha256": "d36fdf77308cce0784a1dfe52f667a94876e604b6ef6616f616186aea0ee182e",
+    "decode_passes": 1
+  },
+  {
+    "path": "traces/dev-3911611436-market-0-baseline.jsonl.gz",
+    "compressed_bytes": 7328157,
+    "decoded_bytes": 98933177,
+    "sha256": "4317d1da48468b4727b96f7ab321ab2936d0f8a1fee5a3d32a0304e3ce19d7e7",
+    "decode_passes": 1
+  },
+  {
+    "path": "traces/dev-3911611436-market-0-candidate.jsonl.gz",
+    "compressed_bytes": 7422035,
+    "decoded_bytes": 99794719,
+    "sha256": "e8530b555e6f7911cd51c57fcf03617bd13507094613f8b7016f4ebc71d74f2a",
+    "decode_passes": 1
+  },
+  {
+    "path": "traces/dev-3911611436-market-0-teacher_task.jsonl.gz",
+    "compressed_bytes": 7323528,
+    "decoded_bytes": 98962570,
+    "sha256": "73627f51c91c2f6739106821ddd3c45b97434aefbc4286a51f24a0c98329480b",
+    "decode_passes": 1
+  },
+  {
+    "path": "games/dev-3911611436-market-1-baseline/replay.json.gz",
+    "compressed_bytes": 1336648,
+    "decoded_bytes": 38343035,
+    "sha256": "cf922e963f4832de24c02fbe62f4ade5fc0afc2e37fdd30e9c824a2a67fa3f87",
+    "decode_passes": 1
+  },
+  {
+    "path": "games/dev-3911611436-market-1-candidate/replay.json.gz",
+    "compressed_bytes": 1345953,
+    "decoded_bytes": 38272946,
+    "sha256": "9bacd868b101c9d704533e657c47dca8623b601a8dab3d8166b090ca09646153",
+    "decode_passes": 1
+  },
+  {
+    "path": "games/dev-3911611436-market-1-teacher_task/replay.json.gz",
+    "compressed_bytes": 1346254,
+    "decoded_bytes": 38280158,
+    "sha256": "12950613d3dfa4dc7c955e982a8a3c77504f160bdc661edd4c6a36fadd7b4746",
+    "decode_passes": 1
+  },
+  {
+    "path": "traces/dev-3911611436-market-1-baseline.jsonl.gz",
+    "compressed_bytes": 7340811,
+    "decoded_bytes": 98933184,
+    "sha256": "239f0247fb974e7ac103908c43ca700b5563ae7d4c9baca98deb15b8d1197af4",
+    "decode_passes": 1
+  },
+  {
+    "path": "traces/dev-3911611436-market-1-candidate.jsonl.gz",
+    "compressed_bytes": 7435798,
+    "decoded_bytes": 99794723,
+    "sha256": "2c34bd0ec448c8625ed3518882d05c812d8ddf66dd9c3b9cd9fe701a8683b5a9",
+    "decode_passes": 1
+  },
+  {
+    "path": "traces/dev-3911611436-market-1-teacher_task.jsonl.gz",
+    "compressed_bytes": 7337853,
+    "decoded_bytes": 98962566,
+    "sha256": "37de5a68a7b8f98168b9f2a273118b21c9dea9c8cada9b4cc8ca6a0b7e28cfaf",
+    "decode_passes": 1
+  },
+  {
+    "path": "games/dev-2328454240-round2-0-baseline/replay.json.gz",
+    "compressed_bytes": 1215531,
+    "decoded_bytes": 38317717,
+    "sha256": "4b00683c7ea955e12dc31a0d20448f3837c78cb3a04b6db45f1bb00ace5128f8",
+    "decode_passes": 1
+  },
+  {
+    "path": "games/dev-2328454240-round2-0-candidate/replay.json.gz",
+    "compressed_bytes": 1217941,
+    "decoded_bytes": 38336200,
+    "sha256": "b6dbb881e30ec85735113723f97ce0608471e24cbed130d46e800e38447bb805",
+    "decode_passes": 1
+  },
+  {
+    "path": "games/dev-2328454240-round2-0-teacher_task/replay.json.gz",
+    "compressed_bytes": 1217381,
+    "decoded_bytes": 38316757,
+    "sha256": "1bbca773ae957ee1902dd2bd222085e726c28b7cc26e48f2b9a25b2c6c85f80f",
+    "decode_passes": 1
+  },
+  {
+    "path": "traces/dev-2328454240-round2-0-baseline.jsonl.gz",
+    "compressed_bytes": 7694231,
+    "decoded_bytes": 106688210,
+    "sha256": "db252f099cf5eb27623464dc7fb88fe5f979a06b756fc2d4f8e54590bed4af6d",
+    "decode_passes": 1
+  },
+  {
+    "path": "traces/dev-2328454240-round2-0-candidate.jsonl.gz",
+    "compressed_bytes": 7794832,
+    "decoded_bytes": 108392171,
+    "sha256": "30ef615840681af91ceadc6027c3eb09477d8fec59b061d54e178ba03dfc31da",
+    "decode_passes": 1
+  },
+  {
+    "path": "traces/dev-2328454240-round2-0-teacher_task.jsonl.gz",
+    "compressed_bytes": 7715464,
+    "decoded_bytes": 107855891,
+    "sha256": "6c1ea5f3601c4f1fa65bfeec4da0ecba17d34ea0d5e6552ca4841061f0e77091",
+    "decode_passes": 1
+  },
+  {
+    "path": "games/dev-2328454240-round2-1-baseline/replay.json.gz",
+    "compressed_bytes": 1224323,
+    "decoded_bytes": 38337134,
+    "sha256": "f4aca843f9f0845d6541769139c76bd8703a6928a97945969de68bce47507d19",
+    "decode_passes": 1
+  },
+  {
+    "path": "games/dev-2328454240-round2-1-candidate/replay.json.gz",
+    "compressed_bytes": 1224535,
+    "decoded_bytes": 38345586,
+    "sha256": "ee1a66244b1e1e7af567d14669161fb9c044734c0fecfb4d51e3fb4c82636fcd",
+    "decode_passes": 1
+  },
+  {
+    "path": "games/dev-2328454240-round2-1-teacher_task/replay.json.gz",
+    "compressed_bytes": 1223142,
+    "decoded_bytes": 38328117,
+    "sha256": "9de29e0775de312e249676e33e1a53365592e3873fbd0fc82212f4a3de6a2951",
+    "decode_passes": 1
+  },
+  {
+    "path": "traces/dev-2328454240-round2-1-baseline.jsonl.gz",
+    "compressed_bytes": 7725848,
+    "decoded_bytes": 107110750,
+    "sha256": "14c039c7044fb9f9499f54970ddfc6b9ce5f2f78972750e73e283460f3bdb851",
+    "decode_passes": 1
+  },
+  {
+    "path": "traces/dev-2328454240-round2-1-candidate.jsonl.gz",
+    "compressed_bytes": 7789552,
+    "decoded_bytes": 108283563,
+    "sha256": "dc6269e3b1f6fe7edaa663e122b41c1a03e4d3fac93d22f17a5c555953adc77e",
+    "decode_passes": 1
+  },
+  {
+    "path": "traces/dev-2328454240-round2-1-teacher_task.jsonl.gz",
+    "compressed_bytes": 7720606,
+    "decoded_bytes": 107837790,
+    "sha256": "45e95428702e16e1d6e3b8e0242d87e952cae4a061f4f066e25a23c8093841c0",
+    "decode_passes": 1
+  },
+  {
+    "path": "games/dev-2328454240-market-0-baseline/replay.json.gz",
+    "compressed_bytes": 1313196,
+    "decoded_bytes": 38495988,
+    "sha256": "40d558db6d282fe0c8ca1a25ceafa7aa7af1ea7fd02ee39657a166cc0144dc58",
+    "decode_passes": 1
+  },
+  {
+    "path": "games/dev-2328454240-market-0-candidate/replay.json.gz",
+    "compressed_bytes": 1310782,
+    "decoded_bytes": 38496032,
+    "sha256": "fb014df56ff96e166fcee0b1621fc69a79a36860ef1452fa3b78a879705b3fa1",
+    "decode_passes": 1
+  },
+  {
+    "path": "games/dev-2328454240-market-0-teacher_task/replay.json.gz",
+    "compressed_bytes": 1317503,
+    "decoded_bytes": 38495287,
+    "sha256": "6282d11c0ca0955263f51b4dd5ba5e05ea1342ff4b0633b2cd8e8c3fb2c42aa3",
+    "decode_passes": 1
+  },
+  {
+    "path": "traces/dev-2328454240-market-0-baseline.jsonl.gz",
+    "compressed_bytes": 7856519,
+    "decoded_bytes": 108553627,
+    "sha256": "ae46f5d73ef517285036d9b8bf533da9d9c1b401d1b30a0f4d88d1c0af454b02",
+    "decode_passes": 1
+  },
+  {
+    "path": "traces/dev-2328454240-market-0-candidate.jsonl.gz",
+    "compressed_bytes": 7840507,
+    "decoded_bytes": 108394047,
+    "sha256": "40838d6515e173a5d95e22f4938702d85b533546ae53af8cdd958b378ece6bfa",
+    "decode_passes": 1
+  },
+  {
+    "path": "traces/dev-2328454240-market-0-teacher_task.jsonl.gz",
+    "compressed_bytes": 7768110,
+    "decoded_bytes": 107962489,
+    "sha256": "80dd3702b71d0e229e0533cb55118928e703605917f2876ffd6dad9e9cea10b3",
+    "decode_passes": 1
+  },
+  {
+    "path": "games/dev-2328454240-market-1-baseline/replay.json.gz",
+    "compressed_bytes": 1322646,
+    "decoded_bytes": 38495988,
+    "sha256": "59e255370163013afd18f93a76fb5cdee1889114046913a2cc24b6fed97dc19b",
+    "decode_passes": 1
+  },
+  {
+    "path": "games/dev-2328454240-market-1-candidate/replay.json.gz",
+    "compressed_bytes": 1322166,
+    "decoded_bytes": 38496032,
+    "sha256": "db9cd19a09364a730c35876b78d8942afb84b54fe37d51e63a194b132cb1d38c",
+    "decode_passes": 1
+  },
+  {
+    "path": "games/dev-2328454240-market-1-teacher_task/replay.json.gz",
+    "compressed_bytes": 1321205,
+    "decoded_bytes": 38495287,
+    "sha256": "1d1fbd1b6259a13e603b3f456505f0248dbffb33747dd86b1e58144bfdaf879a",
+    "decode_passes": 1
+  },
+  {
+    "path": "traces/dev-2328454240-market-1-baseline.jsonl.gz",
+    "compressed_bytes": 7862177,
+    "decoded_bytes": 108553625,
+    "sha256": "b02fb4eac36253f64a54a622da557d90a09035595502d18daa8f7dc7fc44220b",
+    "decode_passes": 1
+  },
+  {
+    "path": "traces/dev-2328454240-market-1-candidate.jsonl.gz",
+    "compressed_bytes": 7846227,
+    "decoded_bytes": 108394041,
+    "sha256": "3dd4d1988038b3d4081805ded9e9e949276e0991005d07e512be46def414e326",
+    "decode_passes": 1
+  },
+  {
+    "path": "traces/dev-2328454240-market-1-teacher_task.jsonl.gz",
+    "compressed_bytes": 7773580,
+    "decoded_bytes": 107962487,
+    "sha256": "f76cd724585477340a3de776b3a9dc989aee7ca824b9558f51b47f63b63fe784",
+    "decode_passes": 1
+  }
+]

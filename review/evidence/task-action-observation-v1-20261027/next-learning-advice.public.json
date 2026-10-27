@@ -1,0 +1,32 @@
+{
+  "schema": "next-learning-advice-v1",
+  "author": "independent gpt-6.1-terra agent, not WebChat",
+  "status": "conditional_proposal_not_authorization",
+  "precondition": "Proceed only if root accepts the completed analysis and independent review passes; otherwise preserve failure and do not execute the next stage.",
+  "evidence": {
+    "campaign": "24 development games and primary replays completed; two predeclared independent replays reported passed",
+    "analysis": "16 paired comparisons across two development seeds; task completion unknown in all 16; trajectories differ but completion and causal profit effects cannot be established",
+    "cash": "C-S mean own net +615.875 and margin +1132.375; C-T mean own net -894.875 and margin -253.875; descriptive only",
+    "prior": "C did not meet the preregistered promotion confidence threshold in earlier eight-seed evaluation",
+    "limitations": "Two seeds are not an independent holdout, significance evidence, or causal evidence; this advice did not read raw records or model weights and is not WebChat review."
+  },
+  "proposed_stage": {
+    "name": "task_completion_label_feasibility_v1",
+    "objective": "Determine whether official game state and rules support an accurate, auditable task completion label suitable for later decision learning.",
+    "hypothesis": "A frozen rule-grounded state transition can distinguish completed, failed or unresolved task instances without inferring completion from a request or terminal cash. This is a feasibility hypothesis, not a claim that learning improves profit.",
+    "scope": "First specify task identity, activation, termination, deadlines, competing changes, and unknown cases from official rules and state fields. Then validate a fixed small sample of already observed development games against official replay state and independently inspect edge cases. If required fields are absent or ambiguous, record unknown and stop. No training, new matches, promotion, or default change in this stage.",
+    "data_roles": "Existing 24 games are development and label-validation data, already observed; prior evaluation data remain historical and must not be relabeled as holdout. Reserve unseen seeds for a separately registered future evaluation, not this feasibility stage.",
+    "budget": "At most 8 preselected games spanning both opponents, both seats and all three arms; one sequential raw read per selected game, no replacement; cap decoded input at 2 GiB, 20 minutes wall time and 1 GiB outputs. No GPU training or official game steps; stop early on any identity, resource, or privacy failure. Exact feasibility of these limits must be checked before registering.",
+    "freeze": "Before reading selected raw state, freeze rules version, input identities, selection, label definitions, unknown handling, validation cases, limits, and an exact-byte local commit; independent review before execution.",
+    "acceptance": "All selected identities and official state sequences verify; a rule-grounded instance-level label with explicit evidence or unknown is reproducible; independent reviewer checks every fixed edge case and a preregistered sample of labeled instances, with zero disagreements on supported labels. Report coverage and unknown rate without pretending missing evidence is negative. Failure or inadequate coverage closes feasibility without training.",
+    "next_gate": "Only after feasibility succeeds, separately preregister a single bounded GPU training experiment, fixed baselines and hyperparameters, development/untouched holdout separation, real official matches, seed-clustered evaluation, explicit regression and promotion criteria, resource limits and stop rules. GPU acceleration of training is not GPU game simulation."
+  },
+  "stop_conditions": [
+    "Independent review or root acceptance fails",
+    "Official rule/state identity cannot be verified",
+    "Completion cannot be distinguished from unresolved cases",
+    "Resource or privacy budget exceeded",
+    "Any attempt to tune on or reuse observed data as independent holdout"
+  ],
+  "agent_workflow_used": false
+}
