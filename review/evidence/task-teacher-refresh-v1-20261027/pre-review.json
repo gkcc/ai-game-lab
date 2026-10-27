@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "freeze_sha256": "29a1bcbfb51c1d0828f0629465251c95dc3b1509caa74fbc572f7c793b443582",
+  "registration_sha256": "f0d074db020ca7c73e8f253c5fa31c794d193e81379261c71a3e0efe5d17e44d",
+  "source_count": 9,
+  "unit_tests": {
+    "passed": 9,
+    "scope": "pure fake"
+  },
+  "metadata_seed_collision_checked": true,
+  "independent_subagent_not_webchat": true,
+  "limitations": [
+    "Seed exclusion covers searchable non-private metadata only, not unavailable or external history.",
+    "Reviewer did not open any model; prepare and verify hash crop checkpoint bytes without model inference. Prior training array and new traces were not read; real Windows Jobs and official games remain untested in this stage.",
+    "Teacher task selection uses rules with a frozen crop model; selected labels are not proof of task completion or optimality.",
+    "No independent replay is included in this stage; primary replay uses the shared official engine.",
+    "Data sufficiency and sampled resource limits are not guaranteed; follow-up fit is separately gated and not started."
+  ],
+  "findings": [
+    "Registration, nine stage sources, frozen dependencies and public parent evidence matched.",
+    "Recomputed 656-entry seed inventory matched; two development and two reserved seeds are distinct and outside exclusions.",
+    "Four games and four primary replays are bounded at 5752 official transitions; no attempt marker existed.",
+    "Failure and no-retry controls and sample minima were checked against source."
+  ]
+}

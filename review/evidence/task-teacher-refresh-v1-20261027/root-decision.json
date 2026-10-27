@@ -1,0 +1,12 @@
+{
+  "previous_commit": "4562f2b1a5424c8e611052e042aabeb8612284c8",
+  "status": "approved_for_implementation_not_execution",
+  "created_utc": "2026-10-27T14:31:54.037976+00:00",
+  "deadline_utc": "2026-10-27T18:31:54.037976+00:00",
+  "purpose": "Collect four new mixed-controller teacher trajectories for later bounded BC.",
+  "stage_scope": "Two new development seeds, round2, both seats, 4 official games and 4 primary 719-step replays; fixed label sampling and admission.",
+  "future_fit_precommitment": "If admitted, later combine old sealed and new data with the unmodified trainer for one 128-update fit; no automatic fit in this stage.",
+  "stop_conditions": "Any identity, official execution, replay, probe, cleanup, resource or sample-admission failure stops without retry or replacement.",
+  "boundaries": "No old cache reads, new training, test games, PPO, default Bot or official engine changes; raw traces and replay remain local.",
+  "provenance": "Independent subagent advice and review, not WebChat."
+}

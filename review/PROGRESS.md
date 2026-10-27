@@ -531,3 +531,9 @@ d1/d2/d3源码快照及哈希全部保留，未放宽允许映像或父子链约
 新增独立可复用分类器，先检查Job停止和清理，再验证探针收据；8项fake及历史失败聚合收据的事后函数验证通过。旧冻结runner没有修改，新分类器尚未接入生产运行器，worker业务结果仍须单独验收。
 
 [说明](../kaggriculture/TASK_PROBE_FAILURE_REPORTING_V1.zh-CN.md) | [证据](evidence/task-probe-failure-reporting-v1-20261027/)
+
+## 新开发种子的教师任务示范：预登记
+
+冻结两个新开发种子、round2 双席共4场及4次主复演，先验收官方执行和规则任务选择／冻结作物模型的混合教师标签，再按固定哈希采样。另预留两个种子；本阶段不训练、不跑留出测试，失败不重试。旧示范与新示范的后续合并配方已写定，但须另验旧数组及另行冻结训练执行。
+
+[说明](../kaggriculture/TASK_TEACHER_REFRESH_V1.zh-CN.md) | [登记证据](evidence/task-teacher-refresh-v1-20261027/)
