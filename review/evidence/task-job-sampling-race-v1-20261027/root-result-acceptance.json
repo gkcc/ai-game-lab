@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "synthetic_attempts": 1,
+  "official_games": 0,
+  "training_updates": 0,
+  "deliberately_injected_disappearances": 1,
+  "sampling_attempts": 33,
+  "complete_samples": 32,
+  "discarded_samples": 1,
+  "sampling_retries": 1,
+  "launcher_reaped": true,
+  "owned_job_members_zero": true,
+  "no_cleanup_error": true,
+  "previous_failure_cause_proven": false,
+  "natural_race_proven": false,
+  "old_reserved_seeds_reused": false,
+  "evidence_sha256": {
+    "root-decision.json": "d5e1e97dae55245da5e291951acc69f2da6aeac283d35d09565ff8655cbd84f2",
+    "registration.json": "0319e0e9943fc8c4101a776c662182e2cc9a7aeb5105fc0af347790073f31af7",
+    "freeze.json": "d8a4ed0d79dcb63aac11de6ceeb6af38d74ce6c9b82efadd60b358cfbbb3eac5",
+    "pre-review.json": "37c82986ff11b1d03807e3ee21ac652315a9adbbf92490bcc19a0e93af7fc253",
+    "pre-execution-commit.json": "f376978750438948b1d7144882e033f9979dd17e311011e56785fb0637e0a7b7",
+    "started.json": "67b2fa310ea55d3360108d841dced100193fc8e07c143f4ba829fb85aed18743",
+    "result.json": "189fe0743fec547bd942e16c2b59e5f180517eb6561ef581912661997fb92fdc",
+    "independent-result-review.json": "a4e9989f7516bd2f93431f87559df805ad390d8207965b6d34b3f9d9417245f2"
+  },
+  "limitations": [
+    "Sampled process membership and memory are not hard real-time bounds.",
+    "Empty snapshots fail conservatively.",
+    "No independent rerun or per-process observation was performed.",
+    "Local files cannot prevent external deletion of every attempt record."
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "marker": {
+    "created": true,
+    "complete": true
+  },
+  "error_kind": null,
+  "result": {
+    "passed": true,
+    "supervision": {
+      "passed": true,
+      "assigned": true,
+      "resumed": true,
+      "launcher_reaped": true,
+      "job_members_zero": true,
+      "error_kind": null,
+      "cleanup_error_kind": null,
+      "stop_reason": null,
+      "exit_code": 0,
+      "termination_error_kind": null,
+      "wait_error_kind": null,
+      "membership_error_kind": null,
+      "close_error_kind": null,
+      "peak_sampled_rss_bytes": 108687360,
+      "peak_sampled_job_commit_bytes": 52727808,
+      "max_sampled_members": 9,
+      "rss_threshold_sample_members": null,
+      "measurement_limit": "Same-snapshot member count and RSS are sampled; membership can race and values are not hard real-time limits",
+      "retry_allowed": false,
+      "rss_sampling_attempts": 33,
+      "rss_sampling_retries": 1,
+      "rss_complete_samples": 32,
+      "rss_discarded_samples": 1,
+      "sampling_limit": "Complete per-snapshot read only; membership can change or PID can be reused during sampling; no hard real-time memory cap"
+    },
+    "artificial_disappearances_injected": 1,
+    "interpretation": "Artificial injection demonstrates retry only; it does not establish the cause of an earlier failure or a natural race",
+    "retry_allowed": false
+  },
+  "identities": {
+    "marker_sha256": "67b2fa310ea55d3360108d841dced100193fc8e07c143f4ba829fb85aed18743",
+    "freeze_sha256": "d8a4ed0d79dcb63aac11de6ceeb6af38d74ce6c9b82efadd60b358cfbbb3eac5",
+    "registration_sha256": "0319e0e9943fc8c4101a776c662182e2cc9a7aeb5105fc0af347790073f31af7",
+    "pre_execution_commit_sha256": "f376978750438948b1d7144882e033f9979dd17e311011e56785fb0637e0a7b7",
+    "commit": "37386b0b579b42e0c9e32e56d57d311b8bdfad3d"
+  },
+  "retry_allowed": false,
+  "synthetic_only": true,
+  "artificial_injection_not_prior_cause": true,
+  "identity_check_limit": "Before and after checks cannot exclude transient replacement followed by restoration"
+}

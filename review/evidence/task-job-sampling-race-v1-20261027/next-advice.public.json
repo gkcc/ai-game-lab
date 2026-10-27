@@ -1,0 +1,6 @@
+{
+  "source": "Independent subagent advice, not WebChat",
+  "recommendation": "In a separately preregistered panel, adapt both the official game worker supervisor and the independent replay supervisor to the new sampling wrapper.",
+  "prerequisites": "Freeze the adapted source and dependencies, resource and transition budget, stopping rules, opponents, evaluation criteria and fresh seeds. Add fake checks that both entry points use the wrapper and stop on supervision failure.",
+  "limits": "Do not reuse either consumed seed or modify the earlier failed panel. The artificial injection does not establish the old failure cause or rule out natural races; empty snapshots still conservatively fail."
+}

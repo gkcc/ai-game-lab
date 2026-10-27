@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "identities_sha256": {
+    "root-decision.json": "d5e1e97dae55245da5e291951acc69f2da6aeac283d35d09565ff8655cbd84f2",
+    "registration.json": "0319e0e9943fc8c4101a776c662182e2cc9a7aeb5105fc0af347790073f31af7",
+    "freeze.json": "d8a4ed0d79dcb63aac11de6ceeb6af38d74ce6c9b82efadd60b358cfbbb3eac5",
+    "pre-review.json": "37c82986ff11b1d03807e3ee21ac652315a9adbbf92490bcc19a0e93af7fc253",
+    "pre-execution-commit.json": "f376978750438948b1d7144882e033f9979dd17e311011e56785fb0637e0a7b7",
+    "started.json": "67b2fa310ea55d3360108d841dced100193fc8e07c143f4ba829fb85aed18743",
+    "result.json": "189fe0743fec547bd942e16c2b59e5f180517eb6561ef581912661997fb92fdc"
+  },
+  "pre_execution_commit": "37386b0b579b42e0c9e32e56d57d311b8bdfad3d",
+  "facts": [
+    "Single synthetic attempt passed; one disappearance was deliberately injected.",
+    "33 sampling attempts comprise 32 complete samples and one discarded sample; one retry was recorded.",
+    "Supervisor receipt reports normal exit, launcher reaped, owned Job empty and no cleanup errors.",
+    "Frozen identities, started marker, local pre-execution commit and post-run receipt bindings are consistent."
+  ],
+  "limitations": [
+    "The deliberate injection demonstrates this recovery path only; no natural race or cause of the earlier failure is established.",
+    "Job membership and memory samples are not hard real-time guarantees and PID reuse remains possible.",
+    "No independent rerun or per-process observation was performed; results rely on frozen code and aggregate receipts.",
+    "Local commit is not a third-party timestamp; pre/post identity checks cannot exclude transient replacement followed by restoration.",
+    "No match, replay, model or training data was accessed during this review."
+  ]
+}
