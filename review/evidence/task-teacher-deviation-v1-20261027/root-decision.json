@@ -1,0 +1,41 @@
+{
+  "previous_commit": "9c034b1deab0637d3198be5062d7ad43e23e6d86",
+  "deadline_utc": "2026-10-27T16:24:57.405896+00:00",
+  "status": "approved_for_implementation_not_execution",
+  "training_only": true,
+  "limits": {
+    "max_archive_bytes": 134217728,
+    "max_uncompressed_bytes": 536870912,
+    "max_groups": 2253,
+    "max_candidates": 1200000,
+    "selected_groups": 200,
+    "selected_rows": 120000,
+    "seconds": 300
+  },
+  "job_limits": {
+    "max_rss_bytes": 1610612736,
+    "max_commit_bytes": 2147483648,
+    "min_available_bytes": 2147483648,
+    "wall_seconds": 360,
+    "poll_seconds": 0.25,
+    "cleanup_seconds": 10
+  },
+  "probe_job_limits": {
+    "max_rss_bytes": 536870912,
+    "max_commit_bytes": 1073741824,
+    "min_available_bytes": 2147483648,
+    "wall_seconds": 30,
+    "poll_seconds": 0.25,
+    "cleanup_seconds": 10
+  },
+  "thread_limits": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "selection": "Fixed SHA256 domain and group index selects 200 of 2253 previously consumed training groups without reference to label, logits or holdout outcomes.",
+  "budget": "One synthetic Job membership probe then one immutable cache snapshot and at most 400 CPU forward calls across two frozen models; at most 120000 selected candidate rows counted for both models.",
+  "metrics": "Teacher top-1 agreement and teacher rank for each model and teacher operation, plus paired both/new-only/old-only/neither counts; zero-sample rates are unknown.",
+  "boundary": "Training sample only; the new model saw these groups, the old model may not have. No causal, independent holdout, significance or promotion claim; no training or new game.",
+  "failure_policy": "One attempt; identity, budget, membership, cleanup or inference failure stops without resampling or retry."
+}

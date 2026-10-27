@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "freeze_sha256": "beb11632d7050f26063baf89477b864e9908aea2f4b31890616e9024dcf0d5f6",
+  "registration_sha256": "dfca38b1868e7b661261f62674bb0682fc82ef19c518b527bcabe7c09d129213",
+  "checks": [
+    "Published parent evidence at 9c034b1 and training cache/new model/old model identity sources checked without opening private bytes.",
+    "Fixed 200 index-selected training groups, two models and at most 400 CPU forwards/120000 candidate rows; one immutable cache snapshot on worker path.",
+    "Named Job synthetic probe and cleanup must pass before worker; one-shot markers and failure stops checked statically.",
+    "Three thread environment requests are frozen and restored by runner; verify and 12 pure fake tests passed.",
+    "294 frozen runtime files and nine new source files checked; no start markers existed."
+  ],
+  "limitations": [
+    "No archive or model opened or decoded, and no real Windows process, Job membership, probe or inference executed in review.",
+    "Job memory monitoring is sampled, not a hard real-time limit; thread environment variables are requests, not a CPU hard quota.",
+    "Before/after model hash checks cannot exclude transient replacement restored between checks; named Job prevents accidental misuse, not a malicious same-user actor.",
+    "New model was trained on these groups while old model may not have seen them; descriptive comparison is not holdout, generalization or economic causality.",
+    "Final pre-execution commit and ready checks still required."
+  ]
+}

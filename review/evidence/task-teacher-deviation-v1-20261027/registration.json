@@ -1,0 +1,70 @@
+{
+  "experiment": "task-teacher-deviation-v1",
+  "baseline_head": "9c034b1deab0637d3198be5062d7ad43e23e6d86",
+  "limits": {
+    "max_archive_bytes": 134217728,
+    "max_uncompressed_bytes": 536870912,
+    "max_groups": 2253,
+    "max_candidates": 1200000,
+    "selected_groups": 200,
+    "selected_rows": 120000,
+    "seconds": 300
+  },
+  "job_limits": {
+    "max_rss_bytes": 1610612736,
+    "max_commit_bytes": 2147483648,
+    "min_available_bytes": 2147483648,
+    "wall_seconds": 360,
+    "poll_seconds": 0.25,
+    "cleanup_seconds": 10
+  },
+  "probe_job_limits": {
+    "max_rss_bytes": 536870912,
+    "max_commit_bytes": 1073741824,
+    "min_available_bytes": 2147483648,
+    "wall_seconds": 30,
+    "poll_seconds": 0.25,
+    "cleanup_seconds": 10
+  },
+  "thread_limits": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "preflight": "One synthetic venv Job membership probe; no training or model input",
+  "train_seeds": [
+    3911611436,
+    2328454240
+  ],
+  "cache_sha256": "9ffd92d7d6fce400acb2d59c99c596140a46a48cbd1206d28889a11d51f70dac",
+  "cache_bytes": 49274197,
+  "checkpoint_sha256": "b9a0f293c354aa78468c531e85645f70fbea9075a9dace729856119d913b24df",
+  "old_checkpoint": "artifacts/task-completion-bc-reentry-v1-20261027/private/model-final.npz",
+  "old_checkpoint_sha256": "47def382fff8738583d2359964d2e14bfbb41b53e9dc428d2882519ada8e1811",
+  "environment": {
+    "python_version": [
+      3,
+      12,
+      2
+    ],
+    "psutil_version": "7.2.2",
+    "interpreter_sha256": "9b0bffb7a259cd2722df454fdfff41ee13665820cff1f578b1d97d31f9ef93d5"
+  },
+  "training_only": true,
+  "parent_evidence": {
+    "root-result-acceptance.json": "912f362917679398ad2b0f8550daacad364dd0dc93bcb6d6eb26c36058c59def",
+    "registration.json": "ef84810a088f5bb7ba8535a3774dccc3465413596402b9d1ba2030e97afde9f6",
+    "freeze.json": "15b12f2a12b0a8a6b60b689dc6a432fadef4bbbb6a41f80e10cc77a59f61587a",
+    "independent-result-assessment.json": "f8171a4b59349037616b3aeacd46e4b42518b3a5315e216faac774f924aef442"
+  },
+  "train_evidence": {
+    "root-result-acceptance.json": "4a4b034d0df5ab9c4d952bc708b871bf40f50f5c5fc40c7974bca282900dac50",
+    "registration.json": "d1054824def64a2f04501c5de5ad210ddb9962edddb0727b0c748a322fc4068d",
+    "freeze.json": "47aa91072d97e3eabe24b78c524f9021bbe6167bbcfb38cbd002332465b4938f",
+    "train-data-result.json": "73ba012d99d1fe17f2847ab0e47c891c1381c38a45a8dd3acbb0bcaa88a65447",
+    "model-seal.json": "91f069f09249bd65d1e812302fa53c5e68ef4711cf552bd07812e3e30e00701a",
+    "fit-result.json": "749c1ba67398d380976abf10c425fc7d186e7d8a612f1f9c44ecc238494c33df"
+  },
+  "interpretation": "Descriptive training-set comparison, not independent holdout or causal evidence",
+  "retry_allowed": false
+}
