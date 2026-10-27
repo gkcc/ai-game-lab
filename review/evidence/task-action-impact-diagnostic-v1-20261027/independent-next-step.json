@@ -1,0 +1,165 @@
+{
+  "schema": "independent-next-step-after-impact-failure-v1",
+  "created_utc": "2026-10-27T00:11:20+00:00",
+  "status": "recommendation_only_requires_root_adjudication",
+  "advisor_role": "Independent delegated source and compact-metadata reviewer",
+  "current_task": "task_action_impact_diagnostic_v1",
+  "recommendation": {
+    "unique_next_step": "One separately registered, model-independent Windows launcher-contract repair using synthetic payloads only",
+    "proposed_task": "task_launcher_contract_repair_v1",
+    "scientific_status": "Close the historical impact diagnostic as failed_closed and evidence_insufficient_for_the_duration_question; do not rerun it",
+    "rationale": [
+      "The only attempt failed at the operating-system process boundary before any worker-started or analysis receipt. Its consumed-attempt rule remains binding.",
+      "The current runner launches sys.executable, rejects every descendant of the launched process, and requires the worker to have the recorded supervisor as its direct parent. A Windows interpreter redirector could violate both assumptions, but no image identity survived this failure and the cause is unproved.",
+      "A single small synthetic study can distinguish an expected interpreter wrapper from a prohibited descendant and verify ownership, output capture and cleanup on the actual Windows launch path. This is a concrete engineering blocker, not an open repository audit.",
+      "This repair has bounded reuse value for later guarded tasks. It has no power to recover the missing scientific evidence: the saved schema has no direct completion observation, so the preregistered duration screen cannot pass.",
+      "Do not spend another historical-data pass or another fit on this issue. A successful engineering receipt still requires a separate scientific decision before any data collection or learning."
+    ],
+    "alternative_not_selected": "Immediately start a new scientific experiment. No independently supported replacement question, valid completion measurement or prospective intervention design is established by the present evidence.",
+    "recommendation_is_execution_authorization": false
+  },
+  "evidence": [
+    {
+      "path": "artifacts/task-action-impact-diagnostic-v1-20261027/registration.json",
+      "sha256": "64f971fbd928bb2fd8fa0ba7a3e82e031a8c1ca9b9d7467b904ccde3fc3f7116",
+      "note": "Single consumed attempt, no retry or replacement sample; duration question requires directly recorded completion-related evidence."
+    },
+    {
+      "path": "artifacts/task-action-impact-diagnostic-v1-20261027/run-summary.json",
+      "sha256": "ec1363ef9050d2d5c193f8e12601a0c7bb325c1fd0ffceae2aaa683146fd7084",
+      "note": "Failed closed in about 0.094 seconds for an unregistered descendant; no monitor sample; owned child reaped and scratch cleaned; worker meter missing."
+    },
+    {
+      "path": "artifacts/task-action-impact-diagnostic-v1-20261027/pre-review.json",
+      "sha256": "6fe3d07ca38d06bbeef09f789774a433243a8b51ba84c91f6c2cc4f00107843d",
+      "note": "12 synthetic checks and five decompression-boundary checks passed. Completion observability is unknown and the duration screen must fail with the current schema."
+    },
+    {
+      "path": "artifacts/task-action-impact-diagnostic-v1-20261027/root-preexecution-decision.json",
+      "sha256": "6fe5020faf513a728a2ff347fb8c98150fb73405f36db01a3cc802e7364a0924",
+      "note": "Records local preregistration commit 89b8e3a94414b9186aa247e3b24b480294dce02c and one-attempt-only gate."
+    },
+    {
+      "path": "artifacts/task-anchor-reentry-v1-20261027/root-next-learning-decision.json",
+      "sha256": "77afc2edf11708241b98e2c6e19295e2df0ca23724706b49e9612d4a03cc4abb",
+      "note": "Historical descriptive diagnosis only; no causal return labels, fit or intervention study authorized."
+    },
+    {
+      "path": "artifacts/task-anchor-reentry-v1-20261027/root-result-acceptance.json",
+      "sha256": "6a11ff4cf5bac0301ffb8b2cece61ea290fba71ce36b09a748a99a98a15356fa",
+      "note": "Earlier execution was complete but candidate admission failed; same-data same-architecture rescue remains forbidden."
+    },
+    {
+      "path": "learning/task_action_impact_diagnostic_v1/run.py",
+      "sha256": "3cc721420b117937a876112df73b1095feb5d7948e4255294a334dbfcb33cda7",
+      "note": "Independently hashed and read. Descendants are killed without image evidence; worker-start direct-parent equality is a second condition to preserve or explicitly replace after observation."
+    },
+    {
+      "path": "learning/task_anchor_once_v1/processes.py",
+      "sha256": "9711f7d38e1494dc2cceef718482bef9470d7416a8d07284f900e487c1dc1092",
+      "note": "Independently hashed and read. Real subprocess with bounded merged stdout/stderr, reader thread and direct-child stop."
+    },
+    {
+      "path": "learning/task_action_impact_diagnostic_v1/experiment.py",
+      "sha256": "db5052fe042d8a39c10bcc12054278f99a4605e44c569ae242fe2c8cf106cdf2",
+      "note": "Independently hashed and read. Frozen historical namespace and receipt/budget semantics must remain unchanged."
+    }
+  ],
+  "current_observations": {
+    "artifact_directory_metadata_checked": true,
+    "worker_started_receipt_present": false,
+    "worker_finished_receipt_present": false,
+    "analysis_result_present": false,
+    "failed_descendant_image_identified": false,
+    "windows_venv_redirector": "unverified_hypothesis_only",
+    "raw_bytes_read_by_failed_worker": "not established because worker meter is missing; absence of artifacts is not a measured zero",
+    "duration_mechanism_screen": "not passed; direct completion evidence absent",
+    "historical_attempt_refund_allowed": false
+  },
+  "proposed_prerequisites": [
+    "Root must separately approve the exact scope, frozen budgets and new source/output namespace; this advice grants no execution permission.",
+    "Preserve all existing frozen code, receipts and consumed attempts. Do not call the historical analysis entrypoint, even with altered output paths.",
+    "Predeclare one observation command that reproduces the registered Windows launch shape with a tiny standard-library synthetic worker, the normalized evidence fields and the five fixed acceptance cases.",
+    "Bind the observer, payload and intended runtime identities by hashes. Preserve effective virtual-environment semantics; switching to a base interpreter is not accepted without measured prefix, executable identity and required import-path equivalence.",
+    "Use the existing owned-scratch utility solely for temporary ownership and cleanup. Agent Workflow remains disabled."
+  ],
+  "proposed_budgets": {
+    "total_task_wall_seconds_including_implementation_review_cleanup": 1500,
+    "observation_wall_seconds": 30,
+    "total_synthetic_execution_wall_seconds": 120,
+    "total_synthetic_cpu_seconds": 60,
+    "per_fixture_wall_seconds": 10,
+    "cleanup_grace_seconds_per_fixture": 5,
+    "cpu_affinity_cores": 1,
+    "compute_threads_per_worker": 1,
+    "max_simultaneously_owned_os_processes_including_supervisor": 5,
+    "max_total_sampled_working_set_bytes": 536870912,
+    "memory_enforcement": "Externally sampled and reported honestly; not an OS hard quota. Any observed overage closes the stage.",
+    "source_and_metadata_read_bytes": 2097152,
+    "owned_output_bytes_including_temporary_logs": 1048576,
+    "per_fixture_stdout_stderr_stored_bytes": 65536,
+    "public_receipt_bytes": 32768,
+    "initial_observation_launches": 1,
+    "patch_candidates": 1,
+    "acceptance_fixture_launches": 5,
+    "maximum_launches": 6,
+    "full_validation_suite_attempts": 1,
+    "raw_replay_trace_bytes": 0,
+    "weight_or_saved_numeric_array_bytes": 0,
+    "neural_forwards": 0,
+    "training_updates": 0,
+    "gpu_seconds": 0,
+    "official_transitions": 0,
+    "new_games": 0,
+    "old_diagnostic_reruns": 0,
+    "broad_repository_audits": 0
+  },
+  "proposed_execution_contract": {
+    "observation": "Observe one actual Windows synthetic launch. Capture parent/child relationships, process creation identity, executable basename and hash, sanitized command role, worker handshake and termination outcome before enforcement destroys evidence. Keep private runtime identifiers only in owned scratch and publish a normalized role graph.",
+    "patch_gate": "Proceed to at most one minimal, newly versioned launcher patch only if the observation establishes the concrete cause and the allowed process chain can be narrowly identified. A redirector must be measured, not assumed or allowed by a broad python-name exception.",
+    "frozen_validation": "Freeze the patch and synthetic payload hashes before the single acceptance suite. Run cases in the listed order once; stop at the first unexpected outcome. No post-failure tweak and rerun.",
+    "acceptance_cases": [
+      "Normal launch: measured runtime/virtual-environment identity is preserved; the actual worker emits its expected start/finish handshake and exact finite stdout/stderr payload; all expected owned processes exit, reader joins and scratch is removed.",
+      "Undeclared descendant: an explicitly adversarial synthetic fixture creates one unregistered child outside the approved wrapper chain; the supervisor rejects it, captures sanitized identity evidence and reaps the entire owned chain. Production worker process-launch restrictions remain intact.",
+      "Output overflow: emit the registered stdout/stderr storage cap plus one byte; fail closed, retain no more than the cap, keep the reason and reap/join without deadlock.",
+      "Worker failure: a known nonzero exit produces a compact failure receipt with the correct reason and complete process/reader cleanup.",
+      "Cancellation/deadline: stop a still-running synthetic worker through the registered owner; all measured wrappers and descendants are reaped, reader joins and owned scratch cleanup is verified."
+    ],
+    "success_meaning": "A reusable launcher contract passed this fixed synthetic Windows acceptance suite. No model, scientific mechanism, historical diagnostic result or later learning question has been validated."
+  },
+  "stop_conditions": [
+    "Stop without patching if the one observation does not reproduce or identify the process-chain cause, if required identity evidence is missing, or if ownership cannot be established.",
+    "Stop if a fix requires generic descendant permission, weakened process/import restrictions, global Python/system changes, engine/model access, modification of frozen historical source or an unbounded investigation.",
+    "Stop at any budget/deadline/identity mismatch, independent pre-review rejection or first unexpected acceptance outcome. Record failure; do not retry or raise a cap.",
+    "Reap owned processes and join output readers before scratch cleanup. If cleanup is rejected or locked, preserve the original ownership marker and report the retained path privately; do not try another deletion route.",
+    "A successful receipt ends this engineering stage. A failed or inconclusive receipt also ends it; neither result reopens the consumed historical diagnostic."
+  ],
+  "not_authorized_by_this_advice_or_a_future_synthetic_pass": [
+    "No rerun/refund of task_action_impact_diagnostic_v1 and no new decode of its 192 historical raw files.",
+    "No new fit, CE/KL variant, same-family rescue, DAgger, PPO, neural inference, extra games or fresh holdout evaluation.",
+    "No promotion or default-policy change; the prior non-admission result remains binding.",
+    "No completion inference from movement, adjacency, reassignment or output requests; no duration-option mechanism claim or causal/action-regret label.",
+    "No new scientific data collection or intervention study until a separately justified question, directly observable measurement contract, prospective design and fresh evaluation budget are approved.",
+    "No Agent Workflow registration, router, monitoring, hooks or automatic re-enable."
+  ],
+  "advisor_accounting": {
+    "input_limit_bytes": 1048576,
+    "conservative_charged_total_bytes": 800000,
+    "full_file_read_bytes_before_writing_receipt": 694882,
+    "public_task_source_metadata_read_bytes_before_writing_receipt": 157514,
+    "external_prior_context_registry_lookup_bytes": 537368,
+    "accounting": "Each full-file read, hash read and truncated-output read is charged again. A prior-context registry was conservatively charged twice at full length; current factual conclusions use the explicitly listed fresh evidence. The charge includes reserve for directory metadata and one final receipt read/hash/JSON validation.",
+    "source_and_metadata_only": true,
+    "raw_replay_trace_bytes": 0,
+    "weights_or_numeric_arrays_read": 0,
+    "model_or_engine_imports": 0,
+    "synthetic_or_game_runs_performed_by_advisor": 0,
+    "source_or_old_evidence_modified": false,
+    "new_artifacts": [
+      "artifacts/task-action-impact-diagnostic-v1-20261027/independent-next-step.json"
+    ],
+    "commit_or_push_performed": false,
+    "temporary_artifacts_created": 0,
+    "agent_workflow_enabled": false
+  }
+}

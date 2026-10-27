@@ -1,0 +1,35 @@
+{
+  "schema": "root-task-action-impact-failed-start-acceptance-v1",
+  "created_utc": "2026-10-27T00:11:07.619492+00:00",
+  "failure_closure_accepted": true,
+  "scientific_delivery_accepted": false,
+  "status": "closed_failed_start_not_a_scientific_negative_result",
+  "local_preregistration_commit": "89b8e3a94414b9186aa247e3b24b480294dce02c",
+  "independent_result_sha256": "6ee683c47faa443e5f954a7072f4d5072a8c267cb6357bbfb1ce27c0d1dcd99d",
+  "independent_verification_sha256": "fc3ebcdb70fd3329cac3b7c678e9d328b1fc4dff38f6efc29d895466b77a0e7c",
+  "run_summary_sha256": "ec1363ef9050d2d5c193f8e12601a0c7bb325c1fd0ffceae2aaa683146fd7084",
+  "source_freeze_sha256": "9c2c2955ec8288dc6967d6d3a7b7d2d386a3504ebc75d7689de8baaa5a9f6ef0",
+  "protected_source_sha256": {
+    "main.py": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "bots/teacher_fertilizer_terminal_v2.py": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff"
+  },
+  "official_rule_identity": {
+    "commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "git_blob_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "runtime_raw_sha256": "a01be8e60d6fe62fe1dd5c5efa97f24166a628189a0bcaee3a3039dad93e3c52",
+    "crlf_to_lf_exactly_matches_git_blob": true,
+    "runtime_file_not_rewritten": true
+  },
+  "produced_comparisons": 0,
+  "planned_comparisons": 64,
+  "first_request_and_terminal_reproduction": "not_evaluated",
+  "analysis_entry_reached": false,
+  "worker_io_meter": null,
+  "memory_peak_measured": null,
+  "root_cause": "unproven; descendant image not retained",
+  "no_budget_refund": true,
+  "no_rerun": true,
+  "new_training_authorized": false,
+  "default_changed": false,
+  "old_evidence_changes_authorized": false
+}

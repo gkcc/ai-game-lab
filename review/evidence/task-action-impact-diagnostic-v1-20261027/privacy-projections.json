@@ -1,0 +1,23 @@
+[
+  {
+    "local_name": "run-started.json",
+    "local_sha256": "a66a8cd970e8b2436e5443571017802287ade955462b6cec6081fdaf1d8e447c",
+    "public_name": "run-started.public.json",
+    "public_sha256": "9187a0fbc70d26677c322a2a8df54250ec96568c928942f5045c5aa3901d4781",
+    "removed_fields": [
+      "parent_pid",
+      "cpu_affinity"
+    ],
+    "original_unchanged": true
+  },
+  {
+    "local_name": "run-summary.json",
+    "local_sha256": "ec1363ef9050d2d5c193f8e12601a0c7bb325c1fd0ffceae2aaa683146fd7084",
+    "public_name": "run-summary.public.json",
+    "public_sha256": "31955be7e55c1f1425af405a60bbd152bd5d2103f3c7093cd36ca8cbe7e7f006",
+    "removed_fields": [
+      "retained_scratch_path"
+    ],
+    "original_unchanged": true
+  }
+]

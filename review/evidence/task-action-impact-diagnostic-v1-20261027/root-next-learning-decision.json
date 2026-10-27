@@ -1,0 +1,92 @@
+{
+  "schema": "root-launcher-contract-repair-decision-v1",
+  "created_utc": "2026-10-27T00:13:42.513853+00:00",
+  "status": "approved_for_new_versioned_stage_after_current_publication",
+  "task": "task_launcher_contract_repair_v1",
+  "advice_sha256": "6e0277ab8560a5a2e0fa06b35b94971c0e542b36e7753398188140bd9a1bb2b1",
+  "previous_failed_stage_acceptance_sha256": "3aa3ab9b3943f074c0fdebd2e7f1bdcc97fe10b3789c4904144aa8eb8a16f99d",
+  "conditional_on_current_stage_publication": true,
+  "scope": {
+    "observation": "Observe one actual Windows synthetic launch. Capture parent/child relationships, process creation identity, executable basename and hash, sanitized command role, worker handshake and termination outcome before enforcement destroys evidence. Keep private runtime identifiers only in owned scratch and publish a normalized role graph.",
+    "patch_gate": "Proceed to at most one minimal, newly versioned launcher patch only if the observation establishes the concrete cause and the allowed process chain can be narrowly identified. A redirector must be measured, not assumed or allowed by a broad python-name exception.",
+    "frozen_validation": "Freeze the patch and synthetic payload hashes before the single acceptance suite. Run cases in the listed order once; stop at the first unexpected outcome. No post-failure tweak and rerun.",
+    "acceptance_cases": [
+      "Normal launch: measured runtime/virtual-environment identity is preserved; the actual worker emits its expected start/finish handshake and exact finite stdout/stderr payload; all expected owned processes exit, reader joins and scratch is removed.",
+      "Undeclared descendant: an explicitly adversarial synthetic fixture creates one unregistered child outside the approved wrapper chain; the supervisor rejects it, captures sanitized identity evidence and reaps the entire owned chain. Production worker process-launch restrictions remain intact.",
+      "Output overflow: emit the registered stdout/stderr storage cap plus one byte; fail closed, retain no more than the cap, keep the reason and reap/join without deadlock.",
+      "Worker failure: a known nonzero exit produces a compact failure receipt with the correct reason and complete process/reader cleanup.",
+      "Cancellation/deadline: stop a still-running synthetic worker through the registered owner; all measured wrappers and descendants are reaped, reader joins and owned scratch cleanup is verified."
+    ],
+    "success_meaning": "A reusable launcher contract passed this fixed synthetic Windows acceptance suite. No model, scientific mechanism, historical diagnostic result or later learning question has been validated."
+  },
+  "budgets": {
+    "total_task_wall_seconds_including_implementation_review_cleanup": 1500,
+    "observation_wall_seconds": 30,
+    "total_synthetic_execution_wall_seconds": 120,
+    "total_synthetic_cpu_seconds": 60,
+    "per_fixture_wall_seconds": 10,
+    "cleanup_grace_seconds_per_fixture": 5,
+    "cpu_affinity_cores": 1,
+    "compute_threads_per_worker": 1,
+    "max_simultaneously_owned_os_processes_including_supervisor": 5,
+    "max_total_sampled_working_set_bytes": 536870912,
+    "memory_enforcement": "Externally sampled and reported honestly; not an OS hard quota. Any observed overage closes the stage.",
+    "source_and_metadata_read_bytes": 2097152,
+    "owned_output_bytes_including_temporary_logs": 1048576,
+    "per_fixture_stdout_stderr_stored_bytes": 65536,
+    "public_receipt_bytes": 32768,
+    "initial_observation_launches": 1,
+    "patch_candidates": 1,
+    "acceptance_fixture_launches": 5,
+    "maximum_launches": 6,
+    "full_validation_suite_attempts": 1,
+    "raw_replay_trace_bytes": 0,
+    "weight_or_saved_numeric_array_bytes": 0,
+    "neural_forwards": 0,
+    "training_updates": 0,
+    "gpu_seconds": 0,
+    "official_transitions": 0,
+    "new_games": 0,
+    "old_diagnostic_reruns": 0,
+    "broad_repository_audits": 0
+  },
+  "prerequisites": [
+    "Root must separately approve the exact scope, frozen budgets and new source/output namespace; this advice grants no execution permission.",
+    "Preserve all existing frozen code, receipts and consumed attempts. Do not call the historical analysis entrypoint, even with altered output paths.",
+    "Predeclare one observation command that reproduces the registered Windows launch shape with a tiny standard-library synthetic worker, the normalized evidence fields and the five fixed acceptance cases.",
+    "Bind the observer, payload and intended runtime identities by hashes. Preserve effective virtual-environment semantics; switching to a base interpreter is not accepted without measured prefix, executable identity and required import-path equivalence.",
+    "Use the existing owned-scratch utility solely for temporary ownership and cleanup. Agent Workflow remains disabled."
+  ],
+  "stop_conditions": [
+    "Stop without patching if the one observation does not reproduce or identify the process-chain cause, if required identity evidence is missing, or if ownership cannot be established.",
+    "Stop if a fix requires generic descendant permission, weakened process/import restrictions, global Python/system changes, engine/model access, modification of frozen historical source or an unbounded investigation.",
+    "Stop at any budget/deadline/identity mismatch, independent pre-review rejection or first unexpected acceptance outcome. Record failure; do not retry or raise a cap.",
+    "Reap owned processes and join output readers before scratch cleanup. If cleanup is rejected or locked, preserve the original ownership marker and report the retained path privately; do not try another deletion route.",
+    "A successful receipt ends this engineering stage. A failed or inconclusive receipt also ends it; neither result reopens the consumed historical diagnostic."
+  ],
+  "not_authorized": [
+    "No rerun/refund of task_action_impact_diagnostic_v1 and no new decode of its 192 historical raw files.",
+    "No new fit, CE/KL variant, same-family rescue, DAgger, PPO, neural inference, extra games or fresh holdout evaluation.",
+    "No promotion or default-policy change; the prior non-admission result remains binding.",
+    "No completion inference from movement, adjacency, reassignment or output requests; no duration-option mechanism claim or causal/action-regret label.",
+    "No new scientific data collection or intervention study until a separately justified question, directly observable measurement contract, prospective design and fresh evaluation budget are approved.",
+    "No Agent Workflow registration, router, monitoring, hooks or automatic re-enable."
+  ],
+  "root_adjudication": [
+    "Accept one observed-cause Windows launcher repair as a concrete blocker; no broad audits or scientific experiments.",
+    "The initial observation is synthetic only and must be preregistered with source/payload hashes and independent review before its single launch; it is not a replay of the closed historical analysis.",
+    "Unknown descendant image and parentage must remain hypotheses until the observation identifies them; do not broadly allow Python descendants or silently switch interpreter environments.",
+    "One final patch candidate and one fixed acceptance-suite attempt; stop on the first unexpected runtime outcome, missing ownership proof, budget or identity mismatch. No retry or cap increase.",
+    "Concrete independent source-review issues may be repaired before final source freeze within the same25-minute total and same one patch candidate. This qualifies the adviser stop-on-pre-review-rejection wording: an unresolved blocking issue at the execution gate closes the stage, not every correctable pre-freeze comment.",
+    "The2MiB read cap covers registered source/metadata verification, runtime control receipts and independent review; implementation browsing/Git/required public privacy scanning are recorded outside this byte counter but inside25minutes. No raw scientific data may be read under any category.",
+    "Publication is part of the25-minute task total. Keep private process identifiers, executable/prefix/import paths and OS process details in owned scratch, publishing only normalized role/hash/equivalence evidence. Cleanup must leave no owned child or scratch run.",
+    "A successful synthetic suite ends the engineering task; a fresh independent scientific next-step decision is still needed. Do not re-enter the96 historical games or refund their consumed attempt."
+  ],
+  "requires_new_source_and_output_namespace": true,
+  "old_attempt_refund": false,
+  "old_diagnostic_rerun": false,
+  "new_training_authorized": false,
+  "default_change_authorized": false,
+  "official_engine_change_authorized": false,
+  "goal_remains_active": true
+}

@@ -1,0 +1,48 @@
+{
+  "schema": "task-action-impact-run-summary-v1",
+  "finished_utc": "2026-10-27T00:02:33.861903+00:00",
+  "attempt_id": "f626a5a4fca54b1684c88ecc4fc4129a",
+  "status": "failed_closed",
+  "attempt_consumed": true,
+  "retry_allowed": false,
+  "error": {
+    "type": "RuntimeError",
+    "message": "Unregistered descendant process detected"
+  },
+  "analysis_wall_seconds": 0.09399999998277053,
+  "sampled_analysis_cpu_seconds": 0.0,
+  "parent_cpu_seconds": 0.0625,
+  "total_analysis_cpu_seconds": 0.0625,
+  "peak_sampled_child_working_set_bytes": 0,
+  "peak_sampled_parent_plus_child_memory_bytes": 0,
+  "peak_observed_output_including_temporary_log_bytes": 0,
+  "monitor_samples": 0,
+  "monitor_interval_seconds": 0.25,
+  "memory_enforcement": "Sampled external monitor, not an OS hard quota; between-sample overshoot is unknown",
+  "owned_child_reaped": true,
+  "scratch_cleaned": true,
+  "log": null,
+  "parent_preflight_metadata_meter": {
+    "inherited_prior_phase_bytes": 2920767,
+    "this_process_bytes": 303577,
+    "total_bytes": 3224344,
+    "limit_bytes": 16777216
+  },
+  "metadata_phase_accounting": {
+    "inherited_prior_phases_bytes": 2920767,
+    "parent_preflight_bytes": 303577,
+    "parent_postflight_bytes": 0,
+    "worker_analysis_bytes": null,
+    "worker_inherited_parent_bytes_not_counted_twice": null,
+    "total_known_bytes": 3224344,
+    "completeness": "worker_meter_missing",
+    "limit_bytes": 16777216,
+    "separate_phases": "Preparation, freeze and independent review receipts must be included once in inherited_prior_phases_bytes or added by final task accounting; a process-local count is not the task total."
+  },
+  "official_transitions": 0,
+  "new_games": 0,
+  "neural_forwards": 0,
+  "training_updates": 0,
+  "gpu_seconds": 0,
+  "task_deadline_utc": "2026-10-27T01:01:24+00:00"
+}

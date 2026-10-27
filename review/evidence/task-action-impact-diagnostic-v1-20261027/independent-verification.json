@@ -1,0 +1,98 @@
+{
+  "schema": "independent-task-action-impact-verification-v1",
+  "verified_utc": "2026-10-27T00:07:47.708148+00:00",
+  "passed": true,
+  "verification_scope": "Failure closure and evidence boundaries only",
+  "scientific_acceptance_passed": false,
+  "independent_result_review_sha256": "6ee683c47faa443e5f954a7072f4d5072a8c267cb6357bbfb1ce27c0d1dcd99d",
+  "local_preregistration_commit": "89b8e3a94414b9186aa247e3b24b480294dce02c",
+  "freeze_sha256": "9c2c2955ec8288dc6967d6d3a7b7d2d386a3504ebc75d7689de8baaa5a9f6ef0",
+  "registration_sha256": "64f971fbd928bb2fd8fa0ba7a3e82e031a8c1ca9b9d7467b904ccde3fc3f7116",
+  "checks": {
+    "twelve_current_frozen_source_hashes_match": true,
+    "exact_source_and_registration_manifest_freeze_pre_review_bytes_in_local_commit": true,
+    "worker_marker_precedes_analysis_entry": true,
+    "worker_marker_and_analysis_outputs_absent": true,
+    "failed_closed_attempt_consumed_and_no_retry": true,
+    "closure_receipt_reports_reaped_child_and_cleaned_scratch": true,
+    "worker_metadata_unknown_preserved_as_null": true,
+    "zero_samples_not_misrepresented_as_zero_memory": true,
+    "descendant_trigger_separated_from_unproven_launcher_hypothesis": true,
+    "scientific_acceptance_not_claimed": true,
+    "no_failure_reproduction_or_launcher_smoke_test": true,
+    "reviewer_raw_reads_zero": true
+  },
+  "source_checks": {
+    "learning/task_action_impact_diagnostic_v1/__init__.py": {
+      "sha256": "2049e94f1fe2891136fc09817309da1b3bc054bba42b23bd6f5cf06ac176921d",
+      "current_and_committed_match": true
+    },
+    "learning/task_action_impact_diagnostic_v1/analysis.py": {
+      "sha256": "f0263611bd3bddc1f9028938288a0a1ec4406ebbc3d27df2ec17772bbb581499",
+      "current_and_committed_match": true
+    },
+    "learning/task_action_impact_diagnostic_v1/experiment.py": {
+      "sha256": "db5052fe042d8a39c10bcc12054278f99a4605e44c569ae242fe2c8cf106cdf2",
+      "current_and_committed_match": true
+    },
+    "learning/task_action_impact_diagnostic_v1/run.py": {
+      "sha256": "3cc721420b117937a876112df73b1095feb5d7948e4255294a334dbfcb33cda7",
+      "current_and_committed_match": true
+    },
+    "learning/task_action_impact_diagnostic_v1/test_analysis.py": {
+      "sha256": "a1598504c08e832a224798ef89e8c1a98c9a6c1f9ee5ba4eb6fdb3e450039684",
+      "current_and_committed_match": true
+    },
+    "decision/__init__.py": {
+      "sha256": "292c33c078490e76cf6576d8922f527acf23d59a01b8f523f7a1b595cbe15d0e",
+      "current_and_committed_match": true
+    },
+    "decision/api.py": {
+      "sha256": "3ef4025bde61d240b298cbe4d31291f25021baaf5b396f5540bbfcdda4231917",
+      "current_and_committed_match": true
+    },
+    "decision/semantics.py": {
+      "sha256": "9ac62d0df7adca84c0feff805b2979bb45f9f9f4c2064d1e2b5c48efd3e779a5",
+      "current_and_committed_match": true
+    },
+    "learning/task_bc_error_diagnostics_v1/__init__.py": {
+      "sha256": "7fe73d92a6f435034e2de4fc239e202b38b383508f2c426bd389dd7565f4a381",
+      "current_and_committed_match": true
+    },
+    "learning/task_bc_error_diagnostics_v1/shadow.py": {
+      "sha256": "095f6a896c259f840af4c59adc922cc9782fe69aafd3b0df7ea04df9160c3251",
+      "current_and_committed_match": true
+    },
+    "learning/task_anchor_once_v1/__init__.py": {
+      "sha256": "4978d6f44ce420931cddf54f31bcff0d06ce9fd8a036c92b590a69cad07e6c94",
+      "current_and_committed_match": true
+    },
+    "learning/task_anchor_once_v1/processes.py": {
+      "sha256": "9711f7d38e1494dc2cceef718482bef9470d7416a8d07284f900e487c1dc1092",
+      "current_and_committed_match": true
+    }
+  },
+  "receipt_hashes": {
+    "run-started.json": "a66a8cd970e8b2436e5443571017802287ade955462b6cec6081fdaf1d8e447c",
+    "run-summary.json": "ec1363ef9050d2d5c193f8e12601a0c7bb325c1fd0ffceae2aaa683146fd7084",
+    "pre-review.json": "6fe3d07ca38d06bbeef09f789774a433243a8b51ba84c91f6c2cc4f00107843d"
+  },
+  "reviewer_selected_raw_reads": 0,
+  "reviewer_model_or_saved_array_reads": 0,
+  "reviewer_official_transitions": 0,
+  "reviewer_neural_forwards": 0,
+  "reviewer_training_updates": 0,
+  "reviewer_new_games": 0,
+  "source_or_historical_evidence_writes": 0,
+  "new_artifacts": [
+    "independent-result-review.json",
+    "independent-verification.json"
+  ],
+  "result_review_metadata_source_charge_bytes": 500000,
+  "charge_shared_with_result_review_not_additive": true,
+  "runtime_worker_meter_complete": false,
+  "runtime_total_metadata_bytes": null,
+  "runtime_selected_raw_reads_measured": null,
+  "temporary_files_created": 0,
+  "agent_workflow_enabled": false
+}

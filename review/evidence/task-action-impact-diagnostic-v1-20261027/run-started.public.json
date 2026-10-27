@@ -1,0 +1,18 @@
+{
+  "schema": "task-action-impact-run-started-v1",
+  "attempt_id": "f626a5a4fca54b1684c88ecc4fc4129a",
+  "started_utc": "2026-10-27T00:02:33.770934+00:00",
+  "local_preregistration_commit": "89b8e3a94414b9186aa247e3b24b480294dce02c",
+  "registration_sha256": "64f971fbd928bb2fd8fa0ba7a3e82e031a8c1ca9b9d7467b904ccde3fc3f7116",
+  "freeze_sha256": "9c2c2955ec8288dc6967d6d3a7b7d2d386a3504ebc75d7689de8baaa5a9f6ef0",
+  "parent_preflight_metadata_meter": {
+    "inherited_prior_phase_bytes": 2920767,
+    "this_process_bytes": 303577,
+    "total_bytes": 3224344,
+    "limit_bytes": 16777216
+  },
+  "attempt_consumed": true,
+  "monitor_interval_seconds": 0.25,
+  "memory_enforcement": "Externally sampled working set; not an OS hard quota",
+  "psutil_version": "7.2.2"
+}

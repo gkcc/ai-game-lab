@@ -271,3 +271,12 @@ Linux监督阶段1.329秒，整个自有进程组已清理并回收；原partial
 独立子代理复审与主裁决接受完整执行及未晋级结论。保留研究模型、不改默认Bot，不追加测试追显著性或同方法调参救援。公开最终审查投影去除精确主机空闲空间，明确保留原始/公开SHA映射；原始回放、轨迹、模型和设备信息仅留本地。
 
 [报告](../kaggriculture/TASK_ANCHOR_REENTRY_V1.zh-CN.md) | [冻结、逐场账本、统计与独立审查](evidence/task-anchor-reentry-v1-20261027/)
+
+
+## 历史任务到动作诊断 V1 独立复核
+
+独立子代理（不是WebChat）先复核冻结源码/192个输入身份，再复核唯一失败启动。具体修复的回归通过，但合成启动检查没有覆盖生产路径的后代守卫和父PID条件；完整入口未通过。独立结果报告的passed=false指科学交付未通过，verification的passed=true仅指失败闭合、身份及未知计量边界正确。
+
+未解码重读原始数据，未重启试探或修改冻结源码。保留worker计量缺失与零采样内存不可判定；不给出64行虚构结果或收益归因。后续仅接受另立小预算合成进程链问题，不能据此自动恢复历史分析或训练。
+
+[报告](../kaggriculture/TASK_ACTION_IMPACT_DIAGNOSTIC_V1.zh-CN.md) | [独立复核](evidence/task-action-impact-diagnostic-v1-20261027/independent-result-review.json)
