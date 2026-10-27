@@ -1,0 +1,39 @@
+{
+  "completed": true,
+  "default_precision": null,
+  "default": {
+    "groups": 16,
+    "candidate_rows": 1741,
+    "finite": true,
+    "out_of_tolerance_candidates": 1402,
+    "argmax_different_groups": 0,
+    "max_absolute_error": 0.001991641066183547,
+    "parity_passed": false
+  },
+  "highest": {
+    "groups": 16,
+    "candidate_rows": 1741,
+    "finite": true,
+    "out_of_tolerance_candidates": 0,
+    "argmax_different_groups": 0,
+    "max_absolute_error": 1.298050030129616e-06,
+    "parity_passed": true
+  },
+  "gpu_device_validated": true,
+  "completed_gpu_forwards": 32,
+  "completed_gpu_rows": 3482,
+  "completed_cpu_forwards": 16,
+  "completed_cpu_rows": 1741,
+  "checkpoint_sha256": "47def382fff8738583d2359964d2e14bfbb41b53e9dc428d2882519ada8e1811",
+  "training_cache_sha256": "3513992415b5ea9347faecca75466ddc30f16a402650a2f122be4cbfb335843b",
+  "selection": "First 16 completed_observed episode origins in saved training cache order; no replacement",
+  "gradients": 0,
+  "training_updates": 0,
+  "holdout_reads": 0,
+  "official_transitions": 0,
+  "new_games": 0,
+  "default_setting_differs_from_literal_highest": true,
+  "previous_default_aggregate_reproduced": true,
+  "precision_setting_is_not_a_hardware_execution_precision_measurement": true,
+  "interpretation": "Present precision comparison only; not proof of prior ValueError cause or game strength"
+}

@@ -340,3 +340,11 @@ Linux监督阶段1.329秒，整个自有进程组已清理并回收；原partial
 请审查启动修复的实际入口、部分标记/进程状态未知处理、GPU真实执行与清理证据、容差计算和结果口径，以及旧失败与逾时是否保留。数值差异满足旧函数抛ValueError的条件，但不能唯一确定原异常原因；无梯度、无留出和新比赛。
 
 [报告](../kaggriculture/TASK_COMPLETION_PARITY_V2.zh-CN.md) | [独立复核](evidence/task-completion-parity-v2-20261027/independent-result-review.json)
+
+## 固定输入矩阵乘法精度控制复核
+
+独立子代理（不是WebChat）核对同一16组CPU参考、默认和highest两个GPU设置的范围、容差公式与执行/清理收据；未读取私有模型或重算logits。默认1402/1741超差、highest 0/1741，最大误差分别约0.001992和0.000001298，两臂首选均一致。默认配置为null，汇总复现上一阶段。
+
+请审查设置作用范围、同输入对照、启动/中断计数、设备与清理证据和隐私边界；结果支持该样本中的设置影响，但不证明硬件实际算术精度、原异常唯一原因或模型竞技能力。没有梯度、训练、留出、新比赛或官方步。
+
+[报告](../kaggriculture/TASK_COMPLETION_PRECISION_V1.zh-CN.md) | [独立复核](evidence/task-completion-precision-v1-20261027/independent-result-review.json)

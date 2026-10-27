@@ -1,0 +1,8 @@
+{
+  "decision": "Prepare a separately registered, one-fit BC experiment with explicit highest-precision inference verification and phase-specific failure receipts, using fresh held-out seeds.",
+  "authorization_basis": "The user authorized limited BC training and subsequently directed autonomous, independently reviewed continuation; no large-scale RL or online submission is authorized.",
+  "disclosure": "This would be another fit on the already consumed training data with the same fixed optimizer settings. It is a targeted new-version re-execution after numerical evidence, not a claim that the old failed attempt succeeded or was refunded.",
+  "scope": "Preserve the original failed checkpoint and all historical evidence; keep default Bot and frozen policies unchanged. Do not automatically reuse previously registered holdout seeds, adjust thresholds after testing, or claim an independent tournament gain.",
+  "prerequisites": "Implement and synthesize-test phase-specific failure reporting and the highest-precision GPU/CPU check; pre-register exact code, model/data identities, unused evaluation seeds, baseline, metrics, one-fit budget and independent audit before any execution.",
+  "interpretation": "The controlled sixteen-group result justifies testing this targeted change, but neither proves the old ValueError's unique cause nor establishes model strength. A failed new fit stops without another automatic fit retry."
+}

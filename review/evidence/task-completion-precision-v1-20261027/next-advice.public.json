@@ -1,0 +1,7 @@
+{
+  "source": "independent gpt-6.1-terra subagent, not WebChat",
+  "recommendation": "Consider a separately registered limited BC experiment that applies highest precision only to the GPU/CPU inference check, preserves phase-specific failure evidence, performs one fixed fit, and uses newly registered seed-isolated offline evaluation.",
+  "disclosure": "This would train again on already consumed historical examples, with the same optimizer settings if unchanged. It is a new versioned training execution, not a refund or erasure of the old failed fit; old reserved holdout seeds are not automatically reassigned.",
+  "requirements": "Freeze source, data identity, new test seed inventory, opportunity-aware baseline, class-wise metrics, one-fit compute and time budgets, and stop conditions. Require recorded device, nonzero gradients, changed weights, completed checkpoint, GPU/CPU inference parity and clean supervision before sealing; generate test data only after sealing.",
+  "limits": "A shorter read-only test cannot supply the missing old training receipts. Even a successful new fit and offline test would not prove competitive game improvement or the unique cause of the old ValueError."
+}

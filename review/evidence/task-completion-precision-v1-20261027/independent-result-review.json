@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "identities_sha256": {
+    "freeze.json": "b419a7028a2fba144b951911e74d718e70e7455393fe174e9984070f53585082",
+    "registration.json": "99845a669165baa9ce8b969191d812d6853f6329b1abd1d48ce89636aa0205e7",
+    "pre-execution-commit.json": "d5f6128581aabb0c0b902483aed54f1dd2b8eda69a923ba4710f02a3f656b3eb",
+    "run-started.json": "d1a7082aa5850597fcaf88ce781145b7d68a04eba226e9da330437e71698492a",
+    "guard-started.json": "c85c1f37a6cd0b85d95076460ccdb2d9f021d56cd255f314e6ee06115a5cf89f",
+    "worker-result.json": "d21b697851d3aa45839cbb3049df0e83c91ca482b261099742f4fff859ccfb2d",
+    "guard-result.json": "17f759d3e14569bf3c93509bb1d7001311827f108c004a5808047e39a6905d45",
+    "run-result.json": "7da7a6894ea50922fa109a549804e2d72c5b67009a8f5cb134e59d47432986b3"
+  },
+  "previous_v2_root_acceptance_sha256": "137c8393b77c5082b5e726a08aafeb2f4278609707b49f6a9054b8634b48dd2f",
+  "findings": [
+    "Execution receipts passed with 16 CPU and 32 synchronized GPU forwards, same 16 groups and 1741 candidates per GPU setting",
+    "Default JAX configuration recorded null: 1402 of 1741 out of tolerance, max absolute error 0.001991641066183547; highest: zero out of tolerance, max 1.298050030129616e-6; zero argmax differences for both",
+    "Default aggregate matches previous v2 receipt; this is aggregate comparison only",
+    "Frozen source uses abs(gpu-cpu)>1e-4+1e-5*abs(cpu), first-index argmax and finite checks; highest context surrounds only second GPU branch and each forward synchronizes",
+    "Device identity validated per worker receipt; Linux and Windows supervisor receipts report owned process cleanup; no independent live process inspection",
+    "Worker and frozen path report zero gradients, training, holdout reads, new games and official transitions",
+    "Registration, committed source and preregistration, start markers, runtime and protected identities match; v2 root acceptance remains bound"
+  ],
+  "limitations": [
+    "No independent numerical recomputation or individual logits inspection; results are execution receipts",
+    "CPU reference uses float64 while GPU path uses float32; JAX precision setting is not a hardware execution precision measurement",
+    "Only first 16 completed training groups were tested; agreement does not establish general model behavior",
+    "Results support an association with the JAX setting for this fixed diagnostic but do not uniquely establish prior ValueError cause; prior training remains unaccepted and model is not promoted",
+    "No checkpoint, cache, private GPU configuration or log read; no GPU, model inference, training or engine run during review"
+  ]
+}
