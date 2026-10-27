@@ -1,0 +1,18 @@
+{
+  "initial_registration_sha256": "c93095e53d6ae5ef8e0c83862a2fd1f1a46ccfd599c4cb659e7c8ff7746e6b5c",
+  "initial_freeze_sha256": "37a8b76c65f2aa0c27a40dbaf0e5c60df7f4eaf9b52ae5e2e8e21385a8281273",
+  "initial_root_decision_sha256": "9a0082ba47e4487144f212868f0093a2c66a914e44d6e51d42cc439465a62278",
+  "active_registration_sha256": "4b31544c9c6f90dc9c9d035f58f92cea12a6f9a16a4974d50d58e369bfaa2666",
+  "active_freeze_sha256": "74bfcf07d11e0550f57f82e14fbe5c96859b906bb0b7cfb88314e0df63836f9f",
+  "active_root_decision_sha256": "0131b5553edda1a29c5f393459787bccadb0306ae418739745c2214c1271dc72",
+  "initial_snapshots_preserved": true,
+  "scientific_execution_started": false,
+  "seeds_unchanged": true,
+  "reasons": [
+    "Cumulative parent receipt allowance",
+    "Global deadline includes cleanup",
+    "Transport wait failure cannot skip reap",
+    "Fixture scientific gate includes Windows transport cleanup",
+    "Entry fixture evidence scope and cross-seed replay selection"
+  ]
+}

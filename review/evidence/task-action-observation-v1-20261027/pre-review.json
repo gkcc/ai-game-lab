@@ -1,0 +1,221 @@
+{
+  "schema": "independent-task-action-observation-pre-review-v1",
+  "reviewer_role": "independent_subagent_not_webchat",
+  "passed": true,
+  "review_scope": "Focused source and compact-registration pre-execution review. This is not OS integration, numeric-analysis, game-result, or final-stage acceptance.",
+  "freeze_sha256": "6ee40e6f6494d9a6d91cc20175c911aefa84c5003e5641376c26c8910256b975",
+  "registration_sha256": "4b31544c9c6f90dc9c9d035f58f92cea12a6f9a16a4974d50d58e369bfaa2666",
+  "blocking_findings": [],
+  "source_identity_checks": {
+    "new_sources": [
+      {
+        "path": "learning/task_action_observation_v1/analysis.py",
+        "sha256": "6669b20f246081e949a0df9017be230e6102faa57a2952f718423d85da74dead",
+        "bytes": 13320
+      },
+      {
+        "path": "learning/task_action_observation_v1/analysis_entry.py",
+        "sha256": "598c7eb3896f3385a425bb264d1b8c2ba7f65fce3f1f5eccc57db8a366b39222",
+        "bytes": 13253
+      },
+      {
+        "path": "learning/task_action_observation_v1/campaign.py",
+        "sha256": "55a436fc280adcffadb8e638f29e52065fafae7a5c84d231c785f139e13fcca1",
+        "bytes": 18573
+      },
+      {
+        "path": "learning/task_action_observation_v1/dispatch.py",
+        "sha256": "7cfd71630b0b3f631ab02665e1255ea1c4dfbf7a047ffcf8e7dd6123e63cda4c",
+        "bytes": 4686
+      },
+      {
+        "path": "learning/task_action_observation_v1/experiment.py",
+        "sha256": "3d61e0a2479370a549adace97e4ad1a3180a74200935ccc24520a838d3f38f90",
+        "bytes": 14379
+      },
+      {
+        "path": "learning/task_action_observation_v1/jobs.py",
+        "sha256": "866632c4a8cb648bbaf3b9e540aae16afd300a4deaaed90382033b6a6485e982",
+        "bytes": 1438
+      },
+      {
+        "path": "learning/task_action_observation_v1/test_analysis.py",
+        "sha256": "0943f447ab72a0be842a08cda82da0e89b036be5428abda3de563cd9f46c9518",
+        "bytes": 11305
+      },
+      {
+        "path": "learning/task_action_observation_v1/test_jobs.py",
+        "sha256": "406b075128cd2ce14be46292ddd8071ba524b669cd266049da21b179de08484b",
+        "bytes": 8593
+      },
+      {
+        "path": "learning/task_action_observation_v1/__init__.py",
+        "sha256": "f52902b08dde4a3380a4384d4c42c21128b1d8fb4fa46235ff24d14bf7f48ffe",
+        "bytes": 80
+      }
+    ],
+    "direct_frozen_dependencies": [
+      {
+        "path": "learning/task_anchor_spawn_repair_v1/launcher.py",
+        "sha256": "aa798f24662eeff6cc676c35832407cf2286772285b981bf6e790349e920e3a3",
+        "bytes": 3803
+      },
+      {
+        "path": "learning/task_dagger_once_v1/gpu_guard.py",
+        "sha256": "b85263dea410dfa37ceae35f91790883d4e6fca27aebc7485cfb69c095b67a08",
+        "bytes": 5062
+      },
+      {
+        "path": "learning/task_anchor_once_v1/games.py",
+        "sha256": "0a0afbe1aea859397ec17642a7dcac6ba93717f8c91e099df89fb8262798773e",
+        "bytes": 12522
+      },
+      {
+        "path": "learning/task_anchor_once_v1/storage.py",
+        "sha256": "2ff0e3209f25196081babdaea758f2fe1dc1d8254873d70a7a4118eb16f37d45",
+        "bytes": 15417
+      },
+      {
+        "path": "learning/task_anchor_once_v1/processes.py",
+        "sha256": "9711f7d38e1494dc2cceef718482bef9470d7416a8d07284f900e487c1dc1092",
+        "bytes": 3163
+      },
+      {
+        "path": "learning/task_launcher_contract_repair_v1/observer.py",
+        "sha256": "593c04a156da9915d7084e83459170e99d9cf08fdbf14b044eddcb268a6548b6",
+        "bytes": 10508
+      },
+      {
+        "path": "learning/task_action_impact_diagnostic_v1/analysis.py",
+        "sha256": "f0263611bd3bddc1f9028938288a0a1ec4406ebbc3d27df2ec17772bbb581499",
+        "bytes": 26677
+      },
+      {
+        "path": "learning/task_action_impact_diagnostic_v1/__init__.py",
+        "sha256": "2049e94f1fe2891136fc09817309da1b3bc054bba42b23bd6f5cf06ac176921d",
+        "bytes": 82
+      },
+      {
+        "path": "learning/task_bc_error_diagnostics_v1/shadow.py",
+        "sha256": "095f6a896c259f840af4c59adc922cc9782fe69aafd3b0df7ea04df9160c3251",
+        "bytes": 8220
+      },
+      {
+        "path": "learning/task_bc_error_diagnostics_v1/__init__.py",
+        "sha256": "7fe73d92a6f435034e2de4fc239e202b38b383508f2c426bd389dd7565f4a381",
+        "bytes": 70
+      },
+      {
+        "path": "decision/api.py",
+        "sha256": "3ef4025bde61d240b298cbe4d31291f25021baaf5b396f5540bbfcdda4231917",
+        "bytes": 14672
+      },
+      {
+        "path": "decision/semantics.py",
+        "sha256": "9ac62d0df7adca84c0feff805b2979bb45f9f9f4c2064d1e2b5c48efd3e779a5",
+        "bytes": 1378
+      }
+    ],
+    "all_listed_hashes_match_active_freeze": true,
+    "runtime_manifest_entries": 166,
+    "entire_historical_runtime_reaudited": false,
+    "method": "Read new production modules and focused test sources, inspect direct pure-analysis/game/launch interfaces, then SHA256-check the nine new source files and twelve direct dependencies against the active freeze. Reuse previously accepted unchanged interfaces outside that scope."
+  },
+  "scientific_and_identity_findings": [
+    "The fixed panel contains two new development seeds, two frozen opponents, both seats and S/C/T, exactly 24 games and eight matched scenarios. No holdout, admission, confidence interval, tuning or training path is introduced.",
+    "The adapter changes only the scoped core.verify and core.task_identity bindings, restores both in finally, and reuses the accepted official job, frozen-policy reconstruction and official replay audit.",
+    "The candidate resolves to the existing non-admitted anchor checkpoint. Three model identity fields match the prior compact registrations; the reviewer did not read or hash model files. Production readiness independently verifies those files.",
+    "The existing official rules, loader, opponent and network-limit identities are preserved in registration. Root preparation/production verification enforces their current bytes and runtime versions; this reviewer did not execute the official environment.",
+    "The 24-game manifest binds to the completed campaign, ledger and audit hashes. It requires 24 distinct game identities, eight complete S/C/T triads and 48 distinct canonical task-local gzip paths. Cross-directory paths, absolute paths, symlinks and reparse points are refused.",
+    "The new analyzer imports pure comparison helpers and never calls the old historical run function. Its raw paths are restricted to this new output directory; it has no path to the previous 192 raw files.",
+    "The analysis retains task choice, full request, observed physical state and final own/opponent cash as separate evidence. Full-input callback comparison, first request checks, trace/replay checks and terminal accounting are retained. Completion and causality remain unknown rather than becoming training labels.",
+    "The old 32-primary-pair screen is explicitly removed. The result has 16 descriptive comparisons, eight C-T primary pairs and eight C-S secondary pairs with seed/opponent and seat information.",
+    "The registered live and primary official limits are 17256 each, plus two fixed independent replays totaling 1438, for 35950 official transitions. Existing per-policy inference caps are unchanged and aggregate worst-case counts are prechecked.",
+    "Independent replay identities are fixed before results: first new seed/round2/seat0/candidate and second new seed/market/seat1/teacher_task."
+  ],
+  "runtime_and_isolation_findings": [
+    "The hybrid uses the accepted Windows official-job lane and the accepted POSIX supervise()/launch() lane for pure analysis only. It does not reopen or claim acceptance of the failed Windows image/ancestry contract.",
+    "The registered WSL configuration hash matches the prior accepted configuration hash. POSIX verification checks the expected interpreter version and frozen source identities without model-file reads.",
+    "The analysis target installs its process/import audit restriction before loading the analyzer. The reviewed bootstrap and analyzer import graph is standard-library plus registered pure project helpers; no model, numerical package, agent or engine import is needed.",
+    "Actual project imports are mapped back to frozen source identities. The previously missing shadow.py and its package initializer are now present and freshly hash-verified.",
+    "Spawn construction, IPC, waiting and cleanup remain outside artifact write contexts. Target output is guarded, and launcher plus adapter receipt writes now share the cumulative 65536-byte parent allowance.",
+    "The POSIX supervisor and Windows transport now cap work by the remaining total-stage time, reserving cleanup time. Unknown cleanup and post-deadline outcomes cannot pass.",
+    "Transport wait errors and cancellation-marker write errors are separately recorded and do not skip the subsequent reap/reader cleanup attempt. Linux cleanup proof remains separate from Windows process cleanup.",
+    "The scientific campaign entry now requires the positive fixture's completed Linux/target/worker receipts and the passing Windows transport receipt, including both cleanup proofs and the transport deadline."
+  ],
+  "resolved_findings": [
+    {
+      "id": "parent_receipt_reset",
+      "resolution": "The adapter receipt allowance is the registered parent limit minus launcher receipt bytes; exhaustion refuses the write."
+    },
+    {
+      "id": "global_deadline",
+      "resolution": "Both POSIX supervisor work and Windows transport limits are bounded by remaining stage time, with cleanup reserve."
+    },
+    {
+      "id": "wait_error_skips_reap",
+      "resolution": "Transport waiting and reap are separate try blocks; a wait error cannot jump over the reap attempt."
+    },
+    {
+      "id": "fixture_transport_gate",
+      "resolution": "campaign.fixture_receipts requires transport-result passed plus Linux and Windows cleanup proof."
+    },
+    {
+      "id": "cancel_write_skips_cleanup",
+      "resolution": "Cancellation-marker writes have an independent error field and do not prevent wait/reap."
+    },
+    {
+      "id": "missing_pure_import_freeze",
+      "resolution": "The shadow module and its package initializer have been added to the active frozen runtime and match current source bytes."
+    }
+  ],
+  "clarified_evidence_limits": [
+    "The once-only fixture is positive_integration_only: it proves the actual POSIX target can start, import its pure payload, apply its restrictions, write bounded marker receipts and complete supervised cleanup. It does not run analysis.run(), validate numeric summaries, or certify task/request/observation semantics.",
+    "This narrower fixture claim is explicitly stated in the active registration and root decision. Semantic checks come from focused synthetic tests and the later actual analysis acceptance; a marker pass alone cannot accept scientific results.",
+    "Actual science is accepted only after all required complete-game certificates, 48 new raw read identities, 16 comparison identities, 24 terminal accounts and the two fixed independent official replays are present and checked.",
+    "The current process review is not a universal OS containment guarantee. It accepts the declared existing runtime contracts and requires their observed cleanup receipts; it does not waive the closed Windows repair's stricter contract."
+  ],
+  "verification_evidence": {
+    "root_reported_focused_tests_passed": 11,
+    "root_report_source": "implementation-verification.json",
+    "root_report_bound_to_exact_freeze": true,
+    "independently_reran_tests": false,
+    "os_integration_already_passed": false,
+    "scientific_analysis_already_passed": false,
+    "official_games_already_passed": false,
+    "fixture_and_science_still_required": true,
+    "final_registration_preserves_both_seeds": true,
+    "initial_and_intermediate_revisions_reported_preserved": true,
+    "revision_record": "pre-review-revision-map.json"
+  },
+  "execution_conditions": [
+    "Create and verify an exact-byte local preregistration commit binding this review, the active freeze, registration and final source before the fixture. Local commit is not a third-party timestamp.",
+    "Run the fixed positive fixture once; any failed integration or cleanup closes the new stage. Do not repair and repeat the fixture.",
+    "Only after the fixture passes may the fixed 24-game campaign run, followed by its one bounded real analysis attempt and the two predeclared independent official replays.",
+    "Stop on any scientific identity, official-job, byte/resource, cleanup, privacy or total-deadline failure. Preserve failed/partial work; do not replace games, refund attempts, or extend the stage beyond 2026-10-27T03:10:49+00:00.",
+    "Keep raw data, exact launch/process details, native logs and model material local. Public evidence must remain the explicit sanitized allowlist.",
+    "Do not change the default Bot, frozen models, official engine, old failures or historical evidence; this pre-review authorizes no promotion or follow-on experiment."
+  ],
+  "reviewer_activity": {
+    "source_edits": 0,
+    "git_operations": 0,
+    "os_experiments": 0,
+    "test_executions": 0,
+    "raw_replay_trace_reads": 0,
+    "model_or_numeric_cache_reads": 0,
+    "neural_forwards": 0,
+    "official_steps": 0,
+    "new_games": 0,
+    "training_updates": 0,
+    "agent_workflow_used": false,
+    "output": "This exclusively created pre-review record only."
+  },
+  "review_read_budget": {
+    "limit_bytes": 20971520,
+    "conservative_content_charge_bytes": 4839680,
+    "passed": true,
+    "accounting": "Conservative envelope of sixteen full-content reads per explicitly touched source/compact-metadata path, including source hashing. Actual repetitions were fewer; partial Get-Content and exact-file searches are charged as complete files. Directory listings are metadata only. This is an upper bound, not a measured I/O counter.",
+    "prior_advice_read_overrun_retroactively_cured": false,
+    "scope_is_separate_from_prior_route_advice": true
+  }
+}

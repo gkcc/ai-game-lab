@@ -1,0 +1,179 @@
+{
+  "schema": "independent-task-action-observation-next-step-v1",
+  "adviser_role": "independent_subagent_not_webchat",
+  "status": "supports_bounded_new_scientific_task_not_implementation_acceptance",
+  "task": "task_action_observation_v1",
+  "public_base_commit": "20726f44279e9a46d363ff74ba0bc9102be51ad5",
+  "core_decision": "The proposed hybrid task can use the validated_external_launcher_evidence closure exception within its demonstrated scope. Reuse the previously accepted Windows official-game path for collection and the previously accepted POSIX session plus spawn path for pure analysis. This does not accept the failed Windows image/ancestry/runtime contract, resume its diagnostics, or refund historical analysis attempts.",
+  "scope_distinction": [
+    "The accepted POSIX spawn and later real fit prove the frozen launcher, narrow shared receipt allowance, target artifact guard, Linux session cleanup, and Windows transport/reader cleanup for those paths.",
+    "The completed 120 official games were dispatched by the Windows campaign through sys.executable, not by the WSL training path.",
+    "Therefore an all-WSL official-game claim is unsupported. The proposed hybrid does not require that claim: WSL hosts only a standard-library analysis target and never imports the game engine, agents, or model stack.",
+    "External evidence means evidence external to the failed Windows repair branch. It need not come from a third-party implementation. Its scope and identities must be recorded explicitly before new execution.",
+    "The new adapter may reuse supervise() and launch() directly. It must not call an old training entry such as gpu_guard.run(), training.fit(), or training_ready(). Those bind training-specific registrations, model access, and historical attempt markers."
+  ],
+  "directly_verified_sources": [
+    {
+      "path": "review/evidence/task-anchor-spawn-repair-v1-20261027/root-result-acceptance.json",
+      "fact": "passed=true; acceptance_scope is the frozen launch boundary and exactly one real model-free POSIX spawn; real_target_starts=1 and real_target_reached=1."
+    },
+    {
+      "path": "review/evidence/task-anchor-spawn-repair-v1-20261027/freeze.json",
+      "fact": "Frozen launcher SHA256 is aa798f24662eeff6cc676c35832407cf2286772285b981bf6e790349e920e3a3."
+    },
+    {
+      "path": "review/evidence/task-anchor-reentry-v1-20261027/training-process-result.json",
+      "fact": "passed=true; linux_guard_completed=true; transport reaped, reader exited, and Linux cleanup evidence all true; no cleanup errors."
+    },
+    {
+      "path": "review/evidence/task-anchor-reentry-v1-20261027/gpu-guard-result.json",
+      "fact": "completed=true; direct child reaped, owned process group signalled, and no live owned session members before reaping."
+    },
+    {
+      "path": "review/evidence/task-anchor-reentry-v1-20261027/root-result-acceptance.json",
+      "fact": "Engineering execution accepted with 120 completed games; candidate admission false; no old-attempt refund."
+    },
+    {
+      "path": "kaggriculture/learning/task_anchor_reentry_v1/campaign.py",
+      "lines": [
+        137,
+        150
+      ],
+      "fact": "execute() dispatches official jobs with sys.executable; gpu_fit() separately invokes wsl.exe and the Linux guard."
+    },
+    {
+      "path": "kaggriculture/learning/task_anchor_spawn_repair_v1/launcher.py",
+      "lines": [
+        39,
+        69
+      ],
+      "fact": "Generic spawn launch; receipt writes share one cumulative cap; process control occurs outside artifact guards; outer session supervisor remains required.",
+      "sha256": "aa798f24662eeff6cc676c35832407cf2286772285b981bf6e790349e920e3a3",
+      "local_and_public_bytes_equal": true
+    },
+    {
+      "path": "kaggriculture/learning/task_dagger_once_v1/gpu_guard.py",
+      "lines": [
+        31
+      ],
+      "fact": "POSIX WNOWAIT pins the direct child until owned process-group termination and session-membership verification.",
+      "sha256": "b85263dea410dfa37ceae35f91790883d4e6fca27aebc7485cfb69c095b67a08",
+      "local_and_public_bytes_equal": true
+    },
+    {
+      "path": "kaggriculture/learning/task_anchor_once_v1/processes.py",
+      "fact": "Existing bounded native-output capture and reader join; this is not the later Windows image/ancestry acceptance implementation.",
+      "sha256": "9711f7d38e1494dc2cceef718482bef9470d7416a8d07284f900e487c1dc1092",
+      "local_and_public_bytes_equal": true
+    },
+    {
+      "path": "review/evidence/task-launcher-evidence-repair-v1-20261027/root-next-learning-decision.json",
+      "fact": "Continuation requires a changed boundary or validated external launcher evidence; the Windows repair remains closed and unaccepted."
+    }
+  ],
+  "unique_next_scientific_task": {
+    "question": "For frozen S, C and T on a small new development panel, where do task-selection disagreements become full-request disagreements and observable subsequent state differences, and how do own/opponent terminal cash accounts differ descriptively?",
+    "data_role": "New prospective development observation. Not an independent holdout, a policy-selection set, or evidence authorizing admission.",
+    "panel": {
+      "new_development_seeds": 2,
+      "opponents": [
+        "round2",
+        "market"
+      ],
+      "seats": [
+        0,
+        1
+      ],
+      "policies": [
+        "S",
+        "C",
+        "T"
+      ],
+      "games": 24,
+      "matched_scenarios": 8,
+      "primary_C_minus_T_pairs": 8,
+      "secondary_C_minus_S_pairs": 8,
+      "seed_rule": "Freeze generator and two accepted seeds before execution; exclude previously visible used, failed, and reserved seeds using compact metadata only. No outcome-dependent replacement."
+    },
+    "rationale_for_two_seeds": "Two seeds provide minimal replication beyond a single world while keeping one small fixed task. They do not support population-level superiority or robust economic generalization.",
+    "definitions": [
+      "S is the original frozen task student; C is the existing non-admitted anchor candidate; T uses rule task selection with the same frozen crop model. T is not the original all-rule teacher.",
+      "Maintain the exact shared full-observation/callback prefix and stop paired callback attribution at the first input or choice divergence. Equal task labels alone do not establish equal controller state.",
+      "Separate selected task, complete request, subsequent physical observation, and terminal own/opponent cash accounting.",
+      "Use the predeclared first-disagreement, next-state, 24-state, and terminal observations with end-of-game clipping. Keep both seats and report seed/opponent summaries.",
+      "Task completion, task duration value, and causal reward shares remain unknown unless existing recorded events directly establish them. A changed request alone is not a successful execution event.",
+      "A complete no-difference or evidence-insufficient result is valid. Do not add games to obtain a desired signal."
+    ],
+    "exclusions": [
+      "No reads of the prior 192 raw replay/trace files or numeric training caches.",
+      "No training, hyperparameter changes, new policy, controller changes, checkpoint selection, bootstrap, significance claim, holdout promotion, or automatic teacher admission.",
+      "No extra seeds, retries, reruns of consumed historical tasks, or additional launcher repair phase."
+    ]
+  },
+  "implementation_boundary": {
+    "collection": [
+      "Reuse the accepted Windows official job path, fixed policies and original per-policy network limits. Register the exact three model identities and source identities.",
+      "Preparation reads model files only to establish the three fixed identity hashes. Registered live games and their primary policy reconstruction may decode and infer with these frozen models under the original limits; pure analysis and independent official-state replay do not invoke models.",
+      "Use at most two game workers. Debit each job before launch; a failed or partial job consumes its slot. Do not rerun or replace it.",
+      "All 24 official games retain their primary frozen-policy action reconstruction and official replay checks. Do not modify the official engine or strategy behavior to produce easier telemetry."
+    ],
+    "analysis": [
+      "Use the frozen POSIX supervise() plus frozen launch() with the registered private WSL transport identity and an importable standard-library-only analysis target.",
+      "Keep target-specific process and model/agent/engine import prohibitions. Establish them before scientific file access and ensure forbidden modules were not already imported during bootstrap.",
+      "Declare the expected supervisor, adapter, spawn runtime helper and target roles separately. The target may not create child processes; the supervisor remains responsible for the owned Linux session.",
+      "Do not apply the old failed Windows contract to a Linux target and then silently relax it. Keep that contract and its failure receipts unchanged.",
+      "Parent IPC, construction, waits and cleanup stay outside artifact write guards; target writes remain under its own guard. Parent receipt scopes share a single nonrefundable allowance.",
+      "Only this stage's registered new replay/trace inputs may be decoded. Input identities, byte limits, analysis CPU/wall/memory accounting, output limits and terminal receipt reserve must be explicit in the new registration.",
+      "Retain separate original-failure, Linux-cleanup, Windows-transport and reader outcomes. Unknown or post-deadline recovery cannot become a passing execution."
+    ],
+    "compatibility_gate": [
+      "After implementation and independent pre-review, freeze the adapter and run exactly one production-path synthetic analysis fixture through the reused WSL transport, supervisor and spawn launcher before reading any new scientific input.",
+      "The fixture must reach the actual analysis target, emit the expected task/request/observation summary, preserve import/process rejection, enforce its bounded writes and shared receipt budget, and prove Linux session plus transport/reader cleanup.",
+      "Use synthetic inputs and in-target denial checks; do not add Windows process probes or the failed Windows five-case acceptance suite.",
+      "The fixture is new adapter acceptance, not permission to edit the accepted launcher or repair the failed Windows contract. Any incompatibility, unknown cleanup or fixture failure closes the new task without another fixture, launcher revision, or scientific execution."
+    ]
+  },
+  "fixed_stage_budget": {
+    "total_wall_seconds_including_preparation_execution_independent_review_publication_cleanup": 5400,
+    "simultaneous_game_workers": 2,
+    "per_game_job_seconds": 900,
+    "live_games": 24,
+    "primary_official_replays": 24,
+    "independent_official_replays": 2,
+    "transitions_per_complete_game_or_replay": 719,
+    "official_transition_ceiling": 35950,
+    "analysis_target_launches": "One frozen synthetic fixture and one bounded real analysis attempt; no retries. These are distinct debited roles.",
+    "training_updates": 0,
+    "gpu_operations": 0,
+    "owned_output_bytes": 4294967296,
+    "original_policy_network_limits_unchanged": true,
+    "independent_code_and_compact_result_read_budget_bytes": 20971520,
+    "independent_read_exclusions": "No old raw files, training caches or unregistered model inference.",
+    "independent_replay_selection": "Fix exactly two new game identities before results are known, with coverage of both new seeds and both opponents. Replay stored actions only; no new games."
+  },
+  "acceptance_and_stop": [
+    "A separate root decision and new exact-byte registration must state the hybrid runtime scope and why the existing acceptance evidence applies. This advice is not an implementation pre-review or a claim that the new stage is frozen.",
+    "Require the adapter fixture and current source/runtime identities to pass before scientific execution; preserve the old task's no-refund and no-successor result.",
+    "For each completed game require 720 states, 719 actions, both players DONE, zero agent errors, matching engine/source/model identities and primary replay agreement. A failure closes the stage with partial counts retained.",
+    "Analysis acceptance concerns reproducible mappings and honest unknowns, not a positive cash effect. Reconcile all 24 final cash accounts and every declared paired scenario; do not convert correlated trajectories into independent samples.",
+    "All failures consume their attempted work. Stop at the first identity, fixture, job, privacy, cleanup or budget failure. Preserve evidence and do not enlarge or rename a repair task.",
+    "Keep raw new replays, traces, model material, native logs and launch/process details local. Publish only an explicit sanitized source/registration/compact-result allowlist.",
+    "Default Bot, existing models, official engine, old failures and all historical evidence remain unchanged. Completion of this diagnostic does not authorize a follow-on experiment."
+  ],
+  "adviser_activity_and_deviation": {
+    "os_experiments": 0,
+    "model_or_cache_data_reads": 0,
+    "scientific_raw_replay_or_trace_reads": 0,
+    "neural_forwards": 0,
+    "training_updates": 0,
+    "games": 0,
+    "implementation_edits": 0,
+    "agent_workflow_used": false,
+    "deliverable": "This exclusively created advice record only.",
+    "requested_source_receipt_read_limit_bytes": 307200,
+    "read_budget_passed": false,
+    "deviation": "An initial rg directory search covered eligible source/JSON/Markdown files totaling 335214 bytes across the prior repair source, spawn source and prior local repair output, before later exact public-source reads. Search I/O was not metered byte by byte. This is a known review-budget overrun; no claim of <=300KiB completion is made.",
+    "additional_scope_caveat": "The initial search included a local prior-stage output directory, not solely public receipts. No claim is made that every scanned file was public. No private process details, commands, paths, tracebacks or raw scientific content are reproduced here.",
+    "handling": "The parent was notified and requested preserving the deviation without opening an extra audit. Source facts remain individually checkable; this advice is not a formal experimental acceptance. Future implementation/result review has a separate registered scope and allowance."
+  }
+}
