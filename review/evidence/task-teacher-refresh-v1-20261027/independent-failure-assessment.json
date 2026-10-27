@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "identities_sha256": {
+    "root-decision.json": "fa7060fafeea60b492563a7e99c9118953b315fdab340cf0ddfdec679f6ff83a",
+    "registration.json": "f0d074db020ca7c73e8f253c5fa31c794d193e81379261c71a3e0efe5d17e44d",
+    "freeze.json": "29a1bcbfb51c1d0828f0629465251c95dc3b1509caa74fbc572f7c793b443582",
+    "pre-review.json": "3937b4dc9f0b3fe7a188c362a9f46dd233bf4d236d54016b968aaed7926e1567",
+    "pre-execution-commit.json": "af4053055f7089eab4eb803b8873ba717da601dbe59332a248a849796631e94a",
+    "games-started.json": "6cc339ac7639e88beac3a57317390c92583f77781bbcda8f991af01379007d28",
+    "games-failure.json": "156190c9b4de030d0e98eefdb3e15a5dcebed880cd8906e3eb6e30e74976d4ef"
+  },
+  "first_row_sha256": "2ff3791081ed70221a872edb5031a33387a1ded721beaf112cbbadd9d0900e8e",
+  "frozen_stage_source_sha256": {
+    "learning/task_teacher_refresh_v1/collector.py": "4bf8d026f311f9aa27922a980ee872c180f88b2bca62561e747fc73dcc870fa1",
+    "learning/task_teacher_refresh_v1/data_worker.py": "b9e528f7e1ba513e0b5794861a117493f5f3c44b741f5aa4098fd8ec92c99d42",
+    "learning/task_teacher_refresh_v1/experiment.py": "4c0711d664fad7b9e9c7895f6ae3fd216c0a30a4b0b34867b97456df31a38250",
+    "learning/task_teacher_refresh_v1/games.py": "b814096c19f0ed62df255e557c5108db8830e57154ba000f8a43794962093be6",
+    "learning/task_teacher_refresh_v1/member_probe.py": "74c9f5a8b39e323b6f2c6a709c77b13839a76854bde3b35946125bb88a074ace",
+    "learning/task_teacher_refresh_v1/runner.py": "edf8368922d7da129bfe2c16b18d6fc19d1b3e6b1fd9de85ba907985642e1c03",
+    "learning/task_teacher_refresh_v1/test_collector.py": "bfe7e3f0acac6a21242447fd2d456db442cf0001d240ee40c220f477e357f76b",
+    "learning/task_teacher_refresh_v1/test_games.py": "7bc2c49a60e01d4992b36458f7ca1397d00eef569b6951c80bacc9fb688653ce",
+    "learning/task_teacher_refresh_v1/test_runner.py": "f7a3fd1126ad7cef540a75ef6b0ab29d3dc5ab5ed69b55fe9610ab7d601e2148"
+  },
+  "pre_execution_commit": "8bd15e3435f26f7054fb550490fb94c76f0228dc",
+  "first_row_report": {
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "agent_errors": 0
+  },
+  "official_audit_complete_storage_receipts": "absent",
+  "job_report": {
+    "stop_reason": "available_memory_limit",
+    "launcher_reaped": true,
+    "job_members_zero": true,
+    "cleanup_error_kind": null
+  },
+  "confirmed_accepted_games": 0,
+  "confirmed_accepted_primary_replays": 0,
+  "additional_current_game_transitions": "unknown",
+  "data_and_training_start_markers_absent": true,
+  "interpretation": "The first row reports 719 live actions after the worker pre-row checks; audit completion and additional replay transitions are unknown. Sequential runner control flow did not start data collection or training. No retry or replacement is permitted.",
+  "limitations": [
+    "Parent recorded optimization level zero and absent PYTHONOPTIMIZE; child assertion enablement is inferred from normal environment inheritance, not independently measured.",
+    "Job cleanup and stop reason are receipt evidence, not independent observation or proof of a system-memory root cause.",
+    "No original replay, trace or model was read and no independent replay was performed."
+  ]
+}

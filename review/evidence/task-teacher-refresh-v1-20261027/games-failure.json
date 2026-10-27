@@ -1,0 +1,31 @@
+{
+  "passed": false,
+  "error_kind": "RuntimeError",
+  "marker": {
+    "created": true,
+    "complete": true
+  },
+  "attempted_games": 1,
+  "completed_games": 0,
+  "confirmed_completed_live_transitions": 0,
+  "confirmed_completed_primary_replay_transitions": 0,
+  "uncertain_current_game": "dev-1677254323-round2-0-teacher_task",
+  "current_game_additional_transitions": "unknown",
+  "child_lifecycle": "supervision_recorded",
+  "job_supervision": {
+    "passed": false,
+    "assigned": true,
+    "resumed": true,
+    "launcher_reaped": true,
+    "job_members_zero": true,
+    "exit_code": 1,
+    "error_kind": null,
+    "cleanup_error_kind": null,
+    "stop_reason": "available_memory_limit",
+    "peak_sampled_rss_bytes": 386514944,
+    "peak_sampled_job_commit_bytes": 1323216896,
+    "rss_sampling_retries": 2,
+    "rss_complete_samples": 220
+  },
+  "retry_allowed": false
+}

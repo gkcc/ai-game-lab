@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "scope": "Evidence and publication-candidate review only; not game or replay acceptance",
+  "identities_sha256": {
+    "root-result-acceptance.json": "eff828bb377ad7cd2a8860fd87a3829baf57cda4436f2f70ac5649c2c8d84b8e",
+    "games-failure.json": "156190c9b4de030d0e98eefdb3e15a5dcebed880cd8906e3eb6e30e74976d4ef",
+    "games-started.json": "6cc339ac7639e88beac3a57317390c92583f77781bbcda8f991af01379007d28",
+    "pre-execution-commit.json": "af4053055f7089eab4eb803b8873ba717da601dbe59332a248a849796631e94a",
+    "independent-failure-assessment.json": "05ecae47b1c782816ae312d6f722775cf09ae6e73b78a463067e350b5cc7494d"
+  },
+  "first_row_sha256": "2ff3791081ed70221a872edb5031a33387a1ded721beaf112cbbadd9d0900e8e",
+  "checks": [
+    "Root acceptance and bound failure/independent review/row identities and aggregate facts are consistent.",
+    "The first row reports 720 states and 719 actions but is not an accepted primary replay; audit completion and further transitions remain unknown.",
+    "The primary agent reports reading compressed replay and trace bytes for SHA only; this reviewer did not read raw replay, trace or model.",
+    "Six publication candidates were checked for path/email patterns and contain no original logs or per-step state."
+  ],
+  "limitations": [
+    "The public row includes seed, financial aggregates and model/trace digests, which can link records; it is not guaranteed anonymous.",
+    "Pattern scanning cannot prove absence of every sensitive semantic or indirect identifier.",
+    "Job cleanup and stop cause are receipt claims; child optimization state is inferred from parent and normal inheritance rather than independently measured.",
+    "No independent replay, inference, training, retry or additional game was performed."
+  ]
+}

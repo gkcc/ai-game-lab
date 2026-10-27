@@ -1,0 +1,49 @@
+{
+  "passed": false,
+  "panel_completed": false,
+  "attempted_games": 1,
+  "accepted_games": 0,
+  "accepted_primary_replays": 0,
+  "partial_first_live_row_reports": {
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "agent_errors": 0,
+    "official_result_and_row_agree": true,
+    "replay_compressed_hash_matches": true,
+    "trace_compressed_hash_matches": true
+  },
+  "official_replay_completion": "unknown",
+  "additional_replay_steps": "unknown",
+  "stop_reason": "available_memory_limit",
+  "job_cleanup_confirmed_by_receipt": true,
+  "data_or_training_started_by_runner": false,
+  "retry_allowed": false,
+  "parent_python_optimization_level": 0,
+  "child_optimization_independently_measured": false,
+  "root_input_reads": "Read result metadata and compressed replay/trace bytes only to check SHA; no replay/trace decoding or reexecution.",
+  "independent_review_raw_reads": false,
+  "no_replacement_seeds": true,
+  "limitations": [
+    "The live row is not an accepted official replay certificate.",
+    "Child assertion flags are inferred from parent flags and normal environment inheritance.",
+    "The receipt reports the resource stop; it does not establish the system-wide memory cause or peak.",
+    "The preserved game cannot be used as an accepted training source."
+  ],
+  "identities_sha256": {
+    "root-decision.json": "fa7060fafeea60b492563a7e99c9118953b315fdab340cf0ddfdec679f6ff83a",
+    "registration.json": "f0d074db020ca7c73e8f253c5fa31c794d193e81379261c71a3e0efe5d17e44d",
+    "freeze.json": "29a1bcbfb51c1d0828f0629465251c95dc3b1509caa74fbc572f7c793b443582",
+    "pre-review.json": "3937b4dc9f0b3fe7a188c362a9f46dd233bf4d236d54016b968aaed7926e1567",
+    "pre-execution-commit.json": "af4053055f7089eab4eb803b8873ba717da601dbe59332a248a849796631e94a",
+    "games-started.json": "6cc339ac7639e88beac3a57317390c92583f77781bbcda8f991af01379007d28",
+    "games-failure.json": "156190c9b4de030d0e98eefdb3e15a5dcebed880cd8906e3eb6e30e74976d4ef",
+    "independent-failure-assessment.json": "05ecae47b1c782816ae312d6f722775cf09ae6e73b78a463067e350b5cc7494d"
+  },
+  "partial_row_sha256": "2ff3791081ed70221a872edb5031a33387a1ded721beaf112cbbadd9d0900e8e",
+  "result_metadata_sha256": "4dc225d72a441645c5997cb40a1f650611f01dedf8ed4f7cb408d9a38ab9bfdc",
+  "pre_execution_commit": "8bd15e3435f26f7054fb550490fb94c76f0228dc"
+}

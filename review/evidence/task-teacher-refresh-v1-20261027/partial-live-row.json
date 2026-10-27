@@ -1,0 +1,46 @@
+{
+  "game": "dev-1677254323-round2-0-teacher_task",
+  "policy": "teacher_task",
+  "split": "dev",
+  "seed": 1677254323,
+  "opponent": "round2",
+  "side": 0,
+  "parity_kind": null,
+  "bot_sha256": "5afccddad415a75c32ef3cbfce03a42fcdfde5fc92b86aac996c166f3368dd6a",
+  "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+  "task_checkpoint_sha256": null,
+  "passed": true,
+  "states": 720,
+  "action_turns": 719,
+  "status": [
+    "DONE",
+    "DONE"
+  ],
+  "agent_errors": 0,
+  "initial_banks": [
+    3000.0,
+    3000.0
+  ],
+  "banks": [
+    35993.0,
+    32788.0
+  ],
+  "rewards": [
+    35993.0,
+    32788.0
+  ],
+  "bank": 35993.0,
+  "opponent_bank": 32788.0,
+  "initial_bank": 3000.0,
+  "opponent_initial_bank": 3000.0,
+  "net_profit": 32993.0,
+  "opponent_net_profit": 29788.0,
+  "margin": 3205.0,
+  "score": 1.0,
+  "semantic_replay_sha256": "e9ab5e96ff1abfb14a664529acaecaff49ae169964da87e2e998d1a2ea40d9a8",
+  "semantic_replay_sha256_v2": "22ad966e2aa2616181357feb67d438bc9fee6772c8ef256a250692463a395edb",
+  "replay_gzip_sha256": "a104942623a37071372c8320bbcf951945e8e03b9844a96a222717d917640ace",
+  "trace_sha256": "9413b844d5f4d7848abbe080137b7ffcdec6d3cba53a9d44960c56b6fda04db4",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd"
+}
