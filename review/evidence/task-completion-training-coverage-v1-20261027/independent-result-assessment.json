@@ -1,0 +1,30 @@
+{
+  "passed": false,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "identities_sha256": {
+    "freeze.json": "e9503b0f645b5e3204559aaa784ba9acd031f395cd00998a9bbcda8643d18040",
+    "registration.json": "c3a6f9fb66a2da9febc8534be646e43f5a61b0de831ca6d6f4303205d112425b",
+    "root-decision.json": "acbcc8dc22a01a15eecfd3261d21901a89e138c32218fef56a47de622f925f68",
+    "pre-review.json": "0710083fccc3d37b85c392551b0dea2bfed12aaa3cdd995db351666f435ea53a",
+    "pre-execution-commit.json": "e1fe9f0ece43f5d4dcd20a5a069088cb23aa8a98ca26de28c519494f33d9b3ef",
+    "supervisor-started.json": "dae103b2160fe19ea086d1cd357a903709556d55d356386284370ca31bfba212",
+    "supervisor-result.json": "232f44cc31b9979f991d10ac4fb137b0b38be6954834b512a92480e35f438972",
+    "analysis-started.json": "dae103b2160fe19ea086d1cd357a903709556d55d356386284370ca31bfba212",
+    "analysis-result.json": "8bdffa1503b9df219112515b13843e0292884783e7442618b72237dfd442fc3b"
+  },
+  "findings": [
+    "Aggregate 200 selected groups equals joint and arm, operation, status marginal totals; completed 157, unknown 43; distance and tie subgroups both total 147, all observed chosen distance gaps zero",
+    "The supervisor samples psutil.Process(child.pid) and terminates or kills only that direct Popen handle; it neither enumerates nor monitors or confirms exit of descendants",
+    "Reported sampled RSS peak 6459392 bytes and child_reaped describe the direct launched process only; they do not prove peak RSS, available-memory stop coverage or cleanup of a real Python descendant",
+    "The main-agent-reported separate synthetic 96 MiB allocation experiment observed a small direct process and larger Python descendant. Its detailed evidence was not independently rerun or inspected in this review, but it is consistent with the direct-child-only source limitation and identifies a concrete need for process-tree validation",
+    "Consequently supervisor passed cannot be used as proof that registered resource thresholds or complete owned process-tree cleanup were satisfied; preserve original receipts and do not rerun this consumed analysis"
+  ],
+  "limitations": [
+    "No training cache, sample positions, checkpoint, trace or replay was opened; no formal analysis or game was rerun",
+    "Aggregate counts were cross-checked against each other, not independently recomputed from individual cache rows",
+    "Source arm and game attribution depends on historical collector segment order and counts, not independent row IDs; unknown is not failure and Manhattan candidate distance is not actual path or optimality",
+    "Samples of three FERTILIZE and two DIG are inadequate to characterize those categories; no causality or model-quality conclusion",
+    "The memory supervision is sampled rather than a hard cap even after process-tree coverage is corrected"
+  ],
+  "recommendation": "Before further data work, inspect existing synthetic process-tree evidence and implement a separately reviewed supervisor that tracks exact owned Windows process-tree identities and creation times, samples the total/individual relevant RSS, boundedly terminates and waits for all owned descendants, and reports any unknown or surviving process. Validate with synthetic venv launcher tree and failure paths only; do not modify frozen source or repeat the consumed analysis."
+}

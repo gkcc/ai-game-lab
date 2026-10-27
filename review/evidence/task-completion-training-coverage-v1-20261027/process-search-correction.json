@@ -1,0 +1,9 @@
+{
+  "corrects": "launcher-counterexample.json followup_process_search",
+  "initial_method_error": "The first process listing requested cmdline through process_iter attrs, which can replace inaccessible values with null without raising AccessDenied. Therefore the statement of zero access-denied entries is unreliable.",
+  "corrected_method": "A later read-only process listing called cmdline() explicitly for each process and caught AccessDenied separately, excluding the current checker.",
+  "visible_matching_analysis_processes": 0,
+  "inaccessible_processes_present": true,
+  "conclusion": "No accessible matching process was observed. Inaccessible processes prevent an exhaustive process search; neither this result nor the original supervisor receipt proves all historical descendants were reaped.",
+  "real_analysis_repeated": false
+}

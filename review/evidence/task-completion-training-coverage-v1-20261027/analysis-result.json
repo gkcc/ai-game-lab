@@ -1,0 +1,162 @@
+{
+  "passed": true,
+  "selected_groups": 200,
+  "aggregates": {
+    "source_arms": {
+      "baseline": 54,
+      "candidate": 96,
+      "teacher_task": 50
+    },
+    "selected_operations": {
+      "DIG": 2,
+      "FERTILIZE": 3,
+      "HARVEST": 22,
+      "PLANT": 18,
+      "WATER": 155
+    },
+    "statuses": {
+      "completed_observed": 157,
+      "unknown": 43
+    },
+    "distance_gap": {
+      "0": 147
+    },
+    "shortest_ties": {
+      "1": 84,
+      "2": 49,
+      "3": 12,
+      "4": 2
+    },
+    "arm_operation_status": [
+      {
+        "arm": "baseline",
+        "operation": "HARVEST",
+        "status": "completed_observed",
+        "count": 9
+      },
+      {
+        "arm": "baseline",
+        "operation": "HARVEST",
+        "status": "unknown",
+        "count": 1
+      },
+      {
+        "arm": "baseline",
+        "operation": "PLANT",
+        "status": "completed_observed",
+        "count": 1
+      },
+      {
+        "arm": "baseline",
+        "operation": "PLANT",
+        "status": "unknown",
+        "count": 2
+      },
+      {
+        "arm": "baseline",
+        "operation": "WATER",
+        "status": "completed_observed",
+        "count": 32
+      },
+      {
+        "arm": "baseline",
+        "operation": "WATER",
+        "status": "unknown",
+        "count": 9
+      },
+      {
+        "arm": "candidate",
+        "operation": "DIG",
+        "status": "completed_observed",
+        "count": 2
+      },
+      {
+        "arm": "candidate",
+        "operation": "FERTILIZE",
+        "status": "completed_observed",
+        "count": 3
+      },
+      {
+        "arm": "candidate",
+        "operation": "HARVEST",
+        "status": "completed_observed",
+        "count": 5
+      },
+      {
+        "arm": "candidate",
+        "operation": "HARVEST",
+        "status": "unknown",
+        "count": 4
+      },
+      {
+        "arm": "candidate",
+        "operation": "PLANT",
+        "status": "completed_observed",
+        "count": 5
+      },
+      {
+        "arm": "candidate",
+        "operation": "PLANT",
+        "status": "unknown",
+        "count": 2
+      },
+      {
+        "arm": "candidate",
+        "operation": "WATER",
+        "status": "completed_observed",
+        "count": 58
+      },
+      {
+        "arm": "candidate",
+        "operation": "WATER",
+        "status": "unknown",
+        "count": 17
+      },
+      {
+        "arm": "teacher_task",
+        "operation": "HARVEST",
+        "status": "completed_observed",
+        "count": 3
+      },
+      {
+        "arm": "teacher_task",
+        "operation": "PLANT",
+        "status": "completed_observed",
+        "count": 4
+      },
+      {
+        "arm": "teacher_task",
+        "operation": "PLANT",
+        "status": "unknown",
+        "count": 4
+      },
+      {
+        "arm": "teacher_task",
+        "operation": "WATER",
+        "status": "completed_observed",
+        "count": 35
+      },
+      {
+        "arm": "teacher_task",
+        "operation": "WATER",
+        "status": "unknown",
+        "count": 4
+      }
+    ]
+  },
+  "freeze_sha256": "e9503b0f645b5e3204559aaa784ba9acd031f395cd00998a9bbcda8643d18040",
+  "sample_positions_sha256": "f3fc0416be11f55a379f43d376bba2f5d1a4e00fa49c73f244c062fe332a2351",
+  "cache_sha256": "3513992415b5ea9347faecca75466ddc30f16a402650a2f122be4cbfb335843b",
+  "method_sha256": "9485447c212ae1c6c2bdba7d25e56bd401b5f72207f3356f20b85f36e228a1b6",
+  "full_cache_hash_reads": 2,
+  "full_npz_decode_passes": 1,
+  "full_cache_validation_and_copies": true,
+  "physical_reads": "Registration hash, execution before/after hashes, NPZ directory reads and one full decode",
+  "source_identity": "Segment source depends on prior collector order and counts, not independent row IDs",
+  "interpretation": "Observed Manhattan opportunities only; not teacher optimality, actual path length or economic causality",
+  "joint_count_scope": "Observed nonzero arm-operation-status combinations only; omitted combinations have count zero; no rates or zero-denominator ratios computed",
+  "new_games": 0,
+  "training_updates": 0,
+  "model_inference": 0,
+  "retry_allowed": false
+}

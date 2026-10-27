@@ -1,0 +1,12 @@
+{
+  "method": "Post-result synthetic subprocess allocates 96 MiB and sleeps; the same virtual-environment interpreter is launched using Popen, and direct and recursive-child RSS are sampled once. No game, cache, model, replay or training data is read.",
+  "post_hoc_not_preregistered": true,
+  "synthetic_runs": 1,
+  "direct_process_sampled_rss_mib": 6.2,
+  "descendant_process_count": 1,
+  "descendant_sampled_rss_mib": [107.4],
+  "direct_process_exited_zero": true,
+  "acceptance_boundary": "This is one synthetic reproduction by the primary agent, not an independent replay of the diagnostic or proof of the original analysis worker peak. The frozen supervisor samples and controls the direct handle only; it does not measure the descendant tree.",
+  "followup_process_search": "A subsequent exact-command process-list check found zero matching analysis processes and zero access-denied entries. This is not independent proof that every descendant was reaped.",
+  "original_analysis_repeated": false
+}

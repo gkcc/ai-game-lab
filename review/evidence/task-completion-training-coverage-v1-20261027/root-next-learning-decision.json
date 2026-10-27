@@ -1,0 +1,6 @@
+{
+  "decision": "After publishing this stage, assess and preregister one bounded synthetic-only Windows process-supervision repair before further data work.",
+  "basis": "A concrete venv launcher counterexample shows that the frozen supervisor sampled only the launcher, leaving the worker peak and descendant cleanup unverified.",
+  "scope": "Preserve the old source and all receipts; use only processes owned by the new synthetic test. Explicitly distinguish sampled measurements from hard resource isolation and record uncertainty on failure.",
+  "prohibitions": "No re-execution of the consumed cache analysis, no training or test cache reads, no model or trajectory reads, no new games, no training, no PPO, no default Bot or system configuration changes."
+}

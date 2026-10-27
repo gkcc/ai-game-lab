@@ -1,0 +1,43 @@
+{
+  "passed": false,
+  "descriptive_aggregate_usable_with_limits": true,
+  "resource_supervision_accepted": false,
+  "reason": "Frozen supervisor monitors only direct launcher, not its descendant tree",
+  "independent_review_recomputed_cache_rows": false,
+  "sample_groups": 200,
+  "statuses": {
+    "completed_observed": 157,
+    "unknown": 43
+  },
+  "selected_operations": {
+    "DIG": 2,
+    "FERTILIZE": 3,
+    "HARVEST": 22,
+    "PLANT": 18,
+    "WATER": 155
+  },
+  "opportunity_groups": 147,
+  "all_observed_distance_gaps_zero": true,
+  "tied_minima_groups": 63,
+  "arm_attribution_relies_on_collector_order": true,
+  "status_unknown_is_not_failure": true,
+  "candidate_manhattan_is_not_actual_path_or_optimality": true,
+  "resource_peak_of_worker_unknown": true,
+  "real_analysis_repeated": false,
+  "new_games": 0,
+  "new_training_updates": 0,
+  "model_inference": 0,
+  "evidence_sha256": {
+    "root-decision.json": "acbcc8dc22a01a15eecfd3261d21901a89e138c32218fef56a47de622f925f68",
+    "registration.json": "c3a6f9fb66a2da9febc8534be646e43f5a61b0de831ca6d6f4303205d112425b",
+    "freeze.json": "e9503b0f645b5e3204559aaa784ba9acd031f395cd00998a9bbcda8643d18040",
+    "pre-review.json": "0710083fccc3d37b85c392551b0dea2bfed12aaa3cdd995db351666f435ea53a",
+    "pre-execution-commit.json": "e1fe9f0ece43f5d4dcd20a5a069088cb23aa8a98ca26de28c519494f33d9b3ef",
+    "supervisor-started.json": "dae103b2160fe19ea086d1cd357a903709556d55d356386284370ca31bfba212",
+    "supervisor-result.json": "232f44cc31b9979f991d10ac4fb137b0b38be6954834b512a92480e35f438972",
+    "analysis-started.json": "dae103b2160fe19ea086d1cd357a903709556d55d356386284370ca31bfba212",
+    "analysis-result.json": "8bdffa1503b9df219112515b13843e0292884783e7442618b72237dfd442fc3b",
+    "launcher-counterexample.json": "d5c4a4e081a3a609e15bc5e9260f0e4604afaf056dc9869fb88ec407e2b7c97c",
+    "independent-result-assessment.json": "b9fd158165392719b76d9c3c8e2f4dbe0490b4d77369ea4466742776bd8ad3d5"
+  }
+}
