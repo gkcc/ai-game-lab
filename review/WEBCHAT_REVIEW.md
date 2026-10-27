@@ -372,3 +372,9 @@ Linux监督阶段1.329秒，整个自有进程组已清理并回收；原partial
 核对预提交eeda126、后验选pair及双席tie-break、四文件各一次内容哈希、719步官方复演。确认同一输入下PLANT选择不同工人与首次完整请求差异同时出现，以及候选单位NORTH请求与官方事件绑定；不要将其误称请求或收益的已证因果。原始回放、逐条trace及位置只留本地，审查未重新逐帧计算。
 
 [报告](../kaggriculture/TASK_COMPLETION_WORST_PAIR_V1.zh-CN.md) | [证据](evidence/task-completion-worst-pair-v1-20261027/)
+
+## 单 callback 模型排序：复审重点
+
+核对事前提交7d4c582、两trace完整单次流式解码但仅解析step2、双臂同输入首分歧、一次CPU前向/模型哈希及模型排序并列规则。144候选/教师第5/差值约0.9856/同目标是一个事后案例，不证特征或经济因果；复审未读取原始特征、权重或重算逐条分数。
+
+[报告](../kaggriculture/TASK_COMPLETION_SCORE_PROBE_V1.zh-CN.md) | [证据](evidence/task-completion-score-probe-v1-20261027/)

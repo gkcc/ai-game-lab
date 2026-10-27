@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "candidate_count": 144,
+  "teacher_rank": 5,
+  "selected_minus_teacher_score": 0.9856224560525746,
+  "selected_teacher_exact_tie": false,
+  "teacher_score_tie_count": 1,
+  "same_target": true,
+  "raw_reads": {
+    "compressed_input_read_bytes": 15705765,
+    "decoded_input_bytes": 217452251,
+    "files_opened": 2,
+    "files_completed": 2,
+    "raw_decode_passes_per_file": 1
+  },
+  "complete_trace_stream_decode": true,
+  "parsed_trace_lines_per_file": 1,
+  "cpu_forwards": 1,
+  "official_transitions": 0,
+  "new_games": 0,
+  "training_updates": 0,
+  "freeze_sha256": "c72f97f4202938690d5c0e48a89777d513992bea8dad4758a94c8c5e7d3f500c",
+  "parent_freeze_sha256": "f4c9bfbf9644178c696a9e7f6a40cc7d8948e749640ff36a84865f8fdb943f7e",
+  "method_sha256": "6acadbc07f778e854d650b36387caf23007e06bc6fd42b9b14bf122aa6a60213",
+  "parent_analysis_sha256": "47dc7bae7c0b82c1ac34287999c0c03eb59415611de59158b1f3b898a7111535",
+  "trace_sha256": {
+    "candidate": "672415e1663bc5efcb39cdab3c996f0bf7e107895a41461fa894919f7a8d414e",
+    "teacher_task": "1c8e284ced37e0ef88b792e00cc3374c26d8edf29593027a747a6f4fc5fb8baa"
+  },
+  "model_identity_check_limit": "Repeated hashes detect persistent change, not a transient replacement restored between checks",
+  "interpretation": "Post-hoc selected case; no generalization, feature causality or financial causality established",
+  "retry_allowed": false
+}

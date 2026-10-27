@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "post_hoc_not_holdout": true,
+  "candidate_count": 144,
+  "teacher_rank": 5,
+  "selected_minus_teacher_score": 0.9856224560525746,
+  "selected_teacher_exact_tie": false,
+  "same_target": true,
+  "complete_trace_stream_decode": true,
+  "parsed_trace_lines_per_file": 1,
+  "cpu_forwards": 1,
+  "gpu_forwards": 0,
+  "official_transitions": 0,
+  "new_games": 0,
+  "training_updates": 0,
+  "features_or_financial_causation_not_established": true,
+  "independent_review_recomputed_scores": false,
+  "individual_scores_features_models_and_traces_published": false,
+  "evidence_sha256": {
+    "root-decision.json": "a50f33652695ee9abccf818f72c7d09edc5d426977903eb26a299986b9f4940b",
+    "registration.json": "5f973740f74e9e4cd3b490a228b80b9ef06d28fcf8ed3d2978236b53c2e7ce2e",
+    "freeze.json": "c72f97f4202938690d5c0e48a89777d513992bea8dad4758a94c8c5e7d3f500c",
+    "pre-review.json": "77e592bd893185ca33f21a43d161dbe2597493d462f80b19a06a53f108903c6f",
+    "pre-execution-commit.json": "c7868e3e7abd3b7d76fbc4b29a4c5438bb01e933f453dc63f77cba7671717966",
+    "probe-started.json": "a04d0d33215cb774ddf09b51eef4d38100a6618aba0f9b25d8c4ed76c1a01e17",
+    "probe-result.json": "494e4e95881767e374e9092164a034c52744ba2204cdad0b4a4e3ba52231b1ed",
+    "independent-result-assessment.json": "6e2bc424b7139799918a7c1630bfed97e88a6c5deead534b40fc715c47399f2b"
+  }
+}

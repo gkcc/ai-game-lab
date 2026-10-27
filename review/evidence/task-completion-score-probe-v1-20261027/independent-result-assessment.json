@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "identities_sha256": {
+    "freeze.json": "c72f97f4202938690d5c0e48a89777d513992bea8dad4758a94c8c5e7d3f500c",
+    "registration.json": "5f973740f74e9e4cd3b490a228b80b9ef06d28fcf8ed3d2978236b53c2e7ce2e",
+    "pre-review.json": "77e592bd893185ca33f21a43d161dbe2597493d462f80b19a06a53f108903c6f",
+    "pre-execution-commit.json": "c7868e3e7abd3b7d76fbc4b29a4c5438bb01e933f453dc63f77cba7671717966",
+    "probe-started.json": "a04d0d33215cb774ddf09b51eef4d38100a6618aba0f9b25d8c4ed76c1a01e17",
+    "probe-result.json": "494e4e95881767e374e9092164a034c52744ba2204cdad0b4a4e3ba52231b1ed"
+  },
+  "parent_freeze_sha256": "f4c9bfbf9644178c696a9e7f6a40cc7d8948e749640ff36a84865f8fdb943f7e",
+  "parent_analysis_sha256": "47dc7bae7c0b82c1ac34287999c0c03eb59415611de59158b1f3b898a7111535",
+  "method_sha256": "6acadbc07f778e854d650b36387caf23007e06bc6fd42b9b14bf122aa6a60213",
+  "checks": [
+    "Frozen source, committed preregistration and parent evidence identities match; trace SHA fields match registered ledger identities",
+    "Receipt reports two complete trace streams decoded once, one JSON line parsed per file at step 2, one CPU forward and no official transitions, new games or training",
+    "Frozen code aligns callbacks in order until first input difference or selected-choice difference, requires identical input and teacher label; model schema and selected argmax checked",
+    "Receipt reports 144 candidates, teacher rank 5, selected minus teacher score 0.9856224560525746, no exact tie, one teacher-score tie count and same target",
+    "Ranking counts greater scores and earlier equal scores, equivalent to descending score then original order; numpy argmax chooses first maximal entry",
+    "Frozen code verifies model SHA during load and again after forward; no failure receipt exists"
+  ],
+  "limitations": [
+    "No trace, checkpoint, features or per-row logits read and no model inference, replay or game run during this assessment; individual ranks and scores were not independently recomputed",
+    "This is one outcome-selected post-hoc callback, not an independent holdout or generalizable model performance result",
+    "Score and rank differences do not establish causal influence of any individual feature or explain economic results",
+    "Hash checks cannot rule out a transient replacement restored between checks"
+  ]
+}

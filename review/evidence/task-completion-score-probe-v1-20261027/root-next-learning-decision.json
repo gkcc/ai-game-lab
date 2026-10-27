@@ -1,0 +1,6 @@
+{
+  "decision": "After publication, assess feasibility of one separately registered historical-training coverage diagnostic; do not continue selecting further details from the observed economic test case.",
+  "basis": "A single post-result callback confirms model ranking but cannot identify causal features or the reason for the economic decline. The training data mixes controller arms and has heavily imbalanced observed operations.",
+  "scope": "If accepted source metadata can support it, preselect at most 200 (source game, local cache ordinal) identities by hash before decoding the already consumed training cache. Clearly disclose that full cache decode may be needed and that game-segment attribution relies on accepted collector order and per-game counts, not independently persisted per-row game IDs.",
+  "constraints": "No new games, official replay, model scoring, training, PPO or DAgger. Do not read old test-panel rows or use their outcomes to choose samples. Preserve raw inputs and publish aggregate counts only; stop on identity or budget failure."
+}
