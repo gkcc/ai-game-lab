@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "scope": "one existing old training cache plus two synthetic groups",
+  "old_groups": 2253,
+  "old_candidate_rows": 118955,
+  "synthetic_groups": 2,
+  "total_groups": 2255,
+  "alignment_passed": true,
+  "trainer_inputs_validated": true,
+  "worker_reports_archive_snapshots": 1,
+  "probe_and_worker_job_cleanup_confirmed_by_receipts": true,
+  "gpu_training_run": false,
+  "models_read_by_stage": false,
+  "official_games_run": false,
+  "merged_archive_saved": false,
+  "old_cache_recomputed_by_independent_reviewer": false,
+  "preflight_values_individually_recorded": false,
+  "seed_exclusion_list_public": false,
+  "pre_execution_commit": "3955c3a5bdfd06c6421eaba7fac2818a444cc621",
+  "interpretation": "Data-interface compatibility only; no independent holdout, training success or competitive improvement.",
+  "limitations": [
+    "One snapshot count and preflight flow are supported by frozen code and receipts, not independent I/O monitoring.",
+    "The complete seed exclusion list and training cache remain local; public review cannot independently reconstruct them.",
+    "Worker NumPy version was not separately recorded; parent version and shared virtual environment were checked.",
+    "Job resource readings are samples, not hard limits or complete peaks.",
+    "Pre/post hashes cannot exclude transient replacement followed by restoration."
+  ],
+  "identities_sha256": {
+    "registration.json": "a47344d7b65c14354040d1d4c366b13aa4f07370fd22ec831a2f5f8e8a28622b",
+    "freeze.json": "7b3914ab50272d450a21448df2fd0a1caeb5821f01eccef82f0657c1bba6d734",
+    "pre-review.json": "f40fcf5afc4df11226b34d71cb66231c47367d2143bbafa39a1f96c77895ab4a",
+    "pre-execution-commit.json": "b083382d7f290f3d3adbbc48eed86307f630057a7698124f0a8d474077e2b238",
+    "started.json": "11206194e12ced5c51804281a20f27b57b4c3aa01929b96bf26cafb630c721bc",
+    "probe-started.json": "f853ea264e73dc12ae4134e883de165fcfb38f6927746fe6e8ed964e685c9d72",
+    "probe-result.json": "92086aadbacb05b693b1d2e9635ebc2e1c672dec19c11fb2ff03a544362b5cac",
+    "worker-started.json": "386c9703614b101c1ec19606facab1e54dd6330463d44b29aac458b0ae911d0e",
+    "worker-result.json": "48f324a7ce67b87464294ad27096e68bfc922c6da6445af5a886678416e350f4",
+    "result.json": "2cab1932348029a52c057af00901ef0bd74f53a2c621fda537bdde1c9efbbfb1",
+    "independent-result-assessment.json": "4d3df6f20cd3a1a92d479bb96a4b1d7e144124a1eba19db7e5f1f39237d85dff"
+  }
+}

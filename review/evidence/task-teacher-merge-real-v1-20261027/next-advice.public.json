@@ -1,0 +1,6 @@
+{
+  "source": "Independent subagent advice, not WebChat",
+  "recommendation": "Consider one fixed class-weighted BC method experiment using only the previously sealed training sample, not the failed panel.",
+  "basis": "Published conditional teacher-label counts are heavily imbalanced; a capped inverse-square-root weight is a fixed hypothesis, not evidence of improved play.",
+  "limits": "Keep the original model and trainer frozen; one separately registered fit, no selection using consumed holdout outcomes, no failed-panel replay or replacement. New competitive assessment requires newly registered independent seeds. Rare labels remain rare and may overfit."
+}

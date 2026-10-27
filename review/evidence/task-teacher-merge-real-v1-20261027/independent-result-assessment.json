@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "identities_sha256": {
+    "root-decision.json": "9fc5d13ce9c03324073755d3157397e948f1b8f5af8ff6c2b9fa3b893d2e48a2",
+    "registration.json": "a47344d7b65c14354040d1d4c366b13aa4f07370fd22ec831a2f5f8e8a28622b",
+    "freeze.json": "7b3914ab50272d450a21448df2fd0a1caeb5821f01eccef82f0657c1bba6d734",
+    "pre-review.json": "f40fcf5afc4df11226b34d71cb66231c47367d2143bbafa39a1f96c77895ab4a",
+    "pre-execution-commit.json": "b083382d7f290f3d3adbbc48eed86307f630057a7698124f0a8d474077e2b238",
+    "started.json": "11206194e12ced5c51804281a20f27b57b4c3aa01929b96bf26cafb630c721bc",
+    "probe-started.json": "f853ea264e73dc12ae4134e883de165fcfb38f6927746fe6e8ed964e685c9d72",
+    "probe-result.json": "92086aadbacb05b693b1d2e9635ebc2e1c672dec19c11fb2ff03a544362b5cac",
+    "worker-started.json": "386c9703614b101c1ec19606facab1e54dd6330463d44b29aac458b0ae911d0e",
+    "worker-result.json": "48f324a7ce67b87464294ad27096e68bfc922c6da6445af5a886678416e350f4",
+    "result.json": "2cab1932348029a52c057af00901ef0bd74f53a2c621fda537bdde1c9efbbfb1"
+  },
+  "pre_execution_commit": "3955c3a5bdfd06c6421eaba7fac2818a444cc621",
+  "checks": [
+    "Commit bytes and receipt identities match; seed role file hash and old/synthetic/holdout disjointness checked.",
+    "Probe reports venv and named Job membership; probe and worker Job receipts report successful exit, launcher reaped and zero Job members.",
+    "Worker reports one authenticated immutable archive snapshot, 2253 old groups and 118955 candidate rows plus two synthetic groups, with preserved alignment and trainer input checks.",
+    "Result and worker receipt contain only aggregate old totals, booleans and synthetic input shapes; no merged archive is produced by the reviewed code path.",
+    "The reviewed path does not read model weights or run fit, GPU training or official games."
+  ],
+  "limitations": [
+    "No cache, model or trace contents were opened and no worker was rerun; snapshot SHA verification and merge correctness rely on the worker receipt and frozen code, not independent recomputation.",
+    "Parent Python and NumPy versions were recorded; child package versions were not independently measured and package bytes were not frozen by this check.",
+    "The three 4 GiB preflight samples are enforced by code but their individual values are not independently recorded in the result.",
+    "Job resource limits are sampled rather than hard real-time caps; source authentication and common schema must continue to be checked in future use.",
+    "No generalization, training success or competitive benefit follows from this compatibility check."
+  ]
+}

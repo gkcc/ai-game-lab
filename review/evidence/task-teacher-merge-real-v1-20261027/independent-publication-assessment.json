@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "scope": "Aggregate evidence and publication-candidate review only",
+  "identities_sha256": {
+    "root-result-acceptance.json": "862c4597888c06ecfe6ad4037ad7559ee5e24e43b1571b863d9f7f4af234ac40",
+    "result.json": "2cab1932348029a52c057af00901ef0bd74f53a2c621fda537bdde1c9efbbfb1",
+    "worker-result.json": "48f324a7ce67b87464294ad27096e68bfc922c6da6445af5a886678416e350f4",
+    "independent-result-assessment.json": "4d3df6f20cd3a1a92d479bb96a4b1d7e144124a1eba19db7e5f1f39237d85dff"
+  },
+  "checks": [
+    "Root acceptance and worker/result/independent assessment identities and reported aggregate values agree.",
+    "Nine publication-candidate JSON files were reviewed for fields and path/email patterns; no absolute personal paths, PID fields or individual sample features were found.",
+    "The first-stage record correctly distinguishes reported single snapshot and Job cleanup from independent observation."
+  ],
+  "limitations": [
+    "The reviewer did not open or recompute the training cache, model or traces and did not rerun the worker.",
+    "Published digests can link records; pattern scanning is not proof of absolute privacy or anonymity.",
+    "Individual memory preflight values and child NumPy version were not separately recorded; Job sampling is not a hard resource limit.",
+    "Pre/post hashes cannot exclude transient replacement followed by restoration."
+  ]
+}

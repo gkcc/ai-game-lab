@@ -1,0 +1,87 @@
+{
+  "passed": true,
+  "freeze_sha256": "7b3914ab50272d450a21448df2fd0a1caeb5821f01eccef82f0657c1bba6d734",
+  "probe": {
+    "passed": true,
+    "primary_kind": null,
+    "stop_reason": null,
+    "job": {
+      "passed": true,
+      "assigned": true,
+      "resumed": true,
+      "launcher_reaped": true,
+      "job_members_zero": true,
+      "exit_code": 0,
+      "error_kind": null,
+      "cleanup_error_kind": null,
+      "stop_reason": null,
+      "peak_sampled_rss_bytes": 51855360,
+      "peak_sampled_job_commit_bytes": 20103168,
+      "rss_sampling_retries": 0,
+      "rss_complete_samples": 6
+    },
+    "probe": {
+      "passed": true,
+      "venv_verified": true,
+      "job_membership_verified": true,
+      "training_inputs_read": false,
+      "freeze_sha256": "7b3914ab50272d450a21448df2fd0a1caeb5821f01eccef82f0657c1bba6d734",
+      "marker_sha256": "f853ea264e73dc12ae4134e883de165fcfb38f6927746fe6e8ed964e685c9d72",
+      "retry_allowed": false
+    },
+    "worker_allowed": true,
+    "retry_allowed": false
+  },
+  "worker_job": {
+    "passed": true,
+    "assigned": true,
+    "resumed": true,
+    "launcher_reaped": true,
+    "job_members_zero": true,
+    "exit_code": 0,
+    "error_kind": null,
+    "cleanup_error_kind": null,
+    "stop_reason": null,
+    "peak_sampled_rss_bytes": 185831424,
+    "peak_sampled_job_commit_bytes": 937771008,
+    "rss_sampling_retries": 0,
+    "rss_complete_samples": 6
+  },
+  "worker_result_sha256": "48f324a7ce67b87464294ad27096e68bfc922c6da6445af5a886678416e350f4",
+  "identities": {
+    "freeze.json": "7b3914ab50272d450a21448df2fd0a1caeb5821f01eccef82f0657c1bba6d734",
+    "registration.json": "a47344d7b65c14354040d1d4c366b13aa4f07370fd22ec831a2f5f8e8a28622b",
+    "pre-execution-commit.json": "b083382d7f290f3d3adbbc48eed86307f630057a7698124f0a8d474077e2b238",
+    "started.json": "11206194e12ced5c51804281a20f27b57b4c3aa01929b96bf26cafb630c721bc",
+    "probe-started.json": "f853ea264e73dc12ae4134e883de165fcfb38f6927746fe6e8ed964e685c9d72",
+    "probe-result.json": "92086aadbacb05b693b1d2e9635ebc2e1c672dec19c11fb2ff03a544362b5cac",
+    "worker-started.json": "386c9703614b101c1ec19606facab1e54dd6330463d44b29aac458b0ae911d0e",
+    "worker-result.json": "48f324a7ce67b87464294ad27096e68bfc922c6da6445af5a886678416e350f4"
+  },
+  "aggregate": {
+    "passed": true,
+    "old_groups": 2253,
+    "old_candidate_rows": 118955,
+    "synthetic_groups": 2,
+    "total_groups": 2255,
+    "alignment_passed": true,
+    "old_input_shape_valid": true,
+    "synthetic_input_shapes": [
+      [
+        1,
+        373
+      ],
+      [
+        2,
+        373
+      ]
+    ],
+    "source_identity": "Caller must verify source SHA and common trusted schema before invocation",
+    "interpretation": "Synthetic interface check only; no GPU training or game outcome evaluated"
+  },
+  "archive_snapshot_reads": 1,
+  "no_training": true,
+  "no_model_reads": true,
+  "no_official_games": true,
+  "retry_allowed": false
+}
