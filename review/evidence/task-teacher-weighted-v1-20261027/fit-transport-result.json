@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "error_kind": null,
+  "stop_reason": null,
+  "failure_phase": null,
+  "cancel_error_kind": null,
+  "observation_error_kind": null,
+  "cleanup_error_kind": null,
+  "guard_read_error_kind": null,
+  "marker": {
+    "created": true,
+    "complete": true
+  },
+  "host_memory_samples": 194,
+  "windows_cleanup": {
+    "owned_instances_observed": 5,
+    "owned_instances_remaining": 0,
+    "reader_joined": true,
+    "launched_process_reaped": true
+  },
+  "linux_cleanup_proven": true,
+  "child_lifecycle": "handle_acquired",
+  "windows_job_controls_wsl": false,
+  "gpu_memory_hard_cap_claimed": false,
+  "retry_allowed": false
+}

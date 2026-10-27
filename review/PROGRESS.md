@@ -563,3 +563,7 @@ d1/d2/d3源码快照及哈希全部保留，未放宽允许映像或父子链约
 以旧训练样本固定 `min(2,sqrt(N/(5*n_k)))` 权重，独立训练器只改变真实组loss权重；固定旧初始化／训练seed和128更新。预留6个新评估seed，正式比赛另行登记。主机内存预检、采样取消与Linux session清理分开记录；此登记尚不证明GPU fit或竞技进步。
 
 [说明](../kaggriculture/TASK_TEACHER_WEIGHTED_V1.zh-CN.md) | [登记证据](evidence/task-teacher-weighted-v1-20261027/)
+
+### 固定类别权重 BC：技术 fit 通过
+
+事前登记7f5f63b；旧缓存一次快照自报与五类计数／权重一致，GPU完成128次同步更新且128次梯度非零，16组／1,128候选CPU-GPU对照最大误差约1.90e-6。Windows transport与Linux session收据分别报告清理通过；旧参考和作物模型字节哈希不变。无新比赛、自动晋级或竞技提升结论。

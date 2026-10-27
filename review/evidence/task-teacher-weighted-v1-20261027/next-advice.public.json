@@ -1,0 +1,8 @@
+{
+  "source": "Independent subagent advice, not WebChat",
+  "recommendation": "Use the first three preregistered reserved seeds for a bounded paired screen of weighted versus unweighted task models against round2 and market, swapping seats.",
+  "budget": "24 complete official games, 24 primary replays and one separately bounded replay; the other three reserved seeds are not an adaptive supplement.",
+  "metrics": "Per-seed paired own profit, opponent profit, cash margin and win/draw/loss score; fixed 10000 cluster bootstrap draws are descriptive only.",
+  "guardrails": "Each seed/opponent/seat own-profit and margin difference >= -2000; each seed/opponent seat-average >= -1000. Any missing or failed game terminates without retry or replacement.",
+  "limitations": "Three seed clusters cannot establish statistical significance or promotion. Sampled host memory and Windows Job cleanup are not hard realtime limits."
+}

@@ -1,0 +1,76 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "scope": "read-only assessment of technical training evidence, not model promotion",
+  "identities_sha256": {
+    "registration.json": "ed9ace658fdad78b2f72855cc8def1080fa6e89117e232ed649254ac643ef30a",
+    "freeze.json": "b366b58070afe9144940b4a4f28f5bfdda452df91d297638ae21683b34343193",
+    "pre-review.json": "a970e364663d57e9cd6bdd9e605c1ea6eb152f383c72ec81363b2bad1bff2da3",
+    "pre-execution-commit.json": "00511e6f0878b59b185f6e5675f4a6048dabc2bf03454282761858bb49192342",
+    "fit-started.json": "87ea6dd187dbb4a43a7202bbdbb133a885792e3f88c7241ae2bfd14168274249",
+    "gpu-guard-started.json": "cd9172170807c9c868f2dc02cfe1322147bd8ad639b7e4832ae6dadd6fa786a8",
+    "gpu-guard-result.json": "71c456b9f9d485d20033c253727769c1ba43bea444f52bdc4319ba90e4f20f80",
+    "fit-transport-result.json": "37e85c15bb4bedfcb8001150646db84ea71ac6926dad40f1e7458598535f50a0",
+    "fit-result.json": "d90ecf0b3d6084aca10aa73ff4ef1fea2c903e0644b96cf1002d5b8e71775b8f",
+    "model-seal.json": "8fafd060e95b1ac5e12d9024d593b9b88559b89a3b6f6f4b6ca87e8af7ae6498"
+  },
+  "progress_sha256": "b046d7691242a628c9a542e32c87dcd263ecfaa97f5024b91e5b8686cfd9dec7",
+  "checkpoint_sha256": "8fa08734e7d92857d800d680f2ca6833dc44d33ca611bd85f1034392e4aef67f",
+  "reference_checkpoint_sha256": "b9a0f293c354aa78468c531e85645f70fbea9075a9dace729856119d913b24df",
+  "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+  "pre_execution_commit": "7f5f63bb006a99855109f41813c1f77a7f01a7ad",
+  "facts": {
+    "archive_snapshot_reads_reported": 1,
+    "groups_selected_operation_counts": {
+      "DIG": 8,
+      "FERTILIZE": 84,
+      "HARVEST": 199,
+      "PLANT": 146,
+      "WATER": 1816
+    },
+    "class_weights": {
+      "DIG": 2.0,
+      "FERTILIZE": 2.0,
+      "HARVEST": 1.5047662968182804,
+      "PLANT": 1.7567872295366374,
+      "WATER": 0.49812423480891266
+    },
+    "synchronized_updates_reported": 128,
+    "nonzero_gradient_updates_reported": 128,
+    "weights_changed_reported": true,
+    "gpu_verified_reported": true,
+    "registered_device_kind_matches_private_configuration": true,
+    "cpu_gpu_parity": {
+      "groups": 16,
+      "candidate_rows": 1128,
+      "max_abs_error": 1.9013730927497363e-06,
+      "synchronized": true,
+      "requested_matmul_precision": "highest",
+      "hardware_precision_measured": false
+    },
+    "host_memory_samples": 194,
+    "windows_owned_instances_remaining": 0,
+    "windows_reader_joined": true,
+    "windows_launcher_reaped": true,
+    "linux_guard_child_reaped": true,
+    "linux_session_no_live_members": true,
+    "progress_update_completed_sequence_count": 128,
+    "progress_parity_completed_sequence_count": 16,
+    "no_automatic_promotion": true
+  },
+  "checks": [
+    "Source hashes and committed preregistration evidence matched; pre-review, freeze, markers, worker, guard, transport and model seal identities were consistent.",
+    "Archive and schema hashes, old training seed role, five operation counts and fixed weights matched registration; worker reports one snapshot and validates seeds before fit.",
+    "New checkpoint, old reference and crop checkpoints were byte-hashed only and matched their respective recorded identities.",
+    "Private launch identity and registered device kind were checked without publishing the device description; GPU device validation and synchronization are supported by frozen JAX code and worker receipts.",
+    "Progress reports sequential completion of 128 updates and 16 parity groups; both platform cleanup receipts passed."
+  ],
+  "limitations": [
+    "Worker and progress reports were inspected but per-update gradients, checkpoint contents, input arrays and parity outputs were not independently recomputed.",
+    "The reviewer did not open the training cache, trace, replay, raw process log, or decode or run any model; no fit, GPU operation or game was repeated.",
+    "Memory sampling is not a continuous or hard GPU-memory limit; Windows transport supervision is separate from Linux session cleanup.",
+    "The device check confirms the configured expected kind and the worker-reported JAX check, not independent hardware interrogation.",
+    "The checkpoint was trained on reused examples; no evidence here proves generalization, competitive gain or deployment readiness.",
+    "Privacy review covers aggregate output fields and omission of private paths, device descriptors, sample contents and raw logs; this is not an absolute anonymity guarantee."
+  ]
+}

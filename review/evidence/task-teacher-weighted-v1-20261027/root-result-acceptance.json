@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "scope": "one technical weighted fit on reused teacher-choice training samples",
+  "old_groups": 2253,
+  "operations": {
+    "DIG": 8,
+    "FERTILIZE": 84,
+    "HARVEST": 199,
+    "PLANT": 146,
+    "WATER": 1816
+  },
+  "class_weights": {
+    "DIG": 2.0,
+    "FERTILIZE": 2.0,
+    "HARVEST": 1.5047662968182804,
+    "PLANT": 1.7567872295366374,
+    "WATER": 0.49812423480891266
+  },
+  "archive_snapshot_reads_reported": 1,
+  "synchronized_updates": 128,
+  "nonzero_gradient_updates": 128,
+  "weights_changed": true,
+  "gpu_verified_by_worker": true,
+  "private_expected_gpu_kind_matches_user_requested_device": true,
+  "inference_parity": {
+    "groups": 16,
+    "candidate_rows": 1128,
+    "max_abs_error": 1.9013730927497363e-06,
+    "synchronized": true,
+    "requested_matmul_precision": "highest",
+    "hardware_precision_measured": false
+  },
+  "host_memory_samples": 194,
+  "windows_transport_cleanup_confirmed_by_receipt": true,
+  "linux_session_cleanup_confirmed_by_receipt": true,
+  "checkpoint_sha256": "8fa08734e7d92857d800d680f2ca6833dc44d33ca611bd85f1034392e4aef67f",
+  "reference_checkpoint_sha256": "b9a0f293c354aa78468c531e85645f70fbea9075a9dace729856119d913b24df",
+  "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+  "old_models_byte_hashes_preserved": true,
+  "pre_execution_commit": "7f5f63bb006a99855109f41813c1f77a7f01a7ad",
+  "competitive_gain_proven": false,
+  "automatic_promotion": false,
+  "no_new_games": true,
+  "seed_clusters_evaluated": 0,
+  "independent_recomputed_gradients_or_parity": false,
+  "limitations": [
+    "Training reuses prior examples; no independent competitive improvement or deployment readiness is established.",
+    "Actual batch exposure depends on candidate-width packing and is not inferred from global class counts.",
+    "One snapshot, device execution and cleanup are supported by frozen code and receipts, not independent GPU or I/O monitoring.",
+    "Host memory was sampled, not a hard system or GPU memory cap; Linux and Windows cleanup were checked separately.",
+    "Preflight sample values were not individually recorded; pre/post identities cannot exclude transient replacement."
+  ],
+  "identities_sha256": {
+    "registration.json": "ed9ace658fdad78b2f72855cc8def1080fa6e89117e232ed649254ac643ef30a",
+    "freeze.json": "b366b58070afe9144940b4a4f28f5bfdda452df91d297638ae21683b34343193",
+    "pre-review.json": "a970e364663d57e9cd6bdd9e605c1ea6eb152f383c72ec81363b2bad1bff2da3",
+    "pre-execution-commit.json": "00511e6f0878b59b185f6e5675f4a6048dabc2bf03454282761858bb49192342",
+    "fit-started.json": "87ea6dd187dbb4a43a7202bbdbb133a885792e3f88c7241ae2bfd14168274249",
+    "gpu-guard-started.json": "cd9172170807c9c868f2dc02cfe1322147bd8ad639b7e4832ae6dadd6fa786a8",
+    "gpu-guard-result.json": "71c456b9f9d485d20033c253727769c1ba43bea444f52bdc4319ba90e4f20f80",
+    "fit-transport-result.json": "37e85c15bb4bedfcb8001150646db84ea71ac6926dad40f1e7458598535f50a0",
+    "fit-result.json": "d90ecf0b3d6084aca10aa73ff4ef1fea2c903e0644b96cf1002d5b8e71775b8f",
+    "model-seal.json": "8fafd060e95b1ac5e12d9024d593b9b88559b89a3b6f6f4b6ca87e8af7ae6498",
+    "independent-result-assessment.json": "6fbdabab4f11b9940efa432be30c3f2f24f217d941c9644a96ee9f111d3ce05d"
+  }
+}

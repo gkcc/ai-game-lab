@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "scope": "aggregate evidence and publication candidate review",
+  "identities_sha256": {
+    "root-result-acceptance.json": "13f0a394de0fefe40603c6408a075a4eba48f40e0a0fef387190a2794745cf08",
+    "fit-result.json": "d90ecf0b3d6084aca10aa73ff4ef1fea2c903e0644b96cf1002d5b8e71775b8f",
+    "gpu-guard-result.json": "71c456b9f9d485d20033c253727769c1ba43bea444f52bdc4319ba90e4f20f80",
+    "fit-transport-result.json": "37e85c15bb4bedfcb8001150646db84ea71ac6926dad40f1e7458598535f50a0",
+    "independent-result-assessment.json": "6fbdabab4f11b9940efa432be30c3f2f24f217d941c9644a96ee9f111d3ce05d",
+    "model-seal.json": "8fafd060e95b1ac5e12d9024d593b9b88559b89a3b6f6f4b6ca87e8af7ae6498"
+  },
+  "findings": [
+    "Root acceptance matches fit, guard, transport, model seal and earlier independent assessment: 128 synchronized updates and 128 nonzero gradients reported; 16 groups and 1128 parity rows; fixed weights and both old checkpoint identities.",
+    "Worker receipts and frozen code support the GPU and cleanup claims; the device was not independently monitored.",
+    "194 host samples and separate Windows and Linux cleanup are recorded; individual preflight readings were not retained and no hard memory or GPU limit is proven.",
+    "No new games, holdout evaluation or automatic promotion is claimed.",
+    "Nine aggregate JSON candidates and the new Chinese result section were reviewed for literal token, private launch fields, user paths and raw sample or log content."
+  ],
+  "limitations": [
+    "No cache, model, trace, replay or raw process log was read during this review and no numerical result was independently recomputed.",
+    "Hashes and aggregate counts can be linkable; pattern-based privacy review cannot establish absolute anonymity or detect every sensitive representation.",
+    "Passed concerns evidence and publication-candidate review only, not generalization, competitive benefit or model deployment."
+  ]
+}
