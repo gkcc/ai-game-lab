@@ -1,0 +1,108 @@
+{
+  "passed": true,
+  "aggregate": {
+    "groups": 200,
+    "candidate_rows_per_model": 9694,
+    "candidate_rows_total": 19388,
+    "cpu_forwards": 400,
+    "models": {
+      "new": {
+        "top1_matches": 174,
+        "top1_rate": 0.87,
+        "by_teacher_operation": {
+          "DIG": {
+            "count": 1,
+            "top1_matches": 1,
+            "rank_sum": 1,
+            "top1_rate": 1.0,
+            "mean_teacher_rank": 1.0
+          },
+          "FERTILIZE": {
+            "count": 5,
+            "top1_matches": 1,
+            "rank_sum": 27,
+            "top1_rate": 0.2,
+            "mean_teacher_rank": 5.4
+          },
+          "HARVEST": {
+            "count": 16,
+            "top1_matches": 12,
+            "rank_sum": 25,
+            "top1_rate": 0.75,
+            "mean_teacher_rank": 1.5625
+          },
+          "PLANT": {
+            "count": 12,
+            "top1_matches": 9,
+            "rank_sum": 22,
+            "top1_rate": 0.75,
+            "mean_teacher_rank": 1.8333333333333333
+          },
+          "WATER": {
+            "count": 166,
+            "top1_matches": 151,
+            "rank_sum": 189,
+            "top1_rate": 0.9096385542168675,
+            "mean_teacher_rank": 1.1385542168674698
+          }
+        }
+      },
+      "old": {
+        "top1_matches": 151,
+        "top1_rate": 0.755,
+        "by_teacher_operation": {
+          "DIG": {
+            "count": 1,
+            "top1_matches": 1,
+            "rank_sum": 1,
+            "top1_rate": 1.0,
+            "mean_teacher_rank": 1.0
+          },
+          "FERTILIZE": {
+            "count": 5,
+            "top1_matches": 2,
+            "rank_sum": 28,
+            "top1_rate": 0.4,
+            "mean_teacher_rank": 5.6
+          },
+          "HARVEST": {
+            "count": 16,
+            "top1_matches": 11,
+            "rank_sum": 33,
+            "top1_rate": 0.6875,
+            "mean_teacher_rank": 2.0625
+          },
+          "PLANT": {
+            "count": 12,
+            "top1_matches": 6,
+            "rank_sum": 28,
+            "top1_rate": 0.5,
+            "mean_teacher_rank": 2.3333333333333335
+          },
+          "WATER": {
+            "count": 166,
+            "top1_matches": 131,
+            "rank_sum": 240,
+            "top1_rate": 0.7891566265060241,
+            "mean_teacher_rank": 1.4457831325301205
+          }
+        }
+      }
+    },
+    "paired": {
+      "both_correct": 143,
+      "new_only": 31,
+      "old_only": 8,
+      "both_wrong": 18
+    },
+    "rank_rule": "descending score, original candidate order breaks exact ties",
+    "scope": "New model trained on these groups; old model may not have seen them. Not independent holdout, generalization or economic causality"
+  },
+  "freeze_sha256": "beb11632d7050f26063baf89477b864e9908aea2f4b31890616e9024dcf0d5f6",
+  "cache_sha256": "9ffd92d7d6fce400acb2d59c99c596140a46a48cbd1206d28889a11d51f70dac",
+  "checkpoint_sha256": "b9a0f293c354aa78468c531e85645f70fbea9075a9dace729856119d913b24df",
+  "old_checkpoint_sha256": "47def382fff8738583d2359964d2e14bfbb41b53e9dc428d2882519ada8e1811",
+  "retry_allowed": false,
+  "identity_check_limit": "Model before and after hashes cannot exclude transient replacement restored between checks",
+  "memory_scope": "Immutable archive snapshot and decoded arrays add RAM; Job monitoring is sampled"
+}

@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "identities_sha256": {
+    "registration.json": "dfca38b1868e7b661261f62674bb0682fc82ef19c518b527bcabe7c09d129213",
+    "freeze.json": "beb11632d7050f26063baf89477b864e9908aea2f4b31890616e9024dcf0d5f6",
+    "pre-review.json": "9d1f95396080922275d3bcd50afba21d474f1b3d6dcfd6deb86e7e06f183943c",
+    "pre-execution-commit.json": "1c56887b525711f7c7e0c05866143fe6e5f91341a6d3cee5782ba1ff216a5cf0",
+    "started.json": "2034e3da01efcc30e9d6a6910c5b1854c7300028c5bde7265eb209a8b1c4775c",
+    "probe-started.json": "07307ca9047959c99915baa55d4f7ce2f141db9c5eaf9dc068bb327fcebb058b",
+    "probe-result.json": "efbda785b7958adffdab39ed45c7e5527b2b12c91abc85de38892b78a2bb6e7e",
+    "probe-supervision-result.json": "d41e170c65ae0477ef64e5732b5687b08fa5e6cd1ff8a1bb66e525b9ae347efc",
+    "worker-started.json": "9774dfa2a13e9050b1cef7ab00965efeb12c70c1335a97128549b7c6b790f3d2",
+    "worker-result.json": "1c94638aeba6dd0edfc22ca59399365b5f02c135fa4a1cb77541f42e7f7cf39c",
+    "result.json": "2773445ceae5d35d2fdde0d0fcfd021f8c72d19eb82f47ff50cf3a53f4e77e65"
+  },
+  "checks": [
+    "Pre-execution commit, frozen registration, started markers, probe and worker receipts are bound by matching hashes.",
+    "Synthetic probe reports project venv and current process membership in the named Job; both probe and worker supervisors report successful cleanup and reaped launcher.",
+    "Frozen code reads one immutable cache snapshot, checks its registered SHA, loads two registered models and checks their hashes after load and scoring; no holdout or game data is an input.",
+    "Worker reports 400 completed CPU forwards on 200 groups, 9694 candidate rows per model and 19388 total; runner progress reports 400 started and completed.",
+    "Operation counts total 200; model top-1 and per-operation rates/ranks recomputed from aggregate totals; paired counts 143 both, 31 new-only, 8 old-only and 18 neither are consistent."
+  ],
+  "findings": {
+    "new_top1": "174/200",
+    "old_top1": "151/200",
+    "teacher_water_groups": 166,
+    "teacher_fertilize_groups": 5
+  },
+  "limitations": [
+    "Receipt and frozen-code review only: no independent archive/model byte hash, selected-row reconstruction, score computation, inference, training or game.",
+    "One snapshot, model identity and CPU execution are worker-reported/control-flow facts, not independently observed execution.",
+    "The new model trained on these groups, old exposure may differ; 166 of 200 teacher operations are WATER and only five FERTILIZE, so no generalization or economic causality follows.",
+    "Job memory sampling is not a hard limit, thread settings are requests, and pre/post hashes cannot exclude transient replacement followed by restoration.",
+    "No held-out records, GPU, additional training or matches are used on the reviewed code path; absence is based on scope and receipts."
+  ]
+}

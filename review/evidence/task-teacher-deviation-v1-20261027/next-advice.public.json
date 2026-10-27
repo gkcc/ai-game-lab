@@ -1,0 +1,7 @@
+{
+  "source": "Independent subagent advice, not WebChat",
+  "recommendation": "Consider a separately preregistered diagnostic using two previously recorded development trajectories that were not among the eight training source games, with the same two training seeds.",
+  "selection": "Fix one market-opponent, seat-zero, teacher-task trajectory per seed by identity before reading; verify the accepted actor audit and trace hashes. Read each trace at most once, select up to 200 groups by a fixed identity rule, and limit two-model CPU inference to 400 calls and 120000 candidate rows.",
+  "stopping_rule": "Stop without replacement if source identity, teacher labels, candidate availability, reading limits or inference fail. No training or new games.",
+  "limits": "These trajectories share training seeds and old-model exposure is unknown. They are a development diagnostic, not a new-seed holdout, win-rate validation, generalization proof or causal explanation. Label sufficiency has not yet been checked."
+}

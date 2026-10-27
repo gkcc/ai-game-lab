@@ -1,0 +1,5 @@
+{
+  "decision": "After publishing this in-training comparison, inspect the feasibility of a separately registered, bounded comparison on two fixed unused development trajectories.",
+  "basis": "Training-sample agreement improved while the two-seed game screen failed its guardrail; development-state comparison may clarify teacher imitation without reusing consumed holdout results as tuning data.",
+  "boundaries": "Same-seed development trajectories are not independent holdout evidence. No extra games, training, strategy changes, replacement samples or use of raw holdout data."
+}
