@@ -1,0 +1,20 @@
+{
+  "record_type": "parent reconstruction from captured command result and frozen source, not a worker receipt",
+  "observed_exit_code": 1,
+  "observed_error_kind": "ValueError",
+  "start_marker_exists": true,
+  "guard_started_exists": false,
+  "transport_log_exists": false,
+  "worker_result_exists": false,
+  "run_result_exists": false,
+  "frozen_source_sha256": "c0eddac472e1f2a2d6d13a772a4b1370b7aaea032597c462992c5eebb020afa2",
+  "control_flow": "Six targets assigned five values after start marker and before CapturedProcess; failure is outside the try block.",
+  "binary_hash_reads_during_verification": true,
+  "model_or_cache_decoded": false,
+  "gpu_process_started": false,
+  "gpu_forwards": 0,
+  "training_updates": 0,
+  "new_games": 0,
+  "official_transitions": 0,
+  "retry_allowed": false
+}

@@ -1,0 +1,8 @@
+{
+  "source": "independent gpt-6.1-terra subagent, not WebChat",
+  "recommendation": "Create a separately frozen corrected entry version; retain the consumed failed attempt and do not refund or retry it.",
+  "repair": "Correct the missing initializer and include all setup after the attempt marker in exception and cleanup handling so failures retain sanitized receipts.",
+  "synthetic_regression": "Exercise the actual start entry with simulated transport; check a normal launch and injected configuration, process creation and running failures, including receipts, correct cleanup and no retry.",
+  "new_budget": "One new versioned diagnostic execution on the same fixed first 16 completed groups, at most 8192 candidate rows and 16 GPU group forwards, with the original numeric tolerances and no gradient, test panel, game or official engine step.",
+  "interpretation": "An inference comparison only; it cannot establish the unique cause of the prior training ValueError or model game strength."
+}

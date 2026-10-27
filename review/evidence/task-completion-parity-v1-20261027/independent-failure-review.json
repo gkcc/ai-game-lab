@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "freeze_sha256": "4aa6eb73e23b4ba72ac25b327ff2c94002a3e35ce8c5b9c77ad5dfecf3f1ec6d",
+  "registration_sha256": "4a6c9eac66d4bd24ffd0019575e5d8596f4ae44d7dd2386553d1bb8ddffff3a4",
+  "run_started_sha256": "c18fc2bb79c160cf0e71de78f709dbbdcbd8e8ce79ec04abdd7e567f48186c2f",
+  "run_source_sha256": "c0eddac472e1f2a2d6d13a772a4b1370b7aaea032597c462992c5eebb020afa2",
+  "findings": [
+    "Frozen run.py line 117 assigns five values to six variables, raising ValueError after run-started marker and before entering try or constructing CapturedProcess",
+    "No guard-started marker, transport log, worker result or failure, progress file, or run-result exists; frozen source and marker bind the consumed attempt",
+    "Because the error is outside try, this path cannot write run-result; the reported ValueError is consistent with the deterministic source error, but startup output was supplied by the caller and was not independently located as an artifact",
+    "The source path reaches ready and verify before the marker: these hash-read the previous checkpoint and training cache but do not decode them; start also reads the private launch configuration to construct a command",
+    "For this deterministic path, no WSL transport or owned worker is launched, and no GPU forward, model/cache decode, gradient, official engine step or new game is performed; absence of files alone is not system-wide monitoring proof",
+    "Registration and marker specify retry_allowed false; the existing attempt is consumed and must not be retried"
+  ],
+  "minimal_fix": "Add the missing sixth initializer and cover setup/launch failures with a bounded failure receipt; require a separately authorized and frozen diagnostic attempt rather than modifying or reusing this consumed one.",
+  "synthetic_regression": "Mock readiness, launch metadata and CapturedProcess; exercise the actual start entry from marker through launch, and separately inject setup and launch exceptions to verify a failure receipt, no worker launch when setup fails, and no retry.",
+  "limitations": [
+    "Read frozen source, public metadata and file existence only; did not read checkpoint, cache, raw traces, or private launch configuration during this review",
+    "No diagnostic, GPU, model inference, training or engine was run; reported startup output was not available as a persisted independent artifact"
+  ]
+}

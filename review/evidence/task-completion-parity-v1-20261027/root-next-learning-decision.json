@@ -1,0 +1,9 @@
+{
+  "decision": "Prepare a separately frozen corrected parity entry with one new execution attempt; the prior attempt remains consumed and unchanged.",
+  "confirmed_defect": "Six startup variables received five values after the start marker; setup occurred outside the error receipt handler.",
+  "implementation": "Keep the old version intact; correct startup initialization and capture setup and launch failures with explicit phase and cleanup states. Test the actual start function with simulated success and injected configuration, spawn and runtime failures before freezing.",
+  "fixed_inputs": "Same SHA-bound unsealed checkpoint and training cache, first sixteen completed groups in recorded order; no replacement.",
+  "budget": "One new attempt; at most sixteen GPU group forwards and 8192 candidate rows; no gradients, training, held-out input, new games or official transitions.",
+  "acceptance": "GPU identity and source hashes match, all selected outputs are finite, report the fixed allclose and first-argmax comparisons and proven process cleanup; mismatch is a diagnostic result, never model admission.",
+  "privacy": "Raw arrays, weights, per-candidate logits, device configuration and private logs stay local."
+}

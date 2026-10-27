@@ -322,3 +322,13 @@ Linux监督阶段1.329秒，整个自有进程组已清理并回收；原partial
 后续建议另立固定16组的无梯度数值诊断，绑定输入与模型哈希，报告GPU/CPU误差和首选差异；诊断不能证明原错误的唯一原因。原始轨迹、特征、权重、设备配置和日志不公开。
 
 [报告](../kaggriculture/TASK_COMPLETION_BC_V1.zh-CN.md) | [独立失败复核](evidence/task-completion-bc-v1-20261027/independent-failure-review.public.json)
+
+## 固定16组 GPU/CPU 对照：启动失败复核
+
+独立子代理（不是WebChat）确认冻结启动源码在写标记后将五个值赋给六个变量，错误位于try之外，无法生成原计划的失败收据。调用方观察到ValueError；没有独立保存的原始启动输出。源代码路径及缺失的worker产物支持未执行GPU前向，但身份校验已哈希读取模型与缓存。
+
+预登记的总截止时间前未完成发布，逾时补记与失败结果应一并核对。
+
+请检查失败闭合是否忠实、旧尝试是否保留，以及后续新版本能否覆盖真实启动入口的合成成功、设置异常、进程创建异常与运行异常；新版本不退款旧尝试，不应推断前次训练错误或模型实力。
+
+[报告](../kaggriculture/TASK_COMPLETION_PARITY_V1.zh-CN.md) | [独立失败复核](evidence/task-completion-parity-v1-20261027/independent-failure-review.json)
