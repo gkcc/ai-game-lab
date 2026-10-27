@@ -1,0 +1,42 @@
+{
+  "schema": "task-action-impact-runner-implementation-verification-v1",
+  "passed": true,
+  "verified_utc": "2026-10-26T23:52:15.817765+00:00",
+  "checks": {
+    "both_modules_parse": true,
+    "metadata_prepare": {
+      "games": 96,
+      "triads": 32,
+      "selected_files": 192,
+      "compressed_bytes_from_stat": 854529469,
+      "metadata_bytes_read": 664526
+    },
+    "raw_file_guard_rejected_before_open": true,
+    "worker_process_and_model_import_guards": true,
+    "actual_hidden_captured_child": true,
+    "working_set_and_cpu_measurement_available": true,
+    "single_cpu_affinity_setter_accepted": true,
+    "bounded_stdout_capture_and_join": true,
+    "exclusive_receipt_refuses_overwrite": true,
+    "metadata_cap_rejects_before_read": true,
+    "scratch_marker_registered_actual_child_then_cleared_after_reap": true,
+    "actual_scratch_context_exit_deleted_owned_run": true,
+    "pure_dependency_package_entries_exist": true,
+    "ordinary_output_write_reserve_bytes": 1114112,
+    "terminal_receipt_write_reserve_bytes": 0
+  },
+  "scratch_cleaned": true,
+  "owned_child_reaped": true,
+  "synthetic_processes": 1,
+  "analysis_workers_started": 0,
+  "cpu_workers_per_synthetic_probe": 1,
+  "selected_raw_reads": 0,
+  "model_weight_reads": 0,
+  "neural_forwards": 0,
+  "training_updates": 0,
+  "official_transitions": 0,
+  "new_games": 0,
+  "gpu_seconds": 0,
+  "source_freeze_performed": false,
+  "scope": "Metadata preparation and synthetic process/guard checks only. The actual raw analysis has not run."
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "task-action-impact-freeze-v1",
+  "frozen_utc": "2026-10-26T23:53:09.227917+00:00",
+  "registration_sha256": "64f971fbd928bb2fd8fa0ba7a3e82e031a8c1ca9b9d7467b904ccde3fc3f7116",
+  "input_manifest_sha256": "3dab4b6381ec4aded6bd674a16db672b3e4c44f8db0ed9116d2f9c5fcf119dbd",
+  "source_sha256": {
+    "learning/task_action_impact_diagnostic_v1/__init__.py": "2049e94f1fe2891136fc09817309da1b3bc054bba42b23bd6f5cf06ac176921d",
+    "learning/task_action_impact_diagnostic_v1/analysis.py": "f0263611bd3bddc1f9028938288a0a1ec4406ebbc3d27df2ec17772bbb581499",
+    "learning/task_action_impact_diagnostic_v1/experiment.py": "db5052fe042d8a39c10bcc12054278f99a4605e44c569ae242fe2c8cf106cdf2",
+    "learning/task_action_impact_diagnostic_v1/run.py": "3cc721420b117937a876112df73b1095feb5d7948e4255294a334dbfcb33cda7",
+    "learning/task_action_impact_diagnostic_v1/test_analysis.py": "a1598504c08e832a224798ef89e8c1a98c9a6c1f9ee5ba4eb6fdb3e450039684",
+    "decision/__init__.py": "292c33c078490e76cf6576d8922f527acf23d59a01b8f523f7a1b595cbe15d0e",
+    "decision/api.py": "3ef4025bde61d240b298cbe4d31291f25021baaf5b396f5540bbfcdda4231917",
+    "decision/semantics.py": "9ac62d0df7adca84c0feff805b2979bb45f9f9f4c2064d1e2b5c48efd3e779a5",
+    "learning/task_bc_error_diagnostics_v1/__init__.py": "7fe73d92a6f435034e2de4fc239e202b38b383508f2c426bd389dd7565f4a381",
+    "learning/task_bc_error_diagnostics_v1/shadow.py": "095f6a896c259f840af4c59adc922cc9782fe69aafd3b0df7ea04df9160c3251",
+    "learning/task_anchor_once_v1/__init__.py": "4978d6f44ce420931cddf54f31bcff0d06ce9fd8a036c92b590a69cad07e6c94",
+    "learning/task_anchor_once_v1/processes.py": "9711f7d38e1494dc2cceef718482bef9470d7416a8d07284f900e487c1dc1092"
+  },
+  "raw_reads": 0
+}

@@ -1,0 +1,5168 @@
+{
+  "schema": "task-action-impact-input-manifest-v1",
+  "previous_root": "artifacts/task-anchor-reentry-v1-20261027",
+  "selection_role": "Historical post-result development diagnosis; former holdout seeds are already seen",
+  "games": [
+    {
+      "key": "holdout-2240228007-round2-0-baseline",
+      "seed": 2240228007,
+      "opponent": "round2",
+      "side": 0,
+      "arm": "baseline",
+      "replay": {
+        "path": "games/holdout-2240228007-round2-0-baseline/replay.json.gz",
+        "size": 1215563,
+        "sha256": "217e63cdf7e4df690670e7c7757a0c38f3cd087918df35e0346e28348db3e887"
+      },
+      "trace": {
+        "path": "traces/holdout-2240228007-round2-0-baseline.jsonl.gz",
+        "size": 7697023,
+        "sha256": "118ee3455eafcf322366aadac7485a1992e782a842d66e1e16fc23c71970943d"
+      },
+      "expected": {
+        "bank": 43371.0,
+        "opponent_bank": 47232.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 40371.0,
+        "opponent_net_profit": 44232.0,
+        "margin": -3861.0,
+        "score": 0.0,
+        "banks": [
+          43371.0,
+          47232.0
+        ],
+        "rewards": [
+          43371.0,
+          47232.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-2240228007-round2-0-candidate",
+      "seed": 2240228007,
+      "opponent": "round2",
+      "side": 0,
+      "arm": "candidate",
+      "replay": {
+        "path": "games/holdout-2240228007-round2-0-candidate/replay.json.gz",
+        "size": 1216214,
+        "sha256": "4904ced2d4d8de614635f108a1103f021f4f05dd22b1c4d1af5a78aa47d91bd9"
+      },
+      "trace": {
+        "path": "traces/holdout-2240228007-round2-0-candidate.jsonl.gz",
+        "size": 7812083,
+        "sha256": "7f209abd8f5c0622b58b9d87d83e21deed63d524eb674f9b7b402b38f3fc712e"
+      },
+      "expected": {
+        "bank": 45170.0,
+        "opponent_bank": 45405.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 42170.0,
+        "opponent_net_profit": 42405.0,
+        "margin": -235.0,
+        "score": 0.0,
+        "banks": [
+          45170.0,
+          45405.0
+        ],
+        "rewards": [
+          45170.0,
+          45405.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-2240228007-round2-0-teacher_task",
+      "seed": 2240228007,
+      "opponent": "round2",
+      "side": 0,
+      "arm": "teacher_task",
+      "replay": {
+        "path": "games/holdout-2240228007-round2-0-teacher_task/replay.json.gz",
+        "size": 1214859,
+        "sha256": "8c9396b932ae26e395342ab4356a9c5946acf0827abaa5a40cd5521ee1909935"
+      },
+      "trace": {
+        "path": "traces/holdout-2240228007-round2-0-teacher_task.jsonl.gz",
+        "size": 7726024,
+        "sha256": "8bf8fca92e6c88c407444f26000e2b652c527ce59751ecd20c9edea7360076a2"
+      },
+      "expected": {
+        "bank": 45157.0,
+        "opponent_bank": 45405.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 42157.0,
+        "opponent_net_profit": 42405.0,
+        "margin": -248.0,
+        "score": 0.0,
+        "banks": [
+          45157.0,
+          45405.0
+        ],
+        "rewards": [
+          45157.0,
+          45405.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-2240228007-round2-1-baseline",
+      "seed": 2240228007,
+      "opponent": "round2",
+      "side": 1,
+      "arm": "baseline",
+      "replay": {
+        "path": "games/holdout-2240228007-round2-1-baseline/replay.json.gz",
+        "size": 1223441,
+        "sha256": "48decb46cd55a6ef8953641267342b5d829eb051c7c38d0d3d02c7bbee4c9c05"
+      },
+      "trace": {
+        "path": "traces/holdout-2240228007-round2-1-baseline.jsonl.gz",
+        "size": 7696011,
+        "sha256": "4cddfb056aded3b70ed72811c655efee87ff0414ae724cfd93f22ee79bccddc0"
+      },
+      "expected": {
+        "bank": 43371.0,
+        "opponent_bank": 47232.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 40371.0,
+        "opponent_net_profit": 44232.0,
+        "margin": -3861.0,
+        "score": 0.0,
+        "banks": [
+          47232.0,
+          43371.0
+        ],
+        "rewards": [
+          47232.0,
+          43371.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-2240228007-round2-1-candidate",
+      "seed": 2240228007,
+      "opponent": "round2",
+      "side": 1,
+      "arm": "candidate",
+      "replay": {
+        "path": "games/holdout-2240228007-round2-1-candidate/replay.json.gz",
+        "size": 1228164,
+        "sha256": "9adeaf1154cb1d35f546d020b17c7d0f4022e1f89ec87241fd67a504d3513a67"
+      },
+      "trace": {
+        "path": "traces/holdout-2240228007-round2-1-candidate.jsonl.gz",
+        "size": 7810977,
+        "sha256": "80290286c3271a9c71462ed4c3de6db62b59a4d71e2900a7d73073e1333c6f30"
+      },
+      "expected": {
+        "bank": 45170.0,
+        "opponent_bank": 45405.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 42170.0,
+        "opponent_net_profit": 42405.0,
+        "margin": -235.0,
+        "score": 0.0,
+        "banks": [
+          45405.0,
+          45170.0
+        ],
+        "rewards": [
+          45405.0,
+          45170.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-2240228007-round2-1-teacher_task",
+      "seed": 2240228007,
+      "opponent": "round2",
+      "side": 1,
+      "arm": "teacher_task",
+      "replay": {
+        "path": "games/holdout-2240228007-round2-1-teacher_task/replay.json.gz",
+        "size": 1220587,
+        "sha256": "93f8cf5fcd77ec7076f530e42e57243cba06c44e40698d13ed30a2f588070995"
+      },
+      "trace": {
+        "path": "traces/holdout-2240228007-round2-1-teacher_task.jsonl.gz",
+        "size": 7725038,
+        "sha256": "79f93e041ace86acc0ae8018948cfcb850ff9abc66a07824048eddf5ba645e35"
+      },
+      "expected": {
+        "bank": 45157.0,
+        "opponent_bank": 45405.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 42157.0,
+        "opponent_net_profit": 42405.0,
+        "margin": -248.0,
+        "score": 0.0,
+        "banks": [
+          45405.0,
+          45157.0
+        ],
+        "rewards": [
+          45405.0,
+          45157.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-2240228007-market-0-baseline",
+      "seed": 2240228007,
+      "opponent": "market",
+      "side": 0,
+      "arm": "baseline",
+      "replay": {
+        "path": "games/holdout-2240228007-market-0-baseline/replay.json.gz",
+        "size": 1312477,
+        "sha256": "cbd873111ec676e1a794138f3932345a2b436b6ccd7c8466feb3f6f84a9b2080"
+      },
+      "trace": {
+        "path": "traces/holdout-2240228007-market-0-baseline.jsonl.gz",
+        "size": 7824722,
+        "sha256": "94f0bcd51bb0e712acd8cfc3178c8c6301b48df67f6f979aaefed17e3e3b00a4"
+      },
+      "expected": {
+        "bank": 49432.0,
+        "opponent_bank": 44671.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 46432.0,
+        "opponent_net_profit": 41671.0,
+        "margin": 4761.0,
+        "score": 1.0,
+        "banks": [
+          49432.0,
+          44671.0
+        ],
+        "rewards": [
+          49432.0,
+          44671.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-2240228007-market-0-candidate",
+      "seed": 2240228007,
+      "opponent": "market",
+      "side": 0,
+      "arm": "candidate",
+      "replay": {
+        "path": "games/holdout-2240228007-market-0-candidate/replay.json.gz",
+        "size": 1311561,
+        "sha256": "379f0177611e558dbd9692bd34316d7ed3c4b1ba7ca960aec7180b7e8431f869"
+      },
+      "trace": {
+        "path": "traces/holdout-2240228007-market-0-candidate.jsonl.gz",
+        "size": 7847179,
+        "sha256": "f7cdb0810edac98ae80a62ba842338ab5a788654932629f950f8e2172747e979"
+      },
+      "expected": {
+        "bank": 49432.0,
+        "opponent_bank": 44671.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 46432.0,
+        "opponent_net_profit": 41671.0,
+        "margin": 4761.0,
+        "score": 1.0,
+        "banks": [
+          49432.0,
+          44671.0
+        ],
+        "rewards": [
+          49432.0,
+          44671.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-2240228007-market-0-teacher_task",
+      "seed": 2240228007,
+      "opponent": "market",
+      "side": 0,
+      "arm": "teacher_task",
+      "replay": {
+        "path": "games/holdout-2240228007-market-0-teacher_task/replay.json.gz",
+        "size": 1310417,
+        "sha256": "4b6cdce1d939092501e332f8d171be113d8c64e200b42ade0e9f4383847ca6bc"
+      },
+      "trace": {
+        "path": "traces/holdout-2240228007-market-0-teacher_task.jsonl.gz",
+        "size": 7776198,
+        "sha256": "518943a7cee00e429c8e61dc842926e9c0871f4a04a148ed49b1162291f092af"
+      },
+      "expected": {
+        "bank": 49432.0,
+        "opponent_bank": 44671.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 46432.0,
+        "opponent_net_profit": 41671.0,
+        "margin": 4761.0,
+        "score": 1.0,
+        "banks": [
+          49432.0,
+          44671.0
+        ],
+        "rewards": [
+          49432.0,
+          44671.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-2240228007-market-1-baseline",
+      "seed": 2240228007,
+      "opponent": "market",
+      "side": 1,
+      "arm": "baseline",
+      "replay": {
+        "path": "games/holdout-2240228007-market-1-baseline/replay.json.gz",
+        "size": 1325379,
+        "sha256": "94e7cbccbe36f6f8a3766f0139628fecf71fc66515c292701c6a55025165a0ab"
+      },
+      "trace": {
+        "path": "traces/holdout-2240228007-market-1-baseline.jsonl.gz",
+        "size": 7829920,
+        "sha256": "ddc1e7f2299301220ae5a8d12808c12a52516a7465fc46ae2dbf4c452c43a516"
+      },
+      "expected": {
+        "bank": 49432.0,
+        "opponent_bank": 44671.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 46432.0,
+        "opponent_net_profit": 41671.0,
+        "margin": 4761.0,
+        "score": 1.0,
+        "banks": [
+          44671.0,
+          49432.0
+        ],
+        "rewards": [
+          44671.0,
+          49432.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-2240228007-market-1-candidate",
+      "seed": 2240228007,
+      "opponent": "market",
+      "side": 1,
+      "arm": "candidate",
+      "replay": {
+        "path": "games/holdout-2240228007-market-1-candidate/replay.json.gz",
+        "size": 1319318,
+        "sha256": "720b73ec7c605a557483f523f63dbf0cb0a1a2caa23c19037f8d0f425a4a4e82"
+      },
+      "trace": {
+        "path": "traces/holdout-2240228007-market-1-candidate.jsonl.gz",
+        "size": 7852785,
+        "sha256": "97d8ffd2d74bddfb6d30be24762fabb36dad3c0e32de13b2d0d9590e8cf4ac65"
+      },
+      "expected": {
+        "bank": 49432.0,
+        "opponent_bank": 44671.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 46432.0,
+        "opponent_net_profit": 41671.0,
+        "margin": 4761.0,
+        "score": 1.0,
+        "banks": [
+          44671.0,
+          49432.0
+        ],
+        "rewards": [
+          44671.0,
+          49432.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-2240228007-market-1-teacher_task",
+      "seed": 2240228007,
+      "opponent": "market",
+      "side": 1,
+      "arm": "teacher_task",
+      "replay": {
+        "path": "games/holdout-2240228007-market-1-teacher_task/replay.json.gz",
+        "size": 1317938,
+        "sha256": "c8776dab69bdb8586b185248b2982039b4c0cc5572294564924c9ba241734177"
+      },
+      "trace": {
+        "path": "traces/holdout-2240228007-market-1-teacher_task.jsonl.gz",
+        "size": 7781671,
+        "sha256": "ca581150ddb9c6fa3a44947fe3aac9ed040488a9b2194e69633e6db67abdf699"
+      },
+      "expected": {
+        "bank": 49432.0,
+        "opponent_bank": 44671.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 46432.0,
+        "opponent_net_profit": 41671.0,
+        "margin": 4761.0,
+        "score": 1.0,
+        "banks": [
+          44671.0,
+          49432.0
+        ],
+        "rewards": [
+          44671.0,
+          49432.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-149009525-round2-0-baseline",
+      "seed": 149009525,
+      "opponent": "round2",
+      "side": 0,
+      "arm": "baseline",
+      "replay": {
+        "path": "games/holdout-149009525-round2-0-baseline/replay.json.gz",
+        "size": 1210329,
+        "sha256": "78f9d4375508f9f48f49d6c8827ca2acd4dadeb06618e6920314489e0cf4dac7"
+      },
+      "trace": {
+        "path": "traces/holdout-149009525-round2-0-baseline.jsonl.gz",
+        "size": 7716965,
+        "sha256": "c31f548b407acfa5753b5d61ab895f7a96df461de16d3453bb001a82e5e227fb"
+      },
+      "expected": {
+        "bank": 35489.0,
+        "opponent_bank": 42094.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 32489.0,
+        "opponent_net_profit": 39094.0,
+        "margin": -6605.0,
+        "score": 0.0,
+        "banks": [
+          35489.0,
+          42094.0
+        ],
+        "rewards": [
+          35489.0,
+          42094.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-149009525-round2-0-candidate",
+      "seed": 149009525,
+      "opponent": "round2",
+      "side": 0,
+      "arm": "candidate",
+      "replay": {
+        "path": "games/holdout-149009525-round2-0-candidate/replay.json.gz",
+        "size": 1213390,
+        "sha256": "b1ec3a7b5df7906986ce94d8b05ef1161706816dda91f1106afd6e3028eef709"
+      },
+      "trace": {
+        "path": "traces/holdout-149009525-round2-0-candidate.jsonl.gz",
+        "size": 7719295,
+        "sha256": "2a04e60c2148a85f54ba99e7bcffaa78dc7f473a2563b0678de4824c37e46cbb"
+      },
+      "expected": {
+        "bank": 35489.0,
+        "opponent_bank": 42094.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 32489.0,
+        "opponent_net_profit": 39094.0,
+        "margin": -6605.0,
+        "score": 0.0,
+        "banks": [
+          35489.0,
+          42094.0
+        ],
+        "rewards": [
+          35489.0,
+          42094.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-149009525-round2-0-teacher_task",
+      "seed": 149009525,
+      "opponent": "round2",
+      "side": 0,
+      "arm": "teacher_task",
+      "replay": {
+        "path": "games/holdout-149009525-round2-0-teacher_task/replay.json.gz",
+        "size": 1211794,
+        "sha256": "c2ca119597ebcf7bd384ea2ed5f385739022cbe9d1c23b8c809c3fd5a8a29d25"
+      },
+      "trace": {
+        "path": "traces/holdout-149009525-round2-0-teacher_task.jsonl.gz",
+        "size": 7678546,
+        "sha256": "fbcadb8f6860e3e8dee98bb186f3b5bf6cfc0c0fb63e9537c04748458463f730"
+      },
+      "expected": {
+        "bank": 38312.0,
+        "opponent_bank": 39961.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 35312.0,
+        "opponent_net_profit": 36961.0,
+        "margin": -1649.0,
+        "score": 0.0,
+        "banks": [
+          38312.0,
+          39961.0
+        ],
+        "rewards": [
+          38312.0,
+          39961.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-149009525-round2-1-baseline",
+      "seed": 149009525,
+      "opponent": "round2",
+      "side": 1,
+      "arm": "baseline",
+      "replay": {
+        "path": "games/holdout-149009525-round2-1-baseline/replay.json.gz",
+        "size": 1219914,
+        "sha256": "370995a042030d941d1c2bd279f415ad77d6c9e4f4fcd8e9ca552fba5d39f2c8"
+      },
+      "trace": {
+        "path": "traces/holdout-149009525-round2-1-baseline.jsonl.gz",
+        "size": 7716938,
+        "sha256": "01fa1f21b18f13fecff4d4b4b02b121e4ff3a00c120439ba474253f0f2380c2c"
+      },
+      "expected": {
+        "bank": 35489.0,
+        "opponent_bank": 42094.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 32489.0,
+        "opponent_net_profit": 39094.0,
+        "margin": -6605.0,
+        "score": 0.0,
+        "banks": [
+          42094.0,
+          35489.0
+        ],
+        "rewards": [
+          42094.0,
+          35489.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-149009525-round2-1-candidate",
+      "seed": 149009525,
+      "opponent": "round2",
+      "side": 1,
+      "arm": "candidate",
+      "replay": {
+        "path": "games/holdout-149009525-round2-1-candidate/replay.json.gz",
+        "size": 1220344,
+        "sha256": "df323f2c41ee30c8dc03ea1e7be4626330442bafe83537eea5a1449c41595c6b"
+      },
+      "trace": {
+        "path": "traces/holdout-149009525-round2-1-candidate.jsonl.gz",
+        "size": 7719134,
+        "sha256": "c9285c941b1abf69298abd5030cec35a9c1bacbc746e91a18330bc77b426b899"
+      },
+      "expected": {
+        "bank": 35489.0,
+        "opponent_bank": 42094.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 32489.0,
+        "opponent_net_profit": 39094.0,
+        "margin": -6605.0,
+        "score": 0.0,
+        "banks": [
+          42094.0,
+          35489.0
+        ],
+        "rewards": [
+          42094.0,
+          35489.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-149009525-round2-1-teacher_task",
+      "seed": 149009525,
+      "opponent": "round2",
+      "side": 1,
+      "arm": "teacher_task",
+      "replay": {
+        "path": "games/holdout-149009525-round2-1-teacher_task/replay.json.gz",
+        "size": 1218337,
+        "sha256": "0dc41ba78f783d1bfebed427b26841253792b33ef6ee7739e2720b0214b8260d"
+      },
+      "trace": {
+        "path": "traces/holdout-149009525-round2-1-teacher_task.jsonl.gz",
+        "size": 7680029,
+        "sha256": "1f2ec7fa4bc2a656095b12259a1bedf1509eb4b61d348522edb74a9127aeba3e"
+      },
+      "expected": {
+        "bank": 38312.0,
+        "opponent_bank": 39961.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 35312.0,
+        "opponent_net_profit": 36961.0,
+        "margin": -1649.0,
+        "score": 0.0,
+        "banks": [
+          39961.0,
+          38312.0
+        ],
+        "rewards": [
+          39961.0,
+          38312.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-149009525-market-0-baseline",
+      "seed": 149009525,
+      "opponent": "market",
+      "side": 0,
+      "arm": "baseline",
+      "replay": {
+        "path": "games/holdout-149009525-market-0-baseline/replay.json.gz",
+        "size": 1297176,
+        "sha256": "ebe8787d40d5ee27746f5534c496bcc310bafc64afb1c000a83442153da9861a"
+      },
+      "trace": {
+        "path": "traces/holdout-149009525-market-0-baseline.jsonl.gz",
+        "size": 7607495,
+        "sha256": "6750ae7ba963159185de42a0da72ebbaa96a4fc321f528d31591434bd71ae645"
+      },
+      "expected": {
+        "bank": 42396.0,
+        "opponent_bank": 40494.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 39396.0,
+        "opponent_net_profit": 37494.0,
+        "margin": 1902.0,
+        "score": 1.0,
+        "banks": [
+          42396.0,
+          40494.0
+        ],
+        "rewards": [
+          42396.0,
+          40494.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-149009525-market-0-candidate",
+      "seed": 149009525,
+      "opponent": "market",
+      "side": 0,
+      "arm": "candidate",
+      "replay": {
+        "path": "games/holdout-149009525-market-0-candidate/replay.json.gz",
+        "size": 1293653,
+        "sha256": "418e91feea1e689889de458da549cfeaf3bea5ff2e187f906f318d8ddea49640"
+      },
+      "trace": {
+        "path": "traces/holdout-149009525-market-0-candidate.jsonl.gz",
+        "size": 7586890,
+        "sha256": "86adc69fdc56675b26cbace116a4b1287ae40e7abadac2526c4c5902c6f4fdf0"
+      },
+      "expected": {
+        "bank": 42412.0,
+        "opponent_bank": 40505.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 39412.0,
+        "opponent_net_profit": 37505.0,
+        "margin": 1907.0,
+        "score": 1.0,
+        "banks": [
+          42412.0,
+          40505.0
+        ],
+        "rewards": [
+          42412.0,
+          40505.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-149009525-market-0-teacher_task",
+      "seed": 149009525,
+      "opponent": "market",
+      "side": 0,
+      "arm": "teacher_task",
+      "replay": {
+        "path": "games/holdout-149009525-market-0-teacher_task/replay.json.gz",
+        "size": 1292797,
+        "sha256": "46bebc910c0445b3ff55575e246cd88900fd412b984b93372bf97d5e227af24a"
+      },
+      "trace": {
+        "path": "traces/holdout-149009525-market-0-teacher_task.jsonl.gz",
+        "size": 7543850,
+        "sha256": "8b66c55efca075ccf24254b25ea4d42722597865ac31d9a91d75555e37f9c801"
+      },
+      "expected": {
+        "bank": 42419.0,
+        "opponent_bank": 40505.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 39419.0,
+        "opponent_net_profit": 37505.0,
+        "margin": 1914.0,
+        "score": 1.0,
+        "banks": [
+          42419.0,
+          40505.0
+        ],
+        "rewards": [
+          42419.0,
+          40505.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-149009525-market-1-baseline",
+      "seed": 149009525,
+      "opponent": "market",
+      "side": 1,
+      "arm": "baseline",
+      "replay": {
+        "path": "games/holdout-149009525-market-1-baseline/replay.json.gz",
+        "size": 1305880,
+        "sha256": "45f97398e72422f47592b4783f5953c0f0f05a6f07b898b43cc3a25ffbc67224"
+      },
+      "trace": {
+        "path": "traces/holdout-149009525-market-1-baseline.jsonl.gz",
+        "size": 7611037,
+        "sha256": "e80e5eb34a0b21aa894a05dc8c1bdd5b8efbb94de108857443831148f2e26f35"
+      },
+      "expected": {
+        "bank": 42396.0,
+        "opponent_bank": 40494.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 39396.0,
+        "opponent_net_profit": 37494.0,
+        "margin": 1902.0,
+        "score": 1.0,
+        "banks": [
+          40494.0,
+          42396.0
+        ],
+        "rewards": [
+          40494.0,
+          42396.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-149009525-market-1-candidate",
+      "seed": 149009525,
+      "opponent": "market",
+      "side": 1,
+      "arm": "candidate",
+      "replay": {
+        "path": "games/holdout-149009525-market-1-candidate/replay.json.gz",
+        "size": 1304359,
+        "sha256": "7af01fe747ccf2727dd107b44353b3c8e7cf13992cc185f82b54b0812cd3d2a2"
+      },
+      "trace": {
+        "path": "traces/holdout-149009525-market-1-candidate.jsonl.gz",
+        "size": 7589103,
+        "sha256": "10fcf7a4bb1ca04654b4268a869cd6a89831beff0072ff50ac98946c29cb2b59"
+      },
+      "expected": {
+        "bank": 42412.0,
+        "opponent_bank": 40505.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 39412.0,
+        "opponent_net_profit": 37505.0,
+        "margin": 1907.0,
+        "score": 1.0,
+        "banks": [
+          40505.0,
+          42412.0
+        ],
+        "rewards": [
+          40505.0,
+          42412.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-149009525-market-1-teacher_task",
+      "seed": 149009525,
+      "opponent": "market",
+      "side": 1,
+      "arm": "teacher_task",
+      "replay": {
+        "path": "games/holdout-149009525-market-1-teacher_task/replay.json.gz",
+        "size": 1303357,
+        "sha256": "b5797150d86402f5e779b68bcfc98873e0c467c04c715966b10e38bb1c22c9e8"
+      },
+      "trace": {
+        "path": "traces/holdout-149009525-market-1-teacher_task.jsonl.gz",
+        "size": 7546560,
+        "sha256": "56fd47ad3b772e530491f208c9e356774d6d5ca87421423d4b351cb65fa6f428"
+      },
+      "expected": {
+        "bank": 42419.0,
+        "opponent_bank": 40505.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 39419.0,
+        "opponent_net_profit": 37505.0,
+        "margin": 1914.0,
+        "score": 1.0,
+        "banks": [
+          40505.0,
+          42419.0
+        ],
+        "rewards": [
+          40505.0,
+          42419.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-3351711015-round2-0-baseline",
+      "seed": 3351711015,
+      "opponent": "round2",
+      "side": 0,
+      "arm": "baseline",
+      "replay": {
+        "path": "games/holdout-3351711015-round2-0-baseline/replay.json.gz",
+        "size": 1219227,
+        "sha256": "57b49c1ff625061c9da348eac4a2e62ad236ed4a347b5ecdb76cb3fbd5ba25c1"
+      },
+      "trace": {
+        "path": "traces/holdout-3351711015-round2-0-baseline.jsonl.gz",
+        "size": 7798048,
+        "sha256": "409e2ddff51b8cee04dc3e374f3527250c5f8b70703850aed5bb1c5d1579aa55"
+      },
+      "expected": {
+        "bank": 45834.0,
+        "opponent_bank": 45725.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 42834.0,
+        "opponent_net_profit": 42725.0,
+        "margin": 109.0,
+        "score": 1.0,
+        "banks": [
+          45834.0,
+          45725.0
+        ],
+        "rewards": [
+          45834.0,
+          45725.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-3351711015-round2-0-candidate",
+      "seed": 3351711015,
+      "opponent": "round2",
+      "side": 0,
+      "arm": "candidate",
+      "replay": {
+        "path": "games/holdout-3351711015-round2-0-candidate/replay.json.gz",
+        "size": 1218343,
+        "sha256": "fbc35acef1febd124371609b3cc1fb6cf17853adbf32f415b6b15b0c85131400"
+      },
+      "trace": {
+        "path": "traces/holdout-3351711015-round2-0-candidate.jsonl.gz",
+        "size": 7799014,
+        "sha256": "dccb69808b6a24539973e7fb9de4eb4ba028c557a85e3bb63c99d745bf5254d8"
+      },
+      "expected": {
+        "bank": 45873.0,
+        "opponent_bank": 45775.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 42873.0,
+        "opponent_net_profit": 42775.0,
+        "margin": 98.0,
+        "score": 1.0,
+        "banks": [
+          45873.0,
+          45775.0
+        ],
+        "rewards": [
+          45873.0,
+          45775.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-3351711015-round2-0-teacher_task",
+      "seed": 3351711015,
+      "opponent": "round2",
+      "side": 0,
+      "arm": "teacher_task",
+      "replay": {
+        "path": "games/holdout-3351711015-round2-0-teacher_task/replay.json.gz",
+        "size": 1213661,
+        "sha256": "1e7c557c1d027b7bb83beb445e4e707fbe2a5c9bb9631978403377f554c0b161"
+      },
+      "trace": {
+        "path": "traces/holdout-3351711015-round2-0-teacher_task.jsonl.gz",
+        "size": 7727404,
+        "sha256": "08991fa8d483261de9bd07b8850ed693378370c7efd24a466d79d40380fd671b"
+      },
+      "expected": {
+        "bank": 45863.0,
+        "opponent_bank": 45775.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 42863.0,
+        "opponent_net_profit": 42775.0,
+        "margin": 88.0,
+        "score": 1.0,
+        "banks": [
+          45863.0,
+          45775.0
+        ],
+        "rewards": [
+          45863.0,
+          45775.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-3351711015-round2-1-baseline",
+      "seed": 3351711015,
+      "opponent": "round2",
+      "side": 1,
+      "arm": "baseline",
+      "replay": {
+        "path": "games/holdout-3351711015-round2-1-baseline/replay.json.gz",
+        "size": 1228514,
+        "sha256": "8f3040a5da3c1335317d055fe6df1fa8c501d1d50f368358b3462103b9827e42"
+      },
+      "trace": {
+        "path": "traces/holdout-3351711015-round2-1-baseline.jsonl.gz",
+        "size": 7797357,
+        "sha256": "db90f5e18888f0c8453ba0314851c49e2f98d5b5491368910ebffbff08819ed5"
+      },
+      "expected": {
+        "bank": 45834.0,
+        "opponent_bank": 45725.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 42834.0,
+        "opponent_net_profit": 42725.0,
+        "margin": 109.0,
+        "score": 1.0,
+        "banks": [
+          45725.0,
+          45834.0
+        ],
+        "rewards": [
+          45725.0,
+          45834.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-3351711015-round2-1-candidate",
+      "seed": 3351711015,
+      "opponent": "round2",
+      "side": 1,
+      "arm": "candidate",
+      "replay": {
+        "path": "games/holdout-3351711015-round2-1-candidate/replay.json.gz",
+        "size": 1226415,
+        "sha256": "dd3eaaaeb0f2ffbf5ea91d39886e3e4f81dc0e9b0ad51f2eb913b6f22b6c3d40"
+      },
+      "trace": {
+        "path": "traces/holdout-3351711015-round2-1-candidate.jsonl.gz",
+        "size": 7798570,
+        "sha256": "c4e519fa90b4908c0cbb446df06429319c82b0f75a873c2babe49811aa51dd96"
+      },
+      "expected": {
+        "bank": 45873.0,
+        "opponent_bank": 45775.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 42873.0,
+        "opponent_net_profit": 42775.0,
+        "margin": 98.0,
+        "score": 1.0,
+        "banks": [
+          45775.0,
+          45873.0
+        ],
+        "rewards": [
+          45775.0,
+          45873.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-3351711015-round2-1-teacher_task",
+      "seed": 3351711015,
+      "opponent": "round2",
+      "side": 1,
+      "arm": "teacher_task",
+      "replay": {
+        "path": "games/holdout-3351711015-round2-1-teacher_task/replay.json.gz",
+        "size": 1222254,
+        "sha256": "a1501218ea1eb0175bc032e5d7b2efc7544cf448c1556069c859ea47771b759a"
+      },
+      "trace": {
+        "path": "traces/holdout-3351711015-round2-1-teacher_task.jsonl.gz",
+        "size": 7726660,
+        "sha256": "919fcfbb7d606e6f3c8222f98ef2974b4244f3d4e3505ec470f79a0b5f31c318"
+      },
+      "expected": {
+        "bank": 45863.0,
+        "opponent_bank": 45775.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 42863.0,
+        "opponent_net_profit": 42775.0,
+        "margin": 88.0,
+        "score": 1.0,
+        "banks": [
+          45775.0,
+          45863.0
+        ],
+        "rewards": [
+          45775.0,
+          45863.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-3351711015-market-0-baseline",
+      "seed": 3351711015,
+      "opponent": "market",
+      "side": 0,
+      "arm": "baseline",
+      "replay": {
+        "path": "games/holdout-3351711015-market-0-baseline/replay.json.gz",
+        "size": 1315709,
+        "sha256": "e42e593d91b6188c35cc3463c537b131e44ed2ad037d9d24b46a8e675f31532b"
+      },
+      "trace": {
+        "path": "traces/holdout-3351711015-market-0-baseline.jsonl.gz",
+        "size": 7833501,
+        "sha256": "3529d0173c26c679cb58587cadb76ca92ee2557a47e12f2324c99986e743893b"
+      },
+      "expected": {
+        "bank": 49957.0,
+        "opponent_bank": 45366.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 46957.0,
+        "opponent_net_profit": 42366.0,
+        "margin": 4591.0,
+        "score": 1.0,
+        "banks": [
+          49957.0,
+          45366.0
+        ],
+        "rewards": [
+          49957.0,
+          45366.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-3351711015-market-0-candidate",
+      "seed": 3351711015,
+      "opponent": "market",
+      "side": 0,
+      "arm": "candidate",
+      "replay": {
+        "path": "games/holdout-3351711015-market-0-candidate/replay.json.gz",
+        "size": 1310439,
+        "sha256": "408edf1a6982848c4266db2c674578d20b8111ab59ad5b66c9e98d87dfd24f24"
+      },
+      "trace": {
+        "path": "traces/holdout-3351711015-market-0-candidate.jsonl.gz",
+        "size": 7843205,
+        "sha256": "a192e72549d766f39467f0fdb500efa753e1793d0fa2f72479e8668af6c67061"
+      },
+      "expected": {
+        "bank": 50130.0,
+        "opponent_bank": 45336.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 47130.0,
+        "opponent_net_profit": 42336.0,
+        "margin": 4794.0,
+        "score": 1.0,
+        "banks": [
+          50130.0,
+          45336.0
+        ],
+        "rewards": [
+          50130.0,
+          45336.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-3351711015-market-0-teacher_task",
+      "seed": 3351711015,
+      "opponent": "market",
+      "side": 0,
+      "arm": "teacher_task",
+      "replay": {
+        "path": "games/holdout-3351711015-market-0-teacher_task/replay.json.gz",
+        "size": 1310410,
+        "sha256": "5be428862fcb16f51961ce77d6d7922bc1a7506819f558577cf04fad377c3fe7"
+      },
+      "trace": {
+        "path": "traces/holdout-3351711015-market-0-teacher_task.jsonl.gz",
+        "size": 7780222,
+        "sha256": "0dd22e8b9b08ddd4b330ad76509451e280a03fa5b8cb3cfcf787ce3a6b9efd64"
+      },
+      "expected": {
+        "bank": 50130.0,
+        "opponent_bank": 45336.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 47130.0,
+        "opponent_net_profit": 42336.0,
+        "margin": 4794.0,
+        "score": 1.0,
+        "banks": [
+          50130.0,
+          45336.0
+        ],
+        "rewards": [
+          50130.0,
+          45336.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-3351711015-market-1-baseline",
+      "seed": 3351711015,
+      "opponent": "market",
+      "side": 1,
+      "arm": "baseline",
+      "replay": {
+        "path": "games/holdout-3351711015-market-1-baseline/replay.json.gz",
+        "size": 1322391,
+        "sha256": "0772819216524aee25aae292eaa2c3ed93f364276cc1ab9313b3ccd9bb313702"
+      },
+      "trace": {
+        "path": "traces/holdout-3351711015-market-1-baseline.jsonl.gz",
+        "size": 7837905,
+        "sha256": "4d9a677a49f4fc1addf42453f2ae3a39a9d6c59154a93c75546e0949ec488c88"
+      },
+      "expected": {
+        "bank": 49957.0,
+        "opponent_bank": 45366.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 46957.0,
+        "opponent_net_profit": 42366.0,
+        "margin": 4591.0,
+        "score": 1.0,
+        "banks": [
+          45366.0,
+          49957.0
+        ],
+        "rewards": [
+          45366.0,
+          49957.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-3351711015-market-1-candidate",
+      "seed": 3351711015,
+      "opponent": "market",
+      "side": 1,
+      "arm": "candidate",
+      "replay": {
+        "path": "games/holdout-3351711015-market-1-candidate/replay.json.gz",
+        "size": 1318705,
+        "sha256": "235b32457dd6602624d5dcc0e735af034d63f8dfec41fdeaef014eb97e524a2e"
+      },
+      "trace": {
+        "path": "traces/holdout-3351711015-market-1-candidate.jsonl.gz",
+        "size": 7847767,
+        "sha256": "ab979f6d9d04be24d852de59bb6b50755bbde707ce41536772b30b044adebdb1"
+      },
+      "expected": {
+        "bank": 50130.0,
+        "opponent_bank": 45336.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 47130.0,
+        "opponent_net_profit": 42336.0,
+        "margin": 4794.0,
+        "score": 1.0,
+        "banks": [
+          45336.0,
+          50130.0
+        ],
+        "rewards": [
+          45336.0,
+          50130.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-3351711015-market-1-teacher_task",
+      "seed": 3351711015,
+      "opponent": "market",
+      "side": 1,
+      "arm": "teacher_task",
+      "replay": {
+        "path": "games/holdout-3351711015-market-1-teacher_task/replay.json.gz",
+        "size": 1314694,
+        "sha256": "742cd19ac982398ed397f086fadd315dd8e9131a54aff7b0e340e3a6d5e892f9"
+      },
+      "trace": {
+        "path": "traces/holdout-3351711015-market-1-teacher_task.jsonl.gz",
+        "size": 7785198,
+        "sha256": "c296c82a6d606247ea0befd06d7dc59d7fe6c46d89fb01c91ca348b80e114b39"
+      },
+      "expected": {
+        "bank": 50130.0,
+        "opponent_bank": 45336.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 47130.0,
+        "opponent_net_profit": 42336.0,
+        "margin": 4794.0,
+        "score": 1.0,
+        "banks": [
+          45336.0,
+          50130.0
+        ],
+        "rewards": [
+          45336.0,
+          50130.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-1845894395-round2-0-baseline",
+      "seed": 1845894395,
+      "opponent": "round2",
+      "side": 0,
+      "arm": "baseline",
+      "replay": {
+        "path": "games/holdout-1845894395-round2-0-baseline/replay.json.gz",
+        "size": 1203294,
+        "sha256": "3efe61aab22614c81f365b694b844aede3b677369973ad5181436e0648a0a874"
+      },
+      "trace": {
+        "path": "traces/holdout-1845894395-round2-0-baseline.jsonl.gz",
+        "size": 7672519,
+        "sha256": "7aff3d97998d6fc7671e3091d5244a98bf403207fea8d77067a8815e3ec356d5"
+      },
+      "expected": {
+        "bank": 46142.0,
+        "opponent_bank": 49650.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 43142.0,
+        "opponent_net_profit": 46650.0,
+        "margin": -3508.0,
+        "score": 0.0,
+        "banks": [
+          46142.0,
+          49650.0
+        ],
+        "rewards": [
+          46142.0,
+          49650.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-1845894395-round2-0-candidate",
+      "seed": 1845894395,
+      "opponent": "round2",
+      "side": 0,
+      "arm": "candidate",
+      "replay": {
+        "path": "games/holdout-1845894395-round2-0-candidate/replay.json.gz",
+        "size": 1211829,
+        "sha256": "a22a7298e5acb05a4c0b1b06157b1a504c6739794bcc68b908bfd0b644386d01"
+      },
+      "trace": {
+        "path": "traces/holdout-1845894395-round2-0-candidate.jsonl.gz",
+        "size": 7852314,
+        "sha256": "bf4acc1c463a32bcf8a2bf5b0a567e901c8facbe1958c1165202e6f2f9e80a0b"
+      },
+      "expected": {
+        "bank": 45426.0,
+        "opponent_bank": 50042.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 42426.0,
+        "opponent_net_profit": 47042.0,
+        "margin": -4616.0,
+        "score": 0.0,
+        "banks": [
+          45426.0,
+          50042.0
+        ],
+        "rewards": [
+          45426.0,
+          50042.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-1845894395-round2-0-teacher_task",
+      "seed": 1845894395,
+      "opponent": "round2",
+      "side": 0,
+      "arm": "teacher_task",
+      "replay": {
+        "path": "games/holdout-1845894395-round2-0-teacher_task/replay.json.gz",
+        "size": 1203329,
+        "sha256": "5eee6fa3938de8197b21559bddfcbaea991382ffc81e8ab85f9a9a5a275f6ea4"
+      },
+      "trace": {
+        "path": "traces/holdout-1845894395-round2-0-teacher_task.jsonl.gz",
+        "size": 7713641,
+        "sha256": "027317bdcafb3de69841c851f5455dada5411b2ea06211de0dfef22f4c01441f"
+      },
+      "expected": {
+        "bank": 47319.0,
+        "opponent_bank": 47840.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 44319.0,
+        "opponent_net_profit": 44840.0,
+        "margin": -521.0,
+        "score": 0.0,
+        "banks": [
+          47319.0,
+          47840.0
+        ],
+        "rewards": [
+          47319.0,
+          47840.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-1845894395-round2-1-baseline",
+      "seed": 1845894395,
+      "opponent": "round2",
+      "side": 1,
+      "arm": "baseline",
+      "replay": {
+        "path": "games/holdout-1845894395-round2-1-baseline/replay.json.gz",
+        "size": 1214906,
+        "sha256": "7f3e42634ac1ddd99337a75f44e5e5a54ffa567ac5838928e7a3b4274e132c1d"
+      },
+      "trace": {
+        "path": "traces/holdout-1845894395-round2-1-baseline.jsonl.gz",
+        "size": 7672294,
+        "sha256": "7223a7995d60ef081f0d7f459f6825ff4ffabb30f356bf5dec9fd80d349b2e4b"
+      },
+      "expected": {
+        "bank": 46142.0,
+        "opponent_bank": 49650.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 43142.0,
+        "opponent_net_profit": 46650.0,
+        "margin": -3508.0,
+        "score": 0.0,
+        "banks": [
+          49650.0,
+          46142.0
+        ],
+        "rewards": [
+          49650.0,
+          46142.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-1845894395-round2-1-candidate",
+      "seed": 1845894395,
+      "opponent": "round2",
+      "side": 1,
+      "arm": "candidate",
+      "replay": {
+        "path": "games/holdout-1845894395-round2-1-candidate/replay.json.gz",
+        "size": 1219225,
+        "sha256": "16d8464ce85c4139cd6944e1f2ad40f9af068fd9182638112bcd19617817d8c4"
+      },
+      "trace": {
+        "path": "traces/holdout-1845894395-round2-1-candidate.jsonl.gz",
+        "size": 7852727,
+        "sha256": "a9edb288d2b755d859c926fb25d6ed9e26a20c9220d925cbede627ff741fc8ab"
+      },
+      "expected": {
+        "bank": 45426.0,
+        "opponent_bank": 50042.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 42426.0,
+        "opponent_net_profit": 47042.0,
+        "margin": -4616.0,
+        "score": 0.0,
+        "banks": [
+          50042.0,
+          45426.0
+        ],
+        "rewards": [
+          50042.0,
+          45426.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-1845894395-round2-1-teacher_task",
+      "seed": 1845894395,
+      "opponent": "round2",
+      "side": 1,
+      "arm": "teacher_task",
+      "replay": {
+        "path": "games/holdout-1845894395-round2-1-teacher_task/replay.json.gz",
+        "size": 1215259,
+        "sha256": "0bf817f5beebdfa62ed98b9a3fd798ae66ce1af0329e1dcb1eeb6a30f0aafce5"
+      },
+      "trace": {
+        "path": "traces/holdout-1845894395-round2-1-teacher_task.jsonl.gz",
+        "size": 7713046,
+        "sha256": "b918832f9d704c48f525d11ebc83f238e58124f9c989727ed5bf7c15bc19c745"
+      },
+      "expected": {
+        "bank": 47319.0,
+        "opponent_bank": 47840.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 44319.0,
+        "opponent_net_profit": 44840.0,
+        "margin": -521.0,
+        "score": 0.0,
+        "banks": [
+          47840.0,
+          47319.0
+        ],
+        "rewards": [
+          47840.0,
+          47319.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-1845894395-market-0-baseline",
+      "seed": 1845894395,
+      "opponent": "market",
+      "side": 0,
+      "arm": "baseline",
+      "replay": {
+        "path": "games/holdout-1845894395-market-0-baseline/replay.json.gz",
+        "size": 1316177,
+        "sha256": "cbbb206a65976ce3879b0367c794fbd0718b960e6215881c173e94a9ec6fac3b"
+      },
+      "trace": {
+        "path": "traces/holdout-1845894395-market-0-baseline.jsonl.gz",
+        "size": 7820039,
+        "sha256": "cc70bbf157b398ddac8105ebc79c401044e585f18decb9105c942ae57fd5f2d1"
+      },
+      "expected": {
+        "bank": 52548.0,
+        "opponent_bank": 46681.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 49548.0,
+        "opponent_net_profit": 43681.0,
+        "margin": 5867.0,
+        "score": 1.0,
+        "banks": [
+          52548.0,
+          46681.0
+        ],
+        "rewards": [
+          52548.0,
+          46681.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-1845894395-market-0-candidate",
+      "seed": 1845894395,
+      "opponent": "market",
+      "side": 0,
+      "arm": "candidate",
+      "replay": {
+        "path": "games/holdout-1845894395-market-0-candidate/replay.json.gz",
+        "size": 1317355,
+        "sha256": "6469030a5ceb7a6a6c556fd52e2901095eae357ae749db38823bdc77649ee2a6"
+      },
+      "trace": {
+        "path": "traces/holdout-1845894395-market-0-candidate.jsonl.gz",
+        "size": 7824978,
+        "sha256": "d4bfcb301e1d022e6cf3a19ff9b95e657101420ad6b82e420fd1d7f95ed36c2c"
+      },
+      "expected": {
+        "bank": 52548.0,
+        "opponent_bank": 46681.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 49548.0,
+        "opponent_net_profit": 43681.0,
+        "margin": 5867.0,
+        "score": 1.0,
+        "banks": [
+          52548.0,
+          46681.0
+        ],
+        "rewards": [
+          52548.0,
+          46681.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-1845894395-market-0-teacher_task",
+      "seed": 1845894395,
+      "opponent": "market",
+      "side": 0,
+      "arm": "teacher_task",
+      "replay": {
+        "path": "games/holdout-1845894395-market-0-teacher_task/replay.json.gz",
+        "size": 1320292,
+        "sha256": "e183553bb134f7b90d917d84bd51df84c400c1fd4dc47c16185a2c3ccb946c02"
+      },
+      "trace": {
+        "path": "traces/holdout-1845894395-market-0-teacher_task.jsonl.gz",
+        "size": 7768507,
+        "sha256": "3d850d76c9f99bbda8a574734f7e2f3906c384291fef7a9f0f0a8d42c9548187"
+      },
+      "expected": {
+        "bank": 52548.0,
+        "opponent_bank": 46681.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 49548.0,
+        "opponent_net_profit": 43681.0,
+        "margin": 5867.0,
+        "score": 1.0,
+        "banks": [
+          52548.0,
+          46681.0
+        ],
+        "rewards": [
+          52548.0,
+          46681.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-1845894395-market-1-baseline",
+      "seed": 1845894395,
+      "opponent": "market",
+      "side": 1,
+      "arm": "baseline",
+      "replay": {
+        "path": "games/holdout-1845894395-market-1-baseline/replay.json.gz",
+        "size": 1320499,
+        "sha256": "8c5c201454a608ad33fc4b91efc18ec283a8fa1d9ea2045cdf95784029b9cb1c"
+      },
+      "trace": {
+        "path": "traces/holdout-1845894395-market-1-baseline.jsonl.gz",
+        "size": 7825313,
+        "sha256": "4304222673ba82528413e0c934dcea48b93111e8e24da413a5b5084ff5113ac7"
+      },
+      "expected": {
+        "bank": 52548.0,
+        "opponent_bank": 46681.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 49548.0,
+        "opponent_net_profit": 43681.0,
+        "margin": 5867.0,
+        "score": 1.0,
+        "banks": [
+          46681.0,
+          52548.0
+        ],
+        "rewards": [
+          46681.0,
+          52548.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-1845894395-market-1-candidate",
+      "seed": 1845894395,
+      "opponent": "market",
+      "side": 1,
+      "arm": "candidate",
+      "replay": {
+        "path": "games/holdout-1845894395-market-1-candidate/replay.json.gz",
+        "size": 1325667,
+        "sha256": "2b1a6dccadce318386d07b951b757918a6b32f2a45036aeb2825e8dc5485547d"
+      },
+      "trace": {
+        "path": "traces/holdout-1845894395-market-1-candidate.jsonl.gz",
+        "size": 7830349,
+        "sha256": "42eb3066ab94f0865e77ad62725ccf2e6a24d29fb8cd9aa201027a04b5318409"
+      },
+      "expected": {
+        "bank": 52548.0,
+        "opponent_bank": 46681.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 49548.0,
+        "opponent_net_profit": 43681.0,
+        "margin": 5867.0,
+        "score": 1.0,
+        "banks": [
+          46681.0,
+          52548.0
+        ],
+        "rewards": [
+          46681.0,
+          52548.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-1845894395-market-1-teacher_task",
+      "seed": 1845894395,
+      "opponent": "market",
+      "side": 1,
+      "arm": "teacher_task",
+      "replay": {
+        "path": "games/holdout-1845894395-market-1-teacher_task/replay.json.gz",
+        "size": 1321744,
+        "sha256": "ee6b3b12e3bce6df3ac023e604b310bcf3ec214c531baa353ce4f0a25bbcbd5a"
+      },
+      "trace": {
+        "path": "traces/holdout-1845894395-market-1-teacher_task.jsonl.gz",
+        "size": 7773780,
+        "sha256": "431ed455b124150bbd9e63dbd2a8f160a74599d20a4060aaecdf35503c1598df"
+      },
+      "expected": {
+        "bank": 52548.0,
+        "opponent_bank": 46681.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 49548.0,
+        "opponent_net_profit": 43681.0,
+        "margin": 5867.0,
+        "score": 1.0,
+        "banks": [
+          46681.0,
+          52548.0
+        ],
+        "rewards": [
+          46681.0,
+          52548.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-1600614327-round2-0-baseline",
+      "seed": 1600614327,
+      "opponent": "round2",
+      "side": 0,
+      "arm": "baseline",
+      "replay": {
+        "path": "games/holdout-1600614327-round2-0-baseline/replay.json.gz",
+        "size": 1191725,
+        "sha256": "79bdabe6669d642f913ac67790cfc268adeb76a2cc16e373b484deb7c9ce3b16"
+      },
+      "trace": {
+        "path": "traces/holdout-1600614327-round2-0-baseline.jsonl.gz",
+        "size": 7639645,
+        "sha256": "03cbdc8d97be27ddfde094b06550df18232c5de327b22422e8d42e45e8b43e72"
+      },
+      "expected": {
+        "bank": 46185.0,
+        "opponent_bank": 43090.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 43185.0,
+        "opponent_net_profit": 40090.0,
+        "margin": 3095.0,
+        "score": 1.0,
+        "banks": [
+          46185.0,
+          43090.0
+        ],
+        "rewards": [
+          46185.0,
+          43090.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-1600614327-round2-0-candidate",
+      "seed": 1600614327,
+      "opponent": "round2",
+      "side": 0,
+      "arm": "candidate",
+      "replay": {
+        "path": "games/holdout-1600614327-round2-0-candidate/replay.json.gz",
+        "size": 1192119,
+        "sha256": "3cd1a0b567cde92a8a1262b5362a7b4443024ee11466c8dbeb7697cda071804c"
+      },
+      "trace": {
+        "path": "traces/holdout-1600614327-round2-0-candidate.jsonl.gz",
+        "size": 7646154,
+        "sha256": "9773a6567dba269e61e3fb81c9eb1d26d93131a1343e8abf8766fc477406df9c"
+      },
+      "expected": {
+        "bank": 46185.0,
+        "opponent_bank": 43090.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 43185.0,
+        "opponent_net_profit": 40090.0,
+        "margin": 3095.0,
+        "score": 1.0,
+        "banks": [
+          46185.0,
+          43090.0
+        ],
+        "rewards": [
+          46185.0,
+          43090.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-1600614327-round2-0-teacher_task",
+      "seed": 1600614327,
+      "opponent": "round2",
+      "side": 0,
+      "arm": "teacher_task",
+      "replay": {
+        "path": "games/holdout-1600614327-round2-0-teacher_task/replay.json.gz",
+        "size": 1207432,
+        "sha256": "28ffcbc03ee47c3dd20dfb74fd9f5f3ae1c4f0a4cc4a2e39d62decb4e7b1e06c"
+      },
+      "trace": {
+        "path": "traces/holdout-1600614327-round2-0-teacher_task.jsonl.gz",
+        "size": 7618272,
+        "sha256": "a236ecde1d69946b3ed0310988b67b048f4e2ae67358281a662b69ee254a40cc"
+      },
+      "expected": {
+        "bank": 44271.0,
+        "opponent_bank": 40901.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 41271.0,
+        "opponent_net_profit": 37901.0,
+        "margin": 3370.0,
+        "score": 1.0,
+        "banks": [
+          44271.0,
+          40901.0
+        ],
+        "rewards": [
+          44271.0,
+          40901.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-1600614327-round2-1-baseline",
+      "seed": 1600614327,
+      "opponent": "round2",
+      "side": 1,
+      "arm": "baseline",
+      "replay": {
+        "path": "games/holdout-1600614327-round2-1-baseline/replay.json.gz",
+        "size": 1196928,
+        "sha256": "3573f4c2e54e650d080f8e77254c0d0ac4f8cb5cfad65117c1615a7a99ff6cf3"
+      },
+      "trace": {
+        "path": "traces/holdout-1600614327-round2-1-baseline.jsonl.gz",
+        "size": 7637841,
+        "sha256": "1796e33a5e4cc8de10f7043c49adf12e6bdd35c2f613bc7e13c8b7afd371f152"
+      },
+      "expected": {
+        "bank": 46185.0,
+        "opponent_bank": 43090.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 43185.0,
+        "opponent_net_profit": 40090.0,
+        "margin": 3095.0,
+        "score": 1.0,
+        "banks": [
+          43090.0,
+          46185.0
+        ],
+        "rewards": [
+          43090.0,
+          46185.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-1600614327-round2-1-candidate",
+      "seed": 1600614327,
+      "opponent": "round2",
+      "side": 1,
+      "arm": "candidate",
+      "replay": {
+        "path": "games/holdout-1600614327-round2-1-candidate/replay.json.gz",
+        "size": 1199925,
+        "sha256": "5542505289053c7e4119c62ab1c0838a94b004b2ede27bec74b4e691e085eb59"
+      },
+      "trace": {
+        "path": "traces/holdout-1600614327-round2-1-candidate.jsonl.gz",
+        "size": 7644659,
+        "sha256": "79edff310bd2760f45f834e0ac4bb9b5881ae6a86337662b97ad7b311da3c7f5"
+      },
+      "expected": {
+        "bank": 46185.0,
+        "opponent_bank": 43090.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 43185.0,
+        "opponent_net_profit": 40090.0,
+        "margin": 3095.0,
+        "score": 1.0,
+        "banks": [
+          43090.0,
+          46185.0
+        ],
+        "rewards": [
+          43090.0,
+          46185.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-1600614327-round2-1-teacher_task",
+      "seed": 1600614327,
+      "opponent": "round2",
+      "side": 1,
+      "arm": "teacher_task",
+      "replay": {
+        "path": "games/holdout-1600614327-round2-1-teacher_task/replay.json.gz",
+        "size": 1216347,
+        "sha256": "2d66160e6a94de67b029b366aca454f4a4b1fdfdb4c65f99698f9a808c404342"
+      },
+      "trace": {
+        "path": "traces/holdout-1600614327-round2-1-teacher_task.jsonl.gz",
+        "size": 7618997,
+        "sha256": "848c772c6236ebcc9072a98aed8b7249434541d39bb5a11135be6dad04deef10"
+      },
+      "expected": {
+        "bank": 44271.0,
+        "opponent_bank": 40901.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 41271.0,
+        "opponent_net_profit": 37901.0,
+        "margin": 3370.0,
+        "score": 1.0,
+        "banks": [
+          40901.0,
+          44271.0
+        ],
+        "rewards": [
+          40901.0,
+          44271.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-1600614327-market-0-baseline",
+      "seed": 1600614327,
+      "opponent": "market",
+      "side": 0,
+      "arm": "baseline",
+      "replay": {
+        "path": "games/holdout-1600614327-market-0-baseline/replay.json.gz",
+        "size": 1305216,
+        "sha256": "66950edae61e0a5162f5116526a7200879a5bc4e86f298af1e41c60bf406d5dd"
+      },
+      "trace": {
+        "path": "traces/holdout-1600614327-market-0-baseline.jsonl.gz",
+        "size": 7664440,
+        "sha256": "8ff256c4be6334eea66110ea831e9924f25342be11b7da1fdc93b531d7fc86f0"
+      },
+      "expected": {
+        "bank": 47975.0,
+        "opponent_bank": 50520.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 44975.0,
+        "opponent_net_profit": 47520.0,
+        "margin": -2545.0,
+        "score": 0.0,
+        "banks": [
+          47975.0,
+          50520.0
+        ],
+        "rewards": [
+          47975.0,
+          50520.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-1600614327-market-0-candidate",
+      "seed": 1600614327,
+      "opponent": "market",
+      "side": 0,
+      "arm": "candidate",
+      "replay": {
+        "path": "games/holdout-1600614327-market-0-candidate/replay.json.gz",
+        "size": 1308365,
+        "sha256": "c0b57c8f6541cf1dac1712dcfca367b4f5c5bd0b542d1c7c4b7f70eede7aac78"
+      },
+      "trace": {
+        "path": "traces/holdout-1600614327-market-0-candidate.jsonl.gz",
+        "size": 7676080,
+        "sha256": "650bd2e0254977c1de70541df0c09ad51f8d73a25a41b7eae5793cf6ef9ce980"
+      },
+      "expected": {
+        "bank": 47975.0,
+        "opponent_bank": 50520.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 44975.0,
+        "opponent_net_profit": 47520.0,
+        "margin": -2545.0,
+        "score": 0.0,
+        "banks": [
+          47975.0,
+          50520.0
+        ],
+        "rewards": [
+          47975.0,
+          50520.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-1600614327-market-0-teacher_task",
+      "seed": 1600614327,
+      "opponent": "market",
+      "side": 0,
+      "arm": "teacher_task",
+      "replay": {
+        "path": "games/holdout-1600614327-market-0-teacher_task/replay.json.gz",
+        "size": 1307839,
+        "sha256": "71c5f2897c366d9baf93f83605dd194fa3eac856445f82226b07d798bdc94791"
+      },
+      "trace": {
+        "path": "traces/holdout-1600614327-market-0-teacher_task.jsonl.gz",
+        "size": 7632431,
+        "sha256": "dd3939c4c77f0fec75a8f2eb4c0d8a7133803ffdab3873611a924a24a8dd1b94"
+      },
+      "expected": {
+        "bank": 47975.0,
+        "opponent_bank": 50520.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 44975.0,
+        "opponent_net_profit": 47520.0,
+        "margin": -2545.0,
+        "score": 0.0,
+        "banks": [
+          47975.0,
+          50520.0
+        ],
+        "rewards": [
+          47975.0,
+          50520.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-1600614327-market-1-baseline",
+      "seed": 1600614327,
+      "opponent": "market",
+      "side": 1,
+      "arm": "baseline",
+      "replay": {
+        "path": "games/holdout-1600614327-market-1-baseline/replay.json.gz",
+        "size": 1318657,
+        "sha256": "c6392de8ffa57d5fac6cf1ecb416556446fae093cff163b344d0597ff8806d53"
+      },
+      "trace": {
+        "path": "traces/holdout-1600614327-market-1-baseline.jsonl.gz",
+        "size": 7668818,
+        "sha256": "bb5c7454b911aaefe648ee306d8258c9b8e6e6ed6be910082a76da441f459a18"
+      },
+      "expected": {
+        "bank": 47975.0,
+        "opponent_bank": 50520.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 44975.0,
+        "opponent_net_profit": 47520.0,
+        "margin": -2545.0,
+        "score": 0.0,
+        "banks": [
+          50520.0,
+          47975.0
+        ],
+        "rewards": [
+          50520.0,
+          47975.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-1600614327-market-1-candidate",
+      "seed": 1600614327,
+      "opponent": "market",
+      "side": 1,
+      "arm": "candidate",
+      "replay": {
+        "path": "games/holdout-1600614327-market-1-candidate/replay.json.gz",
+        "size": 1317459,
+        "sha256": "93b4b1c5ac3acc7f76bbf14657336dc2347d32aee73bf53bb846637ff0ff9f9e"
+      },
+      "trace": {
+        "path": "traces/holdout-1600614327-market-1-candidate.jsonl.gz",
+        "size": 7680648,
+        "sha256": "1629a2a4a8628457752e4e8b5dbfa7cd8f86b61b30873cbe1fc08224071aaa7f"
+      },
+      "expected": {
+        "bank": 47975.0,
+        "opponent_bank": 50520.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 44975.0,
+        "opponent_net_profit": 47520.0,
+        "margin": -2545.0,
+        "score": 0.0,
+        "banks": [
+          50520.0,
+          47975.0
+        ],
+        "rewards": [
+          50520.0,
+          47975.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-1600614327-market-1-teacher_task",
+      "seed": 1600614327,
+      "opponent": "market",
+      "side": 1,
+      "arm": "teacher_task",
+      "replay": {
+        "path": "games/holdout-1600614327-market-1-teacher_task/replay.json.gz",
+        "size": 1317807,
+        "sha256": "3bc6722862793924f3a71a124363a14e3166d138c0d10e4c61e74ec00a3c42c4"
+      },
+      "trace": {
+        "path": "traces/holdout-1600614327-market-1-teacher_task.jsonl.gz",
+        "size": 7636634,
+        "sha256": "01eef033333db01cbca985c800c26d4ab35ed8353a5ef7b129c731746e29cd26"
+      },
+      "expected": {
+        "bank": 47975.0,
+        "opponent_bank": 50520.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 44975.0,
+        "opponent_net_profit": 47520.0,
+        "margin": -2545.0,
+        "score": 0.0,
+        "banks": [
+          50520.0,
+          47975.0
+        ],
+        "rewards": [
+          50520.0,
+          47975.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-1836204477-round2-0-baseline",
+      "seed": 1836204477,
+      "opponent": "round2",
+      "side": 0,
+      "arm": "baseline",
+      "replay": {
+        "path": "games/holdout-1836204477-round2-0-baseline/replay.json.gz",
+        "size": 1182143,
+        "sha256": "3b5f86b6542ed671fe99f43d777749c824b9172831d476c902274c8b93bc927c"
+      },
+      "trace": {
+        "path": "traces/holdout-1836204477-round2-0-baseline.jsonl.gz",
+        "size": 7418823,
+        "sha256": "537c682afcb0f62d4c7e526fcc27aa09f42bdc4f4dc9e313932d19e1190abe78"
+      },
+      "expected": {
+        "bank": 42092.0,
+        "opponent_bank": 40895.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 39092.0,
+        "opponent_net_profit": 37895.0,
+        "margin": 1197.0,
+        "score": 1.0,
+        "banks": [
+          42092.0,
+          40895.0
+        ],
+        "rewards": [
+          42092.0,
+          40895.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-1836204477-round2-0-candidate",
+      "seed": 1836204477,
+      "opponent": "round2",
+      "side": 0,
+      "arm": "candidate",
+      "replay": {
+        "path": "games/holdout-1836204477-round2-0-candidate/replay.json.gz",
+        "size": 1182589,
+        "sha256": "1c434aa87656e2f7fcb721ec247e215cc1698170836766c592507fa10e61079d"
+      },
+      "trace": {
+        "path": "traces/holdout-1836204477-round2-0-candidate.jsonl.gz",
+        "size": 7419118,
+        "sha256": "25789eadc14ec1dc6203135b114dbb149b574ea2372d03475ee64da5f61895b1"
+      },
+      "expected": {
+        "bank": 42092.0,
+        "opponent_bank": 40895.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 39092.0,
+        "opponent_net_profit": 37895.0,
+        "margin": 1197.0,
+        "score": 1.0,
+        "banks": [
+          42092.0,
+          40895.0
+        ],
+        "rewards": [
+          42092.0,
+          40895.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-1836204477-round2-0-teacher_task",
+      "seed": 1836204477,
+      "opponent": "round2",
+      "side": 0,
+      "arm": "teacher_task",
+      "replay": {
+        "path": "games/holdout-1836204477-round2-0-teacher_task/replay.json.gz",
+        "size": 1195975,
+        "sha256": "d9d24409cf1ec8cabba4c06392e58c0f7c38d466eab0ee0451908b8d5f2f9023"
+      },
+      "trace": {
+        "path": "traces/holdout-1836204477-round2-0-teacher_task.jsonl.gz",
+        "size": 7415501,
+        "sha256": "a6137530d3f99d7c9ea68c0ec0def990baa44b8908d63532e904fefbb573a173"
+      },
+      "expected": {
+        "bank": 40724.0,
+        "opponent_bank": 38755.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 37724.0,
+        "opponent_net_profit": 35755.0,
+        "margin": 1969.0,
+        "score": 1.0,
+        "banks": [
+          40724.0,
+          38755.0
+        ],
+        "rewards": [
+          40724.0,
+          38755.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-1836204477-round2-1-baseline",
+      "seed": 1836204477,
+      "opponent": "round2",
+      "side": 1,
+      "arm": "baseline",
+      "replay": {
+        "path": "games/holdout-1836204477-round2-1-baseline/replay.json.gz",
+        "size": 1193866,
+        "sha256": "1d37ba1ac5779ba27169518cdb305311f9a74d3b60a71617a8d1d1bf37a012e8"
+      },
+      "trace": {
+        "path": "traces/holdout-1836204477-round2-1-baseline.jsonl.gz",
+        "size": 7477481,
+        "sha256": "c19c9ddb598840e76942aff43a55d878f56060ae13bc45364b1593626f57252f"
+      },
+      "expected": {
+        "bank": 40811.0,
+        "opponent_bank": 38798.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 37811.0,
+        "opponent_net_profit": 35798.0,
+        "margin": 2013.0,
+        "score": 1.0,
+        "banks": [
+          38798.0,
+          40811.0
+        ],
+        "rewards": [
+          38798.0,
+          40811.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-1836204477-round2-1-candidate",
+      "seed": 1836204477,
+      "opponent": "round2",
+      "side": 1,
+      "arm": "candidate",
+      "replay": {
+        "path": "games/holdout-1836204477-round2-1-candidate/replay.json.gz",
+        "size": 1200901,
+        "sha256": "7a10b32221106e0427480ef9d413eb38625fc2e3e046a8a604048970d3834968"
+      },
+      "trace": {
+        "path": "traces/holdout-1836204477-round2-1-candidate.jsonl.gz",
+        "size": 7481833,
+        "sha256": "307e243a1c0326c1b3fcfb54448fbd380b710122af003ba7229ccd3fcc1fb596"
+      },
+      "expected": {
+        "bank": 40332.0,
+        "opponent_bank": 38833.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 37332.0,
+        "opponent_net_profit": 35833.0,
+        "margin": 1499.0,
+        "score": 1.0,
+        "banks": [
+          38833.0,
+          40332.0
+        ],
+        "rewards": [
+          38833.0,
+          40332.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-1836204477-round2-1-teacher_task",
+      "seed": 1836204477,
+      "opponent": "round2",
+      "side": 1,
+      "arm": "teacher_task",
+      "replay": {
+        "path": "games/holdout-1836204477-round2-1-teacher_task/replay.json.gz",
+        "size": 1202142,
+        "sha256": "2d9a472729f0cb77f5c9ea6ffccbbe026b6bec52d7b11946803c1c1c8898ce9d"
+      },
+      "trace": {
+        "path": "traces/holdout-1836204477-round2-1-teacher_task.jsonl.gz",
+        "size": 7435626,
+        "sha256": "db8e6cf070628d72ff07d95d2e2cb369c50dd6f8c7edf51714920270f69f470c"
+      },
+      "expected": {
+        "bank": 40724.0,
+        "opponent_bank": 38755.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 37724.0,
+        "opponent_net_profit": 35755.0,
+        "margin": 1969.0,
+        "score": 1.0,
+        "banks": [
+          38755.0,
+          40724.0
+        ],
+        "rewards": [
+          38755.0,
+          40724.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-1836204477-market-0-baseline",
+      "seed": 1836204477,
+      "opponent": "market",
+      "side": 0,
+      "arm": "baseline",
+      "replay": {
+        "path": "games/holdout-1836204477-market-0-baseline/replay.json.gz",
+        "size": 1287838,
+        "sha256": "0eda5548ede32fbe3aae2d47ce966cfc56612b2ef5942c7ccb266a5cf7ea4094"
+      },
+      "trace": {
+        "path": "traces/holdout-1836204477-market-0-baseline.jsonl.gz",
+        "size": 7367611,
+        "sha256": "f64fb76d8cb5d2d3b7ae7b0a1bb8bef33d1596bcd1805324bad6d72a8132b3be"
+      },
+      "expected": {
+        "bank": 44169.0,
+        "opponent_bank": 45729.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 41169.0,
+        "opponent_net_profit": 42729.0,
+        "margin": -1560.0,
+        "score": 0.0,
+        "banks": [
+          44169.0,
+          45729.0
+        ],
+        "rewards": [
+          44169.0,
+          45729.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-1836204477-market-0-candidate",
+      "seed": 1836204477,
+      "opponent": "market",
+      "side": 0,
+      "arm": "candidate",
+      "replay": {
+        "path": "games/holdout-1836204477-market-0-candidate/replay.json.gz",
+        "size": 1287987,
+        "sha256": "f5d9c869ad04d068341353e4587a1154e9edc76f02aef1bd43cafb79f956ad19"
+      },
+      "trace": {
+        "path": "traces/holdout-1836204477-market-0-candidate.jsonl.gz",
+        "size": 7388499,
+        "sha256": "18f96b9b2ebd4ccb2b0423752f9ea1b4c069f2b662750efdea1b9fffafd00b6a"
+      },
+      "expected": {
+        "bank": 44169.0,
+        "opponent_bank": 45729.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 41169.0,
+        "opponent_net_profit": 42729.0,
+        "margin": -1560.0,
+        "score": 0.0,
+        "banks": [
+          44169.0,
+          45729.0
+        ],
+        "rewards": [
+          44169.0,
+          45729.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-1836204477-market-0-teacher_task",
+      "seed": 1836204477,
+      "opponent": "market",
+      "side": 0,
+      "arm": "teacher_task",
+      "replay": {
+        "path": "games/holdout-1836204477-market-0-teacher_task/replay.json.gz",
+        "size": 1286288,
+        "sha256": "283729c41d511f880cc42daa16351efc19bc968ba5e5e1a5ef100dc24e8ff656"
+      },
+      "trace": {
+        "path": "traces/holdout-1836204477-market-0-teacher_task.jsonl.gz",
+        "size": 7325242,
+        "sha256": "a93b0f3b020be753662fa67847012b27d03a24782a231eb3dd6b0addc799b16e"
+      },
+      "expected": {
+        "bank": 44172.0,
+        "opponent_bank": 45772.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 41172.0,
+        "opponent_net_profit": 42772.0,
+        "margin": -1600.0,
+        "score": 0.0,
+        "banks": [
+          44172.0,
+          45772.0
+        ],
+        "rewards": [
+          44172.0,
+          45772.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-1836204477-market-1-baseline",
+      "seed": 1836204477,
+      "opponent": "market",
+      "side": 1,
+      "arm": "baseline",
+      "replay": {
+        "path": "games/holdout-1836204477-market-1-baseline/replay.json.gz",
+        "size": 1291582,
+        "sha256": "04bdc7ca6ddbcf0fc6e4fc18c5701e983aaf384d73ca366f59f6f3350f726d4f"
+      },
+      "trace": {
+        "path": "traces/holdout-1836204477-market-1-baseline.jsonl.gz",
+        "size": 7374576,
+        "sha256": "7bea9fc3aca2093ee2a67c1d31a2340f503a55552af0594150adeb46484d1aa7"
+      },
+      "expected": {
+        "bank": 44169.0,
+        "opponent_bank": 45729.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 41169.0,
+        "opponent_net_profit": 42729.0,
+        "margin": -1560.0,
+        "score": 0.0,
+        "banks": [
+          45729.0,
+          44169.0
+        ],
+        "rewards": [
+          45729.0,
+          44169.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-1836204477-market-1-candidate",
+      "seed": 1836204477,
+      "opponent": "market",
+      "side": 1,
+      "arm": "candidate",
+      "replay": {
+        "path": "games/holdout-1836204477-market-1-candidate/replay.json.gz",
+        "size": 1291179,
+        "sha256": "7f33a084898e2f3e9891c86902f16eeb183c18bbc446d7a8a94f11215f0cfced"
+      },
+      "trace": {
+        "path": "traces/holdout-1836204477-market-1-candidate.jsonl.gz",
+        "size": 7395220,
+        "sha256": "d0f259dd899375930e199369175e549c37107be8b5124e9cca1407c79fcd86f7"
+      },
+      "expected": {
+        "bank": 44169.0,
+        "opponent_bank": 45729.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 41169.0,
+        "opponent_net_profit": 42729.0,
+        "margin": -1560.0,
+        "score": 0.0,
+        "banks": [
+          45729.0,
+          44169.0
+        ],
+        "rewards": [
+          45729.0,
+          44169.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-1836204477-market-1-teacher_task",
+      "seed": 1836204477,
+      "opponent": "market",
+      "side": 1,
+      "arm": "teacher_task",
+      "replay": {
+        "path": "games/holdout-1836204477-market-1-teacher_task/replay.json.gz",
+        "size": 1289145,
+        "sha256": "c23d1f9eda0f5d424f8424922d9f1c914f3c10ee9104cf42b37a5da51d65273d"
+      },
+      "trace": {
+        "path": "traces/holdout-1836204477-market-1-teacher_task.jsonl.gz",
+        "size": 7332206,
+        "sha256": "f52ef4892b9bbca145bf437007b6514429b18fbb411f0045fdfd13b50f73a6c0"
+      },
+      "expected": {
+        "bank": 44172.0,
+        "opponent_bank": 45772.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 41172.0,
+        "opponent_net_profit": 42772.0,
+        "margin": -1600.0,
+        "score": 0.0,
+        "banks": [
+          45772.0,
+          44172.0
+        ],
+        "rewards": [
+          45772.0,
+          44172.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-51518447-round2-0-baseline",
+      "seed": 51518447,
+      "opponent": "round2",
+      "side": 0,
+      "arm": "baseline",
+      "replay": {
+        "path": "games/holdout-51518447-round2-0-baseline/replay.json.gz",
+        "size": 1202325,
+        "sha256": "cd3dcc78e6803000663b7519f41b79e8c4c1b0ff7de5f05d2252e3bc2ef19f0f"
+      },
+      "trace": {
+        "path": "traces/holdout-51518447-round2-0-baseline.jsonl.gz",
+        "size": 7713441,
+        "sha256": "18cebf8fc2c89103ea19f8213fa398480d792722d6ebf639b9c5102959f7beef"
+      },
+      "expected": {
+        "bank": 38308.0,
+        "opponent_bank": 45539.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 35308.0,
+        "opponent_net_profit": 42539.0,
+        "margin": -7231.0,
+        "score": 0.0,
+        "banks": [
+          38308.0,
+          45539.0
+        ],
+        "rewards": [
+          38308.0,
+          45539.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-51518447-round2-0-candidate",
+      "seed": 51518447,
+      "opponent": "round2",
+      "side": 0,
+      "arm": "candidate",
+      "replay": {
+        "path": "games/holdout-51518447-round2-0-candidate/replay.json.gz",
+        "size": 1201139,
+        "sha256": "8137cba50634ef01a1a9bbc6b9f3db951d88adc3e0cdb2a6ac484dbc734bfbc4"
+      },
+      "trace": {
+        "path": "traces/holdout-51518447-round2-0-candidate.jsonl.gz",
+        "size": 7751462,
+        "sha256": "aea3ff4bf632e1923e5759f652e16be5c5dbb66f27c507d36ac9d346d60292fb"
+      },
+      "expected": {
+        "bank": 40514.0,
+        "opponent_bank": 43541.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 37514.0,
+        "opponent_net_profit": 40541.0,
+        "margin": -3027.0,
+        "score": 0.0,
+        "banks": [
+          40514.0,
+          43541.0
+        ],
+        "rewards": [
+          40514.0,
+          43541.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-51518447-round2-0-teacher_task",
+      "seed": 51518447,
+      "opponent": "round2",
+      "side": 0,
+      "arm": "teacher_task",
+      "replay": {
+        "path": "games/holdout-51518447-round2-0-teacher_task/replay.json.gz",
+        "size": 1200368,
+        "sha256": "ed3c3274ae0d33bbdd4769c5bb5e367692619a812a268b69b4fe397ac98b64a8"
+      },
+      "trace": {
+        "path": "traces/holdout-51518447-round2-0-teacher_task.jsonl.gz",
+        "size": 7711045,
+        "sha256": "1461200f0afd5777e1f18cfe25c871bf90f0b0fc33b36247db1acb35057dd6d3"
+      },
+      "expected": {
+        "bank": 40484.0,
+        "opponent_bank": 43535.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 37484.0,
+        "opponent_net_profit": 40535.0,
+        "margin": -3051.0,
+        "score": 0.0,
+        "banks": [
+          40484.0,
+          43535.0
+        ],
+        "rewards": [
+          40484.0,
+          43535.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-51518447-round2-1-baseline",
+      "seed": 51518447,
+      "opponent": "round2",
+      "side": 1,
+      "arm": "baseline",
+      "replay": {
+        "path": "games/holdout-51518447-round2-1-baseline/replay.json.gz",
+        "size": 1210637,
+        "sha256": "1ac0d0d96cdfcc7b726aefacaadc489db7c935eb64f48ff9bd22c3ffe0bcd679"
+      },
+      "trace": {
+        "path": "traces/holdout-51518447-round2-1-baseline.jsonl.gz",
+        "size": 7711998,
+        "sha256": "11fc359a16c63399266c6a7364f019d792ba7e5b12600b07b75a015b8bb6efe2"
+      },
+      "expected": {
+        "bank": 38308.0,
+        "opponent_bank": 45539.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 35308.0,
+        "opponent_net_profit": 42539.0,
+        "margin": -7231.0,
+        "score": 0.0,
+        "banks": [
+          45539.0,
+          38308.0
+        ],
+        "rewards": [
+          45539.0,
+          38308.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-51518447-round2-1-candidate",
+      "seed": 51518447,
+      "opponent": "round2",
+      "side": 1,
+      "arm": "candidate",
+      "replay": {
+        "path": "games/holdout-51518447-round2-1-candidate/replay.json.gz",
+        "size": 1209353,
+        "sha256": "b618de1573f3624be87ab67956ae4e9a3b3392f6aea553007e6271c6da8de70a"
+      },
+      "trace": {
+        "path": "traces/holdout-51518447-round2-1-candidate.jsonl.gz",
+        "size": 7750046,
+        "sha256": "723cf0e1d4056c0a2ed4a65f74bcfe77e030c8101ea2c30cebf60ff4f89495e3"
+      },
+      "expected": {
+        "bank": 40514.0,
+        "opponent_bank": 43541.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 37514.0,
+        "opponent_net_profit": 40541.0,
+        "margin": -3027.0,
+        "score": 0.0,
+        "banks": [
+          43541.0,
+          40514.0
+        ],
+        "rewards": [
+          43541.0,
+          40514.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-51518447-round2-1-teacher_task",
+      "seed": 51518447,
+      "opponent": "round2",
+      "side": 1,
+      "arm": "teacher_task",
+      "replay": {
+        "path": "games/holdout-51518447-round2-1-teacher_task/replay.json.gz",
+        "size": 1210375,
+        "sha256": "41603745b8359549a85463450cefcf0d569e271ba6ca25d81a3eaa29ea3afbba"
+      },
+      "trace": {
+        "path": "traces/holdout-51518447-round2-1-teacher_task.jsonl.gz",
+        "size": 7709126,
+        "sha256": "facd89e788ad2a443bbed97cbc77f81a4d016b648e73c06df22cd5a49b7dfd26"
+      },
+      "expected": {
+        "bank": 40484.0,
+        "opponent_bank": 43535.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 37484.0,
+        "opponent_net_profit": 40535.0,
+        "margin": -3051.0,
+        "score": 0.0,
+        "banks": [
+          43535.0,
+          40484.0
+        ],
+        "rewards": [
+          43535.0,
+          40484.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-51518447-market-0-baseline",
+      "seed": 51518447,
+      "opponent": "market",
+      "side": 0,
+      "arm": "baseline",
+      "replay": {
+        "path": "games/holdout-51518447-market-0-baseline/replay.json.gz",
+        "size": 1298817,
+        "sha256": "5ac68fa70a0d47f181551e1e4db240e1e37ff330fd29094f683fb974744d5d99"
+      },
+      "trace": {
+        "path": "traces/holdout-51518447-market-0-baseline.jsonl.gz",
+        "size": 7815351,
+        "sha256": "6b21846168964391c7ae48e266c90d62b9f580d71026734f2459ed395ec4b433"
+      },
+      "expected": {
+        "bank": 44209.0,
+        "opponent_bank": 50682.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 41209.0,
+        "opponent_net_profit": 47682.0,
+        "margin": -6473.0,
+        "score": 0.0,
+        "banks": [
+          44209.0,
+          50682.0
+        ],
+        "rewards": [
+          44209.0,
+          50682.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-51518447-market-0-candidate",
+      "seed": 51518447,
+      "opponent": "market",
+      "side": 0,
+      "arm": "candidate",
+      "replay": {
+        "path": "games/holdout-51518447-market-0-candidate/replay.json.gz",
+        "size": 1302709,
+        "sha256": "ba05768f2d49f200f402ad55e6f83dcde110cd641ed49ec756a88ffc777669d8"
+      },
+      "trace": {
+        "path": "traces/holdout-51518447-market-0-candidate.jsonl.gz",
+        "size": 7828253,
+        "sha256": "e99580054c2dd3a9d3389b1f5ede702387a9db1b93255c085f146122831a73c3"
+      },
+      "expected": {
+        "bank": 44209.0,
+        "opponent_bank": 50682.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 41209.0,
+        "opponent_net_profit": 47682.0,
+        "margin": -6473.0,
+        "score": 0.0,
+        "banks": [
+          44209.0,
+          50682.0
+        ],
+        "rewards": [
+          44209.0,
+          50682.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-51518447-market-0-teacher_task",
+      "seed": 51518447,
+      "opponent": "market",
+      "side": 0,
+      "arm": "teacher_task",
+      "replay": {
+        "path": "games/holdout-51518447-market-0-teacher_task/replay.json.gz",
+        "size": 1303128,
+        "sha256": "a1cd31e723da5f68d26945fdd7fd2c84e0142783f86a6d8fa0fd1325872f7003"
+      },
+      "trace": {
+        "path": "traces/holdout-51518447-market-0-teacher_task.jsonl.gz",
+        "size": 7740379,
+        "sha256": "b1f350cd8c824291ce24c105bc30e89b32339836152a7739fa7f7e9cd5c52e93"
+      },
+      "expected": {
+        "bank": 44209.0,
+        "opponent_bank": 50682.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 41209.0,
+        "opponent_net_profit": 47682.0,
+        "margin": -6473.0,
+        "score": 0.0,
+        "banks": [
+          44209.0,
+          50682.0
+        ],
+        "rewards": [
+          44209.0,
+          50682.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-51518447-market-1-baseline",
+      "seed": 51518447,
+      "opponent": "market",
+      "side": 1,
+      "arm": "baseline",
+      "replay": {
+        "path": "games/holdout-51518447-market-1-baseline/replay.json.gz",
+        "size": 1309485,
+        "sha256": "076f91096c9e29d04668c6f9d9a58ee3fa54fe9bd147228631d7ac8ddc2b029d"
+      },
+      "trace": {
+        "path": "traces/holdout-51518447-market-1-baseline.jsonl.gz",
+        "size": 7819910,
+        "sha256": "0907ba06cbfd9a9e5e578f3da338870400f136f98b96e41a9937a8566566dd0b"
+      },
+      "expected": {
+        "bank": 44209.0,
+        "opponent_bank": 50682.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 41209.0,
+        "opponent_net_profit": 47682.0,
+        "margin": -6473.0,
+        "score": 0.0,
+        "banks": [
+          50682.0,
+          44209.0
+        ],
+        "rewards": [
+          50682.0,
+          44209.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-51518447-market-1-candidate",
+      "seed": 51518447,
+      "opponent": "market",
+      "side": 1,
+      "arm": "candidate",
+      "replay": {
+        "path": "games/holdout-51518447-market-1-candidate/replay.json.gz",
+        "size": 1308334,
+        "sha256": "96c3e26a7ebbc78efb1b4ee6843003e82075f33c9f392cde5e468c1561aedaf7"
+      },
+      "trace": {
+        "path": "traces/holdout-51518447-market-1-candidate.jsonl.gz",
+        "size": 7832768,
+        "sha256": "6887283a9a7835c731e069f9ed59ea980ae02ee8c1c175755958e58e00bf7295"
+      },
+      "expected": {
+        "bank": 44209.0,
+        "opponent_bank": 50682.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 41209.0,
+        "opponent_net_profit": 47682.0,
+        "margin": -6473.0,
+        "score": 0.0,
+        "banks": [
+          50682.0,
+          44209.0
+        ],
+        "rewards": [
+          50682.0,
+          44209.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-51518447-market-1-teacher_task",
+      "seed": 51518447,
+      "opponent": "market",
+      "side": 1,
+      "arm": "teacher_task",
+      "replay": {
+        "path": "games/holdout-51518447-market-1-teacher_task/replay.json.gz",
+        "size": 1310445,
+        "sha256": "0a8da32f9fe36a7ed9149ecf8d435a8adf647b0f8164c3528b72605fdb09bba8"
+      },
+      "trace": {
+        "path": "traces/holdout-51518447-market-1-teacher_task.jsonl.gz",
+        "size": 7744924,
+        "sha256": "15206fafae28b7aae5121821f27799329376080b1e0130467698a9d5890757d9"
+      },
+      "expected": {
+        "bank": 44209.0,
+        "opponent_bank": 50682.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 41209.0,
+        "opponent_net_profit": 47682.0,
+        "margin": -6473.0,
+        "score": 0.0,
+        "banks": [
+          50682.0,
+          44209.0
+        ],
+        "rewards": [
+          50682.0,
+          44209.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-2997782266-round2-0-baseline",
+      "seed": 2997782266,
+      "opponent": "round2",
+      "side": 0,
+      "arm": "baseline",
+      "replay": {
+        "path": "games/holdout-2997782266-round2-0-baseline/replay.json.gz",
+        "size": 1180999,
+        "sha256": "682afbc0035e9bd9dadf55609f2b1dc9d9c3db598f202c3ba966647a3337e606"
+      },
+      "trace": {
+        "path": "traces/holdout-2997782266-round2-0-baseline.jsonl.gz",
+        "size": 7287658,
+        "sha256": "0864245518fb3e59e79f44fc0aab0ad19db90d9254036231c69ac75732576243"
+      },
+      "expected": {
+        "bank": 40276.0,
+        "opponent_bank": 38111.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 37276.0,
+        "opponent_net_profit": 35111.0,
+        "margin": 2165.0,
+        "score": 1.0,
+        "banks": [
+          40276.0,
+          38111.0
+        ],
+        "rewards": [
+          40276.0,
+          38111.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-2997782266-round2-0-candidate",
+      "seed": 2997782266,
+      "opponent": "round2",
+      "side": 0,
+      "arm": "candidate",
+      "replay": {
+        "path": "games/holdout-2997782266-round2-0-candidate/replay.json.gz",
+        "size": 1204400,
+        "sha256": "9e6c071dafd616125a2bea91067efca059bf869d57e5cc40347826757371bb57"
+      },
+      "trace": {
+        "path": "traces/holdout-2997782266-round2-0-candidate.jsonl.gz",
+        "size": 7433059,
+        "sha256": "fbff7fc0d94c3179d899d0f2126df0aba7cedf98f4363dfb1591d67c19eaed6e"
+      },
+      "expected": {
+        "bank": 43590.0,
+        "opponent_bank": 39391.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 40590.0,
+        "opponent_net_profit": 36391.0,
+        "margin": 4199.0,
+        "score": 1.0,
+        "banks": [
+          43590.0,
+          39391.0
+        ],
+        "rewards": [
+          43590.0,
+          39391.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-2997782266-round2-0-teacher_task",
+      "seed": 2997782266,
+      "opponent": "round2",
+      "side": 0,
+      "arm": "teacher_task",
+      "replay": {
+        "path": "games/holdout-2997782266-round2-0-teacher_task/replay.json.gz",
+        "size": 1204179,
+        "sha256": "b7fec6b571f98f3fab7732959bcf0b32d545cb6ede3cfba9b6ac90f8e27f54a0"
+      },
+      "trace": {
+        "path": "traces/holdout-2997782266-round2-0-teacher_task.jsonl.gz",
+        "size": 7399379,
+        "sha256": "480c5254c0e54e01943cb4023a32f49dc0a46bab77f88fbc4f5d6ae8e8aade60"
+      },
+      "expected": {
+        "bank": 43627.0,
+        "opponent_bank": 39375.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 40627.0,
+        "opponent_net_profit": 36375.0,
+        "margin": 4252.0,
+        "score": 1.0,
+        "banks": [
+          43627.0,
+          39375.0
+        ],
+        "rewards": [
+          43627.0,
+          39375.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-2997782266-round2-1-baseline",
+      "seed": 2997782266,
+      "opponent": "round2",
+      "side": 1,
+      "arm": "baseline",
+      "replay": {
+        "path": "games/holdout-2997782266-round2-1-baseline/replay.json.gz",
+        "size": 1181515,
+        "sha256": "5ed1e74e6fd9921b67465330a9df750b5cf9a99fa110ec52a4a37db84a4fdfa3"
+      },
+      "trace": {
+        "path": "traces/holdout-2997782266-round2-1-baseline.jsonl.gz",
+        "size": 7286606,
+        "sha256": "156ccdfb5b99d4310d7e5d72310d970da25ff6ce9e75a476a48e8dd446a6fb98"
+      },
+      "expected": {
+        "bank": 40276.0,
+        "opponent_bank": 38111.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 37276.0,
+        "opponent_net_profit": 35111.0,
+        "margin": 2165.0,
+        "score": 1.0,
+        "banks": [
+          38111.0,
+          40276.0
+        ],
+        "rewards": [
+          38111.0,
+          40276.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-2997782266-round2-1-candidate",
+      "seed": 2997782266,
+      "opponent": "round2",
+      "side": 1,
+      "arm": "candidate",
+      "replay": {
+        "path": "games/holdout-2997782266-round2-1-candidate/replay.json.gz",
+        "size": 1207770,
+        "sha256": "54d67de04779b58efb6dfaa240124f1c4b395d7930ed52b77acb4e7b3338b378"
+      },
+      "trace": {
+        "path": "traces/holdout-2997782266-round2-1-candidate.jsonl.gz",
+        "size": 7431489,
+        "sha256": "2083a8e8b6330ca5bea09cbaedadc1063bd772b1e7fe5294ed87810eb1233dbe"
+      },
+      "expected": {
+        "bank": 43590.0,
+        "opponent_bank": 39391.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 40590.0,
+        "opponent_net_profit": 36391.0,
+        "margin": 4199.0,
+        "score": 1.0,
+        "banks": [
+          39391.0,
+          43590.0
+        ],
+        "rewards": [
+          39391.0,
+          43590.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-2997782266-round2-1-teacher_task",
+      "seed": 2997782266,
+      "opponent": "round2",
+      "side": 1,
+      "arm": "teacher_task",
+      "replay": {
+        "path": "games/holdout-2997782266-round2-1-teacher_task/replay.json.gz",
+        "size": 1212092,
+        "sha256": "79c9823cca1ccdf3a62568fc584ddca0b658e18a7a3d8f7de861222b267f1b8b"
+      },
+      "trace": {
+        "path": "traces/holdout-2997782266-round2-1-teacher_task.jsonl.gz",
+        "size": 7398090,
+        "sha256": "4c60d0a5feac3f694ee7ce085979eb8e2740c5ff55f96cf2330f877e64d7b17e"
+      },
+      "expected": {
+        "bank": 43627.0,
+        "opponent_bank": 39375.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 40627.0,
+        "opponent_net_profit": 36375.0,
+        "margin": 4252.0,
+        "score": 1.0,
+        "banks": [
+          39375.0,
+          43627.0
+        ],
+        "rewards": [
+          39375.0,
+          43627.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-2997782266-market-0-baseline",
+      "seed": 2997782266,
+      "opponent": "market",
+      "side": 0,
+      "arm": "baseline",
+      "replay": {
+        "path": "games/holdout-2997782266-market-0-baseline/replay.json.gz",
+        "size": 1262388,
+        "sha256": "f678bbf8f165cf1b2c8c6efa2f31bf734657b977e9bdf502a60730644cb0ffd5"
+      },
+      "trace": {
+        "path": "traces/holdout-2997782266-market-0-baseline.jsonl.gz",
+        "size": 7358500,
+        "sha256": "c8dd3e5e81938536fbedef619fcf1b6059a3b82880395c9c684ba6af37856861"
+      },
+      "expected": {
+        "bank": 42323.0,
+        "opponent_bank": 41304.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 39323.0,
+        "opponent_net_profit": 38304.0,
+        "margin": 1019.0,
+        "score": 1.0,
+        "banks": [
+          42323.0,
+          41304.0
+        ],
+        "rewards": [
+          42323.0,
+          41304.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-2997782266-market-0-candidate",
+      "seed": 2997782266,
+      "opponent": "market",
+      "side": 0,
+      "arm": "candidate",
+      "replay": {
+        "path": "games/holdout-2997782266-market-0-candidate/replay.json.gz",
+        "size": 1263722,
+        "sha256": "e3eb583839c4b3b66ab26ce46ee32b35d9675ee57946b9696eabe98c70a536d5"
+      },
+      "trace": {
+        "path": "traces/holdout-2997782266-market-0-candidate.jsonl.gz",
+        "size": 7354814,
+        "sha256": "cb5bc19d29597f7f6c6ea6e94f717decf594d3982859e292c47c4a1b137a0eda"
+      },
+      "expected": {
+        "bank": 42323.0,
+        "opponent_bank": 41304.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 39323.0,
+        "opponent_net_profit": 38304.0,
+        "margin": 1019.0,
+        "score": 1.0,
+        "banks": [
+          42323.0,
+          41304.0
+        ],
+        "rewards": [
+          42323.0,
+          41304.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-2997782266-market-0-teacher_task",
+      "seed": 2997782266,
+      "opponent": "market",
+      "side": 0,
+      "arm": "teacher_task",
+      "replay": {
+        "path": "games/holdout-2997782266-market-0-teacher_task/replay.json.gz",
+        "size": 1262304,
+        "sha256": "4d00f07adeda5a8aed234d47d49bf448adc1a481ad984534e5d4faa44b93ada7"
+      },
+      "trace": {
+        "path": "traces/holdout-2997782266-market-0-teacher_task.jsonl.gz",
+        "size": 7303420,
+        "sha256": "679b7eec0605cc20a031d2ec48d0fc24d9e6f41fb4d1c65066529817510d748c"
+      },
+      "expected": {
+        "bank": 42263.0,
+        "opponent_bank": 41408.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 39263.0,
+        "opponent_net_profit": 38408.0,
+        "margin": 855.0,
+        "score": 1.0,
+        "banks": [
+          42263.0,
+          41408.0
+        ],
+        "rewards": [
+          42263.0,
+          41408.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-2997782266-market-1-baseline",
+      "seed": 2997782266,
+      "opponent": "market",
+      "side": 1,
+      "arm": "baseline",
+      "replay": {
+        "path": "games/holdout-2997782266-market-1-baseline/replay.json.gz",
+        "size": 1264981,
+        "sha256": "28e625a1d3acdbae63f692f93e52563c82cf433eac28448101e4b9cf48003e7c"
+      },
+      "trace": {
+        "path": "traces/holdout-2997782266-market-1-baseline.jsonl.gz",
+        "size": 7360980,
+        "sha256": "e92ab90a9c7fb9d09e5815c8def8e5c244a181470405b1a3237e1b13c5f9dea8"
+      },
+      "expected": {
+        "bank": 42323.0,
+        "opponent_bank": 41304.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 39323.0,
+        "opponent_net_profit": 38304.0,
+        "margin": 1019.0,
+        "score": 1.0,
+        "banks": [
+          41304.0,
+          42323.0
+        ],
+        "rewards": [
+          41304.0,
+          42323.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-2997782266-market-1-candidate",
+      "seed": 2997782266,
+      "opponent": "market",
+      "side": 1,
+      "arm": "candidate",
+      "replay": {
+        "path": "games/holdout-2997782266-market-1-candidate/replay.json.gz",
+        "size": 1269563,
+        "sha256": "fe640250abb567103f155ac6fd17cd683d37edd6845e53ff448417655658dea4"
+      },
+      "trace": {
+        "path": "traces/holdout-2997782266-market-1-candidate.jsonl.gz",
+        "size": 7357264,
+        "sha256": "8b993404ecfb9d6f19f93e389f772edeb67318e059e8a35d2aab9ab39398110d"
+      },
+      "expected": {
+        "bank": 42323.0,
+        "opponent_bank": 41304.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 39323.0,
+        "opponent_net_profit": 38304.0,
+        "margin": 1019.0,
+        "score": 1.0,
+        "banks": [
+          41304.0,
+          42323.0
+        ],
+        "rewards": [
+          41304.0,
+          42323.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    },
+    {
+      "key": "holdout-2997782266-market-1-teacher_task",
+      "seed": 2997782266,
+      "opponent": "market",
+      "side": 1,
+      "arm": "teacher_task",
+      "replay": {
+        "path": "games/holdout-2997782266-market-1-teacher_task/replay.json.gz",
+        "size": 1267151,
+        "sha256": "4cb1ff4b9a94d9bc654fa18f4f52f7bfda31f808655a7e6968bc01a63fe7f28a"
+      },
+      "trace": {
+        "path": "traces/holdout-2997782266-market-1-teacher_task.jsonl.gz",
+        "size": 7306102,
+        "sha256": "10c03732802b3762a3de8403420cb972b4a438e6897e4ac5452508985153b709"
+      },
+      "expected": {
+        "bank": 42263.0,
+        "opponent_bank": 41408.0,
+        "initial_bank": 3000.0,
+        "opponent_initial_bank": 3000.0,
+        "net_profit": 39263.0,
+        "opponent_net_profit": 38408.0,
+        "margin": 855.0,
+        "score": 1.0,
+        "banks": [
+          41408.0,
+          42263.0
+        ],
+        "rewards": [
+          41408.0,
+          42263.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "states": 720,
+        "action_turns": 719,
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ]
+      }
+    }
+  ],
+  "pairs": [
+    {
+      "key": "2240228007-round2-0",
+      "seed": 2240228007,
+      "opponent": "round2",
+      "side": 0,
+      "first_candidate_baseline_request_difference": 173,
+      "first_request_difference_step": 173
+    },
+    {
+      "key": "2240228007-round2-1",
+      "seed": 2240228007,
+      "opponent": "round2",
+      "side": 1,
+      "first_candidate_baseline_request_difference": 173,
+      "first_request_difference_step": 173
+    },
+    {
+      "key": "2240228007-market-0",
+      "seed": 2240228007,
+      "opponent": "market",
+      "side": 0,
+      "first_candidate_baseline_request_difference": 249,
+      "first_request_difference_step": 249
+    },
+    {
+      "key": "2240228007-market-1",
+      "seed": 2240228007,
+      "opponent": "market",
+      "side": 1,
+      "first_candidate_baseline_request_difference": 249,
+      "first_request_difference_step": 249
+    },
+    {
+      "key": "149009525-round2-0",
+      "seed": 149009525,
+      "opponent": "round2",
+      "side": 0,
+      "first_candidate_baseline_request_difference": 270,
+      "first_request_difference_step": 270
+    },
+    {
+      "key": "149009525-round2-1",
+      "seed": 149009525,
+      "opponent": "round2",
+      "side": 1,
+      "first_candidate_baseline_request_difference": 270,
+      "first_request_difference_step": 270
+    },
+    {
+      "key": "149009525-market-0",
+      "seed": 149009525,
+      "opponent": "market",
+      "side": 0,
+      "first_candidate_baseline_request_difference": 173,
+      "first_request_difference_step": 173
+    },
+    {
+      "key": "149009525-market-1",
+      "seed": 149009525,
+      "opponent": "market",
+      "side": 1,
+      "first_candidate_baseline_request_difference": 173,
+      "first_request_difference_step": 173
+    },
+    {
+      "key": "3351711015-round2-0",
+      "seed": 3351711015,
+      "opponent": "round2",
+      "side": 0,
+      "first_candidate_baseline_request_difference": 180,
+      "first_request_difference_step": 180
+    },
+    {
+      "key": "3351711015-round2-1",
+      "seed": 3351711015,
+      "opponent": "round2",
+      "side": 1,
+      "first_candidate_baseline_request_difference": 180,
+      "first_request_difference_step": 180
+    },
+    {
+      "key": "3351711015-market-0",
+      "seed": 3351711015,
+      "opponent": "market",
+      "side": 0,
+      "first_candidate_baseline_request_difference": 269,
+      "first_request_difference_step": 269
+    },
+    {
+      "key": "3351711015-market-1",
+      "seed": 3351711015,
+      "opponent": "market",
+      "side": 1,
+      "first_candidate_baseline_request_difference": 269,
+      "first_request_difference_step": 269
+    },
+    {
+      "key": "1845894395-round2-0",
+      "seed": 1845894395,
+      "opponent": "round2",
+      "side": 0,
+      "first_candidate_baseline_request_difference": 249,
+      "first_request_difference_step": 249
+    },
+    {
+      "key": "1845894395-round2-1",
+      "seed": 1845894395,
+      "opponent": "round2",
+      "side": 1,
+      "first_candidate_baseline_request_difference": 249,
+      "first_request_difference_step": 249
+    },
+    {
+      "key": "1845894395-market-0",
+      "seed": 1845894395,
+      "opponent": "market",
+      "side": 0,
+      "first_candidate_baseline_request_difference": 173,
+      "first_request_difference_step": 173
+    },
+    {
+      "key": "1845894395-market-1",
+      "seed": 1845894395,
+      "opponent": "market",
+      "side": 1,
+      "first_candidate_baseline_request_difference": 173,
+      "first_request_difference_step": 173
+    },
+    {
+      "key": "1600614327-round2-0",
+      "seed": 1600614327,
+      "opponent": "round2",
+      "side": 0,
+      "first_candidate_baseline_request_difference": 270,
+      "first_request_difference_step": 270
+    },
+    {
+      "key": "1600614327-round2-1",
+      "seed": 1600614327,
+      "opponent": "round2",
+      "side": 1,
+      "first_candidate_baseline_request_difference": 270,
+      "first_request_difference_step": 270
+    },
+    {
+      "key": "1600614327-market-0",
+      "seed": 1600614327,
+      "opponent": "market",
+      "side": 0,
+      "first_candidate_baseline_request_difference": 268,
+      "first_request_difference_step": 268
+    },
+    {
+      "key": "1600614327-market-1",
+      "seed": 1600614327,
+      "opponent": "market",
+      "side": 1,
+      "first_candidate_baseline_request_difference": 268,
+      "first_request_difference_step": 268
+    },
+    {
+      "key": "1836204477-round2-0",
+      "seed": 1836204477,
+      "opponent": "round2",
+      "side": 0,
+      "first_candidate_baseline_request_difference": 269,
+      "first_request_difference_step": 269
+    },
+    {
+      "key": "1836204477-round2-1",
+      "seed": 1836204477,
+      "opponent": "round2",
+      "side": 1,
+      "first_candidate_baseline_request_difference": 268,
+      "first_request_difference_step": 268
+    },
+    {
+      "key": "1836204477-market-0",
+      "seed": 1836204477,
+      "opponent": "market",
+      "side": 0,
+      "first_candidate_baseline_request_difference": 266,
+      "first_request_difference_step": 266
+    },
+    {
+      "key": "1836204477-market-1",
+      "seed": 1836204477,
+      "opponent": "market",
+      "side": 1,
+      "first_candidate_baseline_request_difference": 266,
+      "first_request_difference_step": 266
+    },
+    {
+      "key": "51518447-round2-0",
+      "seed": 51518447,
+      "opponent": "round2",
+      "side": 0,
+      "first_candidate_baseline_request_difference": 173,
+      "first_request_difference_step": 173
+    },
+    {
+      "key": "51518447-round2-1",
+      "seed": 51518447,
+      "opponent": "round2",
+      "side": 1,
+      "first_candidate_baseline_request_difference": 173,
+      "first_request_difference_step": 173
+    },
+    {
+      "key": "51518447-market-0",
+      "seed": 51518447,
+      "opponent": "market",
+      "side": 0,
+      "first_candidate_baseline_request_difference": 365,
+      "first_request_difference_step": 365
+    },
+    {
+      "key": "51518447-market-1",
+      "seed": 51518447,
+      "opponent": "market",
+      "side": 1,
+      "first_candidate_baseline_request_difference": 365,
+      "first_request_difference_step": 365
+    },
+    {
+      "key": "2997782266-round2-0",
+      "seed": 2997782266,
+      "opponent": "round2",
+      "side": 0,
+      "first_candidate_baseline_request_difference": 252,
+      "first_request_difference_step": 252
+    },
+    {
+      "key": "2997782266-round2-1",
+      "seed": 2997782266,
+      "opponent": "round2",
+      "side": 1,
+      "first_candidate_baseline_request_difference": 252,
+      "first_request_difference_step": 252
+    },
+    {
+      "key": "2997782266-market-0",
+      "seed": 2997782266,
+      "opponent": "market",
+      "side": 0,
+      "first_candidate_baseline_request_difference": 224,
+      "first_request_difference_step": 224
+    },
+    {
+      "key": "2997782266-market-1",
+      "seed": 2997782266,
+      "opponent": "market",
+      "side": 1,
+      "first_candidate_baseline_request_difference": 224,
+      "first_request_difference_step": 224
+    }
+  ],
+  "game_count": 96,
+  "pair_count": 32,
+  "file_count": 192,
+  "compressed_bytes": 854529469,
+  "metadata_certificates": [
+    {
+      "key": "holdout-2240228007-round2-0-baseline",
+      "row_sha256": "50c075a44b94fa92941c6d1185e3035826913a604844a2fb484be9dfc5a890e1",
+      "audit_sha256": "c4e575b923d37a38790eb7f8630f47efac52043a68e78baf463794f535236fc3",
+      "complete_sha256": "95de1ca0e3f3071e8f36fc2d2427b9b3611d971aabf6e9cfe625c5eebe7eb375"
+    },
+    {
+      "key": "holdout-2240228007-round2-0-candidate",
+      "row_sha256": "112c6d2885aedf964d600c3925fd75e6dee94d68ca0734dceceeade9667dcd54",
+      "audit_sha256": "74939363c7d72f645fcb20b83bf4b970bcfea78db6165afaee8f7def366f7faa",
+      "complete_sha256": "139a268a12554b0cdb2f45d819ccb9d20db42b750622a0dff7fc43d4b795a6d5"
+    },
+    {
+      "key": "holdout-2240228007-round2-0-teacher_task",
+      "row_sha256": "f3c343224b4d5fcc2ddc078f9ab609437c57264e4bbdadbd064e52fe4a901b13",
+      "audit_sha256": "ce1a53b2e573673073fb889235bfe0a562b9a181941f85ca6988cbeafecc3ef4",
+      "complete_sha256": "24d16fc8c6d45b33f403cc4b7245440a5434b8ca08e66eccc7f428e951810338"
+    },
+    {
+      "key": "holdout-2240228007-round2-1-baseline",
+      "row_sha256": "e3de95045d9d21bc1043c348549535d56ccccdaf1054c45370194e47a253c8c6",
+      "audit_sha256": "4a9b49fc349da4f434c22a332f5e18259c2f0e6f3be06047dfb680c30126a738",
+      "complete_sha256": "9d6b5f3be6c33c2dc467693ddb3aa1b5937df659c72264976c9ccb8aaff73612"
+    },
+    {
+      "key": "holdout-2240228007-round2-1-candidate",
+      "row_sha256": "c8ff2889412b2441376e9c3a4f294efb5f981c99f88bae7771138b87ce07c53e",
+      "audit_sha256": "97aa0fd793c893ab987738f8c274a38b87943faed88360c3e4449ac6e8667da9",
+      "complete_sha256": "e065899543e8d04a0b387bfae2c6cd970de76d528dddad5284dd15e8620b5b0f"
+    },
+    {
+      "key": "holdout-2240228007-round2-1-teacher_task",
+      "row_sha256": "666ec66d4192fdeab066e63354488559991aaed589c0fee9863d56e565372ae2",
+      "audit_sha256": "528408c147b40bf55abb9e00da2e97fe7edf1ce58b6ba361f804c521eb62e327",
+      "complete_sha256": "19917489a2e65660f965acd2c27d6a5480f26892d5b4e4efc20e797570ca097b"
+    },
+    {
+      "key": "holdout-2240228007-market-0-baseline",
+      "row_sha256": "527c4bb7d37f2d7c0803cab1fd7fc06080f70c542f959388b981b7907bbc84f5",
+      "audit_sha256": "c985393200f10f3d987e6ead546e344c36b62ebbc0e51d4d0f31a396e3fe74c4",
+      "complete_sha256": "f2e63d9b1b8432275d509f6964852998fad08a063e45a45597925c13b13d9f5c"
+    },
+    {
+      "key": "holdout-2240228007-market-0-candidate",
+      "row_sha256": "17a2d874ec1ce9d46b0e546b2fd6cdce6bbe2aa95e86fcc732ee11d695f7ef04",
+      "audit_sha256": "a02e5967d13b4b0964b7fc7c39bfabf862839483f4b4b24695375f5656146f2b",
+      "complete_sha256": "93074b34b60883fbccc05da89997388e60441690c9635f2c28ac66c9b50a5070"
+    },
+    {
+      "key": "holdout-2240228007-market-0-teacher_task",
+      "row_sha256": "be7f5d733195b8222223db59d7231c488d5ab026df7444a0bf34f138411f39fd",
+      "audit_sha256": "1c159979b4fc1e5e5409831485f712ac78a5673063d0e43c27fe617f17d4cffe",
+      "complete_sha256": "7fded22e9388fa6a45bb81a3af85129e1d99a63d6c78dae96a9ce267300d7b31"
+    },
+    {
+      "key": "holdout-2240228007-market-1-baseline",
+      "row_sha256": "c4348e96e907372889f6c912ba910e5e594c5682b0a59640379783ed14d3cc50",
+      "audit_sha256": "59434e9a8002650b82dcff32e2fd5641154228eb0db690a5b5c1e0e6e70d2026",
+      "complete_sha256": "63a8ea9f1f7620b39b2ee64cb95b12eb4f7f1d0e9789dcfe971752261cf4d396"
+    },
+    {
+      "key": "holdout-2240228007-market-1-candidate",
+      "row_sha256": "45ed19b92e8b0f896e622ef94d7c5383ad8bf2762f2ce04df5479d35b447e5d6",
+      "audit_sha256": "122b6e3f0be5ae655fc93699227070e608167ec9a07231c46af88723345ca56a",
+      "complete_sha256": "c6bd12940d429295686b95a1b99f2f33e1bdef45472ee40ec4ca92f04cde60ec"
+    },
+    {
+      "key": "holdout-2240228007-market-1-teacher_task",
+      "row_sha256": "b7d9b36613910202e7db492262b9dcf984ca77d4399e4161a64cab362359c059",
+      "audit_sha256": "628dadbfbfca12daf8fd7ecd253b11980b7d812160032d7d02c875adf5b13a1c",
+      "complete_sha256": "65eea5626f9a430c5c31a263683fc94720e6c6f25faa0aa91e218e38d99a191c"
+    },
+    {
+      "key": "holdout-149009525-round2-0-baseline",
+      "row_sha256": "2d9d24943b347101334428d4336e5609de998927d87d3d80f17ef8db4ace6979",
+      "audit_sha256": "c6fc4e25086248f55e644336f52c791e58efb831859edd081caba17f626f6a31",
+      "complete_sha256": "622e8b44e02719adef40fc50dee23206d0340e57d222fa88055b72c31717800a"
+    },
+    {
+      "key": "holdout-149009525-round2-0-candidate",
+      "row_sha256": "d394a4added8b6e17fd6090d8badcc17a9dd7c7d4f863318f9c36d0bae54d266",
+      "audit_sha256": "c192190ddf6a7d70195200d10b647db743e3cbc81686c8267df412ee6ad1656f",
+      "complete_sha256": "0a106ad93e4e19337e737afc3cc2eca579c5fa55f7df6d61d746a09681622314"
+    },
+    {
+      "key": "holdout-149009525-round2-0-teacher_task",
+      "row_sha256": "6881a5a87fd58f99517f8fe5567f57902ad356f37bf59acfb7b24b5cbe93447f",
+      "audit_sha256": "5a52ca2a685f4218ef2a45d45d56f72a442daccd4843ffb55815da0eee36f8a5",
+      "complete_sha256": "abab3ad1d8bc6d0a2deb8d68ded6f4a8eaaf78fbdcbcd80fabeb41e0f92e6d65"
+    },
+    {
+      "key": "holdout-149009525-round2-1-baseline",
+      "row_sha256": "5994320c7497cfff9a78d017cfa8a06a5ddb522922da84d93caf91040078e5d3",
+      "audit_sha256": "ba21f77adc639fea36a59cca6c1e165c7a63a123d993f480da6973955c1b69b8",
+      "complete_sha256": "f07e09a5aad89756e9dcc7054df07e386af27b7f02d4c4ada5f66064f59a2b7f"
+    },
+    {
+      "key": "holdout-149009525-round2-1-candidate",
+      "row_sha256": "c9756197e5503088238ed70a58412cdd021b157af269c6216f8c57d66a539820",
+      "audit_sha256": "afd5465c780efcdfe94ceeb01e922496015766666c64f05b9a5abce1f4f7a812",
+      "complete_sha256": "fc5c4677cf07d6329b041d270807030e7b522dcfeddeb2154b593ca535066082"
+    },
+    {
+      "key": "holdout-149009525-round2-1-teacher_task",
+      "row_sha256": "9920339aea6ae4d17db4c7101f2dcb5bf2c95fff79e5146809e67b890c5c37bd",
+      "audit_sha256": "e47e205a828a2f26c23969c9125e663938736b9947fc80c28dce7a3286806e49",
+      "complete_sha256": "cbf64638cc9c554ef05325ce77a7b25263b6f9cf86c4a5b083be2739ee6de3cf"
+    },
+    {
+      "key": "holdout-149009525-market-0-baseline",
+      "row_sha256": "e92e16e687d9879031734548e96964f1fdc55d33e60106c4f39f3857d4faf947",
+      "audit_sha256": "829f5830796e31d42c7136c6543ed7ce19abf3a6bedd122107ad63e4ab87b2d4",
+      "complete_sha256": "b8834e9fe335b9d791cb14104ed10f8076c2dbb9fc7f6882e2fdefda1410cc62"
+    },
+    {
+      "key": "holdout-149009525-market-0-candidate",
+      "row_sha256": "3fc8fac317acf1031a42597d001d67417e06e66c14bab081083f5e9432c02a4d",
+      "audit_sha256": "29bb57342e197cc868d74c78ac38f88041540fae84bd5f88f51825a4ba0ce482",
+      "complete_sha256": "7e9176cd0f6137c0af01909c3b8d737e613ce2c0b4ed344bed2ac012dd0486bf"
+    },
+    {
+      "key": "holdout-149009525-market-0-teacher_task",
+      "row_sha256": "7427ab6a3133e5f80f556c9bb1dbfac2bdfe2b9b38c4472c507d58d77d2ce889",
+      "audit_sha256": "80c928ff49594768d7d7a6d56c47d9296a750a20d87f98484bfde6750b002c35",
+      "complete_sha256": "98b6a8afb48d0a1c870d226a3e275280311bb1886cbfb89beb95ae6121b617c0"
+    },
+    {
+      "key": "holdout-149009525-market-1-baseline",
+      "row_sha256": "c66a703a5bf6876407b70ea2cb7e00cc3136d3ef5992980243274a7978e52796",
+      "audit_sha256": "d064837a36d7afef0f0c56a97bca67601eead637627b7eb93e7083bba61d749a",
+      "complete_sha256": "6b3183de358227027bea79a7aaf276ca7f4f2b2613d7d07802d20540a95aab75"
+    },
+    {
+      "key": "holdout-149009525-market-1-candidate",
+      "row_sha256": "655437ab083ec2d38922aa2625fcdd9b0a2435739999a8f282cee1f4d7c19063",
+      "audit_sha256": "e502ec08aea11672af2a8345420945de0db88c071d491553928dd9cf4b922544",
+      "complete_sha256": "a3396a6bb9ccc9a39ebff5cdba7f55f4416300c7bde752d980efa0ebfeadc00f"
+    },
+    {
+      "key": "holdout-149009525-market-1-teacher_task",
+      "row_sha256": "4b4bbdc54429b6ff96a6dc3e5266c82150f730d75a8fc9857158fda3fb6ecaa8",
+      "audit_sha256": "eba9d30d10c1bb4589ce3874418833bef2eabf03b04c06e83547d12e1b72e295",
+      "complete_sha256": "78f0c7fd4fabecfe8b3783e3273458bbf643930d441c4128435380c43e1ac727"
+    },
+    {
+      "key": "holdout-3351711015-round2-0-baseline",
+      "row_sha256": "1b6d22a5f74975c0cc957cb6dfff4393ca21a5db4467b98c78cf8e7a03bea811",
+      "audit_sha256": "87073c7a90eaf7897d5d8f0ef7363c5c677ce44ccc917d75b27db6073f4f184b",
+      "complete_sha256": "b5b32d2dee9e2cad77ae7ab308582ededaf64143fe5efa08a2da584e5ee1cad9"
+    },
+    {
+      "key": "holdout-3351711015-round2-0-candidate",
+      "row_sha256": "f7bd967a0144990f7ff62bcd8a9c918919557b3f462e5d8bd0c55fbcf07ddc98",
+      "audit_sha256": "c02a24096699c54c65779fae16cb4e6e271fab7e8105df482afaad5bf0ed2075",
+      "complete_sha256": "b7f2539dac0511db6e488a4da5e5313f2bb795f9e9a70b8c44632322bb6a18ed"
+    },
+    {
+      "key": "holdout-3351711015-round2-0-teacher_task",
+      "row_sha256": "71ada342326fa5ccebf392656a94062fd3a053867c37c89602d9f012a30411f8",
+      "audit_sha256": "d50d15eb8658cc3a0ce81b91ac8109c618f6a27be16062dd2e19d30e85074e81",
+      "complete_sha256": "17ff8d7f636273c599485b7a17bcef64aed7082e0e2d0a7c8607d3a2dff34b14"
+    },
+    {
+      "key": "holdout-3351711015-round2-1-baseline",
+      "row_sha256": "d4fa23d705a1d81295dcdec257dce1d5b2137148178bd11984e7da9b0766357e",
+      "audit_sha256": "6b7ed7a03cc320178ea0e58ad51e283dfe6cf0bef1eae336bf8990125a606714",
+      "complete_sha256": "30f8e987fa9617def492af5c58327d77a542c19f42620f9966fc908099fa6652"
+    },
+    {
+      "key": "holdout-3351711015-round2-1-candidate",
+      "row_sha256": "f5fdec0428e48fb46eec480aa39e4497427d5faa02fe2ae9d48b09062ea40397",
+      "audit_sha256": "8395d6217fe82b3dd09d12755c6f274501a345c1be90729ab275809e0da6f3b8",
+      "complete_sha256": "177036df25510b25bc29aaf2d07a3d4a514a0988be1db6d9ca68a7a7539d1163"
+    },
+    {
+      "key": "holdout-3351711015-round2-1-teacher_task",
+      "row_sha256": "bb86d171c5a422ef987175cec50710443b170c76e3e8cccecebedab51d3e079b",
+      "audit_sha256": "e3054ba717d37b406013a66fe15cc6a56ee10618bd8400b9802bc17a0b916b06",
+      "complete_sha256": "80f6d846e6d2c24b0813e1ddfa3add254f09937344ac76464cbb893cc6bcd475"
+    },
+    {
+      "key": "holdout-3351711015-market-0-baseline",
+      "row_sha256": "c945348fec9cf7d13f90c6dcf070144f48cefaf9ec9d2a88a7274d588c8e08f6",
+      "audit_sha256": "d9c6a6896508ee30dce1e65d00f3c8225b1fe06016b193759d652e8b3edcd1fa",
+      "complete_sha256": "c6d19ea724737d219cc7ee0ffd56dc5f42a1653239b7ebcaaac352ce0287e93b"
+    },
+    {
+      "key": "holdout-3351711015-market-0-candidate",
+      "row_sha256": "834d71efd2b218c6421709c16e7767ef55dbdb38dcc564cde9eec9010d3b5521",
+      "audit_sha256": "2047beec6507d1953482691418292f937bf11f836a153aacd83570269d0f306e",
+      "complete_sha256": "94466193402a02ecee2012c2e09978bf1b2001cbf178fe33ee82cff5c6d2133b"
+    },
+    {
+      "key": "holdout-3351711015-market-0-teacher_task",
+      "row_sha256": "7a7b59dcde26470df4cde04c3796a64436e4451e041d2b5e45d65d969a1f10b9",
+      "audit_sha256": "006e1228b5064c521d0ebe10171f328220aa69ea387476f0954668b26aab10f5",
+      "complete_sha256": "525fea67ab6147f8a4f6fed6c607bdc32c086e2668304682d18ad27cfca555e4"
+    },
+    {
+      "key": "holdout-3351711015-market-1-baseline",
+      "row_sha256": "6dea5e8661c8b48826aba7981a36a6af21566e7e9363ddb88ff62ea70a715608",
+      "audit_sha256": "577df17dd2ad6766f8fdd952d1ceefd0b536b6969f954890169bf18ca3cab7da",
+      "complete_sha256": "bc4a1a1af98a58402d83c0bba6546b9263fdfd131702c58cde95783683f4b6fe"
+    },
+    {
+      "key": "holdout-3351711015-market-1-candidate",
+      "row_sha256": "ed577bcdfb56c1b076747289b9d63d6543d30a0b825d2896ebd9a8bed3e7d45b",
+      "audit_sha256": "faedaa17b82923cdb3e999842f9b68f500cdf3df00ce27f1e16b15c4ea06b0a7",
+      "complete_sha256": "f4ca6c85f767c46cf04af3b5ac2845e8808b99ba4ca3e3519a51041be09c7ba5"
+    },
+    {
+      "key": "holdout-3351711015-market-1-teacher_task",
+      "row_sha256": "80abb69163388e72d19bbd2ebbffb32a84db5cdcc304cd26ca1c72511b39aac7",
+      "audit_sha256": "0a5dfbf22d57f69b3edbfd4150800fe29c9c889f3cec3c67f72cbd1d64dc686f",
+      "complete_sha256": "0f0480b310438df9b4a57da146cfaef9b0b8cbc7ccf6d57443c36e43ca4d005d"
+    },
+    {
+      "key": "holdout-1845894395-round2-0-baseline",
+      "row_sha256": "c5742a466aa9d1c042b78e97afe7e4e0693aa3958d2926af69f86846623506a4",
+      "audit_sha256": "9be3722797ffad111c37beac3b632216b666e46059caf4c1273beb031b52f9ae",
+      "complete_sha256": "b7f2d11132ab514d5eaaaf72559913faa2fc65e98c7325be04146e947bc1e2ae"
+    },
+    {
+      "key": "holdout-1845894395-round2-0-candidate",
+      "row_sha256": "7ba816c99e9a16211f576794b85b7c1cc8590478eeb6ff1e92245ad0b2b0060f",
+      "audit_sha256": "522a5ec909262d91cb623e5234c26eb51b1e7e690c4541961cf4ca7d606c8349",
+      "complete_sha256": "5d07f267425ee9f9b7ed6adbd350b8eb0781be306640c2f0e0f1c3b9425e553c"
+    },
+    {
+      "key": "holdout-1845894395-round2-0-teacher_task",
+      "row_sha256": "821a6b1c3b5b4cb77bf7fa9f0eb18020aed57cdd2f3da26adbd32525175a32b5",
+      "audit_sha256": "962b9bd6a7c86cabfa214d227e16b7b163d182079d0ea72b6946bd724ebdc38c",
+      "complete_sha256": "bd0a3036148d4deb4462454c1cd897c6570d65fb402795064e98f4764302cd6f"
+    },
+    {
+      "key": "holdout-1845894395-round2-1-baseline",
+      "row_sha256": "bee2102697f7593b02c5eadba9dd5eead7528e6084d6555b1f0b03f6f3504525",
+      "audit_sha256": "51dd9f2fb62b4d2231069cfb824e50c96a5276d2583530ffa9c556e7c7cd80a2",
+      "complete_sha256": "bda909dae58c47386ef2b1d669e03e2bfb3d50ed5246c096f159277b564d65d7"
+    },
+    {
+      "key": "holdout-1845894395-round2-1-candidate",
+      "row_sha256": "d93ceb5e2212b35c41bb7a79e47963ee0ac2245351078e4b22edda74b255e0ae",
+      "audit_sha256": "d0a38541da7ce2278feaaba3cb06ed4a2ec23c1c85ee9c49a74629ac9b96013d",
+      "complete_sha256": "1d8068ce44a62fed39a2fa9160376b50a93cb3b0b96d0eb80469471a744fa1d6"
+    },
+    {
+      "key": "holdout-1845894395-round2-1-teacher_task",
+      "row_sha256": "9ea4b3f9354658374c86d33ca6a9e2a33612e402d8d8b52fd2112142963483b7",
+      "audit_sha256": "eb0bc6259a3fb07f1566195bada0f412de8f03d69c76c6d3b91e1d9b989e9024",
+      "complete_sha256": "f5221b89f94be47b9457541eebf91579cdcd714c49a733fe97ede21379c9766a"
+    },
+    {
+      "key": "holdout-1845894395-market-0-baseline",
+      "row_sha256": "c367c7c56a2eac01b71bf1d32b05e314a0644320b5a0819864b4568421e17523",
+      "audit_sha256": "25933c78f4a23eba4d0112bf3f12424a3023fd074dda801348d8c3bfcc9ab2f6",
+      "complete_sha256": "e2167c0bd9ac3e12b473bd6723de43588e2b4ff080ed3ae2d9a6dbe78223b86d"
+    },
+    {
+      "key": "holdout-1845894395-market-0-candidate",
+      "row_sha256": "cccc508b98b6d619c8ee29a641e3f4178c7fe44226d7327aea35137626fb3a15",
+      "audit_sha256": "6e50375a31ebd3860c83262616c73fc1f9266ac75567d1cddd37f3617253d718",
+      "complete_sha256": "0db5c6374160f56be0024d15d66eed7e8743a61a5ab55bc22023c42203118700"
+    },
+    {
+      "key": "holdout-1845894395-market-0-teacher_task",
+      "row_sha256": "59392f0a6cf0124449acc11e37162915a36e788f1762ee65a0552979e90c7ebf",
+      "audit_sha256": "993aa7058333e6ea29669904fa7f35a3166e6478a3689cbfe54490a7353a3c4a",
+      "complete_sha256": "2526e629f5f9cd852502d3a29f9ae54667d102e1e6f7448fda28e31ee825ac15"
+    },
+    {
+      "key": "holdout-1845894395-market-1-baseline",
+      "row_sha256": "6b4b8da7e7aeb1bdedc71ffd325809b0dcad160aca7379ef00210285b6ff78c5",
+      "audit_sha256": "a77ee551e01f643e88ca27ac17cb2bcb227e3144bfe6bba34fca102c56ce7488",
+      "complete_sha256": "fba7d739851ff7273a0ce59a496f8ca235f75f72117581a2f34278805d47352f"
+    },
+    {
+      "key": "holdout-1845894395-market-1-candidate",
+      "row_sha256": "37fb64268a140ed4c31eb28ebc5cee2e046e9f6ffe21afa689f7861eba91cd91",
+      "audit_sha256": "9cbf932e6b43b55f544d24f61262ada3a066563e10e28290440c1a6375a5ad40",
+      "complete_sha256": "21d36698fafdd4e636f1ef38f803e02029cd6d225604bd61742d906a89458ad9"
+    },
+    {
+      "key": "holdout-1845894395-market-1-teacher_task",
+      "row_sha256": "4b7b291f2c7a393282d9eaf4d742541e013d2c9ffcdc30e01ab4fa6d7eaa15dc",
+      "audit_sha256": "76b0a521669e6cd189eeb3e2c14ae4549dc8b9d91bb6424c1c258914d5ddbaf2",
+      "complete_sha256": "47780e43122837b3bde765a9a2b31f50ee77c8e5a941dddedfb78b336b24a45d"
+    },
+    {
+      "key": "holdout-1600614327-round2-0-baseline",
+      "row_sha256": "fc0256edb8d012f34f72fc5366e8cbf369797f93b3e567ed0d6b32803b07ec0c",
+      "audit_sha256": "038d8d75b3529d7adc5b785ae3b1ac0d263f18af813d3fd00380dc57f6e36bf6",
+      "complete_sha256": "6d6489c2095372b6b08a16db479c3c6b31a2c81c49803eee0ad46041a81f28e1"
+    },
+    {
+      "key": "holdout-1600614327-round2-0-candidate",
+      "row_sha256": "72e2bdafdb0518b48aa96be29e6fec10d4e9f991692e64eb47ed93a9814a975a",
+      "audit_sha256": "3b98f97af9ceb1a49a5a6b87c0eefd4301b0b097252128280e349ed9c1990243",
+      "complete_sha256": "2b1c16ddd1978f0f1bb3486c5b825ffbdc71a44ae6a8619aeaf8f7327c23bb32"
+    },
+    {
+      "key": "holdout-1600614327-round2-0-teacher_task",
+      "row_sha256": "5e3496ac8a931b366ac8a05fc2c775034acfcd8609f4b155e3a82a939e9f3966",
+      "audit_sha256": "c9f81cfc654519c69b88c892d1114b3fac74592ed680772832e0ea4eee446317",
+      "complete_sha256": "23e2cedc6eedf0e3081c3c98e94c784714a0d6677629e27d0c416f2cae7b7415"
+    },
+    {
+      "key": "holdout-1600614327-round2-1-baseline",
+      "row_sha256": "9863af2f407556bf81788e88465b6e01b3364be8c786869518454aeb0e945abe",
+      "audit_sha256": "5444681fcdb69cca12f34587f4ef57a06bef451961ccc0c09bb55b0e834d4b43",
+      "complete_sha256": "c57ecf7809be7c0fbbaae4ecab9720b880b133ee2db9b8c986fd1f2eba2e550a"
+    },
+    {
+      "key": "holdout-1600614327-round2-1-candidate",
+      "row_sha256": "0f1efe4d744b775fab1d21335a4b9df4ec3d5291492caa5d619d7d51109cac56",
+      "audit_sha256": "a71304ef0721337f812e1150f2017f88134882bff2d3f6b7ced8f9bf4ebf5bcd",
+      "complete_sha256": "8a5de25e9d95d0c1920a6ad20a6cd85ff9bc413288e6d03c28360da70a4073f1"
+    },
+    {
+      "key": "holdout-1600614327-round2-1-teacher_task",
+      "row_sha256": "a36cda0253c4f2378043e8052a6b39d45b848ef95cd3d31c61f0c56fb6251bef",
+      "audit_sha256": "1a77519e82156bbc4115e0649de9e9943582545ab9400042328f3a5790e6ba03",
+      "complete_sha256": "7278bef699afab597ceb53ee5ed790fe447b22783f7573072b241085de79a734"
+    },
+    {
+      "key": "holdout-1600614327-market-0-baseline",
+      "row_sha256": "8f7717ab98b28baa555e13cd2508acecdfff90146e3ac57903f3263df0029915",
+      "audit_sha256": "9f75187eb5c52621b8545694eb7fda2e0c92e17a6bd8521bd1f7f94d455f579a",
+      "complete_sha256": "f2eb854549af297b84bdd435a197a5930670f6b5ae9c8e7d6d6b302bf409d1e4"
+    },
+    {
+      "key": "holdout-1600614327-market-0-candidate",
+      "row_sha256": "7c3dad61834c9444d4fdda24cc4c40fcca3ce9dba6dd7b65b227e2a42fd4065a",
+      "audit_sha256": "917a48d0f4f4647d3b9e7b6608e8f10b82128f64c2b503249d0c36918e6933e4",
+      "complete_sha256": "ed09b5b17ca38d3171ec0ac6e3e8c7496568f6995674608c4148b6663cce41a5"
+    },
+    {
+      "key": "holdout-1600614327-market-0-teacher_task",
+      "row_sha256": "c173649e19df8e028ad1a31e967fae37238ff69f60293c54ee2c7bde3c6d4025",
+      "audit_sha256": "f9686bf47387e6262a9a3ebf01f89c0b08f027a5a9499da48b59d18525db8a91",
+      "complete_sha256": "2935829a684661941764a8225b8e42d302c14c0ec7dfec997663b080d6282d8a"
+    },
+    {
+      "key": "holdout-1600614327-market-1-baseline",
+      "row_sha256": "bca800e6b686c226570179709647a647bf6d64d65b317493115e2a8869b7fd47",
+      "audit_sha256": "1ca64c68185f0026b22dd3b9f50142f90556ad2542a43377d4266c37e76812b1",
+      "complete_sha256": "5fbf5d9f4a6bd4b329b917318553f8c5bbedadb87369eff74e113709915708c5"
+    },
+    {
+      "key": "holdout-1600614327-market-1-candidate",
+      "row_sha256": "d32f7dae092c9524f28753664e8bb03cb3bdf307f064614f322958a7e0324753",
+      "audit_sha256": "7397b75e345b2017f9feac690d65ff605fd3adb2c3450f64e40942cf7751aa3b",
+      "complete_sha256": "7215ff8d192b78559330350932317fcb3b15a5259f38de6df24dbeb9c7670817"
+    },
+    {
+      "key": "holdout-1600614327-market-1-teacher_task",
+      "row_sha256": "f6812efb9c3501cb6972afa757118f25ce8ab4652e87c2c20ce997ea1c660103",
+      "audit_sha256": "b6701dc53248edcec4a57fe0f316f7c9301808cda21172cb1ac5be93b38126a3",
+      "complete_sha256": "c49e3ed1b12d4430b4c8753530e11ca53da9fe6fe121c325dac3d24f5d227495"
+    },
+    {
+      "key": "holdout-1836204477-round2-0-baseline",
+      "row_sha256": "04f8e16f0bc51d85f752ed17aad2a0ec2727334b115907822e6b514d48d5ee7d",
+      "audit_sha256": "c352dce3b478f1124e9477da4053c87fbcedecaef39040a7aeb7bf6991a95656",
+      "complete_sha256": "8ec917d3d32ee0a8b85e4235da89cfafb7ae95961b5b8d7ce415ad067555a58a"
+    },
+    {
+      "key": "holdout-1836204477-round2-0-candidate",
+      "row_sha256": "c7dbbe0f14014f60aa2ee6348817528812a25cef1970abbb58f0a18b59f977c0",
+      "audit_sha256": "ab080a1a28b50fa9d4d23b3545296296e56ab2a6fd912403c9a94cab4775dd74",
+      "complete_sha256": "7a023de56e52262790f8b45d8981aa413ab1dd6f1626538d5d4ece3642a1e119"
+    },
+    {
+      "key": "holdout-1836204477-round2-0-teacher_task",
+      "row_sha256": "d2c80815446bc645c49394201608f444bdf5069959ca4fe999bf09cc28e4d4d4",
+      "audit_sha256": "1c59cd374c7dbf430ffe054ebc8d5bd98fce4326604d3f6e21f0343f380d8772",
+      "complete_sha256": "27f22455457cec1cca77643205ff305fef1a473d17bff6b60e0a9ea8d2061cf0"
+    },
+    {
+      "key": "holdout-1836204477-round2-1-baseline",
+      "row_sha256": "634caaea48b00b3a97c98a59de894c81b860fdd5a9dcb668b2d26edc263190fe",
+      "audit_sha256": "bee6be1b20e6630b19ecdeb798abb41e48601dcb36d2f0e10ef9074d72560b84",
+      "complete_sha256": "a42c02fa553d044e24e528b428e836038cc256e8dc27c6944bf7965cd478f129"
+    },
+    {
+      "key": "holdout-1836204477-round2-1-candidate",
+      "row_sha256": "bbbb263b4fe7b21d4664ec541fa24f0033f7304948bbb0de2dec06cc9291202a",
+      "audit_sha256": "c2eae05fb7364431f883ebc4329654108f25298099596ba89758d23f98b845a2",
+      "complete_sha256": "7873d5bbe420df41541f0ac44ccc1ad1dfbfbc9e8f99e562f7f6a7c618a88165"
+    },
+    {
+      "key": "holdout-1836204477-round2-1-teacher_task",
+      "row_sha256": "fcb6c5f07d9a3a73fc5395697fc45f1b884ffd468d7b2605f59420fc16cbb281",
+      "audit_sha256": "dca9dcde8dc1c2d6c958bff212559482fcd7bc2d486991b3c608d0994debed6b",
+      "complete_sha256": "9b1f68e6c5e76402d4bbaab13171fdb827ad81a474d1b8cf43dabc671be492f3"
+    },
+    {
+      "key": "holdout-1836204477-market-0-baseline",
+      "row_sha256": "35ab441a2f0b6824d9b8260f9df16864cce5c2690d8abeab260980b6af20a127",
+      "audit_sha256": "d132927d6592d9de3d1ec32a29086c17bdd18a8e6085872c021db4a2b5ee69e2",
+      "complete_sha256": "b6a93fc736b0a7fe5d037f5cb1505493802b9487f470cb62540fd66386e9fa7d"
+    },
+    {
+      "key": "holdout-1836204477-market-0-candidate",
+      "row_sha256": "3042b0e68e121aacc690baabda7efb28c37ebabf05f10f3cffe8e364691fd3ed",
+      "audit_sha256": "651b40be1fe9426cf8bc3f36368ca8274816dec7d99c1e12d07e7138ce97c6eb",
+      "complete_sha256": "920b506ba33393a32399d52dac6a7e527cddb97ae436a7ab996f598526596088"
+    },
+    {
+      "key": "holdout-1836204477-market-0-teacher_task",
+      "row_sha256": "a8cdde219223e28c42b148195b7509a838d67970ae69f1af6433d8c7a19c1fcd",
+      "audit_sha256": "dee4fbbad49c22ccd25f2b068bb475bb9cf0d538eff926fbc54eb3facc8408f6",
+      "complete_sha256": "fb8e1f5722aba7586dc09ec050a46bb0738e43e1e00c71fe555ab059648fe29e"
+    },
+    {
+      "key": "holdout-1836204477-market-1-baseline",
+      "row_sha256": "9d3d0285fcc58ee9ce3af3b89b541c96366616f2f4f0a7af340951149f4e3dcd",
+      "audit_sha256": "73dde9c899d2e5c8d3adacfe39635c7141568e0c8d2115babef083118f0677f0",
+      "complete_sha256": "143e529f348b3d1c390f52da1e9aab3d6c9e93e8e61f0c8ae224689a7561167e"
+    },
+    {
+      "key": "holdout-1836204477-market-1-candidate",
+      "row_sha256": "c023adca6d6d0fc824792d02e2e65e576171512f9060bf820612009b527b4807",
+      "audit_sha256": "b5bcca62dd5f2ea0e3bee94759e41e51156fadcf035c2ca29a6996acc532fa0c",
+      "complete_sha256": "1ccc5a36a213ff7e0eb6a94e265eadf04e9c7931e695ef46c6975b74792ab81b"
+    },
+    {
+      "key": "holdout-1836204477-market-1-teacher_task",
+      "row_sha256": "5d90a7a6baa1c1d00dcb44a19b58982313412de1942e6d08e3260b0242cf1299",
+      "audit_sha256": "b73aac188f63ad57ab696f372818aef4842fb64c164eda687d027194db1b9888",
+      "complete_sha256": "e1bdd306b0db1c5ce3dc38e8e2dfa66aa40215d388618bd4864346fe27a74600"
+    },
+    {
+      "key": "holdout-51518447-round2-0-baseline",
+      "row_sha256": "7035882ba1bbeb724b30ba0fbd25b8d419671153f3f995b2aff3e8ed3cfc27d8",
+      "audit_sha256": "f16702fbbf6fdbba421b72e3fc666316d9823a04b81e49d0ef63067ebd650508",
+      "complete_sha256": "01e7d6a741a0c00d5f3b60c25c9fa7ef374a31cff4b215485c6684b37d24b081"
+    },
+    {
+      "key": "holdout-51518447-round2-0-candidate",
+      "row_sha256": "273eb2bf25c27e0ea8f285cbaa93ccfc6144a708bc4f63a79a8211d18117f9b8",
+      "audit_sha256": "885d07e5c87d9e60feaf13ee1b3051a382647f3ce6c5717e5807137e3fa076d8",
+      "complete_sha256": "4cc91b3bde8b1994b3972a17bcee494f1050019983e99508a9c7c61f02d83972"
+    },
+    {
+      "key": "holdout-51518447-round2-0-teacher_task",
+      "row_sha256": "2ceb376f872041236159d15b87e39fe473ec337e5fcddd507bf515378a0eb55b",
+      "audit_sha256": "853ba03bb503218ed96cf8246aede9c541b73645dc4dc43d2be19a55144b7c84",
+      "complete_sha256": "0a7ae22b9fe6900785df04295e86ff68903c685c0cd1938588753254f07fe09b"
+    },
+    {
+      "key": "holdout-51518447-round2-1-baseline",
+      "row_sha256": "c134f8ede93c161583597e28bf1acf545fab849c667b274a7c91839ab89c99e2",
+      "audit_sha256": "ec12b06c749ef282159bfeba33473af684eface0817a1289b4b2b06e2a3f8c3d",
+      "complete_sha256": "00a364a21329db0ee314ac31adb0ece1e3ce15eabfb2ef2380e3ce070b36a33c"
+    },
+    {
+      "key": "holdout-51518447-round2-1-candidate",
+      "row_sha256": "4e79936370b1ed3e9afb13b24fbc2dcaff60ff4934e3d416e34438e8825e6a7f",
+      "audit_sha256": "8c082e5d5bea442681a3e491e143605b1c9065606dc791e5ffe6b290ea666219",
+      "complete_sha256": "9e60a6b79f406c70c3f54291449480f306ae499680941e2056895d3a2a300b71"
+    },
+    {
+      "key": "holdout-51518447-round2-1-teacher_task",
+      "row_sha256": "50a212bdf512e29a3ef154408b5720668485f4bfc2cae04444ff1226c681b10b",
+      "audit_sha256": "63a593a519fa5eff7d4e602bb6a9525927f3ac08c6227f0ebe3521b1fac8150b",
+      "complete_sha256": "feefa4819d282060c6b6a943fda699fa42681681fc187dd04382bd94e058bef4"
+    },
+    {
+      "key": "holdout-51518447-market-0-baseline",
+      "row_sha256": "b027d94e8006f885a9e415af80592b7c086fed77ec662231f410d03d6de31bfb",
+      "audit_sha256": "80be4556fd726d85b854d8b05f615b129c47d5e15e09e8801d9a154462cf4518",
+      "complete_sha256": "9257c6ea01b960db91b7d8bde22f8e946c8b00e55aeff5d701d77129a612af2f"
+    },
+    {
+      "key": "holdout-51518447-market-0-candidate",
+      "row_sha256": "da195eb8fcc91952778dcb630b7f1823d2c88fccb1ec1c4db8a1be1b6d0f3eb6",
+      "audit_sha256": "b552bfa2f7d7ea9cf38bf6b37f682553ac48148af3f5b87928a5ab18437db22a",
+      "complete_sha256": "11bb77e03784216dd1ee2ed2ddba6014d43dddd958d74f389937ff24df49eb80"
+    },
+    {
+      "key": "holdout-51518447-market-0-teacher_task",
+      "row_sha256": "c59d0734ecbb7bd1f0c6b2db6a1f3727d6b458d00fc5dadf01e61f202074c1a9",
+      "audit_sha256": "bdae0854177c076c4d0162b4eab0b3ec974cd8a96c6820c48d171db6628eac86",
+      "complete_sha256": "86b19dfbb82ccfcc051ceb8c13f6f03ba741ec32b2c2835964cb9d316509cb97"
+    },
+    {
+      "key": "holdout-51518447-market-1-baseline",
+      "row_sha256": "9aa85bba9f7777f4bd0e13215afb08fa84b1194890aaab9824d83422797d4dd5",
+      "audit_sha256": "8877e28d5a074e3bae1e1908ae977f2d297630184ff123929fb376b6ba73a0b6",
+      "complete_sha256": "8401ba327ffa315ca0f8b41ab021b9b42d792fe53d879a00b405d9f2de4bf766"
+    },
+    {
+      "key": "holdout-51518447-market-1-candidate",
+      "row_sha256": "d731e42eb3069666545e4c93bb3baae6bf43381b64a5f04c3000a96da74dce04",
+      "audit_sha256": "b092b759b0d38f410ee42255e7b07cbda5574f032214d11ae8351d92ab3942f6",
+      "complete_sha256": "56a9308054d3077b7632f0c684a588bbc9f43583cff626743a2899310958c43b"
+    },
+    {
+      "key": "holdout-51518447-market-1-teacher_task",
+      "row_sha256": "602dd2c8423a462f6d534e6dff31a09fd524c4b20cebd0acaa9b8ceb9e344d05",
+      "audit_sha256": "3133d85801fbc668f6671f5987bb7326a6f666bfc1c5e0fe75ec602b114fa579",
+      "complete_sha256": "bfa2b779fbc1e771a8fa43c831339d885fb990ddfa2dda19c5763b7bebc82251"
+    },
+    {
+      "key": "holdout-2997782266-round2-0-baseline",
+      "row_sha256": "6930f1f6fd79c647144b0178b218431da982b0d5017a79b8166e63c302663fd0",
+      "audit_sha256": "9ab7b4a272eeaedefbb3b5ca12f4185a9845fed62867bdd8a1a6a9ec71eb1126",
+      "complete_sha256": "2031a142d261419cb00bb7a727f5744195ec986356284dbf25434a020ce94417"
+    },
+    {
+      "key": "holdout-2997782266-round2-0-candidate",
+      "row_sha256": "d6bf1275b7a015bdf003e7d3bf0eef5e2304d6dc0866537b8e3cbc9d4e36eea3",
+      "audit_sha256": "c0d4872ba5782f562d3cd8fbc9767033ef18164553e098bdbd0e0a0f1a274f88",
+      "complete_sha256": "2676b293eb489aa062243ecab274203eb59fd57c193567e683310ceb697cb6f3"
+    },
+    {
+      "key": "holdout-2997782266-round2-0-teacher_task",
+      "row_sha256": "91fda7eb0fc57c07ea444995d7d4b51dd5323b14262a120ecee362f7695d275d",
+      "audit_sha256": "9577a1841c2e1b2e75c572e41fefd8ebea92f9d010afe936538c1df3584aae3b",
+      "complete_sha256": "a677bb80d9a3bccc17ca95072a7a8b5b2e781dc963669832e67986d6bbbd202b"
+    },
+    {
+      "key": "holdout-2997782266-round2-1-baseline",
+      "row_sha256": "af14a90e74ba74dc24bb5b3da8e64570c7b9012cf7bc9b90b5cffea51439fde5",
+      "audit_sha256": "bbbf8bdbe69262a8e0893a6149c67414bbb8833b6fc4e00feef46398bb904582",
+      "complete_sha256": "1aa28431cabf99c5daba5dc2fe8d68e064fd821eddaf51aeccedb62b3638b665"
+    },
+    {
+      "key": "holdout-2997782266-round2-1-candidate",
+      "row_sha256": "df0e147091ddc795a4919008e7d9ac2d9a94d18d46343a4f26fc9aca11659fa2",
+      "audit_sha256": "2c15ed2a510de61a07be83602bd879f4500cbc8653bf32f567f93e5e204db5de",
+      "complete_sha256": "955865f022e56a0b09b82f9f6d652e4244f0dfd88945da89f32a872b3be177ef"
+    },
+    {
+      "key": "holdout-2997782266-round2-1-teacher_task",
+      "row_sha256": "23e80a18ed756e570f2127612dac0a5f535ab41fb8c29359b6ec9a98346be29a",
+      "audit_sha256": "eaf8f78288ab13eda077979369513ebe3c53d6cf03d72426bf49da28e236a442",
+      "complete_sha256": "b65a2f2e805ccc1a7d975781b3793af81ecb9df0ccbdcdb164f32f450d20fea1"
+    },
+    {
+      "key": "holdout-2997782266-market-0-baseline",
+      "row_sha256": "752bce7dc44af1530e53031b479123014644b431fc66a3a84075eacb398dc05e",
+      "audit_sha256": "ad4b12ccf4ca9469f9eeb2411715eaa67a2b9e0d6eb75e2916440deebe3811ef",
+      "complete_sha256": "130187918bb4fb96df5e708f57bea9cad19bfc058875ef0dd7ed703655c15ff3"
+    },
+    {
+      "key": "holdout-2997782266-market-0-candidate",
+      "row_sha256": "1266f23a6420a99d76718030c596f5c443b953882112b13f268a37a3391e2acf",
+      "audit_sha256": "449435b3a9694a2026e632b7d8aefd59a05fbd526a23a9f86c5d458a352d0fc7",
+      "complete_sha256": "4ab9321d4bd93ee21cc31366a0bd1794fbd4d143e0579fd660ef14512d62e59a"
+    },
+    {
+      "key": "holdout-2997782266-market-0-teacher_task",
+      "row_sha256": "8e544113323a8d5ac693f401aee7d7a1f95770054139889e4505e6229a1f48b6",
+      "audit_sha256": "84192cf5b4015c21bc026a711e3e44b0ca6d3f3967ae058a5c10be39eaeee580",
+      "complete_sha256": "195d118810b99887e05b92c3ca4b98ead87ca8eeef0b1c2fa80227867ec26246"
+    },
+    {
+      "key": "holdout-2997782266-market-1-baseline",
+      "row_sha256": "79fc586f3765284cfdf27145346b18509902e0830ab4b80e3aadea7f91054d81",
+      "audit_sha256": "af5746da8fc0b0e8b9e2769a234c52db6a5feeddb145684ea09dfa999ab0975a",
+      "complete_sha256": "b07e87501a6dbd073e565bc09d5fbf9851e18b1f001428cd99953b5248dcbc85"
+    },
+    {
+      "key": "holdout-2997782266-market-1-candidate",
+      "row_sha256": "8fed8f757f8e267e8a271c66d74733981769bc19cb323c239a2af840cce65829",
+      "audit_sha256": "1ddcf3f5bb341bf140e223ccf6823df248b9039b9e2aa6702d8ed385f010c641",
+      "complete_sha256": "e968d8b2a7cf7ea694142d0957f0e3111b8d22856eac6064cc6d12f431b84964"
+    },
+    {
+      "key": "holdout-2997782266-market-1-teacher_task",
+      "row_sha256": "865b03b25465a757e7af233107738a0919cc9d2d5a7ddb71e2aaa076caf91007",
+      "audit_sha256": "67324e6d8019043cb0414663f540f03ce015e9043b346e0735e8a0b280befa05",
+      "complete_sha256": "707458bf08dc707d51247b936daed8a46a2c53e2798e9d72638b730373101132"
+    }
+  ],
+  "raw_reads_during_preparation": 0
+}

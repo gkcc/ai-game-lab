@@ -1,0 +1,176 @@
+{
+  "schema": "task-action-impact-registration-v1",
+  "task": "task_action_impact_diagnostic_v1",
+  "status": "frozen_pending_independent_review_and_local_commit",
+  "created_utc": "2026-10-26T23:47:23.823126+00:00",
+  "task_started_utc": "2026-10-26T23:31:24+00:00",
+  "task_deadline_utc": "2026-10-27T01:01:24+00:00",
+  "root_decision_sha256": "77afc2edf11708241b98e2c6e19295e2df0ca23724706b49e9612d4a03cc4abb",
+  "independent_advice_sha256": "298dee7f33005fdd99d3c6553847672910da95515dd1830df2cb22ede576ea0b",
+  "previous_acceptance_sha256": "6a11ff4cf5bac0301ffb8b2cece61ea290fba71ce36b09a748a99a98a15356fa",
+  "sample": {
+    "root": "artifacts/task-anchor-reentry-v1-20261027",
+    "role": "Historical post-result development diagnosis; former holdout seeds are already seen",
+    "seed_order": [
+      2240228007,
+      149009525,
+      3351711015,
+      1845894395,
+      1600614327,
+      1836204477,
+      51518447,
+      2997782266
+    ],
+    "opponent_order": [
+      "round2",
+      "market"
+    ],
+    "seat_order": [
+      0,
+      1
+    ],
+    "arm_order": [
+      "baseline",
+      "candidate",
+      "teacher_task"
+    ],
+    "selection": "All eight registration.test_seeds x both registered opponents x both seats x all three arms, in the listed nested order; no outcome filtering, replacement or seat-symmetry assumption",
+    "games": 96,
+    "triads": 32,
+    "comparisons": 64,
+    "primary_comparison": "candidate versus teacher_task, 32 pairs",
+    "secondary_comparison": "candidate versus baseline, 32 pairs",
+    "raw_paths": [
+      "games/holdout-{seed}-{opponent}-{seat}-{arm}/replay.json.gz",
+      "traces/holdout-{seed}-{opponent}-{seat}-{arm}.jsonl.gz"
+    ],
+    "selected_file_count": 192,
+    "selected_compressed_bytes_observed_from_metadata": 854529469,
+    "missing_selected_files_observed": 0,
+    "metadata_allowlist": [
+      "registration.json",
+      "root-result-acceptance.json",
+      "run-summary.json",
+      "holdout-statistics.json",
+      "development-gate.json",
+      "job-results/holdout-*.row.json",
+      "job-results/holdout-*.audit.json",
+      "job-results/holdout-*.complete.json"
+    ],
+    "exclude": "All 24 development games, prior caches, other historical stages, weights, logits and new games",
+    "manifest": "Before opening any selected raw data, freeze these exact 192 paths, expected hashes from existing certificates, byte sizes and the analysis source hash in a new task registration; missing identities close the task without substitution"
+  },
+  "budgets": {
+    "cpu_workers": 1,
+    "cpu_threads": 1,
+    "max_process_working_set_bytes": 2147483648,
+    "max_total_memory_bytes": 3221225472,
+    "gpu_seconds": 0,
+    "neural_forwards": 0,
+    "training_updates": 0,
+    "official_transitions": 0,
+    "new_games": 0,
+    "compressed_input_read_bytes": 1073741824,
+    "decoded_input_bytes": 34359738368,
+    "metadata_and_source_read_bytes": 16777216,
+    "raw_decode_passes_per_selected_file": 1,
+    "decompressed_copies_on_disk": 0,
+    "analysis_cpu_seconds": 1800,
+    "analysis_wall_seconds": 1800,
+    "total_task_wall_seconds_including_implementation_review_cleanup": 5400,
+    "owned_output_bytes": 8388608,
+    "public_report_bytes": 65536,
+    "log_bytes_included_in_output_cap": 1048576,
+    "budget_accounting": "Count compressed reads and decompressed bytes separately before they exceed limits; hashes must be computed during the same raw read, not a second full pass. Stream trace lines, release each triad before the next, and externally stop the owned process at its memory/time cap. A budget failure consumes the attempt and closes the task; no silent cap increase or smaller replacement sample",
+    "review": "Review the compact derived rows, scalar identities, source and manifest within the same total budget; no repeated raw decode or official replay is included",
+    "temporary_artifacts": "Use the existing owned scratch_directory convention, reap owned processes and clean the run before completion; preserve only one compact current verification record and requested deliverables"
+  },
+  "analysis_method": {
+    "execution": "One sequential streaming extraction; replay and trace are data only. Do not import or invoke an agent, model, controller or official engine",
+    "alignment": [
+      "Retain separate pair identities for every seed/opponent/seat; never count seats or turns as additional independent seeds",
+      "Use the existing typed complete-request semantics and inventory-order-preserving observation semantics",
+      "Compare common pre-divergence observation states. Within a turn, compare sequential task records only while the full visible inputs, candidate identities/order and pre-assignment reservations match",
+      "Stop same-context callback alignment at the first mismatching input or selection; later callbacks are not matched by array index or task label",
+      "A final unit_request is an emitted controller request, not proof that the selected task was executed",
+      "Physical-state comparisons must use recorded observations and preserve both players' recorded inventory ordering; exclude action/request fields and incidental timing so an action difference is not tautologically a state difference"
+    ],
+    "fixed_extractions": [
+      "Counts of equal-context chosen-task disagreements, same-turn complete-request agreement/disagreement, and missing/unalignable cases",
+      "For each comparison, the first equal-context task-choice divergence and first complete-request divergence, or an explicit none/unknown value",
+      "Whether a directly recorded observation difference follows the first request difference; use horizons +1 and +24 transitions and terminal, clipped at terminal without replacement",
+      "At those horizons, observed own bank, opponent bank and their difference; terminal values must agree exactly with existing pair metadata",
+      "A fixed descriptive partition: no task disagreement; task disagreement with the same request; request difference without a recorded observation effect; recorded observation difference with zero terminal margin gap; recorded observation difference with nonzero terminal margin gap; unknown",
+      "For task/request linkage, only predeclared descriptors: chosen operation, same/different unit and target, emitted move versus work request, and observed repeated reassignment before recorded completion. Derive completion only when unambiguous in already saved fields",
+      "Summaries by seed and opponent with both seats retained, including exact own/opponent contribution to the terminal margin gap. No fresh bootstrap, hypothesis search, best-case selection or per-turn p-values"
+    ],
+    "ambiguity_rule": "Resources, day-end changes, simultaneous player interaction, market execution, failure reasons and task completion are unknown unless existing recorded fields resolve them directly. Unknown is an admissible finding, not permission to reconstruct rules or run the engine",
+    "causal_boundary": "Common-state divergence identifies a changed decision; subsequent trajectory or terminal differences remain descriptive associations of the full policy trajectories. Do not attribute the terminal return to the first task, label it action regret, infer counterfactual value, or convert this diagnosis into supervised value targets",
+    "missing_trace_rule": "If the stored trace cannot link selected task to request or actual observation, report evidence_insufficient and stop. Do not add simulator labels, shadow controllers or fresh games"
+  },
+  "acceptance": {
+    "delivery_success": [
+      "All 32 planned triads and 64 comparisons appear exactly once with classified or unknown status; excluded cases and reasons remain in the denominator",
+      "All terminal own/opponent/margin scalars reproduce the existing metadata exactly, and 32/32 stored C-S first-request-difference steps reproduce the accepted values",
+      "Any disagreement with those identities/scalars is a specific extraction blocker; stop the diagnosis rather than reopening the entire repository audit",
+      "No raw data, weights, private configuration, per-step observations, candidate features or exact requests enter the public report",
+      "One decision record states evidence_sufficient_for_new_question or evidence_insufficient, with denominators, budget consumption and limitations; a negative/unknown result completes this task"
+    ],
+    "new_question_screen": {
+      "purpose": "A preregistered resource-allocation screen, not a significance test or a modification of the closed admission gates",
+      "minimum_coverage": "At least 24/32 primary C-T comparisons have an identifiable task-to-request-to-observation chain or an identifiable null chain, spanning at least six of the eight seed clusters",
+      "mechanism_requirement": "For a duration-aware task-option question, directly recorded repeated reassignment/noncompletion or delayed completion must occur in at least eight primary C-T comparisons, span at least three seed clusters and both seats, and those loss-associated cases must cover at least half of the sum of negative C-T terminal margin gaps. Terminal-gap coverage is association only, never percent loss caused",
+      "conditional_follow_on": "Only if both requirements pass, consider a separately registered causal-data study of temporally extended task options (unit,target,operation,commitment until a recorded completion condition) and their duration-aware competitive value. This changes the controlled temporal decision and label source; it is not another CE/KL fit or a thresholded rescue of S/C",
+      "learning_not_yet_authorized": "The diagnosis itself authorizes no fit or branching. Before any later learning, separately establish valid option completion, obtain prospectively registered paired-intervention outcome data and reserve entirely fresh evaluation seeds with a new budget",
+      "otherwise": "Stop with evidence_insufficient_for_this_new_learning_question. Do not search additional mechanisms, expand windows/samples, append rules, or retry the closed learning family within this task"
+    }
+  },
+  "root_adjudication": [
+    "Accept all96 already-seen holdout games and both seats; no outcome-filtered or seat-symmetry subset",
+    "Accept descriptor-only linkage and unknown handling; do not import models/controllers/official engine or reconstruct execution rules",
+    "Duration-option criteria are a resource-allocation screen only; no causal labels, no fit and no next intervention study is authorized by this record",
+    "Memory monitoring must preserve actual measured limits and failed-overage evidence, not claim an OS hard quota unless one is actually used",
+    "Synthetic-only extraction/streaming/ambiguity checks and independent source review precede a local exact-byte registration commit; no selected raw-file decode before that commit",
+    "Within the same90-minute task total, verify derived compact rows, source and manifest without a second raw decode; preserve uncertainty and failed attempts"
+  ],
+  "input_manifest_sha256": "3dab4b6381ec4aded6bd674a16db672b3e4c44f8db0ed9116d2f9c5fcf119dbd",
+  "budget_interpretation": {
+    "metadata_source_scope": "The 16 MiB cap covers registration/analysis verification plus independent compact source/result review. Development source browsing, Git operations and public-content-only privacy review are excluded from this byte counter, but included in the 90 minute wall budget.",
+    "memory_enforcement": "External 0.25-second sampled working-set/CPU monitor; not an OS hard memory quota. Transient between-sample overshoot cannot be excluded.",
+    "processes": "One analysis child; no grandchildren. One CPU affinity core and one compute thread. Parent output-drain thread is infrastructure.",
+    "output_scope": "All files in the new task output directory plus temporary worker log bytes; 64 KiB reserved for terminal control receipts.",
+    "raw_accounting": "Each selected compressed file opened once by analysis, hashed during that same read, with compressed and decoded counters before each bounded read. No decoded copies on disk.",
+    "failure": "A run-started receipt consumes the only attempt, including startup, budget or extraction failure; no retries or replacement sample."
+  },
+  "preparation_meter": {
+    "inherited_prior_phase_bytes": 0,
+    "this_process_bytes": 664526,
+    "total_bytes": 664526,
+    "limit_bytes": 16777216
+  },
+  "raw_reads_before_registration": 0,
+  "agent_workflow_enabled": false,
+  "new_learning_authorized": false,
+  "frozen_utc": "2026-10-26T23:53:09.224387+00:00",
+  "source_sha256": {
+    "learning/task_action_impact_diagnostic_v1/__init__.py": "2049e94f1fe2891136fc09817309da1b3bc054bba42b23bd6f5cf06ac176921d",
+    "learning/task_action_impact_diagnostic_v1/analysis.py": "f0263611bd3bddc1f9028938288a0a1ec4406ebbc3d27df2ec17772bbb581499",
+    "learning/task_action_impact_diagnostic_v1/experiment.py": "db5052fe042d8a39c10bcc12054278f99a4605e44c569ae242fe2c8cf106cdf2",
+    "learning/task_action_impact_diagnostic_v1/run.py": "3cc721420b117937a876112df73b1095feb5d7948e4255294a334dbfcb33cda7",
+    "learning/task_action_impact_diagnostic_v1/test_analysis.py": "a1598504c08e832a224798ef89e8c1a98c9a6c1f9ee5ba4eb6fdb3e450039684",
+    "decision/__init__.py": "292c33c078490e76cf6576d8922f527acf23d59a01b8f523f7a1b595cbe15d0e",
+    "decision/api.py": "3ef4025bde61d240b298cbe4d31291f25021baaf5b396f5540bbfcdda4231917",
+    "decision/semantics.py": "9ac62d0df7adca84c0feff805b2979bb45f9f9f4c2064d1e2b5c48efd3e779a5",
+    "learning/task_bc_error_diagnostics_v1/__init__.py": "7fe73d92a6f435034e2de4fc239e202b38b383508f2c426bd389dd7565f4a381",
+    "learning/task_bc_error_diagnostics_v1/shadow.py": "095f6a896c259f840af4c59adc922cc9782fe69aafd3b0df7ea04df9160c3251",
+    "learning/task_anchor_once_v1/__init__.py": "4978d6f44ce420931cddf54f31bcff0d06ce9fd8a036c92b590a69cad07e6c94",
+    "learning/task_anchor_once_v1/processes.py": "9711f7d38e1494dc2cceef718482bef9470d7416a8d07284f900e487c1dc1092"
+  },
+  "scratch_ownership_helper_sha256": "03dcb408c80c13ca70e52ab3b2adb4519f1aaf6aeceb5120410882ccec29c142",
+  "preparation_and_freeze_meter": {
+    "inherited_prior_phase_bytes": 664526,
+    "this_process_bytes": 291563,
+    "total_bytes": 956089,
+    "limit_bytes": 16777216
+  }
+}

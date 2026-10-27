@@ -1,0 +1,171 @@
+{
+  "schema": "independent-task-action-impact-pre-review-v1",
+  "reviewer_role": "Independent delegated source and metadata reviewer; not the implementation author",
+  "reviewed_utc": "2026-10-26T23:58:38.803996+00:00",
+  "passed": true,
+  "freeze_sha256": "9c2c2955ec8288dc6967d6d3a7b7d2d386a3504ebc75d7689de8baaa5a9f6ef0",
+  "registration_sha256": "64f971fbd928bb2fd8fa0ba7a3e82e031a8c1ca9b9d7467b904ccde3fc3f7116",
+  "input_manifest_sha256": "3dab4b6381ec4aded6bd674a16db672b3e4c44f8db0ed9116d2f9c5fcf119dbd",
+  "source_checks": {
+    "learning/task_action_impact_diagnostic_v1/__init__.py": {
+      "sha256": "2049e94f1fe2891136fc09817309da1b3bc054bba42b23bd6f5cf06ac176921d",
+      "independently_matched": true
+    },
+    "learning/task_action_impact_diagnostic_v1/analysis.py": {
+      "sha256": "f0263611bd3bddc1f9028938288a0a1ec4406ebbc3d27df2ec17772bbb581499",
+      "independently_matched": true
+    },
+    "learning/task_action_impact_diagnostic_v1/experiment.py": {
+      "sha256": "db5052fe042d8a39c10bcc12054278f99a4605e44c569ae242fe2c8cf106cdf2",
+      "independently_matched": true
+    },
+    "learning/task_action_impact_diagnostic_v1/run.py": {
+      "sha256": "3cc721420b117937a876112df73b1095feb5d7948e4255294a334dbfcb33cda7",
+      "independently_matched": true
+    },
+    "learning/task_action_impact_diagnostic_v1/test_analysis.py": {
+      "sha256": "a1598504c08e832a224798ef89e8c1a98c9a6c1f9ee5ba4eb6fdb3e450039684",
+      "independently_matched": true
+    },
+    "decision/__init__.py": {
+      "sha256": "292c33c078490e76cf6576d8922f527acf23d59a01b8f523f7a1b595cbe15d0e",
+      "independently_matched": true
+    },
+    "decision/api.py": {
+      "sha256": "3ef4025bde61d240b298cbe4d31291f25021baaf5b396f5540bbfcdda4231917",
+      "independently_matched": true
+    },
+    "decision/semantics.py": {
+      "sha256": "9ac62d0df7adca84c0feff805b2979bb45f9f9f4c2064d1e2b5c48efd3e779a5",
+      "independently_matched": true
+    },
+    "learning/task_bc_error_diagnostics_v1/__init__.py": {
+      "sha256": "7fe73d92a6f435034e2de4fc239e202b38b383508f2c426bd389dd7565f4a381",
+      "independently_matched": true
+    },
+    "learning/task_bc_error_diagnostics_v1/shadow.py": {
+      "sha256": "095f6a896c259f840af4c59adc922cc9782fe69aafd3b0df7ea04df9160c3251",
+      "independently_matched": true
+    },
+    "learning/task_anchor_once_v1/__init__.py": {
+      "sha256": "4978d6f44ce420931cddf54f31bcff0d06ce9fd8a036c92b590a69cad07e6c94",
+      "independently_matched": true
+    },
+    "learning/task_anchor_once_v1/processes.py": {
+      "sha256": "9711f7d38e1494dc2cceef718482bef9470d7416a8d07284f900e487c1dc1092",
+      "independently_matched": true
+    }
+  },
+  "source_check_scope": "Independently hashed all 12 frozen source files; examined new analysis, registration and runner modules plus their pure helpers. No model, controller or official engine was imported or invoked.",
+  "selected_raw_reads": 0,
+  "model_weight_or_saved_numeric_array_reads": 0,
+  "official_transitions": 0,
+  "neural_forwards": 0,
+  "training_updates": 0,
+  "new_games": 0,
+  "gpu_seconds": 0,
+  "metadata_source_read_bytes": 900000,
+  "metadata_source_accounting": {
+    "kind": "Conservative cumulative reviewer charge, rounded upward",
+    "measured_or_conservative_full_file_bytes_before_receipt": 866382,
+    "remaining_charge_covers": "Final freeze reread, receipt verification and conservative rounding",
+    "includes": "Earlier decision and pure helper review, scoped source searches charged at full file lengths, repeated source reads including truncated tool output, full manifest/source identity verification and conservative source-import allowance for one synthetic-only check process",
+    "preparation_and_freeze_bytes_are_separate": true,
+    "source_and_metadata_cap_bytes": 16777216
+  },
+  "sample_checks": {
+    "games": 96,
+    "triads": 32,
+    "comparisons": 64,
+    "unique_raw_identities": 192,
+    "compressed_bytes_from_manifest": 854529469,
+    "exact_registered_nested_order": true,
+    "both_seats_retained": true,
+    "terminal_metadata_internally_consistent": true,
+    "existing_candidate_baseline_first_request_steps": 32,
+    "raw_hashes_not_reread_for_this_review": true,
+    "final_analysis_requires_all_192_completed_receipts": true
+  },
+  "closed_findings": [
+    {
+      "id": "callback-stop",
+      "resolution": "Each turn stops alignment at its first unequal full input or chosen task; later callback ordinals are never rematched."
+    },
+    {
+      "id": "first-request-linkage",
+      "resolution": "A request-effect chain requires an equal-context choice difference on the first-request-difference turn. An earlier or later choice alone leaves the pair unknown."
+    },
+    {
+      "id": "fixed-effect-window",
+      "resolution": "Effect classification uses only +1, +24 and terminal observed states, clipped and deduplicated; an unsampled transient effect cannot enlarge coverage."
+    },
+    {
+      "id": "complete-context",
+      "resolution": "All registered structured input fields and candidate identity/features are required before accepted alignment."
+    },
+    {
+      "id": "physical-state",
+      "resolution": "Both observations retain their observation wrapper so both inventory orders are material. Action/request fields and incidental timing do not create a physical difference."
+    },
+    {
+      "id": "single-pass-budget",
+      "resolution": "One compressed stream performs hashing and bounded reads; zlib max_length bounds actual decoded output. Missing, duplicate, truncated, hash-mismatched or incomplete raw sets fail closed."
+    },
+    {
+      "id": "unknown-completion",
+      "resolution": "Absent completion events remain unknown. Geometry, adjacent reassignment and move/work request descriptors never count as completion or as support for the duration screen."
+    }
+  ],
+  "independent_synthetic_validation": {
+    "existing_tests_passed": 12,
+    "failures": 0,
+    "skips": 0,
+    "additional_in_memory_stream_boundaries_passed": 5,
+    "payload_bytes": [
+      65537,
+      65538,
+      65539,
+      131074,
+      1048578
+    ],
+    "exact_cap_and_cap_plus_one_regressions_passed": true,
+    "selected_raw_reads": 0,
+    "temporary_files_created": 0,
+    "durable_tests_added_by_reviewer": 0
+  },
+  "runner_checks": {
+    "exact_freeze_and_local_commit_gate_before_raw": true,
+    "one_consumed_attempt_no_retry": true,
+    "single_analysis_child_and_cpu_affinity": true,
+    "worker_model_and_process_launch_guards": true,
+    "working_set_cpu_wall_output_and_deadline_measurement": true,
+    "process_reaping_and_stdout_thread_join": true,
+    "temporary_scratch_lifecycle_verified_by_implementation_receipt": true,
+    "terminal_receipt_reserve_and_exclusive_writes": true,
+    "memory_enforcement": "0.25-second sampled external monitoring; no claim of OS hard quota; between-sample overshoot remains unknown"
+  },
+  "budget_interpretation_review": {
+    "no_substantive_scientific_sampling_expansion": true,
+    "reason": "The prospectively stated 16 MiB scope covers registration/analysis verification and independent source/result review. Excluded development browsing and public-content-only privacy checks do not open or replace selected scientific inputs; all work remains inside the original 90-minute wall budget.",
+    "selected_192_raw_files_still_single_pass": true,
+    "deadline_utc": "2026-10-27T01:01:24+00:00"
+  },
+  "scientific_boundary": {
+    "all_seeds_remain_seen_historical_development": true,
+    "causal_return_or_action_regret_claims_authorized": false,
+    "completion_observability": "unknown_in_saved_schema",
+    "duration_screen_must_fail_with_current_schema": true,
+    "new_learning_authorized": false,
+    "negative_or_unknown_result_completes_this_diagnostic": true
+  },
+  "remaining_execution_conditions": [
+    "Create the exact-byte local preregistration commit containing this receipt and all frozen evidence/source.",
+    "Run only through the verified single-attempt runner; no selected raw read before its commit verification.",
+    "Any input, scalar, budget or source mismatch consumes/closes the attempt without replacement or rerun."
+  ],
+  "agent_workflow_enabled": false,
+  "limitations": [
+    "This is source/metadata pre-review, not proof of the yet-unread raw identities or completed diagnostic results.",
+    "The working-set ceiling is sampled, and terminal/first-request reproduction is checked only during the one authorized raw pass."
+  ]
+}
