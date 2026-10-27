@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "identities_sha256": {
+    "freeze.json": "47aa91072d97e3eabe24b78c524f9021bbe6167bbcfb38cbd002332465b4938f",
+    "registration.json": "d1054824def64a2f04501c5de5ad210ddb9962edddb0727b0c748a322fc4068d",
+    "pre-review.json": "e276c09ffb4d091a78027648fb55ebbfd6fcc6a41885994595f03382b26e49ab",
+    "pre-execution-commit.json": "b82cede7ae73c14d8e16a9f967d921991c74989b8fa738d672ebfa4e7bde458d",
+    "data-independent-assessment.json": "a28ba44a4bf1b2a9ec1e008d9800745f0b2f96b43b48bd6ae4f61a03901bc2f5",
+    "train-data-result.json": "73ba012d99d1fe17f2847ab0e47c891c1381c38a45a8dd3acbb0bcaa88a65447",
+    "fit-started.json": "d27e35f32c45175219b63bc90ee7d090ada1e7b835f51ffc65fdae5503a2cd33",
+    "fit-result.json": "749c1ba67398d380976abf10c425fc7d186e7d8a612f1f9c44ecc238494c33df",
+    "gpu-guard-started.json": "d8615f5dadd071bffb404fab23a9bfd4020a76418060bbc9a92742e25eeef1dd",
+    "gpu-guard-result.json": "d725caf38fc290491e5a0c3c5c2eae97abf88f37326bccf8a8d603d2ecd7f60b",
+    "fit-transport-result.json": "31582b3e173eea994780c1033759837057be9db97dac1305a127245ad9176632",
+    "model-seal.json": "91f069f09249bd65d1e812302fa53c5e68ef4711cf552bd07812e3e30e00701a"
+  },
+  "checks": [
+    "Receipts report 128 synchronized updates and 128 nonzero-gradient updates, changed weights, and GPU identity checked against frozen private expectation.",
+    "The 16-group CPU/GPU comparison covers 1128 candidate rows with highest requested matrix precision and maximum absolute error 2.132170045854309e-06.",
+    "Linux guard reports owned session cleanup and direct child reaped; Windows transport reports zero owned instances, joined reader and reaped launcher.",
+    "Fit marker, accepted data assessment, source result, fit result and model seal identities are consistent; model bytes were not independently hashed.",
+    "Frozen source and receipts use conditional teacher labels and only training seeds; no completion status or test data are used as model features."
+  ],
+  "limitations": [
+    "Review relies on aggregate receipts and frozen code; no independent recomputation, private progress inspection, model or training-array read, inference or retraining.",
+    "GPU identity is reported relative to a private frozen expectation, which was not independently inspected; highest is a requested setting, not a measurement of hardware arithmetic precision.",
+    "No training-loss result or competitive evaluation is established here; the fit does not prove strategy improvement.",
+    "No GPU hard memory cap is established, and cleanup conclusions are limited to the recorded owned processes."
+  ]
+}

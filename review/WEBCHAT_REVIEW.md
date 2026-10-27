@@ -406,3 +406,7 @@ Linux监督阶段1.329秒，整个自有进程组已清理并回收；原partial
 重点检查历史actor和trace身份、每回合候选/观测校验、与完成状态隔离的教师标签、身份哈希抽样、单次采集与WSL训练清理；冻结版本和未来种子仅作本地登记，旧测试结果不得用于选择。
 
 [登记说明](../kaggriculture/TASK_TEACHER_CHOICE_BC_V1.zh-CN.md) | [登记证据](evidence/task-teacher-choice-bc-v1-20261027/)
+
+### 条件教师 BC 结果复审重点
+
+核对actor来源链、八trace各一次、2253组和五类标签计数、Job与WSL双端清理、一次fit和真实GPU同步/权重变化、最高精度请求的16组推理对照与模型SHA。独立复核没有逐条重算；没有训练损失或对局结果，不能推断性能提升。

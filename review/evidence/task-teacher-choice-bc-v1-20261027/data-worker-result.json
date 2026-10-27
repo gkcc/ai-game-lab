@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "array_sha256": "9ffd92d7d6fce400acb2d59c99c596140a46a48cbd1206d28889a11d51f70dac",
+  "freeze_sha256": "47aa91072d97e3eabe24b78c524f9021bbe6167bbcfb38cbd002332465b4938f",
+  "source_manifest_sha256": "7ec2b85b4a15e3fa394deba83144f7d9cf62cecc4ce812eac2a4314a704ea601",
+  "sampling_algorithm": "sha256-compact-json-game-step-ordinal-first16-lt8192",
+  "collection_attempt": 1,
+  "raw_reads": {
+    "compressed_input_read_bytes": 60619731,
+    "decoded_input_bytes": 836084675,
+    "files_opened": 8,
+    "files_completed": 8,
+    "raw_decode_passes_per_file": 1
+  },
+  "groups": 2253,
+  "groups_by_seed": {
+    "3911611436": 1128,
+    "2328454240": 1125
+  },
+  "selected_operations": {
+    "DIG": 8,
+    "FERTILIZE": 84,
+    "HARVEST": 199,
+    "PLANT": 146,
+    "WATER": 1816
+  },
+  "candidate_rows": 118955,
+  "retry_allowed": false
+}

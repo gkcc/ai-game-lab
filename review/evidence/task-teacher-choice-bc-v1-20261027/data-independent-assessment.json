@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "identities_sha256": {
+    "freeze.json": "47aa91072d97e3eabe24b78c524f9021bbe6167bbcfb38cbd002332465b4938f",
+    "registration.json": "d1054824def64a2f04501c5de5ad210ddb9962edddb0727b0c748a322fc4068d",
+    "pre-review.json": "e276c09ffb4d091a78027648fb55ebbfd6fcc6a41885994595f03382b26e49ab",
+    "pre-execution-commit.json": "b82cede7ae73c14d8e16a9f967d921991c74989b8fa738d672ebfa4e7bde458d",
+    "source-manifest.json": "7ec2b85b4a15e3fa394deba83144f7d9cf62cecc4ce812eac2a4314a704ea601",
+    "data-started.json": "d8615f5dadd071bffb404fab23a9bfd4020a76418060bbc9a92742e25eeef1dd",
+    "data-worker-started.json": "d8615f5dadd071bffb404fab23a9bfd4020a76418060bbc9a92742e25eeef1dd",
+    "data-worker-result.json": "e775f214db1d0287e05529035f26d275ce43c252251af5e49871ab9ce6d3b3eb",
+    "data-supervision-result.json": "03cc4fbf20bd134f3f8595f14836e3c7fc55ba5109e2a6bf8343386d7f26818a",
+    "train-data-result.json": "73ba012d99d1fe17f2847ab0e47c891c1381c38a45a8dd3acbb0bcaa88a65447"
+  },
+  "checks": [
+    "Eight complete trace streams and one decode each reported, with compressed and decoded byte totals within frozen budgets; frozen code verifies each compressed SHA.",
+    "2253 callback groups: seed counts 1128 and 1125; five selected operation counts sum to 2253; 118955 candidate rows within budget and sample minima met.",
+    "Job receipt reports success, launcher reaped and zero job members; sampled resources do not establish hard real-time limits.",
+    "Dynamic archive SHA is consistent between worker and sealed collection receipts; source, freeze and supervision identities match.",
+    "Frozen collection code uses teacher choice label and shared/candidate inputs, not completion status or held-out records; no fit marker existed during this review."
+  ],
+  "limitations": [
+    "Review of aggregate receipts and frozen code only: no independent per-record calculation, trace decode or archive hash check.",
+    "Per-file trace hash verification and data contents rely on the accepted worker execution and receipt.",
+    "Job sampling can miss transient resource peaks; WSL and GPU fit remain untested in this stage."
+  ]
+}

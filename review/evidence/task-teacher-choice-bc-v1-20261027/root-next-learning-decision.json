@@ -1,0 +1,6 @@
+{
+  "decision": "After publishing this fit, prepare one separately preregistered official eight-game comparison using the two already reserved seeds and previously specified non-regression guardrails.",
+  "basis": "The conditional-teacher checkpoint passed technical fit and parity checks, but has no recorded loss comparison or competitive evidence.",
+  "limits": "Freeze both model identities, official worker, opponent, seats, statistics and replay budgets before any new game. Preserve old models, failures and history. On any execution failure or failed gate, retain the result and do not retry or add seeds.",
+  "prohibitions": "No PPO, DAgger, retraining, default Bot or official rules changes; no publication of raw replays, traces, feature arrays, weights, private paths or logs."
+}
