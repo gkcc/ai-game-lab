@@ -1,0 +1,21 @@
+{
+  "reason": "Inner synthetic subprocess explicitly uses CREATE_NO_WINDOW; no experiment was executed",
+  "initial_freeze_sha256": "8069d19c0d7647f1f770d72a44176356a0c39f1a74226c23e27e9c862ec9b5d3",
+  "revised_freeze_sha256": "56bcb41937190fd8de138d134aefa825fa88fc6ae03ab410974fb926c8240f5c",
+  "registration_unchanged_sha256": "b29ba04ea4324b5785d9ff7c7a115b42efd8a3c47bb96e68a316d01ad6b06ae3",
+  "initial_review_sha256": "6c0f5749f90312c131cadf6432e07088705a586b1f6836672ded243cd7ab6d38",
+  "changed_source": {
+    "learning/task_training_job_supervision_v1/scenarios.py": {
+      "initial": "ef17e87d919550dfab04b3024519bed17a17c3271705c9a574d9b66ccc7c08d3",
+      "revised": "a56c9dcc3d72025bcbb17194bf2f5fda04c4842f5ccaff221a9659dacdab2f80"
+    },
+    "learning/task_training_job_supervision_v1/test_scenarios.py": {
+      "initial": "c162872534d4bc1b8c313eaf37a4049c021257f3d0c1d00ef664800fa99f534e",
+      "revised": "34c9c4b440d14551a798d0531039f59398a934e70a172f7d26800452dc9b3ec2"
+    }
+  },
+  "initial_snapshot": "pre-review-initial",
+  "new_games": 0,
+  "synthetic_scenarios_started": 0,
+  "cache_reads": 0
+}

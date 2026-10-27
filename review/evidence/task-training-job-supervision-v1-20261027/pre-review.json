@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "freeze_sha256": "56bcb41937190fd8de138d134aefa825fa88fc6ae03ab410974fb926c8240f5c",
+  "registration_sha256": "b29ba04ea4324b5785d9ff7c7a115b42efd8a3c47bb96e68a316d01ad6b06ae3",
+  "initial_freeze_sha256": "8069d19c0d7647f1f770d72a44176356a0c39f1a74226c23e27e9c862ec9b5d3",
+  "initial_review_sha256": "6c0f5749f90312c131cadf6432e07088705a586b1f6836672ded243cd7ab6d38",
+  "checks": [
+    "Initial snapshot and revision map hashes match; registration and root decision bytes unchanged",
+    "Only scenario launcher adds inner CREATE_NO_WINDOW and test adds fake Popen argument verification; remaining frozen source unchanged",
+    "Revised source hashes match freeze and neither scenario start marker exists",
+    "14 fake API and scenario tests passed; no real process launched"
+  ],
+  "limitations": [
+    "Windows console visibility and Job membership behavior remain unverified on a real synthetic execution",
+    "Job RSS/member sampling is not a hard real-time limit and two members alone do not identify the worker",
+    "No cache, model, trace or game data accessed and no real process or registered scenario run in this review"
+  ]
+}

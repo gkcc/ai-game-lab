@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "freeze_sha256": "56bcb41937190fd8de138d134aefa825fa88fc6ae03ab410974fb926c8240f5c",
+  "synthetic_tests": 14,
+  "scope": "pure fake API tests including nested no-window launch; no actual Windows process, cache, trace, model or game read",
+  "tests": "python -B -m unittest learning.task_training_job_supervision_v1.test_job learning.task_training_job_supervision_v1.test_scenarios learning.task_training_job_supervision_v1.test_experiment"
+}

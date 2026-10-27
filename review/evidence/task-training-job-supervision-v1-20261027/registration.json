@@ -1,0 +1,60 @@
+{
+  "experiment": "task-training-job-supervision-v1",
+  "baseline_head": "d7c9782591ba884d38124f1910ad8f0650b7d913",
+  "deadline_utc": "2026-10-27T14:21:17+00:00",
+  "parent_evidence": {
+    "root-result-acceptance.json": "5aa8a98709d2a4d3772606306538bd86536a3f797bac9d5b76dc6ecfe408e5ad",
+    "registration.json": "c3a6f9fb66a2da9febc8534be646e43f5a61b0de831ca6d6f4303205d112425b",
+    "freeze.json": "e9503b0f645b5e3204559aaa784ba9acd031f395cd00998a9bbcda8643d18040",
+    "supervisor-result.json": "232f44cc31b9979f991d10ac4fb137b0b38be6954834b512a92480e35f438972",
+    "launcher-counterexample.json": "d5c4a4e081a3a609e15bc5e9260f0e4604afaf056dc9869fb88ec407e2b7c97c",
+    "process-search-correction.json": "8fd66d6d83917529464f76031a53acdfd8c08c9e651084f3dccfb6067f0e5d01",
+    "independent-result-assessment.json": "b9fd158165392719b76d9c3c8e2f4dbe0490b4d77369ea4466742776bd8ad3d5",
+    "root-next-learning-decision.json": "5da566f64b30be52b72b5e961c9120a98c5aecdd2f747d3862af6a17fcaf7b9c"
+  },
+  "scenarios": {
+    "normal": {
+      "worker_mib": 32,
+      "worker_seconds": 5,
+      "max_rss_bytes": 536870912,
+      "max_commit_bytes": 1073741824,
+      "min_available_bytes": 2147483648,
+      "wall_seconds": 30,
+      "poll_seconds": 0.25,
+      "cleanup_seconds": 10
+    },
+    "rss_stop": {
+      "worker_mib": 128,
+      "worker_seconds": 20,
+      "max_rss_bytes": 83886080,
+      "max_commit_bytes": 1073741824,
+      "min_available_bytes": 2147483648,
+      "wall_seconds": 30,
+      "poll_seconds": 0.25,
+      "cleanup_seconds": 10
+    }
+  },
+  "environment": {
+    "python_version": [
+      3,
+      12,
+      2
+    ],
+    "psutil_version": "7.2.2",
+    "platform": "win32",
+    "interpreter_relative": ".venv/Scripts/python.exe",
+    "interpreter_sha256": "9b0bffb7a259cd2722df454fdfff41ee13665820cff1f578b1d97d31f9ef93d5",
+    "prefix_relative": ".venv",
+    "virtual_environment_verified": true
+  },
+  "synthetic_only": true,
+  "cache_reads": 0,
+  "model_reads": 0,
+  "replay_reads": 0,
+  "new_games": 0,
+  "training_updates": 0,
+  "ownership": "Only newly created Job and process handles; no other processes",
+  "sampling_limit": "Job membership and RSS are sampled, may race, and are not hard real-time limits",
+  "member_interpretation": "Two sampled members do not independently identify the worker; normal launcher zero exit implies its preset worker exited successfully",
+  "retries": false
+}

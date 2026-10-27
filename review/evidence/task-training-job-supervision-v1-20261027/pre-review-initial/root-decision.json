@@ -1,0 +1,13 @@
+{
+  "status": "approved_for_implementation_not_execution",
+  "previous_commit": "d7c9782591ba884d38124f1910ad8f0650b7d913",
+  "created_utc": "2026-10-27T11:21:17+00:00",
+  "deadline_utc": "2026-10-27T14:21:17+00:00",
+  "objective": "Test a separately frozen Windows Job Object supervisor against the previously observed virtual-environment launcher and descendant oversight gap, using synthetic processes only.",
+  "design": "Create an owned process suspended and assign it to a newly created Job before resuming; do not allow breakaway. Sample Job members, their summed RSS, Job commit and system available memory. On a limit or error terminate only the owned Job, perform bounded waits and check whether Job membership is zero. Record uncertainty or failure without claiming successful cleanup.",
+  "scenario_order": "First the fixed 32 MiB normal-allocation scenario; only if its bound receipt is accepted, run the fixed 128 MiB scenario with an 80 MiB summed Job RSS stop. Each scenario has one exclusive start marker and no retry.",
+  "measurements": "Same-list RSS and member count are sampled rather than hard real-time limits; summed RSS can double-count shared pages, and Job commit is a different measure. Two sampled members do not alone identify their roles; a zero normal launcher exit supports that its specified synthetic worker completed.",
+  "acceptance": "Normal: assigned and resumed, no error, zero launcher exit, root reaped, Job active members zero, at least two sampled members. RSS stop: frozen prior normal receipt accepted, stop_reason rss_limit, trigger sample at least two members, root reaped, Job active members zero, no control or cleanup error. No further attempts on any failure or uncertain cleanup.",
+  "limitations": "Job membership does not cover processes launched outside the Job by external services; breakaway, nested-job and Win32 API compatibility must be verified rather than assumed. If assignment fails, do not resume and report whether the suspended process was confirmed reaped. Local preregistration is not an independent timestamp.",
+  "prohibitions": "No historical cache, model, trajectory or replay reads; no official game, new match, training, GPU work, rule changes, default Bot changes, system configuration changes, or control of unrelated processes. Publish no raw process IDs, absolute paths, commands or logs."
+}
