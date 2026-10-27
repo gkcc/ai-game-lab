@@ -1,0 +1,152 @@
+{
+  "schema": "launcher-evidence-receipt-v1",
+  "phase": "scratch_remove",
+  "primary_failure": {
+    "phase": "image_identity",
+    "error_type": "EvidenceError",
+    "reason": "undeclared_child"
+  },
+  "cleanup_failure": null,
+  "evidence_failure": false,
+  "events": [
+    {
+      "sequence": 0,
+      "phase": "ownership",
+      "kind": "checkpoint",
+      "safe": {}
+    },
+    {
+      "sequence": 1,
+      "phase": "launch",
+      "kind": "checkpoint",
+      "safe": {}
+    },
+    {
+      "sequence": 2,
+      "phase": "acquire_owner",
+      "kind": "checkpoint",
+      "safe": {
+        "roles": [
+          "unresolved"
+        ]
+      }
+    },
+    {
+      "sequence": 3,
+      "phase": "handshake_read",
+      "kind": "checkpoint",
+      "safe": {
+        "checks": {
+          "handshake_present": false
+        }
+      }
+    },
+    {
+      "sequence": 4,
+      "phase": "handshake_read",
+      "kind": "checkpoint",
+      "safe": {
+        "roles": [
+          "wrapper",
+          "unexpected",
+          "unexpected"
+        ],
+        "counters": {
+          "owned_instances": 3
+        }
+      }
+    },
+    {
+      "sequence": 5,
+      "phase": "schema_nonce",
+      "kind": "checkpoint",
+      "safe": {
+        "checks": {
+          "handshake_present": true,
+          "nonce_equal": true,
+          "mode_equal": true
+        },
+        "roles": [
+          "wrapper",
+          "worker",
+          "unexpected"
+        ]
+      }
+    },
+    {
+      "sequence": 6,
+      "phase": "runtime_fields",
+      "kind": "checkpoint",
+      "safe": {}
+    },
+    {
+      "sequence": 7,
+      "phase": "runtime_fields",
+      "kind": "checkpoint",
+      "safe": {
+        "checks": {
+          "executable_equal": true,
+          "base_executable_equal": true,
+          "prefix_equal": true,
+          "base_prefix_equal": true,
+          "path_equal": true
+        }
+      }
+    },
+    {
+      "sequence": 8,
+      "phase": "image_identity",
+      "kind": "checkpoint",
+      "safe": {
+        "roles": [
+          "wrapper",
+          "worker",
+          "unexpected"
+        ]
+      }
+    },
+    {
+      "sequence": 9,
+      "phase": "image_identity",
+      "kind": "primary_failure",
+      "failure": {
+        "phase": "image_identity",
+        "error_type": "EvidenceError",
+        "reason": "undeclared_child"
+      }
+    },
+    {
+      "sequence": 10,
+      "phase": "cleanup_reap",
+      "kind": "checkpoint",
+      "safe": {}
+    },
+    {
+      "sequence": 11,
+      "phase": "cleanup_readers",
+      "kind": "checkpoint",
+      "safe": {
+        "checks": {
+          "reader_joined": true
+        },
+        "counters": {
+          "remaining_instances": 0
+        }
+      }
+    },
+    {
+      "sequence": 12,
+      "phase": "cleanup_mark_complete",
+      "kind": "checkpoint",
+      "safe": {}
+    },
+    {
+      "sequence": 13,
+      "phase": "scratch_remove",
+      "kind": "checkpoint",
+      "safe": {}
+    }
+  ],
+  "private_records": 7,
+  "private_bytes": 9080
+}

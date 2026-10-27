@@ -1,0 +1,88 @@
+{
+  "schema": "launcher-evidence-receipt-v1",
+  "phase": "scratch_remove",
+  "primary_failure": {
+    "phase": "handshake_read",
+    "error_type": "RuntimeError",
+    "reason": "handshake_read_failed"
+  },
+  "cleanup_failure": null,
+  "evidence_failure": false,
+  "events": [
+    {
+      "sequence": 0,
+      "phase": "ownership",
+      "kind": "checkpoint",
+      "safe": {}
+    },
+    {
+      "sequence": 1,
+      "phase": "launch",
+      "kind": "checkpoint",
+      "safe": {}
+    },
+    {
+      "sequence": 2,
+      "phase": "acquire_owner",
+      "kind": "checkpoint",
+      "safe": {
+        "roles": [
+          "unresolved"
+        ]
+      }
+    },
+    {
+      "sequence": 3,
+      "phase": "handshake_read",
+      "kind": "checkpoint",
+      "safe": {
+        "checks": {
+          "handshake_present": false
+        }
+      }
+    },
+    {
+      "sequence": 4,
+      "phase": "handshake_read",
+      "kind": "primary_failure",
+      "failure": {
+        "phase": "handshake_read",
+        "error_type": "RuntimeError",
+        "reason": "handshake_read_failed"
+      }
+    },
+    {
+      "sequence": 5,
+      "phase": "cleanup_reap",
+      "kind": "checkpoint",
+      "safe": {}
+    },
+    {
+      "sequence": 6,
+      "phase": "cleanup_readers",
+      "kind": "checkpoint",
+      "safe": {
+        "checks": {
+          "reader_joined": true
+        },
+        "counters": {
+          "remaining_instances": 0
+        }
+      }
+    },
+    {
+      "sequence": 7,
+      "phase": "cleanup_mark_complete",
+      "kind": "checkpoint",
+      "safe": {}
+    },
+    {
+      "sequence": 8,
+      "phase": "scratch_remove",
+      "kind": "checkpoint",
+      "safe": {}
+    }
+  ],
+  "private_records": 2,
+  "private_bytes": 2650
+}

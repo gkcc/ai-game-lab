@@ -1,0 +1,28 @@
+{
+  "name": "d1",
+  "mode": "normal",
+  "partial_role_graph": [],
+  "runtime_checks": null,
+  "command_checks": null,
+  "outcome": "diagnostic_failure",
+  "cleanup": {
+    "owned_instances_observed": 3,
+    "owned_instances_remaining": 0,
+    "reader_joined": true,
+    "launched_process_reaped": true
+  },
+  "output_observed_bytes": 0,
+  "output_stored_bytes": 0,
+  "scratch_cleaned": true,
+  "wall_seconds": 0.29699999996228144,
+  "sampled_peak_working_set_bytes": 0,
+  "sampled_worker_cpu_seconds": 0,
+  "parent_cpu_seconds": 0.171875,
+  "monitor_samples": 0,
+  "primary_failed": true,
+  "cleanup_failed": false,
+  "executable_identity_read_bytes": 373808,
+  "os_launch_started": true,
+  "evidence_phase": "scratch_remove",
+  "evidence_failure": false
+}

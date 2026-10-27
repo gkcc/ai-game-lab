@@ -1,0 +1,55 @@
+{
+  "name": "d2",
+  "mode": "normal",
+  "partial_role_graph": [
+    {
+      "role": "wrapper",
+      "parent_role": "supervisor",
+      "image_is_registered": true,
+      "creation_identity_observed": true,
+      "image_sha256": "9b0bffb7a259cd2722df454fdfff41ee13665820cff1f578b1d97d31f9ef93d5"
+    },
+    {
+      "role": "unexpected",
+      "parent_role": "wrapper",
+      "image_is_registered": false,
+      "creation_identity_observed": true
+    },
+    {
+      "role": "worker",
+      "parent_role": "wrapper",
+      "image_is_registered": true,
+      "creation_identity_observed": true,
+      "image_sha256": "624bbc0586d8855633b875e911883bbef8a0e8b8711e11126df480dd86f54181"
+    }
+  ],
+  "runtime_checks": {
+    "executable_equal": true,
+    "base_executable_equal": true,
+    "prefix_equal": true,
+    "base_prefix_equal": true,
+    "path_equal": true
+  },
+  "command_checks": null,
+  "outcome": "diagnostic_failure",
+  "cleanup": {
+    "owned_instances_observed": 3,
+    "owned_instances_remaining": 0,
+    "reader_joined": true,
+    "launched_process_reaped": true
+  },
+  "output_observed_bytes": 0,
+  "output_stored_bytes": 0,
+  "scratch_cleaned": true,
+  "wall_seconds": 0.5780000000377186,
+  "sampled_peak_working_set_bytes": 58212352,
+  "sampled_worker_cpu_seconds": 0.0625,
+  "parent_cpu_seconds": 0.453125,
+  "monitor_samples": 2,
+  "primary_failed": true,
+  "cleanup_failed": false,
+  "executable_identity_read_bytes": 373808,
+  "os_launch_started": true,
+  "evidence_phase": "scratch_remove",
+  "evidence_failure": false
+}

@@ -1,0 +1,29 @@
+{
+  "label": "d1",
+  "passed": false,
+  "launched_fixtures": 1,
+  "planned_fixtures": 1,
+  "results": [
+    {
+      "name": "d1",
+      "outcome": "diagnostic_failure",
+      "primary_failed": true,
+      "cleanup_failed": false
+    }
+  ],
+  "source_metadata_meter": {
+    "inherited_prior_phase_bytes": 531430,
+    "this_process_bytes": 220421,
+    "total_bytes": 751851,
+    "limit_bytes": 4194304
+  },
+  "image_identity_read_bytes": 373808,
+  "total_wall_seconds": 0.29699999996228144,
+  "total_cpu_seconds": 0.171875,
+  "prior_wall_seconds": 0,
+  "prior_cpu_seconds": 0,
+  "raw_or_weight_reads": 0,
+  "neural_forwards": 0,
+  "official_transitions": 0,
+  "new_games": 0
+}

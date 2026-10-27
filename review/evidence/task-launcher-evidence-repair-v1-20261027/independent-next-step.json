@@ -1,0 +1,102 @@
+{
+  "schema": "independent-launcher-closure-next-step-v1",
+  "adviser_role": "independent_subagent_not_webchat",
+  "status": "close_unresolved_no_automatic_successor",
+  "unique_next_step": "Finish the factual failure closure and sanitized publication, preserve the measured blocker and frozen implementation, and return control at the explicit no-automatic-equivalent-repair boundary. Launch no successor experiment under the exhausted task.",
+  "observed_evidence": {
+    "directly_read": [
+      "d2-result.json",
+      "d2-evidence.json",
+      "d2-cause-decision.json",
+      "d3-result.json",
+      "d3-evidence.json",
+      "d3-cause-decision.json",
+      "task-launcher-contract-repair-v1/root-next-learning-decision.json",
+      "task-launcher-contract-repair-v1/root-result-acceptance.json",
+      "task-action-impact-diagnostic-v1/root-next-learning-decision.json",
+      "task-action-impact-diagnostic-v1/root-result-acceptance.json",
+      "task-anchor-reentry-v1/root-next-learning-decision.json",
+      "task-anchor-reentry-v1/root-result-acceptance.json",
+      "TASK_ANCHOR_REENTRY_V1.zh-CN.md"
+    ],
+    "d2": {
+      "primary_reason": "undeclared_child",
+      "failure_phase": "image_identity",
+      "unexpected_parent_role": "wrapper",
+      "runtime_equivalence_checks_passed": 5,
+      "owned_instances_remaining": 0,
+      "reader_joined": true,
+      "launched_process_reaped": true,
+      "scratch_cleaned": true,
+      "failure_evidence_retained": true
+    },
+    "d3": {
+      "primary_reason": "undeclared_child",
+      "failure_phase": "image_identity",
+      "unexpected_parent_role": "worker",
+      "runtime_equivalence_checks_passed": 5,
+      "owned_instances_remaining": 0,
+      "reader_joined": true,
+      "launched_process_reaped": true,
+      "scratch_cleaned": true,
+      "failure_evidence_retained": true
+    },
+    "root_reported_phase_totals": {
+      "diagnostic_launches": 3,
+      "source_revisions": 2,
+      "acceptance_suite_launches": 0,
+      "scientific_reads": 0,
+      "training_updates": 0,
+      "new_games": 0
+    },
+    "interpretation": "The launch-mode change preserved the five reported runtime equivalence checks but did not eliminate the unexpected system helper. Its observed parent role changed. Rejection and cleanup worked for these observed attempts; normal launch and the frozen acceptance suite did not pass. This is a failed engineering acceptance with useful new causal localization, not an opaque failure and not a scientific negative result."
+  },
+  "why_stop_now": [
+    "All three diagnostic slots and both cause-linked source revisions are consumed. The registered task explicitly prohibits automatically starting another equivalent repair stage.",
+    "A new namespace, a smaller budget or a renamed launcher task would not change that boundary. Nor would unspent final-suite slots authorize another diagnostic.",
+    "The measured blocker is not proved technically impossible. Console inheritance or narrow registration of a verified operating-system helper remain untested engineering possibilities. Their existence does not authorize another experiment under this closed task.",
+    "The earlier stages and this stage made different evidentiary progress. Do not describe them as three identical opaque failures or erase the new diagnosis to justify a status change.",
+    "A new learning run or prospective game sample would bypass the unresolved launch acceptance and does not follow from this failure. No scientific continuation is recommended now."
+  ],
+  "goal_status_judgment": {
+    "pause_status_authorized": false,
+    "complete_status_supported": false,
+    "blocked_status_unconditionally_supported_by_this_review": false,
+    "consecutive_goal_turn_count_known_to_adviser": false,
+    "reason": "Three phases or three diagnostic launches are not proof of three consecutive goal turns. The adviser has no reliable turn-level record and must not invent one.",
+    "root_action_if_threshold_is_actually_met": "If the root verifies that this same functional launcher blocker has recurred for at least three consecutive actual goal turns and that the explicit stop boundary leaves no meaningful authorized progress without changed external conditions, mark the goal blocked. Explain that the blocker is unresolved execution under exhausted bounded authorization, not technical impossibility.",
+    "root_action_if_threshold_is_not_met": "Leave goal status unchanged and report this task closed and unresolved. Do not mark it paused or complete, do not manufacture status-only turns to obtain a blocked count, and do not launch another equivalent repair task.",
+    "permission_framing": "Do not claim that a safety policy requires fresh user permission for ordinary already-authorized work. Returning control here follows the concrete registered stopping rule and exhausted experimental allowance. No generic permission request is needed to finish closure and publication."
+  },
+  "concrete_handoff": {
+    "factual_statement": "A registered synthetic launch still creates an undeclared system helper after the final allowed revision. Runtime checks remain equal and owned processes, readers and scratch were cleaned. The final acceptance suite did not run, so the launcher is not accepted.",
+    "continuation_condition": "Further execution requires an actual change to the exhausted no-automatic-successor boundary or externally supplied already-validated compatible launcher evidence. Record that change explicitly before considering any new execution. A general claim that progress should continue is not itself evidence that this specific stop condition changed.",
+    "future_candidate_is_not_a_task": "A narrowly measured helper registration or a proven console-inheritance route may be considered only after that boundary changes. This advice neither chooses an implementation nor allocates a new trial.",
+    "scientific_state": "The completed 512-update, 120-game learning stage remains non-admitted. Its historical diagnostic attempt remains consumed, its 192 raw files remain outside this review, and the current failure creates no training, inference, game or historical-rerun budget."
+  },
+  "preservation": [
+    "Keep the frozen phase source, source identities, registrations, pre-reviews, cause decisions and all three diagnostic public receipts.",
+    "Retain the declared bounded private failure deliverables locally. Do not publish their paths, process identifiers, exact commands or raw tracebacks.",
+    "Preserve old failed attempts, saved models, default Bot, scientific artifacts and historical decisions unchanged.",
+    "Publish one compact root verification record that clearly separates evidence-retention progress from failed launcher acceptance and zero scientific access. This independent advice is a requested supporting deliverable.",
+    "Do not perform an extra OS launch, acceptance rerun, broad audit, cleanup retry or model operation merely to strengthen this closure."
+  ],
+  "hard_stops": [
+    "No fourth diagnostic or third source revision.",
+    "No final acceptance launch after the failed normal diagnostic.",
+    "No blanket descendant allowlist, inferred helper identity, relaxed process or import guard, runtime substitution, global system change, or threshold increase.",
+    "No automatic equivalent launcher sequel and no scientific task used as a route around launcher acceptance.",
+    "No refund of old attempts, no old raw-data read, no candidate promotion and no default change."
+  ],
+  "adviser_scope": {
+    "file_content_read_limit_bytes": 81920,
+    "raw_or_weight_reads": 0,
+    "experimental_process_launches": 0,
+    "source_edits": 0,
+    "git_operations": 0,
+    "private_evidence_reads": 0,
+    "writes": "This advice only, created exclusively",
+    "agent_workflow_used": false,
+    "actual_file_content_bytes_read": 48004.0
+  }
+}

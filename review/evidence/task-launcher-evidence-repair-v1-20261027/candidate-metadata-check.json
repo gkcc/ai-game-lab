@@ -1,0 +1,17 @@
+{
+  "schema": "candidate-metadata-in-process-check-v1",
+  "passed": true,
+  "checks": {
+    "unknown_image_not_hashed": true,
+    "unknown_candidate_durable_before_hash_failure": true,
+    "registered_identity_failure_captured": true,
+    "registered_candidate_durable_before_hash_failure": true,
+    "owned_test_workspace_cleaned": true
+  },
+  "counters": {
+    "unknown_identity_calls": 0,
+    "registered_identity_calls": 1
+  },
+  "synthetic_os_launches": 0,
+  "private_bytes_read": 1447
+}

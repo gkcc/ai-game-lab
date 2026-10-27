@@ -289,3 +289,14 @@ Linux监督阶段1.329秒，整个自有进程组已清理并回收；原partial
 具体证据缺口：所有安全失败原因合并为一个RuntimeError代码，且中间结果只在载荷成功后才发布。故独立复核只接受失败闭合，工程验收未通过；补丁0、五项验收0，不确认redirector，不重跑。下一步需要在新预算内先保证失败证据可用，再进行有限迭代合成诊断，不能继续盲探或启动训练。
 
 [报告](../kaggriculture/TASK_LAUNCHER_CONTRACT_REPAIR_V1.zh-CN.md) | [修订登记与失败审查](evidence/task-launcher-contract-repair-v1-20261027/)
+
+
+## 合成启动失败留证修复 V1：留证验收与启动验收分开
+
+留证的10项定向回归和候选元数据专项检查通过，其中20阶段逐一核对实际公开收据、私有异常堆栈、部分事实和隐私分离。fixture回归验证私有final_detail写失败仍执行scratch清理，清理异常不覆盖主异常。
+
+真实诊断3次、原因关联修订2次，最终五用例验收未启动。d3仍出现未登记conhost，五项运行时字段相等不足以通过链路契约；禁止载荷，3个自有实例回收、reader join、scratch清理，evidence_failure=false。结论只接受证据修复与失败闭合，整体launcher未验收，不宣传修复成功或科学改善。
+
+各版源码、冻结哈希和失败尝试均保留；允许映像和父子链规则未放宽。本阶段不读取科学数据或模型、不运行GPU或新比赛，耗尽预算后不自动登记等价修复重试。
+
+[报告](../kaggriculture/TASK_LAUNCHER_EVIDENCE_REPAIR_V1.zh-CN.md) | [失败证据与审查裁决](evidence/task-launcher-evidence-repair-v1-20261027/)

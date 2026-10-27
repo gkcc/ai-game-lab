@@ -1,0 +1,24 @@
+{
+  "status": "closed_not_accepted",
+  "evidence_retention_accepted": true,
+  "launcher_accepted": false,
+  "scientific_reentry": false,
+  "diagnostic_launches": 3,
+  "source_revisions": 2,
+  "final_acceptance_launches": 0,
+  "raw_or_model_reads": 0,
+  "training_updates": 0,
+  "new_games": 0,
+  "independent_review_sha256": "896f03a525f232cb6865433df36aab89f26eea86eff69fe8211cc63cba943152",
+  "result_sha256": {
+    "d1": "d9ca61460e25308c99c348e98ead0d7f72ed387e36b033242bb46cc6fd81b1f1",
+    "d2": "ef678741c8e036495eb46ea8668627940f30dd2e7be956db6c0504762e0fe769",
+    "d3": "1189c87b954b3cec2e10406f3abe312742c1a5953a5538db4f80effad44e33e4"
+  },
+  "reason": "Unregistered console helper persists after final cause-linked revision",
+  "all_owned_processes_reaped": true,
+  "all_readers_joined": true,
+  "all_scratch_cleaned": true,
+  "old_failures_preserved": true,
+  "automatic_equivalent_repair_authorized": false
+}

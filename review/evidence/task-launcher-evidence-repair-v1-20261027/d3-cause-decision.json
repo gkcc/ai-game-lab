@@ -1,0 +1,11 @@
+{
+  "approved": true,
+  "actionable_evidence": true,
+  "prior": "d2",
+  "cause": "Observed unregistered console helper exceeded the inherited image reader cap",
+  "revision": "Use detached launch without expanding allowed runtime images; fixed negative child uses same registered base interpreter detached",
+  "reference": "https://learn.microsoft.com/en-us/windows/win32/procthread/process-creation-flags",
+  "permit_unknown_image": false,
+  "diagnostic_launches_consumed": 2,
+  "source_revisions_consumed": 2
+}

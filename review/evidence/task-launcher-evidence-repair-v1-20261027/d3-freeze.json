@@ -1,0 +1,21 @@
+{
+  "schema": "launcher-evidence-freeze-v1",
+  "phase": "d3",
+  "created_utc": "2026-10-27T01:16:16.586308+00:00",
+  "registration_sha256": "e1ff2729d8de8d8c6d73431a9fc860abb45ed9b97deb74a0cccdbbec9597f478",
+  "source_sha256": {
+    "learning/task_launcher_evidence_repair_v1/__init__.py": "3e577aa45d21da10df992a357c3503d96250e28ed8f5b8af27a419b0d79364bd",
+    "learning/task_launcher_evidence_repair_v1/capture.py": "76c48563ae35a1556e4d9c83ac19bc5e8c9b3ceecd3fd1ff9aa1af3adda6d66d",
+    "learning/task_launcher_evidence_repair_v1/evidence.py": "46157a6151f7552e61b2e63f7d47fbb26900b66099962c5d914aff13b7dd327f",
+    "learning/task_launcher_evidence_repair_v1/experiment.py": "37d91424df7a5f9d1617d0cd3a2dba227c74c6ea5bd8647dbf55e4e2cd629877",
+    "learning/task_launcher_evidence_repair_v1/runner.py": "eab95016f0b773983c8e28828a4b98974a4d38e04d883f6c6e07e347a7457b8e",
+    "learning/task_launcher_evidence_repair_v1/test_evidence.py": "0293296ca8820db4c70ee2f4fd749b781e2f132d2ed1927030e2e1cefb19c761",
+    "learning/task_launcher_evidence_repair_v1/test_fixture.py": "1a385da1c92ac1260e7541ffe383c333e5e0d361e44965a30d1b7a5eebc340aa",
+    "learning/task_launcher_evidence_repair_v1/worker.py": "801bc591882136cbe44b3f1c53d2317c2476743dd756a48d6d45b3f85280e30f",
+    "learning/task_anchor_once_v1/__init__.py": "4978d6f44ce420931cddf54f31bcff0d06ce9fd8a036c92b590a69cad07e6c94",
+    "learning/task_anchor_once_v1/processes.py": "9711f7d38e1494dc2cceef718482bef9470d7416a8d07284f900e487c1dc1092",
+    "learning/task_launcher_contract_repair_v1/__init__.py": "632b0299dbdc537cac994926556852d38a6d6655c36b82998f7c4ca834b6266f",
+    "learning/task_launcher_contract_repair_v1/observer.py": "593c04a156da9915d7084e83459170e99d9cf08fdbf14b044eddcb268a6548b6",
+    "learning/task_launcher_contract_repair_v1/experiment.py": "198d9f10fc2e5b501b673f291f093eec2414337e2480c7d16c1f804ebdda8c9e"
+  }
+}

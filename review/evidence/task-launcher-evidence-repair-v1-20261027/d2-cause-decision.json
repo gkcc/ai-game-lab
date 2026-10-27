@@ -1,0 +1,10 @@
+{
+  "approved": true,
+  "actionable_evidence": true,
+  "prior": "d1",
+  "cause": "Executable identity read cap failed before candidate context was retained",
+  "revision": "Persist candidate metadata before image reads; reject unknown image without reading it",
+  "permit_unknown_image": false,
+  "diagnostic_launches_consumed": 1,
+  "source_revisions_consumed": 1
+}

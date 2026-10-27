@@ -1,0 +1,66 @@
+{
+  "schema": "independent-launcher-result-review-v1",
+  "review_passed": true,
+  "launcher_accepted": false,
+  "evidence_retention_accepted": true,
+  "decision": "closed_not_accepted",
+  "diagnostic_launches": 3,
+  "cause_linked_source_revisions": 2,
+  "final_acceptance_launches": 0,
+  "final_suite_started": false,
+  "latest_production_sources_match_d3_freeze": true,
+  "cases": [
+    {
+      "label": "d1",
+      "accepted": false,
+      "cleanup_passed": true,
+      "evidence_retained": true,
+      "scratch_absence_verified": true,
+      "payload_output_bytes": 0,
+      "owned_instances_remaining": 0,
+      "readers_joined": true
+    },
+    {
+      "label": "d2",
+      "accepted": false,
+      "cleanup_passed": true,
+      "evidence_retained": true,
+      "scratch_absence_verified": true,
+      "payload_output_bytes": 0,
+      "owned_instances_remaining": 0,
+      "readers_joined": true
+    },
+    {
+      "label": "d3",
+      "accepted": false,
+      "cleanup_passed": true,
+      "evidence_retained": true,
+      "scratch_absence_verified": true,
+      "payload_output_bytes": 0,
+      "owned_instances_remaining": 0,
+      "readers_joined": true
+    }
+  ],
+  "remaining_risks": [
+    "undeclared_console_child_persists",
+    "launcher_contract_not_accepted",
+    "five_case_acceptance_not_run"
+  ],
+  "d3_console_parent_is_worker": true,
+  "registered_runtime_fields_equal": true,
+  "unknown_image_permission_granted": false,
+  "private_image_content_reads_for_console": 0,
+  "private_deliverable_bytes": 21395,
+  "owned_output_bytes_before_review": 250873,
+  "raw_scientific_reads": 0,
+  "model_reads": 0,
+  "engine_transitions": 0,
+  "new_games": 0,
+  "automatic_equivalent_repair_stage_authorized": false,
+  "scientific_reentry_authorized": false,
+  "reviewer": "independent_subagent",
+  "external_webchat_review": false,
+  "reviewer_cumulative_read_charge_bytes": 440430,
+  "reviewer_read_reservation_bytes": 460800,
+  "prior_charge_is_conservative": true
+}
