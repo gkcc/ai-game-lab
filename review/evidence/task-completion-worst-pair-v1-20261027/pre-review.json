@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "freeze_sha256": "f4c9bfbf9644178c696a9e7f6a40cc7d8948e749640ff36a84865f8fdb943f7e",
+  "registration_sha256": "7663d625416ba4eeea85a62d10ddecaa9fd49d26055474d9b44be65c63aaf793",
+  "checks": [
+    "Windows experiment.verify passed; source set, runtime hashes and public parent evidence identities match",
+    "Minimum accepted margin with seed and seat tie-break selects already observed seed 3342200684 and seat 0; explicitly post-hoc",
+    "Four registered replay and trace paths, sizes and ledger SHA identities match reconstructed manifest; each permits one decode",
+    "One candidate official replay at most 719 steps, 128 MiB compressed and 1 GiB decoded limits, no new game, training or model inference",
+    "First complete-request difference requires common history and matching callback inputs; missing or mismatched official event requests are unknown",
+    "Eight pure synthetic tests passed"
+  ],
+  "limitations": [
+    "Raw file contents were not opened; their content SHA is checked only as each one-time consumption stream finishes",
+    "Official engine and input validator are shared, not independent game rules or score computation",
+    "Time checks are non-preemptive inside a single decode or JSON parse",
+    "Selected pair is outcome-selected post-hoc, not independent holdout; co-occurring choice and request differences do not establish financial causation",
+    "No real replay, trace or model content decoded and no engine or inference run in review"
+  ]
+}

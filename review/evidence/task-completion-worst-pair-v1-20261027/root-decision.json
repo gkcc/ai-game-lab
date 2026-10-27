@@ -1,0 +1,14 @@
+{
+  "status": "approved_for_implementation_not_execution",
+  "previous_commit": "9c1c99aa4cbaf4bd76f1bda3b38233df199a40ac",
+  "started_utc": "2026-10-27T10:35:00+00:00",
+  "deadline_utc": "2026-10-27T13:35:00+00:00",
+  "authorization": "The user requested sustained autonomous research with independent subagent review. The previously frozen economic screen specified stopping after a failed guard and considering a separate read-only diagnosis.",
+  "selection": "Post-result selection from the accepted economic screen: minimum tuple (candidate-minus-teacher margin difference, seed, side). Both seats of seed 3342200684 tie at -2397, so deterministic sorting selects side 0; opponent round2 and the two candidate/teacher games are fixed.",
+  "purpose": "Locate the first complete-request difference on common prior history, determine whether a different task choice exists at identical callback input in that turn, and observe the selected candidate unit's official requested/effective action and atomic status if uniquely matchable.",
+  "inference_boundary": "Simultaneous same-input choice and complete-request differences are an observed linkage, not proof that that choice alone caused the full request or any financial outcome. After physical divergence do not claim same-context comparison. Missing or mismatched official event fields remain unknown.",
+  "budget": "One attempt reads exactly two fixed replays and two fixed traces, once per file, at most 128 MiB compressed and 1 GiB decoded. At most one official candidate replay, 719 transitions, no new game or model inference/training. A 300-second budget is checked between processing steps and events, not preemptively inside one decode or JSON parse.",
+  "stop": "Identity mismatch, budget exhaustion, official replay or receipt failure stops this stage; preserve partial counts and unknown work, never retry or add games under this registration.",
+  "interpretation": "This pair was selected after economic outcomes were known. Results are post-hoc descriptive evidence, not an independent holdout, a statistical performance estimate or a decomposition of net-profit causation.",
+  "privacy_and_preservation": "Raw replays, traces, coordinates, unit identities, full action arguments, model weights, personal configuration and logs stay local. Preserve frozen agents, default Bot, official rules, existing model and all previous results; no PPO or DAgger."
+}

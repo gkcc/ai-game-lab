@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "freeze_sha256": "f4c9bfbf9644178c696a9e7f6a40cc7d8948e749640ff36a84865f8fdb943f7e",
+  "analysis_sha256": "5913d8db3ffe5af710ec3918bc63e5462175b3bc57a5600393b94f81d1f64b09",
+  "synthetic_tests_passed": 8,
+  "windows_frozen_metadata_verification": true,
+  "main_agent_reviewed_subagent_analysis": true,
+  "reviewed": ["post-outcome fixed selection", "metadata-only four-file manifest", "same-history and identical-input comparison", "official event request binding", "unknown missing or mismatched fields", "single replay and partial failure accounting"],
+  "raw_content_sha_verified_during_single_decode_not_at_registration": true,
+  "elapsed_checks_not_preemptive_inside_single_decode_or_parse": true,
+  "raw_replays_traces_and_training_arrays_read": false,
+  "model_checkpoint_hash_only_no_decode": true,
+  "model_inference_executed": false,
+  "new_games_or_official_transitions": 0,
+  "local_registration_not_third_party_timestamp": true
+}
