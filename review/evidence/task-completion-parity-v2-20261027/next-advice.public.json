@@ -1,0 +1,8 @@
+{
+  "source": "independent gpt-6.1-terra subagent, not WebChat",
+  "recommendation": "Separately register a gradient-free controlled comparison of default JAX matmul precision against explicit highest precision on the same sixteen development groups and checkpoint.",
+  "scope": "Freeze identical checkpoint/cache/device identities, input order and tolerances; at most 32 group-level GPU forwards and 16 CPU forwards, no gradients, training, held-out data, new games or official transitions.",
+  "report": "For each fixed setting report aggregate out-of-tolerance candidate count, maximum error and argmax disagreements against the same CPU outputs, plus cleanup. No individual logits or device configuration are public.",
+  "stop": "Stop on identity mismatch, nonfinite output, budget or cleanup failure; no retries or post-result tolerance changes.",
+  "interpretation": "A reduction with highest precision supports precision as a contributing factor in this sample, not the unique cause of the prior ValueError or a game-strength claim."
+}

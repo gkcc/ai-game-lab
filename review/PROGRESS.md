@@ -397,3 +397,11 @@ d1/d2/d3源码快照及哈希全部保留，未放宽允许映像或父子链约
 独立审查建议保留旧证据，另立修复版并对真实启动入口注入设置、进程创建和运行异常，验证失败留证及清理后再冻结一次新版本执行。
 
 [报告](../kaggriculture/TASK_COMPLETION_PARITY_V1.zh-CN.md) | [失败复核](evidence/task-completion-parity-v1-20261027/independent-failure-review.json)
+
+## 固定16组 GPU/CPU 对照：修复版执行完成，一致性失败
+
+修复版通过18项合成回归和独立预审，实际完成16组、1741候选的GPU/CPU对照；1402个分数超固定容差，最大绝对差0.001991641066183547，16组首选全部一致。运行与两侧进程清理通过；数值一致性不通过，且这不是独立数值复演或随机代表性样本。
+
+无梯度、训练更新、留出读取、新比赛或官方步。差异可触发原对照函数的ValueError，但不能唯一证明当时异常原因；旧训练仍未验收。下一步建议另行冻结同16组默认与最高矩阵乘法精度的无梯度对照。
+
+[报告](../kaggriculture/TASK_COMPLETION_PARITY_V2.zh-CN.md) | [结果与独立复核](evidence/task-completion-parity-v2-20261027/)

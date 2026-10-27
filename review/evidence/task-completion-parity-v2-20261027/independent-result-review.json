@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "identities_sha256": {
+    "freeze.json": "65b02973fe24ad8cd346a6a95e4e9faca0071effcd4aa642b393d61575a03f8a",
+    "registration.json": "002c9547083e8abb8923ff31d1e2a17f305fb4a0e918dbbada96100dfc571787",
+    "pre-execution-commit.json": "4646adc03b1b58656d993984bcf9290f5b26f7ec84c19e2383ffd6f1b323bcff",
+    "run-started.json": "8c25b64baaaf68ada2b40d50d2ab7f3e6525eefa9adfa99377b7fc1529459b01",
+    "guard-started.json": "54d680da1e3d2f010a39b60e3554a705535f00055483f8b483be0b500205b070",
+    "worker-result.json": "ac3894310cfd567a3fe089e301b0d17431ff5fa97190e40d2e91c63093ea6fe5",
+    "guard-result.json": "17fe77983552b1d9f555a65023de6b04f4a132dff840e7307c0f38424b1e35a5",
+    "run-result.json": "91cd4a1064211dcc364fbc5f9a8d66a785c4df051cf25ef2dd1d8b6b8d07e1ef"
+  },
+  "old_v1_root_acceptance_sha256": "f986b566b1ff8660026a4ad2278a8063c12046a5bd423ab2b2bfac659b3f7b17",
+  "findings": [
+    "Execution completed according to worker, guard and transport receipts; parity failed: 16 groups, 1741 candidates, 1402 outside tolerance, zero argmax differences, maximum absolute error 0.001991641066183547",
+    "Frozen comparison computes abs(gpu-cpu) > 1e-4 + 1e-5*abs(cpu), checks finite logits and compares first-index argmax per group; this implements the registered symmetric-in-name but CPU-reference allclose rule",
+    "Worker reports 16 completed GPU forwards and device identity validated against frozen private expected identity; this is worker evidence, not independent device observation",
+    "Guard reports successful Linux session cleanup; transport receipt reports zero remaining owned Windows instances, joined reader and reaped child; these are supervisor receipts not independently repeated live inspection",
+    "Frozen worker path and result report zero gradients, training updates, holdout reads, new games and official transitions",
+    "Prior v1 failure root acceptance SHA remains equal to v2 registration; this check does not establish every prior artifact unchanged",
+    "Registration and freeze, start markers, committed preregistration and current frozen source identities match"
+  ],
+  "limitations": [
+    "No independent numerical rerun or logits inspection: figures are audited receipts, not independently reproduced measurements",
+    "The first 16 completed training groups are a limited nonrandom sample; zero argmax differences does not establish global decision agreement",
+    "Observed parity failure cannot uniquely identify the original ValueError cause or prove where it occurred",
+    "The prior training attempt remains failed and unsealed; no accepted trained model, holdout evaluation or competitive performance claim follows",
+    "No checkpoint, training cache, individual logits, private device configuration or logs were read, and no GPU, training or engine run was performed in this review"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "decision": "Prepare a separately frozen, gradient-free default-versus-highest GPU matmul precision comparison on the same sixteen already-consumed development groups.",
+  "basis": "The fixed v2 diagnostic completed on the configured GPU but 1402 of 1741 candidate logits exceeded the registered tolerance; all sixteen argmaxes matched. The original fit remains unsealed and failed.",
+  "fixed_scope": "Same checkpoint, numeric cache, device and ordered first sixteen completed groups; no test inputs or selection by observed results.",
+  "budget": "One new controlled diagnostic, at most 32 group-level GPU forwards, 16 CPU forwards and 3482 GPU candidate rows; no training, gradient, new games or official transitions.",
+  "evaluation": "Compare each setting with the same CPU logits using the original atol=1e-4, rtol=1e-5 and canonical first-argmax rule; report aggregate differences, not individual data.",
+  "stop": "No retry or adjustment of thresholds if identity, device, row, time or cleanup checks fail.",
+  "limit": "A precision comparison can support or weaken a proposed explanation for this sample; it cannot establish the original ValueError's unique cause or qualify the model for deployment."
+}

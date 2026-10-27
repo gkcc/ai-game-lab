@@ -332,3 +332,11 @@ Linux监督阶段1.329秒，整个自有进程组已清理并回收；原partial
 请检查失败闭合是否忠实、旧尝试是否保留，以及后续新版本能否覆盖真实启动入口的合成成功、设置异常、进程创建异常与运行异常；新版本不退款旧尝试，不应推断前次训练错误或模型实力。
 
 [报告](../kaggriculture/TASK_COMPLETION_PARITY_V1.zh-CN.md) | [独立失败复核](evidence/task-completion-parity-v1-20261027/independent-failure-review.json)
+
+## 固定16组 GPU/CPU 对照：修复版复核
+
+独立子代理（不是WebChat）核对冻结源码、设备与清理收据以及比较公式；没有独立读取模型或重算 logits。16组1741候选中1402超差，最大绝对差0.001991641066183547，但首选索引0组不同；样本有限，不代表全局决策一致或竞技表现。
+
+请审查启动修复的实际入口、部分标记/进程状态未知处理、GPU真实执行与清理证据、容差计算和结果口径，以及旧失败与逾时是否保留。数值差异满足旧函数抛ValueError的条件，但不能唯一确定原异常原因；无梯度、无留出和新比赛。
+
+[报告](../kaggriculture/TASK_COMPLETION_PARITY_V2.zh-CN.md) | [独立复核](evidence/task-completion-parity-v2-20261027/independent-result-review.json)

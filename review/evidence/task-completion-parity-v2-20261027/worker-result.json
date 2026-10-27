@@ -1,0 +1,21 @@
+{
+  "completed": true,
+  "groups": 16,
+  "candidate_rows": 1741,
+  "finite": true,
+  "out_of_tolerance_candidates": 1402,
+  "argmax_different_groups": 0,
+  "max_absolute_error": 0.001991641066183547,
+  "parity_passed": false,
+  "gpu_device_validated": true,
+  "completed_gpu_forwards": 16,
+  "checkpoint_sha256": "47def382fff8738583d2359964d2e14bfbb41b53e9dc428d2882519ada8e1811",
+  "training_cache_sha256": "3513992415b5ea9347faecca75466ddc30f16a402650a2f122be4cbfb335843b",
+  "selection": "First 16 completed_observed episode origins in saved training cache order; no replacement",
+  "gradients": 0,
+  "training_updates": 0,
+  "holdout_reads": 0,
+  "official_transitions": 0,
+  "new_games": 0,
+  "interpretation": "Present checkpoint inference comparison only; not proof of prior ValueError cause or game strength"
+}
