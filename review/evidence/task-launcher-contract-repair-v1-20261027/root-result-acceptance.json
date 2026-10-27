@@ -1,0 +1,19 @@
+{
+  "schema": "root-launcher-contract-failed-observation-v1",
+  "created_utc": "2026-10-27T00:37:55.020717+00:00",
+  "closure_accepted": true,
+  "engineering_acceptance": false,
+  "status": "closed_inconclusive",
+  "root_cause": "unknown",
+  "launches_consumed": 1,
+  "validation_cases": 0,
+  "production_patches": 0,
+  "no_retry": true,
+  "old_diagnostic_rerun": false,
+  "independent_review_sha256": "910652df008588a98a7209bf33c0e384e15e776e122d364fd27e4c795206f2e4",
+  "source_freeze_sha256": "e18aa666697c7e67429db49e1925d2baf963e90a9603dfcda27053746e95a67c",
+  "observation_sha256": "985f6046b9773d36fb0ea2831582d72d228a261cdcca4ad83902bdcfb6b8eff5",
+  "confirmed_source_defect": "Failure reasons and partial identity evidence are not retained; generic failure is insufficient for diagnosis",
+  "default_changed": false,
+  "new_training_authorized": false
+}

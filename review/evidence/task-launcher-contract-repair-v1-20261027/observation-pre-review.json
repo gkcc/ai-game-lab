@@ -1,0 +1,63 @@
+{
+  "schema": "launcher-contract-independent-observation-pre-review-v1",
+  "reviewer": "independent_launcher_contract_review",
+  "created_utc": "2026-10-27T00:29:06.1585456Z",
+  "passed": true,
+  "scope": "one registered synthetic observation only",
+  "freeze_sha256": "e18aa666697c7e67429db49e1925d2baf963e90a9603dfcda27053746e95a67c",
+  "registration_sha256": "b6ba7692d8fe02471a2125a25c3b966f3aafc23b8a7a2e81e7e69bf9f655bfd0",
+  "source_hash_checks": [
+    {
+      "source": "learning/task_launcher_contract_repair_v1/__init__.py",
+      "bytes": 77,
+      "sha256": "632b0299dbdc537cac994926556852d38a6d6655c36b82998f7c4ca834b6266f",
+      "matches": true
+    },
+    {
+      "source": "learning/task_launcher_contract_repair_v1/experiment.py",
+      "bytes": 10243,
+      "sha256": "198d9f10fc2e5b501b673f291f093eec2414337e2480c7d16c1f804ebdda8c9e",
+      "matches": true
+    },
+    {
+      "source": "learning/task_launcher_contract_repair_v1/observer.py",
+      "bytes": 10508,
+      "sha256": "593c04a156da9915d7084e83459170e99d9cf08fdbf14b044eddcb268a6548b6",
+      "matches": true
+    },
+    {
+      "source": "learning/task_launcher_contract_repair_v1/worker.py",
+      "bytes": 3217,
+      "sha256": "ce1a5234489b5772a976f9bbcc460c288b78e74303416ac1a8e7a3d3875225dd",
+      "matches": true
+    },
+    {
+      "source": "learning/task_anchor_once_v1/__init__.py",
+      "bytes": 80,
+      "sha256": "4978d6f44ce420931cddf54f31bcff0d06ce9fd8a036c92b590a69cad07e6c94",
+      "matches": true
+    },
+    {
+      "source": "learning/task_anchor_once_v1/processes.py",
+      "bytes": 3163,
+      "sha256": "9711f7d38e1494dc2cceef718482bef9470d7416a8d07284f900e487c1dc1092",
+      "matches": true
+    }
+  ],
+  "issues_resolved": [
+    "binary exact payload bytes on Windows",
+    "registered intended runtime executable hashes",
+    "owned child protection marker and identity-bound reap",
+    "public errors use fixed code without private runtime identifiers"
+  ],
+  "execution_boundary": "The observation may execute once. A patch remains conditional on identifying a narrow measured process chain.",
+  "scientific_execution_authorized": false,
+  "observation_attempts_started_before_review": 0,
+  "metadata_charge": {
+    "previous_reads_bytes": 56944,
+    "revision_content_reads_bytes": 31635.0,
+    "this_hash_verification_bytes": 34955,
+    "reviewer_total_bytes": 123534.0,
+    "reserved_limit_bytes": 358400
+  }
+}

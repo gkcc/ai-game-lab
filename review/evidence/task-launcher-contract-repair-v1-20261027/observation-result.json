@@ -1,0 +1,23 @@
+{
+  "schema": "launcher-contract-observation-v1",
+  "passed": false,
+  "error": {
+    "type": "RuntimeError",
+    "code": "observation_failed_before_acceptance"
+  },
+  "result": null,
+  "cleanup": {
+    "owned_instances_observed": 2,
+    "owned_instances_remaining": 0,
+    "reader_joined": true,
+    "launched_process_reaped": true
+  },
+  "scratch_cleaned": true,
+  "wall_seconds": 0.2029999999795109,
+  "image_identity_read_bytes": 270616,
+  "launch_attempts": 1,
+  "raw_or_weight_reads": 0,
+  "neural_forwards": 0,
+  "new_games": 0,
+  "official_transitions": 0
+}

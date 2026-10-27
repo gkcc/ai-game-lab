@@ -1,0 +1,15 @@
+{
+  "original_registration_sha256": "86731252525e4bee4ced1bda7eb42de7338695b2e4221275ab7934f29c07be5b",
+  "original_freeze_sha256": "81885b698385cf602f6f41208bc1620ebf79608c62aa7893cd80615ed30569ec",
+  "revised_registration_sha256": "b6ba7692d8fe02471a2125a25c3b966f3aafc23b8a7a2e81e7e69bf9f655bfd0",
+  "revised_freeze_sha256": "e18aa666697c7e67429db49e1925d2baf963e90a9603dfcda27053746e95a67c",
+  "originals_preserved_locally": true,
+  "original_never_executed": true,
+  "reason": "Correct concrete pre-execution review findings before the sole observation",
+  "original_source_sha256": {
+    "experiment.py": "aff308bfb1d21d2a41e57a0f3c4ffb87094234b316bcb639f7e856bda5988f26",
+    "observer.py": "1f202e317550fb976545ccc912660eb5469edaff136ec1b1873a3a9bafe76d32",
+    "worker.py": "8cad967e22d53d14f45d50ea6de064d6045eedfb7d537b48290698d4114599df",
+    "__init__.py": "632b0299dbdc537cac994926556852d38a6d6655c36b82998f7c4ca834b6266f"
+  }
+}

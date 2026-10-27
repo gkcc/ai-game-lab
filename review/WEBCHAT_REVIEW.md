@@ -280,3 +280,12 @@ Linux监督阶段1.329秒，整个自有进程组已清理并回收；原partial
 未解码重读原始数据，未重启试探或修改冻结源码。保留worker计量缺失与零采样内存不可判定；不给出64行虚构结果或收益归因。后续仅接受另立小预算合成进程链问题，不能据此自动恢复历史分析或训练。
 
 [报告](../kaggriculture/TASK_ACTION_IMPACT_DIAGNOSTIC_V1.zh-CN.md) | [独立复核](evidence/task-action-impact-diagnostic-v1-20261027/independent-result-review.json)
+
+
+## 合成启动链修复 V1：唯一观察未通过
+
+新阶段保留旧失败名额，不读raw或模型。执行前独立审查修订Windows文本输出、运行时身份绑定、进程标记和异常隐私处理，旧未执行登记及源码另存并显式映射。唯一观察约0.203秒失败，两个自有进程实例已回收、reader已join、scratch已清理，但没有保存可判定根因的角色图。
+
+具体证据缺口：所有安全失败原因合并为一个RuntimeError代码，且中间结果只在载荷成功后才发布。故独立复核只接受失败闭合，工程验收未通过；补丁0、五项验收0，不确认redirector，不重跑。下一步需要在新预算内先保证失败证据可用，再进行有限迭代合成诊断，不能继续盲探或启动训练。
+
+[报告](../kaggriculture/TASK_LAUNCHER_CONTRACT_REPAIR_V1.zh-CN.md) | [修订登记与失败审查](evidence/task-launcher-contract-repair-v1-20261027/)

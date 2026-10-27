@@ -1,0 +1,106 @@
+{
+  "schema": "task-launcher-contract-registration-v1",
+  "task": "task_launcher_contract_repair_v1",
+  "phase": "observation-revised",
+  "created_utc": "2026-10-27T00:27:37.610738+00:00",
+  "task_started_utc": "2026-10-27T00:19:31+00:00",
+  "task_deadline_utc": "2026-10-27T00:44:31+00:00",
+  "root_decision_sha256": "7565c223a4b7201ce2c5c7c57509364cd311de36f461eeedb4b550f32236cbbe",
+  "prior_publication_sha256": "57c23f406b3127168e28b6695e6785f5e695c6c4f49690d78ae14e3cd019a7b4",
+  "public_baseline_commit": "741f7d10828c435761efc90cc1b2d092169dd6af",
+  "budgets": {
+    "total_task_wall_seconds_including_implementation_review_cleanup": 1500,
+    "observation_wall_seconds": 30,
+    "total_synthetic_execution_wall_seconds": 120,
+    "total_synthetic_cpu_seconds": 60,
+    "per_fixture_wall_seconds": 10,
+    "cleanup_grace_seconds_per_fixture": 5,
+    "cpu_affinity_cores": 1,
+    "compute_threads_per_worker": 1,
+    "max_simultaneously_owned_os_processes_including_supervisor": 5,
+    "max_total_sampled_working_set_bytes": 536870912,
+    "memory_enforcement": "Externally sampled and reported honestly; not an OS hard quota. Any observed overage closes the stage.",
+    "source_and_metadata_read_bytes": 2097152,
+    "owned_output_bytes_including_temporary_logs": 1048576,
+    "per_fixture_stdout_stderr_stored_bytes": 65536,
+    "public_receipt_bytes": 32768,
+    "initial_observation_launches": 1,
+    "patch_candidates": 1,
+    "acceptance_fixture_launches": 5,
+    "maximum_launches": 6,
+    "full_validation_suite_attempts": 1,
+    "raw_replay_trace_bytes": 0,
+    "weight_or_saved_numeric_array_bytes": 0,
+    "neural_forwards": 0,
+    "training_updates": 0,
+    "gpu_seconds": 0,
+    "official_transitions": 0,
+    "new_games": 0,
+    "old_diagnostic_reruns": 0,
+    "broad_repository_audits": 0
+  },
+  "scope": {
+    "observation": "Observe one actual Windows synthetic launch. Capture parent/child relationships, process creation identity, executable basename and hash, sanitized command role, worker handshake and termination outcome before enforcement destroys evidence. Keep private runtime identifiers only in owned scratch and publish a normalized role graph.",
+    "patch_gate": "Proceed to at most one minimal, newly versioned launcher patch only if the observation establishes the concrete cause and the allowed process chain can be narrowly identified. A redirector must be measured, not assumed or allowed by a broad python-name exception.",
+    "frozen_validation": "Freeze the patch and synthetic payload hashes before the single acceptance suite. Run cases in the listed order once; stop at the first unexpected outcome. No post-failure tweak and rerun.",
+    "acceptance_cases": [
+      "Normal launch: measured runtime/virtual-environment identity is preserved; the actual worker emits its expected start/finish handshake and exact finite stdout/stderr payload; all expected owned processes exit, reader joins and scratch is removed.",
+      "Undeclared descendant: an explicitly adversarial synthetic fixture creates one unregistered child outside the approved wrapper chain; the supervisor rejects it, captures sanitized identity evidence and reaps the entire owned chain. Production worker process-launch restrictions remain intact.",
+      "Output overflow: emit the registered stdout/stderr storage cap plus one byte; fail closed, retain no more than the cap, keep the reason and reap/join without deadlock.",
+      "Worker failure: a known nonzero exit produces a compact failure receipt with the correct reason and complete process/reader cleanup.",
+      "Cancellation/deadline: stop a still-running synthetic worker through the registered owner; all measured wrappers and descendants are reaped, reader joins and owned scratch cleanup is verified."
+    ],
+    "success_meaning": "A reusable launcher contract passed this fixed synthetic Windows acceptance suite. No model, scientific mechanism, historical diagnostic result or later learning question has been validated."
+  },
+  "stop_conditions_and_root_adjudication": "Bound by root_decision_sha256; inherited unchanged",
+  "source_sha256": {
+    "learning/task_launcher_contract_repair_v1/__init__.py": "632b0299dbdc537cac994926556852d38a6d6655c36b82998f7c4ca834b6266f",
+    "learning/task_launcher_contract_repair_v1/experiment.py": "198d9f10fc2e5b501b673f291f093eec2414337e2480c7d16c1f804ebdda8c9e",
+    "learning/task_launcher_contract_repair_v1/observer.py": "593c04a156da9915d7084e83459170e99d9cf08fdbf14b044eddcb268a6548b6",
+    "learning/task_launcher_contract_repair_v1/worker.py": "ce1a5234489b5772a976f9bbcc460c288b78e74303416ac1a8e7a3d3875225dd",
+    "learning/task_anchor_once_v1/__init__.py": "4978d6f44ce420931cddf54f31bcff0d06ce9fd8a036c92b590a69cad07e6c94",
+    "learning/task_anchor_once_v1/processes.py": "9711f7d38e1494dc2cceef718482bef9470d7416a8d07284f900e487c1dc1092"
+  },
+  "protected_source_sha256": {
+    "main.py": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "bots/teacher_fertilizer_terminal_v2.py": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff"
+  },
+  "scratch_ownership_helper_sha256": "03dcb408c80c13ca70e52ab3b2adb4519f1aaf6aeceb5120410882ccec29c142",
+  "intended_runtime_images": {
+    "requested": {
+      "basename": "python.exe",
+      "sha256": "9b0bffb7a259cd2722df454fdfff41ee13665820cff1f578b1d97d31f9ef93d5"
+    },
+    "base": {
+      "basename": "python.exe",
+      "sha256": "624bbc0586d8855633b875e911883bbef8a0e8b8711e11126df480dd86f54181"
+    }
+  },
+  "observation_freeze_sha256": null,
+  "runtime_identity_storage": "Private process IDs, paths, prefixes and OS details only in owned scratch; public role/hash/equivalence projections only",
+  "observation_command_shape": [
+    "registered_virtual_environment_python",
+    "-B",
+    "-m",
+    "learning.task_launcher_contract_repair_v1.worker",
+    "--scratch",
+    "owned_scratch",
+    "--nonce",
+    "per_launch_nonce",
+    "--mode",
+    "observe"
+  ],
+  "source_policy": "Observation source bytes are immutable; validation may add new launcher source files and freezes the complete new namespace",
+  "budget_interpretation": "Registered verification, runtime receipts and independent review share 2 MiB; implementation browsing, Git and required public-only privacy scans excluded from bytes but included in 25 minute wall limit",
+  "metadata_meter": {
+    "inherited_prior_phase_bytes": 95106,
+    "this_process_bytes": 462869,
+    "total_bytes": 557975,
+    "limit_bytes": 2097152
+  },
+  "agent_workflow_enabled": false,
+  "raw_reads": 0,
+  "neural_forwards": 0,
+  "official_transitions": 0,
+  "training_updates": 0
+}

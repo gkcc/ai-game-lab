@@ -1,0 +1,92 @@
+{
+  "schema": "launcher-contract-independent-result-review-v1",
+  "reviewer": "independent_launcher_contract_review",
+  "created_utc": "2026-10-27T00:33:59.4840811Z",
+  "closure_passed": true,
+  "engineering_acceptance": false,
+  "status": "closed_inconclusive_observation",
+  "freeze_sha256": "e18aa666697c7e67429db49e1925d2baf963e90a9603dfcda27053746e95a67c",
+  "observation_result_sha256": "985f6046b9773d36fb0ea2831582d72d228a261cdcca4ad83902bdcfb6b8eff5",
+  "observation_started_sha256": "d42a1afad2ae88882861df2346436cc8288279488140476a5a79b7f575d6c55f",
+  "pre_review_sha256": "99078231fe565f878a5b1d240605cd0654d20f46dab257ad52ec27516700772c",
+  "source_hash_checks": [
+    {
+      "source": "learning/task_launcher_contract_repair_v1/__init__.py",
+      "sha256": "632b0299dbdc537cac994926556852d38a6d6655c36b82998f7c4ca834b6266f",
+      "matches": true
+    },
+    {
+      "source": "learning/task_launcher_contract_repair_v1/experiment.py",
+      "sha256": "198d9f10fc2e5b501b673f291f093eec2414337e2480c7d16c1f804ebdda8c9e",
+      "matches": true
+    },
+    {
+      "source": "learning/task_launcher_contract_repair_v1/observer.py",
+      "sha256": "593c04a156da9915d7084e83459170e99d9cf08fdbf14b044eddcb268a6548b6",
+      "matches": true
+    },
+    {
+      "source": "learning/task_launcher_contract_repair_v1/worker.py",
+      "sha256": "ce1a5234489b5772a976f9bbcc460c288b78e74303416ac1a8e7a3d3875225dd",
+      "matches": true
+    },
+    {
+      "source": "learning/task_anchor_once_v1/__init__.py",
+      "sha256": "4978d6f44ce420931cddf54f31bcff0d06ce9fd8a036c92b590a69cad07e6c94",
+      "matches": true
+    },
+    {
+      "source": "learning/task_anchor_once_v1/processes.py",
+      "sha256": "9711f7d38e1494dc2cceef718482bef9470d7416a8d07284f900e487c1dc1092",
+      "matches": true
+    }
+  ],
+  "execution": {
+    "launches_consumed": 1,
+    "maximum_launches": 6,
+    "validation_cases_run": 0,
+    "validation_suites_started": 0,
+    "patch_candidates_implemented": 0,
+    "retry_allowed": false
+  },
+  "cleanup": {
+    "receipt_owned_instances_remaining": 0,
+    "receipt_reader_joined": true,
+    "receipt_launched_process_reaped": true,
+    "receipt_scratch_cleaned": true,
+    "live_registered_synthetic_worker_processes_running": 0,
+    "live_stage_scratch_run_directories_remaining": 0,
+    "live_check_scope": "read-only exact synthetic worker module and dedicated stage scratch root"
+  },
+  "evidence_limitations": [
+    "Two owned process instances were observed during cleanup, but no normalized role graph survived; this does not establish a wrapper or redirector cause.",
+    "Every observation RuntimeError is projected to the same generic public code, so the receipt cannot distinguish handshake, runtime-equivalence, identity, resource or payload failures.",
+    "The result field is assigned only after successful payload completion; earlier private snapshots disappear with successful owned scratch cleanup.",
+    "The original launcher remains unchanged and its historical attempt remains consumed. No normal-launch contract or five-case acceptance result is established."
+  ],
+  "code_findings": [
+    {
+      "source": "learning/task_launcher_contract_repair_v1/observer.py",
+      "area": "observe exception projection and result assignment",
+      "severity": "blocks engineering acceptance",
+      "counterexample": "A runtime-environment mismatch and a registered-executable mismatch both produce RuntimeError, the same fixed public error code and a null result, despite requiring different corrective actions."
+    }
+  ],
+  "recommendation_scope": "No new scientific or engineering task is proposed in this review. A separate fresh adviser owns any next-step recommendation.",
+  "scientific_activity": {
+    "raw_or_weight_reads": 0,
+    "neural_forwards": 0,
+    "training_updates": 0,
+    "official_transitions": 0,
+    "new_games": 0,
+    "historical_diagnostic_reruns": 0
+  },
+  "metadata_charge": {
+    "previous_reviewer_bytes": 123534,
+    "first_result_read_bytes": 647,
+    "final_hash_and_receipt_reads_bytes": 38090,
+    "targeted_runtime_metadata_conservative_charge_bytes": 65536,
+    "reviewer_total_bytes": 227807,
+    "reserved_limit_bytes": 358400
+  }
+}
