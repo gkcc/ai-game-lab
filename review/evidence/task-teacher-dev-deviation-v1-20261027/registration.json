@@ -1,0 +1,93 @@
+{
+  "experiment": "task-teacher-dev-deviation-v1",
+  "baseline_head": "8d6fcfad6e7f0c65fa554fef51f055087a45ed7b",
+  "development_only": true,
+  "limits": {
+    "compressed_bytes": 33554432,
+    "decoded_bytes": 1073741824,
+    "max_line_bytes": 16777216,
+    "max_candidates_per_group": 4096,
+    "max_retained_bytes_per_game": 134217728,
+    "selected_groups": 200,
+    "selected_rows": 120000,
+    "seconds": 300
+  },
+  "job_limits": {
+    "max_rss_bytes": 1610612736,
+    "max_commit_bytes": 2147483648,
+    "min_available_bytes": 2147483648,
+    "wall_seconds": 360,
+    "poll_seconds": 0.25,
+    "cleanup_seconds": 10
+  },
+  "probe_job_limits": {
+    "max_rss_bytes": 536870912,
+    "max_commit_bytes": 1073741824,
+    "min_available_bytes": 2147483648,
+    "wall_seconds": 30,
+    "poll_seconds": 0.25,
+    "cleanup_seconds": 10
+  },
+  "thread_limits": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "environment": {
+    "python_version": [
+      3,
+      12,
+      2
+    ],
+    "psutil_version": "7.2.2",
+    "interpreter_sha256": "9b0bffb7a259cd2722df454fdfff41ee13665820cff1f578b1d97d31f9ef93d5"
+  },
+  "sources": [
+    {
+      "game": "dev-3911611436-market-0-teacher_task",
+      "seed": 3911611436,
+      "side": 0,
+      "trace": {
+        "path": "traces/dev-3911611436-market-0-teacher_task.jsonl.gz",
+        "size": 7323528,
+        "sha256": "73627f51c91c2f6739106821ddd3c45b97434aefbc4286a51f24a0c98329480b"
+      },
+      "replay_sha256": "d36fdf77308cce0784a1dfe52f667a94876e604b6ef6616f616186aea0ee182e",
+      "audit_sha256": "f604a3203ae4e93ccc771a61080b60122193afa42e656ee3c3d9f36ab7599d9c"
+    },
+    {
+      "game": "dev-2328454240-market-0-teacher_task",
+      "seed": 2328454240,
+      "side": 0,
+      "trace": {
+        "path": "traces/dev-2328454240-market-0-teacher_task.jsonl.gz",
+        "size": 7768110,
+        "sha256": "80dd3702b71d0e229e0533cb55118928e703605917f2876ffd6dad9e9cea10b3"
+      },
+      "replay_sha256": "6282d11c0ca0955263f51b4dd5ba5e05ea1342ff4b0633b2cd8e8c3fb2c42aa3",
+      "audit_sha256": "f604a3203ae4e93ccc771a61080b60122193afa42e656ee3c3d9f36ab7599d9c"
+    }
+  ],
+  "audit_sha256": "f604a3203ae4e93ccc771a61080b60122193afa42e656ee3c3d9f36ab7599d9c",
+  "action_manifest_sha256": "b433ee9652f38bbb0cb39afb1e02dcdb3ad84183beabd678f3ecbc8c0570f4fa",
+  "checkpoint_sha256": "b9a0f293c354aa78468c531e85645f70fbea9075a9dace729856119d913b24df",
+  "old_checkpoint": "artifacts/task-completion-bc-reentry-v1-20261027/private/model-final.npz",
+  "old_checkpoint_sha256": "47def382fff8738583d2359964d2e14bfbb41b53e9dc428d2882519ada8e1811",
+  "schema_sha256": "54b68dd3d715ccab079dbc275ee034fad2cb6302439ee36a79e8287f23ba68e3",
+  "parent_evidence": {
+    "root-result-acceptance.json": "e77b0034965c9f2ed394384418ff6de083d70e3750894bf754a03766648bee07",
+    "registration.json": "dfca38b1868e7b661261f62674bb0682fc82ef19c518b527bcabe7c09d129213",
+    "freeze.json": "beb11632d7050f26063baf89477b864e9908aea2f4b31890616e9024dcf0d5f6",
+    "independent-result-assessment.json": "1a90aac77f274687e7425242be9a2c9b7647fcb6a4d7d5abeac1b31d05f354eb"
+  },
+  "train_evidence": {
+    "root-result-acceptance.json": "4a4b034d0df5ab9c4d952bc708b871bf40f50f5c5fc40c7974bca282900dac50",
+    "registration.json": "d1054824def64a2f04501c5de5ad210ddb9962edddb0727b0c748a322fc4068d",
+    "freeze.json": "47aa91072d97e3eabe24b78c524f9021bbe6167bbcfb38cbd002332465b4938f",
+    "source-manifest.json": "7ec2b85b4a15e3fa394deba83144f7d9cf62cecc4ce812eac2a4314a704ea601",
+    "schema.json": "54b68dd3d715ccab079dbc275ee034fad2cb6302439ee36a79e8287f23ba68e3",
+    "model-seal.json": "91f069f09249bd65d1e812302fa53c5e68ef4711cf552bd07812e3e30e00701a"
+  },
+  "interpretation": "Development trajectories from training seeds, not independent holdout or causal evidence",
+  "retry_allowed": false
+}

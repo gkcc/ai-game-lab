@@ -1,0 +1,46 @@
+{
+  "previous_commit": "8d6fcfad6e7f0c65fa554fef51f055087a45ed7b",
+  "deadline_utc": "2026-10-27T16:43:59.980238+00:00",
+  "status": "approved_for_implementation_not_execution",
+  "development_only": true,
+  "limits": {
+    "compressed_bytes": 33554432,
+    "decoded_bytes": 1073741824,
+    "max_line_bytes": 16777216,
+    "max_candidates_per_group": 4096,
+    "max_retained_bytes_per_game": 134217728,
+    "selected_groups": 200,
+    "selected_rows": 120000,
+    "seconds": 300
+  },
+  "job_limits": {
+    "max_rss_bytes": 1610612736,
+    "max_commit_bytes": 2147483648,
+    "min_available_bytes": 2147483648,
+    "wall_seconds": 360,
+    "poll_seconds": 0.25,
+    "cleanup_seconds": 10
+  },
+  "probe_job_limits": {
+    "max_rss_bytes": 536870912,
+    "max_commit_bytes": 1073741824,
+    "min_available_bytes": 2147483648,
+    "wall_seconds": 30,
+    "poll_seconds": 0.25,
+    "cleanup_seconds": 10
+  },
+  "thread_limits": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "games": [
+    "dev-3911611436-market-0-teacher_task",
+    "dev-2328454240-market-0-teacher_task"
+  ],
+  "selection": "For each fixed source, take 100 lowest identity hashes of game, step and callback ordinal; independent of labels, model scores and economic outcomes.",
+  "budget": "One synthetic membership probe; then two trace streams, one complete decode each, and at most 400 CPU forwards across two frozen models and 120000 combined candidate rows.",
+  "metrics": "Top-1 agreement and teacher rank by model and teacher operation plus paired both/new-only/old-only/neither totals.",
+  "boundary": "These are previously recorded teacher-task development trajectories on training seeds, omitted from the eight training source games. They are not independent holdout, new-seed generalization, economic causation or promotion evidence.",
+  "failure_policy": "One attempt only; source, label, sample, identity, budget, membership, cleanup or inference failure stops with no replacement, resampling or retry."
+}

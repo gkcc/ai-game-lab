@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "freeze_sha256": "bdbaf192421ffb174ea5490e917faa9a77c49c147ab723c2327c8344298ed61f",
+  "registration_sha256": "c78f8fd74120dcc2de674d45c00485cd879e87c97b83588321540334bff3d445",
+  "checks": [
+    "Published baseline 8d6fcfa parent and training evidence plus public action manifest bind the local audit SHA and two selected source attestations.",
+    "Both fixed market seat-0 teacher-task games are absent from the eight training source games; historical audit reports 719 reconstructed actor, rival and trace turns per source.",
+    "Frozen limits bind 32 MiB compressed, 1 GiB decoded, 16 MiB per line, 100 samples per source, 400 CPU forwards and 120000 total candidate rows.",
+    "One named Job synthetic probe precedes worker; failure stops without replacement sampling or retry.",
+    "Verify passed using metadata and source hashes; all 303 runtime hashes and nine new source files match; eight fake tests passed and no attempt markers existed."
+  ],
+  "limitations": [
+    "These development trajectories use the same two training seeds and teacher-task states, and are not independent holdout or representative deployment data.",
+    "Real trace contents were not read; label validity, sample sufficiency and actual decoded size remain unknown until the one permitted execution.",
+    "Historical actor and raw identity assurance depends on published manifest, local audit SHA and the actual trace stream SHA during consumption.",
+    "Windows Job and probe were not run by reviewer; sampled memory limits and thread requests are not hard resource caps.",
+    "No model or trace contents opened, no inference or game performed; no generalization or economic causality claim."
+  ]
+}
