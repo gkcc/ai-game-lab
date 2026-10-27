@@ -1,0 +1,16 @@
+{
+  "status": "approved_for_implementation_not_execution",
+  "previous_commit": "fb2879ede4eba6e5ee66156860420b0d08385395",
+  "started_utc": "2026-10-27T09:08:00+00:00",
+  "deadline_utc": "2026-10-27T12:08:00+00:00",
+  "total_stage_seconds": 10800,
+  "authorization": "The user authorized limited BC and explicitly requested continued autonomous development and independent subagent review; no large-scale RL or online submission is authorized.",
+  "repeat_disclosure": "This separately registered version performs one new fit on the same already consumed training cache, with the same training seed and optimizer configuration. It is a repeated training execution, not a refund or a retroactive success for the old failed stage.",
+  "justification": "The controlled GPU precision experiment showed that highest affects inference parity on the exact previously examined groups, without proving the original exception's unique cause. Request highest only during the post-training parity comparison and retain detailed failure progress.",
+  "prior_stop_rule": "The earlier stage remains failed and its single consumed fit is not retried there. Keep its unsealed checkpoint, evidence, data and reserved holdout seeds unchanged; do not reuse that holdout.",
+  "test_design": "After one successful fit and two-platform cleanup, seal the final model, then collect eight complete official teacher_task games: two new seed identities, two frozen opponents and both seats. Use one primary replay and one separate label replay per game plus one independently implemented single-game replay; budget 17975 official transitions total.",
+  "interpretation": "Test episodes come from a task teacher combined with a frozen crop model, and evaluation covers only its existing opportunity set. The two-seed offline evaluation is exploratory, with no statistical significance, competitive-strength or model-deployment claim.",
+  "budget_and_stop": "Exactly one fit with at most 128 synchronized updates and no model selection. Freeze source, seed inventory, thresholds, code and independent review before execution. On any failure preserve partial evidence and stop this version without retry; do not adapt thresholds to holdout results.",
+  "privacy": "Raw replays, traces, labels, feature arrays, weights, personal launch configuration, process logs and absolute paths remain local; export only allowlisted sanitized evidence.",
+  "unchanged": "Official rules, default Bot, frozen teacher and historical evidence are not modified. No PPO, DAgger, online submission, driver or system configuration changes."
+}

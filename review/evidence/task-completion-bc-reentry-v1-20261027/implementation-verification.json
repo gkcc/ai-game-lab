@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "freeze_sha256": "017922bf16c538fc0e091080156dcbf00327243664e4bb9f24a4184d574af962",
+  "focused_test_modules": 8,
+  "focused_tests_passed": 23,
+  "tests_are_synthetic": true,
+  "windows_frozen_metadata_verification": true,
+  "wsl_frozen_metadata_verification": true,
+  "wsl_gpu_worker_dependency_imports": true,
+  "wsl_training_or_gpu_not_started": true,
+  "cache_and_old_checkpoint_identity_checks_are_byte_hashes_only": true,
+  "official_games_or_replays_started": 0,
+  "holdout_data_read": false,
+  "main_agent_review_of_independent_method": {
+    "method_sha256": "7b7ba9f2a750a8b3e7af1fd609c4090e02ad91608085fff73861938c778fec4d",
+    "reviewer_is_not_method_author": true,
+    "checked": ["fixed identity-only sample", "frozen ledger and seal bindings", "official reexecute and semantic hashes", "single-use marker", "partial replay count marked unknown", "no test tensors or model inference"],
+    "limitations": "Static and synthetic review only; not an executed official replay. Shared official execution, input validation and telemetry are not an independent rules engine."
+  },
+  "partial_label_replay_accounting": "On interruption, old core failure receipt records only complete returned replays; interpret alongside the outer receipt, which marks in-progress steps unknown.",
+  "local_registration_not_third_party_timestamp": true
+}

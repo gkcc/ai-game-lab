@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "freeze_sha256": "017922bf16c538fc0e091080156dcbf00327243664e4bb9f24a4184d574af962",
+  "registration_sha256": "ec7fb4290a8353302d60fbf20d6576a889e42f5ff63a563dd859aeb9c9c6a698",
+  "checks": [
+    "Windows experiment.verify passed; frozen runtime file identities and source set match",
+    "Seed inventory digest and deterministic selected seeds match; both selected seeds absent from searched set and previous train and reserved test seeds",
+    "Same consumed training cache and exact previous training configuration are disclosed as one new fit; old failed attempt not refunded",
+    "Official budget fixed at eight live games, eight primary replays, eight label replays and one independent replay: 17975 transitions; one worker and 900 second per job",
+    "Highest precision limited to post-training GPU CPU parity; offline teacher opportunity evaluation is exploratory, not competitive performance or promotion",
+    "Games, extraction and evaluation entry failure marker and cleanup cases reviewed; 23 combined synthetic tests passed"
+  ],
+  "limitations": [
+    "Reviewer authored independent_method.py; main agent separately reviews that method, so this review is not independent authorship review of it",
+    "On interrupted label replay the old collector receipt records confirmed complete replay transitions only; combine with reentry entry receipt which marks current partial replay count unknown",
+    "No actual GPU training, official game, replay or numerical evaluation performed in this review; Windows/WSL live transport and process cleanup remain to be verified",
+    "Verification hash-read bound private artifacts without decoding their model or training contents; no replay or per-row label or feature data was examined",
+    "Seed isolation covers searched inventory only and cannot rule out unavailable or unlisted history"
+  ]
+}

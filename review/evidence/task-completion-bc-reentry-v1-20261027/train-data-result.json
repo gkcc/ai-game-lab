@@ -1,0 +1,153 @@
+{
+  "passed": true,
+  "source_role": "previously observed development only",
+  "source_policies": "two baseline, four candidate, two teacher_task; actual selected tasks, not pure teacher imitation",
+  "games": [
+    {
+      "game": "dev-3911611436-round2-0-baseline",
+      "arm": "baseline",
+      "groups": 1078,
+      "labels_sha256": "a4e6ea2a4f9d575216bc9237a5454a716bf400114e3d38feebf04ded3c2b14ce",
+      "trace_sha256": "87510d2084239558dab64f33ac95b96bc4041ceaa14898b0483fac962cf40b59"
+    },
+    {
+      "game": "dev-3911611436-round2-0-candidate",
+      "arm": "candidate",
+      "groups": 1069,
+      "labels_sha256": "643704405665847f3d5f1346c0b7fbc343a481fdc20823f843c3f77f9a980bb1",
+      "trace_sha256": "32a2f36f4fa5c914732a43ef2a85fd92ed8ce166947a2c96db1802033b8c8015"
+    },
+    {
+      "game": "dev-3911611436-round2-0-teacher_task",
+      "arm": "teacher_task",
+      "groups": 1060,
+      "labels_sha256": "0beb7a1529ee649cc36169d339988a9ea0169f6181bafda9878f9e5921ada1a6",
+      "trace_sha256": "ccb50cfb4f63ed51c5f377dc834fa29ee11752e7f10355a50d38aaf98c8128ec"
+    },
+    {
+      "game": "dev-3911611436-market-1-candidate",
+      "arm": "candidate",
+      "groups": 1109,
+      "labels_sha256": "c5f354f4dc080e16835dd725b261d91c494b4aaaa2743ca86e3eaf2b84a515cb",
+      "trace_sha256": "2c34bd0ec448c8625ed3518882d05c812d8ddf66dd9c3b9cd9fe701a8683b5a9"
+    },
+    {
+      "game": "dev-2328454240-round2-0-baseline",
+      "arm": "baseline",
+      "groups": 1109,
+      "labels_sha256": "e5f2329b7ec0b5437c9480eb95c2af41d81e45c97e3ad8a3ad042ff2f7a7cdfe",
+      "trace_sha256": "db252f099cf5eb27623464dc7fb88fe5f979a06b756fc2d4f8e54590bed4af6d"
+    },
+    {
+      "game": "dev-2328454240-round2-0-candidate",
+      "arm": "candidate",
+      "groups": 1137,
+      "labels_sha256": "fed026e42496f1dfec35470a106b75d370dcac990872a2a34b050c09324b6944",
+      "trace_sha256": "30ef615840681af91ceadc6027c3eb09477d8fec59b061d54e178ba03dfc31da"
+    },
+    {
+      "game": "dev-2328454240-round2-0-teacher_task",
+      "arm": "teacher_task",
+      "groups": 1119,
+      "labels_sha256": "7d156389739fd7400a1f635e2de2cc99ca09026481006834587ac0f3c97ee434",
+      "trace_sha256": "6c1ea5f3601c4f1fa65bfeec4da0ecba17d34ea0d5e6552ca4841061f0e77091"
+    },
+    {
+      "game": "dev-2328454240-market-1-candidate",
+      "arm": "candidate",
+      "groups": 1128,
+      "labels_sha256": "48a9c9ccfdb3b38e3057bf99ef85f2b3285f7dc24d053267d6fc9ad76ffa20c8",
+      "trace_sha256": "3dd4d1988038b3d4081805ded9e9e949276e0991005d07e512be46def414e326"
+    }
+  ],
+  "groups": 8809,
+  "candidates": 410787,
+  "completed_observed": 6809,
+  "unknown": 2000,
+  "counts": [
+    {
+      "op": "DIG",
+      "status": "completed_observed",
+      "count": 47
+    },
+    {
+      "op": "FERTILIZE",
+      "status": "completed_observed",
+      "count": 190
+    },
+    {
+      "op": "FERTILIZE",
+      "status": "unknown",
+      "count": 41
+    },
+    {
+      "op": "HARVEST",
+      "status": "completed_observed",
+      "count": 618
+    },
+    {
+      "op": "HARVEST",
+      "status": "unknown",
+      "count": 159
+    },
+    {
+      "op": "PLANT",
+      "status": "completed_observed",
+      "count": 437
+    },
+    {
+      "op": "PLANT",
+      "status": "unknown",
+      "count": 231
+    },
+    {
+      "op": "WATER",
+      "status": "completed_observed",
+      "count": 5517
+    },
+    {
+      "op": "WATER",
+      "status": "unknown",
+      "count": 1569
+    }
+  ],
+  "per_seed": {
+    "2328454240": 4493,
+    "3911611436": 4316
+  },
+  "per_seed_status": [
+    {
+      "seed": "2328454240",
+      "status": "completed_observed",
+      "count": 3450
+    },
+    {
+      "seed": "2328454240",
+      "status": "unknown",
+      "count": 1043
+    },
+    {
+      "seed": "3911611436",
+      "status": "completed_observed",
+      "count": 3359
+    },
+    {
+      "seed": "3911611436",
+      "status": "unknown",
+      "count": 957
+    }
+  ],
+  "raw_reads": {
+    "compressed_input_read_bytes": 60619731,
+    "decoded_input_bytes": 836084675,
+    "files_opened": 8,
+    "files_completed": 8,
+    "raw_decode_passes_per_file": 1
+  },
+  "array_sha256": "3513992415b5ea9347faecca75466ddc30f16a402650a2f122be4cbfb335843b",
+  "array_bytes": 171315918,
+  "feature_boundary": "shared and candidate arrays only; seed and outcome are metadata",
+  "supervision": "first actual chosen; only completed_observed enters gradients",
+  "actor_trace_provenance": "prior frozen actor reconstruction plus replay and trace hashes",
+  "raw_labels_and_features_published": false
+}
