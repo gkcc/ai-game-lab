@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "freeze_sha256": "c72f97f4202938690d5c0e48a89777d513992bea8dad4758a94c8c5e7d3f500c",
+  "registration_sha256": "5f973740f74e9e4cd3b490a228b80b9ef06d28fcf8ed3d2978236b53c2e7ce2e",
+  "checks": [
+    "Windows experiment.verify passed; frozen runtime source set and parent public evidence match",
+    "Two trace identities match accepted ledger and prior registered manifests; only file metadata checked prior to consumption",
+    "Fixed post-hoc step 2, first differing choice under identical ordered callback inputs with teacher-label check; candidate budget 8192 and one CPU forward maximum",
+    "Full two trace streams decoded once for SHA verification, only step 2 JSON parsed; 16 MiB line, 128 MiB compressed and 1 GiB decoded bounds",
+    "Model hash checked at load and after forward; frozen schema and canonical tie ranking validated; no official transitions, games, training or GPU forward",
+    "Six pure synthetic tests passed"
+  ],
+  "limitations": [
+    "No real trace or model was decoded and no inference or engine executed in this review; model identity verification hash-read bytes only",
+    "Raw trace content SHA is verified when each consumption stream completes",
+    "Time checks are non-preemptive inside decompression and JSON parsing; repeated hashes cannot exclude transient replacement and restoration",
+    "Case selected after observing outcomes is not a holdout; scores cannot establish feature causality or financial causation"
+  ]
+}

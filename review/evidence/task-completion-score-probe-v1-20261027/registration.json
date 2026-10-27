@@ -1,0 +1,63 @@
+{
+  "experiment": "task-completion-score-probe-v1",
+  "baseline_head": "17469e03e7aaf9db5cb0d40fbb10f818d8bde903",
+  "deadline_utc": "2026-10-27T13:49:00+00:00",
+  "seed": 3342200684,
+  "side": 0,
+  "opponent": "round2",
+  "step": 2,
+  "limits": {
+    "raw_files": 2,
+    "decode_passes_per_file": 1,
+    "compressed_bytes": 134217728,
+    "decoded_bytes": 1073741824,
+    "max_line_bytes": 16777216,
+    "max_candidates": 8192,
+    "max_cpu_forwards": 1,
+    "seconds": 300
+  },
+  "raw_inputs": {
+    "candidate": {
+      "path": "traces/holdout-3342200684-round2-0-candidate.jsonl.gz",
+      "size": 7968179,
+      "sha256": "672415e1663bc5efcb39cdab3c996f0bf7e107895a41461fa894919f7a8d414e"
+    },
+    "teacher_task": {
+      "path": "traces/holdout-3342200684-round2-0-teacher_task.jsonl.gz",
+      "size": 7737586,
+      "sha256": "1c8e284ced37e0ef88b792e00cc3374c26d8edf29593027a747a6f4fc5fb8baa"
+    }
+  },
+  "parent_evidence": {
+    "root-result-acceptance.json": "3ae8358cffbae98d669b632d1d1810fc6234b95a27b61af5c7ec8ff9fa39c8f1",
+    "registration.json": "7663d625416ba4eeea85a62d10ddecaa9fd49d26055474d9b44be65c63aaf793",
+    "freeze.json": "f4c9bfbf9644178c696a9e7f6a40cc7d8948e749640ff36a84865f8fdb943f7e",
+    "analysis-result.json": "47dc7bae7c0b82c1ac34287999c0c03eb59415611de59158b1f3b898a7111535",
+    "independent-result-assessment.json": "19578ae69c9fad5a07e84ae27538df75cba8337c419b46ac1aeb232600788287",
+    "root-next-learning-decision.json": "805388aeacfd7e0e190d42d738fbe4ba2120527282833c668212c603ed4bfff5"
+  },
+  "post_hoc_not_holdout": true,
+  "selection": "first matched differing callback on previously selected post-hoc worst pair",
+  "raw_ledger_sha256": "53a98bec3090b337fe98d3b15fbb6c0fe68295fbd158bedbdfc2c9ee3f11f78f",
+  "candidate_checkpoint": "artifacts/task-completion-bc-reentry-v1-20261027/private/model-final.npz",
+  "candidate_checkpoint_sha256": "47def382fff8738583d2359964d2e14bfbb41b53e9dc428d2882519ada8e1811",
+  "crop_checkpoint": "artifacts/bc-epoch6-holdout-v1-20261023/panels/fixed_epoch6/model/trained.npz",
+  "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "official_loader_sha256": "0ac7baf1212b4ce1eabae3cc1cbb55c98effef5e0d0485522a8be87097c39a4f",
+  "runtime_versions": {
+    "python": "3.12.2",
+    "numpy": "2.5.4",
+    "kaggle_environments": "1.33.0"
+  },
+  "new_games": 0,
+  "training_updates": 0,
+  "max_model_inference_calls": 1,
+  "model_inference_calls_before_execution": 0,
+  "attempts": 1,
+  "retry_allowed": false,
+  "official_transitions": 0,
+  "gpu_forwards": 0,
+  "trace_decoding": "Both complete trace streams decoded and hash checked; only step 2 JSON parsed",
+  "time_limit_semantics": "Checked between chunks; decompression and JSON parsing are not preempted"
+}

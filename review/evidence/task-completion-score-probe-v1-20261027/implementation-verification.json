@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "freeze_sha256": "c72f97f4202938690d5c0e48a89777d513992bea8dad4758a94c8c5e7d3f500c",
+  "method_sha256": "6acadbc07f778e854d650b36387caf23007e06bc6fd42b9b14bf122aa6a60213",
+  "synthetic_tests_passed": 6,
+  "windows_frozen_metadata_verification": true,
+  "checked": ["two-trace identity and full streaming", "only step 2 parsed", "first equal-input disagreement", "single CPU forward and canonical tie rule", "model hash after load and after forward", "partial attempt accounting"],
+  "limitations": "Hash checks detect persistent modification, not a transient replacement restored between checks; time checks are not preemptive within one decode or parse.",
+  "raw_trace_content_sha_verified_during_consumption_not_registration": true,
+  "raw_trace_content_or_model_weights_decoded_before_execution": false,
+  "cpu_forwards_before_execution": 0,
+  "new_games_or_official_transitions": 0,
+  "local_registration_not_third_party_timestamp": true
+}

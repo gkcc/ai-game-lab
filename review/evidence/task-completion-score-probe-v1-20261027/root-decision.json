@@ -1,0 +1,14 @@
+{
+  "status": "approved_for_implementation_not_execution",
+  "previous_commit": "17469e03e7aaf9db5cb0d40fbb10f818d8bde903",
+  "started_utc": "2026-10-27T10:49:00+00:00",
+  "deadline_utc": "2026-10-27T13:49:00+00:00",
+  "authorization": "The user authorized sustained autonomous work and independent subagent review. This limited post-result inspection does not modify or train models, submit games or use PPO or DAgger.",
+  "selection": "Use the previously selected post-hoc economic pair: seed 3342200684, round2, seat 0, step 2. The earlier diagnostic did not retain a callback ordinal, so compare both accepted traces in order to find the first equal-input choice disagreement; do not select a later callback if inputs differ first.",
+  "data_role": "Both trace files are from games already selected after their economic outcomes were known. This is descriptive inspection, not an independent test or representative sample.",
+  "budget": "One attempt, one full streamed decode of each of two frozen traces, at most 128 MiB compressed and 1 GiB decoded, per-line maximum 16 MiB; only the step-2 JSON line from each file is parsed or sent to the comparison. Maximum one CPU model forward on at most 8192 candidates, zero GPU forwards, official transitions, new games or training updates.",
+  "acceptance": "The trace identities, task/crop model identities and complete input must match; the first same-input choice difference must reproduce the accepted PLANT/PLANT different-unit case. Frozen model schema, finite scores and first-candidate exact-tie rule must reproduce the previously selected candidate. Report only aggregate candidate count, teacher rank, score difference, tie information and same-target boolean.",
+  "stop": "Identity, input, size, candidate limit, model, score, argmax or timing failure stops the stage without retry. Partial file and forward consumption remains recorded. Time is checked between stream chunks and operations, not preemptively during one decode or JSON parse.",
+  "interpretation": "A score gap describes this frozen model's ordering for one input. It does not identify the causal feature, prove the worker assignment caused the complete request or explain the economic difference.",
+  "privacy_and_preservation": "Do not publish model weights, feature vectors, raw or individual candidate scores, candidate IDs, unit identities, coordinates, private states, trace contents, machine configuration or logs. Preserve all old evidence, model, default Bot and official rules."
+}
