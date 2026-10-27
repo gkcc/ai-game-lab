@@ -1,0 +1,16 @@
+{
+  "status": "approved_for_implementation_not_execution",
+  "previous_commit": "1133c48c750d87d1f3b7610d6907815219b38a4c",
+  "model_requirement": "gpt-6.1-terra",
+  "question": "On the same sixteen already-consumed training groups and unsealed checkpoint, does explicit highest JAX matmul precision alter the GPU-versus-CPU numerical discrepancy?",
+  "fixed_inputs": "Exactly the previously frozen checkpoint, cache, device and first sixteen completed_observed groups, with 1741 candidate rows; no replacement or test input.",
+  "controlled_variable": "Use one shared CPU reference per group. Run the unchanged JAX GPU layer calculations with the process default precision and then in a highest-precision context; record the actual default setting.",
+  "comparison": "For each setting use CPU-reference atol=1e-4 and rtol=1e-5 and canonical first argmax, with no tolerance adjustment; report aggregate error counts and maximum absolute error only.",
+  "budget": "At most 16 CPU group forwards and 32 synchronized GPU group forwards, 1741 CPU candidate rows and 3482 GPU rows, one attempt, 300 seconds work and 420 seconds process; no gradients, training, held-out input, official transitions or new games.",
+  "failure": "Stop on any identity, device, shape, nonfinite, budget, timing or cleanup failure; record phase and last completed work, never retry or select other examples.",
+  "interpretation": "A difference between settings can support a precision contribution for these particular inputs but cannot establish the old ValueError's unique cause, statistical generalization or competitive model strength.",
+  "privacy": "No model weights, numeric cache, individual logits, device configuration, private paths or logs are published.",
+  "start_utc": "2026-10-27T08:34:00+00:00",
+  "deadline_utc": "2026-10-27T10:34:00+00:00",
+  "local_registration_not_independent_timestamp": true
+}

@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "freeze_sha256": "b419a7028a2fba144b951911e74d718e70e7455393fe174e9984070f53585082",
+  "registration_sha256": "99845a669165baa9ce8b969191d812d6853f6329b1abd1d48ce89636aa0205e7",
+  "checks": [
+    "Frozen source set, runtime, protected source and registration hashes match",
+    "Prior v2 public result evidence and frozen metadata match; prior execution succeeded while numerical parity failed; checkpoint, cache and device identity commitments match v2",
+    "Fixed first 16 completed groups and 1741 candidate rows; 16 CPU references and 32 synchronized GPU forwards, default and highest, fixed tolerance and argmax",
+    "Started and completed counters and setting identified in progress; partial marker, spawn uncertainty, failure receipts and Windows/Linux cleanup reviewed",
+    "18 synthetic comparison, worker and actual entry tests passed in project virtual environment",
+    "No training, gradients, holdout reads, new games or official transitions; private inputs and outputs restricted"
+  ],
+  "limitations": [
+    "No checkpoint, cache, raw trace or private GPU configuration read in review",
+    "No GPU, engine, training, inference or real diagnostic process executed; candidate count, settings, results and cleanup require actual verification",
+    "Recorded JAX configuration is not a hardware precision measurement; default may equal literal highest and aggregate reproduction does not prove per-row equivalence",
+    "Results cannot uniquely explain previous ValueError or promote the unaccepted model"
+  ]
+}
