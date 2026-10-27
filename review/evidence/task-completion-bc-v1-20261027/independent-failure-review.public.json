@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "scope": "Metadata, frozen source and error classes only; no raw traces, individual labels, model content, private GPU configuration, inference, training, GPU or engine execution",
+  "identities_sha256": {
+    "freeze.json": "597a73e9c62c96737c2944395a762b1de4222017632376ef0ed69a66c5259408",
+    "registration.json": "6fbb87c0b8b828fd96a8dd0b46f03e931ef49e7646e4521fa0f486e35ffb1128",
+    "train-data-result.json": "5967e8480d41136707411174b83910e332695d3061946aa49ec3fdc8c7839d0f",
+    "fit-started.json": "6fd4c1b042066f1a575403dca9ff21cc50a1d65b28aded80a18195fe2fa9fc6e",
+    "fit-transport-result.json": "9f77dd0cf27d14d7e859cdd0903d39483b8ffaa705df60ad1a1b7ac34196481a",
+    "gpu-guard-result.json": "062aec8e9e67e5913459851cdccd8d5cfac9fa7cbb612ef1bc7badab9fa21932",
+    "failure-reload-decision.json": "736f03ae603ce841f16722b1c71a8783d78fe95e88b1d626496d48ef905d3cac",
+    "failure-reload-verification.json": "6bf4244369e848e617f7b49c8f249d6da42f08b3db14c2376594cbfad2546365",
+    "pre-review.json": "307de4e352063597ea30b0ef2025096caebdd0ce6348b7b14f7367d3dd7d308a",
+    "pre-execution-commit.json": "7bb04cee3ca3d89a03a9034e1731ddf848cfd2850c5d3c904398ce4d54de3032"
+  },
+  "interpretation": [
+    "Code writes checkpoint only after the update loop and preliminary GPU checks; its presence and successful reload support a control-flow inference that execution reached checkpoint creation, not an independent GPU trace or completed-fit certificate",
+    "No fit-result, sealed model, recorded nonzero-gradient count, device evidence or parity receipt exists; do not claim verified GPU training, 128 successful updates, inference parity, or a usable model",
+    "ValueError is reported but its exact source and cause cannot be established from sanitized logs; reload success does not prove parity or identify failure",
+    "The missing traceback or phase-specific sanitized error is a substantive diagnostic gap, not proof of a model or GPU defect",
+    "No retry is permitted under the existing frozen attempt; retain the private unsealed checkpoint and failure receipts, do not deploy or evaluate it. Any further experiment requires a separately authorized and registered decision"
+  ],
+  "limitations": [
+    "Absence of output and start markers establishes the scoped campaign did not record new test games or official steps; it is not system-wide monitoring proof",
+    "Cleanup is supported by recorded supervisor receipts, not an independently repeated live process inspection",
+    "Prior protected files were checked against frozen SHA identities; this is not an audit of unrelated historical artifacts"
+  ],
+  "verified_facts": [
+    "Train-data receipt passed for eight historical games, 8809 groups, 6809 observed completions and 2000 unknowns",
+    "Single fit transport and GPU guard failed with exit code 1; sanitized process log exposes ValueError and wrapping RuntimeError without traceback or precise error location",
+    "Windows cleanup receipt reports zero owned instances, joined reader and reaped child; Linux guard reports process group signalled, child reaped and no live owned session members",
+    "No fit result or model seal; no games or test-data start markers, no games, traces, job inputs or job results; no new test game or official step evidenced",
+    "CPU-only reload receipts report success in both registered environments with the same private checkpoint SHA, no inference or training; current checkpoint hash matches receipts",
+    "Frozen runtime and protected source SHA checks and frozen source set match"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "reason": "The single registered GPU fit exited with ValueError and did not write a fit-result receipt; an unsealed checkpoint file exists.",
+  "scope": "One read-only checkpoint reload with the same WSL interpreter and existing TaskNetwork validation, plus one read-only reload in the Windows project environment. No model inference, optimizer updates, new GPU work, replay reads or official transitions.",
+  "purpose": "Distinguish a checkpoint/schema load failure from failures occurring later in the frozen training code. This does not recover a missing original traceback or prove a specific root cause.",
+  "no_training_retry": true,
+  "test_games_allowed": false,
+  "checkpoint_remains_private_and_unsealed": true
+}

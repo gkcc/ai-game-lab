@@ -314,3 +314,11 @@ Linux监督阶段1.329秒，整个自有进程组已清理并回收；原partial
 请重点审查标签仅表达即时可观察效果、未知样本处理、选择时观察隔离、样本代表性、预登记与隐私；不能从77.30%覆盖率推导模型收益。下一步建议另立受控学习探针，必须使用未消费种子和固定对照，不得事后挑选留出数据。
 
 [报告](../kaggriculture/TASK_COMPLETION_EVIDENCE_V1.zh-CN.md) | [独立审查](evidence/task-completion-evidence-v1-20261027/independent-result-review.json)
+
+## 完成证据筛选 BC：失败闭合审查
+
+独立子代理复核（不是WebChat）确认一次训练尝试失败、两侧进程清理和0场新测试对局。内部ValueError缺少原始阶段信息，CPU只读重载成功不能定位根因；私有文件存在仅支持源码控制流推断，不构成训练或GPU验收。训练数据是三种冻结控制器的实际选择，完成筛选有选择偏差。未运行留出、不重试、不晋级。
+
+后续建议另立固定16组的无梯度数值诊断，绑定输入与模型哈希，报告GPU/CPU误差和首选差异；诊断不能证明原错误的唯一原因。原始轨迹、特征、权重、设备配置和日志不公开。
+
+[报告](../kaggriculture/TASK_COMPLETION_BC_V1.zh-CN.md) | [独立失败复核](evidence/task-completion-bc-v1-20261027/independent-failure-review.public.json)

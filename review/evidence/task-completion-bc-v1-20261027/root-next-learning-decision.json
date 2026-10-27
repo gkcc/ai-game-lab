@@ -1,0 +1,8 @@
+{
+  "decision": "Prepare a separately preregistered, one-attempt gradient-free GPU/CPU inference diagnostic; do not rerun the failed fit or consume its held-out panel.",
+  "basis": "The failed fit left a reloadable but unsealed checkpoint and no phase-specific error. Existing control flow suggests a comparison may have been reached, but neither training completion nor the cause of ValueError is independently established.",
+  "fixed_inputs": "The unsealed checkpoint and already-consumed training cache, first sixteen completed_observed groups in cache order, their exact hashes and prior schema.",
+  "limits": "At most sixteen complete group-level GPU forwards and 8192 total candidate rows; no gradients, new training, test data, replay reads, official steps or new games; one attempt without replacement or retry.",
+  "acceptance": "All finite GPU and CPU logits agree at atol=1e-4 and rtol=1e-5 and each group has the same first argmax; report observed disagreement if any rather than changing tolerance.",
+  "interpretation": "A diagnostic mismatch does not prove the original error had that cause; a matching result cannot explain the original error. Neither result establishes competitive improvement or authorizes deployment."
+}

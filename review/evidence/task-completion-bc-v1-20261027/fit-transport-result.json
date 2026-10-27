@@ -1,0 +1,21 @@
+{
+  "passed": false,
+  "error_kind": "RuntimeError",
+  "cleanup_error_kind": null,
+  "windows_cleanup": {
+    "owned_instances_observed": 5,
+    "owned_instances_remaining": 0,
+    "reader_joined": true,
+    "launched_process_reaped": true
+  },
+  "linux_session_cleanup_proven": true,
+  "capture": {
+    "limit_bytes": 1048576,
+    "written_bytes": 142,
+    "observed_bytes": 142,
+    "reader_joined": true,
+    "child_exit_code": 1
+  },
+  "elapsed_seconds": 14.328000000037719,
+  "retry_allowed": false
+}

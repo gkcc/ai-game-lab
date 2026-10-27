@@ -1,0 +1,16 @@
+{
+  "passed": false,
+  "error_kind": "RuntimeError",
+  "supervision": {
+    "reason": "exited",
+    "child_exit_code": 1,
+    "elapsed_seconds": 11.485628163,
+    "owned_process_group_signalled": true,
+    "direct_child_reaped": true,
+    "no_live_owned_session_members_before_reap": true,
+    "completed": false
+  },
+  "elapsed_seconds": 11.490713072,
+  "within_total_deadline": true,
+  "retry_allowed": false
+}

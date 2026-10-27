@@ -1,0 +1,26 @@
+{
+  "scope": "one CPU-only checkpoint reload per environment; no inference or training",
+  "environments": {
+    "windows_project_python": {
+      "exit_code": 0,
+      "passed": true,
+      "checkpoint_sha256": "47def382fff8738583d2359964d2e14bfbb41b53e9dc428d2882519ada8e1811",
+      "model_inference": 0,
+      "gpu_operations": 0,
+      "training_updates": 0
+    },
+    "registered_linux_python": {
+      "exit_code": 0,
+      "passed": true,
+      "checkpoint_sha256": "47def382fff8738583d2359964d2e14bfbb41b53e9dc428d2882519ada8e1811",
+      "model_inference": 0,
+      "gpu_operations": 0,
+      "training_updates": 0
+    }
+  },
+  "extra_gpu_operations": 0,
+  "extra_training_updates": 0,
+  "new_games": 0,
+  "official_transitions": 0,
+  "checkpoint_remains_private_and_unsealed": true
+}

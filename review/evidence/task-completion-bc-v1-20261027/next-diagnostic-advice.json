@@ -1,0 +1,9 @@
+{
+  "source": "independent gpt-6.1-terra subagent, not WebChat",
+  "recommendation": "Separately preregister one gradient-free GPU/CPU inference comparison on the unsealed checkpoint and the already-consumed training cache.",
+  "fixed_scope": "Use the first sixteen completed_observed groups in recorded cache order; bind checkpoint, cache, schema, source and expected device identity by SHA before reading numeric arrays. Do not replace groups after viewing output.",
+  "comparison": "At most sixteen group-level GPU forwards, compare all candidates to the reloaded CPU model using atol 1e-4, rtol 1e-5 and exact per-group argmax. Report aggregate maximum error, mismatch counts and cleanup.",
+  "stop": "Identity or device mismatch, nonfinite values, row budget or time limit stops the diagnostic without retry. No gradients, training updates, test inputs, new games or official steps.",
+  "interpretation": "A reproduced mismatch is evidence about this checkpoint and selected inputs; a pass or failure cannot uniquely identify the previous ValueError. Do not use it as game-strength or model-promotion evidence.",
+  "privacy": "Checkpoint, numeric cache, individual logits and device configuration remain local; publish only sanitized aggregates and hashes."
+}
