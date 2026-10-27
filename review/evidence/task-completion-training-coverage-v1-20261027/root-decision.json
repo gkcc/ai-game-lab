@@ -1,0 +1,15 @@
+{
+  "status": "approved_for_implementation_not_execution",
+  "previous_commit": "df4efb8ee7e192859ac2c3b1979c40a6e5ab82eb",
+  "created_utc": "2026-10-27T11:04:31+00:00",
+  "deadline_utc": "2026-10-27T14:04:31+00:00",
+  "objective": "Describe a fixed sample of already consumed training-cache opportunities and observed-label coverage, without model evaluation or new games.",
+  "sampling": "Before decoding, select 200 cache positions by ascending SHA256 of compact UTF-8 JSON [game, local ordinal], tie-breaking by game and ordinal; use only accepted game counts and collector order, not rewards, status or model results.",
+  "source_limit": "Previously consumed training cache only: eight games from mixed baseline, candidate and teacher-task controllers, not a pure teacher data set. Read no test cache, raw replay, trajectory or model checkpoint.",
+  "identity_limit": "The cache has no per-row game identifier. Segment attribution relies on accepted collector order and per-game counts; shared seed checks cannot independently prove arm or game identity.",
+  "metrics": "Aggregate source arm, selected operation, observed or unknown status and their joint counts. For chosen target and operation with at least two candidate units, count chosen-minus-minimum Manhattan distance and ties. Unseen combinations have count zero; no zero-denominator rates.",
+  "interpretation": "Unknown is not failure; Manhattan distance is not actual path length; opportunities are limited to the frozen controller candidate set. Counts are descriptive, not teacher optimality, causality, independent evaluation or proof of improved play.",
+  "limits": "At most 200 selected positions; one full cache decode and validation, plus one registration hash, execution hashes before and after, and ZIP directory reads. Declared ZIP uncompressed limit 512 MiB is not a RAM cap; in-process deadline checks cannot interrupt a hash or decompression. The registered supervisor samples resources and is not a hard memory cap; only calls through that entry are monitored.",
+  "stop_conditions": "One execution attempt, no retry on partial read, identity mismatch, budget breach, timeout, cancellation or failed receipt. No expansion based on the results.",
+  "prohibitions": "No new games, official transitions, raw trace reads, model inference, training, GPU work, test-panel inspection, PPO, DAgger, strategy changes or default Bot changes. Preserve historic data and publish aggregates only."
+}

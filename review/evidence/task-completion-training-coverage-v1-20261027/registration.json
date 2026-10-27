@@ -1,0 +1,114 @@
+{
+  "experiment": "task-completion-training-coverage-v1",
+  "baseline_head": "df4efb8ee7e192859ac2c3b1979c40a6e5ab82eb",
+  "deadline_utc": "2026-10-27T14:04:31+00:00",
+  "source_segments": [
+    {
+      "game": "dev-3911611436-round2-0-baseline",
+      "arm": "baseline",
+      "seed": 3911611436,
+      "count": 1078,
+      "offset": 0
+    },
+    {
+      "game": "dev-3911611436-round2-0-candidate",
+      "arm": "candidate",
+      "seed": 3911611436,
+      "count": 1069,
+      "offset": 1078
+    },
+    {
+      "game": "dev-3911611436-round2-0-teacher_task",
+      "arm": "teacher_task",
+      "seed": 3911611436,
+      "count": 1060,
+      "offset": 2147
+    },
+    {
+      "game": "dev-3911611436-market-1-candidate",
+      "arm": "candidate",
+      "seed": 3911611436,
+      "count": 1109,
+      "offset": 3207
+    },
+    {
+      "game": "dev-2328454240-round2-0-baseline",
+      "arm": "baseline",
+      "seed": 2328454240,
+      "count": 1109,
+      "offset": 4316
+    },
+    {
+      "game": "dev-2328454240-round2-0-candidate",
+      "arm": "candidate",
+      "seed": 2328454240,
+      "count": 1137,
+      "offset": 5425
+    },
+    {
+      "game": "dev-2328454240-round2-0-teacher_task",
+      "arm": "teacher_task",
+      "seed": 2328454240,
+      "count": 1119,
+      "offset": 6562
+    },
+    {
+      "game": "dev-2328454240-market-1-candidate",
+      "arm": "candidate",
+      "seed": 2328454240,
+      "count": 1128,
+      "offset": 7681
+    }
+  ],
+  "sample_positions_sha256": "f3fc0416be11f55a379f43d376bba2f5d1a4e00fa49c73f244c062fe332a2351",
+  "schema_sha256": "54b68dd3d715ccab079dbc275ee034fad2cb6302439ee36a79e8287f23ba68e3",
+  "cache_sha256": "3513992415b5ea9347faecca75466ddc30f16a402650a2f122be4cbfb335843b",
+  "cache_bytes": 171315918,
+  "limits": {
+    "max_archive_bytes": 268435456,
+    "max_uncompressed_bytes": 536870912,
+    "max_groups": 16000,
+    "max_candidates": 1200000,
+    "max_selected": 200,
+    "seconds": 300
+  },
+  "supervision": {
+    "max_rss_bytes": 1610612736,
+    "min_available_bytes": 2147483648,
+    "wall_seconds": 360,
+    "poll_seconds": 1,
+    "termination_wait_seconds": 10
+  },
+  "supervision_entry": "learning.task_completion_training_coverage_v1.supervisor",
+  "supervision_limit": "Only the registered supervisor entry is monitored; direct Python API calls are not prevented. Sampled child RSS and system available memory are not a hard memory cap",
+  "score_evidence": {
+    "root-result-acceptance.json": "114c6a52bdc8c29b29d1c8b1ac99cdf4d612f7314503a7c5ba766ebef1650c71",
+    "registration.json": "5f973740f74e9e4cd3b490a228b80b9ef06d28fcf8ed3d2978236b53c2e7ce2e",
+    "freeze.json": "c72f97f4202938690d5c0e48a89777d513992bea8dad4758a94c8c5e7d3f500c",
+    "probe-result.json": "494e4e95881767e374e9092164a034c52744ba2204cdad0b4a4e3ba52231b1ed",
+    "independent-result-assessment.json": "6e2bc424b7139799918a7c1630bfed97e88a6c5deead534b40fc715c47399f2b",
+    "root-next-learning-decision.json": "5feaccc7b1cf8b22a812d267b4900073383374f344ca81eee4a6c45c7249a22b"
+  },
+  "training_evidence": {
+    "registration.json": "6fbb87c0b8b828fd96a8dd0b46f03e931ef49e7646e4521fa0f486e35ffb1128",
+    "freeze.json": "597a73e9c62c96737c2944395a762b1de4222017632376ef0ed69a66c5259408",
+    "train-data-result.json": "5967e8480d41136707411174b83910e332695d3061946aa49ec3fdc8c7839d0f",
+    "schema.json": "54b68dd3d715ccab079dbc275ee034fad2cb6302439ee36a79e8287f23ba68e3"
+  },
+  "reentry_evidence": {
+    "registration.json": "ec7fb4290a8353302d60fbf20d6576a889e42f5ff63a563dd859aeb9c9c6a698",
+    "freeze.json": "017922bf16c538fc0e091080156dcbf00327243664e4bb9f24a4184d574af962",
+    "root-result-acceptance.json": "8f97b9575fc73dacf620aa173415c846246ce905bc4d18d59489aea54a1dc2b9"
+  },
+  "sampling": "SHA256 of UTF-8 compact JSON [game,local_ordinal], ascending digest then game then ordinal; metadata only",
+  "attribution": "Cache has no per-row game IDs; arm/game attribution relies on prior collector ordering and counts; same seed is not an independent row identity",
+  "physical_reads": "One registration file hash; execution performs before/after hashes, NPZ directory reads and one complete decode",
+  "time_limit_semantics": "Checked between operations; hashing and decompression are not preempted",
+  "new_games": 0,
+  "model_inference": 0,
+  "training_updates": 0,
+  "official_transitions": 0,
+  "gpu_calls": 0,
+  "attempts": 1,
+  "retry_allowed": false
+}

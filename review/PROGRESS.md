@@ -455,3 +455,9 @@ d1/d2/d3源码快照及哈希全部保留，未放宽允许映像或父子链约
 该案例按已知结果选择；排名不能证明特征因果或收益原因。独立子代理仅核对源码和聚合收据，未重算逐条分数；权重、trace和个人配置留本地。下一方向先按固定身份抽样检查历史训练数据覆盖，不依据旧测试收益筛样或自动重训。
 
 [报告](../kaggriculture/TASK_COMPLETION_SCORE_PROBE_V1.zh-CN.md) | [登记及复审](evidence/task-completion-score-probe-v1-20261027/)
+
+## 历史训练缓存覆盖：预登记
+
+固定来源元数据哈希抽取200个缓存位置，完整解码一次已消费训练缓存；只做来源臂、操作、已观察或未知标签及有限候选中曼哈顿距离的描述性计数。不读测试缓存、模型或原始回放，不新增比赛与训练。来源归属依赖旧collector顺序和局数，并非逐行身份证明。
+
+[登记说明](../kaggriculture/TASK_COMPLETION_TRAINING_COVERAGE_V1.zh-CN.md) | [登记证据](evidence/task-completion-training-coverage-v1-20261027/)

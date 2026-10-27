@@ -378,3 +378,9 @@ Linux监督阶段1.329秒，整个自有进程组已清理并回收；原partial
 核对事前提交7d4c582、两trace完整单次流式解码但仅解析step2、双臂同输入首分歧、一次CPU前向/模型哈希及模型排序并列规则。144候选/教师第5/差值约0.9856/同目标是一个事后案例，不证特征或经济因果；复审未读取原始特征、权重或重算逐条分数。
 
 [报告](../kaggriculture/TASK_COMPLETION_SCORE_PROBE_V1.zh-CN.md) | [证据](evidence/task-completion-score-probe-v1-20261027/)
+
+## 历史训练缓存覆盖：登记审查重点
+
+核对来源顺序、哈希抽样与完整解码预算，监督入口只提供抽样资源保护；标签unknown不是失败，候选曼哈顿距离不等同实际路径或教师最优。未运行模型或新比赛，不以样本结果宣称竞技提升。
+
+[登记说明](../kaggriculture/TASK_COMPLETION_TRAINING_COVERAGE_V1.zh-CN.md) | [登记证据](evidence/task-completion-training-coverage-v1-20261027/)

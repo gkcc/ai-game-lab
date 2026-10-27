@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "freeze_sha256": "e9503b0f645b5e3204559aaa784ba9acd031f395cd00998a9bbcda8643d18040",
+  "registration_sha256": "c3a6f9fb66a2da9febc8534be646e43f5a61b0de831ca6d6f4303205d112425b",
+  "checks": [
+    "Registration and root decision match freeze; frozen runtime hashes and source file set match",
+    "Source metadata segments total 8809 groups across mixed controller arms; sample rule fixes 200 positions by identity hash without outcomes",
+    "Joint arm operation status counts and candidate Manhattan-distance semantics are defined; unknown is not failure",
+    "One full cache decode plus registered hash and ZIP directory reads, sampled supervision and no retry are disclosed",
+    "Bounded terminate and kill waits record child reaping; seven pure in-memory tests passed"
+  ],
+  "limitations": [
+    "Did not read sample-positions.local.json, actual cache, models, traces or replays; did not run prepare, ready, execution, inference or game",
+    "Sample position content and actual prior evidence/cache byte identity were not independently checked during this review; registered execution verifies them before analysis",
+    "Game and arm attribution depends on accepted collector ordering and counts, not independent per-row identities",
+    "RSS and available memory are sampled, not a hard cap; direct API calls bypass supervisor and hashing or decompression are not preempted",
+    "This is descriptive analysis of consumed training data, not independent holdout, causal evidence or teacher optimality"
+  ]
+}
