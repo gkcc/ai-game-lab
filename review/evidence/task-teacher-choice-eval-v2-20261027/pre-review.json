@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "freeze_sha256": "15b12f2a12b0a8a6b60b689dc6a432fadef4bbbb6a41f80e10cc77a59f61587a",
+  "registration_sha256": "ef84810a088f5bb7ba8535a3774dccc3465413596402b9d1ba2030e97afde9f6",
+  "checks": [
+    "Registration, decision, seed inventory and 285 runtime source identities match frozen configuration; verify passed and 19 pure fake tests passed.",
+    "Seed inventory recomputed exactly from eligible metadata; both selected seeds differ from the inventory and the two consumed seeds.",
+    "Published prior failed panel, accepted artificial sampling repair, parent training and model-seal identities checked.",
+    "Frozen panel specifies 8 games, 8 primary and 1 independent replay, maximum 12223 transitions, original paired guardrails, separate Job supervision and no retry.",
+    "No game, independent replay or evaluation start marker existed at review."
+  ],
+  "limitations": [
+    "Inventory excludes private paths and is limited to recognized accessible metadata; unlisted, deleted or external seed history cannot be ruled out.",
+    "verify read model bytes for identity hashing only; no model decoding, inference, game or replay occurred during this review.",
+    "Artificial sampling test does not prove the previous error cause; Job sampling is not a hard real-time limit.",
+    "Two seeds and one opponent support exploratory comparison only, not statistical significance or automatic promotion.",
+    "Final ready and pre-execution commit checks still apply before execution."
+  ]
+}

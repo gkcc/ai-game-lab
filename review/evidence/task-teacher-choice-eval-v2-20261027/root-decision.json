@@ -1,0 +1,13 @@
+{
+  "previous_commit": "d5536c9174c71298768ccb9dc11b807af695cb5b",
+  "deadline_utc": "2026-10-27T17:53:12.982445+00:00",
+  "status": "approved_for_implementation_not_execution",
+  "test_seeds": [
+    2662554841,
+    3991437950
+  ],
+  "seed_selection": "Two distinct 32-bit values drawn before any new games with the system random source; prepare rejects values found in the documented metadata inventory.",
+  "budget": "Eight official complete games, each with primary replay, plus one fixed independent replay; at most 12223 official transitions, no retries.",
+  "criteria": "Against the fixed round2 opponent, for each seed require two-seat mean own-profit and margin change at least -1000, and each seat at least -2000; two seeds are an exploratory screen, not significance or automatic promotion.",
+  "boundaries": "No training, model or strategy change; preserve prior failed panel, consumed seeds, default Bot and all historical evidence; stop on failed or uncertain game or replay."
+}
