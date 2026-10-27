@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "scope": "code and four synthetic tests only",
+  "tests": 4,
+  "source_sha256": {
+    "learning/task_teacher_merge_v1/merge.py": "a3ec37889c142c8aa74726948534be151e31e00d7122e52644a9ab972475b73e",
+    "learning/task_teacher_merge_v1/test_merge.py": "68bda88ab01f970996a00bb6fb81c3450ab5be70bab9c64bc53c0fbaac4abbc0"
+  },
+  "freeze_sha256": "5aba8680eef7d19a17af55e720140c2a4f3f7aa7ffd38c0211a73aab4f084bb3",
+  "independent_review_sha256": "93f10b2fc56cf58ecdb8ae4b98104680a289bfb0f9ced9818fa5c3f33367d6a5",
+  "real_traces_or_training_arrays_read": false,
+  "models_read": false,
+  "gpu_or_fit_run": false,
+  "official_games_run": false,
+  "synthetic_trainer_input_validation": true,
+  "synthetic_group_width_65536_accepted": true,
+  "synthetic_group_width_65537_rejected": true,
+  "limitations": [
+    "The caller must authenticate immutable archive SHA and a common feature schema before merging.",
+    "Passing synthetic input checks does not prove fit success, GPU performance or competitive gains.",
+    "Candidate/group budgets do not impose a hard process memory cap.",
+    "The failed prior game is not used as a training source."
+  ]
+}

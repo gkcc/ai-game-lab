@@ -1,0 +1,17 @@
+{
+  "parent_commit": "04c1fe228b989dfec482685edd6755c365ccc29e",
+  "source_sha256": {
+    "learning/task_teacher_merge_v1/merge.py": "a3ec37889c142c8aa74726948534be151e31e00d7122e52644a9ab972475b73e",
+    "learning/task_teacher_merge_v1/test_merge.py": "68bda88ab01f970996a00bb6fb81c3450ab5be70bab9c64bc53c0fbaac4abbc0"
+  },
+  "dependency_sha256": {
+    "learning/task_teacher_choice_bc_v1/numeric.py": "9969b847bb7e353cb8fdb5a965c6dbfe312e65f88a033e49c67500a0000fe4f3",
+    "learning/task_teacher_choice_bc_v1/training.py": "a36e260ca8d51f4d39efb0d795053a757555036e01018a4ec9faa177b04859a3",
+    "learning/task_choice_v1/features.py": "b69e3fb590fb5c1159193d112977aa03170557dc47b8aa19bcffe0f09737c7d4"
+  },
+  "independent_review_sha256": "93f10b2fc56cf58ecdb8ae4b98104680a289bfb0f9ced9818fa5c3f33367d6a5",
+  "parent_result_sha256": "eff828bb377ad7cd2a8860fd87a3829baf57cda4436f2f70ac5649c2c8d84b8e",
+  "parent_advice_sha256": "9fff6a427794aa2b4bb034235aded94ded1fbba7f7bb28d477f067bb7a3ca05d",
+  "root_decision_sha256": "07b38b127ca94cff270d649d8b9db96e595e6bef11c6c1c17fa27ba9bb3d17b0",
+  "registration_timing": "post-implementation, post-test identity freeze"
+}
