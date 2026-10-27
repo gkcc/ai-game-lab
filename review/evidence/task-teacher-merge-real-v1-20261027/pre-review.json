@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "freeze_sha256": "7b3914ab50272d450a21448df2fd0a1caeb5821f01eccef82f0657c1bba6d734",
+  "registration_sha256": "a47344d7b65c14354040d1d4c366b13aa4f07370fd22ec831a2f5f8e8a28622b",
+  "source_count": 9,
+  "test_count": 10,
+  "findings": [
+    "Published historical training seal and evaluated parent runtime freeze bind cache, schema and accepted dependencies.",
+    "Old training seeds, conservative metadata exclusions and fixed synthetic seed are disjoint; one archive snapshot and two synthetic groups are specified.",
+    "Three 4 GiB available-memory checks precede attempt; probe and worker Jobs retain 2 GiB available-memory stop floor and separate cleanup checks.",
+    "Nine stage source files and 289 runtime identities matched; ten fake tests passed and no attempt marker was present.",
+    "No fit, model read, game, or merged archive output is authorized by this stage."
+  ],
+  "limitations": [
+    "This reviewer did not open the real training cache, model, trace or replay; archive identity will be checked during the one permitted worker snapshot.",
+    "Memory and Job checks are sampled rather than hard real-time limits; actual Windows execution and resources remain untested.",
+    "Seed exclusions cover recognized accessible metadata and cannot exclude private, deleted or external history.",
+    "Named Job membership prevents accidental direct worker use, not malicious same-user tampering; pre/post hashes cannot exclude transient restoration.",
+    "Synthetic compatibility does not prove GPU training or competitive improvement; post-review commit and ready checks remain required."
+  ]
+}

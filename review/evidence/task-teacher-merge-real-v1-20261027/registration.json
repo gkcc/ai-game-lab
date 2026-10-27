@@ -1,0 +1,57 @@
+{
+  "experiment": "task-teacher-merge-real-v1",
+  "baseline_head": "6c6ccf2d6a03bb91b8f0c1ccbb5326ccbdf81991",
+  "deadline_utc": "2026-10-27T19:14:00.245876+00:00",
+  "environment": {
+    "interpreter_sha256": "9b0bffb7a259cd2722df454fdfff41ee13665820cff1f578b1d97d31f9ef93d5",
+    "optimization_level": 0,
+    "python_optimize_env_absent": true
+  },
+  "cache_path": "artifacts/task-teacher-choice-bc-v1-20261027/private/train.npz",
+  "cache_sha256": "9ffd92d7d6fce400acb2d59c99c596140a46a48cbd1206d28889a11d51f70dac",
+  "schema_path": "artifacts/task-teacher-choice-bc-v1-20261027/schema.json",
+  "schema_sha256": "54b68dd3d715ccab079dbc275ee034fad2cb6302439ee36a79e8287f23ba68e3",
+  "old_groups": 2253,
+  "old_candidate_rows": 118955,
+  "old_train_seeds": [
+    3911611436,
+    2328454240
+  ],
+  "synthetic_seed": 1211026222,
+  "seed_roles_sha256": "db312645115bb15a416e59c46d16026ec9b59f8da13ba243f63bc9ba0ecd0a29",
+  "seed_role_scope": "Previous metadata exclusions plus stopped-panel seed roles; synthetic seed is not a game",
+  "seed_history_limitation": "Private, deleted, unavailable or external seed history cannot be excluded",
+  "max_groups": 4000,
+  "max_candidates": 250000,
+  "max_archive_bytes": 134217728,
+  "max_uncompressed_bytes": 134217728,
+  "merge_max_groups": 4002,
+  "merge_max_candidates": 250003,
+  "synthetic_groups": 2,
+  "synthetic_candidate_rows": 3,
+  "probe_job_supervision": {
+    "max_rss_bytes": 1073741824,
+    "max_commit_bytes": 1610612736,
+    "min_available_bytes": 2147483648,
+    "wall_seconds": 120,
+    "poll_seconds": 0.25,
+    "cleanup_seconds": 10
+  },
+  "worker_job_supervision": {
+    "max_rss_bytes": 1610612736,
+    "max_commit_bytes": 2147483648,
+    "min_available_bytes": 2147483648,
+    "wall_seconds": 300,
+    "poll_seconds": 0.25,
+    "cleanup_seconds": 10
+  },
+  "preflight_min_available_bytes": 4294967296,
+  "preflight_samples": 3,
+  "preflight_interval_seconds": 10,
+  "archive_snapshot_limit": 1,
+  "output": "aggregate only; no merged archive",
+  "retry_allowed": false,
+  "no_training": true,
+  "no_model_reads": true,
+  "no_official_games": true
+}

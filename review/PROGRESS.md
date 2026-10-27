@@ -547,3 +547,9 @@ d1/d2/d3源码快照及哈希全部保留，未放宽允许映像或父子链约
 新增旧／未来新示范的保序合并及训练组转换，校验seed角色、变长候选对齐、预算与训练器单组宽度上限。4项纯合成测试和独立复核通过，未读真实数组、模型或轨迹，未训练。归档SHA及共同schema仍须真实调用方验证；本次是事后源码身份记录，不是事前实验登记。
 
 [说明](../kaggriculture/TASK_TEACHER_MERGE_V1.zh-CN.md) | [证据](evidence/task-teacher-merge-v1-20261027/)
+
+## 旧训练缓存合并兼容性：预登记
+
+预先绑定过去已封存的2,253组旧训练缓存和schema，以最多2组合成数据核验merge与训练器输入。先做三次内存余量预检，再运行一次有界Job；不读取失败面板轨迹、不保存混合数据、不训练或比赛。结果仅能说明本次接口兼容，不代表泛化或收益。
+
+[说明](../kaggriculture/TASK_TEACHER_MERGE_REAL_V1.zh-CN.md) | [登记证据](evidence/task-teacher-merge-real-v1-20261027/)

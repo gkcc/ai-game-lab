@@ -1,0 +1,12 @@
+{
+  "previous_commit": "6c6ccf2d6a03bb91b8f0c1ccbb5326ccbdf81991",
+  "status": "approved_for_implementation_not_execution",
+  "created_utc": "2026-10-27T15:14:00.245876+00:00",
+  "deadline_utc": "2026-10-27T19:14:00.245876+00:00",
+  "purpose": "Validate real sealed old training-cache compatibility with the new merge interface and two synthetic groups.",
+  "scope": "One immutable old archive snapshot, source/schema/seed verification, merge and existing trainer input validation only.",
+  "resources": "Three 4GiB headroom samples before starting; sampled Job limits and 2GiB available-memory floor; bounded time and one attempt.",
+  "stop_conditions": "Any identity, resource, cleanup or semantic failure after marker stops without retry; a failed preflight reads no cache and does not start an attempt.",
+  "boundaries": "No failed-panel trace, replay, model, new game, GPU fit, merged archive or sample-level public data.",
+  "provenance": "Independent subagent advice and review, not WebChat."
+}
