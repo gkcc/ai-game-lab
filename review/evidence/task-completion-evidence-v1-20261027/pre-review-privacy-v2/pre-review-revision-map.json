@@ -1,0 +1,12 @@
+{
+  "prior_freeze_sha256": "b018e1554ee6793ceda710609e8da43556bb92ad1846595c704424303c9811d8",
+  "prior_review_sha256": "f1f15d25ac61cdeac728f3e36e82bba6e375145ddb27901066c5e5331e0cf76b",
+  "current_freeze_sha256": "af53f08b798dcb7ff499b4eb872b5904cca966f789c748efa7b76aa0fe5eac48",
+  "prior_unexecuted_sources_preserved": true,
+  "scientific_raw_reads": 0,
+  "official_steps": 0,
+  "reasons": [
+    "Require a positive sampled-memory count before claiming the resource contract",
+    "Verify committed source bytes before worker launch"
+  ]
+}

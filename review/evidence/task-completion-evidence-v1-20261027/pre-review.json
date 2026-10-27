@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "reviewer": "gpt-6.1-terra",
+  "scope": "independent source and public metadata pre-review, including privacy revision",
+  "freeze_sha256": "e8bbce2d32b6041e068462a70ee73bee1666e8a29b32f46d29fa528af32d5da9",
+  "registration_sha256": "841c53091a1743d2b7ee5744978273e9213a2f69d88aa1d4a3fe95c48c210f46",
+  "input_manifest_sha256": "b4562c9625ec4fed40532cf325a68d1d4bac3fc88c1f6c0c332342b6a4bd6246",
+  "checked": [
+    "source and metadata hashes",
+    "prior privacy freeze and review hash binding",
+    "synthetic invalid absolute path remains covered",
+    "eight registered game identities and conservative atomic label join",
+    "prelaunch committed source comparison and sampled memory fail-closed",
+    "registered sample rule and revised deadline"
+  ],
+  "limitations": [
+    "No raw data models engine or training executed by reviewer",
+    "Independent replay and 20 fixed examples require separate execution and result review",
+    "Review does not establish outcomes or causal performance",
+    "Tests reported by root were not independently executed"
+  ]
+}

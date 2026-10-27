@@ -1,0 +1,62 @@
+{
+  "experiment": "task-completion-evidence-v1",
+  "created_utc": "2026-10-27T05:09:59.794761+00:00",
+  "baseline_head": "4592327c396b3f71607dec5e9fbddd0da8d72d15",
+  "task_started_utc": "2026-10-27T03:22:00+00:00",
+  "task_deadline_utc": "2026-10-27T06:10:00+00:00",
+  "total_stage_seconds": 10080,
+  "source_manifest_sha256": "b433ee9652f38bbb0cb39afb1e02dcdb3ad84183beabd678f3ecbc8c0570f4fa",
+  "input_manifest_sha256": "b4562c9625ec4fed40532cf325a68d1d4bac3fc88c1f6c0c332342b6a4bd6246",
+  "data_role": "Eight already observed development games; never a new holdout or performance evaluation",
+  "fixed_selection": "Each of two prior development seeds: round2 seat0 S/C/T and market seat1 C",
+  "games": 8,
+  "raw_files": 16,
+  "new_games": 0,
+  "training_updates": 0,
+  "neural_forwards": 0,
+  "gpu_operations": 0,
+  "main_official_transitions": 5752,
+  "independent_official_transitions": 719,
+  "total_official_transitions": 6471,
+  "independent_selection": "First seed, round2, seat0, candidate; no replacement or rerun",
+  "independent_sample_rule": "Twenty smallest SHA256 of ASCII json.dumps([game,first_step,first_ordinal],ensure_ascii=True,separators=(comma,colon)), without looking at label",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+  "official_loader_sha256": "0ac7baf1212b4ce1eabae3cc1cbb55c98effef5e0d0485522a8be87097c39a4f",
+  "runtime_versions": {
+    "python": "3.12.2",
+    "numpy": "2.5.4",
+    "kaggle_environments": "1.33.0"
+  },
+  "analysis_limits": {
+    "compressed_bytes": 268435456,
+    "decoded_bytes": 4294967296,
+    "output_bytes": 1073741824,
+    "work_seconds": 1200,
+    "cpu_seconds": 900,
+    "sampled_memory_bytes": 2147483648,
+    "log_bytes": 2097152,
+    "cleanup_seconds": 20
+  },
+  "review_limits": {
+    "source_metadata_bytes": 20971520,
+    "compressed_bytes": 134217728,
+    "decoded_bytes": 1073741824
+  },
+  "artifact_scope": "Source trajectory and both player states are privileged offline input. Local rows only identify a selected task and its evidence status; no observation, features, teacher label or opponent private data are exported.",
+  "positive_definition": "The same continuously selected unit/target/op issues the matching official primitive at the target and the official atom shows its operation-specific effect.",
+  "unknown_definition": "Movement, unresolved interruptions, blocked/no-effect actions, missing or ambiguous evidence are not failed tasks; retain unknown.",
+  "learning_scope": "Episode labels describe observed selected actions, not counterfactual action values or causal profitability.",
+  "feasibility_gate": {
+    "min_observed": 100,
+    "min_coverage": 0.5,
+    "min_distinct_ops": 3,
+    "min_observed_per_seed": 10,
+    "meaning": "Eligibility for a separately preregistered learning probe only, not a promotion or statistical superiority claim"
+  },
+  "acceptance": "Eight semantic replays/16 source streams checked; 8x719 steps; identity and legal observation checks; independent one-game replay plus 20 fixed examples; no privacy leak or source change.",
+  "default_changed": false,
+  "prior_results_changed": false,
+  "old_192_raw_reads": 0,
+  "local_registration_not_external_timestamp": true
+}

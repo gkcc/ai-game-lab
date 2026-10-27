@@ -1,0 +1,16 @@
+{
+  "prior_freeze_sha256": "b018e1554ee6793ceda710609e8da43556bb92ad1846595c704424303c9811d8",
+  "prior_review_sha256": "f1f15d25ac61cdeac728f3e36e82bba6e375145ddb27901066c5e5331e0cf76b",
+  "current_freeze_sha256": "e8bbce2d32b6041e068462a70ee73bee1666e8a29b32f46d29fa528af32d5da9",
+  "prior_unexecuted_sources_preserved": true,
+  "scientific_raw_reads": 0,
+  "official_steps": 0,
+  "reasons": [
+    "Require a positive sampled-memory count before claiming the resource contract",
+    "Verify committed source bytes before worker launch",
+    "Construct synthetic drive-path test input without an absolute-path literal; preserve original privately"
+  ],
+  "privacy_prior_freeze_sha256": "af53f08b798dcb7ff499b4eb872b5904cca966f789c748efa7b76aa0fe5eac48",
+  "privacy_prior_review_sha256": "0fe2b25f34b34d77a3e1b66fc2fd0ac28a274e445e275c5398ea2f38f02836eb",
+  "privacy_original_test_sha256": "04bac252a6127205409a2a8e706f718e6247309ef505ad44ab31036ad6f70c7a"
+}

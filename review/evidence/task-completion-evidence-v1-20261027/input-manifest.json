@@ -1,0 +1,352 @@
+{
+  "schema": "task-completion-evidence-input-v1",
+  "source_manifest_sha256": "b433ee9652f38bbb0cb39afb1e02dcdb3ad84183beabd678f3ecbc8c0570f4fa",
+  "games": [
+    {
+      "id": "dev-3911611436-round2-0-baseline",
+      "key": "dev-3911611436-round2-0-baseline",
+      "arm": "baseline",
+      "split": "development",
+      "seed": 3911611436,
+      "opponent": "round2",
+      "side": 0,
+      "expected": {
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ],
+        "banks": [
+          39361.0,
+          36239.0
+        ],
+        "bank": 39361.0,
+        "opponent_bank": 36239.0,
+        "margin": 3122.0,
+        "net_profit": 36361.0,
+        "opponent_net_profit": 33239.0,
+        "rewards": [
+          39361.0,
+          36239.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "score": 1.0
+      },
+      "replay": {
+        "path": "games/dev-3911611436-round2-0-baseline/replay.json.gz",
+        "size": 1192146,
+        "sha256": "4a5b31167c0d24df23779fe6c8a51c0fac2f822724bfcebe9762151387072781"
+      },
+      "trace": {
+        "path": "traces/dev-3911611436-round2-0-baseline.jsonl.gz",
+        "size": 7364482,
+        "sha256": "87510d2084239558dab64f33ac95b96bc4041ceaa14898b0483fac962cf40b59"
+      }
+    },
+    {
+      "id": "dev-3911611436-round2-0-candidate",
+      "key": "dev-3911611436-round2-0-candidate",
+      "arm": "candidate",
+      "split": "development",
+      "seed": 3911611436,
+      "opponent": "round2",
+      "side": 0,
+      "expected": {
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ],
+        "banks": [
+          39361.0,
+          36239.0
+        ],
+        "bank": 39361.0,
+        "opponent_bank": 36239.0,
+        "margin": 3122.0,
+        "net_profit": 36361.0,
+        "opponent_net_profit": 33239.0,
+        "rewards": [
+          39361.0,
+          36239.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "score": 1.0
+      },
+      "replay": {
+        "path": "games/dev-3911611436-round2-0-candidate/replay.json.gz",
+        "size": 1194585,
+        "sha256": "7ae8efcd44b974384a28acaddcb17eab8403bc51674f1ff491558932be735f8e"
+      },
+      "trace": {
+        "path": "traces/dev-3911611436-round2-0-candidate.jsonl.gz",
+        "size": 7369040,
+        "sha256": "32a2f36f4fa5c914732a43ef2a85fd92ed8ce166947a2c96db1802033b8c8015"
+      }
+    },
+    {
+      "id": "dev-3911611436-round2-0-teacher_task",
+      "key": "dev-3911611436-round2-0-teacher_task",
+      "arm": "teacher_task",
+      "split": "development",
+      "seed": 3911611436,
+      "opponent": "round2",
+      "side": 0,
+      "expected": {
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ],
+        "banks": [
+          42963.0,
+          38687.0
+        ],
+        "bank": 42963.0,
+        "opponent_bank": 38687.0,
+        "margin": 4276.0,
+        "net_profit": 39963.0,
+        "opponent_net_profit": 35687.0,
+        "rewards": [
+          42963.0,
+          38687.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "score": 1.0
+      },
+      "replay": {
+        "path": "games/dev-3911611436-round2-0-teacher_task/replay.json.gz",
+        "size": 1203413,
+        "sha256": "1d53fd7da21edaa5b473973fd42b2287693d7d5d7e3f1cb6beac8a82f1e22ef3"
+      },
+      "trace": {
+        "path": "traces/dev-3911611436-round2-0-teacher_task.jsonl.gz",
+        "size": 7399657,
+        "sha256": "ccb50cfb4f63ed51c5f377dc834fa29ee11752e7f10355a50d38aaf98c8128ec"
+      }
+    },
+    {
+      "id": "dev-3911611436-market-1-candidate",
+      "key": "dev-3911611436-market-1-candidate",
+      "arm": "candidate",
+      "split": "development",
+      "seed": 3911611436,
+      "opponent": "market",
+      "side": 1,
+      "expected": {
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ],
+        "banks": [
+          36545.0,
+          41092.0
+        ],
+        "bank": 41092.0,
+        "opponent_bank": 36545.0,
+        "margin": 4547.0,
+        "net_profit": 38092.0,
+        "opponent_net_profit": 33545.0,
+        "rewards": [
+          36545.0,
+          41092.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "score": 1.0
+      },
+      "replay": {
+        "path": "games/dev-3911611436-market-1-candidate/replay.json.gz",
+        "size": 1345953,
+        "sha256": "9bacd868b101c9d704533e657c47dca8623b601a8dab3d8166b090ca09646153"
+      },
+      "trace": {
+        "path": "traces/dev-3911611436-market-1-candidate.jsonl.gz",
+        "size": 7435798,
+        "sha256": "2c34bd0ec448c8625ed3518882d05c812d8ddf66dd9c3b9cd9fe701a8683b5a9"
+      }
+    },
+    {
+      "id": "dev-2328454240-round2-0-baseline",
+      "key": "dev-2328454240-round2-0-baseline",
+      "arm": "baseline",
+      "split": "development",
+      "seed": 2328454240,
+      "opponent": "round2",
+      "side": 0,
+      "expected": {
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ],
+        "banks": [
+          41066.0,
+          44907.0
+        ],
+        "bank": 41066.0,
+        "opponent_bank": 44907.0,
+        "margin": -3841.0,
+        "net_profit": 38066.0,
+        "opponent_net_profit": 41907.0,
+        "rewards": [
+          41066.0,
+          44907.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "score": 0.0
+      },
+      "replay": {
+        "path": "games/dev-2328454240-round2-0-baseline/replay.json.gz",
+        "size": 1215531,
+        "sha256": "4b00683c7ea955e12dc31a0d20448f3837c78cb3a04b6db45f1bb00ace5128f8"
+      },
+      "trace": {
+        "path": "traces/dev-2328454240-round2-0-baseline.jsonl.gz",
+        "size": 7694231,
+        "sha256": "db252f099cf5eb27623464dc7fb88fe5f979a06b756fc2d4f8e54590bed4af6d"
+      }
+    },
+    {
+      "id": "dev-2328454240-round2-0-candidate",
+      "key": "dev-2328454240-round2-0-candidate",
+      "arm": "candidate",
+      "split": "development",
+      "seed": 2328454240,
+      "opponent": "round2",
+      "side": 0,
+      "expected": {
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ],
+        "banks": [
+          42934.0,
+          43042.0
+        ],
+        "bank": 42934.0,
+        "opponent_bank": 43042.0,
+        "margin": -108.0,
+        "net_profit": 39934.0,
+        "opponent_net_profit": 40042.0,
+        "rewards": [
+          42934.0,
+          43042.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "score": 0.0
+      },
+      "replay": {
+        "path": "games/dev-2328454240-round2-0-candidate/replay.json.gz",
+        "size": 1217941,
+        "sha256": "b6dbb881e30ec85735113723f97ce0608471e24cbed130d46e800e38447bb805"
+      },
+      "trace": {
+        "path": "traces/dev-2328454240-round2-0-candidate.jsonl.gz",
+        "size": 7794832,
+        "sha256": "30ef615840681af91ceadc6027c3eb09477d8fec59b061d54e178ba03dfc31da"
+      }
+    },
+    {
+      "id": "dev-2328454240-round2-0-teacher_task",
+      "key": "dev-2328454240-round2-0-teacher_task",
+      "arm": "teacher_task",
+      "split": "development",
+      "seed": 2328454240,
+      "opponent": "round2",
+      "side": 0,
+      "expected": {
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ],
+        "banks": [
+          42927.0,
+          43042.0
+        ],
+        "bank": 42927.0,
+        "opponent_bank": 43042.0,
+        "margin": -115.0,
+        "net_profit": 39927.0,
+        "opponent_net_profit": 40042.0,
+        "rewards": [
+          42927.0,
+          43042.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "score": 0.0
+      },
+      "replay": {
+        "path": "games/dev-2328454240-round2-0-teacher_task/replay.json.gz",
+        "size": 1217381,
+        "sha256": "1bbca773ae957ee1902dd2bd222085e726c28b7cc26e48f2b9a25b2c6c85f80f"
+      },
+      "trace": {
+        "path": "traces/dev-2328454240-round2-0-teacher_task.jsonl.gz",
+        "size": 7715464,
+        "sha256": "6c1ea5f3601c4f1fa65bfeec4da0ecba17d34ea0d5e6552ca4841061f0e77091"
+      }
+    },
+    {
+      "id": "dev-2328454240-market-1-candidate",
+      "key": "dev-2328454240-market-1-candidate",
+      "arm": "candidate",
+      "split": "development",
+      "seed": 2328454240,
+      "opponent": "market",
+      "side": 1,
+      "expected": {
+        "initial_banks": [
+          3000.0,
+          3000.0
+        ],
+        "banks": [
+          43268.0,
+          46974.0
+        ],
+        "bank": 46974.0,
+        "opponent_bank": 43268.0,
+        "margin": 3706.0,
+        "net_profit": 43974.0,
+        "opponent_net_profit": 40268.0,
+        "rewards": [
+          43268.0,
+          46974.0
+        ],
+        "status": [
+          "DONE",
+          "DONE"
+        ],
+        "score": 1.0
+      },
+      "replay": {
+        "path": "games/dev-2328454240-market-1-candidate/replay.json.gz",
+        "size": 1322166,
+        "sha256": "db9cd19a09364a730c35876b78d8942afb84b54fe37d51e63a194b132cb1d38c"
+      },
+      "trace": {
+        "path": "traces/dev-2328454240-market-1-candidate.jsonl.gz",
+        "size": 7846227,
+        "sha256": "3dd4d1988038b3d4081805ded9e9e949276e0991005d07e512be46def414e326"
+      }
+    }
+  ],
+  "games_count": 8,
+  "raw_files": 16
+}

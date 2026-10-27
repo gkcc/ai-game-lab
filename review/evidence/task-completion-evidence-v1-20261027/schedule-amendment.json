@@ -1,0 +1,16 @@
+{
+  "schema": "pre-freeze-schedule-amendment-v1",
+  "created_utc": "2026-10-27T05:09:24.159732+00:00",
+  "initial_decision_sha256": "c23972b6a306d4fd8eddc7bb86cb5eeaf863cb415610b18a8f13298f3b0c15a5",
+  "initial_experiment_source_sha256": "e47042fd89fd56589d751b34f3518b3313e818e1f17a18309adfbb1be54905b4",
+  "original_start_utc": "2026-10-27T03:22:00+00:00",
+  "initial_deadline_utc": "2026-10-27T04:22:00+00:00",
+  "revised_deadline_utc": "2026-10-27T06:10:00+00:00",
+  "total_wall_seconds_from_original_start": 10080,
+  "reason": "Initial planning deadline elapsed before source freeze; preserve all elapsed time and revise before any scientific source read or official transition.",
+  "raw_source_files_opened": 0,
+  "official_transitions": 0,
+  "models_read": 0,
+  "training_updates": 0,
+  "initial_files_preserved": true
+}
