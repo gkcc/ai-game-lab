@@ -1,0 +1,145 @@
+{
+  "experiment": "task-completion-economy-v1",
+  "baseline_head": "e53aa769db5646ce2ef1af5d6d7d39b6f7701b6d",
+  "deadline_utc": "2026-10-27T13:14:00+00:00",
+  "test_seeds": [
+    3342200684,
+    3556679524
+  ],
+  "train_seeds": [
+    3911611436,
+    2328454240
+  ],
+  "excluded_seeds": [
+    135433893,
+    441357442,
+    1210575027,
+    2026102708,
+    2184120446,
+    2328454240,
+    2870500733,
+    3911611436
+  ],
+  "seed_inventory_sha256": "b06a9e7c6cf7b80c92f67d2252d2dfb8552d1d2a297c95100aefb0cfbbbbab3f",
+  "seed_scope": "Tracked public text plus local registration, seed inventories, input manifests and job-input metadata",
+  "seed_limitation": "Deleted, unavailable, external and unlisted seed history cannot be searched",
+  "candidate_checkpoint": "artifacts/task-completion-bc-reentry-v1-20261027/private/model-final.npz",
+  "candidate_checkpoint_sha256": "47def382fff8738583d2359964d2e14bfbb41b53e9dc428d2882519ada8e1811",
+  "old_model_sha256": "47def382fff8738583d2359964d2e14bfbb41b53e9dc428d2882519ada8e1811",
+  "parent_evidence": {
+    "root-result-acceptance.json": "9a4c358436f998b69fcf93dedcd4ed44ed52d57a88e71dbeb273cb8be6e0d499",
+    "registration.json": "c0169eb563793e10484217e98acb2418c45a19661d9ccb0fab971b4a4c1e82f5",
+    "freeze.json": "bae9da10e69f0b84af100de5f71e93625f1c2c6ae2bf780ce366cda67b1a1040",
+    "games-result.json": "f6bbd0f5197399465f1626a3625543f10cabbfb3b84b101e8824546a17cd89d5",
+    "game-ledger.json": "fb92293f0d35ab8bc9444d84232c6c3f1690719e5b70dff89cfd2f1f3dc7c1f1",
+    "game-audit-ledger.json": "b6bca43198e62fbe2f9c0f3c0d072b7f54ec8a7aa9c96f47aba3a22b80c51ccd",
+    "analysis-result.json": "28ec84d981ded646246c944e604916f2779c7b71f6522bc05fdec50580e60044",
+    "independent-replay-verification.json": "dbc4655295ad905ccac727675fa5b919374ee70232b7a87918fe71a107b1c312",
+    "independent-result-review.json": "536a5727e3ffa58a32e06b254ae9111305e4335eab6fe875e837b84e0688869a",
+    "independent-result-assessment.json": "3e2d600cce6db0a9ebcd6806ff75f7573a2712bcb05959bc1bcb38f1a2ebcffc"
+  },
+  "model_evidence": {
+    "model-seal.json": "786c7bc7cd11e382d6a9211c7168713699beced1f38cc760d1b90e9f8a00a5ea",
+    "registration.json": "ec7fb4290a8353302d60fbf20d6576a889e42f5ff63a563dd859aeb9c9c6a698",
+    "freeze.json": "017922bf16c538fc0e091080156dcbf00327243664e4bb9f24a4184d574af962",
+    "root-result-acceptance.json": "8f97b9575fc73dacf620aa173415c846246ce905bc4d18d59489aea54a1dc2b9"
+  },
+  "crop_checkpoint": "artifacts/bc-epoch6-holdout-v1-20261023/panels/fixed_epoch6/model/trained.npz",
+  "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+  "source_sha256": {
+    "round2.py": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848"
+  },
+  "runtime_versions": {
+    "python": "3.12.2",
+    "numpy": "2.5.4",
+    "kaggle_environments": "1.33.0"
+  },
+  "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "official_loader_sha256": "0ac7baf1212b4ce1eabae3cc1cbb55c98effef5e0d0485522a8be87097c39a4f",
+  "game_limits": {
+    "task_forwards": 4000,
+    "crop_forwards": 8000,
+    "neural_input_rows": 160000,
+    "gate_evaluations": 1,
+    "controller_calls": 719,
+    "teacher_proposals": 1,
+    "max_task_forwards_per_turn": 32,
+    "max_crop_forwards_per_turn": 64,
+    "max_neural_input_rows_per_turn": 4096,
+    "max_controller_calls_per_turn": 1
+  },
+  "storage": {
+    "total_bytes": 4294967296,
+    "game_write_bytes": 134217728,
+    "free_floor_bytes": 4294967296,
+    "process_log_bytes": 1048576,
+    "small_receipt_bytes": 16384
+  },
+  "policies": [
+    "candidate",
+    "teacher_task"
+  ],
+  "opponents": [
+    "round2"
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "official_limits": {
+    "new_games": 8,
+    "live_transitions": 5752,
+    "primary_replay_transitions": 5752,
+    "independent_replay_transitions": 719,
+    "total_transitions": 12223,
+    "per_job_seconds": 900
+  },
+  "independent_selection": "first seed, candidate, round2, seat 0; first 20 callback identities by SHA256, independent of choice and outcome",
+  "independent_limits": {
+    "raw_files": 2,
+    "decode_passes_per_file": 1,
+    "compressed_bytes": 134217728,
+    "decoded_bytes": 1073741824,
+    "seconds": 300,
+    "official_transitions": 719,
+    "sample_count": 20,
+    "attempts": 1
+  },
+  "analysis_limits": {
+    "replays": 0,
+    "traces": 8,
+    "decode_passes_per_file": 1,
+    "compressed_bytes": 134217728,
+    "decoded_bytes": 2147483648,
+    "seconds": 300,
+    "attempts": 1,
+    "official_transitions": 0
+  },
+  "analysis_time_limit_semantics": "Checked between file reads, trace records and official events; an individual decompression or JSON parse is not preempted.",
+  "acceptance": {
+    "complete_games": 8,
+    "states": 720,
+    "actions": 719,
+    "zero_agent_errors": true,
+    "primary_replay_each": true,
+    "independent_replay": 1,
+    "candidate_task_forwards_each_positive": true,
+    "teacher_task_forwards_zero": true,
+    "pair_own_income_delta_min": -2000,
+    "pair_cash_margin_delta_min": -2000,
+    "seed_mean_own_income_delta_min": -1000,
+    "seed_mean_cash_margin_delta_min": -1000,
+    "report_opponent_income_delta": true,
+    "report_match_scores": true,
+    "relative_own_income_descriptive": true,
+    "relative_denominator_abs_min": 1000,
+    "relative_is_additional_gate": false,
+    "interpretation": "Passing means no prespecified degradation observed in this small panel; no significance or promotion",
+    "failure": "No extra seeds or training; subsequent diagnosis needs separate registration"
+  },
+  "training_updates": 0,
+  "retry_allowed": false,
+  "stop_on_failure": true,
+  "prior_failed_fit_not_reclassified": true
+}

@@ -1,0 +1,15 @@
+{
+  "status": "approved_for_implementation_not_execution",
+  "previous_commit": "e53aa769db5646ce2ef1af5d6d7d39b6f7701b6d",
+  "started_utc": "2026-10-27T10:14:00+00:00",
+  "deadline_utc": "2026-10-27T13:14:00+00:00",
+  "authorization": "The user authorized limited BC and continued independent-review stages. This is a finite fixed-model official economic screen, without further training, PPO, DAgger, large-scale RL or online submissions.",
+  "design": "Two fresh seed identities from searchable metadata, one frozen round2 opponent, both seats and two arms: sealed task model versus fixed task teacher, both retaining the same frozen crop model and controller. Eight live games, eight primary replays and one preselected independent candidate replay: at most 12223 official state transitions.",
+  "frozen_economic_gate": "Before seeing any outcomes, require each seed's two-seat mean candidate-minus-teacher own net profit and margin difference to be at least -1000, and each individual seat's corresponding two differences to be at least -2000. Equality passes. Any failure means the preset decline was observed; no more seeds, training or threshold changes in this stage.",
+  "margin_addition": "The independent recommendation proposed own-profit guardrails. The main agent added the same limits for relative cash margin before new seeds were selected or played, to also detect changes benefiting the opponent. This is an explicitly stricter joint screen, not a post-result adjustment.",
+  "interpretation": "Absolute limits are exploratory guardrails, approximately 2.5% and 5% of the roughly 40000 recent own-profit scale, not statistical tests or guarantees. Passing means only that this small fixed panel did not observe the prespecified degradation, and does not establish improvement, generalization or promotion.",
+  "reporting": "Publish per-seed paired seat results for own and opponent net profit, margin and match score. Also report own-profit difference divided by absolute teacher own profit only where that denominator is at least 1000; the ratio is descriptive and is not a further gate. Treat the entire seed, including both seats, as the random unit.",
+  "fertilizer": "Count task callbacks containing fertilizer opportunities, selected fertilizer tasks, fertilizer work requests and official atomic event statuses separately; these counts do not establish sustained task completion or economic causation.",
+  "read_and_stop_budget": "After fixed games and independent replay, decode each of the eight new traces once for aggregate counts under registered byte/time limits; this adds no official transitions or inference. Independent verification reads its selected replay and trace once. Time checks are non-preemptive within a single decode/parse. Any execution, replay, cleanup, identity or budget failure stops the stage without retry and preserves partial counts.",
+  "privacy": "Raw replays, traces, per-callback inputs, model weights, local logs, machine configuration and absolute paths stay local. Preserve all previous evidence, default Bot, frozen policies, original model and official rules."
+}

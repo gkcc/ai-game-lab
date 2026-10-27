@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "freeze_sha256": "efebc4cb78a86b9284a33726d7219942d8e7312d1c1385605e2ade5f6e077c87",
+  "registration_sha256": "8c5e4eee5bdda204925babc869fe81835f43b3b20dfe8fc9158ed99dae4478be",
+  "checks": [
+    "Windows experiment.verify passed; frozen source set and runtime identities match; private model files were hash-read only",
+    "Both deterministic new seeds match inventory and exclude searched and explicitly retained or consumed prior seeds",
+    "Fixed 8 live plus 8 primary replay plus 1 independent replay total 12223 transitions; independent reads 2 files and trace summary reads 8 traces once under separate byte/time limits",
+    "Root decision discloses before outcomes the added joint cash-margin and own-profit guardrails; pair threshold -2000 and seed mean -1000 are inclusive, relative denominator 1000 is descriptive only",
+    "Candidate model is bound to accepted parent seal and task/crop/engine identities; teacher arm is fixed and no model training authorized",
+    "17 combined synthetic tests passed including exact relative denominator boundary and failure lifecycle"
+  ],
+  "limitations": [
+    "Independent method was authored by this reviewer and separately reviewed by the main agent",
+    "No GPU, inference, game, replay or private model decoding performed; actual runtime and cleanup remain unverified",
+    "Time checks are non-preemptive within a single parse or decode",
+    "Two seeds and paired seats form an exploratory screen, not evidence of statistical significance, improvement or automatic promotion",
+    "Seed isolation cannot cover deleted, unavailable, external or unlisted history"
+  ]
+}

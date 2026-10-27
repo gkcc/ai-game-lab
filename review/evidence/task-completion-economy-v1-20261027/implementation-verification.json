@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "freeze_sha256": "efebc4cb78a86b9284a33726d7219942d8e7312d1c1385605e2ade5f6e077c87",
+  "synthetic_tests_passed": 17,
+  "windows_frozen_metadata_verification": true,
+  "main_agent_review_of_independent_method": {
+    "method_sha256": "8d9f60070cb287e08433303b8744eac41e7b7595854872cdcee8cd29641a8d7b",
+    "reviewer_is_not_method_author": true,
+    "checked": ["fixed first seed and candidate seat", "full eight-game ledger identity", "model and crop checkpoint binding", "single replay and trace decode", "identity-only twenty-callback sample", "official 719-step replay", "failure marker and interrupted replay accounting"],
+    "limits": "Shares official engine and trace validator; no independent model inference or score recomputation. Static and synthetic inspection only."
+  },
+  "economic_gate_checked_on_synthetic_boundaries_only": true,
+  "margin_gate_added_before_new_seed_results": true,
+  "elapsed_checks_not_preemptive_inside_single_decode_or_parse": true,
+  "raw_replays_or_training_arrays_read": false,
+  "private_checkpoint_hash_only_no_decode": true,
+  "model_inference_executed": false,
+  "new_games_or_official_transitions": 0,
+  "local_registration_not_third_party_timestamp": true
+}
