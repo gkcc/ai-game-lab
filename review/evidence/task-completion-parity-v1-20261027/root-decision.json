@@ -1,0 +1,17 @@
+{
+  "status": "approved_for_implementation_not_execution",
+  "previous_commit": "7ada56811ec575d0363c3ae1513d037f5c87d840",
+  "model_requirement": "gpt-6.1-terra",
+  "question": "Does the prior unsealed checkpoint show GPU versus CPU inference disagreement on the first sixteen already-consumed completed training groups?",
+  "scope": "One separately frozen, gradient-free diagnostic; existing training cache and checkpoint only. Neither a fit retry nor an evaluation of the held-out panel.",
+  "selection": "First 16 completed_observed groups in saved training cache order, no replacement; at most 8192 candidate rows.",
+  "comparison": "GPU and CPU use the same saved parameters and normalization. Compare all logits at atol=1e-4 and rtol=1e-5 and canonical first argmax for each group. Complete all 16 groups even if ordinary numeric disagreement occurs; report aggregates only.",
+  "budget": "One WSL GPU process, at most 16 complete group-level GPU forwards, 8192 candidate rows, 300 seconds work and 420 seconds process; no gradients, model fitting, official transition or new game.",
+  "identity": "Bind prior public failure acceptance and training summary, checkpoint/cache/schema and private GPU launch configuration by SHA256 before decoding model or cache; previous source, default Bot and historical data remain unchanged.",
+  "failure": "Failure stops without retry; retain phase, last synchronized group counts and bounded private logs. Ordinary numerical mismatch is a valid diagnostic result, not an execution failure.",
+  "interpretation": "Neither passing nor failing this comparison uniquely identifies the old ValueError or proves game strength, GPU training completion, or a model ready for deployment.",
+  "privacy": "Do not publish model weights, feature arrays, logits, private configuration, raw replay, paths, logs or individual samples.",
+  "start_utc": "2026-10-27T05:52:00+00:00",
+  "deadline_utc": "2026-10-27T07:22:00+00:00",
+  "local_registration_not_independent_timestamp": true
+}

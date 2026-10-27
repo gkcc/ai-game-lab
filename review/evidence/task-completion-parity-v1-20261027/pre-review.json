@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "freeze_sha256": "4aa6eb73e23b4ba72ac25b327ff2c94002a3e35ce8c5b9c77ad5dfecf3f1ec6d",
+  "registration_sha256": "4a6c9eac66d4bd24ffd0019575e5d8596f4ae44d7dd2386553d1bb8ddffff3a4",
+  "checks": [
+    "Frozen source set, runtime and protected source hashes match; registration bound to freeze",
+    "Prior public acceptance, train result, freeze and decision match registered public commit; prior registration and metadata identities match frozen chain",
+    "First 16 completed groups in cache order, no replacement, 8192 candidate rows maximum; fixed atol 1e-4, rtol 1e-5 and argmax comparison",
+    "One bounded no-gradient GPU CPU inference diagnostic; zero training updates, holdout reads, official transitions and new games; no retry",
+    "Model and training cache identity checks, progress and exception stage recording, Linux and Windows process cleanup checks reviewed",
+    "Eight synthetic tests passed under project virtual environment",
+    "Only aggregate comparison and cleanup results are intended for publication; model, cache, logits and device details remain private"
+  ],
+  "limitations": [
+    "No checkpoint, training cache, raw trace or private GPU configuration was read during review",
+    "No GPU, engine, training or model inference was run; actual device identity, candidate count, parity, cleanup and runtime outcomes remain unverified",
+    "Post-load hashes detect ordinary persistent input changes but do not prove absence of transient replacement and restoration",
+    "Diagnostic can test present inference agreement only and cannot uniquely establish the earlier ValueError cause"
+  ]
+}
