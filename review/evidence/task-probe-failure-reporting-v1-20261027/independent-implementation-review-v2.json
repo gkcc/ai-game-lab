@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "previous_review_sha256": "e36dc628c9de311571c439bbe456924bdfbf74b7f3c63db8a2d55eea361a36ae",
+  "previous_source_sha256": "36e6b7f280ff19f03699e15b4ea1880e1caaf5c887c443cca39bc7224d50bd86",
+  "source_sha256": "b08a15991f346b059744a3f5eb0256ebefca351af7fe0c0b9648399f8815a4b4",
+  "test_source_sha256": "2e25c379c32199ea48dba7f2882ddb8b485ab700d7ec52ee5c4ba8fc98ee7d47",
+  "prior_failure_receipt_sha256": "af69309d3223993cd0a0958b5fb638d4d24208e55e98272b0a7a8aa40098d24a",
+  "checks": [
+    "All nine core Job fields must be present before classification; missing error or stop fields fail closed.",
+    "Eight fake tests passed; saved failed probe Job classified as available_memory_limit without calling fake reader or worker.",
+    "Prior implementation review remains intact."
+  ],
+  "limitations": [
+    "New classifier is not integrated into the old frozen runner and does not alter the consumed attempt.",
+    "Caller must bind trusted identities and separately validate the worker business result.",
+    "No raw data, model or real process accessed during this review."
+  ]
+}

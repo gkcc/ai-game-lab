@@ -1,0 +1,5 @@
+{
+  "decision": "After publishing the code-only failure classifier, assess an independently reviewed, fixed illustrative sampling comparison using already public operation counts.",
+  "basis": "Published training labels are strongly imbalanced; the actual prior packed batch exposure cannot be inferred from class totals alone.",
+  "boundaries": "No trace, cache, model, new game or training read; do not claim prior actual exposure or select weights using consumed holdout outcomes."
+}

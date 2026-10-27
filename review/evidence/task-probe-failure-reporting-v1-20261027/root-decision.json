@@ -1,0 +1,9 @@
+{
+  "previous_commit": "2c33c57333becaff43430c24c008bf70921889d8",
+  "status": "code_fix_reviewed_not_integrated",
+  "deadline_utc": "2026-10-27T17:05:40.449787+00:00",
+  "scope": "Classify owned probe Job failure before reading the receipt; preserve available_memory_limit and forbid worker on failed or invalid probe.",
+  "budget": "Pure fake tests and a saved aggregate failure receipt only; no process launches, trace reads, model reads, training or games.",
+  "acceptance": "Eight targeted tests and independent review, including the real saved failure receipt with rejecting fake reader and worker.",
+  "limitations": "Historical frozen runner remains unchanged; new reusable helper is not yet wired into a production runner. Worker semantic result requires separate validation. This identity record is created after the code and fake tests, not a third-party preregistration."
+}

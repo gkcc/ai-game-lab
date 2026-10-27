@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "code_only": true,
+  "integrated_into_historical_runner": false,
+  "tests": 8,
+  "saved_failure_classified": "job_stopped / available_memory_limit",
+  "reader_called": false,
+  "worker_called": false,
+  "worker_semantic_result_checked": false,
+  "limitations": [
+    "Future callers must bind trusted Job and frozen identities and validate worker semantic results.",
+    "The old attempt and historical runner remain unchanged and cannot be retried.",
+    "The initial local pre-review source snapshot is not retained; its hash and review are preserved.",
+    "The pre-privacy test fixture and prior evidence are retained locally; only their hashes are public."
+  ],
+  "evidence_sha256": {
+    "root-decision.json": "909ea0d1d97ee82c7e43836d3a9ac1e5b54e901c64dbaedc22133a01192ca9a5",
+    "registration.json": "cbd6df21700e3d64d3eaedd64cb0cb25adef83c63ffebc09512da8827945cd26",
+    "freeze.json": "6265be7d98cb7b4a4951514b86da170f8a877e19a44f1466f9b337db8f3fd368",
+    "independent-implementation-review.json": "e36dc628c9de311571c439bbe456924bdfbf74b7f3c63db8a2d55eea361a36ae",
+    "independent-implementation-review-v2.json": "8bf1a7bd4971d1526c0b86a6e8b2b723b52d4649f06591b401d64f3d229975bf",
+    "independent-implementation-review-v3.json": "cb8f1d851178d59d34b2568609de5fadd8abd01def4ab3baedb8dc7849bbabd8"
+  },
+  "no_spawned_job_or_games": true,
+  "no_training_or_model_reads": true,
+  "prior_local_projection_sha256": "4063a5b5faf2346c8d05e5624a0c0b1d4ca447413868f01770740dd4c3694fd5",
+  "pre_privacy_acceptance_sha256": "c5647dc9d49a5ce31ee1f1f840b9893cd84f0cdadd44fb95ffa5652b7463675a"
+}

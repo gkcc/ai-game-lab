@@ -525,3 +525,9 @@ d1/d2/d3源码快照及哈希全部保留，未放宽允许映像或父子链约
 ### 开发轨迹诊断：探针阶段停止
 
 事前登记f2d2065；前置自有Job因available_memory_limit停止，启动器回收且成员归零。外层先读缺失探针结果，报FileNotFoundError；Job收据保留主要停止原因。按冻结控制流数据worker未启动，本次没有trace读取或模型比较，保留失败证据且不重试。
+
+### 探针失败分类器：代码验收
+
+新增独立可复用分类器，先检查Job停止和清理，再验证探针收据；8项fake及历史失败聚合收据的事后函数验证通过。旧冻结runner没有修改，新分类器尚未接入生产运行器，worker业务结果仍须单独验收。
+
+[说明](../kaggriculture/TASK_PROBE_FAILURE_REPORTING_V1.zh-CN.md) | [证据](evidence/task-probe-failure-reporting-v1-20261027/)

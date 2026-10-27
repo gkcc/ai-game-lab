@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "source_sha256": "36e6b7f280ff19f03699e15b4ea1880e1caaf5c887c443cca39bc7224d50bd86",
+  "test_source_sha256": "f3457d8c08a56eb676097203687109af8c8eb9c1d9af59347148350bfba31adf",
+  "prior_failure_receipt_sha256": "af69309d3223993cd0a0958b5fb638d4d24208e55e98272b0a7a8aa40098d24a",
+  "checks": [
+    "Eight fake tests passed.",
+    "Saved probe Job receipt classified as job_stopped with available_memory_limit; rejecting fake probe reader and worker were both never called.",
+    "Worker Job success alone is explicitly not semantic worker-result acceptance."
+  ],
+  "limitations": [
+    "The new classifier has not been integrated into the previously frozen runner and does not change that attempt.",
+    "Caller must bind trusted current identities and separately validate worker business results and cleanup.",
+    "No real process, trace, model or training data was accessed or executed for this review."
+  ]
+}

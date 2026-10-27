@@ -1,0 +1,20 @@
+{
+  "baseline_head": "2c33c57333becaff43430c24c008bf70921889d8",
+  "source_sha256": {
+    "learning/task_probe_failure_reporting_v1/report.py": "b08a15991f346b059744a3f5eb0256ebefca351af7fe0c0b9648399f8815a4b4",
+    "learning/task_probe_failure_reporting_v1/test_report.py": "43e41ba7f4e90f873db1bf3cfc8bcc36a96925fdf0b41a1190254ced507965fe"
+  },
+  "parent_failure_sha256": "01abae080e0f9a052629b42209fd23b1708e04810bace8f9fb64dde44b626270",
+  "parent_receipt_sha256": "af69309d3223993cd0a0958b5fb638d4d24208e55e98272b0a7a8aa40098d24a",
+  "initial_review_sha256": "e36dc628c9de311571c439bbe456924bdfbf74b7f3c63db8a2d55eea361a36ae",
+  "final_review_sha256": "cb8f1d851178d59d34b2568609de5fadd8abd01def4ab3baedb8dc7849bbabd8",
+  "validation": "Eight pure fake tests plus saved aggregate failure receipt; no worker or reader invoked.",
+  "registration_timing": "Identity freeze recorded after implementation and fake tests; not an independent timestamp.",
+  "integration": "Reusable helper only; the historical frozen runner remains unchanged.",
+  "no_games": true,
+  "no_training": true,
+  "no_raw_trace_or_model_reads": true,
+  "pre_privacy_registration_sha256": "57cde5efef2baaacf119c005b0f2ffbd4ba7faf909369933e710582e68146e80",
+  "pre_privacy_freeze_sha256": "a12507942e758590349391b42093a08159729358ad20fc8371e9c18e3b80df33",
+  "privacy_revision": "Two synthetic path literals are built by equivalent runtime concatenation; prior test source retained locally."
+}
