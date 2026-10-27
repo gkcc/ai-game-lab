@@ -1,0 +1,6 @@
+{
+  "decision": "After publication, consider a separately registered single-callback CPU scoring diagnosis using the two fixed traces, with no new game, official replay or training.",
+  "basis": "The post-result pair showed same-input PLANT choices assigned to different units, but did not retain callback ordinal. Reconstruct that identity from both already accepted traces before scoring; do not infer the identity from only one trace without checking.",
+  "constraints": "Freeze source, model and both trace identities; one bounded CPU forward on at most 8192 candidate rows and one decode per trace. Preserve the existing model and all history; individual features, candidate IDs and logits stay local.",
+  "interpretation": "This can validate model ordering at a single post-result callback only. It cannot identify causal features, prove economic effect, establish generalization or justify promotion. No new training, PPO, DAgger or online submission."
+}

@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "first_request_difference_step": 2,
+  "linked_choice": {
+    "candidate_operation": "PLANT",
+    "teacher_operation": "PLANT",
+    "same_unit": false,
+    "complete_request_different": true,
+    "emitted_unit_request_equal": false,
+    "interpretation": "Same-input choice and complete-request differences coincide; the choice alone is not proven to cause the request difference"
+  },
+  "official_event": {
+    "observation": "unique",
+    "requested_operation": "NORTH",
+    "effective_operation": "NORTH",
+    "rewritten": false,
+    "status": "executed",
+    "atomic_change_observed": true
+  },
+  "official_transitions": 719,
+  "raw_reads": {
+    "compressed_input_read_bytes": 18167136,
+    "decoded_input_bytes": 293792088,
+    "files_opened": 4,
+    "files_completed": 4,
+    "raw_decode_passes_per_file": 1
+  },
+  "parent_freeze_sha256": "efebc4cb78a86b9284a33726d7219942d8e7312d1c1385605e2ade5f6e077c87",
+  "parent_ledger_sha256": "53a98bec3090b337fe98d3b15fbb6c0fe68295fbd158bedbdfc2c9ee3f11f78f",
+  "parent_audit_ledger_sha256": "bb97de956726446bda993c38a4a5a1aa9066806e69d6b256220df8edd380ad37",
+  "method_sha256": "5913d8db3ffe5af710ec3918bc63e5462175b3bc57a5600393b94f81d1f64b09",
+  "post_hoc_not_holdout": true,
+  "causal_financial_effect_not_established": true,
+  "retry_allowed": false
+}

@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "post_hoc_not_holdout": true,
+  "seed": 3342200684,
+  "side": 0,
+  "first_request_difference_step": 2,
+  "model_and_teacher_operations": [
+    "PLANT",
+    "PLANT"
+  ],
+  "same_unit": false,
+  "same_input_choice_difference_coincides_with_request_difference": true,
+  "requested_operation": "NORTH",
+  "effective_operation": "NORTH",
+  "official_status": "executed",
+  "atomic_change_observed": true,
+  "official_transitions": 719,
+  "new_games": 0,
+  "model_inference_calls": 0,
+  "training_updates": 0,
+  "selection_is_not_proven_cause_of_request": true,
+  "financial_causation_not_established": true,
+  "independent_review_recomputed_raw": false,
+  "raw_replays_traces_actions_and_personal_configuration_published": false,
+  "evidence_sha256": {
+    "root-decision.json": "03fb9fc545a6f4775353a79acbcb311dc9fe2f2a98f78d58507d7ee4dd633700",
+    "registration.json": "7663d625416ba4eeea85a62d10ddecaa9fd49d26055474d9b44be65c63aaf793",
+    "freeze.json": "f4c9bfbf9644178c696a9e7f6a40cc7d8948e749640ff36a84865f8fdb943f7e",
+    "pre-review.json": "14b106686ecb5521314948bc068a6c21ceec99bf14d0fdc6a38555430f15e898",
+    "pre-execution-commit.json": "7caad4cb3216ec7df008b120e2d6482633b1f873eb656f991c6a5993913bb856",
+    "analysis-started.json": "5ead148e5570444bafd90e310d0a9370b7aeb2ba373e3a92766ce8c982e230d5",
+    "analysis-result.json": "47dc7bae7c0b82c1ac34287999c0c03eb59415611de59158b1f3b898a7111535",
+    "independent-result-assessment.json": "19578ae69c9fad5a07e84ae27538df75cba8337c419b46ac1aeb232600788287"
+  }
+}

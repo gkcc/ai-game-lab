@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "identities_sha256": {
+    "freeze.json": "f4c9bfbf9644178c696a9e7f6a40cc7d8948e749640ff36a84865f8fdb943f7e",
+    "registration.json": "7663d625416ba4eeea85a62d10ddecaa9fd49d26055474d9b44be65c63aaf793",
+    "pre-review.json": "14b106686ecb5521314948bc068a6c21ceec99bf14d0fdc6a38555430f15e898",
+    "pre-execution-commit.json": "7caad4cb3216ec7df008b120e2d6482633b1f873eb656f991c6a5993913bb856",
+    "analysis-started.json": "5ead148e5570444bafd90e310d0a9370b7aeb2ba373e3a92766ce8c982e230d5",
+    "analysis-result.json": "47dc7bae7c0b82c1ac34287999c0c03eb59415611de59158b1f3b898a7111535"
+  },
+  "parent_ledger_sha256": "53a98bec3090b337fe98d3b15fbb6c0fe68295fbd158bedbdfc2c9ee3f11f78f",
+  "parent_audit_ledger_sha256": "bb97de956726446bda993c38a4a5a1aa9066806e69d6b256220df8edd380ad37",
+  "method_sha256": "5913d8db3ffe5af710ec3918bc63e5462175b3bc57a5600393b94f81d1f64b09",
+  "checks": [
+    "Committed preregistration and source bytes, frozen runtime and parent ledger identities match; fixed pair is observed worst seed 3342200684, round2, seat 0",
+    "Result receipt reports first complete-request difference at step 2 and same-input choices both PLANT but different units",
+    "Result reports one official event for candidate selected unit: requested NORTH, effective NORTH, no rewrite, executed and atomic state change observed",
+    "Frozen source filters events by step/player/unit and checks official requested payload digest against trace unit request already validated against replay; missing or mismatched event is unknown",
+    "Four registered raw files each decoded once within byte limits; one official replay completed 719 transitions and no failure receipt exists"
+  ],
+  "limitations": [
+    "Assessment reviews frozen source and aggregate execution receipt; no replay, trace, model, feature or per-frame recomputation was performed",
+    "Same-input choice and first complete-request differences coexist; the choice alone is not proven to cause the request difference",
+    "Observed movement and atomic change do not prove this difference caused the economic decline or establish fertilizer mechanism superiority",
+    "Fixed pair was selected after seeing economic outcomes and is not an independent holdout; shared official engine and input validators are not independent rules or score computation",
+    "No additional replay, model inference, training or game was run during this assessment"
+  ]
+}

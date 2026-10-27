@@ -366,3 +366,9 @@ Linux监督阶段1.329秒，整个自有进程组已清理并回收；原partial
 核对事前冻结d22d129、八场模型/教师双席结果及12223官方步、独立样本和8 trace读取、按seed配对与双重绝对护栏。第一seed自身差−1273、现金差−2397触发失败；正向种子不能抵消预登记逐seed停规。施肥数量区分callback、选择、请求与官方原子变化，不作经济因果归因；独立样本DIG/FERTILIZE未覆盖，聚合复审未逐帧重算。
 
 [报告](../kaggriculture/TASK_COMPLETION_ECONOMY_V1.zh-CN.md) | [证据](evidence/task-completion-economy-v1-20261027/)
+
+## 最差经济配对事后诊断：复审重点
+
+核对预提交eeda126、后验选pair及双席tie-break、四文件各一次内容哈希、719步官方复演。确认同一输入下PLANT选择不同工人与首次完整请求差异同时出现，以及候选单位NORTH请求与官方事件绑定；不要将其误称请求或收益的已证因果。原始回放、逐条trace及位置只留本地，审查未重新逐帧计算。
+
+[报告](../kaggriculture/TASK_COMPLETION_WORST_PAIR_V1.zh-CN.md) | [证据](evidence/task-completion-worst-pair-v1-20261027/)

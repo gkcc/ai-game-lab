@@ -1,0 +1,7 @@
+{
+  "source": "independent gpt-6.1-terra subagent, not WebChat",
+  "recommendation": "Consider one separately registered, post-result check of model ranking at the identified step-2 task-choice disagreement. It can explain this callback's ordering, not the full game's financial difference.",
+  "proposed_scope": "Bind the accepted model and existing trace; select the same-input disagreement by a fixed identity rule and perform at most one CPU forward on its full candidate set, with at most 8192 rows. A second paired trace may be needed because the published first diagnostic did not retain the callback ordinal; that adjustment must be disclosed before execution.",
+  "acceptance": "Model identity and schema match, candidate IDs are unique, scores are finite, the frozen first-argmax tie rule reproduces the selected candidate, and teacher and selected candidate ranks are unambiguous; retain all individual features and scores locally.",
+  "limits": "The case was chosen after economic outcomes and is not an independent test. A score gap does not identify which input feature caused it and cannot establish financial causation. No new game, official replay, retraining, PPO or DAgger."
+}
