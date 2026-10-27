@@ -1,0 +1,186 @@
+[
+  {
+    "game": "holdout-2870500733-market-0-candidate",
+    "policy": "candidate",
+    "split": "holdout",
+    "seed": 2870500733,
+    "opponent": "market",
+    "side": 0,
+    "parity_kind": null,
+    "bot_sha256": "5fb555079a1e1253a2887b43e1e52ebeea8e41c229b2667d5feb3180a97ae71c",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "task_checkpoint_sha256": "47def382fff8738583d2359964d2e14bfbb41b53e9dc428d2882519ada8e1811",
+    "passed": true,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "agent_errors": 0,
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "banks": [
+      46013.0,
+      42193.0
+    ],
+    "rewards": [
+      46013.0,
+      42193.0
+    ],
+    "bank": 46013.0,
+    "opponent_bank": 42193.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 43013.0,
+    "opponent_net_profit": 39193.0,
+    "margin": 3820.0,
+    "score": 1.0,
+    "semantic_replay_sha256": "e3250613461593463ce785431ca0581252154ddd71ae46f3dfb50b0fb9da8f61",
+    "semantic_replay_sha256_v2": "861884d66a0b1775a487d28eb7fdadb734d964099c38a01f644754eb9b4a9c69",
+    "replay_gzip_sha256": "4440afb73dbeaf0032f2f7670c62f1209b160264c5a6a160d2944c974dcda280",
+    "trace_sha256": "dd889b29e44e7f81497416514343ea1901ed8f77d763208bfe0d62e654c98d05",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd"
+  },
+  {
+    "game": "holdout-2870500733-market-0-teacher_task",
+    "policy": "teacher_task",
+    "split": "holdout",
+    "seed": 2870500733,
+    "opponent": "market",
+    "side": 0,
+    "parity_kind": null,
+    "bot_sha256": "62ee39ec3c0ef3696923dfc16facf6b3c4c349e870fda1067aa88732763f3506",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "task_checkpoint_sha256": null,
+    "passed": true,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "agent_errors": 0,
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "banks": [
+      46720.0,
+      43419.0
+    ],
+    "rewards": [
+      46720.0,
+      43419.0
+    ],
+    "bank": 46720.0,
+    "opponent_bank": 43419.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 43720.0,
+    "opponent_net_profit": 40419.0,
+    "margin": 3301.0,
+    "score": 1.0,
+    "semantic_replay_sha256": "9e253156799c2c9194207319af112327494beaeed9d842e04bf1ca775b49516f",
+    "semantic_replay_sha256_v2": "b77babc98d42e1ff8357d925a84ce701f2f4fbd491cb76d1f5db3cd18ee00b4d",
+    "replay_gzip_sha256": "9ea7cadea9ea2a1cbfa974ecaf35e30b142a3d40976fed345c0389fe1788922f",
+    "trace_sha256": "08711b5117cca65898486e479aa6eec4e1d54a08a6d5b280f69d5f65e5bafa21",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd"
+  },
+  {
+    "game": "holdout-2870500733-market-1-candidate",
+    "policy": "candidate",
+    "split": "holdout",
+    "seed": 2870500733,
+    "opponent": "market",
+    "side": 1,
+    "parity_kind": null,
+    "bot_sha256": "066f65e8ca8ca60d5cfbf3eb7820af41cc455f98e24e3ff2e8c904982308f912",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "task_checkpoint_sha256": "47def382fff8738583d2359964d2e14bfbb41b53e9dc428d2882519ada8e1811",
+    "passed": true,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "agent_errors": 0,
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "banks": [
+      42193.0,
+      46013.0
+    ],
+    "rewards": [
+      42193.0,
+      46013.0
+    ],
+    "bank": 46013.0,
+    "opponent_bank": 42193.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 43013.0,
+    "opponent_net_profit": 39193.0,
+    "margin": 3820.0,
+    "score": 1.0,
+    "semantic_replay_sha256": "ff2ea91098361c765aaa1a5e335130b04415ec755565775698f13501e78db25d",
+    "semantic_replay_sha256_v2": "0ee57ff23dac693a5831f73d953fc3a27d81f655a3dcaf6e1c7a10e810ed1357",
+    "replay_gzip_sha256": "262a5d66ae0a9349a9d15774f650f5ad3ebaa50ecec02ec945ec1da521613953",
+    "trace_sha256": "91d4c7a53b100e5ac22723832377da5e641ad53d14c5722839d949223a7444ce",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd"
+  },
+  {
+    "game": "holdout-2870500733-market-1-teacher_task",
+    "policy": "teacher_task",
+    "split": "holdout",
+    "seed": 2870500733,
+    "opponent": "market",
+    "side": 1,
+    "parity_kind": null,
+    "bot_sha256": "cd190d57124f739916fab7e20eec1a0f2b81fb9392a3b380e160c4aa8edcc413",
+    "rival_sha256": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "task_checkpoint_sha256": null,
+    "passed": true,
+    "states": 720,
+    "action_turns": 719,
+    "status": [
+      "DONE",
+      "DONE"
+    ],
+    "agent_errors": 0,
+    "initial_banks": [
+      3000.0,
+      3000.0
+    ],
+    "banks": [
+      43419.0,
+      46720.0
+    ],
+    "rewards": [
+      43419.0,
+      46720.0
+    ],
+    "bank": 46720.0,
+    "opponent_bank": 43419.0,
+    "initial_bank": 3000.0,
+    "opponent_initial_bank": 3000.0,
+    "net_profit": 43720.0,
+    "opponent_net_profit": 40419.0,
+    "margin": 3301.0,
+    "score": 1.0,
+    "semantic_replay_sha256": "6c70919587381605fcd8490416f7ac6d260b93040a2fb92873d952705846e516",
+    "semantic_replay_sha256_v2": "3e5a82b76e6370b6cc6e66ba201d9c20366bf6d9f8dea75090ab41e5f47df835",
+    "replay_gzip_sha256": "96eaaa32eda11fd2617ad696f9229626e2d2c931a48c66dd65995bc20d2f736f",
+    "trace_sha256": "9633d5a63e953bdfecc1777988983f25f7129bdaaf7f00e1c12accff1c44945c",
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd"
+  }
+]

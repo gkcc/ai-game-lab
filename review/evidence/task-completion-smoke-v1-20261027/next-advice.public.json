@@ -1,0 +1,8 @@
+{
+  "source": "independent gpt-6.1-terra subagent, not WebChat",
+  "recommendation": "Consider one separately registered small frozen economic evaluation before changing features or training. Use two fresh seeds, one frozen opponent not used in this smoke, both seats and candidate versus fixed task teacher: eight games.",
+  "budget": "Eight live games, eight primary official replays and one preselected independent official replay: at most 12223 official transitions. Do not add seeds after observing results.",
+  "proposed_stop_rule": "For each seed average the candidate-minus-teacher own net-profit difference over seats. Require each seed mean at least -1000 and no paired seat difference below -2000 to say this particular panel did not observe the preset magnitude of decline. Otherwise close evaluation and consider a separately registered read-only diagnosis of the worst pair; do not retrain or add games.",
+  "interpretation": "These are exploratory stop thresholds, not significance tests or guarantees. Two seed groups cannot prove competitive improvement; the current smoke's same-seed seat outcomes are not independent samples.",
+  "guardrails": "Freeze code, models, engine, opponent, fresh seeds, thresholds, resource limits and stop conditions before execution. Stop on any load, fallback, execution, replay or cleanup failure; no automatic retries, PPO, DAgger or large-scale RL."
+}

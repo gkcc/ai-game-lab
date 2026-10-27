@@ -1,0 +1,43 @@
+{
+  "attempt": 1,
+  "retry_allowed": false,
+  "freeze_sha256": "bae9da10e69f0b84af100de5f71e93625f1c2c6ae2bf780ce366cda67b1a1040",
+  "fixed_plan": [
+    {
+      "game": "holdout-2870500733-market-0-candidate",
+      "policy": "candidate",
+      "split": "holdout",
+      "seed": 2870500733,
+      "opponent": "market",
+      "side": 0,
+      "parity_kind": null
+    },
+    {
+      "game": "holdout-2870500733-market-0-teacher_task",
+      "policy": "teacher_task",
+      "split": "holdout",
+      "seed": 2870500733,
+      "opponent": "market",
+      "side": 0,
+      "parity_kind": null
+    },
+    {
+      "game": "holdout-2870500733-market-1-candidate",
+      "policy": "candidate",
+      "split": "holdout",
+      "seed": 2870500733,
+      "opponent": "market",
+      "side": 1,
+      "parity_kind": null
+    },
+    {
+      "game": "holdout-2870500733-market-1-teacher_task",
+      "policy": "teacher_task",
+      "split": "holdout",
+      "seed": 2870500733,
+      "opponent": "market",
+      "side": 1,
+      "parity_kind": null
+    }
+  ]
+}

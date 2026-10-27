@@ -1,0 +1,54 @@
+[
+  {
+    "game": "holdout-2870500733-market-0-candidate",
+    "certificate_sha256": "c1746214d55de169643cecb2d0aa0a6ca74a442e8ed16be16355d8d63f3c0126",
+    "replay_sha256": "4440afb73dbeaf0032f2f7670c62f1209b160264c5a6a160d2944c974dcda280",
+    "trace_sha256": "dd889b29e44e7f81497416514343ea1901ed8f77d763208bfe0d62e654c98d05",
+    "official_transitions": 719,
+    "cleanup": {
+      "owned_instances_observed": 3,
+      "owned_instances_remaining": 0,
+      "reader_joined": true,
+      "launched_process_reaped": true
+    }
+  },
+  {
+    "game": "holdout-2870500733-market-0-teacher_task",
+    "certificate_sha256": "2f54edf2bed5f287b77f0cc4da59b6393acb5b4baa31663d51add2e234702478",
+    "replay_sha256": "9ea7cadea9ea2a1cbfa974ecaf35e30b142a3d40976fed345c0389fe1788922f",
+    "trace_sha256": "08711b5117cca65898486e479aa6eec4e1d54a08a6d5b280f69d5f65e5bafa21",
+    "official_transitions": 719,
+    "cleanup": {
+      "owned_instances_observed": 9,
+      "owned_instances_remaining": 0,
+      "reader_joined": true,
+      "launched_process_reaped": true
+    }
+  },
+  {
+    "game": "holdout-2870500733-market-1-candidate",
+    "certificate_sha256": "8bcd31b7d7b521949e7f53bfc9ad6739604fe913bf15f871a6032eb3a210f3c8",
+    "replay_sha256": "262a5d66ae0a9349a9d15774f650f5ad3ebaa50ecec02ec945ec1da521613953",
+    "trace_sha256": "91d4c7a53b100e5ac22723832377da5e641ad53d14c5722839d949223a7444ce",
+    "official_transitions": 719,
+    "cleanup": {
+      "owned_instances_observed": 7,
+      "owned_instances_remaining": 0,
+      "reader_joined": true,
+      "launched_process_reaped": true
+    }
+  },
+  {
+    "game": "holdout-2870500733-market-1-teacher_task",
+    "certificate_sha256": "99350a09d0d334e0c58650b9c1ddcb72beb1bfc2201b626c25075dcf202554eb",
+    "replay_sha256": "96eaaa32eda11fd2617ad696f9229626e2d2c931a48c66dd65995bc20d2f736f",
+    "trace_sha256": "9633d5a63e953bdfecc1777988983f25f7129bdaaf7f00e1c12accff1c44945c",
+    "official_transitions": 719,
+    "cleanup": {
+      "owned_instances_observed": 6,
+      "owned_instances_remaining": 0,
+      "reader_joined": true,
+      "launched_process_reaped": true
+    }
+  }
+]

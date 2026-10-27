@@ -1,0 +1,83 @@
+{
+  "passed": true,
+  "model_request_influence_observed": true,
+  "execution_and_influence_smoke_passed": true,
+  "live_games": 4,
+  "complete_games": 4,
+  "live_official_transitions": 2876,
+  "primary_replay_transitions": 2876,
+  "independent_replay_transitions": 719,
+  "total_official_transitions": 6471,
+  "independent_sample_matched": 20,
+  "sample_operation_counts": {
+    "DIG": 0,
+    "FERTILIZE": 1,
+    "HARVEST": 2,
+    "PLANT": 1,
+    "WATER": 16
+  },
+  "test_seed_count": 1,
+  "seed_samples_are_independent": false,
+  "linked_first_request_changes": 2,
+  "first_request_difference_steps": [
+    2,
+    2
+  ],
+  "model_task_forward_calls": [
+    2212,
+    2212
+  ],
+  "fertilizer_callback_opportunities": [
+    251,
+    251
+  ],
+  "fertilizer_selected_callbacks": [
+    72,
+    72
+  ],
+  "fertilizer_work_requests": [
+    24,
+    24
+  ],
+  "fertilizer_official_event_status": [
+    {
+      "requested": 24,
+      "executed_with_observed_change": 24,
+      "blocked": 0,
+      "no_effect": 0,
+      "error": 0,
+      "other": 0
+    },
+    {
+      "requested": 24,
+      "executed_with_observed_change": 24,
+      "blocked": 0,
+      "no_effect": 0,
+      "error": 0,
+      "other": 0
+    }
+  ],
+  "gameplay_inference": "CPU model",
+  "gpu_training_this_stage": false,
+  "new_training_updates": 0,
+  "default_bot_or_official_rules_changed": false,
+  "competitive_gain_proven": false,
+  "statistical_significance_proven": false,
+  "interpretation": "Single seed, two seat swaps, one opponent. Fertilizer event status is an observed atomic state change, not proof of sustained completion or causal financial gain.",
+  "limitations": "Independent replay and trace validation share official engine and input validators; aggregate assessment did not re-read raw files or independently rescore model outputs.",
+  "evidence_sha256": {
+    "root-decision.json": "8f304c7381f588d276a6c86b0daa79ab7f823ec49138acc721536f334ad80e9c",
+    "registration.json": "c0169eb563793e10484217e98acb2418c45a19661d9ccb0fab971b4a4c1e82f5",
+    "freeze.json": "bae9da10e69f0b84af100de5f71e93625f1c2c6ae2bf780ce366cda67b1a1040",
+    "pre-review.json": "9698ce13fab15eda214aff5b89a2377e4c19f28191b264b513bcce97afbf9c16",
+    "pre-execution-commit.json": "987f14e45c0186f1320b6a2777a1a825170b9ffb83a8ab7afec978da8f877076",
+    "pre-review-revision-map.json": "4171068eea9e7b5275052534a15a1b5959762fc13a07d01fde5e3b46b2759838",
+    "games-result.json": "f6bbd0f5197399465f1626a3625543f10cabbfb3b84b101e8824546a17cd89d5",
+    "game-ledger.json": "fb92293f0d35ab8bc9444d84232c6c3f1690719e5b70dff89cfd2f1f3dc7c1f1",
+    "game-audit-ledger.json": "b6bca43198e62fbe2f9c0f3c0d072b7f54ec8a7aa9c96f47aba3a22b80c51ccd",
+    "independent-replay-verification.json": "dbc4655295ad905ccac727675fa5b919374ee70232b7a87918fe71a107b1c312",
+    "independent-result-review.json": "536a5727e3ffa58a32e06b254ae9111305e4335eab6fe875e837b84e0688869a",
+    "analysis-result.json": "28ec84d981ded646246c944e604916f2779c7b71f6522bc05fdec50580e60044",
+    "independent-result-assessment.json": "3e2d600cce6db0a9ebcd6806ff75f7573a2712bcb05959bc1bcb38f1a2ebcffc"
+  }
+}

@@ -354,3 +354,9 @@ Linux监督阶段1.329秒，整个自有进程组已清理并回收；原partial
 审查预登记 bb057d6 与训练、八场比赛、标签复演及独立抽样证据：相同旧训练数据与配置的再次训练是否充分披露，GPU更新与highest对照、两侧清理、模型和旧失败保持是否有证据；数据采集是否先于离线评估，汇总门槛和弱基线解释是否正确。独立20段主要为WATER、没有DIG或FERTILIZE，且共享官方复演基础设施；聚合指标未独立逐条重算。8场为教师采集，并非学生实战成绩。
 
 [详细报告](../kaggriculture/TASK_COMPLETION_BC_REENTRY_V1.zh-CN.md) | [证据](evidence/task-completion-bc-reentry-v1-20261027/)
+
+## 已封存任务模型官方接入冒烟：复审重点
+
+核对事前冻结96eda51、候选模型实际加载与任务调用、双方席位四场及主复演，同一输入下模型选择与首次完整请求差异的关联；区分施肥callback/选择/请求/官方原子变化及经济结论。独立复演20条主要为WATER，DIG未覆盖；共用官方引擎和输入校验，聚合复审未重读逐帧或模型。两席位同seed结果相同，不构成独立样本或竞争提升证明。
+
+[报告](../kaggriculture/TASK_COMPLETION_SMOKE_V1.zh-CN.md) | [证据](evidence/task-completion-smoke-v1-20261027/)

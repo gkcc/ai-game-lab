@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "identities_sha256": {
+    "freeze.json": "bae9da10e69f0b84af100de5f71e93625f1c2c6ae2bf780ce366cda67b1a1040",
+    "registration.json": "c0169eb563793e10484217e98acb2418c45a19661d9ccb0fab971b4a4c1e82f5",
+    "games-result.json": "f6bbd0f5197399465f1626a3625543f10cabbfb3b84b101e8824546a17cd89d5",
+    "game-ledger.json": "fb92293f0d35ab8bc9444d84232c6c3f1690719e5b70dff89cfd2f1f3dc7c1f1",
+    "game-audit-ledger.json": "b6bca43198e62fbe2f9c0f3c0d072b7f54ec8a7aa9c96f47aba3a22b80c51ccd",
+    "independent-replay-verification.json": "dbc4655295ad905ccac727675fa5b919374ee70232b7a87918fe71a107b1c312",
+    "independent-result-review.json": "536a5727e3ffa58a32e06b254ae9111305e4335eab6fe875e837b84e0688869a",
+    "analysis-result.json": "28ec84d981ded646246c944e604916f2779c7b71f6522bc05fdec50580e60044"
+  },
+  "checks": [
+    "Four complete 720-state 719-action DONE games cover one registered new seed, market opponent, both seats and both policies with no agent errors",
+    "Actor and rival reconstruction, official 719-step audit, engine/crop/checkpoint identity, task model counts and cleanup receipts match all four ledger entries",
+    "One independent candidate seat0 replay reports 719 transitions and 20/20 fixed identities; 2 files decoded once; analysis reports 8 files decoded once and no extra engine transitions",
+    "Analysis reports first complete-request difference at step 2 linked to choice difference on equal callback inputs in both seat pairs; physical common prefix ends subsequently",
+    "Each candidate game reports 251 callback opportunities containing FERTILIZE, 72 selected FERTILIZE callbacks, 24 FERTILIZE work requests and 24 official events with observed atomic change",
+    "Four live and four primary replay sequences plus one independent replay total 6471 transitions"
+  ],
+  "limitations": [
+    "Independent assessment uses aggregate receipts and frozen source; no replay, trace, model or feature was read and no per-frame or model score recomputation performed",
+    "FERTILIZE counts describe callbacks, selected requests and atomic event statuses, not independent causal events or financial benefit",
+    "Both seat results and cash differences are numerically identical on one seed; they are not independent seed samples and do not support significance or game strength claim",
+    "Shared official engine and validate_trace are reused; callback method was authored by this reviewer and independently source-reviewed by the main agent",
+    "Model-request linkage is observational same-context evidence at first request difference; it does not establish causal financial attribution"
+  ]
+}

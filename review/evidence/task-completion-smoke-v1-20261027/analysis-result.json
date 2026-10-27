@@ -1,0 +1,73 @@
+{
+  "passed": true,
+  "model_request_influence_observed": true,
+  "first_request_changes_linked": 2,
+  "pairs": [
+    {
+      "side": 0,
+      "first_request_difference_step": 2,
+      "common_physical_prefix_turns": 3,
+      "matched_context_calls": 10,
+      "choice_difference_same_request_turns": 0,
+      "choice_difference_changed_request_turns": 1,
+      "first_linked_change_step": 2,
+      "unmatched_context_turns": 0,
+      "physical_prefix_ended": true,
+      "candidate_callbacks": 2212,
+      "candidate_fertilizer_opportunities": 251,
+      "candidate_fertilizer_selections": 72,
+      "candidate_fertilizer_work_requests": 24,
+      "candidate_task_forwards": 2212,
+      "candidate_fertilizer_official_events": {
+        "requested": 24,
+        "executed_with_observed_change": 24,
+        "blocked": 0,
+        "no_effect": 0,
+        "error": 0,
+        "other": 0
+      },
+      "reference_task_forwards": 0
+    },
+    {
+      "side": 1,
+      "first_request_difference_step": 2,
+      "common_physical_prefix_turns": 3,
+      "matched_context_calls": 10,
+      "choice_difference_same_request_turns": 0,
+      "choice_difference_changed_request_turns": 1,
+      "first_linked_change_step": 2,
+      "unmatched_context_turns": 0,
+      "physical_prefix_ended": true,
+      "candidate_callbacks": 2212,
+      "candidate_fertilizer_opportunities": 251,
+      "candidate_fertilizer_selections": 72,
+      "candidate_fertilizer_work_requests": 24,
+      "candidate_task_forwards": 2212,
+      "candidate_fertilizer_official_events": {
+        "requested": 24,
+        "executed_with_observed_change": 24,
+        "blocked": 0,
+        "no_effect": 0,
+        "error": 0,
+        "other": 0
+      },
+      "reference_task_forwards": 0
+    }
+  ],
+  "raw_reads": {
+    "compressed_input_read_bytes": 36304751,
+    "decoded_input_bytes": 582401986,
+    "files_opened": 8,
+    "files_completed": 8,
+    "raw_decode_passes_per_file": 1
+  },
+  "official_transitions": 0,
+  "new_games": 0,
+  "training_updates": 0,
+  "own_model_inference_calls": 0,
+  "completion_and_financial_causation": "not_established",
+  "interpretation": "Two seat-pairs on one seed are an interface smoke, not a competitive or statistical claim.",
+  "game_ledger_sha256": "fb92293f0d35ab8bc9444d84232c6c3f1690719e5b70dff89cfd2f1f3dc7c1f1",
+  "freeze_sha256": "bae9da10e69f0b84af100de5f71e93625f1c2c6ae2bf780ce366cda67b1a1040",
+  "retry_allowed": false
+}
