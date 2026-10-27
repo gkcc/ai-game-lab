@@ -1,0 +1,6 @@
+{
+  "source": "Independent subagent advice, not WebChat",
+  "recommendation": "After publishing the failed panel, separately freeze a synthetic-only Job sampling repair: if a sampled member disappears, discard the entire incomplete RSS sample and retry a fresh membership snapshot at most three times per poll; stop the owned Job if a complete sample cannot be obtained.",
+  "validation": "First exercise disappearance-then-success and repeated-disappearance failure using pure fakes; then one bounded owned synthetic launcher with short-lived children and a stable memory worker. Record sampling retries, complete samples, stop reason, Job membership and launcher cleanup.",
+  "limits": "The observed error is compatible with, but does not prove, a process-exit race. Do not modify the frozen supervisor or old panel. Do not retry the consumed seeds, read their results, retrain or add games as part of the repair."
+}

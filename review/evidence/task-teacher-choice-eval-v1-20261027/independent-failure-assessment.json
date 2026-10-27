@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "identities_sha256": {
+    "freeze.json": "cd9e8ecb6eca1f09eec0a86cac59a38674f693067a9105384f849e05cbb197de",
+    "registration.json": "7d3d6389b5f46bb2a8378ee95b68c3b6b12bba7cdaaaa901f07dd6ac446ad24a",
+    "pre-execution-commit.json": "022d0b0896a6ce8aa012be642192cffcdb0c37cbca0ed10141407dba0343956b",
+    "games-started.json": "ebb6d7015acdfca3a5e3c6c2e9b075e8e3e03cea4dbd974ddae7b0d8ea35d220",
+    "games-failure.local.json": "bdb5700f8a2b8ca917f0201f7084fe7eb946d426fc9352556c3c9e18d99213e3"
+  },
+  "first_game_receipt_sha256": {
+    "row": "f8a0e3e1adae32af5843a08ce704b07a5558812e3dfe451587f83e3d0011d392",
+    "audit": "f6ef6148491748d03240e811b5df41c8a363e528eb426491035fb17807199fed",
+    "complete": "d720dd6089dafb4eafe1196b035899e4a30d4ac41d81c6da70427dfc14578493",
+    "storage": "4961c277b0f22daf77a932d3fb3195449ffc790742063b05655b92edf5d7f389"
+  },
+  "supervisor_source_sha256": "97257f1621f6aa1a7ea6295cbeb369536c2b2c2a14ea021ace0c19b0d7165b6e",
+  "confirmed_completed_games": 1,
+  "confirmed_live_transitions": 719,
+  "confirmed_primary_replay_transitions": 719,
+  "second_game_additional_transitions": "unknown",
+  "independent_replay_and_evaluation_not_started": true,
+  "supervisor_error_kind": "NoSuchProcess",
+  "possible_cause": "A process can exit between Job membership snapshot and per-process RSS lookup. The exception type alone does not establish that this occurred or locate the failing call.",
+  "cleanup": "Supervisor receipt reports assigned and resumed, launcher reaped, Job members zero and no cleanup error; this is receipt evidence, not independent observation.",
+  "retry_allowed": false,
+  "limitations": [
+    "No reward or competitive result examined; no replay or trace opened, no rerun.",
+    "First-game completion and budget are based on bound aggregate receipts; second-game progress is unknown.",
+    "Job RSS and commit are sampled, not hard real-time maxima."
+  ]
+}

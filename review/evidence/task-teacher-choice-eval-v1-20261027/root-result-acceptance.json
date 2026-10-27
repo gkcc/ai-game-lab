@@ -1,0 +1,23 @@
+{
+  "passed": false,
+  "panel_completed": false,
+  "reason": "Owned Job supervision encountered NoSuchProcess during second attempted game",
+  "confirmed_completed_games": 1,
+  "confirmed_live_transitions": 719,
+  "confirmed_primary_replay_transitions": 719,
+  "additional_current_game_transitions": "unknown",
+  "no_economic_comparison": true,
+  "no_retries": true,
+  "first_replay_kept_local": true,
+  "independent_review_did_not_open_replay_or_trace": true,
+  "evidence_sha256": {
+    "root-decision.json": "1d559c5ad3bba5ad46ce7322c5afbb8b5dc5e275cb6a5cfb6dbea8243ebccebc",
+    "registration.json": "7d3d6389b5f46bb2a8378ee95b68c3b6b12bba7cdaaaa901f07dd6ac446ad24a",
+    "freeze.json": "cd9e8ecb6eca1f09eec0a86cac59a38674f693067a9105384f849e05cbb197de",
+    "pre-review.json": "72bf1d3235f1926629bdf77668ed317bf0bbf9737e144a838a860d7409b40c6d",
+    "pre-execution-commit.json": "022d0b0896a6ce8aa012be642192cffcdb0c37cbca0ed10141407dba0343956b",
+    "games-started.json": "ebb6d7015acdfca3a5e3c6c2e9b075e8e3e03cea4dbd974ddae7b0d8ea35d220",
+    "failure-projection.json": "13397b30bb71cd9206cd27937840e38e7da1b109ed1142c8ff81d3b12383bd13",
+    "independent-failure-assessment.json": "7f8bab51de98b2e5627cc710644ca1be49e383362e4010ea7e8c0b1805762ed2"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "decision": "After publishing this incomplete panel, prepare a separately preregistered synthetic-only repair for disappearing members during Job RSS sampling.",
+  "basis": "The second attempted worker stopped on NoSuchProcess with cleanup reported; source inspection identifies a plausible sampling race but does not prove the exception site or unique cause.",
+  "limits": "Preserve existing source, model and receipts. Discard incomplete samples, bound resampling and fail closed if a complete sample or cleanup cannot be confirmed. Use only owned synthetic processes; no previously reserved seed is reused."
+}
