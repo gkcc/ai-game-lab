@@ -1,0 +1,15 @@
+{
+  "status": "approved_for_implementation_not_execution",
+  "previous_commit": "21155e496cd29fb5f2f0d3163fae61f2d1da5f47",
+  "started_utc": "2026-10-27T09:52:00+00:00",
+  "deadline_utc": "2026-10-27T12:52:00+00:00",
+  "authorization": "The user authorized limited BC implementation and continued autonomous stages with independent review; this is a finite official-game integration smoke, not PPO, DAgger, large-scale training or online submission.",
+  "purpose": "Test whether the newly sealed task-choice model is actually loaded and controls a bounded selector in complete official games; compare against the fixed task teacher with the same frozen crop model and controller.",
+  "design": "One new seed excluded from searchable historical and reserved metadata, one frozen market opponent, both seats, two policy arms: four official games. Count four primary official replays and one preselected candidate-seat-zero independent official replay, at most 6471 official transitions.",
+  "action_evidence": "Compare the first complete-request difference only while complete official history and selector inputs agree. Keep task choice, submitted request, observed official event and long-term completion separate. Count fertilizer opportunities, selections and official actor request statuses without changing rules.",
+  "analysis_limits": "One analysis attempt reads each of four new replays and four traces once, with fixed compressed and decoded byte limits; one independent attempt reads its selected replay and trace once. Time is checked between files, records and engine events, but a single decode or JSON parse is not preempted.",
+  "acceptance": "All four games and primary replays must complete, model identity and task forwards must be verified without fallback, both process cleanups must pass, and the independent replay must match 20 identity-selected callbacks. Action influence is established only if at least one equal-input choice difference coincides with the first complete-request difference; otherwise report it unobserved.",
+  "stop": "One attempt per stage; any failure or exceeded budget closes the stage without retry, preserves partial counts and marks uncertain steps unknown. Do not modify thresholds, model, seed or strategy after observing outcomes.",
+  "interpretation": "One seed and four games establish only a limited execution and action-influence smoke. They cannot establish competitive strength, statistical significance, causal revenue or promotion. Fertilizer execution must not be equated with sustained completion.",
+  "privacy_and_preservation": "Keep raw replays, traces, per-callback inputs, weights, machine configuration, local logs and absolute paths local. Preserve default Bot, official rules, frozen strategies, prior models and evidence."
+}

@@ -1,0 +1,131 @@
+{
+  "experiment": "task-completion-smoke-v1",
+  "baseline_head": "21155e496cd29fb5f2f0d3163fae61f2d1da5f47",
+  "deadline_utc": "2026-10-27T12:52:00+00:00",
+  "test_seeds": [
+    2870500733
+  ],
+  "train_seeds": [
+    3911611436,
+    2328454240
+  ],
+  "excluded_seeds": [
+    135433893,
+    441357442,
+    1210575027,
+    2026102708,
+    2184120446,
+    2328454240,
+    3911611436
+  ],
+  "seed_inventory_sha256": "f7d3bd71ddad3dcd7512d1976ee3e5c71a285e2bd58996230997421d68c845ba",
+  "seed_scope": "Tracked public text plus local registration, seed inventories, input manifests and job-input metadata",
+  "seed_limitation": "Deleted, unavailable, external and unlisted seed history cannot be searched",
+  "candidate_checkpoint": "artifacts/task-completion-bc-reentry-v1-20261027/private/model-final.npz",
+  "candidate_checkpoint_sha256": "47def382fff8738583d2359964d2e14bfbb41b53e9dc428d2882519ada8e1811",
+  "old_model_sha256": "47def382fff8738583d2359964d2e14bfbb41b53e9dc428d2882519ada8e1811",
+  "parent_evidence": {
+    "root-result-acceptance.json": "8f97b9575fc73dacf620aa173415c846246ce905bc4d18d59489aea54a1dc2b9",
+    "registration.json": "ec7fb4290a8353302d60fbf20d6576a889e42f5ff63a563dd859aeb9c9c6a698",
+    "freeze.json": "017922bf16c538fc0e091080156dcbf00327243664e4bb9f24a4184d574af962",
+    "fit-result.json": "7a8538327a049899805ce571737e32f3ded979d7c8896148e98c65e7562f05cf",
+    "fit-transport-result.json": "ef6223ba0cd8b81022550bb5bdb0f59d096cdb3064f9f9c28e8b80f418505cd9",
+    "fit-independent-review.json": "7782e28e25b6a974c1df1df7b0a5e054a6bc0bb79f8fbccbc9e87b56b5503033",
+    "model-seal.json": "786c7bc7cd11e382d6a9211c7168713699beced1f38cc760d1b90e9f8a00a5ea",
+    "evaluation-result.json": "9799975749e1a8b9db6e5c15e6ca339dbfa8a690760360bceffd35ac4ea13f46",
+    "evaluation-independent-review.json": "c136d8e8301de0272112ba48c80d3c1c67e5adab8d5dcfc9238aebd815b8cc6c",
+    "independent-result-review.json": "987402db48bf29a6e114df0cd89bdb62c1e887f1def7825b3be5b7f7671edf98"
+  },
+  "crop_checkpoint": "artifacts/bc-epoch6-holdout-v1-20261023/panels/fixed_epoch6/model/trained.npz",
+  "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+  "source_sha256": {
+    "market.py": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b"
+  },
+  "runtime_versions": {
+    "python": "3.12.2",
+    "numpy": "2.5.4",
+    "kaggle_environments": "1.33.0"
+  },
+  "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "official_loader_sha256": "0ac7baf1212b4ce1eabae3cc1cbb55c98effef5e0d0485522a8be87097c39a4f",
+  "game_limits": {
+    "task_forwards": 4000,
+    "crop_forwards": 8000,
+    "neural_input_rows": 160000,
+    "gate_evaluations": 1,
+    "controller_calls": 719,
+    "teacher_proposals": 1,
+    "max_task_forwards_per_turn": 32,
+    "max_crop_forwards_per_turn": 64,
+    "max_neural_input_rows_per_turn": 4096,
+    "max_controller_calls_per_turn": 1
+  },
+  "storage": {
+    "total_bytes": 4294967296,
+    "game_write_bytes": 134217728,
+    "free_floor_bytes": 4294967296,
+    "process_log_bytes": 1048576,
+    "small_receipt_bytes": 16384
+  },
+  "policies": [
+    "candidate",
+    "teacher_task"
+  ],
+  "opponents": [
+    "market"
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "official_limits": {
+    "new_games": 4,
+    "live_transitions": 2876,
+    "primary_replay_transitions": 2876,
+    "independent_replay_transitions": 719,
+    "total_transitions": 6471,
+    "per_job_seconds": 900
+  },
+  "independent_selection": "candidate, market, seat 0; first 20 callback identities by SHA256, independent of choice and outcome",
+  "independent_limits": {
+    "raw_files": 2,
+    "decode_passes_per_file": 1,
+    "compressed_bytes": 134217728,
+    "decoded_bytes": 1073741824,
+    "seconds": 300,
+    "official_transitions": 719,
+    "sample_count": 20,
+    "attempts": 1
+  },
+  "analysis_limits": {
+    "replays": 4,
+    "traces": 4,
+    "decode_passes_per_file": 1,
+    "compressed_bytes": 268435456,
+    "decoded_bytes": 4294967296,
+    "seconds": 600,
+    "attempts": 1,
+    "official_transitions": 0
+  },
+  "analysis_time_limit_semantics": "Checked between file reads, trace records and official events; an individual decompression or JSON parse is not preempted.",
+  "acceptance": {
+    "complete_games": 4,
+    "states": 720,
+    "actions": 719,
+    "zero_agent_errors": true,
+    "primary_replay_each": true,
+    "independent_replay": 1,
+    "candidate_task_forwards_each_positive": true,
+    "teacher_task_forwards_zero": true,
+    "influence": "At least one candidate/reference pair has a differing model choice with identical callback input at the first complete-request difference on the full history prefix",
+    "no_influence": "Report successful execution with unobserved intervention; do not claim control of actions",
+    "no_game_strength_claim": true,
+    "no_promotion": true,
+    "stop_on_error": true
+  },
+  "training_updates": 0,
+  "retry_allowed": false,
+  "stop_on_failure": true,
+  "prior_checkpoint_bytes_equal": true
+}

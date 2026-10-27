@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "freeze_sha256": "13ad6106f1cf697626d6761e3bbfd281dfab78adb97f7bfa61532b530f55c894",
+  "synthetic_tests_passed": 17,
+  "windows_frozen_metadata_verification": true,
+  "main_agent_review_of_independent_method": {
+    "method_sha256": "7e6cb0a7e6edbe70f0a3f4da76766382a21852433556b7d6ed1ef5aba0820a02",
+    "reviewer_is_not_method_author": true,
+    "checked": ["selected game and frozen panel identities", "one replay and trace decode", "identity-only sample", "own visible input and unit request validation", "official replay and semantic identity", "partial marker and interrupted replay receipt"],
+    "limits": "Shares official engine and validate_trace; no independent model inference or prediction recomputation. Static and synthetic inspection only."
+  },
+  "elapsed_time_checks_are_not_preemptive_within_one_decode_or_parse": true,
+  "raw_replays_or_training_arrays_read": false,
+  "private_checkpoint_hash_only_no_decode": true,
+  "gpu_or_model_inference_executed": false,
+  "new_games_or_official_transitions": 0,
+  "local_registration_not_third_party_timestamp": true
+}

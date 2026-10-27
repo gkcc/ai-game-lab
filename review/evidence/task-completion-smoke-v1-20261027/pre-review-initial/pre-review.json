@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "freeze_sha256": "13ad6106f1cf697626d6761e3bbfd281dfab78adb97f7bfa61532b530f55c894",
+  "registration_sha256": "c0169eb563793e10484217e98acb2418c45a19661d9ccb0fab971b4a4c1e82f5",
+  "checks": [
+    "Windows experiment.verify passed; source set and frozen runtime identities match",
+    "Candidate checkpoint identity binds accepted parent model seal; identical older checkpoint hash does not alter prior failed status",
+    "Single new seed matches deterministic inventory selection and is outside searched and prior consumed or reserved seed sets",
+    "Four fixed candidate/teacher games with one opponent and two seats; 4 live plus 4 primary plus 1 independent replay total 6471 official transitions",
+    "Separate action analysis reads four replays and four traces once; independent replay reads one replay and one trace once under distinct registered budgets",
+    "Independent certificate requires frozen method hash, selected candidate game, 20 identity-hash samples and 719 official steps",
+    "Comparison limits claims to common physical prefix and equal callback inputs, separates selection from request and official execution",
+    "17 combined synthetic tests passed"
+  ],
+  "limitations": [
+    "Independent method was authored by this reviewer and separately reviewed by the main agent; this review is not independent authorship review",
+    "Time checks occur around processing and cannot interrupt a single blocking call; they are not hard preemptive limits",
+    "No game, replay, model inference or GPU was run and no private model was decoded; runtime identity verification hash-read the checkpoint",
+    "Shared official engine and shared input validation do not constitute an independent game engine or independent scoring",
+    "Seed exclusion covers searched inventory only; paired single-seed observations cannot establish statistical significance or game-strength gain"
+  ]
+}

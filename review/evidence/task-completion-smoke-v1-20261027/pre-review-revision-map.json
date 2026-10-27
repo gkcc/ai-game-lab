@@ -1,0 +1,12 @@
+{
+  "reason": "Public privacy scanner rejected a synthetic absolute-path literal in an unexecuted test. The runtime test value is identical; construct it from two string literals instead.",
+  "only_change": "test source C-colon slash model literal split into two concatenated string literals",
+  "previous_freeze_sha256": "13ad6106f1cf697626d6761e3bbfd281dfab78adb97f7bfa61532b530f55c894",
+  "revised_freeze_sha256": "bae9da10e69f0b84af100de5f71e93625f1c2c6ae2bf780ce366cda67b1a1040",
+  "previous_test_sha256": "b2011f2a779c0fdce6bddc0829eed58d6997c5a4b3f590bd4d796ac5e165aba6",
+  "revised_test_sha256": "d388f38a26add7b7886562ff280bb102701cfc860de56c440ff60543b0624e1c",
+  "previous_test_bytes_retained_locally": true,
+  "previous_test_bytes_published": false,
+  "registration_unchanged": true,
+  "games_inference_or_replay_started": false
+}

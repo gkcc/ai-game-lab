@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "tools/privacy_check.py",
+      "exit_code": 0,
+      "diagnostics_sha256": "9597112bf81b2ede0db7272f9334a70b611a87b0954a60edda7260dc22b3ea38"
+    },
+    {
+      "check": "../private/audit_public.py",
+      "exit_code": 0,
+      "diagnostics_sha256": "660a7d0341a83d9eebfcc81e1247f9b84bc5c13246ada0210e0649e3af8311e8"
+    }
+  ]
+}
