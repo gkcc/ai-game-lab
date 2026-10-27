@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "freeze_sha256": "e40ff874cb00e9ddda463bc98e4b915621cba16da8b8afe96508c2c6d44870bf",
+  "registration_sha256": "7d3d6389b5f46bb2a8378ee95b68c3b6b12bba7cdaaaa901f07dd6ac446ad24a",
+  "checks": [
+    "Registration, root decision, 11 new source files and 284 runtime hashes match freeze.",
+    "Published parent training acceptance, privacy projection, model seal and reference identity match; opponent source hash matches.",
+    "Exact two parent reserved seeds, 8 games, 8 primary and 1 independent replay, 12223 transitions and inclusive paired guardrails match frozen plan.",
+    "Windows venv and per-game Job, fixed independent selection and final certificate identity gates checked statically; 13 fake tests passed.",
+    "No game, independent replay or evaluation start marker was present during review."
+  ],
+  "limitations": [
+    "No model bytes were opened or independently hashed; real official worker, Job and engine were not run.",
+    "Seed exclusion is limited to prior recognized metadata inventory and cannot exclude external or unlisted history.",
+    "Two seed clusters and one opponent cannot establish significance or automatic promotion.",
+    "Independent replay shares the official engine and input validation; source and receipts do not constitute an independently implemented rules engine."
+  ]
+}

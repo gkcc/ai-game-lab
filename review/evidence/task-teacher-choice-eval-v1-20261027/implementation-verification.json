@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "freeze_sha256": "cd9e8ecb6eca1f09eec0a86cac59a38674f693067a9105384f849e05cbb197de",
+  "synthetic_tests": 13,
+  "scope": "pure fake tests; no model, trace, replay, official game or process read",
+  "tests": "python -B -m unittest learning.task_teacher_choice_eval_v1.test_evaluation learning.task_teacher_choice_eval_v1.test_games learning.task_teacher_choice_eval_v1.test_campaign learning.task_teacher_choice_eval_v1.test_independent learning.task_teacher_choice_eval_v1.test_experiment"
+}

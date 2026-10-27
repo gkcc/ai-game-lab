@@ -1,0 +1,14 @@
+{
+  "status": "approved_for_implementation_not_execution",
+  "previous_commit": "c12e73a62274a6c42a53eff293bad99d34fc6d44",
+  "created_utc": "2026-10-27T12:18:57+00:00",
+  "deadline_utc": "2026-10-27T17:18:57+00:00",
+  "objective": "Run the previously planned exploratory official-game comparison of the newly sealed conditional-teacher task model against the frozen completion-filtered task model.",
+  "panel": "Two already reserved seeds, one frozen round2 opponent, both seats, both neural task models: exactly eight games. The crop checkpoint, controller and official rules remain fixed. Each game has 720 recorded states, 719 actions and both DONE; no error, invalid or timeout is allowed.",
+  "audit": "Eight official primary replay checks and one separately supervised official replay of the first reserved seed, candidate, round2, seat 0; at most 12223 official transitions including live games. The independent replay uses the same fixed official engine and shared validators, not a second rules implementation. Select 20 callback identities by a fixed hash after validating the full selected trace.",
+  "statistics": "Pair candidate minus baseline on the same seed and side; report own and opponent net profit, cash margin, win/draw/loss and score. The seed, not each seat or game, is the independent cluster. Fixed guardrails: per seed the two-seat mean own-profit and cash-margin differences each at least -1000; every seat both differences at least -2000.",
+  "interpretation": "Two seeds and one opponent are an exploratory screen only; passing guardrails cannot prove significance, broad improvement or automatic promotion. Reserved seed freshness is limited to previously scanned metadata and exact public text.",
+  "boundaries": "No new training, model selection, default Bot, official rules or system configuration changes. Preserve prior models, negative results, seeds and certificates. Publish no raw replay, private trace, feature array, weights, personal absolute path or raw log.",
+  "stop": "Each panel and independent replay has one exclusive marker. Any identity, budget, worker, official replay, cleanup or receipt failure stops without retry or extra seeds. A failed economic guardrail is retained as a negative result, not a reason to retune on the same seeds.",
+  "resource_limits": "Owned Windows Job sampling bounds apply separately to each game and replay, but are not hard real-time RAM limits. stdout and stderr of owned workers are discarded; private replay and certificates are retained locally."
+}

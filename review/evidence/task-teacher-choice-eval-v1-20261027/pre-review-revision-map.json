@@ -1,0 +1,20 @@
+{
+  "reason": "Require positive bounded task-model invocation counts in both arms; no game has started",
+  "initial_freeze_sha256": "e40ff874cb00e9ddda463bc98e4b915621cba16da8b8afe96508c2c6d44870bf",
+  "revised_freeze_sha256": "cd9e8ecb6eca1f09eec0a86cac59a38674f693067a9105384f849e05cbb197de",
+  "registration_unchanged_sha256": "7d3d6389b5f46bb2a8378ee95b68c3b6b12bba7cdaaaa901f07dd6ac446ad24a",
+  "initial_review_sha256": "0709f9b7b7f4efc37766e5410acd4c60d83616ae2dda499b3561b6c760a75617",
+  "changed_source": {
+    "learning/task_teacher_choice_eval_v1/games.py": {
+      "initial": "55ac2196e30c85c52f4eebb12e41122e954006bf818b82d6a21fe128692470bd",
+      "revised": "665b1e353e70feaf0fb5a260bc1f55bf641e1026fa8ed8ff35623a2f02c1b3d1"
+    },
+    "learning/task_teacher_choice_eval_v1/test_games.py": {
+      "initial": "2eddb7888ddc4d40ffad0e7ba11af07888ed83f9f43f6b5d07ab9d6e902c42e1",
+      "revised": "3e9a15da422a048e6a29bda4a822cdc80c4cd0f2a19f0e388ad158d128ebc77c"
+    }
+  },
+  "initial_snapshot": "pre-review-initial",
+  "new_games": 0,
+  "official_transitions": 0
+}
