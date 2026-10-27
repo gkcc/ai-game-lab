@@ -1,0 +1,6 @@
+{
+  "source": "Independent subagent assessment, not WebChat",
+  "recommendation": "In a separate scoped repair, check the probe Job supervision result before attempting to read its receipt, and preserve the original stop or cleanup cause in failure reporting.",
+  "requirements": "Only a successfully completed and cleaned Job may proceed to receipt validation; validate the venv, Job membership and frozen identities before allowing a later worker. Cover the actual memory-limit/missing-receipt counterexample with pure fakes.",
+  "limits": "Keep the failed runner, its hashes and result unchanged. Do not rerun this consumed diagnostic or read its fixed trajectories as a retry."
+}

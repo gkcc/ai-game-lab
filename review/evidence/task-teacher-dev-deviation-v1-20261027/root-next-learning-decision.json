@@ -1,0 +1,5 @@
+{
+  "decision": "After publishing the honest failed attempt, verify a separately scoped reusable probe failure classifier and its integration contract.",
+  "basis": "The probe was stopped by the registered available-memory limit, but the outer runner attempted to read a missing receipt first and reported FileNotFoundError.",
+  "boundaries": "Do not change the frozen historical runner, lower the resource floor, rerun the consumed attempt, read its two trajectories or alter models and default Bot."
+}

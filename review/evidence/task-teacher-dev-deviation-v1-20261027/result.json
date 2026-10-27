@@ -1,0 +1,52 @@
+{
+  "passed": false,
+  "error_kind": "FileNotFoundError",
+  "marker": {
+    "created": true,
+    "complete": true
+  },
+  "identities": {
+    "marker_sha256": "dbc731928fe0582c4ece106465e6f5c5a8d1e29c58218122ad0d2d38b8cbba3f",
+    "freeze_sha256": "bdbaf192421ffb174ea5490e917faa9a77c49c147ab723c2327c8344298ed61f",
+    "registration_sha256": "c78f8fd74120dcc2de674d45c00485cd879e87c97b83588321540334bff3d445",
+    "pre_execution_commit_sha256": "69d1131e86dd37a1ddad1d55ee9b209a8d1d8b5f9b564d7ad27842b5d3f4f201",
+    "commit": "f2d20659db4db4269ecb8d2107ccb8da90bc356c",
+    "probe_marker_sha256": "3b5a85d36a83f354a6046ab467b9df4b9cc325355f33e4c64935110e96b3c2e8"
+  },
+  "job": null,
+  "probe_job": {
+    "passed": false,
+    "assigned": true,
+    "resumed": true,
+    "launcher_reaped": true,
+    "job_members_zero": true,
+    "error_kind": null,
+    "cleanup_error_kind": null,
+    "stop_reason": "available_memory_limit",
+    "exit_code": 1,
+    "termination_error_kind": null,
+    "wait_error_kind": null,
+    "membership_error_kind": null,
+    "close_error_kind": null,
+    "peak_sampled_rss_bytes": 2203648,
+    "peak_sampled_job_commit_bytes": 507904,
+    "max_sampled_members": 1,
+    "rss_threshold_sample_members": null,
+    "measurement_limit": "Same-snapshot member count and RSS are sampled; membership can race and values are not hard real-time limits",
+    "retry_allowed": false,
+    "rss_sampling_attempts": 1,
+    "rss_sampling_retries": 0,
+    "rss_complete_samples": 1,
+    "rss_discarded_samples": 0,
+    "sampling_limit": "Complete per-snapshot read only; membership can change or PID can be reused during sampling; no hard real-time memory cap"
+  },
+  "progress": {
+    "forwards_started": "unknown",
+    "forwards_completed": "unknown",
+    "accounting": "not_created_or_unknown"
+  },
+  "worker_result_sha256": null,
+  "retry_allowed": false,
+  "development_only": true,
+  "interpretation": "Development trajectories on training seeds; no independent holdout, causation, or hard memory cap"
+}

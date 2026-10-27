@@ -1,0 +1,32 @@
+{
+  "passed": false,
+  "diagnostic_completed": false,
+  "attempt_consumed": true,
+  "probe_stop_reason": "available_memory_limit",
+  "outer_error_kind": "FileNotFoundError",
+  "outer_error_interpretation": "Runner reads the missing probe receipt before checking failed Job supervision.",
+  "launcher_reaped": true,
+  "owned_job_members_zero": true,
+  "cleanup_error": false,
+  "data_worker_launched_by_runner": false,
+  "trace_reads_by_runner": 0,
+  "model_forwards_by_runner": 0,
+  "probe_partial_execution": "unknown",
+  "no_retry": true,
+  "no_economic_or_model_comparison": true,
+  "limitations": [
+    "Failure review relies on frozen control flow and aggregate Job receipt, not independent process observation.",
+    "Probe may have partly executed; unrelated process activity is not excluded.",
+    "Stop category does not establish a precise memory history or its cause."
+  ],
+  "evidence_sha256": {
+    "registration.json": "c78f8fd74120dcc2de674d45c00485cd879e87c97b83588321540334bff3d445",
+    "freeze.json": "bdbaf192421ffb174ea5490e917faa9a77c49c147ab723c2327c8344298ed61f",
+    "pre-review.json": "e658a91b9266a09f93a59d167080d36b96d5d83f2f8f3ad65aa16adcb65348af",
+    "pre-execution-commit.json": "69d1131e86dd37a1ddad1d55ee9b209a8d1d8b5f9b564d7ad27842b5d3f4f201",
+    "started.json": "dbc731928fe0582c4ece106465e6f5c5a8d1e29c58218122ad0d2d38b8cbba3f",
+    "probe-started.json": "3b5a85d36a83f354a6046ab467b9df4b9cc325355f33e4c64935110e96b3c2e8",
+    "result.json": "af69309d3223993cd0a0958b5fb638d4d24208e55e98272b0a7a8aa40098d24a",
+    "independent-failure-assessment.json": "27a78020c43a0f8467253e0d77380677558280d2a77e6f7837b00c317b182814"
+  }
+}
