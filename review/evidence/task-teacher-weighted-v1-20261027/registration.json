@@ -1,0 +1,83 @@
+{
+  "experiment": "task-teacher-weighted-v1",
+  "baseline_head": "f6fa40595bcc698b52c27e3b4476fbe9d736d34a",
+  "deadline_utc": "2026-10-27T19:36:00.087582+00:00",
+  "environment": {
+    "interpreter_sha256": "9b0bffb7a259cd2722df454fdfff41ee13665820cff1f578b1d97d31f9ef93d5",
+    "python": "3.12.2",
+    "numpy": "2.5.4",
+    "optimization_level": 0,
+    "python_optimize_env_absent": true
+  },
+  "wsl_software_versions": {
+    "python": "3.12.3",
+    "numpy": "2.5.4",
+    "jax": "0.4.38",
+    "optax": "0.2.4"
+  },
+  "gpu_launch_config_sha256": "4c90ee97e07e41cc381b724b357a180b83416d4863c2dfbe064dc40911e0177d",
+  "cache_path": "artifacts/task-teacher-choice-bc-v1-20261027/private/train.npz",
+  "cache_sha256": "9ffd92d7d6fce400acb2d59c99c596140a46a48cbd1206d28889a11d51f70dac",
+  "schema_path": "artifacts/task-teacher-choice-bc-v1-20261027/schema.json",
+  "schema_sha256": "54b68dd3d715ccab079dbc275ee034fad2cb6302439ee36a79e8287f23ba68e3",
+  "old_train_seeds": [
+    3911611436,
+    2328454240
+  ],
+  "expected_operations": {
+    "DIG": 8,
+    "FERTILIZE": 84,
+    "HARVEST": 199,
+    "PLANT": 146,
+    "WATER": 1816
+  },
+  "expected_class_weights": {
+    "DIG": 2.0,
+    "FERTILIZE": 2.0,
+    "HARVEST": 1.5047662968182804,
+    "PLANT": 1.7567872295366374,
+    "WATER": 0.49812423480891266
+  },
+  "weight_formula": "min(2,sqrt(N/(5*n_selected_operation)))",
+  "reference_checkpoint": "artifacts/task-teacher-choice-bc-v1-20261027/private/model-final.npz",
+  "reference_checkpoint_sha256": "b9a0f293c354aa78468c531e85645f70fbea9075a9dace729856119d913b24df",
+  "crop_checkpoint": "artifacts/bc-epoch6-holdout-v1-20261023/panels/fixed_epoch6/model/trained.npz",
+  "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+  "reserved_eval_seeds": [
+    184695214,
+    3955622345,
+    3036124589,
+    766061154,
+    3422861792,
+    143173434
+  ],
+  "seed_inventory_sha256": "d9a6d023f0f19fe3df310ffc2ea0dfe95461e82cffccc29dfc50ce705d67762a",
+  "seed_scope": "Prior accepted metadata exclusions plus old training and synthetic marker seeds",
+  "seed_history_limitation": "Private, deleted, unavailable, external or later unlisted seed history cannot be excluded",
+  "training": {
+    "training_seed": 2026102711,
+    "updates": 128,
+    "work_seconds": 870,
+    "process_seconds": 900,
+    "cancellation_wait_seconds": 20,
+    "cleanup_seconds": 10
+  },
+  "data_limits": {
+    "max_groups": 4000,
+    "max_candidates": 250000,
+    "max_archive_bytes": 134217728,
+    "max_uncompressed_bytes": 134217728
+  },
+  "host_limits": {
+    "preflight_min_available_bytes": 4294967296,
+    "preflight_samples": 3,
+    "preflight_interval_seconds": 10,
+    "min_available_bytes": 2147483648,
+    "poll_seconds": 0.25
+  },
+  "process_log_bytes": 1048576,
+  "retry_allowed": false,
+  "no_official_games": true,
+  "no_automatic_promotion": true,
+  "interpretation": "One weighted fit on reused training examples; independent competitive improvement is not proven"
+}

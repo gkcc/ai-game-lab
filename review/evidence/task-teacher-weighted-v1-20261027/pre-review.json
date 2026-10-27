@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "freeze_sha256": "b366b58070afe9144940b4a4f28f5bfdda452df91d297638ae21683b34343193",
+  "registration_sha256": "ed9ace658fdad78b2f72855cc8def1080fa6e89117e232ed649254ac643ef30a",
+  "source_identities": {
+    "learning/task_teacher_weighted_v1/campaign.py": "328b6f3bfdc50686c430d2619ccde41ea5900510e7a9512df75ecebfa8d4493d",
+    "learning/task_teacher_weighted_v1/experiment.py": "b97cf8e21a34d9e01249fc13309d6ac61df6bcf89b02728c42e8ab8f22231d76",
+    "learning/task_teacher_weighted_v1/gpu_entry.py": "7d68dfe27131dad6acbdc0c35ac1b86df4b706d35f0e42c3c136266f825af028",
+    "learning/task_teacher_weighted_v1/test_campaign.py": "3f0c5ef02f4bc0378b9f50eb805b574cd109a5b85540e2e4700d4c45ebae97f2",
+    "learning/task_teacher_weighted_v1/test_cpu_gradient.py": "b62105c190e42016720dfdb1958ac3799329a188fd132f5dd8a68da6cb6922f8",
+    "learning/task_teacher_weighted_v1/test_experiment.py": "ceea2022aa7702dc6055b93424bec6bafeeea91f6843e958c827aa4ec0094196",
+    "learning/task_teacher_weighted_v1/test_gpu_entry.py": "3e88a7549d3c1dc5aa4a02318f43b86fdebb182ec49f1622b50e72c493d7508f",
+    "learning/task_teacher_weighted_v1/test_weights.py": "710a0f6d8b836bccd97888e677159e0c308c431af4fa4c0844043d677fe5e5dc",
+    "learning/task_teacher_weighted_v1/training.py": "766ca0133f5b879e2e05638b826406ad04568bd1dec36cfa78bb055640a5a4fe",
+    "learning/task_teacher_weighted_v1/weights.py": "99ea76d4818b7d8315bad33e0b781f2e4f3a2dd11d59162f67432de3f3f0ff16"
+  },
+  "runtime_source_count": 288,
+  "test_count": 14,
+  "test_scope": "five pure fake and synthetic CPU test modules, including real nested loss gradient before optimizer update",
+  "findings": [
+    "Published parent evidence bytes agree with baseline commit and local metadata; archived cache, schema, model-seal and operation-count identities are bound.",
+    "All 10 new source files and 288 frozen runtime source hashes matched; trainer diff confines intended training change to selected-operation group weights.",
+    "Six distinct reserved seeds are outside the 50364 entries in the frozen prior metadata exclusion roles, including old training and synthetic seeds.",
+    "Fixed counts and inverse-frequency capped weights, one attempt, 128 updates, parity and no automatic promotion match registration.",
+    "Three 4 GiB preflight samples precede the marker; sampled 2 GiB cancellation and separate Windows transport and Linux session cleanup are implemented. Token and session checks prevent accidental unsupervised worker invocation.",
+    "No fit, guard or model-seal marker existed at review."
+  ],
+  "limitations": [
+    "This review did not open or decode the old training cache, model files or traces and did not run WSL, GPU, fit or games. Prepare previously read reference and crop checkpoint bytes for SHA verification without decoding or inference.",
+    "Seed exclusions cover accepted available metadata only; unlisted, private, deleted or external history may overlap.",
+    "Source and fake tests do not establish actual WSL startup, GPU operation, live cancellation or cleanup; sampled available memory is not a hard realtime or GPU memory limit.",
+    "Token guards accidental misuse, not malicious same-user processes, and is locally present in process arguments and environment.",
+    "Training class frequencies are not actual batch exposures; reused training data and a technical fit do not prove generalization or competitive gain.",
+    "File identity checks do not rule out transient replacement and restoration between checks."
+  ]
+}

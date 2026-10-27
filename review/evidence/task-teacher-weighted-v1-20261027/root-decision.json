@@ -1,0 +1,14 @@
+{
+  "previous_commit": "f6fa40595bcc698b52c27e3b4476fbe9d736d34a",
+  "status": "approved_for_implementation_not_execution",
+  "created_utc": "2026-10-27T15:36:00.087582+00:00",
+  "deadline_utc": "2026-10-27T19:36:00.087582+00:00",
+  "purpose": "One fixed capped operation-weighted BC fit using the previously sealed teacher-choice training sample.",
+  "hypothesis": "Counter class imbalance with min(2,sqrt(N/(5*n_selected_operation))); no test outcome selects weights.",
+  "controlled": "Same old archive, schema, initial/training seed, group order, candidate packing, optimizer, 128 updates and recorded WSL software as the prior fit; only group loss weights differ in the copied trainer.",
+  "acceptance": "One archive snapshot, exact old selected-operation counts/seed roles, 128 synchronized GPU updates with nonzero gradient and changed weights, 16-group CPU/GPU parity, independent review and confirmed Windows transport plus Linux session cleanup.",
+  "resources": "Three 4GiB host-memory samples before marker; host 2GiB sampled cancellation floor, separate Linux process-group guard, bounded time and one attempt; no claim of GPU memory hard cap.",
+  "stop_conditions": "After fit-start marker any identity/resource/fit/cleanup failure stops without retry or replacement. Before marker low-memory preflight reads no cache.",
+  "boundaries": "No failed-panel trace, new official game, old holdout result selection, automatic model promotion, PPO or changes to frozen trainer/default Bot/driver. Checkpoint and local logs remain private.",
+  "provenance": "Independent subagent advice and review, not WebChat."
+}
