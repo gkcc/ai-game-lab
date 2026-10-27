@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "freeze_sha256": "65b02973fe24ad8cd346a6a95e4e9faca0071effcd4aa642b393d61575a03f8a",
+  "registration_sha256": "002c9547083e8abb8923ff31d1e2a17f305fb4a0e918dbbada96100dfc571787",
+  "checks": [
+    "Exact source set, frozen runtime and protected source SHA and registration binding verified",
+    "Prior v1 failure evidence equals published baseline bytes, parent identities match, prior model and cache commitments retained without reading private inputs; old attempt remains consumed",
+    "Uses unchanged v1 compare: first 16 completed groups, 8192 candidate rows maximum, atol 1e-4, rtol 1e-5, argmax equality; fixed GPU CPU diagnostic budget",
+    "Start entry handles partial marker, spawn lifecycle unknown when handle absent, primary and secondary errors, independent cleanup and receipt failure; Linux and Windows cleanup conditions reviewed",
+    "18 synthetic entry and comparison regression tests passed in project virtual environment",
+    "No training, gradients, holdout reads, official transitions or new games registered; only aggregate errors and cleanup intended for publication"
+  ],
+  "limitations": [
+    "No model, training cache, raw traces or private GPU configuration read during review",
+    "No GPU, model inference, engine, training or real subprocess diagnostic executed; actual candidate count, numerical agreement and cleanup remain unverified",
+    "Identity postchecks do not exclude transient replacement and restoration; no unique inference about previous ValueError cause"
+  ]
+}

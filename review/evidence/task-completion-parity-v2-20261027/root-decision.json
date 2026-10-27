@@ -1,0 +1,18 @@
+{
+  "status": "approved_for_implementation_not_execution",
+  "previous_commit": "1206e724e228d429fc7e4f8c6b73515567240096",
+  "model_requirement": "gpt-6.1-terra",
+  "reason": "The prior diagnostic consumed its attempt on a deterministic six-target/five-value startup failure before GPU transport. Its source, marker, review and delayed publication record remain unchanged.",
+  "repair": "Use a separately frozen v2 entry with corrected initialization, explicit marker creation state, and failure/cleanup receipts covering setup, transport startup and monitoring. Do not refund or retry the old attempt.",
+  "question": "Does the same unsealed checkpoint show GPU versus CPU inference disagreement on the first sixteen already-consumed completed training groups?",
+  "selection": "First 16 completed_observed groups in recorded training cache order; no replacement, at most 8192 candidate rows and 16 group-level GPU forwards.",
+  "comparison": "Reuse v1 comparison code, identical saved parameters and normalization; compare all logits at atol=1e-4 and rtol=1e-5 and exact canonical first argmax. Ordinary numeric differences are reported after all groups, not treated as an execution failure.",
+  "budget": "One new versioned attempt; 300 seconds work, 420 seconds process, no gradients, training, held-out data, new games or official transitions.",
+  "preflight": "Exercise the actual start entry with simulated normal, configuration failure, partial marker write, spawn failure, runtime failure, cleanup failure, duplicate marker and receipt failure. Independently review exact frozen source before execution.",
+  "cleanup_boundary": "If process construction raises before a handle is returned, report child lifecycle as unknown; never claim cleanup was proven without the supervisor receipts.",
+  "interpretation": "No comparison result uniquely identifies the older training ValueError or establishes game strength or a model suitable for deployment.",
+  "privacy": "No checkpoint, numeric cache, per-candidate logits, device configuration, private paths or logs are published.",
+  "start_utc": "2026-10-27T08:18:00+00:00",
+  "deadline_utc": "2026-10-27T10:18:00+00:00",
+  "local_registration_not_independent_timestamp": true
+}

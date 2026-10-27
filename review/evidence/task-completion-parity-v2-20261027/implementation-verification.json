@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "tests": 18,
+  "command": "python -B -m unittest learning.task_completion_parity_v2.test_entry learning.task_completion_parity_v1.test_compare learning.task_completion_parity_v1.test_worker -q",
+  "scope": "Synthetic simulated startup and numerical checks; no real process, GPU, training, model or cache decode",
+  "freeze_sha256": "65b02973fe24ad8cd346a6a95e4e9faca0071effcd4aa642b393d61575a03f8a"
+}
