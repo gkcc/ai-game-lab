@@ -1,0 +1,203 @@
+{
+  "experiment": "task-teacher-choice-bc-v1",
+  "baseline_head": "fd05badc54f409b2c9bee35038e124f819316e06",
+  "deadline_utc": "2026-10-27T15:50:11+00:00",
+  "source_root": "artifacts/task-action-observation-v1-20261027",
+  "attested_sources": [
+    {
+      "game": "dev-3911611436-round2-0-baseline",
+      "side": 0,
+      "seed": 3911611436,
+      "trace": {
+        "path": "traces/dev-3911611436-round2-0-baseline.jsonl.gz",
+        "size": 7364482,
+        "sha256": "87510d2084239558dab64f33ac95b96bc4041ceaa14898b0483fac962cf40b59"
+      },
+      "replay_sha256": "4a5b31167c0d24df23779fe6c8a51c0fac2f822724bfcebe9762151387072781",
+      "audit_sha256": "f604a3203ae4e93ccc771a61080b60122193afa42e656ee3c3d9f36ab7599d9c"
+    },
+    {
+      "game": "dev-3911611436-round2-0-candidate",
+      "side": 0,
+      "seed": 3911611436,
+      "trace": {
+        "path": "traces/dev-3911611436-round2-0-candidate.jsonl.gz",
+        "size": 7369040,
+        "sha256": "32a2f36f4fa5c914732a43ef2a85fd92ed8ce166947a2c96db1802033b8c8015"
+      },
+      "replay_sha256": "7ae8efcd44b974384a28acaddcb17eab8403bc51674f1ff491558932be735f8e",
+      "audit_sha256": "f604a3203ae4e93ccc771a61080b60122193afa42e656ee3c3d9f36ab7599d9c"
+    },
+    {
+      "game": "dev-3911611436-round2-0-teacher_task",
+      "side": 0,
+      "seed": 3911611436,
+      "trace": {
+        "path": "traces/dev-3911611436-round2-0-teacher_task.jsonl.gz",
+        "size": 7399657,
+        "sha256": "ccb50cfb4f63ed51c5f377dc834fa29ee11752e7f10355a50d38aaf98c8128ec"
+      },
+      "replay_sha256": "1d53fd7da21edaa5b473973fd42b2287693d7d5d7e3f1cb6beac8a82f1e22ef3",
+      "audit_sha256": "f604a3203ae4e93ccc771a61080b60122193afa42e656ee3c3d9f36ab7599d9c"
+    },
+    {
+      "game": "dev-3911611436-market-1-candidate",
+      "side": 1,
+      "seed": 3911611436,
+      "trace": {
+        "path": "traces/dev-3911611436-market-1-candidate.jsonl.gz",
+        "size": 7435798,
+        "sha256": "2c34bd0ec448c8625ed3518882d05c812d8ddf66dd9c3b9cd9fe701a8683b5a9"
+      },
+      "replay_sha256": "9bacd868b101c9d704533e657c47dca8623b601a8dab3d8166b090ca09646153",
+      "audit_sha256": "f604a3203ae4e93ccc771a61080b60122193afa42e656ee3c3d9f36ab7599d9c"
+    },
+    {
+      "game": "dev-2328454240-round2-0-baseline",
+      "side": 0,
+      "seed": 2328454240,
+      "trace": {
+        "path": "traces/dev-2328454240-round2-0-baseline.jsonl.gz",
+        "size": 7694231,
+        "sha256": "db252f099cf5eb27623464dc7fb88fe5f979a06b756fc2d4f8e54590bed4af6d"
+      },
+      "replay_sha256": "4b00683c7ea955e12dc31a0d20448f3837c78cb3a04b6db45f1bb00ace5128f8",
+      "audit_sha256": "f604a3203ae4e93ccc771a61080b60122193afa42e656ee3c3d9f36ab7599d9c"
+    },
+    {
+      "game": "dev-2328454240-round2-0-candidate",
+      "side": 0,
+      "seed": 2328454240,
+      "trace": {
+        "path": "traces/dev-2328454240-round2-0-candidate.jsonl.gz",
+        "size": 7794832,
+        "sha256": "30ef615840681af91ceadc6027c3eb09477d8fec59b061d54e178ba03dfc31da"
+      },
+      "replay_sha256": "b6dbb881e30ec85735113723f97ce0608471e24cbed130d46e800e38447bb805",
+      "audit_sha256": "f604a3203ae4e93ccc771a61080b60122193afa42e656ee3c3d9f36ab7599d9c"
+    },
+    {
+      "game": "dev-2328454240-round2-0-teacher_task",
+      "side": 0,
+      "seed": 2328454240,
+      "trace": {
+        "path": "traces/dev-2328454240-round2-0-teacher_task.jsonl.gz",
+        "size": 7715464,
+        "sha256": "6c1ea5f3601c4f1fa65bfeec4da0ecba17d34ea0d5e6552ca4841061f0e77091"
+      },
+      "replay_sha256": "1bbca773ae957ee1902dd2bd222085e726c28b7cc26e48f2b9a25b2c6c85f80f",
+      "audit_sha256": "f604a3203ae4e93ccc771a61080b60122193afa42e656ee3c3d9f36ab7599d9c"
+    },
+    {
+      "game": "dev-2328454240-market-1-candidate",
+      "side": 1,
+      "seed": 2328454240,
+      "trace": {
+        "path": "traces/dev-2328454240-market-1-candidate.jsonl.gz",
+        "size": 7846227,
+        "sha256": "3dd4d1988038b3d4081805ded9e9e949276e0991005d07e512be46def414e326"
+      },
+      "replay_sha256": "db9cd19a09364a730c35876b78d8942afb84b54fe37d51e63a194b132cb1d38c",
+      "audit_sha256": "f604a3203ae4e93ccc771a61080b60122193afa42e656ee3c3d9f36ab7599d9c"
+    }
+  ],
+  "source_arms": {
+    "dev-3911611436-round2-0-baseline": "baseline",
+    "dev-3911611436-round2-0-candidate": "candidate",
+    "dev-3911611436-round2-0-teacher_task": "teacher_task",
+    "dev-3911611436-market-1-candidate": "candidate",
+    "dev-2328454240-round2-0-baseline": "baseline",
+    "dev-2328454240-round2-0-candidate": "candidate",
+    "dev-2328454240-round2-0-teacher_task": "teacher_task",
+    "dev-2328454240-market-1-candidate": "candidate"
+  },
+  "source_manifest_sha256": "7ec2b85b4a15e3fa394deba83144f7d9cf62cecc4ce812eac2a4314a704ea601",
+  "schema_sha256": "54b68dd3d715ccab079dbc275ee034fad2cb6302439ee36a79e8287f23ba68e3",
+  "seed_inventory_sha256": "1984f3aaa455942a3ce7e378603af04b34111fc7417d3fff2ad7c279db6769a9",
+  "train_seeds": [
+    3911611436,
+    2328454240
+  ],
+  "reserved_test_seeds": [
+    2941010634,
+    3774915423
+  ],
+  "evaluation_plan": {
+    "new_games": 8,
+    "live_transitions": 5752,
+    "primary_replay_transitions": 5752,
+    "independent_replay_transitions": 719,
+    "total_transitions": 12223,
+    "opponents": [
+      "round2"
+    ],
+    "seats": [
+      0,
+      1
+    ],
+    "seed_mean_own_min": -1000,
+    "seed_mean_margin_min": -1000,
+    "seat_own_min": -2000,
+    "seat_margin_min": -2000
+  },
+  "sampling_algorithm": "sha256-compact-json-game-step-ordinal-first16-lt8192",
+  "collection_limits": {
+    "compressed_bytes": 134217728,
+    "decoded_bytes": 2147483648,
+    "max_line_bytes": 16777216,
+    "max_groups": 4000,
+    "max_candidates": 250000,
+    "max_candidates_per_group": 8192
+  },
+  "data_limits": {
+    "max_groups": 4000,
+    "max_candidates": 250000,
+    "max_archive_bytes": 134217728,
+    "max_uncompressed_bytes": 134217728,
+    "min_groups": 256,
+    "min_groups_per_seed": 32,
+    "min_selected_operations": 3
+  },
+  "collection_supervision": {
+    "max_rss_bytes": 1610612736,
+    "max_commit_bytes": 2147483648,
+    "min_available_bytes": 2147483648,
+    "wall_seconds": 900,
+    "poll_seconds": 0.25,
+    "cleanup_seconds": 10
+  },
+  "training": {
+    "training_seed": 2026102711,
+    "work_seconds": 1180,
+    "process_seconds": 1200,
+    "updates": 128
+  },
+  "storage": {
+    "process_log_bytes": 16777216
+  },
+  "gpu_launch_config_sha256": "4c90ee97e07e41cc381b724b357a180b83416d4863c2dfbe064dc40911e0177d",
+  "wsl_software_versions": {
+    "python": "3.12.3",
+    "numpy": "2.5.4",
+    "jax": "0.4.38",
+    "optax": "0.2.4"
+  },
+  "wsl_preflight_sha256": "be1946301f21e7ec9e867802320d9ac91de5cbd8d7e23e0e9b926f63ae8431ed",
+  "windows_venv_interpreter_sha256": "9b0bffb7a259cd2722df454fdfff41ee13665820cff1f578b1d97d31f9ef93d5",
+  "reference_checkpoint": "artifacts/task-completion-bc-reentry-v1-20261027/private/model-final.npz",
+  "reference_checkpoint_sha256": "47def382fff8738583d2359964d2e14bfbb41b53e9dc428d2882519ada8e1811",
+  "crop_checkpoint": "artifacts/bc-epoch6-holdout-v1-20261023/panels/fixed_epoch6/model/trained.npz",
+  "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+  "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "official_loader_sha256": "0ac7baf1212b4ce1eabae3cc1cbb55c98effef5e0d0485522a8be87097c39a4f",
+  "runtime_versions": {
+    "python": "3.12.2",
+    "numpy": "2.5.4",
+    "kaggle_environments": "1.33.0"
+  },
+  "input_role": "Eight mixed-controller development traces; conditional teacher choices, not teacher trajectories",
+  "no_old_test_data": true,
+  "no_new_games_this_stage": true,
+  "retries": false
+}

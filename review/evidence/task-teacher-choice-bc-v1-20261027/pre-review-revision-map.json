@@ -1,0 +1,19 @@
+{
+  "reason": "Remove extra blank lines at end of training source; no runtime behavior change and no experiment executed",
+  "initial_freeze_sha256": "ba5dc868c43c6881021bb543581240b50daf58be0204fe1da235ff2a2f5ffdd5",
+  "revised_freeze_sha256": "47aa91072d97e3eabe24b78c524f9021bbe6167bbcfb38cbd002332465b4938f",
+  "registration_unchanged_sha256": "d1054824def64a2f04501c5de5ad210ddb9962edddb0727b0c748a322fc4068d",
+  "initial_review_sha256": "c1da77bae26de7c148fbdb27957b67a0189a892278afeaa8edb81339061ab96b",
+  "changed_source": {
+    "learning/task_teacher_choice_bc_v1/training.py": {
+      "initial": "a63f2b1e7ec1949253cc4efc3d41227636ccadc31b2bdeab10c4c47b5783105b",
+      "revised": "a36e260ca8d51f4d39efb0d795053a757555036e01018a4ec9faa177b04859a3"
+    }
+  },
+  "initial_training_source_published": false,
+  "initial_training_source_retained_locally": true,
+  "initial_snapshot": "pre-review-initial",
+  "new_games": 0,
+  "trace_reads": 0,
+  "training_updates": 0
+}

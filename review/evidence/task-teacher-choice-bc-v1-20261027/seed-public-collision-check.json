@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "selection_already_fixed": true,
+  "exact_seed_matches_in_prior_tracked_public_text": 0,
+  "scope": "Exact literal search of the two reserved seeds in tracked text at the published baseline commit, excluding this uncommitted new stage. No private replay, trace, array or old test row was read.",
+  "limitation": "This additional check cannot exclude untracked, deleted, unavailable or external history; the registered metadata inventory remains the seed-selection rule.",
+  "reselection_after_check": false
+}

@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "freeze_sha256": "47aa91072d97e3eabe24b78c524f9021bbe6167bbcfb38cbd002332465b4938f",
+  "registration_sha256": "d1054824def64a2f04501c5de5ad210ddb9962edddb0727b0c748a322fc4068d",
+  "initial_freeze_sha256": "ba5dc868c43c6881021bb543581240b50daf58be0204fe1da235ff2a2f5ffdd5",
+  "initial_review_sha256": "c1da77bae26de7c148fbdb27957b67a0189a892278afeaa8edb81339061ab96b",
+  "revision_map_sha256": "b457b47d25abbdefcb3af610476b079ef28cf737ac043ab9c0a703c6f4e317ff",
+  "checks": [
+    "Initial and revised training source differ only in trailing CRLF blank lines; the sole changed freeze entries are that source in runtime and new-source maps.",
+    "Registration unchanged; revision-map hashes and every current frozen runtime hash checked.",
+    "Data and fit start/result markers absent at review.",
+    "24 pure fake tests passed; prior independent review applies subject to this exact source revision."
+  ],
+  "limitations": [
+    "Prior actor reconstruction and actual compressed trace hash are relied on for source identity.",
+    "Seed exclusion covers recognized scanned metadata only.",
+    "WSL package bytes, actual cleanup and sample sufficiency not independently verified.",
+    "No private inventory, configuration, trace, cache or model read; no GPU or training executed."
+  ]
+}

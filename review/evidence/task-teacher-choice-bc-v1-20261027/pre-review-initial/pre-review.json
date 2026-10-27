@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "freeze_sha256": "ba5dc868c43c6881021bb543581240b50daf58be0204fe1da235ff2a2f5ffdd5",
+  "registration_sha256": "d1054824def64a2f04501c5de5ad210ddb9962edddb0727b0c748a322fc4068d",
+  "checks": [
+    "Registration, decision and public input hashes match freeze and configuration; all 273 frozen runtime hashes and 16 source files match.",
+    "Published parent Job, coverage, historical registration, actor audit manifest and accepted reference model evidence checked; eight source actor reconstruction attestations match.",
+    "Two distinct reserved seeds do not overlap training seeds; fixed collection, sample and fit budgets agree with source.",
+    "24 pure fake tests passed; collection and fit use one-shot markers and failure stops.",
+    "No prior test results are used as training inputs; new games require separate preregistration."
+  ],
+  "limitations": [
+    "Historical source authenticity relies on previously accepted actor reconstruction and matching compressed trace SHA during actual collection; no trace was read here.",
+    "Seed exclusion is limited to recognized metadata structures and scanned files; unavailable and external history cannot be ruled out.",
+    "WSL package versions are preregistered observations, not frozen package bytes; no WSL or GPU execution was independently performed.",
+    "Private seed inventory, GPU configuration, model and cache were not opened; real process cleanup and actual sample sufficiency remain untested."
+  ]
+}

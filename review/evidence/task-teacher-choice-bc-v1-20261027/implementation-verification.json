@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "freeze_sha256": "47aa91072d97e3eabe24b78c524f9021bbe6167bbcfb38cbd002332465b4938f",
+  "synthetic_tests": 24,
+  "scope": "pure fake tests; no real trace, training archive, model, GPU fit or game read",
+  "tests": "python -B -m unittest learning.task_teacher_choice_bc_v1.test_extract learning.task_teacher_choice_bc_v1.test_collect learning.task_teacher_choice_bc_v1.test_numeric learning.task_teacher_choice_bc_v1.test_training learning.task_teacher_choice_bc_v1.test_gpu_entry learning.task_teacher_choice_bc_v1.test_campaign learning.task_teacher_choice_bc_v1.test_data_worker learning.task_teacher_choice_bc_v1.test_experiment"
+}

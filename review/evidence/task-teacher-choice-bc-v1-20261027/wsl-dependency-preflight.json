@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "method": "Before registration, the primary agent ran a hidden WSL Python process that imported NumPy, JAX and optax and printed their versions and Python version. It made no explicit device-discovery or array-computation call.",
+  "versions": {
+    "python": "3.12.3",
+    "numpy": "2.5.4",
+    "jax": "0.4.38",
+    "optax": "0.2.4"
+  },
+  "explicit_gpu_operations": 0,
+  "training_data_reads": 0,
+  "independently_repeated": false,
+  "limitation": "This is a local version observation, not a GPU or cleanup test. The later worker rechecks installed package metadata before reading the training archive."
+}
