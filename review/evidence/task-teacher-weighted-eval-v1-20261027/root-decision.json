@@ -1,0 +1,14 @@
+{
+  "previous_commit": "372f14bc2774eac9998c3b85d3e44a98bd119a71",
+  "status": "approved_for_implementation_not_execution",
+  "created_utc": "2026-10-27T15:55:34.564123+00:00",
+  "deadline_utc": "2026-10-27T19:55:34.564123+00:00",
+  "purpose": "Paired exploratory official-game comparison of weighted versus unweighted task-choice BC, against two frozen opponents.",
+  "panel": "First three of six seeds reserved before weighted fit; round2 and market; both seats; both models; 24 games and 24 primary replays; one separate 719-transition replay. Remaining three seeds unopened.",
+  "acceptance": "Every game 720 states, 719 actions, both DONE, zero errors, verified engine, models and replay receipts. Three seed clusters; 10000 seed-cluster bootstrap draws descriptive only.",
+  "exploratory_guards": "Each paired seed/opponent/seat own profit and cash margin delta >= -2000; per seed/opponent seat-mean deltas >= -1000; no promotion or significance claim.",
+  "resources": "Three 4GiB available-memory samples before each match, 2GiB sampled host floor, bounded Job and four-hour deadline; sampling is not a hard system/GPU cap.",
+  "stop_conditions": "Any identity, resource, game, replay or cleanup failure after marker stops without retry, replacement or adaptive extra seeds.",
+  "boundaries": "No retraining, BC data collection, PPO, tuning, model promotion, default Bot or official rule modification. Raw replays, logs and models stay private.",
+  "provenance": "Independent subagent advice and code review, not WebChat."
+}

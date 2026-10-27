@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent; not WebChat",
+  "freeze_sha256": "57792cbabd0ca224cc8f37cd973de05d2997ea2b96f9525342b97cfda62329db",
+  "registration_sha256": "153f58ea31aaadf7daf2be29bdf12654bbbed2b33e504a5d7c606c4735dc9fef",
+  "checks": [
+    "Verified all 12 new source and 286 runtime source hashes; parent evidence bytes match the frozen published baseline.",
+    "First three seeds match the reservation fixed before the weighted fit; other three remain unused by this panel. All six are absent from 50365 recognized prior seed values in 668 metadata files.",
+    "Verified two frozen opponents, both seats and models, 24 games, 24 primary replays and one independent replay, at most 35231 official transitions.",
+    "Verified model and engine identity contracts, resource preflight and sampled cancellation, one attempt, complete-panel verification and independent replay gate.",
+    "Verified per-pair and seed-opponent inclusive guardrails and seed-cluster bootstrap scope; 23 synthetic tests passed."
+  ],
+  "limitations": [
+    "No model, cache, replay or training data decoded; no official game, replay, GPU or training executed during review.",
+    "Seed inventory covers recognized available non-private metadata; external, private, deleted or unlisted history may overlap.",
+    "Actual worker execution, host memory cancellation and cleanup remain untested; sampled memory is not a hard realtime limit.",
+    "Three seed clusters support descriptive exploration only, not statistical significance, competitive promotion or generalization.",
+    "Independent replay uses the same official rules engine and shared validators.",
+    "Original test source snapshot was not separately retained; its bytes were reconstructed and verified against the archived source hash."
+  ],
+  "previous_freeze_sha256": "81611bfe4be5f45edacbd4167fb2c32898b66d4848b4204328cc10e8f7739932",
+  "previous_pre_review_sha256": "26abfe9dd4cc05d38c654359ba682f237e0f06cbf590eb07d56948e962f94540",
+  "revision_reason": "Privacy scanner matched a fictitious absolute-path test literal; equivalent string concatenation preserves the test value.",
+  "revision_checks": [
+    "Previous source bytes reconstructed from the unique revised expression and matched previous source SHA; current source and all frozen runtime SHA matched.",
+    "Old and new freeze differ only in the test_games source SHA; registration bytes unchanged; no game or independent marker existed.",
+    "All 23 fake tests passed after revision."
+  ]
+}

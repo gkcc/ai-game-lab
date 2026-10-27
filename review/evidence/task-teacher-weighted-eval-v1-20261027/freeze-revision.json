@@ -1,0 +1,9 @@
+{
+  "previous_freeze_sha256": "81611bfe4be5f45edacbd4167fb2c32898b66d4848b4204328cc10e8f7739932",
+  "previous_review_sha256": "26abfe9dd4cc05d38c654359ba682f237e0f06cbf590eb07d56948e962f94540",
+  "revised_freeze_sha256": "57792cbabd0ca224cc8f37cd973de05d2997ea2b96f9525342b97cfda62329db",
+  "changed_source": "learning/task_teacher_weighted_eval_v1/test_games.py",
+  "old_source_sha256": "4da3ef353fb90824bfbe16dd5ae72a5b987b2be9c147b204ce2bddbda790964c",
+  "new_source_sha256": "85bb1237c14d82409214ada9f88a473625774e099f2258e622aff4e75210a734",
+  "reason": "Replace synthetic Windows path literal with equivalent concatenation after privacy scanner false positive; no execution or registration change."
+}
