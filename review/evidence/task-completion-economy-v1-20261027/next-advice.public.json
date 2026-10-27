@@ -1,0 +1,8 @@
+{
+  "source": "independent gpt-6.1-terra subagent, not WebChat",
+  "recommendation": "Consider one separately registered post-result descriptive diagnosis of the worst economic pair, seed 3342200684, seat 0 under a disclosed tie-break. Compare its candidate and teacher games without new matches or training.",
+  "scope": "Read exactly two existing replays and two traces once each. Find the first complete-request difference on a common full history, then assess whether same-input task-choice differences link to that request. Stop same-context causal comparison after physical divergence.",
+  "official_replay": "If the preselected turn's official atomic event is not already available, preregister at most one official replay of the candidate game, 719 transitions maximum, using its already-read replay. Record requested, rewritten and executed status separately; unknown when unavailable.",
+  "limits": "128 MiB compressed and 1 GiB decoded, one read per file, 300 seconds checked at processing boundaries without preemption inside a single decode. Any failure or budget breach stops without retry and preserves partial accounting.",
+  "interpretation": "The seed was selected after viewing outcomes. This is descriptive follow-up, not an independent holdout, proof of financial causation or statistical evaluation. No new games, training, PPO or DAgger."
+}

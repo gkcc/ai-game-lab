@@ -1,0 +1,106 @@
+[
+  {
+    "game": "holdout-3342200684-round2-0-candidate",
+    "certificate_sha256": "fd62e44a07397148b254a2164c1afe905510b3adfd48bbb50e9e685b2c8ef79d",
+    "replay_sha256": "39ad677b9f8ed321560be13c34f54924b145480d4b9201eac5cc22405eb18f71",
+    "trace_sha256": "672415e1663bc5efcb39cdab3c996f0bf7e107895a41461fa894919f7a8d414e",
+    "official_transitions": 719,
+    "cleanup": {
+      "owned_instances_observed": 10,
+      "owned_instances_remaining": 0,
+      "reader_joined": true,
+      "launched_process_reaped": true
+    }
+  },
+  {
+    "game": "holdout-3342200684-round2-0-teacher_task",
+    "certificate_sha256": "b038f39b0ef2f2814017f5f03e2b277f9341581ddd1b2679d830742325c77b14",
+    "replay_sha256": "b61a3413550ca39ccc555068428f06e5feab57e7509baed743e179756c2a853c",
+    "trace_sha256": "1c8e284ced37e0ef88b792e00cc3374c26d8edf29593027a747a6f4fc5fb8baa",
+    "official_transitions": 719,
+    "cleanup": {
+      "owned_instances_observed": 5,
+      "owned_instances_remaining": 0,
+      "reader_joined": true,
+      "launched_process_reaped": true
+    }
+  },
+  {
+    "game": "holdout-3342200684-round2-1-candidate",
+    "certificate_sha256": "46abc14bffe3995808dc2213dda2d5cb62276630ed4da0845564d80835d86cf7",
+    "replay_sha256": "1e6eb293ff7e2b1612f1c96441f9ae9cc026cc01a3886acd7da22e3b612294ee",
+    "trace_sha256": "d5d88eae2be4846854861c85b12d3a6ef7fcf24f15fa590254e5d8f659defd72",
+    "official_transitions": 719,
+    "cleanup": {
+      "owned_instances_observed": 7,
+      "owned_instances_remaining": 0,
+      "reader_joined": true,
+      "launched_process_reaped": true
+    }
+  },
+  {
+    "game": "holdout-3342200684-round2-1-teacher_task",
+    "certificate_sha256": "013fa8b04bf9fa876990f8c6b63082b2c14550f80c03ea7cb9d65138ad699ef9",
+    "replay_sha256": "226d88404aba94781839e8911b5bb57e8478b02f0b3679ef04df2eaf5d701552",
+    "trace_sha256": "caaac11e18b6ee278bc1b98f8516c302831fc415aa41786d8fdf0fac1b615a9d",
+    "official_transitions": 719,
+    "cleanup": {
+      "owned_instances_observed": 6,
+      "owned_instances_remaining": 0,
+      "reader_joined": true,
+      "launched_process_reaped": true
+    }
+  },
+  {
+    "game": "holdout-3556679524-round2-0-candidate",
+    "certificate_sha256": "1978308c718cced197a099465a2b86ee336d100b77a1ddf5fd7f5cbedfb3409f",
+    "replay_sha256": "6bbc885b5f251397e47fd84df337693a40d7d8c9b20cad9872f5500fa64c4269",
+    "trace_sha256": "e668f06c9bba7cf1d98bb7c819843318ac753e974211c5fd3eb5be1f97a39afa",
+    "official_transitions": 719,
+    "cleanup": {
+      "owned_instances_observed": 5,
+      "owned_instances_remaining": 0,
+      "reader_joined": true,
+      "launched_process_reaped": true
+    }
+  },
+  {
+    "game": "holdout-3556679524-round2-0-teacher_task",
+    "certificate_sha256": "d8d4c6017250c6d3e81011c700fa5bf07faaa503a4ad0f7a33ee2bba887880b5",
+    "replay_sha256": "0eef28868116232e8925bf724fec36519eafdf31ef2f7294c7b8ffb19b94ff6f",
+    "trace_sha256": "41ceb66bb6b89bc354ab369df49ee69f160d0b650918809046123872254d19d8",
+    "official_transitions": 719,
+    "cleanup": {
+      "owned_instances_observed": 11,
+      "owned_instances_remaining": 0,
+      "reader_joined": true,
+      "launched_process_reaped": true
+    }
+  },
+  {
+    "game": "holdout-3556679524-round2-1-candidate",
+    "certificate_sha256": "df0a9256127f4152a6b038d8a1fc998ccaadc51238de875fbdfd803121789eca",
+    "replay_sha256": "fe1d7ca6caaacfe918652f50a6c21aa847a1bf2e6c64a9922484c68d9f12d341",
+    "trace_sha256": "f31db61c9b7697fa637e5274ee3a22cfc9b71472311d47fa6086205a8b5e6681",
+    "official_transitions": 719,
+    "cleanup": {
+      "owned_instances_observed": 7,
+      "owned_instances_remaining": 0,
+      "reader_joined": true,
+      "launched_process_reaped": true
+    }
+  },
+  {
+    "game": "holdout-3556679524-round2-1-teacher_task",
+    "certificate_sha256": "2a6022989b154bd4f9eeecb1a1ed7336f2ef7307279478bb976e4a55c1b1fda3",
+    "replay_sha256": "cf54834d98257e7f442e1f7a77a5dd46cac12c406c09992ad10837bc19d8f7cc",
+    "trace_sha256": "483e9089f5fa4224165c2b2cf0ec811b49087c747f504c7f741c0825fedd7a3d",
+    "official_transitions": 719,
+    "cleanup": {
+      "owned_instances_observed": 10,
+      "owned_instances_remaining": 0,
+      "reader_joined": true,
+      "launched_process_reaped": true
+    }
+  }
+]

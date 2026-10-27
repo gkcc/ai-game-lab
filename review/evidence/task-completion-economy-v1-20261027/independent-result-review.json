@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "freeze_sha256": "efebc4cb78a86b9284a33726d7219942d8e7312d1c1385605e2ade5f6e077c87",
+  "registration_sha256": "8c5e4eee5bdda204925babc869fe81835f43b3b20dfe8fc9158ed99dae4478be",
+  "games_result_sha256": "da1f071b2dae6c6cbf79de9d07784a240d921110eede780df2856af1e3ae8ef8",
+  "game_ledger_sha256": "53a98bec3090b337fe98d3b15fbb6c0fe68295fbd158bedbdfc2c9ee3f11f78f",
+  "game_audit_ledger_sha256": "bb97de956726446bda993c38a4a5a1aa9066806e69d6b256220df8edd380ad37",
+  "verification_sha256": "e9732434df9eec2af01aab8810b4f1353bb178977807c7e460a6b933958c7553",
+  "method_sha256": "8d9f60070cb287e08433303b8744eac41e7b7595854872cdcee8cd29641a8d7b",
+  "selected_game": "holdout-3342200684-round2-0-candidate",
+  "checkpoint_sha256": "47def382fff8738583d2359964d2e14bfbb41b53e9dc428d2882519ada8e1811",
+  "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "test_seeds": [
+    3342200684,
+    3556679524
+  ],
+  "official_transitions": 719,
+  "sample_count": 20,
+  "sample_matched": 20,
+  "limitations": "Shared official engine and shared input validation, not independent engine or scoring"
+}

@@ -360,3 +360,9 @@ Linux监督阶段1.329秒，整个自有进程组已清理并回收；原partial
 核对事前冻结96eda51、候选模型实际加载与任务调用、双方席位四场及主复演，同一输入下模型选择与首次完整请求差异的关联；区分施肥callback/选择/请求/官方原子变化及经济结论。独立复演20条主要为WATER，DIG未覆盖；共用官方引擎和输入校验，聚合复审未重读逐帧或模型。两席位同seed结果相同，不构成独立样本或竞争提升证明。
 
 [报告](../kaggriculture/TASK_COMPLETION_SMOKE_V1.zh-CN.md) | [证据](evidence/task-completion-smoke-v1-20261027/)
+
+## 两种子经济筛查：复审重点
+
+核对事前冻结d22d129、八场模型/教师双席结果及12223官方步、独立样本和8 trace读取、按seed配对与双重绝对护栏。第一seed自身差−1273、现金差−2397触发失败；正向种子不能抵消预登记逐seed停规。施肥数量区分callback、选择、请求与官方原子变化，不作经济因果归因；独立样本DIG/FERTILIZE未覆盖，聚合复审未逐帧重算。
+
+[报告](../kaggriculture/TASK_COMPLETION_ECONOMY_V1.zh-CN.md) | [证据](evidence/task-completion-economy-v1-20261027/)

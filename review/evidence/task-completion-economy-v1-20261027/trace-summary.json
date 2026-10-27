@@ -1,0 +1,173 @@
+{
+  "passed": true,
+  "games": 8,
+  "summaries": [
+    {
+      "game": "holdout-3342200684-round2-0-candidate",
+      "seed": 3342200684,
+      "side": 0,
+      "policy": "candidate",
+      "callbacks": 2302,
+      "fertilizer_opportunities": 284,
+      "fertilizer_selections": 78,
+      "fertilizer_work_requests": 24,
+      "official_fertilizer_events": {
+        "requested": 24,
+        "executed_with_observed_change": 24,
+        "blocked": 0,
+        "no_effect": 0,
+        "error": 0,
+        "other": 0
+      },
+      "trace_sha256": "672415e1663bc5efcb39cdab3c996f0bf7e107895a41461fa894919f7a8d414e"
+    },
+    {
+      "game": "holdout-3342200684-round2-0-teacher_task",
+      "seed": 3342200684,
+      "side": 0,
+      "policy": "teacher_task",
+      "callbacks": 2253,
+      "fertilizer_opportunities": 279,
+      "fertilizer_selections": 99,
+      "fertilizer_work_requests": 28,
+      "official_fertilizer_events": {
+        "requested": 28,
+        "executed_with_observed_change": 28,
+        "blocked": 0,
+        "no_effect": 0,
+        "error": 0,
+        "other": 0
+      },
+      "trace_sha256": "1c8e284ced37e0ef88b792e00cc3374c26d8edf29593027a747a6f4fc5fb8baa"
+    },
+    {
+      "game": "holdout-3342200684-round2-1-candidate",
+      "seed": 3342200684,
+      "side": 1,
+      "policy": "candidate",
+      "callbacks": 2306,
+      "fertilizer_opportunities": 290,
+      "fertilizer_selections": 80,
+      "fertilizer_work_requests": 24,
+      "official_fertilizer_events": {
+        "requested": 24,
+        "executed_with_observed_change": 24,
+        "blocked": 0,
+        "no_effect": 0,
+        "error": 0,
+        "other": 0
+      },
+      "trace_sha256": "d5d88eae2be4846854861c85b12d3a6ef7fcf24f15fa590254e5d8f659defd72"
+    },
+    {
+      "game": "holdout-3342200684-round2-1-teacher_task",
+      "seed": 3342200684,
+      "side": 1,
+      "policy": "teacher_task",
+      "callbacks": 2254,
+      "fertilizer_opportunities": 279,
+      "fertilizer_selections": 99,
+      "fertilizer_work_requests": 28,
+      "official_fertilizer_events": {
+        "requested": 28,
+        "executed_with_observed_change": 28,
+        "blocked": 0,
+        "no_effect": 0,
+        "error": 0,
+        "other": 0
+      },
+      "trace_sha256": "caaac11e18b6ee278bc1b98f8516c302831fc415aa41786d8fdf0fac1b615a9d"
+    },
+    {
+      "game": "holdout-3556679524-round2-0-candidate",
+      "seed": 3556679524,
+      "side": 0,
+      "policy": "candidate",
+      "callbacks": 2259,
+      "fertilizer_opportunities": 358,
+      "fertilizer_selections": 75,
+      "fertilizer_work_requests": 24,
+      "official_fertilizer_events": {
+        "requested": 24,
+        "executed_with_observed_change": 24,
+        "blocked": 0,
+        "no_effect": 0,
+        "error": 0,
+        "other": 0
+      },
+      "trace_sha256": "e668f06c9bba7cf1d98bb7c819843318ac753e974211c5fd3eb5be1f97a39afa"
+    },
+    {
+      "game": "holdout-3556679524-round2-0-teacher_task",
+      "seed": 3556679524,
+      "side": 0,
+      "policy": "teacher_task",
+      "callbacks": 2253,
+      "fertilizer_opportunities": 279,
+      "fertilizer_selections": 99,
+      "fertilizer_work_requests": 28,
+      "official_fertilizer_events": {
+        "requested": 28,
+        "executed_with_observed_change": 28,
+        "blocked": 0,
+        "no_effect": 0,
+        "error": 0,
+        "other": 0
+      },
+      "trace_sha256": "41ceb66bb6b89bc354ab369df49ee69f160d0b650918809046123872254d19d8"
+    },
+    {
+      "game": "holdout-3556679524-round2-1-candidate",
+      "seed": 3556679524,
+      "side": 1,
+      "policy": "candidate",
+      "callbacks": 2259,
+      "fertilizer_opportunities": 358,
+      "fertilizer_selections": 75,
+      "fertilizer_work_requests": 24,
+      "official_fertilizer_events": {
+        "requested": 24,
+        "executed_with_observed_change": 24,
+        "blocked": 0,
+        "no_effect": 0,
+        "error": 0,
+        "other": 0
+      },
+      "trace_sha256": "f31db61c9b7697fa637e5274ee3a22cfc9b71472311d47fa6086205a8b5e6681"
+    },
+    {
+      "game": "holdout-3556679524-round2-1-teacher_task",
+      "seed": 3556679524,
+      "side": 1,
+      "policy": "teacher_task",
+      "callbacks": 2253,
+      "fertilizer_opportunities": 279,
+      "fertilizer_selections": 99,
+      "fertilizer_work_requests": 28,
+      "official_fertilizer_events": {
+        "requested": 28,
+        "executed_with_observed_change": 28,
+        "blocked": 0,
+        "no_effect": 0,
+        "error": 0,
+        "other": 0
+      },
+      "trace_sha256": "483e9089f5fa4224165c2b2cf0ec811b49087c747f504c7f741c0825fedd7a3d"
+    }
+  ],
+  "raw_reads": {
+    "compressed_input_read_bytes": 62668033,
+    "decoded_input_bytes": 868602899,
+    "files_opened": 8,
+    "files_completed": 8,
+    "raw_decode_passes_per_file": 1
+  },
+  "official_transitions": 0,
+  "new_games": 0,
+  "model_inference": 0,
+  "training_updates": 0,
+  "game_ledger_sha256": "53a98bec3090b337fe98d3b15fbb6c0fe68295fbd158bedbdfc2c9ee3f11f78f",
+  "freeze_sha256": "efebc4cb78a86b9284a33726d7219942d8e7312d1c1385605e2ade5f6e077c87",
+  "retry_allowed": false,
+  "interpretation": "Trace summaries count callbacks and requests; official status records atomic change, not long-term completion or profit causation."
+}

@@ -1,0 +1,79 @@
+{
+  "attempt": 1,
+  "retry_allowed": false,
+  "freeze_sha256": "efebc4cb78a86b9284a33726d7219942d8e7312d1c1385605e2ade5f6e077c87",
+  "fixed_plan": [
+    {
+      "game": "holdout-3342200684-round2-0-candidate",
+      "policy": "candidate",
+      "split": "holdout",
+      "seed": 3342200684,
+      "opponent": "round2",
+      "side": 0,
+      "parity_kind": null
+    },
+    {
+      "game": "holdout-3342200684-round2-0-teacher_task",
+      "policy": "teacher_task",
+      "split": "holdout",
+      "seed": 3342200684,
+      "opponent": "round2",
+      "side": 0,
+      "parity_kind": null
+    },
+    {
+      "game": "holdout-3342200684-round2-1-candidate",
+      "policy": "candidate",
+      "split": "holdout",
+      "seed": 3342200684,
+      "opponent": "round2",
+      "side": 1,
+      "parity_kind": null
+    },
+    {
+      "game": "holdout-3342200684-round2-1-teacher_task",
+      "policy": "teacher_task",
+      "split": "holdout",
+      "seed": 3342200684,
+      "opponent": "round2",
+      "side": 1,
+      "parity_kind": null
+    },
+    {
+      "game": "holdout-3556679524-round2-0-candidate",
+      "policy": "candidate",
+      "split": "holdout",
+      "seed": 3556679524,
+      "opponent": "round2",
+      "side": 0,
+      "parity_kind": null
+    },
+    {
+      "game": "holdout-3556679524-round2-0-teacher_task",
+      "policy": "teacher_task",
+      "split": "holdout",
+      "seed": 3556679524,
+      "opponent": "round2",
+      "side": 0,
+      "parity_kind": null
+    },
+    {
+      "game": "holdout-3556679524-round2-1-candidate",
+      "policy": "candidate",
+      "split": "holdout",
+      "seed": 3556679524,
+      "opponent": "round2",
+      "side": 1,
+      "parity_kind": null
+    },
+    {
+      "game": "holdout-3556679524-round2-1-teacher_task",
+      "policy": "teacher_task",
+      "split": "holdout",
+      "seed": 3556679524,
+      "opponent": "round2",
+      "side": 1,
+      "parity_kind": null
+    }
+  ]
+}

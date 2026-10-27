@@ -1,0 +1,76 @@
+{
+  "passed": true,
+  "official_execution_accepted": true,
+  "exploratory_gate_passed": false,
+  "failed_guards": [
+    {
+      "seed": 3342200684,
+      "side": 0,
+      "metric": "margin"
+    },
+    {
+      "seed": 3342200684,
+      "side": 1,
+      "metric": "margin"
+    },
+    {
+      "seed": 3342200684,
+      "metric": "seed_mean_own_profit"
+    },
+    {
+      "seed": 3342200684,
+      "metric": "seed_mean_margin"
+    }
+  ],
+  "seed_groups": [
+    {
+      "seed": 3342200684,
+      "mean_own_profit_difference": -1273.0,
+      "mean_margin_difference": -2397.0
+    },
+    {
+      "seed": 3556679524,
+      "mean_own_profit_difference": 4173.0,
+      "mean_margin_difference": 9364.0
+    }
+  ],
+  "complete_games": 8,
+  "live_official_transitions": 5752,
+  "primary_replay_transitions": 5752,
+  "independent_replay_transitions": 719,
+  "total_official_transitions": 12223,
+  "independent_sample_matched": 20,
+  "sample_operation_counts": {
+    "DIG": 0,
+    "FERTILIZE": 0,
+    "HARVEST": 1,
+    "PLANT": 4,
+    "WATER": 15
+  },
+  "test_seed_count": 2,
+  "statistical_significance_proven": false,
+  "competitive_gain_proven": false,
+  "promoted": false,
+  "default_bot_or_official_rules_changed": false,
+  "new_training_updates": 0,
+  "interpretation": "One frozen opponent and two seed clusters. A failed guard means the preset decline was observed on this panel; neither direction establishes general game strength.",
+  "trace_limit": "Fertilizer opportunities are callback counts; official executed status observes an atomic change, not sustained completion or causal revenue.",
+  "independent_limit": "Shared official engine and input validator; aggregate review did not reread private trace or independently recompute model scores.",
+  "no_more_panel_games_or_threshold_changes": true,
+  "raw_replays_traces_weights_and_logs_published": false,
+  "evidence_sha256": {
+    "root-decision.json": "bb8d304d44e5bf867f8fe9f474fd062bd0941d841498ed2c60d4966393d1962b",
+    "registration.json": "8c5e4eee5bdda204925babc869fe81835f43b3b20dfe8fc9158ed99dae4478be",
+    "freeze.json": "efebc4cb78a86b9284a33726d7219942d8e7312d1c1385605e2ade5f6e077c87",
+    "pre-review.json": "1d121bb319a9c460d71f1fc0e364be54b0eea7dd837e7a67d87cb835b4902711",
+    "pre-execution-commit.json": "091ae959e4f875699a91a88b5852d21cba9665d1e922ef61b127cef03613aa29",
+    "games-result.json": "da1f071b2dae6c6cbf79de9d07784a240d921110eede780df2856af1e3ae8ef8",
+    "game-ledger.json": "53a98bec3090b337fe98d3b15fbb6c0fe68295fbd158bedbdfc2c9ee3f11f78f",
+    "game-audit-ledger.json": "bb97de956726446bda993c38a4a5a1aa9066806e69d6b256220df8edd380ad37",
+    "independent-replay-verification.json": "e9732434df9eec2af01aab8810b4f1353bb178977807c7e460a6b933958c7553",
+    "independent-result-review.json": "d45e29166ee12959c9a085d357f2b8d7240e231951b5683bd7c7cbaf6a9a86ac",
+    "trace-summary.json": "8c2a9702fbf9497c9648de4d04c04b9504ab0363a25591272960c88bbb84f5de",
+    "evaluation-result.json": "ad1fc8b241a9554b6f7d4082ebcb82136129b14e504bb8a82ff4229b8bd3b769",
+    "independent-result-assessment.json": "69979226e599074d54025582183ac2889927b33decd5f69de3f283dbe3fe084e"
+  }
+}

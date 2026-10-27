@@ -1,0 +1,95 @@
+{
+  "passed": true,
+  "pairs": [
+    {
+      "seed": 3342200684,
+      "side": 0,
+      "candidate_own_profit": 34830.0,
+      "teacher_own_profit": 36103.0,
+      "candidate_opponent_profit": 38652.0,
+      "teacher_opponent_profit": 37528.0,
+      "own_profit_difference": -1273.0,
+      "opponent_profit_difference": 1124.0,
+      "margin_difference": -2397.0,
+      "score_difference": 0.0,
+      "relative_own_profit_difference": -0.03526022768191009
+    },
+    {
+      "seed": 3342200684,
+      "side": 1,
+      "candidate_own_profit": 34830.0,
+      "teacher_own_profit": 36103.0,
+      "candidate_opponent_profit": 38652.0,
+      "teacher_opponent_profit": 37528.0,
+      "own_profit_difference": -1273.0,
+      "opponent_profit_difference": 1124.0,
+      "margin_difference": -2397.0,
+      "score_difference": 0.0,
+      "relative_own_profit_difference": -0.03526022768191009
+    },
+    {
+      "seed": 3556679524,
+      "side": 0,
+      "candidate_own_profit": 43219.0,
+      "teacher_own_profit": 39046.0,
+      "candidate_opponent_profit": 34345.0,
+      "teacher_opponent_profit": 39536.0,
+      "own_profit_difference": 4173.0,
+      "opponent_profit_difference": -5191.0,
+      "margin_difference": 9364.0,
+      "score_difference": 1.0,
+      "relative_own_profit_difference": 0.10687394355375711
+    },
+    {
+      "seed": 3556679524,
+      "side": 1,
+      "candidate_own_profit": 43219.0,
+      "teacher_own_profit": 39046.0,
+      "candidate_opponent_profit": 34345.0,
+      "teacher_opponent_profit": 39536.0,
+      "own_profit_difference": 4173.0,
+      "opponent_profit_difference": -5191.0,
+      "margin_difference": 9364.0,
+      "score_difference": 1.0,
+      "relative_own_profit_difference": 0.10687394355375711
+    }
+  ],
+  "seed_groups": [
+    {
+      "seed": 3342200684,
+      "mean_own_profit_difference": -1273.0,
+      "mean_margin_difference": -2397.0
+    },
+    {
+      "seed": 3556679524,
+      "mean_own_profit_difference": 4173.0,
+      "mean_margin_difference": 9364.0
+    }
+  ],
+  "exploratory_gate_passed": false,
+  "gate_failures": [
+    {
+      "seed": 3342200684,
+      "side": 0,
+      "metric": "margin"
+    },
+    {
+      "seed": 3342200684,
+      "side": 1,
+      "metric": "margin"
+    },
+    {
+      "seed": 3342200684,
+      "metric": "seed_mean_own_profit"
+    },
+    {
+      "seed": 3342200684,
+      "metric": "seed_mean_margin"
+    }
+  ],
+  "game_ledger_sha256": "53a98bec3090b337fe98d3b15fbb6c0fe68295fbd158bedbdfc2c9ee3f11f78f",
+  "trace_summary_sha256": "8c2a9702fbf9497c9648de4d04c04b9504ab0363a25591272960c88bbb84f5de",
+  "independent_review_sha256": "d45e29166ee12959c9a085d357f2b8d7240e231951b5683bd7c7cbaf6a9a86ac",
+  "interpretation": "Two seed clusters screen preset declines only; no statistical significance, competitive gain or automatic promotion.",
+  "retry_allowed": false
+}

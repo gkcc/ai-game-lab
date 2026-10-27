@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "identities_sha256": {
+    "freeze.json": "efebc4cb78a86b9284a33726d7219942d8e7312d1c1385605e2ade5f6e077c87",
+    "registration.json": "8c5e4eee5bdda204925babc869fe81835f43b3b20dfe8fc9158ed99dae4478be",
+    "games-result.json": "da1f071b2dae6c6cbf79de9d07784a240d921110eede780df2856af1e3ae8ef8",
+    "game-ledger.json": "53a98bec3090b337fe98d3b15fbb6c0fe68295fbd158bedbdfc2c9ee3f11f78f",
+    "game-audit-ledger.json": "bb97de956726446bda993c38a4a5a1aa9066806e69d6b256220df8edd380ad37",
+    "independent-replay-verification.json": "e9732434df9eec2af01aab8810b4f1353bb178977807c7e460a6b933958c7553",
+    "independent-result-review.json": "d45e29166ee12959c9a085d357f2b8d7240e231951b5683bd7c7cbaf6a9a86ac",
+    "trace-summary.json": "8c2a9702fbf9497c9648de4d04c04b9504ab0363a25591272960c88bbb84f5de",
+    "evaluation-result.json": "ad1fc8b241a9554b6f7d4082ebcb82136129b14e504bb8a82ff4229b8bd3b769"
+  },
+  "checks": [
+    "Eight 720-state 719-action DONE games cover two frozen seeds, round2, both seats and both arms; model and crop identities, candidate and teacher forward counts, official replay, actor/rival reconstruction and cleanup receipts checked",
+    "Independent selected replay completed 719 steps with 20 of 20 samples; DIG and FERTILIZE each have zero sample coverage",
+    "Recomputed each candidate minus teacher pair from game ledger: first seed own -1273, opponent +1124, margin -2397, score 0 in each seat; second seed own +4173, opponent -5191, margin +9364, score +1 in each seat",
+    "Inclusive -2000 per-seat and -1000 seed-mean joint own and margin guardrails recomputed: both first-seed margin pairs and its mean own and mean margin fail; second seed passes; overall exploratory gate fails",
+    "Trace summary and official per-game fertilizer event counts bind to each audit; eight trace files decoded once under registered byte limits",
+    "Eight live and eight primary replays plus one independent replay account for 12223 official transitions"
+  ],
+  "limitations": [
+    "No trace, replay, model or feature content was read or decoded and no inference, game or replay was run during assessment; per-frame events were not independently recomputed",
+    "Per-seed two seats are paired observations, not independent seed samples; a positive seed cannot cancel the preregistered failure on the other seed",
+    "Fertilizer opportunities, selections, work requests and observed atomic changes are descriptive callback/event counts, not proof of task completion or causal financial contribution",
+    "Two-seed fixed screen cannot establish general strength, statistical significance or justify promotion",
+    "Independent method authored by this reviewer and separately reviewed by the main agent; official engine and shared input validator are reused"
+  ]
+}
