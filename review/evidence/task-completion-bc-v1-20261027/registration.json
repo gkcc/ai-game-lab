@@ -1,0 +1,308 @@
+{
+  "experiment": "task-completion-bc-v1",
+  "baseline_head": "e79a53c57dd929a19180692100d2eef41ad21f1b",
+  "created_utc": "2026-10-27T05:40:57.849896+00:00",
+  "task_started_utc": "2026-10-27T05:25:00+00:00",
+  "task_deadline_utc": "2026-10-27T08:25:00+00:00",
+  "total_stage_seconds": 10800,
+  "train_seeds": [
+    3911611436,
+    2328454240
+  ],
+  "test_seeds": [
+    1210575027,
+    441357442
+  ],
+  "seed_generation": "First four SHA256 bytes of task-completion-bc-v1:20261027:index; reject existing visible metadata and duplicates",
+  "seed_inventory_sha256": "f23a25094be38dd19923dcd335c09c1f0b93b93530493036c82d62a36ccfd786",
+  "seed_inventory_bytes": 30147403,
+  "seed_scope": "Tracked public text plus local preregistration, seed inventory, input manifest and job-input metadata; no generic configuration, result, replay, trace or tensors",
+  "seed_history_limitation": "Cannot exclude deleted, unavailable, external or locally unlisted seed history",
+  "source_groups": [
+    {
+      "key": "dev-3911611436-round2-0-baseline",
+      "seed": 3911611436,
+      "side": 0,
+      "opponent": "round2",
+      "arm": "baseline",
+      "trace": {
+        "path": "traces/dev-3911611436-round2-0-baseline.jsonl.gz",
+        "size": 7364482,
+        "sha256": "87510d2084239558dab64f33ac95b96bc4041ceaa14898b0483fac962cf40b59"
+      },
+      "replay": {
+        "path": "games/dev-3911611436-round2-0-baseline/replay.json.gz",
+        "size": 1192146,
+        "sha256": "4a5b31167c0d24df23779fe6c8a51c0fac2f822724bfcebe9762151387072781"
+      },
+      "labels_path": "private/games/dev-3911611436-round2-0-baseline.episodes.jsonl.gz",
+      "labels_sha256": "a4e6ea2a4f9d575216bc9237a5454a716bf400114e3d38feebf04ded3c2b14ce",
+      "labels_rows": 1078,
+      "accepted_report_sha256": "2fbef65ece346d7a7aca52b944670ea58b5e6976f21fc5716cc95e25ce0e22ac"
+    },
+    {
+      "key": "dev-3911611436-round2-0-candidate",
+      "seed": 3911611436,
+      "side": 0,
+      "opponent": "round2",
+      "arm": "candidate",
+      "trace": {
+        "path": "traces/dev-3911611436-round2-0-candidate.jsonl.gz",
+        "size": 7369040,
+        "sha256": "32a2f36f4fa5c914732a43ef2a85fd92ed8ce166947a2c96db1802033b8c8015"
+      },
+      "replay": {
+        "path": "games/dev-3911611436-round2-0-candidate/replay.json.gz",
+        "size": 1194585,
+        "sha256": "7ae8efcd44b974384a28acaddcb17eab8403bc51674f1ff491558932be735f8e"
+      },
+      "labels_path": "private/games/dev-3911611436-round2-0-candidate.episodes.jsonl.gz",
+      "labels_sha256": "643704405665847f3d5f1346c0b7fbc343a481fdc20823f843c3f77f9a980bb1",
+      "labels_rows": 1069,
+      "accepted_report_sha256": "8f779e3e96113002b6c4179b0076e40db18fe97dae03bc4828991344005afbb8"
+    },
+    {
+      "key": "dev-3911611436-round2-0-teacher_task",
+      "seed": 3911611436,
+      "side": 0,
+      "opponent": "round2",
+      "arm": "teacher_task",
+      "trace": {
+        "path": "traces/dev-3911611436-round2-0-teacher_task.jsonl.gz",
+        "size": 7399657,
+        "sha256": "ccb50cfb4f63ed51c5f377dc834fa29ee11752e7f10355a50d38aaf98c8128ec"
+      },
+      "replay": {
+        "path": "games/dev-3911611436-round2-0-teacher_task/replay.json.gz",
+        "size": 1203413,
+        "sha256": "1d53fd7da21edaa5b473973fd42b2287693d7d5d7e3f1cb6beac8a82f1e22ef3"
+      },
+      "labels_path": "private/games/dev-3911611436-round2-0-teacher_task.episodes.jsonl.gz",
+      "labels_sha256": "0beb7a1529ee649cc36169d339988a9ea0169f6181bafda9878f9e5921ada1a6",
+      "labels_rows": 1060,
+      "accepted_report_sha256": "254b2f70bc4183940726bc757dfb1fe5c7de06d0cb303e3d41accb466e987da3"
+    },
+    {
+      "key": "dev-3911611436-market-1-candidate",
+      "seed": 3911611436,
+      "side": 1,
+      "opponent": "market",
+      "arm": "candidate",
+      "trace": {
+        "path": "traces/dev-3911611436-market-1-candidate.jsonl.gz",
+        "size": 7435798,
+        "sha256": "2c34bd0ec448c8625ed3518882d05c812d8ddf66dd9c3b9cd9fe701a8683b5a9"
+      },
+      "replay": {
+        "path": "games/dev-3911611436-market-1-candidate/replay.json.gz",
+        "size": 1345953,
+        "sha256": "9bacd868b101c9d704533e657c47dca8623b601a8dab3d8166b090ca09646153"
+      },
+      "labels_path": "private/games/dev-3911611436-market-1-candidate.episodes.jsonl.gz",
+      "labels_sha256": "c5f354f4dc080e16835dd725b261d91c494b4aaaa2743ca86e3eaf2b84a515cb",
+      "labels_rows": 1109,
+      "accepted_report_sha256": "b98ffda39bc306f157a3838acdd8349e3667af62108d85e0609c56db9f568068"
+    },
+    {
+      "key": "dev-2328454240-round2-0-baseline",
+      "seed": 2328454240,
+      "side": 0,
+      "opponent": "round2",
+      "arm": "baseline",
+      "trace": {
+        "path": "traces/dev-2328454240-round2-0-baseline.jsonl.gz",
+        "size": 7694231,
+        "sha256": "db252f099cf5eb27623464dc7fb88fe5f979a06b756fc2d4f8e54590bed4af6d"
+      },
+      "replay": {
+        "path": "games/dev-2328454240-round2-0-baseline/replay.json.gz",
+        "size": 1215531,
+        "sha256": "4b00683c7ea955e12dc31a0d20448f3837c78cb3a04b6db45f1bb00ace5128f8"
+      },
+      "labels_path": "private/games/dev-2328454240-round2-0-baseline.episodes.jsonl.gz",
+      "labels_sha256": "e5f2329b7ec0b5437c9480eb95c2af41d81e45c97e3ad8a3ad042ff2f7a7cdfe",
+      "labels_rows": 1109,
+      "accepted_report_sha256": "fd9c73e4c0995daed4ed09b76b405bc156388038b9768e6406982933d8e465e1"
+    },
+    {
+      "key": "dev-2328454240-round2-0-candidate",
+      "seed": 2328454240,
+      "side": 0,
+      "opponent": "round2",
+      "arm": "candidate",
+      "trace": {
+        "path": "traces/dev-2328454240-round2-0-candidate.jsonl.gz",
+        "size": 7794832,
+        "sha256": "30ef615840681af91ceadc6027c3eb09477d8fec59b061d54e178ba03dfc31da"
+      },
+      "replay": {
+        "path": "games/dev-2328454240-round2-0-candidate/replay.json.gz",
+        "size": 1217941,
+        "sha256": "b6dbb881e30ec85735113723f97ce0608471e24cbed130d46e800e38447bb805"
+      },
+      "labels_path": "private/games/dev-2328454240-round2-0-candidate.episodes.jsonl.gz",
+      "labels_sha256": "fed026e42496f1dfec35470a106b75d370dcac990872a2a34b050c09324b6944",
+      "labels_rows": 1137,
+      "accepted_report_sha256": "df5a250d906e0b3c57802f1c2a9dd408e34c8ded45bdc1fe2516f2f2d1fc127e"
+    },
+    {
+      "key": "dev-2328454240-round2-0-teacher_task",
+      "seed": 2328454240,
+      "side": 0,
+      "opponent": "round2",
+      "arm": "teacher_task",
+      "trace": {
+        "path": "traces/dev-2328454240-round2-0-teacher_task.jsonl.gz",
+        "size": 7715464,
+        "sha256": "6c1ea5f3601c4f1fa65bfeec4da0ecba17d34ea0d5e6552ca4841061f0e77091"
+      },
+      "replay": {
+        "path": "games/dev-2328454240-round2-0-teacher_task/replay.json.gz",
+        "size": 1217381,
+        "sha256": "1bbca773ae957ee1902dd2bd222085e726c28b7cc26e48f2b9a25b2c6c85f80f"
+      },
+      "labels_path": "private/games/dev-2328454240-round2-0-teacher_task.episodes.jsonl.gz",
+      "labels_sha256": "7d156389739fd7400a1f635e2de2cc99ca09026481006834587ac0f3c97ee434",
+      "labels_rows": 1119,
+      "accepted_report_sha256": "f2905bedcd148cd882bdbea543d37ad930a59517e0ac4cc14a1d08947539b855"
+    },
+    {
+      "key": "dev-2328454240-market-1-candidate",
+      "seed": 2328454240,
+      "side": 1,
+      "opponent": "market",
+      "arm": "candidate",
+      "trace": {
+        "path": "traces/dev-2328454240-market-1-candidate.jsonl.gz",
+        "size": 7846227,
+        "sha256": "3dd4d1988038b3d4081805ded9e9e949276e0991005d07e512be46def414e326"
+      },
+      "replay": {
+        "path": "games/dev-2328454240-market-1-candidate/replay.json.gz",
+        "size": 1322166,
+        "sha256": "db9cd19a09364a730c35876b78d8942afb84b54fe37d51e63a194b132cb1d38c"
+      },
+      "labels_path": "private/games/dev-2328454240-market-1-candidate.episodes.jsonl.gz",
+      "labels_sha256": "48a9c9ccfdb3b38e3057bf99ef85f2b3285f7dc24d053267d6fc9ad76ffa20c8",
+      "labels_rows": 1128,
+      "accepted_report_sha256": "d0e1d06fd567906245ac0821b3b68d93037493ab8c3ef8a3bd6a2b7c2b4af7c7"
+    }
+  ],
+  "parent_acceptance_sha256": "e4c00a6487a6bda51feb3088c9a3d9e6a5650397f397caf36681730216077dbc",
+  "train_population": "Eight prior games: two baseline, four candidate, two teacher_task; actual chosen from each, with a common frozen opportunity controller and crop model",
+  "parent_manifest_sha256": "b4562c9625ec4fed40532cf325a68d1d4bac3fc88c1f6c0c332342b6a4bd6246",
+  "parent_dataset_sha256": "5ec8633c60f485ac7d84b93cd7ad0613a060974239ec46f9c054cc917c056de1",
+  "parent_game_ledger_sha256": "33057f63190043463bfef3c0eb17fd2a96031e903d064aa61fa39b5386030417",
+  "previous_freeze_sha256": "e8bbce2d32b6041e068462a70ee73bee1666e8a29b32f46d29fa528af32d5da9",
+  "trusted_schema_sha256": "54b68dd3d715ccab079dbc275ee034fad2cb6302439ee36a79e8287f23ba68e3",
+  "action_manifest_sha256": "b433ee9652f38bbb0cb39afb1e02dcdb3ad84183beabd678f3ecbc8c0570f4fa",
+  "action_audit_sha256": "f604a3203ae4e93ccc771a61080b60122193afa42e656ee3c3d9f36ab7599d9c",
+  "action_ledger_sha256": "c97e24ecf4bbf010dab32e50cd9327d1dccf90df54d6590ae72f726d9af356fb",
+  "gpu_launch_config_sha256": "4c90ee97e07e41cc381b724b357a180b83416d4863c2dfbe064dc40911e0177d",
+  "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "official_loader_sha256": "0ac7baf1212b4ce1eabae3cc1cbb55c98effef5e0d0485522a8be87097c39a4f",
+  "runtime_versions": {
+    "python": "3.12.2",
+    "numpy": "2.5.4",
+    "kaggle_environments": "1.33.0"
+  },
+  "crop_checkpoint": "artifacts/bc-epoch6-holdout-v1-20261023/panels/fixed_epoch6/model/trained.npz",
+  "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+  "source_sha256": {
+    "round2.py": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "market.py": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b"
+  },
+  "game_limits": {
+    "task_forwards": 4000,
+    "crop_forwards": 8000,
+    "neural_input_rows": 160000,
+    "gate_evaluations": 1,
+    "controller_calls": 719,
+    "teacher_proposals": 1,
+    "max_task_forwards_per_turn": 32,
+    "max_crop_forwards_per_turn": 64,
+    "max_neural_input_rows_per_turn": 4096,
+    "max_controller_calls_per_turn": 1
+  },
+  "opponents": [
+    "round2",
+    "market"
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "policy": "teacher_task",
+  "teacher_task_note": "Frozen task teacher with fixed crop model, not the untouched complete original teacher",
+  "training": {
+    "updates": 128,
+    "batch_groups_max": 256,
+    "padded_candidates_max": 65536,
+    "learning_rate": 0.0003,
+    "gradient_norm_clip": 1.0,
+    "training_seed": 2026102708,
+    "synchronized_seconds": 600,
+    "process_seconds": 1200,
+    "initialization": "fixed random",
+    "checkpoint_selection": "final update only",
+    "train_status": "completed_observed",
+    "label": "actual chosen at episode origin",
+    "test_gradients": false
+  },
+  "data_limits": {
+    "train_games": 8,
+    "test_games": 8,
+    "max_groups_per_split": 16000,
+    "max_candidates_per_split": 1200000,
+    "train_compressed_bytes": 536870912,
+    "train_decoded_bytes": 4294967296,
+    "test_compressed_bytes": 1073741824,
+    "test_decoded_bytes": 8589934592,
+    "episode_file_bytes": 67108864
+  },
+  "official_limits": {
+    "new_games": 8,
+    "live_transitions": 5752,
+    "primary_replay_transitions": 5752,
+    "separate_label_replay_transitions": 5752,
+    "independent_replay_transitions": 719,
+    "total_transitions": 17975,
+    "max_workers": 1,
+    "per_job_seconds": 900
+  },
+  "rationale_extra_label_replays": "Separate label replay preserves unchanged accepted official worker; disclosed before new data",
+  "storage": {
+    "total_bytes": 4294967296,
+    "game_write_bytes": 134217728,
+    "free_floor_bytes": 4294967296,
+    "process_log_bytes": 1048576,
+    "small_receipt_bytes": 16384
+  },
+  "evaluation": {
+    "baseline": "train completed-operation frequency with Laplace smoothing, renormalized over present ops, uniform within op; first canonical argmax",
+    "scope": "all holdout episode origins, with completed and unknown reported separately",
+    "top1_gain_min": 0.05,
+    "each_seed_top1_gain_positive": true,
+    "ce_not_worse": true,
+    "min_operations": 3,
+    "min_examples_per_operation": 20,
+    "operation_macro_recall_gain_min": 0.05,
+    "cross_operation_top1_not_worse": true,
+    "multi_candidate_top1_not_worse": true,
+    "significance_claim": false,
+    "candidate_match_is_not_competitive_performance": true
+  },
+  "independent_sample": "20 lowest SHA256 identities from first test seed, round2, seat0; not selected by status",
+  "independent_limits": {
+    "compressed_bytes": 134217728,
+    "decoded_bytes": 1073741824,
+    "raw_files": 2,
+    "replay_transitions": 719,
+    "sample_count": 20
+  },
+  "output_privacy": "Raw replays, traces, individual labels, features, logits, checkpoints, logs and local launch metadata stay local",
+  "no_default_or_frozen_model_changes": true,
+  "no_ppo": true,
+  "local_registration_not_third_party_timestamp": true
+}

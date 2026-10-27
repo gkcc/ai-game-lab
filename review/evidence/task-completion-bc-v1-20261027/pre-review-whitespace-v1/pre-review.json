@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "freeze_sha256": "01c2ad6f4fe416a410aa98f2866ee91ed0852bd1c743a5d45305f30b1499a501",
+  "registration_sha256": "6fbb87c0b8b828fd96a8dd0b46f03e931ef49e7646e4521fa0f486e35ffb1128",
+  "checks": [
+    "Frozen runtime and protected file SHA256 and source set match; registration bound to freeze",
+    "Eight historical game reports match public commit e79a53c and bind replay trace and label identities; historical population is two baseline four candidate two teacher_task",
+    "Two test seeds distinct and disjoint from two train seeds; inventory scope and exclusion limits disclosed",
+    "Registered 128 updates, fixed baseline, GPU identity and synchronized CPU GPU inference parity checks; completed-only gradients and unknown evaluation strata",
+    "Official budget 8 live plus 8 primary plus 8 label plus 1 independent replay, total 17975 transitions",
+    "Model seal and independent review bind stage artifacts, fixed sample and 719 transitions; evaluation follows model seal and independent review",
+    "Frozen candidate opportunities, grouped metrics and exploratory thresholds disclosed; model not deployed in collection games",
+    "21 synthetic regression tests passed with project virtual environment"
+  ],
+  "limitations": [
+    "Read-only source and public metadata review; no raw matches, individual labels, weights, or private GPU configuration inspected",
+    "No training, GPU, official game, replay, independent sampling or publication executed; runtime behavior, cleanup, privacy and results require subsequent verification",
+    "Default system Python lacked kaggle_environments; project virtual environment passed all 21 tests",
+    "Seed isolation limited to registered inventory scope and cannot exclude unavailable or unlisted history"
+  ]
+}
