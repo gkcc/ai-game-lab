@@ -1,0 +1,79 @@
+{
+  "game": "holdout-2662554841-round2-0-candidate",
+  "passed": true,
+  "official": {
+    "passed": true,
+    "audit_version": 2,
+    "official_transitions_reexecuted": 719,
+    "both_public_and_private_states_match_each_step": true,
+    "inventory_order_checked_each_step": true,
+    "semantic_sha256": "734e516a81e4e4d7629a0652f2bd08e7ffabaa61ee0ee4b28f156c6c95771f4f",
+    "semantic_sha256_version": 1,
+    "semantic_sha256_v2": "31bdb5c13d64f19bf6c0c55c5deb1a85c7b3546a21783afbe7fd5ccfe259138a",
+    "final_rewards": [
+      39291.0,
+      47900.0
+    ],
+    "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "execution": {
+      "label_version": 2,
+      "counts": {
+        "market:executed": 360,
+        "unit:executed": 4235,
+        "unit:pass": 3384
+      },
+      "ordered_effect_sha256": "989e98f83380cef2637fa251a36819c02bdd99bb538af59b19ba1f921dc18d19",
+      "successful_plants": [
+        51,
+        52
+      ],
+      "successful_plants_new_land": [
+        0,
+        0
+      ],
+      "boundary": "Privileged offline effects; market order aggregates and ordered fill digest; no profitability or joint legality guarantee"
+    }
+  },
+  "live_model_counts": {
+    "task_forwards": 2197,
+    "task_rows": 121053,
+    "crop_forwards": 160,
+    "crop_rows": 160,
+    "gate_evaluations": 0,
+    "controller_calls": 719,
+    "teacher_proposals": 0
+  },
+  "primary_model_counts": {
+    "task_forwards": 2197,
+    "task_rows": 121053,
+    "crop_forwards": 160,
+    "crop_rows": 160,
+    "gate_evaluations": 0,
+    "controller_calls": 719,
+    "teacher_proposals": 0
+  },
+  "original_parity_model_counts": {},
+  "total_model_counts": {
+    "task_forwards": 4394,
+    "task_rows": 242106,
+    "crop_forwards": 320,
+    "crop_rows": 320,
+    "gate_evaluations": 0,
+    "controller_calls": 1438,
+    "teacher_proposals": 0
+  },
+  "policy_turns": 2876,
+  "original_controller_parity_turns": 0,
+  "parity_kind": null,
+  "replay_sha256": "b553649edee8d01d9079d5ee8119e81993d5707586f806027a8721f640e04bc4",
+  "trace_sha256": "12934c7082ec83daf2160ce0fb7b016c85efa1f15ee6b4f8857ad9750f96c571",
+  "actor_actions_reproduced": 719,
+  "rival_actions_reproduced": 719,
+  "trace_turns_reproduced": 719,
+  "execution_counts": {
+    "unit:pass": 3384,
+    "market:executed": 360,
+    "unit:executed": 4235
+  },
+  "errors": 0
+}

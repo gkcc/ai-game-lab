@@ -1,0 +1,85 @@
+{
+  "passed": true,
+  "panel_completed": true,
+  "games": 8,
+  "live_transitions": 5752,
+  "primary_replay_transitions": 5752,
+  "independent_replay_transitions": 719,
+  "independent_sample_count": 20,
+  "independent_sample_matched": 20,
+  "independent_sample_operation_counts": {
+    "DIG": 0,
+    "FERTILIZE": 0,
+    "HARVEST": 2,
+    "PLANT": 2,
+    "WATER": 16
+  },
+  "both_policies_task_forward_positive": true,
+  "task_forward_min": 2197,
+  "task_forward_max": 2260,
+  "job_sampling_retries_total": 5,
+  "exploratory_gate_passed": false,
+  "mean_own_profit_difference": -630.0,
+  "mean_cash_margin_difference": -562.0,
+  "seed_groups": [
+    {
+      "seed": 2662554841,
+      "mean_own_profit_difference": 85.0,
+      "mean_margin_difference": 1272.0
+    },
+    {
+      "seed": 3991437950,
+      "mean_own_profit_difference": -1345.0,
+      "mean_margin_difference": -2396.0
+    }
+  ],
+  "gate_failures": [
+    {
+      "seed": 3991437950,
+      "side": 0,
+      "metric": "cash_margin"
+    },
+    {
+      "seed": 3991437950,
+      "side": 1,
+      "metric": "cash_margin"
+    },
+    {
+      "seed": 3991437950,
+      "metric": "mean_own_profit"
+    },
+    {
+      "seed": 3991437950,
+      "metric": "mean_cash_margin"
+    }
+  ],
+  "old_consumed_seeds_reused": false,
+  "retrained": false,
+  "default_changed": false,
+  "limitations": [
+    "Two seed clusters and one opponent are not sufficient for statistical significance or promotion.",
+    "Mirrored seat results do not establish a cause and are not independent seeds.",
+    "Live and primary model counts use one reconstructed cumulative source.",
+    "Independent replay shares the official engine and validator; 20 samples exclude DIG and FERTILIZE.",
+    "Frozen official replay checks use assertions; optimized Python could disable them, and runtime optimization was not recorded.",
+    "This acceptance rechecked aggregate receipts without rereading raw replay or trace."
+  ],
+  "evidence_sha256": {
+    "freeze.json": "15b12f2a12b0a8a6b60b689dc6a432fadef4bbbb6a41f80e10cc77a59f61587a",
+    "registration.json": "ef84810a088f5bb7ba8535a3774dccc3465413596402b9d1ba2030e97afde9f6",
+    "pre-review.json": "a26f3ad6cf695cd7ba0334a56cf6a3b3b5b7ec8516dfa2e2a261240b453c90d5",
+    "pre-execution-commit.json": "aaeb1158028b53ba291d741e8b46b0ffebda621be909506429514aa8b0b31001",
+    "games-started.json": "6b204bb92960fc3af974c67867cbd81fd24340d0068bb713c439b7986cf9c8fd",
+    "games-result.json": "d619d41a76f45ba60c0224ff55b952f0e6112c9f5576eff981ee202a54c72818",
+    "game-ledger.json": "f058ccd04688d38d47806a4476449e35bb0ad75a768379c30101d5320c923f0b",
+    "game-audit-ledger.json": "0d15489ddd79bc40f6ed480ddaa6dbb7c2829fd8f224311efd9ea7cd6b72674b",
+    "independent-runner-started.json": "af8918cd362afa0df2bfba51ae7619e403615e8e7d339c3349585b4f5c7c5873",
+    "independent-runner-result.json": "cd927b7c6adba4878c4a3b9d090df9e504c7f5b9c10dba660e48a07b9bd2c7c8",
+    "independent-replay-verification.json": "acb8429a82e08ac09fb15c3fbe28fd02a47ba48b411e0b6c66a0aada6733ba40",
+    "independent-result-review.json": "3e92230f4cc180ae9045e670e720353669741a45ee8f7c6e4a1a95fb4e289d40",
+    "evaluation-started.json": "6b204bb92960fc3af974c67867cbd81fd24340d0068bb713c439b7986cf9c8fd",
+    "evaluation-result.json": "e4b8eeec1eed1144432169a1c3629ce6e313ca15143026078f77cc5f60b09143",
+    "independent-result-assessment.json": "f8171a4b59349037616b3aeacd46e4b42518b3a5315e216faac774f924aef442",
+    "independent-audit-supplement.json": "4d10a7d3074f1efa7ea5b3de59dc7cc709726ad4e957f53fe09c374452d788ac"
+  }
+}

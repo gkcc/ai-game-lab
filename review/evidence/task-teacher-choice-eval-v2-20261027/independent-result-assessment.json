@@ -1,0 +1,117 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "identities_sha256": {
+    "freeze.json": "15b12f2a12b0a8a6b60b689dc6a432fadef4bbbb6a41f80e10cc77a59f61587a",
+    "registration.json": "ef84810a088f5bb7ba8535a3774dccc3465413596402b9d1ba2030e97afde9f6",
+    "pre-review.json": "a26f3ad6cf695cd7ba0334a56cf6a3b3b5b7ec8516dfa2e2a261240b453c90d5",
+    "pre-execution-commit.json": "aaeb1158028b53ba291d741e8b46b0ffebda621be909506429514aa8b0b31001",
+    "games-started.json": "6b204bb92960fc3af974c67867cbd81fd24340d0068bb713c439b7986cf9c8fd",
+    "games-result.json": "d619d41a76f45ba60c0224ff55b952f0e6112c9f5576eff981ee202a54c72818",
+    "game-ledger.json": "f058ccd04688d38d47806a4476449e35bb0ad75a768379c30101d5320c923f0b",
+    "game-audit-ledger.json": "0d15489ddd79bc40f6ed480ddaa6dbb7c2829fd8f224311efd9ea7cd6b72674b",
+    "independent-runner-started.json": "af8918cd362afa0df2bfba51ae7619e403615e8e7d339c3349585b4f5c7c5873",
+    "independent-runner-result.json": "cd927b7c6adba4878c4a3b9d090df9e504c7f5b9c10dba660e48a07b9bd2c7c8",
+    "independent-replay-verification.json": "acb8429a82e08ac09fb15c3fbe28fd02a47ba48b411e0b6c66a0aada6733ba40",
+    "independent-result-review.json": "3e92230f4cc180ae9045e670e720353669741a45ee8f7c6e4a1a95fb4e289d40",
+    "evaluation-started.json": "6b204bb92960fc3af974c67867cbd81fd24340d0068bb713c439b7986cf9c8fd",
+    "evaluation-result.json": "e4b8eeec1eed1144432169a1c3629ce6e313ca15143026078f77cc5f60b09143"
+  },
+  "per_game_receipt_sha256": {
+    "holdout-2662554841-round2-0-candidate": {
+      "row": "9077043cedec6df6b576cc669e79130459442023b108fcc5736af29b92df3bd2",
+      "audit": "ad88ef41fef3e169007b5a9c3babf02081ff614a93e951dc229c5f6e3afb9c5d",
+      "complete": "e16efc27d512c830f1d9ab57fc8025e6fe82392c5eba341bcf1f95cc0e936a79",
+      "storage": "57078801270020b5ad5ce4c2fe281a2f6d156abe4c49cea53f53ebfcbcda7662"
+    },
+    "holdout-2662554841-round2-0-baseline": {
+      "row": "bef87a5544b9c713f94bfab1add0022364f1ff538df8135f3838c756eb16f0ab",
+      "audit": "a773d7b940dd3dc68adbe50b28127d2eeb8b0bc9910f8c8bf0a5366e0c9b9ebc",
+      "complete": "f1e807916ec76096f8c359342385398a9e21e123d9d1ce05f9204c23ae09cbf1",
+      "storage": "5c17f653a8ffaaf98f5ebb87831ab2a116c160f7af0e2826f68bdb29e9cedc85"
+    },
+    "holdout-2662554841-round2-1-candidate": {
+      "row": "b9ac64937c733790df5c206954d01de36cfc6f0094761ca66ea825f484c7418d",
+      "audit": "4f158a73eced59646509f9d10bcee099cb4b138847029f05f3aaccc91efe1803",
+      "complete": "b7e2e973dd060c4f91196bbcf740322155c5200b5540f44312eaf25a7d86bcd3",
+      "storage": "78145c6bc5f955204a078aca41909f761600659a31a0cd26fb1ac2371c39a17b"
+    },
+    "holdout-2662554841-round2-1-baseline": {
+      "row": "95d0e6e5541fa56e055ee2f3427c571ca0ff2f1915533ac1afcdf0a5d302fc33",
+      "audit": "7e661cbcac35858444b0e4355e4fea7894ab6e141465255ce54795d54d6c09d3",
+      "complete": "a6f2d4d08ba3761ec1dcf04884200990008fa9dca64e83b8db774d946b1d14b0",
+      "storage": "69236eeb9554121534cfdae17a89042aa52d7ee687170c6ddb4d161d7b522898"
+    },
+    "holdout-3991437950-round2-0-candidate": {
+      "row": "3e65578e3bdc29bdfdfa0426308b9f54a0bdaf274d5fc46fed6ccc427e73e13c",
+      "audit": "c685788575c2c90a8e8e30affdf37054bb44571ff0e302ab11eaaf2446305a4c",
+      "complete": "a131d22ee223404120e991aa635ff7c4491fd81cddd8c8a57538c75ee5382237",
+      "storage": "48c80f5df8eb88d71c9866962d16d8aa36ac543b4ed7f4084bc16f6162c7886f"
+    },
+    "holdout-3991437950-round2-0-baseline": {
+      "row": "9730c891ac70dbde937dfa134c1d6f0ae436452849e2ecc7e9ef8636058c5a33",
+      "audit": "10a0c58a08cacca52d399b8454efec296ca4ec41424c60141e806048059e1024",
+      "complete": "15f64ea72405ce018a8045b7065a303634eac6bcb5592a0dbb3e979bcb3e1a5b",
+      "storage": "756136c8df9ad264d8caf4f556696b511b71a1b8ef7c4fd411df7c4035e2b749"
+    },
+    "holdout-3991437950-round2-1-candidate": {
+      "row": "46ef85617649a8560e84da2b2567f3a1640c837a9ad116c410bbc257549a4db2",
+      "audit": "000747dca9548e7ae069a5a3ebda0ae0c8b16219de33bb1334e349a60437d8e2",
+      "complete": "e946d6d70dff01ba51b3d04e93bfd9ee15b8d7ddf32cea49d5684704298a9ec8",
+      "storage": "9ba1bf42c7948aa82535b44405ec1db1fae908bde2439573aa02dca228dbb576"
+    },
+    "holdout-3991437950-round2-1-baseline": {
+      "row": "8a4989bc4cc51b7c406290b2bac89fce08561347a9a71095efcc4cc130ea4b7e",
+      "audit": "ee07f66f15fa3c1baa52fdbc2dec4fc6e69ec4838c5a203de2147b69d4dbb1d2",
+      "complete": "d4536cea8835fbbc0ce1bba21c0053ad0c64ddb366e9488c863625d7f9cef8e1",
+      "storage": "ec1f552d983889e7aa13f1d1322ed859826a14113a3e82235b70a124c9b18fa0"
+    }
+  },
+  "checks": [
+    "Eight fixed seed/seat/policy games, 720 states and 719 actions, DONE, zero agent errors, bound official primary replay and owned Job cleanups checked against aggregate receipts.",
+    "Both checkpoint identities and positive task-model forwards checked against frozen policy and replay certificates; live and primary counts use the same reconstructed cumulative source.",
+    "Independent fixed game reports 719 official transitions and 20 of 20 matched identities, with two raw files each decoded once; shared engine and trace validator.",
+    "Aggregate game ledger independently passed frozen evaluation function and exactly matches recorded evaluation result."
+  ],
+  "exploratory_gate_passed": false,
+  "seed_groups": [
+    {
+      "seed": 2662554841,
+      "mean_own_profit_difference": 85.0,
+      "mean_margin_difference": 1272.0
+    },
+    {
+      "seed": 3991437950,
+      "mean_own_profit_difference": -1345.0,
+      "mean_margin_difference": -2396.0
+    }
+  ],
+  "gate_failures": [
+    {
+      "seed": 3991437950,
+      "side": 0,
+      "metric": "cash_margin"
+    },
+    {
+      "seed": 3991437950,
+      "side": 1,
+      "metric": "cash_margin"
+    },
+    {
+      "seed": 3991437950,
+      "metric": "mean_own_profit"
+    },
+    {
+      "seed": 3991437950,
+      "metric": "mean_cash_margin"
+    }
+  ],
+  "seat_review": "Within each seed and policy the seat-0 and seat-1 terminal bank arrays are reversed and policy-relative profits equal. Worker passes the planned side to the official entry and derives policy-relative values using that side; aggregate receipts show mirrored results but do not explain their cause.",
+  "limitations": [
+    "No replay or trace was opened, no individual score recomputation or additional games occurred; primary audit and official replay claims rely on bound worker receipts.",
+    "Independent replay uses the same official engine and shared input validator, not an independent rules engine; its 20 samples include no DIG or FERTILIZE.",
+    "Mirrored seat outcomes are not independent seeds and do not establish causality or imply an error.",
+    "Two seeds and one opponent cannot establish statistical significance, generalization or competitive promotion.",
+    "Model identity was checked by byte hash only; no model contents decoded."
+  ]
+}

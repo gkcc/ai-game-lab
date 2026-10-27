@@ -1,0 +1,46 @@
+{
+  "game": "holdout-3991437950-round2-1-baseline",
+  "seed": 3991437950,
+  "opponent": "round2",
+  "side": 1,
+  "policy": "baseline",
+  "split": "holdout",
+  "parity_kind": null,
+  "bot_sha256": "d3702a03e933bec0c4c3a6b838be0b182eb1fc953ac6fe3b48b40ce2b69ae39a",
+  "rival_sha256": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+  "task_checkpoint_sha256": "47def382fff8738583d2359964d2e14bfbb41b53e9dc428d2882519ada8e1811",
+  "passed": true,
+  "states": 720,
+  "action_turns": 719,
+  "status": [
+    "DONE",
+    "DONE"
+  ],
+  "agent_errors": 0,
+  "initial_banks": [
+    3000.0,
+    3000.0
+  ],
+  "banks": [
+    43752.0,
+    36093.0
+  ],
+  "rewards": [
+    43752.0,
+    36093.0
+  ],
+  "bank": 36093.0,
+  "opponent_bank": 43752.0,
+  "initial_bank": 3000.0,
+  "opponent_initial_bank": 3000.0,
+  "net_profit": 33093.0,
+  "opponent_net_profit": 40752.0,
+  "margin": -7659.0,
+  "score": 0.0,
+  "semantic_replay_sha256": "1abae00545fd5721e7dff2d1f624c0c62d7cc1d8d6fb3b5240119e3407c6e7c8",
+  "semantic_replay_sha256_v2": "b543d1b971187a90fb52c584ebbc28bedbf33dec98026deee9ece6d255cd63a6",
+  "replay_gzip_sha256": "80e74d451e472aaeefbed8fad33f946eed233c803d02c0944527be0224f67018",
+  "trace_sha256": "31d78f7c096287b3e74d354fc9aaa74a86d99ab44138ede3dd41ea83f36a482b",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd"
+}

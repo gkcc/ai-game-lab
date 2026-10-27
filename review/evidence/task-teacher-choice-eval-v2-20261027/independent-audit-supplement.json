@@ -1,0 +1,86 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "parent_assessment_sha256": "f8171a4b59349037616b3aeacd46e4b42518b3a5315e216faac774f924aef442",
+  "audit_ledger_sha256": "0d15489ddd79bc40f6ed480ddaa6dbb7c2829fd8f224311efd9ea7cd6b72674b",
+  "audit_receipt_sha256": {
+    "holdout-2662554841-round2-0-candidate": "ad88ef41fef3e169007b5a9c3babf02081ff614a93e951dc229c5f6e3afb9c5d",
+    "holdout-2662554841-round2-0-baseline": "a773d7b940dd3dc68adbe50b28127d2eeb8b0bc9910f8c8bf0a5366e0c9b9ebc",
+    "holdout-2662554841-round2-1-candidate": "4f158a73eced59646509f9d10bcee099cb4b138847029f05f3aaccc91efe1803",
+    "holdout-2662554841-round2-1-baseline": "7e661cbcac35858444b0e4355e4fea7894ab6e141465255ce54795d54d6c09d3",
+    "holdout-3991437950-round2-0-candidate": "c685788575c2c90a8e8e30affdf37054bb44571ff0e302ab11eaaf2446305a4c",
+    "holdout-3991437950-round2-0-baseline": "10a0c58a08cacca52d399b8454efec296ca4ec41424c60141e806048059e1024",
+    "holdout-3991437950-round2-1-candidate": "000747dca9548e7ae069a5a3ebda0ae0c8b16219de33bb1334e349a60437d8e2",
+    "holdout-3991437950-round2-1-baseline": "ee07f66f15fa3c1baa52fdbc2dec4fc6e69ec4838c5a203de2147b69d4dbb1d2"
+  },
+  "full_audit_source_sha256": "84f7c7b4316fb98791c51b933f5329a271b8bc9aec60eebe133f6d433ec4510d",
+  "semantics_source_sha256": "9ac62d0df7adca84c0feff805b2979bb45f9f9f4c2064d1e2b5c48efd3e779a5",
+  "official_replay_flags_all_eight": {
+    "passed": true,
+    "both_public_and_private_states_match_each_step": true,
+    "inventory_order_checked_each_step": true,
+    "transitions_each": 719
+  },
+  "job_sampling_totals": {
+    "rss_sampling_attempts": 1799,
+    "rss_complete_samples": 1794,
+    "rss_discarded_samples": 5,
+    "rss_sampling_retries": 5
+  },
+  "job_sampling_per_game_in_ledger_order": [
+    {
+      "rss_sampling_attempts": 225,
+      "rss_complete_samples": 225,
+      "rss_discarded_samples": 0,
+      "rss_sampling_retries": 0
+    },
+    {
+      "rss_sampling_attempts": 229,
+      "rss_complete_samples": 227,
+      "rss_discarded_samples": 2,
+      "rss_sampling_retries": 2
+    },
+    {
+      "rss_sampling_attempts": 223,
+      "rss_complete_samples": 223,
+      "rss_discarded_samples": 0,
+      "rss_sampling_retries": 0
+    },
+    {
+      "rss_sampling_attempts": 226,
+      "rss_complete_samples": 225,
+      "rss_discarded_samples": 1,
+      "rss_sampling_retries": 1
+    },
+    {
+      "rss_sampling_attempts": 222,
+      "rss_complete_samples": 221,
+      "rss_discarded_samples": 1,
+      "rss_sampling_retries": 1
+    },
+    {
+      "rss_sampling_attempts": 225,
+      "rss_complete_samples": 225,
+      "rss_discarded_samples": 0,
+      "rss_sampling_retries": 0
+    },
+    {
+      "rss_sampling_attempts": 223,
+      "rss_complete_samples": 223,
+      "rss_discarded_samples": 0,
+      "rss_sampling_retries": 0
+    },
+    {
+      "rss_sampling_attempts": 226,
+      "rss_complete_samples": 225,
+      "rss_discarded_samples": 1,
+      "rss_sampling_retries": 1
+    }
+  ],
+  "interpretation": "Frozen full_audit asserts canonical initial and every subsequent state equality, completed length and v2 digest before reporting flags; canonical preserves unit inventory item order and excludes remainingOverageTime. Assertions fail closed in normal non-optimized execution.",
+  "limitations": [
+    "Aggregate receipts and frozen code reviewed without replay or trace access or independent reexecution.",
+    "Assertions can be disabled by optimized Python; reviewed worker command uses -B and does not request -O, but external environment remains a runtime assumption.",
+    "Sampling is not a hard real-time bound; retry totals do not establish the cause of prior failure."
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "game": "holdout-2662554841-round2-0-candidate",
+  "official_transitions": 719,
+  "sample_count": 20,
+  "matched": 20,
+  "selection_rule": "first reserved seed, candidate, round2, seat 0",
+  "sample_identity_sha256": "208eeab78f4229434a58627f6f5b37dd0490d74981449dd832263f18b4436c0c",
+  "sample_operation_counts": {
+    "DIG": 0,
+    "FERTILIZE": 0,
+    "HARVEST": 2,
+    "PLANT": 2,
+    "WATER": 16
+  },
+  "raw_reads": {
+    "compressed_input_read_bytes": 8908451,
+    "decoded_input_bytes": 145079852,
+    "files_opened": 2,
+    "files_completed": 2,
+    "raw_decode_passes_per_file": 1
+  },
+  "checkpoint_sha256": "b9a0f293c354aa78468c531e85645f70fbea9075a9dace729856119d913b24df",
+  "freeze_sha256": "15b12f2a12b0a8a6b60b689dc6a432fadef4bbbb6a41f80e10cc77a59f61587a",
+  "registration_sha256": "ef84810a088f5bb7ba8535a3774dccc3465413596402b9d1ba2030e97afde9f6",
+  "games_result_sha256": "d619d41a76f45ba60c0224ff55b952f0e6112c9f5576eff981ee202a54c72818",
+  "game_ledger_sha256": "f058ccd04688d38d47806a4476449e35bb0ad75a768379c30101d5320c923f0b",
+  "audit_ledger_sha256": "0d15489ddd79bc40f6ed480ddaa6dbb7c2829fd8f224311efd9ea7cd6b72674b",
+  "game_row_sha256": "9077043cedec6df6b576cc669e79130459442023b108fcc5736af29b92df3bd2",
+  "game_audit_sha256": "ad88ef41fef3e169007b5a9c3babf02081ff614a93e951dc229c5f6e3afb9c5d",
+  "method_sha256": "13ac7ed7a82dce98bdb82b36b821791522663495fdd53eff63a7693322f71196",
+  "no_model_inference": true,
+  "no_new_games": true,
+  "retry_allowed": false,
+  "limitations": "Separate process repeats the same fixed official engine and shared trace validator; not an independent rules implementation"
+}
