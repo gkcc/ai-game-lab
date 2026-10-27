@@ -1,0 +1,18 @@
+{
+  "baseline_head": "67f440c1200728b614b3c715ca3266a2e7dd1c5d",
+  "deadline_utc": "2026-10-27T14:39:07.740481+00:00",
+  "status": "approved_for_implementation_not_execution",
+  "synthetic_only": true,
+  "limits": {
+    "max_rss_bytes": 536870912,
+    "max_commit_bytes": 1073741824,
+    "min_available_bytes": 2147483648,
+    "wall_seconds": 30,
+    "poll_seconds": 0.25,
+    "cleanup_seconds": 10
+  },
+  "scope": "One owned synthetic Job with one artificial disappearing-member injection and bounded short-lived children; no official game, model, training cache, or replay read.",
+  "acceptance": "One injection discarded, at least one retry and complete sample, successful exit, launcher reaped, Job empty, no cleanup error.",
+  "retry_policy": "One attempt; no rerun after started or result exists.",
+  "limits_interpretation": "Sampled RSS is not a hard real-time bound; artificial injection does not prove the prior failure cause."
+}

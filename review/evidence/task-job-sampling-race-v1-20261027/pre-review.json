@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "freeze_sha256": "d8a4ed0d79dcb63aac11de6ceeb6af38d74ce6c9b82efadd60b358cfbbb3eac5",
+  "registration_sha256": "0319e0e9943fc8c4101a776c662182e2cc9a7aeb5105fc0af347790073f31af7",
+  "checks": [
+    "Published failed panel parent and original Job source match baseline 67f440c and accepted evidence hashes.",
+    "Frozen source collection, registration, decision, environment and bounded single synthetic attempt verified; no start/result marker exists.",
+    "Verify succeeded and 11 pure fake tests passed, including real supervisor lifecycle with fake API and failed cleanup.",
+    "Acceptance requires one artificial injection, completed retry and owned Job cleanup; no games or model access in scenario."
+  ],
+  "limitations": [
+    "Artificial injection does not establish the cause of the prior failure or demonstrate a natural race.",
+    "RSS and membership sampling are not hard real-time limits; empty snapshots conservatively fail.",
+    "Local marker and result prevent ordinary retry, but simultaneous deletion or marker deletion plus receipt-write failure cannot be excluded.",
+    "Windows Job behavior and actual synthetic process execution were not independently run; prereview and pre-execution commit remain required."
+  ]
+}
