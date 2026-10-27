@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "independent_sample_matched": 20,
+  "independent_sample_count": 20,
+  "episodes": 8809,
+  "observed": 6809,
+  "unknown": 2000,
+  "coverage": 0.772959473265978,
+  "observed_operations": 5,
+  "observed_per_development_seed": {
+    "2328454240": 3450,
+    "3911611436": 3359
+  },
+  "feasibility_gate_met": true,
+  "gate_meaning": "May consider a separately preregistered limited learning probe; no admission or causal claim",
+  "preflight_import_failure_disclosed": true,
+  "preflight_no_raw_or_official_steps": true,
+  "method_sha256": "9b900a51927ff0d76ff348095833fbf6fdc97a41e3585aedfdf68eb56156aedd",
+  "verification_sha256": "050f01e5f8082f791ba8e27685b60d35e982aaa36a18766caf6972ab2fb096d2",
+  "analysis_sha256": "80a0b58edd31a64533443a58cd2d34c2da48769533e31e5426c849a9d4a8b2df",
+  "freeze_sha256": "e8bbce2d32b6041e068462a70ee73bee1666e8a29b32f46d29fa528af32d5da9"
+}

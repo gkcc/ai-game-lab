@@ -1,0 +1,12 @@
+{
+  "decision": "Prepare a separately registered, small completion-evidence-filtered task-choice BC feasibility experiment.",
+  "basis": "The registered label-coverage gate is met and the fixed 20-example independent check matched, but the sample covers only one development game and has no DIG. Among 6809 observed effects, 5517 are WATER; 2000 episode outcomes remain unknown.",
+  "required_before_execution": [
+    "Verify the actor feature and candidate construction has no later state, other player's private information, labels, or outcome-dependent features.",
+    "Choose unused seeds with a reproducible search of previous registrations and freeze the complete seed grouping and opponent-seat panel before consuming new data.",
+    "Freeze source, one training run, candidate-aware baseline, class-wise exploratory metrics, budget, stopping rule and independent review before opening newly generated test data.",
+    "Count uncertain outcomes separately; never mark unknown as negative or describe a selective sample as representative of all tasks."
+  ],
+  "scope": "Only decide implementation details after inspecting the existing task-choice training and trace pipeline; the advice is a proposal, not an executed experiment or claim of improvement.",
+  "limits": "Offline scores alone cannot establish game strength, causal benefit, reliable population generalization, or model promotion. Default Bot and previously frozen models remain unchanged. No PPO or large-scale training."
+}

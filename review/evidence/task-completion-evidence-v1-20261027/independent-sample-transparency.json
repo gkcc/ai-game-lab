@@ -1,0 +1,50 @@
+{
+  "sample_count": 20,
+  "selection": "Twenty smallest preregistered identity SHA256; labels ignored for selection",
+  "sample_identity_list_sha256": "0b8193cfe7ae62a54f4b62549ee44fb57ada791360b1b1b7f69b4651b115540b",
+  "identity_list_encoding": "SHA256 of compact ASCII JSON list in ascending individual identity hash order",
+  "by_operation_and_status": [
+    {
+      "op": "FERTILIZE",
+      "status": "completed_observed",
+      "count": 1
+    },
+    {
+      "op": "HARVEST",
+      "status": "unknown",
+      "count": 1
+    },
+    {
+      "op": "PLANT",
+      "status": "completed_observed",
+      "count": 1
+    },
+    {
+      "op": "WATER",
+      "status": "completed_observed",
+      "count": 14
+    },
+    {
+      "op": "WATER",
+      "status": "unknown",
+      "count": 3
+    }
+  ],
+  "method_reuses": [
+    "decision.full_audit.reexecute",
+    "compact_replay",
+    "validate_trace",
+    "bounded raw reader and official instrumented execution events"
+  ],
+  "method_independently_implements": [
+    "episode continuity and ending",
+    "operation specific effect predicates",
+    "sample comparison"
+  ],
+  "independence_limit": "Replay, actor visibility validation and instrumentation are shared; sampled label judgment is separately implemented, not an independent engine or independent dataset",
+  "representativeness": "20 deterministic samples from one preregistered candidate development game; diagnostic only, no statistical representativeness or holdout claim",
+  "raw_reopened": false,
+  "official_engine_rerun": false,
+  "private_rows_exported": false,
+  "method_source_assessment": "Generic code contains no embedded raw states, coordinates, private trajectories or absolute local paths; review the full file and associated publication rules before publication."
+}

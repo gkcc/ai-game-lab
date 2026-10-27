@@ -1,0 +1,10 @@
+{
+  "source": "Follow-up read-only source review by the same independent gpt-6.1-terra subagent",
+  "corrects": "next-learning-advice.public.json",
+  "candidate_scope": "The current set consists of opportunities produced by the frozen controller, not an enumeration or official legality mask of all game actions. The model cannot select tasks outside that set.",
+  "missing_join": "The completion pipeline discards callback inputs after validation and does not currently join each episode origin to its decision-time features. A separately verified one-to-one join must match game, first step, first ordinal, chosen identity and candidate semantics; duplicates or missing matches must stop the experiment.",
+  "target_correction": "The existing task_dagger_once_v1 data path trains on teacher_label. This probe must instead use the episode's actual first chosen candidate as the supervised target when conditioning on that episode's observed effect; teacher_label cannot substitute for chosen.",
+  "feature_boundary": "Inputs must be captured from the first decision only and may contain only decision-time actor-visible information and prior same-turn controller planning state. The future completion status can select or stratify data but must never enter model features.",
+  "existing_components": "The shared/candidate encoder and ragged training skeleton are reusable. Existing split assumptions and training parameters are tied to a different preregistered study and must not be silently changed or reused as if they described this study.",
+  "evaluation_caveat": "Filtering by observed effect conditions on a later event and introduces selection bias; report overall choices and outcome-stratified results separately and do not describe the conditional subset as deployment performance."
+}

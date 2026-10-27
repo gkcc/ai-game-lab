@@ -1,0 +1,70 @@
+{
+  "game": "dev-3911611436-round2-0-baseline",
+  "side": 0,
+  "rows": 1078,
+  "counts": [
+    {
+      "op": "DIG",
+      "status": "completed_observed",
+      "reason": "atomic_effect",
+      "count": 5
+    },
+    {
+      "op": "FERTILIZE",
+      "status": "completed_observed",
+      "reason": "atomic_effect",
+      "count": 20
+    },
+    {
+      "op": "FERTILIZE",
+      "status": "unknown",
+      "reason": "task_interrupted_or_changed",
+      "count": 5
+    },
+    {
+      "op": "HARVEST",
+      "status": "completed_observed",
+      "reason": "atomic_effect",
+      "count": 71
+    },
+    {
+      "op": "HARVEST",
+      "status": "unknown",
+      "reason": "task_interrupted_or_changed",
+      "count": 13
+    },
+    {
+      "op": "PLANT",
+      "status": "completed_observed",
+      "reason": "atomic_effect",
+      "count": 53
+    },
+    {
+      "op": "PLANT",
+      "status": "unknown",
+      "reason": "task_interrupted_or_changed",
+      "count": 31
+    },
+    {
+      "op": "WATER",
+      "status": "completed_observed",
+      "reason": "atomic_effect",
+      "count": 686
+    },
+    {
+      "op": "WATER",
+      "status": "unknown",
+      "reason": "task_interrupted_or_changed",
+      "count": 194
+    }
+  ],
+  "unknown_step_reasons": {
+    "move_or_not_at_target": 1317
+  },
+  "semantic_sha256_v2": "a5a1041bfb48e541b8f35afe276e230197c789f1ffd38f6a12de40c7c9685208",
+  "ordered_effect_sha256": "62e94490481cf6793e63e12d1fb479ae953eba73fc1bc55e9d35462231b2620c",
+  "replay_sha256": "4a5b31167c0d24df23779fe6c8a51c0fac2f822724bfcebe9762151387072781",
+  "trace_sha256": "87510d2084239558dab64f33ac95b96bc4041ceaa14898b0483fac962cf40b59",
+  "labels_sha256": "a4e6ea2a4f9d575216bc9237a5454a716bf400114e3d38feebf04ded3c2b14ce",
+  "official_transitions": 719
+}

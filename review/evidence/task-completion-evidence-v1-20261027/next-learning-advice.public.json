@@ -1,0 +1,9 @@
+{
+  "source": "independent gpt-6.1-terra subagent, not WebChat",
+  "recommendation": "After this stage passes, separately preregister a small completion-evidence-filtered task-choice behavior-cloning probe with truly unused seeds and grouped evaluation.",
+  "facts": "Eight observed development games contain 6809 observed effects and 2000 unknown episodes. WATER accounts for 5517 of the observed effects. The fixed independent sample is narrow and does not cover DIG.",
+  "leakage_controls": "Use only player-legal decision-time information and candidates; completed effects are labels for fixed filtering, never input features. Never treat unknown as failure. Split complete seeds and avoid duplicate episodes across splits.",
+  "study_design": "Predeclare a single training run and a fixed candidate-aware baseline, seed identities, collection budget, class-wise metrics and stopping rules before new data or outcomes are consumed. At most eight new full official games, eight corresponding primary replays and one independent replay were suggested; prove seed provenance before calling any split independent.",
+  "suggested_exploratory_gate": "Compare selected-candidate top-1 and cross-entropy to a fixed candidate-aware frequency baseline; report each seed, each action and WATER prevalence. Suggested thresholds are top-1 improvement at least five percentage points on aggregate and positive in both seeds, no worse cross-entropy, and at least three operations with at least twenty examples each and five-point improvement in their macro recall. If the baseline is not meaningful, resolve its precise definition before registering.",
+  "limits": "Two holdout seeds cannot establish statistical generalization or game strength; supervised learning agreement is not a performance promotion. Failure means stop without reusing the holdout to tune or resample. Complete official model-controlled matches require a separate preregistered evaluation."
+}

@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "primary_error_kind": null,
+  "cleanup_error_kind": null,
+  "cleanup": {
+    "owned_instances_observed": 3,
+    "owned_instances_remaining": 0,
+    "reader_joined": true,
+    "launched_process_reaped": true
+  },
+  "capture": {
+    "observed_bytes": 0,
+    "stored_bytes": 0,
+    "reader_joined": true,
+    "exit_code": 0
+  },
+  "elapsed_seconds": 63.5,
+  "sampled_peak_memory_bytes": 353746944,
+  "sampled_process_instances": 3,
+  "memory_samples": 249,
+  "memory_limit_kind": "sampled; not a hard operating-system quota",
+  "within_total_deadline": true,
+  "retry_allowed": false
+}

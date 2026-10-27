@@ -1,0 +1,81 @@
+{
+  "complete": true,
+  "games": 8,
+  "raw_files": 16,
+  "official_transitions": 5752,
+  "episodes": 8809,
+  "observed": 6809,
+  "unknown": 2000,
+  "coverage": 0.772959473265978,
+  "raw_reads": {
+    "compressed_input_read_bytes": 70528847,
+    "decoded_input_bytes": 1142455727,
+    "files_opened": 16,
+    "files_completed": 16,
+    "raw_decode_passes_per_file": 1
+  },
+  "actor_projection_checked": true,
+  "wall_seconds": 61.79700000002049,
+  "cpu_seconds": 51.625,
+  "memory_limit_kind": "sampled externally; not a hard limit",
+  "gpu_seconds": 0,
+  "new_games": 0,
+  "training_updates": 0,
+  "counts": [
+    {
+      "op": "DIG",
+      "status": "completed_observed",
+      "reason": "atomic_effect",
+      "count": 47
+    },
+    {
+      "op": "FERTILIZE",
+      "status": "completed_observed",
+      "reason": "atomic_effect",
+      "count": 190
+    },
+    {
+      "op": "FERTILIZE",
+      "status": "unknown",
+      "reason": "task_interrupted_or_changed",
+      "count": 41
+    },
+    {
+      "op": "HARVEST",
+      "status": "completed_observed",
+      "reason": "atomic_effect",
+      "count": 618
+    },
+    {
+      "op": "HARVEST",
+      "status": "unknown",
+      "reason": "task_interrupted_or_changed",
+      "count": 159
+    },
+    {
+      "op": "PLANT",
+      "status": "completed_observed",
+      "reason": "atomic_effect",
+      "count": 437
+    },
+    {
+      "op": "PLANT",
+      "status": "unknown",
+      "reason": "task_interrupted_or_changed",
+      "count": 231
+    },
+    {
+      "op": "WATER",
+      "status": "completed_observed",
+      "reason": "atomic_effect",
+      "count": 5517
+    },
+    {
+      "op": "WATER",
+      "status": "unknown",
+      "reason": "task_interrupted_or_changed",
+      "count": 1569
+    }
+  ],
+  "scope": "development feasibility only; no causal or statistical improvement claim"
+}

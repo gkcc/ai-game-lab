@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "main_games": 8,
+  "main_official_transitions": 5752,
+  "independent_official_transitions": 719,
+  "independent_sample": 20,
+  "independent_sample_matched": 20,
+  "episodes": 8809,
+  "completed_observed": 6809,
+  "unknown": 2000,
+  "completed_per_seed": {
+    "3911611436": 3359,
+    "2328454240": 3450
+  },
+  "operations": [
+    "DIG",
+    "FERTILIZE",
+    "HARVEST",
+    "PLANT",
+    "WATER"
+  ],
+  "feasibility_gate_met": true,
+  "sample_missing_operation": "DIG",
+  "gate_meaning": "Eligibility to consider a separately registered limited probe only",
+  "preflight_import_failure_disclosed": true,
+  "preflight_raw_reads": 0,
+  "preflight_official_transitions": 0,
+  "label_files_identity_checked": true,
+  "no_new_games": true,
+  "no_training": true,
+  "shared_replay_and_instrumentation": true,
+  "no_causal_or_performance_claim": true,
+  "freeze_sha256": "e8bbce2d32b6041e068462a70ee73bee1666e8a29b32f46d29fa528af32d5da9",
+  "analysis_sha256": "80a0b58edd31a64533443a58cd2d34c2da48769533e31e5426c849a9d4a8b2df",
+  "independent_review_sha256": "46e659de37a45e89f4ae570d89672eacbb1a9c250cfb656b5e06d51d306fc4af"
+}
