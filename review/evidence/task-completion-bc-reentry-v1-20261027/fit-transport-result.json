@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "error_kind": null,
+  "failure_phase": null,
+  "cleanup_error_kind": null,
+  "cancel_error_kind": null,
+  "guard_read_error_kind": null,
+  "marker_created": true,
+  "marker_complete": true,
+  "child_handle_acquired": true,
+  "child_lifecycle": "handle_acquired",
+  "windows_cleanup": {
+    "owned_instances_observed": 5,
+    "owned_instances_remaining": 0,
+    "reader_joined": true,
+    "launched_process_reaped": true
+  },
+  "linux_session_cleanup_proven": true,
+  "capture": {
+    "limit_bytes": 1048576,
+    "written_bytes": 0,
+    "observed_bytes": 0,
+    "reader_joined": true,
+    "child_exit_code": 0
+  },
+  "elapsed_seconds": 37.93700000003446,
+  "retry_allowed": false
+}

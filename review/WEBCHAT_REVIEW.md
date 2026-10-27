@@ -348,3 +348,9 @@ Linux监督阶段1.329秒，整个自有进程组已清理并回收；原partial
 请审查设置作用范围、同输入对照、启动/中断计数、设备与清理证据和隐私边界；结果支持该样本中的设置影响，但不证明硬件实际算术精度、原异常唯一原因或模型竞技能力。没有梯度、训练、留出、新比赛或官方步。
 
 [报告](../kaggriculture/TASK_COMPLETION_PRECISION_V1.zh-CN.md) | [独立复核](evidence/task-completion-precision-v1-20261027/independent-result-review.json)
+
+## 完成证据筛选任务 BC 新版本：复审重点
+
+审查预登记 bb057d6 与训练、八场比赛、标签复演及独立抽样证据：相同旧训练数据与配置的再次训练是否充分披露，GPU更新与highest对照、两侧清理、模型和旧失败保持是否有证据；数据采集是否先于离线评估，汇总门槛和弱基线解释是否正确。独立20段主要为WATER、没有DIG或FERTILIZE，且共享官方复演基础设施；聚合指标未独立逐条重算。8场为教师采集，并非学生实战成绩。
+
+[详细报告](../kaggriculture/TASK_COMPLETION_BC_REENTRY_V1.zh-CN.md) | [证据](evidence/task-completion-bc-reentry-v1-20261027/)

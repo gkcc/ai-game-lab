@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "game": "holdout-2184120446-round2-0-teacher_task",
+  "official_transitions": 719,
+  "sample_count": 20,
+  "matched": 20,
+  "selection_rule": "20 lowest SHA256 identities from first test seed, round2, seat0; not selected by status",
+  "raw_reads": {
+    "compressed_input_read_bytes": 8356436,
+    "decoded_input_bytes": 135327926,
+    "files_opened": 2,
+    "files_completed": 2,
+    "raw_decode_passes_per_file": 1
+  },
+  "sample_transparency": {
+    "counts": [
+      {
+        "op": "HARVEST",
+        "status": "completed_observed",
+        "count": 1
+      },
+      {
+        "op": "PLANT",
+        "status": "completed_observed",
+        "count": 1
+      },
+      {
+        "op": "WATER",
+        "status": "completed_observed",
+        "count": 13
+      },
+      {
+        "op": "WATER",
+        "status": "unknown",
+        "count": 5
+      }
+    ],
+    "identity_list_sha256": "f039a0b39442cbe7fa88584de9fbcc99297a5b1c6d478ad61072f3716c1a5896"
+  },
+  "shared_methods": [
+    "reexecute",
+    "compact_replay",
+    "validate_trace",
+    "Meter"
+  ]
+}

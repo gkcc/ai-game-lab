@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "identities_sha256": {
+    "freeze.json": "017922bf16c538fc0e091080156dcbf00327243664e4bb9f24a4184d574af962",
+    "registration.json": "ec7fb4290a8353302d60fbf20d6576a889e42f5ff63a563dd859aeb9c9c6a698",
+    "fit-result.json": "7a8538327a049899805ce571737e32f3ded979d7c8896148e98c65e7562f05cf",
+    "fit-transport-result.json": "ef6223ba0cd8b81022550bb5bdb0f59d096cdb3064f9f9c28e8b80f418505cd9",
+    "model-seal.json": "786c7bc7cd11e382d6a9211c7168713699beced1f38cc760d1b90e9f8a00a5ea",
+    "games-result.json": "e5c0cefeb326e36bdd04cc2d52b244df42aa444808103fe30fd82a4c998a756d",
+    "game-ledger.json": "37d4e079691edd67e649555418360d084c695fee50021c83e04a124d9fef6b5f",
+    "game-audit-ledger.json": "748bd7d8acb2cc59ddb1fcb6b521bf43a45db2a81e6fb4908345efe75add3ae7",
+    "test-data-result.json": "68676e03714192664dfa97588c56eb3350448080b54f2aaa23d87e74ddacae7d",
+    "test-label-ledger.json": "32a3c85771c6ab8b034c57c22ae962a67353b221dad8fb57753bc00ad4c3d9d1",
+    "independent-replay-verification.json": "93dc984f276c81e01c3968ad489b4e80839b02efe729e69bf2f9f64362fb6b97",
+    "independent-result-review.json": "987402db48bf29a6e114df0cd89bdb62c1e887f1def7825b3be5b7f7671edf98",
+    "evaluation-result.json": "9799975749e1a8b9db6e5c15e6ca339dbfa8a690760360bceffd35ac4ea13f46"
+  },
+  "checks": [
+    "Eight unique teacher-task games cover two registered new seeds, two opponents and two seats; row, audit and label ledgers bind matching replay and trace identities",
+    "Live, primary replay and label replay each account for 8*719 transitions and independent replay 719, total 17975",
+    "Model seal binds fit, transport and freeze; evaluation binds model seal, test result and independent review; no candidate model was deployed in games",
+    "Overall 8639 equals seed, status, operation and label ledger totals; status counts 6758 completed and 1881 unknown",
+    "Recomputed registered exploratory gate: overall exact top1 gain 0.7647875911563838, CE improvement 2.1555875977579917, both seed gains positive, 5 eligible operation groups macro operation accuracy gain 0.3027548300134345, multi-candidate and cross-operation exact top1 gains nonnegative; gate passed",
+    "New model hash equals prior failed-stage unsealed checkpoint receipt; this does not retroactively accept the prior stage"
+  ],
+  "interpretation": [
+    "The baseline uses smoothed operation frequency and uniform distribution within each operation, with canonical first tie; it is weak at exact candidate selection and can amplify the reported top1 gap. The gap is not evidence of competitive or causal improvement",
+    "FERTILIZE has 194 examples, model exact top1 0.3093 and operation accuracy 0.3196; overall improvement should not obscure this weakness",
+    "Unknown status is not a failure label; its model operation accuracy 0.8623 is below baseline 0.8708, despite better exact top1",
+    "Two new seeds and a fixed teacher/crop-model opportunity set provide exploratory offline evidence only, without statistical significance, deployment or gameplay-strength claims"
+  ],
+  "limitations": [
+    "No test numeric cache, model content, per-row labels or scores were read and no inference, training, game or replay was run in this review; reported metrics were not independently recalculated from individual scores",
+    "Independent replay used shared official engine and shared input validation; episode and effect logic was independently implemented, not an independent game engine",
+    "Seed isolation is bounded by registered searched history; metrics do not generalize beyond the sampled episodes"
+  ]
+}

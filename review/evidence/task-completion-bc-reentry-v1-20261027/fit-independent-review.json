@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "identities_sha256": {
+    "freeze.json": "017922bf16c538fc0e091080156dcbf00327243664e4bb9f24a4184d574af962",
+    "registration.json": "ec7fb4290a8353302d60fbf20d6576a889e42f5ff63a563dd859aeb9c9c6a698",
+    "pre-execution-commit.json": "e923acf35486c66b35814bab694485127151ad1eee434096dff7c1ea80ed7df2",
+    "fit-started.json": "6ebfe3ee726746b28b422bdb9811395a8205df82ae2e876115c8d1e1a20c020c",
+    "fit-result.json": "7a8538327a049899805ce571737e32f3ded979d7c8896148e98c65e7562f05cf",
+    "gpu-guard-result.json": "03b00e64e9fc47cc8ab8919e9b41a6571ae70faaf39332abf5cb2b70fe8ffcce",
+    "fit-transport-result.json": "ef6223ba0cd8b81022550bb5bdb0f59d096cdb3064f9f9c28e8b80f418505cd9",
+    "model-seal.json": "786c7bc7cd11e382d6a9211c7168713699beced1f38cc760d1b90e9f8a00a5ea",
+    "fit-progress.local.jsonl": "1c0e06ab15a2de4fd2143ffa8f304f95e4aab6720112a7ac0a88ab65a3df321a"
+  },
+  "checks": [
+    "Frozen runtime and committed preregistration and new source bytes match; fit marker binds freeze and train data receipt",
+    "Progress events show 128 sequential started and synchronized completed updates, then checkpoint write and 16 sequential started and completed parity comparisons",
+    "Fit receipt reports 128 nonzero-gradient updates, finite validated outputs, weights changed from initialization, expected GPU identity and 16-group highest parity; model seal verifier passes",
+    "Linux supervisor and Windows transport cleanup receipts pass with no remaining owned instances, joined reader and reaped child",
+    "New and prior unsealed checkpoint byte hashes match; original consumed training cache hash matches registration",
+    "No test game, test-data or evaluation start markers, game directory, job inputs or traces found; fit receipt reports no test read or official games"
+  ],
+  "limitations": [
+    "This is receipt, progress and frozen-source review; no independent GPU execution, gradient recomputation, model decoding or inference",
+    "Identical checkpoint bytes do not retroactively establish success or acceptance of the earlier failed fit",
+    "Progress synchronized counters precede subsequent finite and comparison checks; successful final fit receipt records those checks passed",
+    "The 16-group highest precision comparison is limited to that training sample and does not prove held-out performance or actual hardware arithmetic precision",
+    "No replay, test data, model content, training array content or private launch configuration was inspected; WSL and cleanup conclusions rely on execution receipts",
+    "The independent replay method was authored by this reviewer and is separately reviewed by the main agent"
+  ]
+}

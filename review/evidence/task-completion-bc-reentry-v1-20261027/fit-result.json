@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "checkpoint_sha256": "47def382fff8738583d2359964d2e14bfbb41b53e9dc428d2882519ada8e1811",
+  "baseline": {
+    "DIG": 48.0,
+    "FERTILIZE": 191.0,
+    "HARVEST": 619.0,
+    "PLANT": 438.0,
+    "WATER": 5518.0
+  },
+  "train_seeds": [
+    2328454240,
+    3911611436
+  ],
+  "training_summary": {
+    "synchronized_updates": 128,
+    "nonzero_gradient_updates": 128,
+    "weights_changed": true,
+    "gpu_verified": true,
+    "shape_count": 1,
+    "shapes": [
+      [
+        256,
+        256
+      ]
+    ],
+    "elapsed_seconds": 11.413166695999998,
+    "inference_parity": {
+      "groups": 16,
+      "candidate_rows": 1741,
+      "max_abs_error": 1.298050030129616e-06,
+      "synchronized": true,
+      "requested_matmul_precision": "highest",
+      "hardware_precision_measured": false
+    }
+  },
+  "train_data_sha256": "5967e8480d41136707411174b83910e332695d3061946aa49ec3fdc8c7839d0f",
+  "updates": 128,
+  "only_completed_observed_used_for_gradients": true,
+  "final_update_only": true,
+  "no_test_data_read": true,
+  "no_official_games_during_fit": true,
+  "gpu_device_kind_checked_against_private_frozen_identity": true,
+  "gpu_speedup_measured": false,
+  "official_environment_on_gpu": false
+}

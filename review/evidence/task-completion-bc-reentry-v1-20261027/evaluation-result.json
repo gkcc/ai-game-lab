@@ -1,0 +1,132 @@
+{
+  "passed": true,
+  "exploratory_gate": {
+    "passed": true,
+    "failures": []
+  },
+  "metrics": {
+    "overall": {
+      "count": 8639,
+      "model_ce": 1.0993482387664142,
+      "model_top1": 0.8343558282208589,
+      "baseline_ce": 3.254935836524406,
+      "baseline_top1": 0.06956823706447506,
+      "model_operation_accuracy": 0.9351776826021531,
+      "baseline_operation_accuracy": 0.8602847551799977
+    },
+    "by_status": {
+      "completed_observed": {
+        "count": 6758,
+        "model_ce": 1.006273117665903,
+        "model_top1": 0.8427049422906185,
+        "baseline_ce": 3.3055451113493013,
+        "baseline_top1": 0.060964782480023676,
+        "model_operation_accuracy": 0.9554601953240603,
+        "baseline_operation_accuracy": 0.8573542468185854
+      },
+      "unknown": {
+        "count": 1881,
+        "model_ce": 1.43374572329446,
+        "model_top1": 0.8043593833067517,
+        "baseline_ce": 3.073108362166809,
+        "baseline_top1": 0.10047846889952153,
+        "model_operation_accuracy": 0.8623072833599149,
+        "baseline_operation_accuracy": 0.8708133971291866
+      }
+    },
+    "by_seed": {
+      "135433893": {
+        "count": 4474,
+        "model_ce": 1.0569674148971238,
+        "model_top1": 0.8404112650871703,
+        "baseline_ce": 3.315546741569947,
+        "baseline_top1": 0.06526598122485472,
+        "model_operation_accuracy": 0.9316048278945016,
+        "baseline_operation_accuracy": 0.859633437639696
+      },
+      "2184120446": {
+        "count": 4165,
+        "model_ce": 1.1448732822216856,
+        "model_top1": 0.8278511404561825,
+        "baseline_ce": 3.1898282280793273,
+        "baseline_top1": 0.07418967587034814,
+        "model_operation_accuracy": 0.939015606242497,
+        "baseline_operation_accuracy": 0.860984393757503
+      }
+    },
+    "by_operation": {
+      "DIG": {
+        "count": 48,
+        "model_ce": 0.9382547492500151,
+        "model_top1": 0.8333333333333334,
+        "baseline_ce": 6.624426801331578,
+        "baseline_top1": 0.0,
+        "model_operation_accuracy": 0.875,
+        "baseline_operation_accuracy": 0.0
+      },
+      "FERTILIZE": {
+        "count": 194,
+        "model_ce": 2.4504585986799157,
+        "model_top1": 0.30927835051546393,
+        "baseline_ce": 5.292377425424222,
+        "baseline_top1": 0.13402061855670103,
+        "model_operation_accuracy": 0.31958762886597936,
+        "baseline_operation_accuracy": 0.14432989690721648
+      },
+      "HARVEST": {
+        "count": 792,
+        "model_ce": 1.4282196905440774,
+        "model_top1": 0.648989898989899,
+        "baseline_ce": 4.191168049929373,
+        "baseline_top1": 0.1553030303030303,
+        "model_operation_accuracy": 0.7272727272727273,
+        "baseline_operation_accuracy": 0.35984848484848486
+      },
+      "PLANT": {
+        "count": 665,
+        "model_ce": 1.405299606328295,
+        "model_top1": 0.7428571428571429,
+        "baseline_ce": 3.0988892789858107,
+        "baseline_top1": 0.11278195488721804,
+        "model_operation_accuracy": 0.9323308270676691,
+        "baseline_operation_accuracy": 0.8706766917293233
+      },
+      "WATER": {
+        "count": 6940,
+        "model_ce": 0.9958458221146862,
+        "model_top1": 0.8789625360230547,
+        "baseline_ce": 3.0827853773297558,
+        "baseline_top1": 0.05432276657060519,
+        "model_operation_accuracy": 0.9768011527377521,
+        "baseline_operation_accuracy": 0.9423631123919308
+      }
+    },
+    "multi_candidate": {
+      "count": 8578,
+      "model_ce": 1.1071659401612324,
+      "model_top1": 0.833177896945675,
+      "baseline_ce": 3.278082384207781,
+      "baseline_top1": 0.06295173700163208,
+      "model_operation_accuracy": 0.9347167171834927,
+      "baseline_operation_accuracy": 0.8592912100722779
+    },
+    "cross_operation": {
+      "count": 2647,
+      "model_ce": 1.4219423195916625,
+      "model_top1": 0.6834151870041556,
+      "baseline_ce": 3.7853129279956153,
+      "baseline_top1": 0.1106913486966377,
+      "model_operation_accuracy": 0.7884397431054023,
+      "baseline_operation_accuracy": 0.5440120891575368
+    }
+  },
+  "independent_result_review_sha256": "987402db48bf29a6e114df0cd89bdb62c1e887f1def7825b3be5b7f7671edf98",
+  "model_sha256": "47def382fff8738583d2359964d2e14bfbb41b53e9dc428d2882519ada8e1811",
+  "test_array_sha256": "53cfc6ca618911604f3092ac82e97f31f51950736a4376030d2d4e5c98632456",
+  "population": "all test episode origins; completed and unknown also reported separately",
+  "candidate_scope": "frozen controller opportunities, not all official legal actions",
+  "interpretation": "Two new seeds support an exploratory offline signal only; no statistical or game-strength claim",
+  "no_candidate_model_official_matches": true,
+  "no_promotion": true,
+  "retry_allowed": false
+}

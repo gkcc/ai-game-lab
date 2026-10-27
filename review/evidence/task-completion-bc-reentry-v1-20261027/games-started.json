@@ -1,0 +1,79 @@
+{
+  "attempt": 1,
+  "retry_allowed": false,
+  "model_seal_sha256": "786c7bc7cd11e382d6a9211c7168713699beced1f38cc760d1b90e9f8a00a5ea",
+  "fixed_plan": [
+    {
+      "game": "holdout-2184120446-round2-0-teacher_task",
+      "policy": "teacher_task",
+      "split": "holdout",
+      "seed": 2184120446,
+      "opponent": "round2",
+      "side": 0,
+      "parity_kind": null
+    },
+    {
+      "game": "holdout-2184120446-round2-1-teacher_task",
+      "policy": "teacher_task",
+      "split": "holdout",
+      "seed": 2184120446,
+      "opponent": "round2",
+      "side": 1,
+      "parity_kind": null
+    },
+    {
+      "game": "holdout-2184120446-market-0-teacher_task",
+      "policy": "teacher_task",
+      "split": "holdout",
+      "seed": 2184120446,
+      "opponent": "market",
+      "side": 0,
+      "parity_kind": null
+    },
+    {
+      "game": "holdout-2184120446-market-1-teacher_task",
+      "policy": "teacher_task",
+      "split": "holdout",
+      "seed": 2184120446,
+      "opponent": "market",
+      "side": 1,
+      "parity_kind": null
+    },
+    {
+      "game": "holdout-135433893-round2-0-teacher_task",
+      "policy": "teacher_task",
+      "split": "holdout",
+      "seed": 135433893,
+      "opponent": "round2",
+      "side": 0,
+      "parity_kind": null
+    },
+    {
+      "game": "holdout-135433893-round2-1-teacher_task",
+      "policy": "teacher_task",
+      "split": "holdout",
+      "seed": 135433893,
+      "opponent": "round2",
+      "side": 1,
+      "parity_kind": null
+    },
+    {
+      "game": "holdout-135433893-market-0-teacher_task",
+      "policy": "teacher_task",
+      "split": "holdout",
+      "seed": 135433893,
+      "opponent": "market",
+      "side": 0,
+      "parity_kind": null
+    },
+    {
+      "game": "holdout-135433893-market-1-teacher_task",
+      "policy": "teacher_task",
+      "split": "holdout",
+      "seed": 135433893,
+      "opponent": "market",
+      "side": 1,
+      "parity_kind": null
+    }
+  ]
+}

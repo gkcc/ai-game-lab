@@ -1,0 +1,104 @@
+{
+  "passed": true,
+  "games": 8,
+  "official_transitions": 5752,
+  "groups": 8639,
+  "candidates": 388175,
+  "completed_observed": 6758,
+  "unknown": 1881,
+  "counts": [
+    {
+      "op": "DIG",
+      "status": "completed_observed",
+      "count": 48
+    },
+    {
+      "op": "FERTILIZE",
+      "status": "completed_observed",
+      "count": 152
+    },
+    {
+      "op": "FERTILIZE",
+      "status": "unknown",
+      "count": 42
+    },
+    {
+      "op": "HARVEST",
+      "status": "completed_observed",
+      "count": 602
+    },
+    {
+      "op": "HARVEST",
+      "status": "unknown",
+      "count": 190
+    },
+    {
+      "op": "PLANT",
+      "status": "completed_observed",
+      "count": 442
+    },
+    {
+      "op": "PLANT",
+      "status": "unknown",
+      "count": 223
+    },
+    {
+      "op": "WATER",
+      "status": "completed_observed",
+      "count": 5514
+    },
+    {
+      "op": "WATER",
+      "status": "unknown",
+      "count": 1426
+    }
+  ],
+  "per_seed": {
+    "135433893": 4474,
+    "2184120446": 4165
+  },
+  "per_seed_status": [
+    {
+      "seed": "135433893",
+      "status": "completed_observed",
+      "count": 3470
+    },
+    {
+      "seed": "135433893",
+      "status": "unknown",
+      "count": 1004
+    },
+    {
+      "seed": "2184120446",
+      "status": "completed_observed",
+      "count": 3288
+    },
+    {
+      "seed": "2184120446",
+      "status": "unknown",
+      "count": 877
+    }
+  ],
+  "primary_raw_reads": {
+    "compressed_input_read_bytes": 68866177,
+    "decoded_input_bytes": 1113557442,
+    "files_opened": 16,
+    "files_completed": 16,
+    "raw_decode_passes_per_file": 1
+  },
+  "second_trace_pass": {
+    "compressed_input_read_bytes": 58866025,
+    "decoded_input_bytes": 808018581,
+    "files_opened": 8,
+    "files_completed": 8,
+    "raw_decode_passes_per_file": 1
+  },
+  "array_sha256": "53cfc6ca618911604f3092ac82e97f31f51950736a4376030d2d4e5c98632456",
+  "array_bytes": 162238832,
+  "label_ledger_sha256": "32a3c85771c6ab8b034c57c22ae962a67353b221dad8fb57753bc00ad4c3d9d1",
+  "model_seal_sha256": "786c7bc7cd11e382d6a9211c7168713699beced1f38cc760d1b90e9f8a00a5ea",
+  "games_result_sha256": "e5c0cefeb326e36bdd04cc2d52b244df42aa444808103fe30fd82a4c998a756d",
+  "split": "prospective two-seed offline evaluation, not candidate-versus-opponent matches",
+  "outcome_is_metric_only": true,
+  "private_rows_and_features_published": false
+}
