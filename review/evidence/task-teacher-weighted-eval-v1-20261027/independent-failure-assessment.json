@@ -1,0 +1,150 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "scope": "read-only failure evidence assessment; passed describes evidence review, not panel success",
+  "identities_sha256": {
+    "registration.json": "153f58ea31aaadf7daf2be29bdf12654bbbed2b33e504a5d7c606c4735dc9fef",
+    "freeze.json": "57792cbabd0ca224cc8f37cd973de05d2997ea2b96f9525342b97cfda62329db",
+    "pre-review.json": "3449f51a9a2d05d0367d4a8e526da53c497d0ece70093a856e5c946d2ca3626a",
+    "pre-execution-commit.json": "a8ddf7dfa5b7b767d2345ac0d6373dfef64b23f4be10787ef8a7539a3529c687",
+    "games-started.json": "685da6e5bc22cf592081425e15298aab1c1dd2bcee3989b6b0d8effede009d60",
+    "games-failure.local.json": "e994605ff7f102bfd97a52cd17af16406022e30c87ee7fbaad1d2e51f2db0a36"
+  },
+  "work_receipts": [
+    {
+      "ordinal": 1,
+      "receipt_sha256": {
+        "row": "a05bd2677cf75f1ca83c9ba66e3e689ce42317bc24e579fceac07c9c3f05b30a",
+        "audit": "9bb48d0b0cb48804e22a9e4e2c6150eeb51eb75184d2d0c12894655d43cab792",
+        "complete": "cec2eb6db5eeaf82bae3fc91669f70c031032227301dbd669e9af5d04a8f6fe4",
+        "storage": "fce7117160d7388905e9e31b954430173193b18aad469f60144e0da24136ff26"
+      },
+      "compressed_replay_sha256": "841a77a8fb6b3eb04b6f1ff27416ca501c125163b6e77e6de80aa17a1f228175",
+      "compressed_trace_sha256": "43396c9427223d3014c8afff2c487da12aaa0279ab4cb0d7737d9ba4bf493c45"
+    },
+    {
+      "ordinal": 2,
+      "receipt_sha256": {
+        "row": "58c99f820b335c7b95e7122c9bceb311caa9972d9cf5d8ce7355f14afede85be",
+        "audit": "738a099cbc40038e79c57325bc1dc06be1c9b49ab903fe5fbcf894d538ea62c7",
+        "complete": "21ad9b5ed2c16412b29d6c3332ffa9e6e7e2087d393f69c6177312b6a63339b4",
+        "storage": "5e52b89a358229f82edc730d5a89af7b1e288788b2e199072e4a63e045bde480"
+      },
+      "compressed_replay_sha256": "26577850aa4fcb4bcf91b3de8820c66cebb2de80955db51d8c4f5a0177955824",
+      "compressed_trace_sha256": "6cb63084bcae6abe303b9f40e7e687cfc6a6b3fe0bebec2bc4708cba8bc1022e"
+    },
+    {
+      "ordinal": 3,
+      "receipt_sha256": {
+        "row": "b5fa6ce1ada0bd4461e15ae4aeea984f0cef0721a4d6f3c4feffc85d7a97931e",
+        "audit": "cee0e85424b85cfe1c8f5033b22cacc3167c8d2aa540f5bf2560cbf476cecbb3",
+        "complete": "02984f6a87a91bc7904b105eb249ab91cd2e802093bf43a8545c13534a5111ab",
+        "storage": "006a3f7f47b702313d45bf24a6adb27d767a17d5527b46c6acfd99ee206f81a1"
+      },
+      "compressed_replay_sha256": "ba21fcfac9d7dffcaab5fd61bb2d9d63f70cd4d7271441b17e9b875dd88b306d",
+      "compressed_trace_sha256": "d5c2e72ceca75a0eab38aa99a2dd7bf86f9bb15bc55f835328e1c4f37e0f6347"
+    },
+    {
+      "ordinal": 4,
+      "receipt_sha256": {
+        "row": "f72cab3eb80d69a53200497575066993f769b362ddaed86bff219d41f948625f",
+        "audit": "41d706f4a1b417520c76796a3b92ea6f912104de5f8b7af64af8741b00cf1fd8",
+        "complete": "276f4d3ffe311386cb96bcb004e158f14fd40697858879e85025d2be015ccd63",
+        "storage": "50e948b0f2473ec0d36cc66730bc310eeb9b72414f4df3310302de213ef33274"
+      },
+      "compressed_replay_sha256": "216918eb0f8066481dc3fc6b518d387c84ea1e79c49561572279e6cbe1b86113",
+      "compressed_trace_sha256": "9d80d053316c186ee5e9aa20f49ad3aba9877d6dbef9173549969cc7ad86d17f"
+    },
+    {
+      "ordinal": 5,
+      "receipt_sha256": {
+        "row": "e840f809575f4c6657f9b4067c4f8fa1db4f0af95a7b72e6bbf00cacc29f895f",
+        "audit": "9a9554347255430425b6523acb405a596c49dedb0f88661b1c2626162efa0289",
+        "complete": "656e1ed86b58dbb038bb8ccbb2e5b327303e51ee2163784add01297dff29d68a",
+        "storage": "9ceb4f5bae40d31cef79aee3e03aabe164270b4b78e769dedd6b1876857f28fd"
+      },
+      "compressed_replay_sha256": "282993f56c5ec5830d9bd872d0fa0095b9410e3cdfcbf31dfcff9783940e0eff",
+      "compressed_trace_sha256": "65d79d37e88fd2adab4b76afa304edf09c27ecacbe8c7f10ae04bd041fb6b743"
+    },
+    {
+      "ordinal": 6,
+      "receipt_sha256": {
+        "row": "05a745ba7ca80bd6f56022473c3e3bf34c950c663240d11bec75c4cf55a04c13",
+        "audit": "6e0dfe72dc03556e4df5f10cca40c1c094aa4c586b46e4a30f153fc316c13657",
+        "complete": "1ae5f37dd6040904948d734dd509cba85d09c2b6c1e4e62bea11bd0ac5d94a89",
+        "storage": "4955232f0a207ddce564b1f0ab89a204fd6e9cad511c9165c8e65ab5fe6b5ee2"
+      },
+      "compressed_replay_sha256": "8c06ee266357141ee318cd7a796a508011231cffcf7a6a6f63896749a5db1f8c",
+      "compressed_trace_sha256": "d1b33e262063384cbdb3b258fee0742b5235cbe7e2ad5b6160caac6733483877"
+    },
+    {
+      "ordinal": 7,
+      "receipt_sha256": {
+        "row": "16a7bc3a6631b108c8c0d0252c23e22c923631e75941d79d120f8fff49319bf4",
+        "audit": "c74da6218bab0376072424637911fa1fbe4c1feafc69ba69a8541691509f9e00",
+        "complete": "ff831ff1bb96003117f1e599947a4268dfc6a416baafe7429b555b2c481e27cd",
+        "storage": "dc25608e238435db65939ee92c628c128a26eca28049e634324e5c6a4c779212"
+      },
+      "compressed_replay_sha256": "640f58547163b459cc4fccac19aab5e96fd40df1b75684d199a7d7b7160fcb84",
+      "compressed_trace_sha256": "89401db742372c95a43c31d44b541b3e5a76483c97e4233c54d8f0fe2024d8cb"
+    },
+    {
+      "ordinal": 8,
+      "receipt_sha256": {
+        "row": "58b237a02f79b77e2e3fdeb96d5e713c5c775b48f2f72d7311327fa72c2ffd12",
+        "audit": "a7363652397743e746c5714a47be0ecf5e5a131ca3b8de46175147e45c62ceb7",
+        "complete": "f5b19304a8b53ba8ac6bed77304efb2529ebe8ba05e5b51c8fc65f20fb8f750f",
+        "storage": "83d0bafa50dc52faf93c6d2463c3cb346553bb97cb6060b9c0a21329dfb16405"
+      },
+      "compressed_replay_sha256": "4b1d300b550e575c232950b916c33faa06a6df11ad5bfcd2376d8fa02c761de2",
+      "compressed_trace_sha256": "ca265c7049d8054def392fbcd0353792e04deaf8fc08a28a9236598eb832beff"
+    },
+    {
+      "ordinal": 9,
+      "receipt_sha256": {
+        "row": "fce2dc4bf73cda842612d4444a00e8054b09d4b7deb72b86e8a735bb50d06959",
+        "audit": "f6adaba889bb2c17f1134d5657240aad6a53f3d55b40558110a0612855904f8c",
+        "complete": "7fb27364d698f4b1acd5cd92a5b051c0f2fb07c8a4b47c538f248e66525faa70",
+        "storage": "3e272af3880c4282a5fc146c43d9797db5b5eaa7dac280a6fcc8036ed4a18bcb"
+      },
+      "compressed_replay_sha256": "b3fef16e9fcd98372c764a500f7cbca199f98c97b96b98dc74b07af5384c37fe",
+      "compressed_trace_sha256": "942b4e0000dc79d73cd2a4ee2a83f5cb819f66ec99f88206006bdae791b98b45"
+    },
+    {
+      "ordinal": 10,
+      "receipt_sha256": {
+        "row": "86772b7354eda43a59e7d19d5fc666f8909245f050915e86c729f73b8012c266",
+        "audit": "038cc093062fd1a1f5bb4501ee8c6bd0ce88f0ec38bd1ac6c72a0f3e679c3ece",
+        "complete": "f6544f1d8bf1b8cd70fda34c1cd3733dabf3e7e35004927e5725bfa70f579317",
+        "storage": "b389cd3d9f709fca6399b0404c3158a7bfcd9001d327c1b5c612eb52083c8adb"
+      },
+      "compressed_replay_sha256": "76dc7ea8deb09f1a18e59e598fb7792d8aee16c98f32911a4adb4d3be1a228cd",
+      "compressed_trace_sha256": "439f35fce64758f479f9d93dfc354c189b2aee5303d9951d31e70bf423528ca9"
+    },
+    {
+      "ordinal": 11,
+      "receipt_sha256": {
+        "row": "7cb04804efe4ba1dac30ff6d1cea1822b939901d1a1e58435b4347c4ca7fa1ab",
+        "audit": "19262518860b07fe98dc21c5052919099395bcc3599de8b6faf89e10799b083f",
+        "complete": "a377baa11305623a9413b301780930814b8f6b126281fda69c70454155f6b0dc",
+        "storage": "dc3f8e36e342b4ba9d9ae6d79e6e97a0c7476c6d7f19193a1476b51069a0ff99"
+      },
+      "compressed_replay_sha256": "bf91cab9113898436cc15f5f303b02577d42067f5662f0d4edf9a0e1de82934c",
+      "compressed_trace_sha256": "965255e7fcf8051e041a08f5183fdcffff2bc1f5cd9d16f6155d5389ac1554e8"
+    }
+  ],
+  "findings": [
+    "The parent failure receipt reports 10 accepted games and 11 attempted; its confirmed live and primary replay counts each equal 7190.",
+    "Eleven row, audit, complete and storage files exist; each completion receipt binds actual row and audit hashes. All eleven official audit receipts report 719 replayed transitions and public/private state and inventory checks passed.",
+    "Eleven compressed replay and trace file byte hashes match their row records; files were not decompressed.",
+    "The eleventh game was not accepted by the parent because supervision failed; its additional official steps remain unknown in the frozen failure receipt.",
+    "The eleventh Job reports EmptySnapshot, zero launcher exit status, launcher reaped and Job membership zero; cleanup reported no error.",
+    "Prior ten per-game Job supervision objects were held in the parent process but no audit ledger or games result was written after interruption. Individual prior Job supervision receipts are not independently persisted in the inspected outputs; the failure summary reports ten accepted.",
+    "EmptySnapshot is raised for an empty Job PID list during RSS sampling. A transition from active to empty because processes exited is a possible race, not an established unique cause."
+  ],
+  "limitations": [
+    "Did not inspect or report economic values or outcomes, decompress raw files, run a match or replay, or independently reproduce per-step audit conclusions.",
+    "Job RSS and membership are sampled and are not a hard realtime resource limit.",
+    "The incomplete panel remains failed and cannot be retried or supplemented under this attempt."
+  ]
+}

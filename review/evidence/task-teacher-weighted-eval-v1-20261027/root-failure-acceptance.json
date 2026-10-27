@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "scope": "Failure evidence review only; panel failed and results were not evaluated.",
+  "pre_execution_commit": "f4f5ca0be692b191166f67eb46775c68b3ad99d6",
+  "freeze_sha256": "57792cbabd0ca224cc8f37cd973de05d2997ea2b96f9525342b97cfda62329db",
+  "failure_sha256": "e994605ff7f102bfd97a52cd17af16406022e30c87ee7fbaad1d2e51f2db0a36",
+  "independent_assessment_sha256": "6a4334ca4a014564c5c2fe8dc1ec246e54b5d93b4b783a1af3201ec5d6b06d9a",
+  "attempted_games": 11,
+  "parent_reported_accepted_games": 10,
+  "worker_complete_receipt_sets": 11,
+  "eleventh_parent_accepted": false,
+  "eleventh_extra_official_steps_in_original_failure_receipt": "unknown",
+  "eleven_worker_audits_report_719_official_replay_transitions": true,
+  "eleven_compressed_replays_and_traces_matched_byte_hashes": true,
+  "prior_ten_individual_job_supervision_receipts_persisted": false,
+  "error_kind": "EmptySnapshot",
+  "launcher_reaped": true,
+  "job_members_zero": true,
+  "exit_code": 0,
+  "cleanup_error_kind": null,
+  "partial_panel_scored": false,
+  "independent_replay_started": false,
+  "raw_files_decompressed_by_this_check": false,
+  "additional_official_games_or_replays": 0,
+  "retry_or_replacement": false,
+  "limitations": [
+    "The parent reports ten accepted games; individual supervision receipts for those ten were not persisted.",
+    "Eleven worker certificates report completion, but the eleventh failed supervision and remains unaccepted.",
+    "Empty membership during sampling is established; a natural-exit timing race is possible but not uniquely proven.",
+    "Hashes and stored worker certificates were checked without independent per-step reexecution or score analysis.",
+    "This incomplete three-seed screen cannot support a competitive conclusion or model promotion."
+  ]
+}

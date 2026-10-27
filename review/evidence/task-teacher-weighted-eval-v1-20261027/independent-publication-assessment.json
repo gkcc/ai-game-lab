@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "scope": "failure evidence and publication-candidate review, not panel acceptance",
+  "identities_sha256": {
+    "root_failure_acceptance": "bb81457627c56b2ac7bb459caafb6bde3686f0106787f49405cf048bcb92a937",
+    "original_failure": "e994605ff7f102bfd97a52cd17af16406022e30c87ee7fbaad1d2e51f2db0a36",
+    "independent_failure_assessment": "6a4334ca4a014564c5c2fe8dc1ec246e54b5d93b4b783a1af3201ec5d6b06d9a",
+    "pre_execution_commit": "a8ddf7dfa5b7b767d2345ac0d6373dfef64b23f4be10787ef8a7539a3529c687",
+    "games_started": "685da6e5bc22cf592081425e15298aab1c1dd2bcee3989b6b0d8effede009d60",
+    "published_chinese_report": "8fbb949a6541b0979396ae96d700f1eac53d011587934a24b29b13ef7ab854de",
+    "published_progress": "3c2e7d781bc18da8bebf9691a966c346bc28364ae4abe95cb1d7c8745efeb325",
+    "published_review": "439f873c09007376f79709d13192c32249f78b6b3c280045128dd2ffbcd9feec"
+  },
+  "checks": [
+    "Local original failure and prior independent assessment hashes match the root acceptance; four public evidence copies match local bytes.",
+    "Parent failure reports ten accepted games; eleven worker receipt sets were previously checked, with the eleventh unaccepted after failed Job supervision.",
+    "Prior ten individual Job supervision receipts were not persisted; empty membership and cleanup are recorded while natural exit timing remains a possible explanation.",
+    "Failure panel was not scored or supplemented, no independent replay began, and no competitive conclusion is supported.",
+    "Candidate aggregates were scanned for common personal paths, token and economic fields; original local failure file is absent from public evidence."
+  ],
+  "limitations": [
+    "No economic outcome was examined; no raw replay or trace was decompressed, and no game or replay was executed.",
+    "Receipt and compressed-file hashes do not constitute independent per-step replay validation.",
+    "Hashes may be linkable and pattern-based privacy scanning is not proof of absolute anonymity."
+  ]
+}
