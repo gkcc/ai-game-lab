@@ -1,0 +1,7 @@
+{
+  "source": "Independent subagent advice, not WebChat",
+  "recommendation": "Investigate a separately preregistered, small teacher-choice behavior-cloning comparison using previously recorded training opportunities. The frozen teacher label is separate from the model input; mixed-controller states are not pure teacher trajectories.",
+  "conditions": "First establish that the saved training traces contain valid candidate-set teacher labels without reading old test data, and freeze source, feature isolation, bounded data and a single training configuration before execution. Retain the existing model and preserve the failed historical economic screen.",
+  "evaluation": "If feasible, use new fixed seeds and swapped seats for a small official-game comparison with a frozen reference; preregister non-regression guardrails and stop after one attempt. Two seeds would remain exploratory, not significance or promotion evidence.",
+  "prohibitions": "No PPO, DAgger, repeated selection against old tests, modification of frozen models, or publication of raw traces and features."
+}

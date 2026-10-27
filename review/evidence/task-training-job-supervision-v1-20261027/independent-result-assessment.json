@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "identities_sha256": {
+    "registration.json": "b29ba04ea4324b5785d9ff7c7a115b42efd8a3c47bb96e68a316d01ad6b06ae3",
+    "freeze.json": "56bcb41937190fd8de138d134aefa825fa88fc6ae03ab410974fb926c8240f5c",
+    "pre-review.json": "34daf7a7a286018dba2855979c1b2dc1aa151230a539b2da30622a3a1c631636",
+    "pre-execution-commit.json": "24ca1dcc2d623babd240545fb6cc5de3463869df731823c1477937c93c2c1ebf",
+    "normal-started.json": "7bb4b58aab6fecd286e97b12351c5b0597ae8f377d9126dc44ab1f31e91d64ab",
+    "normal-result.json": "ed717aac4c7d37ea739a7deaf46781f63c72d48ffd3874401329e2df26186d85",
+    "rss_stop-started.json": "7bb4b58aab6fecd286e97b12351c5b0597ae8f377d9126dc44ab1f31e91d64ab",
+    "rss_stop-result.json": "2a397f543610f420e40f8a50a67881400d598a6b5154e29ffdbafe950ecd5d8a",
+    "pre-review-revision-map.json": "e92f58a2b089ed09cf5d968ce84eb7e8ff2d1ef8756a030602b2c78bdb5262f5"
+  },
+  "checks": [
+    "Frozen and committed source and preregistration match; initial snapshot and revision map identities match",
+    "Normal scenario receipt reports assigned, resumed, launcher reaped, Job active members zero, zero exit and at least two sampled Job members",
+    "RSS stop receipt reports same-membership-list sample above 80 MiB with six members, expected rss_limit stop, launcher reaped and Job active members zero",
+    "RSS stop inner result passed=false reflects expected limit stop; outer scenario passed=true reflects preregistered acceptance",
+    "Both markers and results bind same freeze and disable retries; no cache, model, replay or game access required by frozen synthetic scenario"
+  ],
+  "limitations": [
+    "Assessment checks aggregate receipts and source only; no synthetic scenario was rerun and no live process inspected",
+    "Sampled Job membership does not identify the worker; RSS may include shared pages and sampling is not a hard real-time memory limit",
+    "Normal sampled RSS already exceeded 80 MiB, so the RSS-stop receipt cannot establish that the 128 MiB allocation completed before stop",
+    "These synthetic results do not retroactively verify the previous training coverage process peak or cleanup",
+    "No cache, model, trace or replay was opened in this review"
+  ]
+}

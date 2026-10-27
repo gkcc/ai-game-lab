@@ -1,0 +1,5 @@
+{
+  "decision": "After publishing the synthetic Job result, inspect only existing source and public metadata for the feasibility of a separately frozen, bounded teacher-choice supervision experiment.",
+  "basis": "The old completed-actual-choice objective mixes controller arms and the fixed 200-position descriptive sample is dominated by watering; the controller code records a teacher choice separately for each opportunity. Presence, completeness and admissibility in the eight historical training traces remain to be verified under a new fixed budget.",
+  "limits": "No old held-out raw records or outcomes for selection; no changes to default Bot, existing models or official engine. A new real data collection, fit or test requires its own frozen scope, independent review and local preregistration. A small game panel cannot establish statistical significance."
+}

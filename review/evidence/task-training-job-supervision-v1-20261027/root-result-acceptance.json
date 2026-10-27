@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "synthetic_scenarios": 2,
+  "normal_exit_code": 0,
+  "normal_max_sampled_members": 6,
+  "normal_peak_sampled_rss_bytes": 90537984,
+  "stop_reason": "rss_limit",
+  "stop_peak_sampled_rss_bytes": 191213568,
+  "stop_same_snapshot_members": 6,
+  "both_launcher_handles_reaped": true,
+  "both_jobs_active_members_zero": true,
+  "memory_sampling_is_not_hard_cap": true,
+  "worker_identity_and_full_128mib_allocation_not_proven": true,
+  "prior_unsupervised_data_analysis_repeated": false,
+  "prior_negative_acceptance_preserved": true,
+  "no_new_games_or_training": true,
+  "independent_review_repeated_real_scenarios": false,
+  "evidence_sha256": {
+    "root-decision.json": "ee5d61034203f5488e0a6806ca1368f2b6c1987f6ffb6176d8a61c98cb838b7a",
+    "registration.json": "b29ba04ea4324b5785d9ff7c7a115b42efd8a3c47bb96e68a316d01ad6b06ae3",
+    "freeze.json": "56bcb41937190fd8de138d134aefa825fa88fc6ae03ab410974fb926c8240f5c",
+    "pre-review-revision-map.json": "e92f58a2b089ed09cf5d968ce84eb7e8ff2d1ef8756a030602b2c78bdb5262f5",
+    "pre-review.json": "34daf7a7a286018dba2855979c1b2dc1aa151230a539b2da30622a3a1c631636",
+    "pre-execution-commit.json": "24ca1dcc2d623babd240545fb6cc5de3463869df731823c1477937c93c2c1ebf",
+    "normal-started.json": "7bb4b58aab6fecd286e97b12351c5b0597ae8f377d9126dc44ab1f31e91d64ab",
+    "normal-result.json": "ed717aac4c7d37ea739a7deaf46781f63c72d48ffd3874401329e2df26186d85",
+    "rss_stop-started.json": "7bb4b58aab6fecd286e97b12351c5b0597ae8f377d9126dc44ab1f31e91d64ab",
+    "rss_stop-result.json": "2a397f543610f420e40f8a50a67881400d598a6b5154e29ffdbafe950ecd5d8a",
+    "independent-result-assessment.json": "7d8f8227ab5cec8d4c1ef0d47a089b466e9b3eb2903ec12de9911baf89145f68"
+  }
+}
