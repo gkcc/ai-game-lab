@@ -1,0 +1,45 @@
+{
+  "automatic_promotion": false,
+  "coordinator_integration_implemented": false,
+  "default_bot_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+  "dynamic_history_rescan_implemented": false,
+  "independent_review": {
+    "memory_gate": "passed_after_targeted_fixes",
+    "raw_seed_or_economic_data_read": false,
+    "seed_inventory": "passed_after_targeted_fixes"
+  },
+  "limitation": "Smoke and review results are operator-recorded projections; private seed document and exact memory samples are not published. Dynamic ownership-bound history rescan and single-start coordination are required before a new official panel.",
+  "new_seeds_generated": 0,
+  "official_games_started": 0,
+  "parent_commit": "7789fb378d2f7779b23909f0cfd8d11beb764fc0",
+  "real_memory_preflight": {
+    "attempts": 1,
+    "game_started": false,
+    "passed": true,
+    "samples": 3
+  },
+  "real_seed_snapshot": {
+    "all_consumed_roles_rejected": true,
+    "excluded_seed_count": 50386,
+    "probe_stage_created": false,
+    "recognized_metadata_files": 777,
+    "verified_consumed_roles": 4
+  },
+  "source_sha256": {
+    "PANEL_SAFETY_PREP.zh-CN.md": "53f5857e7abe2cdb5fa1d65fed187be6fa95bc9a4987ae4ca28bc9fc69cd29c4",
+    "learning/panel_safety_v1/memory_gate.py": "e0c00fc24e4312d0d2fb24573b616a6349165bc4369819110880a854c93eecdd",
+    "learning/panel_safety_v1/seed_inventory.py": "61a689e149d675c8cba538f33f98a371454ece4b58610eaaa633be6c31d5c19f",
+    "learning/panel_safety_v1/test_memory_gate.py": "5a2764cc6665288cc6f240b9aadd67da55e3105c127942f0449600d6e1f32cf4",
+    "learning/panel_safety_v1/test_seed_inventory.py": "80a2f94f28bb4863c1f6390e21aa5f8dbb1e38239c3c5b82eb863cb68d3672f3"
+  },
+  "synthetic_tests": {
+    "owned_temporary_directory_cleaned": true,
+    "passed": 30,
+    "skip_reason": "file_symlink_creation_unavailable",
+    "skipped": 1,
+    "total": 31,
+    "windows_junction_cases_passed": true
+  },
+  "training_started": false,
+  "version": 1
+}
