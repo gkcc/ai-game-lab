@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "source_runner_sha256": "ebc84307dc88b5f55280835c68cde7b227589c99c294e04ef7fdd5a67ae128e0",
+  "verification_sha256": "3e3d0e9304a06f3cd6815657e8d2802887a7605c767d5ddf24da183dc2118066",
+  "freeze_sha256": "c8d478a98bbb2af8b648e233289d54bdfc0972e785ad208638c8639a19b56cf8",
+  "identities": {
+    "freeze.json": "c8d478a98bbb2af8b648e233289d54bdfc0972e785ad208638c8639a19b56cf8",
+    "registration.json": "6fb37dc6bb55a975f085450ae07ba8aa7a45c9a4a8bf0579c50c03d22e835cd3",
+    "pre-execution-commit.json": "327a09b9c3e8f469686514c18236fa864bb57a61edade924f44225d67dc71641",
+    "games-result.json": "f193e562dd44dafe7e3742d445aef601be827741e57ef9736896a1bedde31362",
+    "game-ledger.json": "d45bfee48a6fc9720ba523330fe1be0887d20abb19f470be8a0d7fe145ca7cf0",
+    "game-audit-ledger.json": "60c1b818542f0f62db0cab1b6ac816e775e911f391a94cd4490308ab39465c8f",
+    "independent-runner-started.json": "9f03e14de7f51a4f7909b63fcfa5811e5f83244efae0b8e40c65857d94468da3"
+  },
+  "supervision": {
+    "passed": true,
+    "assigned": true,
+    "resumed": true,
+    "launcher_reaped": true,
+    "job_members_zero": true,
+    "exit_code": 0,
+    "error_kind": null,
+    "cleanup_error_kind": null,
+    "stop_reason": null,
+    "rss_sampling_attempts": 62,
+    "rss_sampling_retries": 0,
+    "rss_complete_samples": 62,
+    "rss_discarded_samples": 0,
+    "confirmed_empty_exits": 0,
+    "acceptance_error_kind": null
+  },
+  "same_official_engine": true,
+  "independent_rules_implementation": false,
+  "retry_allowed": false
+}

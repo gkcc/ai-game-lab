@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "baseline_freeze_sha256": "b366b58070afe9144940b4a4f28f5bfdda452df91d297638ae21683b34343193",
+  "relative_source": "main.py",
+  "expected_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+  "observed_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+  "limitation": "Byte hashes do not exclude transient replacement and restoration."
+}

@@ -1,0 +1,300 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "scope": "receipt verification and independent aggregate arithmetic, not model promotion",
+  "identities_sha256": {
+    "registration.json": "6fb37dc6bb55a975f085450ae07ba8aa7a45c9a4a8bf0579c50c03d22e835cd3",
+    "freeze.json": "c8d478a98bbb2af8b648e233289d54bdfc0972e785ad208638c8639a19b56cf8",
+    "pre-review.json": "29d013b9af80e53ab80d018c58a59240a6f9fa7e3fd014d2d187cf2b9a868156",
+    "pre-execution-commit.json": "327a09b9c3e8f469686514c18236fa864bb57a61edade924f44225d67dc71641",
+    "games-started.json": "9f03e14de7f51a4f7909b63fcfa5811e5f83244efae0b8e40c65857d94468da3",
+    "games-result.json": "f193e562dd44dafe7e3742d445aef601be827741e57ef9736896a1bedde31362",
+    "game-ledger.json": "d45bfee48a6fc9720ba523330fe1be0887d20abb19f470be8a0d7fe145ca7cf0",
+    "game-audit-ledger.json": "60c1b818542f0f62db0cab1b6ac816e775e911f391a94cd4490308ab39465c8f",
+    "independent-runner-started.json": "9f03e14de7f51a4f7909b63fcfa5811e5f83244efae0b8e40c65857d94468da3",
+    "independent-replay-verification.json": "3e3d0e9304a06f3cd6815657e8d2802887a7605c767d5ddf24da183dc2118066",
+    "independent-result-review.json": "207a4517d70191ed2da0aa9510541f68fa440fc9e2d752d1e061264a28ebe08a",
+    "independent-runner-result.json": "ebc84307dc88b5f55280835c68cde7b227589c99c294e04ef7fdd5a67ae128e0",
+    "evaluation-started.json": "66e36fcbc30eedfb8a23ba0602e1cd36ed6bf71a633d2ef179cfb47b81718ffb",
+    "evaluation-result.json": "51ff1de8f4d71ca1f695bdd29d10bb7646387e7b5ba4803d8ea3ae4b44f9b05e"
+  },
+  "checks": [
+    "The pre-execution commit, freeze, registration and all frozen source identities match.",
+    "All 24 game identities, model and opponent hashes, per-game Job supervision/acceptance and official worker receipts were checked; compressed replay and trace bytes match recorded SHA without decompression.",
+    "Each accepted game reports 720 states, 719 actions and 719 primary replay transitions, DONE and zero agent errors; Job cleanup receipts passed.",
+    "The separate-process replay receipt binds the first weighted round2 seat-zero game, 719 transitions, fixed 20 identities and 20 matches, with owned Job cleanup.",
+    "Independently recomputed 12 paired differences, seed clusters, opponent/policy summaries, nine guardrail failures and fixed 10000 bootstrap intervals from sanitized ledger; displayed means compared with floating point tolerance.",
+    "Earlier failed panel freeze/registration/acceptance identities and frozen model bytes match their registered hashes."
+  ],
+  "aggregates": {
+    "summaries": [
+      {
+        "opponent": "round2",
+        "policy": "weighted",
+        "wins": 0,
+        "draws": 0,
+        "losses": 6,
+        "mean_net_profit": 34625.333333333336,
+        "mean_opponent_net_profit": 42780.833333333336,
+        "mean_margin": -8155.5,
+        "mean_score": 0.0
+      },
+      {
+        "opponent": "round2",
+        "policy": "unweighted",
+        "wins": 0,
+        "draws": 0,
+        "losses": 6,
+        "mean_net_profit": 35245.0,
+        "mean_opponent_net_profit": 43160.5,
+        "mean_margin": -7915.5,
+        "mean_score": 0.0
+      },
+      {
+        "opponent": "market",
+        "policy": "weighted",
+        "wins": 6,
+        "draws": 0,
+        "losses": 0,
+        "mean_net_profit": 40695.666666666664,
+        "mean_opponent_net_profit": 39169.33333333333,
+        "mean_margin": 1526.3333333333335,
+        "mean_score": 1.0
+      },
+      {
+        "opponent": "market",
+        "policy": "unweighted",
+        "wins": 4,
+        "draws": 0,
+        "losses": 2,
+        "mean_net_profit": 41103.0,
+        "mean_opponent_net_profit": 40690.666666666664,
+        "mean_margin": 412.33333333333326,
+        "mean_score": 0.6666666666666666
+      }
+    ],
+    "pairs": [
+      {
+        "seed": 479779556,
+        "opponent": "round2",
+        "side": 0,
+        "own_profit_difference": -492.0,
+        "opponent_profit_difference": 167.0,
+        "margin_difference": -659.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed": 479779556,
+        "opponent": "round2",
+        "side": 1,
+        "own_profit_difference": -356.0,
+        "opponent_profit_difference": 171.0,
+        "margin_difference": -527.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed": 479779556,
+        "opponent": "market",
+        "side": 0,
+        "own_profit_difference": 521.0,
+        "opponent_profit_difference": 213.0,
+        "margin_difference": 308.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed": 479779556,
+        "opponent": "market",
+        "side": 1,
+        "own_profit_difference": 521.0,
+        "opponent_profit_difference": 213.0,
+        "margin_difference": 308.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed": 3128991463,
+        "opponent": "round2",
+        "side": 0,
+        "own_profit_difference": -3059.0,
+        "opponent_profit_difference": -135.0,
+        "margin_difference": -2924.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed": 3128991463,
+        "opponent": "round2",
+        "side": 1,
+        "own_profit_difference": -3059.0,
+        "opponent_profit_difference": -135.0,
+        "margin_difference": -2924.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed": 3128991463,
+        "opponent": "market",
+        "side": 0,
+        "own_profit_difference": 746.0,
+        "opponent_profit_difference": -2740.0,
+        "margin_difference": 3486.0,
+        "score_difference": 1.0
+      },
+      {
+        "seed": 3128991463,
+        "opponent": "market",
+        "side": 1,
+        "own_profit_difference": 746.0,
+        "opponent_profit_difference": -2740.0,
+        "margin_difference": 3486.0,
+        "score_difference": 1.0
+      },
+      {
+        "seed": 1165588307,
+        "opponent": "round2",
+        "side": 0,
+        "own_profit_difference": 1624.0,
+        "opponent_profit_difference": -1173.0,
+        "margin_difference": 2797.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed": 1165588307,
+        "opponent": "round2",
+        "side": 1,
+        "own_profit_difference": 1624.0,
+        "opponent_profit_difference": -1173.0,
+        "margin_difference": 2797.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed": 1165588307,
+        "opponent": "market",
+        "side": 0,
+        "own_profit_difference": -2489.0,
+        "opponent_profit_difference": -2037.0,
+        "margin_difference": -452.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed": 1165588307,
+        "opponent": "market",
+        "side": 1,
+        "own_profit_difference": -2489.0,
+        "opponent_profit_difference": -2037.0,
+        "margin_difference": -452.0,
+        "score_difference": 0.0
+      }
+    ],
+    "seed_clusters": [
+      {
+        "seed": 479779556,
+        "own_profit_difference": 48.5,
+        "opponent_profit_difference": 191.0,
+        "margin_difference": -142.5,
+        "score_difference": 0.0
+      },
+      {
+        "seed": 3128991463,
+        "own_profit_difference": -1156.5,
+        "opponent_profit_difference": -1437.5,
+        "margin_difference": 281.0,
+        "score_difference": 0.5
+      },
+      {
+        "seed": 1165588307,
+        "own_profit_difference": -432.5,
+        "opponent_profit_difference": -1605.0,
+        "margin_difference": 1172.5,
+        "score_difference": 0.0
+      }
+    ],
+    "bootstrap_intervals": {
+      "own_profit_difference": [
+        -1156.5,
+        48.5
+      ],
+      "opponent_profit_difference": [
+        -1605.0,
+        191.0
+      ],
+      "margin_difference": [
+        -142.5,
+        1172.5
+      ],
+      "score_difference": [
+        0.0,
+        0.5
+      ]
+    },
+    "bootstrap_replicates": 10000,
+    "exploratory_gate_passed": false,
+    "gate_failures": [
+      {
+        "seed": 3128991463,
+        "opponent": "round2",
+        "side": 0,
+        "metric": "own_profit_difference"
+      },
+      {
+        "seed": 3128991463,
+        "opponent": "round2",
+        "side": 0,
+        "metric": "margin_difference"
+      },
+      {
+        "seed": 3128991463,
+        "opponent": "round2",
+        "side": 1,
+        "metric": "own_profit_difference"
+      },
+      {
+        "seed": 3128991463,
+        "opponent": "round2",
+        "side": 1,
+        "metric": "margin_difference"
+      },
+      {
+        "seed": 1165588307,
+        "opponent": "market",
+        "side": 0,
+        "metric": "own_profit_difference"
+      },
+      {
+        "seed": 1165588307,
+        "opponent": "market",
+        "side": 1,
+        "metric": "own_profit_difference"
+      },
+      {
+        "seed": 3128991463,
+        "opponent": "round2",
+        "side": null,
+        "metric": "own_profit_difference"
+      },
+      {
+        "seed": 3128991463,
+        "opponent": "round2",
+        "side": null,
+        "metric": "margin_difference"
+      },
+      {
+        "seed": 1165588307,
+        "opponent": "market",
+        "side": null,
+        "metric": "own_profit_difference"
+      }
+    ],
+    "independent_sample_operation_counts": {
+      "DIG": 0,
+      "FERTILIZE": 3,
+      "HARVEST": 1,
+      "PLANT": 2,
+      "WATER": 14
+    }
+  },
+  "limitations": [
+    "The official replay and trace validators are shared, not an independently implemented rules engine; this review did not replay or recompute per-frame actions or model scores.",
+    "Three seed clusters are the statistical units; 24 games, mirrored seats and bootstrap intervals do not prove statistical significance, generalization, causal benefit or promotion.",
+    "A completed evaluation and failed exploratory guardrail are distinct facts; no automatic model promotion follows.",
+    "Job memory and membership measurements are sampled, not hard realtime bounds; receipt checks do not independently monitor resource use.",
+    "Compressed files and model files were byte-hashed only; neither was decoded during this assessment."
+  ]
+}

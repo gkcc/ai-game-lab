@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "complete_games": 24,
+  "live_official_transitions": 17256,
+  "primary_replay_transitions": 17256,
+  "game_ledger_sha256": "d45bfee48a6fc9720ba523330fe1be0887d20abb19f470be8a0d7fe145ca7cf0",
+  "audit_ledger_sha256": "60c1b818542f0f62db0cab1b6ac816e775e911f391a94cd4490308ab39465c8f",
+  "identities": {
+    "freeze.json": "c8d478a98bbb2af8b648e233289d54bdfc0972e785ad208638c8639a19b56cf8",
+    "registration.json": "6fb37dc6bb55a975f085450ae07ba8aa7a45c9a4a8bf0579c50c03d22e835cd3",
+    "pre-execution-commit.json": "327a09b9c3e8f469686514c18236fa864bb57a61edade924f44225d67dc71641",
+    "games-started.json": "9f03e14de7f51a4f7909b63fcfa5811e5f83244efae0b8e40c65857d94468da3"
+  },
+  "independent_replay_not_yet_completed": true,
+  "final_economic_screening_completed": false,
+  "worker_stdout_stderr_discarded": true,
+  "retry_allowed": false
+}

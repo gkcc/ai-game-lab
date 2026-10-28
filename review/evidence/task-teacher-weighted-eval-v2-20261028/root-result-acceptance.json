@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "scope": "Full official panel and one separate-process replay; receipt and independent aggregate arithmetic review.",
+  "pre_execution_commit": "87e3914f9eb30e5510e21f322a38db9125af1c50",
+  "freeze_sha256": "c8d478a98bbb2af8b648e233289d54bdfc0972e785ad208638c8639a19b56cf8",
+  "registration_sha256": "6fb37dc6bb55a975f085450ae07ba8aa7a45c9a4a8bf0579c50c03d22e835cd3",
+  "game_ledger_sha256": "d45bfee48a6fc9720ba523330fe1be0887d20abb19f470be8a0d7fe145ca7cf0",
+  "game_audit_ledger_sha256": "60c1b818542f0f62db0cab1b6ac816e775e911f391a94cd4490308ab39465c8f",
+  "public_receipt_ledger_sha256": "7f4ce91b03c8b0d167c0fe3a73b502b9f9516e9dd2bc960066602ac2f3fdde5b",
+  "games_result_sha256": "f193e562dd44dafe7e3742d445aef601be827741e57ef9736896a1bedde31362",
+  "evaluation_result_sha256": "51ff1de8f4d71ca1f695bdd29d10bb7646387e7b5ba4803d8ea3ae4b44f9b05e",
+  "independent_replay_sha256": "3e3d0e9304a06f3cd6815657e8d2802887a7605c767d5ddf24da183dc2118066",
+  "games": 24,
+  "live_transitions": 17256,
+  "primary_replay_transitions": 17256,
+  "separate_replay_transitions": 719,
+  "separate_callback_samples": 20,
+  "separate_callback_matches": 20,
+  "job_receipts": 24,
+  "job_acceptance_receipts": 24,
+  "all_jobs_reported_clean": true,
+  "overall_paired_differences": {
+    "own_profit_difference": -513.5,
+    "opponent_profit_difference": -950.5,
+    "margin_difference": 437.0,
+    "score_difference": 0.16666666666666666
+  },
+  "exploratory_gate_passed": false,
+  "gate_failure_count": 9,
+  "seed_clusters": 3,
+  "bootstrap_replicates": 10000,
+  "automatic_promotion": false,
+  "competitive_significance_claimed": false,
+  "limitations": [
+    "Three seed clusters support only descriptive exploration, not statistical significance or promotion.",
+    "Independent replay repeats the same official engine and shared validator, not a separate rules implementation.",
+    "Live and primary model counts share a reconstruction source; they are not independent live monitoring.",
+    "Raw worker receipts, replays, model weights and per-step private states remain local.",
+    "Membership and memory limits are sampled, not hard real-time bounds; historical seed exclusion is incomplete.",
+    "Prior and later hashes cannot exclude transient replacement followed by restoration."
+  ]
+}

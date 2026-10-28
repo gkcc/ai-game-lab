@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "scope": "publication candidate and aggregate result verification, not model promotion",
+  "public_evidence_sha256": {
+    "default-bot-check.json": "9be69e1cca99a7757fa2aaf36f54b8ed945aba5b7903389ac405094ba802ba5d",
+    "evaluation-result.json": "51ff1de8f4d71ca1f695bdd29d10bb7646387e7b5ba4803d8ea3ae4b44f9b05e",
+    "evaluation-started.json": "66e36fcbc30eedfb8a23ba0602e1cd36ed6bf71a633d2ef179cfb47b81718ffb",
+    "freeze.json": "c8d478a98bbb2af8b648e233289d54bdfc0972e785ad208638c8639a19b56cf8",
+    "game-ledger.json": "d45bfee48a6fc9720ba523330fe1be0887d20abb19f470be8a0d7fe145ca7cf0",
+    "games-result.json": "f193e562dd44dafe7e3742d445aef601be827741e57ef9736896a1bedde31362",
+    "games-started.json": "9f03e14de7f51a4f7909b63fcfa5811e5f83244efae0b8e40c65857d94468da3",
+    "independent-replay-verification.json": "3e3d0e9304a06f3cd6815657e8d2802887a7605c767d5ddf24da183dc2118066",
+    "independent-result-assessment.json": "b78540539c2337fc5d2559b7cc6f690e4303e2a335619107621b2514199f7fe2",
+    "independent-runner-result.public.json": "e5b8c4de09c751a7e2212bb2eec317ba0e34dc7f45217ee4ee87bb21b4d71802",
+    "independent-runner-started.json": "9f03e14de7f51a4f7909b63fcfa5811e5f83244efae0b8e40c65857d94468da3",
+    "job-receipt-ledger.public.json": "7f4ce91b03c8b0d167c0fe3a73b502b9f9516e9dd2bc960066602ac2f3fdde5b",
+    "pre-execution-commit.json": "327a09b9c3e8f469686514c18236fa864bb57a61edade924f44225d67dc71641",
+    "pre-review.json": "29d013b9af80e53ab80d018c58a59240a6f9fa7e3fd014d2d187cf2b9a868156",
+    "registration.json": "6fb37dc6bb55a975f085450ae07ba8aa7a45c9a4a8bf0579c50c03d22e835cd3",
+    "root-decision.json": "01a5bcfb99dcc9ed50534126a545a22a4e6377d162b1edf9484501cd99b3828c",
+    "root-result-acceptance.json": "6bf73c88c6637049c24f831ab86aa219cf1cc6864826ce54397b7437de4c285f"
+  },
+  "document_sha256": {
+    "report": "943a59471f36842146fa2416c2b9b89652df100585b8ef4151d9ee33c28404ca",
+    "progress": "a8941a1ca25154f8be1d17e0bf4815988bc3520e621b7002085b0e57e46db10c",
+    "review": "7f42d8ded9946309523711de5a10b14cc97eac101f0694dc9825d6ce127ccde0"
+  },
+  "checks": [
+    "All 24 public Job ledger entries match local supervision, acceptance, input and worker receipt hashes; sanitized independent Job projection matches its source.",
+    "Public aggregate evidence matches local records, 24 games and 24 primary audits, 719 additional official transitions and 20 matched callbacks.",
+    "Opponent summaries and paired means -513.5, -950.5 and +437, bootstrap intervals and nine exploratory guardrail failures agree with the independently reviewed result.",
+    "No game Job recorded a confirmed empty exit; claims about artificial Job testing do not infer a naturally observed race.",
+    "Default Bot, frozen model byte hashes and prior failed panel evidence identities match; no automatic promotion or significance is claimed.",
+    "Candidate evidence includes no replay, trace, raw Job log, raw worker receipt or model artifact; common path/PID/private configuration patterns were checked."
+  ],
+  "limitations": [
+    "No new game or replay was run, and no raw replay or trace was decompressed in this review.",
+    "Three seed clusters do not support a significance or generalization claim; repeated official replay uses the same engine and validators.",
+    "Memory and membership are sampled and not hard realtime limits; receipt checks are not independent process monitoring.",
+    "Public aggregates and hashes can be linkable; pattern-based privacy checks do not prove absolute anonymity.",
+    "Timing gaps and transient replacement followed by restoration remain possible."
+  ]
+}
