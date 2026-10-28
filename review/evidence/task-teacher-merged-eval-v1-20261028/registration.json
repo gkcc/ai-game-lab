@@ -1,0 +1,124 @@
+{
+  "experiment": "task-teacher-merged-eval-v1",
+  "baseline_head": "1df5de875dfa4354dfe03248cbb110d4cfc9570a",
+  "deadline_utc": "2026-10-28T23:56:28.914337+00:00",
+  "seed_count": 4,
+  "seed_commitment": "659e979b37c49052c1c2b6d15274171a9ba3f36b30199a52b1d3d1060a8818cc",
+  "seed_document_sha256": "0951e16f83df77794430c4bee1e2f0a92dea381d03b89367fc8594db532c20e9",
+  "seed_inventory_sha256": "03d8bd47ac271eeacb3f36f27c858df1ecb74a16b1c9ce2345a4648cd860550b",
+  "seed_scope": "Recognized public and local registration, reservation, seed-list and job-plan metadata only",
+  "seed_history_limitation": "Deleted, external, inaccessible or unrecognized seed history cannot be excluded",
+  "opponents": [
+    "round2",
+    "market",
+    "teacher"
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "policies": [
+    "merged",
+    "unweighted",
+    "teacher_task"
+  ],
+  "merged_checkpoint": "artifacts/task-teacher-merge-bc-v1-20261028/private/model-final.npz",
+  "merged_checkpoint_sha256": "994452667315e1c7de67183476bf0bab0f62fa5887a08eab091bea5ef152f083",
+  "unweighted_checkpoint": "artifacts/task-teacher-choice-bc-v1-20261027/private/model-final.npz",
+  "unweighted_checkpoint_sha256": "b9a0f293c354aa78468c531e85645f70fbea9075a9dace729856119d913b24df",
+  "crop_checkpoint": "artifacts/bc-epoch6-holdout-v1-20261023/panels/fixed_epoch6/model/trained.npz",
+  "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+  "source_sha256": {
+    "round2.py": "1d47071438b76a52693a3c0769a41171bc23cddf1df7fd097a638abd9da54848",
+    "market.py": "b8c0cf5b540ff715f3cbb96a859313e15de63ce3c43c6e0eb389ae3f5845af2b",
+    "teacher.py": "0844f0152e742aba684108b5914964fb85082b3c0881d0da4d41649907a9b6ff"
+  },
+  "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "official_loader_sha256": "0ac7baf1212b4ce1eabae3cc1cbb55c98effef5e0d0485522a8be87097c39a4f",
+  "environment": {
+    "interpreter_sha256": "9b0bffb7a259cd2722df454fdfff41ee13665820cff1f578b1d97d31f9ef93d5",
+    "versions": {
+      "python": "3.12.2",
+      "numpy": "2.5.4",
+      "kaggle_environments": "1.33.0"
+    },
+    "optimization_level": 0,
+    "python_optimize_env_absent": true
+  },
+  "game_limits": {
+    "task_forwards": 4000,
+    "crop_forwards": 8000,
+    "neural_input_rows": 160000,
+    "gate_evaluations": 1,
+    "controller_calls": 719,
+    "teacher_proposals": 1,
+    "max_task_forwards_per_turn": 32,
+    "max_crop_forwards_per_turn": 64,
+    "max_neural_input_rows_per_turn": 4096,
+    "max_controller_calls_per_turn": 1
+  },
+  "storage": {
+    "total_bytes": 10737418240,
+    "game_write_bytes": 134217728,
+    "free_floor_bytes": 4294967296,
+    "process_log_bytes": 1048576,
+    "small_receipt_bytes": 16384
+  },
+  "official_job_supervision": {
+    "max_rss_bytes": 2147483648,
+    "max_commit_bytes": 3221225472,
+    "min_available_bytes": 2147483648,
+    "wall_seconds": 900,
+    "poll_seconds": 0.25,
+    "cleanup_seconds": 10
+  },
+  "independent_job_supervision": {
+    "max_rss_bytes": 2147483648,
+    "max_commit_bytes": 3221225472,
+    "min_available_bytes": 2147483648,
+    "wall_seconds": 900,
+    "poll_seconds": 0.25,
+    "cleanup_seconds": 10
+  },
+  "host_preflight": {
+    "min_available_bytes": 4294967296,
+    "samples": 3,
+    "interval_seconds": 10
+  },
+  "independent_limits": {
+    "compressed_bytes": 134217728,
+    "decoded_bytes": 1073741824,
+    "seconds": 600,
+    "sample_count": 20
+  },
+  "official_limits": {
+    "new_games": 72,
+    "live_transitions": 51768,
+    "primary_replay_transitions": 51768,
+    "independent_replay_transitions": 719,
+    "total_transitions": 104255
+  },
+  "gates": {
+    "pair_own_min": -2000,
+    "pair_margin_min": -2000,
+    "seed_opponent_own_min": -1000,
+    "seed_opponent_margin_min": -1000,
+    "overall_own_min": 0,
+    "overall_margin_min": 0,
+    "overall_score_min": 0,
+    "bootstrap_seed": 2026102837,
+    "bootstrap_replicates": 10000,
+    "bootstrap_cluster": "whole_seed",
+    "bootstrap_shared_indices": true,
+    "positive_own_strict_min": 0,
+    "positive_margin_strict_min": 0,
+    "positive_requires_gate": true
+  },
+  "no_retraining": true,
+  "no_automatic_promotion": true,
+  "retry_allowed": false,
+  "seed_commitment_domain": "ai-game-lab:kaggriculture:merged-eval:v1:seed-commit",
+  "independent_selection": "S01, merged, round2, seat 0; deterministic 20 callback sample",
+  "interpretation": "Four seed clusters; descriptive screen, no significance or automatic promotion"
+}

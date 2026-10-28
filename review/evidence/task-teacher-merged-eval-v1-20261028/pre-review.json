@@ -1,0 +1,87 @@
+{
+  "passed": true,
+  "phase": "before_panel_execution",
+  "review": "Independent subagent review; not WebChat; no third-party timestamp claim",
+  "baseline_commit": "1df5de875dfa4354dfe03248cbb110d4cfc9570a",
+  "freeze_sha256": "be6041aca989fd0ae091d229bb03f00908f670772c3ffe9aea4181c362c626d9",
+  "registration_sha256": "2f5f3f135a2d5c4b423f13a4106193ac3536921204450a3cebba583ef1af7d67",
+  "root_decision_sha256": "ebfe6eaeddfdf8d0c4450d48d55a4939f509cc6f512b7e9ecf286dd44b3dd091",
+  "seed_commitment": "659e979b37c49052c1c2b6d15274171a9ba3f36b30199a52b1d3d1060a8818cc",
+  "seed_document_sha256": "0951e16f83df77794430c4bee1e2f0a92dea381d03b89367fc8594db532c20e9",
+  "seed_inventory_sha256": "03d8bd47ac271eeacb3f36f27c858df1ecb74a16b1c9ce2345a4648cd860550b",
+  "identity_checks": {
+    "new_source_count": 12,
+    "historical_runtime_count": 297,
+    "runtime_against_predecessor": true,
+    "historical_model_checkpoint_and_opponent_hashes_match": true,
+    "official_engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "official_rules_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "loader_identity_matches": true
+  },
+  "seed_checks": {
+    "count": 4,
+    "unique": true,
+    "salt_bytes": 32,
+    "domain_separated_commitment_matches": true,
+    "private_document_digest_matches": true,
+    "recognized_history_disjoint": true,
+    "recognized_history_snapshot_unchanged": true,
+    "public_registration_and_stage_sources_redacted": true,
+    "game_names_use_seed_aliases": true
+  },
+  "panel_checks": {
+    "games": 72,
+    "live_transitions_per_game": 719,
+    "primary_replays": 72,
+    "primary_replay_transitions_per_game": 719,
+    "selected_extra_replays": 1,
+    "extra_replay_transitions": 719,
+    "opponents": [
+      "round2",
+      "market",
+      "teacher"
+    ],
+    "seats": [
+      0,
+      1
+    ],
+    "actor_policies": [
+      "merged",
+      "unweighted",
+      "teacher_task"
+    ],
+    "teacher_task_is_full_teacher": false,
+    "whole_seed_clusters": 4,
+    "bootstrap_replicates": 10000,
+    "gate_reference": "merged versus unweighted only",
+    "teacher_task_comparison": "descriptive; separately reported",
+    "automatic_promotion": false,
+    "no_partial_panel_economic_evaluation": true
+  },
+  "resource_checks": {
+    "stage_bytes": 10737418240,
+    "per_game_python_write_bytes": 134217728,
+    "free_disk_floor_bytes": 4294967296,
+    "retry_allowed": false
+  },
+  "verification": {
+    "synthetic_unit_tests_passed": 50,
+    "synthetic_tests_skipped": 0,
+    "static_junction_paths_rejected": true,
+    "cli_failure_python_stdout_stderr_discarded": true,
+    "native_output_independently_verified": false,
+    "no_game_replay_or_scoring_marker": true,
+    "official_games_executed_in_this_review": 0
+  },
+  "limitations": [
+    "Previously deleted, external or unrecognized seed history cannot be excluded.",
+    "The private seed operator is not blinded; a salted commitment does not prove blind selection or a third-party timestamp.",
+    "Python output and sampled resource limits are not native handle verification or operating-system disk or memory quotas.",
+    "The output-directory link checks are not a security boundary against same-user replacement races.",
+    "The global deadline is checked around jobs and replay callbacks; it is not a hard real-time interruption of a running job.",
+    "The additional replay shares the official engine and validators and does not independently recompute network inference.",
+    "Four whole-seed clusters yield a descriptive exploratory screen, not proof of generalization or significance.",
+    "The newly combined worker has not yet completed an official game in this phase."
+  ],
+  "created_utc": "2026-10-28T12:00:31.576071+00:00"
+}
