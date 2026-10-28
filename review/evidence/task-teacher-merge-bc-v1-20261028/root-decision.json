@@ -1,0 +1,20 @@
+{
+  "previous_commit": "27fddfceca3e376f22f0cc24b67c82f88e46b7d9",
+  "status": "approved_for_implementation_not_execution",
+  "created_utc": "2026-10-28T06:36:22.670852+00:00",
+  "deadline_utc": "2026-10-28T18:36:22.670852+00:00",
+  "purpose": "One small bounded unweighted BC fit using old and new conditional teacher demonstrations; no games or model promotion.",
+  "sources": "2253 prior groups plus 2851 refresh-v2 groups, schema and archive identities bound to historical public evidence; old before new.",
+  "training": "Same original initialization seed and unweighted trainer; 128 synchronized updates, up to 16 GPU/CPU parity groups; training batches follow permutation and width/padding constraints.",
+  "coverage": "Development examples only, rare labels oversampled in refresh; no claim of representativeness, teacher task execution or competitive improvement.",
+  "seed_roles": "Training seed roles and recognized holdout/validation/reserved exclusions checked; detailed historical seed inventory remains local and only its hash/count are published. Unavailable, private or unrecognized history cannot be excluded.",
+  "resources": "Three 4GiB host-memory samples, 2GiB sampled floor during execution, existing Windows transport and Linux session guard, bounded data sizes and time; no hard RAM or GPU memory cap.",
+  "io_scope": "Each archive has one bounded numeric decode snapshot inside the Linux worker; admission may hash file bytes multiple times.",
+  "acceptance": "Source and archive identities, same schema, disjoint seed roles, expected sample counts, actual GPU exactly matching the authenticated private device configuration, 128 synchronous updates, nonzero gradient and changed parameters, 16 synchronized GPU/CPU inference groups, clean Windows/Linux cleanup and sealed private checkpoint.",
+  "stopping": "Any identity, resource, GPU, numeric, time, cleanup or parity failure stops; once marker exists no retry, replacement, extra fit or games.",
+  "privacy": "No raw replay, trace, array, checkpoint, process log, user path or local seed inventory is published.",
+  "boundaries": "No new official games, no PPO, no default Bot or driver changes, no training-data guarantees beyond historical provenance, no statistical or economic improvement claim.",
+  "provenance": "Independent subagent advice and review; not WebChat.",
+  "privacy_revision_utc": "2026-10-28T10:55:09.658402+00:00",
+  "privacy_revision": "Hardware identity is verified privately and not published; acceptance is otherwise unchanged."
+}

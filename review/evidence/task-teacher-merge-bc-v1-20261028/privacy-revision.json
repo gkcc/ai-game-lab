@@ -1,0 +1,48 @@
+{
+  "previous_decision_sha256": "27bd3afa7ba2a11ee02de593f63d74d734cfe807dfaf25cfa3c094ce2869148e",
+  "previous_registration_sha256": "9f95b190268158cb99f3f1a09c0dd0c58a24be8b1bfac7ae30c9ebe3c3ab55a5",
+  "previous_freeze_sha256": "81927ea9d5165c00ae53f8ac2c7c3233d172b9a3b280fc39c3360a81d4086f55",
+  "previous_pre_review_sha256": "b68dcecbe03151a85565e98ed9761f23813b5aeefce30894112d9e9cb2fde778",
+  "revised_decision_sha256": "1bc53fb2bafb54425c99c0af0cf3e703dee7b97e63dffa1b4746c9c567d41465",
+  "revised_freeze_sha256": "1b7dee4cc8551067b30ee4266f7fe4fe89130142c8ce0dd97eaf01e3c09f1a2e",
+  "source_changes": {
+    "learning/task_teacher_merge_bc_v1/campaign.py": {
+      "before": "41c8c60ac22eda775f6364b23eaa49f1f5e45e4449efe9c2575f6a7de6651cc9",
+      "after": "1972e056f1019b3ecff48acf9379656f937a2b5c0826be922dd203e61229908c"
+    },
+    "learning/task_teacher_merge_bc_v1/experiment.py": {
+      "before": "207dca80b105acdf8dc4c2440801c4a0aea7e7b3a692155e23483b6b97c47f4a",
+      "after": "f2e7a13fa08dca48403840ee82f744c36d4c5407703ffefbb7862bddf1317c94"
+    },
+    "learning/task_teacher_merge_bc_v1/gpu_entry.py": {
+      "before": "e5be3bfb8c7a74dbbacf408f53b2f192d56726ccee115bd2ac1a8b464472acb5",
+      "after": "6d8ca2a6c8b06defde1caba99cd29b1c8da4ab1d4dc07db0f8b3faf5ee7f7cc6"
+    },
+    "learning/task_teacher_merge_bc_v1/test_campaign.py": {
+      "before": "039fea5abd56ffd61fce123e969e7e763367c3343b287674021fa452b0c31326",
+      "after": "24991a2fbd868f2e9b72c8cf905941204b68661d13124c9842bc5c74d406c5cc"
+    },
+    "learning/task_teacher_merge_bc_v1/test_experiment.py": {
+      "before": "603135bd6273c342fe4ddf64560d48a6f88b384d9b68d5698eaa508eb11377e2",
+      "after": "287e9fa65b54dd0c51f029bd4b28dcc891a478bb3e81bff11adbdc4982500b78"
+    },
+    "learning/task_teacher_merge_bc_v1/test_gpu_entry.py": {
+      "before": "a1209679bee664f3038761b8003279687df0d40057c94bf8be9f4af3d23ddef2",
+      "after": "a23ca4ffa67df9c1925134214b33c63721e0acf00c6d2a8d66ebab7ff96b2faf"
+    }
+  },
+  "reason": "Remove hardware inventory from publication while retaining a private authenticated device and exact runtime device matching.",
+  "previous_originals_retained_locally": true,
+  "registration_unchanged": true,
+  "no_training_marker_before_revision": true,
+  "limitations": "Earlier private originals are retained locally and represented publicly by hashes.",
+  "intermediate_freeze_sha256": "50cec85875328828862a01380abc30fcde9e18715c4178ab6300c9a71eb1f12b",
+  "intermediate_revision_sha256": "538de0ca0de426a985d88dc62db3544cb6d01db4ffc7fbf3817e34d5548b252b",
+  "seed_count_correction": "Exclude seed-count metadata from role values while preserving actual seed roles.",
+  "intermediate_validation": "Stopped before execution when a count was misidentified as a seed; original and intermediate artifacts retained locally.",
+  "checkpoint_fix_previous_freeze_sha256": "81af10f3f4393a751714e61c56778d80a5af2a1017470c456e7e73ba209bc51c",
+  "checkpoint_fix_previous_pre_review_sha256": "780fae57920a7038c57b280f2fa34ee7f38eeae144934417309889f7a7f6608f",
+  "checkpoint_fix_previous_revision_sha256": "a0d74a3e304719ce24709b0b05f959ef609c7e73b8b21b1ff5c04675879199df",
+  "checkpoint_directory_correction": "Prepare and validate an empty private output directory before the one-attempt marker; revalidate before trainer use.",
+  "checkpoint_fix_before_training": true
+}

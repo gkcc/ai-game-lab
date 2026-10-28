@@ -1,0 +1,112 @@
+{
+  "experiment": "task-teacher-merge-bc-v1",
+  "baseline_head": "27fddfceca3e376f22f0cc24b67c82f88e46b7d9",
+  "deadline_utc": "2026-10-28T18:36:22.670852+00:00",
+  "old_train_seeds": [
+    3911611436,
+    2328454240
+  ],
+  "new_train_seeds": [
+    1071366039,
+    1234805188
+  ],
+  "holdout_seed_count": 50374,
+  "training_seed": 2026102711,
+  "archive_path": {
+    "old": "artifacts/task-teacher-choice-bc-v1-20261027/private/train.npz",
+    "new": "artifacts/task-teacher-refresh-v2-20261028/private/new-teacher.npz"
+  },
+  "archive_sha256": {
+    "old": "9ffd92d7d6fce400acb2d59c99c596140a46a48cbd1206d28889a11d51f70dac",
+    "new": "d57ec258a36501caedb881747c145312c8aa33e0e98a8d212f27bb7b78ce3aa6"
+  },
+  "schema_path": {
+    "old": "artifacts/task-teacher-choice-bc-v1-20261027/schema.json",
+    "new": "artifacts/task-teacher-refresh-v2-20261028/schema.json"
+  },
+  "schema_sha256": "54b68dd3d715ccab079dbc275ee034fad2cb6302439ee36a79e8287f23ba68e3",
+  "expected_groups": {
+    "old": 2253,
+    "new": 2851
+  },
+  "expected_candidates": {
+    "old": 118955,
+    "new": 203196
+  },
+  "expected_operations": {
+    "old": {
+      "DIG": 8,
+      "FERTILIZE": 84,
+      "HARVEST": 199,
+      "PLANT": 146,
+      "WATER": 1816
+    },
+    "new": {
+      "DIG": 54,
+      "FERTILIZE": 736,
+      "HARVEST": 186,
+      "PLANT": 175,
+      "WATER": 1700
+    }
+  },
+  "gpu_launch_config_sha256": "4c90ee97e07e41cc381b724b357a180b83416d4863c2dfbe064dc40911e0177d",
+  "wsl_software_versions": {
+    "python": "3.12.3",
+    "numpy": "2.5.4",
+    "jax": "0.4.38",
+    "optax": "0.2.4"
+  },
+  "environment": {
+    "interpreter_sha256": "9b0bffb7a259cd2722df454fdfff41ee13665820cff1f578b1d97d31f9ef93d5",
+    "python": "3.12.2",
+    "numpy": "2.5.4",
+    "optimization_level": 0,
+    "python_optimize_env_absent": true
+  },
+  "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "official_loader_sha256": "0ac7baf1212b4ce1eabae3cc1cbb55c98effef5e0d0485522a8be87097c39a4f",
+  "protected_paths": {
+    "default_bot": "main.py",
+    "crop": "artifacts/bc-epoch6-holdout-v1-20261023/panels/fixed_epoch6/model/trained.npz",
+    "unweighted": "artifacts/task-teacher-choice-bc-v1-20261027/private/model-final.npz",
+    "weighted": "artifacts/task-teacher-weighted-v1-20261027/private/model-final.npz",
+    "reference": "artifacts/task-completion-bc-reentry-v1-20261027/private/model-final.npz"
+  },
+  "protected_sha256": {
+    "default_bot": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "crop": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "unweighted": "b9a0f293c354aa78468c531e85645f70fbea9075a9dace729856119d913b24df",
+    "weighted": "8fa08734e7d92857d800d680f2ca6833dc44d33ca611bd85f1034392e4aef67f",
+    "reference": "47def382fff8738583d2359964d2e14bfbb41b53e9dc428d2882519ada8e1811"
+  },
+  "training": {
+    "training_seed": 2026102711,
+    "updates": 128,
+    "work_seconds": 870,
+    "process_seconds": 900,
+    "cancellation_wait_seconds": 20,
+    "cleanup_seconds": 10
+  },
+  "host_limits": {
+    "preflight_min_available_bytes": 4294967296,
+    "preflight_samples": 3,
+    "preflight_interval_seconds": 10,
+    "min_available_bytes": 2147483648,
+    "poll_seconds": 0.25
+  },
+  "data_limits": {
+    "max_groups": 8000,
+    "max_candidates": 400000,
+    "max_archive_bytes": 268435456,
+    "max_uncompressed_bytes": 268435456
+  },
+  "process_log_bytes": 1048576,
+  "retry_allowed": false,
+  "no_official_games": true,
+  "no_automatic_promotion": true,
+  "seed_scope": "Recognized non-private local artifact and public repository seed-role metadata",
+  "seed_history_limitation": "Deleted, private, unavailable, external, or unrecognized role metadata cannot be excluded",
+  "admission_limitation": "Archive SHA binds bytes; feature derivation is not independently recomputed from hashes",
+  "seed_inventory_sha256": "f32f573ec877ee5efcc57ae9ae4455abdbc5b8021d8c3bc4488025b2ca848f3c"
+}
