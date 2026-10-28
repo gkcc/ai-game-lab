@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "pre_execution_commit": "d8a1c2ff025991f724ee1ca5220aac4b27f277a4",
+  "freeze_sha256": "1b7dee4cc8551067b30ee4266f7fe4fe89130142c8ce0dd97eaf01e3c09f1a2e",
+  "registration_sha256": "9f95b190268158cb99f3f1a09c0dd0c58a24be8b1bfac7ae30c9ebe3c3ab55a5",
+  "pre_review_sha256": "f1222703c479767f96d4f9be08bf7d170a8d509486e0b15a1888297a321f1ecf",
+  "privacy_revision_sha256": "7fde2cf705649581d1cb0f60e909458f2dee0dff9761931b409142a9b5b0f15d",
+  "fit_result_sha256": "110c4ed5a836c94fd101ac5f08bbcd3efc2877fee53b2704a2c87380fea71c38",
+  "fit_transport_sha256": "a44249052cbc7c4de421667c06baf195ce840348e12d0575f4eaa1c782b9951c",
+  "gpu_guard_sha256": "ad9aa00df9675a73bbf43c4662b9a1a063e4abfe736c4bfc097090997f444751",
+  "model_seal_sha256": "0dfdd62f3a8aa686259ff5c7e159e49aa628f41eb106200f7fa89721bac9dbb2",
+  "independent_assessment_sha256": "25c637d8ff75a213b7155037a7d76039bbfd31581626f49d54cf960725c555de",
+  "progress_summary_sha256": "cad45d52ce387ae138f1c2b6c7c5f2a364e6c50517714fe31cd82dc2f07a1338",
+  "checkpoint_sha256": "994452667315e1c7de67183476bf0bab0f62fa5887a08eab091bea5ef152f083",
+  "groups": 5104,
+  "synchronized_updates": 128,
+  "nonzero_gradient_updates": 128,
+  "gpu_verified_by_frozen_worker": true,
+  "parameters_changed": true,
+  "inference_parity": {
+    "groups": 16,
+    "candidate_rows": 1128,
+    "max_abs_error": 1.2539767850761052e-06,
+    "synchronized": true,
+    "requested_matmul_precision": "highest",
+    "hardware_precision_measured": false
+  },
+  "windows_cleanup_passed": true,
+  "linux_cleanup_passed": true,
+  "protected_hashes": {
+    "default_bot": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "crop": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "unweighted": "b9a0f293c354aa78468c531e85645f70fbea9075a9dace729856119d913b24df",
+    "weighted": "8fa08734e7d92857d800d680f2ca6833dc44d33ca611bd85f1034392e4aef67f",
+    "reference": "47def382fff8738583d2359964d2e14bfbb41b53e9dc428d2882519ada8e1811"
+  },
+  "new_games": 0,
+  "competitive_gain_proven": false,
+  "automatic_promotion": false,
+  "retry_allowed": false,
+  "limitations": [
+    "Receipt and progress review did not independently recompute gradients or GPU/CPU logits.",
+    "Parity covers first 16 old-data groups, not every new demonstration class.",
+    "Historical data source, biased retention and width-filtered batches do not establish generalization or economic gains.",
+    "Admission may stream-hash archives repeatedly; each worker archive decode used one bounded snapshot.",
+    "Sampled host-memory checks do not establish hard system or GPU-memory limits."
+  ]
+}

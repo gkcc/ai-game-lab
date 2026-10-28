@@ -1,0 +1,85 @@
+{
+  "passed": true,
+  "reviewer": "independent inherited-model subagent; not WebChat",
+  "scope": "Static frozen code and read-only receipt, byte-hash and progress-count audit; no recomputation or live monitoring.",
+  "pre_execution_commit": "d8a1c2ff025991f724ee1ca5220aac4b27f277a4",
+  "identities_sha256": {
+    "root-decision.json": "1bc53fb2bafb54425c99c0af0cf3e703dee7b97e63dffa1b4746c9c567d41465",
+    "registration.json": "9f95b190268158cb99f3f1a09c0dd0c58a24be8b1bfac7ae30c9ebe3c3ab55a5",
+    "freeze.json": "1b7dee4cc8551067b30ee4266f7fe4fe89130142c8ce0dd97eaf01e3c09f1a2e",
+    "privacy-revision.json": "7fde2cf705649581d1cb0f60e909458f2dee0dff9761931b409142a9b5b0f15d",
+    "pre-review.json": "f1222703c479767f96d4f9be08bf7d170a8d509486e0b15a1888297a321f1ecf",
+    "pre-execution-commit.json": "3d8322bc3424560034015a460635e70862f239675c9eac4df1b47f2c52e10395",
+    "fit-started.json": "9a01f873deff1af704b2f255a552eddc1fa2f9e93b4e5e44cb7ae160cb84c09c",
+    "fit-result.json": "110c4ed5a836c94fd101ac5f08bbcd3efc2877fee53b2704a2c87380fea71c38",
+    "fit-transport-result.json": "a44249052cbc7c4de421667c06baf195ce840348e12d0575f4eaa1c782b9951c",
+    "gpu-guard-started.json": "7c2da62d1c84afd283a0b7735aa8a4d2ab21993ab36699cff4414ea0d22b6e64",
+    "gpu-guard-result.json": "ad9aa00df9675a73bbf43c4662b9a1a063e4abfe736c4bfc097090997f444751",
+    "model-seal.json": "0dfdd62f3a8aa686259ff5c7e159e49aa628f41eb106200f7fa89721bac9dbb2"
+  },
+  "archive_sha256": {
+    "old": "9ffd92d7d6fce400acb2d59c99c596140a46a48cbd1206d28889a11d51f70dac",
+    "new": "d57ec258a36501caedb881747c145312c8aa33e0e98a8d212f27bb7b78ce3aa6"
+  },
+  "checkpoint_sha256": "994452667315e1c7de67183476bf0bab0f62fa5887a08eab091bea5ef152f083",
+  "checkpoint_size_bytes": 215030,
+  "protected_sha256": {
+    "default_bot": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+    "crop": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "unweighted": "b9a0f293c354aa78468c531e85645f70fbea9075a9dace729856119d913b24df",
+    "weighted": "8fa08734e7d92857d800d680f2ca6833dc44d33ca611bd85f1034392e4aef67f",
+    "reference": "47def382fff8738583d2359964d2e14bfbb41b53e9dc428d2882519ada8e1811"
+  },
+  "worker_reported": {
+    "groups": 5104,
+    "numeric_decode_snapshots": {
+      "old": 1,
+      "new": 1
+    },
+    "synchronized_updates": 128,
+    "nonzero_gradient_updates": 128,
+    "weights_changed": true,
+    "gpu_verified": true,
+    "inference_parity": {
+      "groups": 16,
+      "candidate_rows": 1128,
+      "max_abs_error": 1.2539767850761052e-06,
+      "synchronized": true,
+      "requested_matmul_precision": "highest",
+      "hardware_precision_measured": false
+    }
+  },
+  "progress_counts": {
+    "update_started": 128,
+    "update_completed": 128,
+    "parity_started": 16,
+    "parity_completed": 16,
+    "checkpoint_written": 1,
+    "sequence_numbers_contiguous": true
+  },
+  "cleanup": {
+    "windows_transport_passed": true,
+    "owned_instances_remaining": 0,
+    "reader_joined": true,
+    "launcher_reaped": true,
+    "linux_guard_passed": true,
+    "linux_session_cleanup_reported": true,
+    "host_samples": 350
+  },
+  "checks": [
+    "Pre-execution commit, registration, freeze, privacy revision and source identities match; old and intermediate freeze hashes remain preserved.",
+    "Both historical archive byte hashes and schema identities match; worker reports one numeric decoding snapshot per archive while ready/verify may stream-hash repeatedly.",
+    "Frozen trainer checks the private registered device name and kind against the actual JAX GPU and checks device placement and synchronization on each update.",
+    "The fit receipt reports 128 synchronized, nonzero-gradient updates, changed parameters and 16-group CPU/GPU comparison; progress sequence counts are consistent with the receipt.",
+    "Windows transport and Linux guard report clean process cleanup; no worker, seal or cancel failure markers exist.",
+    "The final seal binds fit, transport, guard and private checkpoint SHA; protected old model and default Bot byte hashes match."
+  ],
+  "limitations": [
+    "No checkpoint or training array was decoded and no gradients, per-step device placements or logits were independently recomputed; no execution was live monitored.",
+    "Progress records and cleanup are worker and supervisor evidence, not independent continuous observation; same-user adversarial tampering is outside the guarantee.",
+    "The fixed sixteen comparison groups are from the beginning of the old dataset and do not establish parity for every new class.",
+    "GPU and host memory thresholds are sampled or software bounded, not hard memory caps; specific preflight measurements were not independently retained.",
+    "Biased teacher examples and width-filtered batches do not establish generalization, competitive improvement, automatic promotion or an independent test result.",
+    "Raw progress, replay, model arrays and private configuration remain local; only hashes and aggregates are publishable."
+  ]
+}

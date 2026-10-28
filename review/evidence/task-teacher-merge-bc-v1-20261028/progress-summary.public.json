@@ -1,0 +1,24 @@
+{
+  "original_log_sha256": "b046d7691242a628c9a542e32c87dcd263ecfaa97f5024b91e5b8686cfd9dec7",
+  "phase_counts": {
+    "starting_worker": 1,
+    "checking_input": 1,
+    "decoding_training_data": 1,
+    "starting_fit": 1,
+    "initializing": 1,
+    "device_validated": 1,
+    "update_started": 128,
+    "update_completed": 128,
+    "checkpoint_written": 1,
+    "parity_started": 16,
+    "parity_completed": 16
+  },
+  "update_started": 128,
+  "update_completed": 128,
+  "parity_started": 16,
+  "parity_completed": 16,
+  "sequence_checked": true,
+  "device_validated": true,
+  "checkpoint_written": true,
+  "limitation": "Counts and source receipts only; no independent recomputation or external live monitoring."
+}

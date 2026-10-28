@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "marker": {
+    "created": true,
+    "complete": true
+  },
+  "error_kind": null,
+  "supervision": {
+    "reason": "exited",
+    "child_exit_code": 0,
+    "elapsed_seconds": 45.598052566,
+    "owned_process_group_signalled": true,
+    "direct_child_reaped": true,
+    "no_live_owned_session_members_before_reap": true,
+    "completed": true
+  },
+  "elapsed_seconds": 45.62927807,
+  "retry_allowed": false,
+  "freeze_sha256": "1b7dee4cc8551067b30ee4266f7fe4fe89130142c8ce0dd97eaf01e3c09f1a2e",
+  "guard_marker_sha256": "7c2da62d1c84afd283a0b7735aa8a4d2ab21993ab36699cff4414ea0d22b6e64",
+  "windows_transport_cleanup_verified_here": false,
+  "gpu_memory_hard_cap_claimed": false
+}
