@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "freeze_sha256": "de2201b8bce3924ec36f3b76752ed8b25594334e21313e5389bc74bcdb9f3d1d",
+  "registration_sha256": "230a0ee1340f22a126552a9d7fa76a9c535111c59d4449d809536d527f449ae6",
+  "prior_evidence_sha256": {
+    "registration.json": "5bff1e2feac2411f3b852ee1717a7329784cc953bbd507510ef6e7f30735eaee",
+    "freeze.json": "6ed00c0595dc2227abd0e5f14675a766130ced49aa4cdf8d50fd85581b92d1b8",
+    "expiration-review.json": "f3407911dc2fb301a7c6f4395cf7e5a24b10d622d9002e5765a3a761bbfb3b65",
+    "expired-unstarted.json": "a58ed2832d934dffd4ee94645e77ffb4b5c973cc974531ca9f23fa7d914e9298"
+  },
+  "checks": [
+    "The old registration, freeze and expiration review match the new decision; old and new execution markers and receipts are absent.",
+    "All six new source and two shared source identities match; compared with baseline commit, only the experiment BASE and OUT constants changed.",
+    "Parent failure evidence bytes match the baseline publication; the new deadline, one attempt, project venv identity and resource budgets match registration.",
+    "One synthetic two-second child and at most five-second artificial wait are fixed, with three 4 GiB preflight samples and owned Job cleanup.",
+    "Five modules and 24 fake tests passed."
+  ],
+  "limitations": [
+    "No real Windows Job or process was launched during this review; OS and venv process lifecycle remain untested.",
+    "Artificial timing does not establish the historical failure cause; waiting pauses sampling, which is not a hard real-time memory bound.",
+    "Absent markers do not exclude unrelated external execution or removed files; no games, models or training data were examined."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "baseline_head": "041298cec5a34c323ee414476680df76938e1b3c",
+  "created_utc": "2026-10-28T04:07:24.359871+00:00",
+  "deadline_utc": "2026-10-28T16:07:24.359871+00:00",
+  "synthetic_only": true,
+  "limits": {
+    "max_rss_bytes": 536870912,
+    "max_commit_bytes": 1073741824,
+    "min_available_bytes": 2147483648,
+    "wall_seconds": 30,
+    "poll_seconds": 0.25,
+    "cleanup_seconds": 10
+  },
+  "host_preflight": {
+    "samples": 3,
+    "min_available_bytes": 4294967296,
+    "interval_seconds": 10
+  },
+  "prior_expired_registration_sha256": "5bff1e2feac2411f3b852ee1717a7329784cc953bbd507510ef6e7f30735eaee",
+  "prior_expired_freeze_sha256": "6ed00c0595dc2227abd0e5f14675a766130ced49aa4cdf8d50fd85581b92d1b8",
+  "prior_expiration_review_sha256": "f3407911dc2fb301a7c6f4395cf7e5a24b10d622d9002e5765a3a761bbfb3b65",
+  "purpose": "One owned Windows Job with artificial empty membership timing after one complete sample; no game, model or training data.",
+  "acceptance": "Confirmed empty exit, complete and discarded sample counts, zero exit, Job zero members, launcher reaped and clean handles; failure never retried after marker.",
+  "boundaries": "One two-second idle Python process, artificial wait up to five seconds, no network; resource sampling is paused during injected wait and is not hard realtime. No claim on historical failure cause.",
+  "provenance": "Independent subagent review, not WebChat."
+}

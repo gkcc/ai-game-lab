@@ -13,9 +13,9 @@ from . import scenario
 ROOT=Path(__file__).resolve().parents[2]
 PUBLIC=ROOT.parent/'publication/ai-game-lab'
 SOURCE=Path(__file__).resolve().parent
-OUT=ROOT/'artifacts/task-job-empty-exit-v1-20261028'
+OUT=ROOT/'artifacts/task-job-empty-exit-v1-r2-20261028'
 PARENT=ROOT/'artifacts/task-teacher-weighted-eval-v1-20261027'
-BASE='5eebafaa4ca481f1529fdde0d731ebd4e3c30c0d'
+BASE='041298cec5a34c323ee414476680df76938e1b3c'
 SHARED=('learning/task_job_sampling_race_v1/sampling.py','learning/task_training_job_supervision_v1/job.py')
 EVIDENCE=('root-failure-acceptance.json','pre-execution-commit.json','freeze.json')
 PREFLIGHT=dict(samples=3,min_available_bytes=4*1024**3,interval_seconds=10)
