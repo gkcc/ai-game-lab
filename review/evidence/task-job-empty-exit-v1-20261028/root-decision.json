@@ -1,0 +1,23 @@
+{
+  "baseline_head": "5eebafaa4ca481f1529fdde0d731ebd4e3c30c0d",
+  "created_utc": "2026-10-27T16:28:11.305593+00:00",
+  "deadline_utc": "2026-10-27T18:28:11.305593+00:00",
+  "synthetic_only": true,
+  "limits": {
+    "max_rss_bytes": 536870912,
+    "max_commit_bytes": 1073741824,
+    "min_available_bytes": 2147483648,
+    "wall_seconds": 30,
+    "poll_seconds": 0.25,
+    "cleanup_seconds": 10
+  },
+  "host_preflight": {
+    "samples": 3,
+    "min_available_bytes": 4294967296,
+    "interval_seconds": 10
+  },
+  "purpose": "One owned Windows Job with artificial empty membership timing after one complete sample; no game, model or training data.",
+  "acceptance": "Confirmed empty exit, complete and discarded sample counts, zero exit, Job zero members, launcher reaped and clean handles; failure never retried after marker.",
+  "boundaries": "One two-second idle Python process, artificial wait up to five seconds, no network; resource sampling is paused during injected wait and is not hard realtime. No claim on historical failure cause.",
+  "provenance": "Independent subagent review, not WebChat."
+}

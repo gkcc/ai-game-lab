@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "expired_unstarted_sha256": "a58ed2832d934dffd4ee94645e77ffb4b5c973cc974531ca9f23fa7d914e9298",
+  "freeze_sha256": "6ed00c0595dc2227abd0e5f14675a766130ced49aa4cdf8d50fd85581b92d1b8",
+  "registration_sha256": "5bff1e2feac2411f3b852ee1717a7329784cc953bbd507510ef6e7f30735eaee",
+  "pre_review_sha256": "24bf3016645113d362327664fecaf2fa541ce0f4983c036768b08a8966f7a9eb",
+  "checks": [
+    "Observation and review times are after the frozen decision deadline.",
+    "Freeze, registration, root decision and original pre-review hash bindings match.",
+    "Pre-execution commit, started marker, public result and local result are absent.",
+    "Expiration summary explicitly limits the finding to the frozen runner and does not exclude unrelated external invocation."
+  ],
+  "limitations": [
+    "Absence of files does not prove no external invocation or exclude previously removed artifacts.",
+    "No real Job, game, model or data operation was executed during this review."
+  ]
+}

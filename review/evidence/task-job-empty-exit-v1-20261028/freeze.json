@@ -1,0 +1,16 @@
+{
+  "registration_sha256": "5bff1e2feac2411f3b852ee1717a7329784cc953bbd507510ef6e7f30735eaee",
+  "root_decision_sha256": "d8a85b2c84e7c2fe1108bc30b8ae19b41af16e702c9dc87df537f169cee1512a",
+  "new_source_sha256": {
+    "learning/task_job_empty_exit_v1/experiment.py": "e7c0fae84ac768f0aef40f95d1639f99a98bed6717f85a7175316a9986f21d41",
+    "learning/task_job_empty_exit_v1/sampling.py": "0cdba5327d9e64d404e87c4f65fcb803c27825ae10fe56aed3ed0db70290eb82",
+    "learning/task_job_empty_exit_v1/scenario.py": "45db309cef793f91ac3b090cba973fd4b2e4d76bc33c477198069e6a5dde7490",
+    "learning/task_job_empty_exit_v1/test_experiment.py": "ad4cd238a3dabd297623f75c3305bd28372e821c70a5df419bc0118519242af8",
+    "learning/task_job_empty_exit_v1/test_sampling.py": "e578e4581eca8d02403a64bba7932d9e353af80d2e4dff879353c3fa33688364",
+    "learning/task_job_empty_exit_v1/test_scenario.py": "7eb2075a1a48b0da6f158c3fb14a26dc5bdf5d52acc1da2b0dcce39179656a8c"
+  },
+  "shared_source_sha256": {
+    "learning/task_job_sampling_race_v1/sampling.py": "a160f5d0d4157bd017fb0835cc52c51c8bce6c236f9dcafb8b2fa833a8cef4ec",
+    "learning/task_training_job_supervision_v1/job.py": "97257f1621f6aa1a7ea6295cbeb369536c2b2c2a14ea021ace0c19b0d7165b6e"
+  }
+}

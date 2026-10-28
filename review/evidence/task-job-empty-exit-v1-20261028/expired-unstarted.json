@@ -1,0 +1,12 @@
+{
+  "observed_at_utc": "2026-10-28T03:59:25.906230+00:00",
+  "deadline_utc": "2026-10-27T18:28:11.305593+00:00",
+  "freeze_sha256": "6ed00c0595dc2227abd0e5f14675a766130ced49aa4cdf8d50fd85581b92d1b8",
+  "registration_sha256": "5bff1e2feac2411f3b852ee1717a7329784cc953bbd507510ef6e7f30735eaee",
+  "pre_review_sha256": "24bf3016645113d362327664fecaf2fa541ce0f4983c036768b08a8966f7a9eb",
+  "pre_execution_commit_exists": false,
+  "runner_start_marker_exists": false,
+  "runner_result_exists": false,
+  "status": "expired_unstarted",
+  "limitation": "Absence of runner markers does not exclude an unrelated external invocation."
+}

@@ -1,0 +1,40 @@
+{
+  "baseline_head": "5eebafaa4ca481f1529fdde0d731ebd4e3c30c0d",
+  "synthetic_only": true,
+  "limits": {
+    "max_rss_bytes": 536870912,
+    "max_commit_bytes": 1073741824,
+    "min_available_bytes": 2147483648,
+    "wall_seconds": 30,
+    "poll_seconds": 0.25,
+    "cleanup_seconds": 10
+  },
+  "host_preflight": {
+    "samples": 3,
+    "min_available_bytes": 4294967296,
+    "interval_seconds": 10
+  },
+  "parent_evidence": {
+    "root-failure-acceptance.json": "bb81457627c56b2ac7bb459caafb6bde3686f0106787f49405cf048bcb92a937",
+    "pre-execution-commit.json": "a8ddf7dfa5b7b767d2345ac0d6373dfef64b23f4be10787ef8a7539a3529c687",
+    "freeze.json": "57792cbabd0ca224cc8f37cd973de05d2997ea2b96f9525342b97cfda62329db"
+  },
+  "environment": {
+    "python": [
+      3,
+      12,
+      2
+    ],
+    "psutil": "7.2.2",
+    "interpreter_sha256": "9b0bffb7a259cd2722df454fdfff41ee13665820cff1f578b1d97d31f9ef93d5",
+    "optimized": false
+  },
+  "attempts": 1,
+  "retry_allowed": false,
+  "workload": {
+    "python_sleep_seconds": 2,
+    "artificial_wait_ms": 5000,
+    "network": false
+  },
+  "limitations": "Artificial exit timing; five second wait pauses sampling; no hard memory cap or historical cause claim"
+}

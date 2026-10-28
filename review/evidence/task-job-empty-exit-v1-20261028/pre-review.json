@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "freeze_sha256": "6ed00c0595dc2227abd0e5f14675a766130ced49aa4cdf8d50fd85581b92d1b8",
+  "registration_sha256": "5bff1e2feac2411f3b852ee1717a7329784cc953bbd507510ef6e7f30735eaee",
+  "checks": [
+    "Frozen six source files and two shared dependencies match their exact hashes; parent failure evidence matches published baseline commit.",
+    "Single synthetic attempt is fixed to a two-second Python child and a five-second maximum artificial exit timing wait; no game, model or network workload is registered.",
+    "Three 4 GiB host preflight samples precede the start marker; owned Job supervision and cleanup, minimum one complete RSS sample and no retry are required.",
+    "Windows project venv, non-optimized parent and absence of inherited PYTHONOPTIMIZE are enforced by source; no started or result marker existed.",
+    "Five modules and 24 fake tests passed."
+  ],
+  "limitations": [
+    "No real Windows Job or process was launched in this review; actual venv launcher and child lifecycle and OS API compatibility remain unverified.",
+    "Artificial timing demonstrates the synthetic handling path only and cannot prove the historical failure cause.",
+    "The injected wait pauses resource sampling for up to five seconds; sampling is not a hard realtime memory limit.",
+    "Local marker and hash checks do not prevent adversarial same-user alteration or transient replacement followed by restoration."
+  ]
+}
