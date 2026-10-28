@@ -1,0 +1,9 @@
+{
+  "previous_freeze_sha256": "cc00661b86450e7bd46b873fc19c0fc09b2aba2bb702ede5dbaf50dd0e808b30",
+  "previous_review_sha256": "727b08becb5afb76aad069dd17bc46530a09c9933d626487c787886bf3caaad6",
+  "revised_freeze_sha256": "d68a2859f74109c1e2fccbb2fb7aaa9feb4c915d41f29674824904de38d5d7e1",
+  "changed_source": "learning/task_teacher_refresh_v2/data_runner.py",
+  "old_source_sha256": "00edf2ca396d8cd6054d9fb520eb4c366bb1d8b1b4e71cd1a3fb1c5744917c1c",
+  "new_source_sha256": "5cd33552b111bab4b0a1515a79642ea29a69d4ddbdb71b9a20f18cab3b8aa3ce",
+  "reason": "Remove excess final blank lines to satisfy git diff check; no behavioral or registration changes."
+}

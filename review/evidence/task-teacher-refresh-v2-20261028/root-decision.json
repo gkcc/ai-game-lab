@@ -1,0 +1,25 @@
+{
+  "previous_commit": "6f848b40d295649adb58162a0ad1d7035913647b",
+  "status": "approved_for_implementation_not_execution",
+  "created_utc": "2026-10-28T05:43:49.104636+00:00",
+  "deadline_utc": "2026-10-28T17:43:49.104636+00:00",
+  "train_seeds": [
+    1071366039,
+    1234805188
+  ],
+  "reserved_test_seeds": [
+    1226242377,
+    3722334685,
+    2791482778,
+    1084387304
+  ],
+  "seed_selection": "Six unique system-random uint32 values excluded from recognized public/local non-private metadata; two development and four future reserved roles, no evaluation outcomes used for selection.",
+  "purpose": "Collect and seal a bounded set of validated conditional teacher selections from fresh official development games, without training.",
+  "panel": "Two development seeds, frozen round2 and market opponents, both seats: eight teacher-task games, eight primary replays, one fixed separate-process replay.",
+  "sampling": "Validate every callback; retain every DIG/FERTILIZE teacher choice and hash-sample other choices at 12.5 percent; report full-stream and retained counts separately.",
+  "coverage": "At least 256 retained groups, 32 per development seed, 3 selected operations, DIG>=32, FERTILIZE>=100 and each development seed contributes at least one DIG. Counts do not establish diversity, task completion or competitive strength.",
+  "resources": "Registered official/data Jobs, three 4GiB host-memory samples before each Job and 2GiB sampled floor; frozen byte, candidate, callback, archive and time budgets. Sampling is not a hard system memory bound.",
+  "stopping": "Any identity, resource, official execution, replay, source, cleanup, sample or receipt failure stops without retry, replacement or extra games; insufficient coverage produces no trainable seal.",
+  "boundaries": "No fit, GPU training, PPO, policy/default Bot/official rules changes or online submission. Replays, traces, observations and arrays stay private; reserved seeds are not used.",
+  "provenance": "Independent subagent advice and review, not WebChat."
+}

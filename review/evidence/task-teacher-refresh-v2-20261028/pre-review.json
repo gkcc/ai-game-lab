@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent; not WebChat",
+  "freeze_sha256": "d68a2859f74109c1e2fccbb2fb7aaa9feb4c915d41f29674824904de38d5d7e1",
+  "registration_sha256": "b51190ee5aadeba4f3eff241a7b69f8faf47f48a4242db21123eb35db4f17960",
+  "checks": [
+    "All 15 new and 289 runtime source hashes match; parent published panel, old BC, failed refresh and synthetic Job evidence match the baseline.",
+    "Two development and four future reserved seeds are distinct and outside 50375 recognized prior seed values; metadata inventory of 726 files was independently regenerated.",
+    "Teacher-task without task checkpoint, crop, opponents, schema and official engine references match frozen parent identities; sampler hash and psutil version match the earlier synthetic Job registration.",
+    "Eight games, eight primary replays and one separate replay are bounded to 12223 official transitions; per-game Job receipts, full panel revalidation and independent replay precede data collection.",
+    "Named Job worker, eight single-pass sources, full-stream and retained limits, NPZ budget, fixed DIG/FERTILIZE coverage gates, pending seal plus final-result confirmation, no retry and no training are registered.",
+    "No game, independent replay or data attempt markers existed; 35 synthetic/fake tests passed."
+  ],
+  "limitations": [
+    "Review did not decode models or open real traces and did not run games, real Jobs or training; official worker and resource behavior remain untested.",
+    "Seed inventory covers only recognized available non-private metadata, not private, deleted, external or unlisted history.",
+    "Rare-label oversampling intentionally changes retained distribution; candidate opportunity counts do not measure teacher preference or economic benefit.",
+    "Separate replay uses the same official engine and shared validators; identity hashes cannot exclude transient replacement and restoration.",
+    "Memory is sampled and time checks are not hard realtime; the worker snapshot and parent hash do not independently recompute features.",
+    "validate_sealed is bound to this stage deadline and original HEAD; any future training stage needs its own historical admission verification."
+  ],
+  "previous_freeze_sha256": "cc00661b86450e7bd46b873fc19c0fc09b2aba2bb702ede5dbaf50dd0e808b30",
+  "previous_pre_review_sha256": "727b08becb5afb76aad069dd17bc46530a09c9933d626487c787886bf3caaad6",
+  "revision_checks": [
+    "Archived data runner bytes match old freeze; current bytes differ solely by removal of two trailing CRLF pairs.",
+    "Old and new freeze differ only in data runner source SHA; registration and other frozen sources are unchanged.",
+    "No execution markers existed; 35 fake tests passed after the revision."
+  ]
+}
