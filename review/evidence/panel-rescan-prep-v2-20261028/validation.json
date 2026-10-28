@@ -1,0 +1,44 @@
+{
+  "automatic_promotion": false,
+  "default_bot_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+  "independent_review": {
+    "raw_seed_or_economic_data_read": false,
+    "status": "passed_after_targeted_fixes",
+    "synthetic_git_repository_checked": true
+  },
+  "integration_required": [
+    "ownership and snapshot creation order",
+    "canonical actor wrapper",
+    "official configuration and resource budgets",
+    "single launch and failure stop",
+    "cross-process wait budget",
+    "rescan at launch and evaluation"
+  ],
+  "limitation": "Operator-recorded smoke projections do not disclose or independently reconstruct private seed data. Metadata scope and same-user check-to-use limitations remain.",
+  "new_seeds_generated": 0,
+  "official_games_started": 0,
+  "parent_commit": "34f7b13dac6a80e3fddaafe2aece753792f08671",
+  "real_preselection_snapshot": {
+    "all_consumed_roles_rejected": true,
+    "excluded_seed_count": 50386,
+    "probe_stage_created": false,
+    "recognized_metadata_files": 777,
+    "verified_consumed_roles": 4
+  },
+  "registered_panel_executed": false,
+  "source_sha256": {
+    "PANEL_RESCAN_PREP.zh-CN.md": "3cb2ed030af6ec5106afb8b7f4b199bcd9cd096127bd62293192f698d7d9fa17",
+    "learning/panel_safety_v2/registered_rescan.py": "f814310836610da5654dd254f1964b8c5229517bc60e7b5462b9944f3719c787",
+    "learning/panel_safety_v2/test_registered_rescan.py": "292cc21fa251363457feeed72781f8d845613bd0d2899b65931cab53a2a9e302"
+  },
+  "synthetic_tests": {
+    "owned_temporary_directory_cleaned": true,
+    "passed": 57,
+    "skip_reason": "file_symlink_creation_unavailable",
+    "skipped": 1,
+    "total": 58,
+    "windows_junction_cases_passed": true
+  },
+  "training_started": false,
+  "version": 1
+}
