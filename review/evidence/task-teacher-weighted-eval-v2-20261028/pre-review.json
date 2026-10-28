@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent; not WebChat",
+  "freeze_sha256": "c8d478a98bbb2af8b648e233289d54bdfc0972e785ad208638c8639a19b56cf8",
+  "registration_sha256": "6fb37dc6bb55a975f085450ae07ba8aa7a45c9a4a8bf0579c50c03d22e835cd3",
+  "checks": [
+    "Thirteen new and 287 runtime source hashes and parent baseline evidence bytes match the frozen identities.",
+    "Three distinct new seeds exclude the failed panel, all six earlier reservations and 50372 recognized metadata values; 697 metadata file identities were checked by a fresh metadata-only inventory.",
+    "Frozen Job synthetic validation, failed panel, old and weighted model, crop, engine and opponent identity references match accepted parent evidence.",
+    "Twelve-hour decision fixes 24 games, 24 primary replays and one independent replay, 35231 maximum official transitions, two opponents and both seats.",
+    "Per-game supervision and acceptance receipts persist before subsequent games; full ledger is revalidated before panel pass, independent replay and final statistics.",
+    "Resource preflight, no-retry and no-automatic-promotion rules and descriptive seed-cluster statistics are frozen; 27 fake tests passed."
+  ],
+  "limitations": [
+    "No old panel scores, model contents or replay data were read and no game was started during review.",
+    "Seed exclusion covers recognized available non-private metadata only; unlisted, private, deleted or external history may overlap.",
+    "Job memory sampling is not hard realtime; process cleanup and official worker behavior have not been verified in this panel.",
+    "Ledger drift is detected at final panel revalidation rather than immediately; ordinary validation-to-write windows and transient replacement remain possible.",
+    "Three seed clusters cannot support statistical significance, guaranteed generalization or automatic promotion; independent replay shares the official engine and validators."
+  ]
+}

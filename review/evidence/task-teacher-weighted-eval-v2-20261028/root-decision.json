@@ -1,0 +1,20 @@
+{
+  "previous_commit": "b9d3da6a7b786c62d66d802dc885f1dae09d5c34",
+  "status": "approved_for_implementation_not_execution",
+  "created_utc": "2026-10-28T04:36:01.226789+00:00",
+  "deadline_utc": "2026-10-28T16:36:01.226789+00:00",
+  "test_seeds": [
+    479779556,
+    3128991463,
+    1165588307
+  ],
+  "seed_selection": "Three unique system-random uint32 values excluded from recognized metadata, the prior failed panel and all six previous reservations; no previous outcome was read for selection.",
+  "purpose": "A separately registered exploratory comparison of the weighted and unweighted task-choice models after supervised Job remediation; not a completion or retry of the failed panel.",
+  "panel": "Three new seeds, frozen round2 and market opponents, both seats and both models; 24 official games, 24 primary replays, one preselected independent-process replay.",
+  "acceptance": "Every game: 720 states, 719 actions, both DONE, zero errors, fixed engine/model identities, persisted per-game Job and worker receipts; full ledger reverified, then independent replay.",
+  "statistics": "Whole-seed clusters; 10000 bootstrap draws descriptive only. Pair own-profit and margin deltas >= -2000, seed-opponent seat means >= -1000; equality passes. Three clusters cannot show significance or justify automatic promotion.",
+  "resources": "Three 4GiB available-memory samples before each game; 2GiB sampled host floor, bounded owned Job, 12-hour overall deadline; sampling is not a hard system or GPU cap.",
+  "stop_conditions": "Any identity, resource, game, supervision, receipt, replay or cleanup failure after marker stops without retry, replacement or additional seeds.",
+  "boundaries": "No training, PPO, source strategy/default Bot or official rule modifications; raw replays, traces, logs and model weights remain private.",
+  "provenance": "Independent subagent advice and code review, not WebChat."
+}
