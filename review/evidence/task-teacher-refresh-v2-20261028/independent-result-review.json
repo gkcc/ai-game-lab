@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "freeze_sha256": "d68a2859f74109c1e2fccbb2fb7aaa9feb4c915d41f29674824904de38d5d7e1",
+  "registration_sha256": "b51190ee5aadeba4f3eff241a7b69f8faf47f48a4242db21123eb35db4f17960",
+  "games_result_sha256": "90f84e4d8f1c9a6e4a578b73d39ba0e03aee245a2e60ecc7c22568a4aa8b217f",
+  "game_ledger_sha256": "bcdfe80bd93c270358a9cf6fc08140c1ccf8e63b7463ffe6a93b05566083a0e4",
+  "game_audit_ledger_sha256": "12132b17226832d6396337ef6cb79973fbb4d882448cf409c3b06128b35abe35",
+  "verification_sha256": "0a12f73fa5394bb52950c626069406036e54f9fb148abb5fad11194dab88af52",
+  "method_sha256": "2e9da2e2e9ad450bc842b52bde030172a414edd49bae85c3a2fa7c4dcaf186c1",
+  "selected_game": "dev-1071366039-round2-0-teacher_task",
+  "checkpoint_sha256": null,
+  "official_transitions": 719,
+  "sample_count": 20,
+  "sample_matched": 20,
+  "limitations": "Shared official engine and shared input validation, not independent engine or scoring"
+}

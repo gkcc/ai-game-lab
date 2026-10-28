@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "game": "dev-1071366039-round2-0-teacher_task",
+  "official_transitions": 719,
+  "sample_count": 20,
+  "matched": 20,
+  "selection_rule": "first train seed, round2, seat 0; deterministic 20 callback sample",
+  "sample_identity_sha256": "25da8cf8886bfd318c7352a8842b7d94c42c988a14a415cd33ebf4e6b00d7ca9",
+  "sample_operation_counts": {
+    "DIG": 1,
+    "FERTILIZE": 0,
+    "HARVEST": 0,
+    "PLANT": 1,
+    "WATER": 18
+  },
+  "raw_reads": {
+    "compressed_input_read_bytes": 8914456,
+    "decoded_input_bytes": 145928564,
+    "files_opened": 2,
+    "files_completed": 2,
+    "raw_decode_passes_per_file": 1
+  },
+  "checkpoint_sha256": null,
+  "crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+  "source_manifest_sha256": "450fcccf16dcda6cceea1cb579bbc2b00d1e5d2860944ac60183d052c9210388",
+  "freeze_sha256": "d68a2859f74109c1e2fccbb2fb7aaa9feb4c915d41f29674824904de38d5d7e1",
+  "registration_sha256": "b51190ee5aadeba4f3eff241a7b69f8faf47f48a4242db21123eb35db4f17960",
+  "games_result_sha256": "90f84e4d8f1c9a6e4a578b73d39ba0e03aee245a2e60ecc7c22568a4aa8b217f",
+  "game_ledger_sha256": "bcdfe80bd93c270358a9cf6fc08140c1ccf8e63b7463ffe6a93b05566083a0e4",
+  "audit_ledger_sha256": "12132b17226832d6396337ef6cb79973fbb4d882448cf409c3b06128b35abe35",
+  "game_row_sha256": "427235f2be29a614cc96500eb650c413d4c31a82a423b7c17b56f5b87ace8a18",
+  "game_audit_sha256": "56e24ca1fe6947e1f9a6f64a57fa9b25ac138710ffcc50a8cb39e43bbf38c8e4",
+  "method_sha256": "2e9da2e2e9ad450bc842b52bde030172a414edd49bae85c3a2fa7c4dcaf186c1",
+  "no_model_inference": true,
+  "no_new_games": true,
+  "retry_allowed": false,
+  "limitations": "Separate process repeats the same fixed official engine and shared trace validator; not an independent rules implementation"
+}

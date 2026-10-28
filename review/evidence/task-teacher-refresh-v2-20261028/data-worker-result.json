@@ -1,0 +1,198 @@
+{
+  "passed": true,
+  "status": "collected",
+  "freeze_sha256": "d68a2859f74109c1e2fccbb2fb7aaa9feb4c915d41f29674824904de38d5d7e1",
+  "source_manifest_sha256": "450fcccf16dcda6cceea1cb579bbc2b00d1e5d2860944ac60183d052c9210388",
+  "schema_sha256": "54b68dd3d715ccab079dbc275ee034fad2cb6302439ee36a79e8287f23ba68e3",
+  "array_sha256": "d57ec258a36501caedb881747c145312c8aa33e0e98a8d212f27bb7b78ce3aa6",
+  "coverage": {
+    "groups": 2851,
+    "groups_by_seed": {
+      "1071366039": 1473,
+      "1234805188": 1378
+    },
+    "retained_selected_operations": {
+      "DIG": 54,
+      "FERTILIZE": 736,
+      "HARVEST": 186,
+      "PLANT": 175,
+      "WATER": 1700
+    },
+    "dig_by_seed": {
+      "1071366039": 38,
+      "1234805188": 16
+    }
+  },
+  "sample_summary": {
+    "groups": 2851,
+    "groups_by_seed": {
+      "1071366039": 1473,
+      "1234805188": 1378
+    },
+    "selected_operations": {
+      "DIG": 54,
+      "FERTILIZE": 736,
+      "HARVEST": 186,
+      "PLANT": 175,
+      "WATER": 1700
+    }
+  },
+  "full_stream": {
+    "by_seed_opponent": [
+      {
+        "seed": 1071366039,
+        "opponent": "round2",
+        "callbacks": 4500,
+        "retained": 711,
+        "chosen": {
+          "DIG": 20,
+          "FERTILIZE": 190,
+          "HARVEST": 372,
+          "PLANT": 404,
+          "WATER": 3514
+        },
+        "retained_chosen": {
+          "DIG": 20,
+          "FERTILIZE": 190,
+          "HARVEST": 38,
+          "PLANT": 47,
+          "WATER": 416
+        },
+        "candidate_rows": {
+          "DIG": 683,
+          "FERTILIZE": 6398,
+          "HARVEST": 6996,
+          "PLANT": 32148,
+          "WATER": 194759
+        },
+        "candidate_callbacks": {
+          "DIG": 132,
+          "FERTILIZE": 528,
+          "HARVEST": 622,
+          "PLANT": 936,
+          "WATER": 4166
+        }
+      },
+      {
+        "seed": 1071366039,
+        "opponent": "market",
+        "callbacks": 4526,
+        "retained": 762,
+        "chosen": {
+          "DIG": 18,
+          "FERTILIZE": 204,
+          "HARVEST": 386,
+          "PLANT": 398,
+          "WATER": 3520
+        },
+        "retained_chosen": {
+          "DIG": 18,
+          "FERTILIZE": 204,
+          "HARVEST": 44,
+          "PLANT": 56,
+          "WATER": 440
+        },
+        "candidate_rows": {
+          "DIG": 1060,
+          "FERTILIZE": 6570,
+          "HARVEST": 7434,
+          "PLANT": 31673,
+          "WATER": 194864
+        },
+        "candidate_callbacks": {
+          "DIG": 235,
+          "FERTILIZE": 608,
+          "HARVEST": 650,
+          "PLANT": 942,
+          "WATER": 4170
+        }
+      },
+      {
+        "seed": 1234805188,
+        "opponent": "round2",
+        "callbacks": 4440,
+        "retained": 703,
+        "chosen": {
+          "DIG": 8,
+          "FERTILIZE": 174,
+          "HARVEST": 390,
+          "PLANT": 324,
+          "WATER": 3544
+        },
+        "retained_chosen": {
+          "DIG": 8,
+          "FERTILIZE": 174,
+          "HARVEST": 50,
+          "PLANT": 40,
+          "WATER": 431
+        },
+        "candidate_rows": {
+          "DIG": 56,
+          "FERTILIZE": 5698,
+          "HARVEST": 9912,
+          "PLANT": 30402,
+          "WATER": 189786
+        },
+        "candidate_callbacks": {
+          "DIG": 8,
+          "FERTILIZE": 454,
+          "HARVEST": 786,
+          "PLANT": 960,
+          "WATER": 4114
+        }
+      },
+      {
+        "seed": 1234805188,
+        "opponent": "market",
+        "callbacks": 4410,
+        "retained": 675,
+        "chosen": {
+          "DIG": 8,
+          "FERTILIZE": 168,
+          "HARVEST": 406,
+          "PLANT": 306,
+          "WATER": 3522
+        },
+        "retained_chosen": {
+          "DIG": 8,
+          "FERTILIZE": 168,
+          "HARVEST": 54,
+          "PLANT": 32,
+          "WATER": 413
+        },
+        "candidate_rows": {
+          "DIG": 56,
+          "FERTILIZE": 5686,
+          "HARVEST": 10522,
+          "PLANT": 30004,
+          "WATER": 188518
+        },
+        "candidate_callbacks": {
+          "DIG": 10,
+          "FERTILIZE": 466,
+          "HARVEST": 802,
+          "PLANT": 810,
+          "WATER": 4082
+        }
+      }
+    ],
+    "total_callbacks": 17876,
+    "total_candidate_rows": 953225,
+    "retained_groups": 2851,
+    "retained_candidate_rows": 203196,
+    "meter": {
+      "compressed_input_read_bytes": 61543930,
+      "decoded_input_bytes": 855410472,
+      "files_opened": 8,
+      "files_completed": 8,
+      "raw_decode_passes_per_file": 1
+    },
+    "sampling": "DIG/FERTILIZE selected labels always retained; other labels use registered identity hash at 12.5%",
+    "interpretation": "Retained distribution is intentionally altered; selections do not establish execution or completion"
+  },
+  "archive_snapshot_reads": 1,
+  "collection_attempt": 1,
+  "retry_allowed": false,
+  "job_cleanup_verified_here": false,
+  "interpretation": "Retained sample intentionally changes operation distribution; labels do not prove execution or value"
+}

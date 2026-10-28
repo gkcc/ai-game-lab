@@ -1,0 +1,106 @@
+[
+  {
+    "game": "dev-1071366039-round2-0-teacher_task",
+    "seed": 1071366039,
+    "opponent": "round2",
+    "side": 0,
+    "trace": {
+      "path": "traces/dev-1071366039-round2-0-teacher_task.jsonl.gz",
+      "size": 7710359,
+      "sha256": "09a3b7bcbaaf348e8d90ba5763c3b001b220bbe340cfa6dfbca70d412aa9d539"
+    },
+    "replay_sha256": "3fcbe0696db45dc63b16a13dcd268f865064f93a7282c1142e414c3d33ccbb3f",
+    "audit_sha256": "56e24ca1fe6947e1f9a6f64a57fa9b25ac138710ffcc50a8cb39e43bbf38c8e4"
+  },
+  {
+    "game": "dev-1071366039-round2-1-teacher_task",
+    "seed": 1071366039,
+    "opponent": "round2",
+    "side": 1,
+    "trace": {
+      "path": "traces/dev-1071366039-round2-1-teacher_task.jsonl.gz",
+      "size": 7703299,
+      "sha256": "5e026ce51ce92e45bec553caa93f2bbb29ca3d7c01225e9c1cb1cf2b3b1fa852"
+    },
+    "replay_sha256": "4f841a81978267474840169357c6c94299482688c48d440217c2ee52ee74edba",
+    "audit_sha256": "da85b9b8f5c31e706246f36bbbd3335fdfefa4fc1d6ab98e32d4c1484b6eb9c0"
+  },
+  {
+    "game": "dev-1071366039-market-0-teacher_task",
+    "seed": 1071366039,
+    "opponent": "market",
+    "side": 0,
+    "trace": {
+      "path": "traces/dev-1071366039-market-0-teacher_task.jsonl.gz",
+      "size": 7811964,
+      "sha256": "bb76a68e1455244b40308b624ef7a408ccb05a5870a354ae2462f68e7051b042"
+    },
+    "replay_sha256": "3c1d12f345aaef65c395f36012421833a7271668df1b52e58725940118521e33",
+    "audit_sha256": "eff166da6c53de296dfc70573d93bab99facd7c6bcac2516e0025232ec55d5c6"
+  },
+  {
+    "game": "dev-1071366039-market-1-teacher_task",
+    "seed": 1071366039,
+    "opponent": "market",
+    "side": 1,
+    "trace": {
+      "path": "traces/dev-1071366039-market-1-teacher_task.jsonl.gz",
+      "size": 7815375,
+      "sha256": "a94368dc157ba254ff1c39650a8d001e71ddeee80ac025e2ff9f531ab42bb0a8"
+    },
+    "replay_sha256": "1989a41c2e4d1e1fc7b379a8b35868be1be69495773c7164e47675345d308314",
+    "audit_sha256": "a65d25c20e7586bc6cfd3c4b07abc98e080858160ecc7f4d109e9758b2027fa4"
+  },
+  {
+    "game": "dev-1234805188-round2-0-teacher_task",
+    "seed": 1234805188,
+    "opponent": "round2",
+    "side": 0,
+    "trace": {
+      "path": "traces/dev-1234805188-round2-0-teacher_task.jsonl.gz",
+      "size": 7610767,
+      "sha256": "d0b368a603ae324b2045c9ff6995aa6278b8b6783a3aae5f09ec3dbac5cc1202"
+    },
+    "replay_sha256": "e804e84fef52b5b83f5ff9de6301c818c9a3c6858b785ffb88fdcf2c45b23b71",
+    "audit_sha256": "d8b9dfcf7ae80a286d4ef294d696619f9c421c511cf0f8c0077d868470a7fa8a"
+  },
+  {
+    "game": "dev-1234805188-round2-1-teacher_task",
+    "seed": 1234805188,
+    "opponent": "round2",
+    "side": 1,
+    "trace": {
+      "path": "traces/dev-1234805188-round2-1-teacher_task.jsonl.gz",
+      "size": 7609738,
+      "sha256": "81378d8be3a595997e3df987bcdf5343a0e2e657a3915f784a8ae7082f7cfd23"
+    },
+    "replay_sha256": "b9923f05bc9171beba83ac2c11e8663dd27eb46b83660eee5a5740269d10d95a",
+    "audit_sha256": "2ecfda89651509ab82e4b1bb39da1da10f440ac8c6cde5dbc7c5c792a2484acc"
+  },
+  {
+    "game": "dev-1234805188-market-0-teacher_task",
+    "seed": 1234805188,
+    "opponent": "market",
+    "side": 0,
+    "trace": {
+      "path": "traces/dev-1234805188-market-0-teacher_task.jsonl.gz",
+      "size": 7638601,
+      "sha256": "eda06d98631babb36994c83f0b69c05e50faf7be142a853137755c559c441d3c"
+    },
+    "replay_sha256": "731361e7edfccef4841fbd71817787148b04bb38286282b3b7f0dedcf4f50bba",
+    "audit_sha256": "9cfd39a9b41080fbdab76986ba55b3103cf4337116c59053fa4efa0647064828"
+  },
+  {
+    "game": "dev-1234805188-market-1-teacher_task",
+    "seed": 1234805188,
+    "opponent": "market",
+    "side": 1,
+    "trace": {
+      "path": "traces/dev-1234805188-market-1-teacher_task.jsonl.gz",
+      "size": 7643827,
+      "sha256": "bb10b85ff1c666d8c9721faf078ed7d47a97fda89ceac2606e8bf235b992ddf9"
+    },
+    "replay_sha256": "49fb695a6d99a915317a014603929e014214f310108e4ce628c90f100c7bde7d",
+    "audit_sha256": "69e51e080304a004f7096de9757d51726d000ff50b95d781d5ca910a18e42797"
+  }
+]

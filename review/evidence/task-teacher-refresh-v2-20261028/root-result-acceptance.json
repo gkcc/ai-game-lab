@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "scope": "Official receipt, separate replay and aggregate arithmetic; no feature redecoding or independent rules implementation.",
+  "pre_execution_commit": "f9ee66dd8546b3e01ca161e4ad57498894d38572",
+  "freeze_sha256": "d68a2859f74109c1e2fccbb2fb7aaa9feb4c915d41f29674824904de38d5d7e1",
+  "registration_sha256": "b51190ee5aadeba4f3eff241a7b69f8faf47f48a4242db21123eb35db4f17960",
+  "games_result_sha256": "90f84e4d8f1c9a6e4a578b73d39ba0e03aee245a2e60ecc7c22568a4aa8b217f",
+  "game_ledger_sha256": "bcdfe80bd93c270358a9cf6fc08140c1ccf8e63b7463ffe6a93b05566083a0e4",
+  "job_receipt_ledger_sha256": "ba756993d2735bf94a46c67e02f668e3a614483c229223b20b1ad182e9014b37",
+  "independent_replay_sha256": "0a12f73fa5394bb52950c626069406036e54f9fb148abb5fad11194dab88af52",
+  "independent_assessment_sha256": "20289308a7eb4c440959cc684783e924423547b3c5a19a9294cec5f8200288e5",
+  "worker_result_sha256": "b542d0e3604fd5b14c91dc62811bffd0ad04e73eaf4ab1113433485c7c8f83e8",
+  "data_result_sha256": "4c2ca68df67e73f0c29489ae2e70b23e9e3e0d103f9f33a1572e132cf0f6b5b6",
+  "data_seal_sha256": "27915bb077aa2913c170bb289bd96ead5a9c962d1646dba4fd39d77d9e3be206",
+  "archive_sha256": "d57ec258a36501caedb881747c145312c8aa33e0e98a8d212f27bb7b78ce3aa6",
+  "archive_bytes": 83050670,
+  "games": 8,
+  "live_transitions": 5752,
+  "primary_replay_transitions": 5752,
+  "separate_replay_transitions": 719,
+  "separate_callback_samples": 20,
+  "separate_callback_operations": {
+    "DIG": 1,
+    "FERTILIZE": 0,
+    "HARVEST": 0,
+    "PLANT": 1,
+    "WATER": 18
+  },
+  "full_stream_callbacks": 17876,
+  "full_stream_chosen": {
+    "DIG": 54,
+    "FERTILIZE": 736,
+    "HARVEST": 1554,
+    "PLANT": 1432,
+    "WATER": 14100
+  },
+  "retained_groups": 2851,
+  "retained_chosen": {
+    "DIG": 54,
+    "FERTILIZE": 736,
+    "HARVEST": 186,
+    "PLANT": 175,
+    "WATER": 1700
+  },
+  "coverage_gate_passed": true,
+  "training_started": false,
+  "default_bot_sha256": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459",
+  "existing_model_sha256": {
+    "weighted": "8fa08734e7d92857d800d680f2ca6833dc44d33ca611bd85f1034392e4aef67f",
+    "unweighted": "b9a0f293c354aa78468c531e85645f70fbea9075a9dace729856119d913b24df",
+    "crop": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd"
+  },
+  "limitations": [
+    "Two development seeds; coverage does not establish independent generalization or economic benefit.",
+    "The separate replay uses the same official engine and shared validators; its 20 samples include no fertilizer.",
+    "Retained label proportions are intentionally biased and labels alone do not prove execution or completion.",
+    "NPZ numeric readback occurred only in the worker Job; root checked byte hash and size.",
+    "Future training requires a new registration and historical admission gates."
+  ]
+}

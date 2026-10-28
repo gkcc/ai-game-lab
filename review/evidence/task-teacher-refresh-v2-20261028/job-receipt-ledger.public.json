@@ -1,0 +1,262 @@
+{
+  "games": [
+    {
+      "game": "dev-1071366039-round2-0-teacher_task",
+      "job_input_sha256": "43a73f15a33ef36deaa74a5bb610895439b66e83b1d26dc74f3ea5491c69e4bb",
+      "supervision_receipt_sha256": "071f999e7a4eb01572bc88e9a5b8f7fb874f57b0ec6c166e1c6752e4fea05dc6",
+      "acceptance_receipt_sha256": "bed9cdc6eef030fe25ced190837ecd239328f3ac70b2a1d0a3d59bfc8e801da8",
+      "worker_receipt_sha256": {
+        "row": "427235f2be29a614cc96500eb650c413d4c31a82a423b7c17b56f5b87ace8a18",
+        "audit": "56e24ca1fe6947e1f9a6f64a57fa9b25ac138710ffcc50a8cb39e43bbf38c8e4",
+        "complete": "6ef651bbaa7bad75d4c3f97bc29df8dd6f0918832a76e478f52f6680a5771d5b",
+        "storage": "58287a995534394326885fbb68d7c9ddc70affa2ea8bfd09d050b778ead441c9"
+      },
+      "replay_sha256": "3fcbe0696db45dc63b16a13dcd268f865064f93a7282c1142e414c3d33ccbb3f",
+      "trace_sha256": "09a3b7bcbaaf348e8d90ba5763c3b001b220bbe340cfa6dfbca70d412aa9d539",
+      "official_transitions": 719,
+      "supervision": {
+        "passed": true,
+        "assigned": true,
+        "resumed": true,
+        "launcher_reaped": true,
+        "job_members_zero": true,
+        "exit_code": 0,
+        "error_kind": null,
+        "cleanup_error_kind": null,
+        "stop_reason": null,
+        "rss_sampling_attempts": 228,
+        "rss_sampling_retries": 0,
+        "rss_complete_samples": 228,
+        "rss_discarded_samples": 0,
+        "confirmed_empty_exits": 0,
+        "acceptance_error_kind": null
+      }
+    },
+    {
+      "game": "dev-1071366039-round2-1-teacher_task",
+      "job_input_sha256": "800a1adf468448a34fca37de1316a26a8dca6362c1a63d40ecea9b6bf31587b2",
+      "supervision_receipt_sha256": "d8747037647c2dd1f4d82b46e2a628a7fc85e6852fb54876f890ac17c9ebf01f",
+      "acceptance_receipt_sha256": "dedad0abf626be8379e230bce6ed12d445c97ae92556c5c11da0a2ad290f0c3f",
+      "worker_receipt_sha256": {
+        "row": "8460983590367451a09b5170e0a5f916b87429684ed33c1a2dc4c8129f764ac8",
+        "audit": "da85b9b8f5c31e706246f36bbbd3335fdfefa4fc1d6ab98e32d4c1484b6eb9c0",
+        "complete": "07b892648e01ff3d503d56356feb207128d805f7a6c7e6d411f460b9be6b8ba7",
+        "storage": "598fe284d9908ba0491f4a6274a084aa59c2cb6e0c8c455c67935cfb41e35b12"
+      },
+      "replay_sha256": "4f841a81978267474840169357c6c94299482688c48d440217c2ee52ee74edba",
+      "trace_sha256": "5e026ce51ce92e45bec553caa93f2bbb29ca3d7c01225e9c1cb1cf2b3b1fa852",
+      "official_transitions": 719,
+      "supervision": {
+        "passed": true,
+        "assigned": true,
+        "resumed": true,
+        "launcher_reaped": true,
+        "job_members_zero": true,
+        "exit_code": 0,
+        "error_kind": null,
+        "cleanup_error_kind": null,
+        "stop_reason": null,
+        "rss_sampling_attempts": 216,
+        "rss_sampling_retries": 0,
+        "rss_complete_samples": 216,
+        "rss_discarded_samples": 0,
+        "confirmed_empty_exits": 0,
+        "acceptance_error_kind": null
+      }
+    },
+    {
+      "game": "dev-1071366039-market-0-teacher_task",
+      "job_input_sha256": "481d9b61ad58ea3a4d7ccc5adb33f035f836c708cf9f2444ea501f19c34dcb38",
+      "supervision_receipt_sha256": "7ba9d6ae7cd15b3722bcd8684c5f72a6f967ddd6d7b0538644a5e032c2a0ccd7",
+      "acceptance_receipt_sha256": "2ab7daa5a27e9a27ab3b11858f4af2c0c8b83a25811149a90c5538dd95a384de",
+      "worker_receipt_sha256": {
+        "row": "b31fc5850f95ca84906fbb3c6669a5f962ac1471bf5e4c0ad0c1984c911d10b0",
+        "audit": "eff166da6c53de296dfc70573d93bab99facd7c6bcac2516e0025232ec55d5c6",
+        "complete": "42531c1587637cbb065090fe82423155ef94a84769f2369a738b6a37e27d3c59",
+        "storage": "14ff6e62582c9e49031b816b071045b1acadf3ccce8480fe51acff256aeff1a9"
+      },
+      "replay_sha256": "3c1d12f345aaef65c395f36012421833a7271668df1b52e58725940118521e33",
+      "trace_sha256": "bb76a68e1455244b40308b624ef7a408ccb05a5870a354ae2462f68e7051b042",
+      "official_transitions": 719,
+      "supervision": {
+        "passed": true,
+        "assigned": true,
+        "resumed": true,
+        "launcher_reaped": true,
+        "job_members_zero": true,
+        "exit_code": 0,
+        "error_kind": null,
+        "cleanup_error_kind": null,
+        "stop_reason": null,
+        "rss_sampling_attempts": 219,
+        "rss_sampling_retries": 0,
+        "rss_complete_samples": 219,
+        "rss_discarded_samples": 0,
+        "confirmed_empty_exits": 0,
+        "acceptance_error_kind": null
+      }
+    },
+    {
+      "game": "dev-1071366039-market-1-teacher_task",
+      "job_input_sha256": "8ef13dc645c17b688694bc92c19bf6e7de6e43abc439a2f96acfc03114c23e82",
+      "supervision_receipt_sha256": "4052a3e267346f984f9b670b89a87fa6b6a0eca46ed7d6364e84222d9f908c91",
+      "acceptance_receipt_sha256": "768474d277331d917e2e108148dda643d87e0ddacb827007304e3309692db860",
+      "worker_receipt_sha256": {
+        "row": "2927ff4fb327d0ac259f19851fb621b44ff11bb4302973271eb8b8fcb6830f36",
+        "audit": "a65d25c20e7586bc6cfd3c4b07abc98e080858160ecc7f4d109e9758b2027fa4",
+        "complete": "54a4972d36dbdc10f1e674efacaafdafe821c6acf3f806fe379cbf5ae5c99c7e",
+        "storage": "d6accb214d3743a14c38e0243c0bba444926295517492aa92a3fbe9669065570"
+      },
+      "replay_sha256": "1989a41c2e4d1e1fc7b379a8b35868be1be69495773c7164e47675345d308314",
+      "trace_sha256": "a94368dc157ba254ff1c39650a8d001e71ddeee80ac025e2ff9f531ab42bb0a8",
+      "official_transitions": 719,
+      "supervision": {
+        "passed": true,
+        "assigned": true,
+        "resumed": true,
+        "launcher_reaped": true,
+        "job_members_zero": true,
+        "exit_code": 0,
+        "error_kind": null,
+        "cleanup_error_kind": null,
+        "stop_reason": null,
+        "rss_sampling_attempts": 225,
+        "rss_sampling_retries": 3,
+        "rss_complete_samples": 221,
+        "rss_discarded_samples": 4,
+        "confirmed_empty_exits": 1,
+        "acceptance_error_kind": null
+      }
+    },
+    {
+      "game": "dev-1234805188-round2-0-teacher_task",
+      "job_input_sha256": "e1aeba29c15da7f278356cc390699a10a41225fd462db4c6b2e463d97adf1b14",
+      "supervision_receipt_sha256": "349e31fa6700f2f4c685ac5dfe306478448cc2839a7bd7ef79c3b60737e1dac0",
+      "acceptance_receipt_sha256": "126b35b18805fa5c92e37e7bf3de2c6ffa72e806a7f07c5e6617bd15a18e5ac0",
+      "worker_receipt_sha256": {
+        "row": "97f673bd4deef8c91315b2d1d31568dd44a6d5cb06ca429cd4fb563e6b66b537",
+        "audit": "d8b9dfcf7ae80a286d4ef294d696619f9c421c511cf0f8c0077d868470a7fa8a",
+        "complete": "ae0593cc5b11eea072f411988c4caab37d5e79f729058bf3431bb03f99945812",
+        "storage": "c71db2b064de9e3d403ee9bee2b0729a96f7a35c70e7e8ca6bdf44a1a08a3d25"
+      },
+      "replay_sha256": "e804e84fef52b5b83f5ff9de6301c818c9a3c6858b785ffb88fdcf2c45b23b71",
+      "trace_sha256": "d0b368a603ae324b2045c9ff6995aa6278b8b6783a3aae5f09ec3dbac5cc1202",
+      "official_transitions": 719,
+      "supervision": {
+        "passed": true,
+        "assigned": true,
+        "resumed": true,
+        "launcher_reaped": true,
+        "job_members_zero": true,
+        "exit_code": 0,
+        "error_kind": null,
+        "cleanup_error_kind": null,
+        "stop_reason": null,
+        "rss_sampling_attempts": 213,
+        "rss_sampling_retries": 0,
+        "rss_complete_samples": 213,
+        "rss_discarded_samples": 0,
+        "confirmed_empty_exits": 0,
+        "acceptance_error_kind": null
+      }
+    },
+    {
+      "game": "dev-1234805188-round2-1-teacher_task",
+      "job_input_sha256": "1bae2ff778451c900a6885307c3b47154b5f5a4d96cf21cab3ddf70b1d1366a5",
+      "supervision_receipt_sha256": "bdfcb3979188773d83355d58c8de488cd80dae2ea877879b71cb4cea9def34cb",
+      "acceptance_receipt_sha256": "8e4a83292084e7b1db3b375d5997e49e564d3335af865c2abdc2d85a1b3287e8",
+      "worker_receipt_sha256": {
+        "row": "d009cc4dbf6d8d6ba17bc22a0d64eff7af7abe31f2b9d3d059d5e85eb3deebe2",
+        "audit": "2ecfda89651509ab82e4b1bb39da1da10f440ac8c6cde5dbc7c5c792a2484acc",
+        "complete": "405d94cd7f0f1189b6d8ab8014b3a3242d1ba05133b40278633f98943c4f8db4",
+        "storage": "719fdfef1b9b04c3df74783c2fa2903c4a6ee259efd09d5de19dade04bd3edd9"
+      },
+      "replay_sha256": "b9923f05bc9171beba83ac2c11e8663dd27eb46b83660eee5a5740269d10d95a",
+      "trace_sha256": "81378d8be3a595997e3df987bcdf5343a0e2e657a3915f784a8ae7082f7cfd23",
+      "official_transitions": 719,
+      "supervision": {
+        "passed": true,
+        "assigned": true,
+        "resumed": true,
+        "launcher_reaped": true,
+        "job_members_zero": true,
+        "exit_code": 0,
+        "error_kind": null,
+        "cleanup_error_kind": null,
+        "stop_reason": null,
+        "rss_sampling_attempts": 210,
+        "rss_sampling_retries": 1,
+        "rss_complete_samples": 209,
+        "rss_discarded_samples": 1,
+        "confirmed_empty_exits": 0,
+        "acceptance_error_kind": null
+      }
+    },
+    {
+      "game": "dev-1234805188-market-0-teacher_task",
+      "job_input_sha256": "894050ad006a8c8502c746284dabc9b867531d026aaaac4666c36ec138f1bb76",
+      "supervision_receipt_sha256": "fab0c0fc1d5103e9a625840ed6b6c5930170aa0dfd30d6b93ba6ff4d67dc7650",
+      "acceptance_receipt_sha256": "8bad053c47cf639b77a185f1eccbfa0e26dc279e784bcd4eb39f0632ef5f2412",
+      "worker_receipt_sha256": {
+        "row": "7d2a2ec4b267af19c7c0a7ddbfe95d5a04ef600855befa9e113c9cf6b31f14ca",
+        "audit": "9cfd39a9b41080fbdab76986ba55b3103cf4337116c59053fa4efa0647064828",
+        "complete": "7697c85d76ef277394aa86c463bb425ac2cc5a1a0b0ea9753efa56d7ffd1cec0",
+        "storage": "8fa0d283e846aec11866e6253a9e8e13f8e725ec73d76ee0842be9b0d0ed037b"
+      },
+      "replay_sha256": "731361e7edfccef4841fbd71817787148b04bb38286282b3b7f0dedcf4f50bba",
+      "trace_sha256": "eda06d98631babb36994c83f0b69c05e50faf7be142a853137755c559c441d3c",
+      "official_transitions": 719,
+      "supervision": {
+        "passed": true,
+        "assigned": true,
+        "resumed": true,
+        "launcher_reaped": true,
+        "job_members_zero": true,
+        "exit_code": 0,
+        "error_kind": null,
+        "cleanup_error_kind": null,
+        "stop_reason": null,
+        "rss_sampling_attempts": 212,
+        "rss_sampling_retries": 1,
+        "rss_complete_samples": 211,
+        "rss_discarded_samples": 1,
+        "confirmed_empty_exits": 0,
+        "acceptance_error_kind": null
+      }
+    },
+    {
+      "game": "dev-1234805188-market-1-teacher_task",
+      "job_input_sha256": "297649d163da4fe104d95e38c0872ad8558bed1dc78c1c60686b4eb235570ea2",
+      "supervision_receipt_sha256": "9d24f3bad95879b38a4b89d653fffc8a90a8310ed130d769d04866749429e0e8",
+      "acceptance_receipt_sha256": "93b4abbe8d59706aba11e5a235135ee4ae22e4c94d692cee963b63d82dd3e69f",
+      "worker_receipt_sha256": {
+        "row": "b0b2679c141688850f0cfde77b6652289aaf3b270a2eb04abe92a606459054dc",
+        "audit": "69e51e080304a004f7096de9757d51726d000ff50b95d781d5ca910a18e42797",
+        "complete": "f694594123d27a4f71bb65c2b859ae676d0e25bcf99326b7ebe2926a4acc047e",
+        "storage": "a5dbe7b5ae47f57143ae0f2ece896ec29472a9e832c17656cdab124aafaa279e"
+      },
+      "replay_sha256": "49fb695a6d99a915317a014603929e014214f310108e4ce628c90f100c7bde7d",
+      "trace_sha256": "bb10b85ff1c666d8c9721faf078ed7d47a97fda89ceac2606e8bf235b992ddf9",
+      "official_transitions": 719,
+      "supervision": {
+        "passed": true,
+        "assigned": true,
+        "resumed": true,
+        "launcher_reaped": true,
+        "job_members_zero": true,
+        "exit_code": 0,
+        "error_kind": null,
+        "cleanup_error_kind": null,
+        "stop_reason": null,
+        "rss_sampling_attempts": 217,
+        "rss_sampling_retries": 1,
+        "rss_complete_samples": 216,
+        "rss_discarded_samples": 1,
+        "confirmed_empty_exits": 0,
+        "acceptance_error_kind": null
+      }
+    }
+  ],
+  "source_audit_ledger_sha256": "12132b17226832d6396337ef6cb79973fbb4d882448cf409c3b06128b35abe35",
+  "limitation": "Sanitized receipt hashes and selected Job flags; raw receipts and replays stay local."
+}

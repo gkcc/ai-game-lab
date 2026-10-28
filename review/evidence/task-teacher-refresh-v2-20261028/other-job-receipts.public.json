@@ -1,0 +1,40 @@
+{
+  "independent_runner_result_sha256": "eb414661708cbccf2cb159a759aff91965852d2db5b7efdb1d4aea155b321dc7",
+  "independent_job": {
+    "passed": true,
+    "assigned": true,
+    "resumed": true,
+    "launcher_reaped": true,
+    "job_members_zero": true,
+    "exit_code": 0,
+    "error_kind": null,
+    "cleanup_error_kind": null,
+    "stop_reason": null,
+    "rss_sampling_attempts": 86,
+    "rss_sampling_retries": 3,
+    "rss_complete_samples": 83,
+    "rss_discarded_samples": 3,
+    "confirmed_empty_exits": 0,
+    "acceptance_error_kind": null
+  },
+  "data_supervision_sha256": "c5cffa1792cd5433402d19037343c397d0a3e44cc6f66229fd4420fd0d410c5b",
+  "data_job": {
+    "passed": true,
+    "assigned": true,
+    "resumed": true,
+    "launcher_reaped": true,
+    "job_members_zero": true,
+    "exit_code": 0,
+    "error_kind": null,
+    "cleanup_error_kind": null,
+    "stop_reason": null,
+    "rss_sampling_attempts": null,
+    "rss_sampling_retries": 1,
+    "rss_complete_samples": 234,
+    "rss_discarded_samples": null,
+    "confirmed_empty_exits": null,
+    "acceptance_error_kind": null
+  },
+  "data_cleanup_state": "recorded",
+  "limitation": "Sanitized flags; raw supervisory records, traces, replays and arrays remain local."
+}

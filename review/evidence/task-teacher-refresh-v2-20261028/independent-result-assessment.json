@@ -1,0 +1,223 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "scope": "receipt and aggregate arithmetic review; no independent feature decoding or replay",
+  "identities_sha256": {
+    "registration.json": "b51190ee5aadeba4f3eff241a7b69f8faf47f48a4242db21123eb35db4f17960",
+    "freeze.json": "d68a2859f74109c1e2fccbb2fb7aaa9feb4c915d41f29674824904de38d5d7e1",
+    "pre-review.json": "00abac60f0ad8e4ff7e9315efa10a633e3b4ccf8da563e04e65738f641be561a",
+    "pre-execution-commit.json": "ea687fd5f0d7674cba809455181439f3f5722854f2ae1f8064fbe1d065d24e4e",
+    "games-started.json": "b24066b2e7863f7ce428e5ed981357933397bda5f0ddb1ff7e90a4da708e4488",
+    "games-result.json": "90f84e4d8f1c9a6e4a578b73d39ba0e03aee245a2e60ecc7c22568a4aa8b217f",
+    "game-ledger.json": "bcdfe80bd93c270358a9cf6fc08140c1ccf8e63b7463ffe6a93b05566083a0e4",
+    "game-audit-ledger.json": "12132b17226832d6396337ef6cb79973fbb4d882448cf409c3b06128b35abe35",
+    "source-manifest.json": "450fcccf16dcda6cceea1cb579bbc2b00d1e5d2860944ac60183d052c9210388",
+    "independent-runner-started.json": "b24066b2e7863f7ce428e5ed981357933397bda5f0ddb1ff7e90a4da708e4488",
+    "independent-replay-verification.json": "0a12f73fa5394bb52950c626069406036e54f9fb148abb5fad11194dab88af52",
+    "independent-result-review.json": "a5702c537f6ce809df3e479aa3d0aaae456129f0b2c36ca16032cba5164271c2",
+    "independent-runner-result.json": "eb414661708cbccf2cb159a759aff91965852d2db5b7efdb1d4aea155b321dc7",
+    "data-started.json": "b24066b2e7863f7ce428e5ed981357933397bda5f0ddb1ff7e90a4da708e4488",
+    "data-worker-started.json": "ca63849753d3ce40335f3a4ceb8077b3a88b8f7c7c77d7d3415fe733225268c5",
+    "data-worker-entered.json": "6f966dd8d5dc16f53b1f5c19ed690131aff58ed5c848e4875b765d88e5ffba1e",
+    "data-worker-result.json": "b542d0e3604fd5b14c91dc62811bffd0ad04e73eaf4ab1113433485c7c8f83e8",
+    "data-supervision.local.json": "c5cffa1792cd5433402d19037343c397d0a3e44cc6f66229fd4420fd0d410c5b",
+    "data-seal.json": "27915bb077aa2913c170bb289bd96ead5a9c962d1646dba4fd39d77d9e3be206",
+    "data-result.json": "4c2ca68df67e73f0c29489ae2e70b23e9e3e0d103f9f33a1572e132cf0f6b5b6"
+  },
+  "pre_execution_commit": "f9ee66dd8546b3e01ca161e4ad57498894d38572",
+  "archive_sha256": "d57ec258a36501caedb881747c145312c8aa33e0e98a8d212f27bb7b78ce3aa6",
+  "archive_size_bytes": 83050670,
+  "aggregates": {
+    "full_stream_callbacks": 17876,
+    "full_stream_candidate_rows": 953225,
+    "retained_groups": 2851,
+    "retained_candidate_rows": 203196,
+    "coverage": {
+      "groups": 2851,
+      "groups_by_seed": {
+        "1071366039": 1473,
+        "1234805188": 1378
+      },
+      "retained_selected_operations": {
+        "DIG": 54,
+        "FERTILIZE": 736,
+        "HARVEST": 186,
+        "PLANT": 175,
+        "WATER": 1700
+      },
+      "dig_by_seed": {
+        "1071366039": 38,
+        "1234805188": 16
+      }
+    },
+    "by_seed_opponent": [
+      {
+        "seed": 1071366039,
+        "opponent": "round2",
+        "callbacks": 4500,
+        "retained": 711,
+        "chosen": {
+          "DIG": 20,
+          "FERTILIZE": 190,
+          "HARVEST": 372,
+          "PLANT": 404,
+          "WATER": 3514
+        },
+        "retained_chosen": {
+          "DIG": 20,
+          "FERTILIZE": 190,
+          "HARVEST": 38,
+          "PLANT": 47,
+          "WATER": 416
+        },
+        "candidate_rows": {
+          "DIG": 683,
+          "FERTILIZE": 6398,
+          "HARVEST": 6996,
+          "PLANT": 32148,
+          "WATER": 194759
+        },
+        "candidate_callbacks": {
+          "DIG": 132,
+          "FERTILIZE": 528,
+          "HARVEST": 622,
+          "PLANT": 936,
+          "WATER": 4166
+        }
+      },
+      {
+        "seed": 1071366039,
+        "opponent": "market",
+        "callbacks": 4526,
+        "retained": 762,
+        "chosen": {
+          "DIG": 18,
+          "FERTILIZE": 204,
+          "HARVEST": 386,
+          "PLANT": 398,
+          "WATER": 3520
+        },
+        "retained_chosen": {
+          "DIG": 18,
+          "FERTILIZE": 204,
+          "HARVEST": 44,
+          "PLANT": 56,
+          "WATER": 440
+        },
+        "candidate_rows": {
+          "DIG": 1060,
+          "FERTILIZE": 6570,
+          "HARVEST": 7434,
+          "PLANT": 31673,
+          "WATER": 194864
+        },
+        "candidate_callbacks": {
+          "DIG": 235,
+          "FERTILIZE": 608,
+          "HARVEST": 650,
+          "PLANT": 942,
+          "WATER": 4170
+        }
+      },
+      {
+        "seed": 1234805188,
+        "opponent": "round2",
+        "callbacks": 4440,
+        "retained": 703,
+        "chosen": {
+          "DIG": 8,
+          "FERTILIZE": 174,
+          "HARVEST": 390,
+          "PLANT": 324,
+          "WATER": 3544
+        },
+        "retained_chosen": {
+          "DIG": 8,
+          "FERTILIZE": 174,
+          "HARVEST": 50,
+          "PLANT": 40,
+          "WATER": 431
+        },
+        "candidate_rows": {
+          "DIG": 56,
+          "FERTILIZE": 5698,
+          "HARVEST": 9912,
+          "PLANT": 30402,
+          "WATER": 189786
+        },
+        "candidate_callbacks": {
+          "DIG": 8,
+          "FERTILIZE": 454,
+          "HARVEST": 786,
+          "PLANT": 960,
+          "WATER": 4114
+        }
+      },
+      {
+        "seed": 1234805188,
+        "opponent": "market",
+        "callbacks": 4410,
+        "retained": 675,
+        "chosen": {
+          "DIG": 8,
+          "FERTILIZE": 168,
+          "HARVEST": 406,
+          "PLANT": 306,
+          "WATER": 3522
+        },
+        "retained_chosen": {
+          "DIG": 8,
+          "FERTILIZE": 168,
+          "HARVEST": 54,
+          "PLANT": 32,
+          "WATER": 413
+        },
+        "candidate_rows": {
+          "DIG": 56,
+          "FERTILIZE": 5686,
+          "HARVEST": 10522,
+          "PLANT": 30004,
+          "WATER": 188518
+        },
+        "candidate_callbacks": {
+          "DIG": 10,
+          "FERTILIZE": 466,
+          "HARVEST": 802,
+          "PLANT": 810,
+          "WATER": 4082
+        }
+      }
+    ],
+    "raw_read_meter": {
+      "compressed_input_read_bytes": 61543930,
+      "decoded_input_bytes": 855410472,
+      "files_opened": 8,
+      "files_completed": 8,
+      "raw_decode_passes_per_file": 1
+    },
+    "independent_sample_operations": {
+      "DIG": 1,
+      "FERTILIZE": 0,
+      "HARVEST": 0,
+      "PLANT": 1,
+      "WATER": 18
+    }
+  },
+  "checks": [
+    "Pre-execution commit and frozen registration/source identities match.",
+    "Eight official game and primary replay receipts, per-game Job supervision and acceptance bind their inputs, freeze and work receipt hashes; each reports 720 states, 719 actions and 719 replay transitions.",
+    "Separate-process official replay reports 719 transitions and 20 matching callback identities; its Job reports cleanup.",
+    "Full-stream, retained, operation and seed/opponent aggregates satisfy the frozen consistency checks and all registered coverage thresholds.",
+    "Data worker and supervised Job report one bounded archive readback and clean exit; final result binds pending seal, worker, source manifest and supervision. The archive bytes and size match via streaming SHA.",
+    "No failure marker exists at review; successful collection does not start training or confer model promotion."
+  ],
+  "limitations": [
+    "No NPZ array was decoded outside the worker Job; this review did not read raw observations, independently reproduce per-record counts, or rerun games or replay.",
+    "The independent replay shares the official engine and input validators; it is not a separate rules implementation. Its fixed 20 sample contains no FERTILIZE callback.",
+    "DIG/FERTILIZE labels were fully retained while other selections were sampled; retained frequencies are not unbiased population frequencies, and candidate opportunities are not teacher preferences or evidence of execution quality.",
+    "Two development seeds are not a future holdout; thresholds demonstrate minimum counts, not generalization or economic benefit.",
+    "Memory and time limits are sampled/non-preemptive, and identity checks cannot exclude transient replacement and restoration.",
+    "Future training must use its own historical admission checks; the current validate_sealed is bound to this stage deadline and original commit.",
+    "Public disclosure should be limited to aggregate counts, seed roles, Job cleanup booleans and identity hashes; raw traces, arrays, paths and per-callback values remain private."
+  ]
+}
