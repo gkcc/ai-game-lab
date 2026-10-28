@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "scope": "One artificially arranged exit in an owned Windows Job, verified from frozen source and receipts.",
+  "pre_execution_commit": "5b2a671bd5b35900587e5690290bac9f440dd30d",
+  "result_sha256": "451dc454998ad5a12e8f0df9c8d75fa6292c9499134b37e094ff32b5150dbbd7",
+  "local_result_sha256": "a3e535452a5ba0132c9cdbd22e475416d28d16f4eb5d5b2cea925c56cbb35f29",
+  "independent_assessment_sha256": "a6d05f810a44da1ec8a53209d5f20be342696abeff0ca7842a95696f5227e551",
+  "registration_sha256": "230a0ee1340f22a126552a9d7fa76a9c535111c59d4449d809536d527f449ae6",
+  "freeze_sha256": "de2201b8bce3924ec36f3b76752ed8b25594334e21313e5389bc74bcdb9f3d1d",
+  "started_sha256": "b3e06f6ce7bfc59f6ec5f723ee2d1206d1419f5340e1b4737aae1cb67dc74d83",
+  "complete_samples": 1,
+  "discarded_samples": 2,
+  "sampling_retries": 1,
+  "confirmed_empty_exits": 1,
+  "launcher_reaped": true,
+  "job_members_zero": true,
+  "exit_code": 0,
+  "previous_failed_panel_reaccepted": false,
+  "games_or_models_used": false,
+  "limitations": [
+    "The timing was artificially arranged; it does not prove the previous failure had the same cause.",
+    "Source and process receipts were reviewed without independent process or resource monitoring.",
+    "Only one member was sampled at peak, which does not prove both the launcher and child were observed.",
+    "Individual preflight values were not recorded; waiting pauses sampling and it is not a hard memory bound.",
+    "Prior and subsequent source checks cannot exclude transient replacement and restoration."
+  ]
+}

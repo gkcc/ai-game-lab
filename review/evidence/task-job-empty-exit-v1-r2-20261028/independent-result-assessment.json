@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "scope": "independent receipt and source review of one artificially arranged synthetic Job",
+  "identities_sha256": {
+    "registration.json": "230a0ee1340f22a126552a9d7fa76a9c535111c59d4449d809536d527f449ae6",
+    "freeze.json": "de2201b8bce3924ec36f3b76752ed8b25594334e21313e5389bc74bcdb9f3d1d",
+    "pre-review.json": "358bd77f95e90591b211e54e0697221ed549d98909d8d7afbcbc0ce394db6a78",
+    "pre-execution-commit.json": "755f0d7c55ebb44ecd87a309c4d0d8ec836086edcd4f96b2b7d3c823730434a2",
+    "started.json": "b3e06f6ce7bfc59f6ec5f723ee2d1206d1419f5340e1b4737aae1cb67dc74d83",
+    "result.json": "451dc454998ad5a12e8f0df9c8d75fa6292c9499134b37e094ff32b5150dbbd7",
+    "result.local.json": "a3e535452a5ba0132c9cdbd22e475416d28d16f4eb5d5b2cea925c56cbb35f29"
+  },
+  "pre_execution_commit": "5b2a671bd5b35900587e5690290bac9f440dd30d",
+  "prior_expiration_review_sha256": "f3407911dc2fb301a7c6f4395cf7e5a24b10d622d9002e5765a3a761bbfb3b65",
+  "parent_failure_acceptance_sha256": "bb81457627c56b2ac7bb459caafb6bde3686f0106787f49405cf048bcb92a937",
+  "aggregate": {
+    "sampling_attempts": 3,
+    "sampling_retries": 1,
+    "complete_samples": 1,
+    "discarded_samples": 2,
+    "confirmed_empty_exits": 1,
+    "maximum_sampled_members": 1,
+    "launcher_reaped": true,
+    "job_members_zero": true,
+    "exit_code": 0,
+    "artificial_timing_arrangements": 1
+  },
+  "checks": [
+    "Committed source and preregistration bytes, start marker and result identities match; old expired evidence and previous failed panel identities remain consistent.",
+    "Frozen source enforces the project Windows venv and three 4 GiB preflight checks before one owned Job; the process naturally exits after artificially arranged waiting.",
+    "Receipts report one complete and two discarded RSS samples, one retry and one verified empty exit; sampling arithmetic is consistent.",
+    "Job was assigned and resumed; the receipts report zero exit, launcher reaped, Job members zero and no cleanup error; sampled peaks remained within registered thresholds.",
+    "The registered synthetic workload contains no game, model, training data or network operation."
+  ],
+  "limitations": [
+    "Evidence is based on worker and supervisor receipts and frozen code, not independent process or resource monitoring.",
+    "Maximum sampled member count of one does not prove the venv launcher and real Python child were both observed.",
+    "Individual preflight memory values were not retained; up to five seconds of artificial waiting pauses sampling and does not establish a hard memory bound.",
+    "This controlled artificial timing exercise does not prove the original failed panel had the same cause or change its failure.",
+    "Identity checks cannot exclude transient replacement followed by restoration; no process was rerun for this review."
+  ]
+}

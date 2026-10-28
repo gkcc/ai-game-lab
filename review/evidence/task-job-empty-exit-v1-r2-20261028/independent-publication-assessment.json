@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "reviewer": "independent gpt-6.1-terra subagent",
+  "scope": "aggregate result and publication candidate review",
+  "identities_sha256": {
+    "root_result_acceptance": "82a7f68d934735db39062d4dd7c7915d3b2df93d43b6139fffd681db934d0f68",
+    "result": "451dc454998ad5a12e8f0df9c8d75fa6292c9499134b37e094ff32b5150dbbd7",
+    "local_result": "a3e535452a5ba0132c9cdbd22e475416d28d16f4eb5d5b2cea925c56cbb35f29",
+    "independent_result_assessment": "a6d05f810a44da1ec8a53209d5f20be342696abeff0ca7842a95696f5227e551",
+    "pre_execution_commit": "755f0d7c55ebb44ecd87a309c4d0d8ec836086edcd4f96b2b7d3c823730434a2",
+    "started": "b3e06f6ce7bfc59f6ec5f723ee2d1206d1419f5340e1b4737aae1cb67dc74d83",
+    "chinese_report": "c747f18122c3f34478ba037d9f5b426d4614548cb427896722115fd3ffa556dc",
+    "progress": "bff9c643919982a8ea53badd818826c8781f85b928bc829c4498072adf7a7f4d",
+    "webchat_review": "9ba45c4489f9c5d30d1ba5cf3094441a2c664b0e2206710e94325e29d0bc9cbc"
+  },
+  "checks": [
+    "Five public evidence files match local bytes; root acceptance matches result, local supervision and independent review identities and aggregate counts.",
+    "Three attempts, one retry, one complete sample, two discarded samples, one confirmed empty exit, zero launcher exit and clean Job are consistently reported.",
+    "Old expiration records and previously failed panel identities match their frozen references; no historical success is claimed.",
+    "Public result text discloses artificial timing, sample interruption, maximum one observed member, absent per-sample preflight values and lack of independent monitoring.",
+    "Candidate JSON fields were checked for common personal paths, PID, raw logs and model weights; private result.local.json was not published."
+  ],
+  "limitations": [
+    "No real process or resource monitoring was repeated; conclusions rely on the frozen code and recorded supervisor receipts.",
+    "Artificial timing does not establish the historical error cause; memory sampling is not a hard realtime limit.",
+    "Aggregate hashes can be linkable and pattern-based privacy scanning cannot guarantee absolute anonymity."
+  ]
+}

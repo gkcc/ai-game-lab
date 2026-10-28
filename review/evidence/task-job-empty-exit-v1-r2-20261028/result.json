@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "error_kind": null,
+  "marker_complete": true,
+  "retry_allowed": false,
+  "identities": {
+    "started.json": "b3e06f6ce7bfc59f6ec5f723ee2d1206d1419f5340e1b4737aae1cb67dc74d83",
+    "freeze.json": "de2201b8bce3924ec36f3b76752ed8b25594334e21313e5389bc74bcdb9f3d1d",
+    "registration.json": "230a0ee1340f22a126552a9d7fa76a9c535111c59d4449d809536d527f449ae6",
+    "pre-execution-commit.json": "755f0d7c55ebb44ecd87a309c4d0d8ec836086edcd4f96b2b7d3c823730434a2"
+  },
+  "pre_execution_commit": "5b2a671bd5b35900587e5690290bac9f440dd30d",
+  "observed": {
+    "rss_sampling_attempts": 3,
+    "rss_sampling_retries": 1,
+    "rss_complete_samples": 1,
+    "rss_discarded_samples": 2,
+    "confirmed_empty_exits": 1,
+    "launcher_reaped": true,
+    "job_members_zero": true,
+    "exit_code": 0,
+    "error_kind": null,
+    "cleanup_error_kind": null,
+    "stop_reason": null
+  },
+  "synthetic_only": true,
+  "artificial_timing": true,
+  "identity_check_limit": "Transient replacement followed by restoration is not excluded",
+  "sampling_limit": "Artificial wait pauses sampling for up to five seconds; no hard memory cap"
+}
