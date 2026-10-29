@@ -1,0 +1,39 @@
+{
+  "schema": "panel-eval-v2-source-validation-v1",
+  "previous_public_head": "e74cdf17121f53fff3c1d10c7e53ab1b63a192dc",
+  "phase": "source-and-synthetic-validation-only",
+  "official_rules_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+  "official_rules_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "official_core_sha256": "0922c4599a1b6e0d8c3dadf06ae5297f98138d859d686f00daee6f36e6d45d0e",
+  "synthetic_regression": {
+    "total": 153,
+    "passed": 152,
+    "skipped": 1,
+    "skip_reason": "Windows file-symlink creation permission",
+    "fresh_bytecode_cache_prefix": true,
+    "owned_scratch_cleaned": true,
+    "includes_real_windows_nested_jobs": true,
+    "includes_synthetic_git_registration": true,
+    "includes_synthetic_72_row_ledger": true
+  },
+  "review": {
+    "kind": "independent_subagent",
+    "subagent_findings_reproduced_and_fixed": true,
+    "independent_recheck_passed": true,
+    "not_webchat": true
+  },
+  "scope": {
+    "new_formal_seed_selection": false,
+    "new_official_games": 0,
+    "training_or_promotion": false,
+    "default_bot_changed": false,
+    "historical_evidence_overwritten": false
+  },
+  "limitations": [
+    "Synthetic ledger acceptance replaces original per-game acceptance, extra replay result, and evaluator; it is not a real game acceptance.",
+    "Native output behavior was tested only with synthetic processes; not every native library path was verified.",
+    "History exclusion covers recognized metadata, not deleted, external or unrecognized history.",
+    "Same-user concurrent mutation, custom importers and all third-party package bytes are not fully covered.",
+    "The stage must be separately preregistered, independently reviewed, and executed before any competitive conclusion."
+  ]
+}
