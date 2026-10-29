@@ -1,0 +1,25 @@
+{
+  "baseline_commit": "c0ff4328ef468cc4f6b40bd213fa728c50960505",
+  "root_decision_sha256": "e09d5d6b4da7293bab721a54fdea26c4031156bf77ec2c2b80777fc5c6c372ee",
+  "registration_sha256": "c6ca9cc6fbac14d2db5cf69bf6e885f4fe3b9fabd8a9ec63e4f21d7d1946a87b",
+  "freeze_sha256": "cb0da9d131cf96db409615b8ba1d29e7e0cbfd9920d121d3d36b38a69b133236",
+  "seed_document_sha256": "e752a4d937eb6bd150aad09010bd4d3bb96e6a009e96499b97a3a95e73712473",
+  "seed_commitment": "56010b34881cf762dfcf888ffd366df46d3ec01fbaff5536400d5a3cd0f79a54",
+  "seed_inventory_sha256": "9e5f4167ec10904cf960c88418aa54a2b168920ceb927dcc5beb4a2fa20bbf70",
+  "marker_sha256": "8053ed2d15a171843c21cff7f46908bbc8d59bedcb745795aaf747efd2d7438c",
+  "scratch_helper_commitment": "82d062deeb9602a9a950baca5d5f56dd964216fb35c41055ae346ca4ee883b22",
+  "run_kind": "development_smoke",
+  "reviewer": "/root/panel_integration_audit2",
+  "review_basis": "independent_subagent",
+  "passed": true,
+  "open_findings": [],
+  "checks": [
+    "source_identity",
+    "seed_exclusion",
+    "game_budget",
+    "independent_review",
+    "privacy_scope",
+    "official_engine",
+    "one_game_limit"
+  ]
+}

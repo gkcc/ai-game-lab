@@ -1,0 +1,32 @@
+{
+  "previous_commit": "c0ff4328ef468cc4f6b40bd213fa728c50960505",
+  "status": "approved_for_implementation_not_execution",
+  "created_utc": "2026-10-29T16:14:23.528525+00:00",
+  "deadline_utc": "2026-10-30T00:13:55.6716950Z",
+  "run_kind": "development_smoke",
+  "purpose": "One public-seed development smoke; not a holdout or competitive evaluation.",
+  "seed_count": 4,
+  "seed_commitment": "56010b34881cf762dfcf888ffd366df46d3ec01fbaff5536400d5a3cd0f79a54",
+  "seed_document_sha256": "e752a4d937eb6bd150aad09010bd4d3bb96e6a009e96499b97a3a95e73712473",
+  "seed_selection": "Four predeclared public development roles from source, checked against recognized history; only S01 is used.",
+  "panel": "One specified development game and one 719-transition same-engine primary replay; no extra replay.",
+  "interpretation": "Development smoke only; no economic evaluation or automatic promotion.",
+  "stopping": "The registered deadline terminates the owned outer Job and its descendants; a started failure, unknown cleanup or interruption stops the whole attempt; no retries or partial scoring.",
+  "memory_wait": {
+    "min_available_bytes": 4294967296,
+    "samples": 3,
+    "sample_interval_seconds": 10,
+    "retry_interval_seconds": 30,
+    "single_wait_seconds": 900,
+    "total_wait_seconds": 2700
+  },
+  "outer_supervision": {
+    "hard_deadline": "registered_deadline_utc",
+    "scope": "owned_outer_job_including_descendants",
+    "termination": "terminate_owned_job_and_wait_for_empty",
+    "cleanup_unknown": "retain_scratch_marker"
+  },
+  "scratch_helper_commitment": "82d062deeb9602a9a950baca5d5f56dd964216fb35c41055ae346ca4ee883b22",
+  "limitations": "History may be missing or unrecognized; the local commitment is neither third-party timestamp nor proof of operator blinding.",
+  "provenance": "Independent subagent review, not WebChat."
+}
