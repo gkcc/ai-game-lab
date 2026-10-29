@@ -1,0 +1,95 @@
+{
+  "schema": "bounded-development-smoke-certificate-v1",
+  "source_commit": "c0ff4328ef468cc4f6b40bd213fa728c50960505",
+  "registration_commit": "59d6f302a72e66cbd435b1933de94b723e3c05c0",
+  "stage_kind": "public-development-not-holdout",
+  "attempts": 1,
+  "accepted_games": 1,
+  "replay_states": 720,
+  "action_turns": 719,
+  "final_status": [
+    "DONE",
+    "DONE"
+  ],
+  "agent_errors_reported": 0,
+  "primary_replay_transitions": 719,
+  "actor_actions_reproduced": 719,
+  "rival_actions_reproduced": 719,
+  "trace_turns_reproduced": 719,
+  "public_and_private_states_match_each_step": true,
+  "inventory_order_checked_each_step": true,
+  "semantic_sha256": "9896ca881407d26befb9d1bdc8f23611f5fdec201253f29dbb696baf2846276b",
+  "semantic_sha256_v2": "a3691ae1f2885193d117615c2f04ca490b94008223f266bd09d3ae8cd0df3ef1",
+  "extra_replay_transitions": 0,
+  "model_reconstruction": {
+    "task_forwards": 2250,
+    "task_rows": 121143,
+    "crop_forwards": 175,
+    "crop_rows": 175,
+    "controller_calls": 719,
+    "limitation": "live and primary counts are the same reconstructed measurement, not independent live counters; counts do not prove action causality or performance improvement"
+  },
+  "inference_device": "CPU NumPy path; no GPU training in this run",
+  "economic_evaluation_completed": false,
+  "automatic_promotion": false,
+  "retry_allowed": false,
+  "preflight": {
+    "reported_result": {
+      "passed": true,
+      "reason": "ready",
+      "samples": 3,
+      "no_games_started": true,
+      "no_sampled_memory_values_recorded": true
+    },
+    "tool_exit_code": 0,
+    "provenance": "caller copied the tool output; not an independent monitoring receipt"
+  },
+  "job_cleanup": {
+    "inner_passed": true,
+    "inner_launcher_reaped": true,
+    "inner_members_zero": true,
+    "inner_exit_code": 0,
+    "outer_passed": true,
+    "outer_child_reaped": true,
+    "outer_members_zero": true,
+    "outer_exit_code": 0,
+    "outer_handles_closed": true,
+    "outer_cleanup_known": true,
+    "scratch_retained": false,
+    "cache_prefix_absent": true
+  },
+  "local_artifact_sha256": {
+    "worker_complete": "8ea4019d4a2994ff31edba15079858967060fbae0374a6d4a39fd22bca2516f3",
+    "worker_audit": "30f835c1bd3c83754c57d3244ac15e9d422808838a2e3b3d1660d19b2a471647",
+    "worker_storage": "061df23ea0d95d3a172dd56c108052fad2a59f82a9ca27c0b6b95f2fd2371810",
+    "replay": "2505ab187f33bda16c9456baa024c987eadcebe203cd7713f90aeea7bc7e337a",
+    "trace": "e816edab1a0c740ab3d4d456f2fef10bcd9a3c2f5aae69aaff4cf21f2f1f2e34",
+    "job_supervision": "9684f47b91ef899f02b9cc8b27bed9bc888c40d86b0083ff27847bbeaa561463"
+  },
+  "receipt_sha256": {
+    "coordinator": "5e630c8b1fb34753a4a2632ad8d3b5f3e859a5e5a11459525dbdfeb84578d025",
+    "outer_launcher": "12032d4f57a51c4598459db2d9fc00fac7f6865f708badb1adc5b4342b33a782",
+    "binding": "2cbb6ecb12bb8e9e0f7f9cd8c6ed7f51e70ad467c4ceb5e8b2b048f0a83215a2",
+    "worker_claim": "93baaad5f7fadd6dbdb55ef0ebab43d74cea88bc2d9df50170accb573b5349ae"
+  },
+  "raw_replay_trace_or_private_states_published": false,
+  "limitations": [
+    "This is one public-seed development game, not an independent competitive panel.",
+    "The primary replay used the same official engine; no extra independent replay was run.",
+    "Local receipt hashes and subagent review are not a third-party timestamp or a live independent monitor.",
+    "The simulation and model inference used CPU; this run did not establish a GPU speedup or new training.",
+    "Legacy acceptance reads local economic rows. The coordinator reports no economic evaluation; the operator reports no comparison, aggregation or selection, which the receipts cannot independently prove for external or manual analysis."
+  ],
+  "canonical_receipt_sha256": {
+    "canonical": "1d9e9f59b98a55520ea280d24e49e3ec689ddaa148796dc7462a6ecb85eec0b4",
+    "job-start": "32565f8df7294879cd43bebf0cf5e94ba4bac58be4e5f34303ca9f00dfc1a525",
+    "canonical-post": "ccdb3ff4b595ef93c5abbe381af6cea2de7178870623ab681dee08a87e73f155"
+  },
+  "coordinator_preflight": {
+    "passed": true,
+    "reason": "ready",
+    "samples": 3,
+    "receipt_sha256": "fcbdc31d35847d1780520efb200c919725096e50b9b4c3c130849093b2cdb489",
+    "scope": "separate coordinator preflight, not proof of the earlier caller-reported preflight"
+  }
+}
