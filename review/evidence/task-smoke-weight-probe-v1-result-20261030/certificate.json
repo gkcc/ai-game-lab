@@ -1,0 +1,79 @@
+{
+  "schema": "same-observation-weight-probe-result-certificate-v1",
+  "source_commit": "60a2508992608f20fdfde4c3383690850bd61ef6",
+  "registration_commit": "199eb5023866f6589c960149ddd9f8cd4b67093e",
+  "source_smoke_certificate_commit": "c60f3a68f0ced0c9034e562b68ec30623f5498a5",
+  "local_result_sha256": "d3f2f4461c93d2270bca64a75132457db4b62d9a87dbf1f2b987739b7f291224",
+  "result_hash_provenance": "Computed after the completed run from the local aggregate result; not a runtime signature, a supervisor receipt binding, or an independent timestamp.",
+  "scope": {
+    "source": "one previously completed public-seed development game",
+    "sampled_turns": 32,
+    "sample_selection": "fixed in the registration before the probe",
+    "offline_controller_calls": 96,
+    "new_official_games": 0,
+    "official_counterfactual_transitions": 0,
+    "training": false,
+    "inference": "CPU NumPy",
+    "economic_evaluation": false,
+    "retry_allowed": false
+  },
+  "comparison": {
+    "passed": true,
+    "passed_means": "comparison invariants passed, not competitive improvement",
+    "baseline_actions_reproduced": 32,
+    "baseline_stable_traces_reproduced": 32,
+    "same_weight_control_actions_equal": 32,
+    "same_weight_control_stable_traces_equal": 32,
+    "turns_without_task_calls": 12,
+    "baseline_selector_calls": 116,
+    "intervention_selector_calls": 116,
+    "same_input_comparable_selector_calls": 20,
+    "comparable_single_candidate_calls": 0,
+    "comparable_multi_candidate_calls": 20,
+    "turns_with_first_choice_difference": 20,
+    "turns_with_complete_request_difference": 19,
+    "task_choice_control_observed": true,
+    "action_request_control_observed": true,
+    "max_absolute_logit_negation_error": 0.0,
+    "logit_atol": 1e-12,
+    "logit_rtol": 1e-12,
+    "comparison_boundary": "Same ordered input and negated logits are checked through the first divergent task choice only. The later calls may receive different inputs. A changed request was not executed by the official engine."
+  },
+  "identity": {
+    "source_task_checkpoint_sha256": "994452667315e1c7de67183476bf0bab0f62fa5887a08eab091bea5ef152f083",
+    "source_crop_checkpoint_sha256": "d497e8284dde1f7b836b1cf88915822f82a96be1f99e7b126d06ea263e281ffd",
+    "baseline_task_parameter_sha256": "586cabd14c70ef026148b8bbd2f9bd0490fb1068acbd2d5e2f8a2960d7cc1899",
+    "intervention_task_parameter_sha256": "53898cff78fa4aa80c6ea29e567dc2fda54f1a76a125fcc26e70e6573ade0807",
+    "intervention": "negate task output layer w2 and b2 only in memory; no modified checkpoint was saved",
+    "post_run_file_hash_checks": "The operator and one independent reviewer computed hashes after the run; original checkpoints, certified replay and trace, and default bot matched their frozen identities. These checks are not recorded in the supervisor success receipt."
+  },
+  "supervisor": {
+    "verify_receipt_passed": true,
+    "run_receipt_passed": true,
+    "both_receipts_cleanup_known": true,
+    "operator_observed_exit_code": 0,
+    "operator_transcribed_stdout": "job_commit_limit_verified=true",
+    "provenance": "Receipts and stdout are program reports, not an independent OS monitor. The committed source requires the job limit query and child cleanup to pass before success.",
+    "not_recorded": "Individual memory sample values, memory peak, separate OS job records and a runtime binding of the aggregate result hash."
+  },
+  "independent_review": {
+    "kind": "two independent subagents; not WebChat",
+    "review_scope": "Read-only check of source, registration, aggregate result and receipts; one reviewer also checked file hashes.",
+    "raw_replay_or_trace_decoded": false,
+    "recomputed_real_samples": false,
+    "new_inference_or_games": false,
+    "finding": "No defect found that invalidates the reported limited comparison; evidence and interpretation limits remain."
+  },
+  "publication": {
+    "raw_replay_trace_checkpoints_or_observations_published": false,
+    "historical_certificates_modified": false,
+    "automatic_promotion": false
+  },
+  "limitations": [
+    "All 32 fixed observations come from one development game; they are not independent games or a held-out competitive panel.",
+    "The 20 comparable calls and maximum logit error apply only through the first choice difference; the 116 calls per actor are not 116 same-input comparisons.",
+    "A complete request can differ in any action branch; the aggregate result does not attribute it to a particular unit or market action.",
+    "The result does not establish the quality of the learned policy, official execution of altered actions, economic improvement, generalization or GPU acceleration.",
+    "The local result and supervision receipts are self-reported; their later hashes and independent read-only review do not prove an execution-time signature or third-party timestamp."
+  ]
+}
