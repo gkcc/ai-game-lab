@@ -1,0 +1,47 @@
+{
+  "schema": "panel-eval-v3-source-validation-v1",
+  "previous_public_head": "d66411872751ffc06adca8c671501645b2190101",
+  "phase": "source-and-synthetic-validation-only",
+  "official_rules_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+  "official_rules_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "official_core_sha256": "0922c4599a1b6e0d8c3dadf06ae5297f98138d859d686f00daee6f36e6d45d0e",
+  "synthetic_regression": {
+    "total": 138,
+    "passed": 138,
+    "skipped": 0,
+    "owned_scratch_cleaned": true,
+    "includes_synthetic_git_registration": true,
+    "includes_real_windows_nested_jobs": true,
+    "includes_budgeted_runtime_identity": true,
+    "suite_elapsed_seconds": 98.737,
+    "source_changes_after_suite": "bootstrap docstring correction and equivalent synthetic test path construction only",
+    "post_change_targeted_prepare_tests": 16,
+    "file_reparse_validation": "simulated; actual file link creation unavailable to test account"
+  },
+  "source_checks": {
+    "historical_local_files": 309,
+    "supplemental_runtime_files": 23,
+    "previous_v2_source_files_unchanged": 22,
+    "default_bot_unchanged": true,
+    "official_rules_identity_checked": true
+  },
+  "review": {
+    "kind": "independent_subagents",
+    "not_webchat": true,
+    "reproduced_findings_repaired_and_rechecked": true,
+    "local_preparation_job_tests": 8
+  },
+  "scope": {
+    "new_formal_seed_selection": false,
+    "new_official_games": 0,
+    "training_or_promotion": false,
+    "historical_evidence_overwritten": false
+  },
+  "limitations": [
+    "The earlier worker traceback was suppressed; the output-budget failure is a strongly supported inference, not a captured root cause.",
+    "Synthetic games, ledger acceptance, and stubbed child steps are not evidence of a completed official game or replay.",
+    "History exclusion cannot cover deleted, external, inaccessible, or unrecognized history.",
+    "Same-user concurrent mutation, arbitrary custom importers, and all third-party package bytes are outside the static checks.",
+    "An independently reviewed smoke registration and an actual completed game are still required."
+  ]
+}
