@@ -1,0 +1,63 @@
+{
+  "schema": "bounded-panel-failure-v1",
+  "registration_commit": "e2d96abe357dd2a59f9cc23a23953bca8e967e7c",
+  "source_commit": "69c01ec9b93a88ae7046dc1060611e19463e4a96",
+  "status": "failed-no-partial-economic-evaluation",
+  "attempted_games": 1,
+  "accepted_games": 0,
+  "confirmed_completed_live_transitions": 0,
+  "confirmed_completed_primary_replay_transitions": 0,
+  "current_game_additional_transitions": "unknown",
+  "worker_error_kind": "ValueError",
+  "game_directories": 0,
+  "result_files": 0,
+  "replay_files": 0,
+  "trace_files": 0,
+  "worker_output_budget_used_bytes": 0,
+  "worker_output_budget_created_count": 0,
+  "worker_output_budget_refused": 0,
+  "worker_output_budget_refused_scope": "Byte-quota refusals only; unsupported writable os.open calls are not counted here.",
+  "canonical_receipts": 1,
+  "official_job_start_receipts": 1,
+  "canonical_post_receipts": 0,
+  "independent_replay_started": false,
+  "economic_evaluation_started": false,
+  "prelaunch_checks": [
+    {"passed": false, "reason": "deadline", "samples": 1, "games_started": false},
+    {"passed": false, "reason": "deadline", "samples": 1, "games_started": false},
+    {"passed": true, "reason": "ready", "samples": 3, "games_started": false}
+  ],
+  "prelaunch_memory_values_recorded": false,
+  "job_cleanup": {
+    "inner_launcher_reaped": true,
+    "inner_job_members_zero": true,
+    "inner_cleanup_error": null,
+    "outer_launcher_reaped": true,
+    "outer_job_members_zero": true,
+    "outer_handles_closed": true,
+    "outer_cleanup_known": true,
+    "scratch_retained": false
+  },
+  "diagnosis": {
+    "kind": "strongly_supported_inference_not_captured_traceback",
+    "finding": "The new official runtime check uses a writable null-device descriptor, which the reused owned-writes budget forbids. The resulting OSError is converted to ValueError.",
+    "synthetic_evidence": "The runtime check passes outside the real output budget and fails inside it; a synthetic old-Worker-to-budget path reproduces the same error class, empty game output, and zero official-entry calls.",
+    "limitation": "The original worker traceback was deliberately suppressed; another ValueError with the same observable artifacts cannot be excluded."
+  },
+  "seed_roles_reserved_no_reuse": 4,
+  "retry_allowed": false,
+  "partial_results_used_for_selection": false,
+  "raw_replays_or_private_inputs_published": false,
+  "local_receipt_sha256": {
+    "binding": "76ea0646480c8be9c41a4afd3cfebdeba6246971aa43cace44494ab9e5852f6d",
+    "campaign_failure": "9c7ef4064bd937c077381de94d3c66ddde26c3b91c4aa8238b810a0d15e5a2fd",
+    "canonical": "90dda0fadb6ab257a49e99596fbee31c00979a9143d595bdeeaced17749dd12e",
+    "coordinator_failure": "6723dc18117272e619b6a36e1a81f9dd7e7b33894a383d2987a333c073e4dbdc",
+    "freeze": "a73af4c07ba02380ce13c720caf91ad0f59e03d2eb5c6007171e041daafa6e58",
+    "job_start": "9c8794f80fa6cdb96822439e6cf80c850816e834bbb7edfffde35fd96a64d5d3",
+    "job_supervision": "c05829c2c52d8774ae71aceebf83ea542b099c27fd26eeaa710127c8f4455be4",
+    "launcher_result": "34e852a22829b9fbd28bd5e649cccaa318019db0980b18e48c703de45e53662c",
+    "registration": "dfdd90794b129bfe7bcb3306783c4997a714f92487b7f34a3031494f362cc9ea",
+    "worker_storage": "919399aa2ef7c5ee24d64e0a22552771e40e039062b4e7a26dfc051778a7d233"
+  }
+}
