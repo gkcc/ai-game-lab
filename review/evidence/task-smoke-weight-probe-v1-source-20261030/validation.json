@@ -1,0 +1,41 @@
+{
+  "schema": "same-observation-weight-probe-source-validation-v1",
+  "previous_public_head": "c60f3a68f0ced0c9034e562b68ec30623f5498a5",
+  "phase": "source-and-synthetic-validation-only",
+  "synthetic_tests": {
+    "total": 34,
+    "passed": 34,
+    "skipped": 0,
+    "includes_real_agent_with_synthetic_checkpoints": true,
+    "includes_synthetic_git_direct_child": true,
+    "includes_windows_job_memory_limit": true,
+    "source_change_after_suite": "none"
+  },
+  "independent_review": {
+    "kind": "independent_subagents",
+    "not_webchat": true,
+    "reported_counterexamples_repaired": true,
+    "real_probe_data_read": false
+  },
+  "scope": {
+    "fixed_development_turns": 32,
+    "maximum_offline_controller_calls": 96,
+    "new_official_games": 0,
+    "official_transitions": 0,
+    "training": false,
+    "economic_evaluation": false,
+    "real_weight_intervention_run": false
+  },
+  "cleanup": {
+    "final_suite_owned_scratch_cleaned": true,
+    "earlier_independent_synthetic_git_scratch_retained": 2,
+    "reason": "Windows denied deletion of Git objects; original ownership markers retained locally"
+  },
+  "limitations": [
+    "Synthetic checkpoints and observations are not the registered development replay or model.",
+    "The supervisor must be verified before its own code executes; direct run.py invocation does not prove Job supervision.",
+    "The verify and run commands have separate 600-second budgets; synchronous parent I/O or cleanup is not bounded by an external watchdog.",
+    "The Job limit is queried at startup; a single available-memory sample does not guarantee future availability.",
+    "The run has not yet been registered or executed against real development data; no model-control or performance conclusion is claimed."
+  ]
+}
