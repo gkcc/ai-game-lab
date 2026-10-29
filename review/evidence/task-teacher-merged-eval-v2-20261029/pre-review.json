@@ -1,0 +1,22 @@
+{
+  "baseline_commit": "69c01ec9b93a88ae7046dc1060611e19463e4a96",
+  "root_decision_sha256": "3d8f894791daa1cd584bdf57faea0e3490947e69c99bf1e678e160ee7d574aae",
+  "registration_sha256": "dfdd90794b129bfe7bcb3306783c4997a714f92487b7f34a3031494f362cc9ea",
+  "freeze_sha256": "a73af4c07ba02380ce13c720caf91ad0f59e03d2eb5c6007171e041daafa6e58",
+  "seed_document_sha256": "9a9d7be1fd2b2618cab11a646f0b5cc712380960e5bb1d9fa5a5c62fe515e962",
+  "seed_commitment": "f6bb038853c906096917e902c9eb55f5bb9232387bf4fa8848350f82601f972c",
+  "seed_inventory_sha256": "14432432fe9c07c724a5d95cd6e074619dbe0f875c8bed6678786854a32c4c63",
+  "marker_sha256": "25aa0b2d770be350938f0bf70b2ddf2046dddbb3f4058b00df4869c40ff6cb9a",
+  "scratch_helper_commitment": "898d33646682ae3b1d43097e307e6c5e2d0a5942191fb56ac8cb925168efde01",
+  "reviewer": "/root/panel_integration_audit2",
+  "review_basis": "independent_subagent",
+  "passed": true,
+  "open_findings": [],
+  "checks": [
+    "Clean parent, draft ownership and public source identities verified.",
+    "All four previously consumed seeds excluded; selected seeds do not collide with recognized current or frozen history.",
+    "Frozen rules, loader, core, model checkpoints, opponents and 72 registered pairings verified.",
+    "Private salted helper commitment and public draft redaction verified.",
+    "Whole-seed clustered statistics, deadline and one-shot stopping contract checked; no third-party timestamp or same-user race guarantee."
+  ]
+}

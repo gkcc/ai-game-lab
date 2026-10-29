@@ -1,0 +1,31 @@
+{
+  "previous_commit": "69c01ec9b93a88ae7046dc1060611e19463e4a96",
+  "status": "approved_for_implementation_not_execution",
+  "created_utc": "2026-10-29T14:57:48.394387+00:00",
+  "deadline_utc": "2026-10-30T02:42:28+00:00",
+  "purpose": "Compare three frozen task-policy arms in a new complete official panel.",
+  "seed_count": 4,
+  "seed_commitment": "f6bb038853c906096917e902c9eb55f5bb9232387bf4fa8848350f82601f972c",
+  "seed_document_sha256": "9a9d7be1fd2b2618cab11a646f0b5cc712380960e5bb1d9fa5a5c62fe515e962",
+  "seed_selection": "System-random distinct uint32 values in [1000000000, 4294967295], excluding recognized history and the fixed bootstrap seed.",
+  "panel": "Four private seed roles, three frozen opponents, both seats, three arms; 72 games and 72 primary replays, plus one selected extra replay.",
+  "interpretation": "Four whole-seed clusters are exploratory; no significance, generalization or automatic promotion claim.",
+  "stopping": "The registered deadline terminates the owned outer Job and its descendants; a started failure, unknown cleanup or interruption stops the whole attempt; no retries or partial scoring.",
+  "memory_wait": {
+    "min_available_bytes": 4294967296,
+    "samples": 3,
+    "sample_interval_seconds": 10,
+    "retry_interval_seconds": 30,
+    "single_wait_seconds": 900,
+    "total_wait_seconds": 2700
+  },
+  "outer_supervision": {
+    "hard_deadline": "registered_deadline_utc",
+    "scope": "owned_outer_job_including_descendants",
+    "termination": "terminate_owned_job_and_wait_for_empty",
+    "cleanup_unknown": "retain_scratch_marker"
+  },
+  "scratch_helper_commitment": "898d33646682ae3b1d43097e307e6c5e2d0a5942191fb56ac8cb925168efde01",
+  "limitations": "History may be missing or unrecognized; the local commitment is neither third-party timestamp nor proof of operator blinding.",
+  "provenance": "Independent subagent review, not WebChat."
+}
