@@ -1,0 +1,53 @@
+{
+  "schema": "single-task-intervention-registration-v1",
+  "parent_commit": "fc2d35c91a2916d5e4f19f6dff31ee654f7e0829",
+  "source_panel_commit": "3a3e3172b0403a171a38f6e78e37d07f387be2cb",
+  "purpose": "Development-only controlled substitution; historical economics already viewed; no fresh holdout claim.",
+  "selection": {
+    "seed_role": "S01",
+    "opponent": "market",
+    "side": 0,
+    "step": 2,
+    "selection_record_index": 5,
+    "choice": "historical conditional teacher candidate, if still present under exactly the same actor-visible input"
+  },
+  "design": {
+    "control": "official A-prime must reproduce historical A before intervention",
+    "treatment": "one returned selector ID substitution; original network still executes once; all later choices are dynamic",
+    "control_full_states": 720,
+    "control_full_action_turns": 719,
+    "both_same_engine_replays": 2,
+    "live_official_transitions_max": 1438,
+    "replay_official_transitions_max": 1438,
+    "official_transitions_max": 2876,
+    "max_new_games": 2,
+    "training_updates": 0,
+    "gpu_operations": 0,
+    "automatic_promotion": false
+  },
+  "stopping_conditions": [
+    "Missing or changed source, model, official engine or private input",
+    "Control fails full state/action/trace equivalence, official replay, supervision or target proof",
+    "Target input, candidate, current teacher label, original prediction or budget mismatch",
+    "Worker error, timeout, incomplete Job cleanup or failed official replay"
+  ],
+  "interpretation": "Single fixed case; later opponent responses and state-dependent official random draws are part of the total effect; no significance, generalization or causal decomposition.",
+  "privacy": "Real seed, salt, original replay/trace, local paths and raw input hashes remain local.",
+  "source_sha256": {
+    "__init__.py": "a8e47f121a0210c9322bc4d33ad0e75480ab54a4c895300f8567014e185d5d33",
+    "intervention.py": "024f263faefcc4f63b5d2994fff39271913b29287095ea3957283016e85132c1",
+    "agent_adapter.py": "76ef71c806a5e0983eb194540aa01683248e7b5c3c494d0949daf65e56a22a71",
+    "worker.py": "1ac8f2d7e26d22dc6aa9018894d7fec3c155702fb34436ec41192812f9731975",
+    "prepare.py": "cd7e24e56426d2eeccfb60e0b6f15da35cfacfa1218d9695e4bcd3d083260a7c",
+    "runner.py": "3859838c0d3187915175497a085e2b919cdc80f36db3e64b2586be58b94c2634",
+    "trusted_imports.py": "329d3b6415e3fac1cabea5d27571db3510281cbabd9c5118c55cec9aa43b115a",
+    "test_intervention.py": "dc719a2ee5ecb6ef7f8e723b46d490086edaacd6a59b80a1229e12ac965f2c42",
+    "test_runner.py": "780347b2cd1f3cae99b801e729224f9736bf84f2f2aed8604766f67584470eb5",
+    "README.zh-CN.md": "2831ed9824e4098c34f4adbb4eeb3e368fc422f6e28bf323e2a772e408f01073"
+  },
+  "source_sha_scope": "Raw bytes reviewed before preparation; no OS lock against later same-user mutation.",
+  "synthetic_regressions": 23,
+  "independent_pre_review": true,
+  "verification_scope": "Two supervised game workers with explicit NUL handles; subsequent official replays run in the parent process.",
+  "retry_allowed": false
+}
