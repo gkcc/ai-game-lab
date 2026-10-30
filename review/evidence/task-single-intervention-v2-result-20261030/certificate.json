@@ -1,0 +1,73 @@
+{
+  "schema": "single-task-intervention-result-certificate-v2",
+  "registration_commit": "e3cf86178363bd55b94d20a9ffef9d78fc6b4506",
+  "case": "S01 / round2 / seat 0; historical consumed development case",
+  "independent_seed_test": false,
+  "retry_allowed": false,
+  "observed_outer_exit_code": 0,
+  "read_only_independent_review": {
+    "reviewers": 2,
+    "new_engine_transitions": 0,
+    "new_model_calls": 0,
+    "historical_control_semantic_states_equal": 720,
+    "historical_control_ordered_requests_equal": 1438,
+    "historical_control_stable_trace_rows_equal": 719,
+    "new_games_each_states": 720,
+    "new_games_each_action_turns": 719,
+    "both_players_done": true,
+    "recorded_agent_error_invalid_timeout": 0,
+    "pre_target_crop_comparison_nonempty": true,
+    "intervention_preceding_states_and_requests_equal": true,
+    "target_opponent_request_equal": true,
+    "target_requests_only_hands_changed": true,
+    "all_four_target_movements_match_requests": true,
+    "cash_vector_different_states_among_24_post_action_states": 11,
+    "cash_vector_equal_at_24th_post_action_state": true,
+    "cash_and_score_recalculated_from_saved_replays": true
+  },
+  "runner_and_receipt_self_report": {
+    "new_games": 2,
+    "live_official_transitions": 1438,
+    "same_engine_replay_transitions": 1438,
+    "worker_errors": 0,
+    "both_game_jobs_exit_zero_reaped_and_empty": true,
+    "single_replacement": true,
+    "target_input_equal": true,
+    "pre_intervention_budget_equal": true,
+    "all_four_target_role_actions_executed_and_requested_equals_effective": true,
+    "training_updates": 0,
+    "gpu_operations": 0
+  },
+  "cash_after_24_actions_from_pre_target_state": {
+    "control_own": 873.0,
+    "control_opponent": 773.0,
+    "intervention_own": 873.0,
+    "intervention_opponent": 773.0,
+    "own_delta": 0.0,
+    "opponent_delta": 0.0,
+    "margin_delta": 0.0
+  },
+  "final_cash": {
+    "control_own": 35916.0,
+    "control_opponent": 47630.0,
+    "intervention_own": 35697.0,
+    "intervention_opponent": 47691.0,
+    "own_delta": -219.0,
+    "opponent_delta": 61.0,
+    "margin_delta": -280.0
+  },
+  "final_score": {
+    "control": 0.0,
+    "intervention": 0.0
+  },
+  "historical_files_preserved_sha256": {
+    "v1_registration": "bfab999e4c6516ee3e8218740b64960505e98909cce4ab375068a5ffcc214047",
+    "v1_failure_certificate": "9806e4156496ab1e85910e827b0d01be297d3d71744c763d05792f52cc7fbccd"
+  },
+  "limitations": [
+    "One consumed case; no statistical inference, generalization, model promotion or causal breakdown.",
+    "Official reexecute results were asserted during the run but not separately persisted; audit logs are empty. Official reexecution step counts and execution statuses are runner self-reports, not an independent engine rerun.",
+    "Later scheduling, the opponent, shared market and state-dependent random draws can all contribute to the total effect.",
+    "Private original replays and traces remain local; public readers cannot independently reconstruct all private checks."
+  ]
+}
