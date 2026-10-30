@@ -1,0 +1,61 @@
+{
+  "schema": "task-prefix-diagnostic-public-v1",
+  "source_panel_result_commit": "3a3e3172b0403a171a38f6e78e37d07f387be2cb",
+  "sample": "posthoc historical S01; not a new holdout",
+  "input_games": 18,
+  "paired_comparisons": 12,
+  "seed_clusters": 1,
+  "input_files_completed": 36,
+  "raw_input_files_published": false,
+  "source_hashes_before_after": {
+    "runner.py": "3e3aa71181f6e176866b9d9625760c7761bede401a9f4cd9976a0746bcce9898",
+    "pairing.py": "7c4341f78c5f2c2758d83b62b0388e3b0b98a97518a2ec3acdf9467881132b18",
+    "test_pairing.py": "59f85e8de678cb74d8e89d9958b9a644e0179d18d3df2256055485d2b0c38d42",
+    "test_runner.py": "d5abb05a314799e068212a40d34f4dc4d1f095b8bfcbd6c5abe4ac593e4d4265",
+    "README.zh-CN.md": "e54d98a51725d172fff4cf9a007dd9b504ff990a45205a922cd134b874167abf",
+    "__init__.py": "b390682ccf45f9d8abe27f10827aa6a87b16b20bec06019a83142283995ff2ff"
+  },
+  "source_hash_limit": "Samples checked before and after execution; no operating-system lock during execution.",
+  "source_review_before_read": true,
+  "synthetic_regressions_passed": 16,
+  "posthoc_private_snapshot": "Current receipt identities; not proof of historical first-acceptance bytes.",
+  "independent_result_review": {
+    "all_pair_summaries": true,
+    "redecoded_replays": 3,
+    "redecoded_traces": 3,
+    "paired_results_recomputed": 2,
+    "official_transitions": 0,
+    "model_forwards": 0
+  },
+  "selection_counts": {
+    "merged": {
+      "selection_records": 13306,
+      "callback_records": 13306,
+      "teacher_records": 0,
+      "zero_selection_turns": 1610,
+      "zero_callback_turns": 1610
+    },
+    "unweighted": {
+      "selection_records": 13368,
+      "callback_records": 13368,
+      "teacher_records": 0,
+      "zero_selection_turns": 1654,
+      "zero_callback_turns": 1654
+    },
+    "teacher_task": {
+      "selection_records": 13236,
+      "callback_records": 0,
+      "teacher_records": 13236,
+      "zero_selection_turns": 1632,
+      "zero_callback_turns": 4314
+    }
+  },
+  "new_games": 0,
+  "official_transitions": 0,
+  "neural_forwards": 0,
+  "training_updates": 0,
+  "gpu_operations": 0,
+  "automatic_promotion": false,
+  "resource_limit": "Byte budgets enforced; wall deadline sampled; no hard process memory limit.",
+  "projection_field_mapping": "Local semantic_physical_state_equal is published as semantic_observation_equal; values unchanged."
+}
