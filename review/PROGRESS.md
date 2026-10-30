@@ -921,3 +921,11 @@ Windows 和 WSL 强制 CPU 分别通过训练视图 6 项、两臂组合 10 项�
 历史 `d5044c8` 的逐组语义验证可在新入口严格认证相同登记、数据字节、角色、分片、固定私有收据及九个掩码后作为历史证据有条件复用，不必假称本次独立重算；原 NPY 在哈希后另开内存映射且没有系统锁，旧运行及未来使用期间未发生并发替换仍是限制。真实 WSL 加载、隔离导入、设备身份、64 步预算、真实文件重载、独立比赛和收益尚待单独登记及验收。
 
 [训练视图](../kaggriculture/learning/task_pair_data_adapter_v1/README.zh-CN.md) | [两臂组合](../kaggriculture/learning/task_pair_orchestration_v1/README.zh-CN.md) | [开发评估](../kaggriculture/learning/task_pair_eval_adapter_v1/README.zh-CN.md) | [设备参数桥](../kaggriculture/learning/task_pair_host_export_v1/README.zh-CN.md)
+
+### 两臂任务 BC：WSL 导入的合成兼容验证
+
+新增附加导入检查，复用已冻结的 smoke guard，核验真实加载器及训练组件的额外源码、包初始化、同名影子和已加载模块来源；明确接受官方项目中已有的教师选择 namespace，要求其唯一项目路径。它不调用会把项目根加入全局搜索路径的旧 `bind_runtime`，也不改旧守卫。首次审查发现真实 `load_data` 所在模块未列为必需项，现已纳入并补缺失反例；第三方路径及供应链仍由未来入口认证，不由本组件保证。
+
+Windows 和 WSL 的强制 CPU 隔离复合探针各通过 1 项；一名独立子代理额外检查 43 个虚拟影子、21 项错误源码摘要及 namespace 搜索路径，另一名在两端冷导入真实加载器、使用旧来源检查函数，在首次元数据读取前中断。测试也覆盖合成小端浮点和有符号零；没有读取真实训练数据或模型，也没有使用 GPU。WSL 可以只读查询当前 Git 提交，但尚未验收真实 WSL 数据链。历史旧入口中另有无界重读实现，未来调用必须使用单次有界快照，不得把先验检查与重新读取冒充同一快照。
+
+[WSL 导入组件和证据边界](../kaggriculture/learning/task_pair_wsl_import_v1/README.zh-CN.md)
