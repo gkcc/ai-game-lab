@@ -1,0 +1,57 @@
+{
+  "schema": "task-prefix-diagnostic-registration-v2",
+  "parent_commit": "445a07585ed45c59fd3e8f404aecf500718462cd",
+  "source_panel_commit": "3a3e3172b0403a171a38f6e78e37d07f387be2cb",
+  "selection": {
+    "seed_roles": [
+      "S02",
+      "S03"
+    ],
+    "seed_roles_previously_consumed": true,
+    "opponents": [
+      "round2"
+    ],
+    "sides": [
+      0,
+      1
+    ],
+    "arms": [
+      "merged",
+      "unweighted",
+      "teacher_task"
+    ],
+    "input_games": 12,
+    "paired_comparisons": 8,
+    "independent_seed_clusters": 2
+  },
+  "source_sha256": {
+    "runner.py": "510a8276b3901641a993b3763adbb69c25e6f46c10bbf34aa2bd69e019b2ae2a",
+    "test_runner.py": "772e1216a0796ad371f4fde5497410fc551fd2d623f225af648cfb7498a60ec7",
+    "README.zh-CN.md": "84cd33cb536e265544c613b218d94a67ab5b723e607a12ed13f34a51eaad3287",
+    "__init__.py": "7255ebf781b573f8aed02a0318327fe46f67f98fe0a3ba45b215f4908174b028"
+  },
+  "runtime_dependency_hashes": "Pinned in runner.py; entry source additionally checked externally before and after execution.",
+  "state_semantics": "Frozen v2 semantic digest plus ordered shed contents for both players; prior S01 used older scope and is not rechecked.",
+  "limits": {
+    "compressed_bytes": 536870912,
+    "decoded_bytes": 17179869184,
+    "sampled_wall_seconds": 900,
+    "hard_rss_limit": false,
+    "hard_wall_limit": false
+  },
+  "acceptance": "All 12 existing receipt chains, replay/trace identities and EOF; 4 complete triads and 8 pairs; no partial result on failure.",
+  "new_games": 0,
+  "official_transitions": 0,
+  "model_calls": 0,
+  "training_updates": 0,
+  "gpu_operations": 0,
+  "synthetic_regressions": {
+    "new_runner": 7,
+    "frozen_pairing": 10,
+    "frozen_runner": 6
+  },
+  "independent_pre_reviewers": 2,
+  "result_interpretation": "Only exploratory shared-prefix associations; no independent test, causal, significance or generalization claim.",
+  "privacy": "No raw replay, trace, observations, actual seeds, private paths or input hashes in public output.",
+  "concurrent_mutation_limitation": "Source checks are before/after samples, not OS locking or proof of executed bytes."
+}
