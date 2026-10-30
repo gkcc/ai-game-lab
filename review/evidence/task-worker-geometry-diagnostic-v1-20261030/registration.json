@@ -1,0 +1,58 @@
+{
+  "schema": "worker-geometry-registration-v1",
+  "parent_commit": "24dc809c2006f208bffee0cf4a8706c92ce804e1",
+  "historical_prefix_result_commit": "24dc809c2006f208bffee0cf4a8706c92ce804e1",
+  "selection": {
+    "consumed_roles": [
+      "S02",
+      "S03"
+    ],
+    "opponent": "round2",
+    "sides": [
+      0,
+      1
+    ],
+    "policy": "merged",
+    "zero_based_step": 2,
+    "selection_record_index": 5,
+    "historical_traces": 4,
+    "training_archives": 2
+  },
+  "source_sha256": {
+    "run.py": "2e0d6f6d5607058731928c6496a6b17b705026cc181584d5a55380707fe296a0",
+    "archive_io.py": "d67b8715251ade3d72355eb5fb7888ec4fd3812f193608c60aa80cabcc0dc919",
+    "training_summary.py": "953a87e5ba4e763b034be165e553de913ea778de515f95609ae236bec3ae222a",
+    "trace_summary.py": "dc4c99b906a99867bd8c17e2455fea4ae2e305174c7798681e51faec36c5d9d7",
+    "test_run.py": "9814118aae431840bd2d15b72c192b3396853996c498ae082e5e30a41e70aa9b",
+    "test_archive_io.py": "a67d2542f9c8125f77875b88024bfe8b7fe4e79ad4508f32cb30b2ec3da67157",
+    "test_training_summary.py": "508de64a425a31b396c36660e9dd104c2397bf864928803d2c27a306a3a43e70",
+    "test_trace_summary.py": "42d5a431119ad1d7b2cf18c400ebc1369e9346d06a1e29193490d190cc8430fd",
+    "__init__.py": "1bfd5a8287addfd5d58a209f66fc82182a5f6e78d48973a7c4f67d5a57344e30",
+    "README.zh-CN.md": "ea9264b281afed9676bce31a8db804b24ffe0f223c9558837586eaf01d138d6a"
+  },
+  "diagnostic_question": "Classify recorded same-target teacher/student PLANT alternatives by Manhattan distance; inspect whether structurally similar encoded-step-2 teacher examples occur in sampled training archives.",
+  "training_scope": "Raw numeric features and labels only, five selected members; do not decode archive seed member. Encoded step is not independently checked against original observation or callback ordinal.",
+  "historical_scope": "Full compressed trace identity checked; JSON-parse only first 3 lines per trace. gzip may prefetch more bytes. Existing receipt and seed-role metadata are read in local memory.",
+  "privacy": "Publish four-case aggregate categories as an explicit exception; training early-source categories only below_20/at_least_20 for farther and equal separately, never counts, union, all-step or combined. No individual identities, coordinates, private state, seeds, paths or input hashes. Thresholds are not formal anonymity.",
+  "limits": {
+    "compressed_traces_bytes": 536870912,
+    "trace_line_bytes": 16777216,
+    "sampled_wall_seconds": 180,
+    "archive_limits": "Prior registered input caps",
+    "hard_rss_limit": false,
+    "hard_wall_limit": false
+  },
+  "acceptance": "Four fixed traces and two registered archives; all source, schema, label, geometry, teacher and feature identities must match; stop on any failure.",
+  "new_games": 0,
+  "official_transitions": 0,
+  "model_calls": 0,
+  "training_updates": 0,
+  "gpu_operations": 0,
+  "independent_pre_review": "Two reviewers; one ran all 24 checks, the other 23 synthetic checks plus an isolated synthetic-freeze import check.",
+  "interpretation": "Only coarse sampled demonstration structure and four conditional choices; no exact source join, historical batch proof, model score explanation, causal reward or generalization.",
+  "concurrent_mutation_limitation": "Operator separately checks Git registration and source before/after; no OS locking or proof of executed bytes.",
+  "regressions": {
+    "pure_synthetic": 23,
+    "isolated_real_public_dependency_import": 1
+  }
+}
