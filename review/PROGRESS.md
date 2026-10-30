@@ -747,3 +747,11 @@ d1/d2/d3源码快照及哈希全部保留，未放宽允许映像或父子链约
 独立子代理只读核对两份 Replay：720 帧语义状态、双方背包与仓库顺序、1,438 条有序请求及终局奖励一致；两份 trace 的 45 行原始内容有差异，递归仅移除 `inference_seconds` 后 719 行有序一致。这是事后诊断，不追认原尝试通过。另发现干预前缀也直接比较原始 trace，修复必须覆盖两处；本次无训练或 GPU 运算。
 
 [脱敏失败证书](evidence/task-single-intervention-v1-20261030/failure-certificate.json)
+
+### 稳定 trace 修复与不同开发案例登记
+
+保留 v1 失败与源码，新建 v2：控制局和干预前两个完整回合的 trace 对照，仅把顶层 `crop_records[*].inference_seconds` 的数值规范化，保留字段位置及其他所有有序内容。目标回合按回调前预算数量核对已发生的作物选择字段；回合末追加字段可能受后续干预影响，不用来判断干预前是否一致，此项在 B 完赛后检查。v2 对旧失败的两份保存 trace 做只读回归，719 行通过；没有重启旧尝试或执行新官方转移。
+
+固定不同的开发场次 `S01`／`round2`／0 席，仍是已消费的同一个 seed，不是新的独立样本。复用 v1 冻结门控器，预先限定两场和两次同引擎复演、最多 2,876 次官方转移。33 项合成回归及独立预审通过；登记时尚未准备 v2 输入或开始比赛。
+
+[修复说明](../kaggriculture/learning/task_single_intervention_v2/README.zh-CN.md) | [脱敏登记](evidence/task-single-intervention-v2-20261030/registration.json)
