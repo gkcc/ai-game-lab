@@ -1,0 +1,24 @@
+{
+  "schema": "task-worker-ranking-failure-certificate-v1",
+  "registration_commit": "65be7d537249ec76ab47c63e3e13b5aac8946de7",
+  "original_attempt": {
+    "operator_observed_exit_code": 1,
+    "operator_observed_output": {
+      "status": "failed",
+      "error_type": "ValueError"
+    },
+    "operator_observed_output_directory_after_exit": false,
+    "failure_stage_recorded": false,
+    "no_retry": true
+  },
+  "subsequent_read_only_diagnosis": {
+    "registration_git_equals_working_raw_bytes": true,
+    "both_have_crlf": true,
+    "one_sided_normalization_reproduces_rejection": true,
+    "original_error_attribution": "Supported by current source, bytes and post-failure diagnostic, but original process did not record the failure stage; concurrent changes were not monitored.",
+    "independent_reviewers": 2,
+    "synthetic_examples_reproduced": true,
+    "data_or_model_access_in_diagnostic": false
+  },
+  "scope": "By frozen control-flow the reproduced first-check failure precedes array decoding and model loading; this is not an independently instrumented record of the original process."
+}
