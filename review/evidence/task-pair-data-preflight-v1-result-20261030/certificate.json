@@ -1,0 +1,29 @@
+{
+  "schema": "task-pair-data-preflight-certificate-v1",
+  "registration_commit": "27635128cee4653e661faeaa16aab28e3d78fc5f",
+  "result_sha256": "d4d4eda5821a01073da65e03a358a4367047eaac43af62302364e2e5ebaf2a95",
+  "observed_entry_exit_code": 0,
+  "operator_checked_git_registration_before_attempt": true,
+  "attempts": 1,
+  "runner_report": {
+    "all_groups_primary_ready": true,
+    "unmatched_primary_ready": true,
+    "label_conflict": "none"
+  },
+  "historical_teacher_validation_numeric_matches": 3978,
+  "historical_zero_conflicts_verified_by_runner": true,
+  "independent_reviews": {
+    "manifest_and_saved_results": "consistent; no independent full recomputation of source matching or per-cluster gates",
+    "fixed_sample": "three predetermined groups per developer shard; direct numeric comparison independently agrees with three private masks",
+    "sample_limitation": "not a full-data recomputation; seen and plant flags sampled true and false, label conflict sampled false only"
+  },
+  "execution_scope": {
+    "checkpoint_weights_loaded": false,
+    "model_inference": false,
+    "training": false,
+    "new_matches": false,
+    "system_wide_monitoring": false
+  },
+  "private_masks_published": false,
+  "raw_sources_published": false
+}

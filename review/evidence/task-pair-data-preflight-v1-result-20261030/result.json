@@ -1,0 +1,111 @@
+{
+  "coverage": {
+    "train": {
+      "qualifying_plant": "supported",
+      "operations": {
+        "DIG": "supported",
+        "FERTILIZE": "supported",
+        "HARVEST": "supported",
+        "PLANT": "supported",
+        "WATER": "supported"
+      }
+    },
+    "teacher_dev": {
+      "qualifying_plant": "supported",
+      "operations": {
+        "DIG": "supported",
+        "FERTILIZE": "supported",
+        "HARVEST": "supported",
+        "PLANT": "supported",
+        "WATER": "supported"
+      }
+    },
+    "conditional_dev": {
+      "qualifying_plant": "supported",
+      "operations": {
+        "DIG": "supported",
+        "FERTILIZE": "supported",
+        "HARVEST": "supported",
+        "PLANT": "supported",
+        "WATER": "supported"
+      }
+    }
+  },
+  "unmatched_coverage": {
+    "teacher_dev": {
+      "qualifying_plant": "supported",
+      "operations": {
+        "DIG": "supported",
+        "FERTILIZE": "supported",
+        "HARVEST": "supported",
+        "PLANT": "supported",
+        "WATER": "supported"
+      }
+    },
+    "conditional_dev": {
+      "qualifying_plant": "supported",
+      "operations": {
+        "DIG": "supported",
+        "FERTILIZE": "supported",
+        "HARVEST": "supported",
+        "PLANT": "supported",
+        "WATER": "supported"
+      }
+    }
+  },
+  "conditional_sources": {
+    "old": {
+      "coverage": {
+        "qualifying_plant": "supported",
+        "operations": {
+          "DIG": "unknown",
+          "FERTILIZE": "supported",
+          "HARVEST": "supported",
+          "PLANT": "supported",
+          "WATER": "supported"
+        }
+      },
+      "unmatched_coverage": {
+        "qualifying_plant": "supported",
+        "operations": {
+          "DIG": "unknown",
+          "FERTILIZE": "supported",
+          "HARVEST": "supported",
+          "PLANT": "supported",
+          "WATER": "supported"
+        }
+      }
+    },
+    "new": {
+      "coverage": {
+        "qualifying_plant": "supported",
+        "operations": {
+          "DIG": "supported",
+          "FERTILIZE": "supported",
+          "HARVEST": "supported",
+          "PLANT": "supported",
+          "WATER": "supported"
+        }
+      },
+      "unmatched_coverage": {
+        "qualifying_plant": "supported",
+        "operations": {
+          "DIG": "supported",
+          "FERTILIZE": "supported",
+          "HARVEST": "supported",
+          "PLANT": "supported",
+          "WATER": "supported"
+        }
+      }
+    }
+  },
+  "overlap": {
+    "teacher_dev": "at_least_20",
+    "conditional_dev": "at_least_20"
+  },
+  "label_conflict": "none",
+  "all_groups_primary_ready": true,
+  "unmatched_primary_ready": true,
+  "schema": "task-pair-data-preflight-result-v1",
+  "registration_commit": "27635128cee4653e661faeaa16aab28e3d78fc5f"
+}
