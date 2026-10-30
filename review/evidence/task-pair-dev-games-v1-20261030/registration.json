@@ -1,0 +1,128 @@
+{
+  "schema": "task-pair-dev-games-prereg-v1",
+  "previous_training_result_commit": "5a66216f99a8e467818978c96e707f6045834709",
+  "historical_panel_result_commit": "3a3e3172b0403a171a38f6e78e37d07f387be2cb",
+  "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "panel": {
+    "seed_roles": [
+      "S02",
+      "S03"
+    ],
+    "opponents": [
+      "market",
+      "round2"
+    ],
+    "policies": [
+      "baseline",
+      "control",
+      "auxiliary"
+    ],
+    "sides": [
+      0,
+      1
+    ],
+    "games": 24,
+    "scope": "consumed_development_no_promotion"
+  },
+  "evaluation": {
+    "comparisons": [
+      "control_minus_baseline",
+      "auxiliary_minus_control"
+    ],
+    "cluster": "seed",
+    "min_per_seed": 5,
+    "min_total": 20,
+    "significance": "not_assessed",
+    "promotion": false,
+    "retries": false,
+    "official_games": 24,
+    "official_replays": 24,
+    "training_updates": 0,
+    "new_seed_generation": false
+  },
+  "limits": {
+    "campaign_wall_seconds": 7200,
+    "initial_available_bytes": 4294967296,
+    "between_available_bytes": 3221225472,
+    "disk_free_floor_bytes": 4294967296,
+    "total_output_bytes": 4060086272,
+    "per_game_reserve_bytes": 167772160,
+    "replay_decoded_bytes": 134217728,
+    "trace_compressed_bytes": 134217728,
+    "trace_line_bytes": 8388608,
+    "trace_decoded_bytes": 536870912,
+    "metrics_bytes": 8388608,
+    "job": {
+      "max_rss_bytes": 2147483648,
+      "max_commit_bytes": 3221225472,
+      "min_available_bytes": 2147483648,
+      "wall_seconds": 900,
+      "poll_seconds": 0.25,
+      "cleanup_seconds": 10
+    }
+  },
+  "process_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "scope": "process_and_children"
+  },
+  "notes": {
+    "seed_and_model_binding": "private historical identities bound only after this registration commit",
+    "inference": "existing task and shared crop models; no new training",
+    "opportunity_gate": "at least 5 per complete seed and 20 in total; otherwise unknown",
+    "publication": "allowlisted descriptive statistics and seed aliases only",
+    "timing": "local preregistration is not a third-party timestamp",
+    "resources": "sampled checks are not universal hard resource limits"
+  },
+  "public_sources": {
+    "kaggriculture/learning/task_pair_dev_campaign_v1/README.zh-CN.md": "af0671d8a632417fec6d969d77abd5f45087e63885c1686cd0aaad90f444479d",
+    "kaggriculture/learning/task_pair_dev_campaign_v1/acceptance.py": "9317bf026a1029f86c3165ed2f0970e634f74d09b93d44925f87a2320f5d5c01",
+    "kaggriculture/learning/task_pair_dev_campaign_v1/bootstrap.py": "10fb09ebb73b87b86015d96e6f22c96acc65d5b2079ad86e03bd2bda861e95e6",
+    "kaggriculture/learning/task_pair_dev_campaign_v1/campaign.py": "3a363702b449e7f2461a90613bfcdb868899c81a5cb431a5362dc01b543194c3",
+    "kaggriculture/learning/task_pair_dev_campaign_v1/child.py": "f13e69472a59e5d9c7c87623ec89a4b959e6d2a2be2145629c948772f4640a46",
+    "kaggriculture/learning/task_pair_dev_campaign_v1/driver.py": "242a0ad5a4e96eb57cff85a7fa22b59ef59dc22ab7b994fa22183a5e20ba8782",
+    "kaggriculture/learning/task_pair_dev_campaign_v1/evidence.py": "23a1d7c6c16ceded579515010786dd8cc24ddfb91007f66f4e502f70c48c8b57",
+    "kaggriculture/learning/task_pair_dev_campaign_v1/history.py": "ea442088377229475e0115ea8c5c7de5772035f2b96399758670296b8374252c",
+    "kaggriculture/learning/task_pair_dev_campaign_v1/identity.py": "e20d42a6f1489b66ec868f531483188f716504d8f602e1763e92fd1d2691b1e8",
+    "kaggriculture/learning/task_pair_dev_campaign_v1/manifest.py": "ae20174bced20c933f351e2868012f7d3c3efbe04375290301b3671d3557e6a6",
+    "kaggriculture/learning/task_pair_dev_campaign_v1/projection.py": "87274944a23504c70d791c6a706a061864682d37547c4be81f98e1bfb086a4a9",
+    "kaggriculture/learning/task_pair_dev_campaign_v1/test_acceptance.py": "bef24feadc3d53a58f204332c3657e50d7037e0dd08cd9adb50f5c4e14381030",
+    "kaggriculture/learning/task_pair_dev_campaign_v1/test_bootstrap.py": "2f588be544cbe085c8ca9eb3254e6186b903828fc68a5813fee9ae8f1063f094",
+    "kaggriculture/learning/task_pair_dev_campaign_v1/test_campaign.py": "bf2684244bade7e05cd1f4e79e4a29cf38e9c80227e7971484a4474bc8447f42",
+    "kaggriculture/learning/task_pair_dev_campaign_v1/test_child.py": "5fa00b286ce4abac80154f34096e830f74a013ded66ac2355464704824e29cce",
+    "kaggriculture/learning/task_pair_dev_campaign_v1/test_driver.py": "1c1c9d93a455ab7b9069e87c6c4535dc2855da8c76c80fbc2c3cdda82ef2cad3",
+    "kaggriculture/learning/task_pair_dev_campaign_v1/test_evidence.py": "e09676d3ac65c01707e9c7e51887cebf77bf0197904efdfcb0004334a832a132",
+    "kaggriculture/learning/task_pair_dev_campaign_v1/test_history.py": "a3ad39cceb7c91b13b540e349e8a864e1394bb5c4f60e94e0d8c8ddce628e4ec",
+    "kaggriculture/learning/task_pair_dev_campaign_v1/test_identity.py": "4b9ec5cbb7a337173e832f4763dccdb71600071f0644cd97855a062e296d27b2",
+    "kaggriculture/learning/task_pair_dev_campaign_v1/test_manifest.py": "67e9826f31a286fe8e65d28bf32e18f77aa5489c979cb7d5e198680a24f7d78f",
+    "kaggriculture/learning/task_pair_dev_campaign_v1/test_projection.py": "3cfc7f7383de071a7213f7b6f794399c52827df8d4241280810530e7544a6774",
+    "kaggriculture/learning/task_pair_dev_games_v1/README.zh-CN.md": "7c7a079278e038a7962df5dcbc4761dfb80be5b62dd3c8f17c9f07356c02ed49",
+    "kaggriculture/learning/task_pair_dev_games_v1/__init__.py": "50b0963e7491b6c1b423c8eaf8ad1c6105fe7d3c3177af5c43a3dafb52d2716f",
+    "kaggriculture/learning/task_pair_dev_games_v1/capture.py": "143171cd6b584018a7ab39b77662d3b18072dc03c9aec7a95d65d41a5ab67268",
+    "kaggriculture/learning/task_pair_dev_games_v1/panel.py": "e310df401deb191f26498566217fd3889e8c2b184980538a20e3eda3e0e013d3",
+    "kaggriculture/learning/task_pair_dev_games_v1/test_capture.py": "3430e4df9b11ad7689d6804adce60b53c97ed2f8745486321c4a0c69cf07dd91",
+    "kaggriculture/learning/task_pair_dev_games_v1/test_panel.py": "7328dddf2571e36a9621572ab46050638d15803745aa4cdb35a85e1487172dac",
+    "kaggriculture/learning/task_pair_dev_games_v1/test_worker.py": "96dcf18c9fc918d00d119b5f4d0f9f27cfb489fc4bc086556bda64bb353a937e",
+    "kaggriculture/learning/task_pair_dev_games_v1/worker.py": "fa9603f09c2f2b21fcfcf0f1c591379094b4924b07dee7992ba1aa046dbfc044",
+    "kaggriculture/learning/task_pair_dev_metrics_v1/README.zh-CN.md": "76859f567c1a5d1f81d500e483a64330b76c27c8aa8cd8d537a588f8ac743b5e",
+    "kaggriculture/learning/task_pair_dev_metrics_v1/__init__.py": "7feec617443dae0c166b1b261d5fcf3db29cb53825e6eb802974df62309b449a",
+    "kaggriculture/learning/task_pair_dev_metrics_v1/consumer.py": "810e777c1c4fb0875142fbfe3926f774467179bb796fc46f4e3de8686d001f25",
+    "kaggriculture/learning/task_pair_dev_metrics_v1/panel.py": "c424dc31d5817af3e7e2776d46126f88a14589046d3585e018d8574b5e00c28f",
+    "kaggriculture/learning/task_pair_dev_metrics_v1/replay_pair.py": "c05241f3700361ff7f52e5262cec23377a4fed819437c20766c93480c3da1f5d",
+    "kaggriculture/learning/task_pair_dev_metrics_v1/test_consumer.py": "aaba8a89e48c51a3a527713922d12af59bc24b35c6ac58f86024ecefd0241566",
+    "kaggriculture/learning/task_pair_dev_metrics_v1/test_replay_pair.py": "777b240c9bc3556fa05878e69c47468bf7d4e0d32b8e89c17e4c257cbd0a52e9",
+    "kaggriculture/learning/task_prefix_diagnostic_v2/runner.py": "510a8276b3901641a993b3763adbb69c25e6f46c10bbf34aa2bd69e019b2ae2a",
+    "kaggriculture/learning/task_single_intervention_v1/trusted_imports.py": "329d3b6415e3fac1cabea5d27571db3510281cbabd9c5118c55cec9aa43b115a",
+    "review/PROGRESS.md": "dce7d2de0ca41e8ff8be8591d9431243d5e2f92e0cdc523e09e12c12af33b9d0",
+    "review/evidence/task-bc-v1-20261023-run1/model/selected-export.json": "b3234fe7fc5b70f828f6de091a232a0524c6a651580fdc506a50a1dba61947cf",
+    "review/evidence/task-pair-dev-games-v1-20261030/REGISTRATION.zh-CN.md": "1eac204a569a8270ad3e608b999d939a7187cebf62d7a5344468c872f8ea066b",
+    "review/evidence/task-pair-wsl-training-v1-20261030/registration.json": "edbcfa1e07ed95f3def1cb28ddd9c50a309dc6967102e5130d6e935516805c23",
+    "review/evidence/task-pair-wsl-training-v1-result-20261030/RESULTS.zh-CN.md": "b54d62890667c76f6c98a41457c0a42958da52926212e83930263c9818c47d5d",
+    "review/evidence/task-pair-wsl-training-v1-result-20261030/certificate.json": "ede34da46c2959efe634c333e097709ba886f11cb56be7b3eab641e3eb1a3a39",
+    "review/evidence/task-teacher-merged-eval-v3-formal-20261030/freeze.json": "249d72b0770bb97cb4a1cc66fc14586dd674c778185f6aebf8c50c73fad9cb4d",
+    "review/evidence/task-teacher-merged-eval-v3-formal-20261030/registration.json": "293478899d30f47830add190e699b3077d0466806d2276cee0a4828b822bb245",
+    "review/evidence/task-teacher-merged-eval-v3-formal-result-20261030/alias-ledger.json": "481d4bc82e3e705c0c4750d2dd8f984098e65eef334231d1225169c43bd459ba",
+    "tools/panel_v3_alias_ledger.py": "6409fe65dfa5f332edc52ee1d2edccf8694a08f27be20de9a3d460b0ef88a9b3"
+  }
+}
