@@ -977,3 +977,13 @@ Windows 和 WSL 分别通过导入守卫 1 项、训练入口 17 项、Windows �
 本阶段没有读取真实训练数据或模型，没有新增 GPU 训练或官方比赛。正式登记、私有合同和真实跨层生命周期仍需另行固定和验收；开发筛查不能代表竞技收益。
 
 [训练子入口](../kaggriculture/learning/task_pair_wsl_training_v1/README.zh-CN.md) | [Linux 启动器](../kaggriculture/learning/task_pair_wsl_launch_v1/README.zh-CN.md) | [Windows 外层](../kaggriculture/learning/task_pair_wsl_launch_v1/HOST.zh-CN.md)
+
+### 两臂任务 BC：单次训练事前登记
+
+以 `6a85173` 为源码基础，固定一次两臂各 64 次、每批 256 组的训练尝试、开发筛查和停止条件；工作限额 3,900 秒只是上限，实际耗时尚未知。登记绑定 154 项公开源码、测试、说明和历史证据；登记自身在运行时另核验 Git 原字节。两份私有合同及其独立保存的摘要已在登记前固定，不发布设备名称、路径、种子或私有摘要。
+
+登记前的正常递增时间反例表明，旧入口切换阶段时可能覆盖已经超期的上一阶段截止；修复版在切换前及最终结果写入后再次采样，超时不发送成功收据。Windows 和 WSL 各通过 18 项入口合成回归，独立子代理复验两处阶段切换；长调用仍不能被这些检查硬中断。
+
+登记时没有读取本次真实训练数组或旧模型，没有执行本次 GPU 更新或官方比赛。三个开发来源均已消费，未重合子集并非独立比赛；技术执行和开发筛查结果不能代替后续新种子完整对局。事前本地提交不是第三方时间戳，若任一来源、设备、资源、收据或清理门槛失败即停止并保留现场。
+
+[训练范围、预算和验收口径](evidence/task-pair-wsl-training-v1-20261030/README.zh-CN.md) | [事前登记](evidence/task-pair-wsl-training-v1-20261030/registration.json)
