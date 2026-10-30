@@ -1,0 +1,83 @@
+{
+  "schema": "task-prefix-diagnostic-v2-public-summary",
+  "registration_commit": "40984d73e22ebccf9ffb476379de8a47894c8dc1",
+  "seed_roles": [
+    "S02",
+    "S03"
+  ],
+  "seed_roles_previously_consumed": true,
+  "opponent": "round2",
+  "sides": [
+    0,
+    1
+  ],
+  "input_games": 12,
+  "paired_comparisons": 8,
+  "independent_seed_clusters": 2,
+  "observed_outer_exit_code": 0,
+  "runner_report": {
+    "triads_completed": 4,
+    "replay_and_trace_files_opened": 24,
+    "replay_and_trace_files_completed": 24,
+    "new_games": 0,
+    "official_transitions": 0,
+    "model_calls": 0,
+    "training_updates": 0,
+    "gpu_operations": 0
+  },
+  "independent_spot_checks": {
+    "reviewers": 2,
+    "selected_triads": 2,
+    "games": 6,
+    "paired_comparisons": 4,
+    "replay_objects_fully_decoded": true,
+    "new_engine_transitions": 0,
+    "new_model_calls": 0,
+    "unique_compressed_files_sha_checked": 12,
+    "unique_trace_lines_checked_per_file": 3,
+    "s02_same_trace_prefix_reread": true
+  },
+  "all_eight_pairs": {
+    "first_branch": "actor",
+    "first_branch_step_zero_based": 2,
+    "first_branch_components": [
+      "hands"
+    ],
+    "same_selected_task_operation": "PLANT",
+    "same_target_within_pair": true,
+    "same_unit_within_pair": false,
+    "selected_request_kind": "move",
+    "selected_unit_requests_equal": true,
+    "full_actor_requests_equal": false
+  },
+  "historical_selection_counts_by_arm": {
+    "merged": {
+      "selection_records": 8698,
+      "callback_records": 8698,
+      "teacher_records": 0,
+      "zero_selection_turns": 1066,
+      "zero_callback_turns": 1066
+    },
+    "unweighted": {
+      "selection_records": 8688,
+      "callback_records": 8688,
+      "teacher_records": 0,
+      "zero_selection_turns": 1064,
+      "zero_callback_turns": 1064
+    },
+    "teacher_task": {
+      "selection_records": 8712,
+      "callback_records": 0,
+      "teacher_records": 8712,
+      "zero_selection_turns": 1064,
+      "zero_callback_turns": 2876
+    }
+  },
+  "limitations": [
+    "Two consumed seed clusters; merged trajectories reused by two comparisons.",
+    "The earlier S01 result used a weaker shed-order scope and was not rechecked.",
+    "Existing replay and Job checks are historical program records, not an independent engine rerun.",
+    "Only two selected triads were independently inspected from original inputs; remaining results are runner reports.",
+    "Task selection and requests do not prove official execution, completed planting, causal profit or model generalization."
+  ]
+}

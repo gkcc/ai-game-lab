@@ -1,0 +1,482 @@
+[
+  {
+    "side": 0,
+    "opponent": "round2",
+    "reference": "unweighted",
+    "first_branch_kind": "actor",
+    "first_branch_step": 2,
+    "branch_attribution": "unknown",
+    "first_actor_request_components_differ": {
+      "farmer": false,
+      "hands": true,
+      "market": false
+    },
+    "eligible_turns": 3,
+    "actor_observation_or_configuration_mismatch_turns": 0,
+    "zero_both_selection_record_turns": 0,
+    "input_difference_turns": 0,
+    "selection_record_count_difference_turns": 0,
+    "equal_recorded_choices_turns": 2,
+    "choice_difference_turns": 1,
+    "choice_difference_same_actor_request_turns": 0,
+    "choice_difference_different_actor_request_turns": 1,
+    "choice_difference_same_request_same_task_multiset_turns": 0,
+    "matched_context_selection_records": 14,
+    "teacher_label_consistent_selection_records": 14,
+    "teacher_label_disagreement_selection_records": 0,
+    "candidate_teacher_agreement_selection_records": 13,
+    "reference_teacher_agreement_selection_records": 14,
+    "first_choice_difference": {
+      "step": 2,
+      "selection_record_index": 5,
+      "candidate_op": "PLANT",
+      "reference_op": "PLANT",
+      "same_unit": false,
+      "same_target": true,
+      "candidate_request_kind": "move",
+      "reference_request_kind": "move",
+      "selected_unit_request_equal": true,
+      "complete_actor_request_equal": false
+    },
+    "choice_difference_at_branch": true,
+    "post_branch_windows": {
+      "1": {
+        "state_index": 3,
+        "own_bank_delta_changed": false,
+        "opponent_bank_delta_changed": false,
+        "margin_delta_changed": false,
+        "actions_elapsed": 1,
+        "observation_equal": false
+      },
+      "24": {
+        "state_index": 26,
+        "own_bank_delta_changed": true,
+        "opponent_bank_delta_changed": false,
+        "margin_delta_changed": true,
+        "actions_elapsed": 24,
+        "observation_equal": false
+      }
+    },
+    "seed_alias": "S02"
+  },
+  {
+    "side": 0,
+    "opponent": "round2",
+    "reference": "teacher_task",
+    "first_branch_kind": "actor",
+    "first_branch_step": 2,
+    "branch_attribution": "unknown",
+    "first_actor_request_components_differ": {
+      "farmer": false,
+      "hands": true,
+      "market": false
+    },
+    "eligible_turns": 3,
+    "actor_observation_or_configuration_mismatch_turns": 0,
+    "zero_both_selection_record_turns": 0,
+    "input_difference_turns": 0,
+    "selection_record_count_difference_turns": 0,
+    "equal_recorded_choices_turns": 2,
+    "choice_difference_turns": 1,
+    "choice_difference_same_actor_request_turns": 0,
+    "choice_difference_different_actor_request_turns": 1,
+    "choice_difference_same_request_same_task_multiset_turns": 0,
+    "matched_context_selection_records": 14,
+    "teacher_label_consistent_selection_records": 14,
+    "teacher_label_disagreement_selection_records": 0,
+    "candidate_teacher_agreement_selection_records": 13,
+    "reference_teacher_agreement_selection_records": 14,
+    "first_choice_difference": {
+      "step": 2,
+      "selection_record_index": 5,
+      "candidate_op": "PLANT",
+      "reference_op": "PLANT",
+      "same_unit": false,
+      "same_target": true,
+      "candidate_request_kind": "move",
+      "reference_request_kind": "move",
+      "selected_unit_request_equal": true,
+      "complete_actor_request_equal": false
+    },
+    "choice_difference_at_branch": true,
+    "post_branch_windows": {
+      "1": {
+        "state_index": 3,
+        "own_bank_delta_changed": false,
+        "opponent_bank_delta_changed": false,
+        "margin_delta_changed": false,
+        "actions_elapsed": 1,
+        "observation_equal": false
+      },
+      "24": {
+        "state_index": 26,
+        "own_bank_delta_changed": true,
+        "opponent_bank_delta_changed": false,
+        "margin_delta_changed": true,
+        "actions_elapsed": 24,
+        "observation_equal": false
+      }
+    },
+    "seed_alias": "S02"
+  },
+  {
+    "side": 1,
+    "opponent": "round2",
+    "reference": "unweighted",
+    "first_branch_kind": "actor",
+    "first_branch_step": 2,
+    "branch_attribution": "unknown",
+    "first_actor_request_components_differ": {
+      "farmer": false,
+      "hands": true,
+      "market": false
+    },
+    "eligible_turns": 3,
+    "actor_observation_or_configuration_mismatch_turns": 0,
+    "zero_both_selection_record_turns": 0,
+    "input_difference_turns": 0,
+    "selection_record_count_difference_turns": 0,
+    "equal_recorded_choices_turns": 2,
+    "choice_difference_turns": 1,
+    "choice_difference_same_actor_request_turns": 0,
+    "choice_difference_different_actor_request_turns": 1,
+    "choice_difference_same_request_same_task_multiset_turns": 0,
+    "matched_context_selection_records": 14,
+    "teacher_label_consistent_selection_records": 14,
+    "teacher_label_disagreement_selection_records": 0,
+    "candidate_teacher_agreement_selection_records": 13,
+    "reference_teacher_agreement_selection_records": 14,
+    "first_choice_difference": {
+      "step": 2,
+      "selection_record_index": 5,
+      "candidate_op": "PLANT",
+      "reference_op": "PLANT",
+      "same_unit": false,
+      "same_target": true,
+      "candidate_request_kind": "move",
+      "reference_request_kind": "move",
+      "selected_unit_request_equal": true,
+      "complete_actor_request_equal": false
+    },
+    "choice_difference_at_branch": true,
+    "post_branch_windows": {
+      "1": {
+        "state_index": 3,
+        "own_bank_delta_changed": false,
+        "opponent_bank_delta_changed": false,
+        "margin_delta_changed": false,
+        "actions_elapsed": 1,
+        "observation_equal": false
+      },
+      "24": {
+        "state_index": 26,
+        "own_bank_delta_changed": true,
+        "opponent_bank_delta_changed": false,
+        "margin_delta_changed": true,
+        "actions_elapsed": 24,
+        "observation_equal": false
+      }
+    },
+    "seed_alias": "S02"
+  },
+  {
+    "side": 1,
+    "opponent": "round2",
+    "reference": "teacher_task",
+    "first_branch_kind": "actor",
+    "first_branch_step": 2,
+    "branch_attribution": "unknown",
+    "first_actor_request_components_differ": {
+      "farmer": false,
+      "hands": true,
+      "market": false
+    },
+    "eligible_turns": 3,
+    "actor_observation_or_configuration_mismatch_turns": 0,
+    "zero_both_selection_record_turns": 0,
+    "input_difference_turns": 0,
+    "selection_record_count_difference_turns": 0,
+    "equal_recorded_choices_turns": 2,
+    "choice_difference_turns": 1,
+    "choice_difference_same_actor_request_turns": 0,
+    "choice_difference_different_actor_request_turns": 1,
+    "choice_difference_same_request_same_task_multiset_turns": 0,
+    "matched_context_selection_records": 14,
+    "teacher_label_consistent_selection_records": 14,
+    "teacher_label_disagreement_selection_records": 0,
+    "candidate_teacher_agreement_selection_records": 13,
+    "reference_teacher_agreement_selection_records": 14,
+    "first_choice_difference": {
+      "step": 2,
+      "selection_record_index": 5,
+      "candidate_op": "PLANT",
+      "reference_op": "PLANT",
+      "same_unit": false,
+      "same_target": true,
+      "candidate_request_kind": "move",
+      "reference_request_kind": "move",
+      "selected_unit_request_equal": true,
+      "complete_actor_request_equal": false
+    },
+    "choice_difference_at_branch": true,
+    "post_branch_windows": {
+      "1": {
+        "state_index": 3,
+        "own_bank_delta_changed": false,
+        "opponent_bank_delta_changed": false,
+        "margin_delta_changed": false,
+        "actions_elapsed": 1,
+        "observation_equal": false
+      },
+      "24": {
+        "state_index": 26,
+        "own_bank_delta_changed": true,
+        "opponent_bank_delta_changed": false,
+        "margin_delta_changed": true,
+        "actions_elapsed": 24,
+        "observation_equal": false
+      }
+    },
+    "seed_alias": "S02"
+  },
+  {
+    "side": 0,
+    "opponent": "round2",
+    "reference": "unweighted",
+    "first_branch_kind": "actor",
+    "first_branch_step": 2,
+    "branch_attribution": "unknown",
+    "first_actor_request_components_differ": {
+      "farmer": false,
+      "hands": true,
+      "market": false
+    },
+    "eligible_turns": 3,
+    "actor_observation_or_configuration_mismatch_turns": 0,
+    "zero_both_selection_record_turns": 0,
+    "input_difference_turns": 0,
+    "selection_record_count_difference_turns": 0,
+    "equal_recorded_choices_turns": 2,
+    "choice_difference_turns": 1,
+    "choice_difference_same_actor_request_turns": 0,
+    "choice_difference_different_actor_request_turns": 1,
+    "choice_difference_same_request_same_task_multiset_turns": 0,
+    "matched_context_selection_records": 14,
+    "teacher_label_consistent_selection_records": 14,
+    "teacher_label_disagreement_selection_records": 0,
+    "candidate_teacher_agreement_selection_records": 13,
+    "reference_teacher_agreement_selection_records": 14,
+    "first_choice_difference": {
+      "step": 2,
+      "selection_record_index": 5,
+      "candidate_op": "PLANT",
+      "reference_op": "PLANT",
+      "same_unit": false,
+      "same_target": true,
+      "candidate_request_kind": "move",
+      "reference_request_kind": "move",
+      "selected_unit_request_equal": true,
+      "complete_actor_request_equal": false
+    },
+    "choice_difference_at_branch": true,
+    "post_branch_windows": {
+      "1": {
+        "state_index": 3,
+        "own_bank_delta_changed": false,
+        "opponent_bank_delta_changed": false,
+        "margin_delta_changed": false,
+        "actions_elapsed": 1,
+        "observation_equal": false
+      },
+      "24": {
+        "state_index": 26,
+        "own_bank_delta_changed": true,
+        "opponent_bank_delta_changed": false,
+        "margin_delta_changed": true,
+        "actions_elapsed": 24,
+        "observation_equal": false
+      }
+    },
+    "seed_alias": "S03"
+  },
+  {
+    "side": 0,
+    "opponent": "round2",
+    "reference": "teacher_task",
+    "first_branch_kind": "actor",
+    "first_branch_step": 2,
+    "branch_attribution": "unknown",
+    "first_actor_request_components_differ": {
+      "farmer": false,
+      "hands": true,
+      "market": false
+    },
+    "eligible_turns": 3,
+    "actor_observation_or_configuration_mismatch_turns": 0,
+    "zero_both_selection_record_turns": 0,
+    "input_difference_turns": 0,
+    "selection_record_count_difference_turns": 0,
+    "equal_recorded_choices_turns": 2,
+    "choice_difference_turns": 1,
+    "choice_difference_same_actor_request_turns": 0,
+    "choice_difference_different_actor_request_turns": 1,
+    "choice_difference_same_request_same_task_multiset_turns": 0,
+    "matched_context_selection_records": 14,
+    "teacher_label_consistent_selection_records": 14,
+    "teacher_label_disagreement_selection_records": 0,
+    "candidate_teacher_agreement_selection_records": 13,
+    "reference_teacher_agreement_selection_records": 14,
+    "first_choice_difference": {
+      "step": 2,
+      "selection_record_index": 5,
+      "candidate_op": "PLANT",
+      "reference_op": "PLANT",
+      "same_unit": false,
+      "same_target": true,
+      "candidate_request_kind": "move",
+      "reference_request_kind": "move",
+      "selected_unit_request_equal": true,
+      "complete_actor_request_equal": false
+    },
+    "choice_difference_at_branch": true,
+    "post_branch_windows": {
+      "1": {
+        "state_index": 3,
+        "own_bank_delta_changed": false,
+        "opponent_bank_delta_changed": false,
+        "margin_delta_changed": false,
+        "actions_elapsed": 1,
+        "observation_equal": false
+      },
+      "24": {
+        "state_index": 26,
+        "own_bank_delta_changed": true,
+        "opponent_bank_delta_changed": false,
+        "margin_delta_changed": true,
+        "actions_elapsed": 24,
+        "observation_equal": false
+      }
+    },
+    "seed_alias": "S03"
+  },
+  {
+    "side": 1,
+    "opponent": "round2",
+    "reference": "unweighted",
+    "first_branch_kind": "actor",
+    "first_branch_step": 2,
+    "branch_attribution": "unknown",
+    "first_actor_request_components_differ": {
+      "farmer": false,
+      "hands": true,
+      "market": false
+    },
+    "eligible_turns": 3,
+    "actor_observation_or_configuration_mismatch_turns": 0,
+    "zero_both_selection_record_turns": 0,
+    "input_difference_turns": 0,
+    "selection_record_count_difference_turns": 0,
+    "equal_recorded_choices_turns": 2,
+    "choice_difference_turns": 1,
+    "choice_difference_same_actor_request_turns": 0,
+    "choice_difference_different_actor_request_turns": 1,
+    "choice_difference_same_request_same_task_multiset_turns": 0,
+    "matched_context_selection_records": 14,
+    "teacher_label_consistent_selection_records": 14,
+    "teacher_label_disagreement_selection_records": 0,
+    "candidate_teacher_agreement_selection_records": 13,
+    "reference_teacher_agreement_selection_records": 14,
+    "first_choice_difference": {
+      "step": 2,
+      "selection_record_index": 5,
+      "candidate_op": "PLANT",
+      "reference_op": "PLANT",
+      "same_unit": false,
+      "same_target": true,
+      "candidate_request_kind": "move",
+      "reference_request_kind": "move",
+      "selected_unit_request_equal": true,
+      "complete_actor_request_equal": false
+    },
+    "choice_difference_at_branch": true,
+    "post_branch_windows": {
+      "1": {
+        "state_index": 3,
+        "own_bank_delta_changed": false,
+        "opponent_bank_delta_changed": false,
+        "margin_delta_changed": false,
+        "actions_elapsed": 1,
+        "observation_equal": false
+      },
+      "24": {
+        "state_index": 26,
+        "own_bank_delta_changed": true,
+        "opponent_bank_delta_changed": false,
+        "margin_delta_changed": true,
+        "actions_elapsed": 24,
+        "observation_equal": false
+      }
+    },
+    "seed_alias": "S03"
+  },
+  {
+    "side": 1,
+    "opponent": "round2",
+    "reference": "teacher_task",
+    "first_branch_kind": "actor",
+    "first_branch_step": 2,
+    "branch_attribution": "unknown",
+    "first_actor_request_components_differ": {
+      "farmer": false,
+      "hands": true,
+      "market": false
+    },
+    "eligible_turns": 3,
+    "actor_observation_or_configuration_mismatch_turns": 0,
+    "zero_both_selection_record_turns": 0,
+    "input_difference_turns": 0,
+    "selection_record_count_difference_turns": 0,
+    "equal_recorded_choices_turns": 2,
+    "choice_difference_turns": 1,
+    "choice_difference_same_actor_request_turns": 0,
+    "choice_difference_different_actor_request_turns": 1,
+    "choice_difference_same_request_same_task_multiset_turns": 0,
+    "matched_context_selection_records": 14,
+    "teacher_label_consistent_selection_records": 14,
+    "teacher_label_disagreement_selection_records": 0,
+    "candidate_teacher_agreement_selection_records": 13,
+    "reference_teacher_agreement_selection_records": 14,
+    "first_choice_difference": {
+      "step": 2,
+      "selection_record_index": 5,
+      "candidate_op": "PLANT",
+      "reference_op": "PLANT",
+      "same_unit": false,
+      "same_target": true,
+      "candidate_request_kind": "move",
+      "reference_request_kind": "move",
+      "selected_unit_request_equal": true,
+      "complete_actor_request_equal": false
+    },
+    "choice_difference_at_branch": true,
+    "post_branch_windows": {
+      "1": {
+        "state_index": 3,
+        "own_bank_delta_changed": false,
+        "opponent_bank_delta_changed": false,
+        "margin_delta_changed": false,
+        "actions_elapsed": 1,
+        "observation_equal": false
+      },
+      "24": {
+        "state_index": 26,
+        "own_bank_delta_changed": true,
+        "opponent_bank_delta_changed": false,
+        "margin_delta_changed": true,
+        "actions_elapsed": 24,
+        "observation_equal": false
+      }
+    },
+    "seed_alias": "S03"
+  }
+]
