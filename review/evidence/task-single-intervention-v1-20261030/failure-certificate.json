@@ -1,0 +1,44 @@
+{
+  "schema": "single-task-intervention-failure-v1",
+  "registration_commit": "4593f86eaae8a49048d5780f88e2549a19378ffd",
+  "passed": false,
+  "retry_allowed": false,
+  "case": "S01 market seat 0; previously consumed development role",
+  "failure_phase": "control trace comparison before official replay and before intervention",
+  "error_type": "ValueError",
+  "observed_outer_exit_code": 1,
+  "control_worker_self_report": {
+    "passed": true,
+    "states": 720,
+    "action_turns": 719,
+    "agent_errors": 0
+  },
+  "control_job_self_report": {
+    "passed": true,
+    "exit_code": 0,
+    "launcher_reaped": true,
+    "job_members_zero": true,
+    "cleanup_error": null
+  },
+  "control_vs_history_independent_read_only_check": {
+    "semantic_states_equal": 720,
+    "ordered_requests_equal": 1438,
+    "both_inventory_and_shed_order_checked": true,
+    "terminal_done_and_rewards_equal": true
+  },
+  "trace_independent_read_only_check": {
+    "total_rows": 719,
+    "raw_different_rows": 45,
+    "different_inference_seconds_values": 168,
+    "stable_rows_equal": 719,
+    "stable_filter": "remove inference_seconds only"
+  },
+  "posthoc_does_not_retroactively_accept_attempt": true,
+  "control_replay_transitions": 0,
+  "intervention_started": false,
+  "live_official_transitions_reported": 719,
+  "training_updates": 0,
+  "gpu_operations": 0,
+  "repair_scope": "Use the existing stable trace filter in both control and prefix comparisons; retain ordered comparison of remaining fields.",
+  "limitations": "Worker and Job cleanup are program reports. Independent audit reread saved data, not the official engine; raw inputs remain private."
+}

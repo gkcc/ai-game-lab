@@ -739,3 +739,11 @@ d1/d2/d3源码快照及哈希全部保留，未放宽允许映像或父子链约
 23 项针对性回归及独立子代理预审通过；比赛子进程使用已验证的 NUL 句柄及 Windows Job，复演在外层运行器执行。当前仅登记源码、目标和停止条件，尚未准备真实输入或运行新比赛。该场景及历史收益已知，是单个开发案例，不是新留出测试；官方状态相关随机流和对手反馈均属于可能的后续影响，不支持显著性或泛化结论。
 
 [实验说明](../kaggriculture/learning/task_single_intervention_v1/README.zh-CN.md) | [脱敏登记](evidence/task-single-intervention-v1-20261030/registration.json)
+
+### 单次干预首个尝试：控制 trace 比较失败
+
+登记提交 `4593f86` 后，控制局 worker 自报完成 720 个状态、719 次动作及双方 `DONE`，Job 自报回收、成员归零；外层进程实际退出码为 1。程序在 `trace_control` 比较原始 trace 时遇到 `inference_seconds` 波动而停止，尚未运行控制局官方复演或干预组，旧尝试按登记保留且不重试。
+
+独立子代理只读核对两份 Replay：720 帧语义状态、双方背包与仓库顺序、1,438 条有序请求及终局奖励一致；两份 trace 的 45 行原始内容有差异，递归仅移除 `inference_seconds` 后 719 行有序一致。这是事后诊断，不追认原尝试通过。另发现干预前缀也直接比较原始 trace，修复必须覆盖两处；本次无训练或 GPU 运算。
+
+[脱敏失败证书](evidence/task-single-intervention-v1-20261030/failure-certificate.json)
