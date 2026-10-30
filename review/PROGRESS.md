@@ -939,3 +939,13 @@ Windows 和 WSL 的强制 CPU 隔离复合探针各通过 1 项；一名独立�
 Windows 与 WSL 强制 CPU 的历史绑定各 9 项、评分桥各 11 项合成回归通过；独立子代理另以合成私有摘要只读核对了公开 Git 的四份历史证据，并复核模型快照、布局和输入隔离。WSL 导入层已把两个新包及历史绑定的实际依赖纳入来源检查；更新后的两端隔离复合测试各通过 1 项，另有缺模块、错摘要和虚拟影子反例。各检查均未加载真实训练数据、模型文件或使用 GPU，不证明正式训练、部署重载或独立比赛收益。
 
 [历史绑定](../kaggriculture/learning/task_pair_history_binding_v1/README.zh-CN.md) | [部署评分桥](../kaggriculture/learning/task_pair_numpy_scorer_v1/README.zh-CN.md) | [WSL 导入层](../kaggriculture/learning/task_pair_wsl_import_v1/README.zh-CN.md)
+
+### 两臂任务 BC：合成内存串联
+
+新增内存组合入口，把已认证训练映射、模型快照、共同批次与两臂更新连接到设备参数回传、内存检查点导出，再分别对基线／控制臂／辅助臂及三个开发来源计算 all／unseen 指标。模型和掩码在外部回调前复制；入口不自行认证真实来源或设备。生产形状分支固定 64×256，只有独立辅助梯度全局范数严格大于 `1e-8` 的更新至少达到 32 次才允许导出；该控制分支目前只做注入反例，尚未执行实际 64 步。
+
+Windows 与 WSL 强制 CPU 各 6 项合成回归通过：生产形状的玩具网络完成两臂各两次、每批八组更新，经 host 桥和内存导出后分别计算三来源结果；该合成环境下逐组 logits 和首位 argmax 与原 `TaskNetwork.score` 一致。独立复审指出：若调用者把条件旧／新来源及预期簇整体交换，内存接口本身不能识别，真实入口必须按预先认证的档案及掩码顺序绑定。内存构造评分对象未调用真实 `TaskNetwork(path, sha)`，不证明磁盘重载；当前 WSL 导入守卫也尚未纳入这个新包，不能据此启动正式训练。
+
+本阶段只使用合成数据及 CPU，没有读取真实模型或新增 GPU 训练和比赛；既有开发来源及 unseen 子集不能视为独立竞技测试。真实入口、进程清理、私有结果写入和独立留出评估仍需另行完成。
+
+[合成内存串联和边界](../kaggriculture/learning/task_pair_memory_pipeline_v1/README.zh-CN.md)
