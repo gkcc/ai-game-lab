@@ -1063,3 +1063,9 @@ Windows 和 WSL 分别通过导入守卫 1 项、训练入口 17 项、Windows �
 固定代码及事后范围 `e796cca` 后，仅分析已接受的同一历史种子、市场对手与 0 席两局。两条 trace 各读完 719 回合；首个可比任务选择分歧出现在动作索引 221：相同记录输入下都是浇水同一目标，选择单位不同；己方完整提交请求不同、对手请求相同。严格共同历史匹配 642 条记录，包含分歧记录。独立子代理用另一套只读逻辑核对回放、trace 和账目，结果一致。两局自身净收益差 +40、现金差 +63，不能把差额归因到该分歧，也不能据此认定模型普遍提升。原始失败入口没有重跑，旧失败原因仍未知；没有新比赛、官方转移、训练或 GPU 运算。
 
 详见[范围与限制](evidence/task-pair-saved-compare-v1-20261031/REGISTRATION.zh-CN.md)及[脱敏结果](evidence/task-pair-saved-compare-v1-20261031/RESULTS.zh-CN.md)。
+
+### 两任务模型对 round2：8 场已消费种子开发对照
+
+事前登记 `7ab3f32` 后，以两个已消费种子、双方席位运行 baseline/control 共 8 场；每场官方完整对局及 719 步主复演、Job 清理和逐场验收通过。四个配对的自身及对手净收益、现金差、得分、销量和销售收入均相同；平均自身增量 0，不满足事前大于零的开发筛查。每对同输入首选任务在 step 15 已不同，但当回合完整请求相同；完整请求首次分歧分别在 step 268 和 343。两名独立子代理只读核验收据及完整回放／trace，结果一致；没有额外官方复演、训练或 GPU 运算。旧失败哈希和默认 Bot 保留，不消耗新留出种子。
+
+详见[事前登记](evidence/task-pair-round2-compare-v1-20261031/REGISTRATION.zh-CN.md)、[脱敏结果](evidence/task-pair-round2-compare-v1-result-20261031/RESULTS.zh-CN.md)与[独立复核范围](evidence/task-pair-round2-compare-v1-result-20261031/REVIEW.zh-CN.md)。
