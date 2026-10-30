@@ -1,0 +1,99 @@
+{
+  "schema": "task-pair-synthetic-update-receipt-v1",
+  "scope": {
+    "inputs": "synthetic_only",
+    "jax_platform": "cpu",
+    "real_data_read": false,
+    "real_checkpoint_loaded": false,
+    "real_training": false,
+    "new_games": false,
+    "system_wide_gpu_monitoring": false
+  },
+  "first_wsl_suite_observation": {
+    "failed_test": "test_bucketed_microbatch_accumulation_matches_whole_batch",
+    "parameter_difference": "not_recorded_by_first_process_wrapper",
+    "original_uncommitted_test_snapshot_retained": false,
+    "test_process_exit_code": 1,
+    "dedicated_raw_log_file_retained": false,
+    "limited_failure_summary_in_private_tool_output": true
+  },
+  "targeted_later_reproduction": {
+    "same_test_name": true,
+    "steps": 2,
+    "synthetic_max_parameter_absolute_difference": 9.3102455e-05,
+    "does_not_establish_first_process_value": true,
+    "test_process_exit_code": 1,
+    "wrapper_exit_code": 0,
+    "dedicated_raw_log_file_retained": false,
+    "sanitized_reproduction_trace_in_private_tool_output": true
+  },
+  "separate_gradient_probe": {
+    "synthetic_max_leaf_gradient_absolute_difference": 1.1175870895385742e-08,
+    "synthetic_bias_whole": -1.4901161193847656e-08,
+    "synthetic_bias_split": -9.313225746154785e-09,
+    "fixture_reused": true,
+    "probe_process_exit_code": 0,
+    "wrapper_exit_code": 0
+  },
+  "independent_reviews": {
+    "wsl_synthetic_gradient_reproductions": 2,
+    "float64_reference_reviewer_reports_theoretical_zero": true,
+    "scope": "synthetic fixtures; not an independent full game or model implementation"
+  },
+  "current_regressions": {
+    "windows_cpu": {
+      "tests": 61,
+      "exit_code": 0,
+      "jax": "0.11.2",
+      "optax": "0.2.8",
+      "numpy": "2.5.4"
+    },
+    "wsl_cpu_new_components": {
+      "jax": "0.4.38",
+      "optax": "0.2.4",
+      "numpy": "2.5.4",
+      "current_distinct_test_cases": 21,
+      "evidence_batches": [
+        {
+          "executed_cases": 20,
+          "subprocesses": 4,
+          "exit_codes_all_zero": true,
+          "current_sources_retained": [
+            "recompute"
+          ]
+        },
+        {
+          "executed_cases": 7,
+          "subprocesses": 2,
+          "exit_codes_all_zero": true,
+          "current_sources_retained": [
+            "packing"
+          ]
+        },
+        {
+          "executed_cases": 13,
+          "subprocesses": 2,
+          "exit_codes_all_zero": true,
+          "current_sources_retained": [
+            "fit_core",
+            "pipeline"
+          ]
+        }
+      ],
+      "successful_test_executions_across_batches": 40
+    },
+    "two_cpu_devices_for_placement_case": true,
+    "skips": 0,
+    "control_reference_reuses_objective": true
+  },
+  "interpretation": "Same-parameter gradient differences are small for this synthetic fixture; Adam may amplify near-zero float32 residuals. Fixed grouping, software and device are required for reproducibility; no cross-group or cross-device bitwise equivalence is claimed.",
+  "current_source_sha256": {
+    "fit_core.py": "5b45fdf55143b7f4f709e9c9f1c026ebe47ed994dbe4ecb0f4f7ab5259466c0f",
+    "test_fit_core.py": "63481ee9a23f7ee9b2cafdf84330ed1731fc21885901f8cd047aa7db298a160c",
+    "packing.py": "161d3fc91f785111a50b98a8f7aa37002a3cd40f24475a6b18b96313e58b69f7",
+    "test_packing.py": "744dfa0a32b793874f5c3f28e8b02047873cf3c3db88d285b0fc10ebe60fec03",
+    "test_pipeline.py": "7c95715d771e0aa3b83e2627ffdecee8795cfcda97023245d272b52c93b1e1c0",
+    "recompute.py": "2839600cf7564ff998ef7b8140ffd9fadbbe2944352bb2418001442a72167e55",
+    "test_recompute.py": "185f69b00cc209d1129ef8270a41d1ef810d930b492894a016595e0b51dd31b4"
+  }
+}

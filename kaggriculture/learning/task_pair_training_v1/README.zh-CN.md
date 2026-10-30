@@ -24,3 +24,20 @@ python -B -I kaggriculture/learning/task_pair_training_v1/test_masks.py
 ```
 
 JAX 已安装时，损失及目标函数的合成回归还在 CPU 检查梯度；如果依赖不存在，相关测试会明确跳过。GPU 真实训练及部署重载一致性必须由未来登记的真实执行另行证明。
+
+## 源行与两臂更新的合成检查
+
+`packing.py` 使用现有的完整候选分桶和填充代码，再按编号从原数组重建每个真实行的归一化特征、标签、类别权重、候选及同目标掩码，拒绝源行或任务错配；其输入仍必须先经过完整来源认证。`fit_core.py` 为每个计划批只打包一次并复制共享快照，核验所有编号恰好出现一次，两个 fresh Adam 分别计算完整候选交叉熵，实验臂再加条件工人梯度；各项按有效批分母累计后分别裁剪、更新。更新前同步检查损失、每片梯度、参数和优化器状态，更新后也检查状态，并记录独立辅助梯度与权重变化的私有布尔证据。它接受显式设备，但不自行证明设备符合登记的 GPU，也不负责进程监管、源认证、正式预算、模型保存或比赛。
+
+`recompute.py` 只比较传入的重新计算和旧快照掩码；相同内容的分片互换、双方同时误传同一对象或同时截短，单凭这个函数无法发现。未来入口须按已认证的原始数组及长度独立生成新掩码、按固定旧／新顺序读取旧文件，再做逐位比较并固定新清单摘要；不能通过现场自算旧摘要证明旧文件从未变化。
+
+初次 WSL CPU 合成测试仅观察到退出码 1 和分批等价测试失败；其原始日志与未提交的旧测试源码快照未单独保存。随后针对同一测试的复现和独立探针发现：该示例第二层偏置的理论梯度为零，偏置梯度差约 5.6e-9、各梯度叶的最大差约 1.12e-8，Adam 的 1e-8 数值稳定项会放大这些 float32 累加残差；两步后观察到最大参数差约 9.31e-5。不能把这些数值回填为首个进程的直接记录。该现象不证明分母或梯度遗漏，也不能宣称不同分批或硬件的参数逐位相同。现有回归保留近零示例，在相同参数点比较损失及梯度；另使用跨候选 ReLU 门控不同的示例检查更新，并分别以相同分批顺序核对独立 Adam。真实实验的两臂必须使用同一冻结分批方案及版本，结果仍依赖数值实现。
+
+下面这些额外测试只使用合成数据，显式选择 CPU；双 CPU 设备回归需要进程内设置 `JAX_PLATFORMS=cpu` 和 `XLA_FLAGS=--xla_force_host_platform_device_count=2`，没有第二设备时该项会跳过：
+
+```text
+python -B -I kaggriculture/learning/task_pair_training_v1/test_packing.py
+python -B -I kaggriculture/learning/task_pair_training_v1/test_fit_core.py
+python -B -I kaggriculture/learning/task_pair_training_v1/test_pipeline.py
+python -B -I kaggriculture/learning/task_pair_training_v1/test_recompute.py
+```
