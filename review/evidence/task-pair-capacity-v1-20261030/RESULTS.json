@@ -1,0 +1,333 @@
+{
+  "bins": [
+    {
+      "callbacks": 100,
+      "cumulative": {
+        "controller_calls": 100,
+        "crop_forwards": 168,
+        "crop_rows": 168,
+        "gate_evaluations": 0,
+        "task_forwards": 538,
+        "task_rows": 30373,
+        "teacher_proposals": 0
+      },
+      "first_callback_step": 0,
+      "last_callback_step": 99,
+      "metrics": {
+        "crop_forwards": {
+          "max": 7,
+          "mean": 1.68,
+          "median": 0.0,
+          "p95_nearest_rank": 6,
+          "total": 168
+        },
+        "crop_rows": {
+          "max": 7,
+          "mean": 1.68,
+          "median": 0.0,
+          "p95_nearest_rank": 6,
+          "total": 168
+        },
+        "task_forwards": {
+          "max": 8,
+          "mean": 5.38,
+          "median": 6.0,
+          "p95_nearest_rank": 8,
+          "total": 538
+        },
+        "task_rows": {
+          "max": 644,
+          "mean": 303.73,
+          "median": 342.5,
+          "p95_nearest_rank": 636,
+          "total": 30373
+        },
+        "total_rows": {
+          "max": 651,
+          "mean": 305.41,
+          "median": 346.0,
+          "p95_nearest_rank": 638,
+          "total": 30541
+        }
+      },
+      "remaining_input_rows": 129459
+    },
+    {
+      "callbacks": 100,
+      "cumulative": {
+        "controller_calls": 200,
+        "crop_forwards": 281,
+        "crop_rows": 281,
+        "gate_evaluations": 0,
+        "task_forwards": 1126,
+        "task_rows": 58755,
+        "teacher_proposals": 0
+      },
+      "first_callback_step": 100,
+      "last_callback_step": 199,
+      "metrics": {
+        "crop_forwards": {
+          "max": 5,
+          "mean": 1.13,
+          "median": 0.0,
+          "p95_nearest_rank": 4,
+          "total": 113
+        },
+        "crop_rows": {
+          "max": 5,
+          "mean": 1.13,
+          "median": 0.0,
+          "p95_nearest_rank": 4,
+          "total": 113
+        },
+        "task_forwards": {
+          "max": 8,
+          "mean": 5.88,
+          "median": 6.0,
+          "p95_nearest_rank": 8,
+          "total": 588
+        },
+        "task_rows": {
+          "max": 644,
+          "mean": 283.82,
+          "median": 280.0,
+          "p95_nearest_rank": 599,
+          "total": 28382
+        },
+        "total_rows": {
+          "max": 647,
+          "mean": 284.95,
+          "median": 281.0,
+          "p95_nearest_rank": 601,
+          "total": 28495
+        }
+      },
+      "remaining_input_rows": 100964
+    },
+    {
+      "callbacks": 100,
+      "cumulative": {
+        "controller_calls": 300,
+        "crop_forwards": 366,
+        "crop_rows": 366,
+        "gate_evaluations": 0,
+        "task_forwards": 1679,
+        "task_rows": 85340,
+        "teacher_proposals": 0
+      },
+      "first_callback_step": 200,
+      "last_callback_step": 299,
+      "metrics": {
+        "crop_forwards": {
+          "max": 5,
+          "mean": 0.85,
+          "median": 0.0,
+          "p95_nearest_rank": 3,
+          "total": 85
+        },
+        "crop_rows": {
+          "max": 5,
+          "mean": 0.85,
+          "median": 0.0,
+          "p95_nearest_rank": 3,
+          "total": 85
+        },
+        "task_forwards": {
+          "max": 8,
+          "mean": 5.53,
+          "median": 6.0,
+          "p95_nearest_rank": 8,
+          "total": 553
+        },
+        "task_rows": {
+          "max": 644,
+          "mean": 265.85,
+          "median": 238.0,
+          "p95_nearest_rank": 636,
+          "total": 26585
+        },
+        "total_rows": {
+          "max": 647,
+          "mean": 266.7,
+          "median": 239.5,
+          "p95_nearest_rank": 637,
+          "total": 26670
+        }
+      },
+      "remaining_input_rows": 74294
+    },
+    {
+      "callbacks": 100,
+      "cumulative": {
+        "controller_calls": 400,
+        "crop_forwards": 441,
+        "crop_rows": 441,
+        "gate_evaluations": 0,
+        "task_forwards": 2260,
+        "task_rows": 113268,
+        "teacher_proposals": 0
+      },
+      "first_callback_step": 300,
+      "last_callback_step": 399,
+      "metrics": {
+        "crop_forwards": {
+          "max": 5,
+          "mean": 0.75,
+          "median": 0.0,
+          "p95_nearest_rank": 3,
+          "total": 75
+        },
+        "crop_rows": {
+          "max": 5,
+          "mean": 0.75,
+          "median": 0.0,
+          "p95_nearest_rank": 3,
+          "total": 75
+        },
+        "task_forwards": {
+          "max": 8,
+          "mean": 5.81,
+          "median": 6.0,
+          "p95_nearest_rank": 8,
+          "total": 581
+        },
+        "task_rows": {
+          "max": 636,
+          "mean": 279.28,
+          "median": 280.0,
+          "p95_nearest_rank": 588,
+          "total": 27928
+        },
+        "total_rows": {
+          "max": 641,
+          "mean": 280.03,
+          "median": 282.5,
+          "p95_nearest_rank": 591,
+          "total": 28003
+        }
+      },
+      "remaining_input_rows": 46291
+    },
+    {
+      "callbacks": 100,
+      "cumulative": {
+        "controller_calls": 500,
+        "crop_forwards": 530,
+        "crop_rows": 530,
+        "gate_evaluations": 0,
+        "task_forwards": 2801,
+        "task_rows": 137061,
+        "teacher_proposals": 0
+      },
+      "first_callback_step": 400,
+      "last_callback_step": 499,
+      "metrics": {
+        "crop_forwards": {
+          "max": 5,
+          "mean": 0.89,
+          "median": 0.0,
+          "p95_nearest_rank": 4,
+          "total": 89
+        },
+        "crop_rows": {
+          "max": 5,
+          "mean": 0.89,
+          "median": 0.0,
+          "p95_nearest_rank": 4,
+          "total": 89
+        },
+        "task_forwards": {
+          "max": 8,
+          "mean": 5.41,
+          "median": 6.0,
+          "p95_nearest_rank": 8,
+          "total": 541
+        },
+        "task_rows": {
+          "max": 644,
+          "mean": 237.93,
+          "median": 196.0,
+          "p95_nearest_rank": 588,
+          "total": 23793
+        },
+        "total_rows": {
+          "max": 647,
+          "mean": 238.82,
+          "median": 200.0,
+          "p95_nearest_rank": 589,
+          "total": 23882
+        }
+      },
+      "remaining_input_rows": 22409
+    },
+    {
+      "callbacks": 80,
+      "cumulative": {
+        "controller_calls": 580,
+        "crop_forwards": 589,
+        "crop_rows": 589,
+        "gate_evaluations": 0,
+        "task_forwards": 3241,
+        "task_rows": 159200,
+        "teacher_proposals": 0
+      },
+      "first_callback_step": 500,
+      "last_callback_step": 579,
+      "metrics": {
+        "crop_forwards": {
+          "max": 5,
+          "mean": 0.7375,
+          "median": 0.0,
+          "p95_nearest_rank": 4,
+          "total": 59
+        },
+        "crop_rows": {
+          "max": 5,
+          "mean": 0.7375,
+          "median": 0.0,
+          "p95_nearest_rank": 4,
+          "total": 59
+        },
+        "task_forwards": {
+          "max": 8,
+          "mean": 5.5,
+          "median": 6.0,
+          "p95_nearest_rank": 8,
+          "total": 440
+        },
+        "task_rows": {
+          "max": 644,
+          "mean": 276.7375,
+          "median": 264.5,
+          "p95_nearest_rank": 636,
+          "total": 22139
+        },
+        "total_rows": {
+          "max": 647,
+          "mean": 277.475,
+          "median": 264.5,
+          "p95_nearest_rank": 637,
+          "total": 22198
+        }
+      },
+      "remaining_input_rows": 211
+    }
+  ],
+  "callbacks_are_official_transitions": false,
+  "failed_callback_observed": false,
+  "fixed_limits": {
+    "controller_calls": 719,
+    "crop_forwards": 8000,
+    "gate_evaluations": 1,
+    "max_controller_calls_per_turn": 1,
+    "max_crop_forwards_per_turn": 64,
+    "max_neural_input_rows_per_turn": 4096,
+    "max_task_forwards_per_turn": 32,
+    "neural_input_rows": 160000,
+    "task_forwards": 4000,
+    "teacher_proposals": 1
+  },
+  "future_callbacks_observed": false,
+  "recorded_callbacks": 580,
+  "schema": "task-pair-capacity-v1"
+}
