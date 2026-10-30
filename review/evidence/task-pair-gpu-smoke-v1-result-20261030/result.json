@@ -1,0 +1,33 @@
+{
+  "schema": "task-pair-gpu-smoke-result-v1",
+  "registration_commit": "3158872d1c289a549854116b03aea874aa07fcb4",
+  "attempt_count": 1,
+  "host_process_exit_code": 0,
+  "registered_sources_before_and_after_match": true,
+  "supervisor_report": {
+    "arms_differ": true,
+    "aux_nonzero_updates": 2,
+    "both_arms_changed": true,
+    "child_exit_zero": true,
+    "fit_device_and_finite_checks_passed": true,
+    "guard_with_cleanup_within_budget": true,
+    "matching_success_receipt": true,
+    "owned_session_clean": true,
+    "paired_updates_each": 2,
+    "passed": true,
+    "unique_requested_gpu_matched": true
+  },
+  "target_name_fixed_privately_before_attempt": true,
+  "target_name_public": false,
+  "fixture": "synthetic only",
+  "real_checkpoint_weights_read": false,
+  "real_training_data_read": false,
+  "model_file_written": false,
+  "new_games": false,
+  "operator_observed_exit_and_sanitized_supervisor_report": true,
+  "raw_child_token_receipt_saved": false,
+  "independent_os_gpu_activity_monitor": false,
+  "source_identity_is_os_lock": false,
+  "proves_real_model_training": false,
+  "proves_official_game_gpu_acceleration_or_results": false
+}
