@@ -1069,3 +1069,7 @@ Windows 和 WSL 分别通过导入守卫 1 项、训练入口 17 项、Windows �
 事前登记 `7ab3f32` 后，以两个已消费种子、双方席位运行 baseline/control 共 8 场；每场官方完整对局及 719 步主复演、Job 清理和逐场验收通过。四个配对的自身及对手净收益、现金差、得分、销量和销售收入均相同；平均自身增量 0，不满足事前大于零的开发筛查。每对同输入首选任务在 step 15 已不同，但当回合完整请求相同；完整请求首次分歧分别在 step 268 和 343。两名独立子代理只读核验收据及完整回放／trace，结果一致；没有额外官方复演、训练或 GPU 运算。旧失败哈希和默认 Bot 保留，不消耗新留出种子。
 
 详见[事前登记](evidence/task-pair-round2-compare-v1-20261031/REGISTRATION.zh-CN.md)、[脱敏结果](evidence/task-pair-round2-compare-v1-result-20261031/RESULTS.zh-CN.md)与[独立复核范围](evidence/task-pair-round2-compare-v1-result-20261031/REVIEW.zh-CN.md)。
+
+### 已有对局的选择与完整动作关联
+
+固定事后分析范围 `07fb417` 后，只读两种子四组已有配对并核对 8 场旧验收；两臂每场 719 条 trace 均读至 EOF。共同历史中，S01 每席 5 个同输入选择差异回合中 4 个完整请求相同，S04 每席 10 个中 9 个相同；首次完整请求分叉分别在 268 与 343。分叉后下一状态的语义物理摘要不同，24 回合后和终局采样摘要相同；不能解释收益因果或推断教师标签可互换。独立子代理只读复核新汇总及旧公开账本，没有重读原始轨迹或重跑官方引擎。没有新比赛、模型前向、训练或 GPU 运算。[登记](evidence/task-pair-action-flow-v1-20261031/REGISTRATION.zh-CN.md)、[结果](evidence/task-pair-action-flow-v1-result-20261031/RESULTS.zh-CN.md)、[复核](evidence/task-pair-action-flow-v1-result-20261031/REVIEW.zh-CN.md)。
