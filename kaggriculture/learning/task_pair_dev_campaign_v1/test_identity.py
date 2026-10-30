@@ -1,5 +1,7 @@
 """Synthetic registration/identity failure cases; no filesystem or network IO."""
 import json
+import hashlib
+import io
 import unittest
 from unittest.mock import patch
 
@@ -57,6 +59,16 @@ class RegistrationIdentity(unittest.TestCase):
             with self.subTest(path=path), self.assertRaises(ValueError):
                 identity._relative(path)
         self.assertEqual(identity._relative('a/b.py'), 'a/b.py')
+
+    def test_empty_frozen_source_is_hashed_but_empty_document_is_rejected(self):
+        with patch.object(identity.Path, 'open', side_effect=lambda *_a, **_k: io.BytesIO(b'')):
+            self.assertEqual(identity._read('synthetic', allow_empty=True), b'')
+            with self.assertRaisesRegex(ValueError, 'Source size limit'):
+                identity._read('synthetic')
+            with patch.object(identity, '_file', return_value='synthetic'):
+                identity._check_digest('root', 'a/empty.py', hashlib.sha256(b'').hexdigest())
+                with self.assertRaisesRegex(ValueError, 'Source bytes changed'):
+                    identity._check_digest('root', 'a/empty.py', '0'*64)
 
     def test_historical_evidence_is_bound_to_its_original_commits(self):
         calls = []

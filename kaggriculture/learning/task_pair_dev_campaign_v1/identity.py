@@ -97,10 +97,10 @@ def _sha(raw):
     return hashlib.sha256(raw).hexdigest()
 
 
-def _read(path):
+def _read(path, *, allow_empty=False):
     with Path(path).open('rb') as stream:
         raw = stream.read(_MAX_SOURCE + 1)
-    _require(0 < len(raw) <= _MAX_SOURCE, 'Source size limit')
+    _require(len(raw) <= _MAX_SOURCE and (allow_empty or bool(raw)), 'Source size limit')
     return raw
 
 
@@ -122,7 +122,7 @@ def _file(root, relative):
 
 def _check_digest(root, relative, expected):
     _require(type(expected) is str and _HEX.fullmatch(expected) is not None, 'Invalid source digest')
-    _require(_sha(_read(_file(root, relative))) == expected, 'Source bytes changed')
+    _require(_sha(_read(_file(root, relative), allow_empty=True)) == expected, 'Source bytes changed')
 
 
 def _panel(reg):
@@ -195,7 +195,7 @@ def verify_public(*, repo, game_root, registration_commit):
     _require(type(source) is dict and _REQUIRED.issubset(source), 'Required sources are missing')
     for rel, digest in source.items():
         _check_digest(repo, rel, digest)
-        _require(_git(repo, 'show', registration_commit + ':' + rel) == _read(_file(repo, rel)),
+        _require(_git(repo, 'show', registration_commit + ':' + rel) == _read(_file(repo, rel), allow_empty=True),
                  'Registered source differs from committed bytes')
     _historical_lineage(repo, registration_commit)
 
