@@ -1,0 +1,32 @@
+{
+  "schema": "task-pair-mask-recheck-certificate-v1",
+  "registration_commit": "8b96b695192e64f48ead122961d03bd818bae612",
+  "previous_registration_commit": "27635128cee4653e661faeaa16aab28e3d78fc5f",
+  "result_sha256": "ee32a0df5347f73837938fd52f28595009f17de194baf32f4b74654ff3cc31dc",
+  "operator_observed_exit_code": 0,
+  "attempts": 1,
+  "read_only_registration_preflight_exit_code": 0,
+  "registered_source_count": 54,
+  "runner_self_report": {
+    "old_snapshot_matches_recomputation": true,
+    "fresh_masks_match_recomputation": true,
+    "historical_overlap_matches": true,
+    "previous_public_projection_matches": true,
+    "old_creation_time_proven": false
+  },
+  "independent_reviews": {
+    "first": "compared all nine current old/new mask pairs, manifests, lengths, hashes and historical result bytes",
+    "second": "verified new result and binding, all nine old/new pairs, historical Git bytes and default Bot identity",
+    "limitation": "neither reviewer independently recomputed masks from all source features; comparisons establish current snapshot consistency"
+  },
+  "source_recomputation": "same authenticated preflight implementation, separate execution",
+  "runtime_scope": {
+    "checkpoint_weights_loaded": false,
+    "model_inference": false,
+    "training": false,
+    "new_games": false,
+    "system_wide_monitoring": false
+  },
+  "private_mask_manifest_published": false,
+  "windows_project_filesystem_write_and_readback": "runner completed new exclusive writes and bounded readback; no crash durability or concurrency guarantee"
+}
