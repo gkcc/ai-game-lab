@@ -961,3 +961,19 @@ Windows 与 WSL 强制 CPU 各 6 项合成回归通过：生产形状的玩具�
 本阶段没有读取真实训练数据或模型，没有新增 GPU 训练或比赛；这些结果不能替代真实训练入口、私有文件保存、正式 GPU 执行或独立比赛的验收。
 
 [pidfd 守卫说明](../kaggriculture/learning/task_pair_pidfd_guard_v1/README.zh-CN.md) | [监督组件说明](../kaggriculture/learning/task_pair_supervision_v1/README.zh-CN.md)
+
+### 两臂任务 BC：跨系统入口候选与预导入修复
+
+新增尚未登记的训练子入口、Linux 监督启动器和 Windows 外层候选，并扩展项目导入守卫。独立审查发现旧训练模块可先被导入、随后才发现登记漏项；现将已识别模块、初始化器和有界源码摘要的检查移到项目绑定与训练模块导入前，并保留导入后的来源检查。这个预列集合不是对任意动态导入、解释器启动代码或同用户并发替换的保证。
+
+Windows 外层绑定私有合同和一次性 nonce，WSL 使用已登记 SHA 核验单次有界启动源码快照并执行同一字节；错误映射不能靠 Linux 脚本事后自检解决。子进程启动、计时或等待异常时，外层尝试向本次绑定的监督目录请求取消，不能确认清理时标记 unknown，不盲杀 WSL 或自动重试。监测和截止是采样，进程逃逸、宿主崩溃、解释器供应链与未记录的并发替换仍不受保证。
+
+Windows 和 WSL 分别通过导入守卫 1 项、训练入口 17 项、Windows 外层 17 项 CPU 合成回归；Linux 启动器的 10 项在 WSL 全部通过，在 Windows 通过 9 项、跳过 1 项 Linux 测试。实际 WSL 探针在错误启动源码摘要时拒绝执行，正确摘要时到达未登记拦截；Windows host 与 WSL 子入口的无登记调用均在私有数据访问前拒绝。源码摘要在合成探针中现场生成，不是正式登记。
+
+独立复审还在 Windows 和 WSL 各用一次性玩具 NPZ 验证原 `TaskNetwork(path, sha)` 的真实磁盘重载，核对权重、归一化、schema 和合成指标的筛查算术；公开元数据由探针注入，未重算模型预测，也未检查磁盘损坏反例。父启动器重算的是子进程保存指标的筛查门槛，不是独立预测或独立比赛。
+
+上述两次一次性探针使用了自有临时目录并确认各自目录删除，但调用时未关闭工具默认的旧运行扫描，扫描结果未保存，因此不能确认是否处理过其他符合条件的旧临时目录。此前被拒绝清理的目录不再重试；后续运行不得无记录地触发该扫描。
+
+本阶段没有读取真实训练数据或模型，没有新增 GPU 训练或官方比赛。正式登记、私有合同和真实跨层生命周期仍需另行固定和验收；开发筛查不能代表竞技收益。
+
+[训练子入口](../kaggriculture/learning/task_pair_wsl_training_v1/README.zh-CN.md) | [Linux 启动器](../kaggriculture/learning/task_pair_wsl_launch_v1/README.zh-CN.md) | [Windows 外层](../kaggriculture/learning/task_pair_wsl_launch_v1/HOST.zh-CN.md)

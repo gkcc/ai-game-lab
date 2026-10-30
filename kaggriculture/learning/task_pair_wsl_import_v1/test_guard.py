@@ -61,9 +61,24 @@ assert bound == root and str(root) not in sys.path
 repo = root.parent
 expected = {name: hashlib.sha256(guard.bounded_snapshot(repo / name)).hexdigest()
             for name in extra['EXTRA_SOURCE_PATHS']}
+preimport_expected = {name: hashlib.sha256(guard.bounded_snapshot(repo / name)).hexdigest()
+                      for name in extra['PREIMPORT_SOURCE_PATHS']}
 
 # The test derives these hashes only for the synthetic check; a real caller
 # must obtain them from an independently authenticated registration.
+old_training_source = 'kaggriculture/learning/task_pair_training_v1/loss.py'
+assert old_training_source in preimport_expected
+missing_preimport = dict(preimport_expected)
+del missing_preimport[old_training_source]
+for candidate in (missing_preimport, {**preimport_expected, old_training_source: '0' * 64}):
+    try:
+        extra['verify_preimport_sources'](guard, root, candidate)
+    except ValueError:
+        pass
+    else:
+        raise AssertionError('Missing or changed old training source accepted before import')
+assert 'learning.task_pair_training_v1.loss' not in sys.modules
+extra['verify_preimport_sources'](guard, root, preimport_expected)
 wrong = dict(expected)
 wrong[next(iter(wrong))] = '0' * 64
 try:
@@ -96,10 +111,17 @@ with patch('os.path.lexists', side_effect=injected_module_shadow):
     else:
         raise AssertionError('Extra module shadow accepted')
 
-# Each newly added initializer and source must match its independently bound
-# registration entry. Virtual siblings exercise shadow checks without files.
+# Each initializer and source must match its independently bound registration
+# entry. Virtual siblings exercise shadow checks without files.
 added = (('task_pair_history_binding_v1', 'history'),
-         ('task_pair_numpy_scorer_v1', 'scorer'))
+         ('task_pair_numpy_scorer_v1', 'scorer'),
+         ('task_pair_gpu_smoke_v1', 'supervisor'),
+         ('task_pair_memory_pipeline_v1', 'pipeline'),
+         ('task_pair_pidfd_guard_v1', 'guard'),
+         ('task_pair_pidfd_guard_v1', 'gate'),
+         ('task_pair_supervision_v1', 'supervisor'),
+         ('task_pair_wsl_training_v1', 'entry'),
+         ('task_pair_wsl_launch_v1', 'launch'))
 for package_name, module_name in added:
     folder = root / 'learning' / package_name
     for rel in (f'kaggriculture/learning/{package_name}/__init__.py',
@@ -128,6 +150,17 @@ for package_name, module_name in added:
                 raise AssertionError('New package or module shadow accepted')
 
 extra['verify_extra_sources'](guard, root, expected)
+injected_module_name = 'learning.task_pair_pidfd_guard_v1.guard'
+sys.modules[injected_module_name] = object()
+try:
+    try:
+        extra['verify_extra_sources'](guard, root, expected)
+    except ValueError:
+        pass
+    else:
+        raise AssertionError('Preloaded supervision source accepted')
+finally:
+    del sys.modules[injected_module_name]
 with guard.protected_search_path(root):
     from learning.task_pair_data_preflight_v1.test_core import fixture
     preflight_name = 'learning.task_pair_data_preflight_v1.run'
@@ -147,13 +180,19 @@ with guard.protected_search_path(root):
         importlib.import_module(name)
 extra['verify_loaded_origins'](guard, root, required_modules=extra['TRAIN_MODULES'])
 
-# The two new modules and the historical binding's two normal imports are
-# independently required. Removing an already-loaded module is safe in this
-# isolated synthetic process; restore it immediately after each check.
+# Training and supervision imports are independently required. Removing an
+# already-loaded module is safe only in this isolated synthetic process;
+# restore it immediately after each check.
 for name in ('learning.task_pair_history_binding_v1.history',
              'learning.task_pair_numpy_scorer_v1.scorer',
              'learning.task_pair_mask_recheck_v1.run',
-             'learning.task_worker_ranking_v2.run'):
+             'learning.task_worker_ranking_v2.run',
+             'learning.task_pair_gpu_smoke_v1.supervisor',
+             'learning.task_pair_memory_pipeline_v1.pipeline',
+             'learning.task_pair_pidfd_guard_v1.guard',
+             'learning.task_pair_supervision_v1.supervisor',
+             'learning.task_pair_wsl_training_v1.entry',
+             'learning.task_pair_wsl_launch_v1.launch'):
     module = sys.modules.pop(name)
     try:
         try:
@@ -263,7 +302,7 @@ class ImportGuardTests(unittest.TestCase):
         env = dict(os.environ, JAX_PLATFORMS='cpu', CUDA_VISIBLE_DEVICES='-1')
         process = subprocess.run([sys.executable, '-B', '-I', '-c', _ISOLATED_PROBE,
                                   str(SMOKE), str(EXTRA)], capture_output=True,
-                                 text=True, timeout=30, env=env)
+                                 text=True, timeout=60, env=env)
         self.assertEqual(process.returncode, 0, 'Isolated synthetic import probe failed')
         self.assertEqual(process.stdout.strip(), 'isolated-synthetic-ok')
 

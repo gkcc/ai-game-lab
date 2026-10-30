@@ -22,6 +22,7 @@ _BASE = 'kaggriculture/learning/'
 # historical binding and this additional guard. A future entry must still
 # authenticate its complete source set, including historical snapshots.
 _PACKAGES = {
+    'task_pair_gpu_smoke_v1': ('supervisor',),
     'task_worker_ranking_v1': ('run',),
     'task_worker_ranking_v2': ('run',),
     'task_worker_geometry_diagnostic_v1': ('archive_io',),
@@ -33,6 +34,11 @@ _PACKAGES = {
     'task_pair_history_binding_v1': ('history',),
     'task_pair_numpy_scorer_v1': ('scorer',),
     'task_pair_orchestration_v1': ('core',),
+    'task_pair_memory_pipeline_v1': ('pipeline',),
+    'task_pair_pidfd_guard_v1': ('gate', 'guard'),
+    'task_pair_supervision_v1': ('supervisor',),
+    'task_pair_wsl_training_v1': ('entry',),
+    'task_pair_wsl_launch_v1': ('launch',),
     'task_pair_wsl_import_v1': ('guard',),
 }
 _NAMESPACE = 'task_teacher_choice_bc_v1'
@@ -62,7 +68,28 @@ TRAIN_MODULES = LOAD_DATA_MODULES | frozenset((
     'learning.task_pair_host_export_v1.bridge', 'learning.task_pair_orchestration_v1.core',
     'learning.task_pair_history_binding_v1.history', 'learning.task_pair_numpy_scorer_v1.scorer',
     'learning.task_pair_mask_recheck_v1.run', 'learning.task_worker_ranking_v2.run',
+    'learning.task_pair_gpu_smoke_v1.supervisor', 'learning.task_pair_memory_pipeline_v1.pipeline',
+    'learning.task_pair_pidfd_guard_v1.guard', 'learning.task_pair_supervision_v1.supervisor',
+    'learning.task_pair_wsl_training_v1.entry', 'learning.task_pair_wsl_launch_v1.launch',
 ))
+
+# The module list is fixed before a future registration is written. The last
+# three are known project dependencies in callable code, not claims that every
+# conditional CLI branch or arbitrary dynamic import is covered. The caller
+# still authenticates the registration and all source blobs separately.
+PREIMPORT_MODULES = TRAIN_MODULES | frozenset((
+    'learning.task_dagger_once_v1.gpu_guard',
+    'learning.task_pair_data_preflight_v1.projection',
+    'learning.task_pair_training_v1.recompute',
+))
+_NAMESPACE_PACKAGES = frozenset(('learning', 'learning.' + _NAMESPACE))
+PREIMPORT_SOURCE_PATHS = EXTRA_SOURCE_PATHS | frozenset(
+    'kaggriculture/' + name.replace('.', '/') + '.py' for name in PREIMPORT_MODULES
+) | frozenset(
+    'kaggriculture/' + package.replace('.', '/') + '/__init__.py'
+    for package in (name.rpartition('.')[0] for name in PREIMPORT_MODULES)
+    if package not in _NAMESPACE_PACKAGES
+)
 
 
 def _present(path):
@@ -130,6 +157,24 @@ def verify_extra_sources(smoke_guard, root, expected_sha256):
             raise ValueError('Unexpected namespace initializer')
     for module in _NAMESPACE_MODULES:
         _module(root, _NAMESPACE, module, expected_sha256, smoke_guard)
+
+
+def verify_preimport_sources(smoke_guard, root, expected_sha256):
+    """Check registered fixed project sources before loading training modules.
+
+    The caller must authenticate the registration and Git/source identities
+    independently first; this bounded read is not a lock against replacement.
+    """
+    root = Path(root).resolve(strict=True)
+    if (type(expected_sha256) is not dict or set(expected_sha256) != PREIMPORT_SOURCE_PATHS
+            or any(type(value) is not str or _SHA.fullmatch(value) is None
+                   for value in expected_sha256.values())):
+        raise ValueError('Invalid preimport source identities')
+    for relative in sorted(PREIMPORT_SOURCE_PATHS):
+        path = root.parent / relative
+        if (path.resolve(strict=True) != path
+                or hashlib.sha256(smoke_guard.bounded_snapshot(path)).hexdigest() != expected_sha256[relative]):
+            raise ValueError('Registered preimport source differs')
 
 
 def verify_loaded_origins(smoke_guard, root, *, required_modules):
