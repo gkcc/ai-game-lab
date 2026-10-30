@@ -1,0 +1,937 @@
+{
+  "summaries": [
+    {
+      "opponent": "round2",
+      "policy": "merged",
+      "wins": 0,
+      "draws": 0,
+      "losses": 8,
+      "mean_net_profit": 31638.0,
+      "mean_opponent_net_profit": 43958.0,
+      "mean_margin": -12320.0,
+      "mean_score": 0.0
+    },
+    {
+      "opponent": "round2",
+      "policy": "unweighted",
+      "wins": 0,
+      "draws": 0,
+      "losses": 8,
+      "mean_net_profit": 32726.75,
+      "mean_opponent_net_profit": 41646.0,
+      "mean_margin": -8919.25,
+      "mean_score": 0.0
+    },
+    {
+      "opponent": "round2",
+      "policy": "teacher_task",
+      "wins": 6,
+      "draws": 0,
+      "losses": 2,
+      "mean_net_profit": 39979.75,
+      "mean_opponent_net_profit": 37562.0,
+      "mean_margin": 2417.75,
+      "mean_score": 0.75
+    },
+    {
+      "opponent": "market",
+      "policy": "merged",
+      "wins": 6,
+      "draws": 0,
+      "losses": 2,
+      "mean_net_profit": 41014.75,
+      "mean_opponent_net_profit": 40316.0,
+      "mean_margin": 698.75,
+      "mean_score": 0.75
+    },
+    {
+      "opponent": "market",
+      "policy": "unweighted",
+      "wins": 8,
+      "draws": 0,
+      "losses": 0,
+      "mean_net_profit": 40145.25,
+      "mean_opponent_net_profit": 38477.75,
+      "mean_margin": 1667.5,
+      "mean_score": 1.0
+    },
+    {
+      "opponent": "market",
+      "policy": "teacher_task",
+      "wins": 8,
+      "draws": 0,
+      "losses": 0,
+      "mean_net_profit": 41110.0,
+      "mean_opponent_net_profit": 38062.5,
+      "mean_margin": 3047.5,
+      "mean_score": 1.0
+    },
+    {
+      "opponent": "teacher",
+      "policy": "merged",
+      "wins": 0,
+      "draws": 0,
+      "losses": 8,
+      "mean_net_profit": 31143.5,
+      "mean_opponent_net_profit": 47423.75,
+      "mean_margin": -16280.25,
+      "mean_score": 0.0
+    },
+    {
+      "opponent": "teacher",
+      "policy": "unweighted",
+      "wins": 0,
+      "draws": 0,
+      "losses": 8,
+      "mean_net_profit": 32075.5,
+      "mean_opponent_net_profit": 45695.75,
+      "mean_margin": -13620.25,
+      "mean_score": 0.0
+    },
+    {
+      "opponent": "teacher",
+      "policy": "teacher_task",
+      "wins": 0,
+      "draws": 0,
+      "losses": 8,
+      "mean_net_profit": 38227.5,
+      "mean_opponent_net_profit": 41357.5,
+      "mean_margin": -3130.0,
+      "mean_score": 0.0
+    }
+  ],
+  "pairs": {
+    "unweighted": [
+      {
+        "seed_alias": "S01",
+        "opponent": "round2",
+        "side": 0,
+        "own_profit_difference": -2346.0,
+        "opponent_profit_difference": 2222.0,
+        "margin_difference": -4568.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed_alias": "S01",
+        "opponent": "round2",
+        "side": 1,
+        "own_profit_difference": -2346.0,
+        "opponent_profit_difference": 2222.0,
+        "margin_difference": -4568.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed_alias": "S01",
+        "opponent": "market",
+        "side": 0,
+        "own_profit_difference": 73.0,
+        "opponent_profit_difference": -26.0,
+        "margin_difference": 99.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed_alias": "S01",
+        "opponent": "market",
+        "side": 1,
+        "own_profit_difference": 73.0,
+        "opponent_profit_difference": -26.0,
+        "margin_difference": 99.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed_alias": "S01",
+        "opponent": "teacher",
+        "side": 0,
+        "own_profit_difference": -1953.0,
+        "opponent_profit_difference": 2015.0,
+        "margin_difference": -3968.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed_alias": "S01",
+        "opponent": "teacher",
+        "side": 1,
+        "own_profit_difference": -1953.0,
+        "opponent_profit_difference": 2015.0,
+        "margin_difference": -3968.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed_alias": "S02",
+        "opponent": "round2",
+        "side": 0,
+        "own_profit_difference": -650.0,
+        "opponent_profit_difference": 868.0,
+        "margin_difference": -1518.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed_alias": "S02",
+        "opponent": "round2",
+        "side": 1,
+        "own_profit_difference": -650.0,
+        "opponent_profit_difference": 868.0,
+        "margin_difference": -1518.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed_alias": "S02",
+        "opponent": "market",
+        "side": 0,
+        "own_profit_difference": 687.0,
+        "opponent_profit_difference": -86.0,
+        "margin_difference": 773.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed_alias": "S02",
+        "opponent": "market",
+        "side": 1,
+        "own_profit_difference": 687.0,
+        "opponent_profit_difference": -86.0,
+        "margin_difference": 773.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed_alias": "S02",
+        "opponent": "teacher",
+        "side": 0,
+        "own_profit_difference": -271.0,
+        "opponent_profit_difference": -87.0,
+        "margin_difference": -184.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed_alias": "S02",
+        "opponent": "teacher",
+        "side": 1,
+        "own_profit_difference": -271.0,
+        "opponent_profit_difference": -87.0,
+        "margin_difference": -184.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed_alias": "S03",
+        "opponent": "round2",
+        "side": 0,
+        "own_profit_difference": -1695.0,
+        "opponent_profit_difference": 1465.0,
+        "margin_difference": -3160.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed_alias": "S03",
+        "opponent": "round2",
+        "side": 1,
+        "own_profit_difference": -1695.0,
+        "opponent_profit_difference": 1465.0,
+        "margin_difference": -3160.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed_alias": "S03",
+        "opponent": "market",
+        "side": 0,
+        "own_profit_difference": -331.0,
+        "opponent_profit_difference": -890.0,
+        "margin_difference": 559.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed_alias": "S03",
+        "opponent": "market",
+        "side": 1,
+        "own_profit_difference": -331.0,
+        "opponent_profit_difference": -890.0,
+        "margin_difference": 559.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed_alias": "S03",
+        "opponent": "teacher",
+        "side": 0,
+        "own_profit_difference": -1490.0,
+        "opponent_profit_difference": 2008.0,
+        "margin_difference": -3498.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed_alias": "S03",
+        "opponent": "teacher",
+        "side": 1,
+        "own_profit_difference": -1490.0,
+        "opponent_profit_difference": 2008.0,
+        "margin_difference": -3498.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed_alias": "S04",
+        "opponent": "round2",
+        "side": 0,
+        "own_profit_difference": 336.0,
+        "opponent_profit_difference": 4693.0,
+        "margin_difference": -4357.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed_alias": "S04",
+        "opponent": "round2",
+        "side": 1,
+        "own_profit_difference": 336.0,
+        "opponent_profit_difference": 4693.0,
+        "margin_difference": -4357.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed_alias": "S04",
+        "opponent": "market",
+        "side": 0,
+        "own_profit_difference": 3049.0,
+        "opponent_profit_difference": 8355.0,
+        "margin_difference": -5306.0,
+        "score_difference": -1.0
+      },
+      {
+        "seed_alias": "S04",
+        "opponent": "market",
+        "side": 1,
+        "own_profit_difference": 3049.0,
+        "opponent_profit_difference": 8355.0,
+        "margin_difference": -5306.0,
+        "score_difference": -1.0
+      },
+      {
+        "seed_alias": "S04",
+        "opponent": "teacher",
+        "side": 0,
+        "own_profit_difference": -14.0,
+        "opponent_profit_difference": 2976.0,
+        "margin_difference": -2990.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed_alias": "S04",
+        "opponent": "teacher",
+        "side": 1,
+        "own_profit_difference": -14.0,
+        "opponent_profit_difference": 2976.0,
+        "margin_difference": -2990.0,
+        "score_difference": 0.0
+      }
+    ],
+    "teacher_task": [
+      {
+        "seed_alias": "S01",
+        "opponent": "round2",
+        "side": 0,
+        "own_profit_difference": -8778.0,
+        "opponent_profit_difference": 7526.0,
+        "margin_difference": -16304.0,
+        "score_difference": -1.0
+      },
+      {
+        "seed_alias": "S01",
+        "opponent": "round2",
+        "side": 1,
+        "own_profit_difference": -8778.0,
+        "opponent_profit_difference": 7526.0,
+        "margin_difference": -16304.0,
+        "score_difference": -1.0
+      },
+      {
+        "seed_alias": "S01",
+        "opponent": "market",
+        "side": 0,
+        "own_profit_difference": -1080.0,
+        "opponent_profit_difference": 178.0,
+        "margin_difference": -1258.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed_alias": "S01",
+        "opponent": "market",
+        "side": 1,
+        "own_profit_difference": -1080.0,
+        "opponent_profit_difference": 178.0,
+        "margin_difference": -1258.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed_alias": "S01",
+        "opponent": "teacher",
+        "side": 0,
+        "own_profit_difference": -7052.0,
+        "opponent_profit_difference": 5947.0,
+        "margin_difference": -12999.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed_alias": "S01",
+        "opponent": "teacher",
+        "side": 1,
+        "own_profit_difference": -7052.0,
+        "opponent_profit_difference": 5947.0,
+        "margin_difference": -12999.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed_alias": "S02",
+        "opponent": "round2",
+        "side": 0,
+        "own_profit_difference": -4902.0,
+        "opponent_profit_difference": 4442.0,
+        "margin_difference": -9344.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed_alias": "S02",
+        "opponent": "round2",
+        "side": 1,
+        "own_profit_difference": -4902.0,
+        "opponent_profit_difference": 4442.0,
+        "margin_difference": -9344.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed_alias": "S02",
+        "opponent": "market",
+        "side": 0,
+        "own_profit_difference": -797.0,
+        "opponent_profit_difference": 383.0,
+        "margin_difference": -1180.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed_alias": "S02",
+        "opponent": "market",
+        "side": 1,
+        "own_profit_difference": -797.0,
+        "opponent_profit_difference": 383.0,
+        "margin_difference": -1180.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed_alias": "S02",
+        "opponent": "teacher",
+        "side": 0,
+        "own_profit_difference": -3640.0,
+        "opponent_profit_difference": 2896.0,
+        "margin_difference": -6536.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed_alias": "S02",
+        "opponent": "teacher",
+        "side": 1,
+        "own_profit_difference": -3640.0,
+        "opponent_profit_difference": 2896.0,
+        "margin_difference": -6536.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed_alias": "S03",
+        "opponent": "round2",
+        "side": 0,
+        "own_profit_difference": -8479.0,
+        "opponent_profit_difference": 8304.0,
+        "margin_difference": -16783.0,
+        "score_difference": -1.0
+      },
+      {
+        "seed_alias": "S03",
+        "opponent": "round2",
+        "side": 1,
+        "own_profit_difference": -8479.0,
+        "opponent_profit_difference": 8304.0,
+        "margin_difference": -16783.0,
+        "score_difference": -1.0
+      },
+      {
+        "seed_alias": "S03",
+        "opponent": "market",
+        "side": 0,
+        "own_profit_difference": -486.0,
+        "opponent_profit_difference": -222.0,
+        "margin_difference": -264.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed_alias": "S03",
+        "opponent": "market",
+        "side": 1,
+        "own_profit_difference": -486.0,
+        "opponent_profit_difference": -222.0,
+        "margin_difference": -264.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed_alias": "S03",
+        "opponent": "teacher",
+        "side": 0,
+        "own_profit_difference": -8337.0,
+        "opponent_profit_difference": 8700.0,
+        "margin_difference": -17037.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed_alias": "S03",
+        "opponent": "teacher",
+        "side": 1,
+        "own_profit_difference": -8337.0,
+        "opponent_profit_difference": 8700.0,
+        "margin_difference": -17037.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed_alias": "S04",
+        "opponent": "round2",
+        "side": 0,
+        "own_profit_difference": -11208.0,
+        "opponent_profit_difference": 5312.0,
+        "margin_difference": -16520.0,
+        "score_difference": -1.0
+      },
+      {
+        "seed_alias": "S04",
+        "opponent": "round2",
+        "side": 1,
+        "own_profit_difference": -11208.0,
+        "opponent_profit_difference": 5312.0,
+        "margin_difference": -16520.0,
+        "score_difference": -1.0
+      },
+      {
+        "seed_alias": "S04",
+        "opponent": "market",
+        "side": 0,
+        "own_profit_difference": 1982.0,
+        "opponent_profit_difference": 8675.0,
+        "margin_difference": -6693.0,
+        "score_difference": -1.0
+      },
+      {
+        "seed_alias": "S04",
+        "opponent": "market",
+        "side": 1,
+        "own_profit_difference": 1982.0,
+        "opponent_profit_difference": 8675.0,
+        "margin_difference": -6693.0,
+        "score_difference": -1.0
+      },
+      {
+        "seed_alias": "S04",
+        "opponent": "teacher",
+        "side": 0,
+        "own_profit_difference": -9307.0,
+        "opponent_profit_difference": 6722.0,
+        "margin_difference": -16029.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed_alias": "S04",
+        "opponent": "teacher",
+        "side": 1,
+        "own_profit_difference": -9307.0,
+        "opponent_profit_difference": 6722.0,
+        "margin_difference": -16029.0,
+        "score_difference": 0.0
+      }
+    ]
+  },
+  "seed_clusters": {
+    "unweighted": [
+      {
+        "seed_alias": "S01",
+        "own_profit_difference": -1408.6666666666667,
+        "opponent_profit_difference": 1403.6666666666665,
+        "margin_difference": -2812.3333333333335,
+        "score_difference": 0.0
+      },
+      {
+        "seed_alias": "S02",
+        "own_profit_difference": -77.99999999999999,
+        "opponent_profit_difference": 231.66666666666666,
+        "margin_difference": -309.66666666666663,
+        "score_difference": 0.0
+      },
+      {
+        "seed_alias": "S03",
+        "own_profit_difference": -1172.0,
+        "opponent_profit_difference": 861.0,
+        "margin_difference": -2033.0,
+        "score_difference": 0.0
+      },
+      {
+        "seed_alias": "S04",
+        "own_profit_difference": 1123.6666666666667,
+        "opponent_profit_difference": 5341.333333333333,
+        "margin_difference": -4217.666666666667,
+        "score_difference": -0.3333333333333333
+      }
+    ],
+    "teacher_task": [
+      {
+        "seed_alias": "S01",
+        "own_profit_difference": -5636.666666666666,
+        "opponent_profit_difference": 4550.333333333333,
+        "margin_difference": -10187.0,
+        "score_difference": -0.3333333333333333
+      },
+      {
+        "seed_alias": "S02",
+        "own_profit_difference": -3113.0,
+        "opponent_profit_difference": 2573.666666666667,
+        "margin_difference": -5686.666666666666,
+        "score_difference": 0.0
+      },
+      {
+        "seed_alias": "S03",
+        "own_profit_difference": -5767.333333333334,
+        "opponent_profit_difference": 5594.0,
+        "margin_difference": -11361.333333333332,
+        "score_difference": -0.3333333333333333
+      },
+      {
+        "seed_alias": "S04",
+        "own_profit_difference": -6177.666666666667,
+        "opponent_profit_difference": 6903.0,
+        "margin_difference": -13080.666666666668,
+        "score_difference": -0.6666666666666666
+      }
+    ]
+  },
+  "per_opponent": {
+    "unweighted": {
+      "round2": {
+        "own_profit_difference": -1088.75,
+        "opponent_profit_difference": 2312.0,
+        "margin_difference": -3400.75,
+        "score_difference": 0.0
+      },
+      "market": {
+        "own_profit_difference": 869.5,
+        "opponent_profit_difference": 1838.25,
+        "margin_difference": -968.75,
+        "score_difference": -0.25
+      },
+      "teacher": {
+        "own_profit_difference": -932.0,
+        "opponent_profit_difference": 1728.0,
+        "margin_difference": -2660.0,
+        "score_difference": 0.0
+      }
+    },
+    "teacher_task": {
+      "round2": {
+        "own_profit_difference": -8341.75,
+        "opponent_profit_difference": 6396.0,
+        "margin_difference": -14737.75,
+        "score_difference": -0.75
+      },
+      "market": {
+        "own_profit_difference": -95.25,
+        "opponent_profit_difference": 2253.5,
+        "margin_difference": -2348.75,
+        "score_difference": -0.25
+      },
+      "teacher": {
+        "own_profit_difference": -7084.0,
+        "opponent_profit_difference": 6066.25,
+        "margin_difference": -13150.25,
+        "score_difference": 0.0
+      }
+    }
+  },
+  "overall": {
+    "unweighted": {
+      "own_profit_difference": -383.75,
+      "opponent_profit_difference": 1959.4166666666665,
+      "margin_difference": -2343.166666666667,
+      "score_difference": -0.08333333333333333
+    },
+    "teacher_task": {
+      "own_profit_difference": -5173.666666666667,
+      "opponent_profit_difference": 4905.25,
+      "margin_difference": -10078.916666666666,
+      "score_difference": -0.3333333333333333
+    }
+  },
+  "bootstrap_intervals": {
+    "unweighted": {
+      "own_profit_difference": [
+        -1290.3333333333335,
+        549.75
+      ],
+      "opponent_profit_difference": [
+        524.6666666666666,
+        4221.25
+      ],
+      "margin_difference": [
+        -3671.5,
+        -935.3333333333334
+      ],
+      "score_difference": [
+        -0.25,
+        0.0
+      ]
+    },
+    "teacher_task": {
+      "own_profit_difference": [
+        -6042.416666666667,
+        -3776.5833333333335
+      ],
+      "opponent_profit_difference": [
+        3328.75,
+        6314.833333333333
+      ],
+      "margin_difference": [
+        -12357.25,
+        -7105.333333333332
+      ],
+      "score_difference": [
+        -0.5833333333333333,
+        -0.08333333333333333
+      ]
+    }
+  },
+  "gates": {
+    "pair_own_min": -2000,
+    "pair_margin_min": -2000,
+    "seed_opponent_own_min": -1000,
+    "seed_opponent_margin_min": -1000,
+    "overall_own_min": 0,
+    "overall_margin_min": 0,
+    "overall_score_min": 0,
+    "bootstrap_seed": 2026102837,
+    "bootstrap_replicates": 10000,
+    "bootstrap_cluster": "whole_seed",
+    "bootstrap_shared_indices": true,
+    "positive_own_strict_min": 0,
+    "positive_margin_strict_min": 0,
+    "positive_requires_gate": true
+  },
+  "gate_failures": [
+    {
+      "scope": "pair",
+      "seed_alias": "S01",
+      "opponent": "round2",
+      "side": 0,
+      "metric": "own_profit_difference"
+    },
+    {
+      "scope": "pair",
+      "seed_alias": "S01",
+      "opponent": "round2",
+      "side": 0,
+      "metric": "margin_difference"
+    },
+    {
+      "scope": "pair",
+      "seed_alias": "S01",
+      "opponent": "round2",
+      "side": 1,
+      "metric": "own_profit_difference"
+    },
+    {
+      "scope": "pair",
+      "seed_alias": "S01",
+      "opponent": "round2",
+      "side": 1,
+      "metric": "margin_difference"
+    },
+    {
+      "scope": "pair",
+      "seed_alias": "S01",
+      "opponent": "teacher",
+      "side": 0,
+      "metric": "margin_difference"
+    },
+    {
+      "scope": "pair",
+      "seed_alias": "S01",
+      "opponent": "teacher",
+      "side": 1,
+      "metric": "margin_difference"
+    },
+    {
+      "scope": "pair",
+      "seed_alias": "S03",
+      "opponent": "round2",
+      "side": 0,
+      "metric": "margin_difference"
+    },
+    {
+      "scope": "pair",
+      "seed_alias": "S03",
+      "opponent": "round2",
+      "side": 1,
+      "metric": "margin_difference"
+    },
+    {
+      "scope": "pair",
+      "seed_alias": "S03",
+      "opponent": "teacher",
+      "side": 0,
+      "metric": "margin_difference"
+    },
+    {
+      "scope": "pair",
+      "seed_alias": "S03",
+      "opponent": "teacher",
+      "side": 1,
+      "metric": "margin_difference"
+    },
+    {
+      "scope": "pair",
+      "seed_alias": "S04",
+      "opponent": "round2",
+      "side": 0,
+      "metric": "margin_difference"
+    },
+    {
+      "scope": "pair",
+      "seed_alias": "S04",
+      "opponent": "round2",
+      "side": 1,
+      "metric": "margin_difference"
+    },
+    {
+      "scope": "pair",
+      "seed_alias": "S04",
+      "opponent": "market",
+      "side": 0,
+      "metric": "margin_difference"
+    },
+    {
+      "scope": "pair",
+      "seed_alias": "S04",
+      "opponent": "market",
+      "side": 1,
+      "metric": "margin_difference"
+    },
+    {
+      "scope": "pair",
+      "seed_alias": "S04",
+      "opponent": "teacher",
+      "side": 0,
+      "metric": "margin_difference"
+    },
+    {
+      "scope": "pair",
+      "seed_alias": "S04",
+      "opponent": "teacher",
+      "side": 1,
+      "metric": "margin_difference"
+    },
+    {
+      "scope": "seed_opponent",
+      "seed_alias": "S01",
+      "opponent": "round2",
+      "side": null,
+      "metric": "own_profit_difference"
+    },
+    {
+      "scope": "seed_opponent",
+      "seed_alias": "S01",
+      "opponent": "round2",
+      "side": null,
+      "metric": "margin_difference"
+    },
+    {
+      "scope": "seed_opponent",
+      "seed_alias": "S01",
+      "opponent": "teacher",
+      "side": null,
+      "metric": "own_profit_difference"
+    },
+    {
+      "scope": "seed_opponent",
+      "seed_alias": "S01",
+      "opponent": "teacher",
+      "side": null,
+      "metric": "margin_difference"
+    },
+    {
+      "scope": "seed_opponent",
+      "seed_alias": "S02",
+      "opponent": "round2",
+      "side": null,
+      "metric": "margin_difference"
+    },
+    {
+      "scope": "seed_opponent",
+      "seed_alias": "S03",
+      "opponent": "round2",
+      "side": null,
+      "metric": "own_profit_difference"
+    },
+    {
+      "scope": "seed_opponent",
+      "seed_alias": "S03",
+      "opponent": "round2",
+      "side": null,
+      "metric": "margin_difference"
+    },
+    {
+      "scope": "seed_opponent",
+      "seed_alias": "S03",
+      "opponent": "teacher",
+      "side": null,
+      "metric": "own_profit_difference"
+    },
+    {
+      "scope": "seed_opponent",
+      "seed_alias": "S03",
+      "opponent": "teacher",
+      "side": null,
+      "metric": "margin_difference"
+    },
+    {
+      "scope": "seed_opponent",
+      "seed_alias": "S04",
+      "opponent": "round2",
+      "side": null,
+      "metric": "margin_difference"
+    },
+    {
+      "scope": "seed_opponent",
+      "seed_alias": "S04",
+      "opponent": "market",
+      "side": null,
+      "metric": "margin_difference"
+    },
+    {
+      "scope": "seed_opponent",
+      "seed_alias": "S04",
+      "opponent": "teacher",
+      "side": null,
+      "metric": "margin_difference"
+    },
+    {
+      "scope": "overall",
+      "seed_alias": null,
+      "opponent": null,
+      "side": null,
+      "metric": "own_profit_difference"
+    },
+    {
+      "scope": "overall",
+      "seed_alias": null,
+      "opponent": null,
+      "side": null,
+      "metric": "margin_difference"
+    },
+    {
+      "scope": "overall",
+      "seed_alias": null,
+      "opponent": null,
+      "side": null,
+      "metric": "score_difference"
+    }
+  ],
+  "exploratory_gate_passed": false,
+  "exploratory_positive_signal": false,
+  "seed_cluster_count": 4,
+  "automatic_promotion": false,
+  "interpretation": "Four whole-seed clusters; descriptive only, no significance, generalization or promotion claim"
+}

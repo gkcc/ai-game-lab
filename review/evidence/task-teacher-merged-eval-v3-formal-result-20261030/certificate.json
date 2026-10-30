@@ -1,0 +1,17 @@
+{
+  "schema": "panel-v3-formal-alias-projection-v1",
+  "preregistration_commit": "e64f3bad589268a7b1b7c57844a602b595cca2d4",
+  "games": 72,
+  "replay_states_per_game": 720,
+  "action_turns_per_game": 719,
+  "primary_replays": 72,
+  "extra_replay_transitions": 719,
+  "extra_replay_sample_count": 20,
+  "seed_clusters": 4,
+  "automatic_promotion": false,
+  "retry_allowed": false,
+  "local_ledger_sha256": "481d4bc82e3e705c0c4750d2dd8f984098e65eef334231d1225169c43bd459ba",
+  "local_statistics_sha256": "15e60030c48b6cfebcb44dcc2e3fbc9ef32dc5bf0c4c5b8fb6ba3190c61d8bcf",
+  "interpretation": "Exploratory four-cluster screen; no significance, generalization or promotion claim.",
+  "limitations": "Source and cleanup receipts are program reports; the extra replay uses the same official engine."
+}
