@@ -105,10 +105,18 @@ def _read(path, *, allow_empty=False):
 
 
 def _git(repo, *args):
-    proc = subprocess.run(['git', '-C', str(repo), *args], stdin=subprocess.DEVNULL,
-                          stdout=subprocess.PIPE, stderr=subprocess.DEVNULL,
-                          check=False, timeout=30)
-    _require(proc.returncode == 0 and len(proc.stdout) <= _MAX_SOURCE, 'Git verification failed')
+    # DEVNULL asks Windows subprocess to open a writable descriptor, which the
+    # existing owned_writes budget correctly refuses. A read-only null input
+    # and read-only output/error pipes preserve both checks and the write guard.
+    try:
+        with open(os.devnull, 'rb') as null:
+            proc = subprocess.run(['git', '-C', str(repo), *args], stdin=null,
+                                  stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                  check=False, timeout=30)
+    except (OSError, subprocess.SubprocessError):
+        raise ValueError('Git verification failed') from None
+    _require(proc.returncode == 0 and len(proc.stdout) <= _MAX_SOURCE
+             and len(proc.stderr) <= _MAX_SOURCE, 'Git verification failed')
     return proc.stdout
 
 

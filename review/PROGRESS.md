@@ -1007,3 +1007,11 @@ Windows 和 WSL 分别通过导入守卫 1 项、训练入口 17 项、Windows �
 [诊断登记](evidence/task-pair-dev-games-v1-20261030/REGISTRATION.zh-CN.md) | [入口与证据边界](../kaggriculture/learning/task_pair_dev_campaign_v1/README.zh-CN.md)
 
 登记提交后的真实入口自检在读取种子和模型前发现，历史冻结清单中的一个合法空源码文件被错误拒绝；已限定为源码摘要检查可接受空文件，登记文档仍拒绝空内容，并补充回归。该失败没有启动比赛，修复后的登记须再次通过真实入口检查。
+
+### 历史开发面板：首次尝试失败与兼容修复
+
+修复后的登记通过公开入口验证，随后完成本地身份绑定并发起一次面板。首场的旧写预算收据报 `UnsafeWriteError`，接受比赛数为 0，没有回放或 trace；受管进程已回收、Job 已清空。登记禁止重试，本次停止并保留现场。实际收据没有堆栈，两个独立合成复现与主代理复现均表明：预算内的身份检查使用 Windows `DEVNULL` 会触发被原写预算禁止的可写 `os.open`；这是与现场一致的调用链，而非现场堆栈的直接记录。
+
+后续源码改用只读空设备作为子进程输入并捕获标准错误，保留原有写预算和身份检查；新增回归覆盖原 Worker、真实写预算及异常脱敏。该修复尚未通过本次真实比赛验证，不能以合成测试声称比赛已经跑通。原登记和失败记录不改，未来若启动新的实验，须另行登记并明确其与这次不重试约束的关系。
+
+[失败说明](evidence/task-pair-dev-games-v1-failure-20261030/FAILURE.zh-CN.md) | [脱敏失败证书](evidence/task-pair-dev-games-v1-failure-20261030/certificate.json)

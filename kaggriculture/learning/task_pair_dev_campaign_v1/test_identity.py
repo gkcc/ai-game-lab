@@ -2,6 +2,9 @@
 import json
 import hashlib
 import io
+import subprocess
+import traceback
+from types import SimpleNamespace
 import unittest
 from unittest.mock import patch
 
@@ -69,6 +72,25 @@ class RegistrationIdentity(unittest.TestCase):
                 identity._check_digest('root', 'a/empty.py', hashlib.sha256(b'').hexdigest())
                 with self.assertRaisesRegex(ValueError, 'Source bytes changed'):
                     identity._check_digest('root', 'a/empty.py', '0'*64)
+
+    def test_git_failure_does_not_disclose_captured_error(self):
+        result = SimpleNamespace(returncode=1, stdout=b'', stderr=b'synthetic-private-marker')
+        with patch.object(identity.subprocess, 'run', return_value=result):
+            with self.assertRaisesRegex(ValueError, '^Git verification failed$') as error:
+                identity._git('synthetic-repo', 'status')
+        self.assertNotIn('synthetic-private-marker', str(error.exception))
+
+    def test_git_timeout_or_startup_failure_does_not_disclose_details(self):
+        marker = 'synthetic-private-marker'
+        errors = (subprocess.TimeoutExpired([marker], 1, output=marker.encode()),
+                  FileNotFoundError(marker))
+        for failure in errors:
+            with self.subTest(kind=type(failure).__name__), \
+                 patch.object(identity.subprocess, 'run', side_effect=failure):
+                with self.assertRaisesRegex(ValueError, '^Git verification failed$') as error:
+                    identity._git('synthetic-repo', 'status')
+                formatted = ''.join(traceback.format_exception(error.exception))
+                self.assertNotIn(marker, formatted)
 
     def test_historical_evidence_is_bound_to_its_original_commits(self):
         calls = []
