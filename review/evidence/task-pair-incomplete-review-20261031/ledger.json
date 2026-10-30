@@ -1,0 +1,42 @@
+{
+  "schema": "task-pair-incomplete-receipt-review-v1",
+  "scope": "consumed_development_posthoc",
+  "historical_seed_role": "S01",
+  "opponent": "market",
+  "side": 0,
+  "pairs": 1,
+  "baseline": {
+    "own_initial_cash": 3000,
+    "own_final_cash": 46471,
+    "opponent_initial_cash": 3000,
+    "opponent_final_cash": 41708,
+    "own_net_profit": 43471,
+    "opponent_net_profit": 38708,
+    "margin": 4763,
+    "score": 1,
+    "outcome": "win",
+    "selected_tasks": {"DIG": 4, "FERTILIZE": 87, "HARVEST": 202, "PLANT": 156, "WATER": 1758}
+  },
+  "control": {
+    "own_initial_cash": 3000,
+    "own_final_cash": 46511,
+    "opponent_initial_cash": 3000,
+    "opponent_final_cash": 41685,
+    "own_net_profit": 43511,
+    "opponent_net_profit": 38685,
+    "margin": 4826,
+    "score": 1,
+    "outcome": "win",
+    "selected_tasks": {"DIG": 4, "FERTILIZE": 85, "HARVEST": 199, "PLANT": 154, "WATER": 1762}
+  },
+  "control_minus_baseline": {"own_net_profit": 40, "opponent_net_profit": -23, "margin": 63, "score": 0},
+  "matched_input_choice_difference": "unknown",
+  "complete_request_difference": "unknown",
+  "independent_replay_read_review": "stopped_on_memory_guard_no_result",
+  "independent_official_replay_runs": 0,
+  "new_games": 0,
+  "new_training_updates": 0,
+  "statistical_significance": "unknown",
+  "independent_improvement": false,
+  "promotion": false
+}
