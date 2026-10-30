@@ -1,0 +1,31 @@
+{
+  "schema": "task-worker-ranking-result-certificate-v2",
+  "registration_commit": "ae9f0729ee36d5c1acac00a7b1b1e42ae5b06c57",
+  "observed_outer_exit_code": 0,
+  "read_only_registration_preflight_exit_code": 0,
+  "runner_report": {
+    "coverage": "sufficient",
+    "models_loaded": true,
+    "model_inference_executed": true
+  },
+  "independent_review": {
+    "reviewers": 2,
+    "result_and_identity_review": true,
+    "independent_in_memory_statistics_recomputed": true,
+    "recompute_process_exit_code": 0,
+    "recompute_projection_matches": true,
+    "archive_reader_reused": true,
+    "model_scorer_reused": true,
+    "new_games": 0,
+    "training_updates": 0
+  },
+  "limitations": [
+    "Four consumed and deliberately sampled development seed clusters, not an independent holdout or significance claim.",
+    "The early head did not train on these registered clusters, but some states were generated with it; the merged head used the archives for training and per-group historical batch exposure is unknown.",
+    "Conditional same-target ranking does not establish full actions, successful planting, profit or causal effects.",
+    "On the selected PLANT groups only, the full-candidate guard means both A-minus-B differences are at least -5 percentage points, not that either is positive; other teacher-operation groups are not evaluated.",
+    "Exact qualifying-group and per-cluster counts, source values and logits are not published; coarse projections do not guarantee formal anonymity.",
+    "NumPy scorer and archive reader were reused in the independent recomputation; model hashing and loading are separate reads without an OS lock.",
+    "Only the runner and independent review report their own operations; no system-wide GPU or file access monitoring was performed."
+  ]
+}

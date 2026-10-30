@@ -1,0 +1,13 @@
+{
+  "schema": "task-worker-ranking-result-v2",
+  "coverage": "sufficient",
+  "conditional_teacher_top1": {
+    "model_a_minus_model_b_band": "(+5,+20]pp"
+  },
+  "global_guard": "pass",
+  "models_loaded": true,
+  "model_inference_executed": true,
+  "model_a": "early_bc",
+  "model_b": "merged_bc",
+  "registration_commit": "ae9f0729ee36d5c1acac00a7b1b1e42ae5b06c57"
+}
