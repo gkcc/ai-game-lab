@@ -96,11 +96,44 @@ with patch('os.path.lexists', side_effect=injected_module_shadow):
     else:
         raise AssertionError('Extra module shadow accepted')
 
+# Each newly added initializer and source must match its independently bound
+# registration entry. Virtual siblings exercise shadow checks without files.
+added = (('task_pair_history_binding_v1', 'history'),
+         ('task_pair_numpy_scorer_v1', 'scorer'))
+for package_name, module_name in added:
+    folder = root / 'learning' / package_name
+    for rel in (f'kaggriculture/learning/{package_name}/__init__.py',
+                f'kaggriculture/learning/{package_name}/{module_name}.py'):
+        wrong = dict(expected)
+        wrong[rel] = '0' * 64
+        try:
+            extra['verify_extra_sources'](guard, root, wrong)
+        except ValueError:
+            pass
+        else:
+            raise AssertionError('New initializer or module identity accepted')
+    shadows = (folder.parent / (package_name + '.py'),
+               folder / ('__init__' + importlib.machinery.EXTENSION_SUFFIXES[0]),
+               folder / (module_name + '.pyc'),
+               folder / module_name / '__init__.py')
+    for candidate in shadows:
+        def injected(path, target=str(candidate)):
+            return True if str(path) == target else real_lexists(path)
+        with patch('os.path.lexists', side_effect=injected):
+            try:
+                extra['verify_extra_sources'](guard, root, expected)
+            except ValueError:
+                pass
+            else:
+                raise AssertionError('New package or module shadow accepted')
+
 extra['verify_extra_sources'](guard, root, expected)
 with guard.protected_search_path(root):
     from learning.task_pair_data_preflight_v1.test_core import fixture
     preflight_name = 'learning.task_pair_data_preflight_v1.run'
-    for name in sorted(extra['TRAIN_MODULES'] - {preflight_name}):
+    # The historical binding imports preflight; check the missing entry before
+    # importing the full training closure, so the failure is meaningful.
+    for name in sorted(extra['LOAD_DATA_MODULES'] - {preflight_name}):
         importlib.import_module(name)
     assert preflight_name not in sys.modules
     try:
@@ -110,7 +143,27 @@ with guard.protected_search_path(root):
     else:
         raise AssertionError('Missing real load_data module accepted')
     from learning.task_pair_data_preflight_v1 import run as preflight
+    for name in sorted(extra['TRAIN_MODULES']):
+        importlib.import_module(name)
 extra['verify_loaded_origins'](guard, root, required_modules=extra['TRAIN_MODULES'])
+
+# The two new modules and the historical binding's two normal imports are
+# independently required. Removing an already-loaded module is safe in this
+# isolated synthetic process; restore it immediately after each check.
+for name in ('learning.task_pair_history_binding_v1.history',
+             'learning.task_pair_numpy_scorer_v1.scorer',
+             'learning.task_pair_mask_recheck_v1.run',
+             'learning.task_worker_ranking_v2.run'):
+    module = sys.modules.pop(name)
+    try:
+        try:
+            extra['verify_loaded_origins'](guard, root, required_modules=extra['TRAIN_MODULES'])
+        except ValueError:
+            pass
+        else:
+            raise AssertionError('Required full-training module missing')
+    finally:
+        sys.modules[name] = module
 
 # Exercise the real load_data import and module-origin call sites, but stop at
 # the first metadata read. No private path or actual input is opened.

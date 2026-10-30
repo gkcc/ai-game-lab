@@ -1,11 +1,13 @@
 # WSL 训练入口的附加导入核验
 
-本组件只补足真实数据加载和两臂训练所需的项目模块导入检查，不加载真实数据或模型、不训练、不调用 GPU、不执行比赛。它复用已冻结合成 GPU 冒烟的 `import_guard`，不调用旧的 `frozen.bind_runtime`，不把项目根加入解释器全局搜索路径。
+本组件只补足真实数据加载和两臂训练所需的项目模块导入检查，不加载真实数据或模型、不训练、不调用 GPU、不执行比赛。它复用已冻结合成 GPU 冒烟的 `import_guard`，不调用旧的 `frozen.bind_runtime`，不把项目根加入解释器全局搜索路径。附加检查包括历史证据绑定与 NumPy 评分组件各自的 initializer、源码及同名影子。
 
 未来入口须先以单次有界字节快照和事前登记 SHA 认证本模块及既有 smoke guard，然后由已认证的 smoke guard 绑定项目命名空间。**在导入本组件列出的任何附加项目包之前**，调用 `verify_extra_sources`，传入已认证的新训练登记中的完整 `EXTRA_SOURCE_PATHS` 摘要子集；不能现场从待验证文件计算期望值。函数使用既有 smoke guard 的有界读取、初始导入来源检查和路径隔离，另检查额外包的初始化文件、模块、同名文件和包影子。调用方仍须认证登记、Git 原字节及所有其他实际来源，不可把这个子集当作完整来源清单。
 
 真实加载器还会导入没有 `__init__.py` 的 `learning.task_teacher_choice_bc_v1` 命名空间。原 smoke guard 的导入后检查只允许源码文件加载器，会拒绝这个合法包。`verify_loaded_origins` 因此在导入后对所有已加载项目模块重复等价的源码路径／加载器核验，并只对该命名空间允许固定的唯一项目路径；不移除模块、不伪装加载器，也不忽略校验异常。正式入口须在事先认证源码后，以受检的 `learning.task_pair_data_preflight_v1.run` 项目模块导入并调用 `load_data`；单独编译的匿名模块不满足该来源检查。调用方分别在加载数据依赖和加载完整训练依赖后使用固定的 `LOAD_DATA_MODULES`／`TRAIN_MODULES` 检查。JAX、NumPy、Optax 及其延迟依赖按受限的 `sys.path` 解析；其路径和第三方来源须由调用方认证，组件不认证其供应链。
 
+完整训练依赖集明确要求 `task_pair_history_binding_v1.history`、`task_pair_numpy_scorer_v1.scorer`，及前者正常导入的 `task_pair_mask_recheck_v1.run`、`task_worker_ranking_v2.run`。缺少任一模块时不能通过完整训练依赖检查；这些声明仍不替代未来登记对完整实际源码的身份绑定。
+
 源码身份和文件检查不是并发锁，不能抵御检查后替换文件、任意自定义导入钩子或恶意调用者；调用方须在登记前后核对完整源码并控制运行环境。未来入口还须认证数据、角色、schema、checkpoint、私有掩码绑定、设备和预算。此前 Windows 复算及本组件的合成测试不证明 WSL 对真实数据加载或正式训练通过。
 
-测试在独立 `-B -I` 进程中使用无磁盘虚拟影子包、内存合成 fixture 和 CPU 环境，核对 namespace、来源、延迟第三方导入、little-endian 浮点及有符号零。测试也进入真实 `load_data` 的导入及来源调用位置，在首次元数据读取前主动中断；不读取真实数组、模型或回放。Windows 和 WSL 的结果须分别运行并报告。
+测试在独立 `-B -I` 进程中使用无磁盘虚拟影子包、内存合成 fixture 和 CPU 环境，核对 namespace、来源、延迟第三方导入、little-endian 浮点及有符号零；新增两组件 initializer／源码的错 SHA、影子以及四个必需模块缺失反例。测试也进入真实 `load_data` 的导入及来源调用位置，在首次元数据读取前主动中断；不读取真实数组、模型或回放。Windows 和 WSL 的结果须分别运行并报告。

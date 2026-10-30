@@ -18,9 +18,9 @@ import sys
 _SHA = re.compile(r'[0-9a-f]{64}\Z')
 _BASE = 'kaggriculture/learning/'
 
-# This fixed list covers the real source loader, current paired-training
-# components and this additional guard. The two historical worker entries may
-# be loaded from pinned byte snapshots rather than imported as packages.
+# This fixed list covers the real source loader, paired-training components,
+# historical binding and this additional guard. A future entry must still
+# authenticate its complete source set, including historical snapshots.
 _PACKAGES = {
     'task_worker_ranking_v1': ('run',),
     'task_worker_ranking_v2': ('run',),
@@ -30,6 +30,8 @@ _PACKAGES = {
     'task_pair_data_adapter_v1': ('adapter',),
     'task_pair_eval_adapter_v1': ('adapter',),
     'task_pair_host_export_v1': ('bridge',),
+    'task_pair_history_binding_v1': ('history',),
+    'task_pair_numpy_scorer_v1': ('scorer',),
     'task_pair_orchestration_v1': ('core',),
     'task_pair_wsl_import_v1': ('guard',),
 }
@@ -58,6 +60,8 @@ TRAIN_MODULES = LOAD_DATA_MODULES | frozenset((
     'learning.task_pair_training_v1.targets', 'learning.task_pair_checkpoint_v1.snapshot',
     'learning.task_pair_data_adapter_v1.adapter', 'learning.task_pair_eval_adapter_v1.adapter',
     'learning.task_pair_host_export_v1.bridge', 'learning.task_pair_orchestration_v1.core',
+    'learning.task_pair_history_binding_v1.history', 'learning.task_pair_numpy_scorer_v1.scorer',
+    'learning.task_pair_mask_recheck_v1.run', 'learning.task_worker_ranking_v2.run',
 ))
 
 
