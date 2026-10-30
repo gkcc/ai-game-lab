@@ -41,3 +41,7 @@ python -B -I kaggriculture/learning/task_pair_training_v1/test_fit_core.py
 python -B -I kaggriculture/learning/task_pair_training_v1/test_pipeline.py
 python -B -I kaggriculture/learning/task_pair_training_v1/test_recompute.py
 ```
+
+## 新复算掩码的本地绑定组件
+
+`binding.py` 校验调用方提供的复算收据、公开结果、清单和九份私有掩码，并在返回前将数组设为默认只读。收据摘要必须来自事先独立固定的本机记录，公开结果摘要及登记提交必须来自已认证的公开历史；角色长度和旧／新来源顺序须由调用方重新认证，不能现场根据待验证文件自证。只读标记用于防止意外修改，不是对调用者的安全锁。该组件不证明旧清单创建时的身份、复算进程退出码、源数据真实性或分片顺序，也不替代正式入口的来源核验和后续独立评估。

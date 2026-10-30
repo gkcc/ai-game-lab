@@ -1,0 +1,124 @@
+{
+  "schema": "task-pair-gpu-smoke-registration-v1",
+  "baseline_commit": "d5044c89a90c017975886959031bcf17f6724a15",
+  "single_actual_gpu_attempt": true,
+  "purpose": "synthetic paired optimizer and device integration only",
+  "data_and_outputs": {
+    "synthetic_fixture_only": true,
+    "existing_checkpoint_weights_read": false,
+    "real_training_data_read": false,
+    "new_games": false,
+    "model_file_written": false,
+    "raw_private_outputs_published": false
+  },
+  "runtime": {
+    "environment": "existing isolated WSL Python environment",
+    "python": "3.12.3",
+    "jax": "0.4.38",
+    "jaxlib": "0.4.38",
+    "numpy": "2.5.4",
+    "optax": "0.2.4",
+    "third_party_supply_chain_verified": false
+  },
+  "device": {
+    "jax_visible_gpu_count": 1,
+    "exact_requested_device_kind_match": true,
+    "target_device_name": "privately verified by operator",
+    "cpu_fallback_allowed": false,
+    "jax_gpu_array_synchronization_required": true,
+    "xla_preallocation_disabled_for_child_only": true
+  },
+  "work": {
+    "arms": [
+      "control_ce_only",
+      "conditional_worker_auxiliary"
+    ],
+    "shared_synthetic_batches": 2,
+    "updates_per_arm": 2,
+    "minimum_nonzero_auxiliary_updates": 2,
+    "both_arms_change_and_differ": true,
+    "finite_loss_gradient_parameters_and_optimizer_state_required": true
+  },
+  "limits": {
+    "inner_sampled_seconds": 100,
+    "child_work_sampled_seconds": 120,
+    "guard_including_cleanup_seconds": 135,
+    "supervisor_bootstrap_and_teardown_in_guard_limit": false,
+    "hard_kernel_deadline": false
+  },
+  "completion": {
+    "successful_child_exit_required": true,
+    "owned_session_cleanup_required": true,
+    "canonical_token_receipt_required": true,
+    "pipe_maximum_bytes": 4096,
+    "receipt_authenticates_writer_pid": false
+  },
+  "operator_before_attempt": [
+    "verify registration commit and clean worktree",
+    "compare registered source hashes with Git blobs and worktree",
+    "verify runtime versions and private target device",
+    "create exclusive private one-attempt marker"
+  ],
+  "operator_after_attempt": [
+    "wait for supervisor output and owned-session cleanup confirmation",
+    "record actual exit and sanitized receipt or failure",
+    "recheck registered source hashes and worktree",
+    "do not retry this registration"
+  ],
+  "limitations": [
+    "source comparisons are not operating system locks",
+    "existing third-party packages and arbitrary import hooks are not independently authenticated",
+    "synthetic results do not establish real model training or official game performance",
+    "local preregistration is not an independent timestamp"
+  ],
+  "source_sha256": {
+    "kaggriculture/decision/__init__.py": "292c33c078490e76cf6576d8922f527acf23d59a01b8f523f7a1b595cbe15d0e",
+    "kaggriculture/decision/api.py": "3ef4025bde61d240b298cbe4d31291f25021baaf5b396f5540bbfcdda4231917",
+    "kaggriculture/learning/bc_crop/__init__.py": "62631c0302958d70277a9fb7f1886e53e3cad4d1bb516331699ed1da787dc0b7",
+    "kaggriculture/learning/bc_crop/features.py": "6612580dcf1c3b1db22769aca459765a84fdf527f98fdf185f4a99e618d5d397",
+    "kaggriculture/learning/panel_eval_v3/bootstrap.py": "defdc84ba87104cc513d84756131d564f7224655c9f4fa210fe28a30efbaed68",
+    "kaggriculture/learning/task_action_impact_diagnostic_v1/__init__.py": "2049e94f1fe2891136fc09817309da1b3bc054bba42b23bd6f5cf06ac176921d",
+    "kaggriculture/learning/task_action_observation_v1/__init__.py": "f52902b08dde4a3380a4384d4c42c21128b1d8fb4fa46235ff24d14bf7f48ffe",
+    "kaggriculture/learning/task_anchor_once_v1/__init__.py": "4978d6f44ce420931cddf54f31bcff0d06ce9fd8a036c92b590a69cad07e6c94",
+    "kaggriculture/learning/task_anchor_reentry_v1/__init__.py": "a79592f8af8ad152512cd44ef07da06dca8ceae3eaa5baf07a78a55adc8e6f33",
+    "kaggriculture/learning/task_anchor_spawn_repair_v1/__init__.py": "ac363e2aa864a0ec85647bf7f60e016484ea546c171254782188fe052d7d6718",
+    "kaggriculture/learning/task_bc_error_diagnostics_v1/__init__.py": "7fe73d92a6f435034e2de4fc239e202b38b383508f2c426bd389dd7565f4a381",
+    "kaggriculture/learning/task_bc_holdout_v1/__init__.py": "928cb0cf10b2bed3c1ceb88bb0052483963936d923824d5b2815abb5cce472ea",
+    "kaggriculture/learning/task_bc_v1/__init__.py": "53acf46748abd7c1696186b447505c1a42486621027fc52149dbc153e1e10b0f",
+    "kaggriculture/learning/task_bc_v1/model.py": "dbdbe126029a16f15178d18a5088defac83c5b6447d77f48aa7c77cae70886d8",
+    "kaggriculture/learning/task_bc_v1/train.py": "de5b704f8930ed0e00c5ecc83bc1c3b85b61a4501800f6f68d4949e4ae3c15f5",
+    "kaggriculture/learning/task_choice_v1/__init__.py": "7645246b2ff833ffabb1388ffeaffda87008a658d4085b2dc970cf67fcb5b5c6",
+    "kaggriculture/learning/task_choice_v1/features.py": "b69e3fb590fb5c1159193d112977aa03170557dc47b8aa19bcffe0f09737c7d4",
+    "kaggriculture/learning/task_completion_evidence_v1/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "kaggriculture/learning/task_dagger_once_v1/__init__.py": "796151b10daeb85b0de82b2aeb1fff5630488138a91ae6907b05769abf499c5e",
+    "kaggriculture/learning/task_dagger_once_v1/gpu_guard.py": "b85263dea410dfa37ceae35f91790883d4e6fca27aebc7485cfb69c095b67a08",
+    "kaggriculture/learning/task_entry_repair_v1/__init__.py": "3d5bde4b71974a465bbba5a0d79a4fb7974ab234974573dffc52b52cc9e27a4b",
+    "kaggriculture/learning/task_launcher_contract_repair_v1/__init__.py": "632b0299dbdc537cac994926556852d38a6d6655c36b82998f7c4ca834b6266f",
+    "kaggriculture/learning/task_pair_checkpoint_v1/README.zh-CN.md": "e30d2686247be34f230f9f8791eecfc2e06f29908bfe77c1e109e1bc66c23b42",
+    "kaggriculture/learning/task_pair_checkpoint_v1/__init__.py": "4c82e869f95f07a3edc818cf5588fff53a48610251b95fd8a204ebb383c545f1",
+    "kaggriculture/learning/task_pair_checkpoint_v1/snapshot.py": "087910d0e3ff601f7ed68f2e29904303011d88ff60a5f80beeb90cefd7d29794",
+    "kaggriculture/learning/task_pair_checkpoint_v1/test_snapshot.py": "0dd91f26795a8452df48de97f222b526531a70b6934c9014bd65de4d93487137",
+    "kaggriculture/learning/task_pair_data_preflight_v1/__init__.py": "627293d6c4e0da1b5223292c1e5639d99006d6d732e1ccdba437c30b2db0311f",
+    "kaggriculture/learning/task_pair_data_preflight_v1/core.py": "31d602d46932c2c7484a93d35eced5e5c46069be87590fea22cbbfc8d886a5eb",
+    "kaggriculture/learning/task_pair_data_preflight_v1/test_core.py": "87b33c7311ebee08bca27feb71aae7b3db8978f2eedfc3f915d1f058418f2f22",
+    "kaggriculture/learning/task_pair_gpu_smoke_v1/README.zh-CN.md": "4798d3a9341b8d181bd6db7aca2710b0ec1314c96516a8d623fefdce17798697",
+    "kaggriculture/learning/task_pair_gpu_smoke_v1/__init__.py": "0ba32f1933371a6c3f2c8be82ebd72fe0c5886da36c2b545d7c6893ee76141f3",
+    "kaggriculture/learning/task_pair_gpu_smoke_v1/import_guard.py": "c5ec904b6c7af23ffb4a6ddd31dd8aa47a0e760cc892087f07e038b303c65f3d",
+    "kaggriculture/learning/task_pair_gpu_smoke_v1/run.py": "1e1148f41ccface68de334ba5bf1c2d3fb06e5ed8cc471c2b5dbf8b5a2b50604",
+    "kaggriculture/learning/task_pair_gpu_smoke_v1/supervisor.py": "951fba3c446c7892c1d369025b977e123a653a919e437fc0f3ab8c38a66b1e52",
+    "kaggriculture/learning/task_pair_gpu_smoke_v1/test_smoke.py": "33a7e63187fe875139b511344e8026cd50e6f8fc17634ceafc669b62ee02770f",
+    "kaggriculture/learning/task_pair_training_v1/README.zh-CN.md": "0c8b91b12029e523205d9d804e4209937318a392d1bb56c8c542268484fd3e14",
+    "kaggriculture/learning/task_pair_training_v1/__init__.py": "15ef3b12ff6b7680d507a5e25f6b05cce9c0af9c5da832f4a2d550ec65b16e31",
+    "kaggriculture/learning/task_pair_training_v1/binding.py": "a4bb41ed2c571e1ea264138527bb5668873d7ca0cc39ab00a657ca884a880eaa",
+    "kaggriculture/learning/task_pair_training_v1/fit_core.py": "5b45fdf55143b7f4f709e9c9f1c026ebe47ed994dbe4ecb0f4f7ab5259466c0f",
+    "kaggriculture/learning/task_pair_training_v1/loss.py": "16ab2462f58ea3f8e7ea816b63f0679c5b268c36af36b708856abf5c98ef5178",
+    "kaggriculture/learning/task_pair_training_v1/masks.py": "9771079205d19f19c952fdcd2fb6c1e4d97e308d5efb248dbd7376e44285d934",
+    "kaggriculture/learning/task_pair_training_v1/objective.py": "b277997fc108908f463eefa9df4cfb9e985c4afdce86a8503657ff03bf8853f3",
+    "kaggriculture/learning/task_pair_training_v1/packing.py": "161d3fc91f785111a50b98a8f7aa37002a3cd40f24475a6b18b96313e58b69f7",
+    "kaggriculture/learning/task_pair_training_v1/targets.py": "69e071abb570805a11293caa7ec31a57ab1351fb36f1003910dc0ecaefadcdbb",
+    "kaggriculture/learning/task_pair_training_v1/test_binding.py": "87143f1d864f361ab36ec5f8a2c88fefdd54654e5c15983a1b475e09ce00e9a3",
+    "kaggriculture/learning/task_request_gate_v1/__init__.py": "60a8af5fc6b0ed1c0aff962b20a1efd63b8a9da70b54bbcd54e0302c5326e03c",
+    "kaggriculture/learning/task_reward_gate_v1/__init__.py": "ab997b1e38b77e48e3e5999257fdfc60d53b0da97aa404cc36f1b8da08f61e32",
+    "kaggriculture/main.py": "74943a2e174c1fe1f9ed2e434d8aef5f13aeddc5575d06c0949ebf6bde818459"
+  }
+}
