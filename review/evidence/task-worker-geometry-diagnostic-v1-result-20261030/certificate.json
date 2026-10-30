@@ -1,0 +1,48 @@
+{
+  "schema": "worker-geometry-diagnostic-certificate-v1",
+  "registration_commit": "cb91cd8df865d1e9d8f5447ce43e94e80716f171",
+  "observed_outer_exit_code": 0,
+  "runner_report": {
+    "historical_traces": 4,
+    "training_archives": 2,
+    "new_games": 0,
+    "model_calls": 0,
+    "training_updates": 0,
+    "official_transitions": 0,
+    "gpu_operations": 0
+  },
+  "independent_review": {
+    "reviewers": 2,
+    "historical_trace_files_sha_checked": 4,
+    "unique_json_trace_lines_per_file": 3,
+    "training_archives_checked": 2,
+    "training_seed_member_decoded": false,
+    "archive_reader_reused_for_training": true,
+    "training_aggregate_independently_recomputed": true,
+    "new_engine_transitions": 0,
+    "new_model_calls": 0
+  },
+  "historical_choice_counts": {
+    "student_farther": 4,
+    "same_distance_teacher_lower_unit": 0
+  },
+  "training_public_thresholds": {
+    "old": {
+      "teacher_has_farther_alternative_groups": "below_20",
+      "equal_distance_competition_groups": "below_20"
+    },
+    "new": {
+      "teacher_has_farther_alternative_groups": "below_20",
+      "equal_distance_competition_groups": "below_20"
+    }
+  },
+  "limitations": [
+    "Four conditional choices from two consumed seed clusters; no significance or generalization.",
+    "Manhattan distance is not actual path time, execution or profit.",
+    "Training step is an encoded feature, and groups cannot be joined to these traces by identity or callback ordinal.",
+    "Historical training batches and model scores were not recorded; archived examples do not prove exposure or learning.",
+    "Training thresholds intentionally hide 0 versus 1-19 and do not establish formal anonymity.",
+    "Historical replay, engine and Job receipts are prior program records, not a new engine rerun.",
+    "Four unanimous historical categories reveal each fixed role category even without an explicit per-role list."
+  ]
+}

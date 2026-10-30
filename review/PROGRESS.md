@@ -795,3 +795,11 @@ d1/d2/d3源码快照及哈希全部保留，未放宽允许映像或父子链约
 本阶段没有模型调用、训练、GPU、比赛或官方转移。四例类别总数是明确的公开例外；训练数据只公开按来源的两个粗阈值，不公开精确小类计数。23 项纯合成回归、1 项真实公开依赖的隔离导入检查及独立子代理预审已完成；此时尚未实施本轮几何统计。
 
 [固定方案与边界](../kaggriculture/learning/task_worker_geometry_diagnostic_v1/README.zh-CN.md) | [登记](evidence/task-worker-geometry-diagnostic-v1-20261030/registration.json)
+
+### 工人几何与训练示范：结果
+
+固定的四条已消费 merged 历史选择中，学生所选单位相对同目标的条件教师单位在曼哈顿距离上 4/4 更远；这是两个种子簇的任务候选比较，不证明实际路径、完成种植或收益。两份训练档案的早期结构只公开按来源的 `below_20` / `at_least_20` 阈值；精确聚合留在本机，`below_20` 不区分零与 1–19。
+
+两名独立子代理分别复核四份压缩 trace 的几何和两份训练档案聚合；训练复核复用了认证读取器但独立重算统计。运行器自报没有调用模型、训练、GPU、比赛或官方转移；本轮没有独立系统级 GPU 监控。
+
+[结果与边界](evidence/task-worker-geometry-diagnostic-v1-result-20261030/RESULTS.zh-CN.md)

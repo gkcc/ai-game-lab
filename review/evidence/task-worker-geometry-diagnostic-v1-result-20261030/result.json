@@ -1,0 +1,38 @@
+{
+  "schema": "worker-geometry-diagnostic-result-v1",
+  "passed": true,
+  "historical_seed_roles": [
+    "S02",
+    "S03"
+  ],
+  "historical_roles_already_consumed": true,
+  "historical_trace_count": 4,
+  "unique_trace_lines_per_trace": 3,
+  "historical_choice_counts": {
+    "student_farther": 4,
+    "same_distance_teacher_lower_unit": 0
+  },
+  "training_sources": [
+    "old",
+    "new"
+  ],
+  "training_encoded_step_2_thresholds": {
+    "old": {
+      "teacher_has_farther_alternative_groups": "below_20",
+      "equal_distance_competition_groups": "below_20"
+    },
+    "new": {
+      "teacher_has_farther_alternative_groups": "below_20",
+      "equal_distance_competition_groups": "below_20"
+    }
+  },
+  "training_categories_may_overlap": true,
+  "training_step_is_encoded_feature": true,
+  "models_called": 0,
+  "training_updates": 0,
+  "new_games": 0,
+  "official_transitions": 0,
+  "gpu_operations": 0,
+  "privacy": "Four-case totals omit an explicit role list, but unanimity reveals each fixed role category; training counts use only coarse thresholds.",
+  "interpretation": "Exploratory matching of coarse structure, not a source join or causal evidence."
+}
