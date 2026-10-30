@@ -1,0 +1,144 @@
+{
+  "schema": "task-sampling-diagnostic-v1",
+  "passed": true,
+  "scope": "conditional source reconstruction; historical batch indices were not recorded",
+  "numpy_version": "2.5.4",
+  "bit_generator": "PCG64",
+  "source_order": [
+    "old",
+    "new"
+  ],
+  "selected_archive_arrays": [
+    "offsets",
+    "teacher_choice_label",
+    "ops"
+  ],
+  "uniform_comparison": "separate RNG stream, same reconstructed per-update group counts",
+  "uniform_population_share_is_expectation": true,
+  "small_categories_suppressed_below_groups": 20,
+  "small_category_policy": "withhold the full dimension if any nonempty category has fewer than 20 groups",
+  "training_updates": 0,
+  "model_calls": 0,
+  "official_transitions": 0,
+  "gpu_operations": 0,
+  "summary": {
+    "population_groups": 5104,
+    "updates_reconstructed": 128,
+    "batch_groups_min": 256,
+    "batch_groups_max": 256,
+    "batch_groups_mean": 256.0,
+    "total_exposures_each_method": 32768,
+    "groups_never_selected_reconstructed": null,
+    "groups_never_selected_matched_uniform": null,
+    "skipped_before_end_total": 0,
+    "old_padded_candidate_slots_total": 8388608,
+    "matched_uniform_microbatch_padded_slots_total": 16738560,
+    "matched_uniform_microbatches_total": 1129,
+    "by_source": {
+      "old": {
+        "training_groups": 2253,
+        "population_share": 0.441418,
+        "reconstructed_exposures": 14502,
+        "reconstructed_exposure_share": 0.442566,
+        "reconstructed_mean_update_share": 0.442566,
+        "matched_uniform_exposures": 14477,
+        "matched_uniform_exposure_share": 0.441803,
+        "matched_uniform_mean_update_share": 0.441803
+      },
+      "new": {
+        "training_groups": 2851,
+        "population_share": 0.558582,
+        "reconstructed_exposures": 18266,
+        "reconstructed_exposure_share": 0.557434,
+        "reconstructed_mean_update_share": 0.557434,
+        "matched_uniform_exposures": 18291,
+        "matched_uniform_exposure_share": 0.558197,
+        "matched_uniform_mean_update_share": 0.558197
+      }
+    },
+    "by_teacher_operation": {
+      "DIG": {
+        "training_groups": 62,
+        "population_share": 0.012147,
+        "reconstructed_exposures": 358,
+        "reconstructed_exposure_share": 0.010925,
+        "reconstructed_mean_update_share": 0.010925,
+        "matched_uniform_exposures": 423,
+        "matched_uniform_exposure_share": 0.012909,
+        "matched_uniform_mean_update_share": 0.012909
+      },
+      "FERTILIZE": {
+        "training_groups": 820,
+        "population_share": 0.160658,
+        "reconstructed_exposures": 5244,
+        "reconstructed_exposure_share": 0.160034,
+        "reconstructed_mean_update_share": 0.160034,
+        "matched_uniform_exposures": 5298,
+        "matched_uniform_exposure_share": 0.161682,
+        "matched_uniform_mean_update_share": 0.161682
+      },
+      "HARVEST": {
+        "training_groups": 385,
+        "population_share": 0.075431,
+        "reconstructed_exposures": 2515,
+        "reconstructed_exposure_share": 0.076752,
+        "reconstructed_mean_update_share": 0.076752,
+        "matched_uniform_exposures": 2492,
+        "matched_uniform_exposure_share": 0.07605,
+        "matched_uniform_mean_update_share": 0.07605
+      },
+      "PLANT": {
+        "training_groups": 321,
+        "population_share": 0.062892,
+        "reconstructed_exposures": 2044,
+        "reconstructed_exposure_share": 0.062378,
+        "reconstructed_mean_update_share": 0.062378,
+        "matched_uniform_exposures": 2083,
+        "matched_uniform_exposure_share": 0.063568,
+        "matched_uniform_mean_update_share": 0.063568
+      },
+      "WATER": {
+        "training_groups": 3516,
+        "population_share": 0.688871,
+        "reconstructed_exposures": 22607,
+        "reconstructed_exposure_share": 0.689911,
+        "reconstructed_mean_update_share": 0.689911,
+        "matched_uniform_exposures": 22472,
+        "matched_uniform_exposure_share": 0.685791,
+        "matched_uniform_mean_update_share": 0.685791
+      }
+    },
+    "by_group_width": {
+      "1-64": {
+        "training_groups": 3185,
+        "population_share": 0.62402,
+        "reconstructed_exposures": 20284,
+        "reconstructed_exposure_share": 0.619019,
+        "reconstructed_mean_update_share": 0.619019,
+        "matched_uniform_exposures": 20332,
+        "matched_uniform_exposure_share": 0.620483,
+        "matched_uniform_mean_update_share": 0.620483
+      },
+      "65-128": {
+        "training_groups": 1211,
+        "population_share": 0.237265,
+        "reconstructed_exposures": 7881,
+        "reconstructed_exposure_share": 0.240509,
+        "reconstructed_mean_update_share": 0.240509,
+        "matched_uniform_exposures": 7872,
+        "matched_uniform_exposure_share": 0.240234,
+        "matched_uniform_mean_update_share": 0.240234
+      },
+      "129-256": {
+        "training_groups": 708,
+        "population_share": 0.138715,
+        "reconstructed_exposures": 4603,
+        "reconstructed_exposure_share": 0.140472,
+        "reconstructed_mean_update_share": 0.140472,
+        "matched_uniform_exposures": 4564,
+        "matched_uniform_exposure_share": 0.139282,
+        "matched_uniform_mean_update_share": 0.139282
+      }
+    }
+  }
+}
