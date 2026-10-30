@@ -524,7 +524,12 @@ class Budget:
 
     def phase(self, name):
         _require(name in ('load', 'fit', 'evaluation'), 'Invalid resource phase')
-        self.phase_deadline = min(self.deadline, self.clock() + self.limits[name + '_seconds'])
+        now = self.clock()
+        # A phase transition must not erase a deadline already exceeded by a
+        # long preceding call. The checks remain sampled, not hard interrupts.
+        if now >= min(self.deadline, self.phase_deadline):
+            raise TimeoutError('Sampled work deadline exceeded')
+        self.phase_deadline = min(self.deadline, now + self.limits[name + '_seconds'])
         self.check()
 
     def check(self):
@@ -888,6 +893,7 @@ def run_registered(head, registration, private, root, output, modules, budget, t
     _runtime_after(private, require_core=True)
     modules.extra.verify_loaded_origins(modules.smoke, modules.root,
                                         required_modules=modules.extra.TRAIN_MODULES)
+    budget.check()
 
     _stage('publish')
     _write_json(output / 'evaluation.local.json', {'schema': 'task-pair-wsl-private-evaluation-v1',
@@ -898,6 +904,7 @@ def run_registered(head, registration, private, root, output, modules, budget, t
         'auxiliary_nonzero_updates': exports.auxiliary_nonzero_updates,
         'development_screen_status': assessment['status'],
         'supervisor_confirmation': False})
+    budget.check()
     return {'schema': 'task-pair-training-supervisor-receipt-v1', 'token': token, 'passed': True,
             'completed_updates': exports.completed_updates,
             'auxiliary_nonzero_updates': exports.auxiliary_nonzero_updates,

@@ -290,6 +290,21 @@ class EntryTests(unittest.TestCase):
             entry.Budget(synthetic_limits(), clock=lambda: 0.0,
                          read_memory=lambda: b'MemAvailable: 1 kB\n')
 
+    def test_phase_change_rejects_previous_phase_or_total_deadline(self):
+        memory = lambda: b'MemAvailable: 8388608 kB\n'
+        for previous, following, expired_at in (('load', 'fit', 201.0),
+                                                 ('fit', 'evaluation', 301.0),
+                                                 ('load', 'fit', 1001.0)):
+            now = [0.0]
+            budget = entry.Budget(synthetic_limits(), clock=lambda: now[0], read_memory=memory)
+            budget.phase(previous)
+            previous_deadline = budget.phase_deadline
+            now[0] = expired_at
+            with self.subTest(previous=previous, following=following, expired_at=expired_at), \
+                 self.assertRaises(TimeoutError):
+                budget.phase(following)
+            self.assertEqual(budget.phase_deadline, previous_deadline)
+
     def test_old_new_views_and_predeclared_roles_cannot_be_swapped(self):
         def view(clusters):
             return SimpleNamespace(private_clusters=np.asarray(clusters, dtype=np.int64))
@@ -390,6 +405,7 @@ class EntryTests(unittest.TestCase):
                         'qualifying_plant': np.ones(2, bool)}
         masks = {'teacher_dev': [mask()], 'conditional_dev': [mask(), mask()]}
         events, written = [], {}
+        now, expire_after_write = [0.0], [False]
         class Bound:
             def load_masks(self, *args, **kwargs):
                 events.append('masks')
@@ -447,6 +463,8 @@ class EntryTests(unittest.TestCase):
         def write_json(path, value):
             events.append('write-' + Path(path).name)
             written[Path(path).name] = encode(value)
+            if Path(path).name == 'child-result.local.json' and expire_after_write[0]:
+                now[0] = 401.0
         checks = Mock()
         with patch.object(entry, '_history', return_value=(bound, old_registration)), \
              patch.object(entry, '_bounded_file', side_effect=read_file), \
@@ -463,6 +481,25 @@ class EntryTests(unittest.TestCase):
              patch.object(entry, '_runtime_after'):
             receipt = entry.run_registered('a' * 40, registration, private, Path('/synthetic'),
                     Path('/synthetic/out'), modules, budget, 'c' * 32, private_check=checks)
+            # Each expiry follows normal increasing time. File writes and the
+            # device are synthetic; no filesystem or GPU is touched.
+            for where in ('final_check', 'publish'):
+                with self.subTest(expiry=where):
+                    events.clear()
+                    written.clear()
+                    now[0], expire_after_write[0] = 0.0, where == 'publish'
+                    modules.extra.verify_loaded_origins.side_effect = (
+                        (lambda *args, **kwargs: now.__setitem__(0, 401.0))
+                        if where == 'final_check' else None)
+                    sampled = entry.Budget(synthetic_limits(), clock=lambda: now[0],
+                                           read_memory=lambda: b'MemAvailable: 8388608 kB\n')
+                    with self.assertRaises(TimeoutError):
+                        entry.run_registered('a' * 40, registration, private, Path('/synthetic'),
+                            Path('/synthetic/out'), modules, sampled, 'c' * 32, private_check=checks)
+                    self.assertEqual('evaluation.local.json' in written, where == 'publish')
+                    self.assertEqual('child-result.local.json' in written, where == 'publish')
+                    self.assertNotIn(b'c' * 32, b''.join(written.values()))
+            modules.extra.verify_loaded_origins.side_effect = None
         self.assertEqual(receipt['completed_updates'], 64)
         self.assertEqual(receipt['auxiliary_nonzero_updates'], 32)
         self.assertLess(events.index('data'), events.index('masks'))
@@ -471,7 +508,7 @@ class EntryTests(unittest.TestCase):
         self.assertLess(events.index('evaluate'), events.index('data-recheck'))
         self.assertEqual(json.loads(written['evaluation.local.json'])['development_screen']['status'], 'passed')
         self.assertNotIn(b'c' * 32, b''.join(written.values()))
-        checks.assert_called_once()
+        self.assertEqual(checks.call_count, 3)
 
         # Source order is checked before the private masks, checkpoint or fit.
         swapped = dict(views, conditional_dev=list(reversed(views['conditional_dev'])))
