@@ -1073,3 +1073,7 @@ Windows 和 WSL 分别通过导入守卫 1 项、训练入口 17 项、Windows �
 ### 已有对局的选择与完整动作关联
 
 固定事后分析范围 `07fb417` 后，只读两种子四组已有配对并核对 8 场旧验收；两臂每场 719 条 trace 均读至 EOF。共同历史中，S01 每席 5 个同输入选择差异回合中 4 个完整请求相同，S04 每席 10 个中 9 个相同；首次完整请求分叉分别在 268 与 343。分叉后下一状态的语义物理摘要不同，24 回合后和终局采样摘要相同；不能解释收益因果或推断教师标签可互换。独立子代理只读复核新汇总及旧公开账本，没有重读原始轨迹或重跑官方引擎。没有新比赛、模型前向、训练或 GPU 运算。[登记](evidence/task-pair-action-flow-v1-20261031/REGISTRATION.zh-CN.md)、[结果](evidence/task-pair-action-flow-v1-result-20261031/RESULTS.zh-CN.md)、[复核](evidence/task-pair-action-flow-v1-result-20261031/REVIEW.zh-CN.md)。
+
+### 条件行动监督：采样超时
+
+登记提交 `dd1b5aa` 后，一次读取在既定时间上限停止：七场示范来源流完整核验，第八场未完成，解析 16,682 个任务组。没有进入教师续行、GPU 训练或新比赛，也没有生成新模型；原登记禁止重试。独立子代理复核了失败现场及关联旧八场的身份，范围限制见[失败说明](evidence/task-equivalent-bc-v1-failure-20261031/FAILURE.zh-CN.md)与[独立复核](evidence/task-equivalent-bc-v1-failure-20261031/REVIEW.zh-CN.md)。
