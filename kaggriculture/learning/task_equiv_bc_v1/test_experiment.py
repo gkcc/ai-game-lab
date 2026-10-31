@@ -87,6 +87,21 @@ class ExperimentTests(unittest.TestCase):
 
     def test_wrapped_probe_guard_preserves_stop_category(self):
         for error, expected in ((MemoryError(), 'memory_gate'), (TimeoutError(), 'time_gate')):
+            self.assertEqual(experiment._category(error), expected)
+            def stop():
+                raise error
+            with self.subTest(expected=expected):
+                try:
+                    probe._guard(stop)
+                except Exception as exc:
+                    self.assertEqual(experiment._category(exc), expected)
+                else:
+                    self.fail('Guard did not stop')
+        self.assertEqual(experiment._category(probe.TeacherSetupError()), 'teacher_setup')
+        self.assertEqual(experiment._category(FileNotFoundError()), 'missing_file')
+        self.assertEqual(experiment._category(PermissionError()), 'io_error')
+        for error, expected in ((FileNotFoundError(), 'missing_file'), (PermissionError(), 'io_error'),
+                                (experiment.DiskFloorError(), 'disk_gate')):
             def stop():
                 raise error
             with self.subTest(expected=expected):

@@ -1,6 +1,7 @@
 """Synthetic controller tests; no real trace, model, game, or GPU."""
 from copy import deepcopy
 import unittest
+from unittest.mock import patch
 
 import numpy as np
 
@@ -9,6 +10,7 @@ from learning.task_choice_v1.features import (
     CANDIDATE_SCOPE, OPS, SCHEMA_VERSION, candidate_id, schema_hash,
 )
 from .probe import evaluate_choice, probe_group, task_agent_factory
+from . import probe
 
 
 FEATURE_NAMES = (['unit.index', 'unit.x', 'unit.y', 'target.x', 'target.y', 'task.distance']
@@ -194,6 +196,37 @@ class ProbeTest(unittest.TestCase):
         with self.assertRaises(Exception) as raised:
             probe_group(obs, cfg, 1, **args)
         self.assertIsInstance(raised.exception.__cause__, TimeoutError)
+
+    def test_resource_and_teacher_setup_errors_stop_all_three_paths(self):
+        for error in (MemoryError, TimeoutError, FileNotFoundError, PermissionError, probe.TeacherSetupError):
+            for phase in ('reference', 'alternative', 'evaluation'):
+                with self.subTest(error=error.__name__, phase=phase):
+                    obs, cfg, inputs, _, args = setup_probe()
+                    ids = [candidate['id'] for candidate in inputs['candidates']]
+                    original = args['agent_factory']
+                    selected = None if phase == 'reference' else ids[2]
+
+                    def factory(ordinal, forced):
+                        if forced == selected:
+                            if error is probe.TeacherSetupError:
+                                with patch.object(probe, '_build_task_agent', side_effect=ValueError('source identity')):
+                                    return task_agent_factory(ordinal, forced)
+                            def fail(_observation, _configuration):
+                                raise error('synthetic resource error')
+                            return fail
+                        return original(ordinal, forced)
+
+                    if phase == 'evaluation':
+                        reference = probe_group(obs, cfg, 1, retain_reference=True, **args)['reference']
+                        with self.assertRaises(error):
+                            evaluate_choice(obs, cfg, 1, expected_inputs=inputs,
+                                expected_label=args['expected_label'],
+                                expected_teacher_prefix=args['expected_teacher_prefix'],
+                                reference=reference, chosen_id=selected, agent_factory=factory)
+                    else:
+                        args['agent_factory'] = factory
+                        with self.assertRaises(error):
+                            probe_group(obs, cfg, 1, **args)
 
     def test_reference_mismatch_has_no_training_group(self):
         obs, cfg, _, _, args = setup_probe({'mismatch_second_reference': True})

@@ -1,9 +1,10 @@
 """Run one bounded, private teacher-continuation comparison in memory.
 
 The caller authenticates the historical source, its teacher/schema, the own
-observation, and its next-frame request. No replay, game, model or file is
-opened here. Output arrays and candidate IDs contain sensitive local data and
-are not safe to log or publish. The comparison does not assess future return.
+observation, and its next-frame request. The default controller reads and
+checks the pinned teacher source; no replay, game or model is opened here.
+Output arrays and candidate IDs contain sensitive local data and are not safe
+to log or publish. The comparison does not assess future return.
 """
 from copy import deepcopy
 from dataclasses import dataclass
@@ -19,7 +20,11 @@ from learning.task_single_intervention_v2.runner import (
 from learning.task_teacher_choice_bc_v1.extract import extract
 
 
-def task_agent_factory(ordinal, forced_id):
+class TeacherSetupError(RuntimeError):
+    """The pinned teacher could not be initialized for a continuation."""
+
+
+def _build_task_agent(ordinal, forced_id):
     """Create a fresh pinned teacher, with at most one forced task choice.
 
     Crop mode and all later task choices remain the original teacher. The
@@ -52,6 +57,17 @@ def task_agent_factory(ordinal, forced_id):
                 self.task_selector = None
 
     return Branch()
+
+
+def task_agent_factory(ordinal, forced_id):
+    try:
+        return _build_task_agent(ordinal, forced_id)
+    except (MemoryError, OSError):
+        raise
+    except Exception as exc:
+        # A failed source identity or controller integration is global to the
+        # experiment, not evidence about an individual candidate's behavior.
+        raise TeacherSetupError('Frozen teacher initialization failed') from exc
 
 
 def _same_ordered(left, right):
@@ -242,7 +258,7 @@ def probe_group(observation, configuration, ordinal, *, expected_inputs, expecte
             return {'status': 'unknown', 'reason': 'historical_target_mismatch'}
         parsed = extract(record, expected_schema, side=observation['player'],
                          step=observation['step'], max_candidates=max_candidates)
-    except _GuardStopped:
+    except (_GuardStopped, TeacherSetupError, MemoryError, OSError):
         raise
     except Exception:
         return {'status': 'unknown', 'reason': 'reference_invalid'}
@@ -284,7 +300,7 @@ def probe_group(observation, configuration, ordinal, *, expected_inputs, expecte
                 positive[ids.index(candidate_id)] = verified[ids.index(candidate_id)] = True
             else:
                 unknown_ids.append(candidate_id)
-        except _GuardStopped:
+        except (_GuardStopped, TeacherSetupError, MemoryError, OSError):
             raise
         except Exception:
             unknown_ids.append(candidate_id)
@@ -380,7 +396,7 @@ def evaluate_choice(observation, configuration, ordinal, *, expected_inputs, exp
                                      next_trace['final_reservations'])):
             return result('different')
         return result('match')
-    except _GuardStopped:
+    except (_GuardStopped, TeacherSetupError, MemoryError, OSError):
         raise
     except Exception:
         return result('unknown')

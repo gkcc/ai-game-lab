@@ -305,14 +305,21 @@ def _category(exc):
     if isinstance(exc, DiskFloorError): return 'disk_gate'
     # The probe wraps guard failures to prevent them being mistaken for an
     # unknown candidate; retain their precise, non-sensitive stop category.
-    cause, seen = exc, set()
+    cause, seen, teacher_setup, missing_file, io_error = exc, set(), False, False, False
+    probe_module = sys.modules.get('learning.task_equiv_bc_v1.probe')
+    setup_type = getattr(probe_module, 'TeacherSetupError', None)
     while cause is not None and id(cause) not in seen and len(seen) < 8:
         seen.add(id(cause))
         if isinstance(cause, MemoryError): return 'memory_gate'
         if isinstance(cause, TimeoutError): return 'time_gate'
+        if isinstance(cause, DiskFloorError): return 'disk_gate'
+        if isinstance(setup_type, type) and isinstance(cause, setup_type): teacher_setup = True
+        if isinstance(cause, FileNotFoundError): missing_file = True
+        elif isinstance(cause, OSError): io_error = True
         cause = cause.__cause__
-    if isinstance(exc, FileNotFoundError): return 'missing_file'
-    if isinstance(exc, OSError): return 'io_error'
+    if teacher_setup: return 'teacher_setup'
+    if missing_file: return 'missing_file'
+    if io_error: return 'io_error'
     if isinstance(exc, (ValueError, TypeError, KeyError, IndexError)): return 'invalid_input'
     return 'runtime_error'
 

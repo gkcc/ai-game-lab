@@ -1079,3 +1079,5 @@ Windows 和 WSL 分别通过导入守卫 1 项、训练入口 17 项、Windows �
 登记提交 `dd1b5aa` 后，一次读取在既定时间上限停止：七场示范来源流完整核验，第八场未完成，解析 16,682 个任务组。没有进入教师续行、GPU 训练或新比赛，也没有生成新模型；原登记禁止重试。独立子代理复核了失败现场及关联旧八场的身份，范围限制见[失败说明](evidence/task-equivalent-bc-v1-failure-20261031/FAILURE.zh-CN.md)与[独立复核](evidence/task-equivalent-bc-v1-failure-20261031/REVIEW.zh-CN.md)。
 
 随后新登记在保留旧提交和失败现场的前提下，去掉逐行重复摘要并复用同一回合只读观测，仍逐行检查完整输入和库存次序；按前次实际耗时重定时间预算，内存和数据上限不变。同一已消费来源将通过新目录单次运行；未产生的训练和开发筛查结果须另行报告，不能提前认定通过。[第二次登记](evidence/task-equivalent-bc-v2-20261031/REGISTRATION.zh-CN.md)。
+
+第二次登记 `3101e5b` 在完成三场采样后，因独立审查发现资源异常可能被当作 unknown，主代理主动停止；没有观察到实际内存故障，也未启动训练。随后修复资源、来源 I/O 和冻结教师初始化异常的传播，保留普通候选异常的 unknown 语义；合成回归与独立复核范围见[停止说明](evidence/task-equivalent-bc-v2-stop-20261031/STOP.zh-CN.md)和[复核](evidence/task-equivalent-bc-v2-stop-20261031/REVIEW.zh-CN.md)。
