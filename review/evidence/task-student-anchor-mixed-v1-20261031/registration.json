@@ -1,0 +1,112 @@
+{
+  "anchor_batches": [
+    {
+      "T01": "A01",
+      "T02": "A02",
+      "T03": "A03",
+      "T04": "A04",
+      "V01": "A07",
+      "V02": "A08"
+    },
+    {
+      "T01": "A05",
+      "T02": "A06",
+      "T03": null,
+      "T04": null,
+      "V01": "A09",
+      "V02": "A10"
+    }
+  ],
+  "anchor_result_commit": "1610ee975de25c0c1afa7a34facd54f1904ee331",
+  "base_commit": "64c3855b2029ac0f549b739f9f5f1539c6911906",
+  "binding_commitment_sha256": "0957f91ba5370bdad8f090315b019baa8854358cf13305bc109ab590de66ff04",
+  "candidate_steps_per_window": 4,
+  "candidate_width_max": 256,
+  "dagger_registration_commit": "b706506b5fbf7e459188d096cc8d2c5dcd2dee96",
+  "data_gate": {
+    "dev_min": 16,
+    "dev_seed_roles_min": 4,
+    "examples_per_counted_role_min": 2,
+    "examples_per_opponent_min": 2,
+    "examples_per_side_min": 2,
+    "max_role_fraction_denominator": 3,
+    "max_role_fraction_numerator": 1,
+    "train_min": 32,
+    "train_seed_roles_min": 6,
+    "windows_each_split_min": 3
+  },
+  "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "fresh_registration_commit": "2da14f9d9eafb8b8a8aa90bb11a9ae3558c1fdca",
+  "independent_evaluation": false,
+  "initial_memory_bytes": 5368709120,
+  "max_attempts": 1,
+  "max_bytes_per_split": 67108864,
+  "max_comparisons": 480,
+  "max_controller_calls": 960,
+  "max_merged_groups": 268,
+  "max_official_transitions": 960,
+  "max_wall_seconds": 3600,
+  "min_free_bytes": 4294967296,
+  "new_complete_games": 0,
+  "opponents": [
+    "market",
+    "round2"
+  ],
+  "planning_cells": 288,
+  "promotion": false,
+  "real_windows": 240,
+  "roles": [
+    "F01",
+    "F02",
+    "D01",
+    "D02",
+    "D03",
+    "D04",
+    "A01",
+    "A02",
+    "A03",
+    "A04",
+    "A05",
+    "A06",
+    "F03",
+    "F04",
+    "D05",
+    "D06",
+    "A07",
+    "A08",
+    "A09",
+    "A10"
+  ],
+  "run_memory_bytes": 4294967296,
+  "schema": "student-anchor-mixed-prereg-v1",
+  "source_games": 40,
+  "source_passes": 2,
+  "training": false,
+  "windows": [
+    [
+      0,
+      119
+    ],
+    [
+      120,
+      239
+    ],
+    [
+      240,
+      359
+    ],
+    [
+      360,
+      479
+    ],
+    [
+      480,
+      599
+    ],
+    [
+      600,
+      718
+    ]
+  ]
+}
