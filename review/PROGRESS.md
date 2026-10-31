@@ -1131,3 +1131,7 @@ Windows 和 WSL 分别通过导入守卫 1 项、训练入口 17 项、Windows �
 登记提交 `7da1eed` 后，对同一已消费 seed 的四场旧回放各六个固定回合比较共同任务／预留前缀；120 个教师目标均出现在 terminal 规则候选中，54 个目标的共享＋目标特征不同，完整请求相同 22／24。独立复核确认这些帧全部是一天中的 `hour=11`，因此不能推广到其他时段或 seed；账本也不能还原原始前缀。本轮无模型前向、训练、新完整比赛或官方转移。[登记](evidence/task-teacher-support-probe-v1-20261031/REGISTRATION.zh-CN.md) | [结果与账本](evidence/task-teacher-support-probe-v1-result-20261031/RESULTS.zh-CN.md) | [独立复核](evidence/task-teacher-support-probe-v1-result-20261031/REVIEW.zh-CN.md)。
 
 上述 54 个“特征不同”是已编码数值和类型的严格比较；真实编码器已先使用 float32，严格快照仍区分正负零。原探针未保存逐组编码，现有账本不能重算标准化或模型选择是否不同。[精度补充](evidence/task-teacher-support-precision-note-v1-20261031/NOTE.zh-CN.md)。
+
+### 两个教师的跨时段任务标签
+
+登记提交 `7a2389e` 后，从四个已消费角色的 16 场旧 Replay 各取六个固定回合，96／96 个教师请求与旧记录一致；222 个预选支持组按训练输入精度去重后保留训练 59 组、开发 62 组，登记的数据门通过。训练目标 58／59 为浇水，仅 1 个种植；开发目标为浇水 58、种植 3、收获 1，不构成充分的多机制示范。它们是目标类别，不能替代对具体候选、单位与目标的选择表现。独立子代理核对封存、分布及数值数据重算；该阶段没有训练、新比赛、官方状态转移或 GPU 运算，开发集不是独立竞技测试。[登记](evidence/task-teacher-transfer-dataset-v1-20261031/REGISTRATION.zh-CN.md) | [结果与账本](evidence/task-teacher-transfer-dataset-v1-result-20261031/RESULTS.zh-CN.md) | [独立复核](evidence/task-teacher-transfer-dataset-v1-result-20261031/REVIEW.zh-CN.md)。
