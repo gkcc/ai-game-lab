@@ -1108,3 +1108,8 @@ Windows 和 WSL 分别通过导入守卫 1 项、训练入口 17 项、Windows �
 ### 单一学生条件示范扩充
 
 登记提交 `2da14f9` 后，对 16 场已消费 baseline 游戏的 96 个固定窗口完成 192 次条件比较；21 格为合格示范，其中 14 格集中在从 0 起算的 `step 15`。按实际训练输入精度去重后，训练侧仅 7 组、开发侧仅 2 组，且 F02/F03 各无保留代表；事前 16／8 及各角色覆盖门未通过。该结果不表示被移除角色在去重前无示范；已消费开发侧并非独立泛化评估。按登记没有 GPU 训练、PPO、模型晋级或新完整比赛；不能通过事后降低门槛包装通过。[登记](evidence/task-student-collection-v1-20261031/REGISTRATION.zh-CN.md) | [结果与账本](evidence/task-student-collection-v1-result-20261031/RESULTS.zh-CN.md) | [独立复核](evidence/task-student-collection-v1-result-20261031/REVIEW.zh-CN.md)。
+
+
+### 历史来源盘点的读取范围
+
+只读盘点找到 24 场 DAgger 和 40 场 Anchor 已完成的同基线历史对局；所有角色均已消费，完整轨迹兼容性尚待验证。盘点期间两名子代理的程序解析过包含未运行留出角色的旧清单，未输出这些 seed 数值、未作为 Bot 或学习模型输入、未训练或运行相关比赛；不将该过程描述为未读取。一次文件枚举也在工具记录中显示了部分已消费 seed 对应的既有公开文件名。具体范围与后续边界见[说明](evidence/task-source-inventory-v1-20261031/NOTE.zh-CN.md)。
