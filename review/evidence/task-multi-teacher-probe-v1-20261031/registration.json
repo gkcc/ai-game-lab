@@ -1,0 +1,43 @@
+{
+  "anchor_result_commit": "1610ee975de25c0c1afa7a34facd54f1904ee331",
+  "base_commit": "0cd9d51e4feb75b63873ebc1659ea69385880b76",
+  "binding_commitment_sha256": "83b985a835b94929d8527addf86753531f4e44c6863d0adf7b02698656ff65de",
+  "disk_free_floor_bytes": 4294967296,
+  "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "games": 4,
+  "independent_evaluation": false,
+  "initial_available_bytes": 5368709120,
+  "job": {
+    "cleanup_seconds": 10,
+    "max_commit_bytes": 3221225472,
+    "max_rss_bytes": 2147483648,
+    "min_available_bytes": 4294967296,
+    "poll_seconds": 1,
+    "wall_seconds": 900
+  },
+  "learner_sides": [
+    0,
+    1
+  ],
+  "max_attempts": 1,
+  "max_candidates_per_group": 256,
+  "max_records_per_turn": 32,
+  "max_teacher_calls": 2876,
+  "new_complete_games": 0,
+  "new_official_transitions": 0,
+  "opponents": [
+    "market",
+    "round2"
+  ],
+  "promotion": false,
+  "replay_states_per_game": 720,
+  "run_available_bytes": 4294967296,
+  "schema": "multi-teacher-probe-prereg-v1",
+  "source_batch": 1,
+  "source_role": "A01",
+  "source_slot": "T01",
+  "total_wall_seconds": 3600,
+  "training": false,
+  "turns_per_game": 719
+}
