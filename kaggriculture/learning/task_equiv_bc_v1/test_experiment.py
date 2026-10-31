@@ -70,7 +70,12 @@ class ExperimentTests(unittest.TestCase):
         with self.assertRaises(MemoryError): budget.initial()
         clock['memory'] = 4 * 1024**3 - 1
         with self.assertRaises(MemoryError): budget.check()
-        clock.update(memory=5 * 1024**3, time=1200)
+        clock.update(memory=5 * 1024**3, time=2400)
+        with self.assertRaises(TimeoutError): budget.check()
+        clock['time'] = 4199
+        budget.phase(600)
+        self.assertTrue(budget.check())
+        clock['time'] = 4200
         with self.assertRaises(TimeoutError): budget.check()
         disk_budget = experiment.Budget(lambda: 6 * 1024**3, lambda: 4 * 1024**3 - 1,
                                         clock=lambda: 0)

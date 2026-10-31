@@ -227,6 +227,36 @@ class SampleTests(unittest.TestCase):
         self.assertNotIn('FIRST_ACTOR_SECRET', json.dumps(chosen))
         self.assertNotIn('OPPONENT_SECRET', json.dumps(chosen))
 
+    def test_step_views_refresh_and_do_not_cross_games_or_seats(self):
+        replay = make_replay()
+        for step, amount in ((0, 10), (240, 20), (480, 30)):
+            for seat in (0, 1):
+                replay['steps'][step][seat]['observation']['market']['inventory']['WHEAT'] = amount
+        for seat in (0, 1, 0):
+            rows = make_rows(replay, side=seat)
+            binding, data = streams(rows, replay)
+            chosen = sample(binding, data)
+            self.assertEqual([x['inputs']['observation']['market']['inventory']['WHEAT'] for x in chosen],
+                             [10, 10, 20, 20, 30, 30])
+            self.assertTrue(all(x['inputs']['observation']['player'] == seat for x in chosen))
+            self.assertEqual(chosen[0]['inputs']['observation']['private']['shed'],
+                             {'WHEAT': 3, 'CARROT': 2} if seat == 0 else {'MILK': 4})
+
+    def test_row_after_window_quota_still_checks_view_and_digest(self):
+        for corruption in ('view', 'digest'):
+            rows = deepcopy(self.rows)
+            extra = deepcopy(rows[3])
+            extra[2]['decision'] = 4
+            if corruption == 'view':
+                extra[0]['observation']['market']['inventory']['WHEAT'] = 99
+                extra[2]['input_sha256'] = digest(extra[0])
+            else:
+                extra[2]['input_sha256'] = 'f' * 64
+            rows.insert(4, extra)
+            binding, data = streams(rows, self.replay)
+            with self.subTest(corruption=corruption), self.assertRaises(ValueError):
+                sample(binding, data)
+
     def test_short_or_extra_stream_and_bad_source_sha_fail(self):
         binding, data = streams(self.rows, self.replay)
         broken = dict(data)

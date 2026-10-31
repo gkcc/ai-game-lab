@@ -23,7 +23,6 @@ from decision.api import observe
 from learning.bc_crop.agent import TEACHER_SHA
 from learning.bc_crop.experiment import ENGINE_COMMIT, ENGINE_SHA
 from learning.task_bc_v1.cache import decode
-from learning.task_choice_v1.dataset import digest
 from learning.task_choice_v1.features import SCHEMA_VERSION, schema_hash
 
 
@@ -409,6 +408,7 @@ def sample_game(binding, *, inputs_stream, labels_stream, index_stream, replay_s
     opened = [_checked_gzip(source, binding.file(kind).sha256, budget)
               for kind, source in zip(kinds, streams)]
     selected, buckets, previous, prefix = [], [0, 0, 0], None, []
+    cached_step, cached_view = None, None
     count, schema = 0, None
     missing = object()
     try:
@@ -439,8 +439,8 @@ def sample_game(binding, *, inputs_stream, labels_stream, index_stream, replay_s
             else:
                 _require(decision == previous[1] + 1, 'Decision sequence has a gap')
             previous = current
-            _require(index.get('input_sha256') == digest(inputs), 'Input digest differs')
             try:
+                # decode verifies the same canonical input digest for every row.
                 schema, _shared, _local, _label_index, _ops, _ids = decode(inputs, label, index,
                     game=binding.game, split=binding.source_split, expected_seed=binding.seed,
                     expected_side=binding.side, expected_opponent=binding.opponent, schema=schema)
@@ -448,8 +448,12 @@ def sample_game(binding, *, inputs_stream, labels_stream, index_stream, replay_s
                 raise ValueError('Aligned input or label validation failed') from exc
             _require(schema['schema_sha256'] == binding.schema_sha256, 'Dataset schema differs')
             restored = restore_input_order(inputs)
-            frame = replay['steps'][step]
-            view = _view(frame, replay['configuration'], binding.side)
+            # Multiple decisions at one step share this immutable replay view.
+            # Keep the cache local to this game and still compare every row.
+            if cached_step != step:
+                cached_view = _view(replay['steps'][step], replay['configuration'], binding.side)
+                cached_step = step
+            view = cached_view
             saved = restored['observation']
             _require(saved == view.observation and restored['configuration'] == view.configuration
                      and list(saved['private']['shed']) == list(view.private['shed'])
