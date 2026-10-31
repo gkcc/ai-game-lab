@@ -1,0 +1,70 @@
+{
+  "by_role": {
+    "A03": {
+      "baseline_correct": 0,
+      "candidate_correct": 2,
+      "changed": 2,
+      "count": 21,
+      "coverage": "observed",
+      "margin_decreased": 6,
+      "margin_increased": 15,
+      "margin_within_tolerance": 0,
+      "mean_base_margin": -3.331665,
+      "mean_base_nll": 3.586277,
+      "mean_candidate_margin": -2.992163,
+      "mean_candidate_nll": 3.323991,
+      "op_flips": 1
+    },
+    "A04": {
+      "baseline_correct": 0,
+      "candidate_correct": 1,
+      "changed": 1,
+      "count": 21,
+      "coverage": "observed",
+      "margin_decreased": 5,
+      "margin_increased": 16,
+      "margin_within_tolerance": 0,
+      "mean_base_margin": -2.710669,
+      "mean_base_nll": 2.961164,
+      "mean_candidate_margin": -2.300162,
+      "mean_candidate_nll": 2.615771,
+      "op_flips": 0
+    }
+  },
+  "diagnostic_rescored": false,
+  "fit_input_membership": true,
+  "gpu": false,
+  "independent_evaluation": false,
+  "margin_delta_abs_tolerance": 1e-06,
+  "model_updates": 0,
+  "new_games": 0,
+  "overall": {
+    "baseline_correct": 0,
+    "candidate_correct": 3,
+    "changed": 3,
+    "count": 42,
+    "coverage": "observed",
+    "margin_decreased": 11,
+    "margin_increased": 31,
+    "margin_within_tolerance": 0,
+    "mean_base_margin": -3.021167,
+    "mean_base_nll": 3.273721,
+    "mean_candidate_margin": -2.646162,
+    "mean_candidate_nll": 2.969881,
+    "op_flips": 1
+  },
+  "promotion": false,
+  "registration_commit": "867fef1e3475b8bb89608d51b9581e18f6982f23",
+  "schema": "state-train-fit-public-v1",
+  "source_groups": 42,
+  "student_mismatches": 0,
+  "target_category_effect_metrics_published": false,
+  "target_coverage": {
+    "DIG": 0,
+    "FERTILIZE": 7,
+    "HARVEST": 4,
+    "PLANT": 2,
+    "WATER": 29
+  },
+  "training": false
+}

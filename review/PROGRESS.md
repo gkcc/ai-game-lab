@@ -1167,3 +1167,7 @@ Windows 和 WSL 分别通过导入守卫 1 项、训练入口 17 项、Windows �
 ### 状态条件残差：CPU 开发筛查失败
 
 事前提交 `1d3f9ff` 后，以旧教师锚和分歧示范完成一次 64 步 CPU 状态条件残差训练，输出层改变。已观察的新诊断 47 组基线和候选均命中 45 组、首选变化 0；旧诊断 250 组为 243→244 命中。新诊断未满足预登记的净改正及选择变化门，筛查失败；旧诊断一次改正不构成独立提升。原始 42／48 新样本的历史学生索引核对、840 保留组的双宽公式级数值检查通过，但不证明训练融合内核逐位一致。两名独立子代理核对本机收据和统计，未重新训练或比赛；默认 Bot 不变，GPU 未用于本轮。[登记](evidence/task-state-residual-v1-20261031/REGISTRATION.zh-CN.md) | [结果及证书](evidence/task-state-residual-v1-result-20261031/RESULTS.zh-CN.md) | [独立复核](evidence/task-state-residual-v1-result-20261031/REVIEW.zh-CN.md)。
+
+### 状态模型的训练输入池诊断
+
+事前提交 `867fef1` 后，对全部 42 个原分歧训练输入池组重评分；基线按预选条件为 0／42 命中教师，状态残差为 3／42，首选改变 3 组。按 `1e-6` 容差教师相对最强其他候选的分差 31 组增加、11 组减少，平均目标 NLL 从 3.273721 降至 2.969881。模型对部分已用示范有拟合，但没有逐批索引证明每组实际被抽中；这不改写开发筛查失败，不证明新比赛收益。来源认证读取既有诊断档案但未对其重新评分；没有重训、GPU 或新比赛。[登记](evidence/task-state-train-fit-v1-20261031/REGISTRATION.zh-CN.md) | [结果及证书](evidence/task-state-train-fit-v1-result-20261031/RESULTS.zh-CN.md) | [独立复核](evidence/task-state-train-fit-v1-result-20261031/REVIEW.zh-CN.md)。
