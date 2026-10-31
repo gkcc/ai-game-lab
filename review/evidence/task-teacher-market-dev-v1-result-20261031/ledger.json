@@ -1,0 +1,261 @@
+{
+  "independent_improvement": false,
+  "mean_teacher_minus_student": {
+    "baseline": {
+      "margin": -475.5,
+      "opponent_net_profit": 8.5,
+      "own_net_profit": -467.0,
+      "score": 0.0
+    },
+    "control": {
+      "margin": -761.5,
+      "opponent_net_profit": 1.5,
+      "own_net_profit": -760.0,
+      "score": 0.0
+    }
+  },
+  "pairs": [
+    {
+      "arm": "baseline",
+      "complete_request_prefix": {
+        "reason": "actor_request_difference",
+        "scope": "same_complete_history",
+        "status": "observed",
+        "step": 227
+      },
+      "seed_alias": "D01",
+      "side": 0,
+      "student": {
+        "margin": -1533.0,
+        "opponent_net_profit": 31246.0,
+        "own_net_profit": 29713.0,
+        "score": 0.0
+      },
+      "teacher": {
+        "margin": -1653.0,
+        "opponent_net_profit": 31260.0,
+        "own_net_profit": 29607.0,
+        "score": 0.0
+      },
+      "teacher_minus_student": {
+        "margin": -120.0,
+        "opponent_net_profit": 14.0,
+        "own_net_profit": -106.0,
+        "score": 0.0
+      }
+    },
+    {
+      "arm": "control",
+      "complete_request_prefix": {
+        "reason": "actor_request_difference",
+        "scope": "same_complete_history",
+        "status": "observed",
+        "step": 227
+      },
+      "seed_alias": "D01",
+      "side": 0,
+      "student": {
+        "margin": -1655.0,
+        "opponent_net_profit": 31256.0,
+        "own_net_profit": 29601.0,
+        "score": 0.0
+      },
+      "teacher": {
+        "margin": -1653.0,
+        "opponent_net_profit": 31260.0,
+        "own_net_profit": 29607.0,
+        "score": 0.0
+      },
+      "teacher_minus_student": {
+        "margin": 2.0,
+        "opponent_net_profit": 4.0,
+        "own_net_profit": 6.0,
+        "score": 0.0
+      }
+    },
+    {
+      "arm": "baseline",
+      "complete_request_prefix": {
+        "reason": "actor_request_difference",
+        "scope": "same_complete_history",
+        "status": "observed",
+        "step": 227
+      },
+      "seed_alias": "D01",
+      "side": 1,
+      "student": {
+        "margin": -1533.0,
+        "opponent_net_profit": 31246.0,
+        "own_net_profit": 29713.0,
+        "score": 0.0
+      },
+      "teacher": {
+        "margin": -1653.0,
+        "opponent_net_profit": 31260.0,
+        "own_net_profit": 29607.0,
+        "score": 0.0
+      },
+      "teacher_minus_student": {
+        "margin": -120.0,
+        "opponent_net_profit": 14.0,
+        "own_net_profit": -106.0,
+        "score": 0.0
+      }
+    },
+    {
+      "arm": "control",
+      "complete_request_prefix": {
+        "reason": "actor_request_difference",
+        "scope": "same_complete_history",
+        "status": "observed",
+        "step": 227
+      },
+      "seed_alias": "D01",
+      "side": 1,
+      "student": {
+        "margin": -1655.0,
+        "opponent_net_profit": 31256.0,
+        "own_net_profit": 29601.0,
+        "score": 0.0
+      },
+      "teacher": {
+        "margin": -1653.0,
+        "opponent_net_profit": 31260.0,
+        "own_net_profit": 29607.0,
+        "score": 0.0
+      },
+      "teacher_minus_student": {
+        "margin": 2.0,
+        "opponent_net_profit": 4.0,
+        "own_net_profit": 6.0,
+        "score": 0.0
+      }
+    },
+    {
+      "arm": "baseline",
+      "complete_request_prefix": {
+        "reason": "actor_request_difference",
+        "scope": "same_complete_history",
+        "status": "observed",
+        "step": 221
+      },
+      "seed_alias": "D02",
+      "side": 0,
+      "student": {
+        "margin": -1354.0,
+        "opponent_net_profit": 27981.0,
+        "own_net_profit": 26627.0,
+        "score": 0.0
+      },
+      "teacher": {
+        "margin": -2185.0,
+        "opponent_net_profit": 27984.0,
+        "own_net_profit": 25799.0,
+        "score": 0.0
+      },
+      "teacher_minus_student": {
+        "margin": -831.0,
+        "opponent_net_profit": 3.0,
+        "own_net_profit": -828.0,
+        "score": 0.0
+      }
+    },
+    {
+      "arm": "control",
+      "complete_request_prefix": {
+        "reason": "actor_request_difference",
+        "scope": "same_complete_history",
+        "status": "observed",
+        "step": 221
+      },
+      "seed_alias": "D02",
+      "side": 0,
+      "student": {
+        "margin": -660.0,
+        "opponent_net_profit": 27985.0,
+        "own_net_profit": 27325.0,
+        "score": 0.0
+      },
+      "teacher": {
+        "margin": -2185.0,
+        "opponent_net_profit": 27984.0,
+        "own_net_profit": 25799.0,
+        "score": 0.0
+      },
+      "teacher_minus_student": {
+        "margin": -1525.0,
+        "opponent_net_profit": -1.0,
+        "own_net_profit": -1526.0,
+        "score": 0.0
+      }
+    },
+    {
+      "arm": "baseline",
+      "complete_request_prefix": {
+        "reason": "actor_request_difference",
+        "scope": "same_complete_history",
+        "status": "observed",
+        "step": 221
+      },
+      "seed_alias": "D02",
+      "side": 1,
+      "student": {
+        "margin": -1354.0,
+        "opponent_net_profit": 27981.0,
+        "own_net_profit": 26627.0,
+        "score": 0.0
+      },
+      "teacher": {
+        "margin": -2185.0,
+        "opponent_net_profit": 27984.0,
+        "own_net_profit": 25799.0,
+        "score": 0.0
+      },
+      "teacher_minus_student": {
+        "margin": -831.0,
+        "opponent_net_profit": 3.0,
+        "own_net_profit": -828.0,
+        "score": 0.0
+      }
+    },
+    {
+      "arm": "control",
+      "complete_request_prefix": {
+        "reason": "actor_request_difference",
+        "scope": "same_complete_history",
+        "status": "observed",
+        "step": 221
+      },
+      "seed_alias": "D02",
+      "side": 1,
+      "student": {
+        "margin": -660.0,
+        "opponent_net_profit": 27985.0,
+        "own_net_profit": 27325.0,
+        "score": 0.0
+      },
+      "teacher": {
+        "margin": -2185.0,
+        "opponent_net_profit": 27984.0,
+        "own_net_profit": 25799.0,
+        "score": 0.0
+      },
+      "teacher_minus_student": {
+        "margin": -1525.0,
+        "opponent_net_profit": -1.0,
+        "own_net_profit": -1526.0,
+        "score": 0.0
+      }
+    }
+  ],
+  "previous_student_games": 8,
+  "promotion": false,
+  "registration_commit": "9890d5f2063de4f52a09fabc79474ea60b2729cc",
+  "schema": "task-teacher-market-dev-public-v1",
+  "scope": "consumed_development_only",
+  "seed_clusters": 2,
+  "statistical_significance": false,
+  "teacher_games": 4,
+  "teacher_official_replays": 4,
+  "training": false
+}

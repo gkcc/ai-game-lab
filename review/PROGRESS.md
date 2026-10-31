@@ -1089,3 +1089,7 @@ Windows 和 WSL 分别通过导入守卫 1 项、训练入口 17 项、Windows �
 后续登记将比较旧 baseline/control 模型对冻结市场版的 8 场开发对局，使用与旧失败面板不重合的两个已消费训练种子、交换双方；不训练或声称独立泛化。种子与资源范围、旧 Worker 复用和停止条件见[登记](evidence/task-pair-market-consumed-v1-20261031/REGISTRATION.zh-CN.md)与[预审](evidence/task-pair-market-consumed-v1-20261031/PRE_REVIEW.zh-CN.md)；真实预检和对局结果尚未产生。
 
 市场开发面板完成 8 场官方比赛和 8 次当场官方主复演。control−baseline 自身净收益 D01 为 −112、D02 为 +698，四对平均 +293；现金差平均 +286、得分差为 0，两臂均四负。预登记开发筛查通过，但仅两个已消费种子，不能证明独立或显著提升；不自动晋级或消耗留出。[结果](evidence/task-pair-market-consumed-v1-result-20261031/RESULTS.zh-CN.md)及[脱敏账本](evidence/task-pair-market-consumed-v1-result-20261031/ledger.json)。
+
+### 同作物模型的教师任务对照
+
+登记提交 `9890d5f` 后，新增两个已消费种子交换双方位置的 4 场教师任务臂比赛与 4 次官方主复演，并复用上面的 8 场学生比赛。D01 每席教师／baseline／control 自身净收益为 29,607／29,713／29,601；D02 为 25,799／26,627／27,325。三臂对 market 均负；教师减 control 平均自身收益 −760、现金差 −761.5，得分差为 0。教师臂使用相同作物模型，不是完整手写教师；仅两枚已消费种子，不能宣称独立泛化、统计显著或因果收益。本轮没有训练、GPU 运算或 PPO；不自动晋级。[登记](evidence/task-teacher-market-dev-v1-20261031/REGISTRATION.zh-CN.md) | [结果与账本](evidence/task-teacher-market-dev-v1-result-20261031/RESULTS.zh-CN.md) | [独立复核](evidence/task-teacher-market-dev-v1-result-20261031/REVIEW.zh-CN.md)。
