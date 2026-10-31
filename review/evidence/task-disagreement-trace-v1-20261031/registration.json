@@ -1,0 +1,128 @@
+{
+  "base_commit": "d6227dcc403ac657b3ab6bfbc729c1da75f8d216",
+  "cases": [
+    {
+      "batch": 1,
+      "historical_role": "T03",
+      "opponent": "market",
+      "role": "A03",
+      "side": 0,
+      "split": "train"
+    },
+    {
+      "batch": 1,
+      "historical_role": "T04",
+      "opponent": "round2",
+      "role": "A04",
+      "side": 1,
+      "split": "train"
+    },
+    {
+      "batch": 2,
+      "historical_role": "V01",
+      "opponent": "market",
+      "role": "A09",
+      "side": 1,
+      "split": "diagnostic"
+    },
+    {
+      "batch": 2,
+      "historical_role": "V02",
+      "opponent": "round2",
+      "role": "A10",
+      "side": 0,
+      "split": "diagnostic"
+    }
+  ],
+  "dedup": "ordered_raw_or_normalized_f32_transitive_teacher_conflict_train_priority",
+  "diagnostic_selection": "fixed_coordinate_rank_blind_to_label_and_outcome",
+  "disk_floor_bytes": 4294967296,
+  "filter": "single_candidate_or_identical_normalized_rows_or_train_teacher_student_equal",
+  "gpu": false,
+  "independent_evaluation": false,
+  "job": {
+    "cleanup_seconds": 10,
+    "max_commit_bytes": 3221225472,
+    "max_rss_bytes": 2147483648,
+    "min_available_bytes": 4294967296,
+    "poll_seconds": 1,
+    "wall_seconds": 900
+  },
+  "max_attempts": 1,
+  "max_candidates": 256,
+  "max_groups": 96,
+  "max_per_window": 4,
+  "memory_initial_bytes": 5368709120,
+  "model_forward": false,
+  "new_games": 0,
+  "official_rule_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+  "official_rule_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "private_binding_sha256": "21ea5e733e7dcec56c8cb0057361498533c4da4739cd530d0a845f3dca6e24e6",
+  "schema": "task-disagreement-trace-prereg-v1",
+  "source_sha256": {
+    "kaggriculture/decision/api.py": "3ef4025bde61d240b298cbe4d31291f25021baaf5b396f5540bbfcdda4231917",
+    "kaggriculture/learning/task_bc_v1/model.py": "dbdbe126029a16f15178d18a5088defac83c5b6447d77f48aa7c77cae70886d8",
+    "kaggriculture/learning/task_choice_v1/features.py": "b69e3fb590fb5c1159193d112977aa03170557dc47b8aa19bcffe0f09737c7d4",
+    "kaggriculture/learning/task_disagreement_trace_v1/__init__.py": "c887566fdcccfbda790996009e93f600e8909f11ac7e4420e9bce8dc2a1a0c57",
+    "kaggriculture/learning/task_disagreement_trace_v1/experiment.py": "1cc7b5871fc5c0f31319229fa89d4051e1d5d5c153b95e91c1c1e56cc5ecf898",
+    "kaggriculture/learning/task_disagreement_trace_v1/extract.py": "fab8d154705d7cc2a5441b639ea498791e06cc7bfb389dc9133848bf6b032e1a",
+    "kaggriculture/learning/task_disagreement_trace_v1/sampling.py": "12beed56a89dcaba07d23780966c7077bfb2fb7e284f114156f8ff9f4f58aa1f",
+    "kaggriculture/learning/task_disagreement_trace_v1/test_experiment.py": "e4312d9605914362d62534c3edddf52e3f1dd7069831cf5e517349077a5017a1",
+    "kaggriculture/learning/task_disagreement_trace_v1/test_extract.py": "11db09268efa03f519f82507bba1cd6d149473af4da0c84da329f790e9ab7025",
+    "kaggriculture/learning/task_disagreement_trace_v1/test_sampling.py": "be6131a550506df66903b3b56814817e0d0328263e96211dff614b17c617dfda",
+    "kaggriculture/learning/task_disagreement_trace_v1/test_seal.py": "7b8748dedd1a41447f095be2740708578aa96534754d7d95c5d3418806921d4e",
+    "kaggriculture/learning/task_multi_teacher_probe_v1/experiment.py": "4e0ac5a922a33b477f764257a25ed974377ccee3b63f6f16727d84ab60035a8a",
+    "kaggriculture/learning/task_multisource_rank_v1/dedup.py": "775049f846cb9fbd6fc199cf50d0bbb81c60e24ab86720f9269ee7d11b22f2cb",
+    "kaggriculture/learning/task_pair_dev_games_v1/panel.py": "e310df401deb191f26498566217fd3889e8c2b184980538a20e3eda3e0e013d3",
+    "kaggriculture/learning/task_pair_fresh_multi_v1/entry.py": "17131b3d8283057c395b5ef24a7d361f799d39d8751e51b9080709006881fe68",
+    "kaggriculture/learning/task_student_anchor_collection_v1/sources.py": "434179c7bf34e5f423a6c393dd456feb3c71391850f2b1801897a3fb3a372b46",
+    "kaggriculture/learning/task_student_continuation_v1/experiment.py": "cc3b84a9750d947fd417e45d40b80f1b43ff0cd5686e20da4e833e10877e67b0",
+    "kaggriculture/learning/task_student_continuation_v1/samples.py": "064ea7593dfa7006f5fd5f9e0de25f277a661ce0c81742abc49f4116d60d0d43",
+    "kaggriculture/learning/task_student_dagger_collection_v1/sources.py": "70581e43e229443aac176ff5b3be52d87671777a4de9f1de18c2020f2e25d71c",
+    "kaggriculture/learning/task_teacher_cross_source_v1/__init__.py": "d4249140fdb3b12d5f5871597a5131c6caf66ce5ed685b35df8353941f2e49ee",
+    "kaggriculture/learning/task_teacher_cross_source_v1/archive.py": "e6c4dd6e317a810362658d2d8c3441e2f7d8d99de1468c0aaf1fba2620f5c41f",
+    "kaggriculture/learning/task_teacher_cross_source_v1/experiment.py": "6a3c68ca8a524a7e5b12bcfb0274ddc22f443acf0c6933763600dc43eb6066cd",
+    "kaggriculture/learning/task_teacher_cross_source_v1/overlap.py": "e54ed187dfcdbc32a23d5c3cf683f467274f1aecc204fa8aa22184678e65b7b8",
+    "kaggriculture/learning/task_teacher_dev_deviation_v1/membership.py": "516791a86f28b84d9fd8bea3a936da4afd52be07e55a1bf5b24d99a86879721e",
+    "kaggriculture/learning/task_teacher_transfer_dataset_v1/dataset.py": "3f4cd5902ba8948e06ebeea663acd5e8d1647bbe4df087757a5a451ea59459da",
+    "kaggriculture/learning/task_teacher_transfer_dataset_v1/experiment.py": "30a655c25b750d0e7216b19bbb82b62d0e3d4a7c22647cac628ee683e2e83bbc",
+    "kaggriculture/learning/task_water_residual_v1/policy.py": "fc35691fefed168684dc0c6133716945cc5735c8791c12b1e87692716001e362",
+    "review/evidence/task-disagreement-trace-v1-20261031/REGISTRATION.zh-CN.md": "5eedfe48ed46d32ccce0ebbd64c13035c3034b1fbf7699b2209a75b163efce45"
+  },
+  "thresholds": {
+    "diagnostic": 16,
+    "per_role": 4,
+    "train": 16,
+    "train_teacher_operations": 2,
+    "windows_per_role": 3
+  },
+  "train_selection": "fixed_coordinate_rank_on_teacher_student_disagreements",
+  "training": false,
+  "turns_per_case": 719,
+  "windows": [
+    [
+      0,
+      119
+    ],
+    [
+      120,
+      239
+    ],
+    [
+      240,
+      359
+    ],
+    [
+      360,
+      479
+    ],
+    [
+      480,
+      599
+    ],
+    [
+      600,
+      718
+    ]
+  ]
+}
