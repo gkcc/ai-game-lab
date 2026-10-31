@@ -1,0 +1,100 @@
+{
+  "cases": [
+    {
+      "callbacks": 2222,
+      "learner_side": 0,
+      "max_candidate_width": 175,
+      "official_transitions": 0,
+      "operations": {
+        "DIG": 24,
+        "FERTILIZE": 0,
+        "HARVEST": 173,
+        "PLANT": 219,
+        "WATER": 1806
+      },
+      "opponent": "market",
+      "passed": true,
+      "replay_states": 720,
+      "requests_matched": 719,
+      "role": "A01",
+      "teacher_side": 1,
+      "training": false,
+      "turns": 719
+    },
+    {
+      "callbacks": 2222,
+      "learner_side": 1,
+      "max_candidate_width": 175,
+      "official_transitions": 0,
+      "operations": {
+        "DIG": 24,
+        "FERTILIZE": 0,
+        "HARVEST": 173,
+        "PLANT": 219,
+        "WATER": 1806
+      },
+      "opponent": "market",
+      "passed": true,
+      "replay_states": 720,
+      "requests_matched": 719,
+      "role": "A01",
+      "teacher_side": 0,
+      "training": false,
+      "turns": 719
+    },
+    {
+      "callbacks": 1965,
+      "learner_side": 0,
+      "max_candidate_width": 200,
+      "official_transitions": 0,
+      "operations": {
+        "DIG": 5,
+        "FERTILIZE": 0,
+        "HARVEST": 121,
+        "PLANT": 156,
+        "WATER": 1683
+      },
+      "opponent": "round2",
+      "passed": true,
+      "replay_states": 720,
+      "requests_matched": 719,
+      "role": "A01",
+      "teacher_side": 1,
+      "training": false,
+      "turns": 719
+    },
+    {
+      "callbacks": 1965,
+      "learner_side": 1,
+      "max_candidate_width": 200,
+      "official_transitions": 0,
+      "operations": {
+        "DIG": 5,
+        "FERTILIZE": 0,
+        "HARVEST": 121,
+        "PLANT": 156,
+        "WATER": 1683
+      },
+      "opponent": "round2",
+      "passed": true,
+      "replay_states": 720,
+      "requests_matched": 719,
+      "role": "A01",
+      "teacher_side": 0,
+      "training": false,
+      "turns": 719
+    }
+  ],
+  "summary": {
+    "callbacks": 8374,
+    "games": 4,
+    "independent_evaluation": false,
+    "official_transitions": 0,
+    "registration_commit": "3448fa1fd0948ac6e324629ec8f7717f64984f07",
+    "requests_matched": 2876,
+    "role": "A01",
+    "status": "passed",
+    "training": false,
+    "turns": 2876
+  }
+}
