@@ -1163,3 +1163,7 @@ Windows 和 WSL 分别通过导入守卫 1 项、训练入口 17 项、Windows �
 ### 已消费轨迹的教师分歧示范
 
 事前提交 `384bc5f` 后完整扫描四场既有轨迹，得到 42 组教师与学生选择不同的训练示范及 48 组按坐标初选的诊断示范，四角色均覆盖六个时间窗口，数据门通过。90 组内部的精确重复复核通过；条件教师标签不证明官方执行或收益。本次没有模型前向、训练或新比赛。一名复核者在后续训练方案冻结前看到了按匿名角色划分的诊断一致性和操作类别汇总，因此诊断集明确属于已观察开发数据，不得称为隐藏留出。[登记](evidence/task-disagreement-trace-v1-20261031/REGISTRATION.zh-CN.md) | [结果及证书](evidence/task-disagreement-trace-v1-result-20261031/RESULTS.zh-CN.md) | [复核与暴露范围](evidence/task-disagreement-trace-v1-result-20261031/REVIEW.zh-CN.md)。
+
+### 状态条件残差：CPU 开发筛查失败
+
+事前提交 `1d3f9ff` 后，以旧教师锚和分歧示范完成一次 64 步 CPU 状态条件残差训练，输出层改变。已观察的新诊断 47 组基线和候选均命中 45 组、首选变化 0；旧诊断 250 组为 243→244 命中。新诊断未满足预登记的净改正及选择变化门，筛查失败；旧诊断一次改正不构成独立提升。原始 42／48 新样本的历史学生索引核对、840 保留组的双宽公式级数值检查通过，但不证明训练融合内核逐位一致。两名独立子代理核对本机收据和统计，未重新训练或比赛；默认 Bot 不变，GPU 未用于本轮。[登记](evidence/task-state-residual-v1-20261031/REGISTRATION.zh-CN.md) | [结果及证书](evidence/task-state-residual-v1-result-20261031/RESULTS.zh-CN.md) | [独立复核](evidence/task-state-residual-v1-result-20261031/REVIEW.zh-CN.md)。

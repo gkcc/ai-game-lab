@@ -1,0 +1,193 @@
+{
+  "checks": {
+    "each_new_role_no_drop": true,
+    "new_dev_at_least_one_change": false,
+    "new_dev_net_correct_at_least_two": false,
+    "old_non_water_coverage_at_least_twenty": true,
+    "old_non_water_drop_at_most_five_points": true
+  },
+  "coverage": {
+    "new_dev": 47,
+    "new_train": 42,
+    "old_diag": 250,
+    "old_train": 501
+  },
+  "dedup": {
+    "all_feature_component_count": 843,
+    "conflict_removed_by_pool": {
+      "new_dev": 0,
+      "new_train": 0,
+      "old_diag": 0,
+      "old_train": 0
+    },
+    "diagnostic_conflict_components": 0,
+    "diagnostic_excluded_train_connected_by_pool": {
+      "new_dev": 1,
+      "new_train": 0,
+      "old_diag": 6,
+      "old_train": 0
+    },
+    "diagnostic_only_components": 297,
+    "diagnostic_train_connected_components": 7,
+    "duplicate_removed_by_pool": {
+      "new_dev": 0,
+      "new_train": 0,
+      "old_diag": 0,
+      "old_train": 8
+    },
+    "input_by_pool": {
+      "new_dev": 48,
+      "new_train": 42,
+      "old_diag": 256,
+      "old_train": 512
+    },
+    "input_count": 858,
+    "retained_by_pool": {
+      "new_dev": 47,
+      "new_train": 42,
+      "old_diag": 250,
+      "old_train": 504
+    },
+    "retained_count": 843,
+    "train_component_count": 546,
+    "train_conflict_components": 0
+  },
+  "diagnostic_precision": {
+    "argmax_stable": true,
+    "groups": 297,
+    "passed": true,
+    "probability_max_abs_error": 1.1829474955149522e-08,
+    "target_nll_max_abs_error": 2.1394183402634326e-07,
+    "target_nll_max_limit_ratio": 0.002049126057551664
+  },
+  "diagnostic_previously_observed": true,
+  "diagnostic_student_checked": {
+    "groups": 48,
+    "mismatches": 0
+  },
+  "filtered": {
+    "new_dev": {
+      "identical_rows": 0,
+      "single": 0,
+      "student_same": 0
+    },
+    "new_train": {
+      "identical_rows": 0,
+      "single": 0,
+      "student_same": 0
+    },
+    "old_diag": {
+      "identical_rows": 0,
+      "single": 0,
+      "student_same": 0
+    },
+    "old_train": {
+      "identical_rows": 0,
+      "single": 3,
+      "student_same": 0
+    }
+  },
+  "gpu": false,
+  "independent_evaluation": false,
+  "new_dev": {
+    "baseline_correct": 45,
+    "baseline_mean_nll": 0.11838,
+    "changed": 0,
+    "groups": 47,
+    "improved": 0,
+    "op_flips": 0,
+    "regressed": 0,
+    "residual_correct": 45,
+    "residual_mean_nll": 0.120605
+  },
+  "new_dev_roles": {
+    "A09": {
+      "baseline_correct": 22,
+      "baseline_mean_nll": 0.211382,
+      "changed": 0,
+      "groups": 24,
+      "improved": 0,
+      "op_flips": 0,
+      "regressed": 0,
+      "residual_correct": 22,
+      "residual_mean_nll": 0.21349
+    },
+    "A10": {
+      "baseline_correct": 23,
+      "baseline_mean_nll": 0.021334,
+      "changed": 0,
+      "groups": 23,
+      "improved": 0,
+      "op_flips": 0,
+      "regressed": 0,
+      "residual_correct": 23,
+      "residual_mean_nll": 0.023681
+    }
+  },
+  "new_games": 0,
+  "new_role_windows": {
+    "A03": 6,
+    "A04": 6,
+    "A09": 6,
+    "A10": 6
+  },
+  "new_roles": {
+    "A03": 21,
+    "A04": 21,
+    "A09": 24,
+    "A10": 23
+  },
+  "nonzero_gradient_seen": true,
+  "old_diag": {
+    "baseline_correct": 243,
+    "baseline_mean_nll": 0.1541,
+    "changed": 1,
+    "groups": 250,
+    "improved": 1,
+    "op_flips": 0,
+    "regressed": 0,
+    "residual_correct": 244,
+    "residual_mean_nll": 0.152455
+  },
+  "old_non_water": {
+    "old_non_water_baseline_correct": 75,
+    "old_non_water_groups": 80,
+    "old_non_water_residual_correct": 76
+  },
+  "output_layer_changed": true,
+  "parity": {
+    "allclose": true,
+    "baseline_argmax_mismatches": 0,
+    "device": "cpu",
+    "fixed_batch": 16,
+    "fixed_width": 256,
+    "full_width_groups": 840,
+    "groups": 840,
+    "groups_by_width": {
+      "238": 840,
+      "256": 840
+    },
+    "maximum_absolute_error": 1.7881393432617188e-07,
+    "train_width": 238,
+    "train_width_groups": 840,
+    "training_choice_mismatches": 0
+  },
+  "promotion": false,
+  "registration_commit": "1d3f9ff3ebe4b1dfb1bf648e14f05b0cc50e19bd",
+  "schema": "task-state-residual-public-v1",
+  "screen": "failed",
+  "train_precision": {
+    "argmax_stable": true,
+    "groups": 543,
+    "passed": true,
+    "probability_max_abs_error": 1.2118739789457322e-08,
+    "target_nll_max_abs_error": 4.137349574051541e-07,
+    "target_nll_max_limit_ratio": 0.003684992420242406
+  },
+  "train_student_checked": {
+    "groups": 42,
+    "mismatches": 0
+  },
+  "training_device": "cpu",
+  "updates_completed": 64
+}
