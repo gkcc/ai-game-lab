@@ -1179,3 +1179,7 @@ Windows 和 WSL 分别通过导入守卫 1 项、训练入口 17 项、Windows �
 ### 条件教师分歧的官方单步预筛
 
 事前提交 `3c02823` 后，扫描八条已消费学生轨迹的 5,752 行，完成 32 次条件教师比较和 16 次确认完成的官方单步转移；预设的至少四个不同坐标且覆盖两个历史角色的后续设计门达到。该门仅说明存在完整请求和 canonical／Python 下一帧非动作字段差异，不证明收益或胜率；分歧采样和首次命中截断使其不能代表自然频率。两名独立子代理核对本机封存，未重跑逐组轨迹或单步。没有训练、GPU、新完整比赛或自动晋级；具体候选仅存本机。[登记](../kaggriculture/learning/task_teacher_counterfactual_screen_v1/REGISTRATION.zh-CN.md) | [结果及证书](evidence/task-teacher-counterfactual-screen-v1-result-20261031/RESULTS.zh-CN.md) | [独立复核](evidence/task-teacher-counterfactual-screen-v1-result-20261031/REVIEW.zh-CN.md)。
+
+### 条件教师完整配对：阶段间内存停止
+
+事前提交 `85391a3` 后，控制局与干预局均完成 720 状态、719 动作；控制局的受管官方复演，以及历史状态语义、背包和仓库顺序、请求与稳定 trace 对齐通过，比较口径见失败说明。之后协调器在阶段间因 `MemoryError` 停止，干预复演与配对核验未开始，失败时精确可用内存未保存。原登记不允许重试或以异常配对判断收益，故无收益结论、无完整实验封存。两名子代理核查收据、失败边界与脱敏范围，没有重跑比赛；运行中短时 Python 监控可能增加内存占用，但没有同时刻快照，不能归因。默认 Bot、历史结果不变，无训练或 GPU。[登记](../kaggriculture/learning/task_teacher_counterfactual_pair_v1/REGISTRATION.zh-CN.md) | [失败说明及证书](evidence/task-teacher-counterfactual-pair-v1-failure-20261031/FAILURE.zh-CN.md) | [独立复核](evidence/task-teacher-counterfactual-pair-v1-failure-20261031/REVIEW.zh-CN.md)。

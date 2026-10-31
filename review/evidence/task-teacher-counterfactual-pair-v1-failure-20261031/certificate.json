@@ -1,0 +1,25 @@
+{
+  "completed_phases": [
+    "prepare_case",
+    "control",
+    "control_audit",
+    "control_verify",
+    "intervene"
+  ],
+  "control_historical_alignment_verified": true,
+  "control_replay_verified": true,
+  "failure_category": "memory",
+  "failure_during_active_unit": false,
+  "gpu": false,
+  "independent_evaluation": false,
+  "intervention_replay_verified": false,
+  "new_complete_games": 2,
+  "overall_completion_certificate": false,
+  "pair_validation_completed": false,
+  "promotion": false,
+  "registration_commit": "85391a37ee23f34d5a063a5bf3117818a21dd844",
+  "retry_allowed": false,
+  "schema": "teacher-counterfactual-pair-failure-public-v1",
+  "status": "failed",
+  "training": false
+}
