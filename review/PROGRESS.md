@@ -1098,3 +1098,8 @@ Windows 和 WSL 分别通过导入守卫 1 项、训练入口 17 项、Windows �
 ### 新种子多对手任务模型探索
 
 事前登记 `40f3f39` 后，四个新生成种子、两个冻结对手及双席完成 32 场官方完整比赛和 32 次当场官方主复演。control−baseline 平均自身净收益 −70.75、现金差 −73.625，两臂均为 10 胜 6 负；两对手的收益增量均为负，一种子降幅超过 1% 护栏，预登记探索筛查未通过。16 组完整请求前缀均观察到自身分歧，不说明收益因果。独立子代理只读核验逐场账目和保存的回放，没有额外重跑官方引擎。四个种子簇不足以证明显著提升或普遍退步，本轮不训练、不晋级、不改默认 Bot；新种子现已消费，原市场正式保留面板未使用。[登记](evidence/task-pair-fresh-multi-v1-20261031/REGISTRATION.zh-CN.md) | [结果与账本](evidence/task-pair-fresh-multi-v1-result-20261031/RESULTS.zh-CN.md) | [独立复核](evidence/task-pair-fresh-multi-v1-result-20261031/REVIEW.zh-CN.md)。
+
+
+### 学生续行条件示范诊断
+
+登记提交 `7d80014` 后，从 8 场已消费游戏的 24 个固定窗口选择任务分歧，完成 48 次学生续行比较。教师替换 `same/different/unknown` 为 11/3/10，第三候选为 0/18/6；9 格同时满足教师严格相同及第三候选改变官方下一物理状态，探索门通过。该九格中 6 个在从 0 起算的 `step 15`，且来自两种不同后续模型（baseline 6、control 3），不能视为独立样本或混作统一等价标签。该阶段不训练、不晋级、不产生完整比赛；官方单步物理差异由受审程序现场计算，保存的布尔账本本身不能独立重算状态。后续若学习须另行收集更丰富的固定模型条件示范，并在新的比赛面板验证；保留旧结果与默认 Bot。[登记](evidence/task-student-continuation-v1-20261031/REGISTRATION.zh-CN.md) | [结果与账本](evidence/task-student-continuation-v1-result-20261031/RESULTS.zh-CN.md) | [独立复核](evidence/task-student-continuation-v1-result-20261031/REVIEW.zh-CN.md)。

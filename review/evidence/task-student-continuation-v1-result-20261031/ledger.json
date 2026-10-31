@@ -1,0 +1,1261 @@
+{
+  "rows": [
+    {
+      "arm": "baseline",
+      "candidate_width": 30,
+      "opponent": "market",
+      "ordinal": 1,
+      "role": "F01",
+      "selection": "selected",
+      "side": 0,
+      "step": 15,
+      "teacher": {
+        "checks": {
+          "final_context_equal": true,
+          "next_turn_control_equal": true,
+          "request_equal": true,
+          "reservations_equal": true,
+          "stable_crop_equal": true
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": false,
+          "scope": "one_official_transition",
+          "state_changed": false
+        },
+        "reason": "same_in_turn_and_bounded_control_state",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "same"
+      },
+      "third": {
+        "checks": {
+          "final_context_equal": false,
+          "next_turn_control_equal": true,
+          "request_equal": false,
+          "reservations_equal": false,
+          "stable_crop_equal": false
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": true,
+          "scope": "one_official_transition",
+          "state_changed": true
+        },
+        "reason": "complete_request_differs",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "different"
+      },
+      "window": 0
+    },
+    {
+      "arm": "baseline",
+      "candidate_width": 112,
+      "opponent": "market",
+      "ordinal": 3,
+      "role": "F01",
+      "selection": "selected",
+      "side": 0,
+      "step": 249,
+      "teacher": {
+        "checks": {
+          "final_context_equal": false,
+          "next_turn_control_equal": false,
+          "request_equal": false,
+          "reservations_equal": false,
+          "stable_crop_equal": true
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": true,
+          "scope": "one_official_transition",
+          "state_changed": true
+        },
+        "reason": "complete_request_differs",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "different"
+      },
+      "third": {
+        "checks": {
+          "final_context_equal": false,
+          "next_turn_control_equal": false,
+          "request_equal": true,
+          "reservations_equal": true,
+          "stable_crop_equal": true
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": false,
+          "scope": "one_official_transition",
+          "state_changed": false
+        },
+        "reason": "request_same_but_other_state_differs",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "unknown"
+      },
+      "window": 1
+    },
+    {
+      "arm": "baseline",
+      "candidate_width": 179,
+      "opponent": "market",
+      "ordinal": 1,
+      "role": "F01",
+      "selection": "selected",
+      "side": 0,
+      "step": 483,
+      "teacher": {
+        "checks": {
+          "final_context_equal": true,
+          "next_turn_control_equal": false,
+          "request_equal": true,
+          "reservations_equal": true,
+          "stable_crop_equal": true
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": false,
+          "scope": "one_official_transition",
+          "state_changed": false
+        },
+        "reason": "request_same_but_other_state_differs",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "unknown"
+      },
+      "third": {
+        "checks": {
+          "final_context_equal": false,
+          "next_turn_control_equal": true,
+          "request_equal": false,
+          "reservations_equal": false,
+          "stable_crop_equal": true
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": true,
+          "scope": "one_official_transition",
+          "state_changed": true
+        },
+        "reason": "complete_request_differs",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "different"
+      },
+      "window": 2
+    },
+    {
+      "arm": "control",
+      "candidate_width": 6,
+      "opponent": "round2",
+      "ordinal": 4,
+      "role": "F01",
+      "selection": "selected",
+      "side": 1,
+      "step": 15,
+      "teacher": {
+        "checks": {
+          "final_context_equal": false,
+          "next_turn_control_equal": true,
+          "request_equal": true,
+          "reservations_equal": true,
+          "stable_crop_equal": false
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": false,
+          "scope": "one_official_transition",
+          "state_changed": false
+        },
+        "reason": "request_same_but_other_state_differs",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "unknown"
+      },
+      "third": {
+        "checks": {
+          "final_context_equal": false,
+          "next_turn_control_equal": true,
+          "request_equal": false,
+          "reservations_equal": false,
+          "stable_crop_equal": false
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": true,
+          "scope": "one_official_transition",
+          "state_changed": true
+        },
+        "reason": "complete_request_differs",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "different"
+      },
+      "window": 0
+    },
+    {
+      "arm": "control",
+      "candidate_width": 18,
+      "opponent": "round2",
+      "ordinal": 7,
+      "role": "F01",
+      "selection": "selected",
+      "side": 1,
+      "step": 250,
+      "teacher": {
+        "checks": {
+          "final_context_equal": false,
+          "next_turn_control_equal": true,
+          "request_equal": true,
+          "reservations_equal": true,
+          "stable_crop_equal": true
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": false,
+          "scope": "one_official_transition",
+          "state_changed": false
+        },
+        "reason": "request_same_but_other_state_differs",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "unknown"
+      },
+      "third": {
+        "checks": {
+          "final_context_equal": false,
+          "next_turn_control_equal": true,
+          "request_equal": true,
+          "reservations_equal": true,
+          "stable_crop_equal": true
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": false,
+          "scope": "one_official_transition",
+          "state_changed": false
+        },
+        "reason": "request_same_but_other_state_differs",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "unknown"
+      },
+      "window": 1
+    },
+    {
+      "arm": "control",
+      "candidate_width": 72,
+      "opponent": "round2",
+      "ordinal": 4,
+      "role": "F01",
+      "selection": "selected",
+      "side": 1,
+      "step": 484,
+      "teacher": {
+        "checks": {
+          "final_context_equal": true,
+          "next_turn_control_equal": true,
+          "request_equal": true,
+          "reservations_equal": true,
+          "stable_crop_equal": true
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": false,
+          "scope": "one_official_transition",
+          "state_changed": false
+        },
+        "reason": "same_in_turn_and_bounded_control_state",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "same"
+      },
+      "third": {
+        "checks": {
+          "final_context_equal": false,
+          "next_turn_control_equal": true,
+          "request_equal": false,
+          "reservations_equal": false,
+          "stable_crop_equal": true
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": true,
+          "scope": "one_official_transition",
+          "state_changed": true
+        },
+        "reason": "complete_request_differs",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "different"
+      },
+      "window": 2
+    },
+    {
+      "arm": "baseline",
+      "candidate_width": 30,
+      "opponent": "market",
+      "ordinal": 1,
+      "role": "F02",
+      "selection": "selected",
+      "side": 1,
+      "step": 15,
+      "teacher": {
+        "checks": {
+          "final_context_equal": true,
+          "next_turn_control_equal": true,
+          "request_equal": true,
+          "reservations_equal": true,
+          "stable_crop_equal": true
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": false,
+          "scope": "one_official_transition",
+          "state_changed": false
+        },
+        "reason": "same_in_turn_and_bounded_control_state",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "same"
+      },
+      "third": {
+        "checks": {
+          "final_context_equal": false,
+          "next_turn_control_equal": true,
+          "request_equal": false,
+          "reservations_equal": false,
+          "stable_crop_equal": false
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": true,
+          "scope": "one_official_transition",
+          "state_changed": true
+        },
+        "reason": "complete_request_differs",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "different"
+      },
+      "window": 0
+    },
+    {
+      "arm": "baseline",
+      "candidate_width": 42,
+      "opponent": "market",
+      "ordinal": 4,
+      "role": "F02",
+      "selection": "selected",
+      "side": 1,
+      "step": 246,
+      "teacher": {
+        "checks": {
+          "final_context_equal": false,
+          "next_turn_control_equal": true,
+          "request_equal": true,
+          "reservations_equal": true,
+          "stable_crop_equal": true
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": false,
+          "scope": "one_official_transition",
+          "state_changed": false
+        },
+        "reason": "request_same_but_other_state_differs",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "unknown"
+      },
+      "third": {
+        "checks": {
+          "final_context_equal": false,
+          "next_turn_control_equal": true,
+          "request_equal": false,
+          "reservations_equal": false,
+          "stable_crop_equal": true
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": true,
+          "scope": "one_official_transition",
+          "state_changed": true
+        },
+        "reason": "complete_request_differs",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "different"
+      },
+      "window": 1
+    },
+    {
+      "arm": "baseline",
+      "candidate_width": 92,
+      "opponent": "market",
+      "ordinal": 1,
+      "role": "F02",
+      "selection": "selected",
+      "side": 1,
+      "step": 506,
+      "teacher": {
+        "checks": {
+          "final_context_equal": true,
+          "next_turn_control_equal": true,
+          "request_equal": true,
+          "reservations_equal": true,
+          "stable_crop_equal": true
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": false,
+          "scope": "one_official_transition",
+          "state_changed": false
+        },
+        "reason": "same_in_turn_and_bounded_control_state",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "same"
+      },
+      "third": {
+        "checks": {
+          "final_context_equal": false,
+          "next_turn_control_equal": true,
+          "request_equal": true,
+          "reservations_equal": true,
+          "stable_crop_equal": true
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": false,
+          "scope": "one_official_transition",
+          "state_changed": false
+        },
+        "reason": "request_same_but_other_state_differs",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "unknown"
+      },
+      "window": 2
+    },
+    {
+      "arm": "control",
+      "candidate_width": 6,
+      "opponent": "round2",
+      "ordinal": 4,
+      "role": "F02",
+      "selection": "selected",
+      "side": 0,
+      "step": 15,
+      "teacher": {
+        "checks": {
+          "final_context_equal": false,
+          "next_turn_control_equal": true,
+          "request_equal": true,
+          "reservations_equal": true,
+          "stable_crop_equal": false
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": false,
+          "scope": "one_official_transition",
+          "state_changed": false
+        },
+        "reason": "request_same_but_other_state_differs",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "unknown"
+      },
+      "third": {
+        "checks": {
+          "final_context_equal": false,
+          "next_turn_control_equal": true,
+          "request_equal": false,
+          "reservations_equal": false,
+          "stable_crop_equal": false
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": true,
+          "scope": "one_official_transition",
+          "state_changed": true
+        },
+        "reason": "complete_request_differs",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "different"
+      },
+      "window": 0
+    },
+    {
+      "arm": "control",
+      "candidate_width": 42,
+      "opponent": "round2",
+      "ordinal": 4,
+      "role": "F02",
+      "selection": "selected",
+      "side": 0,
+      "step": 246,
+      "teacher": {
+        "checks": {
+          "final_context_equal": false,
+          "next_turn_control_equal": true,
+          "request_equal": true,
+          "reservations_equal": true,
+          "stable_crop_equal": true
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": false,
+          "scope": "one_official_transition",
+          "state_changed": false
+        },
+        "reason": "request_same_but_other_state_differs",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "unknown"
+      },
+      "third": {
+        "checks": {
+          "final_context_equal": false,
+          "next_turn_control_equal": true,
+          "request_equal": false,
+          "reservations_equal": false,
+          "stable_crop_equal": true
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": true,
+          "scope": "one_official_transition",
+          "state_changed": true
+        },
+        "reason": "complete_request_differs",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "different"
+      },
+      "window": 1
+    },
+    {
+      "arm": "control",
+      "candidate_width": 28,
+      "opponent": "round2",
+      "ordinal": 4,
+      "role": "F02",
+      "selection": "selected",
+      "side": 0,
+      "step": 488,
+      "teacher": {
+        "checks": {
+          "final_context_equal": true,
+          "next_turn_control_equal": true,
+          "request_equal": true,
+          "reservations_equal": true,
+          "stable_crop_equal": true
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": false,
+          "scope": "one_official_transition",
+          "state_changed": false
+        },
+        "reason": "same_in_turn_and_bounded_control_state",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "same"
+      },
+      "third": {
+        "checks": {
+          "final_context_equal": false,
+          "next_turn_control_equal": true,
+          "request_equal": true,
+          "reservations_equal": true,
+          "stable_crop_equal": true
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": false,
+          "scope": "one_official_transition",
+          "state_changed": false
+        },
+        "reason": "request_same_but_other_state_differs",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "unknown"
+      },
+      "window": 2
+    },
+    {
+      "arm": "control",
+      "candidate_width": 30,
+      "opponent": "market",
+      "ordinal": 1,
+      "role": "F03",
+      "selection": "selected",
+      "side": 0,
+      "step": 15,
+      "teacher": {
+        "checks": {
+          "final_context_equal": true,
+          "next_turn_control_equal": true,
+          "request_equal": true,
+          "reservations_equal": true,
+          "stable_crop_equal": true
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": false,
+          "scope": "one_official_transition",
+          "state_changed": false
+        },
+        "reason": "same_in_turn_and_bounded_control_state",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "same"
+      },
+      "third": {
+        "checks": {
+          "final_context_equal": false,
+          "next_turn_control_equal": true,
+          "request_equal": false,
+          "reservations_equal": false,
+          "stable_crop_equal": false
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": true,
+          "scope": "one_official_transition",
+          "state_changed": true
+        },
+        "reason": "complete_request_differs",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "different"
+      },
+      "window": 0
+    },
+    {
+      "arm": "control",
+      "candidate_width": 42,
+      "opponent": "market",
+      "ordinal": 4,
+      "role": "F03",
+      "selection": "selected",
+      "side": 0,
+      "step": 246,
+      "teacher": {
+        "checks": {
+          "final_context_equal": false,
+          "next_turn_control_equal": true,
+          "request_equal": true,
+          "reservations_equal": true,
+          "stable_crop_equal": true
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": false,
+          "scope": "one_official_transition",
+          "state_changed": false
+        },
+        "reason": "request_same_but_other_state_differs",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "unknown"
+      },
+      "third": {
+        "checks": {
+          "final_context_equal": false,
+          "next_turn_control_equal": true,
+          "request_equal": false,
+          "reservations_equal": false,
+          "stable_crop_equal": true
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": true,
+          "scope": "one_official_transition",
+          "state_changed": true
+        },
+        "reason": "complete_request_differs",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "different"
+      },
+      "window": 1
+    },
+    {
+      "arm": "control",
+      "candidate_width": 42,
+      "opponent": "market",
+      "ordinal": 3,
+      "role": "F03",
+      "selection": "selected",
+      "side": 0,
+      "step": 481,
+      "teacher": {
+        "checks": {
+          "final_context_equal": false,
+          "next_turn_control_equal": true,
+          "request_equal": true,
+          "reservations_equal": true,
+          "stable_crop_equal": true
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": false,
+          "scope": "one_official_transition",
+          "state_changed": false
+        },
+        "reason": "request_same_but_other_state_differs",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "unknown"
+      },
+      "third": {
+        "checks": {
+          "final_context_equal": false,
+          "next_turn_control_equal": true,
+          "request_equal": false,
+          "reservations_equal": false,
+          "stable_crop_equal": true
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": true,
+          "scope": "one_official_transition",
+          "state_changed": true
+        },
+        "reason": "complete_request_differs",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "different"
+      },
+      "window": 2
+    },
+    {
+      "arm": "baseline",
+      "candidate_width": 42,
+      "opponent": "round2",
+      "ordinal": 0,
+      "role": "F03",
+      "selection": "selected",
+      "side": 1,
+      "step": 15,
+      "teacher": {
+        "checks": {
+          "final_context_equal": true,
+          "next_turn_control_equal": true,
+          "request_equal": true,
+          "reservations_equal": true,
+          "stable_crop_equal": true
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": false,
+          "scope": "one_official_transition",
+          "state_changed": false
+        },
+        "reason": "same_in_turn_and_bounded_control_state",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "same"
+      },
+      "third": {
+        "checks": {
+          "final_context_equal": false,
+          "next_turn_control_equal": true,
+          "request_equal": false,
+          "reservations_equal": false,
+          "stable_crop_equal": false
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": true,
+          "scope": "one_official_transition",
+          "state_changed": true
+        },
+        "reason": "complete_request_differs",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "different"
+      },
+      "window": 0
+    },
+    {
+      "arm": "baseline",
+      "candidate_width": 110,
+      "opponent": "round2",
+      "ordinal": 3,
+      "role": "F03",
+      "selection": "selected",
+      "side": 1,
+      "step": 251,
+      "teacher": {
+        "checks": {
+          "final_context_equal": true,
+          "next_turn_control_equal": true,
+          "request_equal": true,
+          "reservations_equal": true,
+          "stable_crop_equal": true
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": false,
+          "scope": "one_official_transition",
+          "state_changed": false
+        },
+        "reason": "same_in_turn_and_bounded_control_state",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "same"
+      },
+      "third": {
+        "checks": {
+          "final_context_equal": false,
+          "next_turn_control_equal": true,
+          "request_equal": false,
+          "reservations_equal": false,
+          "stable_crop_equal": true
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": true,
+          "scope": "one_official_transition",
+          "state_changed": true
+        },
+        "reason": "complete_request_differs",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "different"
+      },
+      "window": 1
+    },
+    {
+      "arm": "baseline",
+      "candidate_width": 66,
+      "opponent": "round2",
+      "ordinal": 2,
+      "role": "F03",
+      "selection": "selected",
+      "side": 1,
+      "step": 481,
+      "teacher": {
+        "checks": {
+          "final_context_equal": false,
+          "next_turn_control_equal": true,
+          "request_equal": false,
+          "reservations_equal": false,
+          "stable_crop_equal": true
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": true,
+          "scope": "one_official_transition",
+          "state_changed": true
+        },
+        "reason": "complete_request_differs",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "different"
+      },
+      "third": {
+        "checks": {
+          "final_context_equal": false,
+          "next_turn_control_equal": true,
+          "request_equal": false,
+          "reservations_equal": false,
+          "stable_crop_equal": true
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": true,
+          "scope": "one_official_transition",
+          "state_changed": true
+        },
+        "reason": "complete_request_differs",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "different"
+      },
+      "window": 2
+    },
+    {
+      "arm": "control",
+      "candidate_width": 30,
+      "opponent": "market",
+      "ordinal": 1,
+      "role": "F04",
+      "selection": "selected",
+      "side": 1,
+      "step": 15,
+      "teacher": {
+        "checks": {
+          "final_context_equal": true,
+          "next_turn_control_equal": true,
+          "request_equal": true,
+          "reservations_equal": true,
+          "stable_crop_equal": true
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": false,
+          "scope": "one_official_transition",
+          "state_changed": false
+        },
+        "reason": "same_in_turn_and_bounded_control_state",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "same"
+      },
+      "third": {
+        "checks": {
+          "final_context_equal": false,
+          "next_turn_control_equal": true,
+          "request_equal": false,
+          "reservations_equal": false,
+          "stable_crop_equal": false
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": true,
+          "scope": "one_official_transition",
+          "state_changed": true
+        },
+        "reason": "complete_request_differs",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "different"
+      },
+      "window": 0
+    },
+    {
+      "arm": "control",
+      "candidate_width": 42,
+      "opponent": "market",
+      "ordinal": 4,
+      "role": "F04",
+      "selection": "selected",
+      "side": 1,
+      "step": 246,
+      "teacher": {
+        "checks": {
+          "final_context_equal": false,
+          "next_turn_control_equal": true,
+          "request_equal": true,
+          "reservations_equal": true,
+          "stable_crop_equal": true
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": false,
+          "scope": "one_official_transition",
+          "state_changed": false
+        },
+        "reason": "request_same_but_other_state_differs",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "unknown"
+      },
+      "third": {
+        "checks": {
+          "final_context_equal": false,
+          "next_turn_control_equal": true,
+          "request_equal": false,
+          "reservations_equal": false,
+          "stable_crop_equal": true
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": true,
+          "scope": "one_official_transition",
+          "state_changed": true
+        },
+        "reason": "complete_request_differs",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "different"
+      },
+      "window": 1
+    },
+    {
+      "arm": "control",
+      "candidate_width": 40,
+      "opponent": "market",
+      "ordinal": 3,
+      "role": "F04",
+      "selection": "selected",
+      "side": 1,
+      "step": 483,
+      "teacher": {
+        "checks": {
+          "final_context_equal": false,
+          "next_turn_control_equal": true,
+          "request_equal": true,
+          "reservations_equal": true,
+          "stable_crop_equal": true
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": false,
+          "scope": "one_official_transition",
+          "state_changed": false
+        },
+        "reason": "request_same_but_other_state_differs",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "unknown"
+      },
+      "third": {
+        "checks": {
+          "final_context_equal": false,
+          "next_turn_control_equal": true,
+          "request_equal": true,
+          "reservations_equal": true,
+          "stable_crop_equal": true
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": false,
+          "scope": "one_official_transition",
+          "state_changed": false
+        },
+        "reason": "request_same_but_other_state_differs",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "unknown"
+      },
+      "window": 2
+    },
+    {
+      "arm": "baseline",
+      "candidate_width": 42,
+      "opponent": "round2",
+      "ordinal": 0,
+      "role": "F04",
+      "selection": "selected",
+      "side": 0,
+      "step": 15,
+      "teacher": {
+        "checks": {
+          "final_context_equal": true,
+          "next_turn_control_equal": true,
+          "request_equal": true,
+          "reservations_equal": true,
+          "stable_crop_equal": true
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": false,
+          "scope": "one_official_transition",
+          "state_changed": false
+        },
+        "reason": "same_in_turn_and_bounded_control_state",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "same"
+      },
+      "third": {
+        "checks": {
+          "final_context_equal": false,
+          "next_turn_control_equal": true,
+          "request_equal": false,
+          "reservations_equal": false,
+          "stable_crop_equal": false
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": true,
+          "scope": "one_official_transition",
+          "state_changed": true
+        },
+        "reason": "complete_request_differs",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "different"
+      },
+      "window": 0
+    },
+    {
+      "arm": "baseline",
+      "candidate_width": 110,
+      "opponent": "round2",
+      "ordinal": 3,
+      "role": "F04",
+      "selection": "selected",
+      "side": 0,
+      "step": 251,
+      "teacher": {
+        "checks": {
+          "final_context_equal": true,
+          "next_turn_control_equal": true,
+          "request_equal": true,
+          "reservations_equal": true,
+          "stable_crop_equal": true
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": false,
+          "scope": "one_official_transition",
+          "state_changed": false
+        },
+        "reason": "same_in_turn_and_bounded_control_state",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "same"
+      },
+      "third": {
+        "checks": {
+          "final_context_equal": false,
+          "next_turn_control_equal": true,
+          "request_equal": false,
+          "reservations_equal": false,
+          "stable_crop_equal": true
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": true,
+          "scope": "one_official_transition",
+          "state_changed": true
+        },
+        "reason": "complete_request_differs",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "different"
+      },
+      "window": 1
+    },
+    {
+      "arm": "baseline",
+      "candidate_width": 42,
+      "opponent": "round2",
+      "ordinal": 3,
+      "role": "F04",
+      "selection": "selected",
+      "side": 0,
+      "step": 483,
+      "teacher": {
+        "checks": {
+          "final_context_equal": false,
+          "next_turn_control_equal": true,
+          "request_equal": false,
+          "reservations_equal": false,
+          "stable_crop_equal": true
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": true,
+          "scope": "one_official_transition",
+          "state_changed": true
+        },
+        "reason": "complete_request_differs",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "different"
+      },
+      "third": {
+        "checks": {
+          "final_context_equal": false,
+          "next_turn_control_equal": true,
+          "request_equal": true,
+          "reservations_equal": true,
+          "stable_crop_equal": true
+        },
+        "official": {
+          "complete_game": false,
+          "factual_reproduced": true,
+          "future_return_evaluated": false,
+          "request_changed": false,
+          "scope": "one_official_transition",
+          "state_changed": false
+        },
+        "reason": "request_same_but_other_state_differs",
+        "scope": "bounded student single turn; official effect and future return unknown",
+        "status": "unknown"
+      },
+      "window": 2
+    }
+  ],
+  "summary": {
+    "comparisons": 48,
+    "controller_call_limit_reserved": 96,
+    "empty_windows": 0,
+    "exploratory_gate": "passed",
+    "independent_evaluation": false,
+    "interpretation": "conditioned same-turn diagnostic; no value or generalization claim",
+    "official_transition_limit_reserved": 96,
+    "qualified_by_role": {
+      "F01": 2,
+      "F02": 1,
+      "F03": 3,
+      "F04": 3
+    },
+    "qualified_windows": 9,
+    "registration_commit": "7d8001422c18359ab9e1a44b055758a322b420b2",
+    "selected_windows": 24,
+    "source_games": 8,
+    "statistical_significance": "not_assessed",
+    "teacher_status_counts": {
+      "different": 3,
+      "same": 11,
+      "unknown": 10
+    },
+    "third_status_counts": {
+      "different": 18,
+      "not_attempted": 0,
+      "same": 0,
+      "unknown": 6
+    },
+    "training": false,
+    "windows": 24
+  }
+}
