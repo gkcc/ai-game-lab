@@ -1159,3 +1159,7 @@ Windows 和 WSL 分别通过导入守卫 1 项、训练入口 17 项、Windows �
 ### 多机制教师跨任务排序：CPU 开发筛查失败
 
 事前提交 `cce3eaa` 后，以已消费旧／新教师示范进行一次 64 步 CPU 线性残差训练，完成非零梯度及权重变化；新开发 62 组基线和残差均命中 59 组，旧诊断 250 组均命中 243 组，312 组没有首选变化。筛查所需净改正及选择变化均未达标，故未通过；旧非浇水护栏通过但不证明未遗忘。两名独立子代理复核本机封存及聚合，没有重训或重算原始样本。本轮没有 GPU 训练、新比赛或默认 Bot 更改；线性残差的状态表达及已消费样本限制见[登记](evidence/task-multisource-rank-v1-20261031/REGISTRATION.zh-CN.md)、[结果与证书](evidence/task-multisource-rank-v1-result-20261031/RESULTS.zh-CN.md)和[复核](evidence/task-multisource-rank-v1-result-20261031/REVIEW.zh-CN.md)。
+
+### 已消费轨迹的教师分歧示范
+
+事前提交 `384bc5f` 后完整扫描四场既有轨迹，得到 42 组教师与学生选择不同的训练示范及 48 组按坐标初选的诊断示范，四角色均覆盖六个时间窗口，数据门通过。90 组内部的精确重复复核通过；条件教师标签不证明官方执行或收益。本次没有模型前向、训练或新比赛。一名复核者在后续训练方案冻结前看到了按匿名角色划分的诊断一致性和操作类别汇总，因此诊断集明确属于已观察开发数据，不得称为隐藏留出。[登记](evidence/task-disagreement-trace-v1-20261031/REGISTRATION.zh-CN.md) | [结果及证书](evidence/task-disagreement-trace-v1-result-20261031/RESULTS.zh-CN.md) | [复核与暴露范围](evidence/task-disagreement-trace-v1-result-20261031/REVIEW.zh-CN.md)。

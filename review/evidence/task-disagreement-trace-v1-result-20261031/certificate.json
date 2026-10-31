@@ -1,0 +1,56 @@
+{
+  "checks": {
+    "diagnostic_min": true,
+    "per_role": true,
+    "train_min": true,
+    "train_teacher_operations": true,
+    "windows_per_role": true
+  },
+  "data_gate": "passed",
+  "dedup_conflict_components": 0,
+  "dedup_duplicate_removed": 0,
+  "dedup_input_groups": 90,
+  "dedup_retained_groups": 90,
+  "diagnostic_exposure_scope": "role_level_teacher_student_agreement_and_operation_category_aggregates",
+  "diagnostic_groups": 48,
+  "diagnostic_performance_previously_observed": true,
+  "filtered_totals": {
+    "identical_rows": 0,
+    "indistinguishable_disagreement": 0,
+    "single": 0
+  },
+  "independent_evaluation": false,
+  "model_forward": false,
+  "new_games": 0,
+  "registration_commit": "384bc5f2605b157e160ba3b1910151d2eeaf53ee",
+  "retained_by_role": {
+    "A03": 21,
+    "A04": 21,
+    "A09": 24,
+    "A10": 24
+  },
+  "schema": "task-disagreement-trace-public-v1",
+  "selected_by_role": {
+    "A03": 21,
+    "A04": 21,
+    "A09": 24,
+    "A10": 24
+  },
+  "source_games": 4,
+  "trace_turns": 2876,
+  "train_groups": 42,
+  "train_teacher_target_operations": {
+    "DIG": 0,
+    "FERTILIZE": 7,
+    "HARVEST": 4,
+    "PLANT": 2,
+    "WATER": 29
+  },
+  "training": false,
+  "windows_by_role": {
+    "A03": 6,
+    "A04": 6,
+    "A09": 6,
+    "A10": 6
+  }
+}
