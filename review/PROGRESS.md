@@ -1129,3 +1129,5 @@ Windows 和 WSL 分别通过导入守卫 1 项、训练入口 17 项、Windows �
 ### 教师目标在 terminal 候选中的小样本支持
 
 登记提交 `7da1eed` 后，对同一已消费 seed 的四场旧回放各六个固定回合比较共同任务／预留前缀；120 个教师目标均出现在 terminal 规则候选中，54 个目标的共享＋目标特征不同，完整请求相同 22／24。独立复核确认这些帧全部是一天中的 `hour=11`，因此不能推广到其他时段或 seed；账本也不能还原原始前缀。本轮无模型前向、训练、新完整比赛或官方转移。[登记](evidence/task-teacher-support-probe-v1-20261031/REGISTRATION.zh-CN.md) | [结果与账本](evidence/task-teacher-support-probe-v1-result-20261031/RESULTS.zh-CN.md) | [独立复核](evidence/task-teacher-support-probe-v1-result-20261031/REVIEW.zh-CN.md)。
+
+上述 54 个“特征不同”是已编码数值和类型的严格比较；真实编码器已先使用 float32，严格快照仍区分正负零。原探针未保存逐组编码，现有账本不能重算标准化或模型选择是否不同。[精度补充](evidence/task-teacher-support-precision-note-v1-20261031/NOTE.zh-CN.md)。
