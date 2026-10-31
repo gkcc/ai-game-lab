@@ -117,6 +117,8 @@ def assess_development(groups, network, weights, metadata, *, guard):
         eligible = bool(group.op == 'WATER' and water[base] and np.count_nonzero(water) >= 2)
         row = dict(role=group.role, opponent=group.opponent, side=group.side, eligible=eligible,
                    changed=bool(candidate != base), operation_flip=op_flip,
+                   baseline_operation=OPS[int(np.argmax(operations[base]))],
+                   water_candidates=int(np.count_nonzero(water)),
                    baseline_correct=bool(base == group.target_index),
                    residual_correct=bool(candidate == group.target_index),
                    baseline_nll=None, residual_nll=None)
