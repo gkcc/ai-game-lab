@@ -1087,3 +1087,5 @@ Windows 和 WSL 分别通过导入守卫 1 项、训练入口 17 项、Windows �
 第三次入口已完成：12 场既有来源流和 72 个选中任务组通过技术检查，但训练门槛未通过。48 个训练组有 8 组合格，24 个开发组为 0；开发侧 48 个已尝试备选均请求不同，另有 2,686 个候选未尝试。按登记没有 GPU 训练、新模型或新比赛。仅凭一个已消费开发种子不能推断整套机制无价值，且逐组原始续行明细未保存；详见[结果与限制](evidence/task-equivalent-bc-v3-result-20261031/RESULTS.zh-CN.md)。
 
 后续登记将比较旧 baseline/control 模型对冻结市场版的 8 场开发对局，使用与旧失败面板不重合的两个已消费训练种子、交换双方；不训练或声称独立泛化。种子与资源范围、旧 Worker 复用和停止条件见[登记](evidence/task-pair-market-consumed-v1-20261031/REGISTRATION.zh-CN.md)与[预审](evidence/task-pair-market-consumed-v1-20261031/PRE_REVIEW.zh-CN.md)；真实预检和对局结果尚未产生。
+
+市场开发面板完成 8 场官方比赛和 8 次当场官方主复演。control−baseline 自身净收益 D01 为 −112、D02 为 +698，四对平均 +293；现金差平均 +286、得分差为 0，两臂均四负。预登记开发筛查通过，但仅两个已消费种子，不能证明独立或显著提升；不自动晋级或消耗留出。[结果](evidence/task-pair-market-consumed-v1-result-20261031/RESULTS.zh-CN.md)及[脱敏账本](evidence/task-pair-market-consumed-v1-result-20261031/ledger.json)。

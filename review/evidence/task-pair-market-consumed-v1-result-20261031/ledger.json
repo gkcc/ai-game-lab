@@ -1,0 +1,1085 @@
+{
+  "by_seed": {
+    "D01": {
+      "mean_delta": {
+        "margin": -122.0,
+        "opponent_net_profit": 10.0,
+        "own_net_profit": -112.0,
+        "score": 0.0
+      },
+      "outcomes": {
+        "candidate": {
+          "draw": 0,
+          "loss": 2,
+          "win": 0
+        },
+        "reference": {
+          "draw": 0,
+          "loss": 2,
+          "win": 0
+        }
+      },
+      "pairs": 2
+    },
+    "D02": {
+      "mean_delta": {
+        "margin": 694.0,
+        "opponent_net_profit": 4.0,
+        "own_net_profit": 698.0,
+        "score": 0.0
+      },
+      "outcomes": {
+        "candidate": {
+          "draw": 0,
+          "loss": 2,
+          "win": 0
+        },
+        "reference": {
+          "draw": 0,
+          "loss": 2,
+          "win": 0
+        }
+      },
+      "pairs": 2
+    }
+  },
+  "by_side": {
+    "0": {
+      "mean_delta": {
+        "margin": 286.0,
+        "opponent_net_profit": 7.0,
+        "own_net_profit": 293.0,
+        "score": 0.0
+      },
+      "outcomes": {
+        "candidate": {
+          "draw": 0,
+          "loss": 2,
+          "win": 0
+        },
+        "reference": {
+          "draw": 0,
+          "loss": 2,
+          "win": 0
+        }
+      },
+      "pairs": 2
+    },
+    "1": {
+      "mean_delta": {
+        "margin": 286.0,
+        "opponent_net_profit": 7.0,
+        "own_net_profit": 293.0,
+        "score": 0.0
+      },
+      "outcomes": {
+        "candidate": {
+          "draw": 0,
+          "loss": 2,
+          "win": 0
+        },
+        "reference": {
+          "draw": 0,
+          "loss": 2,
+          "win": 0
+        }
+      },
+      "pairs": 2
+    }
+  },
+  "candidate": "control",
+  "development_screen": {
+    "interpretation": "exploratory only; no promotion or independent inference",
+    "passed": true,
+    "per_seed_profit_guard": {
+      "D01": true,
+      "D02": true
+    },
+    "per_seed_request_difference": {
+      "D01": true,
+      "D02": true
+    }
+  },
+  "games": 8,
+  "independently_verified_improvement": false,
+  "metric_scope": "descriptive; selected-task telemetry only",
+  "opponent": "market",
+  "overall": {
+    "mean_delta": {
+      "margin": 286.0,
+      "opponent_net_profit": 7.0,
+      "own_net_profit": 293.0,
+      "score": 0.0
+    },
+    "outcomes": {
+      "candidate": {
+        "draw": 0,
+        "loss": 4,
+        "win": 0
+      },
+      "reference": {
+        "draw": 0,
+        "loss": 4,
+        "win": 0
+      }
+    },
+    "pairs": 4
+  },
+  "pairs": [
+    {
+      "candidate": {
+        "decision_counts": {
+          "by_source": {
+            "model_callback": 2322,
+            "teacher": 0
+          },
+          "official_unit_labels": {
+            "coverage": "observed",
+            "effective_action": {
+              "DIG": 25,
+              "FERTILIZE": 15,
+              "HARVEST": 109,
+              "PASS": 40,
+              "PLANT": 86,
+              "WATER": 718,
+              "movement": 1329,
+              "other": 0
+            },
+            "matched": 2322,
+            "same_target_atomic_effect": {
+              "observed_false": 1369,
+              "observed_true": 953,
+              "unknown_unmatched": 0,
+              "unknown_with_label": 0
+            },
+            "same_target_atomic_effect_by_selected_task": {
+              "DIG": {
+                "observed_false": 0,
+                "observed_true": 25,
+                "unknown_unmatched": 0,
+                "unknown_with_label": 0
+              },
+              "FERTILIZE": {
+                "observed_false": 30,
+                "observed_true": 15,
+                "unknown_unmatched": 0,
+                "unknown_with_label": 0
+              },
+              "HARVEST": {
+                "observed_false": 129,
+                "observed_true": 109,
+                "unknown_unmatched": 0,
+                "unknown_with_label": 0
+              },
+              "PLANT": {
+                "observed_false": 168,
+                "observed_true": 86,
+                "unknown_unmatched": 0,
+                "unknown_with_label": 0
+              },
+              "WATER": {
+                "observed_false": 1042,
+                "observed_true": 718,
+                "unknown_unmatched": 0,
+                "unknown_with_label": 0
+              }
+            },
+            "status": {
+              "blocked": 0,
+              "executed": 2282,
+              "no_effect": 0,
+              "partial": 0,
+              "pass": 40
+            },
+            "unmatched": 0
+          },
+          "scope": "selected_tasks_only",
+          "selected_task": {
+            "DIG": 25,
+            "FERTILIZE": 45,
+            "HARVEST": 238,
+            "PLANT": 254,
+            "WATER": 1760
+          },
+          "submitted_unit_request": {
+            "DIG": 25,
+            "FERTILIZE": 15,
+            "HARVEST": 109,
+            "PASS": 40,
+            "PLANT": 86,
+            "WATER": 718,
+            "movement": 1329,
+            "other": 0
+          },
+          "total": 2322
+        },
+        "margin": -1655.0,
+        "opponent_ending_warehouse_units": 0,
+        "opponent_final_cash": 34256.0,
+        "opponent_net_profit": 31256.0,
+        "opponent_sales_revenue": 35133.0,
+        "opponent_sales_units": 445,
+        "outcome": "loss",
+        "own_ending_warehouse_units": 0,
+        "own_final_cash": 32601.0,
+        "own_net_profit": 29601.0,
+        "own_sales_revenue": 35482.0,
+        "own_sales_units": 393,
+        "score": 0.0
+      },
+      "common_history": {
+        "first_actor_request_difference": "unknown",
+        "first_difference_step": null,
+        "first_joint_request_difference": "unknown",
+        "first_task_choice_difference": "observed",
+        "matched_multi_unit_opportunities": 552,
+        "matched_selected_different_unit": 0,
+        "matched_selected_multi_unit": 548,
+        "matched_selection_records": 673,
+        "matching_record_unit_request_differences": 0,
+        "ordered_joint_representation_difference": null,
+        "scope": "strict_common_history_only",
+        "stop_reason": "choice_difference"
+      },
+      "complete_request_prefix": {
+        "reason": "actor_request_difference",
+        "scope": "same_complete_history",
+        "status": "observed",
+        "step": 268
+      },
+      "delta": {
+        "margin": -122.0,
+        "opponent_ending_warehouse_units": 0,
+        "opponent_net_profit": 10.0,
+        "opponent_sales_revenue": 10.0,
+        "opponent_sales_units": 0,
+        "own_ending_warehouse_units": 0,
+        "own_net_profit": -112.0,
+        "own_sales_revenue": -1.0,
+        "own_sales_units": 1,
+        "score": 0.0
+      },
+      "opponent": "market",
+      "reference": {
+        "decision_counts": {
+          "by_source": {
+            "model_callback": 2310,
+            "teacher": 0
+          },
+          "official_unit_labels": {
+            "coverage": "observed",
+            "effective_action": {
+              "DIG": 25,
+              "FERTILIZE": 14,
+              "HARVEST": 108,
+              "PASS": 34,
+              "PLANT": 86,
+              "WATER": 719,
+              "movement": 1324,
+              "other": 0
+            },
+            "matched": 2310,
+            "same_target_atomic_effect": {
+              "observed_false": 1358,
+              "observed_true": 952,
+              "unknown_unmatched": 0,
+              "unknown_with_label": 0
+            },
+            "same_target_atomic_effect_by_selected_task": {
+              "DIG": {
+                "observed_false": 0,
+                "observed_true": 25,
+                "unknown_unmatched": 0,
+                "unknown_with_label": 0
+              },
+              "FERTILIZE": {
+                "observed_false": 29,
+                "observed_true": 14,
+                "unknown_unmatched": 0,
+                "unknown_with_label": 0
+              },
+              "HARVEST": {
+                "observed_false": 119,
+                "observed_true": 108,
+                "unknown_unmatched": 0,
+                "unknown_with_label": 0
+              },
+              "PLANT": {
+                "observed_false": 158,
+                "observed_true": 86,
+                "unknown_unmatched": 0,
+                "unknown_with_label": 0
+              },
+              "WATER": {
+                "observed_false": 1052,
+                "observed_true": 719,
+                "unknown_unmatched": 0,
+                "unknown_with_label": 0
+              }
+            },
+            "status": {
+              "blocked": 0,
+              "executed": 2276,
+              "no_effect": 0,
+              "partial": 0,
+              "pass": 34
+            },
+            "unmatched": 0
+          },
+          "scope": "selected_tasks_only",
+          "selected_task": {
+            "DIG": 25,
+            "FERTILIZE": 43,
+            "HARVEST": 227,
+            "PLANT": 244,
+            "WATER": 1771
+          },
+          "submitted_unit_request": {
+            "DIG": 25,
+            "FERTILIZE": 14,
+            "HARVEST": 108,
+            "PASS": 34,
+            "PLANT": 86,
+            "WATER": 719,
+            "movement": 1324,
+            "other": 0
+          },
+          "total": 2310
+        },
+        "margin": -1533.0,
+        "opponent_ending_warehouse_units": 0,
+        "opponent_final_cash": 34246.0,
+        "opponent_net_profit": 31246.0,
+        "opponent_sales_revenue": 35123.0,
+        "opponent_sales_units": 445,
+        "outcome": "loss",
+        "own_ending_warehouse_units": 0,
+        "own_final_cash": 32713.0,
+        "own_net_profit": 29713.0,
+        "own_sales_revenue": 35483.0,
+        "own_sales_units": 392,
+        "score": 0.0
+      },
+      "seed_alias": "D01",
+      "side": 0
+    },
+    {
+      "candidate": {
+        "decision_counts": {
+          "by_source": {
+            "model_callback": 2322,
+            "teacher": 0
+          },
+          "official_unit_labels": {
+            "coverage": "observed",
+            "effective_action": {
+              "DIG": 25,
+              "FERTILIZE": 15,
+              "HARVEST": 109,
+              "PASS": 40,
+              "PLANT": 86,
+              "WATER": 718,
+              "movement": 1329,
+              "other": 0
+            },
+            "matched": 2322,
+            "same_target_atomic_effect": {
+              "observed_false": 1369,
+              "observed_true": 953,
+              "unknown_unmatched": 0,
+              "unknown_with_label": 0
+            },
+            "same_target_atomic_effect_by_selected_task": {
+              "DIG": {
+                "observed_false": 0,
+                "observed_true": 25,
+                "unknown_unmatched": 0,
+                "unknown_with_label": 0
+              },
+              "FERTILIZE": {
+                "observed_false": 30,
+                "observed_true": 15,
+                "unknown_unmatched": 0,
+                "unknown_with_label": 0
+              },
+              "HARVEST": {
+                "observed_false": 129,
+                "observed_true": 109,
+                "unknown_unmatched": 0,
+                "unknown_with_label": 0
+              },
+              "PLANT": {
+                "observed_false": 168,
+                "observed_true": 86,
+                "unknown_unmatched": 0,
+                "unknown_with_label": 0
+              },
+              "WATER": {
+                "observed_false": 1042,
+                "observed_true": 718,
+                "unknown_unmatched": 0,
+                "unknown_with_label": 0
+              }
+            },
+            "status": {
+              "blocked": 0,
+              "executed": 2282,
+              "no_effect": 0,
+              "partial": 0,
+              "pass": 40
+            },
+            "unmatched": 0
+          },
+          "scope": "selected_tasks_only",
+          "selected_task": {
+            "DIG": 25,
+            "FERTILIZE": 45,
+            "HARVEST": 238,
+            "PLANT": 254,
+            "WATER": 1760
+          },
+          "submitted_unit_request": {
+            "DIG": 25,
+            "FERTILIZE": 15,
+            "HARVEST": 109,
+            "PASS": 40,
+            "PLANT": 86,
+            "WATER": 718,
+            "movement": 1329,
+            "other": 0
+          },
+          "total": 2322
+        },
+        "margin": -1655.0,
+        "opponent_ending_warehouse_units": 0,
+        "opponent_final_cash": 34256.0,
+        "opponent_net_profit": 31256.0,
+        "opponent_sales_revenue": 35133.0,
+        "opponent_sales_units": 445,
+        "outcome": "loss",
+        "own_ending_warehouse_units": 0,
+        "own_final_cash": 32601.0,
+        "own_net_profit": 29601.0,
+        "own_sales_revenue": 35482.0,
+        "own_sales_units": 393,
+        "score": 0.0
+      },
+      "common_history": {
+        "first_actor_request_difference": "unknown",
+        "first_difference_step": null,
+        "first_joint_request_difference": "unknown",
+        "first_task_choice_difference": "observed",
+        "matched_multi_unit_opportunities": 552,
+        "matched_selected_different_unit": 0,
+        "matched_selected_multi_unit": 548,
+        "matched_selection_records": 673,
+        "matching_record_unit_request_differences": 0,
+        "ordered_joint_representation_difference": null,
+        "scope": "strict_common_history_only",
+        "stop_reason": "choice_difference"
+      },
+      "complete_request_prefix": {
+        "reason": "actor_request_difference",
+        "scope": "same_complete_history",
+        "status": "observed",
+        "step": 268
+      },
+      "delta": {
+        "margin": -122.0,
+        "opponent_ending_warehouse_units": 0,
+        "opponent_net_profit": 10.0,
+        "opponent_sales_revenue": 10.0,
+        "opponent_sales_units": 0,
+        "own_ending_warehouse_units": 0,
+        "own_net_profit": -112.0,
+        "own_sales_revenue": -1.0,
+        "own_sales_units": 1,
+        "score": 0.0
+      },
+      "opponent": "market",
+      "reference": {
+        "decision_counts": {
+          "by_source": {
+            "model_callback": 2310,
+            "teacher": 0
+          },
+          "official_unit_labels": {
+            "coverage": "observed",
+            "effective_action": {
+              "DIG": 25,
+              "FERTILIZE": 14,
+              "HARVEST": 108,
+              "PASS": 34,
+              "PLANT": 86,
+              "WATER": 719,
+              "movement": 1324,
+              "other": 0
+            },
+            "matched": 2310,
+            "same_target_atomic_effect": {
+              "observed_false": 1358,
+              "observed_true": 952,
+              "unknown_unmatched": 0,
+              "unknown_with_label": 0
+            },
+            "same_target_atomic_effect_by_selected_task": {
+              "DIG": {
+                "observed_false": 0,
+                "observed_true": 25,
+                "unknown_unmatched": 0,
+                "unknown_with_label": 0
+              },
+              "FERTILIZE": {
+                "observed_false": 29,
+                "observed_true": 14,
+                "unknown_unmatched": 0,
+                "unknown_with_label": 0
+              },
+              "HARVEST": {
+                "observed_false": 119,
+                "observed_true": 108,
+                "unknown_unmatched": 0,
+                "unknown_with_label": 0
+              },
+              "PLANT": {
+                "observed_false": 158,
+                "observed_true": 86,
+                "unknown_unmatched": 0,
+                "unknown_with_label": 0
+              },
+              "WATER": {
+                "observed_false": 1052,
+                "observed_true": 719,
+                "unknown_unmatched": 0,
+                "unknown_with_label": 0
+              }
+            },
+            "status": {
+              "blocked": 0,
+              "executed": 2276,
+              "no_effect": 0,
+              "partial": 0,
+              "pass": 34
+            },
+            "unmatched": 0
+          },
+          "scope": "selected_tasks_only",
+          "selected_task": {
+            "DIG": 25,
+            "FERTILIZE": 43,
+            "HARVEST": 227,
+            "PLANT": 244,
+            "WATER": 1771
+          },
+          "submitted_unit_request": {
+            "DIG": 25,
+            "FERTILIZE": 14,
+            "HARVEST": 108,
+            "PASS": 34,
+            "PLANT": 86,
+            "WATER": 719,
+            "movement": 1324,
+            "other": 0
+          },
+          "total": 2310
+        },
+        "margin": -1533.0,
+        "opponent_ending_warehouse_units": 0,
+        "opponent_final_cash": 34246.0,
+        "opponent_net_profit": 31246.0,
+        "opponent_sales_revenue": 35123.0,
+        "opponent_sales_units": 445,
+        "outcome": "loss",
+        "own_ending_warehouse_units": 0,
+        "own_final_cash": 32713.0,
+        "own_net_profit": 29713.0,
+        "own_sales_revenue": 35483.0,
+        "own_sales_units": 392,
+        "score": 0.0
+      },
+      "seed_alias": "D01",
+      "side": 1
+    },
+    {
+      "candidate": {
+        "decision_counts": {
+          "by_source": {
+            "model_callback": 2243,
+            "teacher": 0
+          },
+          "official_unit_labels": {
+            "coverage": "observed",
+            "effective_action": {
+              "DIG": 23,
+              "FERTILIZE": 11,
+              "HARVEST": 101,
+              "PASS": 36,
+              "PLANT": 85,
+              "WATER": 720,
+              "movement": 1267,
+              "other": 0
+            },
+            "matched": 2243,
+            "same_target_atomic_effect": {
+              "observed_false": 1303,
+              "observed_true": 940,
+              "unknown_unmatched": 0,
+              "unknown_with_label": 0
+            },
+            "same_target_atomic_effect_by_selected_task": {
+              "DIG": {
+                "observed_false": 0,
+                "observed_true": 23,
+                "unknown_unmatched": 0,
+                "unknown_with_label": 0
+              },
+              "FERTILIZE": {
+                "observed_false": 22,
+                "observed_true": 11,
+                "unknown_unmatched": 0,
+                "unknown_with_label": 0
+              },
+              "HARVEST": {
+                "observed_false": 101,
+                "observed_true": 101,
+                "unknown_unmatched": 0,
+                "unknown_with_label": 0
+              },
+              "PLANT": {
+                "observed_false": 154,
+                "observed_true": 85,
+                "unknown_unmatched": 0,
+                "unknown_with_label": 0
+              },
+              "WATER": {
+                "observed_false": 1026,
+                "observed_true": 720,
+                "unknown_unmatched": 0,
+                "unknown_with_label": 0
+              }
+            },
+            "status": {
+              "blocked": 0,
+              "executed": 2207,
+              "no_effect": 0,
+              "partial": 0,
+              "pass": 36
+            },
+            "unmatched": 0
+          },
+          "scope": "selected_tasks_only",
+          "selected_task": {
+            "DIG": 23,
+            "FERTILIZE": 33,
+            "HARVEST": 202,
+            "PLANT": 239,
+            "WATER": 1746
+          },
+          "submitted_unit_request": {
+            "DIG": 23,
+            "FERTILIZE": 11,
+            "HARVEST": 101,
+            "PASS": 36,
+            "PLANT": 85,
+            "WATER": 720,
+            "movement": 1267,
+            "other": 0
+          },
+          "total": 2243
+        },
+        "margin": -660.0,
+        "opponent_ending_warehouse_units": 0,
+        "opponent_final_cash": 30985.0,
+        "opponent_net_profit": 27985.0,
+        "opponent_sales_revenue": 31709.0,
+        "opponent_sales_units": 540,
+        "outcome": "loss",
+        "own_ending_warehouse_units": 0,
+        "own_final_cash": 30325.0,
+        "own_net_profit": 27325.0,
+        "own_sales_revenue": 33047.0,
+        "own_sales_units": 376,
+        "score": 0.0
+      },
+      "common_history": {
+        "first_actor_request_difference": "unknown",
+        "first_difference_step": null,
+        "first_joint_request_difference": "unknown",
+        "first_task_choice_difference": "observed",
+        "matched_multi_unit_opportunities": 599,
+        "matched_selected_different_unit": 0,
+        "matched_selected_multi_unit": 592,
+        "matched_selection_records": 729,
+        "matching_record_unit_request_differences": 1,
+        "ordered_joint_representation_difference": null,
+        "scope": "strict_common_history_only",
+        "stop_reason": "choice_difference"
+      },
+      "complete_request_prefix": {
+        "reason": "actor_request_difference",
+        "scope": "same_complete_history",
+        "status": "observed",
+        "step": 268
+      },
+      "delta": {
+        "margin": 694.0,
+        "opponent_ending_warehouse_units": 0,
+        "opponent_net_profit": 4.0,
+        "opponent_sales_revenue": 4.0,
+        "opponent_sales_units": 0,
+        "own_ending_warehouse_units": 0,
+        "own_net_profit": 698.0,
+        "own_sales_revenue": 867.0,
+        "own_sales_units": -2,
+        "score": 0.0
+      },
+      "opponent": "market",
+      "reference": {
+        "decision_counts": {
+          "by_source": {
+            "model_callback": 2237,
+            "teacher": 0
+          },
+          "official_unit_labels": {
+            "coverage": "observed",
+            "effective_action": {
+              "DIG": 24,
+              "FERTILIZE": 9,
+              "HARVEST": 101,
+              "PASS": 30,
+              "PLANT": 88,
+              "WATER": 724,
+              "movement": 1261,
+              "other": 0
+            },
+            "matched": 2237,
+            "same_target_atomic_effect": {
+              "observed_false": 1291,
+              "observed_true": 946,
+              "unknown_unmatched": 0,
+              "unknown_with_label": 0
+            },
+            "same_target_atomic_effect_by_selected_task": {
+              "DIG": {
+                "observed_false": 0,
+                "observed_true": 24,
+                "unknown_unmatched": 0,
+                "unknown_with_label": 0
+              },
+              "FERTILIZE": {
+                "observed_false": 16,
+                "observed_true": 9,
+                "unknown_unmatched": 0,
+                "unknown_with_label": 0
+              },
+              "HARVEST": {
+                "observed_false": 98,
+                "observed_true": 101,
+                "unknown_unmatched": 0,
+                "unknown_with_label": 0
+              },
+              "PLANT": {
+                "observed_false": 150,
+                "observed_true": 88,
+                "unknown_unmatched": 0,
+                "unknown_with_label": 0
+              },
+              "WATER": {
+                "observed_false": 1027,
+                "observed_true": 724,
+                "unknown_unmatched": 0,
+                "unknown_with_label": 0
+              }
+            },
+            "status": {
+              "blocked": 0,
+              "executed": 2207,
+              "no_effect": 0,
+              "partial": 0,
+              "pass": 30
+            },
+            "unmatched": 0
+          },
+          "scope": "selected_tasks_only",
+          "selected_task": {
+            "DIG": 24,
+            "FERTILIZE": 25,
+            "HARVEST": 199,
+            "PLANT": 238,
+            "WATER": 1751
+          },
+          "submitted_unit_request": {
+            "DIG": 24,
+            "FERTILIZE": 9,
+            "HARVEST": 101,
+            "PASS": 30,
+            "PLANT": 88,
+            "WATER": 724,
+            "movement": 1261,
+            "other": 0
+          },
+          "total": 2237
+        },
+        "margin": -1354.0,
+        "opponent_ending_warehouse_units": 0,
+        "opponent_final_cash": 30981.0,
+        "opponent_net_profit": 27981.0,
+        "opponent_sales_revenue": 31705.0,
+        "opponent_sales_units": 540,
+        "outcome": "loss",
+        "own_ending_warehouse_units": 0,
+        "own_final_cash": 29627.0,
+        "own_net_profit": 26627.0,
+        "own_sales_revenue": 32180.0,
+        "own_sales_units": 378,
+        "score": 0.0
+      },
+      "seed_alias": "D02",
+      "side": 0
+    },
+    {
+      "candidate": {
+        "decision_counts": {
+          "by_source": {
+            "model_callback": 2243,
+            "teacher": 0
+          },
+          "official_unit_labels": {
+            "coverage": "observed",
+            "effective_action": {
+              "DIG": 23,
+              "FERTILIZE": 11,
+              "HARVEST": 101,
+              "PASS": 36,
+              "PLANT": 85,
+              "WATER": 720,
+              "movement": 1267,
+              "other": 0
+            },
+            "matched": 2243,
+            "same_target_atomic_effect": {
+              "observed_false": 1303,
+              "observed_true": 940,
+              "unknown_unmatched": 0,
+              "unknown_with_label": 0
+            },
+            "same_target_atomic_effect_by_selected_task": {
+              "DIG": {
+                "observed_false": 0,
+                "observed_true": 23,
+                "unknown_unmatched": 0,
+                "unknown_with_label": 0
+              },
+              "FERTILIZE": {
+                "observed_false": 22,
+                "observed_true": 11,
+                "unknown_unmatched": 0,
+                "unknown_with_label": 0
+              },
+              "HARVEST": {
+                "observed_false": 101,
+                "observed_true": 101,
+                "unknown_unmatched": 0,
+                "unknown_with_label": 0
+              },
+              "PLANT": {
+                "observed_false": 154,
+                "observed_true": 85,
+                "unknown_unmatched": 0,
+                "unknown_with_label": 0
+              },
+              "WATER": {
+                "observed_false": 1026,
+                "observed_true": 720,
+                "unknown_unmatched": 0,
+                "unknown_with_label": 0
+              }
+            },
+            "status": {
+              "blocked": 0,
+              "executed": 2207,
+              "no_effect": 0,
+              "partial": 0,
+              "pass": 36
+            },
+            "unmatched": 0
+          },
+          "scope": "selected_tasks_only",
+          "selected_task": {
+            "DIG": 23,
+            "FERTILIZE": 33,
+            "HARVEST": 202,
+            "PLANT": 239,
+            "WATER": 1746
+          },
+          "submitted_unit_request": {
+            "DIG": 23,
+            "FERTILIZE": 11,
+            "HARVEST": 101,
+            "PASS": 36,
+            "PLANT": 85,
+            "WATER": 720,
+            "movement": 1267,
+            "other": 0
+          },
+          "total": 2243
+        },
+        "margin": -660.0,
+        "opponent_ending_warehouse_units": 0,
+        "opponent_final_cash": 30985.0,
+        "opponent_net_profit": 27985.0,
+        "opponent_sales_revenue": 31709.0,
+        "opponent_sales_units": 540,
+        "outcome": "loss",
+        "own_ending_warehouse_units": 0,
+        "own_final_cash": 30325.0,
+        "own_net_profit": 27325.0,
+        "own_sales_revenue": 33047.0,
+        "own_sales_units": 376,
+        "score": 0.0
+      },
+      "common_history": {
+        "first_actor_request_difference": "unknown",
+        "first_difference_step": null,
+        "first_joint_request_difference": "unknown",
+        "first_task_choice_difference": "observed",
+        "matched_multi_unit_opportunities": 599,
+        "matched_selected_different_unit": 0,
+        "matched_selected_multi_unit": 592,
+        "matched_selection_records": 729,
+        "matching_record_unit_request_differences": 1,
+        "ordered_joint_representation_difference": null,
+        "scope": "strict_common_history_only",
+        "stop_reason": "choice_difference"
+      },
+      "complete_request_prefix": {
+        "reason": "actor_request_difference",
+        "scope": "same_complete_history",
+        "status": "observed",
+        "step": 268
+      },
+      "delta": {
+        "margin": 694.0,
+        "opponent_ending_warehouse_units": 0,
+        "opponent_net_profit": 4.0,
+        "opponent_sales_revenue": 4.0,
+        "opponent_sales_units": 0,
+        "own_ending_warehouse_units": 0,
+        "own_net_profit": 698.0,
+        "own_sales_revenue": 867.0,
+        "own_sales_units": -2,
+        "score": 0.0
+      },
+      "opponent": "market",
+      "reference": {
+        "decision_counts": {
+          "by_source": {
+            "model_callback": 2237,
+            "teacher": 0
+          },
+          "official_unit_labels": {
+            "coverage": "observed",
+            "effective_action": {
+              "DIG": 24,
+              "FERTILIZE": 9,
+              "HARVEST": 101,
+              "PASS": 30,
+              "PLANT": 88,
+              "WATER": 724,
+              "movement": 1261,
+              "other": 0
+            },
+            "matched": 2237,
+            "same_target_atomic_effect": {
+              "observed_false": 1291,
+              "observed_true": 946,
+              "unknown_unmatched": 0,
+              "unknown_with_label": 0
+            },
+            "same_target_atomic_effect_by_selected_task": {
+              "DIG": {
+                "observed_false": 0,
+                "observed_true": 24,
+                "unknown_unmatched": 0,
+                "unknown_with_label": 0
+              },
+              "FERTILIZE": {
+                "observed_false": 16,
+                "observed_true": 9,
+                "unknown_unmatched": 0,
+                "unknown_with_label": 0
+              },
+              "HARVEST": {
+                "observed_false": 98,
+                "observed_true": 101,
+                "unknown_unmatched": 0,
+                "unknown_with_label": 0
+              },
+              "PLANT": {
+                "observed_false": 150,
+                "observed_true": 88,
+                "unknown_unmatched": 0,
+                "unknown_with_label": 0
+              },
+              "WATER": {
+                "observed_false": 1027,
+                "observed_true": 724,
+                "unknown_unmatched": 0,
+                "unknown_with_label": 0
+              }
+            },
+            "status": {
+              "blocked": 0,
+              "executed": 2207,
+              "no_effect": 0,
+              "partial": 0,
+              "pass": 30
+            },
+            "unmatched": 0
+          },
+          "scope": "selected_tasks_only",
+          "selected_task": {
+            "DIG": 24,
+            "FERTILIZE": 25,
+            "HARVEST": 199,
+            "PLANT": 238,
+            "WATER": 1751
+          },
+          "submitted_unit_request": {
+            "DIG": 24,
+            "FERTILIZE": 9,
+            "HARVEST": 101,
+            "PASS": 30,
+            "PLANT": 88,
+            "WATER": 724,
+            "movement": 1261,
+            "other": 0
+          },
+          "total": 2237
+        },
+        "margin": -1354.0,
+        "opponent_ending_warehouse_units": 0,
+        "opponent_final_cash": 30981.0,
+        "opponent_net_profit": 27981.0,
+        "opponent_sales_revenue": 31705.0,
+        "opponent_sales_units": 540,
+        "outcome": "loss",
+        "own_ending_warehouse_units": 0,
+        "own_final_cash": 29627.0,
+        "own_net_profit": 26627.0,
+        "own_sales_revenue": 32180.0,
+        "own_sales_units": 378,
+        "score": 0.0
+      },
+      "seed_alias": "D02",
+      "side": 1
+    }
+  ],
+  "promotion": false,
+  "reference": "baseline",
+  "registration_commit": "e5b613d8b9eab5daa0abeb7d3d160e0f20f877cd",
+  "schema": "task-pair-market-consumed-public-v1",
+  "scope": "consumed_development",
+  "seed_clusters": 2,
+  "statistical_significance": "unknown"
+}
