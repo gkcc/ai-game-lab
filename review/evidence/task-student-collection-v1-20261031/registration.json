@@ -1,0 +1,71 @@
+{
+  "base_commit": "a12c570f4018af4cfebbad5a74a20434b8901703",
+  "binding_commitment_sha256": "a65b66bdaada668b261a9377341ea3f5214e32bb61fd448d6974354abbd6d062",
+  "candidate_width_max": 256,
+  "data_gate": {
+    "dev_each_role_min": 2,
+    "dev_min": 8,
+    "min_opponents_each_split": 2,
+    "min_windows_each_split": 2,
+    "train_each_role_min": 4,
+    "train_min": 16
+  },
+  "independent_evaluation": false,
+  "initial_memory_bytes": 5368709120,
+  "max_attempts": 1,
+  "max_bytes_per_split": 67108864,
+  "max_comparisons": 192,
+  "max_controller_calls": 384,
+  "max_official_transitions": 384,
+  "max_wall_seconds": 3600,
+  "max_windows": 96,
+  "min_free_bytes": 4294967296,
+  "model": "baseline",
+  "new_complete_games": 0,
+  "opponents": [
+    "market",
+    "round2"
+  ],
+  "previous_registration_commit": "7d8001422c18359ab9e1a44b055758a322b420b2",
+  "promotion": false,
+  "roles": [
+    "F01",
+    "F02",
+    "F03",
+    "F04"
+  ],
+  "run_memory_bytes": 4294967296,
+  "schema": "student-collection-prereg-v1",
+  "sides": [
+    0,
+    1
+  ],
+  "source_games": 16,
+  "training": false,
+  "windows": [
+    [
+      0,
+      119
+    ],
+    [
+      120,
+      239
+    ],
+    [
+      240,
+      359
+    ],
+    [
+      360,
+      479
+    ],
+    [
+      480,
+      599
+    ],
+    [
+      600,
+      718
+    ]
+  ]
+}
