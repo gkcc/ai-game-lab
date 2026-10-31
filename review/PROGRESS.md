@@ -1151,3 +1151,7 @@ Windows 和 WSL 分别通过导入守卫 1 项、训练入口 17 项、Windows �
 ### 已消费多机制教师来源兼容性
 
 只读核验两份旧教师训练档案与公开身份承诺，单独解码已消费 seed 元数据；旧四簇与新两训练簇及两开发簇的 seed 值不重合，特征 schema 与冻结基线一致。历史登记的 5,104 组包含施肥、挖地和收获示范，可作为未来多机制锚点；本次没有重算标签或跨源数值重复、没有训练。直接复制共享特征和浮点标准化有明显内存峰值风险，需流式处理。[依据和限制](evidence/task-teacher-source-compat-v1-20261031/NOTE.zh-CN.md)。
+
+### 已消费教师数据跨来源精确比较
+
+事前提交 `a816e60` 后，以受限 CPU Job 实际扫描两份旧教师档案的 5,104 组、322,151 候选，并与新训练 59 组、开发 62 组逐组比较。原始和基线归一化 float32 两口径下，121 组均未与旧数据形成完整有序组精确匹配；因没有匹配，零标签冲突不构成相同局面上的一致性证据。两份独立复核核查封存、Job 退出和匿名汇总，但未重扫原档。此结果不证明近似样本独立、旧数据内部无冲突或混合训练有效；本次没有训练、模型前向、新比赛或 GPU 运算。[登记](evidence/task-teacher-cross-source-v1-20261031/REGISTRATION.zh-CN.md) | [结果和匿名账本](evidence/task-teacher-cross-source-v1-result-20261031/RESULTS.zh-CN.md) | [独立复核](evidence/task-teacher-cross-source-v1-result-20261031/REVIEW.zh-CN.md)。
