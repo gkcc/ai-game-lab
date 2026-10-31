@@ -1113,3 +1113,7 @@ Windows 和 WSL 分别通过导入守卫 1 项、训练入口 17 项、Windows �
 ### 历史来源盘点的读取范围
 
 只读盘点找到 24 场 DAgger 和 40 场 Anchor 已完成的同基线历史对局；所有角色均已消费，完整轨迹兼容性尚待验证。盘点期间两名子代理的程序解析过包含未运行留出角色的旧清单，未输出这些 seed 数值、未作为 Bot 或学习模型输入、未训练或运行相关比赛；不将该过程描述为未读取。一次文件枚举也在工具记录中显示了部分已消费 seed 对应的既有公开文件名。具体范围与后续边界见[说明](evidence/task-source-inventory-v1-20261031/NOTE.zh-CN.md)。
+
+### 已消费 DAgger 对局的条件示范采集
+
+登记提交 `b706506` 后，从此前 24 场 baseline 游戏的 144 个窗口按固定计划选出 120 格，完成 240 次学生续行比较；19 格合格，来自 11 场旧比赛。保留训练 15 组、开发 4 组，未达到事前 16／8 及角色覆盖门，开发侧也只覆盖一个对手。独立子代理核对账目、实际数据摘要和保留组去重；未重新执行官方单步。按登记没有训练、新完整比赛或晋级，开发角色均已消费，不是独立测试。[登记](evidence/task-student-dagger-collection-v1-20261031/REGISTRATION.zh-CN.md) | [结果与账本](evidence/task-student-dagger-collection-v1-result-20261031/RESULTS.zh-CN.md) | [独立复核](evidence/task-student-dagger-collection-v1-result-20261031/REVIEW.zh-CN.md)。
