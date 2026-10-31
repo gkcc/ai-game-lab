@@ -1143,3 +1143,11 @@ Windows 和 WSL 分别通过导入守卫 1 项、训练入口 17 项、Windows �
 ### 浇水残差 GPU 探针：内存门停止
 
 登记提交 `a163068` 后仅尝试一次；host 记录 `memory_gate` 并请求取消，原始结果为 `cleanup_unconfirmed`。没有 supervisor／worker 启动标记、训练结果、残差文件或 Linux 清理收据；supervisor 只留通用失败类别。事后只读观察没有发现运行中的 WSL 发行版或匹配的 Windows transport，但不把事后观察改写成原清理证明。实际最低内存值和 supervisor 内部异常未保存；按登记不重试、不降低门槛，开发筛查和 GPU 训练没有验收。[登记](evidence/task-water-residual-v1-20261031/REGISTRATION.zh-CN.md) | [失败证据](evidence/task-water-residual-v1-failure-20261031/FAILURE.zh-CN.md) | [独立复核](evidence/task-water-residual-v1-failure-20261031/REVIEW.zh-CN.md)。
+
+事后另做一次短时 WSL 空载内存采样，未加载模型或使用 GPU；观察到多数采样点不足 5 GiB，不能把空载结果当作 JAX 训练可行性或先前停止的根因。[采样范围与限制](evidence/task-wsl-resource-observation-v1-20261031/NOTE.zh-CN.md)。
+
+新增独立的 WSL 空载预热检查，先达到启动内存门再运行自有短进程，预热尾段采样仍需达到保守余量；异常与未确认回收不判通过。独立子代理复核并修正超时和启动耗时两个合成边界，15 项回归通过。一次实机检查正常回收 transport，但尾段内存不满足新预检；这只是采样点结果，不代表 GPU 故障，也不触发重试。[使用与限制](../kaggriculture/learning/task_wsl_readiness_v1/README.zh-CN.md)。
+
+### 已消费多机制教师来源兼容性
+
+只读核验两份旧教师训练档案与公开身份承诺，单独解码已消费 seed 元数据；旧四簇与新两训练簇及两开发簇的 seed 值不重合，特征 schema 与冻结基线一致。历史登记的 5,104 组包含施肥、挖地和收获示范，可作为未来多机制锚点；本次没有重算标签或跨源数值重复、没有训练。直接复制共享特征和浮点标准化有明显内存峰值风险，需流式处理。[依据和限制](evidence/task-teacher-source-compat-v1-20261031/NOTE.zh-CN.md)。
