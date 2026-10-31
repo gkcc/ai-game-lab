@@ -1175,3 +1175,7 @@ Windows 和 WSL 分别通过导入守卫 1 项、训练入口 17 项、Windows �
 ### 状态残差在已消费历史学生轨迹上的盲选诊断
 
 事前提交 `ef01028` 后，核验八条已消费旧轨迹并按固定坐标从 48 个场次／时间窗选出 192 组；基线重算首选均与历史学生一致，冻结残差改变 1 组首选，条件教师一致 190→191／192，动作类别没有变化。样本内部 raw／归一化有序组各有 3 组重复的额外出现，没有剔除。两名独立子代理核对封存及汇总，未重读逐组数据或重跑比赛。仅有两个历史种子簇，不能证明泛化或收益；上一轮筛查仍 failed。本轮没有训练、GPU 或新比赛。[登记](../kaggriculture/learning/task_state_blind_diagnostic_v1/REGISTRATION.zh-CN.md) | [结果及证书](evidence/task-state-blind-diagnostic-v1-result-20261031/RESULTS.zh-CN.md) | [独立复核](evidence/task-state-blind-diagnostic-v1-result-20261031/REVIEW.zh-CN.md)。
+
+### 条件教师分歧的官方单步预筛
+
+事前提交 `3c02823` 后，扫描八条已消费学生轨迹的 5,752 行，完成 32 次条件教师比较和 16 次确认完成的官方单步转移；预设的至少四个不同坐标且覆盖两个历史角色的后续设计门达到。该门仅说明存在完整请求和 canonical／Python 下一帧非动作字段差异，不证明收益或胜率；分歧采样和首次命中截断使其不能代表自然频率。两名独立子代理核对本机封存，未重跑逐组轨迹或单步。没有训练、GPU、新完整比赛或自动晋级；具体候选仅存本机。[登记](../kaggriculture/learning/task_teacher_counterfactual_screen_v1/REGISTRATION.zh-CN.md) | [结果及证书](evidence/task-teacher-counterfactual-screen-v1-result-20261031/RESULTS.zh-CN.md) | [独立复核](evidence/task-teacher-counterfactual-screen-v1-result-20261031/REVIEW.zh-CN.md)。
