@@ -1,0 +1,46 @@
+{
+  "base_commit": "0e9734a0109a0ee4822ef1310e8b56fac21eaa48",
+  "binding_commitment_sha256": "cf0510aabf88a74dbc19d1319c178aec84940bf687c8897744ddb09576a00327",
+  "candidate_width_max": 256,
+  "fresh_registration_commit": "40f3f393819bbdc62af1007877cd5fbdf3a9a42f",
+  "independent_evaluation": false,
+  "initial_memory_bytes": 5368709120,
+  "max_attempts": 1,
+  "max_comparisons": 48,
+  "max_controller_calls": 96,
+  "max_games_read": 8,
+  "max_official_transitions": 96,
+  "max_wall_seconds": 1800,
+  "max_windows": 24,
+  "new_complete_games": 0,
+  "official_core_sha256": "0922c4599a1b6e0d8c3dadf06ae5297f98138d859d686f00daee6f36e6d45d0e",
+  "opponents": [
+    "market",
+    "round2"
+  ],
+  "promotion": false,
+  "roles": [
+    "F01",
+    "F02",
+    "F03",
+    "F04"
+  ],
+  "run_memory_bytes": 4294967296,
+  "schema": "student-continuation-prereg-v1",
+  "source": "eight selected games from the consumed 32-game exploration",
+  "training": false,
+  "windows": [
+    [
+      0,
+      239
+    ],
+    [
+      240,
+      479
+    ],
+    [
+      480,
+      718
+    ]
+  ]
+}
