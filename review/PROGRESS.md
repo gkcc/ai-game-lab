@@ -1139,3 +1139,7 @@ Windows 和 WSL 分别通过导入守卫 1 项、训练入口 17 项、Windows �
 ### 浇水候选残差：合成基础验证
 
 新增未接入默认 Bot 的残差组件：冻结任务模型，同一输入下只在其原本首选浇水时重排浇水候选；其余首选保持原样。训练核心采用固定两角色等额采样和交叉熵＋KL，先消除组内共同特征以避免合成反例中的舍入伪梯度。独立子代理在合成数据上复核并运行 64 次 CPU JAX 更新和梯度公式校验；另修复评估 NLL 的大数消减与缺角色时的 unknown／failed 优先级。训练 float32 与部署 float64 基线、GPU 与 NumPy 点积可能有精度差别，真实用途仍须逐组核验；旧遥测的 `last` 格式也不能未经适配复用。本阶段没有读取真实训练数据做模型前向、GPU 更新或新比赛。[组件与边界](../kaggriculture/learning/task_water_residual_v1/README.zh-CN.md)。
+
+### 浇水残差 GPU 探针：内存门停止
+
+登记提交 `a163068` 后仅尝试一次；host 记录 `memory_gate` 并请求取消，原始结果为 `cleanup_unconfirmed`。没有 supervisor／worker 启动标记、训练结果、残差文件或 Linux 清理收据；supervisor 只留通用失败类别。事后只读观察没有发现运行中的 WSL 发行版或匹配的 Windows transport，但不把事后观察改写成原清理证明。实际最低内存值和 supervisor 内部异常未保存；按登记不重试、不降低门槛，开发筛查和 GPU 训练没有验收。[登记](evidence/task-water-residual-v1-20261031/REGISTRATION.zh-CN.md) | [失败证据](evidence/task-water-residual-v1-failure-20261031/FAILURE.zh-CN.md) | [独立复核](evidence/task-water-residual-v1-failure-20261031/REVIEW.zh-CN.md)。

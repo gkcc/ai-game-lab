@@ -1,0 +1,23 @@
+{
+  "schema": "water-residual-gpu-failure-public-v1",
+  "registration_commit": "a16306856fbc621a597025565d71ad2aeee62343",
+  "attempts_started": 1,
+  "host_status": "cleanup_unconfirmed",
+  "host_stop_reason": "memory_gate",
+  "supervisor_reported_status": "failed",
+  "supervisor_attempt_marker_present": false,
+  "worker_attempt_marker_present": false,
+  "worker_result_present": false,
+  "residual_model_present": false,
+  "linux_pidfd_cleanup_receipt_present": false,
+  "outer_process_exit_code": 1,
+  "minimum_available_memory_recorded": false,
+  "historical_cleanup_confirmed": false,
+  "posthoc_running_wsl_distribution_observed": false,
+  "posthoc_matching_windows_transport_count": 0,
+  "registered_private_snapshots_unchanged": true,
+  "development_screen_executed": false,
+  "gpu_training_verified": false,
+  "new_complete_games": 0,
+  "retry_allowed": false
+}
