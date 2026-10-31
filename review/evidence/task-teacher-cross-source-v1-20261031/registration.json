@@ -1,0 +1,61 @@
+{
+  "base_commit": "f6da6efe095e48c933558ea6243650fa6c063a10",
+  "comparisons": [
+    "raw_float32",
+    "baseline_normalized_float32"
+  ],
+  "conflict_priority": true,
+  "disk_floor_bytes": 4294967296,
+  "historical_source_commit": "d8a1c2ff025991f724ee1ca5220aac4b27f277a4",
+  "independent_game_evaluation": false,
+  "job": {
+    "cleanup_seconds": 10,
+    "max_commit_bytes": 3221225472,
+    "max_rss_bytes": 2147483648,
+    "min_available_bytes": 4294967296,
+    "poll_seconds": 1,
+    "wall_seconds": 900
+  },
+  "match": "full_ordered_numeric_group_with_exact_bytes_after_sha",
+  "max_attempts": 1,
+  "max_candidates_per_group": 256,
+  "memory_initial_bytes": 5368709120,
+  "model_forward": false,
+  "new_data_registration_commit": "7a2389ea77822a9bf4f11d3f9dc244765d270041",
+  "new_dev_groups": 62,
+  "new_games": 0,
+  "new_train_groups": 59,
+  "old_archive_seed_payload_decoded": false,
+  "old_candidates": {
+    "new": 203196,
+    "old": 118955
+  },
+  "old_groups": {
+    "new": 2851,
+    "old": 2253
+  },
+  "old_sources": [
+    "old",
+    "new"
+  ],
+  "private_binding_sha256": "5a13b42a04cec3485e9eb7ca921306db6fcce7205ec85cdce4b59e57cce8c8f4",
+  "schema": "teacher-cross-source-prereg-v1",
+  "source_sha256": {
+    "kaggriculture/decision/api.py": "3ef4025bde61d240b298cbe4d31291f25021baaf5b396f5540bbfcdda4231917",
+    "kaggriculture/learning/task_bc_v1/model.py": "dbdbe126029a16f15178d18a5088defac83c5b6447d77f48aa7c77cae70886d8",
+    "kaggriculture/learning/task_choice_v1/features.py": "b69e3fb590fb5c1159193d112977aa03170557dc47b8aa19bcffe0f09737c7d4",
+    "kaggriculture/learning/task_multi_teacher_probe_v1/experiment.py": "4e0ac5a922a33b477f764257a25ed974377ccee3b63f6f16727d84ab60035a8a",
+    "kaggriculture/learning/task_pair_fresh_multi_v1/entry.py": "17131b3d8283057c395b5ef24a7d361f799d39d8751e51b9080709006881fe68",
+    "kaggriculture/learning/task_student_anchor_collection_v1/sources.py": "434179c7bf34e5f423a6c393dd456feb3c71391850f2b1801897a3fb3a372b46",
+    "kaggriculture/learning/task_student_continuation_v1/experiment.py": "cc3b84a9750d947fd417e45d40b80f1b43ff0cd5686e20da4e833e10877e67b0",
+    "kaggriculture/learning/task_student_dagger_collection_v1/sources.py": "70581e43e229443aac176ff5b3be52d87671777a4de9f1de18c2020f2e25d71c",
+    "kaggriculture/learning/task_teacher_cross_source_v1/__init__.py": "d4249140fdb3b12d5f5871597a5131c6caf66ce5ed685b35df8353941f2e49ee",
+    "kaggriculture/learning/task_teacher_cross_source_v1/archive.py": "e6c4dd6e317a810362658d2d8c3441e2f7d8d99de1468c0aaf1fba2620f5c41f",
+    "kaggriculture/learning/task_teacher_cross_source_v1/experiment.py": "6a3c68ca8a524a7e5b12bcfb0274ddc22f443acf0c6933763600dc43eb6066cd",
+    "kaggriculture/learning/task_teacher_cross_source_v1/overlap.py": "e54ed187dfcdbc32a23d5c3cf683f467274f1aecc204fa8aa22184678e65b7b8",
+    "kaggriculture/learning/task_teacher_dev_deviation_v1/membership.py": "516791a86f28b84d9fd8bea3a936da4afd52be07e55a1bf5b24d99a86879721e",
+    "kaggriculture/learning/task_teacher_transfer_dataset_v1/dataset.py": "3f4cd5902ba8948e06ebeea663acd5e8d1647bbe4df087757a5a451ea59459da",
+    "kaggriculture/learning/task_teacher_transfer_dataset_v1/experiment.py": "30a655c25b750d0e7216b19bbb82b62d0e3d4a7c22647cac628ee683e2e83bbc"
+  },
+  "training": false
+}
