@@ -1085,3 +1085,5 @@ Windows 和 WSL 分别通过导入守卫 1 项、训练入口 17 项、Windows �
 第三次登记在新目录沿用已消费数据、原选样及训练门槛，保留两次停止现场；筛查明确区分教师自身选择与非教师请求匹配。真实结果尚未产生，见[登记](evidence/task-equivalent-bc-v3-20261031/REGISTRATION.zh-CN.md)与[预审](evidence/task-equivalent-bc-v3-20261031/PRE_REVIEW.zh-CN.md)。
 
 第三次入口已完成：12 场既有来源流和 72 个选中任务组通过技术检查，但训练门槛未通过。48 个训练组有 8 组合格，24 个开发组为 0；开发侧 48 个已尝试备选均请求不同，另有 2,686 个候选未尝试。按登记没有 GPU 训练、新模型或新比赛。仅凭一个已消费开发种子不能推断整套机制无价值，且逐组原始续行明细未保存；详见[结果与限制](evidence/task-equivalent-bc-v3-result-20261031/RESULTS.zh-CN.md)。
+
+后续登记将比较旧 baseline/control 模型对冻结市场版的 8 场开发对局，使用与旧失败面板不重合的两个已消费训练种子、交换双方；不训练或声称独立泛化。种子与资源范围、旧 Worker 复用和停止条件见[登记](evidence/task-pair-market-consumed-v1-20261031/REGISTRATION.zh-CN.md)与[预审](evidence/task-pair-market-consumed-v1-20261031/PRE_REVIEW.zh-CN.md)；真实预检和对局结果尚未产生。
