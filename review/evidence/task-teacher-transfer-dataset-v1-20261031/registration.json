@@ -1,0 +1,90 @@
+{
+  "base_commit": "aa4af583fc86cfd6be0dd171bfccaa21e0417160",
+  "binding_commitment_sha256": "ef705a8ac7ff93269b4d6f3824df4836666ef48be15a5a9503e97227e9316787",
+  "case_file_max_bytes": 16777216,
+  "case_reserve_bytes": 268435456,
+  "data_gate": {
+    "dev_each_opponent_min": 3,
+    "dev_each_role_min": 4,
+    "dev_each_side_min": 2,
+    "dev_min": 16,
+    "hours_each_opponent_min": 2,
+    "hours_each_split_min": 4,
+    "operations_each_split_min": 2,
+    "train_each_opponent_min": 6,
+    "train_each_role_min": 8,
+    "train_each_side_min": 4,
+    "train_min": 32
+  },
+  "dev_roles": [
+    "A07",
+    "A08"
+  ],
+  "disk_free_floor_bytes": 4294967296,
+  "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "final_file_max_bytes": 134217728,
+  "final_reserve_bytes": 268435456,
+  "games": 16,
+  "hours": [
+    0,
+    4,
+    8,
+    12,
+    16,
+    20
+  ],
+  "independent_evaluation": false,
+  "initial_available_bytes": 5368709120,
+  "job": {
+    "cleanup_seconds": 10,
+    "max_commit_bytes": 3221225472,
+    "max_rss_bytes": 2147483648,
+    "min_available_bytes": 4294967296,
+    "poll_seconds": 1,
+    "wall_seconds": 900
+  },
+  "learner_sides": [
+    0,
+    1
+  ],
+  "max_attempts": 1,
+  "max_candidates_per_group": 256,
+  "max_groups": 384,
+  "max_rule_calls": 192,
+  "max_selected_ordinals_per_turn": 4,
+  "max_teacher_callbacks_per_turn": 32,
+  "new_complete_games": 0,
+  "new_official_transitions": 0,
+  "opponents": [
+    "market",
+    "round2"
+  ],
+  "prior_registration_commit": "7da1eedbd1a5c75653bac072afc2455962134c83",
+  "promotion": false,
+  "role_slots": {
+    "A01": "T01",
+    "A02": "T02",
+    "A07": "V01",
+    "A08": "V02"
+  },
+  "run_available_bytes": 4294967296,
+  "sampled_turns": 96,
+  "schema": "teacher-transfer-dataset-prereg-v1",
+  "source_batch": 1,
+  "steps": [
+    48,
+    172,
+    296,
+    420,
+    544,
+    668
+  ],
+  "total_wall_seconds": 3600,
+  "train_roles": [
+    "A01",
+    "A02"
+  ],
+  "training": false,
+  "turns_per_day": 24
+}
