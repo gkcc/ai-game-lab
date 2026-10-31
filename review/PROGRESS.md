@@ -1155,3 +1155,7 @@ Windows 和 WSL 分别通过导入守卫 1 项、训练入口 17 项、Windows �
 ### 已消费教师数据跨来源精确比较
 
 事前提交 `a816e60` 后，以受限 CPU Job 实际扫描两份旧教师档案的 5,104 组、322,151 候选，并与新训练 59 组、开发 62 组逐组比较。原始和基线归一化 float32 两口径下，121 组均未与旧数据形成完整有序组精确匹配；因没有匹配，零标签冲突不构成相同局面上的一致性证据。两份独立复核核查封存、Job 退出和匿名汇总，但未重扫原档。此结果不证明近似样本独立、旧数据内部无冲突或混合训练有效；本次没有训练、模型前向、新比赛或 GPU 运算。[登记](evidence/task-teacher-cross-source-v1-20261031/REGISTRATION.zh-CN.md) | [结果和匿名账本](evidence/task-teacher-cross-source-v1-result-20261031/RESULTS.zh-CN.md) | [独立复核](evidence/task-teacher-cross-source-v1-result-20261031/REVIEW.zh-CN.md)。
+
+### 多机制教师跨任务排序：CPU 开发筛查失败
+
+事前提交 `cce3eaa` 后，以已消费旧／新教师示范进行一次 64 步 CPU 线性残差训练，完成非零梯度及权重变化；新开发 62 组基线和残差均命中 59 组，旧诊断 250 组均命中 243 组，312 组没有首选变化。筛查所需净改正及选择变化均未达标，故未通过；旧非浇水护栏通过但不证明未遗忘。两名独立子代理复核本机封存及聚合，没有重训或重算原始样本。本轮没有 GPU 训练、新比赛或默认 Bot 更改；线性残差的状态表达及已消费样本限制见[登记](evidence/task-multisource-rank-v1-20261031/REGISTRATION.zh-CN.md)、[结果与证书](evidence/task-multisource-rank-v1-result-20261031/RESULTS.zh-CN.md)和[复核](evidence/task-multisource-rank-v1-result-20261031/REVIEW.zh-CN.md)。

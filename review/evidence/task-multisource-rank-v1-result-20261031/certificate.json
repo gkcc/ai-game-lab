@@ -1,0 +1,124 @@
+{
+  "checks": {
+    "each_new_dev_role_no_accuracy_drop": true,
+    "new_dev_at_least_one_change": false,
+    "new_dev_net_correct_at_least_two": false,
+    "old_non_water_coverage_at_least_twenty": true,
+    "old_non_water_drop_at_most_five_points": true
+  },
+  "coverage": {
+    "conflict_removed_by_pool": {
+      "new_dev": 0,
+      "new_train": 0,
+      "old_diag": 0,
+      "old_train": 0
+    },
+    "constant_normalized_excluded_by_pool": {
+      "new_dev": 0,
+      "new_train": 0,
+      "old_diag": 0,
+      "old_train": 0
+    },
+    "duplicate_removed_by_pool": {
+      "new_dev": 0,
+      "new_train": 0,
+      "old_diag": 6,
+      "old_train": 8
+    },
+    "eligible_by_pool": {
+      "new_dev": 62,
+      "new_train": 59,
+      "old_diag": 250,
+      "old_train": 501
+    },
+    "input_by_pool": {
+      "new_dev": 62,
+      "new_train": 59,
+      "old_diag": 256,
+      "old_train": 512
+    },
+    "input_count": 889,
+    "retained_by_pool": {
+      "new_dev": 62,
+      "new_train": 59,
+      "old_diag": 250,
+      "old_train": 504
+    },
+    "single_candidate_excluded_by_pool": {
+      "new_dev": 0,
+      "new_train": 0,
+      "old_diag": 0,
+      "old_train": 3
+    }
+  },
+  "gpu_training": false,
+  "independent_evaluation": false,
+  "new_dev": {
+    "baseline_correct": 59,
+    "baseline_mean_nll": 0.629301,
+    "changed": 0,
+    "groups": 62,
+    "improved": 0,
+    "op_flips": 0,
+    "regressed": 0,
+    "residual_correct": 59,
+    "residual_mean_nll": 0.629206
+  },
+  "new_dev_roles": {
+    "A07": {
+      "baseline_correct": 32,
+      "baseline_mean_nll": 1.101905,
+      "changed": 0,
+      "groups": 35,
+      "improved": 0,
+      "op_flips": 0,
+      "regressed": 0,
+      "residual_correct": 32,
+      "residual_mean_nll": 1.10173
+    },
+    "A08": {
+      "baseline_correct": 27,
+      "baseline_mean_nll": 0.016666,
+      "changed": 0,
+      "groups": 27,
+      "improved": 0,
+      "op_flips": 0,
+      "regressed": 0,
+      "residual_correct": 27,
+      "residual_mean_nll": 0.016674
+    }
+  },
+  "new_games": 0,
+  "nonzero_gradient_seen": true,
+  "old_diag": {
+    "baseline_correct": 243,
+    "baseline_mean_nll": 0.1541,
+    "changed": 0,
+    "groups": 250,
+    "improved": 0,
+    "op_flips": 0,
+    "regressed": 0,
+    "residual_correct": 243,
+    "residual_mean_nll": 0.154105
+  },
+  "old_non_water": {
+    "old_non_water_baseline_correct": 75,
+    "old_non_water_groups": 80,
+    "old_non_water_residual_correct": 75
+  },
+  "parity": {
+    "adjusted_argmax_mismatches": 0,
+    "allclose": true,
+    "groups": 312,
+    "maximum_absolute_error": 4.6566128730773926e-09,
+    "scope": "centered_jax_vs_numpy_residual_and_float64_baseline_choice",
+    "training_float32_adjusted_argmax_checked": false,
+    "zero_residual_mismatches": 0
+  },
+  "registration_commit": "cce3eaa8edd8cbb710554e3e085a0d2b557aaf4e",
+  "schema": "task-multisource-rank-public-v1",
+  "screen": "failed",
+  "training_device": "cpu",
+  "updates_completed": 64,
+  "weights_changed": true
+}
