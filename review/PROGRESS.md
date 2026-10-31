@@ -1117,3 +1117,7 @@ Windows 和 WSL 分别通过导入守卫 1 项、训练入口 17 项、Windows �
 ### 已消费 DAgger 对局的条件示范采集
 
 登记提交 `b706506` 后，从此前 24 场 baseline 游戏的 144 个窗口按固定计划选出 120 格，完成 240 次学生续行比较；19 格合格，来自 11 场旧比赛。保留训练 15 组、开发 4 组，未达到事前 16／8 及角色覆盖门，开发侧也只覆盖一个对手。独立子代理核对账目、实际数据摘要和保留组去重；未重新执行官方单步。按登记没有训练、新完整比赛或晋级，开发角色均已消费，不是独立测试。[登记](evidence/task-student-dagger-collection-v1-20261031/REGISTRATION.zh-CN.md) | [结果与账本](evidence/task-student-dagger-collection-v1-result-20261031/RESULTS.zh-CN.md) | [独立复核](evidence/task-student-dagger-collection-v1-result-20261031/REVIEW.zh-CN.md)。
+
+### 已消费 Anchor 混合条件示范：采集中止
+
+登记提交 `7301c92` 后，两批计划固定选中 205 个真实窗口。第二遍途中一次尝试以 `MemoryError` 停止，收据记录 346 次已开始比较与 692／692 次预留；没有结果、数据合同或新 NPZ，**新混合数据门未评估**。失败时刻的内存和异常位置未记录，不能推断具体根因；按登记不重试、不训练，旧结果保留。[登记](evidence/task-student-anchor-mixed-v1-20261031/REGISTRATION.zh-CN.md) | [失败说明](evidence/task-student-anchor-mixed-v1-failure-20261031/FAILURE.zh-CN.md) | [独立复核](evidence/task-student-anchor-mixed-v1-failure-20261031/REVIEW.zh-CN.md)。
