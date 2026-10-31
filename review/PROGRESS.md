@@ -1103,3 +1103,8 @@ Windows 和 WSL 分别通过导入守卫 1 项、训练入口 17 项、Windows �
 ### 学生续行条件示范诊断
 
 登记提交 `7d80014` 后，从 8 场已消费游戏的 24 个固定窗口选择任务分歧，完成 48 次学生续行比较。教师替换 `same/different/unknown` 为 11/3/10，第三候选为 0/18/6；9 格同时满足教师严格相同及第三候选改变官方下一物理状态，探索门通过。该九格中 6 个在从 0 起算的 `step 15`，且来自两种不同后续模型（baseline 6、control 3），不能视为独立样本或混作统一等价标签。该阶段不训练、不晋级、不产生完整比赛；官方单步物理差异由受审程序现场计算，保存的布尔账本本身不能独立重算状态。后续若学习须另行收集更丰富的固定模型条件示范，并在新的比赛面板验证；保留旧结果与默认 Bot。[登记](evidence/task-student-continuation-v1-20261031/REGISTRATION.zh-CN.md) | [结果与账本](evidence/task-student-continuation-v1-result-20261031/RESULTS.zh-CN.md) | [独立复核](evidence/task-student-continuation-v1-result-20261031/REVIEW.zh-CN.md)。
+
+
+### 单一学生条件示范扩充
+
+登记提交 `2da14f9` 后，对 16 场已消费 baseline 游戏的 96 个固定窗口完成 192 次条件比较；21 格为合格示范，其中 14 格集中在从 0 起算的 `step 15`。按实际训练输入精度去重后，训练侧仅 7 组、开发侧仅 2 组，且 F02/F03 各无保留代表；事前 16／8 及各角色覆盖门未通过。该结果不表示被移除角色在去重前无示范；已消费开发侧并非独立泛化评估。按登记没有 GPU 训练、PPO、模型晋级或新完整比赛；不能通过事后降低门槛包装通过。[登记](evidence/task-student-collection-v1-20261031/REGISTRATION.zh-CN.md) | [结果与账本](evidence/task-student-collection-v1-result-20261031/RESULTS.zh-CN.md) | [独立复核](evidence/task-student-collection-v1-result-20261031/REVIEW.zh-CN.md)。
