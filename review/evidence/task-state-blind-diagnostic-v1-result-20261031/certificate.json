@@ -1,0 +1,52 @@
+{
+  "case_and_operation_effect_buckets_published": false,
+  "case_windows_with_samples": 48,
+  "cases_with_samples": 8,
+  "gpu": false,
+  "historical_screen": "failed",
+  "independent_evaluation": false,
+  "model_comparison_scope": "historical_student_callback_inputs",
+  "model_updates": 0,
+  "new_games": 0,
+  "official_reexecution_during_diagnostic": false,
+  "overall": {
+    "baseline_correct": 190,
+    "baseline_nll": 0.056164,
+    "changed": 1,
+    "coverage": "observed",
+    "groups": 192,
+    "improved": 1,
+    "op_flips": 0,
+    "regressed": 0,
+    "residual_correct": 191,
+    "residual_nll": 0.055275,
+    "teacher_pair": {
+      "both_match": 190,
+      "improved": 1,
+      "neither_match": 1,
+      "regressed": 0
+    }
+  },
+  "promotion": false,
+  "registration_commit": "ef010283b767338849d54e1f58c025af899a697d",
+  "sampled_groups": 192,
+  "schema": "state-blind-diagnostic-public-v1",
+  "seed_clusters": 2,
+  "single_candidate_groups": 0,
+  "source_games": 8,
+  "trace_turns": 5752,
+  "training": false,
+  "within_sample_duplicates": {
+    "normalized": {
+      "excess": 3,
+      "repeated_groups": 6,
+      "unique": 189
+    },
+    "raw": {
+      "excess": 3,
+      "repeated_groups": 6,
+      "unique": 189
+    },
+    "scope": "within_selected_ordered_groups_only"
+  }
+}

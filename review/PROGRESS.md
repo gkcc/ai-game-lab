@@ -1171,3 +1171,7 @@ Windows 和 WSL 分别通过导入守卫 1 项、训练入口 17 项、Windows �
 ### 状态模型的训练输入池诊断
 
 事前提交 `867fef1` 后，对全部 42 个原分歧训练输入池组重评分；基线按预选条件为 0／42 命中教师，状态残差为 3／42，首选改变 3 组。按 `1e-6` 容差教师相对最强其他候选的分差 31 组增加、11 组减少，平均目标 NLL 从 3.273721 降至 2.969881。模型对部分已用示范有拟合，但没有逐批索引证明每组实际被抽中；这不改写开发筛查失败，不证明新比赛收益。来源认证读取既有诊断档案但未对其重新评分；没有重训、GPU 或新比赛。[登记](evidence/task-state-train-fit-v1-20261031/REGISTRATION.zh-CN.md) | [结果及证书](evidence/task-state-train-fit-v1-result-20261031/RESULTS.zh-CN.md) | [独立复核](evidence/task-state-train-fit-v1-result-20261031/REVIEW.zh-CN.md)。
+
+### 状态残差在已消费历史学生轨迹上的盲选诊断
+
+事前提交 `ef01028` 后，核验八条已消费旧轨迹并按固定坐标从 48 个场次／时间窗选出 192 组；基线重算首选均与历史学生一致，冻结残差改变 1 组首选，条件教师一致 190→191／192，动作类别没有变化。样本内部 raw／归一化有序组各有 3 组重复的额外出现，没有剔除。两名独立子代理核对封存及汇总，未重读逐组数据或重跑比赛。仅有两个历史种子簇，不能证明泛化或收益；上一轮筛查仍 failed。本轮没有训练、GPU 或新比赛。[登记](../kaggriculture/learning/task_state_blind_diagnostic_v1/REGISTRATION.zh-CN.md) | [结果及证书](evidence/task-state-blind-diagnostic-v1-result-20261031/RESULTS.zh-CN.md) | [独立复核](evidence/task-state-blind-diagnostic-v1-result-20261031/REVIEW.zh-CN.md)。
