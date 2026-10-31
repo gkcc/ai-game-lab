@@ -1125,3 +1125,7 @@ Windows 和 WSL 分别通过导入守卫 1 项、训练入口 17 项、Windows �
 ### 两个冻结对手的任务教师接口
 
 登记提交 `3448fa1` 后，在同一已消费 seed 的四场旧 Replay 中分别重建 market／round2 教师的双方席位；教师侧 2,876／2,876 个完整请求与记录一致，8,374 次任务回调通过自身候选和 schema 检查。独立子代理核对封存与匿名汇总，没有重跑教师或官方引擎；逐回合证据未持久保存。该结果不证明现有 terminal 学生可表达这些教师的候选，亦不证明新比赛收益；本轮没有训练或新增官方比赛。[登记](evidence/task-multi-teacher-probe-v1-20261031/REGISTRATION.zh-CN.md) | [结果与账本](evidence/task-multi-teacher-probe-v1-result-20261031/RESULTS.zh-CN.md) | [独立复核](evidence/task-multi-teacher-probe-v1-result-20261031/REVIEW.zh-CN.md)。
+
+### 教师目标在 terminal 候选中的小样本支持
+
+登记提交 `7da1eed` 后，对同一已消费 seed 的四场旧回放各六个固定回合比较共同任务／预留前缀；120 个教师目标均出现在 terminal 规则候选中，54 个目标的共享＋目标特征不同，完整请求相同 22／24。独立复核确认这些帧全部是一天中的 `hour=11`，因此不能推广到其他时段或 seed；账本也不能还原原始前缀。本轮无模型前向、训练、新完整比赛或官方转移。[登记](evidence/task-teacher-support-probe-v1-20261031/REGISTRATION.zh-CN.md) | [结果与账本](evidence/task-teacher-support-probe-v1-result-20261031/RESULTS.zh-CN.md) | [独立复核](evidence/task-teacher-support-probe-v1-result-20261031/REVIEW.zh-CN.md)。
