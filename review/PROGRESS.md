@@ -1135,3 +1135,7 @@ Windows 和 WSL 分别通过导入守卫 1 项、训练入口 17 项、Windows �
 ### 两个教师的跨时段任务标签
 
 登记提交 `7a2389e` 后，从四个已消费角色的 16 场旧 Replay 各取六个固定回合，96／96 个教师请求与旧记录一致；222 个预选支持组按训练输入精度去重后保留训练 59 组、开发 62 组，登记的数据门通过。训练目标 58／59 为浇水，仅 1 个种植；开发目标为浇水 58、种植 3、收获 1，不构成充分的多机制示范。它们是目标类别，不能替代对具体候选、单位与目标的选择表现。独立子代理核对封存、分布及数值数据重算；该阶段没有训练、新比赛、官方状态转移或 GPU 运算，开发集不是独立竞技测试。[登记](evidence/task-teacher-transfer-dataset-v1-20261031/REGISTRATION.zh-CN.md) | [结果与账本](evidence/task-teacher-transfer-dataset-v1-result-20261031/RESULTS.zh-CN.md) | [独立复核](evidence/task-teacher-transfer-dataset-v1-result-20261031/REVIEW.zh-CN.md)。
+
+### 浇水候选残差：合成基础验证
+
+新增未接入默认 Bot 的残差组件：冻结任务模型，同一输入下只在其原本首选浇水时重排浇水候选；其余首选保持原样。训练核心采用固定两角色等额采样和交叉熵＋KL，先消除组内共同特征以避免合成反例中的舍入伪梯度。独立子代理在合成数据上复核并运行 64 次 CPU JAX 更新和梯度公式校验；另修复评估 NLL 的大数消减与缺角色时的 unknown／failed 优先级。训练 float32 与部署 float64 基线、GPU 与 NumPy 点积可能有精度差别，真实用途仍须逐组核验；旧遥测的 `last` 格式也不能未经适配复用。本阶段没有读取真实训练数据做模型前向、GPU 更新或新比赛。[组件与边界](../kaggriculture/learning/task_water_residual_v1/README.zh-CN.md)。
