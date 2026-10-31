@@ -1,0 +1,75 @@
+{
+  "base_commit": "2b5af446d5f889d9cfdccf44eb405c03d1f70530",
+  "binding_commitment_sha256": "1158ef14dd3a2519217253e9c7bb5dc94599074b8a0da00040ae7180c31f2b74",
+  "candidate_steps_per_window": 4,
+  "candidate_width_max": 256,
+  "completed_root_sha256": "98142750672977a458655f3fb953789e607108cd352ba3be117d647f0f402279",
+  "data_gate": {
+    "dev_each_role_min": 2,
+    "dev_min": 8,
+    "min_opponents_each_split": 2,
+    "min_windows_each_split": 2,
+    "train_each_role_min": 4,
+    "train_min": 16
+  },
+  "independent_evaluation": false,
+  "initial_memory_bytes": 5368709120,
+  "max_attempts": 1,
+  "max_bytes_per_split": 67108864,
+  "max_comparisons": 288,
+  "max_controller_calls": 576,
+  "max_official_transitions": 576,
+  "max_wall_seconds": 3600,
+  "max_windows": 144,
+  "min_free_bytes": 4294967296,
+  "new_complete_games": 0,
+  "opponents": [
+    "market",
+    "round2"
+  ],
+  "prior_registration_commit": "2da14f9d9eafb8b8a8aa90bb11a9ae3558c1fdca",
+  "promotion": false,
+  "roles": [
+    "T01",
+    "T02",
+    "T03",
+    "T04",
+    "V01",
+    "V02"
+  ],
+  "run_memory_bytes": 4294967296,
+  "schema": "student-dagger-collection-prereg-v1",
+  "sides": [
+    0,
+    1
+  ],
+  "source_games": 24,
+  "source_passes": 2,
+  "training": false,
+  "windows": [
+    [
+      0,
+      119
+    ],
+    [
+      120,
+      239
+    ],
+    [
+      240,
+      359
+    ],
+    [
+      360,
+      479
+    ],
+    [
+      480,
+      599
+    ],
+    [
+      600,
+      718
+    ]
+  ]
+}
