@@ -37,7 +37,7 @@ def main():
     stage = Path(args.stage)
     if (os.name != 'posix' or not sys.flags.isolated or not sys.flags.dont_write_bytecode
             or not stage.is_absolute() or stage.resolve(strict=True) != stage
-            or stage.name != 'task-equivalent-bc-v2-20261031' or stage.parent.name != 'artifacts'):
+            or stage.name != 'task-equivalent-bc-v3-20261031' or stage.parent.name != 'artifacts'):
         raise ValueError('Invalid GPU supervision context')
     bootstrap = runpy.run_path(str(Path(__file__).with_name('gpu_bootstrap.py')))
     imports, project_root = bootstrap['bind']()

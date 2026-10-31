@@ -122,7 +122,7 @@ def main(argv=None):
         imports, project_root = bootstrap['bind']()
         stage = Path(args.stage)
         require(stage.is_absolute() and stage.resolve(strict=True) == stage
-                and stage.name == 'task-equivalent-bc-v2-20261031' and stage.parent.name == 'artifacts')
+                and stage.name == 'task-equivalent-bc-v3-20261031' and stage.parent.name == 'artifacts')
         cancel = stage / 'gpu-cancel.local.json'
 
         def guard():

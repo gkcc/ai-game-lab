@@ -22,12 +22,12 @@ import traceback
 
 ENTRY_STARTED = time.monotonic()
 REPO = Path(__file__).resolve().parents[3]
-BASE = 'f7c0c026c7e538a9b70b257ba13f51e94755b673'
-PUBLIC = 'review/evidence/task-equivalent-bc-v2-20261031/'
+BASE = 'b5c4d912bd51e96bb5de505e7ce9b31b4cb86035'
+PUBLIC = 'review/evidence/task-equivalent-bc-v3-20261031/'
 MAP = PUBLIC + 'source-map.json'
 NOTE = PUBLIC + 'REGISTRATION.zh-CN.md'
 OLD_PUBLIC = 'review/evidence/task-choice-v1-20261023/'
-STAGE = 'task-equivalent-bc-v2-20261031'
+STAGE = 'task-equivalent-bc-v3-20261031'
 OLD_STAGE = 'task-pair-round2-compare-v1-20261031'
 GPU_CONFIG = 'artifacts/task-dagger-once-v1-20261027/gpu-launch.local.json'
 HEX = re.compile(r'[0-9a-f]{64}\Z')
@@ -468,7 +468,7 @@ def main(argv=None):
         require(type(model_meta) is dict and set(model_meta) == {'path', 'sha256'}
                 and HEX.fullmatch(model_meta['sha256']))
         model_path = root.joinpath(*_safe_relative(model_meta['path']).parts)
-        result = {'schema': 'task-equivalent-bc-v2', 'registration_commit': args.registration_commit,
+        result = {'schema': 'task-equivalent-bc-v3', 'registration_commit': args.registration_commit,
                   'public_source_map_sha256': sha(source_raw), 'sample_scope': 'consumed_teacher_data',
                   'train': train_stats, 'development': dev_stats, 'read_budget': read_summary,
                   'training_gate': gate, 'gpu_training': False, 'new_games': 0,
@@ -548,7 +548,7 @@ def main(argv=None):
                           'exploratory_screen': result['exploratory_screen']}), flush=True)
         return 0
     except BaseException as exc:
-        failure = {'schema': 'task-equivalent-bc-failure-v2', 'status': 'failed',
+        failure = {'schema': 'task-equivalent-bc-failure-v3', 'status': 'failed',
                    'phase': phase, 'category': _category(exc), 'retry_allowed': False}
         if host_reason is not None:
             failure['gpu_host_reason'] = host_reason

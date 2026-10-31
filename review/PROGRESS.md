@@ -1081,3 +1081,5 @@ Windows 和 WSL 分别通过导入守卫 1 项、训练入口 17 项、Windows �
 随后新登记在保留旧提交和失败现场的前提下，去掉逐行重复摘要并复用同一回合只读观测，仍逐行检查完整输入和库存次序；按前次实际耗时重定时间预算，内存和数据上限不变。同一已消费来源将通过新目录单次运行；未产生的训练和开发筛查结果须另行报告，不能提前认定通过。[第二次登记](evidence/task-equivalent-bc-v2-20261031/REGISTRATION.zh-CN.md)。
 
 第二次登记 `3101e5b` 在完成三场采样后，因独立审查发现资源异常可能被当作 unknown，主代理主动停止；没有观察到实际内存故障，也未启动训练。随后修复资源、来源 I/O 和冻结教师初始化异常的传播，保留普通候选异常的 unknown 语义；合成回归与独立复核范围见[停止说明](evidence/task-equivalent-bc-v2-stop-20261031/STOP.zh-CN.md)和[复核](evidence/task-equivalent-bc-v2-stop-20261031/REVIEW.zh-CN.md)。
+
+第三次登记在新目录沿用已消费数据、原选样及训练门槛，保留两次停止现场；筛查明确区分教师自身选择与非教师请求匹配。真实结果尚未产生，见[登记](evidence/task-equivalent-bc-v3-20261031/REGISTRATION.zh-CN.md)与[预审](evidence/task-equivalent-bc-v3-20261031/PRE_REVIEW.zh-CN.md)。
