@@ -1093,3 +1093,8 @@ Windows 和 WSL 分别通过导入守卫 1 项、训练入口 17 项、Windows �
 ### 同作物模型的教师任务对照
 
 登记提交 `9890d5f` 后，新增两个已消费种子交换双方位置的 4 场教师任务臂比赛与 4 次官方主复演，并复用上面的 8 场学生比赛。D01 每席教师／baseline／control 自身净收益为 29,607／29,713／29,601；D02 为 25,799／26,627／27,325。三臂对 market 均负；教师减 control 平均自身收益 −760、现金差 −761.5，得分差为 0。教师臂使用相同作物模型，不是完整手写教师；仅两枚已消费种子，不能宣称独立泛化、统计显著或因果收益。本轮没有训练、GPU 运算或 PPO；不自动晋级。[登记](evidence/task-teacher-market-dev-v1-20261031/REGISTRATION.zh-CN.md) | [结果与账本](evidence/task-teacher-market-dev-v1-result-20261031/RESULTS.zh-CN.md) | [独立复核](evidence/task-teacher-market-dev-v1-result-20261031/REVIEW.zh-CN.md)。
+
+
+### 新种子多对手任务模型探索
+
+事前登记 `40f3f39` 后，四个新生成种子、两个冻结对手及双席完成 32 场官方完整比赛和 32 次当场官方主复演。control−baseline 平均自身净收益 −70.75、现金差 −73.625，两臂均为 10 胜 6 负；两对手的收益增量均为负，一种子降幅超过 1% 护栏，预登记探索筛查未通过。16 组完整请求前缀均观察到自身分歧，不说明收益因果。独立子代理只读核验逐场账目和保存的回放，没有额外重跑官方引擎。四个种子簇不足以证明显著提升或普遍退步，本轮不训练、不晋级、不改默认 Bot；新种子现已消费，原市场正式保留面板未使用。[登记](evidence/task-pair-fresh-multi-v1-20261031/REGISTRATION.zh-CN.md) | [结果与账本](evidence/task-pair-fresh-multi-v1-result-20261031/RESULTS.zh-CN.md) | [独立复核](evidence/task-pair-fresh-multi-v1-result-20261031/REVIEW.zh-CN.md)。

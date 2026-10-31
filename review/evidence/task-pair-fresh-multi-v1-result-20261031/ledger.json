@@ -1,0 +1,1119 @@
+{
+  "schema": "task-pair-fresh-multi-public-v1",
+  "scope": "fresh_seed_exploration",
+  "games": 32,
+  "official_replays": 32,
+  "paired_coordinates": 16,
+  "seed_clusters": 4,
+  "reference": "baseline",
+  "candidate": "control",
+  "pairs": [
+    {
+      "seed_alias": "F01",
+      "opponent": "market",
+      "side": 0,
+      "baseline": {
+        "own_net_profit": 41930.0,
+        "opponent_net_profit": 39447.0,
+        "margin": 2483.0,
+        "score": 1.0,
+        "own_sales_units": 285,
+        "opponent_sales_units": 358,
+        "own_sales_revenue": 49203.0,
+        "opponent_sales_revenue": 43636.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "control": {
+        "own_net_profit": 41953.0,
+        "opponent_net_profit": 39450.0,
+        "margin": 2503.0,
+        "score": 1.0,
+        "own_sales_units": 285,
+        "opponent_sales_units": 358,
+        "own_sales_revenue": 49226.0,
+        "opponent_sales_revenue": 43639.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "delta": {
+        "own_net_profit": 23.0,
+        "opponent_net_profit": 3.0,
+        "margin": 20.0,
+        "score": 0.0,
+        "own_sales_units": 0,
+        "opponent_sales_units": 0,
+        "own_sales_revenue": 23.0,
+        "opponent_sales_revenue": 3.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "common_task_history": {
+        "scope": "task_comparator_until_first_difference",
+        "matched_calls": 737,
+        "stop_reason": "choice_difference"
+      },
+      "complete_request_prefix": {
+        "scope": "same_complete_history",
+        "status": "observed",
+        "reason": "actor_request_difference",
+        "step": 249
+      }
+    },
+    {
+      "seed_alias": "F01",
+      "opponent": "market",
+      "side": 1,
+      "baseline": {
+        "own_net_profit": 41930.0,
+        "opponent_net_profit": 39447.0,
+        "margin": 2483.0,
+        "score": 1.0,
+        "own_sales_units": 285,
+        "opponent_sales_units": 358,
+        "own_sales_revenue": 49203.0,
+        "opponent_sales_revenue": 43636.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "control": {
+        "own_net_profit": 41953.0,
+        "opponent_net_profit": 39450.0,
+        "margin": 2503.0,
+        "score": 1.0,
+        "own_sales_units": 285,
+        "opponent_sales_units": 358,
+        "own_sales_revenue": 49226.0,
+        "opponent_sales_revenue": 43639.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "delta": {
+        "own_net_profit": 23.0,
+        "opponent_net_profit": 3.0,
+        "margin": 20.0,
+        "score": 0.0,
+        "own_sales_units": 0,
+        "opponent_sales_units": 0,
+        "own_sales_revenue": 23.0,
+        "opponent_sales_revenue": 3.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "common_task_history": {
+        "scope": "task_comparator_until_first_difference",
+        "matched_calls": 737,
+        "stop_reason": "choice_difference"
+      },
+      "complete_request_prefix": {
+        "scope": "same_complete_history",
+        "status": "observed",
+        "reason": "actor_request_difference",
+        "step": 249
+      }
+    },
+    {
+      "seed_alias": "F01",
+      "opponent": "round2",
+      "side": 0,
+      "baseline": {
+        "own_net_profit": 35729.0,
+        "opponent_net_profit": 41819.0,
+        "margin": -6090.0,
+        "score": 0.0,
+        "own_sales_units": 279,
+        "opponent_sales_units": 248,
+        "own_sales_revenue": 43425.0,
+        "opponent_sales_revenue": 46543.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "control": {
+        "own_net_profit": 35793.0,
+        "opponent_net_profit": 41815.0,
+        "margin": -6022.0,
+        "score": 0.0,
+        "own_sales_units": 279,
+        "opponent_sales_units": 248,
+        "own_sales_revenue": 43494.0,
+        "opponent_sales_revenue": 46539.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "delta": {
+        "own_net_profit": 64.0,
+        "opponent_net_profit": -4.0,
+        "margin": 68.0,
+        "score": 0.0,
+        "own_sales_units": 0,
+        "opponent_sales_units": 0,
+        "own_sales_revenue": 69.0,
+        "opponent_sales_revenue": -4.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "common_task_history": {
+        "scope": "task_comparator_until_first_difference",
+        "matched_calls": 100,
+        "stop_reason": "choice_difference"
+      },
+      "complete_request_prefix": {
+        "scope": "same_complete_history",
+        "status": "observed",
+        "reason": "actor_request_difference",
+        "step": 267
+      }
+    },
+    {
+      "seed_alias": "F01",
+      "opponent": "round2",
+      "side": 1,
+      "baseline": {
+        "own_net_profit": 35729.0,
+        "opponent_net_profit": 41819.0,
+        "margin": -6090.0,
+        "score": 0.0,
+        "own_sales_units": 279,
+        "opponent_sales_units": 248,
+        "own_sales_revenue": 43425.0,
+        "opponent_sales_revenue": 46543.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "control": {
+        "own_net_profit": 35793.0,
+        "opponent_net_profit": 41815.0,
+        "margin": -6022.0,
+        "score": 0.0,
+        "own_sales_units": 279,
+        "opponent_sales_units": 248,
+        "own_sales_revenue": 43494.0,
+        "opponent_sales_revenue": 46539.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "delta": {
+        "own_net_profit": 64.0,
+        "opponent_net_profit": -4.0,
+        "margin": 68.0,
+        "score": 0.0,
+        "own_sales_units": 0,
+        "opponent_sales_units": 0,
+        "own_sales_revenue": 69.0,
+        "opponent_sales_revenue": -4.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "common_task_history": {
+        "scope": "task_comparator_until_first_difference",
+        "matched_calls": 100,
+        "stop_reason": "choice_difference"
+      },
+      "complete_request_prefix": {
+        "scope": "same_complete_history",
+        "status": "observed",
+        "reason": "actor_request_difference",
+        "step": 267
+      }
+    },
+    {
+      "seed_alias": "F02",
+      "opponent": "market",
+      "side": 0,
+      "baseline": {
+        "own_net_profit": 27214.0,
+        "opponent_net_profit": 34467.0,
+        "margin": -7253.0,
+        "score": 0.0,
+        "own_sales_units": 266,
+        "opponent_sales_units": 351,
+        "own_sales_revenue": 32707.0,
+        "opponent_sales_revenue": 39051.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "control": {
+        "own_net_profit": 27214.0,
+        "opponent_net_profit": 34467.0,
+        "margin": -7253.0,
+        "score": 0.0,
+        "own_sales_units": 266,
+        "opponent_sales_units": 351,
+        "own_sales_revenue": 32707.0,
+        "opponent_sales_revenue": 39051.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "delta": {
+        "own_net_profit": 0.0,
+        "opponent_net_profit": 0.0,
+        "margin": 0.0,
+        "score": 0.0,
+        "own_sales_units": 0,
+        "opponent_sales_units": 0,
+        "own_sales_revenue": 0.0,
+        "opponent_sales_revenue": 0.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "common_task_history": {
+        "scope": "task_comparator_until_first_difference",
+        "matched_calls": 664,
+        "stop_reason": "choice_difference"
+      },
+      "complete_request_prefix": {
+        "scope": "same_complete_history",
+        "status": "observed",
+        "reason": "actor_request_difference",
+        "step": 268
+      }
+    },
+    {
+      "seed_alias": "F02",
+      "opponent": "market",
+      "side": 1,
+      "baseline": {
+        "own_net_profit": 27214.0,
+        "opponent_net_profit": 34467.0,
+        "margin": -7253.0,
+        "score": 0.0,
+        "own_sales_units": 266,
+        "opponent_sales_units": 351,
+        "own_sales_revenue": 32707.0,
+        "opponent_sales_revenue": 39051.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "control": {
+        "own_net_profit": 27214.0,
+        "opponent_net_profit": 34467.0,
+        "margin": -7253.0,
+        "score": 0.0,
+        "own_sales_units": 266,
+        "opponent_sales_units": 351,
+        "own_sales_revenue": 32707.0,
+        "opponent_sales_revenue": 39051.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "delta": {
+        "own_net_profit": 0.0,
+        "opponent_net_profit": 0.0,
+        "margin": 0.0,
+        "score": 0.0,
+        "own_sales_units": 0,
+        "opponent_sales_units": 0,
+        "own_sales_revenue": 0.0,
+        "opponent_sales_revenue": 0.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "common_task_history": {
+        "scope": "task_comparator_until_first_difference",
+        "matched_calls": 664,
+        "stop_reason": "choice_difference"
+      },
+      "complete_request_prefix": {
+        "scope": "same_complete_history",
+        "status": "observed",
+        "reason": "actor_request_difference",
+        "step": 268
+      }
+    },
+    {
+      "seed_alias": "F02",
+      "opponent": "round2",
+      "side": 0,
+      "baseline": {
+        "own_net_profit": 29795.0,
+        "opponent_net_profit": 25985.0,
+        "margin": 3810.0,
+        "score": 1.0,
+        "own_sales_units": 286,
+        "opponent_sales_units": 272,
+        "own_sales_revenue": 36066.0,
+        "opponent_sales_revenue": 30779.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "control": {
+        "own_net_profit": 29795.0,
+        "opponent_net_profit": 25985.0,
+        "margin": 3810.0,
+        "score": 1.0,
+        "own_sales_units": 286,
+        "opponent_sales_units": 272,
+        "own_sales_revenue": 36066.0,
+        "opponent_sales_revenue": 30779.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "delta": {
+        "own_net_profit": 0.0,
+        "opponent_net_profit": 0.0,
+        "margin": 0.0,
+        "score": 0.0,
+        "own_sales_units": 0,
+        "opponent_sales_units": 0,
+        "own_sales_revenue": 0.0,
+        "opponent_sales_revenue": 0.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "common_task_history": {
+        "scope": "task_comparator_until_first_difference",
+        "matched_calls": 100,
+        "stop_reason": "choice_difference"
+      },
+      "complete_request_prefix": {
+        "scope": "same_complete_history",
+        "status": "observed",
+        "reason": "actor_request_difference",
+        "step": 508
+      }
+    },
+    {
+      "seed_alias": "F02",
+      "opponent": "round2",
+      "side": 1,
+      "baseline": {
+        "own_net_profit": 29795.0,
+        "opponent_net_profit": 25985.0,
+        "margin": 3810.0,
+        "score": 1.0,
+        "own_sales_units": 286,
+        "opponent_sales_units": 272,
+        "own_sales_revenue": 36066.0,
+        "opponent_sales_revenue": 30779.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "control": {
+        "own_net_profit": 29795.0,
+        "opponent_net_profit": 25985.0,
+        "margin": 3810.0,
+        "score": 1.0,
+        "own_sales_units": 286,
+        "opponent_sales_units": 272,
+        "own_sales_revenue": 36066.0,
+        "opponent_sales_revenue": 30779.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "delta": {
+        "own_net_profit": 0.0,
+        "opponent_net_profit": 0.0,
+        "margin": 0.0,
+        "score": 0.0,
+        "own_sales_units": 0,
+        "opponent_sales_units": 0,
+        "own_sales_revenue": 0.0,
+        "opponent_sales_revenue": 0.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "common_task_history": {
+        "scope": "task_comparator_until_first_difference",
+        "matched_calls": 100,
+        "stop_reason": "choice_difference"
+      },
+      "complete_request_prefix": {
+        "scope": "same_complete_history",
+        "status": "observed",
+        "reason": "actor_request_difference",
+        "step": 508
+      }
+    },
+    {
+      "seed_alias": "F03",
+      "opponent": "market",
+      "side": 0,
+      "baseline": {
+        "own_net_profit": 27737.0,
+        "opponent_net_profit": 27463.0,
+        "margin": 274.0,
+        "score": 1.0,
+        "own_sales_units": 393,
+        "opponent_sales_units": 487,
+        "own_sales_revenue": 33274.0,
+        "opponent_sales_revenue": 30993.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "control": {
+        "own_net_profit": 27691.0,
+        "opponent_net_profit": 27475.0,
+        "margin": 216.0,
+        "score": 1.0,
+        "own_sales_units": 392,
+        "opponent_sales_units": 487,
+        "own_sales_revenue": 33260.0,
+        "opponent_sales_revenue": 31005.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "delta": {
+        "own_net_profit": -46.0,
+        "opponent_net_profit": 12.0,
+        "margin": -58.0,
+        "score": 0.0,
+        "own_sales_units": -1,
+        "opponent_sales_units": 0,
+        "own_sales_revenue": -14.0,
+        "opponent_sales_revenue": 12.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "common_task_history": {
+        "scope": "task_comparator_until_first_difference",
+        "matched_calls": 664,
+        "stop_reason": "choice_difference"
+      },
+      "complete_request_prefix": {
+        "scope": "same_complete_history",
+        "status": "observed",
+        "reason": "actor_request_difference",
+        "step": 267
+      }
+    },
+    {
+      "seed_alias": "F03",
+      "opponent": "market",
+      "side": 1,
+      "baseline": {
+        "own_net_profit": 27737.0,
+        "opponent_net_profit": 27463.0,
+        "margin": 274.0,
+        "score": 1.0,
+        "own_sales_units": 393,
+        "opponent_sales_units": 487,
+        "own_sales_revenue": 33274.0,
+        "opponent_sales_revenue": 30993.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "control": {
+        "own_net_profit": 27691.0,
+        "opponent_net_profit": 27475.0,
+        "margin": 216.0,
+        "score": 1.0,
+        "own_sales_units": 392,
+        "opponent_sales_units": 487,
+        "own_sales_revenue": 33260.0,
+        "opponent_sales_revenue": 31005.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "delta": {
+        "own_net_profit": -46.0,
+        "opponent_net_profit": 12.0,
+        "margin": -58.0,
+        "score": 0.0,
+        "own_sales_units": -1,
+        "opponent_sales_units": 0,
+        "own_sales_revenue": -14.0,
+        "opponent_sales_revenue": 12.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "common_task_history": {
+        "scope": "task_comparator_until_first_difference",
+        "matched_calls": 664,
+        "stop_reason": "choice_difference"
+      },
+      "complete_request_prefix": {
+        "scope": "same_complete_history",
+        "status": "observed",
+        "reason": "actor_request_difference",
+        "step": 267
+      }
+    },
+    {
+      "seed_alias": "F03",
+      "opponent": "round2",
+      "side": 0,
+      "baseline": {
+        "own_net_profit": 26796.0,
+        "opponent_net_profit": 25203.0,
+        "margin": 1593.0,
+        "score": 1.0,
+        "own_sales_units": 377,
+        "opponent_sales_units": 352,
+        "own_sales_revenue": 32717.0,
+        "opponent_sales_revenue": 29602.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "control": {
+        "own_net_profit": 27000.0,
+        "opponent_net_profit": 25200.0,
+        "margin": 1800.0,
+        "score": 1.0,
+        "own_sales_units": 383,
+        "opponent_sales_units": 352,
+        "own_sales_revenue": 32953.0,
+        "opponent_sales_revenue": 29599.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "delta": {
+        "own_net_profit": 204.0,
+        "opponent_net_profit": -3.0,
+        "margin": 207.0,
+        "score": 0.0,
+        "own_sales_units": 6,
+        "opponent_sales_units": 0,
+        "own_sales_revenue": 236.0,
+        "opponent_sales_revenue": -3.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "common_task_history": {
+        "scope": "task_comparator_until_first_difference",
+        "matched_calls": 100,
+        "stop_reason": "choice_difference"
+      },
+      "complete_request_prefix": {
+        "scope": "same_complete_history",
+        "status": "observed",
+        "reason": "actor_request_difference",
+        "step": 398
+      }
+    },
+    {
+      "seed_alias": "F03",
+      "opponent": "round2",
+      "side": 1,
+      "baseline": {
+        "own_net_profit": 26796.0,
+        "opponent_net_profit": 25203.0,
+        "margin": 1593.0,
+        "score": 1.0,
+        "own_sales_units": 377,
+        "opponent_sales_units": 352,
+        "own_sales_revenue": 32717.0,
+        "opponent_sales_revenue": 29602.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "control": {
+        "own_net_profit": 27000.0,
+        "opponent_net_profit": 25200.0,
+        "margin": 1800.0,
+        "score": 1.0,
+        "own_sales_units": 383,
+        "opponent_sales_units": 352,
+        "own_sales_revenue": 32953.0,
+        "opponent_sales_revenue": 29599.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "delta": {
+        "own_net_profit": 204.0,
+        "opponent_net_profit": -3.0,
+        "margin": 207.0,
+        "score": 0.0,
+        "own_sales_units": 6,
+        "opponent_sales_units": 0,
+        "own_sales_revenue": 236.0,
+        "opponent_sales_revenue": -3.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "common_task_history": {
+        "scope": "task_comparator_until_first_difference",
+        "matched_calls": 100,
+        "stop_reason": "choice_difference"
+      },
+      "complete_request_prefix": {
+        "scope": "same_complete_history",
+        "status": "observed",
+        "reason": "actor_request_difference",
+        "step": 398
+      }
+    },
+    {
+      "seed_alias": "F04",
+      "opponent": "market",
+      "side": 0,
+      "baseline": {
+        "own_net_profit": 27802.0,
+        "opponent_net_profit": 30965.0,
+        "margin": -3163.0,
+        "score": 0.0,
+        "own_sales_units": 377,
+        "opponent_sales_units": 409,
+        "own_sales_revenue": 33053.0,
+        "opponent_sales_revenue": 35137.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "control": {
+        "own_net_profit": 27534.0,
+        "opponent_net_profit": 30999.0,
+        "margin": -3465.0,
+        "score": 0.0,
+        "own_sales_units": 378,
+        "opponent_sales_units": 409,
+        "own_sales_revenue": 32853.0,
+        "opponent_sales_revenue": 35141.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "delta": {
+        "own_net_profit": -268.0,
+        "opponent_net_profit": 34.0,
+        "margin": -302.0,
+        "score": 0.0,
+        "own_sales_units": 1,
+        "opponent_sales_units": 0,
+        "own_sales_revenue": -200.0,
+        "opponent_sales_revenue": 4.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "common_task_history": {
+        "scope": "task_comparator_until_first_difference",
+        "matched_calls": 642,
+        "stop_reason": "choice_difference"
+      },
+      "complete_request_prefix": {
+        "scope": "same_complete_history",
+        "status": "observed",
+        "reason": "actor_request_difference",
+        "step": 221
+      }
+    },
+    {
+      "seed_alias": "F04",
+      "opponent": "market",
+      "side": 1,
+      "baseline": {
+        "own_net_profit": 27802.0,
+        "opponent_net_profit": 30965.0,
+        "margin": -3163.0,
+        "score": 0.0,
+        "own_sales_units": 377,
+        "opponent_sales_units": 409,
+        "own_sales_revenue": 33053.0,
+        "opponent_sales_revenue": 35137.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "control": {
+        "own_net_profit": 27534.0,
+        "opponent_net_profit": 30999.0,
+        "margin": -3465.0,
+        "score": 0.0,
+        "own_sales_units": 378,
+        "opponent_sales_units": 409,
+        "own_sales_revenue": 32853.0,
+        "opponent_sales_revenue": 35141.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "delta": {
+        "own_net_profit": -268.0,
+        "opponent_net_profit": 34.0,
+        "margin": -302.0,
+        "score": 0.0,
+        "own_sales_units": 1,
+        "opponent_sales_units": 0,
+        "own_sales_revenue": -200.0,
+        "opponent_sales_revenue": 4.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "common_task_history": {
+        "scope": "task_comparator_until_first_difference",
+        "matched_calls": 642,
+        "stop_reason": "choice_difference"
+      },
+      "complete_request_prefix": {
+        "scope": "same_complete_history",
+        "status": "observed",
+        "reason": "actor_request_difference",
+        "step": 221
+      }
+    },
+    {
+      "seed_alias": "F04",
+      "opponent": "round2",
+      "side": 0,
+      "baseline": {
+        "own_net_profit": 28433.0,
+        "opponent_net_profit": 27774.0,
+        "margin": 659.0,
+        "score": 1.0,
+        "own_sales_units": 369,
+        "opponent_sales_units": 337,
+        "own_sales_revenue": 34878.0,
+        "opponent_sales_revenue": 32696.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "control": {
+        "own_net_profit": 27890.0,
+        "opponent_net_profit": 27755.0,
+        "margin": 135.0,
+        "score": 1.0,
+        "own_sales_units": 378,
+        "opponent_sales_units": 337,
+        "own_sales_revenue": 34477.0,
+        "opponent_sales_revenue": 32677.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "delta": {
+        "own_net_profit": -543.0,
+        "opponent_net_profit": -19.0,
+        "margin": -524.0,
+        "score": 0.0,
+        "own_sales_units": 9,
+        "opponent_sales_units": 0,
+        "own_sales_revenue": -401.0,
+        "opponent_sales_revenue": -19.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "common_task_history": {
+        "scope": "task_comparator_until_first_difference",
+        "matched_calls": 100,
+        "stop_reason": "choice_difference"
+      },
+      "complete_request_prefix": {
+        "scope": "same_complete_history",
+        "status": "observed",
+        "reason": "actor_request_difference",
+        "step": 396
+      }
+    },
+    {
+      "seed_alias": "F04",
+      "opponent": "round2",
+      "side": 1,
+      "baseline": {
+        "own_net_profit": 28433.0,
+        "opponent_net_profit": 27774.0,
+        "margin": 659.0,
+        "score": 1.0,
+        "own_sales_units": 369,
+        "opponent_sales_units": 337,
+        "own_sales_revenue": 34878.0,
+        "opponent_sales_revenue": 32696.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "control": {
+        "own_net_profit": 27890.0,
+        "opponent_net_profit": 27755.0,
+        "margin": 135.0,
+        "score": 1.0,
+        "own_sales_units": 378,
+        "opponent_sales_units": 337,
+        "own_sales_revenue": 34477.0,
+        "opponent_sales_revenue": 32677.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "delta": {
+        "own_net_profit": -543.0,
+        "opponent_net_profit": -19.0,
+        "margin": -524.0,
+        "score": 0.0,
+        "own_sales_units": 9,
+        "opponent_sales_units": 0,
+        "own_sales_revenue": -401.0,
+        "opponent_sales_revenue": -19.0,
+        "own_ending_warehouse_units": 0,
+        "opponent_ending_warehouse_units": 0
+      },
+      "common_task_history": {
+        "scope": "task_comparator_until_first_difference",
+        "matched_calls": 100,
+        "stop_reason": "choice_difference"
+      },
+      "complete_request_prefix": {
+        "scope": "same_complete_history",
+        "status": "observed",
+        "reason": "actor_request_difference",
+        "step": 396
+      }
+    }
+  ],
+  "overall": {
+    "pairs": 16,
+    "mean_delta": {
+      "own_net_profit": -70.75,
+      "opponent_net_profit": 2.875,
+      "margin": -73.625,
+      "score": 0.0,
+      "own_sales_units": 1.875,
+      "opponent_sales_units": 0.0,
+      "own_sales_revenue": -35.875,
+      "opponent_sales_revenue": -0.875,
+      "own_ending_warehouse_units": 0.0,
+      "opponent_ending_warehouse_units": 0.0
+    },
+    "outcomes": {
+      "baseline": {
+        "wins": 10,
+        "draws": 0,
+        "losses": 6
+      },
+      "control": {
+        "wins": 10,
+        "draws": 0,
+        "losses": 6
+      }
+    }
+  },
+  "by_seed": {
+    "F01": {
+      "pairs": 4,
+      "mean_delta": {
+        "own_net_profit": 43.5,
+        "opponent_net_profit": -0.5,
+        "margin": 44.0,
+        "score": 0.0,
+        "own_sales_units": 0.0,
+        "opponent_sales_units": 0.0,
+        "own_sales_revenue": 46.0,
+        "opponent_sales_revenue": -0.5,
+        "own_ending_warehouse_units": 0.0,
+        "opponent_ending_warehouse_units": 0.0
+      },
+      "outcomes": {
+        "baseline": {
+          "wins": 2,
+          "draws": 0,
+          "losses": 2
+        },
+        "control": {
+          "wins": 2,
+          "draws": 0,
+          "losses": 2
+        }
+      }
+    },
+    "F02": {
+      "pairs": 4,
+      "mean_delta": {
+        "own_net_profit": 0.0,
+        "opponent_net_profit": 0.0,
+        "margin": 0.0,
+        "score": 0.0,
+        "own_sales_units": 0.0,
+        "opponent_sales_units": 0.0,
+        "own_sales_revenue": 0.0,
+        "opponent_sales_revenue": 0.0,
+        "own_ending_warehouse_units": 0.0,
+        "opponent_ending_warehouse_units": 0.0
+      },
+      "outcomes": {
+        "baseline": {
+          "wins": 2,
+          "draws": 0,
+          "losses": 2
+        },
+        "control": {
+          "wins": 2,
+          "draws": 0,
+          "losses": 2
+        }
+      }
+    },
+    "F03": {
+      "pairs": 4,
+      "mean_delta": {
+        "own_net_profit": 79.0,
+        "opponent_net_profit": 4.5,
+        "margin": 74.5,
+        "score": 0.0,
+        "own_sales_units": 2.5,
+        "opponent_sales_units": 0.0,
+        "own_sales_revenue": 111.0,
+        "opponent_sales_revenue": 4.5,
+        "own_ending_warehouse_units": 0.0,
+        "opponent_ending_warehouse_units": 0.0
+      },
+      "outcomes": {
+        "baseline": {
+          "wins": 4,
+          "draws": 0,
+          "losses": 0
+        },
+        "control": {
+          "wins": 4,
+          "draws": 0,
+          "losses": 0
+        }
+      }
+    },
+    "F04": {
+      "pairs": 4,
+      "mean_delta": {
+        "own_net_profit": -405.5,
+        "opponent_net_profit": 7.5,
+        "margin": -413.0,
+        "score": 0.0,
+        "own_sales_units": 5.0,
+        "opponent_sales_units": 0.0,
+        "own_sales_revenue": -300.5,
+        "opponent_sales_revenue": -7.5,
+        "own_ending_warehouse_units": 0.0,
+        "opponent_ending_warehouse_units": 0.0
+      },
+      "outcomes": {
+        "baseline": {
+          "wins": 2,
+          "draws": 0,
+          "losses": 2
+        },
+        "control": {
+          "wins": 2,
+          "draws": 0,
+          "losses": 2
+        }
+      }
+    }
+  },
+  "by_opponent": {
+    "market": {
+      "pairs": 8,
+      "mean_delta": {
+        "own_net_profit": -72.75,
+        "opponent_net_profit": 12.25,
+        "margin": -85.0,
+        "score": 0.0,
+        "own_sales_units": 0.0,
+        "opponent_sales_units": 0.0,
+        "own_sales_revenue": -47.75,
+        "opponent_sales_revenue": 4.75,
+        "own_ending_warehouse_units": 0.0,
+        "opponent_ending_warehouse_units": 0.0
+      },
+      "outcomes": {
+        "baseline": {
+          "wins": 4,
+          "draws": 0,
+          "losses": 4
+        },
+        "control": {
+          "wins": 4,
+          "draws": 0,
+          "losses": 4
+        }
+      }
+    },
+    "round2": {
+      "pairs": 8,
+      "mean_delta": {
+        "own_net_profit": -68.75,
+        "opponent_net_profit": -6.5,
+        "margin": -62.25,
+        "score": 0.0,
+        "own_sales_units": 3.75,
+        "opponent_sales_units": 0.0,
+        "own_sales_revenue": -24.0,
+        "opponent_sales_revenue": -6.5,
+        "own_ending_warehouse_units": 0.0,
+        "opponent_ending_warehouse_units": 0.0
+      },
+      "outcomes": {
+        "baseline": {
+          "wins": 6,
+          "draws": 0,
+          "losses": 2
+        },
+        "control": {
+          "wins": 6,
+          "draws": 0,
+          "losses": 2
+        }
+      }
+    }
+  },
+  "by_side": {
+    "0": {
+      "pairs": 8,
+      "mean_delta": {
+        "own_net_profit": -70.75,
+        "opponent_net_profit": 2.875,
+        "margin": -73.625,
+        "score": 0.0,
+        "own_sales_units": 1.875,
+        "opponent_sales_units": 0.0,
+        "own_sales_revenue": -35.875,
+        "opponent_sales_revenue": -0.875,
+        "own_ending_warehouse_units": 0.0,
+        "opponent_ending_warehouse_units": 0.0
+      },
+      "outcomes": {
+        "baseline": {
+          "wins": 5,
+          "draws": 0,
+          "losses": 3
+        },
+        "control": {
+          "wins": 5,
+          "draws": 0,
+          "losses": 3
+        }
+      }
+    },
+    "1": {
+      "pairs": 8,
+      "mean_delta": {
+        "own_net_profit": -70.75,
+        "opponent_net_profit": 2.875,
+        "margin": -73.625,
+        "score": 0.0,
+        "own_sales_units": 1.875,
+        "opponent_sales_units": 0.0,
+        "own_sales_revenue": -35.875,
+        "opponent_sales_revenue": -0.875,
+        "own_ending_warehouse_units": 0.0,
+        "opponent_ending_warehouse_units": 0.0
+      },
+      "outcomes": {
+        "baseline": {
+          "wins": 5,
+          "draws": 0,
+          "losses": 3
+        },
+        "control": {
+          "wins": 5,
+          "draws": 0,
+          "losses": 3
+        }
+      }
+    }
+  },
+  "exploratory_screen": {
+    "status": "failed",
+    "passed": false,
+    "per_seed_profit_guard": {
+      "F01": true,
+      "F02": true,
+      "F03": true,
+      "F04": false
+    },
+    "per_seed_request_difference": {
+      "F01": true,
+      "F02": true,
+      "F03": true,
+      "F04": true
+    },
+    "per_opponent_profit_guard": {
+      "market": false,
+      "round2": false
+    },
+    "interpretation": "Exploratory screening only; no significance claim or promotion"
+  },
+  "training": false,
+  "statistical_significance": "not_assessed",
+  "independent_improvement": false,
+  "promotion": false,
+  "registration_commit": "40f3f393819bbdc62af1007877cd5fbdf3a9a42f"
+}
