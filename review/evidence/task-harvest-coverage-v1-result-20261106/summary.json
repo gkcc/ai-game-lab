@@ -1,0 +1,316 @@
+{
+  "schema": "task-harvest-coverage-public-result-v1",
+  "registration_commit": "101e3c155cbe24dc4f152ad8a6d72a35f2195f70",
+  "base_commit": "0b7718ffeb841b6bf7ec5d53547af7b409667aa7",
+  "scope": "descriptive_coverage_of_four_consumed_traces",
+  "source_games_authenticated": 32,
+  "source_traces_analyzed": 4,
+  "window": [
+    240,
+    648
+  ],
+  "totals": {
+    "trace": {
+      "rows": 2876,
+      "callbacks": 8879,
+      "window_turns": 1636,
+      "observed_window_turns": 1124,
+      "unknown_no_callback_window_turns": 512
+    },
+    "callbacks": {
+      "total": 5723,
+      "has_harvest": 1407,
+      "has_mature_positive_harvest": 1407,
+      "has_direct_mature_harvest": 334,
+      "has_same_unit_direct_mature_harvest": 271,
+      "has_same_unit_direct_alternative": 0,
+      "chosen_is_direct_mature_harvest": 271,
+      "only_other_unit_direct_mature_harvest": 63
+    },
+    "candidates": {
+      "total": 324,
+      "selected_at_first_seen": 158,
+      "selected_later_same_unit": 113,
+      "covered_by_other_unit": 52,
+      "no_final_harvest_request": 1
+    },
+    "sites": {
+      "total": 272,
+      "request_at_first_seen": 158,
+      "request_later": 113,
+      "no_final_harvest_request": 1
+    },
+    "expression": {
+      "total": 1962,
+      "expressed": 324,
+      "preassigned": 32,
+      "available_unexpressed": 1606,
+      "only_other_unit_candidate": 13
+    },
+    "facts": {
+      "direct_candidate_occurrences": 512,
+      "harvest_task_move_assignments": 317,
+      "sites_with_harvest_task_move": 1,
+      "sites_with_other_task": 0
+    }
+  },
+  "roles": [
+    {
+      "role": "F01",
+      "opponent": "market",
+      "side": 0,
+      "purpose": "exploration",
+      "counts": {
+        "trace": {
+          "rows": 719,
+          "callbacks": 2195,
+          "window_turns": 409,
+          "observed_window_turns": 262,
+          "unknown_no_callback_window_turns": 147
+        },
+        "callbacks": {
+          "total": 1420,
+          "has_harvest": 238,
+          "has_mature_positive_harvest": 238,
+          "has_direct_mature_harvest": 61,
+          "has_same_unit_direct_mature_harvest": 50,
+          "has_same_unit_direct_alternative": 0,
+          "chosen_is_direct_mature_harvest": 50,
+          "only_other_unit_direct_mature_harvest": 11
+        },
+        "candidates": {
+          "total": 62,
+          "selected_at_first_seen": 29,
+          "selected_later_same_unit": 21,
+          "covered_by_other_unit": 12,
+          "no_final_harvest_request": 0
+        },
+        "sites": {
+          "total": 50,
+          "request_at_first_seen": 29,
+          "request_later": 21,
+          "no_final_harvest_request": 0
+        },
+        "expression": {
+          "total": 508,
+          "expressed": 62,
+          "preassigned": 8,
+          "available_unexpressed": 438,
+          "only_other_unit_candidate": 3
+        },
+        "facts": {
+          "direct_candidate_occurrences": 103,
+          "harvest_task_move_assignments": 56,
+          "sites_with_harvest_task_move": 0,
+          "sites_with_other_task": 0
+        }
+      }
+    },
+    {
+      "role": "F02",
+      "opponent": "round2",
+      "side": 1,
+      "purpose": "exploration",
+      "counts": {
+        "trace": {
+          "rows": 719,
+          "callbacks": 2090,
+          "window_turns": 409,
+          "observed_window_turns": 273,
+          "unknown_no_callback_window_turns": 136
+        },
+        "callbacks": {
+          "total": 1317,
+          "has_harvest": 246,
+          "has_mature_positive_harvest": 246,
+          "has_direct_mature_harvest": 61,
+          "has_same_unit_direct_mature_harvest": 49,
+          "has_same_unit_direct_alternative": 0,
+          "chosen_is_direct_mature_harvest": 49,
+          "only_other_unit_direct_mature_harvest": 12
+        },
+        "candidates": {
+          "total": 57,
+          "selected_at_first_seen": 31,
+          "selected_later_same_unit": 18,
+          "covered_by_other_unit": 8,
+          "no_final_harvest_request": 0
+        },
+        "sites": {
+          "total": 49,
+          "request_at_first_seen": 31,
+          "request_later": 18,
+          "no_final_harvest_request": 0
+        },
+        "expression": {
+          "total": 507,
+          "expressed": 57,
+          "preassigned": 10,
+          "available_unexpressed": 440,
+          "only_other_unit_candidate": 3
+        },
+        "facts": {
+          "direct_candidate_occurrences": 85,
+          "harvest_task_move_assignments": 44,
+          "sites_with_harvest_task_move": 0,
+          "sites_with_other_task": 0
+        }
+      }
+    },
+    {
+      "role": "F03",
+      "opponent": "market",
+      "side": 1,
+      "purpose": "diagnostic",
+      "counts": {
+        "trace": {
+          "rows": 719,
+          "callbacks": 2340,
+          "window_turns": 409,
+          "observed_window_turns": 305,
+          "unknown_no_callback_window_turns": 104
+        },
+        "callbacks": {
+          "total": 1525,
+          "has_harvest": 493,
+          "has_mature_positive_harvest": 493,
+          "has_direct_mature_harvest": 104,
+          "has_same_unit_direct_mature_harvest": 85,
+          "has_same_unit_direct_alternative": 0,
+          "chosen_is_direct_mature_harvest": 85,
+          "only_other_unit_direct_mature_harvest": 19
+        },
+        "candidates": {
+          "total": 101,
+          "selected_at_first_seen": 50,
+          "selected_later_same_unit": 35,
+          "covered_by_other_unit": 15,
+          "no_final_harvest_request": 1
+        },
+        "sites": {
+          "total": 86,
+          "request_at_first_seen": 50,
+          "request_later": 35,
+          "no_final_harvest_request": 1
+        },
+        "expression": {
+          "total": 517,
+          "expressed": 101,
+          "preassigned": 7,
+          "available_unexpressed": 409,
+          "only_other_unit_candidate": 4
+        },
+        "facts": {
+          "direct_candidate_occurrences": 159,
+          "harvest_task_move_assignments": 132,
+          "sites_with_harvest_task_move": 1,
+          "sites_with_other_task": 0
+        }
+      }
+    },
+    {
+      "role": "F04",
+      "opponent": "round2",
+      "side": 0,
+      "purpose": "diagnostic",
+      "counts": {
+        "trace": {
+          "rows": 719,
+          "callbacks": 2254,
+          "window_turns": 409,
+          "observed_window_turns": 284,
+          "unknown_no_callback_window_turns": 125
+        },
+        "callbacks": {
+          "total": 1461,
+          "has_harvest": 430,
+          "has_mature_positive_harvest": 430,
+          "has_direct_mature_harvest": 108,
+          "has_same_unit_direct_mature_harvest": 87,
+          "has_same_unit_direct_alternative": 0,
+          "chosen_is_direct_mature_harvest": 87,
+          "only_other_unit_direct_mature_harvest": 21
+        },
+        "candidates": {
+          "total": 104,
+          "selected_at_first_seen": 48,
+          "selected_later_same_unit": 39,
+          "covered_by_other_unit": 17,
+          "no_final_harvest_request": 0
+        },
+        "sites": {
+          "total": 87,
+          "request_at_first_seen": 48,
+          "request_later": 39,
+          "no_final_harvest_request": 0
+        },
+        "expression": {
+          "total": 430,
+          "expressed": 104,
+          "preassigned": 7,
+          "available_unexpressed": 319,
+          "only_other_unit_candidate": 3
+        },
+        "facts": {
+          "direct_candidate_occurrences": 165,
+          "harvest_task_move_assignments": 85,
+          "sites_with_harvest_task_move": 0,
+          "sites_with_other_task": 0
+        }
+      }
+    }
+  ],
+  "execution": {
+    "observed_exit_code": 0,
+    "trace_scans": [
+      {
+        "role": "F01",
+        "rows": 719,
+        "eof": true,
+        "closed": true,
+        "close_errors": 0
+      },
+      {
+        "role": "F02",
+        "rows": 719,
+        "eof": true,
+        "closed": true,
+        "close_errors": 0
+      },
+      {
+        "role": "F03",
+        "rows": 719,
+        "eof": true,
+        "closed": true,
+        "close_errors": 0
+      },
+      {
+        "role": "F04",
+        "rows": 719,
+        "eof": true,
+        "closed": true,
+        "close_errors": 0
+      }
+    ],
+    "elapsed_guarded_seconds": 55.43800000002375,
+    "guard_samples": 18513,
+    "clock_scope": "Guard construction onward; public source/Git checks before Guard excluded",
+    "model_instances_constructed": 0,
+    "model_forwards": 0,
+    "environment_constructions": 0,
+    "official_transitions": 0,
+    "replay_decodes": 0,
+    "new_complete_games": 0,
+    "subprocess_workers": 0,
+    "windows_jobs": 0,
+    "training": false,
+    "gpu": false
+  },
+  "independent_evaluation": false,
+  "statistical_significance": false,
+  "promotion": false,
+  "requested_actions_are_executed_outcomes": false,
+  "economic_value_evaluated": false,
+  "current_missing_coverage_reproduced": true,
+  "examples_published": false
+}

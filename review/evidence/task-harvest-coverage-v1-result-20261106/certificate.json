@@ -1,0 +1,77 @@
+{
+  "schema": "task-harvest-coverage-public-certificate-v1",
+  "registration_commit": "101e3c155cbe24dc4f152ad8a6d72a35f2195f70",
+  "technical_scope": "read_only_coverage_metadata",
+  "analysis_verified": true,
+  "independent_review_passed": true,
+  "source_traces": 4,
+  "trace_rows": 2876,
+  "window_callbacks": 5723,
+  "new_games": 0,
+  "replay_decodes": 0,
+  "model_forwards": 0,
+  "official_transitions": 0,
+  "official_48_step_continuation_verified": false,
+  "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "verification": {
+    "maintainer_regressions": 21,
+    "independent_regressions": 21,
+    "skipped": 0,
+    "observed_prepare_exit_code": 0,
+    "observed_analysis_exit_code": 0,
+    "independent_counts": "six groups recomputed from request maps and source observations",
+    "independent_first_references_verified": 107,
+    "independent_traces_to_eof": 4,
+    "independent_review_guard_checks": 18903,
+    "independent_review_model_forwards": 0,
+    "independent_review_official_transitions": 0,
+    "independent_review_replay_decodes": 0,
+    "shared_helpers": "authenticated bounded readers and existing observation/dispatch validation"
+  },
+  "source_preservation": {
+    "frozen_source_count_at_analysis": 434,
+    "unchanged_registered_sources_after_publication": 433,
+    "append_only_registered_path": "review/PROGRESS.md",
+    "frozen_progress_prefix_preserved": true,
+    "default_unchanged": true,
+    "frozen_models_unchanged": true
+  },
+  "prior_selection_originals": {
+    "files": 8,
+    "bytes": 94672,
+    "byte_hash_verification_by": "maintainer",
+    "old_commitment_verified": true,
+    "older_joint_and_550_file_inventories_rehashed_this_stage": false
+  },
+  "current_originals": {
+    "files": 10,
+    "bytes": 150025,
+    "witness_outside_inventory": true,
+    "witness_created_after_analysis": true,
+    "independent_inventory_and_commitment_verification": true,
+    "salted_commitment_sha256": "ef2afa675659d300b4464e292cc5aa31b115713fd6bbd26aed73787653344c28",
+    "commitment_recipe": {
+      "algorithm": "sha256",
+      "preimage": "hexdecode(private binding salt) || NUL || UTF8(task-harvest-coverage-result-v1) || NUL || canonical inventory JSON bytes",
+      "canonical_inventory": "json.dumps(witness['files'], sort_keys=True, separators=(',', ':'), ensure_ascii=True).encode('utf-8')",
+      "salt_and_inventory_retained_locally": true
+    }
+  },
+  "economic_value_evaluated": false,
+  "statistical_significance": false,
+  "independent_evaluation": false,
+  "training": false,
+  "gpu": false,
+  "new_seeds": false,
+  "promotion": false,
+  "privacy": {
+    "raw_traces_published": false,
+    "raw_replays_published": false,
+    "examples_or_input_hashes_published": false,
+    "actual_seed_values_published": false,
+    "private_file_hashes_published": false,
+    "credentials_or_host_identity_published": false
+  },
+  "public_summary_sha256": "1d31406529148cabfed33e015211ef26ec754d6241a6206238b3ecaaf8355a19"
+}
