@@ -1,0 +1,30 @@
+{
+  "schema": "teacher-fresh-panel-preparation-verification-v1",
+  "synthetic_regressions_passed": 23,
+  "synthetic_regressions_independently_repeated": true,
+  "official_entry_fixture": {
+    "synthetic": true,
+    "fixed_engine_checked": true,
+    "recorded_states": 4,
+    "action_turns": 3,
+    "bot_loads": 2,
+    "callbacks": 6,
+    "private_observation_matches_own_replay": true,
+    "different_player_private_contents_exercised": true,
+    "argv_seed_hidden_at_load_and_callback": true,
+    "official_replay_transitions": 3,
+    "optimized_mode_rejected": true,
+    "model_forwards": 0,
+    "owned_scratch_deleted": true,
+    "adversarial_process_sandbox": false
+  },
+  "preparation": {
+    "status": "prepared_no_games",
+    "old_games_authenticated": 32,
+    "old_replay_decoding": false,
+    "new_panel_games_started": 0,
+    "training": false
+  },
+  "independent_review_read_private_game_data": false,
+  "real_panel_acceptance": "pending"
+}
