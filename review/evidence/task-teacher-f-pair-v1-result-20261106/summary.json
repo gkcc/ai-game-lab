@@ -1,0 +1,98 @@
+{
+  "schema": "teacher-f-pair-public-result-v1",
+  "scope": "consumed_development",
+  "registration_commit": "501136ca371b2fd3a7ff4d60997a010401f1d6dc",
+  "pairs": 8,
+  "represented_seed_clusters": 4,
+  "represented_opponents": [
+    "market",
+    "round2"
+  ],
+  "represented_sides": [
+    0,
+    1
+  ],
+  "arm_means": {
+    "control": {
+      "own": 31973.75,
+      "opponent": 30167.25,
+      "margin": 1806.5,
+      "score": 1
+    },
+    "intervention": {
+      "own": 31961.625,
+      "opponent": 30168.75,
+      "margin": 1792.875,
+      "score": 1
+    }
+  },
+  "arm_wins_draws_losses": {
+    "control": {
+      "wins": 8,
+      "draws": 0,
+      "losses": 0
+    },
+    "intervention": {
+      "wins": 8,
+      "draws": 0,
+      "losses": 0
+    }
+  },
+  "arm_mean_and_wdl_supplement": "descriptive_not_new_admission_gate",
+  "projection": {
+    "pairs": 8,
+    "represented_seed_clusters": 4,
+    "case_mean_delta": {
+      "own": -12.125,
+      "opponent": 1.5,
+      "margin": -13.625,
+      "score": 0
+    },
+    "seed_mean_delta": {
+      "own": -12.125,
+      "opponent": 1.5,
+      "margin": -13.625,
+      "score": 0
+    },
+    "positive_zero_negative": {
+      "own": {
+        "positive": 0,
+        "zero": 7,
+        "negative": 1
+      },
+      "opponent": {
+        "positive": 1,
+        "zero": 7,
+        "negative": 0
+      },
+      "margin": {
+        "positive": 0,
+        "zero": 7,
+        "negative": 1
+      },
+      "score": {
+        "positive": 0,
+        "zero": 8,
+        "negative": 0
+      }
+    },
+    "locally_promising_cases": 0,
+    "promotion": false
+  },
+  "terminal_cash_only": true,
+  "training": false,
+  "gpu": false,
+  "new_seeds": false,
+  "independent_evaluation": false,
+  "statistical_significance": false,
+  "promotion": false,
+  "conclusion": "technical_pass_no_positive_return_in_selected_cases",
+  "limitations": [
+    "consumed_sources_and_divergence_selection",
+    "opponent_seed_subset_confounding",
+    "single_substitution_not_whole_teacher_policy",
+    "same_initial_seed_does_not_fix_future_rng_call_sequence",
+    "terminal_accounts_not_transaction_or_causal_reconciliation",
+    "zero_terminal_difference_does_not_mean_identical_intermediate_path"
+  ]
+}
