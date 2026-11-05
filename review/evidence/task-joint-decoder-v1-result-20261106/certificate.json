@@ -1,0 +1,69 @@
+{
+  "schema": "task-joint-decoder-public-certificate-v1",
+  "registration_commit": "0ec1175a446fa44eeffb5bd8c4b8cf43ae473499",
+  "technical_passed": true,
+  "development_signal": false,
+  "independent_review_passed": true,
+  "new_complete_games": 4,
+  "official_main_replays": 4,
+  "trace_turns_checked": 2876,
+  "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "execution_exit_observations": {
+    "game_run": 0,
+    "result_comparison": 0,
+    "observed_by": "maintainer"
+  },
+  "review": {
+    "new_replays_read": 4,
+    "historical_replays_read": 4,
+    "model_forwards": 0,
+    "official_transitions": 0,
+    "raw_cash_recomputed": true,
+    "semantic_order_helpers_reused": true
+  },
+  "source_preservation": {
+    "frozen_source_count_at_execution": 401,
+    "unchanged_registered_sources_after_publication": 400,
+    "append_only_registered_path": "review/PROGRESS.md",
+    "frozen_progress_prefix_preserved": true,
+    "default_unchanged": true
+  },
+  "prior_originals": {
+    "files": 550,
+    "bytes": 1214809349,
+    "byte_hash_verification_by": "maintainer"
+  },
+  "current_originals": {
+    "files": 127,
+    "bytes": 317294282,
+    "witness_outside_inventory": true,
+    "witness_created_after_execution": true,
+    "salted_commitment_sha256": "41a8f01561f4285971888d221f977abae0e8b20d2ed258224ba8c96474c9be3d",
+    "commitment_recipe": {
+      "algorithm": "sha256",
+      "preimage": "hexdecode(private binding salt) || NUL || UTF8(task-joint-decoder-result-v1) || NUL || canonical inventory JSON bytes",
+      "canonical_inventory": "json.dumps(witness['files'], sort_keys=True, separators=(',', ':'), ensure_ascii=True).encode('utf-8')",
+      "salt_and_inventory_retained_locally": true
+    },
+    "byte_hash_verification_by": [
+      "maintainer",
+      "independent_review_agent"
+    ]
+  },
+  "training": false,
+  "gpu": false,
+  "new_seeds": false,
+  "independent_evaluation": false,
+  "statistical_significance": false,
+  "promotion": false,
+  "decision": "archive_candidate_and_stop_branch",
+  "privacy": {
+    "raw_replays_published": false,
+    "raw_traces_published": false,
+    "actual_seed_values_published": false,
+    "private_file_hashes_published": false,
+    "credentials_or_host_identity_published": false
+  },
+  "public_summary_sha256": "444ed0aff313df354c5f157d636933155ea2b35f87a5ec254d3099e27c958e3f"
+}

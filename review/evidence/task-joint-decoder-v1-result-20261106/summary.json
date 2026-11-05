@@ -1,0 +1,337 @@
+{
+  "schema": "task-joint-decoder-public-result-v1",
+  "registration_commit": "0ec1175a446fa44eeffb5bd8c4b8cf43ae473499",
+  "source_result_commit": "0e9734a0109a0ee4822ef1310e8b56fac21eaa48",
+  "scope": "consumed_development",
+  "cases": 4,
+  "seed_opponent_combinations": 2,
+  "new_seeds": false,
+  "technical_acceptance": true,
+  "independent_evaluation": false,
+  "statistical_significance": false,
+  "promotion": false,
+  "training": false,
+  "gpu": false,
+  "weights_unchanged": true,
+  "default_unchanged": true,
+  "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "execution": {
+    "new_complete_games": 4,
+    "official_main_replays": 4,
+    "states_per_game": 720,
+    "actions_per_game": 719,
+    "primary_action_transitions": 2876,
+    "main_replay_action_transitions": 2876,
+    "micro_action_transitions": 4,
+    "total_action_transitions_including_micro": 5756,
+    "micro_initializations": 2,
+    "game_run_observed_exit_code": 0,
+    "results_observed_exit_code": 0,
+    "run_elapsed_seconds": 942.2189999999828,
+    "comparison_elapsed_seconds": 96.79700000002049,
+    "timing_scope": "guarded phases including readiness and audit, not environment throughput",
+    "formal_initializations_measured": false
+  },
+  "model_counts_primary_only": {
+    "task_forwards": 8550,
+    "task_rows": 443254,
+    "crop_forwards": 598,
+    "crop_rows": 598,
+    "gate_evaluations": 0,
+    "controller_calls": 2876,
+    "teacher_proposals": 0
+  },
+  "additional_task_forwards_for_decoding": 0,
+  "rows": [
+    {
+      "role": "F01",
+      "opponent": "market",
+      "side": 0,
+      "baseline": {
+        "own": 41930,
+        "opponent": 39447,
+        "margin": 2483,
+        "score": 1
+      },
+      "candidate": {
+        "own": 41844,
+        "opponent": 39466,
+        "margin": 2378,
+        "score": 1
+      },
+      "decoder_changed_callbacks": 627,
+      "trace_summary": {
+        "trace_turns": 719,
+        "primary_model_counts": {
+          "task_forwards": 2207,
+          "task_rows": 120607,
+          "crop_forwards": 146,
+          "crop_rows": 146,
+          "gate_evaluations": 0,
+          "controller_calls": 719,
+          "teacher_proposals": 0
+        },
+        "decoder_callbacks": 2207,
+        "decoder_candidate_rows": 120607,
+        "decoder_changed_callbacks": 627,
+        "original_network_forward_calls": 2207,
+        "additional_network_forwards": 0
+      },
+      "first_request_difference": 1,
+      "first_state_difference": 2
+    },
+    {
+      "role": "F01",
+      "opponent": "market",
+      "side": 1,
+      "baseline": {
+        "own": 41930,
+        "opponent": 39447,
+        "margin": 2483,
+        "score": 1
+      },
+      "candidate": {
+        "own": 41844,
+        "opponent": 39466,
+        "margin": 2378,
+        "score": 1
+      },
+      "decoder_changed_callbacks": 627,
+      "trace_summary": {
+        "trace_turns": 719,
+        "primary_model_counts": {
+          "task_forwards": 2207,
+          "task_rows": 120607,
+          "crop_forwards": 146,
+          "crop_rows": 146,
+          "gate_evaluations": 0,
+          "controller_calls": 719,
+          "teacher_proposals": 0
+        },
+        "decoder_callbacks": 2207,
+        "decoder_candidate_rows": 120607,
+        "decoder_changed_callbacks": 627,
+        "original_network_forward_calls": 2207,
+        "additional_network_forwards": 0
+      },
+      "first_request_difference": 1,
+      "first_state_difference": 2
+    },
+    {
+      "role": "F02",
+      "opponent": "round2",
+      "side": 0,
+      "baseline": {
+        "own": 29795,
+        "opponent": 25985,
+        "margin": 3810,
+        "score": 1
+      },
+      "candidate": {
+        "own": 29167,
+        "opponent": 26211,
+        "margin": 2956,
+        "score": 1
+      },
+      "decoder_changed_callbacks": 465,
+      "trace_summary": {
+        "trace_turns": 719,
+        "primary_model_counts": {
+          "task_forwards": 2068,
+          "task_rows": 101020,
+          "crop_forwards": 153,
+          "crop_rows": 153,
+          "gate_evaluations": 0,
+          "controller_calls": 719,
+          "teacher_proposals": 0
+        },
+        "decoder_callbacks": 2068,
+        "decoder_candidate_rows": 101020,
+        "decoder_changed_callbacks": 465,
+        "original_network_forward_calls": 2068,
+        "additional_network_forwards": 0
+      },
+      "first_request_difference": 1,
+      "first_state_difference": 2
+    },
+    {
+      "role": "F02",
+      "opponent": "round2",
+      "side": 1,
+      "baseline": {
+        "own": 29795,
+        "opponent": 25985,
+        "margin": 3810,
+        "score": 1
+      },
+      "candidate": {
+        "own": 29167,
+        "opponent": 26211,
+        "margin": 2956,
+        "score": 1
+      },
+      "decoder_changed_callbacks": 465,
+      "trace_summary": {
+        "trace_turns": 719,
+        "primary_model_counts": {
+          "task_forwards": 2068,
+          "task_rows": 101020,
+          "crop_forwards": 153,
+          "crop_rows": 153,
+          "gate_evaluations": 0,
+          "controller_calls": 719,
+          "teacher_proposals": 0
+        },
+        "decoder_callbacks": 2068,
+        "decoder_candidate_rows": 101020,
+        "decoder_changed_callbacks": 465,
+        "original_network_forward_calls": 2068,
+        "additional_network_forwards": 0
+      },
+      "first_request_difference": 1,
+      "first_state_difference": 2
+    }
+  ],
+  "mean_metrics": {
+    "baseline": {
+      "own": 35862.5,
+      "opponent": 32716,
+      "margin": 3146.5,
+      "score": 1
+    },
+    "candidate": {
+      "own": 35505.5,
+      "opponent": 32838.5,
+      "margin": 2667,
+      "score": 1
+    }
+  },
+  "projection": {
+    "cases": 4,
+    "seed_opponent_combinations": 2,
+    "case_mean_delta": {
+      "own": -357,
+      "opponent": 122.5,
+      "margin": -479.5,
+      "score": 0
+    },
+    "seed_combination_mean_delta": {
+      "own": -357,
+      "opponent": 122.5,
+      "margin": -479.5,
+      "score": 0
+    },
+    "combination_means": {
+      "F01": {
+        "own": -86,
+        "opponent": 19,
+        "margin": -105,
+        "score": 0
+      },
+      "F02": {
+        "own": -628,
+        "opponent": 226,
+        "margin": -854,
+        "score": 0
+      }
+    },
+    "positive_zero_negative": {
+      "own": {
+        "positive": 0,
+        "zero": 0,
+        "negative": 4
+      },
+      "opponent": {
+        "positive": 4,
+        "zero": 0,
+        "negative": 0
+      },
+      "margin": {
+        "positive": 0,
+        "zero": 0,
+        "negative": 4
+      },
+      "score": {
+        "positive": 0,
+        "zero": 4,
+        "negative": 0
+      }
+    },
+    "decoder_changed_callbacks": 2184,
+    "games_with_request_difference": 4,
+    "games_with_state_difference": 4,
+    "development_signal": false,
+    "independent_evaluation": false,
+    "statistical_significance": false,
+    "promotion": false
+  },
+  "supervision": {
+    "jobs": 4,
+    "passed": 4,
+    "exit_zero": 4,
+    "launcher_reaped": 4,
+    "job_members_zero": 4,
+    "complete_rss_samples": 808,
+    "discarded_rss_samples": 11,
+    "rss_sampling_retries": 11,
+    "confirmed_empty_exits": 0,
+    "availability_samples": 808,
+    "observed_floor_breaches": 0,
+    "continuous_resource_guarantee": false
+  },
+  "preservation": {
+    "registered_source_files": 401,
+    "old_pair_files_unchanged": 550,
+    "old_pair_bytes_unchanged": 1214809349,
+    "original_evidence_groups": {
+      "micro": {
+        "bytes": 132244,
+        "files": 14
+      },
+      "micro-source-archive": {
+        "bytes": 47757,
+        "files": 7
+      },
+      "runtime-private": {
+        "bytes": 47468,
+        "files": 10
+      },
+      "runtime-stage": {
+        "bytes": 317066813,
+        "files": 96
+      }
+    },
+    "original_evidence_files": 127,
+    "original_evidence_bytes": 317294282,
+    "salted_commitment_sha256": "41a8f01561f4285971888d221f977abae0e8b20d2ed258224ba8c96474c9be3d",
+    "witness_created_after_execution": true,
+    "witness_outside_inventory": true,
+    "registered_sources_unchanged_at_execution_and_review": 401,
+    "publication_change_to_registered_set": "review/PROGRESS.md appended after execution and review",
+    "registered_sources_byte_identical_after_publication": 400,
+    "frozen_progress_prefix_preserved": true,
+    "commitment_recipe": {
+      "algorithm": "sha256",
+      "preimage": "hexdecode(private binding salt) || NUL || UTF8(task-joint-decoder-result-v1) || NUL || canonical inventory JSON bytes",
+      "canonical_inventory": "json.dumps(witness['files'], sort_keys=True, separators=(',', ':'), ensure_ascii=True).encode('utf-8')",
+      "salt_and_inventory_retained_locally": true
+    }
+  },
+  "decision": "archive_candidate_and_stop_branch_no_new_seed_panel",
+  "independent_review": {
+    "passed": true,
+    "new_replays_read": 4,
+    "historical_replays_read": 4,
+    "new_trace_rows_read_to_eof": 2876,
+    "observed_callback_inputs_checked": 8550,
+    "model_forwards_during_review": 0,
+    "official_transitions_during_review": 0,
+    "source_and_default_identity_passed": true,
+    "publication_inventory_rehashed_files": 127,
+    "cash_and_statistics_recomputed_independently": true,
+    "semantic_and_order_helpers_reused": true,
+    "prior_550_inventory_verified_by": "maintainer",
+    "review_is_external_third_party_timestamp": false
+  }
+}
