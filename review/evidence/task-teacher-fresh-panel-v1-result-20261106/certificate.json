@@ -1,0 +1,75 @@
+{
+  "actions_per_game": 719,
+  "agent_errors": 0,
+  "cleaned_jobs": 16,
+  "closure_outcome": "completed",
+  "complete_private_trace_and_replay_hashes_independently_verified": true,
+  "completion_local_date": "2026-11-06",
+  "default_bot_unchanged": true,
+  "done_done_games": 16,
+  "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "final_cash_arithmetic_checked": true,
+  "games": 16,
+  "gpu": false,
+  "independent_evaluation": false,
+  "independent_review_loaded_models": false,
+  "independent_review_replayed_official_engine": false,
+  "main_process_exit_code_observed": 0,
+  "new_job_available_below_floor_records": 0,
+  "official_reexecuted_transitions": 11504,
+  "official_replays": 16,
+  "old_student_games": 32,
+  "passed": true,
+  "posthoc_description_not_new_acceptance_gate": {
+    "baseline": {
+      "paired_score_change_counts": {
+        "negative": 0,
+        "positive": 0,
+        "zero": 16
+      },
+      "seed_cluster_own_profit_directions": {
+        "negative": 3,
+        "positive": 1,
+        "zero": 0
+      }
+    },
+    "control": {
+      "paired_score_change_counts": {
+        "negative": 0,
+        "positive": 0,
+        "zero": 16
+      },
+      "seed_cluster_own_profit_directions": {
+        "negative": 2,
+        "positive": 2,
+        "zero": 0
+      }
+    }
+  },
+  "primary_agent_and_trace_counts": {
+    "controller_calls": 11504,
+    "crop_forwards": 3388,
+    "crop_model_choices": 3388,
+    "task_forwards": 0,
+    "task_rows": 0,
+    "task_teacher_choices": 35530
+  },
+  "private_evidence_commitment_sha256": "45da571ba53f3cef4a6a862e57ad081360cc0b5057e83b43b283c85cf17c51e1",
+  "private_per_game_ledger_published": false,
+  "promotion": false,
+  "raw_replays_published": false,
+  "registration_commit": "2073577b50f0dbeece60b30a819b49cc9ba9051d",
+  "registration_sha256": "043863c6e8d611c0ad4f323c4e683ca89b3b5dca4269644595e4419d1ad950db",
+  "schema": "teacher-fresh-panel-result-certificate-v1",
+  "scope": "consumed_development",
+  "seed_clusters": 4,
+  "source_identity_and_old32_hashes_match": true,
+  "stable_readiness_receipts": 16,
+  "states_per_game": 720,
+  "statistical_significance": "not_assessed",
+  "summary_sha256": "c6a8186dc2843883f2395d783d5ab845d78b1425f5fca7da9dbc543b9aee800a",
+  "supervisor_available_calls": 1641,
+  "training": false,
+  "transaction_cash_reconciliation": false
+}

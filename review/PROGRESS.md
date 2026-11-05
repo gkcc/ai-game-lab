@@ -1183,3 +1183,8 @@ Windows 和 WSL 分别通过导入守卫 1 项、训练入口 17 项、Windows �
 ### 条件教师完整配对：阶段间内存停止
 
 事前提交 `85391a3` 后，控制局与干预局均完成 720 状态、719 动作；控制局的受管官方复演，以及历史状态语义、背包和仓库顺序、请求与稳定 trace 对齐通过，比较口径见失败说明。之后协调器在阶段间因 `MemoryError` 停止，干预复演与配对核验未开始，失败时精确可用内存未保存。原登记不允许重试或以异常配对判断收益，故无收益结论、无完整实验封存。两名子代理核查收据、失败边界与脱敏范围，没有重跑比赛；运行中短时 Python 监控可能增加内存占用，但没有同时刻快照，不能归因。默认 Bot、历史结果不变，无训练或 GPU。[登记](../kaggriculture/learning/task_teacher_counterfactual_pair_v1/REGISTRATION.zh-CN.md) | [失败说明及证书](evidence/task-teacher-counterfactual-pair-v1-failure-20261031/FAILURE.zh-CN.md) | [独立复核](evidence/task-teacher-counterfactual-pair-v1-failure-20261031/REVIEW.zh-CN.md)。
+
+
+### 教师任务选择的四簇完整开发对照（2026-11-06）
+
+事前提交 `2073577` 后，新增 16 场教师任务选择比赛和 16 次官方主复演全部通过，对照原有 F01–F04、两个对手、交换双方的 32 场学生比赛。教师臂仍用相同作物模型，平均净收益 30,844.625；相对 baseline/control 分别增加 165.125／235.875，但四种子簇仅 1／4、2／4 为正，面对 market 略降、面对 round2 提高。三种策略均 10 胜 6 负，两组各 16 个配对的比赛得分逐场不变。种子方向与逐场得分计数是事后描述性补充，不是新验收门。独立子代理核对本机来源、收据、实际压缩文件、全部 11,504 行轨迹并独立重算统计，没有重跑官方引擎；原运行的 11,504 次官方转移通过。技术验收完成，但不支持全面模仿教师或自动晋级；不训练、不做新种子面板或 PPO，默认 Bot 与历史数据不变。下一步仅建议另立少量同状态任务分歧的官方续行反事实，先验证具体示范的价值。[登记](evidence/task-teacher-fresh-panel-v1-20261105/REGISTRATION.zh-CN.md) | [结果与新证书](evidence/task-teacher-fresh-panel-v1-result-20261106/RESULTS.zh-CN.md) | [独立复核](evidence/task-teacher-fresh-panel-v1-result-20261106/REVIEW.zh-CN.md)。
