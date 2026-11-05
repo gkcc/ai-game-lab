@@ -1,0 +1,143 @@
+{
+  "schema": "task-harvest-window-selection-public-result-v1",
+  "registration_commit": "28c81b30c03aab8b1675c1286fda12cf43b90f98",
+  "base_commit": "b58fda94abc06b377ca341bf4d17fead2eb6dff2",
+  "outcome": "no_eligible_targets_stopped_before_execution",
+  "source_scope": "four_consumed_development_roles",
+  "selection_window": [
+    240,
+    648
+  ],
+  "selection_counts": {
+    "trace_lines": 2876,
+    "callbacks_checked": 8879,
+    "window_callbacks": 5723,
+    "qualifying_callbacks": 0,
+    "qualifying_candidates": 0
+  },
+  "roles": [
+    {
+      "role": "F01",
+      "opponent": "market",
+      "side": 0,
+      "purpose": "exploration",
+      "has_target": false,
+      "counts": {
+        "trace_lines": 719,
+        "callbacks_checked": 2195,
+        "window_callbacks": 1420,
+        "qualifying_callbacks": 0,
+        "qualifying_candidates": 0
+      },
+      "missing_reason": "no_same_unit_direct_mature_harvest_alternative_in_window"
+    },
+    {
+      "role": "F02",
+      "opponent": "round2",
+      "side": 1,
+      "purpose": "exploration",
+      "has_target": false,
+      "counts": {
+        "trace_lines": 719,
+        "callbacks_checked": 2090,
+        "window_callbacks": 1317,
+        "qualifying_callbacks": 0,
+        "qualifying_candidates": 0
+      },
+      "missing_reason": "no_same_unit_direct_mature_harvest_alternative_in_window"
+    },
+    {
+      "role": "F03",
+      "opponent": "market",
+      "side": 1,
+      "purpose": "diagnostic",
+      "has_target": false,
+      "counts": {
+        "trace_lines": 719,
+        "callbacks_checked": 2340,
+        "window_callbacks": 1525,
+        "qualifying_callbacks": 0,
+        "qualifying_candidates": 0
+      },
+      "missing_reason": "no_same_unit_direct_mature_harvest_alternative_in_window"
+    },
+    {
+      "role": "F04",
+      "opponent": "round2",
+      "side": 0,
+      "purpose": "diagnostic",
+      "has_target": false,
+      "counts": {
+        "trace_lines": 719,
+        "callbacks_checked": 2254,
+        "window_callbacks": 1461,
+        "qualifying_callbacks": 0,
+        "qualifying_candidates": 0
+      },
+      "missing_reason": "no_same_unit_direct_mature_harvest_alternative_in_window"
+    }
+  ],
+  "projection": {
+    "registered_roles": 4,
+    "paired_roles": 0,
+    "missing_roles": [
+      "F01",
+      "F02",
+      "F03",
+      "F04"
+    ],
+    "pairs": [],
+    "effective_pairs": 0,
+    "nonzero_margin_roles": 0,
+    "positive_zero_negative": {
+      "own": {
+        "positive": 0,
+        "zero": 0,
+        "negative": 0
+      },
+      "opponent": {
+        "positive": 0,
+        "zero": 0,
+        "negative": 0
+      },
+      "margin": {
+        "positive": 0,
+        "zero": 0,
+        "negative": 0
+      }
+    },
+    "paired_only_mean_delta": null,
+    "minimum_label_signal": false,
+    "cash_horizon_steps": 48,
+    "final_profit_evaluated": false,
+    "terminal_score_evaluated": false,
+    "independent_evaluation": false,
+    "statistical_significance": false,
+    "training": false,
+    "promotion": false
+  },
+  "execution": {
+    "preparation_completed": true,
+    "preparation_exit_code_observed": 0,
+    "preflight_run": false,
+    "panel_run": false,
+    "supervised_jobs": 0,
+    "model_forwards": 0,
+    "environment_constructions": 0,
+    "official_transitions": 0,
+    "complete_games": 0,
+    "paired_windows": 0,
+    "official_continuation_verified": false,
+    "training": false,
+    "gpu": false,
+    "new_seeds": false,
+    "model_instances_constructed": 0
+  },
+  "cash_delta_estimates": null,
+  "terminal_profit_evaluated": false,
+  "independent_evaluation": false,
+  "statistical_significance": false,
+  "promotion": false,
+  "no_resampling": true,
+  "decision": "archive_missing_coverage_before_any_window_execution"
+}

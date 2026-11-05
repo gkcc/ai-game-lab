@@ -1,0 +1,78 @@
+{
+  "schema": "task-harvest-window-selection-public-certificate-v1",
+  "registration_commit": "28c81b30c03aab8b1675c1286fda12cf43b90f98",
+  "technical_scope": "metadata_selection_only",
+  "selection_verified": true,
+  "independent_review_passed": true,
+  "official_continuation_verified": false,
+  "real_window_worker_verified": false,
+  "runtime_case_certificate_created": false,
+  "supervised_jobs": 0,
+  "model_forwards": 0,
+  "official_transitions": 0,
+  "complete_games": 0,
+  "paired_windows": 0,
+  "engine_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "verification": {
+    "maintainer_synthetic_tests": 48,
+    "independent_synthetic_tests": 48,
+    "skipped_tests": 0,
+    "synthetic_scratch_deleted": true,
+    "unique_source_traces": 4,
+    "source_trace_rows": 2876,
+    "source_callbacks": 8879,
+    "window_callbacks": 5723,
+    "independent_selector_recomputation": true,
+    "independent_eligibility_predicate_count": true,
+    "independent_trace_scans_to_eof": 4,
+    "review_model_forwards": 0,
+    "review_official_transitions": 0
+  },
+  "source_preservation": {
+    "registered_sources_at_selection": 421,
+    "registered_sources_unchanged_after_publication": 420,
+    "append_only_registered_path": "review/PROGRESS.md",
+    "frozen_progress_prefix_preserved": true,
+    "default_unchanged": true,
+    "frozen_models_unchanged": true
+  },
+  "prior_joint_originals": {
+    "files": 127,
+    "bytes": 317294282,
+    "byte_hash_verification_by": "maintainer",
+    "previous_salted_commitment_verified": true,
+    "old_witness_modified": false,
+    "earlier_550_file_inventory_rehashed_this_stage": false
+  },
+  "current_originals": {
+    "files": 8,
+    "bytes": 94672,
+    "witness_outside_inventory": true,
+    "witness_created_after_selection": true,
+    "salted_commitment_sha256": "d78dd16e9a75470acaabce5c8819086a3684040591a2991468cbb03184d539c8",
+    "commitment_recipe": {
+      "algorithm": "sha256",
+      "preimage": "hexdecode(private binding salt) || NUL || UTF8(task-harvest-window-selection-result-v1) || NUL || canonical inventory JSON bytes",
+      "canonical_inventory": "json.dumps(witness['files'], sort_keys=True, separators=(',', ':'), ensure_ascii=True).encode('utf-8')",
+      "salt_and_inventory_retained_locally": true
+    },
+    "byte_hash_and_commitment_verification_by": [
+      "maintainer",
+      "independent_review_agent"
+    ]
+  },
+  "training": false,
+  "gpu": false,
+  "new_seeds": false,
+  "independent_evaluation": false,
+  "promotion": false,
+  "privacy": {
+    "raw_replays_published": false,
+    "raw_traces_published": false,
+    "actual_seed_values_published": false,
+    "private_file_hashes_published": false,
+    "credentials_or_host_identity_published": false
+  },
+  "public_summary_sha256": "cc3ee2aa01e4420ed4f366b00e256bad9adc58b199175e9e295db9c106b9a2c1"
+}
