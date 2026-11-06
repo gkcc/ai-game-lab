@@ -1,0 +1,614 @@
+{
+  "schema": "task-harvest-struct-compat-public-summary-v1",
+  "registration_commit": "de61ad753204a9234fb447cdd0fe25b1bf99e378",
+  "scope": "same_four_consumed_points_48_step_factual_then_single_request_intervention",
+  "preparation": {
+    "exit_code": 0,
+    "copied_roles": 4,
+    "authenticated_prior_originals": 36,
+    "completed_source_receipts": 32,
+    "trace_rows_read": 0,
+    "replay_decodes": 0,
+    "model_forwards": 0,
+    "official_transitions": 0,
+    "target_reselection": false
+  },
+  "preflight": {
+    "exit_code": 0,
+    "source_games_authenticated": 32,
+    "eligible_targets": 4,
+    "model_forwards": 0,
+    "official_transitions": 0
+  },
+  "run": {
+    "exit_code": 0,
+    "outcome": "data_collection_complete",
+    "error_kind": null,
+    "elapsed_seconds": 1028.109,
+    "accepted_cases": 4,
+    "retry_allowed": false
+  },
+  "counts": {
+    "paired_roles": 4,
+    "official_transitions": 384,
+    "environment_constructions": 8,
+    "original_controller_calls": 2304,
+    "rival_calls": 2304,
+    "model_budget_totals": {
+      "task_forwards": 7391,
+      "crop_forwards": 1165,
+      "task_rows": 358412,
+      "crop_rows": 1165,
+      "controller_calls": 2304
+    }
+  },
+  "meter": {
+    "calls": {
+      "arm_attempts": 8,
+      "actor_construct_attempts": 8,
+      "actor_construct_returns": 8,
+      "rival_construct_attempts": 8,
+      "rival_construct_returns": 8,
+      "actor_attempts": 2304,
+      "prefix_actor_attempts": 1920,
+      "actor_returns": 2304,
+      "prefix_actor_returns": 1920,
+      "rival_attempts": 2304,
+      "prefix_rival_attempts": 1920,
+      "rival_returns": 2304,
+      "prefix_rival_returns": 1920,
+      "restore_attempts": 8,
+      "restore_returns": 8,
+      "suffix_actor_attempts": 384,
+      "suffix_actor_returns": 384,
+      "suffix_rival_attempts": 384,
+      "suffix_rival_returns": 384,
+      "official_step_attempts": 384,
+      "suffix_official_step_attempts": 384,
+      "official_step_returns": 384,
+      "suffix_official_step_returns": 384,
+      "arm_returns": 8,
+      "request_patch_attempts": 4,
+      "suffix_request_patch_attempts": 4,
+      "request_patch_returns": 4,
+      "suffix_request_patch_returns": 4
+    },
+    "budget_by_scope": {
+      "prefix": {
+        "task_rows": 243786,
+        "gate_evaluations": 0,
+        "crop_rows": 688,
+        "crop_forwards": 688,
+        "controller_calls": 1920,
+        "task_forwards": 5546,
+        "teacher_proposals": 0
+      },
+      "suffix": {
+        "task_rows": 114626,
+        "gate_evaluations": 0,
+        "crop_rows": 477,
+        "crop_forwards": 477,
+        "controller_calls": 384,
+        "task_forwards": 1845,
+        "teacher_proposals": 0
+      }
+    },
+    "unknown_budget_observations": 0
+  },
+  "cases": [
+    {
+      "role": "F01",
+      "passed": true,
+      "official_transitions": 96,
+      "completed_arms": 2,
+      "request_patches": 1,
+      "original_source_trace_scans": [
+        {
+          "lines": 719,
+          "complete": true,
+          "closed": true
+        },
+        {
+          "lines": 719,
+          "complete": true,
+          "closed": true
+        }
+      ],
+      "events": {
+        "bytes": 2736203,
+        "decoded_bytes": 26544841,
+        "lines": 580,
+        "closed": true
+      },
+      "case_bytes": 96255,
+      "compatibility_status": "completed",
+      "comparison_counts": {
+        "calls": 1251,
+        "returns": 1251,
+        "true_returns": 1251,
+        "false_returns": 0,
+        "struct_calls": 192,
+        "struct_objects": 192,
+        "struct_true_returns": 192,
+        "struct_root_left_calls": 192,
+        "struct_root_right_calls": 0
+      },
+      "first_suffix": {
+        "step": 240,
+        "arm": "control",
+        "original_sink_returned": true,
+        "official_step_attempts": 1,
+        "official_step_returns": 1,
+        "saved_event_number": 242,
+        "comparison_delta": {
+          "calls": 4,
+          "returns": 4,
+          "true_returns": 4,
+          "false_returns": 0,
+          "struct_calls": 2,
+          "struct_objects": 2,
+          "struct_true_returns": 2,
+          "struct_root_left_calls": 2,
+          "struct_root_right_calls": 0
+        },
+        "accepted_action_types": [
+          "exact_official_Struct",
+          "exact_official_Struct"
+        ]
+      },
+      "second_suffix_gate_before_actor2": true,
+      "suffix_events_saved": {
+        "control": 48,
+        "intervene": 48
+      },
+      "failure_location": null,
+      "failure_location_capture_failed": false,
+      "supervision": {
+        "passed": true,
+        "assigned": true,
+        "resumed": true,
+        "launcher_reaped": true,
+        "job_members_zero": true,
+        "stop_reason": null,
+        "exit_code": 0,
+        "error_kind": null,
+        "cleanup_error_kind": null,
+        "termination_error_kind": null,
+        "wait_error_kind": null,
+        "membership_error_kind": null,
+        "close_error_kind": null,
+        "acceptance_error_kind": null,
+        "peak_sampled_rss_bytes": 227303424,
+        "peak_sampled_job_commit_bytes": 229691392
+      }
+    },
+    {
+      "role": "F02",
+      "passed": true,
+      "official_transitions": 96,
+      "completed_arms": 2,
+      "request_patches": 1,
+      "original_source_trace_scans": [
+        {
+          "lines": 719,
+          "complete": true,
+          "closed": true
+        },
+        {
+          "lines": 719,
+          "complete": true,
+          "closed": true
+        }
+      ],
+      "events": {
+        "bytes": 2622357,
+        "decoded_bytes": 25168552,
+        "lines": 580,
+        "closed": true
+      },
+      "case_bytes": 96061,
+      "compatibility_status": "completed",
+      "comparison_counts": {
+        "calls": 1251,
+        "returns": 1251,
+        "true_returns": 1251,
+        "false_returns": 0,
+        "struct_calls": 192,
+        "struct_objects": 192,
+        "struct_true_returns": 192,
+        "struct_root_left_calls": 192,
+        "struct_root_right_calls": 0
+      },
+      "first_suffix": {
+        "step": 240,
+        "arm": "control",
+        "original_sink_returned": true,
+        "official_step_attempts": 1,
+        "official_step_returns": 1,
+        "saved_event_number": 242,
+        "comparison_delta": {
+          "calls": 4,
+          "returns": 4,
+          "true_returns": 4,
+          "false_returns": 0,
+          "struct_calls": 2,
+          "struct_objects": 2,
+          "struct_true_returns": 2,
+          "struct_root_left_calls": 2,
+          "struct_root_right_calls": 0
+        },
+        "accepted_action_types": [
+          "exact_official_Struct",
+          "exact_official_Struct"
+        ]
+      },
+      "second_suffix_gate_before_actor2": true,
+      "suffix_events_saved": {
+        "control": 48,
+        "intervene": 48
+      },
+      "failure_location": null,
+      "failure_location_capture_failed": false,
+      "supervision": {
+        "passed": true,
+        "assigned": true,
+        "resumed": true,
+        "launcher_reaped": true,
+        "job_members_zero": true,
+        "stop_reason": null,
+        "exit_code": 0,
+        "error_kind": null,
+        "cleanup_error_kind": null,
+        "termination_error_kind": null,
+        "wait_error_kind": null,
+        "membership_error_kind": null,
+        "close_error_kind": null,
+        "acceptance_error_kind": null,
+        "peak_sampled_rss_bytes": 227921920,
+        "peak_sampled_job_commit_bytes": 229220352
+      }
+    },
+    {
+      "role": "F03",
+      "passed": true,
+      "official_transitions": 96,
+      "completed_arms": 2,
+      "request_patches": 1,
+      "original_source_trace_scans": [
+        {
+          "lines": 719,
+          "complete": true,
+          "closed": true
+        },
+        {
+          "lines": 719,
+          "complete": true,
+          "closed": true
+        }
+      ],
+      "events": {
+        "bytes": 2641453,
+        "decoded_bytes": 25090422,
+        "lines": 580,
+        "closed": true
+      },
+      "case_bytes": 95787,
+      "compatibility_status": "completed",
+      "comparison_counts": {
+        "calls": 1251,
+        "returns": 1251,
+        "true_returns": 1251,
+        "false_returns": 0,
+        "struct_calls": 192,
+        "struct_objects": 192,
+        "struct_true_returns": 192,
+        "struct_root_left_calls": 192,
+        "struct_root_right_calls": 0
+      },
+      "first_suffix": {
+        "step": 240,
+        "arm": "control",
+        "original_sink_returned": true,
+        "official_step_attempts": 1,
+        "official_step_returns": 1,
+        "saved_event_number": 242,
+        "comparison_delta": {
+          "calls": 4,
+          "returns": 4,
+          "true_returns": 4,
+          "false_returns": 0,
+          "struct_calls": 2,
+          "struct_objects": 2,
+          "struct_true_returns": 2,
+          "struct_root_left_calls": 2,
+          "struct_root_right_calls": 0
+        },
+        "accepted_action_types": [
+          "exact_official_Struct",
+          "exact_official_Struct"
+        ]
+      },
+      "second_suffix_gate_before_actor2": true,
+      "suffix_events_saved": {
+        "control": 48,
+        "intervene": 48
+      },
+      "failure_location": null,
+      "failure_location_capture_failed": false,
+      "supervision": {
+        "passed": true,
+        "assigned": true,
+        "resumed": true,
+        "launcher_reaped": true,
+        "job_members_zero": true,
+        "stop_reason": null,
+        "exit_code": 0,
+        "error_kind": null,
+        "cleanup_error_kind": null,
+        "termination_error_kind": null,
+        "wait_error_kind": null,
+        "membership_error_kind": null,
+        "close_error_kind": null,
+        "acceptance_error_kind": null,
+        "peak_sampled_rss_bytes": 225525760,
+        "peak_sampled_job_commit_bytes": 229675008
+      }
+    },
+    {
+      "role": "F04",
+      "passed": true,
+      "official_transitions": 96,
+      "completed_arms": 2,
+      "request_patches": 1,
+      "original_source_trace_scans": [
+        {
+          "lines": 719,
+          "complete": true,
+          "closed": true
+        },
+        {
+          "lines": 719,
+          "complete": true,
+          "closed": true
+        }
+      ],
+      "events": {
+        "bytes": 2613124,
+        "decoded_bytes": 24963284,
+        "lines": 580,
+        "closed": true
+      },
+      "case_bytes": 95773,
+      "compatibility_status": "completed",
+      "comparison_counts": {
+        "calls": 1251,
+        "returns": 1251,
+        "true_returns": 1251,
+        "false_returns": 0,
+        "struct_calls": 192,
+        "struct_objects": 192,
+        "struct_true_returns": 192,
+        "struct_root_left_calls": 192,
+        "struct_root_right_calls": 0
+      },
+      "first_suffix": {
+        "step": 240,
+        "arm": "control",
+        "original_sink_returned": true,
+        "official_step_attempts": 1,
+        "official_step_returns": 1,
+        "saved_event_number": 242,
+        "comparison_delta": {
+          "calls": 4,
+          "returns": 4,
+          "true_returns": 4,
+          "false_returns": 0,
+          "struct_calls": 2,
+          "struct_objects": 2,
+          "struct_true_returns": 2,
+          "struct_root_left_calls": 2,
+          "struct_root_right_calls": 0
+        },
+        "accepted_action_types": [
+          "exact_official_Struct",
+          "exact_official_Struct"
+        ]
+      },
+      "second_suffix_gate_before_actor2": true,
+      "suffix_events_saved": {
+        "control": 48,
+        "intervene": 48
+      },
+      "failure_location": null,
+      "failure_location_capture_failed": false,
+      "supervision": {
+        "passed": true,
+        "assigned": true,
+        "resumed": true,
+        "launcher_reaped": true,
+        "job_members_zero": true,
+        "stop_reason": null,
+        "exit_code": 0,
+        "error_kind": null,
+        "cleanup_error_kind": null,
+        "termination_error_kind": null,
+        "wait_error_kind": null,
+        "membership_error_kind": null,
+        "close_error_kind": null,
+        "acceptance_error_kind": null,
+        "peak_sampled_rss_bytes": 229814272,
+        "peak_sampled_job_commit_bytes": 229543936
+      }
+    }
+  ],
+  "projection": {
+    "registered_roles": 4,
+    "paired_roles": 4,
+    "missing_roles": [],
+    "pairs": [
+      {
+        "role": "F01",
+        "opponent": "market",
+        "side": 0,
+        "purpose": "exploration",
+        "baseline_window_cash": {
+          "own": 14837.0,
+          "opponent": 11174.0
+        },
+        "intervention_window_cash": {
+          "own": 14945.0,
+          "opponent": 11174.0
+        },
+        "delta": {
+          "own": 108.0,
+          "opponent": 0.0,
+          "margin": 108.0
+        },
+        "request_changed": true,
+        "physical_changed": true
+      },
+      {
+        "role": "F02",
+        "opponent": "round2",
+        "side": 1,
+        "purpose": "exploration",
+        "baseline_window_cash": {
+          "own": 13224.0,
+          "opponent": 12658.0
+        },
+        "intervention_window_cash": {
+          "own": 8111.0,
+          "opponent": 17330.0
+        },
+        "delta": {
+          "own": -5113.0,
+          "opponent": 4672.0,
+          "margin": -9785.0
+        },
+        "request_changed": true,
+        "physical_changed": true
+      },
+      {
+        "role": "F03",
+        "opponent": "market",
+        "side": 1,
+        "purpose": "diagnostic",
+        "baseline_window_cash": {
+          "own": 16281.0,
+          "opponent": 11551.0
+        },
+        "intervention_window_cash": {
+          "own": 16182.0,
+          "opponent": 11531.0
+        },
+        "delta": {
+          "own": -99.0,
+          "opponent": -20.0,
+          "margin": -79.0
+        },
+        "request_changed": true,
+        "physical_changed": true
+      },
+      {
+        "role": "F04",
+        "opponent": "round2",
+        "side": 0,
+        "purpose": "diagnostic",
+        "baseline_window_cash": {
+          "own": 13887.0,
+          "opponent": 13548.0
+        },
+        "intervention_window_cash": {
+          "own": 9080.0,
+          "opponent": 17803.0
+        },
+        "delta": {
+          "own": -4807.0,
+          "opponent": 4255.0,
+          "margin": -9062.0
+        },
+        "request_changed": true,
+        "physical_changed": true
+      }
+    ],
+    "effective_pairs": 4,
+    "nonzero_margin_roles": 4,
+    "positive_zero_negative": {
+      "own": {
+        "positive": 1,
+        "zero": 0,
+        "negative": 3
+      },
+      "opponent": {
+        "positive": 2,
+        "zero": 1,
+        "negative": 1
+      },
+      "margin": {
+        "positive": 1,
+        "zero": 0,
+        "negative": 3
+      }
+    },
+    "paired_only_mean_delta": {
+      "own": -2477.75,
+      "opponent": 2226.75,
+      "margin": -4704.5
+    },
+    "minimum_label_signal": true,
+    "cash_horizon_steps": 48,
+    "final_profit_evaluated": false,
+    "terminal_score_evaluated": false,
+    "independent_evaluation": false,
+    "statistical_significance": false,
+    "training": false,
+    "promotion": false,
+    "signal_scope": "further_short_window_outcome_research_only",
+    "formal_label_generation": false,
+    "reproduction_scope": "same_four_consumed_points_official_struct_compatibility",
+    "prior_lineage_official_steps": 2
+  },
+  "interpretation": {
+    "technical_reproduction_passed": true,
+    "research_signal_gate_passed": true,
+    "research_signal_is_training_admission": false,
+    "research_signal_is_policy_improvement": false,
+    "each_intervention_executed_once": true,
+    "factual_48_step_states_verified_against_history": true,
+    "independent_second_intervention_execution": false,
+    "source_cohorts": 2,
+    "mechanism_cash_cause_decomposed": false,
+    "requested_market_quantity_is_actual_trade_quantity": false,
+    "seed_aliases_are_cohort_scoped": true,
+    "independent_sampling_design": false
+  },
+  "source_trace_reading_scope": {
+    "execution_arms": 8,
+    "rows_per_execution_arm": 719,
+    "parent_consumers": 4,
+    "rows_per_parent_consumer": 719,
+    "independent_reviewer_old_replay_or_trace_reads": 0
+  },
+  "prior_attempt_accounting": {
+    "prior_official_steps_preserved": 2,
+    "this_run_official_steps": 384,
+    "lineage_official_steps": 386
+  },
+  "training": false,
+  "gpu": false,
+  "new_seeds": false,
+  "new_complete_games": 0,
+  "independent_holdout": false,
+  "terminal_profit_evaluated": false,
+  "policy_promotion": false,
+  "target_execution_observation": {
+    "all_four_original_action_kinds": "WATER",
+    "all_four_submitted_action_kinds": "HARVEST",
+    "all_four_effective_action_kinds": "HARVEST",
+    "all_four_execution_statuses": "executed",
+    "all_four_tile_before_kind": "PLANT",
+    "all_four_tile_before_crop": "MELON",
+    "all_four_tile_after_is_null": true,
+    "observation_is_full_cash_causal_explanation": false
+  }
+}

@@ -1271,3 +1271,18 @@ prepare/preflight/run 退出 0 仅指诊断验收；原 case 仍失败，0 完�
 下一有界阶段只做确切官方 Struct 的比较副本适配，保留标量类型及订单／库存顺序门；局部编译冻结 core，避免污染共享 globals。原样继承四点，在 F01 首事实步验收后才续行，最多 384 官方转移，无新增探针或自动重试。本轮仅给出计划，尚未实施兼容修复。
 
 [结果](evidence/task-harvest-first-step-diagnostic-v1-result-20261106/RESULTS.zh-CN.md) | [证书](evidence/task-harvest-first-step-diagnostic-v1-result-20261106/certificate.json) | [独立复核](evidence/task-harvest-first-step-diagnostic-v1-result-20261106/REVIEW.zh-CN.md) | [下一阶段](evidence/task-harvest-first-step-diagnostic-v1-result-20261106/NEXT.zh-CN.md)
+
+
+## 2026-11-06 Struct 窄兼容修复：四点 48+48 官方窗口全部通过
+
+prepare 退出0并冻结登记 `de61ad753204a9234fb447cdd0fe25b1bf99e378`，随后 preflight/run 均退出0；四个原点完成8臂、384次官方转移、4次单单位请求替换，原完整消费者全部通过。只在每case独立编译的冻结core中适配确切官方Struct比较副本；原Agent输出校验、请求摘要、标量及顺序检查不变，模型、策略和默认Bot不改。17项针对性回归逐项验过；独立指出的新收据True/1与48/48.0类型漏洞已在冻结前最小修复。
+
+四点均为实际WATER→HARVEST，目标甜瓜收获后移除。48步自身现金增量依次 +108、−5,113、−99、−4,807；相对现金差增量 +108、−9,785、−79、−9,062。4/4请求与物理状态改变，正负与diagnostic均出现，原进一步研究信号门成立。该门不是训练准入或策略提升；本批平均自身−2,477.75，仅作四个已消费开发点的描述，不是独立测试或终局收益。事实臂复现旧历史，干预臂各只执行一次。
+
+实际双方各调用2,304次，任务/选种前向7,391/1,165，全部前缀计费；无GPU或训练。协调器墙钟1,028.109秒含核验与前缀推理，不是纯环境吞吐。四Job正常退出且回收。独立结果审查实读四新gzip至CRC/EOF，2,320行、101,767,099解码字节，从保存帧重算现金一致；未重读旧Replay/trace或新增官方执行。
+
+45新原件共11,171,803字节封存，维护者另重哈旧两批36原件及承诺不变。499项源码运行后保持，结果发布只追加本文件，其余498项不动；原四selection字节及默认Bot一致。旧两次转移保留，本技术分支累计386次；没有新完整对局、新种子或模型晋级。
+
+下一阶段只读已保存八臂，解释收获时机、任务与双方现金变化，并检查需要的信息是否属于合法模型观测。后47步没有完整逐订单成交追踪，不能把请求量当销量或把同现拆成价格因果百分比；证据不足也按既定边界结束，不补新运行。当前该分析尚未实施。
+
+[结果](evidence/task-harvest-struct-compat-v1-result-20261106/RESULTS.zh-CN.md) | [证书](evidence/task-harvest-struct-compat-v1-result-20261106/certificate.json) | [独立复核](evidence/task-harvest-struct-compat-v1-result-20261106/REVIEW.zh-CN.md) | [下一阶段](evidence/task-harvest-struct-compat-v1-result-20261106/NEXT.zh-CN.md)
