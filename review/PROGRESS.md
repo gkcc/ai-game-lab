@@ -1237,3 +1237,13 @@ Windows 和 WSL 分别通过导入守卫 1 项、训练入口 17 项、Windows �
 本轮没有模型前向、官方转移、Replay解码、新比赛、GPU或训练，连续48步恢复仍未在该研究链实测通过。下一阶段优先另行冻结未表达原地收获的单次请求替换探测：原意图与实际请求分记、事实臂先复现、最多384官方转移，不直接修改候选池、策略或启动BC/PPO。当前尚未选定新点或实施。
 
 详见 [结果和证书](evidence/task-harvest-coverage-v1-result-20261106/RESULTS.zh-CN.md)、[独立复核](evidence/task-harvest-coverage-v1-result-20261106/REVIEW.zh-CN.md)、[下一阶段范围](evidence/task-harvest-coverage-v1-result-20261106/NEXT.zh-CN.md)。
+
+
+## 2026-11-06 未表达收获四点：冷启动技术失败已封存
+
+- 登记 `7bdf591cbdb4070be69f7a82d43e8202dadb661c`；四源均有预先冻结点，准备 2,876 行与 preflight 通过。35 项针对性回归通过，独立审查者实跑其中 28 项，维护者另跑 7 项 IO。
+- 实际 F01 进入 Worker 后发生 I/O 初始化异常，F02–F04 未启动；全部模型／环境／官方转移计数为零，事件 gzip 20 字节且为空。固定控制流证明已解码一次旧 Replay，不能省略读取成本。
+- 冷进程探针复现了受控写入作用域内初始化官方 runtime、打开空设备而被拒绝的真实缺陷；保持 guard，未原地重试。自有子进程与 Job 均已回收。
+- 没有官方 48 步或收益证据，不是策略负结果；未训练、未用新种子、未改默认 Bot 或旧模型。
+- [本轮结论](evidence/task-harvest-unexpressed-v1-result-20261106/RESULTS.zh-CN.md)、[失败证书](evidence/task-harvest-unexpressed-v1-result-20261106/certificate.json)、[独立复核](evidence/task-harvest-unexpressed-v1-result-20261106/REVIEW.zh-CN.md)。18 份原件留本地，旧覆盖分析十份原件与承诺保持一致。
+- [下一有界阶段](evidence/task-harvest-unexpressed-v1-result-20261106/NEXT.zh-CN.md)：新版本提前准备受信 runtime 与真实 tracer，补冷启动回归，认证并原样承接相同四点，重新登记后一次技术修复复现；不重新择点，不冒充新独立测试。

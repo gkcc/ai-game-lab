@@ -1,0 +1,52 @@
+{
+  "schema": "task-harvest-unexpressed-failure-public-certificate-v1",
+  "registration_commit": "7bdf591cbdb4070be69f7a82d43e8202dadb661c",
+  "scope": "failed_attempt_preservation_and_diagnosis_not_execution_success",
+  "independent_review_passed": true,
+  "experiment_passed": false,
+  "prepared_targets": 4,
+  "source_preservation": {
+    "frozen_sources_verified": 454,
+    "default_unchanged": true,
+    "prior_coverage_originals_rehashed": 10,
+    "prior_coverage_commitment_verified": true,
+    "older_127_and_550_file_inventories_rehashed_this_stage": false,
+    "unchanged_registered_sources_after_publication": 453,
+    "append_only_registered_path": "review/PROGRESS.md",
+    "frozen_progress_prefix_preserved": true
+  },
+  "originals": {
+    "files": 18,
+    "bytes": 147029,
+    "witness_outside_inventory": true,
+    "independent_inventory_and_commitment_verification": true,
+    "salted_commitment_sha256": "e8882e77576eb946eece64444cb00fb2cc3800b47be8fcb67a3ace56e6b6d627",
+    "recipe": "sha256(hexdecode(private binding salt) || NUL || UTF8(task-harvest-unexpressed-failure-v1) || NUL || json.dumps(witness.files, sort_keys=True, separators=(comma, colon), ensure_ascii=True).encode(utf-8))"
+  },
+  "verification": {
+    "maintainer_passing_regressions": 35,
+    "independent_executed_regressions": 28,
+    "maintainer_worker_regressions": 7,
+    "skipped": 0,
+    "regression_scratch_deleted": true,
+    "isolated_cold_import_probe_reproduced": true,
+    "probe_scope": "import initializer only; no runtime returned, checkpoint constructed, Replay decoded, environment created or game step executed",
+    "probe_scratch_deleted": true,
+    "independent_failure_chain_and_source_review": true,
+    "preparation_exit_code": 0,
+    "preflight_exit_code": 0,
+    "registered_run_exit_code": 1,
+    "no_automatic_retry": true
+  },
+  "official_48_step_continuation_verified": false,
+  "economic_value_evaluated": false,
+  "public_summary_sha256": "a54013c7be34c287b8b6d245854dc1bb19c23d697ea4e0f1a7155a23084db6b6",
+  "privacy": {
+    "raw_replays_published": false,
+    "private_step_states_published": false,
+    "raw_trace_or_log_published": false,
+    "private_file_digests_published": false,
+    "actual_seeds_or_point_coordinates_published": false,
+    "host_identity_published": false
+  }
+}

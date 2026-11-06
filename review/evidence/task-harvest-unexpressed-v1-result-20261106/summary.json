@@ -1,0 +1,74 @@
+{
+  "schema": "task-harvest-unexpressed-failure-public-summary-v1",
+  "registration_commit": "7bdf591cbdb4070be69f7a82d43e8202dadb661c",
+  "status": "technical_failure_before_model_or_official_transition",
+  "prepared_sources": 4,
+  "prepared_targets": 4,
+  "preparation_trace_rows": 2876,
+  "preparation_model_forwards": 0,
+  "preparation_official_transitions": 0,
+  "preparation_replay_decodes": 0,
+  "preflight_passed": true,
+  "attempted_cases": 1,
+  "accepted_cases": 0,
+  "roles": [
+    {
+      "role": "F01",
+      "status": "io_initialization_failure",
+      "economic_delta": null
+    },
+    {
+      "role": "F02",
+      "status": "not_attempted",
+      "economic_delta": null
+    },
+    {
+      "role": "F03",
+      "status": "not_attempted",
+      "economic_delta": null
+    },
+    {
+      "role": "F04",
+      "status": "not_attempted",
+      "economic_delta": null
+    }
+  ],
+  "execution": {
+    "model_constructions": 0,
+    "model_forwards": 0,
+    "environment_constructions": 0,
+    "official_transitions": 0,
+    "trace_scans": 0,
+    "events": 0,
+    "historical_replay_decodes_inferred": 1,
+    "replay_decode_basis": "frozen control flow: successful source replay checks precede creation of the observed gzip stream; not a dedicated measured counter",
+    "complete_games": 0,
+    "request_patches": 0,
+    "gzip_bytes": 20,
+    "gzip_decoded_bytes": 0,
+    "byte_quota_refused": 0
+  },
+  "failure": {
+    "case_category": "io",
+    "parent_category": "ValueError",
+    "root_cause": "cold official runtime import opens null sink inside owned output write guard",
+    "reproduction": "fresh isolated process reproduced UnsafeWriteError in verify_mechanisms import before official package load",
+    "resource_exhaustion_evidence": false
+  },
+  "process_cleanup": {
+    "launcher_reaped": true,
+    "job_members_zero": true,
+    "exit_code": 1,
+    "stop_reason": null,
+    "cleanup_error_kind": null
+  },
+  "official_48_step_continuation_verified": false,
+  "economic_value_evaluated": false,
+  "minimum_label_signal": null,
+  "independent_evaluation": false,
+  "training": false,
+  "gpu": false,
+  "promotion": false,
+  "new_seeds": false,
+  "retry_performed": false
+}
