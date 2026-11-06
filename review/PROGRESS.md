@@ -1247,3 +1247,14 @@ Windows 和 WSL 分别通过导入守卫 1 项、训练入口 17 项、Windows �
 - 没有官方 48 步或收益证据，不是策略负结果；未训练、未用新种子、未改默认 Bot 或旧模型。
 - [本轮结论](evidence/task-harvest-unexpressed-v1-result-20261106/RESULTS.zh-CN.md)、[失败证书](evidence/task-harvest-unexpressed-v1-result-20261106/certificate.json)、[独立复核](evidence/task-harvest-unexpressed-v1-result-20261106/REVIEW.zh-CN.md)。18 份原件留本地，旧覆盖分析十份原件与承诺保持一致。
 - [下一有界阶段](evidence/task-harvest-unexpressed-v1-result-20261106/NEXT.zh-CN.md)：新版本提前准备受信 runtime 与真实 tracer，补冷启动回归，认证并原样承接相同四点，重新登记后一次技术修复复现；不重新择点，不冒充新独立测试。
+
+
+## 2026-11-06 收获窗口运行时修复：首事实步后失败
+
+事前登记 `02f8ef2` 原样继承四个已消费点。15 项最终回归通过，独立另跑 13 项入口／纯回归；真实冷测试同时验证生产 CRLF 与公开 LF 的既有原始身份映射。首轮 12/13 失败保留，不改写为首次全绿。
+
+准备／preflight 退出 0；唯一 run 退出 1，0 accepted。F01 冷初始化已生效、240 步前缀验证完成，目标事实回合双方策略及唯一一次官方 step 返回；但首条 suffix 事件未成功写出。241 条 gzip 事件仅起点＋前缀，0 干预、0 收获覆盖、0 完成窗口。具体断言未留存，不能区分执行记录、状态／动作核对或 EventSink；没有收益结论或新训练。Job 回收且无资源终止／清理错误。
+
+新 18 原件 187,746 字节已独立重哈封存，旧 18 原件及承诺由维护者重核不变；四份 selection 原字节保留。469 项登记源码运行后核对，发布只追加本文件，其余 468 项保持。默认 Bot、策略、模型及历史失败不改。下一阶段仅定位同 F01 首事实步，先补异常位置及有界上下文，另行审查冻结后最多一次单步诊断，不直接重跑四点。
+
+[结果与限制](evidence/task-harvest-unexpressed-runtime-v2-result-20261106/RESULTS.zh-CN.md) | [失败封存证书](evidence/task-harvest-unexpressed-runtime-v2-result-20261106/certificate.json) | [独立审查](evidence/task-harvest-unexpressed-runtime-v2-result-20261106/REVIEW.zh-CN.md) | [下一阶段](evidence/task-harvest-unexpressed-runtime-v2-result-20261106/NEXT.zh-CN.md)

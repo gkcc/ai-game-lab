@@ -1,0 +1,198 @@
+{
+  "schema": "task-harvest-unexpressed-runtime-failure-public-summary-v2",
+  "registration_commit": "02f8ef2f9691e5451dcf247f8714797a04d6dcc5",
+  "scope": "same_four_consumed_frozen_points_technical_repair_reproduction",
+  "phase": "failed_after_first_factual_official_step_return_before_first_suffix_event",
+  "preparation": {
+    "copied_roles": 4,
+    "eligible_targets": 4,
+    "old_failed_originals_authenticated": 18,
+    "completed_source_receipts": 32,
+    "trace_rows_read": 0,
+    "replay_decodes": 0,
+    "target_reselection": false
+  },
+  "preflight": {
+    "exit_code": 0,
+    "source_games_authenticated": 32,
+    "model_forwards": 0,
+    "official_transitions": 0
+  },
+  "run": {
+    "exit_code": 1,
+    "outcome": "failed",
+    "error_kind": "ValueError",
+    "accepted_cases": 0,
+    "elapsed_seconds": 121.922,
+    "retry_allowed": false
+  },
+  "attempted_roles": [
+    "F01"
+  ],
+  "unstarted_roles": [
+    "F02",
+    "F03",
+    "F04"
+  ],
+  "runtime_preparation": {
+    "schema": "task-harvest-runtime-case-preparation-v2",
+    "identity": {
+      "worker_commit": "7bdf591cbdb4070be69f7a82d43e8202dadb661c",
+      "worker_path": "kaggriculture/learning/task_harvest_unexpressed_v1/worker.py",
+      "worker_sha256": "03ebe5477f6005221f47451bc7efc35fdb3c394fe7a83182da6c4f4e36c15ca6",
+      "core_sha256": "cda31e1d228a3c081d2344214cefabbde06935d8d4239438c9d5aae4a631190e"
+    },
+    "phase": "after_source_assets_replay_checks_before_owned_writes",
+    "status": "prepared",
+    "prepare_attempts": 1,
+    "prepare_returns": 1,
+    "run_pair_attempts": 1,
+    "run_pair_returns": 0,
+    "prepared": {
+      "schema": "task-harvest-runtime-prepared-v2",
+      "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+      "engine_core_sha256": "0922c4599a1b6e0d8c3dadf06ae5297f98138d859d686f00daee6f36e6d45d0e",
+      "execution_trace_source": "game",
+      "execution_trace_raw_sha256": "cbf38b17ca9c4c1c4f82ddb583ff59e4f605a0e8d8e971ef5bfc3664b2c76378",
+      "execution_trace_public_sha256": "e1b8acb32ef0b31c0de3048d481d84babf3b07510d18a9d3b2fd3da471d8f239",
+      "execution_trace_line_endings": "CRLF",
+      "execution_trace_mapping_path": "review/evidence/task-teacher-merged-eval-v3-formal-20261030/freeze.json",
+      "execution_trace_mapping_sha256": "249d72b0770bb97cb4a1cc66fc14586dd674c778185f6aebf8c50c73fad9cb4d",
+      "runtime_interpreter_matches_rules": true,
+      "target_factory_lazy_imports": false,
+      "preparation_scope": "runtime imports, identity checks and bound trace factory only",
+      "preparation_model_constructions": 0,
+      "preparation_environment_constructions": 0,
+      "preparation_official_transitions": 0
+    }
+  },
+  "observed": {
+    "actor_constructions_returned": 1,
+    "rival_constructions_returned": 1,
+    "environment_restores_returned": 1,
+    "official_steps_attempted": 1,
+    "official_steps_returned": 1,
+    "official_factual_step_acceptance_unknown": true,
+    "completed_arms": 0,
+    "accepted_pairs": 0,
+    "request_patches": 0,
+    "intervention_steps": 0,
+    "official_steps_with_persisted_factual_acceptance_proof": 0
+  },
+  "meter": {
+    "calls": {
+      "arm_attempts": 1,
+      "actor_construct_attempts": 1,
+      "actor_construct_returns": 1,
+      "rival_construct_attempts": 1,
+      "rival_construct_returns": 1,
+      "actor_attempts": 241,
+      "prefix_actor_attempts": 240,
+      "actor_returns": 241,
+      "prefix_actor_returns": 240,
+      "rival_attempts": 241,
+      "prefix_rival_attempts": 240,
+      "rival_returns": 241,
+      "prefix_rival_returns": 240,
+      "restore_attempts": 1,
+      "restore_returns": 1,
+      "suffix_actor_attempts": 1,
+      "suffix_actor_returns": 1,
+      "suffix_rival_attempts": 1,
+      "suffix_rival_returns": 1,
+      "official_step_attempts": 1,
+      "suffix_official_step_attempts": 1,
+      "official_step_returns": 1,
+      "suffix_official_step_returns": 1
+    },
+    "budget_by_scope": {
+      "prefix": {
+        "teacher_proposals": 0,
+        "crop_forwards": 86,
+        "gate_evaluations": 0,
+        "task_forwards": 696,
+        "task_rows": 30548,
+        "controller_calls": 240,
+        "crop_rows": 86
+      },
+      "suffix": {
+        "teacher_proposals": 0,
+        "crop_forwards": 0,
+        "gate_evaluations": 0,
+        "task_forwards": 1,
+        "task_rows": 25,
+        "controller_calls": 1,
+        "crop_rows": 0
+      }
+    },
+    "unknown_budget_observations": 0,
+    "counter_scope": "original budget charges; call attempts and returns separately"
+  },
+  "trace_scans": [
+    {
+      "lines": 241,
+      "complete": false,
+      "closed": true
+    }
+  ],
+  "events": {
+    "compressed_bytes": 34695,
+    "decoded_bytes": 273588,
+    "lines": 241,
+    "arm_start": 1,
+    "prefix_turns": 240,
+    "suffix_turns": 0,
+    "arm_end": 0,
+    "crc_and_eof_verified": true
+  },
+  "output_budget": {
+    "limit_bytes": 133169152,
+    "used_bytes": 34695,
+    "remaining_bytes": 133134457,
+    "refused": 0,
+    "created_count": 1
+  },
+  "supervision": {
+    "passed": false,
+    "assigned": true,
+    "resumed": true,
+    "launcher_reaped": true,
+    "job_members_zero": true,
+    "stop_reason": null,
+    "exit_code": 1,
+    "error_kind": null,
+    "cleanup_error_kind": null,
+    "termination_error_kind": null,
+    "wait_error_kind": null,
+    "membership_error_kind": null,
+    "close_error_kind": null,
+    "acceptance_error_kind": null,
+    "peak_sampled_rss_bytes": 218152960,
+    "peak_sampled_job_commit_bytes": 198504448,
+    "rss_sampling_attempts": 79,
+    "rss_sampling_retries": 3,
+    "rss_complete_samples": 76,
+    "rss_discarded_samples": 3
+  },
+  "diagnostic": {
+    "exact_failed_assertion_known": false,
+    "post_transition_frame_retained": false,
+    "target_execution_record_retained": false,
+    "raw_exception_detail_retained": false,
+    "interval": "after first official_step return, before first suffix event is successfully persisted; includes tracer exit, target execution checks, state/action checks and event sink",
+    "resource_limit_failure_observed": false,
+    "resource_sampling_is_not_continuous": true
+  },
+  "old_failure_preserved": true,
+  "success_result_exists": false,
+  "success_certificate_exists": false,
+  "economic_value_evaluated": false,
+  "window_cash_deltas": null,
+  "minimum_label_signal": null,
+  "training": false,
+  "gpu": false,
+  "new_seeds": false,
+  "new_complete_games": 0,
+  "independent_holdout": false,
+  "policy_promotion": false
+}
