@@ -1286,3 +1286,16 @@ prepare 退出0并冻结登记 `de61ad753204a9234fb447cdd0fe25b1bf99e378`，随�
 下一阶段只读已保存八臂，解释收获时机、任务与双方现金变化，并检查需要的信息是否属于合法模型观测。后47步没有完整逐订单成交追踪，不能把请求量当销量或把同现拆成价格因果百分比；证据不足也按既定边界结束，不补新运行。当前该分析尚未实施。
 
 [结果](evidence/task-harvest-struct-compat-v1-result-20261106/RESULTS.zh-CN.md) | [证书](evidence/task-harvest-struct-compat-v1-result-20261106/certificate.json) | [独立复核](evidence/task-harvest-struct-compat-v1-result-20261106/REVIEW.zh-CN.md) | [下一阶段](evidence/task-harvest-struct-compat-v1-result-20261106/NEXT.zh-CN.md)
+
+
+## 2026-11-06 已保存收获轨迹解释完成：候选表达受限，现金路径受共享市场影响
+
+prepare只读41小原件，提交登记 `5df6a27af653ed6396f34118840427facffbcb2f` 并验证远端后，唯一run退出0。四个已封存gzip各顺序读一次，压缩SHA/CRC/EOF通过；2,320行、101,767,099解压字节，分析8臂已有384个后缀转移，新增模型/官方转移/完整比赛均0。16项纯回归由维护者和独立子代理分别通过。派生账本独立复核8臂现金、Top 3及公开投影一致，没有第二次原始事件扫描。
+
+四点首步事实WATER使甜瓜5→6，干预实际HARVEST5并移株；随后offset1本方请求和位置即分歧。事实臂offset1有HARVEST请求并观察原株消失，后47步没有原子执行追踪。48步相对现金差仍为 +108、−9,785、−79、−9,062，未改旧结论。F02对手48步完整请求不变却多现金4,672；F04首次对手现金差在18、请求差直到27。共享市场条件及兑现时序需要保留，但没有逐成交追踪，不能拆独立价格/销量/调度百分比，也不是终局提升证据。
+
+旧45原件承诺保留；新14派生原件共1,554,082字节单独封存并独立核对。514冻结来源运行后保持，本次只追加本文件、其余513项不变；默认Bot、规则、模型和历史证书不改，模型二进制本轮不加载或另重哈。
+
+当前网络已有多数收获基础字段，但teacher needs_bonus会在候选生成前排除同株HARVEST。独立规划建议下一阶段仅实现原地甜瓜WATER/HARVEST可选择接口：保留真实任务长度与原候选行为，用虚拟选项避免意外改雇工。另行冻结四公开微场景、最多8官方动作步/8初始化，零推理或训练；该新阶段尚未实施，不增加长窗口归因或PPO。
+
+[结果](evidence/task-harvest-trajectory-v1-result-20261106/RESULTS.zh-CN.md) | [证书](evidence/task-harvest-trajectory-v1-result-20261106/certificate.json) | [独立复核](evidence/task-harvest-trajectory-v1-result-20261106/REVIEW.zh-CN.md) | [下一阶段](evidence/task-harvest-trajectory-v1-result-20261106/NEXT.zh-CN.md)
