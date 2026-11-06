@@ -1312,3 +1312,14 @@ prepare只读41小原件，提交登记 `5df6a27af653ed6396f34118840427facffbcb2
 独立规划建议下一阶段保持原任务和选种两个学生，接入新增候选，先同观测禁用/评分对照，再四场已消费来源完整开发比赛及主复演。不得直接沿用本轮强制教师选种的构造器；预算包含复演和前置推理。历史baseline仅作开发参照，不是同期成对测试或留出。旧教师单标签和四个短窗口差不能直接用作新增收获的监督标签；不自动晋级或启动训练。该下一阶段尚未实施。
 
 [结果](evidence/task-harvest-choice-v1-result-20261106/RESULTS.zh-CN.md) | [证书](evidence/task-harvest-choice-v1-result-20261106/certificate.json) | [独立复核](evidence/task-harvest-choice-v1-result-20261106/REVIEW.zh-CN.md) | [下一阶段](evidence/task-harvest-choice-v1-result-20261106/NEXT.zh-CN.md)
+
+
+## 冻结双模型收获选择：四场完整开发验证（2026-11-06）
+
+登记 `5f5d6bb8e37df9210d1f623ceb5c0c48f71ce2a6`。保持原任务／选种权重，新增成熟甜瓜原地 HARVEST 可选项。维护者与独立子代理各31项纯回归通过；一次准备、一次运行，无重试。四个固定原点的8次控制器与8次评分通过后，4场新完整比赛＋4次官方主复演均720状态、719动作、双方DONE。官方实际动作5,752，环境构造8／初始化12；本方控制器含前置5,760次。
+
+93次新增选择全部对应官方实际收获，共465甜瓜。接口已控制真实完整对局，但策略不晋级：四例相对认证历史baseline的自身净收益变化为+256、−4,790、+951、−4,601，平均−2,046（约−6.40%）；现金差平均−4,867.5，四胜对应新两胜两负。两个market案例为正，两个round2案例明显退步；这是已消费开发案例的历史参照，没有同期重跑baseline或独立留出。
+
+新原件145个／318,604,494字节留在本地；公开只含白名单统计与带盐整体承诺。默认 Bot、冻结教师／权重及历史证据保持，PROGRESS历史字节前缀保留。本轮NumPy CPU推理，无训练／GPU训练，不开新种子面板。下一阶段先验证一次真正selector选择到官方终局回报的四对数据链，不将整局盈亏或旧48步差贴成动作标签。
+
+[结果与限制](evidence/task-harvest-model-dev-v1-result-20261106/RESULTS.zh-CN.md) · [证书](evidence/task-harvest-model-dev-v1-result-20261106/certificate.json) · [独立复核](evidence/task-harvest-model-dev-v1-result-20261106/REVIEW.zh-CN.md) · [下一阶段](evidence/task-harvest-model-dev-v1-result-20261106/NEXT.zh-CN.md)。

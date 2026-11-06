@@ -1,0 +1,167 @@
+{
+  "schema": "task-harvest-model-dev-public-summary-v1",
+  "cases": [
+    {
+      "role": "F01",
+      "cohort": "C01",
+      "opponent": "market",
+      "side": 0,
+      "historical_baseline": {
+        "own": 41930.0,
+        "opponent": 39447.0,
+        "margin": 2483.0,
+        "score": 1.0
+      },
+      "candidate": {
+        "own": 42186.0,
+        "opponent": 39244.0,
+        "margin": 2942.0,
+        "score": 1.0
+      },
+      "delta": {
+        "own": 256.0,
+        "opponent": -203.0,
+        "margin": 459.0,
+        "score": 0.0
+      },
+      "harvest_choice": {
+        "counts": {
+          "callbacks": 2203,
+          "callbacks_with_added_candidates": 23,
+          "added_candidates": 44,
+          "selected_virtual_harvest": 23
+        },
+        "selected_virtual_actual_executions": 23,
+        "selected_virtual_harvested_melon_units": 115,
+        "selected_virtual_execution_status_counts": {
+          "executed": 23
+        }
+      }
+    },
+    {
+      "role": "F02",
+      "cohort": "C01",
+      "opponent": "round2",
+      "side": 1,
+      "historical_baseline": {
+        "own": 29795.0,
+        "opponent": 25985.0,
+        "margin": 3810.0,
+        "score": 1.0
+      },
+      "candidate": {
+        "own": 25005.0,
+        "opponent": 30583.0,
+        "margin": -5578.0,
+        "score": 0.0
+      },
+      "delta": {
+        "own": -4790.0,
+        "opponent": 4598.0,
+        "margin": -9388.0,
+        "score": -1.0
+      },
+      "harvest_choice": {
+        "counts": {
+          "callbacks": 2115,
+          "callbacks_with_added_candidates": 23,
+          "added_candidates": 39,
+          "selected_virtual_harvest": 23
+        },
+        "selected_virtual_actual_executions": 23,
+        "selected_virtual_harvested_melon_units": 115,
+        "selected_virtual_execution_status_counts": {
+          "executed": 23
+        }
+      }
+    },
+    {
+      "role": "F03",
+      "cohort": "C02",
+      "opponent": "market",
+      "side": 1,
+      "historical_baseline": {
+        "own": 27737.0,
+        "opponent": 27463.0,
+        "margin": 274.0,
+        "score": 1.0
+      },
+      "candidate": {
+        "own": 28688.0,
+        "opponent": 27504.0,
+        "margin": 1184.0,
+        "score": 1.0
+      },
+      "delta": {
+        "own": 951.0,
+        "opponent": 41.0,
+        "margin": 910.0,
+        "score": 0.0
+      },
+      "harvest_choice": {
+        "counts": {
+          "callbacks": 2303,
+          "callbacks_with_added_candidates": 23,
+          "added_candidates": 44,
+          "selected_virtual_harvest": 23
+        },
+        "selected_virtual_actual_executions": 23,
+        "selected_virtual_harvested_melon_units": 115,
+        "selected_virtual_execution_status_counts": {
+          "executed": 23
+        }
+      }
+    },
+    {
+      "role": "F04",
+      "cohort": "C02",
+      "opponent": "round2",
+      "side": 0,
+      "historical_baseline": {
+        "own": 28433.0,
+        "opponent": 27774.0,
+        "margin": 659.0,
+        "score": 1.0
+      },
+      "candidate": {
+        "own": 23832.0,
+        "opponent": 34624.0,
+        "margin": -10792.0,
+        "score": 0.0
+      },
+      "delta": {
+        "own": -4601.0,
+        "opponent": 6850.0,
+        "margin": -11451.0,
+        "score": -1.0
+      },
+      "harvest_choice": {
+        "counts": {
+          "callbacks": 2243,
+          "callbacks_with_added_candidates": 24,
+          "added_candidates": 41,
+          "selected_virtual_harvest": 24
+        },
+        "selected_virtual_actual_executions": 24,
+        "selected_virtual_harvested_melon_units": 120,
+        "selected_virtual_execution_status_counts": {
+          "executed": 24
+        }
+      }
+    }
+  ],
+  "games": 4,
+  "official_replays": 4,
+  "case_mean_delta": {
+    "own": -2046.0,
+    "opponent": 2821.5,
+    "margin": -4867.5,
+    "score": -0.5
+  },
+  "comparison": "historical_consumed_development_not_concurrent_paired_or_holdout",
+  "training": false,
+  "gpu": false,
+  "independent_evaluation": false,
+  "statistical_significance": false,
+  "promotion": false
+}

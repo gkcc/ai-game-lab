@@ -1,0 +1,183 @@
+{
+  "schema": "task-harvest-model-dev-public-certificate-v1",
+  "registration_commit": "5f5d6bb8e37df9210d1f623ceb5c0c48f71ce2a6",
+  "base_commit": "bca1eb4b844cef2b407cbb15dff7e546b5ae1920",
+  "scope": "four_consumed_development_games_frozen_dual_model_harvest_choice",
+  "execution_validation_passed": true,
+  "strategy_promoted": false,
+  "execution": {
+    "preparation_exit_code": 0,
+    "registered_run_exit_code": 0,
+    "attempts": 1,
+    "retries": 0,
+    "complete_games": 4,
+    "official_main_replays": 4,
+    "states_per_game": 720,
+    "action_turns_per_game": 719,
+    "both_players_done": true,
+    "agent_errors": 0,
+    "operations": {
+      "live": {
+        "environment_constructions_attempted": 4,
+        "environment_constructions_returned": 4,
+        "resets_attempted": 8,
+        "resets_returned": 8,
+        "official_steps_attempted": 2876,
+        "official_steps_returned": 2876,
+        "actor_calls_attempted": 2876,
+        "actor_calls_returned": 2876,
+        "rival_calls_attempted": 2876,
+        "rival_calls_returned": 2876
+      },
+      "reconstruction": {
+        "actor_calls_attempted": 2876,
+        "actor_calls_returned": 2876,
+        "rival_calls_attempted": 2876,
+        "rival_calls_returned": 2876
+      },
+      "replay": {
+        "environment_constructions_attempted": 4,
+        "environment_constructions_returned": 4,
+        "resets_attempted": 4,
+        "resets_returned": 4,
+        "official_steps_attempted": 2876,
+        "official_steps_returned": 2876
+      }
+    },
+    "new_official_action_transitions": 5752,
+    "environment_constructions": 8,
+    "initializations": 12,
+    "own_controller_calls_including_precheck": 5760,
+    "rival_calls": 5752,
+    "additional_original_parity_trajectories": 0,
+    "total_model_costs_including_precheck": {
+      "crop_forwards": 1604,
+      "task_forwards": 17744,
+      "teacher_proposals": 0,
+      "task_rows": 867406,
+      "crop_rows": 1604,
+      "controller_calls": 5760,
+      "gate_evaluations": 0
+    },
+    "neural_input_rows": 869010,
+    "job_trees_closed": 4,
+    "registered_resource_gates_passed": true,
+    "coordinator_checks_are_cooperative": true,
+    "training_updates": 0,
+    "inference_path": "frozen NumPy CPU models",
+    "gpu_training": false
+  },
+  "precheck": {
+    "points": 4,
+    "controller_attempts": 8,
+    "controller_returns": 8,
+    "standalone_score_attempts": 8,
+    "standalone_score_returns": 8,
+    "actual_model_costs": {
+      "task_forwards": 16,
+      "task_rows": 404,
+      "crop_forwards": 0,
+      "crop_rows": 0,
+      "gate_evaluations": 0,
+      "controller_calls": 8,
+      "teacher_proposals": 0
+    },
+    "accounting_failures": 0,
+    "emission_failures": 0,
+    "disabled_complete_request_core_trace_and_turn_cost_match": true,
+    "historical_cumulative_counts_reconstructed": false,
+    "original_prefix_argmax_same": true,
+    "tolerances": {
+      "atol": 1e-10,
+      "rtol": 1e-10
+    },
+    "max_original_logit_error": 4.263256414560601e-14,
+    "expanded_pool_selected_new": 4
+  },
+  "actual_choice": {
+    "task_callbacks": 8864,
+    "callbacks_with_added_candidates": 93,
+    "added_candidates": 168,
+    "selected_virtual_harvest": 93,
+    "selected_virtual_actual_executions": 93,
+    "selected_virtual_harvested_melon_units": 465,
+    "executed_statuses": 93
+  },
+  "comparison": {
+    "kind": "historical_consumed_development_not_concurrent_paired_or_holdout",
+    "historical_baseline_games": 4,
+    "new_concurrent_baseline_games": 0,
+    "case_mean_delta": {
+      "own": -2046.0,
+      "opponent": 2821.5,
+      "margin": -4867.5,
+      "score": -0.5
+    },
+    "historical_wins": 4,
+    "candidate_wins": 2,
+    "candidate_losses": 2,
+    "statistical_significance_claimed": false,
+    "strategy_improvement_supported": false
+  },
+  "evidence": {
+    "new_original_files": 145,
+    "new_original_bytes": 318604494,
+    "salted_commitment_sha256": "6e4bd7a858454dd7fd673a77a9074bd1efbcf2eb81818c86e396653485335b6c",
+    "witness_outside_inventory": true,
+    "recipe": "sha256(hexdecode(private binding salt) || NUL || UTF8(task-harvest-model-dev-v1) || NUL || json.dumps(witness.files, sort_keys=True, separators=(comma, colon), ensure_ascii=True, allow_nan=False).encode(utf-8))",
+    "files_sorted_by": [
+      "root",
+      "path"
+    ],
+    "raw_replays_traces_logs_and_unit_effects_local_only": true,
+    "maintainer_and_independent_manifest_verification": true
+  },
+  "verification": {
+    "maintainer_focused_regressions": 31,
+    "independent_focused_regressions": 31,
+    "independent_tests_executed_in_batches": true,
+    "skipped": 0,
+    "cold_entry_and_metadata_checks": true,
+    "independent_new_trace_streams": 4,
+    "independent_new_trace_lines": 2876,
+    "independent_new_trace_decoded_bytes": 415065352,
+    "independent_new_trace_compressed_bytes": 36869681,
+    "independent_new_trace_sha_crc_eof": true,
+    "independent_same_forward_argmax_and_request_checks": true,
+    "independent_new_trace_effect_joins": 93,
+    "independent_raw_replay_decodes": 0,
+    "independent_official_or_model_reexecution": false,
+    "new_precheck_private_records_checked": 20,
+    "maintainer_and_independent_public_projection_match": true,
+    "private_canonical_vs_public_pretty_serialization_compared_semantically": true,
+    "disposable_artifacts_created": false
+  },
+  "source_preservation": {
+    "frozen_sources_verified_after_run": 551,
+    "unchanged_registered_sources_after_publication": 550,
+    "append_only_registered_path": "review/PROGRESS.md",
+    "frozen_progress_prefix_preserved": true,
+    "progress_appended_bytes": 1746,
+    "default_unchanged": true,
+    "official_files_verified": 5,
+    "official_rule_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "official_rule_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "used_assets_verified": 5,
+    "used_weight_files_rehashed": 2,
+    "model_weights_modified": false,
+    "frozen_teacher_or_historical_result_modifications": false,
+    "seed_inventory_reads": 0
+  },
+  "privacy": {
+    "raw_replay_log_or_step_state_published": false,
+    "per_unit_inventories_or_private_file_digests_published": false,
+    "private_salts_actual_seeds_weight_paths_or_machine_information_published": false,
+    "public_result_rows_use_explicit_whitelist": true
+  },
+  "public_summary_sha256": "aabdc0afce3b85fe217c911450c7d25591ee7b4ad448690dc2b400a4b38f7c33",
+  "training": false,
+  "gpu_training": false,
+  "independent_holdout": false,
+  "promotion": false,
+  "next_stage_implemented": false
+}
