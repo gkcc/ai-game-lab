@@ -1258,3 +1258,16 @@ Windows 和 WSL 分别通过导入守卫 1 项、训练入口 17 项、Windows �
 新 18 原件 187,746 字节已独立重哈封存，旧 18 原件及承诺由维护者重核不变；四份 selection 原字节保留。469 项登记源码运行后核对，发布只追加本文件，其余 468 项保持。默认 Bot、策略、模型及历史失败不改。下一阶段仅定位同 F01 首事实步，先补异常位置及有界上下文，另行审查冻结后最多一次单步诊断，不直接重跑四点。
 
 [结果与限制](evidence/task-harvest-unexpressed-runtime-v2-result-20261106/RESULTS.zh-CN.md) | [失败封存证书](evidence/task-harvest-unexpressed-runtime-v2-result-20261106/certificate.json) | [独立审查](evidence/task-harvest-unexpressed-runtime-v2-result-20261106/REVIEW.zh-CN.md) | [下一阶段](evidence/task-harvest-unexpressed-runtime-v2-result-20261106/NEXT.zh-CN.md)
+
+
+## 2026-11-06 首事实步定位：官方 Struct 与严格比较器不兼容
+
+登记 `c024d76c64903405905ebe3f8510b88ed42406a0` 后唯一诊断执行完成。实际 F01 在 240 步策略前缀及一次官方转移后，由冻结动作比较器 `_typed:126` 拒绝官方 Struct，静态直接 raise 已保存并独立核实。实际帧与历史期望帧的语义、保序比较均相等；原类型比较仍抛 ValueError，本轮没有修复或绕过它。旧 runtime_v2 记录没有精确位置，不补写旧 traceback。
+
+prepare/preflight/run 退出 0 仅指诊断验收；原 case 仍失败，0 完整窗口、0 配对、0 干预，无收益结论。任务前向 697 次、选种前向 86 次均为 CPU 推理；仅新增 1 次官方 step，上轮 1 次仍保留计费。241 行 gzip 为起点加前缀，无 suffix。父子消费者各核旧 trace 719 行；独立审查未再读旧 trace 或 Replay。Job 和 launcher 回收，无资源或清理异常。
+
+维护者 19 项回归、独立 18 项入口／纯回归通过，零跳过。新 18 原件共 246,642 字节由双方重哈封存；维护者另核上轮 18 原件与承诺不变。484 项源码运行后一致，发布只追加本文件，其余 483 项不变。默认 Bot、冻结策略、模型、规则和历史结果保留；无新种子、新比赛、训练或 GPU。
+
+下一有界阶段只做确切官方 Struct 的比较副本适配，保留标量类型及订单／库存顺序门；局部编译冻结 core，避免污染共享 globals。原样继承四点，在 F01 首事实步验收后才续行，最多 384 官方转移，无新增探针或自动重试。本轮仅给出计划，尚未实施兼容修复。
+
+[结果](evidence/task-harvest-first-step-diagnostic-v1-result-20261106/RESULTS.zh-CN.md) | [证书](evidence/task-harvest-first-step-diagnostic-v1-result-20261106/certificate.json) | [独立复核](evidence/task-harvest-first-step-diagnostic-v1-result-20261106/REVIEW.zh-CN.md) | [下一阶段](evidence/task-harvest-first-step-diagnostic-v1-result-20261106/NEXT.zh-CN.md)

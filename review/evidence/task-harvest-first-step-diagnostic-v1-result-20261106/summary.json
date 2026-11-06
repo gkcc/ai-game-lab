@@ -1,0 +1,180 @@
+{
+  "schema": "task-harvest-first-step-diagnostic-public-summary-v1",
+  "registration_commit": "c024d76c64903405905ebe3f8510b88ed42406a0",
+  "scope": "one_consumed_frozen_F01_first_factual_step_diagnostic",
+  "preparation": {
+    "exit_code": 0,
+    "copied_roles": 1,
+    "authenticated_prior_failed_originals": 18,
+    "completed_source_receipts": 32,
+    "trace_rows_read": 0,
+    "replay_decodes": 0,
+    "target_reselection": false
+  },
+  "preflight": {
+    "exit_code": 0,
+    "source_games_authenticated": 32,
+    "model_forwards": 0,
+    "official_transitions": 0
+  },
+  "run": {
+    "exit_code": 0,
+    "outcome": "diagnostic_complete",
+    "elapsed_seconds": 199.891,
+    "accepted_diagnostics": 1,
+    "accepted_pairs": 0,
+    "original_case_passed": false,
+    "original_case_status": "failed",
+    "original_error_kind": "invalid",
+    "retry_allowed": false
+  },
+  "diagnostic": {
+    "passed": true,
+    "status": "diagnostic_collected",
+    "outcome": "located_original_error",
+    "error_id": "STATIC_eb5d37bb2b6c6eaf48d5",
+    "location_kind": "direct_raise",
+    "location": {
+      "path": "kaggriculture/learning/task_request_gate_v1/policy.py",
+      "source_sha256": "d6844737c962a90f54414a8efbfe637b5fd314cdbd277ec3d13f26fdb81c0b1a",
+      "function": "_typed",
+      "line": 126
+    },
+    "rejected_value_kind": "official_Struct",
+    "comparison": {
+      "semantic_frame_equal": true,
+      "ordered_frame_equal": true,
+      "original_type_request_check": {
+        "outcome": "raises",
+        "error_kind": "ValueError"
+      },
+      "accepted_action_container_kind": "official_Struct"
+    }
+  },
+  "meter": {
+    "calls": {
+      "arm_attempts": 1,
+      "actor_construct_attempts": 1,
+      "actor_construct_returns": 1,
+      "rival_construct_attempts": 1,
+      "rival_construct_returns": 1,
+      "actor_attempts": 241,
+      "prefix_actor_attempts": 240,
+      "actor_returns": 241,
+      "prefix_actor_returns": 240,
+      "rival_attempts": 241,
+      "prefix_rival_attempts": 240,
+      "rival_returns": 241,
+      "prefix_rival_returns": 240,
+      "restore_attempts": 1,
+      "restore_returns": 1,
+      "suffix_actor_attempts": 1,
+      "suffix_actor_returns": 1,
+      "suffix_rival_attempts": 1,
+      "suffix_rival_returns": 1,
+      "official_step_attempts": 1,
+      "suffix_official_step_attempts": 1,
+      "official_step_returns": 1,
+      "suffix_official_step_returns": 1
+    },
+    "budget_by_scope": {
+      "prefix": {
+        "gate_evaluations": 0,
+        "task_forwards": 696,
+        "crop_forwards": 86,
+        "crop_rows": 86,
+        "teacher_proposals": 0,
+        "task_rows": 30548,
+        "controller_calls": 240
+      },
+      "suffix": {
+        "gate_evaluations": 0,
+        "task_forwards": 1,
+        "crop_forwards": 0,
+        "crop_rows": 0,
+        "teacher_proposals": 0,
+        "task_rows": 25,
+        "controller_calls": 1
+      }
+    },
+    "unknown_budget_observations": 0,
+    "counter_scope": "original budget charges; call attempts and returns separately",
+    "diagnostic_cap_refusals": 0
+  },
+  "events": {
+    "compressed_bytes": 34709,
+    "decoded_bytes": 273588,
+    "lines": 241,
+    "arm_start": 1,
+    "prefix_turns": 240,
+    "suffix_turns": 0,
+    "arm_end": 0,
+    "crc_and_eof_verified": true
+  },
+  "local_context": {
+    "case_bytes": 64148,
+    "encoded_context_bytes": 58458,
+    "context_limit_bytes": 393216,
+    "case_reserved_bytes": 1048576,
+    "actual_frame_retained_locally": true,
+    "one_historical_expected_frame_retained_locally": true,
+    "agent_receives_expected_frame": false,
+    "public_context_published": false
+  },
+  "trace_consumption": {
+    "execution_rows": 241,
+    "execution_complete": false,
+    "execution_stream_closed": true,
+    "child_verification_rows": 719,
+    "parent_verification_rows": 719,
+    "verification_full_eof": true,
+    "independent_reviewer_reread_old_trace_or_replay": false
+  },
+  "supervision": {
+    "passed": true,
+    "assigned": true,
+    "resumed": true,
+    "launcher_reaped": true,
+    "job_members_zero": true,
+    "stop_reason": null,
+    "exit_code": 0,
+    "error_kind": null,
+    "cleanup_error_kind": null,
+    "termination_error_kind": null,
+    "wait_error_kind": null,
+    "membership_error_kind": null,
+    "close_error_kind": null,
+    "acceptance_error_kind": null,
+    "peak_sampled_rss_bytes": 204881920,
+    "peak_sampled_job_commit_bytes": 224301056,
+    "rss_sampling_attempts": 118,
+    "rss_sampling_retries": 4,
+    "rss_complete_samples": 114,
+    "rss_discarded_samples": 4
+  },
+  "output_budget": {
+    "limit_bytes": 133169152,
+    "used_bytes": 34709,
+    "remaining_bytes": 133134443,
+    "refused": 0,
+    "created_count": 1
+  },
+  "prior_attempt_accounting": {
+    "runtime_v2_official_steps_retained": 1,
+    "this_diagnostic_official_steps": 1,
+    "combined_official_steps": 2,
+    "new_step_is_not_a_free_retry": true
+  },
+  "full_horizon_verified": false,
+  "accepted_pairs": 0,
+  "economic_value_evaluated": false,
+  "window_cash_deltas": null,
+  "minimum_label_signal": null,
+  "training": false,
+  "gpu": false,
+  "new_seeds": false,
+  "new_complete_games": 0,
+  "independent_holdout": false,
+  "policy_promotion": false,
+  "comparator_repaired": false
+}
