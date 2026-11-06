@@ -1,0 +1,142 @@
+{
+  "schema": "task-harvest-return-pairs-public-summary-v1",
+  "cases": [
+    {
+      "role": "F01",
+      "cohort": "C01",
+      "opponent": "market",
+      "side": 0,
+      "status": "paired",
+      "paired": true,
+      "returns": {
+        "H": {
+          "own_net_profit": 42186.0,
+          "opponent_net_profit": 39244.0,
+          "margin": 2942.0,
+          "score": 1.0
+        },
+        "W": {
+          "own_net_profit": 42160.0,
+          "opponent_net_profit": 39324.0,
+          "margin": 2836.0,
+          "score": 1.0
+        },
+        "H_minus_W": {
+          "own_net_profit": 26.0,
+          "opponent_net_profit": -80.0,
+          "margin": 106.0,
+          "score": 0.0
+        },
+        "objective_conflict": false,
+        "margin_sign": 1,
+        "own_profit_sign": 1,
+        "interpretation": "fixed continuation policy and opponent; pilot targets, not optimal action values"
+      }
+    },
+    {
+      "role": "F02",
+      "cohort": "C01",
+      "opponent": "round2",
+      "side": 1,
+      "status": "paired",
+      "paired": true,
+      "returns": {
+        "H": {
+          "own_net_profit": 25005.0,
+          "opponent_net_profit": 30583.0,
+          "margin": -5578.0,
+          "score": 0.0
+        },
+        "W": {
+          "own_net_profit": 33132.0,
+          "opponent_net_profit": 22863.0,
+          "margin": 10269.0,
+          "score": 1.0
+        },
+        "H_minus_W": {
+          "own_net_profit": -8127.0,
+          "opponent_net_profit": 7720.0,
+          "margin": -15847.0,
+          "score": -1.0
+        },
+        "objective_conflict": false,
+        "margin_sign": -1,
+        "own_profit_sign": -1,
+        "interpretation": "fixed continuation policy and opponent; pilot targets, not optimal action values"
+      }
+    },
+    {
+      "role": "F03",
+      "cohort": "C02",
+      "opponent": "market",
+      "side": 1,
+      "status": "paired",
+      "paired": true,
+      "returns": {
+        "H": {
+          "own_net_profit": 28688.0,
+          "opponent_net_profit": 27504.0,
+          "margin": 1184.0,
+          "score": 1.0
+        },
+        "W": {
+          "own_net_profit": 28764.0,
+          "opponent_net_profit": 27419.0,
+          "margin": 1345.0,
+          "score": 1.0
+        },
+        "H_minus_W": {
+          "own_net_profit": -76.0,
+          "opponent_net_profit": 85.0,
+          "margin": -161.0,
+          "score": 0.0
+        },
+        "objective_conflict": false,
+        "margin_sign": -1,
+        "own_profit_sign": -1,
+        "interpretation": "fixed continuation policy and opponent; pilot targets, not optimal action values"
+      }
+    },
+    {
+      "role": "F04",
+      "cohort": "C02",
+      "opponent": "round2",
+      "side": 0,
+      "status": "paired",
+      "paired": true,
+      "returns": {
+        "H": {
+          "own_net_profit": 23832.0,
+          "opponent_net_profit": 34624.0,
+          "margin": -10792.0,
+          "score": 0.0
+        },
+        "W": {
+          "own_net_profit": 31230.0,
+          "opponent_net_profit": 26956.0,
+          "margin": 4274.0,
+          "score": 1.0
+        },
+        "H_minus_W": {
+          "own_net_profit": -7398.0,
+          "opponent_net_profit": 7668.0,
+          "margin": -15066.0,
+          "score": -1.0
+        },
+        "objective_conflict": false,
+        "margin_sign": -1,
+        "own_profit_sign": -1,
+        "interpretation": "fixed continuation policy and opponent; pilot targets, not optimal action values"
+      }
+    }
+  ],
+  "completed_pairs": 4,
+  "four_pair_data_chain_passed": true,
+  "training": false,
+  "gpu_training": false,
+  "new_seeds": false,
+  "independent_holdout": false,
+  "promotion": false,
+  "statistical_significance": false,
+  "scope": "policy-conditioned single-selector terminal-return data pilot; not a trained candidate evaluation"
+}
