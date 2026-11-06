@@ -1299,3 +1299,16 @@ prepare只读41小原件，提交登记 `5df6a27af653ed6396f34118840427facffbcb2
 当前网络已有多数收获基础字段，但teacher needs_bonus会在候选生成前排除同株HARVEST。独立规划建议下一阶段仅实现原地甜瓜WATER/HARVEST可选择接口：保留真实任务长度与原候选行为，用虚拟选项避免意外改雇工。另行冻结四公开微场景、最多8官方动作步/8初始化，零推理或训练；该新阶段尚未实施，不增加长窗口归因或PPO。
 
 [结果](evidence/task-harvest-trajectory-v1-result-20261106/RESULTS.zh-CN.md) | [证书](evidence/task-harvest-trajectory-v1-result-20261106/certificate.json) | [独立复核](evidence/task-harvest-trajectory-v1-result-20261106/REVIEW.zh-CN.md) | [下一阶段](evidence/task-harvest-trajectory-v1-result-20261106/NEXT.zh-CN.md)
+
+
+## 2026-11-06 原地甜瓜收获选择接口完成：八次官方执行通过，尚未接入权重
+
+登记 `c4b60e5aad32406755c7570f4dee576ade16743c` 推送并验证远端后，唯一run退出0。四公开构造场景各WATER/HARVEST一步：8初始化、8动作转移、6显式Agent selector、2直接无效果边界、8原件写入，无重试。成熟甜瓜WATER使产量5→6，HARVEST实际收获5并移株；仓满低价仍可表达收获，未成熟不新增收获、已有HARVEST不重复加入。所有场景现金变化0，不是经济收益证据或完整Replay。
+
+新适配器保留原候选前缀和共享输入，通过同长度影子任务产生虚拟项，只有选中才替换真实WATER槽，原控制器继续消费／认领。维护者和独立子代理各通过12项纯回归；非空采购雇工、资源预留、单地块冲突、私有过滤与跨局隔离覆盖。独立从八条原始状态/原子trace重算公开结果一致，准备/尝试/结果/闭合链完整。
+
+14新原件726,045字节封存，外置清单与加盐承诺双方核对一致。530冻结来源运行后保持；发布仅追加本文件、其余529项不改。默认Bot、固定官方规则、模型和历史结果保持；本轮零权重读取、推理、训练、新完整比赛或旧轨迹读取。
+
+独立规划建议下一阶段保持原任务和选种两个学生，接入新增候选，先同观测禁用/评分对照，再四场已消费来源完整开发比赛及主复演。不得直接沿用本轮强制教师选种的构造器；预算包含复演和前置推理。历史baseline仅作开发参照，不是同期成对测试或留出。旧教师单标签和四个短窗口差不能直接用作新增收获的监督标签；不自动晋级或启动训练。该下一阶段尚未实施。
+
+[结果](evidence/task-harvest-choice-v1-result-20261106/RESULTS.zh-CN.md) | [证书](evidence/task-harvest-choice-v1-result-20261106/certificate.json) | [独立复核](evidence/task-harvest-choice-v1-result-20261106/REVIEW.zh-CN.md) | [下一阶段](evidence/task-harvest-choice-v1-result-20261106/NEXT.zh-CN.md)
