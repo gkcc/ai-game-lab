@@ -1,0 +1,474 @@
+{
+  "schema": "task-harvest-quantile-pairs-public-certificate-v1",
+  "registration_commit": "8ee7327afe0c92698d5ccfee716817c54921e76b",
+  "base_commit": "8b7949b4ca29e3c2492cc01216d8391ecc7a2a1d",
+  "execution_local_date": "2026-11-07",
+  "registration_was_local_before_execution": true,
+  "third_party_timestamp_claim": false,
+  "execution_validation_passed": true,
+  "independent_event_and_global_metadata_review_passed": true,
+  "independent_new_inventory_verified": true,
+  "new_only_statistics": {
+    "points": 12,
+    "source_groups": 4,
+    "W_minus_H_own": {
+      "mean": 507.25,
+      "median": 15.0,
+      "minimum": -976.0,
+      "maximum": 4877.0
+    },
+    "W_minus_H_margin": {
+      "mean": 1243.6666666666667,
+      "median": 29.5,
+      "minimum": -174.0,
+      "maximum": 9390.0
+    },
+    "H_own_mean": 29927.75,
+    "W_own_mean": 30435.0,
+    "water_better_own": 8,
+    "harvest_better_own": 4,
+    "equal_own": 0,
+    "loss_to_win": 1,
+    "win_to_loss": 0,
+    "outcome_unchanged": 11,
+    "objective_conflicts": 0
+  },
+  "per_origin_new_only": {
+    "F01": {
+      "points": 3,
+      "source_groups": 1,
+      "W_minus_H_own": {
+        "mean": -27.0,
+        "median": -25.0,
+        "minimum": -79.0,
+        "maximum": 23.0
+      },
+      "W_minus_H_margin": {
+        "mean": -58.666666666666664,
+        "median": -25.0,
+        "minimum": -174.0,
+        "maximum": 23.0
+      },
+      "H_own_mean": 42186.0,
+      "W_own_mean": 42159.0,
+      "water_better_own": 1,
+      "harvest_better_own": 2,
+      "equal_own": 0,
+      "loss_to_win": 0,
+      "win_to_loss": 0,
+      "outcome_unchanged": 3,
+      "objective_conflicts": 0
+    },
+    "F02": {
+      "points": 3,
+      "source_groups": 1,
+      "W_minus_H_own": {
+        "mean": 1888.0,
+        "median": 786.0,
+        "minimum": 1.0,
+        "maximum": 4877.0
+      },
+      "W_minus_H_margin": {
+        "mean": 3632.6666666666665,
+        "median": 1507.0,
+        "minimum": 1.0,
+        "maximum": 9390.0
+      },
+      "H_own_mean": 25005.0,
+      "W_own_mean": 26893.0,
+      "water_better_own": 3,
+      "harvest_better_own": 0,
+      "equal_own": 0,
+      "loss_to_win": 1,
+      "win_to_loss": 0,
+      "outcome_unchanged": 2,
+      "objective_conflicts": 0
+    },
+    "F03": {
+      "points": 3,
+      "source_groups": 1,
+      "W_minus_H_own": {
+        "mean": -622.6666666666666,
+        "median": -911.0,
+        "minimum": -976.0,
+        "maximum": 19.0
+      },
+      "W_minus_H_margin": {
+        "mean": -57.0,
+        "median": -67.0,
+        "minimum": -140.0,
+        "maximum": 36.0
+      },
+      "H_own_mean": 28688.0,
+      "W_own_mean": 28065.333333333332,
+      "water_better_own": 1,
+      "harvest_better_own": 2,
+      "equal_own": 0,
+      "loss_to_win": 0,
+      "win_to_loss": 0,
+      "outcome_unchanged": 3,
+      "objective_conflicts": 0
+    },
+    "F04": {
+      "points": 3,
+      "source_groups": 1,
+      "W_minus_H_own": {
+        "mean": 790.6666666666666,
+        "median": 583.0,
+        "minimum": 11.0,
+        "maximum": 1778.0
+      },
+      "W_minus_H_margin": {
+        "mean": 1457.6666666666667,
+        "median": 573.0,
+        "minimum": 57.0,
+        "maximum": 3743.0
+      },
+      "H_own_mean": 23832.0,
+      "W_own_mean": 24622.666666666668,
+      "water_better_own": 3,
+      "harvest_better_own": 0,
+      "equal_own": 0,
+      "loss_to_win": 0,
+      "win_to_loss": 0,
+      "outcome_unchanged": 3,
+      "objective_conflicts": 0
+    }
+  },
+  "new_points": [
+    {
+      "point": "F01-Q1",
+      "step": 246,
+      "ordinal": 0,
+      "W_minus_H_own_net_profit": -79.0,
+      "W_minus_H_opponent_net_profit": 95.0,
+      "W_minus_H_margin": -174.0,
+      "W_minus_H_score": -0.0
+    },
+    {
+      "point": "F01-Q2",
+      "step": 248,
+      "ordinal": 2,
+      "W_minus_H_own_net_profit": -25.0,
+      "W_minus_H_opponent_net_profit": -0.0,
+      "W_minus_H_margin": -25.0,
+      "W_minus_H_score": -0.0
+    },
+    {
+      "point": "F01-Q3",
+      "step": 276,
+      "ordinal": 0,
+      "W_minus_H_own_net_profit": 23.0,
+      "W_minus_H_opponent_net_profit": -0.0,
+      "W_minus_H_margin": 23.0,
+      "W_minus_H_score": -0.0
+    },
+    {
+      "point": "F02-Q1",
+      "step": 246,
+      "ordinal": 0,
+      "W_minus_H_own_net_profit": 786.0,
+      "W_minus_H_opponent_net_profit": -721.0,
+      "W_minus_H_margin": 1507.0,
+      "W_minus_H_score": -0.0
+    },
+    {
+      "point": "F02-Q2",
+      "step": 249,
+      "ordinal": 0,
+      "W_minus_H_own_net_profit": 4877.0,
+      "W_minus_H_opponent_net_profit": -4513.0,
+      "W_minus_H_margin": 9390.0,
+      "W_minus_H_score": 1.0
+    },
+    {
+      "point": "F02-Q3",
+      "step": 275,
+      "ordinal": 0,
+      "W_minus_H_own_net_profit": 1.0,
+      "W_minus_H_opponent_net_profit": -0.0,
+      "W_minus_H_margin": 1.0,
+      "W_minus_H_score": -0.0
+    },
+    {
+      "point": "F03-Q1",
+      "step": 246,
+      "ordinal": 0,
+      "W_minus_H_own_net_profit": -911.0,
+      "W_minus_H_opponent_net_profit": -844.0,
+      "W_minus_H_margin": -67.0,
+      "W_minus_H_score": -0.0
+    },
+    {
+      "point": "F03-Q2",
+      "step": 248,
+      "ordinal": 2,
+      "W_minus_H_own_net_profit": -976.0,
+      "W_minus_H_opponent_net_profit": -836.0,
+      "W_minus_H_margin": -140.0,
+      "W_minus_H_score": -0.0
+    },
+    {
+      "point": "F03-Q3",
+      "step": 260,
+      "ordinal": 1,
+      "W_minus_H_own_net_profit": 19.0,
+      "W_minus_H_opponent_net_profit": -17.0,
+      "W_minus_H_margin": 36.0,
+      "W_minus_H_score": -0.0
+    },
+    {
+      "point": "F04-Q1",
+      "step": 246,
+      "ordinal": 0,
+      "W_minus_H_own_net_profit": 583.0,
+      "W_minus_H_opponent_net_profit": 10.0,
+      "W_minus_H_margin": 573.0,
+      "W_minus_H_score": -0.0
+    },
+    {
+      "point": "F04-Q2",
+      "step": 249,
+      "ordinal": 1,
+      "W_minus_H_own_net_profit": 1778.0,
+      "W_minus_H_opponent_net_profit": -1965.0,
+      "W_minus_H_margin": 3743.0,
+      "W_minus_H_score": -0.0
+    },
+    {
+      "point": "F04-Q3",
+      "step": 480,
+      "ordinal": 0,
+      "W_minus_H_own_net_profit": 11.0,
+      "W_minus_H_opponent_net_profit": -46.0,
+      "W_minus_H_margin": 57.0,
+      "W_minus_H_score": -0.0
+    }
+  ],
+  "selection": {
+    "new_points": 12,
+    "old_references_only": 4,
+    "source_games": 4,
+    "consumed_seed_clusters": 4,
+    "missing_or_replaced_points": 0,
+    "source_scans_in_preparation": 4,
+    "new_target_step_range": [
+      246,
+      480
+    ],
+    "new_callback_ordinals": [
+      0,
+      1,
+      2
+    ],
+    "intervention": "one selector choice H=original HARVEST, W=WATER; then same frozen policies for both players",
+    "individual_returns_must_not_be_added_to_infer_combined_policy": true
+  },
+  "execution": {
+    "analysis_feature_rows": 32,
+    "environment_constructions": 24,
+    "execution_source_replay_decodes": 12,
+    "explicit_resets": 0,
+    "gpu_training": false,
+    "model_costs": {
+      "controller_calls": 17256,
+      "crop_forwards": 4864,
+      "crop_rows": 4864,
+      "gate_evaluations": 0,
+      "task_forwards": 53189,
+      "task_rows": 2598096,
+      "teacher_proposals": 0
+    },
+    "official_actions": 10718,
+    "paired": 12,
+    "reconstructed_replays": 24,
+    "restores": 24,
+    "rival_calls": 17256,
+    "source_trace_scans": 24,
+    "terminal_suffixes": 24,
+    "total_input_rows_including_analysis": 2602992,
+    "training": false,
+    "verification_reconstructed_replay_decodes": 24,
+    "verification_source_replay_decodes": 12,
+    "operations": {
+      "actor_attempts": 17256,
+      "actor_construct_attempts": 24,
+      "actor_construct_returns": 24,
+      "actor_returns": 17256,
+      "arm_attempts": 24,
+      "arm_returns": 24,
+      "environment_construct_attempts": 24,
+      "environment_construct_returns": 24,
+      "environment_reset_attempts": 0,
+      "environment_reset_returns": 0,
+      "official_step_attempts": 10718,
+      "official_step_returns": 10718,
+      "prefix_actor_attempts": 6538,
+      "prefix_actor_returns": 6538,
+      "prefix_rival_attempts": 6538,
+      "prefix_rival_returns": 6538,
+      "restore_attempts": 24,
+      "restore_returns": 24,
+      "rival_attempts": 17256,
+      "rival_construct_attempts": 24,
+      "rival_construct_returns": 24,
+      "rival_returns": 17256,
+      "suffix_actor_attempts": 10718,
+      "suffix_actor_returns": 10718,
+      "suffix_official_step_attempts": 10718,
+      "suffix_official_step_returns": 10718,
+      "suffix_rival_attempts": 10718,
+      "suffix_rival_returns": 10718,
+      "trace_close_attempts": 24,
+      "trace_close_returns": 24,
+      "trace_open_attempts": 24,
+      "trace_open_returns": 24
+    },
+    "registered_run_exit_code": 0,
+    "attempts": 1,
+    "retries": 0,
+    "complete_from_zero_games": 0,
+    "extra_official_replays": 0,
+    "terminal_state_step": 719,
+    "all_players_done": true,
+    "agent_errors": 0,
+    "H_overrides": 0,
+    "W_overrides": 12,
+    "factual_source_request_and_trace_turns": 8628,
+    "factual_full_state_suffix_frames": 5371,
+    "export_states_per_replay": 720,
+    "job_trees_closed": 12,
+    "elapsed_seconds": 3798.2820000000065,
+    "registered_resource_gates_passed": true,
+    "coordinator_checks_are_cooperative": true,
+    "training_updates": 0,
+    "inference_path": "frozen NumPy CPU models",
+    "counter_scope": "original charged forward budget, not a separate successful-network-return counter"
+  },
+  "analysis": {
+    "normalization_loads_attempted": 1,
+    "normalization_loads_returned": 1,
+    "feature_rows_requested": 32,
+    "feature_rows_completed": 32,
+    "model_forwards": 0,
+    "model_constructions": 0,
+    "reference_samples_read": 4,
+    "new_samples_read": 12,
+    "scope": "extra offline diagnostic only; excludes normal frozen-policy model loading",
+    "total_input_rows_including_analysis": 2602992,
+    "retained_points": 16,
+    "deleted_points": 0,
+    "reassigned_points": 0,
+    "exact_unique_encodings": {
+      "full_input": 16,
+      "raw_pair": 16,
+      "deployed_pair": 16
+    },
+    "farmer_points": 8,
+    "hand_points": 8,
+    "unique_source_units": 12,
+    "training_admission": false,
+    "independent_normalization_recalculation": false,
+    "independent_boundary": "fixed code, identity, receipts and saved fingerprint grouping; no second NPZ normalization load"
+  },
+  "evidence": {
+    "new_original_files": 162,
+    "new_original_bytes": 228167836,
+    "root_file_counts": {
+      "private": 29,
+      "stage": 133
+    },
+    "salted_commitment_sha256": "4815dbe3a05404ca1afad5a5626ff875511973806105f905587f10680ecb7776",
+    "witness_outside_inventory": true,
+    "recipe": "sha256(hexdecode(private binding salt) || NUL || UTF8(task-harvest-quantile-pairs-v1) || NUL || json.dumps(witness.files, sort_keys=True, separators=(comma, colon), ensure_ascii=True, allow_nan=False).encode(utf-8))",
+    "files_sorted_by": [
+      "root",
+      "path"
+    ],
+    "raw_replays_events_samples_and_logs_local_only": true
+  },
+  "verification": {
+    "independent_event_review": {
+      "complete_new_event_stream_scans": 12,
+      "compressed_bytes": 208172902,
+      "decoded_bytes": 1821030726,
+      "environment_constructions_in_evidence": 24,
+      "event_rows": 17304,
+      "exceptions": 0,
+      "explicit_resets_in_evidence": 0,
+      "exports_hashed_only": 24,
+      "forbidden_read_attempts": 0,
+      "interrupted_new_event_stream_scans": 0,
+      "job_members_zero": 12,
+      "job_supervision_passed": 12,
+      "model_calls": 0,
+      "official_reruns": 0,
+      "official_steps_in_evidence": 10718,
+      "old_trace_decodes": 0,
+      "own_controller_calls_in_evidence": 17256,
+      "replay_decodes": 0,
+      "rival_controller_calls_in_evidence": 17256,
+      "weight_reads": 0
+    },
+    "independent_target_effect_checks": 24,
+    "all_H_actual_harvest_quantity": 5,
+    "all_W_actual_yield_before_after": [
+      5,
+      6
+    ],
+    "pre_registration_maintainer_focused_regressions": 29,
+    "pre_registration_independent_distinct_focused_regressions": 29,
+    "independent_frozen_regressions_ran_in_batches": true,
+    "current_execution_reran_unchanged_tests": false,
+    "skipped_frozen_tests": 0,
+    "current_source_identity_revalidated": true,
+    "independent_global_metadata_launch_rejections": 1,
+    "launch_rejection_reason": "command length limit; no process or evidence read; shortened invocation succeeded",
+    "maintainer_metadata_inspection_adaptations": 1,
+    "publication_draft_tool_parse_rejections": 1,
+    "source_full_state_comparison_boundary": "registered core and parent verifier; independent new-event review did not re-decode original Replay",
+    "independent_replay_decodes": 0,
+    "independent_old_trace_decodes": 0,
+    "extra_model_or_official_execution": 0,
+    "independent_mean_scale_reloads": 0,
+    "independent_prior_original_rehash": false,
+    "public_external_full_reproduction_requires_local_private_artifacts": true,
+    "disposable_artifacts_created": false
+  },
+  "source_preservation": {
+    "frozen_sources_verified_after_run": 593,
+    "unchanged_registered_sources_after_publication": 592,
+    "append_only_registered_path": "review/PROGRESS.md",
+    "frozen_progress_prefix_preserved": true,
+    "progress_appended_bytes": 1693,
+    "prior_original_files_rehashed_by_maintainer": 210,
+    "prior_original_bytes_rehashed_by_maintainer": 401287027,
+    "prior_salted_commitments": [
+      "6e4bd7a858454dd7fd673a77a9074bd1efbcf2eb81818c86e396653485335b6c",
+      "2cda99e072d723d24ab6e70a9270e709fcbb14b4bfd6c0faa5b7e25cffceba36"
+    ],
+    "default_unchanged": true,
+    "bound_assets_verified": 5,
+    "used_weights_rehashed_not_reloaded_in_postrun_check": 2,
+    "official_files_verified": 5,
+    "official_rule_commit": "f994f2050d58d84f649329c1e35ce09ada7007c5",
+    "official_rule_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+    "model_weights_modified": false,
+    "frozen_teacher_or_historical_result_modifications": false
+  },
+  "privacy": {
+    "public_results_use_explicit_whitelists": true,
+    "raw_replay_log_or_step_state_published": false,
+    "private_salts_actual_seeds_fingerprints_weights_paths_or_machine_information_published": false,
+    "publication_requires_exact_index_and_full_outgoing_change_privacy_checks": true
+  },
+  "public_summary_sha256": "141320f32b6258fe09d6dc4de6652544895527779227203a729ca7d57acd5c04",
+  "public_feature_summary_sha256": "c7080a542376c31335fd0d141afa2cc13e01769e422893f45b4ccf08d4b4682c",
+  "training": false,
+  "gpu_training": false,
+  "independent_holdout": false,
+  "statistical_significance": false,
+  "promotion": false,
+  "next_stage_started": false,
+  "stop_after_publication": true
+}

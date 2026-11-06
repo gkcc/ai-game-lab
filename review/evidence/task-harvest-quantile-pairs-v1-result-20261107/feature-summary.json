@@ -1,0 +1,680 @@
+{
+  "schema": "task-harvest-quantile-feature-summary-v1",
+  "counts": {
+    "complete_points": 16,
+    "encoded_hw_rows": 32,
+    "model_constructions": 0,
+    "model_forwards": 0,
+    "retained_points": 16,
+    "dropped_points": 0,
+    "reassigned_points": 0,
+    "source_origins": 4,
+    "seed_clusters": 4,
+    "normalization_schema_checked": true
+  },
+  "overall": {
+    "samples": 16,
+    "origins": 4,
+    "seed_clusters": 4,
+    "step_range": [
+      240,
+      480
+    ],
+    "unit_count_range": [
+      1,
+      8
+    ],
+    "unique_source_units": 12,
+    "target_unit_roles": {
+      "farmer": 8,
+      "hand": 8
+    },
+    "margin_direction": {
+      "positive": 5,
+      "negative": 11,
+      "zero": 0
+    },
+    "own_profit_direction": {
+      "positive": 5,
+      "negative": 11,
+      "zero": 0
+    },
+    "margin_delta": {
+      "mean": -2868.25,
+      "mean_absolute": 2932.25,
+      "minimum": -15847.0,
+      "maximum": 174.0
+    },
+    "own_profit_delta": {
+      "mean": -1353.875,
+      "mean_absolute": 1606.0,
+      "minimum": -8127.0,
+      "maximum": 976.0
+    },
+    "within_pair_objective_conflicts": 0
+  },
+  "per_origin": {
+    "F01": {
+      "samples": 4,
+      "origins": 1,
+      "seed_clusters": 1,
+      "step_range": [
+        240,
+        276
+      ],
+      "unit_count_range": [
+        1,
+        8
+      ],
+      "unique_source_units": 4,
+      "target_unit_roles": {
+        "farmer": 1,
+        "hand": 3
+      },
+      "margin_direction": {
+        "positive": 3,
+        "negative": 1,
+        "zero": 0
+      },
+      "own_profit_direction": {
+        "positive": 3,
+        "negative": 1,
+        "zero": 0
+      },
+      "margin_delta": {
+        "mean": 70.5,
+        "mean_absolute": 82.0,
+        "minimum": -23.0,
+        "maximum": 174.0
+      },
+      "own_profit_delta": {
+        "mean": 26.75,
+        "mean_absolute": 38.25,
+        "minimum": -23.0,
+        "maximum": 79.0
+      },
+      "within_pair_objective_conflicts": 0
+    },
+    "F02": {
+      "samples": 4,
+      "origins": 1,
+      "seed_clusters": 1,
+      "step_range": [
+        240,
+        275
+      ],
+      "unit_count_range": [
+        1,
+        8
+      ],
+      "unique_source_units": 3,
+      "target_unit_roles": {
+        "farmer": 2,
+        "hand": 2
+      },
+      "margin_direction": {
+        "positive": 0,
+        "negative": 4,
+        "zero": 0
+      },
+      "own_profit_direction": {
+        "positive": 0,
+        "negative": 4,
+        "zero": 0
+      },
+      "margin_delta": {
+        "mean": -6686.25,
+        "mean_absolute": 6686.25,
+        "minimum": -15847.0,
+        "maximum": -1.0
+      },
+      "own_profit_delta": {
+        "mean": -3447.75,
+        "mean_absolute": 3447.75,
+        "minimum": -8127.0,
+        "maximum": -1.0
+      },
+      "within_pair_objective_conflicts": 0
+    },
+    "F03": {
+      "samples": 4,
+      "origins": 1,
+      "seed_clusters": 1,
+      "step_range": [
+        240,
+        260
+      ],
+      "unit_count_range": [
+        1,
+        8
+      ],
+      "unique_source_units": 3,
+      "target_unit_roles": {
+        "farmer": 2,
+        "hand": 2
+      },
+      "margin_direction": {
+        "positive": 2,
+        "negative": 2,
+        "zero": 0
+      },
+      "own_profit_direction": {
+        "positive": 2,
+        "negative": 2,
+        "zero": 0
+      },
+      "margin_delta": {
+        "mean": 2.5,
+        "mean_absolute": 101.0,
+        "minimum": -161.0,
+        "maximum": 140.0
+      },
+      "own_profit_delta": {
+        "mean": 448.0,
+        "mean_absolute": 495.5,
+        "minimum": -76.0,
+        "maximum": 976.0
+      },
+      "within_pair_objective_conflicts": 0
+    },
+    "F04": {
+      "samples": 4,
+      "origins": 1,
+      "seed_clusters": 1,
+      "step_range": [
+        240,
+        480
+      ],
+      "unit_count_range": [
+        1,
+        8
+      ],
+      "unique_source_units": 2,
+      "target_unit_roles": {
+        "farmer": 3,
+        "hand": 1
+      },
+      "margin_direction": {
+        "positive": 0,
+        "negative": 4,
+        "zero": 0
+      },
+      "own_profit_direction": {
+        "positive": 0,
+        "negative": 4,
+        "zero": 0
+      },
+      "margin_delta": {
+        "mean": -4859.75,
+        "mean_absolute": 4859.75,
+        "minimum": -15066.0,
+        "maximum": -57.0
+      },
+      "own_profit_delta": {
+        "mean": -2442.5,
+        "mean_absolute": 2442.5,
+        "minimum": -7398.0,
+        "maximum": -11.0
+      },
+      "within_pair_objective_conflicts": 0
+    }
+  },
+  "per_split": {
+    "exploration": {
+      "samples": 8,
+      "origins": 2,
+      "seed_clusters": 2,
+      "step_range": [
+        240,
+        276
+      ],
+      "unit_count_range": [
+        1,
+        8
+      ],
+      "unique_source_units": 7,
+      "target_unit_roles": {
+        "farmer": 3,
+        "hand": 5
+      },
+      "margin_direction": {
+        "positive": 3,
+        "negative": 5,
+        "zero": 0
+      },
+      "own_profit_direction": {
+        "positive": 3,
+        "negative": 5,
+        "zero": 0
+      },
+      "margin_delta": {
+        "mean": -3307.875,
+        "mean_absolute": 3384.125,
+        "minimum": -15847.0,
+        "maximum": 174.0
+      },
+      "own_profit_delta": {
+        "mean": -1710.5,
+        "mean_absolute": 1743.0,
+        "minimum": -8127.0,
+        "maximum": 79.0
+      },
+      "within_pair_objective_conflicts": 0
+    },
+    "diagnostic": {
+      "samples": 8,
+      "origins": 2,
+      "seed_clusters": 2,
+      "step_range": [
+        240,
+        480
+      ],
+      "unit_count_range": [
+        1,
+        8
+      ],
+      "unique_source_units": 5,
+      "target_unit_roles": {
+        "farmer": 5,
+        "hand": 3
+      },
+      "margin_direction": {
+        "positive": 2,
+        "negative": 6,
+        "zero": 0
+      },
+      "own_profit_direction": {
+        "positive": 2,
+        "negative": 6,
+        "zero": 0
+      },
+      "margin_delta": {
+        "mean": -2428.625,
+        "mean_absolute": 2480.375,
+        "minimum": -15066.0,
+        "maximum": 140.0
+      },
+      "own_profit_delta": {
+        "mean": -997.25,
+        "mean_absolute": 1469.0,
+        "minimum": -7398.0,
+        "maximum": 976.0
+      },
+      "within_pair_objective_conflicts": 0
+    }
+  },
+  "per_point": {
+    "Q0": {
+      "samples": 4,
+      "origins": 4,
+      "seed_clusters": 4,
+      "step_range": [
+        240,
+        240
+      ],
+      "unit_count_range": [
+        1,
+        1
+      ],
+      "unique_source_units": 4,
+      "target_unit_roles": {
+        "farmer": 4,
+        "hand": 0
+      },
+      "margin_direction": {
+        "positive": 1,
+        "negative": 3,
+        "zero": 0
+      },
+      "own_profit_direction": {
+        "positive": 1,
+        "negative": 3,
+        "zero": 0
+      },
+      "margin_delta": {
+        "mean": -7742.0,
+        "mean_absolute": 7795.0,
+        "minimum": -15847.0,
+        "maximum": 106.0
+      },
+      "own_profit_delta": {
+        "mean": -3893.75,
+        "mean_absolute": 3906.75,
+        "minimum": -8127.0,
+        "maximum": 26.0
+      },
+      "within_pair_objective_conflicts": 0
+    },
+    "Q1": {
+      "samples": 4,
+      "origins": 4,
+      "seed_clusters": 4,
+      "step_range": [
+        246,
+        246
+      ],
+      "unit_count_range": [
+        6,
+        7
+      ],
+      "unique_source_units": 4,
+      "target_unit_roles": {
+        "farmer": 3,
+        "hand": 1
+      },
+      "margin_direction": {
+        "positive": 2,
+        "negative": 2,
+        "zero": 0
+      },
+      "own_profit_direction": {
+        "positive": 2,
+        "negative": 2,
+        "zero": 0
+      },
+      "margin_delta": {
+        "mean": -459.75,
+        "mean_absolute": 580.25,
+        "minimum": -1507.0,
+        "maximum": 174.0
+      },
+      "own_profit_delta": {
+        "mean": -94.75,
+        "mean_absolute": 589.75,
+        "minimum": -786.0,
+        "maximum": 911.0
+      },
+      "within_pair_objective_conflicts": 0
+    },
+    "Q2": {
+      "samples": 4,
+      "origins": 4,
+      "seed_clusters": 4,
+      "step_range": [
+        248,
+        249
+      ],
+      "unit_count_range": [
+        7,
+        8
+      ],
+      "unique_source_units": 4,
+      "target_unit_roles": {
+        "farmer": 0,
+        "hand": 4
+      },
+      "margin_direction": {
+        "positive": 2,
+        "negative": 2,
+        "zero": 0
+      },
+      "own_profit_direction": {
+        "positive": 2,
+        "negative": 2,
+        "zero": 0
+      },
+      "margin_delta": {
+        "mean": -3242.0,
+        "mean_absolute": 3324.5,
+        "minimum": -9390.0,
+        "maximum": 140.0
+      },
+      "own_profit_delta": {
+        "mean": -1413.5,
+        "mean_absolute": 1914.0,
+        "minimum": -4877.0,
+        "maximum": 976.0
+      },
+      "within_pair_objective_conflicts": 0
+    },
+    "Q3": {
+      "samples": 4,
+      "origins": 4,
+      "seed_clusters": 4,
+      "step_range": [
+        260,
+        480
+      ],
+      "unit_count_range": [
+        1,
+        8
+      ],
+      "unique_source_units": 4,
+      "target_unit_roles": {
+        "farmer": 1,
+        "hand": 3
+      },
+      "margin_direction": {
+        "positive": 0,
+        "negative": 4,
+        "zero": 0
+      },
+      "own_profit_direction": {
+        "positive": 0,
+        "negative": 4,
+        "zero": 0
+      },
+      "margin_delta": {
+        "mean": -29.25,
+        "mean_absolute": 29.25,
+        "minimum": -57.0,
+        "maximum": -1.0
+      },
+      "own_profit_delta": {
+        "mean": -13.5,
+        "mean_absolute": 13.5,
+        "minimum": -23.0,
+        "maximum": -1.0
+      },
+      "within_pair_objective_conflicts": 0
+    }
+  },
+  "points": [
+    {
+      "origin": "F01",
+      "point": "Q0",
+      "split": "exploration",
+      "own_profit_delta": 26.0,
+      "margin_delta": 106.0,
+      "own_profit_direction": "positive",
+      "margin_direction": "positive",
+      "objective_conflict": false
+    },
+    {
+      "origin": "F01",
+      "point": "Q1",
+      "split": "exploration",
+      "own_profit_delta": 79.0,
+      "margin_delta": 174.0,
+      "own_profit_direction": "positive",
+      "margin_direction": "positive",
+      "objective_conflict": false
+    },
+    {
+      "origin": "F01",
+      "point": "Q2",
+      "split": "exploration",
+      "own_profit_delta": 25.0,
+      "margin_delta": 25.0,
+      "own_profit_direction": "positive",
+      "margin_direction": "positive",
+      "objective_conflict": false
+    },
+    {
+      "origin": "F01",
+      "point": "Q3",
+      "split": "exploration",
+      "own_profit_delta": -23.0,
+      "margin_delta": -23.0,
+      "own_profit_direction": "negative",
+      "margin_direction": "negative",
+      "objective_conflict": false
+    },
+    {
+      "origin": "F02",
+      "point": "Q0",
+      "split": "exploration",
+      "own_profit_delta": -8127.0,
+      "margin_delta": -15847.0,
+      "own_profit_direction": "negative",
+      "margin_direction": "negative",
+      "objective_conflict": false
+    },
+    {
+      "origin": "F02",
+      "point": "Q1",
+      "split": "exploration",
+      "own_profit_delta": -786.0,
+      "margin_delta": -1507.0,
+      "own_profit_direction": "negative",
+      "margin_direction": "negative",
+      "objective_conflict": false
+    },
+    {
+      "origin": "F02",
+      "point": "Q2",
+      "split": "exploration",
+      "own_profit_delta": -4877.0,
+      "margin_delta": -9390.0,
+      "own_profit_direction": "negative",
+      "margin_direction": "negative",
+      "objective_conflict": false
+    },
+    {
+      "origin": "F02",
+      "point": "Q3",
+      "split": "exploration",
+      "own_profit_delta": -1.0,
+      "margin_delta": -1.0,
+      "own_profit_direction": "negative",
+      "margin_direction": "negative",
+      "objective_conflict": false
+    },
+    {
+      "origin": "F03",
+      "point": "Q0",
+      "split": "diagnostic",
+      "own_profit_delta": -76.0,
+      "margin_delta": -161.0,
+      "own_profit_direction": "negative",
+      "margin_direction": "negative",
+      "objective_conflict": false
+    },
+    {
+      "origin": "F03",
+      "point": "Q1",
+      "split": "diagnostic",
+      "own_profit_delta": 911.0,
+      "margin_delta": 67.0,
+      "own_profit_direction": "positive",
+      "margin_direction": "positive",
+      "objective_conflict": false
+    },
+    {
+      "origin": "F03",
+      "point": "Q2",
+      "split": "diagnostic",
+      "own_profit_delta": 976.0,
+      "margin_delta": 140.0,
+      "own_profit_direction": "positive",
+      "margin_direction": "positive",
+      "objective_conflict": false
+    },
+    {
+      "origin": "F03",
+      "point": "Q3",
+      "split": "diagnostic",
+      "own_profit_delta": -19.0,
+      "margin_delta": -36.0,
+      "own_profit_direction": "negative",
+      "margin_direction": "negative",
+      "objective_conflict": false
+    },
+    {
+      "origin": "F04",
+      "point": "Q0",
+      "split": "diagnostic",
+      "own_profit_delta": -7398.0,
+      "margin_delta": -15066.0,
+      "own_profit_direction": "negative",
+      "margin_direction": "negative",
+      "objective_conflict": false
+    },
+    {
+      "origin": "F04",
+      "point": "Q1",
+      "split": "diagnostic",
+      "own_profit_delta": -583.0,
+      "margin_delta": -573.0,
+      "own_profit_direction": "negative",
+      "margin_direction": "negative",
+      "objective_conflict": false
+    },
+    {
+      "origin": "F04",
+      "point": "Q2",
+      "split": "diagnostic",
+      "own_profit_delta": -1778.0,
+      "margin_delta": -3743.0,
+      "own_profit_direction": "negative",
+      "margin_direction": "negative",
+      "objective_conflict": false
+    },
+    {
+      "origin": "F04",
+      "point": "Q3",
+      "split": "diagnostic",
+      "own_profit_delta": -11.0,
+      "margin_delta": -57.0,
+      "own_profit_direction": "negative",
+      "margin_direction": "negative",
+      "objective_conflict": false
+    }
+  ],
+  "missing_points": [],
+  "duplicates": {
+    "full_input": {
+      "unique_encodings": 16,
+      "duplicate_groups": 0,
+      "rows_in_duplicate_groups": 0,
+      "excess_rows": 0,
+      "cross_split_groups": 0,
+      "opposite_margin_sign_groups": 0,
+      "opposite_own_profit_sign_groups": 0,
+      "zero_and_nonzero_margin_groups": 0,
+      "zero_and_nonzero_own_profit_groups": 0
+    },
+    "raw_pair": {
+      "unique_encodings": 16,
+      "duplicate_groups": 0,
+      "rows_in_duplicate_groups": 0,
+      "excess_rows": 0,
+      "cross_split_groups": 0,
+      "opposite_margin_sign_groups": 0,
+      "opposite_own_profit_sign_groups": 0,
+      "zero_and_nonzero_margin_groups": 0,
+      "zero_and_nonzero_own_profit_groups": 0
+    },
+    "deployed_pair": {
+      "unique_encodings": 16,
+      "duplicate_groups": 0,
+      "rows_in_duplicate_groups": 0,
+      "excess_rows": 0,
+      "cross_split_groups": 0,
+      "opposite_margin_sign_groups": 0,
+      "opposite_own_profit_sign_groups": 0,
+      "zero_and_nonzero_margin_groups": 0,
+      "zero_and_nonzero_own_profit_groups": 0
+    }
+  },
+  "encoding_scope": "whole ordered H/W rows: shared_x 275 plus candidate.x 98; TaskNetwork float64 normalization only",
+  "fingerprint_scope": "exact float64 bytes including signed zero; not semantic or logit equivalence",
+  "target_scope": "policy-conditioned terminal H minus W; no optimal-action or generalization claim",
+  "sample_dependence": "points share consumed source games and seeds; up to sixteen points are not sixteen independent games",
+  "no_difference_only_deduplication": true,
+  "training_admission": false,
+  "training": false,
+  "statistical_significance": false,
+  "independent_holdout": false,
+  "split_reassignment": false
+}

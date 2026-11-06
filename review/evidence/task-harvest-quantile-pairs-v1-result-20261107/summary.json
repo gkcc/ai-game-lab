@@ -1,0 +1,560 @@
+{
+  "schema": "task-harvest-quantile-pairs-public-ledger-v1",
+  "rows": [
+    {
+      "origin": "F01",
+      "point": "Q0",
+      "split": "exploration",
+      "cohort": "C01",
+      "opponent": "market",
+      "side": 0,
+      "reused": true,
+      "status": "paired",
+      "reason": null,
+      "returns": {
+        "H": {
+          "own_net_profit": 42186.0,
+          "opponent_net_profit": 39244.0,
+          "margin": 2942.0,
+          "score": 1.0
+        },
+        "W": {
+          "own_net_profit": 42160.0,
+          "opponent_net_profit": 39324.0,
+          "margin": 2836.0,
+          "score": 1.0
+        },
+        "H_minus_W": {
+          "own_net_profit": 26.0,
+          "opponent_net_profit": -80.0,
+          "margin": 106.0,
+          "score": 0.0
+        },
+        "objective_conflict": false,
+        "margin_sign": 1,
+        "own_profit_sign": 1
+      }
+    },
+    {
+      "origin": "F01",
+      "point": "Q1",
+      "split": "exploration",
+      "cohort": "C01",
+      "opponent": "market",
+      "side": 0,
+      "reused": false,
+      "status": "paired",
+      "reason": null,
+      "returns": {
+        "H": {
+          "own_net_profit": 42186.0,
+          "opponent_net_profit": 39244.0,
+          "margin": 2942.0,
+          "score": 1.0
+        },
+        "W": {
+          "own_net_profit": 42107.0,
+          "opponent_net_profit": 39339.0,
+          "margin": 2768.0,
+          "score": 1.0
+        },
+        "H_minus_W": {
+          "own_net_profit": 79.0,
+          "opponent_net_profit": -95.0,
+          "margin": 174.0,
+          "score": 0.0
+        },
+        "objective_conflict": false,
+        "margin_sign": 1,
+        "own_profit_sign": 1
+      }
+    },
+    {
+      "origin": "F01",
+      "point": "Q2",
+      "split": "exploration",
+      "cohort": "C01",
+      "opponent": "market",
+      "side": 0,
+      "reused": false,
+      "status": "paired",
+      "reason": null,
+      "returns": {
+        "H": {
+          "own_net_profit": 42186.0,
+          "opponent_net_profit": 39244.0,
+          "margin": 2942.0,
+          "score": 1.0
+        },
+        "W": {
+          "own_net_profit": 42161.0,
+          "opponent_net_profit": 39244.0,
+          "margin": 2917.0,
+          "score": 1.0
+        },
+        "H_minus_W": {
+          "own_net_profit": 25.0,
+          "opponent_net_profit": 0.0,
+          "margin": 25.0,
+          "score": 0.0
+        },
+        "objective_conflict": false,
+        "margin_sign": 1,
+        "own_profit_sign": 1
+      }
+    },
+    {
+      "origin": "F01",
+      "point": "Q3",
+      "split": "exploration",
+      "cohort": "C01",
+      "opponent": "market",
+      "side": 0,
+      "reused": false,
+      "status": "paired",
+      "reason": null,
+      "returns": {
+        "H": {
+          "own_net_profit": 42186.0,
+          "opponent_net_profit": 39244.0,
+          "margin": 2942.0,
+          "score": 1.0
+        },
+        "W": {
+          "own_net_profit": 42209.0,
+          "opponent_net_profit": 39244.0,
+          "margin": 2965.0,
+          "score": 1.0
+        },
+        "H_minus_W": {
+          "own_net_profit": -23.0,
+          "opponent_net_profit": 0.0,
+          "margin": -23.0,
+          "score": 0.0
+        },
+        "objective_conflict": false,
+        "margin_sign": -1,
+        "own_profit_sign": -1
+      }
+    },
+    {
+      "origin": "F02",
+      "point": "Q0",
+      "split": "exploration",
+      "cohort": "C01",
+      "opponent": "round2",
+      "side": 1,
+      "reused": true,
+      "status": "paired",
+      "reason": null,
+      "returns": {
+        "H": {
+          "own_net_profit": 25005.0,
+          "opponent_net_profit": 30583.0,
+          "margin": -5578.0,
+          "score": 0.0
+        },
+        "W": {
+          "own_net_profit": 33132.0,
+          "opponent_net_profit": 22863.0,
+          "margin": 10269.0,
+          "score": 1.0
+        },
+        "H_minus_W": {
+          "own_net_profit": -8127.0,
+          "opponent_net_profit": 7720.0,
+          "margin": -15847.0,
+          "score": -1.0
+        },
+        "objective_conflict": false,
+        "margin_sign": -1,
+        "own_profit_sign": -1
+      }
+    },
+    {
+      "origin": "F02",
+      "point": "Q1",
+      "split": "exploration",
+      "cohort": "C01",
+      "opponent": "round2",
+      "side": 1,
+      "reused": false,
+      "status": "paired",
+      "reason": null,
+      "returns": {
+        "H": {
+          "own_net_profit": 25005.0,
+          "opponent_net_profit": 30583.0,
+          "margin": -5578.0,
+          "score": 0.0
+        },
+        "W": {
+          "own_net_profit": 25791.0,
+          "opponent_net_profit": 29862.0,
+          "margin": -4071.0,
+          "score": 0.0
+        },
+        "H_minus_W": {
+          "own_net_profit": -786.0,
+          "opponent_net_profit": 721.0,
+          "margin": -1507.0,
+          "score": 0.0
+        },
+        "objective_conflict": false,
+        "margin_sign": -1,
+        "own_profit_sign": -1
+      }
+    },
+    {
+      "origin": "F02",
+      "point": "Q2",
+      "split": "exploration",
+      "cohort": "C01",
+      "opponent": "round2",
+      "side": 1,
+      "reused": false,
+      "status": "paired",
+      "reason": null,
+      "returns": {
+        "H": {
+          "own_net_profit": 25005.0,
+          "opponent_net_profit": 30583.0,
+          "margin": -5578.0,
+          "score": 0.0
+        },
+        "W": {
+          "own_net_profit": 29882.0,
+          "opponent_net_profit": 26070.0,
+          "margin": 3812.0,
+          "score": 1.0
+        },
+        "H_minus_W": {
+          "own_net_profit": -4877.0,
+          "opponent_net_profit": 4513.0,
+          "margin": -9390.0,
+          "score": -1.0
+        },
+        "objective_conflict": false,
+        "margin_sign": -1,
+        "own_profit_sign": -1
+      }
+    },
+    {
+      "origin": "F02",
+      "point": "Q3",
+      "split": "exploration",
+      "cohort": "C01",
+      "opponent": "round2",
+      "side": 1,
+      "reused": false,
+      "status": "paired",
+      "reason": null,
+      "returns": {
+        "H": {
+          "own_net_profit": 25005.0,
+          "opponent_net_profit": 30583.0,
+          "margin": -5578.0,
+          "score": 0.0
+        },
+        "W": {
+          "own_net_profit": 25006.0,
+          "opponent_net_profit": 30583.0,
+          "margin": -5577.0,
+          "score": 0.0
+        },
+        "H_minus_W": {
+          "own_net_profit": -1.0,
+          "opponent_net_profit": 0.0,
+          "margin": -1.0,
+          "score": 0.0
+        },
+        "objective_conflict": false,
+        "margin_sign": -1,
+        "own_profit_sign": -1
+      }
+    },
+    {
+      "origin": "F03",
+      "point": "Q0",
+      "split": "diagnostic",
+      "cohort": "C02",
+      "opponent": "market",
+      "side": 1,
+      "reused": true,
+      "status": "paired",
+      "reason": null,
+      "returns": {
+        "H": {
+          "own_net_profit": 28688.0,
+          "opponent_net_profit": 27504.0,
+          "margin": 1184.0,
+          "score": 1.0
+        },
+        "W": {
+          "own_net_profit": 28764.0,
+          "opponent_net_profit": 27419.0,
+          "margin": 1345.0,
+          "score": 1.0
+        },
+        "H_minus_W": {
+          "own_net_profit": -76.0,
+          "opponent_net_profit": 85.0,
+          "margin": -161.0,
+          "score": 0.0
+        },
+        "objective_conflict": false,
+        "margin_sign": -1,
+        "own_profit_sign": -1
+      }
+    },
+    {
+      "origin": "F03",
+      "point": "Q1",
+      "split": "diagnostic",
+      "cohort": "C02",
+      "opponent": "market",
+      "side": 1,
+      "reused": false,
+      "status": "paired",
+      "reason": null,
+      "returns": {
+        "H": {
+          "own_net_profit": 28688.0,
+          "opponent_net_profit": 27504.0,
+          "margin": 1184.0,
+          "score": 1.0
+        },
+        "W": {
+          "own_net_profit": 27777.0,
+          "opponent_net_profit": 26660.0,
+          "margin": 1117.0,
+          "score": 1.0
+        },
+        "H_minus_W": {
+          "own_net_profit": 911.0,
+          "opponent_net_profit": 844.0,
+          "margin": 67.0,
+          "score": 0.0
+        },
+        "objective_conflict": false,
+        "margin_sign": 1,
+        "own_profit_sign": 1
+      }
+    },
+    {
+      "origin": "F03",
+      "point": "Q2",
+      "split": "diagnostic",
+      "cohort": "C02",
+      "opponent": "market",
+      "side": 1,
+      "reused": false,
+      "status": "paired",
+      "reason": null,
+      "returns": {
+        "H": {
+          "own_net_profit": 28688.0,
+          "opponent_net_profit": 27504.0,
+          "margin": 1184.0,
+          "score": 1.0
+        },
+        "W": {
+          "own_net_profit": 27712.0,
+          "opponent_net_profit": 26668.0,
+          "margin": 1044.0,
+          "score": 1.0
+        },
+        "H_minus_W": {
+          "own_net_profit": 976.0,
+          "opponent_net_profit": 836.0,
+          "margin": 140.0,
+          "score": 0.0
+        },
+        "objective_conflict": false,
+        "margin_sign": 1,
+        "own_profit_sign": 1
+      }
+    },
+    {
+      "origin": "F03",
+      "point": "Q3",
+      "split": "diagnostic",
+      "cohort": "C02",
+      "opponent": "market",
+      "side": 1,
+      "reused": false,
+      "status": "paired",
+      "reason": null,
+      "returns": {
+        "H": {
+          "own_net_profit": 28688.0,
+          "opponent_net_profit": 27504.0,
+          "margin": 1184.0,
+          "score": 1.0
+        },
+        "W": {
+          "own_net_profit": 28707.0,
+          "opponent_net_profit": 27487.0,
+          "margin": 1220.0,
+          "score": 1.0
+        },
+        "H_minus_W": {
+          "own_net_profit": -19.0,
+          "opponent_net_profit": 17.0,
+          "margin": -36.0,
+          "score": 0.0
+        },
+        "objective_conflict": false,
+        "margin_sign": -1,
+        "own_profit_sign": -1
+      }
+    },
+    {
+      "origin": "F04",
+      "point": "Q0",
+      "split": "diagnostic",
+      "cohort": "C02",
+      "opponent": "round2",
+      "side": 0,
+      "reused": true,
+      "status": "paired",
+      "reason": null,
+      "returns": {
+        "H": {
+          "own_net_profit": 23832.0,
+          "opponent_net_profit": 34624.0,
+          "margin": -10792.0,
+          "score": 0.0
+        },
+        "W": {
+          "own_net_profit": 31230.0,
+          "opponent_net_profit": 26956.0,
+          "margin": 4274.0,
+          "score": 1.0
+        },
+        "H_minus_W": {
+          "own_net_profit": -7398.0,
+          "opponent_net_profit": 7668.0,
+          "margin": -15066.0,
+          "score": -1.0
+        },
+        "objective_conflict": false,
+        "margin_sign": -1,
+        "own_profit_sign": -1
+      }
+    },
+    {
+      "origin": "F04",
+      "point": "Q1",
+      "split": "diagnostic",
+      "cohort": "C02",
+      "opponent": "round2",
+      "side": 0,
+      "reused": false,
+      "status": "paired",
+      "reason": null,
+      "returns": {
+        "H": {
+          "own_net_profit": 23832.0,
+          "opponent_net_profit": 34624.0,
+          "margin": -10792.0,
+          "score": 0.0
+        },
+        "W": {
+          "own_net_profit": 24415.0,
+          "opponent_net_profit": 34634.0,
+          "margin": -10219.0,
+          "score": 0.0
+        },
+        "H_minus_W": {
+          "own_net_profit": -583.0,
+          "opponent_net_profit": -10.0,
+          "margin": -573.0,
+          "score": 0.0
+        },
+        "objective_conflict": false,
+        "margin_sign": -1,
+        "own_profit_sign": -1
+      }
+    },
+    {
+      "origin": "F04",
+      "point": "Q2",
+      "split": "diagnostic",
+      "cohort": "C02",
+      "opponent": "round2",
+      "side": 0,
+      "reused": false,
+      "status": "paired",
+      "reason": null,
+      "returns": {
+        "H": {
+          "own_net_profit": 23832.0,
+          "opponent_net_profit": 34624.0,
+          "margin": -10792.0,
+          "score": 0.0
+        },
+        "W": {
+          "own_net_profit": 25610.0,
+          "opponent_net_profit": 32659.0,
+          "margin": -7049.0,
+          "score": 0.0
+        },
+        "H_minus_W": {
+          "own_net_profit": -1778.0,
+          "opponent_net_profit": 1965.0,
+          "margin": -3743.0,
+          "score": 0.0
+        },
+        "objective_conflict": false,
+        "margin_sign": -1,
+        "own_profit_sign": -1
+      }
+    },
+    {
+      "origin": "F04",
+      "point": "Q3",
+      "split": "diagnostic",
+      "cohort": "C02",
+      "opponent": "round2",
+      "side": 0,
+      "reused": false,
+      "status": "paired",
+      "reason": null,
+      "returns": {
+        "H": {
+          "own_net_profit": 23832.0,
+          "opponent_net_profit": 34624.0,
+          "margin": -10792.0,
+          "score": 0.0
+        },
+        "W": {
+          "own_net_profit": 23843.0,
+          "opponent_net_profit": 34578.0,
+          "margin": -10735.0,
+          "score": 0.0
+        },
+        "H_minus_W": {
+          "own_net_profit": -11.0,
+          "opponent_net_profit": 46.0,
+          "margin": -57.0,
+          "score": 0.0
+        },
+        "objective_conflict": false,
+        "margin_sign": -1,
+        "own_profit_sign": -1
+      }
+    }
+  ],
+  "reused_pairs": 4,
+  "completed_new_pairs": 12,
+  "all_twelve_new_pairs_completed": true,
+  "training": false,
+  "gpu_training": false,
+  "training_admission": false,
+  "new_seeds": false,
+  "independent_holdout": false,
+  "statistical_significance": false,
+  "promotion": false,
+  "scope": "four consumed seed groups, at most sixteen policy-conditioned points, not sixteen independent samples"
+}
